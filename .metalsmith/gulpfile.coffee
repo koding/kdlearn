@@ -18,8 +18,9 @@ util    = require 'gulp-util'
 
 paths =
   code: [
+    '!sass/**'
     '../.metalsmith/*'
-    '../.metalsmith/templates/**'
+    'templates/**'
   ]
   documents: [
     '!../.metalsmith'
@@ -68,7 +69,14 @@ gulp.task 'watch:md', ['build'], ->
   gulp.watch paths.documents, ['build']
 
 
+# ## watch:sass
+#
+# Watch sass files for changes, compile on change.
+gulp.task 'watch:sass', ['sass'], ->
+  gulp.watch paths.sass, ['sass']
+
+
 gulp.task 'watch', ['watch:md']
-gulp.task 'watch:all', ['watch:md', 'watch:code']
+gulp.task 'watch:all', ['watch:md', 'watch:code', 'watch:sass']
 gulp.task 'build', ['metalsmith', 'sass']
 gulp.task 'default', ['build']

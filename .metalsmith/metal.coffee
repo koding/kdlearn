@@ -21,6 +21,7 @@ module.exports = build = (callback=->) ->
     .source '..'
     .destination 'build'
     .ignore ['.git', '.metalsmith']
+    .options remove: false
     .use markdown()
     .use templates 'toffee'
     .build callback

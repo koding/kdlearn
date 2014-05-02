@@ -1,11 +1,16 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+  <meta charset="utf-8">
+  <title>KDLearn</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/style.css" media="screen"/>
 </head>
 <body>
 
-#{contents}
+#{print contents}
+
+
 
 </body>
 </html>
-
