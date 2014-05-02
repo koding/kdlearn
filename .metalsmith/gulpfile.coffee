@@ -11,26 +11,37 @@ metal   = require './metal'
 path    = require 'path'
 connect = require 'connect'
 gulp    = require 'gulp'
+sass    = require 'gulp-sass'
 util    = require 'gulp-util'
 
 
 
 paths =
+  code: [
+    '../.metalsmith/*'
+    '../.metalsmith/templates/**'
+  ]
   documents: [
     '!../.metalsmith'
     '!node_modules/**'
     '../**'
   ]
-  code: [
-    '../.metalsmith/*'
-    '../.metalsmith/templates/**'
-  ]
+  sass: './sass/**/*.scss'
 
 
 # ## metalsmith
 #
 # Compile our metalsmith markdown and templates.
 gulp.task 'metalsmith', -> metal()
+
+
+# ## sass
+#
+# Compile our sass to css in the build dir.
+gulp.task 'sass', ->
+  gulp.src paths.sass
+    .pipe sass()
+    .pipe gulp.dest 'build/css'
 
 
 # ## watch:code
@@ -59,5 +70,5 @@ gulp.task 'watch:md', ['build'], ->
 
 gulp.task 'watch', ['watch:md']
 gulp.task 'watch:all', ['watch:md', 'watch:code']
-gulp.task 'build', ['metalsmith']
+gulp.task 'build', ['metalsmith', 'sass']
 gulp.task 'default', ['build']
