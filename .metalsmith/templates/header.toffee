@@ -1,0 +1,14 @@
+<header>
+  <h1>KodingU</h1>
+  <ul>
+    <li>
+      <a href="/getting-started">Getting Started</a>
+    </li>
+    <li>
+      <a href="/faq">Common Questions</a>
+    </li>
+    <li>
+      <a href="/videos">Videos</a>
+    </li>
+  </ul>
+</header>
