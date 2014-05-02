@@ -2,6 +2,9 @@
   <h1>KodingU</h1>
   <ul>
     <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
       <a href="/getting-started">Getting Started</a>
     </li>
     <li>
