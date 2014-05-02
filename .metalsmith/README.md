@@ -17,9 +17,10 @@ layout images, javascript, etc.
 
 ## Installation
 
-A global installation of `cult` and varying node packages are required.
+A global installation of `cult` and `gulp`, and varying node packages are 
+required.
 
-1. `npm install -g cult`
+1. `npm install -g gulp cult`
 2. `cd .metalsmith`
 3. `npm install`
 
