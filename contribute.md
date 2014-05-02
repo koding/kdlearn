@@ -1,5 +1,5 @@
 ---
-template: layout.toffee
+template: generic.toffee
 ---
 
 contribute content

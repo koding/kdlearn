@@ -1,0 +1,9 @@
+<!DOCTYPE HTML>
+<html>
+#{partial 'head.toffee'}
+#{partial 'header.toffee'}
+
+#{print contents}
+
+</body>
+</html>

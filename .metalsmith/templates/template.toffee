@@ -1,0 +1,84 @@
+<!--
+The following is the template made by Stefan, currently stored here for reference.
+-->
+<html>
+    <head>
+        <title>Template</title>
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+        <link href='css/general.css' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <header>
+            <section>
+                <h1>Playground Title</h1>
+            </section>
+        </header>
+        <article>
+            <main>
+                <p>
+                    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium.
+                </p>
+                <h1>H1 example</h1>
+                <h2>H2 example</h2>
+                <h3>H3 example</h3>
+                <h4>H4 example</h4>
+                <h5>H5 example</h5>
+                <h6>H6 example</h6>
+                <ul>
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                    <li>List item 3</li>
+                </ul>
+                <ol>
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                    <li>List item 3</li>
+                </ol>
+            </main>
+            <aside>
+                <div>
+                    <label for="text">Text</label><input type="text" name="text">
+                </div>
+                <div>
+                    <label for="email">Email</label><input type="email" name="email">
+                </div>
+                <div>
+                    <label for="number">Number</label><input type="number" name="number">
+                </div>
+                <div>
+                    <label for="url">URL</label><input type="url" name="url">
+                </div>
+                <div>
+                    <label for="date">Date</label><input type="date" name="date">
+                </div>
+                <div>
+                    <label for="radio">Radio</label><input type="radio" name="radio">
+                </div>
+                <div>
+                    <label for="checkbox">Checkbox</label><input type="checkbox" name="checkbox">
+                </div>
+                <div>
+                    <label for="textarea">Textarea</label>
+                    <textarea name="textarea"></textarea>
+                </div>
+                <div>
+                    <label for="select">Select</label>
+                    <select name="select">
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                    <button>Button</button>
+                </div>
+            </aside>
+        </article>
+        <footer>
+            <small>Playground provided by Koding. Made with &hearts; in SF</small>
+        </footer>
+    </body>
+</html>
