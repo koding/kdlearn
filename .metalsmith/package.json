@@ -9,7 +9,9 @@
     "gulp-util": "^2.2.14",
     "coffee-script": "^1.7.1",
     "toffee": "^0.1.8",
-    "connect": "^2.14.5"
+    "connect": "^2.14.5",
+    "metalsmith-permalinks": "^0.3.0",
+    "metalsmith-collections": "^0.4.0"
   },
   "dependencies": {}
 }

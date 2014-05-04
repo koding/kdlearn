@@ -3,10 +3,12 @@
 #
 # Our metalsmith build code.
 #
-path       = require 'path'
-metalsmith = require 'metalsmith'
-markdown   = require 'metalsmith-markdown'
-templates  = require 'metalsmith-templates'
+path        = require 'path'
+metalsmith  = require 'metalsmith'
+collections = require 'metalsmith-collections'
+markdown    = require 'metalsmith-markdown'
+permalinks  = require 'metalsmith-permalinks'
+templates   = require 'metalsmith-templates'
 
 
 
@@ -20,10 +22,15 @@ module.exports = build = (callback=->) ->
   metalsmith __dirname
     .source '..'
     .destination 'build'
-    .ignore ['.git', '.metalsmith']
+    .ignore ['.git', '.metalsmith', 'legacy']
     .options remove: false
     .use markdown()
     .use templates 'toffee'
+    .use collections
+      faq:
+        pattern: 'faq/*.md'
+        sortBy: 'date'
+    .use permalinks()
     .build callback
 
 
