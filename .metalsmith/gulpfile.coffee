@@ -28,6 +28,7 @@ paths =
     '../**'
   ]
   sass: './sass/**/*.scss'
+  static: './static/**/*'
 
 
 # ## metalsmith
@@ -56,6 +57,14 @@ gulp.task 'watch:code', -> gulp.watch paths.code, ->
   metal()
 
 
+# ## static
+#
+# Copy static assets to build dir.
+gulp.task 'static', ->
+  gulp.src paths.static
+    .pipe gulp.dest 'build'
+
+
 # ## watch:md
 #
 # Run a web server exposing the files in the build directory, and recompile
@@ -78,5 +87,5 @@ gulp.task 'watch:sass', ['sass'], ->
 
 gulp.task 'watch', ['watch:md']
 gulp.task 'watch:all', ['watch:md', 'watch:code', 'watch:sass']
-gulp.task 'build', ['metalsmith', 'sass']
+gulp.task 'build', ['metalsmith', 'sass', 'static']
 gulp.task 'default', ['build']
