@@ -19,7 +19,11 @@ util    = require 'gulp-util'
 paths =
   code: [
     '!sass/**'
-    '../.metalsmith/*'
+    # I had a hard time ignoring node_modules, so instead
+    # i'm manually adding the dirs i want to watch.
+    '*'
+    'plugins/**'
+    'static/**'
     'templates/**'
   ]
   documents: [
