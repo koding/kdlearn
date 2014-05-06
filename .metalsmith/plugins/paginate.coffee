@@ -26,11 +26,12 @@ module.exports = (opts={}) ->
     # - foo/index, foo/2/index, foo/3/index
 
     base = path.basename out, '.html'
-    if index is 0 then return base
+    dir  = path.dirname out
+    if index is 0 then return path.join dir, base
     if base is 'index'
-      return "page-#{index}"
+      return path.join dir, "page-#{index}"
     else
-      return "#{base}-#{index}"
+      return path.join dir, "#{base}-#{index}"
 
   (files, metalsmith, done) ->
     metadata = metalsmith.metadata()
