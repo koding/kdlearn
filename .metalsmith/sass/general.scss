@@ -4,7 +4,7 @@ $background: #f2f2f2;
 
 @import 'normalize';
 
-/* Sass Demo v0.2 */
+/* Koding University Sass */
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -39,6 +39,9 @@ header {
                 padding: 0;
                 margin: 0;
                 list-style-type: none;
+                li {
+                    display: inline-block;
+                }
             }
         }
     }
