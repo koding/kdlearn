@@ -1,20 +1,23 @@
 <!DOCTYPE HTML>
 <html>
-#{partial 'head.toffee'}
-<body>
-#{partial 'header.toffee'}
-
-<ul>
-{#
-for video in paginate.files
-  {:
-  <li>
-    <!-- This needs to be embed html, so the video plays-->
-    <a href="#{print video.videoUrl}">#{print video.videoUrl}</a>
-  </li>
-  :}
-#}
-</ul>
-
-</body>
+    #{partial 'head.toffee'}
+    <body>
+        #{partial 'header.toffee'}
+        <article>
+            </main>
+                <ul>
+                    {#
+                    for video in paginate.files
+                      {:
+                      <li>
+                        <!-- This needs to be embed html, so the video plays-->
+                        <a href="#{print video.videoUrl}">#{print video.videoUrl}</a>
+                      </li>
+                      :}
+                    #}
+                </ul>
+            </main>
+        </article>
+        #{partial 'footer.toffee'}
+    </body>
 </html>
