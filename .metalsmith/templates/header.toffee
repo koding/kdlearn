@@ -1,17 +1,21 @@
 <header>
-  <h1>KodingU</h1>
-  <ul>
-    <li>
-      <a href="/">Home</a>
-    </li>
-    <li>
-      <a href="/getting-started">Getting Started</a>
-    </li>
-    <li>
-      <a href="/faq">Common Questions</a>
-    </li>
-    <li>
-      <a href="/videos">Videos</a>
-    </li>
-  </ul>
+    <section>
+        <h1>Koding University</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/getting-started">Getting Started</a>
+                </li>
+                <li>
+                    <a href="/faq">Common Questions</a>
+                </li>
+                <li>
+                    <a href="/videos">Videos</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
 </header>

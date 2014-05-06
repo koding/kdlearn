@@ -1,10 +1,13 @@
 <!DOCTYPE HTML>
 <html>
-#{partial 'head.toffee'}
-<body>
-#{partial 'header.toffee'}
-
-#{print contents}
-
-</body>
+    #{partial 'head.toffee'}
+    <body>
+        #{partial 'header.toffee'}
+        <article>
+            <main>
+                #{print contents}
+            </main>
+        </article>
+        #{partial 'footer.toffee'}
+    </body>
 </html>
