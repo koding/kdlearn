@@ -40,10 +40,6 @@ module.exports = build = (callback=->) ->
       collection: 'video'
       output: 'videos/index'
       metadata: template: 'videos.toffee'
-    .use (f, m, d) ->
-      c = m.metadata().collections
-      console.log 'Collections!', c
-      d()
     .use permalinks()
     .use templates 'toffee'
     .build callback
