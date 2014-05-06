@@ -1,14 +1,10 @@
-title: What is Koding?
-link: http://learn.koding.com/what-is-koding/
-author: kdlearn
-description: 
-post_id: 104
-created: 2013/11/27 00:54:31
-created_gmt: 2013/11/27 00:54:31
-comment_status: closed
-post_name: what-is-koding
-status: publish
-post_type: post
+---
+title: what is koding
+importance: 0
+template: page.toffee
+collection: faq
+date: 2013-04-02
+---
 
 # What is Koding?
 

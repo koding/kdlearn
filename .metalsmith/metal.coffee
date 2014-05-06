@@ -26,7 +26,6 @@ module.exports = build = (callback=->) ->
     .ignore ['.git', '.metalsmith', 'legacy']
     .options remove: false
     .use markdown()
-    .use templates 'toffee'
     .use collections
       faq:
         pattern: 'faq/*.md'
@@ -37,6 +36,7 @@ module.exports = build = (callback=->) ->
       output: 'faq/index'
       metadata: template: 'faq.toffee'
     .use permalinks()
+    .use templates 'toffee'
     .build callback
 
 
