@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+#{partial 'head.toffee'}
+<body>
+#{partial 'header.toffee'}
+
+<ul>
+{#
+for guide in paginate.files
+  {:
+  <li>
+    <a href="/#{guide.file[...-5]}">#{print guide.title}</a>
+  </li>
+  :}
+#}
+</ul>
+
+</body>
+</html>

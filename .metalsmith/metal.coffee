@@ -28,9 +28,11 @@ module.exports = build = (callback=->) ->
     .use markdown()
     .use collections
       faq:
-        pattern: 'faq/*.md'
+        pattern: 'faq/*.html'
         sortBy: 'date'
       video: {}
+      guide: 
+        pattern: 'guides/*.html'
     .use paginate
       collection: 'faq'
       limit: 10
@@ -40,6 +42,10 @@ module.exports = build = (callback=->) ->
       collection: 'video'
       output: 'videos/index'
       metadata: template: 'videos.toffee'
+    .use paginate
+      collection: 'guide'
+      output: 'guides/index'
+      metadata: template: 'guides.toffee'
     .use permalinks()
     .use templates 'toffee'
     .build callback
