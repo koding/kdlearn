@@ -1,5 +1,6 @@
-$mainColor: #E6252D;
+$mainColor: #1e2527;
 $white: #ffffff;
+$background: #f2f2f2;
 
 @import 'normalize';
 
@@ -7,7 +8,7 @@ $white: #ffffff;
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    background-color: #f2f2f2;
+    background-color: $background;
 }
 
 ::selection {
@@ -31,7 +32,14 @@ header {
         overflow: hidden;
         h1 {
             text-transform: uppercase;
-            text-shadow: 5px 5px 0 rgba(0,0,0,0.2);
+            font-weight: normal;
+        }
+        nav {
+            ul {    
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+            }
         }
     }
 }
