@@ -30,11 +30,20 @@ module.exports = build = (callback=->) ->
       faq:
         pattern: 'faq/*.md'
         sortBy: 'date'
+      video: {}
     .use paginate
       collection: 'faq'
       limit: 10
       output: 'faq/index'
       metadata: template: 'faq.toffee'
+    .use paginate
+      collection: 'video'
+      output: 'videos/index'
+      metadata: template: 'videos.toffee'
+    .use (f, m, d) ->
+      c = m.metadata().collections
+      console.log 'Collections!', c
+      d()
     .use permalinks()
     .use templates 'toffee'
     .build callback
