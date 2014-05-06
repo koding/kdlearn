@@ -9,6 +9,7 @@ collections = require 'metalsmith-collections'
 markdown    = require 'metalsmith-markdown'
 permalinks  = require 'metalsmith-permalinks'
 templates   = require 'metalsmith-templates'
+paginate    = require './plugins/paginate'
 
 
 
@@ -30,6 +31,11 @@ module.exports = build = (callback=->) ->
       faq:
         pattern: 'faq/*.md'
         sortBy: 'date'
+    .use paginate
+      collection: 'faq'
+      limit: 10
+      output: 'faq/index'
+      metadata: template: 'faq.toffee'
     .use permalinks()
     .build callback
 
