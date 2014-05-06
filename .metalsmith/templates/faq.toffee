@@ -2,14 +2,18 @@
 <html>
 #{partial 'head.toffee'}
 <body>
-  #{partial 'header.toffee'}
+#{partial 'header.toffee'}
 
-  {#
-  for faq in paginate.files
-    {:
+<ol>
+{#
+for faq in paginate.files
+  {:
+  <li>
     <a href="/#{faq.file[...-5]}">#{print faq.title}</a>
-    :}
-  #}
+  </li>
+  :}
+#}
+</ol>
 
 </body>
 </html>
