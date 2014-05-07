@@ -27,38 +27,40 @@ header {
     width: 100%;
     height: 80px;
     margin-bottom: 35px;
-    section {
-        width: 100%;
-        text-align: center;
-        h1 {
-            text-transform: uppercase;
-            font-weight: normal;
-            font-size: 1.7em;
+    text-align: center;
+    h1 {
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 1.7em;
+        margin: 0;
+        display: inline-block;
+    }
+    #logo {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        background-image: $logo;
+        background-size: 100px;
+        background-position: center;
+        background-repeat: no-repeat;
+        vertical-align: middle;
+        padding: 0 20px;
+    }
+    nav {
+        ul {    
+            padding: 0;
             margin: 0;
-            display: inline-block;
-        }
-        #logo {
-            width: 100px;
-            height: 100px;
-            display: inline-block;
-            background-image: $logo;
-            background-size: 100px;
-            background-position: center;
-            background-repeat: no-repeat;
-            vertical-align: middle;
-            padding: 0 20px;
-        }
-        nav {
-            display: inline-block;
-            ul {    
-                padding: 0;
-                margin: 0;
-                list-style-type: none;
-                li {
-                    display: inline-block;
-                }
+            list-style-type: none;
+            li {
+                display: inline-block;
             }
         }
+    }
+    #navLeft,
+    #logoWrapper,
+    #navRight {
+        width: 33%;
+        display: inline-block;
     }
 }
 

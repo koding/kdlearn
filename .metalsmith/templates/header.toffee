@@ -1,24 +1,25 @@
 <header>
-    <section>
+    <nav id="navLeft">
+        <ul>
+            <li>
+                <a href="/getting-started">Getting Started</a>
+            </li>
+            <li>
+                <a href="/faq">Common Questions</a>
+            <li>
+        </ul>
+    </nav>
+    <section id="logoWrapper">
         <h1>Koding</h1><span id="logo"></span><h1>University</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/getting-started">Getting Started</a>
-                </li>
-                <li>
-                    <a href="/faq">Common Questions</a>
-                <li>
-                    <a href="/guides">Guides</a>
-                </li>
-                </li>
-                <li>
-                    <a href="/videos">Videos</a>
-                </li>
-            </ul>
-        </nav>
     </section>
+    <nav id="navRight">
+        <ul>
+            <li>
+                <a href="/guides">Guides</a>
+            </li>
+            <li>
+                <a href="/videos">Videos</a>
+            </li>
+        </ul>
+    </nav>
 </header>
