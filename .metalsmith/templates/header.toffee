@@ -1,6 +1,6 @@
 <header>
     <section>
-        <h1>Koding University</h1>
+        <h1>Koding</h1><span id="logo"></span><h1>University</h1>
         <nav>
             <ul>
                 <li>
@@ -12,7 +12,7 @@
                 <li>
                     <a href="/faq">Common Questions</a>
                 <li>
-                  <a href="/guides">Guides</a>
+                    <a href="/guides">Guides</a>
                 </li>
                 </li>
                 <li>

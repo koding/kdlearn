@@ -1,6 +1,7 @@
 $mainColor: #1e2527;
 $white: #ffffff;
 $background: #f2f2f2;
+$logo: url(../img/logo.png);
 
 @import 'normalize';
 
@@ -24,18 +25,31 @@ header {
     background-color: $mainColor;
     color: $white;
     width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
+    height: 80px;
+    margin-bottom: 35px;
     section {
-        width: 920px;
-        margin: 0 auto;
-        overflow: hidden;
-        background: url(../img/logo.png) no-repeat;
+        width: 100%;
+        text-align: center;
         h1 {
             text-transform: uppercase;
             font-weight: normal;
+            font-size: 1.7em;
+            margin: 0;
+            display: inline-block;
+        }
+        #logo {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            background-image: $logo;
+            background-size: 100px;
+            background-position: center;
+            background-repeat: no-repeat;
+            vertical-align: middle;
+            padding: 0 20px;
         }
         nav {
+            display: inline-block;
             ul {    
                 padding: 0;
                 margin: 0;
@@ -68,9 +82,12 @@ aside {
 footer {
     text-align: center;
     padding: 20px 0;
-    border-top: 1px solid #ccc;
-    width: 960px;
-    margin: 10px auto 0 auto;
+    width: 100%;
+    background-color: $mainColor;
+    color: $white;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 0;
 }
 
 label {

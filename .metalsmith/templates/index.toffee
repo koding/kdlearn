@@ -22,5 +22,6 @@
                 #{print contents}
             </main>
         </article>
+        #{partial 'footer.toffee'}
     </body>
 </html>
