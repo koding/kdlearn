@@ -1,25 +1,19 @@
+<nav>
+  <div class="container">
+    <h1>Koding University</h1>
+    <div id="menu">
+      <ul class="toplinks">
+        <li><a href="/getting-started">Getting Started</a></li>
+        <li><a href="/faq">Common Questions</a></li>
+        <li><a href="/guides">Guides</a></li>
+        <li><a href="/videos">Videos</a></li>
+      </ul>
+    </div>
+    <a id="menu-toggle" href="#" class=" ">&#9776;</a> </div>
+</nav>
 <header>
-    <nav id="navLeft">
-        <ul>
-            <li>
-                <a href="/getting-started">Getting Started</a>
-            </li>
-            <li>
-                <a href="/faq">Common Questions</a>
-            <li>
-        </ul>
-    </nav>
-    <section id="logoWrapper">
-        <h1>Koding</h1><span id="logo"></span><h1>University</h1>
-    </section>
-    <nav id="navRight">
-        <ul>
-            <li>
-                <a href="/guides">Guides</a>
-            </li>
-            <li>
-                <a href="/videos">Videos</a>
-            </li>
-        </ul>
-    </nav>
+  <div class="container">
+    <h2 class="docs-header">Koding University</h2>
+    Get started in less than five minutes and start Koding right away!
+  </div>
 </header>

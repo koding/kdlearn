@@ -1,27 +1,25 @@
-<!DOCTYPE HTML>
-<html>
-    #{partial 'head.toffee'}
-    <body>
-        #{partial 'header.toffee'}
-        <article>
-            <main>
-                <script>
-                  (function() {
-                    var cx = '012474925188306380495:fa6ireh1yme';
-                    var gcse = document.createElement('script');
-                    gcse.type = 'text/javascript';
-                    gcse.async = true;
-                    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-                        '//www.google.com/cse/cse.js?cx=' + cx;
-                    var s = document.getElementsByTagName('script')[0];
-                    s.parentNode.insertBefore(gcse, s);
-                  })();
-                </script>
-                <gcse:search></gcse:search>
-            
-                #{print contents}
-            </main>
-        </article>
-        #{partial 'footer.toffee'}
-    </body>
-</html>
+#{partial 'head.toffee'}
+#{partial 'header.toffee'}
+<section>
+    <div class="container">
+        #{partial 'sidebar.toffee'}
+        <div class="docs-content">
+            <script>
+              (function() {
+                var cx = '012474925188306380495:fa6ireh1yme';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                    '//www.google.com/cse/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+              })();
+            </script>
+            <gcse:search></gcse:search>
+
+            #{print contents}
+        </div>
+    </div>
+</section>
+#{partial 'footer.toffee'}
