@@ -1,23 +1,21 @@
-<!DOCTYPE HTML>
-<html>
-    #{partial 'head.toffee'}
-    <body>
-        #{partial 'header.toffee'}
-        <article>
-            </main>
-                <ul>
-                    {#
-                    for video in paginate.files
-                      {:
-                      <li>
-                        <!-- This needs to be embed html, so the video plays-->
-                        <a href="#{print video.videoUrl}">#{print video.videoUrl}</a>
-                      </li>
-                      :}
-                    #}
-                </ul>
-            </main>
-        </article>
-        #{partial 'footer.toffee'}
-    </body>
-</html>
+#{partial 'head.toffee'}
+#{partial 'header.toffee'}
+<section>
+    <div class="container">
+        #{partial 'sidebar.toffee'}
+        <div class="docs-content">
+            <ul>
+                {#
+                for video in paginate.files
+                  {:
+                  <li>
+                    <!-- This needs to be embed html, so the video plays-->
+                    <a href="#{print video.videoUrl}">#{print video.videoUrl}</a>
+                  </li>
+                  :}
+                #}
+            </ul>
+        </div>
+    </div>
+</section>
+#{partial 'footer.toffee'}
