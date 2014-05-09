@@ -333,7 +333,7 @@ section {
 		height: 20px;
 	}
 }
-.docs-content {
+.docs-nav + .docs-content {
 	padding-left: 310px;
 	h1 {
 	    color: $color_0;
@@ -397,7 +397,7 @@ section {
     		height: 20px;
     	}
     }
-    .docs-content {
+    .docs-nav + .docs-content {
     	padding-left: 310px;
     }
     header {
