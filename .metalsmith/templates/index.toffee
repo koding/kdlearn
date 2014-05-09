@@ -2,7 +2,6 @@
 #{partial 'header.toffee'}
 <section>
     <div class="container">
-        #{partial 'sidebar.toffee'}
         <div class="docs-content">
             <script>
               (function() {
