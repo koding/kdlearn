@@ -1,14 +1,7 @@
+---
 title: CakePHP Installation for Beginners
-link: http://learn.koding.com/cakephp-beginners/
-author: kdlearn
-description: 
-post_id: 371
-created: 2013/11/18 10:55:17
-created_gmt: 2013/11/18 18:55:17
-comment_status: closed
-post_name: cakephp-beginners
-status: publish
-post_type: post
+template: page.toffee
+---
 
 # CakePHP Installation for Beginners
 
@@ -21,10 +14,6 @@ In this article we will installing CakePHP for beginners. Follow along, or try t
 ## CakePHP and Koding
 
 Of course, CakePHP is especially easy on [Koding](https://koding.com). Developing locally means you need to already have a php framework up and running, as well as a database (MySQL for example). This becomes even more troublesome if you want to share your work with coworkers or friends. Exposing your ports to the outside world, finding your ip, and then sharing it. Thankfully on Koding this is a one step process. You already have the entire LAMP stack available to you, all from your browser. Likewise, sharing with your friends is as easy as sharing your Koding Domain. So, lets use [Koding](https://koding.com), shall we? 
-
-## Instructional Video
-
-Video Coming Soon 
 
 ## Installing CakePHP Steps
 

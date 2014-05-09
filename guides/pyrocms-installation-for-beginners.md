@@ -1,14 +1,7 @@
+---
 title: PyroCMS Setup and Installation for Beginners
-link: http://learn.koding.com/pyrocms-setup-installation-beginners/
-author: kdlearn
-description: 
-post_id: 369
-created: 2013/11/20 13:02:18
-created_gmt: 2013/11/20 21:02:18
-comment_status: closed
-post_name: pyrocms-setup-installation-beginners
-status: publish
-post_type: post
+template: page.toffee
+---
 
 # PyroCMS Setup and Installation for Beginners
 

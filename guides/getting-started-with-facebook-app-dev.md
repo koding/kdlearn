@@ -1,14 +1,7 @@
+---
 title: Getting started with Facebook Application Development
-link: http://learn.koding.com/getting-started-with-facebook-application-development/
-author: kdlearn
-description: 
-post_id: 323
-created: 2013/11/07 10:50:14
-created_gmt: 2013/11/07 18:50:14
-comment_status: closed
-post_name: getting-started-with-facebook-application-development
-status: publish
-post_type: post
+template: page.toffee
+---
 
 # Getting started with Facebook Application Development
 

@@ -1,14 +1,7 @@
+---
 title: Codeigniter Installation for Beginners
-link: http://learn.koding.com/codeigniter-beginners/
-author: kdlearn
-description: 
-post_id: 351
-created: 2013/11/11 10:58:09
-created_gmt: 2013/11/11 18:58:09
-comment_status: closed
-post_name: codeigniter-beginners
-status: publish
-post_type: post
+template: page.toffee
+---
 
 # Codeigniter Installation for Beginners
 

@@ -1,14 +1,7 @@
+---
 title: PrestaShop Installation for Beginners
-link: http://learn.koding.com/prestashop-installation-beginners/
-author: kdlearn
-description: 
-post_id: 373
-created: 2013/11/20 10:43:45
-created_gmt: 2013/11/20 18:43:45
-comment_status: closed
-post_name: prestashop-installation-beginners
-status: publish
-post_type: post
+template: page.toffee
+---
 
 # PrestaShop Installation for Beginners
 

@@ -1,14 +1,7 @@
+---
 title: Mixpanel Setup and Usage for Beginners
-link: http://learn.koding.com/getting-started-mixpanel/
-author: kdlearn
-description: 
-post_id: 334
-created: 2013/11/14 08:16:29
-created_gmt: 2013/11/14 16:16:29
-comment_status: closed
-post_name: getting-started-mixpanel
-status: publish
-post_type: post
+template: page.toffee
+---
 
 # Mixpanel Setup and Usage for Beginners
 

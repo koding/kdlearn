@@ -1,14 +1,7 @@
+---
 title: Octopress Installation for Beginners
-link: http://learn.koding.com/octopress-installation-beginners/
-author: kdlearn
-description: 
-post_id: 374
-created: 2013/11/18 16:22:06
-created_gmt: 2013/11/19 00:22:06
-comment_status: closed
-post_name: octopress-installation-beginners
-status: publish
-post_type: post
+template: page.toffee
+---
 
 # Octopress Installation for Beginners
 
@@ -25,8 +18,6 @@ Static site generators get a fair amount of buzz these days, for good reason. Th
 The only downside to static site generators is publishing the content often requires a local machine of some sort. Non-static sites have the ability to take your input from the browser and save it somewhere such as your Disk or a Database. This complexity allows you to do all of this from your browser, and static sites suffer in this regard.
 
 With [Koding](https://koding.com) this is not the issue. Koding enables the "local machine" entirely in your browser. No local tools needed, no local installs needed, no localhost hassle. Lets go over the process of installing Octopress, on Koding!
-
-## Video Tutorial
 
 ## Tutorial Steps
 

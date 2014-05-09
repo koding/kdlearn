@@ -1,14 +1,7 @@
+---
 title: AngularJS Step-by-Step Setup
-link: http://learn.koding.com/angularjs-step-step/
-author: kdlearn
-description: 
-post_id: 375
-created: 2013/11/20 12:27:11
-created_gmt: 2013/11/20 20:27:11
-comment_status: closed
-post_name: angularjs-step-step
-status: publish
-post_type: post
+template: page.toffee
+---
 
 # AngularJS Step-by-Step Setup
 
