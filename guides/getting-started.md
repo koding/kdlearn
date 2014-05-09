@@ -1,14 +1,7 @@
+---
 title: Getting Started
-link: http://learn.koding.com/gettingstarted/
-author: kdlearn
-description: 
-post_id: 23
-created: 2013/11/25 21:30:17
-created_gmt: 2013/11/25 21:30:17
-comment_status: closed
-post_name: gettingstarted
-status: publish
-post_type: post
+template: page.toffee
+---
 
 # Getting Started
 

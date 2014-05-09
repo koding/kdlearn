@@ -1,14 +1,7 @@
+---
 title: TogetherJS Setup and Usage for Beginners
-link: http://learn.koding.com/togetherjs-setup-usage-beginners/
-author: kdlearn
-description: 
-post_id: 358
-created: 2013/11/20 09:57:08
-created_gmt: 2013/11/20 17:57:08
-comment_status: closed
-post_name: togetherjs-setup-usage-beginners
-status: publish
-post_type: post
+template: page.toffee
+---
 
 # TogetherJS Setup and Usage for Beginners
 

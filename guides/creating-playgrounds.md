@@ -1,14 +1,7 @@
+---
 title: How to create a Playground for Teamwork
-link: http://learn.koding.com/create-playground-teamwork/
-author: kdlearn
-description: 
-post_id: 381
-created: 2013/11/20 18:50:53
-created_gmt: 2013/11/21 02:50:53
-comment_status: closed
-post_name: create-playground-teamwork
-status: publish
-post_type: post
+template: page.toffee
+---
 
 # How to create a Playground for Teamwork
 
