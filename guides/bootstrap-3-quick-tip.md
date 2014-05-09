@@ -1,14 +1,9 @@
+---
 title: Bootstrap 3 setup for Beginners
-link: http://learn.koding.com/bootstrap-3-quick-tip/
-author: kdlearn
-description: 
-post_id: 312
-created: 2013/11/05 10:35:20
-created_gmt: 2013/11/05 18:35:20
-comment_status: closed
-post_name: bootstrap-3-quick-tip
-status: publish
-post_type: post
+importance: 5
+template: page.toffee
+videoUrl: https://www.youtube.com/watch?v=knjX59beV-g
+---
 
 # Bootstrap 3 setup for Beginners
 

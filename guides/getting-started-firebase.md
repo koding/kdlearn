@@ -1,14 +1,8 @@
+---
 title: Firebase setup and usage for beginners
-link: http://learn.koding.com/getting-started-firebase/
-author: kdlearn
-description: 
-post_id: 341
-created: 2013/11/07 18:56:23
-created_gmt: 2013/11/08 02:56:23
-comment_status: closed
-post_name: getting-started-firebase
-status: publish
-post_type: post
+template: page.toffee
+videoUrl: https://www.youtube.com/watch?v=za6mRxKuUig
+---
 
 # Firebase setup and usage for beginners
 
