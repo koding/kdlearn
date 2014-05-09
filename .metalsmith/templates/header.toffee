@@ -1,6 +1,6 @@
 <nav>
   <div class="container">
-    <h1>Koding University</h1>
+    <h1 id="logo">Koding</h1>
     <div id="menu">
       <ul class="toplinks">
         <li><a href="/getting-started">Getting Started</a></li>
