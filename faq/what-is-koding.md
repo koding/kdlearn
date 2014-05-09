@@ -2,7 +2,6 @@
 title: what is koding
 importance: 0
 template: page.toffee
-date: 2013-04-02
 ---
 
 # What is Koding?

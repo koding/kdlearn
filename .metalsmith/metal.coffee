@@ -29,7 +29,7 @@ module.exports = build = (callback=->) ->
     .use collections
       faq:
         pattern: 'faq/*.html'
-        sortBy: 'date'
+        sortBy: 'importance'
       video: {}
       guide: 
         pattern: 'guides/*.html'
