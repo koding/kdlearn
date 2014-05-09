@@ -1,14 +1,7 @@
+---
 title: Ghost Blog Setup and Installation for Beginners
-link: http://learn.koding.com/developing-ghost-blog-koding/
-author: kdlearn
-description: 
-post_id: 332
-created: 2013/11/12 10:37:16
-created_gmt: 2013/11/12 18:37:16
-comment_status: closed
-post_name: developing-ghost-blog-koding
-status: publish
-post_type: post
+template: page.toffee
+---
 
 # Ghost Blog Setup and Installation for Beginners
 
