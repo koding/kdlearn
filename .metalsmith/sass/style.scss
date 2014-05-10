@@ -57,7 +57,7 @@ input {
 	width: 100%;
 	max-width: 400px;
 	@include box-sizing(border-box);
-// 	@include transition(all linear 0.2s);
+	@include transition(all linear 0.2s);
 	/* (11) display was set before: old value: block - new value inline-block */;
 	&:focus {
 		border-color: $color_9;
@@ -173,7 +173,7 @@ dd {
 	margin: 0 0 25px 0;
 }
 a {
-// 	@include transition(all ease 150ms);
+	@include transition(all ease 150ms);
 	text-decoration: none;
 	color: $color_4;
 	&:hover {
@@ -203,6 +203,7 @@ footer {
     font-size: 2em;
     font-weight: bold;
     letter-spacing: -2px;
+    cursor: pointer;
     @extend %extend_4;
 }
 nav {

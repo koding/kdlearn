@@ -9,7 +9,10 @@ $(document).ready(function () {
         $menu.toggleClass("open");
         return false;
     });
-
+    
+    $("#logo").on('click', function(){
+        window.location = "../";
+    });
 
     $(".docs-nav").each(function () {
         var $affixNav = $(this),
@@ -50,9 +53,9 @@ $(document).ready(function () {
 
         $(window).on("scroll", function (evt) {
             var top = window.scrollY,
-		    	height = $affixNav.outerHeight(),
-		    	max_bottom = $container.offset().top + $container.outerHeight(),
-		    	bottom = top + height + AFFIX_OFFSET;
+                height = $affixNav.outerHeight(),
+                max_bottom = $container.offset().top + $container.outerHeight(),
+                bottom = top + height + AFFIX_OFFSET;
 
             if (affixNavfixed) {
                 if (top <= AFFIX_TOP_LIMIT) {
