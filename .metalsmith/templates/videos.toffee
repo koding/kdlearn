@@ -2,15 +2,14 @@
 #{partial 'header.toffee'}
 <section>
     <div class="container">
-        #{partial 'sidebar.toffee'}
         <div class="docs-content">
             <ul>
                 {#
                 for video in paginate.files
                   {:
                   <li>
-                    <!-- This needs to be embed html, so the video plays-->
-                    <a href="#{print video.videoUrl}">#{print video.videoUrl}</a>
+                    <h3>#{print video.title}</h3>
+                    <iframe width="300" height="169" src="#{print video.videoUrl}?rel=0&controls=0&showinfo=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
                   </li>
                   :}
                 #}

@@ -336,11 +336,17 @@ section {
 }
 .docs-nav + .docs-content {
 	padding-left: 310px;
+	min-height: 500px;
 	h1 {
 	    color: $color_0;
 	    float: none;
 	}
 }
+
+//--------------------------
+
+//--------------------------
+
 @media only screen and (min-width: 400px) { }
 @media only screen and (min-width: 600px) { }
 @media only screen and (min-width: 680px) {
