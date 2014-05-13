@@ -2,8 +2,8 @@
 #{partial 'header.toffee'}
 <section>
     <div class="container">
-        #{partial 'sidebar.toffee'}
         <div class="docs-content">
+        <h2>Let us guide you!</h2>
           <ul>
               {#
               for guide in paginate.files
