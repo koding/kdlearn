@@ -36,6 +36,12 @@ $color_10: #f5f5f5;
 	font-family: "Ubuntu", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: 300;
 }
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -60,7 +66,7 @@ input {
 	@include transition(all linear 0.2s);
 	/* (11) display was set before: old value: block - new value inline-block */;
 	&:focus {
-		border-color: $color_9;
+// 		border-color: $color_9;
 		outline: 0;
 	}
 }
@@ -344,7 +350,23 @@ section {
 }
 
 //--------------------------
-
+.search-box {
+    #search {
+        max-width: 100%;
+        padding: 20px;
+    }
+    #search-icon {
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        top: 14px;
+        right: 35px;
+        font-size: 28px;
+        line-height: 28px;
+        text-align: center;
+        cursor: pointer;
+    }
+}
 //--------------------------
 
 @media only screen and (min-width: 400px) { }

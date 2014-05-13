@@ -3,20 +3,12 @@
 <section>
     <div class="container">
         <div class="docs-content">
-            <script>
-              (function() {
-                var cx = '012474925188306380495:fa6ireh1yme';
-                var gcse = document.createElement('script');
-                gcse.type = 'text/javascript';
-                gcse.async = true;
-                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-                    '//www.google.com/cse/cse.js?cx=' + cx;
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(gcse, s);
-              })();
-            </script>
-            <gcse:search></gcse:search>
-
+            
+            <div class="search-box">
+                <input type="search" id="search" value="" placeholder="Looking for something?">
+                <span id="search-icon" class="fontawesome-search">
+            </div>
+            
             #{print contents}
         </div>
     </div>
