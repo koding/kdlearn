@@ -4,9 +4,27 @@
     <div class="container">
         <div class="docs-content">
             
+            <div class="main-icons">
+                <div id="icon-1" class="icons">
+                    <span class="fa fa-compass"></span>
+                    <h2>Find</h2>
+                    <p>Awesome tutorials and guides.</p>
+                </div>
+                <div id="icon-2" class="icons">
+                    <span class="fa fa-question"></span>
+                    <h2>Question</h2>
+                    <p>And find the answer you're looking for.</p>
+                </div>
+                <div id="icon-3" class="icons">
+                    <span class="fa fa-pencil"></span>
+                    <h2>Contribute</h2>
+                    <p>And help the community that helped you.</p>
+                </div>
+            </div>
+            
             <div class="search-box">
                 <input type="search" id="search" value="" placeholder="Looking for something?">
-                <span id="search-icon" class="fontawesome-search">
+                <span id="search-icon" class="fa fa-search">
             </div>
             
             #{print contents}

@@ -37,11 +37,6 @@ $color_10: #f5f5f5;
 	font-weight: 300;
 }
 
-/* fontawesome */
-[class*="fontawesome-"]:before {
-  font-family: 'FontAwesome', sans-serif;
-}
-
 body {
 	margin: 0;
 	padding: 0;
@@ -350,7 +345,27 @@ section {
 }
 
 //--------------------------
+.main-icons {
+    margin-bottom: 100px;
+    .icons {
+        display: inline-block;
+        width: 33%;
+        text-align: center;
+        span {
+            font-size: 5em;
+            padding-bottom: 30px;
+        }
+        h2 {
+            margin: 0;
+        }
+        p {
+            width: 205px;
+            margin: 0 auto;
+        }
+    }
+}
 .search-box {
+    position: relative;
     #search {
         max-width: 100%;
         padding: 20px;
@@ -365,6 +380,26 @@ section {
         line-height: 28px;
         text-align: center;
         cursor: pointer;
+    }
+}
+#page-faq {
+    ol {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        li {
+            border-bottom: 1px solid $color_3;
+            padding: 10px;
+            &:hover {
+    			background: $color_2;
+    		}
+            a {
+                font-size: 1.4em;
+                text-decoration: none;
+                text-transform: capitalize;
+                color: $color_0;
+            }
+        }
     }
 }
 //--------------------------
