@@ -34,8 +34,10 @@
                   for guide in paginate.files
                     {:
                     <li>
-                      <a href="/#{guide.file[...-5]}">#{print guide.title}</a>
-                      <button>Read more</button>
+                      <a href="/#{guide.file[...-5]}" class="title">#{print guide.title}</a>
+                      <div class="meta">
+                        by <span class="author">#{print guide.author}</span> &bull; on <span class="date">#{print guide.author}</span>
+                      </div>
                     </li>
                     :}
                   #}

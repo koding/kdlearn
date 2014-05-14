@@ -2,14 +2,17 @@
 #{partial 'header.toffee'}
 <section>
     <div class="container">
-        <div class="docs-content">
+        <div class="docs-content" id="page-guides">
         <h2>Let us guide you!</h2>
           <ul>
               {#
               for guide in paginate.files
                 {:
                 <li>
-                  <a href="/#{guide.file[...-5]}">#{print guide.title}</a>
+                  <a href="/#{guide.file[...-5]}" class="title">#{print guide.title}</a>
+                  <div class="meta">
+                    by <span class="author">#{print guide.author}</span> &bull; on <span class="date">#{print guide.author}</span>
+                  </div>
                 </li>
                 :}
               #}

@@ -11,7 +11,7 @@ $(document).ready(function () {
     });
     
     $("#logo").on('click', function(){
-        window.location = "../";
+        window.location = window.location.origin;
     });
 
     $(".docs-nav").each(function () {

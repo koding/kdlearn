@@ -383,41 +383,31 @@ section {
         cursor: pointer;
     }
 }
+#page-faq,
+#page-guides,
 .latest-guides {
-    h3 {
-        
-    }
-    ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        li {
-            display: inline-block;
-            width: 32.8%;
-            height: 200px;
-            text-align: center;
-            a {
-                
-            }
-        }
-    }
-}
-#page-faq {
     ul {
         list-style-type: none;
         padding: 0;
         margin: 0;
         li {
             border-bottom: 1px solid $color_3;
-            padding: 10px;
+            padding: 10px 10px 30px 10px;
             &:hover {
     			background: $color_2;
     		}
             a {
-                font-size: 1.4em;
                 text-decoration: none;
                 text-transform: capitalize;
                 color: $color_0;
+            }
+            .meta {
+                font-style: italic;
+                font-size: 12px;
+                .author,
+                .date {
+                    font-weight: bold;
+                }
             }
         }
     }
