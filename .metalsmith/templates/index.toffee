@@ -27,7 +27,20 @@
                 <span id="search-icon" class="fa fa-search">
             </div>
             
-            #{print contents}
+            <div class="latest-guides">
+                <h3>Checkout the latest guides</h3>
+                <ul>
+                  {#
+                  for guide in paginate.files
+                    {:
+                    <li>
+                      <a href="/#{guide.file[...-5]}">#{print guide.title}</a>
+                      <button>Read more</button>
+                    </li>
+                    :}
+                  #}
+                </ul>
+            </div>
         </div>
     </div>
 </section>

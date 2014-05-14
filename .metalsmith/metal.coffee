@@ -27,12 +27,19 @@ module.exports = build = (callback=->) ->
     .options remove: false
     .use markdown()
     .use collections
+      index:
+        pattern: 'guides/*.html'
       faq:
         pattern: 'faq/*.html'
         sortBy: 'importance'
       video: {}
       guide: 
         pattern: 'guides/*.html'
+    .use paginate
+      collection: 'index'
+      limit: 6
+      output: ''
+      metadata: template: 'index.toffee'
     .use paginate
       collection: 'faq'
       limit: 10

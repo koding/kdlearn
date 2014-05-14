@@ -366,6 +366,7 @@ section {
 }
 .search-box {
     position: relative;
+    margin-bottom: 100px;
     #search {
         max-width: 100%;
         padding: 20px;
@@ -380,6 +381,26 @@ section {
         line-height: 28px;
         text-align: center;
         cursor: pointer;
+    }
+}
+.latest-guides {
+    h3 {
+        
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        li {
+            display: inline-block;
+            border: 1px solid $color_3;
+            width: 32.8%;
+            height: 200px;
+            text-align: center;
+            a {
+                
+            }
+        }
     }
 }
 #page-faq {
