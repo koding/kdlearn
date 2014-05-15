@@ -3,7 +3,7 @@
     <h1 id="logo">Koding</h1>
     <div id="menu">
       <ul class="toplinks">
-        <li><a href="/getting-started">Getting Started</a></li>
+        <li><a href="/guides/getting-started">Getting Started</a></li>
         <li><a href="/faq">Common Questions</a></li>
         <li><a href="/guides">Guides</a></li>
         <li><a href="/videos">Videos</a></li>
