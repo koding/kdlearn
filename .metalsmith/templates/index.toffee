@@ -27,21 +27,41 @@
                 <span id="search-icon" class="fa fa-search">
             </div>
             
-            <div class="latest-guides">
-                <h3>Checkout these latest guides</h3>
-                <ul>
-                  {#
-                  for guide in paginate.files
-                    {:
-                    <li>
-                      <a href="/#{guide.file[...-5]}" class="title">#{print guide.title}</a>
-                      <div class="meta">
-                        by <span class="author">#{print guide.author}</span> &bull; on <span class="date">#{print guide.date}</span>
-                      </div>
-                    </li>
-                    :}
-                  #}
-                </ul>
+            <div class="latest-content">
+                <div class="latest-guides">
+                    <h3>Latest guides</h3>
+                    <ul>
+                      {#
+                      for guide in paginate.files
+                        {:
+                        <li>
+                          <a href="/#{guide.file[...-5]}" class="title">#{print guide.title}</a>
+                          <div class="meta">
+                            by <span class="author">#{print guide.author}</span> &bull; on <span class="date">#{print guide.date}</span>
+                          </div>
+                        </li>
+                        :}
+                      #}
+                    </ul>
+                </div>
+                
+                <div class="latest-videos">
+                    <h3>Latest videos</h3>
+                    <ul>
+                        <li>
+                            <span class="title">#{print video.title}</span>
+                            <iframe src="//www.youtube.com/embed/dQw4w9WgXcQ?rel=0&controls=0&showinfo=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
+                        </li>
+                        <li>
+                            <span class="title">#{print video.title}</span>
+                            <iframe src="//www.youtube.com/embed/dQw4w9WgXcQ?rel=0&controls=0&showinfo=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
+                        </li>
+                        <li>
+                            <span class="title">#{print video.title}</span>
+                            <iframe src="//www.youtube.com/embed/dQw4w9WgXcQ?rel=0&controls=0&showinfo=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
