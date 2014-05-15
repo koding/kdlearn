@@ -1,6 +1,8 @@
 ---
 title: Bootstrap 3 setup for Beginners
 importance: 5
+author: Koding Community
+date: 2013-11-30
 template: page.toffee
 videoUrl: https://www.youtube.com/watch?v=knjX59beV-g
 ---

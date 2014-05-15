@@ -1,5 +1,7 @@
 ---
 title: Firebase setup and usage for beginners
+author: Koding Community
+date: 2013-11-30
 template: page.toffee
 videoUrl: https://www.youtube.com/watch?v=za6mRxKuUig
 ---

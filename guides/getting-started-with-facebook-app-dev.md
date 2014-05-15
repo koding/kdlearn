@@ -1,5 +1,7 @@
 ---
 title: Getting started with Facebook Application Development
+author: Koding Community
+date: 2013-11-30
 template: page.toffee
 ---
 
