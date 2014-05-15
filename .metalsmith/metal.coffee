@@ -39,7 +39,7 @@ module.exports = build = (callback=->) ->
         pattern: 'guides/*.html'
     .use paginate
       collection: 'index'
-      limit: 6
+      limit: 5
       output: ''
       metadata: template: 'index.toffee'
     .use paginate

@@ -384,6 +384,7 @@ section {
     }
 }
 .latest-content {
+    margin-bottom: 100px;
     .latest-guides,
     .latest-videos {
         display: inline-block;
@@ -411,7 +412,6 @@ section {
 #page-guides,
 .latest-guides,
 .latest-videos {
-    margin-bottom: 100px;
     ul {
         list-style-type: none;
         padding: 0;
