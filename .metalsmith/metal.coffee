@@ -3,14 +3,15 @@
 #
 # Our metalsmith build code.
 #
-path        = require 'path'
-metalsmith  = require 'metalsmith'
-collections = require 'metalsmith-collections'
-markdown    = require 'metalsmith-markdown'
-permalinks  = require 'metalsmith-permalinks'
-templates   = require 'metalsmith-templates'
-paginate    = require './plugins/paginate'
-moment      = require './plugins/moment'
+path         = require 'path'
+metalsmith   = require 'metalsmith'
+collections  = require 'metalsmith-collections'
+markdown     = require 'metalsmith-markdown'
+permalinks   = require 'metalsmith-permalinks'
+templates    = require 'metalsmith-templates'
+paginate     = require './plugins/paginate'
+moment       = require './plugins/moment'
+videoScraper = require './plugins/video-scraper.coffee'
 
 
 
@@ -37,6 +38,9 @@ module.exports = build = (callback=->) ->
       video: {}
       guide: 
         pattern: 'guides/*.html'
+    .use videoScraper
+      collection: 'videos'
+      key: 'videoUrl'
     .use paginate
       collection: 'index'
       limit: 6
