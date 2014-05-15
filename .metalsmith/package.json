@@ -12,7 +12,8 @@
     "toffee": "^0.1.8",
     "connect": "^2.14.5",
     "metalsmith-permalinks": "^0.3.0",
-    "clone": "^0.1.15"
+    "clone": "^0.1.15",
+    "moment": "^2.6.0"
   },
   "dependencies": {}
 }
