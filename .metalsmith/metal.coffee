@@ -10,6 +10,7 @@ markdown    = require 'metalsmith-markdown'
 permalinks  = require 'metalsmith-permalinks'
 templates   = require 'metalsmith-templates'
 paginate    = require './plugins/paginate'
+moment      = require './plugins/moment'
 
 
 
@@ -26,6 +27,7 @@ module.exports = build = (callback=->) ->
     .ignore ['.git', '.metalsmith', 'legacy']
     .options remove: false
     .use markdown()
+    .use moment()
     .use collections
       index:
         pattern: 'guides/*.html'
