@@ -1,14 +1,9 @@
+---
 title: Installing and Using KDApps
-link: http://learn.koding.com/installing-and-using-kdapps/
-author: lee
-description: 
-post_id: 429
-created: 2013/12/02 22:39:16
-created_gmt: 2013/12/02 22:39:16
-comment_status: closed
-post_name: installing-and-using-kdapps
-status: publish
-post_type: post
+author: Koding Community
+date: 2013-11-30
+template: page.toffee
+---
 
 # Installing and Using KDApps
 

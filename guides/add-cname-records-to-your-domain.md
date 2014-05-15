@@ -1,14 +1,9 @@
+---
 title: Add CNAME records to your domain
-link: http://learn.koding.com/add-cname-records-to-your-domain/
-author: kdlearn
-description: 
-post_id: 522
-created: 2014/02/27 08:01:32
-created_gmt: 2014/02/27 08:01:32
-comment_status: closed
-post_name: add-cname-records-to-your-domain
-status: publish
-post_type: post
+author: Koding Community
+date: 2013-11-30
+template: page.toffee
+---
 
 # Add CNAME records to your domain
 

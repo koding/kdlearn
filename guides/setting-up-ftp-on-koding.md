@@ -1,14 +1,9 @@
+---
 title: Setting up FTP on Koding
-link: http://learn.koding.com/setting-up-ftp-on-koding/
-author: lee
-description: 
-post_id: 383
-created: 2013/11/30 00:42:06
-created_gmt: 2013/11/30 00:42:06
-comment_status: closed
-post_name: setting-up-ftp-on-koding
-status: publish
-post_type: post
+author: Koding Community
+date: 2013-11-30
+template: page.toffee
+---
 
 # Setting up FTP on Koding
 

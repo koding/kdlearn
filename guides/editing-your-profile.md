@@ -1,14 +1,9 @@
+---
 title: Editing your Profile
-link: http://learn.koding.com/editing-your-profile/
-author: lee
-description: 
-post_id: 430
-created: 2013/12/03 00:25:56
-created_gmt: 2013/12/03 00:25:56
-comment_status: closed
-post_name: editing-your-profile
-status: publish
-post_type: post
+author: Koding Community
+date: 2013-11-30
+template: page.toffee
+---
 
 # Editing your Profile
 

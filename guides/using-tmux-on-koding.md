@@ -1,14 +1,9 @@
+---
 title: Using Tmux on Koding
-link: http://learn.koding.com/using-tmux-on-koding/
-author: lee
-description: 
-post_id: 126
-created: 2013/11/30 00:33:43
-created_gmt: 2013/11/30 00:33:43
-comment_status: closed
-post_name: using-tmux-on-koding
-status: publish
-post_type: post
+author: Koding Community
+date: 2013-11-30
+template: page.toffee
+---
 
 # Using Tmux on Koding
 

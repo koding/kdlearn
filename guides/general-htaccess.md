@@ -1,22 +1,15 @@
+---
 title: General .htaccess
-link: http://learn.koding.com/general-htaccess/
-author: lee
-description: 
-post_id: 386
-created: 2013/11/30 01:42:26
-created_gmt: 2013/11/30 01:42:26
-comment_status: closed
-post_name: general-htaccess
-status: publish
-post_type: post
+author: Koding Community
+date: 2013-11-30
+template: page.toffee
+---
 
 # General .htaccess
 
 Htaccess is a pretty well understood and standard feature among web hosts. Koding's .htaccess is no different than any other, so the plethora of tutorials and information out there will work perfectly fine on Koding.
 
 With that said, there are a couple Apache mods that people often expect to be enabled, but aren't by default on Koding. This guide will cover those, and any other Koding-specific htaccess issues.
-
-**Super Disclaimer:** I am not very familiar with htaccess, so please feel free to [correct me](https://github.com/koding/docs/issues/new) on any inaccuracies! Thanks! _~leeolayvar_
 
 ## Video
 

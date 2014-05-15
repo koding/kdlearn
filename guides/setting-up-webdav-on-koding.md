@@ -1,14 +1,9 @@
+---
 title: Setting up WebDav on Koding
-link: http://learn.koding.com/setting-up-webdav-on-koding/
-author: stefan
-description: 
-post_id: 506
-created: 2014/01/16 21:10:05
-created_gmt: 2014/01/16 21:10:05
-comment_status: closed
-post_name: setting-up-webdav-on-koding
-status: publish
-post_type: post
+author: Koding Community
+date: 2013-11-30
+template: page.toffee
+---
 
 # Setting up WebDav on Koding
 

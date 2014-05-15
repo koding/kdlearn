@@ -1,14 +1,9 @@
+---
 title: Get Help with Teamwork
-link: http://learn.koding.com/get-help-with-teamwork/
-author: lee
-description: 
-post_id: 462
-created: 2013/12/03 00:59:30
-created_gmt: 2013/12/03 00:59:30
-comment_status: closed
-post_name: get-help-with-teamwork
-status: publish
-post_type: post
+author: Koding Community
+date: 2013-11-30
+template: page.toffee
+---
 
 # Get Help with Teamwork
 

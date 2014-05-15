@@ -1,14 +1,9 @@
+---
 title: Development Environments
-link: http://learn.koding.com/development-environments/
-author: lee
-description: 
-post_id: 428
-created: 2013/12/02 22:38:25
-created_gmt: 2013/12/02 22:38:25
-comment_status: closed
-post_name: development-environments
-status: publish
-post_type: post
+author: Koding Community
+date: 2013-11-30
+template: page.toffee
+---
 
 # Development Environments
 

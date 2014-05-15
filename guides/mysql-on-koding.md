@@ -1,14 +1,9 @@
+---
 title: MySQL on Koding
-link: http://learn.koding.com/mysql-on-koding/
-author: lee
-description: 
-post_id: 531
-created: 2014/04/03 18:28:04
-created_gmt: 2014/04/03 18:28:04
-comment_status: open
-post_name: mysql-on-koding
-status: publish
-post_type: post
+author: Koding Community
+date: 2013-11-30
+template: page.toffee
+---
 
 # MySQL on Koding
 

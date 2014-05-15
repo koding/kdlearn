@@ -1,14 +1,9 @@
+---
 title: Koding Subdomains and VHosts
-link: http://learn.koding.com/koding-subdomains-and-vhosts/
-author: lee
-description: 
-post_id: 408
-created: 2013/11/30 02:08:22
-created_gmt: 2013/11/30 02:08:22
-comment_status: closed
-post_name: koding-subdomains-and-vhosts
-status: publish
-post_type: post
+author: Koding Community
+date: 2013-11-30
+template: page.toffee
+---
 
 # Koding Subdomains and VHosts
 

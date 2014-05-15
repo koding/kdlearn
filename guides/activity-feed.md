@@ -1,14 +1,9 @@
+---
 title: Activity Feed
-link: http://learn.koding.com/activity-feed/
-author: lee
-description: 
-post_id: 417
-created: 2013/12/02 21:58:05
-created_gmt: 2013/12/02 21:58:05
-comment_status: closed
-post_name: activity-feed
-status: publish
-post_type: post
+author: Koding Community
+date: 2013-11-30
+template: page.toffee
+---
 
 # Activity Feed
 

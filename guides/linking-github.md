@@ -1,14 +1,9 @@
+---
 title: Linking Github
-link: http://learn.koding.com/linking-github/
-author: lee
-description: 
-post_id: 405
-created: 2013/11/30 02:06:41
-created_gmt: 2013/11/30 02:06:41
-comment_status: closed
-post_name: linking-github
-status: publish
-post_type: post
+author: Koding Community
+date: 2013-11-30
+template: page.toffee
+---
 
 # Linking Github
 

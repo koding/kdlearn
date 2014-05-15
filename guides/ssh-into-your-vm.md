@@ -1,14 +1,9 @@
+---
 title: SSH into your Koding VM
-link: http://learn.koding.com/ssh-into-your-koding-vm/
-author: lee
-description: 
-post_id: 382
-created: 2013/11/30 01:48:03
-created_gmt: 2013/11/30 01:48:03
-comment_status: closed
-post_name: ssh-into-your-koding-vm
-status: publish
-post_type: post
+author: Koding Community
+date: 2013-11-30
+template: page.toffee
+---
 
 # SSH into your Koding VM
 

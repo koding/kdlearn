@@ -1,14 +1,9 @@
+---
 title: Terminal and Custom Ports
-link: http://learn.koding.com/terminal-and-custom-ports/
-author: lee
-description: 
-post_id: 433
-created: 2013/12/02 23:41:29
-created_gmt: 2013/12/02 23:41:29
-comment_status: closed
-post_name: terminal-and-custom-ports
-status: publish
-post_type: post
+author: Koding Community
+date: 2013-11-30
+template: page.toffee
+---
 
 # Terminal and Custom Ports
 

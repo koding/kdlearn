@@ -1,22 +1,13 @@
+---
 title: Koding Apps Overview
-link: http://learn.koding.com/koding-apps-overview/
-author: lee
-description: 
-post_id: 412
-created: 2013/12/02 18:20:16
-created_gmt: 2013/12/02 18:20:16
-comment_status: closed
-post_name: koding-apps-overview
-status: publish
-post_type: post
+author: Koding Community
+date: 2013-11-30
+template: page.toffee
+---
 
 # Koding Apps Overview
 
 This guide goes over some useful details regarding Koding Apps. What they are, how to use them, and how to fix a broken install. We will not go over App Creation at this time, but there will be a guide for that in the future!
-
-## Video
-
-_(None yet, coming soon!)_
 
 ## What are Koding Apps?
 

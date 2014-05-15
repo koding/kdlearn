@@ -1,14 +1,9 @@
+---
 title: Koding App Submission
-link: http://learn.koding.com/koding-app-submission/
-author: lee
-description: 
-post_id: 413
-created: 2013/12/02 18:20:49
-created_gmt: 2013/12/02 18:20:49
-comment_status: closed
-post_name: koding-app-submission
-status: publish
-post_type: post
+author: Koding Community
+date: 2013-11-30
+template: page.toffee
+---
 
 # Koding App Submission
 

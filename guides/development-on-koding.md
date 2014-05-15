@@ -1,14 +1,9 @@
+---
 title: Development on Koding
-link: http://learn.koding.com/development-on-koding/
-author: lee
-description: 
-post_id: 422
-created: 2013/12/02 22:37:59
-created_gmt: 2013/12/02 22:37:59
-comment_status: closed
-post_name: development-on-koding
-status: publish
-post_type: post
+author: Koding Community
+date: 2013-11-30
+template: page.toffee
+---
 
 # Development on Koding
 
