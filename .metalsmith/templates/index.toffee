@@ -32,7 +32,7 @@
                     <h3>Latest guides</h3>
                     <ul>
                       {#
-                      for guide in collections.guide
+                      for guide in collections.guide[...6]
                         {:
                         <li>
                           <a href="/#{guide.file[...-5]}" class="title">#{print guide.title}</a>
