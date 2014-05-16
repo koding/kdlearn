@@ -38,7 +38,7 @@ module.exports = build = (callback=->) ->
         pattern: 'guides/*.html'
     .use videoScraper
       collection: 'video'
-      key: 'videoUrl'
+      key: 'videoId'
     .use newPage
       output: 'index'
       metadata: template: 'index.toffee'

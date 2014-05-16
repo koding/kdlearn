@@ -53,7 +53,7 @@
                       {:
                         <li>
                             <span class="title">#{print video.title}</span>
-                            <iframe src="//www.youtube.com/embed/#{videoId}?rel=0&controls=0&showinfo=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
+                            <iframe src="//www.youtube.com/embed/#{video.videoId}?rel=0&controls=0&showinfo=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
                         </li>
                       :}
                     #}
