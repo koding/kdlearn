@@ -5,12 +5,12 @@
         <div class="docs-content">
             <ul>
                 {#
-                for video in paginate.files
+                for video in collections.video[...4]
                   {:
-                  <li>
-                    <h3>#{print video.title}</h3>
-                    <iframe width="300" height="169" src="#{print video.videoUrl}?rel=0&controls=0&showinfo=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
-                  </li>
+                    <li>
+                        <span class="title">#{print video.title}</span>
+                        <a href="//www.youtube.com/v/#{video.videoId}?autoplay=1&rel=0&controls=0&showinfo=0&modestbranding=1" class="youtube fancybox.iframe"><img src="http://img.youtube.com/vi/#{video.videoId}/default.jpg" /></a>
+                    </li>
                   :}
                 #}
             </ul>
