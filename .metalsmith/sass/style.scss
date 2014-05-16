@@ -383,9 +383,35 @@ section {
         cursor: pointer;
     }
 }
+.latest-content {
+    margin-bottom: 100px;
+    .latest-guides,
+    .latest-videos {
+        display: inline-block;
+        width: 49%;
+        vertical-align: top;
+    }
+    .latest-guides {
+        margin-right: 1.3%;
+    }
+    .latest-videos {
+        ul {
+            li {
+                border: 0;
+                display: inline-block;
+                width: 45%;
+                iframe {
+                    width: 300px;
+                    height: 169px;
+                }
+            }
+        }
+    }
+}
 #page-faq,
 #page-guides,
-.latest-guides {
+.latest-guides,
+.latest-videos {
     ul {
         list-style-type: none;
         padding: 0;
@@ -396,6 +422,9 @@ section {
             &:hover {
     			background: $color_2;
     		}
+    		.title {
+                display: block;
+            }
             a {
                 text-decoration: none;
                 text-transform: capitalize;
