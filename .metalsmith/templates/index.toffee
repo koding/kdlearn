@@ -31,7 +31,7 @@
                 <h3>Checkout these latest guides</h3>
                 <ul>
                   {#
-                  for guide in paginate.files
+                  for guide in collections.guide[...6]
                     {:
                     <li>
                       <a href="/#{guide.file[...-5]}" class="title">#{print guide.title}</a>
@@ -43,6 +43,14 @@
                   #}
                 </ul>
             </div>
+<ul>
+{#
+for video in collections.video[...10]
+  {:
+    <li>#{video.videoUrl}</li>
+  :}
+#}
+</ul>
         </div>
     </div>
 </section>

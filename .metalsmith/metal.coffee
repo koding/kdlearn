@@ -11,7 +11,8 @@ permalinks   = require 'metalsmith-permalinks'
 templates    = require 'metalsmith-templates'
 paginate     = require './plugins/paginate'
 moment       = require './plugins/moment'
-videoScraper = require './plugins/video-scraper.coffee'
+newPage      = require './plugins/new-page'
+videoScraper = require './plugins/video-scraper'
 
 
 
@@ -30,21 +31,16 @@ module.exports = build = (callback=->) ->
     .use markdown()
     .use moment()
     .use collections
-      index:
-        pattern: 'guides/*.html'
       faq:
         pattern: 'faq/*.html'
         sortBy: 'importance'
-      video: {}
       guide: 
         pattern: 'guides/*.html'
     .use videoScraper
-      collection: 'videos'
+      collection: 'video'
       key: 'videoUrl'
-    .use paginate
-      collection: 'index'
-      limit: 6
-      output: ''
+    .use newPage
+      output: 'index'
       metadata: template: 'index.toffee'
     .use paginate
       collection: 'faq'
