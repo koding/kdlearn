@@ -23,7 +23,7 @@
             </div>
             
             <div class="search-box">
-                <input type="search" id="search" value="" placeholder="Looking for something?">
+                <input type="text" id="search" value="" placeholder="Looking for something?">
                 <span id="search-icon" class="fa fa-search">
             </div>
 
