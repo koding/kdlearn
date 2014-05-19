@@ -11,7 +11,7 @@
                 <li>
                   <a href="/#{guide.file[...-5]}" class="title">#{print guide.title}</a>
                   <div class="meta">
-                    by <span class="author">#{print guide.author}</span> &bull; on <span class="date">#{print guide.date}</span>
+                    by <span class="author">#{print guide.author}</span> &bull; about <span class="date">#{print moment(guide.date).fromNow()}</span>
                   </div>
                 </li>
                 :}

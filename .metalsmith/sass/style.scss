@@ -390,6 +390,34 @@ section {
         display: inline-block;
         width: 49%;
         vertical-align: top;
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            li {
+                border-bottom: 1px solid $color_3;
+                padding: 10px 10px 30px 10px;
+                &:hover {
+        			background: $color_2;
+        		}
+        		.title {
+                    display: block;
+                }
+                a {
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    color: $color_0;
+                }
+                .meta {
+                    font-style: italic;
+                    font-size: 12px;
+                    .author,
+                    .date {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
     }
     .latest-guides {
         margin-right: 1.3%;
@@ -400,18 +428,37 @@ section {
                 border: 0;
                 display: inline-block;
                 width: 45%;
+                &:hover {
+        			background: none;
+        		}
+                .title {
+                    text-align: center;
+                }
+                a {
+                    position: relative;
+                    display: block;
+                }
                 img {
                     width: 300px;
                     height: 169px;
+                }
+                .youtube-play {
+                    position: absolute;
+                    right: 35%;
+                    top: 25%;
+                    font-size: 4em;
+                    color: $color_4;
+                    @include transition(all ease 150ms);
+                    &:hover {
+                        color: $color_0;
+                    }
                 }
             }
         }
     }
 }
 #page-faq,
-#page-guides,
-.latest-guides,
-.latest-videos {
+#page-guides {
     ul {
         list-style-type: none;
         padding: 0;
@@ -438,6 +485,13 @@ section {
                     font-weight: bold;
                 }
             }
+        }
+    }
+}
+#page-faq {
+    ul {
+        li {
+            padding: 10px;
         }
     }
 }
