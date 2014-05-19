@@ -314,6 +314,7 @@ section {
 		padding: 0 20px;
 		text-decoration: none;
 		border-right: 2px solid transparent;
+		text-transform: capitalize;
 		&:hover {
 			background: $color_2;
 		}
