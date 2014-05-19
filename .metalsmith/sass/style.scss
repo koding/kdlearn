@@ -369,7 +369,8 @@ section {
     margin-bottom: 100px;
     #search {
         max-width: 100%;
-        padding: 20px;
+        padding: 20px !important;
+        @include border-radius(0);
     }
     #search-icon {
         width: 28px;
