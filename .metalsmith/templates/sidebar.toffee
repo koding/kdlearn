@@ -1,7 +1,22 @@
 <ul class="docs-nav" id="menu-left">
     <li><strong>Common questions</strong></li>
-    
+    {#
+    for faq in collections.faq[...5]
+      {:
+        <li>
+          <a href="/#{faq.file[...-5]}" class="title">#{print faq.title}</a>
+        </li>
+      :}
+    #}
+
     <li class="separator"></li>
     <li><strong>Guides</strong></li>
-    
+    {#
+    for guide in collections.guide[...5]
+      {:
+        <li>
+          <a href="/#{guide.file[...-5]}" class="title">#{print guide.title}</a>
+        </li>
+      :}
+    #}
 </ul>
