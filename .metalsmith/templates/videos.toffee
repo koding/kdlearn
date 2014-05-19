@@ -1,7 +1,7 @@
 #{partial 'head.toffee'}
 #{partial 'header.toffee'}
 <section>
-    <div class="container">
+    <div class="container listing">
         <div class="docs-content" id="page-videos">
         <h2>Latest videos</h2>
             <ul>

@@ -383,10 +383,12 @@ section {
         cursor: pointer;
     }
 }
-.latest-content {
+.latest-content,
+.listing {
     margin-bottom: 100px;
     .latest-guides,
-    .latest-videos {
+    .latest-videos,
+    #page-videos {
         display: inline-block;
         width: 49%;
         vertical-align: top;
@@ -422,7 +424,8 @@ section {
     .latest-guides {
         margin-right: 1.3%;
     }
-    .latest-videos {
+    .latest-videos,
+    #page-videos {
         ul {
             li {
                 border: 0;
