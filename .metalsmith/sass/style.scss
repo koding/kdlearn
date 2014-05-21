@@ -514,6 +514,28 @@ section {
         }
     }
 }
+.video {
+    margin-bottom: 50px;
+    a {
+        @extend %extend_8;
+        position: relative;
+        display: block;
+    }
+    img {
+        width: 460px;
+        height: 340px;
+        margin: 0 auto;
+        display: block;
+    }
+    .youtube-play {
+        top: 40%;
+        right: 45%;
+        @extend %extend_9;
+        &:hover {
+            color: $color_0;
+        }
+    }
+}
 #page-faq,
 #page-guides {
     ul {
