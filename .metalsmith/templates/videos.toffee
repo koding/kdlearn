@@ -6,7 +6,7 @@
         <h2>Latest videos</h2>
             <ul>
                 {#
-                for video in collections.video[...4]
+                for video in collections.video
                   {:
                     <li>
                         <span class="title">#{print video.title}</span>
