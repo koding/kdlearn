@@ -8,7 +8,7 @@
             if videoId?
               {:
                 <div class="video">
-                    <a href="//www.youtube.com/v/#{videoId}?autoplay=1&rel=0&controls=0&showinfo=0&modestbranding=1" class="youtube fancybox.iframe">
+                    <a href="//www.youtube.com/v/#{videoId}?autoplay=1&rel=0&controls=0&showinfo=0&modestbranding=1" title="#{print video.title}" class="youtube fancybox.iframe">
                         <img src="http://img.youtube.com/vi/#{videoId}/hqdefault.jpg" />
                         <span class="youtube-play fa fa-play-circle"></span>
                     </a>

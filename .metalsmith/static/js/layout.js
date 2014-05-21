@@ -93,6 +93,11 @@ $(document).ready(function () {
 		autoSize	: false,
 		closeClick	: false,
 		openEffect	: 'elastic',
-		closeEffect	: 'none'
+		closeEffect	: 'none',
+		helpers : {
+            title: {
+                type: 'inside'
+            }
+        }
 	});
 });
