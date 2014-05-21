@@ -4,6 +4,15 @@
     <div class="container">
         #{partial 'sidebar.toffee'}
         <div class="docs-content">
+            {#
+            if videoId?
+              {:
+                <a href="//www.youtube.com/v/#{videoId}?autoplay=1&rel=0&controls=0&showinfo=0&modestbranding=1" class="youtube fancybox.iframe">
+                    <img src="http://img.youtube.com/vi/#{videoId}/hqdefault.jpg" />
+                    <span class="youtube-play fa fa-play-circle"></span>
+                </a>
+              :}
+            #}
             #{print contents}
         </div>
     </div>
