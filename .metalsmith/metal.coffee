@@ -45,15 +45,15 @@ module.exports = build = (callback=->) ->
     .use paginate
       collection: 'faq'
       limit: 10
-      output: 'faq/index'
+      output: 'faq'
       metadata: template: 'faq.toffee'
     .use paginate
       collection: 'video'
-      output: 'videos/index'
+      output: 'videos'
       metadata: template: 'videos.toffee'
     .use paginate
       collection: 'guide'
-      output: 'guides/index'
+      output: 'guides'
       metadata: template: 'guides.toffee'
     .use permalinks()
     .use templates 'toffee'

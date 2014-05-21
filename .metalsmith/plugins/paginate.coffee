@@ -63,15 +63,15 @@ module.exports = (opts={}) ->
       page.mode     ?= '0664'
       page.name     = prettyOutput opts.output, pageIndex
       page.paginate =
-        prev: prev
+        prev: prevPage
         next: null
         total: pageCount
         current: pageIndex
         files: pageFiles
       pageName = "#{page.name}.html"
 
-      if prevPage? then prev.paginate.next = page
-      prev = page
+      if prevPage? then prevPage.paginate.next = page
+      prevPage = page
 
       if files[pageName]?
         console.warn "pageinate-deux unable to create page '#{pageName}',
