@@ -499,6 +499,9 @@ section {
                     @extend %extend_8;
                     position: relative;
                     display: block;
+                    &:hover {
+            			color: $color_4;
+            		}
                 }
                 img {
                     width: 300px;
