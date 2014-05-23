@@ -548,16 +548,18 @@ section {
         li {
             border-bottom: 1px solid $color_3;
             padding: 10px 10px 30px 10px;
-            &:hover {
-    			background: $color_2;
-    		}
     		.title {
                 display: block;
+                font-size: 1.5em;
             }
             a {
                 text-decoration: none;
                 text-transform: capitalize;
                 color: $color_0;
+                
+                &:hover {
+                    color: $color_4;
+                }
             }
             .meta {
                 font-style: italic;
@@ -569,30 +571,44 @@ section {
             }
         }
     }
+    .pagination {
+        li {
+            display: inline-block;
+            margin: 10px;
+            padding: 0;
+            border: 0;
+            cursor: pointer;
+        }
+    }
+    .excerpt {
+        font-size: 16px;
+        p {
+            width: 85%;
+            float: left;
+        }
+        .readmore {
+            float: left;
+            width: 8%;
+            text-align: center;
+            padding: 20px 0;
+            margin-left: 7%;
+            a {
+                color: $color_4;
+                font-size: 2em;
+                @include transition(all ease 150ms);
+                &:hover {
+                    padding-left: 10px;
+                }
+            }
+        }
+        overflow: hidden;
+    }
 }
 #page-faq {
     ul {
         li {
             padding: 10px;
         }
-    }
-}
-.excerpt {
-    font-size: 16px;
-
-    p {
-      margin-bottom: 0;
-    }
-
-    .readmore:before {
-      content: "...";
-    }
-    .readmore {
-      float: right;
-    }
-
-    .clear {
-      clear: both;
     }
 }
 //--------------------------

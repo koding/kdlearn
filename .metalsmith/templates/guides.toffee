@@ -5,6 +5,23 @@
         <div class="docs-content" id="page-guides">
         <h2>Let us guide you!</h2>
           <ul>
+              {#
+              for guide in paginate.files
+                {:
+                <li>
+                  <a href="/#{guide.file[...-5]}" class="title">#{print guide.title}</a>
+                  <div class="excerpt">
+                    #{print guide.excerpt}
+                    <span class="readmore"><a href="/#{guide.file[...-5]}" class="fa fa-hand-o-right"></a></span>
+                  </div>
+                  <div class="meta">
+                    by <span class="author">#{print guide.author}</span> &bull; about <span class="date">#{print moment(guide.date).fromNow()}</span>
+                  </div>
+                </li>
+                :}
+              #}
+          </ul>
+          <ul class="pagination">
           {# if paginate.prev? {:
             <li><a href="/#{paginate.prev.name}">Previous</a></li>
           :} #}
@@ -18,30 +35,6 @@
             <li><a href="/#{paginate.next.name}">Next</a></li>
           :} #}
           </ul>
-          <ul>
-              {#
-              for guide in paginate.files
-                {:
-                <li>
-                  <a href="/#{guide.file[...-5]}" class="title">#{print guide.title}</a>
-                  <div class="excerpt">
-                    #{print guide.excerpt}
-                    <a href="/#{guide.file[...-5]}"><span class="readmore">readmore</span></a>
-                    <div class="clear"></div>
-                  </div>
-                  <div class="meta">
-                    by <span class="author">#{print guide.author}</span> &bull; about <span class="date">#{print moment(guide.date).fromNow()}</span>
-                  </div>
-                </li>
-                :}
-              #}
-          </ul>
-          {# if paginate.prev? {:
-                <a href="/#{paginate.prev.name}">Previous</a>
-          :} #}
-          {# if paginate.next? {:
-                <a href="/#{paginate.next.name}">Next</a>
-          :} #}
         </div>
     </div>
 </section>
