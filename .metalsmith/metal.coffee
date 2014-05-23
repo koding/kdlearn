@@ -13,6 +13,7 @@ templates    = require 'metalsmith-templates'
 paginate     = require './plugins/paginate'
 moment       = require './plugins/moment'
 newPage      = require './plugins/new-page'
+snapshot     = require './plugins/snapshot'
 videoScraper = require './plugins/video-scraper'
 
 
@@ -45,6 +46,9 @@ module.exports = build = (callback=->) ->
     .use newPage
       output: 'index'
       metadata: template: 'index.toffee'
+    .use snapshot
+      collection: 'faq'
+      name: 'answer'
     .use paginate
       collection: 'faq'
       limit: 10

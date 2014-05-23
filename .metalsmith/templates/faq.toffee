@@ -7,11 +7,11 @@
       <ul>
       {# for faq in paginate.files {:
         <li>
-          <h3><a href="/#{faq.file[...-5]}">#{print faq.title}</a></h3>
-          <div class="excerpt">
-            #{print faq.excerpt}
-            <span class="readmore"><a href="/#{faq.file[...-5]}" class="fa fa-hand-o-right"></a></span>
-            <div class="clear"></div>
+          <h3 class="question">
+            <a href="/#{faq.file[...-5]}">#{print faq.title}</a>
+          </h3>
+          <div class="answer">
+            #{print faq.answer}
           </div>
         </li>
       :} #}
