@@ -579,10 +579,19 @@ section {
     .excerpt {
         font-size: 16px;
 
+        p {
+          margin-bottom: 0;
+        }
+
         .readmore:before {
-          content: "..."
+          content: "...";
         }
         .readmore {
+          float: right;
+        }
+
+        .clear {
+          clear: both;
         }
     }
 }

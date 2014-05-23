@@ -11,6 +11,7 @@
           <div class="excerpt">
             #{print faq.excerpt}
             <a href="/#{faq.file[...-5]}"><span class="readmore">readmore</span></a>
+            <div class="clear"></div>
           </div>
         </li>
       :} #}
