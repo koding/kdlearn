@@ -1,6 +1,7 @@
 ---
 title: What is Koding?
-importance: 2
+author: Koding Community
+date: 2013-11-30
 template: page.toffee
 ---
 
