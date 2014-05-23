@@ -36,6 +36,7 @@ module.exports = build = (callback=->) ->
         sortBy: 'importance'
       guide: 
         pattern: 'guides/*.html'
+        sortBy: 'date'
     .use videoScraper
       collection: 'video'
       key: 'videoId'
