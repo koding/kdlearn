@@ -576,6 +576,15 @@ section {
             padding: 10px;
         }
     }
+    .excerpt {
+        font-size: 16px;
+
+        .readmore:before {
+          content: "..."
+        }
+        .readmore {
+        }
+    }
 }
 //--------------------------
 

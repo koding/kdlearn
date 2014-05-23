@@ -6,6 +6,7 @@
 path         = require 'path'
 metalsmith   = require 'metalsmith'
 collections  = require 'metalsmith-collections'
+excerpts     = require 'metalsmith-excerpts'
 markdown     = require 'metalsmith-markdown'
 permalinks   = require 'metalsmith-permalinks'
 templates    = require 'metalsmith-templates'
@@ -29,6 +30,7 @@ module.exports = build = (callback=->) ->
     .ignore ['.git', '.metalsmith', 'legacy']
     .options remove: false
     .use markdown()
+    .use excerpts()
     .use moment()
     .use collections
       faq:
