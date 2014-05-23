@@ -6,7 +6,7 @@
         <h2>Latest videos</h2>
             <ul>
                 {#
-                for video in collections.video
+                for video in paginate.files
                   {:
                     <li>
                         <span class="title"><a href="../#{print video.file.slice(0, -5)}">#{print video.title}</a></span>
