@@ -22,11 +22,6 @@
                 </div>
             </div>
             
-            <div class="search-box">
-                <input type="text" id="search" value="" placeholder="Looking for something?">
-                <span id="search-icon" class="fa fa-search">
-            </div>
-
             <div class="listing">
                 <div class="latest-guides">
                     <h3>Latest guides</h3>
