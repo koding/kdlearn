@@ -579,6 +579,12 @@ section {
             cursor: pointer;
         }
     }
+    .paginate-item {
+      @include transition(all ease 150ms);
+      &:hover .readmore a {
+        padding-left: 30px;
+      }
+    }
     .excerpt {
         font-size: 16px;
         p {
@@ -594,10 +600,6 @@ section {
             a {
                 color: $color_4;
                 font-size: 2em;
-                @include transition(all ease 150ms);
-                &:hover {
-                    padding-left: 10px;
-                }
             }
         }
         overflow: hidden;

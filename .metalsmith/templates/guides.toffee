@@ -8,7 +8,7 @@
               {#
               for guide in paginate.files
                 {:
-                <li>
+                <li class="paginate-item">
                   <h3><a href="/#{guide.file[...-5]}" class="title">#{print guide.title}</a></h3>
                   <div class="excerpt">
                     #{print guide.excerpt}
