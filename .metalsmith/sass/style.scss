@@ -576,23 +576,23 @@ section {
             padding: 10px;
         }
     }
-    .excerpt {
-        font-size: 16px;
+}
+.excerpt {
+    font-size: 16px;
 
-        p {
-          margin-bottom: 0;
-        }
+    p {
+      margin-bottom: 0;
+    }
 
-        .readmore:before {
-          content: "...";
-        }
-        .readmore {
-          float: right;
-        }
+    .readmore:before {
+      content: "...";
+    }
+    .readmore {
+      float: right;
+    }
 
-        .clear {
-          clear: both;
-        }
+    .clear {
+      clear: both;
     }
 }
 //--------------------------

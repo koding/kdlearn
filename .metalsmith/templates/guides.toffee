@@ -24,6 +24,11 @@
                 {:
                 <li>
                   <a href="/#{guide.file[...-5]}" class="title">#{print guide.title}</a>
+                  <div class="excerpt">
+                    #{print guide.excerpt}
+                    <a href="/#{guide.file[...-5]}"><span class="readmore">readmore</span></a>
+                    <div class="clear"></div>
+                  </div>
                   <div class="meta">
                     by <span class="author">#{print guide.author}</span> &bull; about <span class="date">#{print moment(guide.date).fromNow()}</span>
                   </div>
