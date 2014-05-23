@@ -9,7 +9,7 @@
               for guide in paginate.files
                 {:
                 <li>
-                  <a href="/#{guide.file[...-5]}" class="title">#{print guide.title}</a>
+                  <h3><a href="/#{guide.file[...-5]}" class="title">#{print guide.title}</a></h3>
                   <div class="excerpt">
                     #{print guide.excerpt}
                     <span class="readmore"><a href="/#{guide.file[...-5]}" class="fa fa-hand-o-right"></a></span>
