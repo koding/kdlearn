@@ -4,12 +4,20 @@
     <div class="container">
         <div class="docs-content" id="page-guides">
         <h2>Let us guide you!</h2>
+          <ul>
           {# if paginate.prev? {:
-                <a href="/#{paginate.prev.name}">Previous</a>
+            <li><a href="/#{paginate.prev.name}">Previous</a></li>
+          :} #}
+          {# for page, i in paginate.pages {:
+            <li><a
+              href="/#{page.name}"
+              class="#{if paginate.current is i then 'currentPage'}"
+            >#{i}</a></li>
           :} #}
           {# if paginate.next? {:
-                <a href="/#{paginate.next.name}">Next</a>
+            <li><a href="/#{paginate.next.name}">Next</a></li>
           :} #}
+          </ul>
           <ul>
               {#
               for guide in paginate.files

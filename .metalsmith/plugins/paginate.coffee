@@ -50,6 +50,7 @@ module.exports = (opts={}) ->
     if opts.limit? and opts.limit < colCount then colCount = opts.limit
     pageCount = Math.ceil colCount / opts.perPage 
 
+    pages    = []
     prevPage = null
     for pageIndex in [0...pageCount]
       colStart = pageIndex * opts.perPage
@@ -63,12 +64,14 @@ module.exports = (opts={}) ->
       page.mode     ?= '0664'
       page.name     = prettyOutput opts.output, pageIndex
       page.paginate =
+        pages: pages
         prev: prevPage
         next: null
         total: pageCount
         current: pageIndex
         files: pageFiles
       pageName = "#{page.name}.html"
+      pages.push page
 
       if prevPage? then prevPage.paginate.next = page
       prevPage = page
