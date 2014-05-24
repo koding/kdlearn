@@ -560,7 +560,7 @@ section {
             padding: 10px 10px 30px 10px;
             @include transition(all ease 150ms);
             &:hover .readmore a {
-                padding-left: 30px;
+                padding-left: 20px;
             }
     		.title {
                 display: block;
@@ -590,6 +590,13 @@ section {
             padding: 0;
             border: 0;
             cursor: pointer;
+            a {
+                padding: 5px;
+            }
+            .currentPage {
+                background: $color_4;
+                color: $color_1;
+            }
         }
     }
     .excerpt {
