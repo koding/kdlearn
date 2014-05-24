@@ -121,9 +121,13 @@ iframe {
 header {
 	width: 100%;
 	overflow: hidden;
-	padding: 4em 0 4em 0;
+	padding: 5em 0;
 	text-align: center;
-	background: $color_4;
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	background-color: $color_4;
 	color: $color_1;
 	*zoom: 1;
 	/* (7) padding was set before: old value: 2em 0 2em 0 - new value 4em 0 4em 0 */;
@@ -136,6 +140,12 @@ header {
 	&:before {
 		content: " ";
 		display: table;
+		background: rgba(0,0,0,0.6);
+        width: 100%;
+        position: absolute;
+        height: 275px;
+        top: 80px;
+        right: 0;
 	}
 	&:after {
 		content: " ";
@@ -689,7 +699,7 @@ section {
     	padding-left: 310px;
     }
     header {
-    	padding: 4em 0 4em 0;
+    	padding: 5em 0;
     }
     .container {
     	max-width: 1000px;
