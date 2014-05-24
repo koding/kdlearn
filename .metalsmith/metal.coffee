@@ -47,6 +47,9 @@ module.exports = build = (callback=->) ->
     .use newPage
       output: 'index'
       metadata: template: 'index.toffee'
+    .use newPage
+      output: 'search'
+      metadata: template: 'search.toffee'
     .use snapshot
       collection: 'faq'
       name: 'answer'
