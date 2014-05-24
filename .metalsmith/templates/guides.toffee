@@ -2,13 +2,14 @@
 #{partial 'header.toffee'}
 <section>
     <div class="container">
+        #{partial 'sidebar.toffee'}
         <div class="docs-content" id="page-guides">
         <h2>Let us guide you!</h2>
           <ul>
               {#
               for guide in paginate.files
                 {:
-                <li class="paginate-item">
+                <li>
                   <h3><a href="/#{guide.file[...-5]}" class="title">#{print guide.title}</a></h3>
                   <div class="excerpt">
                     #{print guide.excerpt}

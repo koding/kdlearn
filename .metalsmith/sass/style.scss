@@ -548,6 +548,10 @@ section {
         li {
             border-bottom: 1px solid $color_3;
             padding: 10px 10px 30px 10px;
+            @include transition(all ease 150ms);
+            &:hover .readmore a {
+                padding-left: 30px;
+            }
     		.title {
                 display: block;
             }
@@ -555,7 +559,6 @@ section {
                 text-decoration: none;
                 text-transform: capitalize;
                 color: $color_0;
-                
                 &:hover {
                     color: $color_4;
                 }
@@ -578,12 +581,6 @@ section {
             border: 0;
             cursor: pointer;
         }
-    }
-    .paginate-item {
-      @include transition(all ease 150ms);
-      &:hover .readmore a {
-        padding-left: 30px;
-      }
     }
     .excerpt {
         font-size: 16px;
