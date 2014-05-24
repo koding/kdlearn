@@ -1,6 +1,5 @@
 #{partial 'head.toffee'}
 #{partial 'topnav.toffee'}
-#{partial 'header.toffee'}
 <section>
     <div class="container listing">
         <div class="docs-content" id="page-videos">
