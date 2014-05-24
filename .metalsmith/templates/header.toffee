@@ -1,16 +1,3 @@
-<nav>
-  <div class="container">
-    <h1 id="logo">Koding</h1>
-    <div id="menu">
-      <ul class="toplinks">
-        <li><a href="/guides/getting-started">Getting Started</a></li>
-        <li><a href="/faq">Common Questions</a></li>
-        <li><a href="/guides">Guides</a></li>
-        <li><a href="/videos">Videos</a></li>
-      </ul>
-    </div>
-    <a id="menu-toggle" href="#" class=" ">&#9776;</a> </div>
-</nav>
 <header>
   <div class="container">
     <h2 class="docs-header">Koding University</h2>
