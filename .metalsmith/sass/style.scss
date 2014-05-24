@@ -121,9 +121,13 @@ iframe {
 header {
 	width: 100%;
 	overflow: hidden;
-	padding: 4em 0 4em 0;
+	padding: 5em 0;
 	text-align: center;
-	background: $color_4;
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	background-color: $color_4;
 	color: $color_1;
 	*zoom: 1;
 	/* (7) padding was set before: old value: 2em 0 2em 0 - new value 4em 0 4em 0 */;
@@ -136,6 +140,12 @@ header {
 	&:before {
 		content: " ";
 		display: table;
+		background: rgba(0,0,0,0.6);
+        width: 100%;
+        position: absolute;
+        height: 275px;
+        top: 80px;
+        right: 0;
 	}
 	&:after {
 		content: " ";
@@ -548,6 +558,10 @@ section {
         li {
             border-bottom: 1px solid $color_3;
             padding: 10px 10px 30px 10px;
+            @include transition(all ease 150ms);
+            &:hover .readmore a {
+                padding-left: 20px;
+            }
     		.title {
                 display: block;
             }
@@ -555,7 +569,6 @@ section {
                 text-decoration: none;
                 text-transform: capitalize;
                 color: $color_0;
-                
                 &:hover {
                     color: $color_4;
                 }
@@ -577,13 +590,14 @@ section {
             padding: 0;
             border: 0;
             cursor: pointer;
+            a {
+                padding: 5px;
+            }
+            .currentPage {
+                background: $color_4;
+                color: $color_1;
+            }
         }
-    }
-    .paginate-item {
-      @include transition(all ease 150ms);
-      &:hover .readmore a {
-        padding-left: 30px;
-      }
     }
     .excerpt {
         font-size: 16px;
@@ -604,22 +618,30 @@ section {
         }
         overflow: hidden;
     }
-    .question, .answer {
-      &:before {
-        float: left;
-        width: '30px';
-        margin-right: 20px;
-        content: 'Q';
-        color: #00BA65;
-        font-size: 50px;
-        font-weight: normal;
-      }
+    .question {
+        &:before {
+            float: left;
+            margin-right: 20px;
+            content: 'Q';
+            color: $color_4;
+            font-size: 50px;
+            font-weight: normal;
+        }
     }
-    .answer:before {
-      content: 'A';
-      // Manually adjusting the position of the letter. Hack, fix plox
-      margin-left: 5px;
-      margin-right: 15px;
+    .answer {
+        position: relative;
+        padding-left: 60px;
+        min-height: 100px;
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 5px;
+            content: 'A';
+            color: $color_4;
+            font-size: 50px;
+            font-weight: normal;
+            line-height: 60px;
+        }
     }
 }
 #page-faq {
@@ -692,7 +714,7 @@ section {
     	padding-left: 310px;
     }
     header {
-    	padding: 4em 0 4em 0;
+    	padding: 5em 0;
     }
     .container {
     	max-width: 1000px;

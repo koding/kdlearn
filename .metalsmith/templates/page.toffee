@@ -1,5 +1,5 @@
 #{partial 'head.toffee'}
-#{partial 'header.toffee'}
+#{partial 'topnav.toffee'}
 <section>
     <div class="container">
         #{partial 'sidebar.toffee'}
