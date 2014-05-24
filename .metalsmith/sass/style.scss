@@ -288,6 +288,34 @@ nav {
 		/* (2) height was set before: old value: 46px - new value 45px */;
 		/* (3) line-height was set before: old value: 0 - new value 45px */;
 	}
+	.container {
+	   .topSearchButton {
+    	    position: absolute;
+            top: 0;
+            right: 20px;
+            color: $color_3;
+            padding: 17px 0;
+            cursor: pointer;
+            font-size: 1.5em;
+    	}
+	}
+	.topSearchBox {
+	    display: none;
+	    max-width: 1000px;
+        padding: 20px 0;
+        margin: 0 auto;
+        position: relative;
+        input {
+            width: 100%;
+            display: block;
+            max-width: 100%;
+            padding: 15px 10px;
+            background: 0;
+            border: 0;
+            border-bottom: 1px solid $color_3;
+            color: $color_1;
+        }
+	}
 }
 section {
 	padding: 3em 0;
@@ -657,9 +685,9 @@ section {
 @media only screen and (min-width: 600px) { }
 @media only screen and (min-width: 680px) {
     nav {
-    	height: 60px !important;
+    // 	height: 60px;
     	#menu {
-    		height: 60px !important;
+    		height: 60px;
     		max-height: 9999px;
     		clear: none;
     	}
@@ -670,7 +698,7 @@ section {
     		float: left;
     	}
     	#menu-toggle {
-    		display: none !important;
+    		display: none;
     	}
     	ul.toplinks {
     		float: left;
