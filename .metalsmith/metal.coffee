@@ -12,6 +12,7 @@ permalinks   = require 'metalsmith-permalinks'
 templates    = require 'metalsmith-templates'
 paginate     = require './plugins/paginate'
 moment       = require './plugins/moment'
+feed         = require './plugins/feed'
 newPage      = require './plugins/new-page'
 snapshot     = require './plugins/snapshot'
 videoScraper = require './plugins/video-scraper'
@@ -28,7 +29,7 @@ module.exports = build = (callback=->) ->
   metalsmith __dirname
     .source '..'
     .destination 'build'
-    .ignore ['.git', '.metalsmith', 'legacy']
+    .ignore ['.agignore', '.gitignore', '.git', '.metalsmith', 'legacy']
     .options remove: false
     .use markdown()
     .use excerpts()
@@ -64,6 +65,9 @@ module.exports = build = (callback=->) ->
       output: 'guides'
       metadata: template: 'guides.toffee'
     .use permalinks()
+    .use feed
+      output: 'feed.xml'
+      metadata: template: 'feed.toffee'
     .use templates 'toffee'
     .build callback
 
