@@ -23,7 +23,11 @@
             </div>
             
             <div class="search-box">
-                <input type="text" id="search" value="" placeholder="Looking for something?">
+                <form method="GET" action="/search">
+                  <input
+                    type="text" id="search" name="query"
+                    value="" placeholder="Looking for something?">
+                </form>
                 <span id="search-icon" class="fa fa-search">
             </div>
 
