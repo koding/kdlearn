@@ -13,6 +13,7 @@ templates    = require 'metalsmith-templates'
 paginate     = require './plugins/paginate'
 moment       = require './plugins/moment'
 feed         = require './plugins/feed'
+filename     = require './plugins/filename'
 newPage      = require './plugins/new-page'
 snapshot     = require './plugins/snapshot'
 videoScraper = require './plugins/video-scraper'
@@ -35,6 +36,9 @@ module.exports = build = (callback=->) ->
     .use excerpts()
     .use moment()
     .use collections
+      all:
+        pattern: '**/*.html'
+        sortBy: 'date'
       faq:
         pattern: 'faq/*.html'
         sortBy: 'importance'
@@ -50,9 +54,7 @@ module.exports = build = (callback=->) ->
     .use newPage
       output: 'search'
       metadata: template: 'search.toffee'
-    .use snapshot
-      collection: 'faq'
-      name: 'answer'
+    .use snapshot collection: 'all'
     .use paginate
       collection: 'faq'
       limit: 10
@@ -68,6 +70,7 @@ module.exports = build = (callback=->) ->
       output: 'guides'
       metadata: template: 'guides.toffee'
     .use permalinks()
+    .use filename()
     .use feed
       output: 'feed.xml'
       metadata: template: 'feed.toffee'

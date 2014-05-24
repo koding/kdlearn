@@ -11,7 +11,7 @@
             <a href="/#{faq.file[...-5]}">#{print faq.title}</a>
           </h3>
           <div class="answer">
-            #{print faq.answer}
+            #{print faq.snapshot}
           </div>
         </li>
       :} #}

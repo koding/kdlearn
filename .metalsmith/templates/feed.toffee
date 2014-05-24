@@ -16,14 +16,14 @@
     Koding.
   </description>
   <language>en</language>
-  {# for path, item of files {:
+  {# for item in collections.all {:
   <item>
     <title>#{item.title}</title>
-    <link>#{item.name}</link>
+    <link>http://vm-3.kdlearn.kd.io#{item.httplink}</link>
     <pubDate>#{item.date}</pubDate>
-    <guid isPermaLink="true">http://vm-3.kdlearn.kd.io/#{path}</guid>
+    <guid isPermaLink="true">http://vm-3.kdlearn.kd.io#{item.httplink}</guid>
     <author>#{item.author}</author>
-    <description>#{item.contents.toString()}</description>
+    <description>#{item.snapshot.toString()}</description>
   </item>
   :} #}
 </channel>
