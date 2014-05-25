@@ -21,7 +21,7 @@
   $('#search_results').tapir({
     'token':          '538032dd14d1180200000000',
     'query_param':    'q',
-    'summary_limit':  200
+    'summary_limit':  400
   });
 </script>
 </body>
