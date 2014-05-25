@@ -1,3 +1,4 @@
 .DS_Store
 .metalsmith/build
+npm-debug.log
 node_modules
