@@ -14,7 +14,8 @@
     "metalsmith-permalinks": "^0.3.0",
     "clone": "^0.1.15",
     "moment": "^2.6.0",
-    "metalsmith-excerpts": "^1.0.0"
+    "metalsmith-excerpts": "^1.0.0",
+    "sanitize-html": "^1.1.5"
   },
   "dependencies": {}
 }

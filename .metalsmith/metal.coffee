@@ -36,9 +36,6 @@ module.exports = build = (callback=->) ->
     .use excerpts()
     .use moment()
     .use collections
-      all:
-        pattern: '**/*.html'
-        sortBy: 'date'
       faq:
         pattern: 'faq/*.html'
         sortBy: 'importance'
@@ -54,7 +51,8 @@ module.exports = build = (callback=->) ->
     .use newPage
       output: 'search'
       metadata: template: 'search.toffee'
-    .use snapshot collection: 'all'
+    .use snapshot collection: 'faq'
+    .use snapshot collection: 'guide'
     .use paginate
       collection: 'faq'
       limit: 10
@@ -72,6 +70,7 @@ module.exports = build = (callback=->) ->
     .use permalinks()
     .use filename()
     .use feed
+      collections: ['guide', 'faq']
       output: 'feed.xml'
       metadata: template: 'feed.toffee'
     .use templates 'toffee'
