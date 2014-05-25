@@ -8,7 +8,7 @@
 
       settings = {
                    token: false,
-                   query_param: 'query'
+                   query_param: 'q'
                  };
 
       if (options) {

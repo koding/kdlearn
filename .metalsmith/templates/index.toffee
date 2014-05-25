@@ -26,7 +26,7 @@
             <div class="search-box">
                 <form method="GET" action="/search">
                   <input
-                    type="text" id="search" name="query"
+                    type="text" id="search" name="q"
                     value="" placeholder="Looking for something?">
                 </form>
                 <span id="search-icon" class="fa fa-search">
