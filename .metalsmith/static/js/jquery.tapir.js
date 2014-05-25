@@ -23,7 +23,12 @@
         'http://tapirgo.com/api/1/search.json?token=' + settings.token + '&query=' + paramValue(settings.query_param) + '&callback=?', function(data){
           if(settings['complete']) { settings.complete() }
           $.each(data, function(key, val) {
-            el.append('<div class="result"><h3><a href="' + val.link + '">' + val.title + '</a></h3><p>' + val.summary + '</p></div>');
+            summary = val.summary;
+            if (settings.summary_limit != null) {
+              summary = summary.slice(0, settings.summary_limit);
+              summary += '...'
+            }
+            el.append('<div class="result"><h3><a href="' + val.link + '">' + val.title + '</a></h3><p>' + summary + '</p></div>');
           });
         }
       );
