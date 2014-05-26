@@ -19,9 +19,16 @@
         return this;
       }
 
+      el.html('<div>Searching...</div>')
+
       $.getJSON(
         'http://tapirgo.com/api/1/search.json?token=' + settings.token + '&query=' + paramValue(settings.query_param) + '&callback=?', function(data){
-          if(settings['complete']) { settings.complete() }
+          if(settings['complete']) { settings.complete(!!data.length, data) }
+          if (!data.length) {
+            el.html('<div>No results found</div>');
+            return
+          }
+          el.html('')
           $.each(data, function(key, val) {
             summary = val.summary;
             if (settings.summary_limit != null) {
