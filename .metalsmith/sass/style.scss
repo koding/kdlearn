@@ -379,7 +379,7 @@ section {
 
 //--------------------------
 %extend_5 {
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 }
 %extend_6 {
 	list-style-type: none;
@@ -397,7 +397,7 @@ section {
 %extend_9 {
     position: absolute;
     right: 35%;
-    top: 30%;
+    top: 25%;
     font-size: 4em;
     color: $color_4;
     height: 60px;
@@ -412,6 +412,8 @@ section {
 }
 .main-icons {
     @extend %extend_5;
+    padding-bottom: 50px;
+    border-bottom: 1px solid $color_3;
     h1 {
         color: $color_0;
         font-weight: normal;
@@ -443,7 +445,6 @@ section {
     margin-top: -90px;
     margin-bottom: 50px;
     text-align: center;
-    @extend %extend_5;
     #search {
         max-width: 80%;
         padding: 20px !important;
@@ -513,10 +514,14 @@ section {
                     @extend %extend_8;
                     position: relative;
                     display: block;
+                    overflow: hidden;
+                    height: 125px;
+                    border: 1px solid $color_0;
                 }
                 img {
                     width: 300px;
-                    height: 169px;
+                    height: 170px;
+                    margin-top: -22px;
                 }
                 .youtube-play {
                     @extend %extend_9;
