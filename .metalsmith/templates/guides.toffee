@@ -2,7 +2,6 @@
 #{partial 'topnav.toffee'}
 <section>
     <div class="container">
-        #{partial 'sidebar.toffee'}
         <div class="docs-content" id="page-guides">
         <h2>Let us guide you!</h2>
           <ul>

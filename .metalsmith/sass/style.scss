@@ -43,7 +43,11 @@ body {
 	@extend %extend_1;
 	line-height: 2;
 	color: $color_0;
-	background: $color_1;
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: top center;
+	background-color: $color_1;
 }
 html {
 	margin: 0;
@@ -121,13 +125,9 @@ iframe {
 header {
 	width: 100%;
 	overflow: hidden;
-	padding: 5em 0;
+	padding: 5em 0 10em 0;
 	text-align: center;
-	background-image: url(../img/bg.jpg);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: center;
-	background-color: $color_4;
+	background-color: rgba(0,0,0,.6);
 	color: $color_1;
 	*zoom: 1;
 	/* (7) padding was set before: old value: 2em 0 2em 0 - new value 4em 0 4em 0 */;
@@ -140,12 +140,6 @@ header {
 	&:before {
 		content: " ";
 		display: table;
-// 		background: rgba(0,0,0,0.6);
-//         width: 100%;
-//         position: absolute;
-//         height: 275px;
-//         top: 80px;
-//         right: 0;
 	}
 	&:after {
 		content: " ";
@@ -218,9 +212,9 @@ footer {
     @extend %extend_4;
 }
 nav {
-	background: $color_0;
 	padding: 10px 0;
 	min-height: 60px;
+	background: rgba(0,0,0,.6);
 	*zoom: 1;
 	ul {
 		@extend %extend_3;
@@ -245,7 +239,6 @@ nav {
 		height: 60px;
 		line-height: 60px;
 		display: block;
-		background: $color_0;
 		float: left;
 		&:hover {
 			background: $color_4;
@@ -320,6 +313,7 @@ nav {
 section {
 	padding: 3em 0;
 	text-align: left;
+	background-color: $color_1;
 	*zoom: 1;
 	/* (9) padding was set before: old value: 1em 0 3em - new value 3em 0 */;
 	/* (10) text-align was set before: old value: center - new value left */;
@@ -418,6 +412,14 @@ section {
 }
 .main-icons {
     @extend %extend_5;
+    h1 {
+        color: $color_0;
+        font-weight: normal;
+        text-transform: capitalize;
+        text-align: center;
+        float: none;
+        margin: 50px 0;
+    }
     .icons {
         display: inline-block;
         width: 33%;
@@ -428,18 +430,22 @@ section {
         }
         h2 {
             margin: 0;
+            font-size: 1.7em;
         }
         p {
-            width: 205px;
+            width: 285px;
             margin: 0 auto;
         }
     }
 }
 .search-box {
     position: relative;
+    margin-top: -90px;
+    margin-bottom: 50px;
+    text-align: center;
     @extend %extend_5;
     #search {
-        max-width: 100%;
+        max-width: 80%;
         padding: 20px !important;
         @include border-radius(0);
     }
@@ -448,7 +454,7 @@ section {
         height: 28px;
         position: absolute;
         top: 14px;
-        right: 35px;
+        right: 120px;
         font-size: 28px;
         line-height: 45px;
         text-align: center;
@@ -761,7 +767,7 @@ section {
     	padding-left: 310px;
     }
     header {
-    	padding: 5em 0;
+    // 	padding: 10em 0;
     }
     .container {
     	max-width: 1000px;
