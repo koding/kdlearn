@@ -1,11 +1,10 @@
 #{partial 'head.toffee'}
 #{partial 'topnav.toffee'}
 <section>
-  <div class="container">
-    #{partial 'sidebar.toffee'}
+  <div id="page-search" class="container">
     <div class="docs-content">
       <h2>Search Results</h2>
-      <div id="search_results"></div>
+      <div id="search-results"></div>
     </div>
   </div>
 </section>
