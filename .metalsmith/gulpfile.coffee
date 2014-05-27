@@ -54,7 +54,7 @@ gulp.task 'sass', ->
 #
 # Watch the metalsmith code and reload it when changes are detected.
 # Note that this will not reload changes to this Gulpfile.
-gulp.task 'watch:code', -> gulp.watch paths.code, ->
+gulp.task 'watch:code', -> gulp.watch paths.code, ['static'], ->
   util.log 'Code changed, reloading and compiling.'
   delete require.cache[path.join __dirname, 'metal.coffee']
   metal = require './metal'
