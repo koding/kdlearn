@@ -15,6 +15,7 @@ moment       = require './plugins/moment'
 feed         = require './plugins/feed'
 filename     = require './plugins/filename'
 newPage      = require './plugins/new-page'
+series       = require './plugins/series'
 snapshot     = require './plugins/snapshot'
 videoScraper = require './plugins/video-scraper'
 
@@ -35,6 +36,7 @@ module.exports = build = (callback=->) ->
     .use markdown()
     .use excerpts()
     .use moment()
+    .use series()
     .use collections
       faq:
         pattern: 'faq/*.html'
