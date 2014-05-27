@@ -4,34 +4,34 @@
 <section>
     <div class="container">
         <div class="docs-content">
-            
-            <div class="main-icons">
-                <div id="icon-1" class="icons">
-                    <span class="fa fa-compass"></span>
-                    <h2>Find</h2>
-                    <p>Awesome tutorials and guides.</p>
-                </div>
-                <div id="icon-2" class="icons">
-                    <span class="fa fa-question"></span>
-                    <h2>Question</h2>
-                    <p>And find the answer you're looking for.</p>
-                </div>
-                <div id="icon-3" class="icons">
-                    <span class="fa fa-pencil"></span>
-                    <h2>Contribute</h2>
-                    <p>And help the community that helped you.</p>
-                </div>
-            </div>
-            
             <div class="search-box">
                 <form method="GET" action="/search">
                   <input
                     type="text" id="search" name="q"
-                    value="" placeholder="Looking for something?">
+                    value="" placeholder="How can we help you?">
                 </form>
                 <span id="search-icon" class="fa fa-search">
             </div>
-
+            
+            <div class="main-icons">
+                <h1>Welcome To Our Support Center</h1>
+                <div id="icon-1" class="icons">
+                    <span class="fa fa-book"></span>
+                    <h2>Knowledge Base</h2>
+                    <p>Browse tutorials and guides.</p>
+                </div>
+                <div id="icon-2" class="icons">
+                    <span class="fa fa-flask"></span>
+                    <h2>Common Questions</h2>
+                    <p>Find the solution to your problem.</p>
+                </div>
+                <div id="icon-3" class="icons">
+                    <span class="fa fa-film"></span>
+                    <h2>Video Center</h2>
+                    <p>Video tutorials library.</p>
+                </div>
+            </div>
+            
             <div class="listing">
                 <div class="latest-guides">
                     <h3>Latest guides</h3>
