@@ -11,6 +11,7 @@ metal   = require './metal'
 path    = require 'path'
 connect = require 'connect'
 gulp    = require 'gulp'
+coffee  = require 'gulp-coffee'
 sass    = require 'gulp-sass'
 util    = require 'gulp-util'
 
@@ -26,13 +27,26 @@ paths =
     'static/**'
     'templates/**'
   ]
+  coffee: 'static/**/*.coffee'
   documents: [
     '!../.metalsmith'
     '!node_modules/**'
     '../**'
   ]
   sass: './sass/**/*.scss'
-  static: './static/**/*'
+  static: [
+      '!static/**/*.coffee'
+      'static/**/*'
+    ]
+
+
+# ## coffee
+#
+# Compile coffee found in the static dir.
+gulp.task 'coffee', ->
+  gulp.src paths.coffee
+    .pipe coffee()
+    .pipe gulp.dest 'build'
 
 
 # ## metalsmith
@@ -50,23 +64,24 @@ gulp.task 'sass', ->
     .pipe gulp.dest 'build/css'
 
 
-# ## watch:code
-#
-# Watch the metalsmith code and reload it when changes are detected.
-# Note that this will not reload changes to this Gulpfile.
-gulp.task 'watch:code', -> gulp.watch paths.code, ['static'], ->
-  util.log 'Code changed, reloading and compiling.'
-  delete require.cache[path.join __dirname, 'metal.coffee']
-  metal = require './metal'
-  metal()
-
-
 # ## static
 #
 # Copy static assets to build dir.
 gulp.task 'static', ->
   gulp.src paths.static
     .pipe gulp.dest 'build'
+
+
+# ## watch:code
+#
+# Watch the metalsmith code and reload it when changes are detected.
+# Note that this will not reload changes to this Gulpfile.
+gulp.task 'watch:code', ->
+  gulp.watch paths.code, ['coffee', 'static'], ->
+    util.log 'Code changed, reloading and compiling.'
+    delete require.cache[path.join __dirname, 'metal.coffee']
+    metal = require './metal'
+    metal()
 
 
 # ## watch:md
@@ -91,5 +106,5 @@ gulp.task 'watch:sass', ['sass'], ->
 
 gulp.task 'watch', ['watch:md']
 gulp.task 'watch:all', ['watch:md', 'watch:code', 'watch:sass']
-gulp.task 'build', ['metalsmith', 'sass', 'static']
+gulp.task 'build', ['metalsmith', 'sass', 'static', 'coffee']
 gulp.task 'default', ['build']
