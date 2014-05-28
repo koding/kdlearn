@@ -50,7 +50,7 @@ module.exports = (opts={}) ->
           pageNumber:  index
           prev:        prev
           next:        null
-        if prev? then prev.next = page
+        if prev? then prev.series.next = page
         prev = page
 
     done()
