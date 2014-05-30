@@ -22,6 +22,11 @@ $color_2: #858585;
 $color_3: #c5c5c5;
 $color_4: #838485;
 $color_5: #525658;
+
+$white:       #fff;
+$dark_grey:   #5c656d;
+$grey:        #555;
+$light-grey:  #eee;
 //--------------------------
 
 %extend_1 {
@@ -50,12 +55,12 @@ body {
 	padding: 0;
 	@extend %extend_1;
 	line-height: 2;
-	color: $color_0;
+	color: $grey;
 	background-image: url(../img/bg.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: top center;
-	background-color: $color_1;
+	background-color: $white;
 }
 html {
 	margin: 0;
@@ -419,7 +424,7 @@ nav {
 section {
 	padding: 3em 0;
 	text-align: left;
-	background-color: $color_1;
+	background-color: $white;
 	*zoom: 1;
 	/* (9) padding was set before: old value: 1em 0 3em - new value 3em 0 */;
 	/* (10) text-align was set before: old value: center - new value left */;
