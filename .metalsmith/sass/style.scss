@@ -378,7 +378,7 @@ section {
 	}
 }
 .docs-nav {
-	background-color: $color_10;
+	background-color: $white;
 	list-style: none;
 	margin: 0 0 0 20px;
 	padding: 15px 20px;
@@ -390,13 +390,6 @@ section {
 		text-decoration: none;
 		border-right: 2px solid transparent;
 		text-transform: capitalize;
-		&:hover {
-			background: $color_2;
-		}
-		&:active {
-			background: $color_2;
-			border-right: 2px solid $color_3;
-		}
 	}
 	&.fixed {
 		position: fixed;
@@ -404,12 +397,20 @@ section {
 		width: 220px;
 	}
 	.active {
-		background: $color_2;
-		border-right: 2px solid $color_3;
+		//background: $color_2;
+		//border-right: 2px solid $color_3;
 	}
-	.separator {
-		height: 20px;
-	}
+  li {
+    overflow: hidden;
+    h5 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    ul {
+      padding-left: 10px;
+      font-size: 14px;
+    }
+  }
 }
 .docs-nav + .docs-content {
 	padding-left: 310px;
