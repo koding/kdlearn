@@ -24,7 +24,7 @@ $color_4: #838485;
 $color_5: #525658;
 
 $white:       #fff;
-$dark_grey:   #5c656d;
+$dark-grey:   #5c656d;
 $grey:        #555;
 $light-grey:  #eee;
 //--------------------------
@@ -401,14 +401,30 @@ section {
 		//border-right: 2px solid $color_3;
 	}
   li {
-    overflow: hidden;
+    list-style: none;
+
+    &.zactive {
+      h5 {
+        margin-left: -14px;
+        padding-left: 10px;
+        border-left: 4px $dark-grey solid;
+      }
+      li.zactive {
+        background-color: $light-grey;
+      }
+
+    }
+
+    ul {
+      padding: 0;
+      font-size: 14px;
+    }
     h5 {
       font-size: 18px;
       font-weight: bold;
     }
-    ul {
+    li {
       padding-left: 10px;
-      font-size: 14px;
     }
   }
 }

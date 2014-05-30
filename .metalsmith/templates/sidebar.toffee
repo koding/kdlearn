@@ -1,5 +1,5 @@
 <ul class="docs-nav" id="menu-left">
-  <li>
+  <li class="zactive">
     <h5>Common Questions</h5>
     <ul>
     {# for faq in collections.faq[...5] {:
@@ -7,6 +7,9 @@
         <a href="/#{faq.file[...-5]}" class="title">#{print faq.title}</a>
       </li>
     :} #}
+      <li class="zactive">
+        <a href="/foo" class="title">foo</a>
+      </li>
     </ul>
   </li>
   <li>
@@ -18,5 +21,5 @@
       </li>
     :} #}
     </ul>
-  </ul>
+  </li>
 </ul>
