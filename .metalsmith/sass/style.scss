@@ -3,17 +3,25 @@
 @import "css3";
 
 //-------------------------
-$color_0: #444;
-$color_1: #fff;
-$color_2: #eee;
-$color_3: #ccc;
-$color_4: #00BA65;
-$color_5: #47b5e2;
+// $color_0: #444;
+// $color_1: #fff;
+// $color_2: #eee;
+// $color_3: #ccc;
+// $color_4: #00BA65;
+// $color_5: #47b5e2;
 $color_6: #999;
 $color_7: #27637e;
 $color_8: #222;
 $color_9: #007eb2;
 $color_10: #f5f5f5;
+
+
+$color_0: #2c3134;
+$color_1: #b3b3b3;
+$color_2: #858585;
+$color_3: #c5c5c5;
+$color_4: #838485;
+$color_5: #525658;
 //--------------------------
 
 %extend_1 {
@@ -188,12 +196,110 @@ a {
 		color: $color_5;
 	}
 }
-footer {
-	text-align: center;
-	padding: 1.5em 0;
-	p {
-		margin: 0;
-		color: $color_6;
+
+footer.main-footer {
+	padding: 56px 0;
+	font-size: 13px;
+	font-weight: 400;
+	background: $color_0;
+	.inner-container {
+		max-width: 1290px;
+		padding: 0 45px;
+		margin: 0 auto;
+		display: block;
+		position: relative;
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+	}
+	.footer-block {
+		width: 25%;
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+		display: block;
+		float: left;
+		a {
+			color: $color_1;
+			display: inline;
+			text-decoration: none;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		h5 {
+			margin: 0 0 6px;
+			color: $color_2;
+		}
+	}
+	.about-koding {
+		h5 {
+			font-weight: 600;
+			color: $color_3;
+		}
+		p {
+			padding-right: 72px;
+			margin: 2px 0 4px;
+			line-height: 18px;
+			color: $color_4;
+			//Instead of the line below you could use @include box-sizing($bs)
+			box-sizing: border-box;
+		}
+		a {
+			color: $color_5;
+			text-decoration: underline;
+		}
+	}
+	cite {
+		display: block;
+		clear: both;
+	}
+	address {
+		clear: both;
+		display: block;
+		text-align: center;
+		margin: 50px auto 0 auto;
+		padding: 25px 0 0;
+		font-size: 14px;
+		color: $color_1;
+		position: relative;
+		&:before {
+			content: "";
+			display: block;
+			width: 80%;
+			height: 1px;
+			top: 0;
+			left: 50%;
+			position: absolute;
+			//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+			transform: translateX(-50%);
+		}
+	}
+	.social-links {
+		color: $color_4;
+		display: block;
+		text-align: center;
+		margin: 30px 0 0;
+		word-spacing: 5px;
+		a {
+			color: $color_4;
+			font-size: 13px;
+			font-weight: 400;
+			text-decoration: none;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	nav a {
+		line-height: 22px;
+		&:after {
+			content: '\A';
+			display: block;
+			white-space: pre;
+			line-height: 0;
+			padding: 0;
+			margin: 0;
+			height: 0;
+		}
 	}
 }
 #logo {
