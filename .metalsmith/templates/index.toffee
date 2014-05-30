@@ -13,25 +13,6 @@
                 <span id="search-icon" class="fa fa-search">
             </div>
             
-            <div class="main-icons">
-                <h1>Welcome To Our Support Center</h1>
-                <div id="icon-1" class="icons">
-                    <span class="fa fa-book"></span>
-                    <h2>Knowledge Base</h2>
-                    <p>Browse tutorials and guides.</p>
-                </div>
-                <div id="icon-2" class="icons">
-                    <span class="fa fa-flask"></span>
-                    <h2>Common Questions</h2>
-                    <p>Find the solution to your problem.</p>
-                </div>
-                <div id="icon-3" class="icons">
-                    <span class="fa fa-film"></span>
-                    <h2>Video Center</h2>
-                    <p>Video tutorials library.</p>
-                </div>
-            </div>
-            
             <div class="listing">
                 <div class="latest-guides">
                     <h3>Latest guides</h3>
