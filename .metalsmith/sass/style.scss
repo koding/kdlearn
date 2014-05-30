@@ -266,6 +266,7 @@ footer.main-footer {
 		font-size: 14px;
 		color: $color_1;
 		position: relative;
+		font-style: normal;
 		&:before {
 			content: "";
 			display: block;
@@ -323,75 +324,6 @@ footer.main-footer {
     @extend %extend_4;
 }
 nav {
-	padding: 10px 0;
-	min-height: 60px;
-	background: rgba(0,0,0,.6);
-	*zoom: 1;
-	ul {
-		@extend %extend_3;
-		&.toplinks {
-			padding: 0;
-			float: left;
-			clear: none;
-			/* (4) padding was set before: old value: 20px 0 0 0 - new value 0 */;
-			li {
-				margin: 0 0 0 10px;
-			}
-		}
-	}
-	li {
-		@extend %extend_3;
-		float: left;
-	}
-	a {
-		padding: 0 1em;
-		color: $color_2;
-		font-size: .9em;
-		height: 60px;
-		line-height: 60px;
-		display: block;
-		float: left;
-		&:hover {
-			background: $color_4;
-			text-decoration: none;
-		}
-		&:active {
-			background: $color_7;
-			color: $color_1;
-			cursor: default;
-		}
-	}
-	#menu {
-		overflow: hidden;
-		max-height: 9999px;
-		clear: none;
-		/* (5) max-height was set before: old value: 0 - new value 9999px */;
-		/* (6) clear was set before: old value: left - new value none */;
-	}
-	#menu-toggle {
-		position: absolute;
-		right: 0;
-		top: 0;
-		font-size: 1.5em;
-		padding: 0 16px;
-		display: none !important;
-	}
-	&:before {
-		content: " ";
-		display: table;
-	}
-	&:after {
-		content: " ";
-		display: table;
-		clear: both;
-	}
-	h1 a {
-		padding: 7px 1em;
-		height: 46px;
-		line-height: 0;
-		/* (2) height was set before: old value: 46px - new value 45px */;
-		/* (3) line-height was set before: old value: 0 - new value 45px */;
-	}
 	.container {
 	   .topSearchButton {
     	    position: absolute;
@@ -824,79 +756,5 @@ section {
 
 @media only screen and (min-width: 400px) { }
 @media only screen and (min-width: 600px) { }
-@media only screen and (min-width: 680px) {
-    nav {
-    // 	height: 60px;
-    	#menu {
-    		height: 60px;
-    		max-height: 9999px;
-    		clear: none;
-    	}
-    	li {
-    		float: left;
-    	}
-    	a {
-    		float: left;
-    	}
-    	#menu-toggle {
-    		display: none;
-    	}
-    	ul.toplinks {
-    		float: left;
-    		padding: 0;
-    		clear: none;
-    		li {
-    			margin: 0 0 0 10px;
-    		}
-    	}
-    }
-}
-@media only screen and (min-width: 960px) {
-    .docs-nav {
-    	position: absolute;
-    	top: 0;
-    	width: 220px;
-    	@include transition(top linear 50ms);
-    	&.fixed {
-    		position: fixed;
-    		top: 49px;
-    		width: 220px;
-    	}
-    	a {
-    		&:hover {
-    			background: $color_2;
-    		}
-    		&:active {
-    			background: $color_2;
-    			border-right: 2px solid $color_3;
-    		}
-    	}
-    	.active {
-    		background: $color_2;
-    		border-right: 2px solid $color_3;
-    	}
-    	.separator {
-    		height: 20px;
-    	}
-    }
-    .docs-nav + .docs-content {
-    	padding-left: 310px;
-    }
-    header {
-    // 	padding: 10em 0;
-    }
-    .container {
-    	max-width: 1000px;
-    	padding: 0 20px;
-    }
-    section {
-    	padding: 3em 0;
-    	text-align: left;
-    	&.centered {
-    		text-align: center;
-    	}
-    }
-    input {
-    	display: inline-block;
-    }
-}
+@media only screen and (min-width: 680px) { }
+@media only screen and (min-width: 960px) { }
