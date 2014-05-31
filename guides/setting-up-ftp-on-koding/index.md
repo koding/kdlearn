@@ -39,39 +39,31 @@ to File -> Site Manager. When the Site Manager pops up, click the “New Site”
 button.
 
 4. Now, the last step is to enter our PureFTPd information! Enter the following 
-information into your New Site. Replace `<username>` with your username, and 
-`<vm-Number>` with your VM Number; So that `<vm-Number>` becomes _vm-0_, 
-_vm-1_, etc.
+information into your New Site. 
 
-`Host: ftp.koding.com Encryption: Use plain FTP Login Type: Normal User: <username>@<vm-Number>.<username>.koding.kd.io Password: <your koding password>`
+  - Host: `ftp.koding.com`
+  - Encryption: Use plain FTP Login
+  - Type: Normal
+  - User: `<username>@<vm-Number>.<username>.koding.kd.io`
+  - Password: `<your koding password>`
 
-The FTP Username, when filled out, should look like `leeolayvar@vm-0.leeolayvar.koding.kd.io`. Make sure the end looks like _koding.kd.io_, it is important.
+  Replace `<username>` with your username, and `<vm-Number>` with your VM 
+Number; So that `<vm-Number>` becomes _vm-0_, _vm-1_, etc.
 
-If you have any confusion about where to enter this information, please refer 
+  The *FTP* Username, when filled out, should look like 
+`leeolayvar@vm-0.leeolayvar.koding.kd.io`. Make sure the end includes 
+_koding.kd.io_, it is important.
+
+  If you have any confusion about where to enter this information, please refer 
 to the video or the image below.
 
-![FTP Client Settings](/wp-content/uploads/ftpsettings.png)
+  ![FTP Client Settings](ftpsettings.png)
 
 ## Confirming your Installation
 
 Connecting to your FTP Server with your FTP Client is the easiest way to confirm it is working, but what if that fails? Is your Server running?
 
 To find this out, run the following command: `ps aux | grep ftpd`. This will print the running processes that contain the text "ftpd". What you are looking for, is a line containing **"PURE-FTPD (SERVER)"**. If you see that, your server is running, and the problem is likely not your server.
-
-## Troubleshooting
-
-### Possible Gotcha: Unmet Dependencies?
-
-If after entering your password, you run into a screen that looks like this: 
-![Unment Dependencies][5]
-
-Type in the following command
-
-`sudo apt-get -f install`
-
-Once the command has finished executing, click the **Install** button in the 
-upper right again. You should not run into this a second time. Proceed to the 
-next step after clicking the **Install** button.
 
 ## Additional Resources
 
