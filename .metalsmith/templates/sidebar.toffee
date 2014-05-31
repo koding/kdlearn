@@ -1,23 +1,34 @@
+{#
+checkActive = (item) ->
+  if item.httplink is httplink then 'zactive'
+  else ''
+
+checkActiveItems = (items) ->
+  for item in items
+    if item.httplink is httplink then return 'zactive'
+  ''
+#}
+
 <ul class="docs-nav" id="menu-left">
-  <li class="zactive">
+  {# faqs = collections.faq[...5] #}
+  <li class="#{checkActiveItems faqs}">
     <h5>Common Questions</h5>
     <ul>
-    {# for faq in collections.faq[...5] {:
-      <li>
-        <a href="/#{faq.file[...-5]}" class="title">#{print faq.title}</a>
+    {# for faq in faqs {:
+      <li class="#{checkActive faq}">
+        <a href="#{faq.httplink}" class="title">#{print faq.title}</a>
       </li>
     :} #}
-      <li class="zactive">
-        <a href="/foo" class="title">foo</a>
-      </li>
     </ul>
   </li>
-  <li>
+
+  {# guides = collections.guide[...5] #}
+  <li class="#{checkActiveItems guides}">
     <h5>Guides</h5>
     <ul>
-    {# for guide in collections.guide[...5] {:
-      <li>
-        <a href="/#{guide.file[...-5]}" class="title">#{print guide.title}</a>
+    {# for guide in guides {:
+      <li class="#{checkActive guide}">
+        <a href="#{guide.httplink}">#{print guide.title}</a>
       </li>
     :} #}
     </ul>
