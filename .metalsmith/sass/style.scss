@@ -56,7 +56,7 @@ body {
 	@extend %extend_1;
 	line-height: 2;
 	color: $grey;
-	background-image: url(../img/bg.jpg);
+	background-image: url(../img/bg.png);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: top center;
@@ -140,7 +140,6 @@ header {
 	overflow: hidden;
 	padding: 5em 0 10em 0;
 	text-align: center;
-	background-color: rgba(0,0,0,.6);
 	color: $color_1;
 	*zoom: 1;
 	/* (7) padding was set before: old value: 2em 0 2em 0 - new value 4em 0 4em 0 */;
@@ -267,17 +266,18 @@ footer.main-footer {
 		color: $color_1;
 		position: relative;
 		font-style: normal;
-		&:before {
-			content: "";
-			display: block;
-			width: 80%;
-			height: 1px;
-			top: 0;
-			left: 50%;
-			position: absolute;
-			//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
-			transform: translateX(-50%);
-		}
+// 		&:before {
+// 			content: "";
+// 			display: block;
+// 			width: 80%;
+// 			height: 1px;
+// 			top: 0;
+// 			left: 50%;
+// 			position: absolute;
+// 			//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+// 			$transx: 50%;
+// 			@include transform($transx);
+// 		}
 	}
 	.social-links {
 		color: $color_4;
