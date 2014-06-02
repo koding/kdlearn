@@ -402,12 +402,13 @@ section {
 		text-align: center;
 	}
 }
-.docs-nav {
+#left-nav {
 	background-color: $white;
 	list-style: none;
 	margin: 0 0 0 20px;
 	padding: 15px 20px;
 	font-size: 0.97em;
+  float: left;
 	a {
 		display: block;
 		margin: 0 -20px;
@@ -415,11 +416,6 @@ section {
 		text-decoration: none;
 		border-right: 2px solid transparent;
 		text-transform: capitalize;
-	}
-	&.fixed {
-		position: fixed;
-		top: 49px;
-		width: 220px;
 	}
 	.active {
 		//background: $color_2;
@@ -453,7 +449,7 @@ section {
     }
   }
 }
-.docs-nav + .docs-content {
+#left-nav + .docs-content {
 	padding-left: 310px;
 	min-height: 500px;
 	h1 {

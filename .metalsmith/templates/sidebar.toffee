@@ -9,7 +9,7 @@ checkActiveItems = (items) ->
   ''
 #}
 
-<ul class="docs-nav" id="menu-left">
+<ul id="left-nav">
   {# faqs = collections.faq[...5] #}
   <li class="#{checkActiveItems faqs}">
     <h5>Common Questions</h5>
