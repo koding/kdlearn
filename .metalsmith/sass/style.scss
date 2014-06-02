@@ -498,12 +498,12 @@ section {
 }
 %extend_9 {
     position: absolute;
-    right: 35%;
-    top: 25%;
-    font-size: 70px;
+    right: 40%;
+    top: 34%;
+    font-size: 48px;
     color: $green;
-    height: 60px;
-    line-height: 62px;
+    height: 40px;
+    line-height: 42px;
     border: 2px $white solid;
     background-color: darken($green, 10%);
     @include border-radius(50px);
