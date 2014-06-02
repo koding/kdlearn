@@ -59,7 +59,7 @@ body {
 	color: $grey;
 	background-image: url(../img/bg.png);
 	background-repeat: no-repeat;
-	background-position: top center;
+	background-position: 0 -200px;
 	background-size: 100%;
 }
 html {
@@ -138,7 +138,7 @@ iframe {
 header {
 	width: 100%;
 	overflow: hidden;
-	padding: 5em 0 10em 0;
+	padding: 0 0 15em 0;
 	text-align: center;
 	color: $color_1;
 	*zoom: 1;
@@ -158,6 +158,9 @@ header {
 		display: table;
 		clear: both;
 	}
+    nav {
+        background: none;
+    }
 }
 .container {
 	width: 95%;
@@ -214,6 +217,9 @@ footer.main-footer {
 		position: relative;
 		//Instead of the line below you could use @include box-sizing($bs)
 		box-sizing: border-box;
+        nav {
+            background: none;
+        }
 	}
 	.footer-block {
 		width: 25%;
@@ -339,10 +345,9 @@ footer.main-footer {
     text-decoration: none;
   }
 }
-body > nav {
-  // This is just eyeballed, needs to be corrected.
-  background-color: $dark-grey;
-  min-height: 120px;
+nav {
+    background: $dark-grey;
+    min-height: 120px;
 
   #menu {
     float: right;
@@ -637,24 +642,23 @@ section {
     }
     #page-videos {
         @extend %extend_7;
-        
         h2 {
           color: $green;
           font-size: 26px;
           padding-left: 56px;
           margin-bottom: 50px;
-
-          span {
+ 
+           span {
             display: inline-block;
-            background: url(/img/sprite.png) -2px -62px;
-            background-size: 47px 100px;
-            width: 44px;
-            height: 36px;
-            position: absolute;
-            left: 20px;
-            top: -2px;
-          }
-        }
+             background: url(/img/sprite.png) -2px -62px;
+             background-size: 47px 100px;
+             width: 44px;
+             height: 36px;
+             position: absolute;
+             left: 20px;
+             top: -2px;
+           }
+         }
 
         ul {
             @extend %extend_6;
