@@ -1,6 +1,7 @@
 <header>
-  <div class="container">
-    <h2 class="docs-header">Koding University</h2>
-    Get started in less than five minutes and start Koding right away!
-  </div>
+	#{partial 'topnav.toffee'}
+	<div class="container">
+		<h2 class="docs-header">Koding University</h2>
+		Get started in less than five minutes and start Koding right away!
+	</div>
 </header>
