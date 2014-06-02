@@ -672,10 +672,10 @@ section {
                     display: block;
                     min-height: 75px;
                     font-size: 15px;
-                    color: $grey;
                 }
                 a {
                     @extend %extend_8;
+                    color: $grey;
                     position: relative;
                     display: block;
                     &:hover {
