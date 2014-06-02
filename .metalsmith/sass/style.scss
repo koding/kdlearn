@@ -56,11 +56,6 @@ body {
 	@extend %extend_1;
 	line-height: 2;
 	color: $grey;
-	background-image: url(../img/bg.png);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: top center;
-	background-color: $white;
 }
 html {
 	margin: 0;
@@ -309,48 +304,78 @@ footer.main-footer {
 	}
 }
 #logo {
-    background-image: url("../img/logo.png");
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 60px;
-    padding-left: 70px;
-    padding-top: 0;
-    line-height: 60px;
-    text-transform: capitalize;
-    font-size: 2em;
-    font-weight: bold;
-    letter-spacing: -2px;
-    cursor: pointer;
-    @extend %extend_4;
+  color: $white;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: none;
+
+  span.uni {
+    color: darken($light-grey, 10%);
+    font-weight: normal;
+  }
+
+  span.img {
+    display: inline-block;
+    background: url(https://koding.com/a/sprites/home@2x.sprite.png) 0px -280.5px;
+    background-size: 138.5px 1055px;
+    width: 16px;
+    height: 17px;
+  }
+
+  a, a:hover {
+    color: inherit;
+    text-decoration: none;
+  }
 }
-nav {
+body > nav {
+  // This is just eyeballed, needs to be corrected.
+  background-color: #5F626B;
+  min-height: 120px;
+
+  #menu {
+    float: right;
+
+    a {
+      color: $light-grey;
+    }
+
+    li {
+      display: inline;
+      margin-right: 20px;
+    }
+  }
 	.container {
-	   .topSearchButton {
-    	    position: absolute;
-            top: 0;
-            right: 20px;
-            color: $color_3;
-            padding: 17px 0;
-            cursor: pointer;
-            font-size: 1.5em;
-    	}
+    padding-top: 20px;
+
+    &:after {
+      content: " ";
+      display: table;
+      clear: both;
+    }
+    .topSearchButton {
+       float: right;
+       color: $color_3;
+       padding: 17px 0;
+       cursor: pointer;
+       font-size: 1.5em;
+     }
 	}
 	.topSearchBox {
-	    display: none;
-	    max-width: 1000px;
-        padding: 20px 0;
-        margin: 0 auto;
-        position: relative;
-        input {
-            width: 100%;
-            display: block;
-            max-width: 100%;
-            padding: 15px 10px;
-            background: 0;
-            border: 0;
-            border-bottom: 1px solid $color_3;
-            color: $color_1;
-        }
+    display: none;
+    max-width: 1000px;
+    padding: 20px 0;
+    margin: 0 auto;
+    position: relative;
+    input {
+      width: 100%;
+      display: block;
+      max-width: 100%;
+      padding: 15px 10px;
+      background: 0;
+      border: 0;
+      border-bottom: 1px solid $color_3;
+      color: $color_1;
+    }
 	}
 }
 section {

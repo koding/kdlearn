@@ -1,6 +1,10 @@
 <nav>
     <div class="container">
-        <h1 id="logo">Koding</h1>
+        <h1 id="logo"><a href="/">
+          <span class="img"></span>
+          Koding <span class="uni">Univeristy</span>
+        </a></h1>
+        <div class="topSearchButton fa fa-search"></div>
         <div id="menu">
             <ul class="toplinks">
                 <li>
@@ -17,8 +21,6 @@
                 </li>
             </ul>
         </div>
-        <a id="menu-toggle" href="#" class=" ">&#9776;</a>
-        <div class="topSearchButton fa fa-search"></div>
     </div>
     <div class="topSearchBox">
         <form method="GET" action="/search">
