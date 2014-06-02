@@ -27,6 +27,7 @@ $white:       #fff;
 $dark-grey:   #5c656d;
 $grey:        #555;
 $light-grey:  #eee;
+$green:       #27ae61;
 //--------------------------
 
 %extend_1 {
@@ -635,6 +636,20 @@ section {
     }
     #page-videos {
         @extend %extend_7;
+        
+        h2 {
+          color: $green;
+          font-size: 30px;
+
+          span {
+            display: inline-block;
+            background: url(https://koding.com/a/sprites/home@2x.sprite.png) 0px -280.5px;
+            background-size: 138.5px 1055px;
+            width: 16px;
+            height: 17px;
+          }
+        }
+
         ul {
             @extend %extend_6;
             li {
