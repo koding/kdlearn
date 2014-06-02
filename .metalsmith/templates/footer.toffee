@@ -38,7 +38,13 @@
         
         <cite></cite>
         
-        <address>2014 © Koding, Inc. 358 Brannan Street, San Francisco, CA, 94107</address>
+        <address>
+          2014 © Koding, Inc. 358 Brannan Street, San Francisco, CA, 94107
+        </address>
+
+        <p class="made-in">
+          Lovingly made in Istanbul & San Francisco &lt;3
+        </p>
         
         <div class="social-links">
             <a href="http://twitter.com/koding">TWITTER</a> · <a href="http://facebook.com/kodingcom">FACEBOOK</a>

@@ -255,7 +255,9 @@ footer.main-footer {
 		clear: both;
 		display: block;
 		text-align: center;
-		margin: 50px auto 0 auto;
+    // Temporarily adding a margin to reduce border width
+		//margin: 50px auto 0 auto;
+		margin: 50px 40px 0;
 		padding: 25px 0 0;
 		font-size: 14px;
 		color: $color_1;
@@ -273,7 +275,13 @@ footer.main-footer {
 // 			$transx: 50%;
 // 			@include transform($transx);
 // 		}
+    // This should have a gradient background. Fix plz.
+    border-top: $dark-grey 1px solid;
 	}
+  .made-in {
+    margin-top: 0;
+    text-align: center;
+  }
 	.social-links {
 		color: $color_4;
 		display: block;
