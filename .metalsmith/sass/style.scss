@@ -639,14 +639,18 @@ section {
         
         h2 {
           color: $green;
-          font-size: 30px;
+          font-size: 26px;
+          padding-left: 56px;
 
           span {
             display: inline-block;
-            background: url(https://koding.com/a/sprites/home@2x.sprite.png) 0px -280.5px;
-            background-size: 138.5px 1055px;
-            width: 16px;
-            height: 17px;
+            background: url(/img/sprite.png) -2px -62px;
+            background-size: 47px 100px;
+            width: 44px;
+            height: 36px;
+            position: absolute;
+            left: 20px;
+            top: -2px;
           }
         }
 
