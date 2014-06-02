@@ -865,6 +865,10 @@ body > header {
   }
 }
 
+body > .page {
+  padding-top: 10px;
+}
+
 a.youtube-mini {
   position: relative;
   display: block;
@@ -883,6 +887,12 @@ a.youtube-mini {
    // This rule lost the battle to %extend_9, so for now i'm just editing
    // extend_9 manually, until we refactor the wtf-ness.
   }
+}
+
+.content-preview {
+}
+.content-preview.custom {
+  text-align: center;
 }
 
 //--------------------------

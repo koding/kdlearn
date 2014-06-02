@@ -1,7 +1,18 @@
 #{partial 'head.toffee'}
 #{partial 'header.toffee'}
-<section>
+<section class="page">
     <div class="container">
+
+<div class="content-preview custom">
+  <h4>Starter bits for beginners, watch and learn!</h4>
+  <p>Check out the <a href="/videos">Videos</a> section for more!</p>
+</div>
+
+<div class="content-preview custom">
+  <h4>Latest guides and articles about Koding features</h4>
+  <p>Check out the <a href="/guides">Guides</a> section for more!</p>
+</div>
+
         <div class="docs-content">
                     
             <div class="listing">
