@@ -850,6 +850,21 @@ section {
     }
 }
 
+//
+// ## Sane Section
+// The following section is considered "sane". Above is converted
+// CSS->SCSS, below is hand written.
+//
+
+body > header {
+  color: $white;
+  h2 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 32px;
+  }
+}
+
 a.youtube-mini {
   position: relative;
   display: block;
