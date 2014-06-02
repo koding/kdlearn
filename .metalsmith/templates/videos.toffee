@@ -10,15 +10,15 @@
       <ul>
       {# for video in paginate.files {:
         <li>
-          <span class="title"><a href="../#{print video.httplink}">
-            #{print video.title}
-          </a></span>
           <a slug="#{print video.file}" title="#{print video.title}"
-            rel="videos" class="youtube fancybox.iframe"
+            rel="videos" class="youtube-mini fancybox.iframe"
             href="//www.youtube.com/v/#{video.videoId}?autoplay=1&rel=0&controls=0&showinfo=0&modestbranding=1">
           <img src="http://img.youtube.com/vi/#{video.videoId}/hqdefault.jpg" />
           <span class="youtube-play fa fa-play-circle"></span>
           </a>
+          <span class="title"><a href="../#{print video.httplink}">
+            #{print video.title}
+          </a></span>
         </li>
       :} #}
       </ul>
