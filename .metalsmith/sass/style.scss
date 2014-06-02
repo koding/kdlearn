@@ -56,6 +56,10 @@ body {
 	@extend %extend_1;
 	line-height: 2;
 	color: $grey;
+	background-image: url(../img/bg.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 100%;
 }
 html {
 	margin: 0;
@@ -263,20 +267,19 @@ footer.main-footer {
 		color: $color_1;
 		position: relative;
 		font-style: normal;
-// 		&:before {
-// 			content: "";
-// 			display: block;
-// 			width: 80%;
-// 			height: 1px;
-// 			top: 0;
-// 			left: 50%;
-// 			position: absolute;
-// 			//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
-// 			$transx: 50%;
-// 			@include transform($transx);
-// 		}
+		&:before {
+			content: "";
+			display: block;
+			width: 80%;
+			height: 1px;
+			top: 0;
+			left: 50%;
+			position: absolute;
+			//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+			@include transform(-50px);
+		}
     // This should have a gradient background. Fix plz.
-    border-top: $dark-grey 1px solid;
+    // border-top: $dark-grey 1px solid;
 	}
   .made-in {
     margin-top: 0;
@@ -353,20 +356,29 @@ body > nav {
     }
   }
 	.container {
-    padding-top: 20px;
-
-    &:after {
-      content: " ";
-      display: table;
-      clear: both;
-    }
-    .topSearchButton {
-       float: right;
-       color: $color_3;
-       padding: 17px 0;
-       cursor: pointer;
-       font-size: 1.5em;
-     }
+        padding-top: 20px;
+    
+        &:after {
+          content: " ";
+          display: table;
+          clear: both;
+        }
+        .topSearchButton {
+            float: right;
+            cursor: pointer;
+            padding: 5px 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin: 20px 0;
+            .searchIcon {
+                background-image: url(../img/sprite.png);
+                background-position: -6px -2px;
+                background-repeat: no-repeat;
+                height: 20px;
+                width: 20px;
+                display: block;
+            }
+        }
 	}
 	.topSearchBox {
     display: none;

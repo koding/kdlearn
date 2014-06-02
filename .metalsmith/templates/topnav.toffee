@@ -4,7 +4,9 @@
           <span class="img"></span>
           Koding <span class="uni">University</span>
         </a></h1>
-        <div class="topSearchButton fa fa-search"></div>
+        <div class="topSearchButton">
+            <span class="searchIcon"></span>
+        </div>
         <div id="menu">
             <ul class="toplinks">
                 <li>
