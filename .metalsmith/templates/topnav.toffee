@@ -2,7 +2,7 @@
     <div class="container">
         <h1 id="logo"><a href="/">
           <span class="img"></span>
-          Koding <span class="uni">Univeristy</span>
+          Koding <span class="uni">University</span>
         </a></h1>
         <div class="topSearchButton fa fa-search"></div>
         <div id="menu">
