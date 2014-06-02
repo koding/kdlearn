@@ -500,11 +500,12 @@ section {
     position: absolute;
     right: 35%;
     top: 25%;
-    font-size: 4em;
-    color: $color_4;
+    font-size: 70px;
+    color: $green;
     height: 60px;
     line-height: 62px;
-    background: $color_1;
+    border: 2px $white solid;
+    background-color: darken($green, 10%);
     @include border-radius(50px);
     @include transition(all ease 150ms);
 }
@@ -669,8 +670,9 @@ section {
 
         		.title {
                     display: block;
-                    text-align: center;
                     min-height: 75px;
+                    font-size: 15px;
+                    color: $grey;
                 }
                 a {
                     @extend %extend_8;
@@ -844,11 +846,17 @@ a.youtube-mini {
   overflow: hidden;
   height: 125px;
   border: 1px solid $dark-grey;
+  border-radius: 6px;
 
   img {
     width: 300px;
     height: 170px;
     margin-top: -22px;
+  }
+
+ .youtube-play {
+   // This rule lost the battle to %extend_9, so for now i'm just editing
+   // extend_9 manually, until we refactor the wtf-ness.
   }
 }
 
