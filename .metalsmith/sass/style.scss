@@ -60,7 +60,7 @@ body {
 	color: $grey;
 	background-image: url(../img/bg.png);
 	background-repeat: no-repeat;
-	background-position: 0 -200px;
+	background-position: top center;
 	background-size: 100%;
 }
 html {
@@ -277,14 +277,16 @@ footer.main-footer {
 		font-style: normal;
 		&:before {
 			content: "";
-			display: block;
-			width: 80%;
-			height: 1px;
-			top: 0;
-			left: 50%;
-			position: absolute;
-			//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
-			@include transform(-50px);
+            display: block;
+            width: 80%;
+            height: 1px;
+            background-image: -webkit-linear-gradient(left,rgba(59,64,67,0) 0%,#3b4043 10%,#3b4043 90%,rgba(59,64,67,0) 100%);
+            top: 0;
+            left: 50%;
+            position: absolute;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            transform: translateX(-50%);
 		}
     // This should have a gradient background. Fix plz.
     // border-top: $dark-grey 1px solid;
