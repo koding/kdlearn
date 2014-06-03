@@ -871,7 +871,7 @@ body > .page {
 }
 
 .fancy-youtube-highlight {
-  margin: 100px auto;
+  margin: 100px auto 60px;
 
   .video-shadow {
     margin: 80px 30px;
@@ -934,11 +934,11 @@ body > .page {
     margin-left: 0;
   }
   li .youtube-mini {
-    height: 100px;
+    height: 86px;
   }
   li .title {
     color: lighten($grey, 5%);
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
