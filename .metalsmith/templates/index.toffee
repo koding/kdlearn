@@ -46,7 +46,14 @@
   <li>
     <div class="content-preview">
       <h4> #{print guide.title}</h4>
-      <p class="excerpt">#{print guide.excerpt}</p>
+      {#
+      if guide.excerpt.length > 300 {:
+        <p class="excerpt">#{print guide.excerpt[..300]}...</p>
+        :}
+      else {:
+        <p class="excerpt">#{print guide.excerpt}</p>
+        :}
+      #}
       <p>
         <a href="/#{guide.file[...-5]}">Read more</a>
       </p>
