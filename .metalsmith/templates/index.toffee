@@ -8,6 +8,29 @@
   <p>Check out the <a href="/videos">Videos</a> section for more!</p>
 </div>
 
+<div class="fancy-youtube-highlight">
+  <div class="video-shadow">
+    <div class="main">
+    <iframe width="960" height="720" src="//www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+      <!--
+      Not sure if we can use these, because the "hqimage" is still too low quality
+
+      <a slug="foo" title="foo"
+        rel="videos" class="youtube-mini fancybox.iframe"
+        href="//www.youtube.com/v/dQw4w9WgXcQ?autoplay=1&rel=0&controls=0&showinfo=0&modestbranding=1">
+      <img src="http://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" />
+      <span class="youtube-play fa fa-play-circle"></span>
+      </a>
+      <span class="title"><a href="foo">
+        foo bar baz
+      </a></span>
+      -->
+    </div>
+  </div>
+  <ul>
+  </ul>
+</div>
+
 <div class="content-preview custom">
   <h4>Latest guides and articles about Koding features</h4>
   <p>Check out the <a href="/guides">Guides</a> section for more!</p>
