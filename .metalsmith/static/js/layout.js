@@ -84,7 +84,7 @@ $(document).ready(function () {
 
     prettyPrint();
     
-    $(".youtube").fancybox({
+    $(".youtube-mini").fancybox({
         beforeShow : function() {
             var slug = $(this.element).attr('slug');
             this.title = '<a href="../' + slug.slice(0, -5) + '">' + this.title + '</a>';

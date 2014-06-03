@@ -968,6 +968,12 @@ a.youtube-mini {
   }
 
  .youtube-play {
+    top: 25%;
+    right: 35%;
+    @extend %extend_9;
+    &:hover {
+        color: $color_0;
+    }
    // This rule lost the battle to %extend_9, so for now i'm just editing
    // extend_9 manually, until we refactor the wtf-ness.
   }
