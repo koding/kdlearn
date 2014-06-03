@@ -857,13 +857,6 @@ section {
 // CSS->SCSS, below is hand written.
 //
 
-a {
-  border-bottom: 1px $grey solid;
-}
-a:hover {
-  text-decoration: none;
-}
-
 body > header {
   color: $white;
   h2 {
@@ -943,6 +936,13 @@ a.youtube-mini {
 }
 
 .content-preview {
+  a {
+    border-bottom: 1px $grey solid;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+
   p {
     margin-top: 0;
   }
