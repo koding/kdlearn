@@ -40,33 +40,22 @@
   <p>Check out the <a href="/guides">Guides</a> section for more!</p>
 </div>
 
-        <div class="docs-content">
-                    
-            <div class="listing">
-                <div class="latest-guides">
-                    <h3>Latest guides</h3>
-                    <ul>
-                      {#
-                      for guide in collections.guide[...6]
-                        {:
-                        <li>
-                          <a href="/#{guide.file[...-5]}" class="title">#{print guide.title}</a>
-                          <div class="meta">
-                            by <span class="author">#{print guide.author}</span> &bull; about <span class="date">#{print moment(guide.date).fromNow()}</span>
-                          </div>
-                        </li>
-                        :}
-                      #}
-                    </ul>
-                </div>
-                
-                <div class="latest-videos">
-                    <h3>Latest videos</h3>
-                    <ul>
-                    </ul>
-                </div>
-            </div>
-        </div>
+
+<ul class="content-previews">
+{# for guide in collections.guide[...6] {:
+  <li>
+    <div class="content-preview">
+      <h4> #{print guide.title}</h4>
+      <p class="excerpt">#{print guide.excerpt}</p>
+      <p>
+        <a href="/#{guide.file[...-5]}">Read more</a>
+      </p>
+    </div>
+  </li>
+:} #}
+</ul>
+
+
     </div>
 </section>
 #{partial 'footer.toffee'}

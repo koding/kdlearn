@@ -962,6 +962,23 @@ a.youtube-mini {
   }
 }
 
+.content-previews {
+  margin-top: 60px;
+  padding: 0;
+
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
+.content-previews li {
+  float: left;
+  width: 47%;
+  font-size: 16px;
+  padding: 10px;
+  list-style: none;
+}
 .content-preview {
   a {
     border-bottom: 1px $grey solid;
