@@ -23,6 +23,15 @@
     </div>
   </div>
   <ul>
+  {# for video in collections.video[...4] {:
+    <li>
+      <a href="//www.youtube.com/v/#{video.videoId}?autoplay=1&rel=0&controls=0&showinfo=0&modestbranding=1" slug="#{print video.file}" title="#{print video.title}" rel="videos" class="youtube-mini fancybox.iframe">
+        <img src="http://img.youtube.com/vi/#{video.videoId}/hqdefault.jpg" />
+        <span class="youtube-play fa fa-play-circle"></span>
+      </a>
+      <span class="title">#{print video.title}</span>
+    </li>
+  :} #}
   </ul>
 </div>
 
@@ -54,18 +63,6 @@
                 <div class="latest-videos">
                     <h3>Latest videos</h3>
                     <ul>
-                        {#
-                        for video in collections.video[...4]
-                          {:
-                            <li>
-                                <span class="title">#{print video.title}</span>
-                                <a href="//www.youtube.com/v/#{video.videoId}?autoplay=1&rel=0&controls=0&showinfo=0&modestbranding=1" slug="#{print video.file}" title="#{print video.title}" rel="videos" class="youtube fancybox.iframe">
-                                    <img src="http://img.youtube.com/vi/#{video.videoId}/hqdefault.jpg" />
-                                    <span class="youtube-play fa fa-play-circle"></span>
-                                </a>
-                            </li>
-                          :}
-                        #}
                     </ul>
                 </div>
             </div>
