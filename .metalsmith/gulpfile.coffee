@@ -29,9 +29,8 @@ paths =
   ]
   coffee: 'static/**/*.coffee'
   documents: [
-    '!../.metalsmith'
-    '!node_modules/**'
-    '../**'
+    '!**'
+    '../**/*.md'
   ]
   sass: './sass/**/*.scss'
   static: [
