@@ -89,7 +89,6 @@ h1 {
 	line-height: 40px;
 	margin: 0;
 	padding: 0;
-	float: left;
 	color: $color_1;
 	font-weight: bold;
 	font-size: 35px;
@@ -866,6 +865,11 @@ body > header {
     margin-bottom: 10px;
     font-size: 32px;
   }
+}
+
+body > header h1,
+body > nav h1 {
+  float: left;
 }
 
 body > .page {
