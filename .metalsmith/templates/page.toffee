@@ -1,22 +1,30 @@
 #{partial 'head.toffee'}
 #{partial 'topnav.toffee'}
 <section>
-    <div class="container">
-        #{partial 'sidebar.toffee'}
-        <div class="docs-content">
-            {#
-            if videoId?
-              {:
-                <div class="video">
-                    <a href="//www.youtube.com/v/#{videoId}?autoplay=1&rel=0&controls=0&showinfo=0&modestbranding=1" slug="#{print file}" title="#{print title}" class="youtube fancybox.iframe">
-                        <img src="http://img.youtube.com/vi/#{videoId}/hqdefault.jpg" />
-                        <span class="youtube-play fa fa-play-circle"></span>
-                    </a>
-                </div>
-              :}
-            #}
-            #{print contents}
+  <div class="container">
+    #{partial 'sidebar.toffee'}
+    <div class="docs-content">
+      {# if videoId?  {:
+        <div class="video">
+          <a href="//www.youtube.com/v/#{videoId}?autoplay=1&rel=0&controls=0&showinfo=0&modestbranding=1" slug="#{print file}" title="#{print title}" class="youtube fancybox.iframe">
+            <img src="http://img.youtube.com/vi/#{videoId}/hqdefault.jpg" />
+            <span class="youtube-play fa fa-play-circle"></span>
+          </a>
         </div>
+      :} #}
+      #{print contents}
     </div>
+    <ul class="koding-linkback">
+      <li class="signup">
+        <a href="https://koding.com/Register">Sign Up Now</a>
+      </li>
+      <li class="signin">
+        <a href="https://koding.com/Login">Login</a>
+      </li>
+      <li class="discuss">
+        <a href="https://koding.com/link-to-chat">Discuss This Guide</a>
+      </li>
+    </ul>
+  </div>
 </section>
 #{partial 'footer.toffee'}
