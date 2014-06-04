@@ -3,7 +3,7 @@
 <section>
   <div class="container">
     <div class="docs-content" id="page-faq">
-      <h2>Do you have any questions?</h2>
+      <h2>Commonly Asked Questions</h2>
       <ul>
       {# for faq in paginate.files {:
         <li>
