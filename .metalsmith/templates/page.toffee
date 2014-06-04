@@ -2,7 +2,7 @@
 #{partial 'topnav.toffee'}
 <section>
   <div class="container">
-    #{partial 'sidebar.toffee'}
+    {# if not hideSidebar? then print partial 'sidebar.toffee' #}
     <div class="docs-content">
       {# if videoId?  {:
         <div class="video">
