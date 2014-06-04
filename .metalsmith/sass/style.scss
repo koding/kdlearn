@@ -225,16 +225,18 @@ footer.main-footer {
 		margin: 0 auto;
 		display: block;
 		position: relative;
-		//Instead of the line below you could use @include box-sizing($bs)
-		box-sizing: border-box;
+		@include box-sizing(border-box);
         nav {
             background: none;
         }
 	}
+	.block-container{
+	    width: 500px;
+	    margin: 0 auto;
+	}
 	.footer-block {
-		width: 25%;
-		//Instead of the line below you could use @include box-sizing($bs)
-		box-sizing: border-box;
+		width: 50%;
+		@include box-sizing(border-box);
 		display: block;
 		float: left;
 		a {
@@ -248,24 +250,6 @@ footer.main-footer {
 		h5 {
 			margin: 0 0 6px;
 			color: $color_2;
-		}
-	}
-	.about-koding {
-		h5 {
-			font-weight: 600;
-			color: $color_3;
-		}
-		p {
-			padding-right: 72px;
-			margin: 2px 0 4px;
-			line-height: 18px;
-			color: $color_4;
-			//Instead of the line below you could use @include box-sizing($bs)
-			box-sizing: border-box;
-		}
-		a {
-			color: $color_5;
-			text-decoration: underline;
 		}
 	}
 	cite {
