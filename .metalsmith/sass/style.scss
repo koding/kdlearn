@@ -938,8 +938,11 @@ body > .page {
     height: 86px;
   }
   li .title {
+    display: block;
     color: lighten($grey, 5%);
     font-size: 13px;
+    line-height: 20px;
+    vertical-align: top;
   }
 }
 
