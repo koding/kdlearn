@@ -455,6 +455,9 @@ section {
 		border-right: 2px solid transparent;
 		text-transform: capitalize;
 	}
+  h5 a {
+    color: $grey;
+  }
 	.active {
 		//background: $color_2;
 		//border-right: 2px solid $color_3;

@@ -10,6 +10,17 @@ checkActiveItems = (items) ->
 #}
 
 <ul id="left-nav">
+  <li>
+    <h5><a href="/guides/getting-started">Getting Started</a></h5>
+    <ul>
+      <li>
+        <a href="/guides/getting-started/the-ui">The Koding UI</a>
+      </li>
+      <li>
+        <a href="/guides/getting-started/activity-feed">The Activity Feed</a>
+      </li>
+    </ul>
+  </li>
   {# faqs = collections.faq[...5] #}
   <li class="#{checkActiveItems faqs}">
     <h5>Common Questions</h5>
