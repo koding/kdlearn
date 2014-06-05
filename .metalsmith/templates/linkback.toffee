@@ -1,0 +1,11 @@
+<ul class="koding-linkback">
+  <li class="signup">
+    <a href="https://koding.com/Register">Sign Up Now</a>
+  </li>
+  <li class="signin">
+    <a href="https://koding.com/Login">Login</a>
+  </li>
+  <li class="discuss">
+    <a href="https://koding.com/link-to-chat">Discuss This Guide</a>
+  </li>
+</ul>

@@ -44,5 +44,6 @@
   :} #}
 </div>
 
+#{partial 'linkback.toffee'}
 </div></section>
 #{partial 'footer.toffee'}
