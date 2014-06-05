@@ -8,7 +8,7 @@ hideSidebar: true
 template: series.toffee
 ---
 
-# Getting Started
+# Getting Started with Koding
 
 In this Getting Started series, lets go over some basic usage of Koding. We'll 
 go over each section, and by the end you should have a basic understanding how 
