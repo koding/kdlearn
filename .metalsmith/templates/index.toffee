@@ -11,15 +11,12 @@
 <div class="fancy-youtube-highlight">
   <div class="video-shadow">
     <div class="main">
-      <a slug="foo" title="foo"
+      <a slug="foo" 
         rel="videos" class="youtube-mini fancybox.iframe"
-        href="//www.youtube.com/v/dQw4w9WgXcQ?autoplay=1&rel=0&controls=0&showinfo=0&modestbranding=1">
-      <img src="http://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" />
+        href="//www.youtube.com/v/5E85g_ddV3A?autoplay=1&rel=0&controls=0&showinfo=0&modestbranding=1">
+      <img src="http://img.youtube.com/vi/5E85g_ddV3A/maxresdefault.jpg" />
       <span class="youtube-play fa fa-play-circle"></span>
       </a>
-      <span class="title"><a href="foo">
-        foo bar baz
-      </a></span>
     </div>
   </div>
   <ul>

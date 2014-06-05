@@ -872,7 +872,7 @@ body > .page {
   margin: 100px auto 60px;
 
   .video-shadow {
-    margin: 80px 30px;
+    margin: 80px 54px 70px;
     height: 300px;
     background-color: darken($light-grey, 10%);
     border-radius: 10px;
@@ -883,27 +883,35 @@ body > .page {
     top: -50px;
     margin: 0 auto;
     width: 700px;
-    height: 400px;
+    height: 390px;
     border-radius: 10px;
     background-color: $light-black;
 
     .youtube-mini {
-      height: 300px;
       border: none;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
+      height: 100%;
 
       img {
         margin-top: 0;
-        height: 300px;
-        width: 700px;
+        height: 100%;
+        width: 100%;
+      }
+
+      .youtube-play {
+        top: 40%;
+        right: 44%;
+        font-size: 94px;
+        height: 80px;
+        line-height: 82px;
       }
     }
 
     .title {
       display: block;
-      padding: 20px 10px 10px;
+      padding: 16px 10px 10px;
       color: $white;
+      font-size: 16px;
+      text-align: center;
 
       a {
         border-bottom: none;
