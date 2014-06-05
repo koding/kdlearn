@@ -35,7 +35,19 @@ checkActiveItems = (items) ->
 
   {# guides = collections.guide[...5] #}
   <li class="#{checkActiveItems guides}">
-    <h5>Guides</h5>
+    <h5>New Guides</h5>
+    <ul>
+    {# for guide in guides {:
+      <li class="#{checkActive guide}">
+        <a href="#{guide.httplink}">#{print guide.title}</a>
+      </li>
+    :} #}
+    </ul>
+  </li>
+
+  {# guides = collections.guide[...5] #}
+  <li class="#{checkActiveItems guides}">
+    <h5>Updated Guides</h5>
     <ul>
     {# for guide in guides {:
       <li class="#{checkActive guide}">
