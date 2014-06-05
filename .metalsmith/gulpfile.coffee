@@ -54,6 +54,16 @@ gulp.task 'coffee', ->
 gulp.task 'metalsmith', -> metal()
 
 
+# ## preview
+#
+# Run a small http server pointed at the build directory, to preview
+# the compiled pages.
+gulp.task 'preview', ['build'], ->
+  connect()
+    .use connect.static path.join __dirname, 'build'
+    .listen 8000
+
+
 # ## sass
 #
 # Compile our sass to css in the build dir.
