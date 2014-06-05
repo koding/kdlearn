@@ -859,6 +859,15 @@ body > .page {
   margin-bottom: 60px;
 }
 
+#page-guides {
+  ul > li:first-child {
+    padding-top: 0;
+    > h3:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
 .fancy-youtube-highlight {
   margin: 100px auto 60px;
 
@@ -1096,6 +1105,65 @@ a.youtube-mini {
   color: $dark-grey;
   background-color: $light-grey;
 }
+
+
+.guides-intro {
+  margin-bottom: 60px;
+
+  h1, p {
+    text-align: center;
+  }
+  h1 {
+    margin-bottom: 0px;
+  }
+  h2 {
+    margin-left: 0;
+    font-weight: normal;
+  }
+  p {
+    margin-top: 0;
+  }
+  ul {
+    padding: 0;
+  }
+  li {
+    list-style: none;
+  }
+  &:after {
+		content: " ";
+		display: table;
+		clear: both;
+  }
+}
+.guides-intro .favorites,
+.guides-intro .recent {
+  margin: 60px 5%;
+  width: 40%
+}
+.guides-intro .favorites {
+  float: left;
+}
+.guides-intro .recent {
+  float: right;
+}
+.guides-intro .tags {
+  text-align: center;
+  li {
+    display: inline-block;
+    margin-right: 6px;
+    text-transform: capitalize;
+    &:after {
+      content: ","
+    }
+  }
+  li:last-child {
+    margin-right: 0;
+    &:after {
+      content: ""
+    }
+  }
+}
+
 
 //--------------------------
 

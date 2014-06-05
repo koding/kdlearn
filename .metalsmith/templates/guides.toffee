@@ -2,20 +2,67 @@
 #{partial 'topnav.toffee'}
 <section><div class="container">
 
+{#
+if paginate.current is 0 {:
+<div class="guides-intro">
+  <h1>Guides</h1>
+  <p>
+    Check out recent guides, our favorite guides, search for a category, or
+    browser all of the available guides below!
+  </p>
+  <div class="favorites">
+    <h2>Recently Added</h2>
+    <ul>
+    {# for guide in collections.guide[...5] {:
+      <li>
+        <a href="/#{guide.httplink}" class="title">#{print guide.title}</a>
+      </li>
+    :} #}
+    </ul>
+  </div>
+  <div class="recent">
+    <h2>Recently Updated</h2>
+    <ul>
+    {# for guide in collections.guide[...5] {:
+      <li>
+        <a href="/#{guide.httplink}" class="title">#{print guide.title}</a>
+      </li>
+    :} #}
+    </ul>
+  </div>
+
+  <div class="tags">
+    <h2>Browse by Tag</h2>
+    <ul>
+      <li><a href="/tags?q=foo">foo</a></li>
+      <li><a href="/tags?q=bar">bar</a></li>
+      <li><a href="/tags?q=baz">baz</a></li>
+      <li><a href="/tags?q=bat">bat</a></li>
+      <li><a href="/tags?q=foo">foo</a></li>
+      <li><a href="/tags?q=bar">bar</a></li>
+      <li><a href="/tags?q=baz">baz</a></li>
+      <li><a href="/tags?q=bat">bat</a></li>
+      <li><a href="/tags?q=foo">foo</a></li>
+      <li><a href="/tags?q=bar">bar</a></li>
+      <li><a href="/tags?q=baz">baz</a></li>
+      <li><a href="/tags?q=bat">bat</a></li>
+    </ul>
+  </div>
+</div>
+:} #}
+
 #{partial 'sidebar.toffee'}
 
 <div class="docs-content" id="page-guides">
-  <h2>Let us guide you!</h2>
   <ul>
   {# for guide in paginate.files {:
     <li>
       <h3><a href="/#{guide.file[...-5]}" class="title">#{print guide.title}</a></h3>
-      <div class="excerpt">
-        #{print guide.excerpt}
-        <span class="readmore"><a href="/#{guide.file[...-5]}" class="fa fa-hand-o-right"></a></span>
-      </div>
       <div class="meta">
         by <span class="author">#{print guide.author}</span> &bull; about <span class="date">#{print moment(guide.date).fromNow()}</span>
+      </div>
+      <div class="meta">
+        Tagged in <a href="/tags?q=foo">foo</a>, <a href="/tags?q=bar">bar</a>, <a href="/tags?q=baz">baz</a>
       </div>
     </li>
   :} #}
