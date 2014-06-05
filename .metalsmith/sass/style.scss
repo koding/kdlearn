@@ -203,7 +203,7 @@ footer.main-footer {
 		@include box-sizing(border-box);
         nav {
             background: none;
-            min-height: 100px;
+            min-height: 85px;
         }
 	}
 	.block-container{
@@ -268,7 +268,7 @@ footer.main-footer {
 		color: $color_4;
 		display: block;
 		text-align: center;
-		margin: 30px 0 0;
+		margin: 5px 0 0;
 		word-spacing: 5px;
 		a {
 			color: $color_4;
@@ -282,13 +282,7 @@ footer.main-footer {
 	}
 	nav a {
 		line-height: 22px;
-		&:after {
-			content: '|';
-			line-height: 0;
-			padding: 0 10px;
-			margin: 0;
-			height: 0;
-		}
+		padding-right: 25px;
 	}
 }
 #logo {
@@ -309,6 +303,8 @@ footer.main-footer {
     background-size: 138.5px 1055px;
     width: 16px;
     height: 17px;
+    vertical-align: middle;
+    margin-bottom: 4px;
   }
 
   a, a:hover {
