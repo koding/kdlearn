@@ -190,7 +190,7 @@ a {
 }
 
 footer.main-footer {
-	padding: 56px 0;
+	padding: 20px 0;
 	font-size: 13px;
 	font-weight: 400;
 	background: $color_0;
@@ -203,20 +203,19 @@ footer.main-footer {
 		@include box-sizing(border-box);
         nav {
             background: none;
+            min-height: 85px;
         }
 	}
 	.block-container{
-	    width: 500px;
+	    width: 860px;
 	    margin: 0 auto;
 	}
 	.footer-block {
-		width: 50%;
 		@include box-sizing(border-box);
 		display: block;
-		float: left;
 		a {
 			color: $color_1;
-			display: inline;
+			display: inline-block;
 			text-decoration: none;
 			&:hover {
 				text-decoration: none;
@@ -269,7 +268,7 @@ footer.main-footer {
 		color: $color_4;
 		display: block;
 		text-align: center;
-		margin: 30px 0 0;
+		margin: 5px 0 0;
 		word-spacing: 5px;
 		a {
 			color: $color_4;
@@ -283,15 +282,7 @@ footer.main-footer {
 	}
 	nav a {
 		line-height: 22px;
-		&:after {
-			content: '\A';
-			display: block;
-			white-space: pre;
-			line-height: 0;
-			padding: 0;
-			margin: 0;
-			height: 0;
-		}
+		padding-right: 25px;
 	}
 }
 #logo {
@@ -312,6 +303,8 @@ footer.main-footer {
     background-size: 138.5px 1055px;
     width: 16px;
     height: 17px;
+    vertical-align: middle;
+    margin-bottom: 4px;
   }
 
   a, a:hover {
@@ -349,7 +342,7 @@ nav {
             padding: 5px 15px;
             border: 1px solid #ccc;
             border-radius: 4px;
-            margin: 20px 0;
+            margin: 15px 0;
             .searchIcon {
                 background-image: url(../img/sprite.png);
                 background-position: -6px -2px;
