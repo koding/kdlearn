@@ -869,7 +869,9 @@ body > .page {
 }
 
 .fancy-youtube-highlight {
-  margin: 100px auto 60px;
+  //margin: 100px auto 60px;
+  // Experimenting with the video overlapping header
+  margin: -360px auto 60px;
 
   .video-shadow {
     margin: 80px 54px 70px;
