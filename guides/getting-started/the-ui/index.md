@@ -2,7 +2,11 @@
 title: The UI
 author: Lee Olayvar
 date: 2014-05-30
-template: page.toffee
+
+hideSidebar: true
+series: getting-started
+series-index: 1
+template: series.toffee
 ---
 
 

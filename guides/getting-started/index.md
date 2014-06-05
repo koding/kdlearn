@@ -2,7 +2,10 @@
 title: Getting Started
 author: Koding Community
 date: 2013-11-30
-template: page.toffee
+series: getting-started
+series-index: 0
+hideSidebar: true
+template: series.toffee
 ---
 
 # Getting Started
