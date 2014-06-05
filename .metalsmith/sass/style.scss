@@ -404,7 +404,7 @@ section {
 	background-color: $white;
 	list-style: none;
 	margin: 0 0 0 20px;
-	padding: 15px 20px;
+	padding: 0 20px 0 0;
 	font-size: 15px;
   float: left;
 	a {
@@ -415,8 +415,11 @@ section {
 		border-right: 2px solid transparent;
 		text-transform: capitalize;
 	}
-  h5 a {
-    color: $grey;
+  h5 {
+    line-height: 18px;
+    a {
+      color: $grey;
+    }
   }
 	.active {
 		//background: $color_2;
