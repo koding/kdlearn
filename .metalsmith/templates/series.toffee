@@ -4,15 +4,6 @@
 {# if not hideSidebar? then print partial 'sidebar.toffee' #}
 
 <div class="docs-content">
-  {# if series.prev? {:
-    <ul class="series">
-      <li><a href="#{series.prev.httplink}">Previous: #{series.prev.title}</a></li>
-    {# if series.next? {:
-      <li><a href="#{series.next.httplink}">Next: #{series.next.title}</a></li>
-    :} #}
-    </ul>
-  :} #}
-
   {# if videoId?  {:
     <div class="video">
       <a href="//www.youtube.com/v/#{videoId}?autoplay=1&rel=0&controls=0&showinfo=0&modestbranding=1" title="#{print title}" class="youtube fancybox.iframe">
@@ -35,10 +26,10 @@
   :} #}
 
   {# if series.prev? {:
-    <ul class="series">
-      <li><a href="#{series.prev.httplink}">Previous: #{series.prev.title}</a></li>
+    <ul class="series-nav">
+      <li><a href="#{series.prev.httplink}">Previous</a></li>
     {# if series.next? {:
-      <li><a href="#{series.next.httplink}">Next: #{series.next.title}</a></li>
+      <li><a href="#{series.next.httplink}">Next</a></li>
     :} #}
     </ul>
   :} #}

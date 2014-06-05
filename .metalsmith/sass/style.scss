@@ -1039,6 +1039,36 @@ a.youtube-mini {
   }
 }
 
+
+.series-nav {
+  padding: 0 20px;
+  li {
+    width: 120px;
+    list-style: none;
+    text-align: center;
+    color: #000;
+    background-color: $light-grey;
+    border-radius: 4px;
+  }
+  a {
+    display: block;
+  }
+  a:hover {
+  }
+  &:after {
+		content: " ";
+		display: table;
+		clear: both;
+  }
+}
+.series-nav li:first-child {
+  float: left;
+}
+.series-nav li:last-child {
+  float: right;
+}
+
+
 .koding-linkback .signup {
   background-color: $green;
 }
