@@ -862,8 +862,15 @@ body > .page {
 #page-guides {
   > ul {
     padding: 0;
+
+    &:after {
+      content: " ";
+      display: table;
+      clear: both;
+    }
   }
   > ul > li {
+    float: left;
     display: inline-block;
     width: 49%;
     list-style: none;
@@ -873,6 +880,7 @@ body > .page {
     > h3:first-child {
       margin-top: 0;
     }
+
   }
 }
 
