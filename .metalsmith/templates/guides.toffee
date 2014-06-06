@@ -10,24 +10,6 @@ if paginate.current is 0 {:
     Check out recent guides, our favorite guides, search for a category, or
     browser all of the available guides below!
   </p>
-
-  <div class="tags">
-    <h2>Browse by Tag</h2>
-    <ul>
-      <li><a href="/tags?q=foo">foo</a></li>
-      <li><a href="/tags?q=bar">bar</a></li>
-      <li><a href="/tags?q=baz">baz</a></li>
-      <li><a href="/tags?q=bat">bat</a></li>
-      <li><a href="/tags?q=foo">foo</a></li>
-      <li><a href="/tags?q=bar">bar</a></li>
-      <li><a href="/tags?q=baz">baz</a></li>
-      <li><a href="/tags?q=bat">bat</a></li>
-      <li><a href="/tags?q=foo">foo</a></li>
-      <li><a href="/tags?q=bar">bar</a></li>
-      <li><a href="/tags?q=baz">baz</a></li>
-      <li><a href="/tags?q=bat">bat</a></li>
-    </ul>
-  </div>
 </div>
 :} #}
 
@@ -35,7 +17,11 @@ if paginate.current is 0 {:
 
 <div class="docs-content" id="page-guides">
   <ul>
-    <li>#{partial 'taglist.toffee', tagName: 'Koding', tags: tags.koding}</li>
+    <li>#{partial 'taglist.toffee', tagName: 'Koding'}</li>
+    <li>#{partial 'taglist.toffee', tagName: 'MySQL'}</li>
+    <li>#{partial 'taglist.toffee', tagName: 'Apache'}</li>
+    <li>#{partial 'taglist.toffee', tagName: 'Javascript'}</li>
+    <li>#{partial 'taglist.toffee', tagName: 'PHP'}</li>
   </ul>
 </div>
 </div></section>

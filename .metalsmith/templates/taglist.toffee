@@ -1,17 +1,18 @@
 
 {#
+tagKey = tagName.toLowerCase() if not tagKey?
 #}
 
 <div class="tag-list">
   <h4 class="tag-name">#{tagName}</h4> 
   <ul>
-  {# for tag in tags {:
+  {# for tag in tags[tagKey][..5] {:
     <li class="tag-link">
       <a href="#{tag.httplink}">#{tag.title}</a>
     </li>
   :} #}
   </ul>
-  <a class="view-all" href="/categories/foo">
+  <a class="view-all" href="/categories/#{tagKey}">
     View all #{tagName} guides.
   </a>
 </div>
