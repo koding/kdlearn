@@ -2,6 +2,8 @@
 title: Ghost Blog Setup and Installation for Beginners
 author: Koding Community
 date: 2013-11-30
+categories: [ghost, nodejs]
+
 videoId: ZIR-4uoRjo0
 template: page.toffee
 ---

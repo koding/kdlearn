@@ -2,6 +2,8 @@
 title: Koding Subdomains and VHosts
 author: Koding Community
 date: 2013-11-30
+categories: [koding, apache]
+
 template: page.toffee
 ---
 

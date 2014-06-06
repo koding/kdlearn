@@ -2,6 +2,8 @@
 title: Markdown Basics, for Koding
 author: Lee Olayvar
 date: 2014-05-30
+categories: [markdown]
+
 template: page.toffee
 ---
 

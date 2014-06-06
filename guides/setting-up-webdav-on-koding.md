@@ -2,6 +2,8 @@
 title: Setting up WebDav on Koding
 author: Koding Community
 date: 2013-11-30
+categories: [koding, apache]
+
 template: page.toffee
 ---
 

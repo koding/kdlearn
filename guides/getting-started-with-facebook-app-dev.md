@@ -2,6 +2,8 @@
 title: Getting started with Facebook Application Development
 author: Koding Community
 date: 2013-11-30
+categories: [facebook]
+
 videoId: zrPxONt1uyo
 template: page.toffee
 ---

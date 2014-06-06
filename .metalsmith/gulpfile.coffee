@@ -98,11 +98,6 @@ gulp.task 'watch:code', ->
 # Run a web server exposing the files in the build directory, and recompile
 # the markdown on change.
 gulp.task 'watch:md', ['build'], ->
-  # Start a connect server to display our files
-  connect()
-    .use connect.static path.join __dirname, 'build'
-    .listen 8000
-  util.log 'Started web server on port 8000'
   gulp.watch paths.documents, ['build']
 
 

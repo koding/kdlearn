@@ -3,6 +3,8 @@ title: Get Help with Teamwork
 author: Koding Community
 date: 2013-11-30
 videoId: w6sl_Yt_gNo
+categories: [koding]
+
 template: page.toffee
 ---
 

@@ -2,6 +2,8 @@
 title: MySQL on Koding
 author: Koding Community
 date: 2013-11-30
+categories: [koding, mysql]
+
 template: page.toffee
 ---
 
