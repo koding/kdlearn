@@ -721,8 +721,7 @@ section {
     border: none;
   }
 }
-#page-faq,
-#page-guides {
+#page-faq {
     ul {
         list-style-type: none;
         padding: 0;
@@ -854,8 +853,17 @@ body > .page {
   margin-bottom: 60px;
 }
 
+// ## Guides Page
 #page-guides {
-  ul > li:first-child {
+  > ul {
+    padding: 0;
+  }
+  > ul > li {
+    display: inline-block;
+    width: 49%;
+    list-style: none;
+  }
+  > ul > li:first-child {
     padding-top: 0;
     > h3:first-child {
       margin-top: 0;
@@ -1170,6 +1178,36 @@ a.youtube-mini {
   }
 }
 
+
+// ## TAGLIST
+.tag-list {
+  padding: 6px;
+  font-size: 14px;
+
+  ul {
+    padding: 0;
+  }
+  li {
+    line-height: 16px;
+    list-style: none;
+    margin-bottom: 6px;
+  }
+  li:last-child {
+    margin-bottom: 0;
+  }
+}
+.tag-list .tag-name {
+  margin: 0;
+  font-size: 15px;
+
+  &:before {
+    content: "#";
+    margin-right: 5px;
+  }
+}
+.tag-list .view-all {
+  font-weight: bold;
+}
 
 //--------------------------
 

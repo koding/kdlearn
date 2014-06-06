@@ -1,0 +1,17 @@
+
+{#
+#}
+
+<div class="tag-list">
+  <h4 class="tag-name">#{tagName}</h4> 
+  <ul>
+  {# for tag in tags {:
+    <li class="tag-link">
+      <a href="#{tag.httplink}">#{tag.title}</a>
+    </li>
+  :} #}
+  </ul>
+  <a class="view-all" href="/categories/foo">
+    View all #{tagName} guides.
+  </a>
+</div>

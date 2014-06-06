@@ -35,32 +35,7 @@ if paginate.current is 0 {:
 
 <div class="docs-content" id="page-guides">
   <ul>
-  {# for guide in paginate.files {:
-    <li>
-      <h3><a href="/#{guide.file[...-5]}" class="title">#{print guide.title}</a></h3>
-      <div class="meta">
-        by <span class="author">#{print guide.author}</span> &bull; about <span class="date">#{print moment(guide.date).fromNow()}</span>
-      </div>
-      <div class="meta">
-        Tagged in <a href="/tags?q=foo">foo</a>, <a href="/tags?q=bar">bar</a>, <a href="/tags?q=baz">baz</a>
-      </div>
-    </li>
-  :} #}
-  </ul>
-
-  <ul class="pagination">
-  {# if paginate.prev? {:
-    <li><a href="/#{paginate.prev.name}">Previous</a></li>
-  :} #}
-  {# for page, i in paginate.pages {:
-    <li><a
-      href="/#{page.name}"
-      class="#{if paginate.current is i then 'currentPage'}"
-    >#{i}</a></li>
-  :} #}
-  {# if paginate.next? {:
-    <li><a href="/#{paginate.next.name}">Next</a></li>
-  :} #}
+    <li>#{partial 'taglist.toffee', tagName: 'Koding', tags: tags.koding}</li>
   </ul>
 </div>
 </div></section>
