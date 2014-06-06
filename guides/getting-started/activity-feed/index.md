@@ -1,7 +1,8 @@
 ---
 title: The Activity Feed
-author: Lee Olayvar
+author: Koding Community
 date: 2014-05-30
+categories: koding
 
 hideSidebar: true
 series: getting-started

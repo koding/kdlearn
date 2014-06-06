@@ -2,6 +2,8 @@
 title: Getting Started
 author: Koding Community
 date: 2013-11-30
+categories: [koding]
+
 series: getting-started
 series-index: 0
 hideSidebar: true

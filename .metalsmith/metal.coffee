@@ -17,6 +17,7 @@ filename     = require './plugins/filename'
 newPage      = require './plugins/new-page'
 series       = require './plugins/series'
 snapshot     = require './plugins/snapshot'
+tags         = require './plugins/tags'
 videoScraper = require './plugins/video-scraper'
 
 
@@ -44,6 +45,7 @@ module.exports = build = (callback=->) ->
       guide: 
         pattern: 'guides/*.html'
         sortBy: 'date'
+    .use tags metaKey: 'categories'
     .use videoScraper
       collection: 'video'
       key: 'videoId'
