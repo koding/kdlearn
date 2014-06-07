@@ -1226,7 +1226,7 @@ a.youtube-mini {
   li {
     line-height: 16px;
     list-style: none;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
   }
   li:last-child {
     margin-bottom: 0;
@@ -1235,14 +1235,15 @@ a.youtube-mini {
 .tag-list .tag-name {
   margin: 0;
   font-size: 15px;
+  font-weight: bold;
 
   &:before {
     content: "#";
-    margin-right: 5px;
   }
 }
 .tag-list .view-all {
-  font-weight: bold;
+  font-size: 12px;
+  margin-top: 6px;
 }
 
 //--------------------------
