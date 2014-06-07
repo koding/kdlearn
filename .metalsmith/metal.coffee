@@ -58,6 +58,12 @@ module.exports = build = (callback=->) ->
     .use snapshot collection: 'faq'
     .use snapshot collection: 'guide'
     .use paginate
+      collection: 'koding'
+      collectionSource: 'tags'
+      limit: 10
+      output: 'categories/koding'
+      metadata: template: 'tag.toffee'
+    .use paginate
       collection: 'faq'
       limit: 10
       output: 'faq'

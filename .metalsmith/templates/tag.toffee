@@ -1,0 +1,37 @@
+#{partial 'head.toffee'}
+#{partial 'topnav.toffee'}
+<section><div class="container">
+
+#{partial 'sidebar.toffee'}
+
+<div class="docs-content" id="page-category">
+  <ul>
+  {# for guide in paginate.files {:
+    <li>
+      <h3 class="title"><a href="/#{guide.file[...-5]}">#{print guide.title}</a></h3>
+      <div class="meta">
+        by <span class="author">#{print guide.author}</span> &bull; about <span class="date">#{print moment(guide.date).fromNow()}</span>
+      </div>
+    </li>
+  :} #}
+  </ul>
+  <!--
+  <ul class="pagination">
+  {# if paginate.prev? {:
+    <li><a href="/#{paginate.prev.name}">Previous</a></li>
+  :} #}
+  {# for page, i in paginate.pages {:
+    <li><a
+      href="/#{page.name}"
+      class="#{if paginate.current is i then 'currentPage'}"
+    >#{i}</a></li>
+  :} #}
+  {# if paginate.next? {:
+    <li><a href="/#{paginate.next.name}">Next</a></li>
+  :} #}
+  </ul>
+  -->
+</div>
+
+</div></section>
+#{partial 'footer.toffee'}

@@ -9,10 +9,11 @@ clone = require 'clone'
 
 
 module.exports = (opts={}) ->
-  opts.limit     ?= null
-  opts.perPage   ?= 10
-  opts.startPage ?= 1
-  opts.metadata  ?= {}
+  opts.limit            ?= null
+  opts.perPage          ?= 10
+  opts.startPage        ?= 1
+  opts.metadata         ?= {}
+  opts.collectionSource ?= 'collections'
 
   if not opts.output?
     console.warn 'paginate-deux requires output filename'
@@ -35,11 +36,12 @@ module.exports = (opts={}) ->
 
   (files, metalsmith, done) ->
     metadata = metalsmith.metadata()
-    cols     = metadata.collections
+    cols     = metadata[opts.collectionSource]
     col      = cols?[opts.collection]
 
     if not cols?
-      console.warn 'paginate-deux requires metalsmith-collections()'
+      console.warn "The collectionSource '#{opts.collectionSource}
+        is not found in metalsmith metadata."
       return done()
 
     if not col?
