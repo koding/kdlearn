@@ -11,6 +11,7 @@ markdown     = require 'metalsmith-markdown'
 permalinks   = require 'metalsmith-permalinks'
 templates    = require 'metalsmith-templates'
 paginate     = require './plugins/paginate'
+paginateTags = require './plugins/paginatetags'
 moment       = require './plugins/moment'
 feed         = require './plugins/feed'
 filename     = require './plugins/filename'
@@ -57,11 +58,10 @@ module.exports = build = (callback=->) ->
       metadata: template: 'search.toffee'
     .use snapshot collection: 'faq'
     .use snapshot collection: 'guide'
-    .use paginate
-      collection: 'koding'
+    .use paginateTags
       collectionSource: 'tags'
       limit: 10
-      output: 'categories/koding'
+      output: 'categories'
       metadata: template: 'tag.toffee'
     .use paginate
       collection: 'faq'
