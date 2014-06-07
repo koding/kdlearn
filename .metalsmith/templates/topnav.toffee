@@ -26,7 +26,7 @@
     </div>
     <div class="topSearchBox">
         <form method="GET" action="/search">
-            <input type="text" id="topSearch" name="q" value="" placeholder="How can we help you?" autocomplete="off">
+            <input type="text" id="topSearch" name="q" value="" autocomplete="off">
         </form>
     </div>
 </nav>
