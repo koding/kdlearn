@@ -1,35 +1,48 @@
 <footer class="kdview main-footer">
     <div class="inner-container clearfix">
     
-        <div class="block-container">
-            <nav class="footer-block">
-                <h5>COMPANY</h5>
-                <a href="http://learn.koding.com" target="_blank">KODING UNIVERSITY</a>
-                <a href="https://koding.com/About">JOBS</a>
-                <a href="https://koding.com/tos.html" target="_blank">TERMS AND CONDITIONS</a>
-                <a href="https://koding.com/privacy.html" target="_blank">PRIVACY POLICY</a>
-                <a href="mailto:hello@koding.com" target="_self">CONTACT US</a>
-                <a href="http://status.koding.com" target="_blank">STATUS</a>
-            </nav>
+        <div class="footer-block">
+            <h1 id="logo"><a href="/">
+              <span class="img"></span>
+              Koding
+            </a></h1>
             
-            <nav class="footer-block">
-            <h5>COMMUNITY</h5>
+            <hr>
+            
+            <p class="about-text">Koding gives you the necessary environment to start developing your apps,
+            run them, collaborate and share with the world.</p>
+            
+            <p class="copy">
+              2014 © Koding, Inc. 358 Brannan Street, San Francisco, CA, 94107
+            </p>
+    
+            <div class="social-links">
+                <a href="http://twitter.com/koding" id="twitter">TWITTER</a> &bull; <a href="http://facebook.com/kodingcom" id="fb">FACEBOOK</a>
+            </div>
+        </div>
+        
+        <nav class="footer-block">
+            <h5>Company</h5>
+            <hr>
+            <a href="http://learn.koding.com" target="_blank">KODING UNIVERSITY</a>
+            <a href="https://koding.com/About">JOBS</a>
+            <a href="https://koding.com/tos.html" target="_blank">TERMS AND CONDITIONS</a>
+            <a href="https://koding.com/privacy.html" target="_blank">PRIVACY POLICY</a>
+            <a href="mailto:hello@koding.com" target="_self">CONTACT US</a>
+            <a href="http://status.koding.com" target="_blank">STATUS</a>
+        </nav>
+        
+        <nav class="footer-block">
+            <h5>Community</h5>
+            <hr>
             <a href="/Activity">ACTIVITY</a>
             <a href="http://blog.koding.com">KODING BLOG</a>
             <a href="http://stories.koding.com">TESTIMONIALS</a>
             <a href="https://koding-cdn.s3.amazonaws.com/brand/koding-logo.pdf">BRAND GUIDELINES</a>
             <a href="https://koding.com/copyright.html" target="_blank">COPYRIGHT/DMCA GUIDELINES</a>
             <a href="https://koding.com/acceptable.html" target="_blank">ACCEPTABLE USER POLICY</a>
-            </nav>
-        </div>
-
-        <p class="made-in">
-          Lovingly made in Istanbul & San Francisco &lt;3
-        </p>
+        </nav>
         
-        <div class="social-links">
-            <a href="http://twitter.com/koding">TWITTER</a> · <a href="http://facebook.com/kodingcom">FACEBOOK</a>
-        </div>
     </div>
 </footer>
 
