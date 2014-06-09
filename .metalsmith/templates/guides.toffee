@@ -17,23 +17,9 @@ if paginate.current is 0 {:
 
 <div class="docs-content" id="page-guides">
   <ul>
-    <li>#{partial 'taglist.toffee', tagName: 'Koding'}</li>
-    <li>#{partial 'taglist.toffee', tagName: 'MySQL'}</li>
-    <li>#{partial 'taglist.toffee', tagName: 'Apache'}</li>
-    <li>#{partial 'taglist.toffee', tagName: 'Javascript'}</li>
-    <li>#{partial 'taglist.toffee', tagName: 'PHP'}</li>
-
-    <li>#{partial 'taglist.toffee', tagName: 'Koding'}</li>
-    <li>#{partial 'taglist.toffee', tagName: 'MySQL'}</li>
-    <li>#{partial 'taglist.toffee', tagName: 'Apache'}</li>
-    <li>#{partial 'taglist.toffee', tagName: 'Javascript'}</li>
-    <li>#{partial 'taglist.toffee', tagName: 'PHP'}</li>
-
-    <li>#{partial 'taglist.toffee', tagName: 'Koding'}</li>
-    <li>#{partial 'taglist.toffee', tagName: 'MySQL'}</li>
-    <li>#{partial 'taglist.toffee', tagName: 'Apache'}</li>
-    <li>#{partial 'taglist.toffee', tagName: 'Javascript'}</li>
-    <li>#{partial 'taglist.toffee', tagName: 'PHP'}</li>
+  {# for tagName of tags {:
+    <li>#{partial 'taglist.toffee', tagName: tagName}</li>
+  :} #}
   </ul>
 </div>
 </div></section>

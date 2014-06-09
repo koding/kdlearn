@@ -863,26 +863,16 @@ body > .page {
 // ## Guides Page
 #page-guides {
   > ul {
+    margin-top: -6px;
     padding: 0;
 
-    &:after {
-      content: " ";
-      display: table;
-      clear: both;
-    }
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
   }
   > ul > li {
-    float: left;
     display: inline-block;
-    width: 49%;
     list-style: none;
-  }
-  > ul > li:first-child {
-    padding-top: 0;
-    > h3:first-child {
-      margin-top: 0;
-    }
-
   }
 }
 
@@ -1247,6 +1237,7 @@ a.youtube-mini {
   margin: 0;
   font-size: 15px;
   font-weight: bold;
+  text-transform: capitalize;
 
   &:before {
     content: "#";
