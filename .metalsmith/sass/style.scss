@@ -30,6 +30,7 @@ $grey:          #555;
 $light-grey:    #eee;
 $light-grey2:   #838485;
 $green:         #27ae61;
+$footer_grey:   #f6f6f6;
 //--------------------------
 
 %extend_3 {
@@ -191,13 +192,13 @@ a {
 }
 
 footer.main-footer {
-	padding: 20px 0;
+	padding: 70px 0 120px 0;
 	font-size: 13px;
 	font-weight: 400;
-	background: $color_0;
+	background: $footer_grey;
 	.inner-container {
 		max-width: 1290px;
-		padding: 0 45px;
+		width: 1200px;
 		margin: 0 auto;
 		display: block;
 		position: relative;
@@ -207,83 +208,92 @@ footer.main-footer {
             min-height: 85px;
         }
 	}
-	.block-container{
-	    width: 860px;
-	    margin: 0 auto;
-	}
 	.footer-block {
 		@include box-sizing(border-box);
-		display: block;
+		display: inline-block;
+		vertical-align: top;
+		&:first-child {
+		    width: 586px;
+            margin-right: 15px;
+		}
+		&:nth-child(2) {
+		    width: 270px;
+            margin: 0 15px;
+		}
+		&:nth-child(3) {
+		    width: 270px;
+            margin-left: 15px;
+		}
 		a {
-			color: $color_1;
-			display: inline-block;
+			color: #595e61;
 			text-decoration: none;
 			&:hover {
 				text-decoration: none;
 			}
 		}
 		h5 {
-			margin: 0 0 6px;
-			color: $color_2;
+			margin: 0;
+            color: #858585;
+            font-size: 14px;
+            font-weight: bold;
 		}
-	}
-	cite {
-		display: block;
-		clear: both;
-		margin: 30px 0;
-        overflow: hidden;
-	}
-	address {
-		clear: both;
-		display: block;
-		text-align: center;
-    // Temporarily adding a margin to reduce border width
-		//margin: 50px auto 0 auto;
-		margin: 50px 40px 0;
-		padding: 25px 0 0;
-		font-size: 14px;
-		color: $color_1;
-		position: relative;
-		font-style: normal;
-		&:before {
-			content: "";
-            display: block;
-            width: 80%;
-            height: 1px;
-            background-image: -webkit-linear-gradient(left,rgba(59,64,67,0) 0%,#3b4043 10%,#3b4043 90%,rgba(59,64,67,0) 100%);
-            top: 0;
-            left: 50%;
-            position: absolute;
-            -webkit-transform: translateX(-50%);
-            -moz-transform: translateX(-50%);
-            transform: translateX(-50%);
+		#logo {
+		    color: #878d91;
+            margin: 0;
+            line-height: 25px;
+            span.img {
+                background-image: url(../img/logo.dark.small.png);
+                background-repeat: no-repeat;
+                background-position: 2px 1px;
+                background-size: 100%;
+            }
 		}
-    // This should have a gradient background. Fix plz.
-    // border-top: $dark-grey 1px solid;
-	}
-  .made-in {
-    margin-top: 0;
-    text-align: center;
-  }
-	.social-links {
-		color: $color_4;
-		display: block;
-		text-align: center;
-		margin: 5px 0 0;
-		word-spacing: 5px;
-		a {
-			color: $color_4;
-			font-size: 13px;
-			font-weight: 400;
-			text-decoration: none;
-			&:hover {
-				text-decoration: none;
-			}
+		.about-text {
+		    padding-right: 100px;
+            color: #595e61;
+            line-height: 20px;
+            font-size: 14px;
+            margin: 0;
+            margin-bottom: 25px;
+            padding-top: 10px;
 		}
+		.copy {
+            color: #595e61;
+            font-size: 14px;
+            margin: 0;
+            margin-bottom: 25px;
+        }
+    	.social-links {
+    		display: block;
+    		margin: 5px 0 0;
+    		word-spacing: 5px;
+    		a {
+    			color: $color_4;
+    			font-size: 13px;
+    			font-weight: bold;
+    			text-decoration: none;
+    			&:hover {
+    				text-decoration: none;
+    			}
+    		}
+    		#twitter {
+    		    color: #55acee;
+    		}
+    		#fb {
+    		    color: #3b5998;
+    		}
+    	}
+    	hr {
+    	    margin: 25px 0;
+            width: 35px;
+            height: 2px;
+            background: #e4e4e4;
+    	}
 	}
 	nav a {
-		line-height: 22px;
+		line-height: 25px;
 		padding-right: 25px;
+		display: block;
 	}
 }
 #logo {
