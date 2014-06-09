@@ -1,24 +1,27 @@
 #{partial 'head.toffee'}
 #{partial 'topnav.toffee'}
-<section>
-  <div class="container listing">
-    <div class="docs-content" id="page-videos">
-      <ul>
-      {# for video in paginate.files {:
-        <li>
-          <a slug="#{print video.file}" title="#{print video.title}"
-            rel="videos" class="youtube-mini fancybox.iframe"
-            href="//www.youtube.com/v/#{video.videoId}?autoplay=1&rel=0&controls=0&showinfo=0&modestbranding=1">
-          <img src="http://img.youtube.com/vi/#{video.videoId}/hqdefault.jpg" />
-          <span class="youtube-play fa fa-play-circle"></span>
-          </a>
-          <span class="title"><a href="../#{print video.httplink}">
-            #{print video.title}
-          </a></span>
-        </li>
-      :} #}
-      </ul>
-    </div>
-  </div>
-</section>
+<section><div class="container listing">
+<div class="docs-content" id="page-videos">
+
+<div class="category">
+  <h3 class="title">Koding Videos</h3>
+  <ul>
+  {# for video in paginate.files {:
+    <li>
+      <a slug="#{print video.file}" title="#{print video.title}"
+        rel="videos" class="youtube-mini fancybox.iframe"
+        href="//www.youtube.com/v/#{video.videoId}?autoplay=1&rel=0&controls=0&showinfo=0&modestbranding=1">
+      <img src="http://img.youtube.com/vi/#{video.videoId}/hqdefault.jpg" />
+      <span class="youtube-play fa fa-play-circle"></span>
+      </a>
+      <span class="title"><a href="../#{print video.httplink}">
+        #{print video.title}
+      </a></span>
+    </li>
+  :} #}
+  </ul>
+</div>
+
+</div>
+</div></section>
 #{partial 'footer.toffee'}

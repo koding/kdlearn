@@ -661,7 +661,6 @@ section {
         		.title {
                     display: block;
                     min-height: 75px;
-                    font-size: 15px;
                     margin-top: 8px;
                 }
                 a {
@@ -907,7 +906,6 @@ body > .page {
 }
 
 
-
 .fancy-youtube-highlight {
   //margin: 100px auto 60px;
   // Experimenting with the video overlapping header
@@ -988,8 +986,7 @@ body > .page {
   li .title {
     display: block;
     color: lighten($grey, 5%);
-    font-size: 13px;
-    line-height: 20px;
+    line-height: 16px;
     vertical-align: top;
     text-align: center;
   }
@@ -1247,6 +1244,25 @@ a.youtube-mini {
   font-size: 12px;
   margin-top: 6px;
 }
+
+
+// # PAGE-VIDEOS
+#page-videos > .category .title {
+  display: block;
+  color: lighten($grey, 5%);
+  font-size: 13px;
+  line-height: 16px;
+  vertical-align: top;
+  text-align: center;
+}
+#page-videos > .category > .title {
+  margin-left: 0;
+  font-size: 18px;
+  line-height: inherit;
+  vertical-align: inherit;
+  text-align: inherit;
+}
+
 
 //--------------------------
 
