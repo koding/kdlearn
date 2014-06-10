@@ -1057,6 +1057,23 @@ a.youtube-mini {
   }
 }
 
+// # Large videos
+.video .youtube-mini {
+  height: auto;
+  border-radius: 0;
+}
+.video .youtube-mini img {
+  width: auto;
+  height: auto;
+}
+.video .youtube-mini .youtube-play {
+  top: 36%;
+  right: 40%;
+  font-size: 94px;
+  height: 80px;
+  line-height: 82px;
+}
+
 .content-previews {
   margin-top: 60px;
   padding: 0;

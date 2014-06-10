@@ -6,8 +6,8 @@
     <div class="docs-content">
       {# if videoId?  {:
         <div class="video">
-          <a href="//www.youtube.com/v/#{videoId}?autoplay=1&rel=0&controls=0&showinfo=0&modestbranding=1" slug="#{print file}" title="#{print title}" class="youtube fancybox.iframe">
-            <img src="http://img.youtube.com/vi/#{videoId}/hqdefault.jpg" />
+          <a href="//www.youtube.com/v/#{videoId}?autoplay=1&rel=0&controls=0&showinfo=0&modestbranding=1" slug="#{print file}" title="#{print title}" class="youtube-mini fancybox.iframe">
+            <img src="http://img.youtube.com/vi/#{videoId}/maxresdefault.jpg" />
             <span class="youtube-play fa fa-play-circle"></span>
           </a>
         </div>
