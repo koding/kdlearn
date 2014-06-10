@@ -87,7 +87,7 @@ $(document).ready(function () {
     $(".youtube-mini").fancybox({
         beforeShow : function() {
             var slug = $(this.element).attr('slug');
-            this.title = '<a href="../' + slug.slice(0, -5) + '">' + this.title + '</a>';
+            this.title = '<a href="' + slug + '">' + this.title + '</a>';
         },
 		maxWidth	: 800,
 		maxHeight	: 600,
