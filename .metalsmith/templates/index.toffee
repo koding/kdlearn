@@ -1,12 +1,6 @@
 #{partial 'head.toffee'}
 #{partial 'header.toffee'}
-<section class="page">
-    <div class="container">
-
-<div class="content-preview custom">
-  <h4>Starter bits for beginners, watch and learn!</h4>
-  <p>Check out the <a href="/videos">Videos</a> section for more!</p>
-</div>
+<section class="page"><div class="container">
 
 <div class="fancy-youtube-highlight">
   <div class="video-shadow">
@@ -32,34 +26,7 @@
   </ul>
 </div>
 
-<div class="content-preview custom">
-  <h4>Latest guides and articles about Koding features</h4>
-  <p>Check out the <a href="/guides">Guides</a> section for more!</p>
-</div>
 
 
-<ul class="content-previews">
-{# for guide in collections.guide[...6] {:
-  <li>
-    <div class="content-preview">
-      <h4> #{print guide.title}</h4>
-      {#
-      if guide.excerpt.length > 300 {:
-        <p class="excerpt">#{print guide.excerpt[..300]}...</p>
-        :}
-      else {:
-        <p class="excerpt">#{print guide.excerpt}</p>
-        :}
-      #}
-      <p>
-        <a href="/#{guide.file[...-5]}">Read more</a>
-      </p>
-    </div>
-  </li>
-:} #}
-</ul>
-
-
-    </div>
-</section>
+</div></section>
 #{partial 'footer.toffee'}
