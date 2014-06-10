@@ -2,7 +2,7 @@
 title: Add CNAME records to your domain
 author: Team Koding
 date: 2014-01-17
-categories: [koding, domains]
+categories: [koding, domain]
 
 videoId: J-unJW-0CaI
 template: page.toffee
