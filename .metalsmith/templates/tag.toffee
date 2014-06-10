@@ -9,7 +9,7 @@
   <ul>
   {# for guide in paginate.files {:
     <li>
-      <h3 class="title"><a href="/#{guide.httplink}">#{print guide.title}</a></h3>
+      <h3 class="title"><a href="#{guide.httplink}">#{print guide.title}</a></h3>
       <div class="meta">
         by <span class="author">#{print guide.author}</span> &bull; about <span class="date">#{print moment(guide.date).fromNow()}</span>
         &bull; in categories
