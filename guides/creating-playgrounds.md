@@ -1,7 +1,7 @@
 ---
 title: How to create a Playground for Teamwork
-author: Koding Community
-date: 2013-11-30
+author: Team Koding
+date: 2014-03-09
 categories: [koding]
 
 template: page.toffee

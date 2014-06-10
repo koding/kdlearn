@@ -1,6 +1,6 @@
 ---
 title: Markdown Basics, for Koding
-author: Lee Olayvar
+author: Team Koding
 date: 2014-05-30
 categories: [markdown]
 

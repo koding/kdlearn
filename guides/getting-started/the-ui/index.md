@@ -1,6 +1,6 @@
 ---
 title: The UI
-author: Koding Community
+author: Team Koding
 date: 2014-05-30
 categories: [koding]
 

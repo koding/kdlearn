@@ -1,7 +1,7 @@
 ---
 draft: true
 title: Your first file on Koding
-author: Koding Community
+author: Team Koding
 date: 2014-02-01
 categories: [koding]
 

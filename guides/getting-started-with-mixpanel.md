@@ -1,7 +1,7 @@
 ---
 title: Mixpanel Setup and Usage for Beginners
-author: Koding Community
-date: 2013-11-30
+author: Team Koding
+date: 2014-03-17
 categories: [mixpanel, javascript]
 
 videoId: NSYbrPlw7a0

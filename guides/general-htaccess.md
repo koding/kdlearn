@@ -1,7 +1,7 @@
 ---
 title: General .htaccess
-author: Koding Community
-date: 2013-11-30
+author: Team Koding
+date: 2014-02-02
 categories: [apache]
 
 template: page.toffee

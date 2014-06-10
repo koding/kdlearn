@@ -1,7 +1,7 @@
 ---
 title: Firebase setup and usage for beginners
-author: Koding Community
-date: 2013-11-30
+author: Team Koding
+date: 2014-02-27
 categories: [firebase, javascript]
 
 template: page.toffee

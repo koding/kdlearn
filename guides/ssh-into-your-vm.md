@@ -1,7 +1,7 @@
 ---
 title: SSH into your Koding VM
-author: Koding Community
-date: 2013-11-30
+author: Team Koding
+date: 2014-04-08
 categories: [ssh]
 
 template: page.toffee

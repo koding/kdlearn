@@ -1,7 +1,6 @@
 ---
-draft: true
 title: Social
-author: Koding Community
+author: Team Koding
 date: 2014-02-01
 categories: [koding]
 

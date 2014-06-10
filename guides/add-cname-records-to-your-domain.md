@@ -1,7 +1,7 @@
 ---
 title: Add CNAME records to your domain
-author: Koding Community
-date: 2013-11-30
+author: Team Koding
+date: 2014-01-17
 categories: [koding, domains]
 
 videoId: J-unJW-0CaI

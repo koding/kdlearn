@@ -1,7 +1,7 @@
 ---
 title: What is Koding?
-author: Koding Community
-date: 2013-11-30
+author: Team Koding
+date: 2014-02-17
 categories: [koding]
 
 template: page.toffee
