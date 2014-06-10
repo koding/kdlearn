@@ -32,10 +32,13 @@ printVideo = (file) ->
       <a slug="foo" 
         rel="videos" class="youtube-mini fancybox.iframe"
         href="//www.youtube.com/v/5E85g_ddV3A?autoplay=1&rel=0&controls=0&showinfo=0&modestbranding=1">
-      <img src="http://img.youtube.com/vi/5E85g_ddV3A/maxresdefault.jpg" />
-      <span class="youtube-play fa fa-play-circle"></span>
+        <img src="http://img.youtube.com/vi/5E85g_ddV3A/maxresdefault.jpg" />
+        <span class="youtube-play fa fa-play-circle"></span>
       </a>
     </div>
+  </div>
+  <div class="title">
+    Koding Introduction
   </div>
   <ul>
   {# printVideo files['guides/social/index.html'] #}

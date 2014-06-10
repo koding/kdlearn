@@ -918,10 +918,10 @@ body > .page {
 .fancy-youtube-highlight {
   //margin: 100px auto 60px;
   // Experimenting with the video overlapping header
-  margin: -225px auto 60px;
+  margin: -225px auto 55px;
 
   .video-shadow {
-    margin: 80px 54px 70px;
+    margin: 80px 54px 50px;
     height: 300px;
     background-color: darken($light-grey, 10%);
     border-radius: 10px;
@@ -968,6 +968,12 @@ body > .page {
       }
     }
   } 
+
+  > .title {
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-align: center;
+  }
 
   ul {
     width: 700px;
