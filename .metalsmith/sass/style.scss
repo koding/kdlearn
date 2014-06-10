@@ -1320,6 +1320,16 @@ a.youtube-mini {
 
 
 // # PAGE-VIDEOS
+#page-videos > .category {
+  border-bottom: 2px solid $light-grey;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+}
+#page-videos > .category:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
 #page-videos > .category .title {
   display: block;
   color: lighten($grey, 5%);
@@ -1331,6 +1341,7 @@ a.youtube-mini {
 #page-videos > .category > .title {
   margin-left: 0;
   font-size: 18px;
+  font-weight: bold;
   line-height: inherit;
   vertical-align: inherit;
   text-align: inherit;

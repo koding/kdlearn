@@ -26,7 +26,7 @@ printVideo = (file) ->
 <div class="docs-content" id="page-videos">
 
 <div class="category">
-  <h3 class="title">Exploring Koding</h3>
+  <h3 class="title">Explore Koding</h3>
   <ul>
   {# printVideo videoId: '5E85g_ddV3A', title: 'Koding Introduction' #}
   {# printVideo files['guides/social/index.html'] #}
@@ -39,7 +39,7 @@ printVideo = (file) ->
 </div>
 
 <div class="category">
-  <h3 class="title">Installing on Koding</h3>
+  <h3 class="title">Installing Apps and Servers</h3>
   <ul>
   {# printVideo files['guides/bootstrap-3-quick-tip/index.html'] #}
   {# printVideo files['guides/getting-started-firebase/index.html'] #}
