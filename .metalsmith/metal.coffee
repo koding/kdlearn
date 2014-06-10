@@ -46,7 +46,11 @@ module.exports = build = (callback=->) ->
       guide: 
         pattern: 'guides/*.html'
         sortBy: 'date'
-    .use tags metaKey: 'categories'
+        reverse: true
+    .use tags
+      metaKey: 'categories'
+      sort: 'date'
+      reverse: true
     .use videoScraper
       collection: 'video'
       key: 'videoId'
