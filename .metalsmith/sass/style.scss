@@ -737,11 +737,14 @@ section {
   }
 }
 #page-faq {
-    ul {
+    > ul {
         list-style-type: none;
         padding: 0;
         margin: 0;
-        li {
+        > li:last-child {
+          border-bottom: none;
+        }
+        > li {
             border-bottom: 1px solid $color_3;
             padding: 10px 10px 30px 10px;
             @include transition(all ease 150ms);

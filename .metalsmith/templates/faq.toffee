@@ -3,11 +3,10 @@
 <section><div class="container">
 
 <ul id="left-nav">
-  {# faqs = collections.faq[...5] #}
   <li>
     <h5>Common Questions</h5>
     <ul>
-    {# for faq in faqs {:
+    {# for faq in paginate.files {:
       <li>
         <a
           href="##{faq.httplink.split('/')[-1..][0]}"
