@@ -1,22 +1,35 @@
 #{partial 'head.toffee'}
 #{partial 'topnav.toffee'}
-<section>
-  <div class="container">
-    <div class="docs-content" id="page-faq">
-      <h2>Commonly Asked Questions</h2>
-      <ul>
-      {# for faq in paginate.files {:
-        <li>
-          <h3 class="question">
-            <a href="/#{faq.file[...-5]}">#{print faq.title}</a>
-          </h3>
-          <div class="answer">
-            #{print faq.snapshot}
-          </div>
-        </li>
-      :} #}
-      </ul>
-    </div>
-  </div>
-</section>
+<section><div class="container">
+
+<ul id="left-nav">
+  {# faqs = collections.faq[...5] #}
+  <li>
+    <h5>Common Questions</h5>
+    <ul>
+    {# for faq in faqs {:
+      <li>
+        <a href="#{faq.httplink}" class="title">#{print faq.title}</a>
+      </li>
+    :} #}
+    </ul>
+  </li>
+</ul>
+
+<div class="docs-content" id="page-faq">
+  <ul>
+  {# for faq in paginate.files {:
+    <li>
+      <h3 class="question">
+        <a href="#{faq.httplink}">#{faq.title}</a>
+      </h3>
+      <div class="answer">
+        #{print faq.snapshot}
+      </div>
+    </li>
+  :} #}
+  </ul>
+</div>
+
+</div></section>
 #{partial 'footer.toffee'}
