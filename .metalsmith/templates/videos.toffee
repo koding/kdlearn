@@ -29,12 +29,12 @@ printVideo = (file) ->
   <h3 class="title">Exploring Koding</h3>
   <ul>
   {# printVideo videoId: '5E85g_ddV3A', title: 'Koding Introduction' #}
-  {# printVideo files['guides/your-first-file/index.html'] #}
   {# printVideo files['guides/social/index.html'] #}
+  {# printVideo files['guides/your-first-file/index.html'] #}
   {# printVideo files['guides/importing-your-files/index.html'] #}
   {# printVideo files['guides/the-terminal/index.html'] #}
-  {# printVideo files['guides/add-cname-records-to-your-domain/index.html'] #}
   {# printVideo files['guides/get-help-with-teamwork/index.html'] #}
+  {# printVideo files['guides/add-cname-records-to-your-domain/index.html'] #}
   </ul>
 </div>
 
