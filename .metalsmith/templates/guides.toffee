@@ -7,7 +7,8 @@ if paginate.current is 0 {:
 <div class="guides-intro">
   <h1>Guides</h1>
   <p>
-    Check out recent guides or view the browse for your category.
+    Guides are written to help you look at the step wise process for installing,
+    configuring or updating software packages and application in your Koding VM.
   </p>
 </div>
 :} #}
