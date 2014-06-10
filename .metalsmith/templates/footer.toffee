@@ -7,8 +7,6 @@
               Koding
             </a></h1>
             
-            <hr>
-            
             <p class="about-text">Koding gives you the necessary environment to start developing your apps,
             run them, collaborate and share with the world.</p>
             
@@ -23,7 +21,6 @@
         
         <nav class="footer-block">
             <h5>Company</h5>
-            <hr>
             <a href="http://learn.koding.com" target="_blank">KODING UNIVERSITY</a>
             <a href="https://koding.com/About">JOBS</a>
             <a href="https://koding.com/tos.html" target="_blank">TERMS AND CONDITIONS</a>
@@ -34,7 +31,6 @@
         
         <nav class="footer-block">
             <h5>Community</h5>
-            <hr>
             <a href="/Activity">ACTIVITY</a>
             <a href="http://blog.koding.com">KODING BLOG</a>
             <a href="http://stories.koding.com">TESTIMONIALS</a>

@@ -232,15 +232,19 @@ footer.main-footer {
 				text-decoration: none;
 			}
 		}
+    h1, h5 {
+      display: inline-block;
+      margin-bottom: 25px;
+      padding-bottom: 6px;
+      border-bottom: 2px #e4e4e4 solid;
+    }
 		h5 {
-			margin: 0;
             color: #858585;
             font-size: 14px;
             font-weight: bold;
 		}
 		#logo {
 		    color: #878d91;
-            margin: 0;
             line-height: 25px;
             span.img {
                 background-image: url(../img/logo.dark.small.png);
