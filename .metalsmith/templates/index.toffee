@@ -28,6 +28,7 @@ printVideo = (file) ->
 
 <div class="fancy-youtube-highlight">
   <div class="video-shadow">
+    <img src="http://img.youtube.com/vi/VK8xjRFoJ0k/maxresdefault.jpg" id="shadow-left" />
     <div class="main">
       <a slug="foo" 
         rel="videos" class="youtube-mini fancybox.iframe"
@@ -36,6 +37,7 @@ printVideo = (file) ->
         <span class="youtube-play fa fa-play-circle"></span>
       </a>
     </div>
+    <img src="http://img.youtube.com/vi/lOKIbN40NMQ/maxresdefault.jpg" id="shadow-right" />
   </div>
   <div class="title">
     Koding Introduction
