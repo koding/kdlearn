@@ -9,7 +9,9 @@
     <ul>
     {# for faq in faqs {:
       <li>
-        <a href="#{faq.httplink}" class="title">#{print faq.title}</a>
+        <a
+          href="##{faq.httplink.split('/')[-1..][0]}"
+          class="title">#{print faq.title}</a>
       </li>
     :} #}
     </ul>
@@ -20,6 +22,7 @@
   <ul>
   {# for faq in paginate.files {:
     <li>
+      <a name="#{faq.httplink.split('/')[-1..][0]}">
       <h3 class="question">
         <a href="#{faq.httplink}">#{faq.title}</a>
       </h3>
