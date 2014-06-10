@@ -2,6 +2,10 @@
 	#{partial 'topnav.toffee'}
 	<div class="container">
 		<h2>New to Koding?</h2>
-    Let's get you started with the basics and make your way up.
+    Hello from Koding University! We've built this learning community to
+    get you acquainted with Koding itself as well as some of the more popular
+    technologies and how you can get up and running with them on your Koding
+    environment. Start with the video's below for an overview of Koding or use
+    the links above to dig into other topics. Let the learning begin! 
 	</div>
 </header>
