@@ -13,6 +13,7 @@
         </div>
       :} #}
       #{print contents}
+      #{partial 'sharrebtns.toffee'}
     </div>
     #{partial 'linkback.toffee'}
   </div>
