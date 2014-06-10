@@ -15,6 +15,7 @@ linkify = (p) ->
 module.exports = (opts={}) ->
   (files, metalsmith, done) ->
     for name,file of files
-      file.filename = name 
+      file.files    = files
+      file.filename = name
       file.httplink = linkify name
     done()
