@@ -889,9 +889,10 @@ body > .page {
     list-style: none;
   }
 }
-
-
 #page-category {
+  h1 {
+    text-transform: capitalize;
+  }
   ul {
     padding: 0;
   }
@@ -913,11 +914,24 @@ body > .page {
     color: $light-grey2;
   }
 }
-
 #page-category .title {
   margin: 0;
   color: $light-black;
   a { color: inherit }
+}
+#page-category .meta {
+  ul {
+    display: inline-block;
+  }
+  li {
+    display: inline-block;
+  }
+  li:after {
+    content: ",";
+  }
+  li:last-child:after {
+    content: "";
+  }
 }
 
 

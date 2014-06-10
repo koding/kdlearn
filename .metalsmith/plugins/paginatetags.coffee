@@ -30,5 +30,7 @@ module.exports = (opts={}) ->
         collectionSource: 'tags'
         limit: 10
         output: "#{opts.output}/#{tagName}"
-        metadata: template: 'tag.toffee'
+        metadata:
+          tagName: tagName
+          template: 'tag.toffee'
       fn files, metalsmith, -> next ++index
