@@ -104,9 +104,11 @@ p {
 img {
   display: block;
 	height: auto;
+  margin: 0 auto;
+}
+.docs-content img {
 	max-width: 600px;
   max-height: 400px;
-  margin: 0 auto;
 }
 iframe {
 	max-width: 100%;
