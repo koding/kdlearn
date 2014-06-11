@@ -33,8 +33,10 @@
     :} #}
     </ul>
   :} #}
+
+  #{partial 'sharrebtns.toffee'}
+  #{partial 'linkback.toffee'}
 </div>
 
-#{partial 'linkback.toffee'}
 </div></section>
 #{partial 'footer.toffee'}
