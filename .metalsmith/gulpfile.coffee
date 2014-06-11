@@ -97,8 +97,8 @@ gulp.task 'watch:code', ->
 #
 # Run a web server exposing the files in the build directory, and recompile
 # the markdown on change.
-gulp.task 'watch:md', ['build'], ->
-  gulp.watch paths.documents, ['build']
+gulp.task 'watch:md', ['metalsmith'], ->
+  gulp.watch paths.documents, ['metalsmith']
 
 
 # ## watch:sass
