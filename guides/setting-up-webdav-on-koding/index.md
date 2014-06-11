@@ -59,7 +59,10 @@ The Apple support website offers the quickest solution to our problem. Just foll
 
 # On Windows OS
 
-On a Windows machine we need NetDrive. You can download it by clicking this [link](https://s3.amazonaws.com/_NetDrive/NetDrive-SETUP.exe). After we install and open it, we need to add a **New Site**. ![Screenshot](/wp-content/uploads/Screenshot-on-1.16.2014-at-9.54.32-PM.png) The settings are as followed: 
+On a Windows machine we need NetDrive. You can download it by clicking this 
+[link](https://s3.amazonaws.com/_NetDrive/NetDrive-SETUP.exe). After we install 
+and open it, we need to add a **New Site**. ![netdrive](netdrive.png) The 
+settings are as followed: 
 
   * Site Name: **Koding**
   * Site IP or URL: **http://<username>.kd.io/webdav1**
