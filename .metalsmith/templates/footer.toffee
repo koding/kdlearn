@@ -53,7 +53,7 @@
 <script src="/js/rrssb.min.js" type="text/javascript"></script>
 <script>
   $('#search-results').tapir({
-    'token':          '5398b0811c2bd90200000000',
+    'token':          '5398d4163cdb720200000002',
     'query_param':    'q',
     'summary_limit':  400
   });
