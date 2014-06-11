@@ -1,7 +1,7 @@
 #{partial 'head.toffee'}
 #{partial 'topnav.toffee'}
 {#
-printVideo = (file) ->
+printVideo = (file, rel="videos") ->
   if not file?
     throw new Error 'func `printVideo()` requires file object.'
   if not file.videoId?
@@ -11,7 +11,7 @@ printVideo = (file) ->
   {:
   <li>
     <a slug="#{video.httplink}" title="#{video.title}"
-      rel="videos" class="youtube-mini fancybox.iframe"
+      rel="#{rel}" class="youtube-mini fancybox.iframe"
       href="//www.youtube.com/v/#{video.videoId}?autoplay=1&rel=0&controls=0&showinfo=0&modestbranding=1">
     <img src="http://img.youtube.com/vi/#{video.videoId}/hqdefault.jpg" />
     <span class="youtube-play fa fa-play-circle"></span>
@@ -28,24 +28,27 @@ printVideo = (file) ->
 <div class="category">
   <h3 class="title">Explore Koding</h3>
   <ul>
-  {# printVideo videoId: '5E85g_ddV3A', title: 'Koding Introduction' #}
-  {# printVideo files['guides/social/index.html'] #}
-  {# printVideo files['guides/your-first-file/index.html'] #}
-  {# printVideo files['guides/importing-your-files/index.html'] #}
-  {# printVideo files['guides/the-terminal/index.html'] #}
-  {# printVideo files['guides/get-help-with-teamwork/index.html'] #}
-  {# printVideo files['guides/add-cname-records-to-your-domain/index.html'] #}
+  {# printVideo videoId: '5E85g_ddV3A', title: 'Koding Introduction', 'koding' #}
+  {# printVideo files['guides/social/index.html'], 'koding' #}
+  {# printVideo files['guides/your-first-file/index.html'], 'koding' #}
+  {# printVideo files['guides/importing-your-files/index.html'], 'koding'  #}
+  {# printVideo files['guides/the-terminal/index.html'], 'koding' #}
+  {# printVideo files['guides/get-help-with-teamwork/index.html'], 'koding' #}
+  {# printVideo files['guides/add-cname-records-to-your-domain/index.html'],
+    'koding' #}
   </ul>
 </div>
 
 <div class="category">
   <h3 class="title">Installing Apps and Servers</h3>
   <ul>
-  {# printVideo files['guides/bootstrap-3-quick-tip/index.html'] #}
-  {# printVideo files['guides/getting-started-firebase/index.html'] #}
-  {# printVideo files['guides/ghost-installation/index.html'] #}
-  {# printVideo files['guides/getting-started-with-facebook-app-dev/index.html'] #}
-  {# printVideo files['guides/getting-started-with-mixpanel/index.html'] #}
+  {# printVideo files['guides/bootstrap-3-quick-tip/index.html'], 'install' #}
+  {# printVideo files['guides/getting-started-firebase/index.html'], 'install' #}
+  {# printVideo files['guides/ghost-installation/index.html'], 'install' #}
+  {# printVideo files['guides/getting-started-with-facebook-app-dev/index.html'],
+    'install' #}
+  {# printVideo files['guides/getting-started-with-mixpanel/index.html'],
+    'install' #}
   </ul>
 </div>
 
