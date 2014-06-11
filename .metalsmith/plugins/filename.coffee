@@ -18,5 +18,5 @@ module.exports = (opts={}) ->
       file.files    = files
       file.filename = name
       file.httplink = linkify name
-      file.abshttplink = "https://vm-3.kdlearn.kd.io#{file.httplink}"
+      file.abshttplink = "https://learn.koding.com#{file.httplink}"
     done()

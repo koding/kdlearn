@@ -8,9 +8,9 @@
 <channel>
   <title>Koding University</title>
   <atom:link
-    href="http://vm-3.kdlearn.kd.io/feed.xml"
+    href="http://learn.koding.com/feed.xml"
     rel="self" type="application/rss+xml" />
-  <link>http://vm-3.kdlearn.kd.io</link>
+  <link>http://learn.koding.com</link>
   <description>
     An education center focused around the online development environment
     Koding.
@@ -19,9 +19,9 @@
   {# for item in items {:
   <item>
     <title>#{item.title}</title>
-    <link>http://vm-3.kdlearn.kd.io#{item.link}</link>
+    <link>http://learn.koding.com#{item.link}</link>
     <pubDate>#{item.pubDate}</pubDate>
-    <guid isPermaLink="true">http://vm-3.kdlearn.kd.io#{item.guid}</guid>
+    <guid isPermaLink="true">http://learn.koding.com#{item.guid}</guid>
     <author>#{item.author}</author>
     <description>#{item.description}</description>
   </item>
