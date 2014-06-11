@@ -28,7 +28,9 @@ The config details are explained below:
   * **name** The name of your Playground. It must be unique.
   * **manifestUrl** The url of the your Playground's manifest file. We will cover the manifest file content in a moment.
   * **description** A few words about of your Playground.
-  * **icon** The cover icon of your Playground. It must be 240px by 240px. It will be used on the Teamwork Playgrounds Modal, see below for an example. ![playgrounds_many](http://blog.koding.com/wp-content/uploads/2013/10/playgrounds_many.png)
+  * **icon** The cover icon of your Playground. It must be 240px by 240px. It 
+    will be used on the Teamwork Playgrounds Modal, see below for an example. 
+![playgrounds_many](playgrounds_many.png)
 
 Now it's time to create your Playground's **manifest** file. This file is used to customize Teamwork for your Playground, allowing you to easily change look and feel and the functionality. As an example, [Click here](https://github.com/koding/Teamwork/blob/master/Playgrounds/Bootstrap.json) to see an example of the Bootstrap Playground Manifest file.
 
