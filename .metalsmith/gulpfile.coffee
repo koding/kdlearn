@@ -33,9 +33,14 @@ paths =
     '../**/*.md'
   ]
   sass: './sass/**/*.scss'
+  staticDocuments: [
+    '!**'
+    '!../**/*.md'
+    '../**/*.*'
+    ]
   static: [
-      '!static/**/*.coffee'
-      'static/**/*'
+    '!static/**/*.coffee'
+    'static/**/*'
     ]
 
 
@@ -81,6 +86,14 @@ gulp.task 'static', ->
     .pipe gulp.dest 'build'
 
 
+# ## staticDocuments
+#
+# Copy static assets to build dir.
+gulp.task 'staticDocuments', ->
+  gulp.src paths.staticDocuments
+    .pipe gulp.dest 'build'
+
+
 # ## watch:code
 #
 # Watch the metalsmith code and reload it when changes are detected.
@@ -110,5 +123,5 @@ gulp.task 'watch:sass', ['sass'], ->
 
 gulp.task 'watch', ['watch:md']
 gulp.task 'watch:all', ['watch:md', 'watch:code', 'watch:sass']
-gulp.task 'build', ['metalsmith', 'sass', 'static', 'coffee']
+gulp.task 'build', ['metalsmith', 'sass', 'static', 'staticDocuments', 'coffee']
 gulp.task 'default', ['build']

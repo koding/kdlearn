@@ -7,6 +7,7 @@ path         = require 'path'
 metalsmith   = require 'metalsmith'
 collections  = require 'metalsmith-collections'
 excerpts     = require 'metalsmith-excerpts'
+ignore       = require 'metalsmith-ignore'
 markdown     = require 'metalsmith-markdown'
 permalinks   = require 'metalsmith-permalinks'
 templates    = require 'metalsmith-templates'
@@ -33,8 +34,14 @@ module.exports = build = (callback=->) ->
   metalsmith __dirname
     .source '..'
     .destination 'build'
+    # Ignore files from ever entering the stream
     .ignore ['.agignore', '.gitignore', '.git', '.metalsmith', 'legacy']
     .options remove: false
+    # Remove files from the stream
+    .use ignore [
+      '**/*'
+      '!**/*.md'
+      ]
     .use markdown()
     .use excerpts()
     .use moment()
