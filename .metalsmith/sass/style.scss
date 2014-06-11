@@ -1095,6 +1095,8 @@ a.youtube-mini {
 .video .youtube-mini img {
   width: auto;
   height: auto;
+  max-width: inherit;
+  margin: 0;
 }
 .video .youtube-mini .youtube-play {
   top: 36%;
