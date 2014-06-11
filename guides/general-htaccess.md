@@ -11,15 +11,7 @@ template: page.toffee
 
 Htaccess is a pretty well understood and standard feature among web hosts. Koding's .htaccess is no different than any other, so the plethora of tutorials and information out there will work perfectly fine on Koding.
 
-With that said, there are a couple Apache mods that people often expect to be enabled, but aren't by default on Koding. This guide will cover those, and any other Koding-specific htaccess issues.
-
-## Video
-
-The following is an instructional video which approximately mirrors the steps below.
-
-## General .htaccess Instructions
-
-### RewriteEngine & mod_rewrite
+## RewriteEngine & mod_rewrite
 
 For the sake of discussion, lets say I have two Koding domains `http://username.kd.io` and `http://my.name.is.username.kd.io`. How would I forward the first to the second?
 
