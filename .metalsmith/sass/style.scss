@@ -1149,19 +1149,27 @@ a.youtube-mini {
 
 
 .series-nav {
+  margin-top: 40px;
   padding: 0 20px;
   li {
     width: 120px;
+    height: 26px;
     list-style: none;
     text-align: center;
+    line-height: 24px;
     color: #000;
     background-color: $light-grey;
+    border: 2px $light-grey solid;
     border-radius: 4px;
   }
   a {
     display: block;
   }
   a:hover {
+    text-decoration: none;
+  }
+  li:hover {
+    border: 2px $green solid;
   }
   &:after {
 		content: " ";
