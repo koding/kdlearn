@@ -1355,6 +1355,20 @@ a.youtube-mini {
 }
 
 
+// ## SHARE BUTTONS
+.rrssb-buttons {
+  height: 30px;
+  width: 600px;
+  margin: 50px auto 0;
+}
+.rrssb-buttons li a {
+  padding-top: 8px;
+}
+.rrssb-buttons li a .icon {
+  padding-top: 6px;
+}
+
+
 //--------------------------
 
 @media only screen and (min-width: 400px) { }
