@@ -16,7 +16,7 @@ Facebook application development can be giant pain, setting up your credentials,
 
 Below is what you see when you first visit Teamwork's Facebook Environment.
 
-![Facebook Teamwork](http://blog.koding.com/wp-content/uploads/2013/11/Screen-Shot-2013-11-07-at-10.40.30-1024x620.png)
+![Facebook Teamwork](facebook-teamwork.png)
 
 The instructions explain how to create an application on Facebook, and then tell Koding what the details of your application are.
 
@@ -24,7 +24,7 @@ After you have entered your Facebook Application details, click done. That's it!
 
 Koding has stored your application details in your project, so all you have to do is learn, create, and enjoy your new application.
 
-![run button](http://blog.koding.com/wp-content/uploads/2013/10/run-button.png)
+![run button](run-button.png)
 
 If you need any help, next to the Run button there is a question mark button. When used, this button will pop up helpful information related to the current example.
 
