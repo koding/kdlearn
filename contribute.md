@@ -64,7 +64,7 @@ version of the repo on Github, and lets you push your changes to this repo.
 To do this, press the Fork button seen in the following image, from the 
 [KDLearn repo][repo] page:
 
-![fork](contribute/fork.png)
+![fork](/contribute/fork.png)
 
 This will create a new Github repository with the name 
 `github.com/yourUsername/kdlearn`. The purpose of this forked repository will 
@@ -92,7 +92,7 @@ write a guide, but if you just want to edit another guide, scroll down to the
 Lets create a file in the **guides** folder with the title `myguide.md`.  Name 
 the file whatever you like, just try to keep it short and url friendly.
 
-![myguide file](contribute/myguide.png)
+![myguide file](/contribute/myguide.png)
 
 This is where we will write all of our content, in Markdown. For this tutorial 
 i am just going to use the following text:
