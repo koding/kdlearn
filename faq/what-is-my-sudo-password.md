@@ -1,6 +1,6 @@
 ---
 title: What is my sudo password?
-importance: 5
+importance: 2
 template: page.toffee
 ---
 
