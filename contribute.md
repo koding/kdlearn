@@ -14,9 +14,19 @@ In this guide we will go over writing for Koding University. While we will
 cover every step, basic Git and Markdown knowledge will be *very* helpful when 
 contributing, as they are core tools of this workflow.
 
+If you already know git, github, and markdown, here is the simple set of tasks 
+you'll need to do.
+
+1. Fork [KDLearn][repo]
+2. Clone your forked repo
+3. Find or create your files, Make your markdown edits
+4. Commit and push your changes to your repo
+5. Make a pull request of your changes, against the [KDLearn Repo][repo]
+
+That's it!
 
 
-## The Technology
+## The Details
 
 Koding University is an Open Source, statically generated site, generated from 
 the Markdown files found in the [KDLearn Repository][repo]. The actual 
@@ -236,24 +246,6 @@ be reflected in your Pull Request.
 
 Once they are accepted, and your pull request is merged, the site will be 
 updated and you're changes will be live. Thanks for your contribution!
-
-
-
-
-
-
-## I'm an expert at everything, give me the quick guide!
-
-If you already know git, github, and markdown, here is the simple set of tasks 
-you'll need to do.
-
-1. Fork [KDLearn][repo]
-2. Clone your forked repo
-3. Find or create your files, Make your markdown edits
-4. Commit and push your changes to your repo
-5. Make a pull request of your changes, against the [KDLearn Repo][repo]
-
-That's it!
 
 
 
