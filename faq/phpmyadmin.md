@@ -4,7 +4,7 @@ importance: 5
 template: page.toffee
 ---
 
-phpMyAdmin is isntalled by default on your VM. To access it, visit:
+phpMyAdmin is installed by default on your VM. To access it, visit:
 
 ```
 http://<username>.kd.io/phpmyadmin
