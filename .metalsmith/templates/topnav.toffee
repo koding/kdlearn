@@ -24,6 +24,11 @@
                 <li class="contribute">
                     <a href="/contribute">Author A Guide</a>
                 </li>
+                <li>
+                    <a
+                      href="mailto:university@koding.com?subject=Koding%20University%20Guide%20Request&body=What%20guide%20do%20you%20want%20to%20see%3F"
+                      >Request A Guide</a>
+                </li>
             </ul>
         </div>
     </div>
