@@ -215,6 +215,8 @@ footer.main-footer {
 		@include box-sizing(border-box);
 		display: inline-block;
 		vertical-align: top;
+    font-size: 14px;
+
 		&:first-child {
 		    width: 586px;
         margin-right: 15px;
