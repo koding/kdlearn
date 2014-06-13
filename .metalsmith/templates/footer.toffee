@@ -2,10 +2,11 @@
     <div class="inner-container clearfix">
     
         <div class="footer-block">
-            <h1 id="logo"><a href="/">
-              <span class="img"></span>
-              Koding
-            </a></h1>
+            <h1 id="logo">
+                <a href="/">
+                    <span class="img"></span>
+                </a>
+            </h1>
             
             <p class="about-text">Koding gives you the necessary environment to start developing your apps,
             run them, collaborate and share with the world.</p>
