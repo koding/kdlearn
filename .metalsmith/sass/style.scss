@@ -437,8 +437,10 @@ section {
 	}
   h5 {
     line-height: 18px;
+    text-transform: uppercase;
     a {
       color: $grey;
+      text-transform: uppercase;
     }
   }
 	.active {
