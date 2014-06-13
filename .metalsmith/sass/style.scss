@@ -828,9 +828,15 @@ section {
       margin-top:    10px;
       margin-bottom: 10px;
       margin-left: 0;
+      a {
+        color: #555;
+        font-weight: 600;
+        font-size: 18px;
+      }
     }
     .answer {
         font-size: 16px;
+        line-height: 22px;
     }
 }
 #page-faq {
