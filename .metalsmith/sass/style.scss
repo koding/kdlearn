@@ -819,34 +819,24 @@ section {
         }
         overflow: hidden;
     }
+    > ul > li:first-child {
+      margin-top: 0;
+      padding-top: 0;
+    }
+    > ul > li:first-child .question {
+      margin-top: 0;
+    }
+    > ul > li {
+      margin-top: 20px;
+    }
     .question {
-      line-height: 20px;
-      margin-bottom: 20px;
-        &:before {
-            float: left;
-            margin-right: 12px;
-            content: 'Q';
-            color: $color_4;
-            font-size: 50px;
-            font-weight: normal;
-        }
+      line-height: 30px;
+      margin-top:    10px;
+      margin-bottom: 10px;
+      margin-left: 0;
     }
     .answer {
-        position: relative;
-        padding-left: 60px;
-        min-height: 100px;
         font-size: 16px;
-        line-height: 24px;
-        &:before {
-            position: absolute;
-            top: 0;
-            left: 15px;
-            content: 'A';
-            color: $color_4;
-            font-size: 50px;
-            font-weight: normal;
-            line-height: 50px;
-        }
     }
 }
 #page-faq {
