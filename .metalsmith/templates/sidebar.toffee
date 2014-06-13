@@ -60,7 +60,7 @@ checkActiveItems = (items) ->
   ##}
   <li>
     <h5><a
-        href="mailto:university@koding.com?subject=Koding%20University%20Guide%20Request&body=What%20guide%20do%20you%20want%20to%20see%3F"
+        href="mailto:learn@koding.com?subject=Koding%20University%20Guide%20Request&body=What%20guide%20do%20you%20want%20to%20see%3F"
     >Request A Guide</a></h5>
   </li>
 </ul>
