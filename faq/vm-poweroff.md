@@ -1,6 +1,6 @@
 ---
 title: How do turn off my my Koding VM?
-importance: 5
+importance: 4
 template: page.toffee
 ---
 
