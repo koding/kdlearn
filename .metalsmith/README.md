@@ -40,21 +40,22 @@ static resources *(such as images/etc)* from the markdown directory.
 
 ## Previewing
 
-If you want to preview the compiled site, run the following:
+If you want to preview the compiled site, open a new Koding Terminal tab and 
+run the following:
 
 ```
 cd .metalsmith
 gulp preview
 ```
 
-This will run a small HTTP Server on Port `8000`. Each time you compile the 
-site, this will show your compiled site.
+This will run a small HTTP Server on Port `8000`, ie: `http://you.kd.io:8000`.
+  
+Keep this tab open, and in  a **different** Koding Terminal tab run your `gulp` 
+command from above.  Each time you compile the site, this will show your 
+compiled site.
 
-*Protip*: Run this in a separate Terminal Tab, and you can compile in one tab, 
-and your preview will always be running.
 
-
-## Watching
+## Compiling as you type
 
 To have your Markdown compiled as you write your documents, run the following 
 commands:
@@ -64,12 +65,8 @@ cd .metalsmith
 gulp watch
 ```
 
-If you're working on templates/etc, run the following commands:
-
-```
-cd .metalsmith
-cult watch:all
-```
+This, in combination with the preview command above, will compile the site each 
+time you change the Markdown.
 
 Of course, you can skip the `cd` command if you're already in the source 
 directory.
