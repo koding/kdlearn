@@ -43,6 +43,7 @@ static resources *(such as images/etc)* from the markdown directory.
 If you want to preview the compiled site, run the following:
 
 ```
+cd .metalsmith
 gulp preview
 ```
 
