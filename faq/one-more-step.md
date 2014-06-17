@@ -1,7 +1,6 @@
 ---
 title: One more step
 importance: 1
-template: page.toffee
 ---
 
 As with any free service, Koding gets quite a large number of Phishing, 

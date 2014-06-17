@@ -1,7 +1,6 @@
 ---
 title: MySQL Socket Error 2002
 importance: 5
-template: page.toffee
 ---
 
 If you try to use MySQL and receive an error that looks similar to the 

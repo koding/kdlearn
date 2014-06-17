@@ -1,7 +1,6 @@
 ---
 title: phpMyAdmin on Koding
 importance: 5
-template: page.toffee
 ---
 
 phpMyAdmin is installed by default on your VM. To access it, visit:
