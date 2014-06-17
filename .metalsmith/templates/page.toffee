@@ -14,9 +14,9 @@
       :} #}
       <ul class="meta">
         <li class="author username">
-          <a href="https://koding.com/author">Author Name</a>
+          by <a href="https://koding.com/author">Author Name</a>
         </li>
-        <li class="updated">Last updated 5 days ago</li>
+        <li class="updated">Updated 5 days ago</li>
       </ul>
       #{print contents}
       #{partial 'sharrebtns.toffee'}

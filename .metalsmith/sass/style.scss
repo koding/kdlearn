@@ -475,7 +475,8 @@ section {
   }
 }
 #left-nav + .docs-content {
-	padding-left: 310px;
+  position: relative;
+	margin-left: 310px;
 	min-height: 500px;
 	h1 {
 	    color: $color_0;
@@ -1380,10 +1381,28 @@ a.youtube-mini {
 // ## Page/Series Content Meta
 .guide-content .meta {
   padding: 0;
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  text-align: center;
 }
 .guide-content .meta li {
+  display: inline-block;
   padding: 0;
+  color: #afb1b2;
 }
+.guide-content .meta li a,
+.guide-content .meta li a:hover {
+  color: #afb1b2;
+}
+.guide-content .meta li:before {
+  content: "\2022";
+  margin: 0 10px 0 6px;
+}
+.guide-content .meta li:first-child:before {
+  content: none;
+}
+
 
 
 //--------------------------
