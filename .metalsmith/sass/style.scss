@@ -755,8 +755,7 @@ section {
           border-bottom: none;
         }
         > li {
-            border-bottom: 1px solid $color_3;
-            padding: 10px 10px 30px 10px;
+            border-bottom: 1px solid #e4e4e4;
             @include transition(all ease 150ms);
             &:hover .readmore a {
                 padding-left: 20px;
@@ -817,21 +816,18 @@ section {
         }
         overflow: hidden;
     }
-    > ul > li:first-child {
-      margin-top: 0;
-      padding-top: 0;
-    }
-    > ul > li:first-child .question {
-      margin-top: 0;
+    > ul > li:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
     }
     > ul > li {
-      margin-top: 20px;
+      margin-bottom: 30px;
+      padding-bottom: 36px;
     }
     .question {
       line-height: 30px;
-      margin-top:    10px;
+      margin-top:    0;
       margin-bottom: 10px;
-      margin-left: 0;
       a {
         color: #555;
         font-weight: 600;
@@ -842,12 +838,8 @@ section {
         font-size: 16px;
         line-height: 22px;
     }
-}
-#page-faq {
-    ul {
-        li {
-            padding: 10px;
-        }
+    .answer p:last-child {
+      margin-bottom: 0;
     }
 }
 
