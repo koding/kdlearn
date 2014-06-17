@@ -78,7 +78,7 @@ module.exports = build = (callback=->) ->
       collection: 'faq'
       limit: 10
       output: 'faq'
-      metadata: template: 'faq.toffee'
+      metadata: template: 'faqs.toffee'
     .use paginate
       collection: 'video'
       limit: 30
