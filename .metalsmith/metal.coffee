@@ -11,6 +11,7 @@ ignore       = require 'metalsmith-ignore'
 markdown     = require 'metalsmith-markdown'
 permalinks   = require 'metalsmith-permalinks'
 templates    = require 'metalsmith-templates'
+defaultMeta  = require './plugins/defaultmeta'
 paginate     = require './plugins/paginate'
 paginateTags = require './plugins/paginatetags'
 moment       = require './plugins/moment'
@@ -54,6 +55,12 @@ module.exports = build = (callback=->) ->
         pattern: 'guides/*.html'
         sortBy: 'date'
         reverse: true
+    .use defaultMeta
+      collection: 'faq'
+      metadata: template: 'faq.toffee'
+    .use defaultMeta
+      collection: 'guide'
+      metadata: template: 'page.toffee'
     .use tags
       metaKey: 'categories'
       sort: 'date'

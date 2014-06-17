@@ -1,0 +1,14 @@
+#{partial 'head.toffee'}
+#{partial 'topnav.toffee'}
+<section>
+  <div class="container">
+    #{partial 'sidebar.toffee'}
+    <div class="docs-content guide-content">
+      #{print contents}
+      #{partial 'sharrebtns.toffee'}
+      #{partial 'linkback.toffee'}
+    </div>
+  </div>
+</section>
+#{partial 'footer.toffee'}
+
