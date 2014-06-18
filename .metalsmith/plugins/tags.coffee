@@ -26,6 +26,11 @@ module.exports = (opts={}) ->
         continue
 
       for tag in file[opts.metaKey]
+        if typeof tag isnt 'string'
+          console.warn "The tag '#{tag}' for #{filename} is not a string.
+            It is being ignored."
+          continue
+        tag = tag.toLowerCase()
         tags[tag] ?= []
         tags[tag].push file
 

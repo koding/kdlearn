@@ -52,7 +52,7 @@ module.exports = build = (callback=->) ->
         pattern: 'faq/*.html'
         sortBy: 'importance'
       guide: 
-        pattern: 'guides/*.html'
+        pattern: 'guides/**/*.html'
         sortBy: 'date'
         reverse: true
     .use defaultMeta
