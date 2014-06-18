@@ -326,7 +326,6 @@ footer.main-footer {
 }
 nav {
     background: $dark-grey;
-    min-height: 120px;
 
   #menu {
     float: right;
@@ -345,7 +344,7 @@ nav {
     }
   }
 	.container {
-        padding-top: 20px;
+        padding: 20px 0;
     
         &:after {
           content: " ";
