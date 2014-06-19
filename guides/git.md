@@ -1,5 +1,5 @@
 ---
-title: Getting started with Git. 
+title: Getting started with Git
 author: Team Koding
 date: 2014-06-14
 categories: [Git]
