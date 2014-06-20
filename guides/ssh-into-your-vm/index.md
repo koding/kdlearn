@@ -27,11 +27,25 @@ In this tutorial, I am going to use the terminology of "Home" and "Koding" machi
 
   1. First, copy your Public Key, usually found in `~/.ssh/id_rsa.pub`, and copy it in its entirety! It will look something like this:`ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyhKankDE4DRM86JqZ3JPdWDeqg+TbzlqlTLf OKTeokhRoMgy5WoMY/ZWUVES3d2vSHHwW3cwWlELmVdc3Ow57boZv3fOsPhybYHVRTClXYr1ncS xyTvjvCfvV5q22aIxHPWQ353543ssda87sa+85XEa4VnveJsEzxBZl4oJ4GB0AGa48+UdIqutrg Zu7D7JCK+Yl228X+3bJf3ddlqDaKaVXPivvvYqImK6ZwFsxh2lNO4E8IOd3OSK9zv6i+io8PxWm wP0tLFokxulAI8Td1sOPBE9s9bdJ5c2T/GfGjKF+aNKsd33TsYEjjc/plMZmRRrOgQwre6OAkgM vyV2X foo@bar.baz`
   2. Next, paste this entire Public Key into your SSH Keys section of your Account settings. This can be found by going to [Koding/Account](https://koding.com/Account) and clicking SSH Keys under the DEVELOP. Click the Plus button on the right side of the page, and paste your Public Key into this. Below is a screenshot of this area for clarification. ![Koding SSH Keys](sshkeys.png)
-  3. Now go back to your Home machine, and create the file `~/.ssh/config` _(assuming it's not already created)_. Add the following code into that file:[code] Host *.kd.io User <username> ProxyCommand ssh %r@ssh.koding.com nc %h %p [/code]Where `<username>` is your username, without the `<>`.
+  3. Now go back to your Home machine, and create the file `~/.ssh/config` _(assuming it's not already created)_. Add the following code into that file:
+  ```
+  Host *.kd.io User <username>
+  ProxyCommand ssh %r@ssh.koding.com nc %h %p
+  ```
+  Where `<username>` is your username, without the `<>`.
   4. Next, on your Home machine and connect to your VM! This can be done by typing: `ssh <vm-Number>.<username>.koding.kd.io`. An example, here is my connection command: `ssh vm-0.leeolayvar.koding.kd.io`.You will have to enter your local SSH password, if you chose one when you created your key. After that, presented with `username@vm-X:~$`, signaling that you have connected successfully.This step has quite a few Gotchas so please review them below.Two likely gotchas, are Agent Failure and ssh_exchange_identification, which can be seen in the Possible Gotchas section below.
   5. ### Alternate id_rsa
 
-If you're using an alternately named `id_rsa` file, you can modify your config to support this with the following example. [code] Host *.kd.io User <username> IdentityFile ~/.ssh/alternate ProxyCommand ssh -i ~/.ssh/alternate %r@ssh.koding.com nc %h %p [/code] Note the `IdentityFile ~/.ssh/alternate` and `-i ~/.ssh/alternate`, they tell SSH the location of your public key, and are required. Replace the file location with the location of your alternate key.
+If you're using an alternately named `id_rsa` file, you can modify your config 
+to support this with the following example.
+```
+Host *.kd.io User <username>
+  IdentityFile ~/.ssh/alternate
+  ProxyCommand ssh -i ~/.ssh/alternate %r@ssh.koding.com nc %h %p
+```
+Note the `IdentityFile ~/.ssh/alternate` and `-i ~/.ssh/alternate`, they tell 
+SSH the location of your public key, and are required. Replace the file 
+location with the location of your alternate key.
 
 ## Tutorial Steps for PuTTY on Windows
 
