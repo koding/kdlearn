@@ -29,8 +29,3 @@ With Koding, of course! If you [Try the Koding Demo](https://koding.com/Develop/
 If you use the Teamwork link, make sure to still configure it for your own Koding domain, install the dependencies, and run the server as shown in the video.
 
 This has been a getting started article from [Koding](https://koding.com), thanks for your time!
-
-## Comments
-
-**[Chanchal Kumar Ghosh](#3 "2013-11-12 11:17:00"):** Why we will use Node.js to create blog? I think PHP is the more simpler option than Node.js and also so many Simple Blogging platform is available in PHP (Example : Pico - http://pico.dev7studios.com/).
-
