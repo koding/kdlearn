@@ -99,7 +99,7 @@ module.exports = build = (callback=->) ->
     .use filename()
     .use feed
       collections: ['guide', 'faq']
-      output: 'feed.xml'
+      output: 'rss.xml'
       metadata: template: 'feed.toffee'
     .use templates 'toffee'
     .build callback
