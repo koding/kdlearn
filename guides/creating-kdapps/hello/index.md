@@ -100,7 +100,7 @@ file and open it up.
 Once your `index.coffee` file is open, DevTools will automatically compile it 
 in the right hand side. It should look similar to the following image:
 
-![DevTools](./02-img-01.png)
+![DevTools](./devtools.png)
 
 ## Extending Functionality
 
