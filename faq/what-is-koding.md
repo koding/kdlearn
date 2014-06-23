@@ -1,7 +1,6 @@
 ---
 title: What is Koding?
 importance: 0
-template: page.toffee
 ---
 
 Koding is an online development environment with the goal of simplifying 

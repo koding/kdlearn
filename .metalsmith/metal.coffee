@@ -11,6 +11,7 @@ ignore       = require 'metalsmith-ignore'
 markdown     = require 'metalsmith-markdown'
 permalinks   = require 'metalsmith-permalinks'
 templates    = require 'metalsmith-templates'
+defaultMeta  = require './plugins/defaultmeta'
 paginate     = require './plugins/paginate'
 paginateTags = require './plugins/paginatetags'
 moment       = require './plugins/moment'
@@ -51,9 +52,15 @@ module.exports = build = (callback=->) ->
         pattern: 'faq/*.html'
         sortBy: 'importance'
       guide: 
-        pattern: 'guides/*.html'
+        pattern: 'guides/**/*.html'
         sortBy: 'date'
         reverse: true
+    .use defaultMeta
+      collection: 'faq'
+      metadata: template: 'faq.toffee'
+    .use defaultMeta
+      collection: 'guide'
+      metadata: template: 'page.toffee'
     .use tags
       metaKey: 'categories'
       sort: 'date'
@@ -78,7 +85,7 @@ module.exports = build = (callback=->) ->
       collection: 'faq'
       limit: 10
       output: 'faq'
-      metadata: template: 'faq.toffee'
+      metadata: template: 'faqs.toffee'
     .use paginate
       collection: 'video'
       limit: 30

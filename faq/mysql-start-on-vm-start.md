@@ -1,7 +1,6 @@
 ---
 title: How Can I Make MySQL Start When My VM Starts?
 importance: 10
-template: page.toffee
 ---
 
 MySQL comes installed by default on all Koding VMs, but it does not start by 

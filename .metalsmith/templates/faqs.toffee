@@ -1,0 +1,37 @@
+#{partial 'head.toffee'}
+#{partial 'topnav.toffee'}
+<section><div class="container">
+
+<ul id="left-nav">
+  <li>
+    <h5>Common Questions</h5>
+    <ul>
+    {# for faq in paginate.files {:
+      <li>
+        <a
+          href="##{faq.httplink.split('/')[-1..][0]}"
+          class="title">#{print faq.title}</a>
+      </li>
+    :} #}
+    </ul>
+  </li>
+</ul>
+
+<div class="docs-content" id="page-faq">
+  <ul>
+  {# for faq in paginate.files {:
+    <li>
+      <a name="#{faq.httplink.split('/')[-1..][0]}">
+      <h3 class="question">
+        <a href="#{faq.httplink}">#{faq.title}</a>
+      </h3>
+      <div class="answer">
+        #{print faq.snapshot}
+      </div>
+    </li>
+  :} #}
+  </ul>
+</div>
+
+</div></section>
+#{partial 'footer.toffee'}
