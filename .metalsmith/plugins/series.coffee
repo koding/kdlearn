@@ -7,6 +7,8 @@
 
 
 module.exports = (opts={}) ->
+  opts.prependSeriesTitle ?= true
+
   (files, metalsmith, done) ->
     metadata = metalsmith.metadata()
     metadata.series ?= {}
@@ -42,8 +44,12 @@ module.exports = (opts={}) ->
     # Now go through and replace the `series` meta attr for each series page
     # with an object for the previous, next, and etc information.
     for seriesName, series of metadata.series
-      prev = null
+      prev  = null
+      title = series[0]?.title
       for page, index in series 
+        if opts.prependSeriesTitle is true and index isnt 0 
+          page.title = "#{title}: #{page.title}"
+
         page.series =
           name:        seriesName
           pages:       series

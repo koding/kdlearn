@@ -20,7 +20,8 @@
     <h2>Series Index</h2>
     <ol>
     {# for page, i in series.pages[1..] {:
-      <li><a href="#{page.httplink}">#{page.title}</a></li>
+      {## We use replace to remove the series title from all of the page titles ##}
+      <li><a href="#{page.httplink}">#{page.title.replace title+': ', ''}</a></li>
     :} #}
     </ol> 
   :} #}
