@@ -30,14 +30,16 @@
           }
           el.html('')
           $.each(data, function(key, val) {
-            summary = val.summary;
-            if (summary == null) summary = ''
-            if (settings.summary_limit != null) {
+            var result = '<div class="result"><h3><a href="' + val.link + '">' + val.title + '</a></h3>';
+            var summary = val.summary;
+            if (summary != null && settings.summary_limit != null) {
               summary = summary.slice(0, settings.summary_limit);
               summary = summary.slice(0, summary.lastIndexOf(' '));
               summary += '...';
+              result += '<p>' + summary + '</p>';
             }
-            el.append('<div class="result"><h3><a href="' + val.link + '">' + val.title + '</a></h3><p>' + summary + '</p></div>');
+            result += '</div>'
+            el.append(result);
           });
         }
       );
