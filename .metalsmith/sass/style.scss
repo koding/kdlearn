@@ -883,6 +883,7 @@ body > .page {
   }
   > ul > li {
     display: inline-block;
+    min-width: 250px;
     list-style: none;
   }
 }
