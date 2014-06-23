@@ -764,7 +764,6 @@ section {
             }
             a {
                 text-decoration: none;
-                text-transform: capitalize;
                 color: $color_0;
                 &:hover {
                     color: $color_4;
@@ -831,6 +830,7 @@ section {
         color: #555;
         font-weight: 600;
         font-size: 18px;
+        text-transform: capitalize;
       }
     }
     .answer {
