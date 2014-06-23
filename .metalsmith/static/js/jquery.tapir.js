@@ -31,6 +31,7 @@
           el.html('')
           $.each(data, function(key, val) {
             summary = val.summary;
+            if (summary == null) summary = ''
             if (settings.summary_limit != null) {
               summary = summary.slice(0, settings.summary_limit);
               summary = summary.slice(0, summary.lastIndexOf(' '));
