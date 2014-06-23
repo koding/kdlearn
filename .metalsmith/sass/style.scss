@@ -431,7 +431,7 @@ section {
 		line-height: 18px;
 	}
   h5 {
-    line-height: 40px;
+    line-height: 20px;
     text-transform: uppercase;
     a {
       color: $grey;
@@ -462,9 +462,9 @@ section {
       font-size: 14px;
     }
     h5 {
+      margin: 10px 0;
       font-size: 16px;
       font-weight: 600;
-      margin: 0;
     }
     li {
       padding: 3px 0 3px 10px;
