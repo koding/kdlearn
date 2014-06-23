@@ -1,6 +1,6 @@
 ---
-title: One more step
-importance: 1
+title: What's with the "One more step" to access my VM?
+importance: 2
 ---
 
 As with any free service, Koding gets quite a large number of Phishing, 
@@ -17,5 +17,3 @@ ensure that Phishing sites aren't able to trick people.
 
 As time goes on we will refine this method of Phishing prevention, in an effort 
 to make it less hindering to the developer.
-
-Thank you for understanding.
