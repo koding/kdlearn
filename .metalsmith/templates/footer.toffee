@@ -55,7 +55,7 @@
 <script>
   if ($(location).attr('pathname').replace(/\//g, '') == 'search') {
     $('#search-results').tapir({
-      'token':          '5398d4163cdb720200000002',
+      'token':          '53a881018481840200000000',
       'query_param':    'q',
       'summary_limit':  400
     });
