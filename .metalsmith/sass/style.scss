@@ -31,6 +31,8 @@ $light-grey:    #eee;
 $light-grey2:   #838485;
 $green:         #27ae61;
 $footer_grey:   #f6f6f6;
+
+$normal_font:   15px;
 //--------------------------
 
 %extend_3 {
@@ -47,6 +49,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Open Sans', 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial;
+  font-size: $normal_font;
 	text-rendering: optimizelegibility;
 	line-height: 2;
 	color: $grey;
@@ -96,7 +99,6 @@ h4, h5, h6 {
 }
 
 p {
-  font-size: 15px;
   margin: 12px 0;
 }
 
@@ -834,7 +836,6 @@ section {
       }
     }
     .answer {
-        font-size: 16px;
         line-height: 22px;
     }
     .answer p:last-child {
@@ -855,6 +856,9 @@ body > header {
     margin-bottom: 10px;
     font-size: 32px;
   }
+}
+body > header > .container {
+  font-size: 16px;
 }
 
 body > header h1,
