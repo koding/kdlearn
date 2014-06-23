@@ -28,4 +28,5 @@ With Koding, of course! If you [Try the Koding Demo](https://koding.com/Develop/
 
 If you use the Teamwork link, make sure to still configure it for your own Koding domain, install the dependencies, and run the server as shown in the video.
 
-This has been a getting started article from [Koding](https://koding.com), thanks for your time!
+This has been a getting started article from [Koding](https://koding.com), 
+thanks for your time!
