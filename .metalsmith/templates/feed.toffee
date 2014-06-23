@@ -8,7 +8,7 @@
 <channel>
   <title>Koding University</title>
   <atom:link
-    href="//learn.koding.com/feed.xml"
+    href="//learn.koding.com/rss.xml"
     rel="self" type="application/rss+xml" />
   <link>//learn.koding.com</link>
   <description>
