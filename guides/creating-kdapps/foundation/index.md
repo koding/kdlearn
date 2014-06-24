@@ -15,7 +15,7 @@ template: series.toffee
 
 This guide will go over the foundation of what a Koding App is, where they are
 located, and some general tips. In the following sections we'll cover creating
-applications, modifying them, and publishing them. So let's get started!
+applications, modifying them, and publishing them.
 
 ## What are Koding apps?
 
@@ -23,7 +23,7 @@ Koding applications are essentially WebApps for your VM. More precisely, when
 you open a Koding application a single JavaScript file is loaded and executed in
 your browser. Once loaded in your browser, the JavaScript of the application is
 able to add html to a special DOM element created for it. To do this, it uses
-the KDFramework.
+the [KDFramework][kdf].
 
 The KDFramework covers everything from DOM manipulation to I/O with your VM.
 Enabling you to combine the best of HTML5 Interfaces with a full Unix
@@ -55,7 +55,7 @@ another and finally writes the product to the `index.js` file.
 
 ## Creating your first KDApp
 
-Now that we've talked about what KDApps are, lets [create one][1]!
+In the next guide, lets create our first KDApp!
 
 
-[1]: ./02-hello.md
+[kdf]: https://github.com/koding/kd

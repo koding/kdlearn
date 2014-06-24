@@ -13,7 +13,7 @@ template: series.toffee
 
 # Hello World
 
-We previously talked about what [Koding][0] Apps are, now lets create a
+We previously talked about what [Koding][koding] Apps are, now lets create a
 classic Hello World application.
 
 ## Creating a Hello World application
@@ -93,8 +93,8 @@ our `HelloWorld` class to our apps container view.
 ### Compiling with DevTools
 
 Compiling can be done in a number of ways, but we're going to focus on the 
-easiest: Koding's [DevTools][6]. All we have to do with DevTools open it up, 
-and then from the FileTree on the left hand side locate our `index.coffee`
+easiest: Koding's [DevTools][devtools]. All we have to do with DevTools open it 
+up, and then from the FileTree on the left hand side locate our `index.coffee`
 file and open it up.  
 
 Once your `index.coffee` file is open, DevTools will automatically compile it 
@@ -173,23 +173,22 @@ do ->
 ```
 
 And if you got it all right, why not play around some more? As always, refer to 
-[the API][3] for additional class names to add into your code!
+[the API Source][kd] for additional class names to add into your code!
 
 ## In Closing
 
 You should now know what Koding Applications are made of, what they are made
 with, and how to make a basic Hello World application.
 
-In the [next installation][4], we'll take this a step further and see a 
-Manifest, a slightly more complex App, and take a sneak peak at publishing your 
-awesome app. [Check it out!][4]
+In the next guide, we'll take this a step further and see a Manifest, a 
+slightly more complex App, and take a sneak peak at publishing your awesome 
+app.
 
 
 
 
-[0]: https://koding.com
+[koding]: https://koding.com
 [1]: http://coffeescript.org
 [2]: https://github.com/phidelta/pistachio
-[3]: ../api
-[4]: ./03-devtools-example.md
-
+[kdf]: https://github.com/koding/kd
+[devtools]: https://koding.com/DevTools

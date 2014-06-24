@@ -16,7 +16,7 @@ Before we go into what Koding Apps are and how to create them, lets go over
 required and/or useful knowledge and tools. Don't forget to checkout the 
 [Useful Tools][useful tools] page after you get through Getting Started.
 
-## Knowledge
+## Languages
 
 ### CoffeeScript or JavaScript
 
@@ -26,7 +26,7 @@ single javascript file named `index.js` within the root of your App directory.
 
 ### Pistachio
 
-[Pistachio][pistachio] is a templating language that is used by [JView][jview]
+[Pistachio][pistachio] is a templating language that is used by JView.
 
 ## Tools
 
@@ -44,6 +44,5 @@ This tool comes with your Koding VM, you do not need to install it.
 [koding]: https://koding.com
 [coffeescript]: http://coffeescript.org
 [pistachio]: https://github.com/pipobscure/pistachio
-[jview]: ../api/core/jview
 [kdc]: https://github.com/koding/kdc
 [useful tools]: https://github.com/koding/kd/blob/master/docs/contents/useful-tools.md
