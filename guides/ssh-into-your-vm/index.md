@@ -49,7 +49,8 @@ Public Key into this. Below is a screenshot of this area for clarification.
   _(assuming it's not already created)_. Add the following code into that file:
 
   ```
-  Host *.kd.io User <username>
+  Host *.kd.io
+    User <username>
     ProxyCommand ssh %r@ssh.koding.com nc %h %p
   ```
 
