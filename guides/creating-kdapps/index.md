@@ -9,6 +9,16 @@ series-index: 0
 template: series.toffee
 ---
 
+# What is a Koding App (KDApp)?
+
+Koding Apps are created using the Koding Framework (KDFramework) and live
+on the [Koding App Store](https://koding.com/Apps). Koding users 
+install KDApps based on interest. It is entirely user driven.
+
+KDApps come in a variety of flavors. On the App store you will find apps
+in the games, installers, stacks and several other categories.
+
+
 # Creating KDApps
 
 In this guide series we'll go over the basics of what KDApps are, from a 
