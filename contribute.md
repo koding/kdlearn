@@ -137,10 +137,9 @@ take a look at our above markdown with some of this metadata.
 ---
 title: My Awesome Guide
 author: Lee Olayvar
+username: leeolayvar
 date: 2014-06-11
 categories: [awesome]
-
-template: page.toffee
 ---
 
 # Awesome Guide
@@ -161,10 +160,6 @@ adipiscing magna quam id dui. Morbi semper nisi ac accumsan tincidunt.
 Most of that is pretty logical. The `---` before and after signifies the 
 metadata start and end, and `title`, `author, `date` and `categories` is all 
 pretty standard.
-
-But what is `template: page.toffee` you ask? That is the template which will be 
-applied to your guide. You don't really have to worry about it, just add 
-`template: page.toffee` to your template and you're good to go!
 
 
 
