@@ -21,7 +21,7 @@
             {: by #{author}:}
           #}
         </li>
-        <li class="updated">Updated 5 days ago</li>
+        <li class="updated">Updated #{moment(date).fromNow()}</li>
       </ul>
       #{print contents}
       #{partial 'sharrebtns.toffee'}
