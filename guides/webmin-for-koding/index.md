@@ -4,8 +4,6 @@ author: Mike Spick
 username: syntackz
 date: 2014-06-24
 categories: [webmin]
-
-template: page.toffee
 ---
 
 #Installing Webmin on your Koding VM
