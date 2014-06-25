@@ -1,10 +1,8 @@
 ---
-title: SSH into your Koding VM
+title: Connect with SSH, from Unix
 author: Team Koding
 date: 2014-04-08
 categories: [ssh]
-
-template: page.toffee
 ---
 
 # Connect with SSH, from Unix
