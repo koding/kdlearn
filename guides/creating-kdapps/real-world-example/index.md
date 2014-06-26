@@ -1,7 +1,7 @@
 ---
 title: Real World KDApp
 author: Team Koding
-date: 2014-06-24
+date: 2014-04-24
 categories: [koding, coffeescript, javascript]
 
 series: creating-kdapps

@@ -1,7 +1,7 @@
 ---
 title: Foundation
 author: Team Koding
-date: 2014-06-23
+date: 2014-04-23
 categories: [koding, coffeescript, javascript]
 
 series: creating-kdapps
