@@ -23,8 +23,12 @@ Rather than copy code from this tutorial and paste it into DevTools, we're
 going to simply have it create one for us.
 
 So, open up [DevTools][devtools] and press the **Create New** button in the 
-center of the app. If you already have a file open, you'll have to go to the 
-DevTools menu in the upper right and choose **Create a new App**.
+center of the app.
+
+![create new](create-new.png)
+
+If you already have a file open, you'll have to go to the DevTools menu in the 
+upper right and choose **Create a new App**.
 
 Choose whatever name for your app you like, and press Create. In this tutorial, 
 the app is named "Example".
@@ -74,8 +78,8 @@ do ->
       name     : "Example"
       routes   :
         "/:name?/Example" : null
-        "/:name?/leeolayvar/Apps/Example" : null
-      dockPath : "/leeolayvar/Apps/Example"
+        "/:name?/yourusername/Apps/Example" : null
+      dockPath : "/yourusername/Apps/Example"
       behavior : "application"
 ```
 
@@ -127,6 +131,10 @@ class ExampleController extends AppController
     super options, data
 ```
 
+`AppController` is a recent addition to the KDFramework. It is used to register 
+your App with Koding itself; Provided along with routes, names, and filepath 
+information about your app.
+
 ### appView and KD.registerAppClass
 
 ```coffee
@@ -141,12 +149,81 @@ else
     name     : "Example"
     routes   :
       "/:name?/Example" : null
-      "/:name?/leeolayvar/Apps/Example" : null
-    dockPath : "/leeolayvar/Apps/Example"
+      "/:name?/yourusername/Apps/Example" : null
+    dockPath : "/yourusername/Apps/Example"
     behavior : "application"
 ```
 
+Here is where we actually *use* our `ExampleController`. We do so only if 
+`appView` does not exist. If `appView` exists, we are already registered or the 
+instance has already been created and loaded.
 
- 
+If it does not exist, we need to pass our ExampleController into the 
+`kd.registerAppClass` function. 
 
+The two main options given in this example are as follows:
+
+- `name`: The displayed name for this application.
+- `routes`: The routes that this application can be loaded from. In our 
+  example, <https://koding.com/yourusername/Example> and 
+<https://koding.com/yourusername/Apps/Example>.
+
+Note that most applications won't need to modify routes their AppControllers.  
+However, if more details are desired you can check out the [source][kdf] and 
+soon the API Documentation will be posted.
+
+
+
+## Publishing for Testing
+
+All of that is well and good, but we came here for a Real World App, right? We 
+need this to run *outside* of DevTools.
+
+If you click the menu in the upper right of DevTools, you'll see two options.  
+**Publish for Testing** and **Publish to AppStore**. Choose Publish for Testing 
+for now.
+
+You'll be presented with an AppStore link for your App, which looks like this:
+
+![private app](private-app.png)
+
+This added your Application to the AppStore in **Private Mode**. Only you can 
+run this app. But if you click Run, you'll see that your app does indeed run!
+
+![testing app](testing-app.png)
+
+As you can see above, it loads into your App Bar, you'll get a real URL for it, 
+and it is indeed a *Real* Koding App. This lets you test your app as if it was 
+officially published, and use it under real conditions.
+
+
+## Publishing to the AppStore
+
+Testing is all well and good, but eventually you'll want to publish it right?  
+Well if you go back to DevTools and choose the **Publish to AppStore** option 
+your App will be published to the AppStore, but not yet publicly visible.
+
+Your App will be awaiting approval from Koding Moderators. Once we look at it 
+and ensure that your App works properly, we'll approve it! Then, all Koding 
+users will be able to load your awesome application and enjoy all the hard work 
+you put in.
+
+
+## Where to go from here
+
+You should now have a good understanding of what Koding Applications are, and 
+what the creation, testing, and publishing process is like. Next, you'll want 
+to add awesome functionality and gain a deep understanding of the Koding 
+Framework, right?
+
+To do this, proceed to the API Documentation*(coming soon)* and the 
+[KDFramework Source][kdf]. These will cover all of the available Classes, large 
+and small, of the Koding Framework.
+
+Thanks for reading, and stay tuned for additions to this guide, going in more 
+depth.
+
+
+[kdf]: https://github.com/koding/kd
+[kdfio]: http://www.kd.io
 [devtools]: https://koding.com/DevTools
