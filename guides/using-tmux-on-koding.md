@@ -1,10 +1,8 @@
 ---
 title: Using Tmux on Koding
 author: Team Koding
-date: 2014-02-13
+date: 2014-05-13
 categories: [koding, tmux]
-
-template: page.toffee
 ---
 
 # Using Tmux on Koding
