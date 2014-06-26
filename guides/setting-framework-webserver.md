@@ -37,7 +37,7 @@ Installing Laravel 4
 ```
 sudo curl -o /usr/local/bin/laravel 'http://laravel.com/laravel.phar'
 ```
-Set write permission on the Laravel executeable.
+Set execute permission on the Laravel executeable.
 ```
 sudo chmod +x /usr/local/bin/laravel
 ```
