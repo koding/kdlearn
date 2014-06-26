@@ -180,9 +180,8 @@ And if you got it all right, why not play around some more? As always, refer to
 You should now know what Koding Applications are made of, what they are made
 with, and how to make a basic Hello World application.
 
-In the next guide, we'll take this a step further and see a Manifest, a 
-slightly more complex App, and take a sneak peak at publishing your awesome 
-app.
+In the next guide, we'll look at a real world application. Not simplified, and 
+one that you can run as a real app.
 
 
 
