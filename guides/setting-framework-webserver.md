@@ -8,19 +8,11 @@ categories: [python, php]
 
 # Setting up a framework websever
 
-Koding is the easiest way to say goodbye to your localhost. 
+Koding is the easiest way to _say goodbye to your localhost_. 
 
-Using your personal machine for your projects means you have to bind your daemons to public IP address, which can be a bit frustrating for a beginner.
+Using your personal machine for projects means you have to bind your daemons to public IP address, which can be a bit frustrating for a beginner. Developers usually tend to use certain frameworks that have built-in web servers. These web servers give you the ability to develop your projects and then test them. But there is a downside to that approach. Those web servers are not designated for production usage and besides that they only run locally which makes your daemon/project not accessible to the rest of the world. This means you can't reach them from your Koding public domain. If you want to achieve this and make you daemons available for public access you have to bind your daemons to 0.0.0.0 which listens to all IPv4 addresses. 
 
-Usually people tend to use certain frameworks that have built-in web servers. These web servers give you the ability to develop your projects and then test them.
-
-But there is a downside to that approach. Those web servers are not designated for production usage and besides that they only run locally which makes your daemon/project not accessible to the rest of the world. 
-
-This means you can't reach them from your Koding public domain.
-
-If you want to achieve this and make you daemons available for public access you have to bind your daemons to 0.0.0.0 which listens to all IPv4 addresses. 
-
-Here are a couple of examples on how to make your project available publicly.
+Here are a couple of examples on how to make your project available publicly by using Koding as your development playground.
 
 # Django
 
@@ -59,8 +51,7 @@ php artisan serve --host=0.0.0.0 --port=8080
 ```    
 Voilà! A working Laravel and Artisan webserver.
 
-MeteorJS
---------
+# MeteorJS
 
 Install MeteorJS
 ```
@@ -79,8 +70,7 @@ Meteor should listen to 0.0.0.0:3000 by default. If you can't reach your project
 sudo netstat -tnlp
 ```
 
-Rails
------
+#Rails
 
 Rails listens to 0.0.0.0:3000 by default. 
 
@@ -99,8 +89,7 @@ rails server
 ```
 Voilà! You have a Rails working webserver
 
-Tornado
--------
+#Tornado
 
 Create a new Python script using your favorite editor.
 ```
