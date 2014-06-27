@@ -1,5 +1,4 @@
 ---
-title: Hello World
 author: Team Koding
 date: 2014-04-23
 categories: [koding, coffeescript, javascript]
@@ -8,8 +7,6 @@ series: creating-kdapps
 series-index: 3
 template: series.toffee
 ---
-
-
 
 # Hello World
 
@@ -50,8 +47,8 @@ do ->
 ```
 
 
-This source is short of a "complete" app, but it will get feet went and help us 
-understand the basics. So, lets break down the above source.  
+This source is short of a "complete" app, but it will get our feet wet and help 
+us understand the basics. So, lets break down the above source.  
 
 #### HelloWorld and Views
 
@@ -67,8 +64,9 @@ Koding View. You can see that it extends `JView`, which is a Koding View.
 #### JView and Pistachio
 
 As we mentioned, `JView` is a Koding View. It extends `KDView`,
-but adds Pistachio templating functionality. [Pistachio][2] is a templating 
-language which is similar to Handlebars, and you can readup on it if you like.
+but adds Pistachio templating functionality. [Pistachio][pistachio] is a 
+templating language which is similar to Handlebars, and you can readup on it if 
+you like.
 
 The important thing to note here, is that `JView` and Pistachio *are entirely
 optional*. I included them here to show multiple ways of adding content
@@ -78,7 +76,7 @@ not used `JView` at all.
 #### Do and appView
 
 The `do` usage here is a bit irrelevant, but many Coffee users forget what
-it actually *does*. `do ->` simple creates a javascript closure and executes
+it actually *does*. `do ->` simply creates a javascript closure and executes
 the given function immediately.
 
 `appView` on the otherhand, is the real hero of this whole code. We've
@@ -173,7 +171,7 @@ do ->
 ```
 
 And if you got it all right, why not play around some more? As always, refer to 
-[the API Source][kd] for additional class names to add into your code!
+[the API Source][kdf] for additional class names to add into your code!
 
 ## In Closing
 
@@ -187,7 +185,6 @@ one that you can run as a real app.
 
 
 [koding]: https://koding.com
-[1]: http://coffeescript.org
-[2]: https://github.com/phidelta/pistachio
+[pistachio]: https://github.com/phidelta/pistachio
 [kdf]: https://github.com/koding/kd
 [devtools]: https://koding.com/DevTools
