@@ -6,7 +6,7 @@ date: 2014-06-27
 categories: [php]
 ---
 
-#Installing & Setting Up Phalcon (PHP Framework) on Koding
+# Installing & Setting Up Phalcon
 
 This article will cover the process of installing and setting up Phalcon in your [Koding](https://koding.com) environment.
 
