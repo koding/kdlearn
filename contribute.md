@@ -1,11 +1,8 @@
 ---
-title: Author A Guide
 author: Team Koding
 date: 2014-06-01
 categories: [koding]
 collection: guide
-
-template: page.toffee
 ---
 
 # Author A Guide
@@ -99,7 +96,7 @@ editor][ace] and open a folder titled `kdlearn`. In this section we're going to
 write a guide, but if you just want to edit another guide, scroll down to the 
 [edit](#editing-a-guide) section.
 
-Lets create a file in the **guides** folder with the title `myguide.md`.  Name 
+Lets create a file in the **guides** folder with the name `myguide.md`.  Name 
 the file whatever you like, just try to keep it short and url friendly.
 
 ![myguide file](/contribute/myguide.png)
@@ -135,7 +132,6 @@ take a look at our above markdown with some of this metadata.
 
 ```markdown
 ---
-title: My Awesome Guide
 author: Lee Olayvar
 username: leeolayvar
 date: 2014-06-11
@@ -158,8 +154,8 @@ adipiscing magna quam id dui. Morbi semper nisi ac accumsan tincidunt.
 ```
 
 Most of that is pretty logical. The `---` before and after signifies the 
-metadata start and end, and `title`, `author, `date` and `categories` is all 
-pretty standard.
+metadata start and end, and `author, `date` and `categories` is all pretty 
+standard.
 
 
 

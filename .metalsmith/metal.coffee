@@ -21,6 +21,7 @@ newPage      = require './plugins/new-page'
 series       = require './plugins/series'
 snapshot     = require './plugins/snapshot'
 tags         = require './plugins/tags'
+titleify     = require './plugins/titleify'
 videoScraper = require './plugins/video-scraper'
 
 
@@ -45,6 +46,7 @@ module.exports = build = (callback=->) ->
       ]
     .use markdown()
     .use excerpts()
+    .use titleify()
     .use moment()
     .use series()
     .use collections

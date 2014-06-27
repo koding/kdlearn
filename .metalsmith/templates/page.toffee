@@ -12,6 +12,7 @@
           </a>
         </div>
       :} #}
+      <h1>#{title}</h1>
       <ul class="meta">
         <li class="author username">
           {#

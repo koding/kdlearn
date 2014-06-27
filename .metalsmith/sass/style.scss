@@ -872,7 +872,7 @@ body > .page {
 
 .docs-content > h1:first-of-type {
   text-align: center;
-  margin-bottom: 60px;
+  margin: 0;
 }
 
 // ## Guides Page
@@ -1378,9 +1378,8 @@ a.youtube-mini {
 
 // ## Page/Series Content Meta
 .guide-content .meta {
+  margin: 0 0 30px;
   padding: 0;
-  position: absolute;
-  top: 30px;
   width: 100%;
   text-align: center;
 }

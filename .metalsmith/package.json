@@ -17,7 +17,8 @@
     "metalsmith-excerpts": "^1.0.0",
     "sanitize-html": "^1.1.5",
     "gulp-coffee": "^1.4.3",
-    "metalsmith-ignore": "^0.1.2"
+    "metalsmith-ignore": "^0.1.2",
+    "cheerio": "^0.17.0"
   },
   "dependencies": {}
 }
