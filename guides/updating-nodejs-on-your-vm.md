@@ -8,11 +8,13 @@ categories: [nodejs, ppa]
 template: page.toffee
 ---
 
+# Installing Node.js
+
 Your Koding VM is powered by Ubuntu 13.10, by default your Koding VM comes pre-installed with the Node 0.10.18 that is the current stable version of Node.js. available in the official Ubuntu repository. We can update to the latest stable version of Node.js available for Ubuntu 13.10 by adding the official Node.js PPA to our local sources list and running a dist-upgrade to switch to the latest stable version.
 
 The Official PPA is updated regularly and is maintained by [Chris Lea](https://chrislea.com/)
 
-## Installing Node.js
+## Instructions
 
 Adding the official Node.js PPA
 
