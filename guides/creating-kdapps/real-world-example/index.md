@@ -99,7 +99,7 @@ class ExampleMainView extends KDView
       cssClass : "welcome-view"
 ```
 
-`ExampleMainView` is a Koding View. Views are Kodings way of programatically 
+`ExampleMainView` is a Koding View. Views are Kodings way of programmatically 
 representing the DOM. Allowing you to define elements and modify them all from 
 your code. In the above code, our view will be literally compiled to the 
 following html
