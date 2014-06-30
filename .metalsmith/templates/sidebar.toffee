@@ -55,9 +55,6 @@ checkActiveItems = (items) ->
         <a href="/guides/creating-kdapps/foundation">Foundation</a>
       </li>
       <li>
-        <a href="/guides/creating-kdapps/hello">Hello World</a>
-      </li>
-      <li>
         <a href="/guides/creating-kdapps/real-world-example">Real World Example</a>
       </li>
     </ul>

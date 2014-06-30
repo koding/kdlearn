@@ -5,17 +5,14 @@ date: 2014-04-24
 categories: [koding, coffeescript, javascript]
 
 series: creating-kdapps
-series-index: 4
+series-index: 3
 template: series.toffee
 ---
 
 # Real World KDApp
 
-In our previous example, we took some shortcuts to simplify the application. As 
-a result of these shortcuts, our application would be unable to be deployed.  
-
-So, in an effort to actually have our application be useful, lets roll up our 
-sleeves and make a deployable application!
+We previously talked about what [Koding][koding] Apps are, now lets create a
+basic application which can be deployed, and shared with other Koders.
 
 ## Create it on DevTools
 
@@ -83,8 +80,7 @@ do ->
       behavior : "application"
 ```
 
-Whoa! This one is quite a bit longer, but we can still see some familiar spots.  
-Lets break it down, piece by piece.
+Lets break this code down, piece by piece.
 
 ### ExampleMainView
 
@@ -103,12 +99,19 @@ class ExampleMainView extends KDView
       cssClass : "welcome-view"
 ```
 
-Just like our `HelloWorld` view from the last tutorial, this is a Koding View.  
-However, unlike our `HelloWorld` this view extends `KDView` directly.
+`ExampleMainView` is a Koding View. Views are Kodings way of programatically 
+representing the DOM. Allowing you to define elements and modify them all from 
+your code. In the above code, our view will be literally compiled to the 
+following html
 
-This means that it does not have a `JView.prototype.pistachio` method, and to 
-actually render views to the DOM we need to do it another way, via the 
-`KDView.prototype.viewAppended` method.
+```html
+<div class="kdview example main-view">
+  <div class="kdview welcome-view">Welcome to Example app!</div>
+</div>
+```
+
+You can modify these views by adding css, changing their content, adding 
+subviews, or even removing them entirely at a later time.
 
 When our View is added to another view, such as `appView`, our `viewAppended()` 
 method is called. This event is a good place to add our views with the 
@@ -172,7 +175,50 @@ Note that most applications won't need to modify routes their AppControllers.
 However, if more details are desired you can check out the [source][kdf] and 
 soon the API Documentation will be posted.
 
+## Compiling with DevTools
 
+Compiling can be done in a number of ways, but we're going to focus on the 
+easiest: Koding's [DevTools][devtools]. All we have to do with DevTools open it 
+up, and then from the FileTree on the left hand side locate our `index.coffee`
+file and open it up.
+
+In this example though, we're already working in DevTools, so our app is 
+already compiling instantly! It should look similar to the following image:
+
+![DevTools](./devtools.png)
+
+## Extending Functionality
+
+Now that you have your app loaded, lets make some changes. Lets add a button to 
+our application! Exciting right?
+
+Since we'll likely want to have this button call a function in our code, we're 
+going to create it using KDViews. Specifically, the `KDButtonView`. Take the 
+following code, and insert it in our `viewAppended: ->` method.
+
+```coffee
+    @addSubView new KDButtonView
+      title:     'Click Me!'
+      callback:  ->
+        alert 'Clicked :)'
+```
+
+**Remember**: In CoffeeScript, indentation matters. So make sure this is 
+indented so that `@addSubView new KDView` and `@addSubView new KDButtonView` 
+are at the same indentation level.
+
+And just like that, you have a button in your Application! Lets take a look at 
+it:
+
+![button](button.png)
+
+No surprise, we have added a button into our application. If you click it, it 
+will run the code found within the `callback` option, which in this case is 
+`alert 'Clicked :)'`.
+
+The cool part here, is that we didn't write any HTML. We didn't write any DOM 
+Events. We just wrote some simple JavaScript, and the KDFramework created the 
+appropriate events needed.
 
 ## Publishing for Testing
 
@@ -201,12 +247,16 @@ officially published, and use it under real conditions.
 
 Testing is all well and good, but eventually you'll want to publish it right?  
 Well if you go back to DevTools and choose the **Publish to AppStore** option 
-your App will be published to the AppStore, but not yet publicly visible.
+your App will be published to the AppStore under the Unverified Apps Section.
 
-Your App will be awaiting approval from Koding Moderators. Once we look at it 
-and ensure that your App works properly, we'll approve it! Then, all Koding 
-users will be able to load your awesome application and enjoy all the hard work 
-you put in.
+While unverified, users will be able to go into that special section and run 
+your application.
+
+Your App will remain in this Unverified state until it is reviewed and approved 
+by Koding Moderators. Once they look at it and ensure that your App works 
+properly, they'll approve it! All Koding users will be able to load your 
+awesome application, knowing that it is safe and great, and enjoy all the hard 
+work you put into it!
 
 
 ## Where to go from here
@@ -224,6 +274,7 @@ Thanks for reading, and stay tuned for additions to this guide, going in more
 depth.
 
 
+[koding]: https://koding.com
 [kdf]: https://github.com/koding/kd
 [kdfio]: http://www.kd.io
 [devtools]: https://koding.com/DevTools
