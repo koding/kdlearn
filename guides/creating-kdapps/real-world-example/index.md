@@ -245,9 +245,14 @@ officially published, and use it under real conditions.
 
 ## Publishing to the AppStore
 
-Testing is all well and good, but eventually you'll want to publish it right?  
-Well if you go back to DevTools and choose the **Publish to AppStore** option 
-your App will be published to the AppStore under the Unverified Apps Section.
+Testing is all well and good, but eventually you'll want to publish it right? 
+Before publishing, make sure that you have your application source on Github 
+with the full application name *(Example: 
+`github.com/yourname/Example.kdapp`)*.
+
+If you've got all that, go back to DevTools and choose the **Publish to 
+AppStore** option your App will be published to the AppStore under the 
+Unverified Apps Section.
 
 While unverified, users will be able to go into that special section and run 
 your application.
