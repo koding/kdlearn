@@ -17,7 +17,7 @@ MySQL comes preinstalled with all Koding VMs, and can be logged into by typing 
 You should note that the `-p` flag is not included in that command. That is because there is no root user password by default. You can assign a password with the following command:
     
     
-    mysqladmin -u root password NEWPASSWORD
+    mysqladmin -u root password
 
 When entering MySQL login details into your applications, make sure you log in from localhost, not your VM Hostname.
 

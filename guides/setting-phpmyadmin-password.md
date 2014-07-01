@@ -27,10 +27,13 @@ First we need to set a password to our `root` user in mysql. Open your [Koding
 Terminal](https://koding.com/Terminal) and type the following then hit enter.
 
 ```
-sudo mysqladmin -u root password YOURPASSWORD
+sudo mysqladmin -u root password
 ```
 
-You might be prompted for a password. Use your Koding account password and hit enter. This will set your mysql `root` password with your desired password and will be used to login in phpmyadmin.
+You might be prompted for your sudo password. Use your Koding account password 
+and hit enter. Next you'll be prompted for your MySQL Password, twice. This 
+will set your mysql `root` password with your desired password and will be used 
+to login in phpmyadmin.
 
 You can now login using `root` with the password you've set a while ago, you can access phpMyAdmin by visiting
 

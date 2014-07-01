@@ -16,7 +16,7 @@ be done with the following command into your [Koding
 Terminal](https://koding.com/Terminal):
 
 ```
-mysqladmin -u root password NEWPASSWORD
+mysqladmin -u root password
 ```
 
 Now when you visit phpmyadmin, login with the following credentials:
