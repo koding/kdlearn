@@ -1,6 +1,9 @@
 
 {#
-tagKey = tagName.toLowerCase() if not tagKey?
+if tagNames[tagKey]?
+  tagName = tagNames[tagKey]
+else
+  tagName = tagKey.charAt(0).toUpperCase() + tagKey.slice(1)
 #}
 
 <div class="tag-list">

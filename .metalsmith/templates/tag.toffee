@@ -14,9 +14,14 @@
         by <span class="author">#{print guide.author}</span> &bull; about <span class="date">#{print moment(guide.date).fromNow()}</span>
         &bull; in categories
         <ul>
-          {# for cat in guide.categories {:
-            <li><a href="/categories/#{cat}">#{cat}</a></li>
-          :} #}
+          {#
+          for cat in guide.categories
+            if tagNames[cat]?
+              catName = tagNames[cat]
+            else
+              catName = cat.charAt(0).toUpperCase() + cat.slice(1)
+            {: <li><a href="/categories/#{cat}">#{catName}</a></li> :}
+          #}
         </ul>
       </div>
     </li>

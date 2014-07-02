@@ -9,6 +9,7 @@ collections  = require 'metalsmith-collections'
 excerpts     = require 'metalsmith-excerpts'
 ignore       = require 'metalsmith-ignore'
 markdown     = require 'metalsmith-markdown'
+metadata     = require 'metalsmith-metadata'
 permalinks   = require 'metalsmith-permalinks'
 templates    = require 'metalsmith-templates'
 defaultMeta  = require './plugins/defaultmeta'
@@ -39,6 +40,10 @@ module.exports = build = (callback=->) ->
     # Ignore files from ever entering the stream
     .ignore ['.agignore', '.gitignore', '.git', '.metalsmith', 'legacy']
     .options remove: false
+    # Place before the ignore plugin that removes non-markdown
+    # from the stream
+    .use metadata
+      tagNames: 'categories.yaml'
     # Remove files from the stream
     .use ignore [
       '**/*'
