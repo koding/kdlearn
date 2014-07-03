@@ -76,6 +76,12 @@ You've done it! Webmin is installend and configured!
 
 ##Logging In
 
+First you need reset your root password. You can do that with the following command.
+
+>	sudo passwd root
+
+![rootpasswd](rootpasswd.png)
+
 Navigate to the URL you took note of earlier.
 To login to webmin, you can use the root user + your Koding password.
 
