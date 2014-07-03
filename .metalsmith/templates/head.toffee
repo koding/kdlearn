@@ -2,12 +2,12 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="description" content="">
+		<meta name="description" content="Koding is a feature rich cloud-based development environment complete with free VMs, an attractive IDE and sudo level terminal access. Your ideal software development playground!">
 		<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="320">
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<title>Koding University</title>
-	    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+	    	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css">
 		<link href="http://fonts.googleapis.com/css?family=Ubuntu:700,300" rel="stylesheet" type="text/css">
 		<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
