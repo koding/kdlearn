@@ -1,3 +1,13 @@
-php:         PHP
-mysql:       MySQL
-phpmyadmin:  phpMyAdmin
+angularjs:     AngularJS
+codeigniter:   CodeIgniter
+coffeescript:  CoffeeScript
+emberjs:       Ember.js
+mysql:         MySQL
+nodejs:        Node.js
+php:           PHP
+phpmyadmin:    phpMyAdmin
+pyrocms:       PyroCMS
+ppa:           PPA
+ssh:           ssh
+togetherjs:    TogetherJS
+tmux:          tmux
