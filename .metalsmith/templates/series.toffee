@@ -3,7 +3,7 @@
 <section><div class="container">
 {# if not hideSidebar? then print partial 'sidebar.toffee' #}
 
-<div class="docs-content">
+<div class="docs-content guide-content">
   {# if videoId?  {:
     <div class="video">
       <a href="//www.youtube.com/v/#{videoId}?autoplay=1&rel=0&controls=0&showinfo=0&modestbranding=1" title="#{print title}" class="youtube fancybox.iframe">
@@ -14,6 +14,21 @@
   :} #}
 
   <h1>#{title}</h1>
+
+  {# if series.prev? {:
+  <ul class="meta">
+    <li class="author username">
+      {#
+      if username?
+        {: by <a href="https://koding.com/#{username}">#{author}</a> :}
+      else
+        {: by #{author}:}
+      #}
+    </li>
+    <li class="updated">Updated #{moment(date).fromNow()}</li>
+  </ul>
+  :} #}
+
   #{print contents}
 
   {## If prev does not exist, this is the "root" guide - add the index ##}
