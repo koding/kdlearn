@@ -1,3 +1,12 @@
+{#
+findTagName = (key) ->
+  if tagNames[key]?
+    name = tagNames[key]
+  else
+    name = key.charAt(0).toUpperCase() + key.slice(1)
+#}
+
+
 #{partial 'head.toffee'}
 #{partial 'topnav.toffee'}
 <section><div class="container">
@@ -5,7 +14,7 @@
 #{partial 'sidebar.toffee'}
 
 <div class="docs-content" id="page-category">
-  <h1>#{tagName} Guides</h1>
+  <h1>#{findTagName tagKey} Guides</h1>
   <ul>
   {# for guide in paginate.files {:
     <li>
@@ -16,11 +25,7 @@
         <ul>
           {#
           for cat in guide.categories
-            if tagNames[cat]?
-              catName = tagNames[cat]
-            else
-              catName = cat.charAt(0).toUpperCase() + cat.slice(1)
-            {: <li><a href="/categories/#{cat}">#{catName}</a></li> :}
+            {: <li><a href="/categories/#{cat}">#{findTagName cat}</a></li> :}
           #}
         </ul>
       </div>
