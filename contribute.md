@@ -81,7 +81,7 @@ Next, we will want to clone our newly forked repository. Head on over to your
 [Koding Terminal][terminal] and type in the following command:
 
 ```
-git clone git@github.com:yourUsername/kdlearn.git
+git clone https://github.com:yourUsername/kdlearn.git
 ```
 
 This will clone your Forked Repository to your Koding VM, into the folder 
@@ -218,7 +218,7 @@ and ensure that you want to make a pull request. Please review your changes for
 typos, spelling, and grammar.
 
 If you spot an issue, and need to make more changes, go back to 
-[Koding][koding] and make the edits you need. Make sure to add, commit, and 
+[Koding][ace] and make the edits you need. Make sure to add, commit, and 
 push them just like before.
 
 If you're happy with your changes, press the big green **Create Pull Request** 
