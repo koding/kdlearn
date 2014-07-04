@@ -21,7 +21,7 @@ Or you will get an error like this:
     Is the server running locally and accepting
     connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
 
-To getting started with it, first of all open your Terminal, and type:
+To getting started with éostgreSQL, open your [Terminal][https://koding.com/Terminal], and type:
 
     username$ sudo su - postgres
 
