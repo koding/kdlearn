@@ -218,7 +218,7 @@ and ensure that you want to make a pull request. Please review your changes for
 typos, spelling, and grammar.
 
 If you spot an issue, and need to make more changes, go back to 
-[Koding][koding] and make the edits you need. Make sure to add, commit, and 
+[Koding][ace] and make the edits you need. Make sure to add, commit, and 
 push them just like before.
 
 If you're happy with your changes, press the big green **Create Pull Request** 
