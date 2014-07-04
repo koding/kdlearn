@@ -1,12 +1,12 @@
 ---
-title: Setting up a framework websever
+title: Setting up a framework webserver
 author: Levent Yalcin
 username: leventyalcin
 date: 2014-06-25
 categories: [python, php]
 ---
 
-# Setting up a framework websever
+# Setting up a framework webserver
 
 Koding is the easiest way to _say goodbye to your localhost_. 
 
