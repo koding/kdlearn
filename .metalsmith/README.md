@@ -32,6 +32,7 @@ With Gulp installed, simply run the following command, to compile the entire
 project into HTML.
 
 ```
+cd .metalsmith
 gulp
 ```
 

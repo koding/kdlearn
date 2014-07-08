@@ -239,6 +239,13 @@ Once they are accepted, and your pull request is merged, the site will be
 updated and you're changes will be live. Thanks for your contribution!
 
 
+## Previewing your work
+
+Overall you shouldn't need to preview your Markdown documents. They'll look and 
+behave just like you expect. If you insist on previewing your markdown, you'll 
+have to install, compile, and serve the static site from your host machine. The
+[.metalsmith/README.md][metalreadme] README will explain the entire process.
+
 
 
 
@@ -249,3 +256,4 @@ updated and you're changes will be live. Thanks for your contribution!
 [githubssh]:         https://help.github.com/articles/generating-ssh-keys
 [terminal]:          https://koding.com/Terminal
 [ace]:               https://koding.com/Ace
+[metalreadme]:       https://github.com/koding/kdlearn/blob/master/.metalsmith/README.md
