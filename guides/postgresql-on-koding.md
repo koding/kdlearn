@@ -1,5 +1,5 @@
 ---
-title: MySQL on Koding
+title: PostgreSQL on Koding
 author: Federico Ponzi
 date: 2014-04-07
 categories: [koding, postgresql]
