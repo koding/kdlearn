@@ -49,7 +49,8 @@ module.exports = build = (callback=->) ->
       '**/*'
       '!**/*.md'
       ]
-    .use markdown()
+    .use markdown
+      highlight: (code) -> require('highlight.js').highlightAuto(code).value
     .use excerpts()
     .use titleify()
     .use moment()
