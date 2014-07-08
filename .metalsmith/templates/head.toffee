@@ -14,6 +14,8 @@
 		<link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="/css/rrssb.css" />
 		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="stylesheet" href="/css/highlight-default.css" />
+		<link rel="stylesheet" href="/css/highlight-theme.css" />
 
 		<!-- og meta tags -->
 		<meta property="og:title" content="Koding - Say goodbye to localhost!"/>
