@@ -12,6 +12,7 @@ markdown     = require 'metalsmith-markdown'
 metadata     = require 'metalsmith-metadata'
 permalinks   = require 'metalsmith-permalinks'
 templates    = require 'metalsmith-templates'
+authors      = require './plugins/authors'
 defaultMeta  = require './plugins/defaultmeta'
 paginate     = require './plugins/paginate'
 paginateTags = require './plugins/paginatetags'
@@ -76,6 +77,7 @@ module.exports = build = (callback=->) ->
     .use videoScraper
       collection: 'video'
       key: 'videoId'
+    .use authors()
     .use newPage
       output: 'index'
       metadata: template: 'index.toffee'
