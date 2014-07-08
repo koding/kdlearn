@@ -28,7 +28,7 @@ mkdir Drive
 cd Drive
 ```
 
-The `grive` apps requires some dependencies. You can install them using the following command.
+We need to softlink some dependencies for the `grive` app to work properly. Use the following command to achieve this.
 
 ```
 sudo ln -s /usr/lib/libbfd-2.23.2-system.so /usr/lib/libbfd-2.23-system.so
