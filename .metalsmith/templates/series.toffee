@@ -4,15 +4,6 @@
 {# if not hideSidebar? then print partial 'sidebar.toffee' #}
 
 <div class="docs-content guide-content">
-  {# if videoId?  {:
-    <div class="video">
-      <a href="//www.youtube.com/v/#{videoId}?autoplay=1&rel=0&controls=0&showinfo=0&modestbranding=1" title="#{print title}" class="youtube fancybox.iframe">
-        <img src="http://img.youtube.com/vi/#{videoId}/hqdefault.jpg" />
-        <span class="youtube-play fa fa-play-circle"></span>
-      </a>
-    </div>
-  :} #}
-
   <h1>#{title}</h1>
 
   {# if series.prev? {:
@@ -27,6 +18,15 @@
     </li>
     <li class="updated">Updated #{moment(date).fromNow()}</li>
   </ul>
+  :} #}
+
+  {# if videoId?  {:
+    <div class="video">
+      <a href="//www.youtube.com/v/#{videoId}?autoplay=1&rel=0&controls=0&showinfo=0&modestbranding=1" title="#{print title}" class="youtube fancybox.iframe">
+        <img src="http://img.youtube.com/vi/#{videoId}/hqdefault.jpg" />
+        <span class="youtube-play fa fa-play-circle"></span>
+      </a>
+    </div>
   :} #}
 
   #{print contents}
