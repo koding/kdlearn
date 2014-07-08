@@ -70,3 +70,28 @@ time you change the Markdown.
 
 Of course, you can skip the `cd` command if you're already in the source 
 directory.
+
+## Troubleshooting
+
+### Error: No local gulp install found in kdlearn
+
+The `gulp` command needs to be run from the `kdlearn/.metalsmith` directory.  
+Assuming that you're in the `kdlearn` directory, navigate into the 
+`.metalsmith` directory with the following command:
+
+```
+cd .metalsmith
+```
+
+### Missing Installation Packages
+
+If you failed to install the dependencies, or if the **dependencies have 
+changed**, your `gulp` command may fail with verbose and confusing errors.  
+There's no telling what the errors will say, because there is no telling what 
+exactly will be missing when you see it.
+
+Regardless, if you're running into weird errors, try simply installing the 
+dependencies again. If you're up to date, nothing will be installed. If you're 
+missing something, it will be installed. See the [installation 
+instructions](#installation) above for instructions.
+
