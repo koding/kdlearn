@@ -2,6 +2,7 @@ angularjs:     AngularJS
 codeigniter:   CodeIgniter
 coffeescript:  CoffeeScript
 emberjs:       Ember.js
+ftp:           FTP
 javascript:    JavaScript
 mysql:         MySQL
 nodejs:        Node.js
