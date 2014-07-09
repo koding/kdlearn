@@ -4,7 +4,8 @@
 
 #{print partial 'sidebar.toffee'}
 <div class="docs-content author">
-  <h1>#{author.name}</h1>
+  <h1>Guides by #{author.name}</h1>
+  {### Not Implemented, Currently.
   <ul class="meta">
     {# if author.username? {: 
     <li class="koding">
@@ -12,6 +13,7 @@
     </li>
     :} #}
   </ul>
+  ###}
   <ul>
     {# for guide in author.guides {: 
     <li class="guide">
