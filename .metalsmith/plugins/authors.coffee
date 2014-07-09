@@ -13,7 +13,13 @@ module.exports = (opts={}) ->
   opts.metadata ?= {}
   (files, metalsmith, done) ->
     authors = {}
-    for filename,file of files
+
+    collections = metalsmith.metadata().collections
+    if not collections?
+      console.warn "Plugin authors() requires the collections() plugin"
+      return done()
+
+    for file in collections.guide
       if not file.author? then continue
 
       slug = file.username ? file.author.toLowerCase().replace /\W+/g, ''
