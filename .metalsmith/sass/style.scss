@@ -1418,6 +1418,58 @@ pre code {
 }
 
 
+.two-pane-list {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+}
+.two-pane-list > li {
+  display: inline-block;
+  min-width: 250px;
+  margin-bottom: 16px;
+}
+
+
+#authors-page ul {
+  padding: 0;
+}
+#authors-page ul ul {
+  padding-left: 6px;
+}
+#authors-page li {
+  list-style: none;
+}
+#authors-page li li {
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 8px;
+}
+#authors-page li li:last-child {
+  margin-bottom: 0;
+}
+#authors-page h1 {
+  margin-bottom: 40px;
+}
+#authors-page h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+#authors-page span {
+  display: inline-block;
+  margin-bottom: 6px;
+}
+#authors-page h2 a,
+#authors-page h2 a:hover,
+#authors-page h2 a:visited {
+  color: inherit;
+}
+#authors-page .view-all {
+  font-size: 12px;
+}
+
+
+
 //--------------------------
 
 @media only screen and (min-width: 400px) { }

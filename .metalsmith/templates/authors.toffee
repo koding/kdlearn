@@ -3,9 +3,9 @@
 <section><div class="container">
 
 #{print partial 'sidebar.toffee'}
-<div class="docs-content authors">
+<div id="authors-page" class="docs-content authors">
   <h1>Koding University Authors</h1>
-  <ul>
+  <ul class="two-pane-list">
     {# for authorSlug, author of authors {: 
     <li class="author">
       <h2>
@@ -28,7 +28,7 @@
       </ul>
 
       {# if author.guides.length > 5 {:
-      <a href="/authors/#{authorSlug}">see more</a>
+      <a class="view-all" href="/authors/#{authorSlug}">see more</a>
       :} #}
     </li>
     :} #}
