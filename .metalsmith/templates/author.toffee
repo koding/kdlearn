@@ -1,9 +1,18 @@
+{#
+findTagName = (key) ->
+  if tagNames[key]?
+    name = tagNames[key]
+  else
+    name = key.charAt(0).toUpperCase() + key.slice(1)
+#}
+
+
 #{partial 'head.toffee'}
 #{partial 'topnav.toffee'}
 <section><div class="container">
 
 #{print partial 'sidebar.toffee'}
-<div class="docs-content author">
+<div id="page-author" class="docs-content author">
   <h1>Latest guides by #{author.name}</h1>
   {### Not Implemented, Currently.
   <ul class="meta">
@@ -14,10 +23,23 @@
     :} #}
   </ul>
   ###}
-  <ul>
+  <ul class="verbose-guide-list">
     {# for guide in author.guides {: 
     <li class="guide">
-      <a href="#{guide.httplink}">#{guide.title}</a>
+      <h3 class="title"><a href="#{guide.httplink}">#{print guide.title}</a></h3>
+      <div class="meta">
+        by <span class="author">#{print guide.author}</span> &bull; about <span class="date">#{print moment(guide.date).fromNow()}</span>
+
+        {# if guide.categories? {:
+        &bull; in categories
+        <ul>
+          {#
+          for cat in guide.categories
+            {: <li><a href="/categories/#{cat}">#{findTagName cat}</a></li> :}
+          #}
+        </ul>
+        :} #}
+      </div>
     </li>
     :} #}
   </ul>
