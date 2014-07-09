@@ -5,14 +5,9 @@
 #{print partial 'sidebar.toffee'}
 <div class="docs-content authors">
   <ul>
-    {# for author in authors {: 
+    {# for authorSlug, author of authors {: 
     <li class="author">
-      {#
-      if author.username?
-        {: <a href="https://koding.com/#{author.username}">#{author.name}</a> :}
-      else
-        {: #{author.name} :}
-      #}
+      <a href="/authors/#{authorSlug}">#{author.name}</a>
     </li>
     :} #}
   </ul>

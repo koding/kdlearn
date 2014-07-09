@@ -1,0 +1,26 @@
+#{partial 'head.toffee'}
+#{partial 'topnav.toffee'}
+<section><div class="container">
+
+#{print partial 'sidebar.toffee'}
+<div class="docs-content author">
+  <h1>#{author.name}</h1>
+  <ul class="meta">
+    {# if author.username? {: 
+    <li class="koding">
+      <a href="https://koding.com/#{author.username}">#{author.username}</a>
+    </li>
+    :} #}
+  </ul>
+  <ul>
+    {# for guide in author.guides {: 
+    <li class="guide">
+      <a href="#{guide.httplink}">#{guide.title}</a>
+    </li>
+    :} #}
+  </ul>
+</div>
+
+</div></section>
+#{partial 'footer.toffee'}
+
