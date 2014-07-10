@@ -38,8 +38,8 @@ to follow along, copy the following code into a file named `hello.js`.
 ```javascript
 require('http').createServer(function(req, res) {
   res.end('Hello!\n');
-}).listen(3000, process.argv[2]);                                                                                                                               
-console.log('Sending greetings on ', process.argv[2] + ':3000')
+}).listen(3000, process.argv[2]);
+console.log('Sending greetings on ', process.argv[2] + ':3000');
 ```
 
 Now that we've creating our little Node server, lets open up our 
@@ -66,7 +66,7 @@ on our domain but it **is** responding with `curl localhost`.
 As we previous discussed, we need to bind our NodeJS server to the `0.0.0.0` 
 address. Lets run our web server again with the proper address.
 
-```shell
+```
 node hello.js 0.0.0.0
 ```
 
