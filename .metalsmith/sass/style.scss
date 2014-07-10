@@ -1356,7 +1356,7 @@ a.youtube-mini {
 
   &:hover {
     background-color: inherit;
-    border-color: $grey;
+    border-color: lighten($grey, 25%);
   }
 }
 
