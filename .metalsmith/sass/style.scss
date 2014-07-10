@@ -1334,6 +1334,31 @@ a.youtube-mini {
 .rrssb-buttons li a .icon {
   padding-top: 6px;
 }
+// The svg items
+.rrssb-buttons li a .icon svg path,
+.rrssb-buttons li a .icon svg polygon {
+  fill: #777;
+}
+.rrssb-buttons li a .text {
+  color: $dark-grey;
+  text-transform: capitalize;
+}
+.rrssb-buttons li.email a,
+.rrssb-buttons li.facebook a,
+.rrssb-buttons li.linkedin a,
+.rrssb-buttons li.twitter a,
+.rrssb-buttons li.reddit a,
+.rrssb-buttons li.googleplus a {
+  background-color: white;
+  border: 1px solid $light-grey;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0,0,0, 0.08);
+
+  &:hover {
+    background-color: inherit;
+    border-color: $grey;
+  }
+}
 
 // ## Page/Series Content Meta
 .guide-content .meta {
