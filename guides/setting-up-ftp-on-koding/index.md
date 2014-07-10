@@ -2,7 +2,7 @@
 title: Setting up FTP on Koding
 author: Team Koding
 date: 2014-01-07
-template: page.toffee
+categories: [ftp]
 ---
 
 # Setting up FTP on Koding
