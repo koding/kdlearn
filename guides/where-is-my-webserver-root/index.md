@@ -1,7 +1,7 @@
 ---
 author: Team Koding
 date: 2014-07-09
-categories: [apache, koding]
+categories: [apache, domain, koding]
 ---
 
 
