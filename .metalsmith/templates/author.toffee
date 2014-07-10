@@ -1,0 +1,50 @@
+{#
+findTagName = (key) ->
+  if tagNames[key]?
+    name = tagNames[key]
+  else
+    name = key.charAt(0).toUpperCase() + key.slice(1)
+#}
+
+
+#{partial 'head.toffee'}
+#{partial 'topnav.toffee'}
+<section><div class="container">
+
+#{print partial 'sidebar.toffee'}
+<div id="page-author" class="docs-content author">
+  <h1>Latest guides by #{author.name}</h1>
+  {### Not Implemented, Currently.
+  <ul class="meta">
+    {# if author.username? {: 
+    <li class="koding">
+      <a href="https://koding.com/#{author.username}">#{author.username}</a>
+    </li>
+    :} #}
+  </ul>
+  ###}
+  <ul class="verbose-guide-list">
+    {# for guide in author.guides {: 
+    <li class="guide">
+      <h3 class="title"><a href="#{guide.httplink}">#{print guide.title}</a></h3>
+      <div class="meta">
+        about <span class="date">#{print moment(guide.date).fromNow()}</span>
+
+        {# if guide.categories? {:
+        &bull; in categories
+        <ul>
+          {#
+          for cat in guide.categories
+            {: <li><a href="/categories/#{cat}">#{findTagName cat}</a></li> :}
+          #}
+        </ul>
+        :} #}
+      </div>
+    </li>
+    :} #}
+  </ul>
+</div>
+
+</div></section>
+#{partial 'footer.toffee'}
+

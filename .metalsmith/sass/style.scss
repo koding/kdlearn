@@ -895,45 +895,6 @@ body > .page {
     margin-bottom: 20px;
     text-transform: capitalize;
   }
-  ul {
-    padding: 0;
-  }
-  li {
-    list-style: none;
-    margin-bottom: 12px;
-  }
-  li:last-child {
-    margin-bottom: 0px;
-  }
-  .title {
-    font-size: 16px;
-    color: $light-black;
-  }
-  .meta {
-    line-height: 18px;
-    font-size: 14px;
-    font-style: italic;
-    color: $light-grey2;
-  }
-}
-#page-category .title {
-  margin: 0;
-  color: $light-black;
-  a { color: inherit }
-}
-#page-category .meta {
-  ul {
-    display: inline-block;
-  }
-  li {
-    display: inline-block;
-  }
-  li:after {
-    content: ",";
-  }
-  li:last-child:after {
-    content: "";
-  }
 }
 
 
@@ -1415,6 +1376,101 @@ pre code {
   padding: 0;
   border-radius: 0;
   background: none;
+}
+
+
+.two-pane-list {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+}
+.two-pane-list > li {
+  display: inline-block;
+  min-width: 250px;
+  margin-bottom: 16px;
+}
+
+
+#authors-page ul {
+  padding: 0;
+}
+#authors-page ul ul {
+  padding-left: 6px;
+}
+#authors-page li {
+  list-style: none;
+}
+#authors-page li li {
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 8px;
+}
+#authors-page li li:last-child {
+  margin-bottom: 0;
+}
+#authors-page h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+}
+#authors-page span {
+  display: inline-block;
+  margin-bottom: 6px;
+}
+#authors-page h2 a,
+#authors-page h2 a:hover,
+#authors-page h2 a:visited {
+  color: inherit;
+}
+#authors-page .view-all {
+  font-size: 12px;
+}
+
+
+#author-page h1,
+#authors-page h1 {
+  margin-bottom: 20px;
+}
+
+
+// Verbose Guide list. Ie, many guides with meta and possible description
+.verbose-guide-list ul {
+  padding: 0;
+}
+.verbose-guide-list li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+.verbose-guide-list li:last-child {
+  margin-bottom: 0px;
+}
+.verbose-guide-list .title {
+  font-size: 15px;
+  color: $light-black;
+}
+.verbose-guide-list .meta {
+  line-height: 18px;
+  font-size: 13px;
+  font-style: italic;
+  color: $light-grey2;
+}
+.verbose-guide-list .title {
+  margin: 0;
+  color: $light-black;
+  a { color: inherit }
+}
+.verbose-guide-list .meta ul {
+  display: inline-block;
+}
+.verbose-guide-list .meta li {
+  display: inline-block;
+}
+.verbose-guide-list .meta li:after {
+  content: ",";
+}
+.verbose-guide-list .meta li:last-child:after {
+  content: "";
 }
 
 

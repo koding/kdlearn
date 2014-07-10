@@ -27,7 +27,7 @@ module.exports = (opts={}) ->
     if not collections?
       return console.warn 'new-page should be run after collections()'
 
-    page = clone opts.metadata
+    page = opts.metadata
     page.contents ?= new Buffer('')
     page.mode     ?= '0664'
     page.name      = opts.output

@@ -1,0 +1,40 @@
+#{partial 'head.toffee'}
+#{partial 'topnav.toffee'}
+<section><div class="container">
+
+#{print partial 'sidebar.toffee'}
+<div id="authors-page" class="docs-content authors">
+  <h1>Koding University Authors</h1>
+  <ul class="two-pane-list">
+    {# for authorSlug, author of authors {: 
+    <li class="author">
+      <h2>
+      {#
+      if author.username?
+        {: <a href="https://koding.com/#{authorSlug}">#{author.name}</a> :}
+      else
+        {: #{author.name} :}
+      #}
+      </h2>
+
+      <span>Latest guides</span>
+
+      <ul>
+        {# for guide in author.guides[..5] {: 
+        <li class="guide">
+          <a href="#{guide.httplink}">#{guide.title}</a>
+        </li>
+        :} #}
+      </ul>
+
+      {# if author.guides.length > 5 {:
+      <a class="view-all" href="/authors/#{authorSlug}">see more</a>
+      :} #}
+    </li>
+    :} #}
+  </ul>
+</div>
+
+</div></section>
+#{partial 'footer.toffee'}
+
