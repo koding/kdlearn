@@ -26,7 +26,7 @@ access it from the Koding Domain, which means that you're accessing your web
 application *externally*. Meaning that connecting to `username.kd.io:3000` will 
 *not* respond with a web server running on `127.0.0.1:3000`.
 
-To solve this issue, we turn to out friendly `0.0.0.0` IP. Unlike `127.0.0.1`, 
+To solve this issue, we turn to our friendly `0.0.0.0` IP. Unlike `127.0.0.1`, 
 this IP will accept connections from any source. Localhost, or external.
 
 ## An example
