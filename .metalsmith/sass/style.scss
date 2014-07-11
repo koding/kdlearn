@@ -1144,14 +1144,15 @@ a.youtube-mini {
 
 
 .koding-linkback {
+  margin-top: 26px;
   padding-left: 0;
   text-align: center;
 
   li {
     display: inline-block;
-    width: 180px;
-    padding: 2px;
-    margin-right: 9px;
+    width: 110px;
+    padding: 1px;
+    margin-right: 2px;
     list-style: none;
 
     border-radius: 4px;
@@ -1159,8 +1160,8 @@ a.youtube-mini {
 
     color: $white;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 40px;
+    font-size: 11px;
+    line-height: 28px;
 
     a, a:hover {
       display: block;
@@ -1171,7 +1172,7 @@ a.youtube-mini {
     &:hover {
       color: $light-grey;
       background-color: $dark-grey;
-      border-radius: 2px;
+      border-radius: 4px;
     }
   }
 
@@ -1191,7 +1192,7 @@ a.youtube-mini {
     border-color: $dark-grey;
   }
   a {
-    border: 2px $green solid;
+    border: 1px $green solid;
     border-radius: 4px;
   }
 }
