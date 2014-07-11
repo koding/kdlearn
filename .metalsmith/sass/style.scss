@@ -1108,13 +1108,12 @@ a.youtube-mini {
   padding: 0 20px;
   li {
     width: 120px;
-    height: 26px;
     list-style: none;
     text-align: center;
-    line-height: 24px;
+    line-height: 28px;
     color: #000;
     background-color: $light-grey;
-    border: 2px $light-grey solid;
+    border: 1px $light-grey solid;
     border-radius: 4px;
   }
   a {
@@ -1124,7 +1123,7 @@ a.youtube-mini {
     text-decoration: none;
   }
   li:hover {
-    border: 2px $green solid;
+    border: 1px $green solid;
   }
   &:after {
 		content: " ";
