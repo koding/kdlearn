@@ -74,7 +74,7 @@ checkActiveItems = (items) ->
   </li>
   ##}
   <li>
-    <h5><a href="/guides/creating-kdapps">Koding University</a></h5>
+    <h5>Koding University</h5>
     <ul>
     <li>
       <a href="/authors">Authors</a>
