@@ -154,8 +154,8 @@ adipiscing magna quam id dui. Morbi semper nisi ac accumsan tincidunt.
 ```
 
 Most of that is pretty logical. The `---` before and after signifies the 
-metadata start and end, and `author, `date` and `categories` is all pretty 
-standard.
+metadata start and end, and `author`, `date` and `categories` should be standard
+nomenclature to you.
 
 
 
