@@ -26,7 +26,7 @@ official documentation.
 Emphasis can be achieved by wrapping the word you'd like to emphasise with a 
 single asterisk or underline. Example:
 
-```
+```markdown
 Hello, *this is emphasised* and this isn't!
 ```
 
@@ -34,7 +34,7 @@ Hello, *this is emphasised* and this isn't!
 
 To strengthen your text wrap it with *double* asterisks or underlines. Example:
 
-```
+```markdown
 Hello, **this is strong** and this isn't!
 ```
 
@@ -43,7 +43,7 @@ Hello, **this is strong** and this isn't!
 Typing code within a sentence is considered *inline* code. Inline code is 
 accomplished by wrapping the code with backticks `\`` For example:
 
-```
+```markdown
 Foo `bar` baz
 ```
 
@@ -66,7 +66,7 @@ highlighting if you specify the language.
 
 ## Headers
 
-```
+```markdown
 # This is a Header 1
 
 ## This is a Header 2
@@ -77,7 +77,7 @@ represents the level of header, with a maximum of 6.
 
 ## Links
 
-```
+```markdown
 [Koding](https://koding.com)
 [Koding Terminal, from Koding](/Terminal)
 ```
@@ -89,7 +89,7 @@ just like html links.
 
 Unordered lists can be by prepending your items with a hyphen. Example:
 
-```
+```markdown
 - Item one
 - Item two
 - Item three
@@ -98,7 +98,7 @@ Unordered lists can be by prepending your items with a hyphen. Example:
 Markdown will also embed lists and list content, if you add indentation.  
 Example:
 
-```
+```markdown
 - Item one
 - Item two
   This is still within item two.
@@ -112,7 +112,7 @@ Example:
 Ordered lists are identical to unordered lists in features, you just have to 
 prepend your list items with a number, instead of a hyphen. Example:
 
-```
+```markdown
 1. Item one
 2. Item two
 3. Item three
