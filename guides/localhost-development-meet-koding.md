@@ -6,6 +6,15 @@ categories: [koding, kdapp, dropbox]
 template: page.toffee
 ---
 
+# Notes for Dropbox Meeting
+
+The Dropbox Koding app only syncs the `Koding` folder in the users Dropbox account. To achieve this, we exclude files in 3 steps. 
+
+1. For a 30 secounds we run the excluder script every 2 seconds (excludes top level folders)
+2. When deamon gives the status, "Up to date" for the first time (excludes files)
+  - We do this because Dropbox only shows files after downloading the file listing
+3. Tell cron to run the excluder every 5 minutes (excludes future files)
+
 # Localhost Development
 
 At Koding we get asked a lot if you can code on your local computer with a Koding vm. The answer has alway been **yes** and we would recommend a service like `ftp`. Today we offer a new service, [Dropbox](https://dropbox.com)!
