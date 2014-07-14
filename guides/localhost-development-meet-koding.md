@@ -8,7 +8,7 @@ template: page.toffee
 
 # Localhost Development
 
-Here at Koding we get asked a lot if you can code on your local computer with a Koding vm. The answer has alway been **yes** and we would recommend a service like `ftp`. Today we offer a new service, [Dropbox](https://dropbox.com)!
+At Koding we get asked a lot if you can code on your local computer with a Koding vm. The answer has alway been **yes** and we would recommend a service like `ftp`. Today we offer a new service, [Dropbox](https://dropbox.com)!
 
 # What is Dropbox
 
@@ -16,13 +16,13 @@ Dropbox is a home for all your photos, docs, videos, and files. Anything you add
 
 # Dropbox on Koding
 
-The Koding Dropbox app installs and manages Dropbox straight from your vm. The app will only **only** synchronize the `~/Dropbox/Koding` folder. The [Dropbox app](https://koding.com/Apps/bvallelunga/Dropbox) can be found and installed in the [App Catalog](https://koding.com/Apps).
+The Koding Dropbox app installs and manages Dropbox straight from your vm. The app will only **only** synchronize the `~/Dropbox/Koding` folder, so please put all your code in the `Koding` folder. The [Dropbox app](https://koding.com/Apps/bvallelunga/Dropbox) can be installed from the [App Catalog](https://koding.com/Apps).
 
 # Benefits of using Dropbox on Koding
 
 - Any file in the `Koding` folder in your Dropbox account will get syncronized immediately when a file is saved
 - You can have a Dropbox account installed on multiple vms, so when you save locally it will be propagated to all your vms
-- You don't have to russle with `ftp` or remember to send your changes up to your vm after saving
+- You don't have to russle with `ftp` or remember to send your changes up to your vm
 - If there are any conflicts with your files, Dropbox will alert you and handle the problem gracefully
 
 # Things to Note
