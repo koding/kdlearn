@@ -56,6 +56,7 @@ module.exports = build = (callback=->) ->
       '!**/*.md'
       ]
     .use markdown
+      langPrefix: ''
       highlight: (code, lang) ->
         lang = [lang] if lang?
         highlightjs.highlightAuto(code, lang).value
