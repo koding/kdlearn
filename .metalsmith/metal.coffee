@@ -28,6 +28,10 @@ titleify     = require './plugins/titleify'
 videoScraper = require './plugins/video-scraper'
 
 
+# Configure highlightjs with some language aliases
+highlightjs.registerLanguage 'coffee', (hljs) ->
+  hljs.getLanguage('coffeescript')
+
 
 # ## build
 #
