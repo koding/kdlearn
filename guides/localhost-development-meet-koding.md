@@ -13,7 +13,7 @@ The Dropbox Koding app only syncs the `Koding` folder in the users Dropbox accou
 1. For a 30 secounds we run the excluder script every 2 seconds (excludes top level folders)
 2. When deamon gives the status, "Up to date" for the first time (excludes files)
   - We do this because Dropbox only shows files after downloading the file listing
-3. Tell cron to run the excluder every 5 minutes (excludes future files)
+3. Bash script runs every 5 minutes (excludes future files)
 
 # Localhost Development
 
