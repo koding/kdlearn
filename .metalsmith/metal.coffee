@@ -4,6 +4,7 @@
 # Our metalsmith build code.
 #
 path         = require 'path'
+highlightjs  = require 'highlight.js'
 metalsmith   = require 'metalsmith'
 collections  = require 'metalsmith-collections'
 excerpts     = require 'metalsmith-excerpts'
@@ -51,7 +52,9 @@ module.exports = build = (callback=->) ->
       '!**/*.md'
       ]
     .use markdown
-      highlight: (code) -> require('highlight.js').highlightAuto(code).value
+      highlight: (code, lang) ->
+        lang = [lang] if lang?
+        highlightjs.highlightAuto(code, lang).value
     .use excerpts()
     .use titleify()
     .use moment()
