@@ -18,7 +18,7 @@ ssh keys](https://confluence.atlassian.com/display/BITBUCKET/Set+up+SSH+for+Git)
 Now that you have setup ssh, it is time select a repository from Bitbucket.
 When signing into Bitbucket you will be presented with a list of repositories.
 
-![homepage](homepage.png)
+![home](home.png)
 
 For this guide I am going to choose the `codemirror` repository
 
