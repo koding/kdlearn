@@ -119,6 +119,11 @@ module.exports = build = (callback=->) ->
       collections: ['guide', 'faq']
       output: 'rss.xml'
       metadata: template: 'feed.toffee'
+    # foo
+    .use feed
+      collections: ['guide', 'faq']
+      output: 'sitemap.xml'
+      metadata: template: 'sitemap.toffee'
     .use templates 'toffee'
     .build callback
 
