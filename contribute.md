@@ -135,6 +135,7 @@ take a look at our above markdown with some of this metadata.
 author: Lee Olayvar
 username: leeolayvar
 date: 2014-06-11
+description: 'My awesome guide, about awesome stuff.'
 categories: [awesome]
 ---
 
@@ -154,8 +155,8 @@ adipiscing magna quam id dui. Morbi semper nisi ac accumsan tincidunt.
 ```
 
 Most of that is pretty logical. The `---` before and after signifies the 
-metadata start and end, and `author`, `date` and `categories` should be standard
-nomenclature to you.
+metadata start and end, and `author`, `date`, `description`, and `categories` 
+should be standard nomenclature to you.
 
 
 
