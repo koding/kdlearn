@@ -15,6 +15,7 @@ permalinks   = require 'metalsmith-permalinks'
 templates    = require 'metalsmith-templates'
 authors      = require './plugins/authors'
 defaultMeta  = require './plugins/defaultmeta'
+descMeta     = require './plugins/descriptionMeta'
 paginate     = require './plugins/paginate'
 paginateTags = require './plugins/paginatetags'
 moment       = require './plugins/moment'
@@ -119,6 +120,7 @@ module.exports = build = (callback=->) ->
       collections: ['guide', 'faq']
       output: 'rss.xml'
       metadata: template: 'feed.toffee'
+    .use descMeta() # Add Description Metatag to each Document
     .use templates 'toffee'
     .build callback
 
