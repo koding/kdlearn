@@ -3,7 +3,7 @@
   {# for item in items {:
   <url>
     <loc>http://learn.koding.com#{item.link}</loc>
-    <lastmod>#{item.pubDate}</lastmod>
+    <lastmod>#{moment(item.pubDate).format 'YYYY-MM-DD'}</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   :} #}
