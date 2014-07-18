@@ -6,6 +6,12 @@ categories: [koding, bitbucket]
 template: page.toffee
 ---
 
+# What is Bitbucket?
+
+Bitbucket provides Git and Mercurial hosting for teams.
+Host your code online in as many public and private repositories as you want. Free five-user tier accounts!
+Manage your projects with confidence with built-in issue trackers, wikis, code comments, and pull requests.
+
 # Setup SSH for Git
 
 If you already have ssh keys, then please skip this step.
@@ -37,17 +43,31 @@ Set the url to `ssh` and copy the url.
 
 Good Job so far! Now lets clone the repository into your `~` folder
 
-![clone](clone.png)
+```
+$ git clone git@bitbucket.org:bvallelunga/codemirror.git
+```
 
 Once git is finished cloning, your terminal will look like this
 
-![clone-finished](clone-finished.png)
+```
+$ git clone git@bitbucket.org:bvallelunga/codemirror.git
+Cloning into 'codemirror'...
+Enter passphrase for key '/home/bvallelunga/.ssh/id_rsa': 
+remote: Counting objects: 13109, done.                                                                                                                                                                       
+remote: Compressing objects: 100% (5060/5060), done.                                                                                                                                                         
+remote: Total 13109 (delta 8025), reused 13109 (delta 8025)                                                                                                                                                  
+Receiving objects: 100% (13109/13109), 2.78 MiB | 717 KiB/s, done.
+Resolving deltas: 100% (8025/8025), done.
+```
 
 # Verify the Repository Exists
 
 The last step is to verify that the cloning proccess was successful.
 To do this, get the directory listing and check to see if your intended folder exists.
 
-![ls](ls.png)
+```
+$ ls
+Applications  codemirror  Documents  Uploads  Web
+```
 
 As you can see, the `codemirror` folder exists. Thank you and have a wonderful Koding day!
