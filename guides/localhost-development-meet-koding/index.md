@@ -10,7 +10,15 @@ template: page.toffee
 
 At Koding we get asked a lot if you can code on your local computer with a Koding vm. The answer has alway been **yes** and we would recommend a service like `ftp`. Today we offer a new service, [Dropbox](https://dropbox.com)!
 
-![cname-01-domain-plus](app-store.png)
+# Steps to Install
+
+1. Go to the [Koding App Store](https://koding.com/Apps) and select the Dropbox app. ![app-store](app-store.png)
+2. Click the **Run** button in the upper right corner
+3. Enter your password! ![password](password.png)
+4. Click the **Install** button ![install](install.png)
+5. Click the **Start** button ![start](start.png)
+6. Authorize with Dropbox by clicking the link ![authorize](authorize.png)
+7. Your files should start syncing in a second, **it may take a minute or two** ![wait](wait.png)
 
 # What is Dropbox
 
@@ -23,16 +31,6 @@ The Koding Dropbox app installs and manages Dropbox straight from your vm. The a
 # Benefits of using Dropbox on Koding
 
 Any file in the `Koding` folder in your Dropbox account will get syncronized immediately when a file is saved. Since Dropbox handles the synchronization, you don't have to russle with `ftp` or remember to send your changes up to your vm. And if there are any conflicts with your files, Dropbox will alert you and handle the problem gracefully
-
-# Steps to Install
-
-1. Go to the [Koding App Store](https://koding.com/Apps) and select the Dropbox app. ![app-store](app-store.png)
-2. Click the **Run** button in the upper right corner
-3. Enter your password! ![password](password.png)
-4. Click the **Install** button ![install](install.png)
-5. Click the **Start** button ![start](start.png)
-6. Authorize with Dropbox by clicking the link ![authorize](authorize.png)
-7. Your files should start syncing in a second, **it may take a minute or two** ![wait](wait.png)
 
 # Things to Note
 
