@@ -9,10 +9,10 @@ template: page.toffee
 
 # Prerequisites
 
-If you have never made a KDApp before or a little rusty, please go through the [Creating KDApps](http://learn.koding.com/guides/creating-kdapps/) guide before continuing.
+If you have never made a KDApp before, please go through the [Creating KDApps](http://learn.koding.com/guides/creating-kdapps/) guide before continuing.
 
 # What is KDApp CLI
-KDApp CLI is a command-line version of the Koding DevTools, an app that enables developers to build, test, publish koding apps. 
+KDApp CLI is a command-line version of the Koding DevTools, it lets you build, test and publish koding apps. 
 KDApp is made for the power users of [koding.com](http://koding.com), the developers whose native enviroment is the command-line.
 
 
@@ -67,7 +67,7 @@ Options:
 
 # Manifest
 
-A `manifest.json` will be created in the root project directory. The manifest should resemble this.
+A `manifest.json` will be created in the root project directory. The manifest file is required by Koding to understand how to run your app, it looks similar to this:
 
 ```
 {
@@ -115,7 +115,7 @@ Update the `manifest.json` by adding your new files block under `files`
     
       # Order files by dependencies, meaning that the 
       # index.coffee should be last since it requires both 
-      # foo and bar classes
+      # foo and bar files
       
       "files": [
         "./foo.coffee"   # File 3
@@ -155,7 +155,7 @@ Update the `manifest.json` by adding a `less` block under `sources`
   ],
   
   # Order files by dependencies, meaning that the 
-  # stule.less should be last since it requires both 
+  # style.less should be last since it requires both 
   # mixins and colors files 
   
   "less": [
