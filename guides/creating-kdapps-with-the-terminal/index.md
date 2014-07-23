@@ -11,6 +11,25 @@ template: page.toffee
 
 If you have never made a KDApp before or a little rusty, please go through the [Creating KDApps](http://learn.koding.com/guides/creating-kdapps/) guide before continuing.
 
+# What is KDApp CLI
+KDApp CLI is a command-line version of the Koding DevTools, an app that enables developers to build, test, publish koding apps. 
+KDApp is made for the power users of Koding.com, the developers whose native enviroment is the command-line.
+
+
+# Significant Improvements
+
+- Support for separating code into multiple files
+  - Make sure to list all the files in the [manifest.json](#adding-support-for-code-separation)
+- Support for [LESS](#adding-support-for-less)
+- Ability to preview your apps as if they were already published
+  - Previewing is implemented through companion [Preview app](https://koding.com/Apps/bvallelunga/Preview)  
+  - Auto compiling of **LESS** and **Coffeescript** on file change
+  - Reload the page to get newly compiled app
+
+# Requirements
+
+- [Install node.js](http://nodejs.org/) version `>=0.10.x`
+
 # Install
 
 ```
@@ -85,7 +104,37 @@ A `manifest.json` will be created in the root project directory. The manifest sh
 }
 ```
 
-# Adding Support for [LESS](https://github.com/less/less.js)
+## Adding Support for Code Separation
+
+Update the `manifest.json` by adding your new files block under `files`
+
+```
+"source": {
+  "blocks": {
+    "app": {
+    
+      # Order files by dependencies, meaning that the 
+      # index.coffee should be last since it requires both 
+      # foo and bar classes
+      
+      "files": [
+        "./foo.coffee"   # File 3
+        "./bar.coffee"   # File 2
+        "./index.coffee" # File 1 
+      ]
+    }
+  },
+  "stylesheets": [
+    "./resources/style.css"
+  ],
+  "less": [
+    "./less/style.less"
+  ]
+}
+```
+
+
+## Adding Support for [LESS](https://github.com/less/less.js)
 
 Update the `manifest.json` by adding a `less` block under `sources`
 
@@ -98,11 +147,21 @@ Update the `manifest.json` by adding a `less` block under `sources`
       ]
     }
   },
+  
+  # Do NOT remove stylesheets block
+  
   "stylesheets": [
     "./resources/style.css"
   ],
+  
+  # Order files by dependencies, meaning that the 
+  # stule.less should be last since it requires both 
+  # mixins and colors files 
+  
   "less": [
-    "./less/style.less"
+    "./less/mixins.less" # File 3
+    "./less/colors.less" # File 2
+    "./less/style.less"  # File 1
   ]
 }
 ```
