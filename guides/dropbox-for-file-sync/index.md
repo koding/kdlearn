@@ -16,12 +16,8 @@ We often get asked the question: "Can I use my fav editor on my local system alo
 
 # Steps to Install
 
-<<<<<<< HEAD
-1. Go to the [Koding App Store](https://koding.com/Apps) and select the Dropbox app. ![app-store](app-store.png)
-=======
 1. Log in to your Koding account
 2. Go to the [Koding App Store](https://koding.com/Apps) and select the Dropbox app. ![cname-01-domain-plus](app-store.png)
->>>>>>> bc557c3... updated the file to make the content flow better for a new user.
 2. Click the **Run** button in the upper right corner
 3. Enter your password! ![password](password.png)
 4. Click the **Install** button ![install](install.png)
