@@ -2,11 +2,10 @@
 author: Team Koding
 date: 2014-07-14
 categories: [koding, kdapp, dropbox, file sync]
-
-template: page.toffee
 ---
 
-# BYO-IDE!
+# Use Your IDE with Koding
+
 We often get asked the question: "Can I use my fav editor on my local system along with my Koding VM?" The answer to that question has always been **yes**. You can use [ftp](http://learn.koding.com/guides/setting-up-ftp-on-koding/) or [Google Drive](http://learn.koding.com/guides/sync-files-google-drive/) and this guide will walk you through how to set up Dropbox right on your Koding VM for a seamless sync experience between your local system and your Koding VM. Dropbox has built a best-in-class file sync and storage service and so we're excited to bring you the strength of their software as an add-on to your already robust and feature-rich Koding VM.
 
 # Things you will need to get started
