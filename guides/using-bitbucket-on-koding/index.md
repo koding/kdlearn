@@ -1,5 +1,5 @@
 ---
-author: Using Bitbucket on Koding
+author: Team Koding
 date: 2014-07-16
 categories: [koding, bitbucket]
 
