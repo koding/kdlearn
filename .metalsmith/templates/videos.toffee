@@ -1,4 +1,4 @@
-#{partial 'head.toffee'}
+#{partial 'head.toffee', title: 'Videos'}
 #{partial 'topnav.toffee'}
 {#
 printVideo = (file, rel="videos") ->

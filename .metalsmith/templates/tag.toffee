@@ -7,7 +7,7 @@ findTagName = (key) ->
 #}
 
 
-#{partial 'head.toffee'}
+#{partial 'head.toffee', title: "#{findTagName tagKey} Guides"}
 #{partial 'topnav.toffee'}
 <section><div class="container">
 

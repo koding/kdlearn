@@ -1,4 +1,4 @@
-#{partial 'head.toffee'}
+#{partial 'head.toffee', title: 'Commonly Asked Questions'}
 #{partial 'topnav.toffee'}
 <section><div class="container">
 
