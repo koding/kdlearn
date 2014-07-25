@@ -1,10 +1,12 @@
 ---
-title: How to create a kdapp through the terminal
+title: Working In The Terminal
 author: Team Koding
 date: 2014-03-09
 categories: [koding]
 
-template: page.toffee
+series: creating-kdapps
+series-index: 4
+template: series.toffee
 ---
 
 # Prerequisites
