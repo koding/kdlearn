@@ -1500,6 +1500,19 @@ pre code {
 }
 
 
+// Anchor Links
+.heading {
+  position: relative;
+  margin-left: -20px;
+  padding-left: 20px;
+}
+.heading:hover .anchor:before {
+  content: '#';
+  position: absolute;
+  left: 0px;
+}
+
+
 //--------------------------
 
 @media only screen and (min-width: 400px) { }

@@ -5,6 +5,7 @@
 #
 path         = require 'path'
 highlightjs  = require 'highlight.js'
+marked = require 'marked'
 metalsmith   = require 'metalsmith'
 collections  = require 'metalsmith-collections'
 excerpts     = require 'metalsmith-excerpts'
@@ -34,6 +35,27 @@ highlightjs.registerLanguage 'coffee', (hljs) ->
   hljs.getLanguage('coffeescript')
 
 
+# Create a renderer instance which we'll use to modify the output of
+# the markdown.
+markedRenderer = new marked.Renderer()
+markedRenderer.heading = (text, level) ->
+  #  var escapedText = text.toLowerCase().replace(/[^\w]+/g, '-');
+  #
+  #  return '<h' + level + '><a name="' +
+  #                escapedText +
+  #                 '" class="anchor" href="#' +
+  #                 escapedText +
+  #                 '"><span class="header-link"></span></a>' +
+  #                  text + '</h' + level + '>';
+  link = text.toLowerCase().replace /[^\w]+/g, '-'
+  "
+  <h#{level} class='heading'>
+    <a name='#{link}' class='anchor' href='##{link}'></a>
+    #{text}
+  </h#{level}>
+  "
+
+
 # ## build
 #
 # Build our metalsmith project. Exported as a module.
@@ -57,6 +79,7 @@ module.exports = build = (callback=->) ->
       '!**/*.md'
       ]
     .use markdown
+      renderer: markedRenderer
       langPrefix: ''
       highlight: (code, lang) ->
         lang = [lang] if lang?
@@ -69,7 +92,7 @@ module.exports = build = (callback=->) ->
       faq:
         pattern: 'faq/*.html'
         sortBy: 'importance'
-      guide: 
+      guide:
         pattern: 'guides/**/*.html'
         sortBy: 'date'
         reverse: true
