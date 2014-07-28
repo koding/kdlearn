@@ -1,8 +1,30 @@
 <ul class="koding-linkback">
+  <!--
   <li class="signup">
     <a href="https://koding.com/Register?utm_source=KodingUniversity&utm_content=SignupButton&utm_campaign=growth">Sign Up Now</a>
   </li>
   <li class="signin">
     <a href="https://koding.com/Login?utm_source=KodingUniversity&utm_content=LoginButton&utm_campaign=growth">Login</a>
   </li>
+  -->
+  <li class="large">
+    <a
+      href="https://koding.com?utm_source=KodingUniversity&utm_content=LoginButton&utm_campaign=growth"
+    >Try this guide now!</a>
+  </li>
 </ul>
+
+
+{#
+scripts.push """
+<script src="/js/jquery.cookie.js" type="text/javascript"></script>
+<script>
+  var uname = $.cookie("ajs_user_id");
+  if (uname == null) {
+    var link = $(".koding-linkback .large a");
+    link.text("Register on Koding to try this guide!")
+    link.attr("href", "https://koding.com/Register?utm_source=KodingUniversity&utm_content=SignupButton&utm_campaign=growth")
+  }
+</script>
+"""
+#}
