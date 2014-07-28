@@ -51,6 +51,10 @@ will be added to the site with the same location relative to the project root.
 It's not hidden away in some obscure and complicated file structure, what you 
 see in markdown is what shows up on the site. Content first.
 
+**Note**: Your url *(file)* names should be consistent with other naming 
+conventions on Learn University. Please see the [Recommended URL 
+Struction](#recommended-url-structure) section below.
+
 Now that we have a basic understanding of the technology and file structure, 
 lets go through the process of adding our own guide to the Koding University.  
 
@@ -248,6 +252,19 @@ have to install, compile, and serve the static site from your host machine. The
 [.metalsmith/README.md][metalreadme] README will explain the entire process.
 
 
+## Recommended URL Structure
+
+We recommend that you adhere to the following naming conventions for your 
+document URLs.
+
+1. Your filename should describe your guide in clear wording.
+2. Be concise. Try not to have more than 5 words for a filename.
+3. No special characters. Plain words and hyphens only. Example: 
+`foo-bar-baz.md`.
+
+Remember that the URLs and Titles for your guides are just as important as the 
+content within the guides. People search for them, share them, and they should 
+be clear and descriptive.
 
 
 [repo]:              https://github.com/koding/kdlearn
