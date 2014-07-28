@@ -1,7 +1,7 @@
 ---
 title: Working In The Terminal
 author: Team Koding
-date: 2014-03-09
+date: 2014-07-23
 categories: [koding]
 
 series: creating-kdapps
