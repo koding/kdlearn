@@ -7,7 +7,7 @@ findTagName = (key) ->
 #}
 
 
-#{partial 'head.toffee'}
+#{partial 'head.toffee', title: "Guides by #{author.name}"}
 #{partial 'topnav.toffee'}
 <section><div class="container">
 
@@ -16,7 +16,7 @@ findTagName = (key) ->
   <h1>Latest guides by #{author.name}</h1>
   {### Not Implemented, Currently.
   <ul class="meta">
-    {# if author.username? {: 
+    {# if author.username? {:
     <li class="koding">
       <a href="https://koding.com/#{author.username}">#{author.username}</a>
     </li>
@@ -24,7 +24,7 @@ findTagName = (key) ->
   </ul>
   ###}
   <ul class="verbose-guide-list">
-    {# for guide in author.guides {: 
+    {# for guide in author.guides {:
     <li class="guide">
       <h3 class="title"><a href="#{guide.httplink}">#{print guide.title}</a></h3>
       <div class="meta">
