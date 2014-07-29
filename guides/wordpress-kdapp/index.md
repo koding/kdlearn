@@ -11,7 +11,7 @@ categories: [WordPress]
 To install WordPress on Koding, run the **[WordPress Installer App](https://koding.com/Wordpress)**. [Note: you have to be 
 logged into your [Koding account](https://koding.com/Login) in order to run the app.]
 ___
-If your installation was successful, this is what you should see when clicking the generated URL: 
+After your setup is complete, this is what you should see when clicking the generated URL: 
 
 
 ![alt tag](https://i.imgur.com/I4wgPux.png)
