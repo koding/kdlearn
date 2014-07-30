@@ -86,7 +86,9 @@ Modify it, by adding your private key location. So, it will look like this:
 C:\your\path\to\plink.exe -i c:\path\to\private\key.ppk <username>@ssh.koding.com -nc %host:%port
 ```
 
+## Important note
 
+If you're having trouble SSH-ing into your VM, after pasting your SSH key in the box located in your Koding account settings, make sure there are **NO SPACES** in the key other than the one after `ssh-rsa` and one before your email address.
 
 
 [koding]: https://koding.com
