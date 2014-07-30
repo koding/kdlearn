@@ -39,8 +39,12 @@ Next, you will choose the only language that is shown:
 _________________________
 
 You will then be brought to the database configuration page. Enter the following:
-Database name: drupal_db
-Database username: root
+
+
+**Database name:** drupal_db
+
+
+**Database username:** root
 
 
 ![alt tag](d4.png)
