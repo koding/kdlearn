@@ -10,13 +10,13 @@ categories: [Sublime Text]
 
 ## What you will need
 
-- Your [Koding][https://koding.com] username
-- Your [Koding][https://koding.com] VM Number
-- [Sublime Text][https://www.sublimetext.com/] 2 or 3
+- Your [Koding](https://koding.com) username
+- Your [Koding](https://koding.com) VM Number
+- [Sublime Text](https://www.sublimetext.com/) 2 or 3
 
 ## Getting Down to Business
 
-1. Download [Package Control][https://sublime.wbond.net/installation#st2] and use the Package Control: Install Package command from the command palette. The command palette is opened via ctrl+shift+p on Windows and Linux, and cmd+shift+p on OS X.
+1. Download [Package Control](https://sublime.wbond.net/installation#st2) and use the Package Control: Install Package command from the command palette. The command palette is opened via ctrl+shift+p on Windows and Linux, and cmd+shift+p on OS X.
 
 ![alt tag](st1.png)
 
