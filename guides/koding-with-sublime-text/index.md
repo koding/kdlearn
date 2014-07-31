@@ -20,27 +20,23 @@ categories: [Sublime Text]
 
   ![alt tag](st1.png)
 
-2. Once you run the Package Control: Install Package command, a list of packages will appear.
+2. Once you run the Package Control: Install Package command, a list of packages will appear. Type in SFTP and hit enter. Using Package Control ensures Sublime SFTP will stay up to date automatically.
 
   ![alt tag](st2.png)
 
-3. Type in SFTP and hit enter. Using Package Control ensures Sublime SFTP will stay up to date automatically.
-
-  ![alt tag](st3.png)
-
-4. Open a folder with Sublime Text
+3. Open a folder with Sublime Text
 
   ![alt tag](st4.png)
 
-5. Right click the folder in the sidebar and select `SFTP/FTP` -> `Map to Remote`
+4. Right click the folder in the sidebar and select `SFTP/FTP` -> `Map to Remote`
 
   ![alt tag](st5.png)
 
-6. You should now see `sftp-config.json` opened.
+5. You should now see `sftp-config.json` opened.
 
   ![alt tag](st6.png)
 
-7. Configure your `sftp-config.json` file and save it.
+6. Configure your `sftp-config.json` file and save it.
 
   ```
   "host": "<vm-number>.<username>.koding.kd.io",
@@ -57,11 +53,11 @@ categories: [Sublime Text]
    
   ![alt tag](st8.png)
 
-8. Right click the folder, select `SFTP/FTP`. You will now see many more options than before.
+7. Right click the folder, select `SFTP/FTP`. You will now see many more options than before.
 
   ![alt tag](st9.png)
 
-9. (**IMPORTANT**) Chose whether you want to `Sync Local -> Remote` or `Sync Remote -> Local`. Be very careful about which you choose.
+8. (**IMPORTANT**) Chose whether you want to `Sync Local -> Remote` or `Sync Remote -> Local`. Be very careful about which you choose.
 
    `Sync Local -> Remote` overwrites what you have in your remote directory that you specified in you `sftp-config.json` file with what you have in your local directory.
    
@@ -69,10 +65,10 @@ categories: [Sublime Text]
    
   ![alt tag](st10.png)
 
-10. (**IMPORTANT**) Check what is about to be performed in the box below before confirming your actions!
+9. (**IMPORTANT**) Check what is about to be performed in the box below before confirming your actions!
 
   ![alt tag](st11.png)
 
-11. And there you have it, a folder synced with your Koding VM.
+10. And there you have it, a folder synced with your Koding VM.
 
   ![alt tag](st12.png)
