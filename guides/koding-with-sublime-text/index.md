@@ -24,7 +24,7 @@ categories: [Sublime Text]
 
   ![alt tag](st2.png)
 
-3. Open a folder with Sublime Text
+3. Open the folder that you want to sync with your VM using Sublime Text
 
   ![alt tag](st4.png)
 
