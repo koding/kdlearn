@@ -10,7 +10,7 @@
   <li class="large">
     <a
       href="https://koding.com?utm_source=KodingUniversity&utm_content=LoginButton&utm_campaign=growth"
-    >Try this guide now!</a>
+    >Fire up your koding vm and try this now</a>
   </li>
 </ul>
 
@@ -22,7 +22,7 @@ scripts.push """
   var uname = $.cookie("ajs_user_id");
   if (uname == null) {
     var link = $(".koding-linkback .large a");
-    link.text("Register on Koding to try this guide!")
+    link.text("Register for a free Koding account and try this now")
     link.attr("href", "https://koding.com/Register?utm_source=KodingUniversity&utm_content=SignupButton&utm_campaign=growth")
   }
 </script>
