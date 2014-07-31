@@ -18,27 +18,27 @@ categories: [Sublime Text]
 
 1. Download [Package Control](https://sublime.wbond.net/installation#st2) and use the Package Control: Install Package command from the command palette. The command palette is opened via ctrl+shift+p on Windows and Linux, and cmd+shift+p on OS X.
 
-![alt tag](st1.png)
+  ![alt tag](st1.png)
 
 2. Once you run the Package Control: Install Package command, a list of packages will appear.
 
-![alt tag](st2.png)
+  ![alt tag](st2.png)
 
 3. Type in SFTP and hit enter. Using Package Control ensures Sublime SFTP will stay up to date automatically.
 
-![alt tag](st3.png)
+  ![alt tag](st3.png)
 
 4. Open a folder with Sublime Text
 
-![alt tag](st4.png)
+  ![alt tag](st4.png)
 
 5. Right click the folder in the sidebar and select `SFTP/FTP` -> `Map to Remote`
 
-![alt tag](st5.png)
+  ![alt tag](st5.png)
 
 6. You should now see `sftp-config.json` opened.
 
-![alt tag](st6.png)
+  ![alt tag](st6.png)
 
 7. Configure your `sftp-config.json` file and save it.
 
@@ -51,15 +51,15 @@ categories: [Sublime Text]
   "remote_path": "/home/glang/",
   ```
 
-![alt tag](st7.png)
+  ![alt tag](st7.png)
 
    Modify the other configurations if you wish. I personally find the option to `upload_on_save` very handy.
    
-![alt tag](st8.png)
+  ![alt tag](st8.png)
 
 8. Right click the folder, select `SFTP/FTP`. You will now see many more options than before.
 
-![alt tag](st9.png)
+  ![alt tag](st9.png)
 
 9. (**IMPORTANT**) Chose whether you want to `Sync Local -> Remote` or `Sync Remote -> Local`. Be very careful about which you choose.
 
@@ -67,12 +67,12 @@ categories: [Sublime Text]
    
    `Sync Remote -> Local` overwrites what you have in your local directory with what you have in your remote directory that you specified in you `sftp-config.json` file.
    
-![alt tag](st10.png)
+  ![alt tag](st10.png)
 
 10. (**IMPORTANT**) Check what is about to be performed in the box below before confirming your actions!
 
-![alt tag](st11.png)
+  ![alt tag](st11.png)
 
 11. And there you have it, a folder synced with your Koding VM.
 
-![alt tag](st12.png)
+  ![alt tag](st12.png)
