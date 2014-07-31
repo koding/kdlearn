@@ -22,7 +22,7 @@
     <link>//learn.koding.com#{item.link}</link>
     <pubDate>#{item.pubDate}</pubDate>
     <guid isPermaLink="true">//learn.koding.com#{item.guid}</guid>
-    <author>#{item.author}</author>
+    <author>#{item.author.name}</author>
     <description>#{item.description}</description>
   </item>
   :} #}
