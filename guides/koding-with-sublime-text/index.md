@@ -44,7 +44,7 @@ categories: [Sublime Text]
   "password": "<koding_password>",
   //"port": "22",
     
-  "remote_path": "/home/glang/",
+  "remote_path": "/home/<username>/",
   ```
 
   ![alt tag](st7.png)
