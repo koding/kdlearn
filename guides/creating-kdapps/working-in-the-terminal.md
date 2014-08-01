@@ -53,7 +53,7 @@ Usage: kdapp [options] [command]
 
 Commands:
 
-  create [name]          Create a new KDApp project
+  create [name]          Create a new <basic> or <installer> KDApp (default: basic)
   compile                Compile all assets of app, making it ready to be published
   compile [type]         Compile specific assest: coffee, less
   preview [options]      Preview the application on a local web server
