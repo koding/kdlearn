@@ -53,18 +53,18 @@ Usage: kdapp [options] [command]
 
 Commands:
 
-create [type] [name]   Create a new <basic> or <installer> KDApp (default: basic)
-compile                Compile all assets of app, making it ready to be published
-compile [type]         Compile specific assest: coffee, less
-preview [options]      Preview the application on a local web server
-publish [env]          Publish to <sandbox> or <store> enviroment
-help                   Output help information
+  create [type] [name]   Create a new <basic> or <installer> KDApp (default: basic)
+  compile                Compile all assets of app, making it ready to be published
+  compile [type]         Compile specific assest: coffee, less
+  preview [options]      Preview the application on a local web server
+  publish [env]          Publish to <sandbox> or <store> enviroment
+  help                   Output help information
 
 Options:
 
--h, --help     output usage information
--V, --version  output the version number
--q, --quite    Disable Logging
+  -h, --help     output usage information
+  -V, --version  output the version number
+  -q, --quite    Disable Logging
 ```
 
 # Manifest
