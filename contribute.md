@@ -85,7 +85,7 @@ Next, we will want to clone our newly forked repository. Head on over to your
 [Koding Terminal][terminal] and type in the following command:
 
 ```
-git clone https://github.com:yourUsername/kdlearn.git
+git clone https://github.com/yourUsername/kdlearn.git
 ```
 
 This will clone your Forked Repository to your Koding VM, into the folder 
