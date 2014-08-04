@@ -1,0 +1,15 @@
+#{partial 'head.toffee'}
+#{partial 'topnav.toffee'}
+<section><div id="page-404" class="container">
+
+<div class="content">
+  <h2>Page Not Found</h2>
+  <p>
+    The page you requested cannot be found. If you think this is in
+    error, please <a href="mailto:hello@koding.com" target="_self">Contact Us</a>.
+  </p>
+</div>
+
+</div></section>
+#{partial 'footer.toffee'}
+
