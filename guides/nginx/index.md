@@ -46,7 +46,7 @@ If you now visit your User *(or VM)* domain at `http://username.kd.io`, you'll
 see a welcome to nginx page like the one below. This means your Nginx server is 
 up and running.
 
-![nginx welcome][nginx.png]
+![nginx welcome](nginx.png)
 
 
 ## Using ~/Web
@@ -66,7 +66,7 @@ You'll see a bunch of green text, similar to the following image. What we're
 looking to edit is the text `root /usr/share/nginx/html`, as seen highlighted 
 in this image:
 
-![default nginx html][nano.png]
+![default nginx html](nano.png)
 
 Using your arrow keys, navigate to the end of the `/usr/share/nginx/html` text 
 and delete the entire folder name *(with your backspace key)*. Replace it with 
