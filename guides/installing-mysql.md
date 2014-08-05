@@ -2,7 +2,7 @@
 title: Installing mySQL
 author: Team Koding
 date: 2014-07-30
-categories: [koding, php]
+categories: [koding, mysql]
 
 template: page.toffee
 ---
