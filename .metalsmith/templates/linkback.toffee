@@ -20,7 +20,7 @@ scripts.push """
 <script src="/js/jquery.cookie.js" type="text/javascript"></script>
 <script>
   var uname = $.cookie("ajs_user_id");
-  if (uname == null) {
+  if (uname == "null") {
     var link = $(".koding-linkback .large a");
     link.text("Register for a free Koding account and try this now")
     link.attr("href", "https://koding.com/Register?utm_source=KodingUniversity&utm_content=SignupButton&utm_campaign=growth")
