@@ -19,6 +19,9 @@ checkActiveItems = (items) ->
       <li>
         <a href="/guides/getting-started/activity-feed">The Activity Feed</a>
       </li>
+      <li>
+        <a href="/guides/getting-started/editing-your-profile">Editing Your Profile</a>
+      </li>
     </ul>
   </li>
   {# faqs = collections.faq[...5] #}
