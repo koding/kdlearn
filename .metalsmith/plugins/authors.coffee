@@ -33,6 +33,10 @@ module.exports = (opts={}) ->
           username:  file.username
           guides:    []
 
+      # Replace the author reference with the useful author object.
+      file.author = author
+      delete file.username if file.username?
+
       author.guides.push file
 
     # Iterate over the authors, creating each of their pages.
