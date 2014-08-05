@@ -40,7 +40,7 @@ _________________________
 You will now be brought to your first Django-powered page!
 
 
-![alt tag](d4.png)
+![alt tag](dj4.png)
 
 
 _________________________
