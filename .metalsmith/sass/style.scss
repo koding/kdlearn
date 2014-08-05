@@ -1203,7 +1203,9 @@ a.youtube-mini {
   }
 }
 .koding-linkback .large {
-  width: 225px;
+  width: auto;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 .koding-linkback .discuss {
   color: $dark-grey;
