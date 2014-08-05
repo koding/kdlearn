@@ -1162,6 +1162,7 @@ a.youtube-mini {
     margin-right: 2px;
     list-style: none;
 
+    background-color: $green;
     border-radius: 4px;
     text-transform: capitalize;
 
@@ -1188,9 +1189,7 @@ a.youtube-mini {
   }
 }
 
-.koding-linkback .signup {
-  background-color: $green;
-}
+.koding-linkback .signup { }
 .koding-linkback .signin {
   background-color: $white;
   color: $green;
@@ -1202,6 +1201,9 @@ a.youtube-mini {
     border: 1px $green solid;
     border-radius: 4px;
   }
+}
+.koding-linkback .large {
+  width: 225px;
 }
 .koding-linkback .discuss {
   color: $dark-grey;

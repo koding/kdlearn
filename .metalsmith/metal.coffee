@@ -143,6 +143,13 @@ module.exports = build = (callback=->) ->
     .use permalinks()
     .use filename()
     .use descMeta() # Add Description Metatag to each Document
+    # Adding the scripts array to all the pages, means that you can
+    # Append the script array with some code, and not worry about the
+    # execution order.
+    .use defaultMeta
+      clone: true
+      metadata:
+        scripts: []
     .use feed
       collections: ['guide', 'faq']
       output: 'rss.xml'
