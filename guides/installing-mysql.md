@@ -7,7 +7,7 @@ categories: [koding, php]
 template: page.toffee
 ---
 
-In this guide we will cover the basics on how you can install mySQL and the latest version of PHP on you Koding VM. If you don't want to install mySQL, checkout this [guide](mysql), because Koding VMs come preinstalled with mySQL.
+In this guide we will cover the basics on how you can install mySQL and the latest version of PHP on you Koding VM. If you don't want to install mySQL, checkout this [guide][mysql], because Koding VMs come preinstalled with mySQL.
 
 First you you'll need to install the mySQL server and client using the following command:
 
@@ -43,4 +43,4 @@ sudo /etc/init.d/apache2 restart
 
 That's it!
 
-[mysql](http://learn.koding.com/guides/mysql-on-koding/)
+[mysql]: http://learn.koding.com/guides/mysql-on-koding/
