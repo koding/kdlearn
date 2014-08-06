@@ -1526,6 +1526,32 @@ pre code {
 }
 
 
+// Edit on Github Button
+.editongithub {
+  display: inline-block;
+  position: absolute;
+  top: -32px;
+  right: 0;
+
+  padding: 4px 10px;
+  border: 1px solid $light-grey;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0,0,0, 0.08);
+
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+.editongithub:hover {
+  border-color: $grey;
+}
+.editongithub a:hover {
+  text-decoration: none;
+}
+
+
 //--------------------------
 
 @media only screen and (min-width: 400px) { }

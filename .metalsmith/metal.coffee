@@ -73,6 +73,9 @@ module.exports = build = (callback=->) ->
     # from the stream
     .use metadata
       tagNames: 'categories.yaml'
+    # Filename creates meta information about the originalFilename.
+    # originalFilename is needed for linking to github for this file.
+    .use filename()
     # Remove files from the stream
     .use ignore [
       '**/*'

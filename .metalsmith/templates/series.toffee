@@ -20,6 +20,13 @@
   </ul>
   :} #}
 
+  {#
+  if originalFilename? {:
+    <div class="editongithub"><a
+      href="https://github.com/koding/kdlearn/edit/master/#{originalFilename}"
+    >Edit on Github</a></div>
+  :} #}
+
   {# if videoId?  {:
     <div class="video">
       <a href="//www.youtube.com/v/#{videoId}?autoplay=1&rel=0&controls=0&showinfo=0&modestbranding=1" title="#{print title}" class="youtube fancybox.iframe">
