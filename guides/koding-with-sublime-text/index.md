@@ -8,8 +8,11 @@ categories: [Sublime Text]
 
 # Koding with Sublime Text
 
+This guide will show you how to connect your Koding VM with Sublime Text via SFTP.
+
 ## What you will need
 
+- Set up SSH on your [Koding](https://koding.com) account: [http://learn.koding.com/guides/ssh-into-your-vm/](http://learn.koding.com/guides/ssh-into-your-vm/)
 - Your [Koding](https://koding.com) username
 - Your [Koding](https://koding.com) VM Number
 - [Sublime Text](https://www.sublimetext.com/) 2 or 3

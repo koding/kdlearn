@@ -100,6 +100,7 @@ h4, h5, h6 {
 
 p {
   margin: 12px 0;
+  line-height: 22px;
 }
 
 img {
@@ -746,6 +747,13 @@ section {
     border: none;
   }
 }
+
+
+#page-404 h2,
+#page-404 p {
+  text-align: center;
+}
+
 #page-faq {
     > ul {
         list-style-type: none;
@@ -1154,6 +1162,7 @@ a.youtube-mini {
     margin-right: 2px;
     list-style: none;
 
+    background-color: $green;
     border-radius: 4px;
     text-transform: capitalize;
 
@@ -1180,9 +1189,7 @@ a.youtube-mini {
   }
 }
 
-.koding-linkback .signup {
-  background-color: $green;
-}
+.koding-linkback .signup { }
 .koding-linkback .signin {
   background-color: $white;
   color: $green;
@@ -1194,6 +1201,11 @@ a.youtube-mini {
     border: 1px $green solid;
     border-radius: 4px;
   }
+}
+.koding-linkback .large {
+  width: auto;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 .koding-linkback .discuss {
   color: $dark-grey;
