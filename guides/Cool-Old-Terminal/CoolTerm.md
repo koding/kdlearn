@@ -16,8 +16,7 @@ Frankly speaking.. after the end of this tutorial nothing new will be learned by
 Allow me to take you for a ride into the good old computing days … where GUI was a rare occurance. Command line is all that they had. It was kind of geeky. But as days progressed GUI was introduced & since it was easy for all to use, focus was shifted from command line to GUI.
 
 Even though GUI is widely popular, some people ... mainly programmers .. love the command line.
-
-![alt tag](cool_old_computing.jpg)
+____
 
 *NOTE : This can be done on Linux systems only*
 
@@ -71,5 +70,7 @@ NOTE : You cannot install this on koding VM, I tried :-( . For  this to work SSH
 The end result :
 
 ![alt tag](cool_term_koding.png)
+____
+
 ![alt tag](coolterm_green.png)
 
