@@ -1533,7 +1533,6 @@ pre code {
   top: -32px;
   right: 0;
 
-  padding: 4px 10px;
   border: 1px solid $light-grey;
   border-radius: 3px;
   box-shadow: 0 1px 0 rgba(0,0,0, 0.08);
@@ -1543,6 +1542,10 @@ pre code {
   font-weight: bold;
 
   cursor: pointer;
+}
+.editongithub a {
+  display: block;
+  padding: 4px 10px;
 }
 .editongithub:hover {
   border-color: $grey;
