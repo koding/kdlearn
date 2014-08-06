@@ -30,7 +30,7 @@ number on the left most side of the string. In the image below, the highlighted
 
 There are two ways in which you may see your VM Number used. Lets go over each.
 
-The first is simply your VM's URL. You may create other URLs and point them to 
+The first is simply your VMs URL. You may create other URLs and point them to 
 your VM, but your VM URL will always be accessible.
 
 ```text

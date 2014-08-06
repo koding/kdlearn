@@ -8,7 +8,7 @@ categories: [ftp]
 # Setting up FTP on Koding
 
 In this tutorial, i will go over how to get your FTP Client connected to your 
-VM's FTP Server. In this guide, we are using 
+VMs FTP Server. In this guide, we are using 
 [FileZilla](https://filezilla-project.org/) as the FTP Client.
 
 **Reminder**: As with all of these tutorials, they assume that there are no 
