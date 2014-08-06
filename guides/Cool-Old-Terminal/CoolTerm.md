@@ -1,5 +1,5 @@
 ---
-draft: true
+
 title: Vintage Style Terminal 
 author: Dinesh Auti
 date: 06 Aug 2014
@@ -9,8 +9,6 @@ template: page.toffee
 
 ---
 
-# Vintage Style Terminal
-
 Hello people!!! Welcome to this awesome tutorial.
 
 Frankly speaking.. after the end of this tutorial nothing new will be learned by you! This is tutorial is all about #funwithkoding. So proceed with caution.... ;-)
@@ -19,7 +17,7 @@ Allow me to take you for a ride into the good old computing days … where GUI w
 
 Even though GUI is widely popular, some people ... mainly programmers .. love the command line.
 
-![Alt][1]
+![alt tag](cool_old_computing.jpg)
 
 *NOTE : This can be done on Linux systems only*
 
@@ -72,9 +70,6 @@ NOTE : You cannot install this on koding VM, I tried :-( . For  this to work SSH
 
 The end result :
 
-![Alt][2]
-![Alt][3]
+![alt tag](cool_term_koding.png)
+![alt tag](coolterm_green.png)
 
-[1]: /home/dineshauti/kdlearn/guides/Cool-Old-Terminal/cool_old_computing.jpg 
-[2]: /home/dineshauti/kdlearn/guides/Cool-Old-Terminal/cool_term_koding.png
-[3]: /home/dineshauti/kdlearn/guides/Cool-Old-Terminal/coolterm_green.png
