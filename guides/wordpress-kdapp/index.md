@@ -13,7 +13,7 @@ categories: [WordPress]
 Getting started with your own WordPress environment on Koding is as simple as following these 2 steps!
 
 **Step 1: **
-Run the **[WordPress Installer App](https://koding.com/Wordpress)** on [Koding](https://koding.com). [Note: you have to be 
+Run the [**WordPress Installer App**](https://koding.com/Wordpress) on [Koding](https://koding.com). [Note: you have to be 
 logged into your [Koding account](https://koding.com/Login) in order to run the app.]
 
 
@@ -36,7 +36,7 @@ ___
 
 After logging in, you see your WordPress Dashboard:
 
-![alt tag](wp4png)
+![alt tag](wp4.png)
 ___
 
 Want to install a new theme or plugin? When prompted for connection information, enter this: 
