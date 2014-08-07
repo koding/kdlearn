@@ -37,13 +37,13 @@ Congrats! WordPress is now installed!
 ![alt tag](wp3.png)
 ___
 
-After logging in, you see your WordPress Dashboard, where you have full control over your WordPress environment:
+After logging in, you will see your WordPress Dashboard, where you have full control over your WordPress environment:
 
 ![alt tag](wp4.png)
 ___
 
 **Step 3: **
-Let's do some customization. Want to install a new theme? On the left menu bar, click **Appearance** then **Add New Theme**. When prompted for connection information, enter this: 
+Let's do some customization. Want to install a new theme? On the left menu bar, click **Appearance**, then **Add New Theme**. When prompted for connection information, enter this: 
 
 ```
 Hostname: localhost
