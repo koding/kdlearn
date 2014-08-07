@@ -43,7 +43,7 @@ After logging in, you see your WordPress Dashboard, where you have full control 
 ___
 
 **Step 3: **
-Let's do some custonmization. Want to install a new theme? On the left menu bar click **Appearance** then **Add New Theme**. When prompted for connection information, enter this: 
+Let's do some customization. Want to install a new theme? On the left menu bar, click **Appearance** then **Add New Theme**. When prompted for connection information, enter this: 
 
 ```
 Hostname: localhost
