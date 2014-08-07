@@ -3,24 +3,14 @@ author: Team Koding
 date: 2014-06-01
 categories: [koding]
 collection: guide
+
+series: contribute
+series-index: 3
+template: series.toffee
 ---
 
-# Author A Guide
+# Advanced
 
-In this guide we will go over writing for Koding University. While we will 
-cover every step, basic Git and Markdown knowledge will be *very* helpful when 
-contributing, as they are core tools of this workflow.
-
-If you already know git, github, and markdown, here is the simple set of tasks 
-you'll need to do.
-
-1. Fork [KDLearn][repo]
-2. Clone your forked repo
-3. Find or create your files, Make your markdown edits
-4. Commit and push your changes to your repo
-5. Make a pull request of your changes, against the [KDLearn Repo][repo]
-
-That's it!
 
 
 ## The Details
