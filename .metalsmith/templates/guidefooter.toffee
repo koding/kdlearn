@@ -1,0 +1,43 @@
+<ul class="guide-footer">
+  <li class="guide-button edit"><a>Improve this Guide</a></li>
+  <li id="share" class="guide-button share"><a>Share This</a></li>
+  <li class="guide-button linkback">
+    <a
+      href="https://koding.com?utm_source=KodingUniversity&utm_content=LoginButton&utm_campaign=growth"
+    >Try this now</a>
+  </li>
+</ul>
+
+
+
+{#
+scripts.push """
+<script src="/js/jquery.cookie.js" type="text/javascript"></script>
+<script>
+  var uname = $.cookie("ajs_user_id");
+  if (uname == "null") {
+    var link = $(".koding-linkback .large a");
+    link.text("Register for a free Koding account and try this now")
+    link.attr("href", "https://koding.com/Register?utm_source=KodingUniversity&utm_content=SignupButton&utm_campaign=growth")
+  }
+</script>
+<script>
+$(document).ready(function(){
+  $('#share').click(function(e) {
+    e.preventDefault();
+    var shareBtns = $('#share-buttons');
+    //shareBtns.addClass('animated flipOutY')
+    if (shareBtns.hasClass('visible')) {
+      shareBtns.removeClass('animated zoomInUp')
+      shareBtns.addClass('animated zoomOutUp')
+    } else {
+      shareBtns.removeClass('animated zoomOutUp')
+      shareBtns.addClass('animated zoomInUp')
+    }
+    shareBtns.toggleClass('visible')
+  })
+});
+</script>
+"""
+#}
+
