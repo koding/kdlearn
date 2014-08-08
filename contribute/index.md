@@ -30,4 +30,5 @@ this series below. Thanks!
 
 
 
-[guidelines]: guidelines
+[guidelines]:  guidelines
+[repo]:        https://github.com/koding/kdlearn

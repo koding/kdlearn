@@ -13,41 +13,6 @@ template: series.toffee
 
 
 
-## The Details
-
-Koding University is an Open Source, statically generated site, generated from 
-the Markdown files found in the [KDLearn Repository][repo]. The actual 
-implementation code is hidden in the dotfile directory named `.metalsmith`. You 
-can ignore this directory. 
-
-### File Structure
-
-The file structure is **content first**. Meaning that at the root of the repo 
-you see the actual content structure. You do not need to know how to compile 
-the site, or any real implementation details, just write markdown!
-
-As an example, lets look at the markdown file that you're reading now. If you 
-look at the repo, you'll see a file named [contribute.md][contributeonrepo].  
-This file compiles to <http://learn.koding.com/contribute>. Notice how the 
-`contribute` name is at the root of both projects?
-
-- `./contribute.md => http://learn.koding.com/contribute`
-- `./guides/markdown.md => http://learn.koding.com/guides/markdown`
-- `./faq/one-more-step.md => http://learn.koding.com/faq/one-more-step`
-- `./guides/your-new-guide.md => http://learn.koding.com/guides/your-new-guide`
-
-See the pattern? That means if you add a file, either markdown **or** image, it 
-will be added to the site with the same location relative to the project root. 
-It's not hidden away in some obscure and complicated file structure, what you 
-see in markdown is what shows up on the site. Content first.
-
-**Note**: Your url *(file)* names should be consistent with other naming 
-conventions on Learn University. Please see the [Recommended URL 
-Struction](#recommended-url-structure) section below.
-
-Now that we have a basic understanding of the technology and file structure, 
-lets go through the process of adding our own guide to the Koding University.  
-
 
 ## Forking and Cloning
 
@@ -240,21 +205,6 @@ Overall you shouldn't need to preview your Markdown documents. They'll look and
 behave just like you expect. If you insist on previewing your markdown, you'll 
 have to install, compile, and serve the static site from your host machine. The
 [.metalsmith/README.md][metalreadme] README will explain the entire process.
-
-
-## Recommended URL Structure
-
-We recommend that you adhere to the following naming conventions for your 
-document URLs.
-
-1. Your filename should describe your guide in clear wording.
-2. Be concise. Try not to have more than 5 words for a filename.
-3. No special characters. Plain words and hyphens only. Example: 
-`foo-bar-baz.md`.
-
-Remember that the URLs and Titles for your guides are just as important as the 
-content within the guides. People search for them, share them, and they should 
-be clear and descriptive.
 
 
 [repo]:              https://github.com/koding/kdlearn
