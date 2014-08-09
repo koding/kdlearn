@@ -39,9 +39,10 @@ details, just write markdown!
 
 As an example, lets look at the markdown file that you're reading now.  
 If you look at the [repo][repo], you'll see a file named 
-[contribute.md][contributeonrepo]. This file compiles to 
+[contribute/guidelines.md][contributeonrepo]. This file compiles to 
 <http://learn.koding.com/contribute/guidelines/index.html>. Notice how 
-the `contribute` name is at the root of both projects?
+the path `contribute/guidelines` is the same for the source and output 
+html? Below are a few more examples.
 
 - `./contribute/index.md` becomes
   `http://learn.koding.com/contribute/index.html`
