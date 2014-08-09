@@ -17,7 +17,7 @@ Laravel is accessible, yet powerful, providing powerful tools needed for large, 
 
 ___
 
-Getting started with your Laravel on [**Koding**](https://koding.com) is as simple as following these 3 steps!
+Getting started with Laravel on [**Koding**](https://koding.com) is as simple as following these 3 steps!
 
 **Step 1: **
 Run the [**Larevel Installer App**](https://koding.com/Laravel) on [**Koding**](https://koding.com), which will install Laravel and it's dependencies on your VM. [Note: you have to be 
