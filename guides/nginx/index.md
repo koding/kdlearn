@@ -4,6 +4,8 @@ date: 2014-07-31
 categories: [nginx]
 ---
 
+test fork, don't merge
+
 # Installing Nginx
 
 Nginx is an open source proxy server, commonly used as a replace
@@ -94,7 +96,6 @@ sudo service nginx restart
 If you visit your domain again you'll see the same `~/Web` files that you are 
 familiar with. You now have an Nginx server up and running, and serving your 
 Web files. Enjoy!
-
 
 
 [koding]: https://koding.com
