@@ -14,28 +14,24 @@ Joomla is an award-winning content management system (CMS), which enables you to
 Getting started with Joomla on [**Koding**](https://koding.com) is as simple as following these 5 steps!
 
 **Step 1: **
-Run the **[Joomla Installer App](https://koding.com/Joomla)**. [Note: you have to be 
+Run the **[Joomla Installer App](https://koding.com/Joomla)** from the Koding app store. [Note: you have to be 
 logged into your [Koding account](https://koding.com/Login) in order to run the app.]
 
-This is what you will see when you launch the app.
+This is what you will see when you launch the app:
 
 ![alt tag](j0.png)
 
 ___
 
 **Step 2: **
-When the setup is complete, a link will be appear. If you click on it, it will bring you to the main configuration page show below. Go ahead and fill out the neccessary information.
+When the setup is complete, a link will be appear. If you click on it, it will bring you to the main configuration page shown below. Go ahead and fill out the neccessary information.
 
 
 ![alt tag](j1.png)
 ___
 
 **Step 3: **
-Next, you will be brought to the data configuration page.
-
-Enter **root** for **Username** and do NOT enter a password unless you have changed your MySQL password. 
-
-Enter any database name you like.
+When you get to the data configuration page, enter **root** for **Username** and do NOT enter a password unless you have changed your MySQL password. Enter any database name you like.
 
 
 ![alt tag](j2.png)
