@@ -64,13 +64,13 @@ After you log in, a user menu will appear on the right, from which you could acc
 ___
 
 
-You will be brought here after clicking 'Site Adminstrator': 
+Here is what the admin site looks like:
 
 ![alt tag](j7.png)
 ___
 
 
-And this what you will see on the admin site after you log in:
+After logging into the admin site, you will be brought to the control panel, where you can manage you sites:
 
 ![alt tag](j8.png)
 ___
