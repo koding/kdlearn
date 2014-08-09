@@ -9,11 +9,7 @@ categories: [Joomla]
 # 5 Easy steps to setup Joomla on Koding
 
 **What is Joomla?** 
-Joomla is an award-winning content management system (CMS), which enables you to build Web sites and powerful online applications.
-
-Many aspects, including its ease-of-use and extensibility, have made Joomla the most popular Web site software available.
-
-Best of all, Joomla is an open source solution that is freely available to everyone.
+Joomla is an award-winning content management system (CMS), which enables you to build Web sites and powerful online applications. Many aspects, including its ease-of-use and extensibility, have made Joomla the most popular Web site software available. Best of all, Joomla is an open source solution that is freely available to everyone.
 
 Getting started with Joomla on [**Koding**](https://koding.com) is as simple as following these 5 steps!
 
