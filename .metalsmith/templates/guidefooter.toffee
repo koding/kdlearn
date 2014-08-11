@@ -26,13 +26,12 @@ $(document).ready(function(){
   $('#share').click(function(e) {
     e.preventDefault();
     var shareBtns = $('#share-buttons');
-    //shareBtns.addClass('animated flipOutY')
     if (shareBtns.hasClass('visible')) {
-      shareBtns.removeClass('animated zoomInUp')
-      shareBtns.addClass('animated zoomOutUp')
+      shareBtns.removeClass('fadeInDown')
+      shareBtns.addClass('fadeOutUp')
     } else {
-      shareBtns.removeClass('animated zoomOutUp')
-      shareBtns.addClass('animated zoomInUp')
+      shareBtns.removeClass('fadeOutUp')
+      shareBtns.addClass('fadeInDown')
     }
     shareBtns.toggleClass('visible')
   })
