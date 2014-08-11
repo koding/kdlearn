@@ -6,7 +6,7 @@
   <li>
     <h5>Common Questions</h5>
     <ul>
-    {# for faq in paginate.files {:
+    {# for faq in collections.faq {:
       <li>
         <a
           href="##{faq.httplink.split('/')[-1..][0]}"
@@ -19,7 +19,7 @@
 
 <div class="docs-content" id="page-faq">
   <ul>
-  {# for faq in paginate.files {:
+  {# for faq in collections.faq {:
     <li>
       <a name="#{faq.httplink.split('/')[-1..][0]}">
       <h3 class="question">
