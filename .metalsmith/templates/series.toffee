@@ -58,8 +58,8 @@
     </ul>
   :} #}
 
+  #{partial 'guidefooter.toffee'}
   #{partial 'sharrebtns.toffee'}
-  #{partial 'linkback.toffee'}
 </div>
 
 </div></section>
