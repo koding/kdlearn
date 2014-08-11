@@ -20,7 +20,7 @@ ___
 Getting started with Laravel on [**Koding**](https://koding.com) is as simple as following these 3 steps!
 
 **Step 1: **
-Run the [**Larevel Installer App**](https://koding.com/Laravel) on [**Koding**](https://koding.com), which will install Laravel and it's dependencies on your VM. [Note: you have to be 
+Run the [**Larevel Installer App**](https://koding.com/Laravel) on [**Koding**](https://koding.com), which will install Laravel and its dependencies on your VM. [Note: you have to be 
 logged into your [Koding account](https://koding.com/Login) in order to run the app.]
 
 

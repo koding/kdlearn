@@ -18,7 +18,7 @@ ___
 Getting started with Cockpit on [**Koding**](https://koding.com) is as simple as following these 3 steps!
 
 **Step 1: **
-Run the **[Cockpit Installer App](https://koding.com/Cockpit)**, which will install Cockpit and it's dependencies on your VM. [Note: you have to be 
+Run the **[Cockpit Installer App](https://koding.com/Cockpit)**, which will install Cockpit and its dependencies on your VM. [Note: you have to be 
 logged into your [Koding account](https://koding.com/Login) in order to run the app.]
 
 This is what you'll see when you launch the app:
