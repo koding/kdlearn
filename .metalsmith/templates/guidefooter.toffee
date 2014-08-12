@@ -1,11 +1,11 @@
 <ul class="guide-footer">
   {#
   if originalFilename? {:
-    <li class="guide-button"><a
+    <li class="guide-button github"><a
       href="https://github.com/koding/kdlearn/edit/master/#{originalFilename}"
     >Improve this Guide</a></li>
   :} #}
-  <li id="share" class="guide-button share"><a>Share This</a></li>
+  <li id="share" class="guide-button share"><a>Share this</a></li>
   <li class="guide-button linkback">
     <a
       href="https://koding.com?utm_source=KodingUniversity&utm_content=LoginButton&utm_campaign=growth"
