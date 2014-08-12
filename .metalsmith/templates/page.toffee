@@ -19,13 +19,6 @@
     <li class="updated">Updated #{moment(date).fromNow()}</li>
   </ul>
 
-  {#
-  if originalFilename? {:
-    <div class="editongithub"><a
-      href="https://github.com/koding/kdlearn/edit/master/#{originalFilename}"
-    >Edit on Github</a></div>
-  :} #}
-
 
   {# if videoId?  {:
     <div class="video">

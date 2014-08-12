@@ -1,6 +1,5 @@
 
-<!-- Buttons start here. -->
-<ul id="share-buttons" class="animated fadeOutUp rrssb-buttons clearfix">
+<ul id="share-buttons" style="visibility: hidden" class="rrssb-buttons clearfix">
     <li class="facebook">
         <!-- Replace with your URL. For best results, make sure you page has the proper FB Open Graph tags in header: 
         https://developers.facebook.com/docs/opengraph/howtos/maximizing-distribution-media-content/ -->
