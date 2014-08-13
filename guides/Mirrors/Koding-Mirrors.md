@@ -29,15 +29,16 @@ I have written a post on how to install a 32-bit app on 64-bit Ubuntu. I tried t
 Navigate to the sources.list on your PC or Laptop and copy it’s content
 
 ```
-sudo nano /etc/apt/sources.list   //This will open the sources.list in a editor
+sudo nano /etc/apt/sources.list
 ```
+This will open the sources.list in a editor
 
 ### 2. Replace Koding’s Default Mirror
 
 Now login into Koding’s terminal. Navigate to sources.list. Comment out the default Mirror’s (So that you can revert back). Paste the content that we copied in step 1. Press Ctrl + X. Say yes .. by pressing Y. & then press Enter.
 
 ```
-sudo nano /etc/apt/sources.list    //This will open the sources.list in a editor
+sudo nano /etc/apt/sources.list
 ```
 
 ###  3. Update
