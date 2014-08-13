@@ -6,25 +6,17 @@ description: 'How to change the default Mirrors in Koding'
 categories: [Koding]
 ---
 
-The VM’s that are provided by Koding are 64-bit. Almost all the applications work on this. But there are some apps that are available only in 32-bit versions. In order to make them work we need to install the 32-bit libraries separately.
+Welcome!!!
 
-To know the version of Ubuntu you have installed type the below command
+In this tutorial I am going to show you how to change the default Koding Mirrors with the Ubuntu Mirrors.
 
-```
-uname -a
-```
-It will show you something like this
+Why is this required ?
 
-![alt tag](linux_version.png)
-
-See that x86_64 --> Its 64-bit
-
-I have written a post on how to install a 32-bit app on 64-bit Ubuntu. I tried that same procedure here … but it failed due to some error related to Koding’s Mirror. So I had to figure out something to work it out. With some Q & A on Koding .. found out that I can change the default Mirrors. So here is how I did it
+When you try to downlaod the 32-bit libraries that are required to run 32-bit apps on Koding, you will probably face an error saying that the packages are not available. In this situation you can change the default Koding Mirrors with the Ubuntu Mirrors. This will allow you to download the packages. This is one possible reason, there may be many more ...
 
 *NOTE : Here I am assuming that you have Ubuntu installed on your Home PC or laptop.*
 
-
-#### 1. Get the Default Ubuntu Mirrors
+### 1. Get the Default Ubuntu Mirrors
 
 Navigate to the sources.list on your PC or Laptop and copy it’s content
 
@@ -48,4 +40,6 @@ Enter the following command
 ```
 sudo apt-get update
 ```
-That’s it you are ready to go. Here’s the tutorial to install Eagle CAD. Enjoy :-)
+That’s it you are ready to go.
+
+Enjoy :-)
