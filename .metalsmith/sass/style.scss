@@ -1336,10 +1336,12 @@ a.youtube-mini {
 
 
 // ## SHARE BUTTONS
+#share-buttons {
+}
 .rrssb-buttons {
   height: 30px;
   width: 600px;
-  margin: 30px auto 0;
+  margin: 0 auto;
 }
 .rrssb-buttons li a {
   padding-top: 8px;
@@ -1523,6 +1525,84 @@ pre code {
   content: '#';
   position: absolute;
   left: 0px;
+}
+
+
+// Edit on Github Button
+.editongithub {
+  display: inline-block;
+  position: absolute;
+  top: -32px;
+  right: 0;
+
+  border: 1px solid $light-grey;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0,0,0, 0.08);
+
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+.editongithub a {
+  display: block;
+  padding: 4px 10px;
+}
+.editongithub:hover {
+  border-color: $grey;
+}
+.editongithub a:hover {
+  text-decoration: none;
+}
+
+// Guide Footer
+.guide-footer {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  height: 80px;
+  padding: 0;
+  text-align: center;
+}
+
+// Guide buttons
+
+.guide-button {
+  display: inline-block;
+  min-width: 106px;
+
+  margin: 0 2px;
+
+  border: 1px solid $light-grey;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0,0,0, 0.08);
+
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  color: $dark-grey;
+  text-align: center;
+
+  cursor: pointer;
+}
+.guide-button a {
+  display: block;
+  padding: 4px 10px;
+  color: inherit;
+}
+.guide-button:hover {
+  border-color: $grey;
+}
+.guide-button a:hover {
+  text-decoration: none;
+}
+
+.guide-button.github {
+  padding-left: 20px;
+  background-image: url("/img/github-32.png");
+  background-repeat: no-repeat;
+  background-position: 8px 7px;
+  background-size: 16px;
 }
 
 

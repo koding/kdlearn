@@ -1,0 +1,71 @@
+<div class="guide-footer">
+  <ul>
+    {#
+    if originalFilename? {:
+      <li class="guide-button github"><a
+        href="https://github.com/koding/kdlearn/edit/master/#{originalFilename}"
+      >Improve this Guide</a></li>
+    :} #}
+    <li id="share" class="guide-button share"><a>Share this</a></li>
+    <li class="guide-button linkback">
+      <a
+        href="https://koding.com?utm_source=KodingUniversity&utm_content=LoginButton&utm_campaign=growth"
+      >Try this now</a>
+    </li>
+  </ul>
+  #{partial 'sharrebtns.toffee'}
+</div>
+
+
+
+{#
+scripts.push """
+<script src="/js/jquery.cookie.js" type="text/javascript"></script>
+<script>
+  var uname = $.cookie("ajs_user_id");
+  if (uname == "null") {
+    var link = $(".koding-linkback .large a");
+    link.text("Register for a free Koding account and try this now")
+    link.attr("href", "https://koding.com/Register?utm_source=KodingUniversity&utm_content=SignupButton&utm_campaign=growth")
+  }
+</script>
+<script>
+var animate = function(jqo, classes, display) {
+  var animEndedClasses = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
+  jqo.addClass(classes);
+  if (display != null && display) jqo.css('display', 'block');
+
+  jqo.one(animEndedClasses, function(){
+    if (display != null && !display) jqo.css('display', 'none');
+    jqo.removeClass(classes);
+  });
+};
+
+$(document).ready(function(){
+  var shareBtns = $('#share-buttons');
+
+  // The visiblity/display usage here is due to two things.
+  // 1. We want the element hidden on page load.
+  // 2. The share javascript has issues if the element is set to
+  //  display-none in the source html. So, we're setting it to *hidden*
+  //  with the page style, and then when this JS loads we set it to
+  //  display-none. This way the share-js works properly, and the
+  //  user still doesn't see a flash of the share buttons.
+  shareBtns.css('visibility', 'inherit');
+  shareBtns.css('display', 'none');
+
+  $('#share').click(function(e) {
+    e.preventDefault();
+
+    if (shareBtns.css('display') == 'block') {
+      animate(shareBtns, 'animated fadeOutUp', false);
+    } else {
+      animate(shareBtns, 'animated fadeInDown', true);
+    }
+  })
+});
+</script>
+"""
+#}
+

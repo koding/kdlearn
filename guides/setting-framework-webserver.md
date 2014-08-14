@@ -45,6 +45,10 @@ We create a new new Laravel project.
 ```
 laravel new goodbyelocalhost
 ```
+Navigate into the directory:
+```
+cd goodbyelocalhost
+```
 And then we start the webserver:
 ```
 php artisan serve --host=0.0.0.0 --port=8080

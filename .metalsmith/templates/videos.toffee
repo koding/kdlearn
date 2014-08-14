@@ -44,7 +44,6 @@ printVideo = (file, rel="videos") ->
   <ul>
   {# printVideo files['guides/bootstrap-3-quick-tip/index.html'], 'install' #}
   {# printVideo files['guides/getting-started-firebase/index.html'], 'install' #}
-  {# printVideo files['guides/ghost-installation/index.html'], 'install' #}
   {# printVideo files['guides/getting-started-with-facebook-app-dev/index.html'],
     'install' #}
   {# printVideo files['guides/getting-started-with-mixpanel/index.html'],

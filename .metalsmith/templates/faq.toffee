@@ -5,8 +5,7 @@
     #{partial 'sidebar.toffee'}
     <div class="docs-content guide-content">
       #{print contents}
-      #{partial 'sharrebtns.toffee'}
-      #{partial 'linkback.toffee'}
+      #{partial 'guidefooter.toffee'}
     </div>
   </div>
 </section>
