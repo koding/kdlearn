@@ -198,7 +198,7 @@ Decorators and go into a bit more depth. We won't go over every concept
 in full detail, so that we can keep this a sanely short beginner 
 tutorial, and not a book.
 
-To help illustrate this concept, lets add our own Decorator.
+To help explain decorators, lets add our own Decorator.
 
 ```python
 def from_py(hello):
@@ -219,8 +219,8 @@ the keyword before of a function `def`, `from_py` is called with that
 function as the first argument. This "wraps" `hello()` with our 
 `from_py()` function.
 
-Next, we create a new function **inside** the `from_py` function, we 
-create a new function that acts as a handler. The `(*args, **kwargs)` 
+Next, we create a new function **inside** the `from_py` function that acts as a handler.
+The `(*args, **kwargs)` 
 parameters is a special syntax to keep all of the given arguments in 
 those two objects, so that we can fully pass them to the `hello()` 
 handler.
