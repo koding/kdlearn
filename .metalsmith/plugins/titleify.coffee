@@ -35,11 +35,14 @@ module.exports = (opts={}) ->
 
       # Set/Replace the file title
       if not file.title? or opts.replaceMetaTitle
-        file.title = domTitle.text()
+        file.title = domTitle
+          .text()
+          .replace(/^\s+/, '') # Trim opening whitespace
+          .replace(/\s+$/, '') # Trim closing whitespace
 
       # Remove the source h1, if needed
       if opts.removeFromSource
-        domTitle.remove() 
+        domTitle.remove()
         file.contents = new Buffer $.html()
 
     # And of course, after the loop is done.. go home.
