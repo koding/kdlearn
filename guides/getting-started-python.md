@@ -198,7 +198,7 @@ Decorators and go into a bit more depth. We won't go over every concept
 in full detail, so that we can keep this a sanely short beginner 
 tutorial, and not a book.
 
-To help illustrate this concept, lets add our own Decorator.
+To help explain decorators, lets add our own Decorator.
 
 ```python
 def from_py(hello):
