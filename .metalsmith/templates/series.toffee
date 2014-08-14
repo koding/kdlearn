@@ -52,7 +52,6 @@
   :} #}
 
   #{partial 'guidefooter.toffee'}
-  #{partial 'sharrebtns.toffee'}
 </div>
 
 </div></section>
