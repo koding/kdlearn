@@ -62,6 +62,19 @@ setupShareAnimations = ->
 
 
 
+# ## Search Animations
+#
+# Setup the animations for when the top search
+# icon (upper right) is clicked.
+setupSearchAnimations = ->
+	jQuery('.topSearchButton').on 'click', ->
+    jQuery('.topSearchBox').slideToggle()
+    jQuery('.topSearchBox #topSearch').focus()
+
+
+
 
 # When jquery is ready, setup our animations.
-jQuery(document).ready -> setupShareAnimations()
+jQuery(document).ready ->
+  setupSearchAnimations()
+  setupShareAnimations()

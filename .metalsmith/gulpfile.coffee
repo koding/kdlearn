@@ -47,6 +47,7 @@ paths =
     'vendor/js/**/*.js'
     ]
 
+
 # ## client:coffee
 #
 # Compile coffee found in the static dir.
@@ -56,7 +57,6 @@ gulp.task 'client:coffee', ->
     .pipe uglify()
     .pipe concat 'main.js'
     .pipe gulp.dest 'build/js'
-
 
 
 # ## metalsmith
