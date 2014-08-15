@@ -12,7 +12,9 @@ path    = require 'path'
 connect = require 'connect'
 gulp    = require 'gulp'
 coffee  = require 'gulp-coffee'
+concat  = require 'gulp-concat'
 sass    = require 'gulp-sass'
+uglify  = require 'gulp-uglify'
 util    = require 'gulp-util'
 
 
@@ -27,7 +29,7 @@ paths =
     'static/**'
     'templates/**'
   ]
-  coffee: 'static/**/*.coffee'
+  coffee: 'client/**/*.coffee'
   documents: [
     '!**'
     '../**/*.md'
@@ -44,13 +46,15 @@ paths =
     ]
 
 
-# ## coffee
+# ## client:coffee
 #
 # Compile coffee found in the static dir.
-gulp.task 'coffee', ->
+gulp.task 'client:coffee', ->
   gulp.src paths.coffee
     .pipe coffee()
-    .pipe gulp.dest 'build'
+    .pipe uglify()
+    .pipe concat 'main.js'
+    .pipe gulp.dest 'build/js'
 
 
 # ## metalsmith
@@ -121,7 +125,12 @@ gulp.task 'watch:sass', ['sass'], ->
   gulp.watch paths.sass, ['sass']
 
 
+gulp.task 'client', ['client:coffee']
 gulp.task 'watch', ['watch:md']
 gulp.task 'watch:all', ['watch:md', 'watch:code', 'watch:sass']
-gulp.task 'build', ['metalsmith', 'sass', 'static', 'staticDocuments', 'coffee']
+gulp.task 'build', [
+  'metalsmith',
+  'sass',
+  'client'
+  'static', 'staticDocuments']
 gulp.task 'default', ['build']

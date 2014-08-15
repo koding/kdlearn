@@ -50,6 +50,12 @@
 <script src="/js/jquery.tapir.js" type="text/javascript"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js" type="text/javascript"></script>
 <script src="/js/rrssb.min.js" type="text/javascript"></script>
+
+<!-- load our vendor and vendors from cdn, then main js -->
+<!--<script src="/js/vendor.js" type="text/javascript"></script>-->
+<!-- now our main js -->
+<script src="/js/main.js" type="text/javascript"></script>
+
 <script>
   if ($(location).attr('pathname').replace(/\//g, '') == 'search') {
     $('#search-results').tapir({
