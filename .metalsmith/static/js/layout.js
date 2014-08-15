@@ -82,8 +82,6 @@ $(document).ready(function () {
         });
     });
 
-    prettyPrint();
-    
     $(".youtube-mini").fancybox({
         beforeShow : function() {
             var slug = $(this.element).attr('slug');
