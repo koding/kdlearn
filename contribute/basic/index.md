@@ -25,8 +25,8 @@ automatically fork the repo if you have not yet, and even create a branch
 so that your eventual pull request does not cause any unintended 
 contributions. Lets look at how this works.
 
-First up, find the guide that you want to edit, and look for the Edit on 
-Github button.
+First up, find the guide that you want to edit, and look for the 
+**Improve this Guide** button at the bottom of all guides.
 
 ![Edit on Github](edit-on-github.png)
 
@@ -122,3 +122,4 @@ Koding's Editor and Git to make changes to this Koding University.
 
 
 [newguide]: https://github.com/koding/kdlearn/new/master/guides
+[guidelines]: ../guidelines
