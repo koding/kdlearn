@@ -29,7 +29,6 @@ paths =
     'static/**'
     'templates/**'
   ]
-  coffee: 'client/**/*.coffee'
   documents: [
     '!**'
     '../**/*.md'
@@ -52,7 +51,7 @@ paths =
 #
 # Compile coffee found in the static dir.
 gulp.task 'client:coffee', ->
-  gulp.src paths.coffee
+  gulp.src 'client/**/*.coffee'
     .pipe coffee()
     .pipe uglify()
     .pipe concat 'main.js'
