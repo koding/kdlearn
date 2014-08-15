@@ -44,7 +44,9 @@ paths =
     '!static/**/*.coffee'
     'static/**/*'
     ]
-
+  vendor: js: [
+    'vendor/js/**/*.js'
+    ]
 
 # ## client:coffee
 #
@@ -55,6 +57,7 @@ gulp.task 'client:coffee', ->
     .pipe uglify()
     .pipe concat 'main.js'
     .pipe gulp.dest 'build/js'
+
 
 
 # ## metalsmith
@@ -98,6 +101,17 @@ gulp.task 'staticDocuments', ->
     .pipe gulp.dest 'build'
 
 
+# ## vendor:js
+#
+# Uglify all of the vendor files and concatenate them into a
+# single file.
+gulp.task 'vendor:js', ->
+  gulp.src paths.vendor.js
+    .pipe uglify()
+    .pipe concat 'vendor.js'
+    .pipe gulp.dest 'build/js'
+
+
 # ## watch:code
 #
 # Watch the metalsmith code and reload it when changes are detected.
@@ -126,11 +140,13 @@ gulp.task 'watch:sass', ['sass'], ->
 
 
 gulp.task 'client', ['client:coffee']
+gulp.task 'vendor', ['vendor:js']
+
 gulp.task 'watch', ['watch:md']
 gulp.task 'watch:all', ['watch:md', 'watch:code', 'watch:sass']
 gulp.task 'build', [
   'metalsmith',
   'sass',
-  'client'
+  'client', 'vendor'
   'static', 'staticDocuments']
 gulp.task 'default', ['build']
