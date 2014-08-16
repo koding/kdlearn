@@ -7,13 +7,14 @@
 #
 # Run with `cult`, and see README.md for more usage docs.
 #
-metal   = require './metal'
-path    = require 'path'
-connect = require 'connect'
-gulp    = require 'gulp'
-coffee  = require 'gulp-coffee'
-sass    = require 'gulp-sass'
-util    = require 'gulp-util'
+metal      = require './metal'
+path       = require 'path'
+connect    = require 'connect'
+gulp       = require 'gulp'
+coffee     = require 'gulp-coffee'
+minifyHtml = require 'gulp-minify-html'
+sass       = require 'gulp-sass'
+util       = require 'gulp-util'
 
 
 
@@ -56,7 +57,20 @@ gulp.task 'coffee', ->
 # ## metalsmith
 #
 # Compile our metalsmith markdown and templates.
-gulp.task 'metalsmith', -> metal()
+gulp.task 'metalsmith', (callback) -> metal callback
+
+
+## metalsmith:minify
+#
+# Minify html in the build directory.
+#
+# Note: This is a "hack" until i can find a clear
+# metalsmith->gulp pipe solution. When that happens, we'll
+# just pipe straight from metalsmith into gulp-minify-html.
+gulp.task 'metalsmith:minify', ['metalsmith'], ->
+  gulp.src 'build/**/*.html'
+    .pipe minifyHtml()
+    .pipe gulp.dest 'build'
 
 
 # ## preview
