@@ -17,15 +17,23 @@ Subdomains can be created from Your Environments, by clicking on the Domains Plu
 
 ## Creating a VHost
 
-  1. First, run the command `sudo touch /etc/apache2/sites-available/mysubdomain` where `mysubdomain` is the name of your subdomain.
-  2. Next, open the above file with `nano`, `vim`, or whatever command line editor you prefer. We're using a command line editor, because files located in `/etc/apache2/sites-available` are owned by `root`, and require sudo. As an example, the command you might be running is: `sudo nano /etc/apache2/sites-available/mysubdomain`
-  3. Now that you have the file open with your preferred editor, paste in the following code: 
-    
-        <Virtualhost *:80>
-    ServerName mysubdomain.username.kd.io
-    DocumentRoot /var/www/myDirectory
-    </Virtualhost>
-    
+1. First, run the command `sudo touch 
+/etc/apache2/sites-available/mysubdomain` where `mysubdomain` is the name 
+of your subdomain.
+2. Next, open the above file with `nano`, `vim`, or whatever command line 
+editor you prefer. We're using a command line editor, because files 
+located in `/etc/apache2/sites-available` are owned by `root`, and 
+require sudo. As an example, the command you might be running is: `sudo 
+nano /etc/apache2/sites-available/mysubdomain`
+3. Now that you have the file open with your preferred editor, paste in 
+the following code:
+
+```xml
+<Virtualhost *:80>
+  ServerName mysubdomain.username.kd.io
+  DocumentRoot /var/www/myDirectory
+</Virtualhost>
+```
 
 There are a two things you're going to have to change here, so lets go over them.
   * **ServerName**: The value of `ServerName` should be your full subdomain url, without the http. For example: `ServerName hello.leeolayvar.kd.io`
