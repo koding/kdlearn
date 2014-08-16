@@ -137,5 +137,7 @@ gulp.task 'watch:sass', ['sass'], ->
 
 gulp.task 'watch', ['watch:md']
 gulp.task 'watch:all', ['watch:md', 'watch:code', 'watch:sass']
-gulp.task 'build', ['metalsmith', 'sass', 'static', 'staticDocuments', 'coffee']
+gulp.task 'build', [
+  'metalsmith:minify'
+  'sass', 'static', 'staticDocuments', 'coffee']
 gulp.task 'default', ['build']
