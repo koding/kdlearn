@@ -46,7 +46,7 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/rrssb.css" />
     <link rel="stylesheet" href="/css/animate.css" />
-    <link rel="stylesheet" href="/css/style.css?#{Math.floor(Math.random()*1000)}" />
+    <link rel="stylesheet" href="/css/main.css?#{Math.floor(Math.random()*1000)}" />
     <link rel="stylesheet" href="/css/highlight-default.css" />
     <link rel="stylesheet" href="/css/highlight-theme.css" />
 	</head>
