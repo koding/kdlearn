@@ -12,6 +12,7 @@ path    = require 'path'
 connect = require 'connect'
 gulp    = require 'gulp'
 coffee  = require 'gulp-coffee'
+minifyCss = require 'gulp-minify-css'
 sass    = require 'gulp-sass'
 util    = require 'gulp-util'
 
@@ -75,6 +76,7 @@ gulp.task 'preview', ['build'], ->
 gulp.task 'sass', ->
   gulp.src paths.sass
     .pipe sass()
+    .pipe minifyCss()
     .pipe gulp.dest 'build/css'
 
 
