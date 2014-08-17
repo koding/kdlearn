@@ -12,6 +12,7 @@ path    = require 'path'
 connect = require 'connect'
 gulp    = require 'gulp'
 coffee  = require 'gulp-coffee'
+concat    = require 'gulp-concat'
 minifyCss = require 'gulp-minify-css'
 sass    = require 'gulp-sass'
 util    = require 'gulp-util'
@@ -43,6 +44,7 @@ paths =
     '!static/**/*.coffee'
     'static/**/*'
     ]
+  vendor: css: 'vendor/css/**/*.css'
 
 
 # ## coffee
@@ -96,6 +98,16 @@ gulp.task 'staticDocuments', ->
     .pipe gulp.dest 'build'
 
 
+# ## vendor:css
+#
+# Minify all the plain vendor css.
+gulp.task 'vendor:css', ->
+  gulp.src paths.vendor.css
+    .pipe minifyCss()
+    .pipe concat 'vendor.css'
+    .pipe gulp.dest 'build/css'
+
+
 # ## watch:code
 #
 # Watch the metalsmith code and reload it when changes are detected.
@@ -123,7 +135,15 @@ gulp.task 'watch:sass', ['sass'], ->
   gulp.watch paths.sass, ['sass']
 
 
+gulp.task 'vendor', ['vendor:css']
+
+
 gulp.task 'watch', ['watch:md']
 gulp.task 'watch:all', ['watch:md', 'watch:code', 'watch:sass']
-gulp.task 'build', ['metalsmith', 'sass', 'static', 'staticDocuments', 'coffee']
+gulp.task 'build', [
+  'metalsmith',
+    'sass', 'static', 'staticDocuments', 'coffee'
+    'vendor'
+    ]
+
 gulp.task 'default', ['build']
