@@ -44,7 +44,12 @@ paths =
     '!static/**/*.coffee'
     'static/**/*'
     ]
-  vendor: css: 'vendor/css/**/*.css'
+  vendor:
+    css: [
+      'vendor/css/**/*.css'
+      'vendor/sass/**/*.scss'
+      'vendor/sass/**/*.sass'
+      ]
 
 
 # ## coffee
@@ -100,9 +105,11 @@ gulp.task 'staticDocuments', ->
 
 # ## vendor:css
 #
-# Minify all the plain vendor css.
+# Minify all the vendor css and sass. Note that the `sass()` plugin
+# only cares about sass files.
 gulp.task 'vendor:css', ->
   gulp.src paths.vendor.css
+    .pipe sass()
     .pipe minifyCss()
     .pipe concat 'vendor.css'
     .pipe gulp.dest 'build/css'
