@@ -68,7 +68,7 @@ module.exports = build = (callback=->) ->
     .destination 'build'
     # Ignore files from ever entering the stream
     .ignore ['.agignore', '.gitignore', '.git', '.metalsmith', 'legacy']
-    .options remove: false
+    .clean false
     # Place before the ignore plugin that removes non-markdown
     # from the stream
     .use metadata
