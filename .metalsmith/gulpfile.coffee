@@ -12,6 +12,8 @@ path       = require 'path'
 connect    = require 'connect'
 gulp       = require 'gulp'
 coffee     = require 'gulp-coffee'
+concat     = require 'gulp-concat'
+minifyCss  = require 'gulp-minify-css'
 minifyHtml = require 'gulp-minify-html'
 sass       = require 'gulp-sass'
 util       = require 'gulp-util'
@@ -43,6 +45,12 @@ paths =
     '!static/**/*.coffee'
     'static/**/*'
     ]
+  vendor:
+    css: [
+      'vendor/css/**/*.css'
+      'vendor/sass/**/*.scss'
+      'vendor/sass/**/*.sass'
+      ]
 
 
 # ## coffee
@@ -89,6 +97,7 @@ gulp.task 'preview', ['build'], ->
 gulp.task 'sass', ->
   gulp.src paths.sass
     .pipe sass()
+    .pipe minifyCss()
     .pipe gulp.dest 'build/css'
 
 
@@ -106,6 +115,18 @@ gulp.task 'static', ->
 gulp.task 'staticDocuments', ->
   gulp.src paths.staticDocuments
     .pipe gulp.dest 'build'
+
+
+# ## vendor:css
+#
+# Minify all the vendor css and sass. Note that the `sass()` plugin
+# only cares about sass files.
+gulp.task 'vendor:css', ->
+  gulp.src paths.vendor.css
+    .pipe sass()
+    .pipe minifyCss()
+    .pipe concat 'vendor.css'
+    .pipe gulp.dest 'build/css'
 
 
 # ## watch:code
@@ -135,9 +156,15 @@ gulp.task 'watch:sass', ['sass'], ->
   gulp.watch paths.sass, ['sass']
 
 
+gulp.task 'vendor', ['vendor:css']
+
+
 gulp.task 'watch', ['watch:md']
 gulp.task 'watch:all', ['watch:md', 'watch:code', 'watch:sass']
 gulp.task 'build', [
   'metalsmith:minify'
-  'sass', 'static', 'staticDocuments', 'coffee']
+  'sass', 'static', 'staticDocuments', 'coffee'
+  'vendor'
+  ]
+
 gulp.task 'default', ['build']
