@@ -3,17 +3,21 @@
 <section><div class="container">
 
 {# if not hideSidebar? then print partial 'sidebar.toffee' #}
-<div class="docs-content guide-content">
+<div
+  class="docs-content guide-content"
+  itemscope itemtype="http://schema.org/TechArticle"
+>
   <h1>#{title}</h1>
   <ul class="meta">
     <li class="author username">
       {#
       if author.username?
         {: by <a
-          href="https://koding.com/#{author.username}"
-        >#{author.name}</a> :}
+            rel="author"
+            href="https://koding.com/#{author.username}"
+          >#{author.name}</a> :}
       else
-        {: by #{author.name}:}
+        {: by <span rel="author">#{author.name}</span>:}
       #}
     </li>
     <li class="updated">Updated #{moment(date).fromNow()}</li>
@@ -29,7 +33,9 @@
     </div>
   :} #}
 
-  #{print contents}
+  <div itemprop="articleBody">
+    #{print contents}
+  </div>
   #{partial 'guidefooter.toffee'}
 </div>
 
