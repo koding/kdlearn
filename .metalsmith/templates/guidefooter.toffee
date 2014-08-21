@@ -10,7 +10,7 @@
     <li class="guide-button linkback">
       <a
         href="https://koding.com?utm_source=KodingUniversity&utm_content=LoginButton&utm_campaign=growth"
-      >Try this now</a>
+      >Try this now on Koding</a>
     </li>
   </ul>
   #{partial 'sharrebtns.toffee'}
