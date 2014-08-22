@@ -1,7 +1,9 @@
 #
 # # Series
 #
-# 
+# The plugin responsible for chaining multiple guides marked as Series
+# together.
+#
 
 
 
@@ -20,7 +22,7 @@ module.exports = (opts={}) ->
     # of pages for that series.
     for filename, file of files
       if not file.series? then continue
-      
+
       if not file['series-index']?
         console.warn "File #{filename} of series #{file.series}
           is missing the `series-index` metadata. Defaulting to 1"
@@ -36,7 +38,7 @@ module.exports = (opts={}) ->
       # into the index. If it doesn't exist, we just assign the index
       # manually.
       #
-      # This is done to ensure page order for the series, rather than pushing 
+      # This is done to ensure page order for the series, rather than pushing
       # then all and then sorting them after.
       if series[index]? then series.splice index, 0, file
       else series[index] = file
@@ -46,8 +48,14 @@ module.exports = (opts={}) ->
     for seriesName, series of metadata.series
       prev  = null
       title = series[0]?.title
-      for page, index in series 
-        if opts.prependSeriesTitle is true and index isnt 0 
+      for page, index in series
+        if not page?
+          console.warn "Error: The Series plugin found a series with
+            a missing guide. Check the series '#{title}' for a missing
+            guide at the index of '#{index}'."
+          throw new Error "Missing Series Guide"
+
+        if opts.prependSeriesTitle is true and index isnt 0
           page.title = "#{title}: #{page.title}"
 
         page.series =
