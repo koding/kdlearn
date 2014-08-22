@@ -21,6 +21,10 @@ module.exports = (opts={}) ->
   (files, metalsmith, done) ->
     for filename, file of files
       continue if not isHtml filename
+      # This may be subject to too much filtering, hard to say.
+      # Why? Well, metalsmith-collections has an issue with files
+      # in multiple collections (at the time of this writing).
+      continue if file.collection isnt 'guide'
 
       # Create our jquery like object
       $     = cheerio.load file.contents.toString()
