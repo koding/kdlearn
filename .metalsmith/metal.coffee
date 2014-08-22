@@ -14,6 +14,7 @@ markdown     = require 'metalsmith-markdown'
 metadata     = require 'metalsmith-metadata'
 permalinks   = require 'metalsmith-permalinks'
 templates    = require 'metalsmith-templates'
+aboutSchema  = require './plugins/about-schema'
 authors      = require './plugins/authors'
 defaultMeta  = require './plugins/defaultmeta'
 descMeta     = require './plugins/descriptionMeta'
@@ -145,6 +146,7 @@ module.exports = build = (callback=->) ->
       metadata: template: 'guides.toffee'
     .use permalinks()
     .use filename()
+    .use aboutSchema() # Add itemprop='about' to the first para
     .use descMeta() # Add Description Metatag to each Document
     # Adding the scripts array to all the pages, means that you can
     # Append the script array with some code, and not worry about the
