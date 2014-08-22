@@ -6,6 +6,7 @@
 <div
   class="docs-content guide-content"
   itemscope itemtype="http://schema.org/TechArticle"
+  itemprop="mainContentOfPage"
 >
   <h1 itemprop="headline">#{title}</h1>
 

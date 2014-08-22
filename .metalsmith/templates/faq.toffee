@@ -1,13 +1,25 @@
 #{partial 'head.toffee'}
 #{partial 'topnav.toffee'}
-<section>
-  <div class="container">
-    #{partial 'sidebar.toffee'}
-    <div class="docs-content guide-content">
-      #{print contents}
-      #{partial 'guidefooter.toffee'}
-    </div>
+<section><div class="container">
+
+#{partial 'sidebar.toffee'}
+<div
+  class="docs-content guide-content"
+  itemscope itemtype="http://schema.org/Question"
+  itemprop="mainContentOfPage"
+>
+  <h1>#{title}</h1>
+
+  <div
+    itemscope itemtype="http://schema.org/Answer"
+    itemprop="acceptedAnswer"
+  >
+    #{print contents}
   </div>
-</section>
+
+  #{partial 'guidefooter.toffee'}
+</div>
+
+</div></section>
 #{partial 'footer.toffee'}
 

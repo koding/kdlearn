@@ -17,15 +17,25 @@
   </li>
 </ul>
 
-<div class="docs-content" id="page-faq">
+<div
+  class="docs-content" id="page-faq"
+  itemprop="mainContentOfPage"
+>
   <ul>
   {# for faq in collections.faq {:
     <li>
       <a name="#{faq.httplink.split('/')[-1..][0]}">
-      <h3 class="question">
+      <h3
+        class="question"
+        itemscope itemtype="http://schema.org/Question"
+      >
         <a href="#{faq.httplink}">#{faq.title}</a>
       </h3>
-      <div class="answer">
+      <div
+        class="answer"
+        itemscope itemtype="http://schema.org/Answer"
+        itemprop="acceptedAnswer"
+      >
         #{print faq.snapshot}
       </div>
     </li>
