@@ -1,7 +1,7 @@
 <div class="guide-footer">
   <ul>
     {#
-    if originalFilename? {:
+    if originalFilename? and improvable {:
       <li class="guide-button github"><a
         href="https://github.com/koding/kdlearn/edit/master/#{originalFilename}"
       >Improve this Guide</a></li>

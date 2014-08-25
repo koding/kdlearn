@@ -102,10 +102,14 @@ module.exports = build = (callback=->) ->
         reverse: true
     .use defaultMeta
       collection: 'faq'
-      metadata: template: 'faq.toffee'
+      metadata:
+        improvable: true
+        template: 'faq.toffee'
     .use defaultMeta
       collection: 'guide'
-      metadata: template: 'page.toffee'
+      metadata:
+        improvable: true
+        template: 'page.toffee'
     .use tags
       metaKey: 'categories'
       sort: 'date'

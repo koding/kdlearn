@@ -4,7 +4,7 @@ author: Team Koding
 date: 2014-08-11
 categories: [koding]
 
-template: page.toffee
+improvable: false
 ---
 
 # What happens upon upgrade?
