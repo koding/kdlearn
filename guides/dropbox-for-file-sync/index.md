@@ -16,7 +16,7 @@ We often get asked the question: "Can I use my fav editor on my local system alo
 # Steps to Install
 
 1. Log in to your Koding account
-2. Go to the [Koding App Store](https://koding.com/Apps) and select the Dropbox app. ![cname-01-domain-plus](app-store.png)
+2. Go to the [Koding App Store](https://koding.com/Apps) and select the Dropbox app. ![app-store](app-store.png)
 2. Click the **Run** button in the upper right corner
 3. Enter your password! ![password](password.png)
 4. Click the **Install** button ![install](install.png)
@@ -27,6 +27,12 @@ We often get asked the question: "Can I use my fav editor on my local system alo
 # What happens behind the scenes?
 
 The Koding Dropbox app installs and manages Dropbox straight from your vm. Note, and this is very important, the app will **only** synchronize the `~/Dropbox/Koding` folder, so please put all your code in the `Koding` folder. If you don't have a `Koding` folder, please make one on your local computer. Any file in the `Koding` folder in your Dropbox account will get syncronized immediately when it is saved. Since Dropbox handles the synchronization, you don't have to deal with `ftp` or remember to send your changes up to your vm. And if there are any conflicts with your files, Dropbox will alert you and handle the problem gracefully. So all you have to do is fire up your favorite IDE and code away. Dropbox will sync the files to your Koding VM from where you can run your code on the VMs command line or access the application you are building over the VMs web server.
+
+
+# Steps to Uninstall
+
+1. Make sure Dropbox service in not running by clicking the "Stop Dropbox" button
+2. Click the uninstall button ![uninstall](uninstall.png)
 
 # Things to Note
 
