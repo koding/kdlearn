@@ -13,29 +13,36 @@ template: series.toffee
 # Tools Needed
 
 Before we go into what Koding Apps are and how to create them, lets go over
-required and/or useful knowledge and tools. Don't forget to checkout the 
+required and/or useful knowledge and tools. Don't forget to checkout the
 [Useful Tools][useful tools] page after you get through Getting Started.
+
+## Services
+
+### Github
+The Koding App infrastructure utilizes [Github](http://github.com) for storing app
+specific resources (js, images, css, scripts). This enables developers to store
+there apps for free without worry, making the Koding app workflow simple.
 
 ## Languages
 
 ### CoffeeScript or JavaScript
 
-Koding Applications are primarily programmed in [CoffeeScript][coffeescript].  
-While you can technically use any language, as long as the final output is a 
+Koding Applications are primarily programmed in [CoffeeScript][coffeescript].
+While you can technically use any language, as long as the final output is a
 single javascript file named `index.js` within the root of your App directory.
 
 ## Tools
 
 ### KDC, The Koding Compiler
 
-The [Koding Compiler][kdc], otherwise known as `kdc` is a small utility to 
+The [Koding Compiler][kdc], otherwise known as `kdc` is a small utility to
 compile Koding apps to a single `index.js` file.
 
 This tool comes with your Koding VM, you do not need to install it.
 
 ### DevTools
 
-[DevTools][devtools] is an application designed to help you develop your app.  
+[DevTools][devtools] is an application designed to help you develop your app.
 It is also used to publish your app. It also comes preinstalled.
 
 
