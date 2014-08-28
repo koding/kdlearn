@@ -1,12 +1,13 @@
 ---
+draft: true
 author: Granger Lang
 username: glang
 date: 2014-07-29
-description: 'How to install CodeIgniter on Koding!'
+description: [DRAFT] 'How to install CodeIgniter on Koding!'
 categories: [CodeIgniter]
 ---
 
-# CodeIgniter Guide
+# [DRAFT] CodeIgniter Guide
 
 To install CodeIgniter on Koding, run the **[CodeIgniter Installer App](https://koding.com/Codeigniter)**. [Note: you have to be 
 logged into your [Koding account](https://koding.com/Login) in order to run the app.]

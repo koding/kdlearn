@@ -1,12 +1,13 @@
 ---
+draft: true
 author: Granger Lang
 username: glang
 date: 2014-08-08
-description: '3 Easy Steps to Setup Cockpit on Koding'
+description: [DRAFT] '3 Easy Steps to Setup Cockpit on Koding'
 categories: [Cockpit]
 ---
 
-# 3 Easy Steps to Setup Cockpit on Koding
+# [DRAFT] 3 Easy Steps to Setup Cockpit on Koding
 
 **What is Cockpit?** 
 Cockpit was born out of the need of building a simple dynamic site. Sure, Wordpress, Joomla, Drupal and all the other full-stack content management systems are possible solutions for that task ... but let's be honest, often they are just too bloated and too time consuming to setup, maintain and too complex implementing custom functionality. Cockpits goal is to be simple, but yet powerful and designed in that way that you can spend less time trying to squeeze your site into a theme or template.
