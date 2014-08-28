@@ -1,12 +1,13 @@
 ---
+draft: true
 author: Granger Lang
 username: glang
 date: 2014-07-24
-description: '3 Easy steps to set up WordPress on Koding'
+description: [DRAFT] '3 Easy steps to set up WordPress on Koding'
 categories: [WordPress]
 ---
 
-# 3 Easy steps to set up WordPress on Koding
+# [DRAFT] 3 Easy steps to set up WordPress on Koding
 
 **What is WordPress?** 
 WordPress is a free and open source blogging tool and a content management system (CMS) based on PHP and MySQL, which runs on a web hosting service. Features include a plug-in architecture and a template system. WordPress is used by more than 22% of the top 10 million websites as of August 2013. WordPress is the most popular blogging system in use on the Web, at more than 60 million websites.
