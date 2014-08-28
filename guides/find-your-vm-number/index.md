@@ -1,11 +1,12 @@
 ---
+draft: true
 author: Team Koding
 date: 2014-07-25
 categories: [koding]
 ---
 
 
-# Finding your Koding VM Number
+# [DRAFT] Finding your Koding VM Number
 
 In this guide we'll go over finding your [Koding][koding] Virtual Machine 
 number, and what it's needed for.

@@ -1,12 +1,13 @@
 ---
+draft: true
 author: Granger Lang
 username: glang
 date: 2014-07-30
-description: '5 Easy steps to getting Drupal up and running on Koding'
+description: [DRAFT] '5 Easy steps to getting Drupal up and running on Koding'
 categories: [Drupal]
 ---
 
-# 5 Easy steps to getting started with Drupal on Koding
+# [DRAFT] 5 Easy steps to getting started with Drupal on Koding
 
 **What is Drupal?**
 Drupal is an open source content management platform powering millions of websites and applications. It’s built, used, and supported by an active and diverse community of people around the world. [Learn more](http://drupal.org).

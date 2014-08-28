@@ -1,12 +1,13 @@
 ---
+draft: true
 author: Granger Lang
 username: glang
 date: 2014-08-04
-description: 'How to setup Django on Koding!'
+description: [DRAFT] 'How to setup Django on Koding!'
 categories: [Django]
 ---
 
-# Django Guide
+# [DRAFT] Django Guide
 
 To install Django on Koding, run the **[Django Installer App](https://koding.com/Django)**. [Note: you have to be 
 logged into your [Koding account](https://koding.com/Login) in order to run the app.]
