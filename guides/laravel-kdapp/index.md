@@ -3,11 +3,11 @@ draft: true
 author: Granger Lang
 username: glang
 date: 2014-08-08
-description: [DRAFT] '3 Easy steps to get started with Laravel on Koding'
+description: DRAFT '3 Easy steps to get started with Laravel on Koding'
 categories: [Laravel]
 ---
 
-# [DRAFT] 3 Easy steps to get started with Laravel on Koding
+# DRAFT 3 Easy steps to get started with Laravel on Koding
 
 **What is Laravel?** 
 Laravel is a web application framework with expressive, elegant syntax. They believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.

@@ -1,6 +1,6 @@
 ---
 draft: true
-title: [DRAFT] How to create a Playground for Teamwork
+title: DRAFT How to create a Playground for Teamwork
 author: Team Koding
 date: 2014-03-09
 categories: [koding]
@@ -8,7 +8,7 @@ categories: [koding]
 template: page.toffee
 ---
 
-# [DRAFT] How to create a Playground for Teamwork
+# DRAFT How to create a Playground for Teamwork
 
 In this article we will go over the simple process of adding your own Playground to the official Teamwork Playground list.
 

@@ -1,6 +1,6 @@
 ---
 draft: true
-title: [DRAFT] Thinkup, Analytics for Humans
+title: DRAFT Thinkup, Analytics for Humans
 author: Team Koding
 date: 2014-08-19
 categories: [Facebook]

@@ -1,6 +1,6 @@
 ---
 draft: true
-title: [DRAFT] Add CNAME records to your domain
+title: DRAFT Add CNAME records to your domain
 author: Team Koding
 date: 2014-01-17
 categories: [koding, domain]
@@ -9,7 +9,7 @@ videoId: J-unJW-0CaI
 template: page.toffee
 ---
 
-# [DRAFT] Add CNAME records to your domain
+# DRAFT Add CNAME records to your domain
 
   Mapping your own domains to Koding is now possible, and very easy. In this 
 article, we'll go over this simple process.  
