@@ -5,9 +5,10 @@
 #
 path         = require 'path'
 highlightjs  = require 'highlight.js'
-marked = require 'marked'
+marked       = require 'marked'
 metalsmith   = require 'metalsmith'
 collections  = require 'metalsmith-collections'
+drafts       = require 'metalsmith-drafts'
 excerpts     = require 'metalsmith-excerpts'
 ignore       = require 'metalsmith-ignore'
 markdown     = require 'metalsmith-markdown'
@@ -82,6 +83,7 @@ module.exports = build = (callback=->) ->
       '**/*'
       '!**/*.md'
       ]
+    .use drafts()
     .use markdown
       renderer: markedRenderer
       langPrefix: ''
