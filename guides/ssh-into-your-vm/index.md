@@ -1,4 +1,6 @@
 ---
+draft: true
+
 title: Connect with SSH, from Unix
 author: Team Koding
 date: 2014-04-08

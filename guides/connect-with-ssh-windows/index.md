@@ -1,5 +1,6 @@
 ---
-title: Connect with SSH, from Windows
+draft: true
+
 author: Team Koding
 date: 2014-04-08
 categories: [ssh]
