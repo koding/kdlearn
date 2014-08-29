@@ -1,9 +1,15 @@
 #{partial 'head.toffee', title: 'Videos'}
 #{partial 'topnav.toffee'}
 {#
-printVideo = (file, rel="videos") ->
+printVideo = (filename, rel="videos") ->
+  if typeof filename is 'string'
+    file = files[filename]
+  else
+    file = filename
+
   if not file?
-    throw new Error 'func `printVideo()` requires file object.'
+    return console.log "In func `printVideo(filename)`,
+      '#{filename}' does not exist."
   if not file.videoId?
     throw new Error 'Video ID Required for func `printVideo()`'
   # Reference name for sanity sake
@@ -29,12 +35,12 @@ printVideo = (file, rel="videos") ->
   <h3 class="title">Explore Koding</h3>
   <ul>
   {# printVideo videoId: '5E85g_ddV3A', title: 'Koding Introduction', 'koding' #}
-  {# printVideo files['guides/social/index.html'], 'koding' #}
-  {# printVideo files['guides/your-first-file/index.html'], 'koding' #}
-  {# printVideo files['guides/importing-your-files/index.html'], 'koding'  #}
-  {# printVideo files['guides/the-terminal/index.html'], 'koding' #}
-  {# printVideo files['guides/get-help-with-teamwork/index.html'], 'koding' #}
-  {# printVideo files['guides/add-cname-records-to-your-domain/index.html'],
+  {# printVideo 'guides/social/index.html', 'koding' #}
+  {# printVideo 'guides/your-first-file/index.html', 'koding' #}
+  {# printVideo 'guides/importing-your-files/index.html', 'koding'  #}
+  {# printVideo 'guides/the-terminal/index.html', 'koding' #}
+  {# printVideo 'guides/get-help-with-teamwork/index.html', 'koding' #}
+  {# printVideo 'guides/add-cname-records-to-your-domain/index.html',
     'koding' #}
   </ul>
 </div>
@@ -42,11 +48,11 @@ printVideo = (file, rel="videos") ->
 <div class="category">
   <h3 class="title">Installing Apps and Servers</h3>
   <ul>
-  {# printVideo files['guides/bootstrap-3-quick-tip/index.html'], 'install' #}
-  {# printVideo files['guides/getting-started-firebase/index.html'], 'install' #}
-  {# printVideo files['guides/getting-started-with-facebook-app-dev/index.html'],
+  {# printVideo 'guides/bootstrap-3-quick-tip/index.html', 'install' #}
+  {# printVideo 'guides/getting-started-firebase/index.html', 'install' #}
+  {# printVideo 'guides/getting-started-with-facebook-app-dev/index.html',
     'install' #}
-  {# printVideo files['guides/getting-started-with-mixpanel/index.html'],
+  {# printVideo 'guides/getting-started-with-mixpanel/index.html',
     'install' #}
   </ul>
 </div>

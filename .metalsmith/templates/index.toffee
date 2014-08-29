@@ -2,9 +2,15 @@
 #{partial 'header.toffee'}
 
 {#
-printVideo = (file) ->
+printVideo = (filename) ->
+  if typeof filename is 'string'
+    file = files[filename]
+  else
+    file = filename
+
   if not file?
-    throw new Error 'func `printVideo()` requires file object.'
+    return console.log "In func `printVideo(filename)`,
+      '#{filename}' does not exist."
   if not file.videoId?
     throw new Error 'Video ID Required for func `printVideo()`'
   # Reference name for sanity sake
@@ -43,10 +49,10 @@ printVideo = (file) ->
     Koding Introduction
   </div>
   <ul>
-  {# printVideo files['guides/social/index.html'] #}
-  {# printVideo files['guides/your-first-file/index.html'] #}
-  {# printVideo files['guides/the-terminal/index.html'] #}
-  {# printVideo files['guides/get-help-with-teamwork/index.html'] #}
+  {# printVideo 'guides/social/index.html' #}
+  {# printVideo 'guides/your-first-file/index.html' #}
+  {# printVideo 'guides/the-terminal/index.html' #}
+  {# printVideo 'guides/get-help-with-teamwork/index.html' #}
   </ul>
 </div>
 
