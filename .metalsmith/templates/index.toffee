@@ -50,7 +50,7 @@ printVideo = (filename) ->
   </div>
   <ul>
   {# printVideo 'guides/social/index.html' #}
-  {# printVideo 'guides/your-first-file/index.html' #}
+  {## printVideo 'guides/your-first-file/index.html' ##}
   {# printVideo 'guides/the-terminal/index.html' #}
   {# printVideo 'guides/get-help-with-teamwork/index.html' #}
   </ul>

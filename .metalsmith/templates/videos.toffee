@@ -36,12 +36,12 @@ printVideo = (filename, rel="videos") ->
   <ul>
   {# printVideo videoId: '5E85g_ddV3A', title: 'Koding Introduction', 'koding' #}
   {# printVideo 'guides/social/index.html', 'koding' #}
-  {# printVideo 'guides/your-first-file/index.html', 'koding' #}
-  {# printVideo 'guides/importing-your-files/index.html', 'koding'  #}
+  {## printVideo 'guides/your-first-file/index.html', 'koding' ##}
+  {## printVideo 'guides/importing-your-files/index.html', 'koding'  ##}
   {# printVideo 'guides/the-terminal/index.html', 'koding' #}
   {# printVideo 'guides/get-help-with-teamwork/index.html', 'koding' #}
-  {# printVideo 'guides/add-cname-records-to-your-domain/index.html',
-    'koding' #}
+  {## printVideo 'guides/add-cname-records-to-your-domain/index.html',
+    'koding' ##}
   </ul>
 </div>
 
