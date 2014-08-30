@@ -17,7 +17,7 @@ Tomcat doesn't come preinstalled with your VMs, so you need do download, install
 Go to the [Terminal](https://koding.com/Terminal), and download tomcat 7.0 using the `wget` command.
     
     
-    wget http://apache.mirrors.hoobly.com/tomcat/tomcat-7/v7.0.53/bin/apache-tomcat-7.0.53.tar.gz  
+    wget http://apache.mirrors.hoobly.com/tomcat/tomcat-7/v7.0.55/bin/apache-tomcat-7.0.55.tar.gz  
     
    
 If the above link doesn't work, make sure you get the link from the tomcat's download page. 
@@ -25,13 +25,13 @@ If the above link doesn't work, make sure you get the link from the tomcat's dow
 Extract the downloaded file by typing :-
     
     
-    tar -xvzf apache-tomcat-7.0.53.tar.gz
+    tar -xvzf apache-tomcat-7*
     
 
 Rename the directory for easy access in future.
     
     
-    mv apache-tomcat-7.0.53 tomcat
+    mv apache-tomcat-7.0.55 tomcat
     
 
 Now we need to set role and password in `tomcat-users.xml` . Use the command below to edit the tomcat-user.xml.
