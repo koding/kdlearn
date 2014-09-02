@@ -9,7 +9,7 @@ template: page.toffee
 
 # Drupal Setup and Installation for Beginners
 
-This article will cover the basic steps on how to setup a blog using Drupal as the base from source. Also you can install Drupal via Koding App [here](http://learn.koding.com/guides/drupal-kdapp/).
+This article will cover the basic steps on how to setup a blog using Drupal. Also you can install Drupal via Koding App [here](http://learn.koding.com/guides/drupal-kdapp/).
 
 ## What's Drupal?
 
@@ -21,13 +21,13 @@ But how do you set up Drupal on [Koding](https://koding.com)? Well it's simple, 
 
 ### Step 1.
 
-Open up your [Koding](https://koding.com) Terminal and type in the following command to get you started.
+Open up your [Koding](https://koding.com) Terminal and type in the following command to get started.
 
 	cd Web
 
 ### Step 2.
 
-Next up, you must download Drupal version that you want to use it, in this case We use [Drupal 8](https://www.drupal.org/node/572834)
+Next up, you must download Drupal version that you're planing on using, in this case we are going to use [Drupal 8](https://www.drupal.org/node/572834)
 
 	wget http://ftp.drupal.org/files/projects/drupal-8.x-dev.tar.gz
 
@@ -43,7 +43,7 @@ Moving Drupal to its intended location
 
 ### Step 5
 
-In order to Drupal running on Nginx, open up the default virtual host(block) file.
+In order to Drupal working on Nginx, open up the default virtual host(block) file.
 
 	sudo vi /etc/nginx/sites-available/default
 
@@ -118,23 +118,23 @@ The configuration should include the changes below (the details of the changes a
 	}
 ```
 
-Save and Exit. If you want to running Drupal on Apache so you can edit file configuration Apache
+Save and Exit. If you want to run Drupal on Apache, you need to edit the Apache configuration file configuration Apache
 
 ```
 sudo vi /etc/apache2/sites-available/default
 
 ```
-Note that, in order to install LEMP on Koding you can tried tutorial [here](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-ubuntu-14-04). Then you'll need to create the database for Drupal, run the following code
+Then you'll need to create the database for Drupal, by running the following code.
 
 ```
 	echo 'CREATE DATABASE drupal8' | mysql -u root
 ```
 
-If you don't known password Mysql, you can reding setup Mysql [here](http://learn.koding.com/guides/mysql-on-koding/). If everything goes fine, you should see the following screen in your browser:
+If you don't known password Mysql, head over to this tutorial [here](http://learn.koding.com/guides/mysql-on-koding/). If everything goes fine, you should see the following screen in your browser:
 
 ![](https://dl.dropboxusercontent.com/u/109046499/wellcome.png)
 
-If you see error  ```Writable (public download method), you can running following command line ```
+If you see this error  ```Writable (public download method)```, you need to run following code in the command line.
 
 ```
  cd $ROOT/site        #/var/www/drupal-8.x-dev/sites
@@ -142,6 +142,7 @@ If you see error  ```Writable (public download method), you can running followin
 
 ```
 
-That's it for the Drupal on Koding guide! Have fun!
+
+That's it! You're now running Drupal on Koding! Have fun!
 
 This has been a beginner guide from [Koding](https://koding.com/). As always, more Quick Tips and beginner friendly guides coming soon, so stay tuned!
