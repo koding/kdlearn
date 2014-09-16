@@ -1,0 +1,14 @@
+#{partial 'head.toffee', redirect: destination}
+#{partial 'topnav.toffee'}
+<section><div id="page-404" class="container">
+
+<div class="content">
+  <h2>Redirecting</h2>
+  <p>
+    The page you requested has been moved. If you think this is in
+    error, please <a href="mailto:hello@koding.com" target="_self">Contact Us</a>.
+  </p>
+</div>
+
+</div></section>
+#{partial 'footer.toffee'}

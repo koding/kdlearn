@@ -20,6 +20,9 @@
 		<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="320">
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    {# if redirect? {:
+      <meta http-equiv="refresh" content="0; url=#{redirect}">
+    :} #}
 
 		<!-- og meta tags -->
 		<meta property="og:title" content="Koding - Say goodbye to localhost!"/>

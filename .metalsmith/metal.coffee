@@ -5,7 +5,7 @@
 #
 path         = require 'path'
 highlightjs  = require 'highlight.js'
-marked = require 'marked'
+marked       = require 'marked'
 metalsmith   = require 'metalsmith'
 collections  = require 'metalsmith-collections'
 excerpts     = require 'metalsmith-excerpts'
@@ -24,6 +24,7 @@ moment       = require './plugins/moment'
 feed         = require './plugins/feed'
 filename     = require './plugins/filename'
 newPage      = require './plugins/new-page'
+redirects    = require './plugins/redirects'
 series       = require './plugins/series'
 snapshot     = require './plugins/snapshot'
 tags         = require './plugins/tags'
@@ -148,6 +149,8 @@ module.exports = build = (callback=->) ->
       collection: 'guide'
       output: 'guides'
       metadata: template: 'guides.toffee'
+    # Create our redirects
+    .use redirects()
     .use permalinks()
     .use filename()
     .use aboutSchema() # Add itemprop='about' to the first para
