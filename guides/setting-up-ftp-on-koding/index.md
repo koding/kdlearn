@@ -1,71 +1,94 @@
 ---
 title: Setting up FTP on Koding
 author: Team Koding
-date: 2014-01-07
+date: 2014-09-15
 categories: [ftp]
 ---
 
 # Setting up FTP on Koding
 
-In this tutorial, i will go over how to get your FTP Client connected to your 
-VMs FTP Server. In this guide, we are using 
-[FileZilla](https://filezilla-project.org/) as the FTP Client.
-
-**Reminder**: As with all of these tutorials, they assume that there are no 
-conflicts. If you have previously attempted to install this software please 
-remove it fully or understand that conflicts may occur. Thanks :)
+In this guide we'll go over how to get your FTP Client connected to your 
+VM's FTP Server. We will be using [FileZilla][filezilla] as the FTP 
+Client, but any client should be able to connect to your FTP Server 
+successfully.
 
 ## What you will need
 
-In this tutorial you will need three things.
+In this tutorial you will need the following.
 
-1. Your Koding username
-2. Your Koding password
-3. Your VM Number that you'd like to connect to. [Refer 
-here](/faq/find-your-vm-number) for help.
+1. A [Koding][koding] account, and your Koding Username.
+2. The Address of the VM you'd like to connect to. Instructions can be 
+[found here][vm address].
 
-## Steps for Installation
 
-1. Install the PureFTPd apt-get package, by entering the following command: 
+## Installing PureFTPd
+
+First off, we'll need to install PureFTPd. This can be done by pasting 
+the following command into your [Koding IDE][ide]'s Terminal.
+
+```
 sudo apt-get install pure-ftpd
+```
 
-2. Enter your Koding password, which is your root password.
+## Adding an FTP User
 
-3. If a bunch of text whizzes by with no visible errors, Congratulations! You 
-now have a working FTP server on this VM! Next up, we need to connect to our 
-FTP Server with our FTP Client!To do this, we are going to open up FileZilla 
-and press Ctrl-S, to open up our site manager. You can also open this by going 
-to File -> Site Manager. When the Site Manager pops up, click the “New Site” 
-button.
+After PureFTPd has been successfully installed, we need to add an FTP 
+username and password to connect to. These have nothing to do with Koding 
+username and password, and are simply used for ftp authorization. To do 
+this, paste the following command into your Terminal.
 
-4. Now, the last step is to enter our PureFTPd information! Enter the following 
-information into your New Site. 
+```
+sudo pure-pw useradd FTP_USERNAME -u KODING_USERNAME -d ~/Web
+```
 
-  - Host: `ftp.koding.com`
-  - Encryption: Use plain FTP Login
-  - Type: Normal
-  - User: `<username>@<vm-Number>.<username>.koding.kd.io`
-  - Password: `<your koding password>`
+Make note to replace `FTP_USERNAME` with the FTP username you want to 
+use, and `KODING_USERNAME` with your actual Koding Username.
 
-  Replace `<username>` with your username, and `<vm-Number>` with your VM 
-Number; So that `<vm-Number>` becomes _vm-0_, _vm-1_, etc.
+After hitting enter, you'll be prompted for the **FTP** password you wish 
+to use. *Not* your Koding password.
 
-  The *FTP* Username, when filled out, should look like 
-`leeolayvar@vm-0.leeolayvar.koding.kd.io`. Make sure the end includes 
-_koding.kd.io_, it is important.
+## Linking Your FTP Database
 
-  If you have any confusion about where to enter this information, please refer 
-to the video or the image below.
+Next, you'll have to run a few commands to get the ftp database setup and 
+configured properly. Run the following commands in your Terminal.
 
-  ![FTP Client Settings](ftpsettings.png)
+```
+sudo pure-pw mkdb
+sudo ln -s /etc/pure-ftpd/pureftpd.passwd /etc/pureftpd.passwd
+sudo ln -s /etc/pure-ftpd/pureftpd.pdb /etc/pureftpd.pdb
+sudo ln -s /etc/pure-ftpd/conf/PureDB /etc/pure-ftpd/auth/PureDB
+```
 
-## Confirming your Installation
+Once the above is ran, simply restart your now-configured FTP Server.  
+This can be done with the following command.
 
-Connecting to your FTP Server with your FTP Client is the easiest way to confirm it is working, but what if that fails? Is your Server running?
+```
+sudo service pure-ftpd restart
+```
 
-To find this out, run the following command: `ps aux | grep ftpd`. This will print the running processes that contain the text "ftpd". What you are looking for, is a line containing **"PURE-FTPD (SERVER)"**. If you see that, your server is running, and the problem is likely not your server.
+## Connecting to your FTP Server
+
+Finally, in your FTP Client of choice paste your VM Address into the 
+hostname. If you're not sure what that is, instructions to find it can be 
+[found here][vm address].
+
+After the Hostname, enter your FTP Username, and FTP Password that you 
+chose in the above commands. An example image from FileZilla can be seen 
+below.
+
+![FileZilla FTP Settings](ftpsettings.png)
+
 
 ## Additional Resources
 
-  * [FileZilla](https://filezilla-project.org/)
-  * [FileZilla Download](https://filezilla-project.org/download.php?type=client)
+- [FileZilla](https://filezilla-project.org/)
+- [FileZilla Download](https://filezilla-project.org/download.php?type=client)
+
+
+
+
+[filezilla]: https://filezilla-project.org/
+[download]: https://filezilla-project.org/download.php?type=client
+[koding]: https://koding.com
+[ide]: https://koding.com/IDE
+[vm address]: /faq/vm-address
