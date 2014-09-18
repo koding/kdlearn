@@ -1,19 +1,15 @@
 ---
-draft: true
-
 title: Connect with SSH, from Unix
 author: Team Koding
-date: 2014-04-08
+date: 2014-09-15
 categories: [ssh]
 ---
 
 # Connect with SSH, from Unix
 
-Connecting to your VM with SSH will allow you to use another Terminal, outside 
-of Koding, to interact with your Koding VM. This is also required if you're 
-interested in using SSH Tunneling. If you're connecting with PuTTY, have a look 
-[here][connect windows]. If you're using Cygwin, these instructions will work 
-fine for you.
+Connecting to your VM with SSH will allow you to use another Terminal, 
+outside of Koding, to interact with your Koding VM. If you're using 
+Cygwin, these instructions will work fine for you.
 
 We are going to use the terminology "local" to represent the machine that 
 you're connecting to Koding with.
@@ -21,82 +17,67 @@ you're connecting to Koding with.
 ## What you will need
 
 - Your [Koding][koding] username
-- Your [Koding][koding] VM Number
-- Generated SSH Keys on your local machine. If you need to generate them, 
-  Github has an awesome tutorial found [here][github keygen].
+- Your Koding VM Address
+- An SSH Key on your local machine. If you don't have a key, Github has 
+  an awesome tutorial found [here][github keygen].
 
-## Connecting with OpenSSH or Cygwin
+## Copy your Public Key
 
-1. First, copy your Public Key, usually found in `~/.ssh/id_rsa.pub`, and copy 
-  it in its entirety! It will look something like this:
-  ```
-  ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyhKankDE4DRM86JqZ3JPdWDeqg+TbzlqlTLf 
-  OKTeokhRoMgy5WoMY/ZWUVES3d2vSHHwW3cwWlELmVdc3Ow57boZv3fOsPhybYHVRTClXYr1ncS 
-  xyTvjvCfvV5q22aIxHPWQ353543ssda87sa+85XEa4VnveJsEzxBZl4oJ4GB0AGa48+UdIqutrg 
-  Zu7D7JCK+Yl228X+3bJf3ddlqDaKaVXPivvvYqImK6ZwFsxh2lNO4E8IOd3OSK9zv6i+io8PxWm 
-  wP0tLFokxulAI8Td1sOPBE9s9bdJ5c2T/GfGjKF+aNKsd33TsYEjjc/plMZmRRrOgQwre6OAkgM 
-  vyV2X foo@bar.baz
-  ```
-2. Next, paste this entire Public Key into your SSH Keys section of your 
-Account settings. This can be found by going to 
-[Koding/Account](https://koding.com/Account) and clicking SSH Keys under the 
-DEVELOP. Click the Plus button on the right side of the page, and paste your 
-Public Key into this. Below is a screenshot of this area for clarification.  
+First, copy your Public Key, usually found in `~/.ssh/id_rsa.pub`, and 
+copy it in its entirety. Note the `.pub` in the filename. This is the 
+**public** key, and it is very important that you copy this one. It will 
+look something like this.
 
-  ![Koding SSH Keys](sshkeys.png)
+```
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyhKankDE4DRM86JqZ3JPdWDeqg+Tbzlql
+TLfOKTeokhRoMgy5WoMY/ZWUVES3d2vSHHwW3cwWlELmVdc3Ow57boZv3fOsPhybYHVRTClX
+Yr1ncSxyTvjvCfvV5q22aIxHPWQ353543ssda87sa+85XEa4VnveJsEzxBZl4oJ4GB0AGa48
++UdIqutrgZu7D7JCK+Yl228X+3bJf3ddlqDaKaVXPivvvYqImK6ZwFsxh2lNO4E8IOd3OSK9
+zv6i+io8PxWmwP0tLFokxulAI8Td1sOPBE9s9bdJ5c2T/GfGjKF+aNKsd33TsYEjjc/plMZm
+RRrOgQwre6OAkgMvyV2X foo@bar.baz
+```
 
-3. Now go back to your local machine, and create the file `~/.ssh/config` 
-  _(assuming it's not already created)_. Add the following code into that file:
+## Adding to your Authorized Keys
 
-  ```
-  Host *.kd.io
-    User <username>
-    ProxyCommand ssh %r@ssh.koding.com nc %h %p
-  ```
+Next, we need to create a file and paste the previously copied key into 
+that file. Run the following commands in your Koding Terminal.
 
-  Where `<username>` is your username, without the `<>`.
+```
+mkdir -p ~/.ssh
+touch ~/.ssh/authorized_keys
+```
 
-4. Next, on your local machine and connect to your VM! This can be done by 
-typing:
+Now, open up the `authorized_keys` file that you just created, and paste 
+in your public key. To open the file you can use a Terminal editor such 
+as Nano or Vim, or simply use the File Explorer on the left hand side to 
+open the `~/.ssh/authorized_keys` file.
 
-  ```
-  ssh <vm-Number>.<username>.koding.kd.io
-  ```
+Once the key has been pasted in, save the file.
 
-  An example, here is my connection command:
+## Connecting with SSH
 
-  ```
-  ssh vm-0.leeolayvar.koding.kd.io
-  ```
+Lastly, open up your local Terminal client and ssh to your VM Address as 
+shown below. If you do not know your VM Address, instructions to find it 
+can be [found here][vm address].
 
-  You will have to enter your local SSH password, if you chose one when you 
-  created your key. After that, presented with `username@vm-X:~$`, signaling that 
-  you have connected successfully.This step has quite a few Gotchas so please 
-  review them below.Two likely gotchas, are Agent Failure and 
-  ssh_exchange_identification, which can be seen in the Possible Gotchas section 
-  below.
+```
+ssh unkk05c3f84e.joshmurray.koding.io
+```
 
-5. ### Alternate id_rsa
+## Troubleshooting
 
-  If you're using an alternately named `id_rsa` file, you can modify your 
-  config to support this with the following example.
+If you experience trouble, try connecting to your VM with the `-vv` flag 
+and share the output with Koding users. An example of the above ssh 
+command with the `-vv` flag is below.
 
-  ```
-  Host *.kd.io User <username>
-    IdentityFile ~/.ssh/alternate
-    ProxyCommand ssh -i ~/.ssh/alternate %r@ssh.koding.com nc %h %p
-  ```
+```
+ssh -vv unkk05c3f84e.joshmurray.koding.io
+```
 
-  Note the `IdentityFile ~/.ssh/alternate` and `-i ~/.ssh/alternate`, they tell 
-  SSH the location of your public key, and are required. Replace the file 
-  location with the location of your alternate key.
-
-## Important note
-
-If you're having trouble SSH-ing into your VM, after pasting your SSH key in the box described above, make sure there are **NO SPACES** in the key other than the one after ``ssh-rsa`` and one before your email address.
 
 
 
 [koding]: https://koding.com
 [github keygen]: https://help.github.com/articles/generating-ssh-keys
 [connect windows]: /guides/connect-with-ssh-windows
+[vm address]: /faq/vm-address
