@@ -96,7 +96,7 @@ module.exports = build = (callback=->) ->
     .use series()
     .use collections
       faq:
-        pattern: 'faq/*.html'
+        pattern: 'faq/**/*.html'
         sortBy: 'importance'
       guide:
         pattern: 'guides/**/*.html'
