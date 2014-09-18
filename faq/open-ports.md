@@ -3,9 +3,11 @@ title: What ports are open on my Koding VM?
 importance: 5
 ---
 
-Koding proxies HTTP traffic from your domains to your VMs on the following 
-ports:
+Most Unix ports are available on Koding VMs. See the following list for 
+open ports, as well as ports in use by default.
 
-- Port **80**
-- Ports **1024** through **10,000**
-- Port **443** is proxied to port **80** on your VM.
+- Ports **2** through **65,534** are open.
+- Port **80** is taken by Apache, but this can Apache can be turned off 
+  to free the port.
+- Ports **2** through **1,024** require `sudo` access.
+
