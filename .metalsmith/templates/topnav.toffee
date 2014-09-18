@@ -1,36 +1,30 @@
 <nav>
-    <div class="container">
-        <h1 id="logo">
-            <a href="/">
-                <span class="img"></span>
-            </a>
-        </h1>
-        <div class="topSearchButton">
-            <span class="searchIcon"></span>
-        </div>
-        <div id="menu">
-            <ul class="toplinks">
-                <li>
-                    <a href="https://koding.com">Koding</a>
-                </li>
-                <li>
-                    <a href="/faq">Common Questions</a>
-                </li>
-                <li>
-                    <a href="/guides">Guides</a>
-                </li>
-                <li>
-                    <a href="/videos">Videos</a>
-                </li>
-                <li class="contribute">
-                    <a href="/contribute">Author A Guide</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="topSearchBox">
-        <form method="GET" action="/search">
-            <input type="text" id="topSearch" name="q" value="" autocomplete="off">
-        </form>
-    </div>
+<div class="container">
+  <h1 id="logo">
+    <a href="/">
+      <span class="img"></span>
+    </a>
+  </h1>
+  <!-- Temporarily disabled due to search reimplementation
+  <div class="topSearchButton">
+    <span class="searchIcon"></span>
+  </div>
+  -->
+  <div id="menu">
+    <ul class="toplinks">
+      <li><a href="https://koding.com">Koding</a></li>
+      <li><a href="/faq">Common Questions</a></li>
+      <li><a href="/guides">Guides</a></li>
+      <li><a href="/videos">Videos</a></li>
+      <li class="contribute">
+        <a href="/contribute">Author A Guide</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="topSearchBox">
+  <form method="GET" action="/search">
+    <input type="text" id="topSearch" name="q" value="" autocomplete="off">
+  </form>
+</div>
 </nav>
