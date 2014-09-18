@@ -127,8 +127,7 @@ sudo service apache2 stop
 sudo npm start
 ```
 
-Remember that yuor Sudo password is the password you signed up to Koding 
-with. This should be typed from the Ghost installation directory.
+This should be typed from the Ghost installation directory.
 
 And that's it! You should now have a Ghost installation up and running.  
 Happy Blogging!

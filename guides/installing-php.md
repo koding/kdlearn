@@ -32,4 +32,4 @@ That is all!
 
 ## Note
 
-Keep in mind that all commands require `sudo` access. In case you don't know what's your root password, read [this](http://learn.koding.com/faq/what-is-my-sudo-password/).
+Keep in mind that all commands require `sudo` access.

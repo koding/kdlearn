@@ -58,8 +58,7 @@ the following command.
 sudo apt-get install python-pip
 ```
 
-Remember that your sudo password is your Koding Password. Give that a 
-moment, and once that finishes we can install Flask!
+Give that a moment, and once that finishes we can install Flask!
 
 ## Using Pip to install Flask
 

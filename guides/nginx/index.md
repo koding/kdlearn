@@ -15,9 +15,9 @@ the simple process of installing Nginx on [Koding][koding]. Lets get started!
 ## Installing Nginx
 
 Koding runs Ubuntu, gives you root, and of course comes with apt-get. This 
-means that installation of many packages, programs and servers simply require 
-using apt-get. To install Nginx with apt-get, run the following command.  
-Remember, your sudo password is your Koding password.
+means that installation of many packages, programs and servers simply 
+require using apt-get. To install Nginx with apt-get, run the following 
+command.
 
 ```
 sudo apt-get install nginx

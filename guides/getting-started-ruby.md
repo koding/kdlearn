@@ -169,7 +169,7 @@ sudo gem install sinatra
 
 RubyGems is Ruby's answer to Dependency Management. Similar to NPM and 
 PIP, the above command will install Sinatra and all dependencies of that 
-library. Remember, your Sudo password is your Koding password.
+library.
 
 Next up, open your `web.rb` file again, and replace the entire contents 
 with the following code.

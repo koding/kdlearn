@@ -31,7 +31,8 @@ wget http://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb
 sudo dpkg -i erlang-solutions_1.0_all.deb
 ```
 
-The `wget` command will download a package that will be used to add the Erlang Solutions repository and the other one installs it (you'll need to enter your Koding password for the second command).
+The `wget` command will download a package that will be used to add the 
+Erlang Solutions repository and the other one installs it.
 
 You can now install Erlang by typing this in the Terminal:
 
