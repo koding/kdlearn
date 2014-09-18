@@ -1,4 +1,5 @@
 ---
+draft: true
 title: Foundation
 author: Team Koding
 date: 2014-04-23

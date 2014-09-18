@@ -48,21 +48,6 @@ checkActiveItems = (items) ->
     </ul>
   </li>
 
-  <li>
-    <h5><a href="/guides/creating-kdapps">Creating KDApps</a></h5>
-    <ul>
-      <li>
-        <a href="/guides/creating-kdapps/tools-needed">Tools Needed</a>
-      </li>
-      <li>
-        <a href="/guides/creating-kdapps/foundation">Foundation</a>
-      </li>
-      <li>
-        <a href="/guides/creating-kdapps/real-world-example">Real World Example</a>
-      </li>
-    </ul>
-  </li>
-
   {##
   {# guides = collections.guide[...5] #}
   <li class="#{checkActiveItems guides}">

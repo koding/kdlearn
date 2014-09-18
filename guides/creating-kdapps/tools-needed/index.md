@@ -1,4 +1,5 @@
 ---
+draft: true
 title: Tools Needed
 author: Team Koding
 date: 2014-04-23
