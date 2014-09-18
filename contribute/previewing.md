@@ -67,9 +67,9 @@ gulp preview
 ```
 
 This will run a small HTTP Server on Port `8000`, ie: 
-`http://you.kd.io:8000`. Keep this tab open, and in  a **different** 
-Koding Terminal tab run your `gulp` command from above.  Each time you 
-compile the site, this will show your compiled site.
+`http://hostname.you.koding.io:8000`. Keep this tab open, and in  a 
+**different** Koding Terminal tab run your `gulp` command from above.  
+Each time you compile the site, this will show your compiled site.
 
 
 ## Compiling as you type

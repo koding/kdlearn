@@ -34,7 +34,7 @@ on your Koding Domain. You can view this site by visiting your Koding Domain,
 at:
 
 ```
-http://username.kd.io
+http://hostname.username.koding.io
 ```
 
 Where `username` is your Koding username. You should see something like this:

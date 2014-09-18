@@ -33,7 +33,10 @@ We rename the downloaded file, unzip it and rename the newly created folder. [co
 
 ### Step 4.
 
-We now can navigate to our newly created folder. We open up a new browser window and type in [code]http://[your-Koding-username].kd.io/pyrocms[/code] then just follow the steps that show up on the screen to install it.
+We now can navigate to our newly created folder. We open up a new browser 
+window and type in 
+[code]http://[your-vm-hostname].[your-Koding-username].koding.io/pyrocms[/code] 
+then just follow the steps that show up on the screen to install it.
 
 Alright then, that was fun. You now have a brand new website that runs PyroCMS.
 

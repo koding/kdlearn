@@ -64,13 +64,14 @@ app.get('/:name', function(req, res){
 ```
 
 The `app.get()` method takes a Route *(string or regex)* to listen to 
-requests on. If a user visits `http://username.kd.io/`, they are greeted 
-with `Hello World, From /`.
+requests on. If a user visits `http://hostname.username.koding.io/`, they 
+are greeted with `Hello World, From /`.
 
-If someone visits `http://username.kd.io/john`, they are greeted with 
-`Hello john`. `:name` is a URL *parameter*, which is sort of like a 
-wildcard for that section of the URL. Respond to the request with the 
-parameter by using the name of the parameter on the `req.params` object.
+If someone visits `http://hostname.username.koding.io/john`, they are 
+greeted with `Hello john`. `:name` is a URL *parameter*, which is sort of 
+like a wildcard for that section of the URL. Respond to the request with 
+the parameter by using the name of the parameter on the `req.params` 
+object.
 
 ```javascript
 var server = app.listen(3000, '0.0.0.0', function() {
@@ -247,7 +248,7 @@ var server = app.listen(3000, '0.0.0.0', function() {
 Run the above code with `node app.js`, and visit
 
 ```
-http://username.kd.io/Josh
+http://hostname.username.koding.io/Josh
 ```
 
 And you'll see an html page, rendered from your awesome new Express app!

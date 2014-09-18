@@ -13,13 +13,17 @@ Htaccess is a pretty well understood and standard feature among web hosts. Kodin
 
 ## RewriteEngine & mod_rewrite
 
-For the sake of discussion, lets say I have two Koding domains `http://username.kd.io` and `http://my.name.is.username.kd.io`. How would I forward the first to the second?
+For the sake of discussion, lets say I have two Koding domains 
+`http://username.koding.io` and `http://my.name.is.username.koding.io`.  
+How would I forward the first to the second?
 
 Htaccess makes this pretty simple. Create a .htaccess file in your Web directory, if you don't already have one, `touch ~/Web/.htaccess && chmod 644 ~/Web/.htaccess` and add the following RewriteRule:
 
-`RewriteEngine On RewriteCond %{HTTP_HOST} ^username.kd.io [NC] RewriteRule ^(.*) http://my.name.is.username.kd.io/$1 [R=301]`
+`RewriteEngine On RewriteCond %{HTTP_HOST} ^username.koding.io [NC] 
+RewriteRule ^(.*) http://my.name.is.username.koding.io/$1 [R=301]`
 
-But wait, if we go to `http://username.kd.io` now we are presented with the following error:
+But wait, if we go to `http://username.koding.io` now we are presented 
+with the following error:
 
 ``\` Internal Server Error
 
@@ -33,4 +37,6 @@ The reason for this is that mod_rewrite is not enabled by default. The fix for t
 
 `sudo a2enmod rewrite && sudo service apache2 restart`
 
-This uses the command `a2enmod` to enable mod_rewrite, and then restarts apache. Now if we go to `http://username.kd.io` we are redirected to `http://my.name.is.username.kd.io`. Yay!
+This uses the command `a2enmod` to enable mod_rewrite, and then restarts 
+apache. Now if we go to `http://username.koding.io` we are redirected to 
+`http://my.name.is.username.koding.io`. Yay!

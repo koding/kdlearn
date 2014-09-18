@@ -152,10 +152,11 @@ handler.
 A Route is a concept that directs requests *(people viewing your web 
 server)* and *routes* them to your Handler functions. `"/"` is the path 
 for this route, meaning that when someone connects to 
-`http://username.kd.io/` they are given this function.
+`http://hostname.username.koding.io/` they are given this function.
 
-If someone connected to `http://username.kd.io/foo/bar`, it would not 
-return this handler, because `/foo/bar` does not match our `hello` route.
+If someone connected to `http://hostname.username.koding.io/foo/bar`, it 
+would not return this handler, because `/foo/bar` does not match our 
+`hello` route.
 
 
 ```python
@@ -186,7 +187,7 @@ python web.py
 And then connect to it with the following address.
 
 ```
-http://username.kd.io:5000
+http://hostname.username.koding.io:5000
 ```
 
 Flask will display our text when you request the root path, awesome!

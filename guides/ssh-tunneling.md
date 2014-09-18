@@ -38,11 +38,11 @@ guide. You **must** have a working SSH connection for this to work.
 Next, run the following command.
 
 ```
-ssh -L 8080:localhost:80 vm-0.username.koding.kd.io
+ssh -L 8080:localhost:80 hostname.username.koding.io
 ```
 
-Where `vm-0` is the number of your VM, and `username` is your Koding 
-username.
+Where `hostname` is the hostname of your VM, and `username` is your 
+Koding username.
 
 After running this command, you'll simply connect to your VM.. it may 
 appear like nothing has happened. But now, like magic, try loading the 
@@ -56,7 +56,7 @@ Just like magic, you can see that your Port 8080 on **localhost** is
 returning the same thing as:
 
 ```
-http://username.kd.io:80
+http://hostname.username.koding.io:80
 ```
 
 Awesome! To connect with something like a MySQL Database Client, simply 

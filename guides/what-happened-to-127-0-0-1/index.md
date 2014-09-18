@@ -22,9 +22,10 @@ When you run web server applications they need an IP and Port to listen on.
 Many development applications will default the IP to `127.0.0.1`, the 
 **machine's** localhost. This works fine on your Laptop, because you are 
 accessing your web server *locally*. When you use a Koding VM, you typically 
-access it from the Koding Domain, which means that you're accessing your web 
-application *externally*. Meaning that connecting to `username.kd.io:3000` will 
-*not* respond with a web server running on `127.0.0.1:3000`.
+access it from the Koding Domain, which means that you're accessing your 
+web application *externally*. Meaning that connecting to 
+`hostname.username.koding.io:3000` will *not* respond with a web server 
+running on `127.0.0.1:3000`.
 
 To solve this issue, we turn to our friendly `0.0.0.0` IP. Unlike `127.0.0.1`, 
 this IP will accept connections from any source. Localhost, or external.
@@ -53,7 +54,7 @@ Next, lets visit out domain at the following address, making sure to replace
 `username` with your Koding username.
 
 ```
-http://username.kd.io:3000
+http://hostname.username.koding.io:3000
 ```
 
 As you can see from the following two images, our web server is not responding 

@@ -154,7 +154,7 @@ type `node web.js` *(remember, we named this one `web.js`)*. Once it's
 running, open up your browser and go to
 
 ```
-http://username.kd.io:3000
+http://hostname.username.koding.io:3000
 ```
 Where `username` is your Koding Username.
 

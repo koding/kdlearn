@@ -51,7 +51,13 @@ The last step is to set up a password, of your choosing, and after that to resta
     sudo htpasswd -c /etc/apache2/webdav.password <USERNAME>
     sudo service apache2 reload
 
-Just remember to restart the Apache server so that all the settings that we made so far are remembered, and you're good to go. Now, what about connecting to it? Sure. It's super simple stuff. We can check if our WebDAV works by heading over to **http://<username>.kd.io/webdav1** and then when the box pops up we just enter our username and the password we set up earlier. For local connection you can follow these steps. 
+Just remember to restart the Apache server so that all the settings that 
+we made so far are remembered, and you're good to go. Now, what about 
+connecting to it? Sure. It's super simple stuff. We can check if our 
+WebDAV works by heading over to 
+**http://<hostname>.<username>.koding.io/webdav1** and then when the box 
+pops up we just enter our username and the password we set up earlier.  
+For local connection you can follow these steps. 
 
 # On Mac OS
 
@@ -65,7 +71,7 @@ and open it, we need to add a **New Site**. ![netdrive](netdrive.png) The
 settings are as followed: 
 
   * Site Name: **Koding**
-  * Site IP or URL: **http://<username>.kd.io/webdav1**
+  * Site IP or URL: **http://<hostname>.<username>.koding.io/webdav1**
   * Server Type: **WebDav**
   * Drive: **<choose one>**
   * Account: **<username>**
@@ -82,16 +88,18 @@ On Ubuntu we can quickly test and use our newly created WebDav by using just the
 After that we connect to our WebDav like this 
     
     
-    cadaver http://<username>.kd.io/webdav1/
+    cadaver http://<hostname>.<username>.koding.io/webdav1/
 
 After the connection is established we enter our username and password and we're good to go. 
     
     
-    cadaver http://<username>.kd.io/webdav1
-    Authentication required for test on server `http://<username>.kd.io/webdav1`:
+    cadaver http://<hostname>.<username>.koding.io/webdav1
+    Authentication required for test on server 
+    `http://<hostname>.<username>.koding.io/webdav1`:
     Username: <username>
     Password: *******
     dav:/webdav1/> quit
-    Connection to `http://<username>.kd.io/webdav1` closed.
+    Connection to `http://<hostname>.<username>.koding.io/webdav1` 
+closed.
 
 That is all. If you have any issues setting up WebDav you can drop an email at [support@koding.com](mailto:support@koding.com)

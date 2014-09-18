@@ -36,7 +36,7 @@ To access your dashboard, visit your Koding Domain, which will look like
 the following address.
 
 ```
-http://username.kd.io/dash
+http://hostname.username.koding.io/dash
 ```
 
 Where `username` is your Koding Username. You will see a Dashboard, 

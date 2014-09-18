@@ -28,9 +28,10 @@ to the next step.
 
 ## Starting Nginx
 
-Your Virtual Machine comes with Apache preinstalled and configured. It's what 
-serves up the web page that you see when you visit `http://username.kd.io`. So 
-before we start Nginx, we have to stop Apache with the following command.
+Your Virtual Machine comes with Apache preinstalled and configured. It's 
+what serves up the web page that you see when you visit 
+`http://hostname.username.koding.io`. So before we start Nginx, we have 
+to stop Apache with the following command.
 
 ```
 sudo service apache2 stop
@@ -42,9 +43,9 @@ You can then start your Nginx server by using the following command.
 sudo service nginx start
 ```
 
-If you now visit your User *(or VM)* domain at `http://username.kd.io`, you'll 
-see a welcome to nginx page like the one below. This means your Nginx server is 
-up and running.
+If you now visit your User *(or VM)* domain at 
+`http://hostname.username.koding.io`, you'll see a welcome to nginx page 
+like the one below. This means your Nginx server is up and running.
 
 ![nginx welcome](nginx.png)
 

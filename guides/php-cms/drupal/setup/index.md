@@ -51,7 +51,7 @@ The configuration should include the changes below (the details of the changes a
 	server {
 	 
 	    listen   80;
-	    server_name duythien.kd.io;
+      server_name hostname.duythien.koding.io;
 	 
 	    index index.php index.html index.htm;
 	    set $root_path '/home/duythien/Web/drupal-8.x-dev';

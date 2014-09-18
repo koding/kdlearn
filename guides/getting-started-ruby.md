@@ -148,7 +148,7 @@ Once that's running, open up your browser and connect to the following
 address, replacing `username` with your Koding Username.
 
 ```
-http://username.kd.io
+http://hostname.username.koding.io
 ```
 
 Congratulations, you're running a Ruby Web server, with a hand made HTTP 

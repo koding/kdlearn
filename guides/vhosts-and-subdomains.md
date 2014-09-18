@@ -1,4 +1,6 @@
 ---
+draft: true
+
 title: Koding Subdomains and VHosts
 author: Team Koding
 date: 2014-02-21
@@ -30,13 +32,15 @@ the following code:
 
 ```xml
 <Virtualhost *:80>
-  ServerName mysubdomain.username.kd.io
+  ServerName mysubdomain.username.koding.io
   DocumentRoot /var/www/myDirectory
 </Virtualhost>
 ```
 
 There are a two things you're going to have to change here, so lets go over them.
-  * **ServerName**: The value of `ServerName` should be your full subdomain url, without the http. For example: `ServerName hello.leeolayvar.kd.io`
+  * **ServerName**: The value of `ServerName` should be your full 
+subdomain url, without the http. For example: `ServerName 
+hello.leeolayvar.koding.io`
   * **DocumentRoot**: This is the folder location that you want the subdomain to direct to. Remember that `/var/www` equals `~/Web`, so in the given example, `/var/www/myDirectory` equals `~/Web/myDirectory`. _Note:_ The DocumentRoot has to be an absolute path. Relative directories such as `/var/www/../foo` and `~/MyDirectory` will not work. If you would like to supply an directory _outside_ of `~/Web`, use your full home path, eg: `/home/leeolayvar/myNotWebDirectory`
   1. Lastly, we need to add our "site" and reload apache. Run the following two commands: 
     1. `sudo a2ensite mysubdomain`
@@ -45,13 +49,18 @@ Where `mysubdomain` is the name of the file you created before.
 
 ## Confirming
 
-To confirm you did all the steps completely, connect to `http://mysubdomain.username.kd.io` and you should see whatever you have in your directory of choice. 
+To confirm you did all the steps completely, connect to 
+`http://mysubdomain.username.koding.io` and you should see whatever you 
+have in your directory of choice. 
 
 ## Troubleshooting
 
 ### Koding 404
 
-If you load your subdomain and you encounter a Koding page that says **"404 - mysubdomain.username.kd.io does not exist."** then your domain is not linked properly to your VM. See [Domain Management](/docs/guides/domain-management/) for help with that. 
+If you load your subdomain and you encounter a Koding page that says 
+**"404 - mysubdomain.username.koding.io does not exist."** then your 
+domain is not linked properly to your VM. See [Domain 
+Management](/docs/guides/domain-management/) for help with that. 
 
 ### Apache 404
 

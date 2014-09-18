@@ -14,7 +14,7 @@ This guide will show you how to connect your Koding VM with Sublime Text via SFT
 
 - Set up SSH on your [Koding](https://koding.com) account: [http://learn.koding.com/guides/ssh-into-your-vm/](http://learn.koding.com/guides/ssh-into-your-vm/)
 - Your [Koding](https://koding.com) username
-- Your [Koding](https://koding.com) VM Number
+- Your [Koding](https://koding.com) VM Hostname
 - [Sublime Text](https://www.sublimetext.com/) 2 or 3
 
 ## Getting Down to Business
@@ -42,7 +42,7 @@ This guide will show you how to connect your Koding VM with Sublime Text via SFT
 6. Configure your `sftp-config.json` file and save it.
 
   ```
-  "host": "<vm-number>.<username>.koding.kd.io",
+  "host": "<hostname>.<username>.koding.io",
   "user": "<username>",
   "password": "<koding_password>",
   //"port": "22",

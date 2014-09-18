@@ -33,6 +33,10 @@ We unzip the file. [code]unzip prestashop_1.5.6.1.zip[/code]
 
 ### Step 3.
 
-We can now head over to the setup page and begin the installation procedure. Our link is: [code]http://[your_Koding_username].kd.io/prestashop[/code] All we have to do now is to fill in the required fields to set up the shop.
+We can now head over to the setup page and begin the installation 
+procedure. Our link is: 
+[code]http://[your_vm_hostname].[your_Koding_username].koding.io/prestashop[/code] 
+All we have to do now is to fill in the required fields to set up the 
+shop.
 
 And that's it, three simple steps to set up your e-commerce solution. As always, more Quick Tips and beginner friendly guides from [Koding](https://koding.com) coming soon, so stay tuned!

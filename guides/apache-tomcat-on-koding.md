@@ -68,7 +68,8 @@ Everything is setup now. Its time to run tomcat.
 
 If you see `Tomcat Started` message, you can now open the localhost by typing in the address bar :-
 
-    `your_koding_domain:8084` , for me its `vinayjain.kd.io:8084`
+    `your_koding_domain:8084` , for me its 
+`hostname.vinayjain.koding.io:8084`
 
 Click on the manager app button and enter your username and password you set in tomcat-users.xml.
 

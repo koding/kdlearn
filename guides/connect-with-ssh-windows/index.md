@@ -39,7 +39,9 @@ real and normal Unix SSH Config. Much easier.
 
   1. Copy the text contents of your PuTTY public key. If you are not sure what or where it is, please refer to What you will need.
   2. As in Step #2 of the Linux guide above, paste the entirety of your public key into the _SSH Keys_ section of your Koding account settings.
-  3. Start up `putty.exe` and set the _Host Name (or IP address)_ to the same VM hostname as above:`vm-Number.<username>.koding.kd.io`![PuTTY session](puttysession.png)
+  3. Start up `putty.exe` and set the _Host Name (or IP address)_ to the 
+  same VM hostname as above:`hostname.<username>.koding.io`![PuTTY 
+session](puttysession.png)
   4. In the _Category_ menu on the left, select _Data_ under _Connection_. Enter your Koding username in the _Auto-login username_ box.
   5. Select _Proxy_ under _Connection_, and change the _Proxy type_ to _Local_. Enter the following line (modified for your system) in the _Telnet command, or local proxy command_ box:`C:\your\path\to\plink.exe <username>@ssh.koding.com -nc %host:%port`![PuTTY proxy](puttyproxy.png)
   6. Go back up to the _"Session"_ settings and save this PuTTY configuration 

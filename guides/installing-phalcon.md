@@ -93,9 +93,8 @@ Create a new php file in your public web directory **/home/USERNAME/Web** (*repl
 Once this is done, you can open this file in your browser by visiting
 
 
-    http://USERNAME.kd.io/phpinfo.php 
+    http://hostname.username.koding.io/phpinfo.php 
 
-*(replace USERNAME with your Koding username)* 
 
 
 This page should show you the PHP configuration on your machine. 

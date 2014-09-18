@@ -48,7 +48,8 @@ mv ~/Web ~/Web.bkp
 ln -s ~/octopress/public ~/Web
 ```
 
-4.) Now open up `http://username.kd.io` and view your hard work!
+4.) Now open up `http://hostname.username.koding.io` and view your hard 
+work!
 
 ## All in the browser
 

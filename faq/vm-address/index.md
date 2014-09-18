@@ -13,7 +13,7 @@ your Koding Username Domain. The two must be used together. An example VM
 Address is below.
 
 ```
-unkk05c3f84e.joshmurray.kd.io
+unkk05c3f84e.joshmurray.koding.io
 ```
 
 

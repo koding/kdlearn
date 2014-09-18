@@ -104,7 +104,7 @@ Now open up a new tab and visit your Ghost Blog on your Koding domain at
 the following address.
 
 ```
-http://username.kd.io:port
+http://hostname.username.koding.io:port
 ```
 
 Where `username` is your Koding username, and `port` is the port you 
@@ -114,7 +114,7 @@ If you navigate to the following address, you can signup as Admin to your
 Ghost installation.
 
 ```
-http://username.kd.io:port/ghost
+http://hostname.username.koding.io:port/ghost
 ```
 
 ## Running Ghost on Port 80

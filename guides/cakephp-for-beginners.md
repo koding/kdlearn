@@ -19,7 +19,38 @@ Of course, CakePHP is especially easy on [Koding](https://koding.com). Developin
 
 ## Installing CakePHP Steps
 
-1.) On the homepage of CakePHP, copy the download link for the latest version of CakePHP. In this case we're going to be using [CakePHP 2.4.2](https://github.com/cakephp/cakephp/zipball/2.4.2). 2.) Open your [Koding Terminal](https://koding.com/Develop/Terminal) and type in `wget -O cake.zip ` and then paste your download link with Ctrl-Shift-V. As an example, it should look like this: `wget -O cake.zip https://github.com/cakephp/cakephp/zipball/2.4.2` 3.) On the left hand side, in the Koding FileTree, right click your file and choose Extract. This will extract your downloaded Cakezip into the directory `cake/`. Expand that directory, and you'll see a directory with a name similar to `cakephp-cakephp-f53efef`. 4.) Drag that into your `Web/` directory. You can rename this directory to "cake", or whatever you like, as this will make it easier to type in your browser. 5.) Finally lets ensure that we have Apache's mod_rewrite enabled. Run `sudo a2enmod rewrite && sudo service apache2 restart` just to be safe. If you already have mod_rewrite enabled, you can skip this step. 6.) The last step is a security step enforced by CakePHP. Open up `app/Config/core.php` and look for the following two lines. Edit the `DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi` and `76859309657453542496749683645` strings to have randomized content for your deploy. Just remember that the second string is numbers only. [code]/** * A random string used in security hashing methods. */ Configure::write('Security.salt', 'DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi'); /** * A random numeric string (digits only) used to encrypt/decrypt strings. */ Configure::write('Security.cipherSeed', '76859309657453542496749683645');[/code] 7.) That's it! Now just open up http://username.kd.io/cake in your browser, making sure to use your own username in the username url, and you'll see Cake up and running! 
+1.) On the homepage of CakePHP, copy the download link for the latest 
+version of CakePHP. In this case we're going to be using [CakePHP 
+2.4.2](https://github.com/cakephp/cakephp/zipball/2.4.2). 2.) Open your 
+[Koding Terminal](https://koding.com/Develop/Terminal) and type in `wget 
+-O cake.zip ` and then paste your download link with Ctrl-Shift-V. As an 
+example, it should look like this: `wget -O cake.zip 
+https://github.com/cakephp/cakephp/zipball/2.4.2` 3.) On the left hand 
+side, in the Koding FileTree, right click your file and choose Extract.  
+This will extract your downloaded Cakezip into the directory `cake/`.  
+Expand that directory, and you'll see a directory with a name similar to 
+`cakephp-cakephp-f53efef`. 4.) Drag that into your `Web/` directory. You 
+can rename this directory to "cake", or whatever you like, as this will 
+make it easier to type in your browser. 5.) Finally lets ensure that we 
+have Apache's mod_rewrite enabled. Run `sudo a2enmod rewrite && sudo 
+service apache2 restart` just to be safe. If you already have mod_rewrite 
+enabled, you can skip this step. 6.) The last step is a security step 
+enforced by CakePHP. Open up `app/Config/core.php` and look for the 
+following two lines. Edit the `DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi` 
+and `76859309657453542496749683645` strings to have randomized content 
+for your deploy. Just remember that the second string is numbers only.  
+
+```
+/** * A random string used in security hashing methods. */ 
+Configure::write('Security.salt', 
+'DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi'); /** * A random numeric 
+string (digits only) used to encrypt/decrypt strings. */ 
+Configure::write('Security.cipherSeed', '76859309657453542496749683645');
+```
+
+7.) That's it! Now just open up http://hostname.username.koding.io/cake 
+in your browser, making sure to use your own username in the username 
+url, and you'll see Cake up and running! 
 
 ## Can i skip some steps?
 
