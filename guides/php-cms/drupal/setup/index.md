@@ -132,7 +132,7 @@ If you haven't installed MySQL, head on over to [this tutorial
 here](/guides/installing-mysql). If everything goes fine, you should see 
 the following screen in your browser:
 
-![](https://dl.dropboxusercontent.com/u/109046499/wellcome.png)
+![](welcome.png)
 
 If you see this error  ```Writable (public download method)```, you need to run following code in the command line.
 
