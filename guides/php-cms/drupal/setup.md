@@ -3,8 +3,6 @@ title: Drupal Setup and Installation for Beginners
 author: Thien
 date: 2014-07-15
 categories: [drupal, php]
-
-template: page.toffee
 ---
 
 # Drupal Setup and Installation for Beginners
@@ -130,13 +128,15 @@ Then you'll need to create the database for Drupal, by running the following cod
 	echo 'CREATE DATABASE drupal8' | mysql -u root
 ```
 
-If you don't known password Mysql, head over to this tutorial [here](http://learn.koding.com/guides/mysql-on-koding/). If everything goes fine, you should see the following screen in your browser:
+If you haven't installed MySQL, head on over to [this tutorial 
+here](/guides/installing-mysql). If everything goes fine, you should see 
+the following screen in your browser:
 
 ![](https://dl.dropboxusercontent.com/u/109046499/wellcome.png)
 
 If you see this error  ```Writable (public download method)```, you need to run following code in the command line.
 
-```
+``
  cd $ROOT/site        #/var/www/drupal-8.x-dev/sites
  sudo chmod a+w -R default 
 

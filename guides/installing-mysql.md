@@ -3,8 +3,6 @@ title: Installing mySQL
 author: Team Koding
 date: 2014-07-30
 categories: [koding, mysql]
-
-template: page.toffee
 ---
 
 In this guide we will cover the basics on how you can install MySQL and the latest version of PHP-MySQL modules on your Koding VM. Please note, MySQL is installed by default on your Koding VM so install MySQL only if you have either uninstalled it or if your MySQL install is not working. This [guide][mysql] describes how to configure/operate your existing default install of MySQL.
