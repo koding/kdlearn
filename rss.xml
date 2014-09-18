@@ -352,52 +352,6 @@ That is all!
   </item>
   
   <item>
-    <title>Getting Started: Editing Your Profile</title>
-    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
-    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
-    <author>Team Koding</author>
-    <description>Your Koding profile is your public information page on Koding. Currently it 
-shows your Avatar, Name and Description, recent Koding activity, and in the 
-near future Badges and additional social information. In this guide we&amp;apos;ll go 
-over the basic usage of your Koding profile.
-  Getting to your Profile When you first sign up to Koding you&amp;apos;ll be presented with the Koding Activity 
-Feed (as we previously discussed). To find your profile, look in the upper 
-right of Koding, as highlighted below.
-
-Clicking on it will navigate you to your profile.
-  Avatar, Name and Description When viewing your profile for the first time, you&amp;apos;ll see that your first name 
-is set to your Koding username, and your last name and description are grey 
-text, as seen in the below image.
-
-If you double click on this grey text, you can edit that field.
-Likewise, if you double click on your Avatar, a window will pop up enabling you 
-to change your avatar. If you have one, Koding will use your 
-Gravatar by default, but the Edit UI also supports avatar uploads 
-directly to Koding.
-
-To make this process even easier, you can use the Take Photo button to use 
-your Laptop&amp;apos;s camera and take a photo right then and there!
-  Followers, Following, and Likes Below the editable profile section is a little bit of information about your 
-activity on Koding.
-
-As previously discussed in the Activity Feed guide, Following someone allows 
-you to subscribe to the content they post to the feed. The Followers number 
-shows how many users you are currently following.
-Following on the otherhand, shows how many people are following you. Finally, 
-Likes show how many of your Activity Feed submissions have been liked by Koding 
-users.
-  Badges Badges are a soon to come feature which will display achievements for your 
-Koding experience.
-The only current badge is the Staff badge. If you see that badge in a user&amp;apos;s 
-profile, they are a Koding Staff member. You&amp;apos;ll see this quite frequently, and 
-Koding takes pride in that.
-This wraps up your Koding profile. In future Getting Started guides we&amp;apos;ll be 
-discussing all things about Koding, so stay tuned!
-</description>
-  </item>
-  
-  <item>
     <title>Author A Guide: Overview and Guidelines</title>
     <link>//learn.koding.com/contribute/guidelines</link>
     <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
@@ -465,6 +419,30 @@ instructions.
 Don&amp;apos;t forget, headers with levels (## Header1, ### Header 3, and so 
 forth) should be used to group content just like you do with HTML&amp;apos;s 
 &amp;lt;h2&amp;gt;s and so forth. You can review Header Markdown here
+</description>
+  </item>
+  
+  <item>
+    <title>Author A Guide</title>
+    <link>//learn.koding.com/contribute</link>
+    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/contribute</guid>
+    <author>Team Koding</author>
+    <description>In this guide series we will go over Writing and Editing guides for Koding 
+University. We will cover every step of the process, but basic Git, 
+Github, and Markdown knowledge will be very useful.
+If you already know git, github, and markdown, here is the simple set of 
+tasks you&amp;apos;ll need to do.
+
+Review the Style Guidelines
+Fork KDLearn
+Clone your forked repo
+Find or create your files, Make your markdown edits
+Commit and push your changes to your repo
+Make a pull request of your changes, against the KDLearn Repo
+
+If you need more in depth instructions than that, please continue with 
+this series below. Thanks!
 </description>
   </item>
   
@@ -642,111 +620,6 @@ This concludes the getting started with Python guide. Thanks for reading!
   </item>
   
   <item>
-    <title>Author A Guide: Basic</title>
-    <link>//learn.koding.com/contribute/basic</link>
-    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/contribute/basic</guid>
-    <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll go over how to contribute to the Koding University 
-the easy way. We&amp;apos;ll be using Github&amp;apos;s built in editor, to make the 
-forking &amp;amp; merging process easy. If you&amp;apos;re unfamiliar with Git, but you 
-still want to contribute to Learn, this is the guide for you. So, lets 
-get started!
-  Edit on Github Each Koding guide comes with a simple &amp;quot;Edit this on Github&amp;quot; link. This 
-link directs you back to a file editor on Github. Github will 
-automatically fork the repo if you have not yet, and even create a branch 
-so that your eventual pull request does not cause any unintended 
-contributions. Lets look at how this works.
-First up, find the guide that you want to edit, and look for the 
-Improve this Guide button at the bottom of all guides.
-
-  Fork the Repository If you have not contributed before you likely do not have the repository 
-forked yet. Press the green button seen below, and Github will fork the 
-repository for you.
-
-  Make your Edits After forking, or if you already had Koding University Forked, you&amp;apos;ll be 
-presented with a text editor for the guide that you chose to edit. From 
-here, look through the guide and make your edits as you desire.
-
-Don&amp;apos;t forget that there is a preview tab as well. The guide will look 
-slightly different on Github than on Koding University; but because 
-everything is formatted in Markdown you can preview it Github to ensure 
-the correctness of your markdown syntax.
-  Propose File Changes After you have made your edits to the document, scroll down and enter a 
-title and description for the edits you&amp;apos;ve made. After you&amp;apos;re satisfied, 
-press Propose file change.
-
-This will create a new branch of your Fork and store your changes into 
-that branch. To repeat, your changes have been added to your Fork, 
-not to the official Koding University repository yet. To do that, you 
-need to create a Pull Request.
-  Create Pull Request A pull request lets Koding Staff review and merge your changes into the 
-official repository. To do that, after proposing your file changes you 
-will see a page like the one below.
-
-This is your branch, on your forked repository. If you press the Create 
-Pull Request button, your changes in that branch will be sent to the 
-official repository to be reviewed and merged in.
-This is it! You&amp;apos;ve gone from the guide on University, to editing it and 
-submitting your changes for review, all without leaving your browser or 
-using any complex Git commands.
-  Creating a New Guide The above process is nice and simple, but there&amp;apos;s one core thing missing. 
-We didn&amp;apos;t create a guide, we only edited a guide. What if we want to 
-create a new guide? Luckily this Basic workflow also works with new 
-guides! Lets go over that real quick.
-First, click here. That link will send you to the Github 
-editor with no file loaded. You can write in the editor, add a file name, 
-and propose changes just like the above instructions. Remember to name 
-your file with the .md extension, and adhere to the 
-Guidelines.
-Because you&amp;apos;re creating a new file though, you want to make sure and add 
-the proper metadata to the file. Copy the following code, and place it 
-into the editor.
----
-author: Your Name
-username: yourUsername
-date: 2014-07-31
-categories: [nginx]
----
-
-Fill in Your Name with your name, and yourUsername with your Koding 
-Username. The date field should be formatted in YYYY-MM-DD format, and 
-the categories list is just a comma separated list of strings.
-
-Once that&amp;apos;s all taken care of, start writing your guide! Once you&amp;apos;re 
-done, follow the Propose and Pull Request instructions above, as they are 
-identical.
-You should note that with this method, you cannot add images to the 
-repository. For that to work, have a look at the next section which uses 
-Koding&amp;apos;s Editor and Git to make changes to this Koding University.
-</description>
-  </item>
-  
-  <item>
-    <title>Author A Guide</title>
-    <link>//learn.koding.com/contribute</link>
-    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/contribute</guid>
-    <author>Team Koding</author>
-    <description>In this guide series we will go over Writing and Editing guides for Koding 
-University. We will cover every step of the process, but basic Git, 
-Github, and Markdown knowledge will be very useful.
-If you already know git, github, and markdown, here is the simple set of 
-tasks you&amp;apos;ll need to do.
-
-Review the Style Guidelines
-Fork KDLearn
-Clone your forked repo
-Find or create your files, Make your markdown edits
-Commit and push your changes to your repo
-Make a pull request of your changes, against the KDLearn Repo
-
-If you need more in depth instructions than that, please continue with 
-this series below. Thanks!
-</description>
-  </item>
-  
-  <item>
     <title>Author A Guide: Previewing</title>
     <link>//learn.koding.com/contribute/previewing</link>
     <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
@@ -825,43 +698,129 @@ Ready to build a Django app? Check out the Django documention to continue your a
   </item>
   
   <item>
-    <title>How to setup an SSH Tunnel in Unix</title>
-    <link>//learn.koding.com/guides/ssh-tunneling</link>
-    <pubDate>2014-08-9</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/ssh-tunneling</guid>
+    <title>Getting Started: Editing Your Profile</title>
+    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
+    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
     <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll go over what SSH Tunneling is, what it&amp;apos;s used for, 
-and how to set one up on your Koding VM. So, lets get started!
-  What is SSH Tunneling? SSH Tunneling is the process of sending and receiving TCP and UDP packets 
-through an SSH Connection. This enables you to bypass proxies and go 
-directly to your VM, with whatever data/etc that you need.
-  Why would I want to SSH Tunnel? Koding Virtual Machines do not have direct IP access. They proxy http 
-connections from your domain, to the machine itself. Note that only HTTP 
-is proxied. This is why when you SSH into your VM, you set up a special 
-SSH config to run your connection through ssh.koding.com.
-Because of this Proxy, some things you may want to do on Koding, such as 
-connecting a MySQL Database Client directly to your MySQL Server becomes 
-impossible via the username domains.
-To solve this, you use SSH Tunneling to connect to servers directly on 
-your VM, from your local machine. Lets take a look at how this is done.
-  Using a SSH Tunnel First up, make sure you have gone through the SSH Guide, and 
-can successfully connect to your VM using the steps outlined in that 
-guide. You must have a working SSH connection for this to work.
-Next, run the following command.
-ssh -L 8080:localhost:80 vm-0.username.koding.kd.io
-Where vm-0 is the number of your VM, and username is your Koding 
-username.
-After running this command, you&amp;apos;ll simply connect to your VM.. it may 
-appear like nothing has happened. But now, like magic, try loading the 
-following URL into your browser.
-http://localhost:8080/
-Just like magic, you can see that your Port 8080 on localhost is 
-returning the same thing as:
-http://username.kd.io:80
-Awesome! To connect with something like a MySQL Database Client, simply 
-create an SSH tunnel with the appropriate Port on the Virtual 
-Machine, and any port you&amp;apos;d like for your localhost. Then connect to 
-your localhost with your MySQL Client!
+    <description>Your Koding profile is your public information page on Koding. Currently it 
+shows your Avatar, Name and Description, recent Koding activity, and in the 
+near future Badges and additional social information. In this guide we&amp;apos;ll go 
+over the basic usage of your Koding profile.
+  Getting to your Profile When you first sign up to Koding you&amp;apos;ll be presented with the Koding Activity 
+Feed (as we previously discussed). To find your profile, look in the upper 
+right of Koding, as highlighted below.
+
+Clicking on it will navigate you to your profile.
+  Avatar, Name and Description When viewing your profile for the first time, you&amp;apos;ll see that your first name 
+is set to your Koding username, and your last name and description are grey 
+text, as seen in the below image.
+
+If you double click on this grey text, you can edit that field.
+Likewise, if you double click on your Avatar, a window will pop up enabling you 
+to change your avatar. If you have one, Koding will use your 
+Gravatar by default, but the Edit UI also supports avatar uploads 
+directly to Koding.
+
+To make this process even easier, you can use the Take Photo button to use 
+your Laptop&amp;apos;s camera and take a photo right then and there!
+  Followers, Following, and Likes Below the editable profile section is a little bit of information about your 
+activity on Koding.
+
+As previously discussed in the Activity Feed guide, Following someone allows 
+you to subscribe to the content they post to the feed. The Followers number 
+shows how many users you are currently following.
+Following on the otherhand, shows how many people are following you. Finally, 
+Likes show how many of your Activity Feed submissions have been liked by Koding 
+users.
+  Badges Badges are a soon to come feature which will display achievements for your 
+Koding experience.
+The only current badge is the Staff badge. If you see that badge in a user&amp;apos;s 
+profile, they are a Koding Staff member. You&amp;apos;ll see this quite frequently, and 
+Koding takes pride in that.
+This wraps up your Koding profile. In future Getting Started guides we&amp;apos;ll be 
+discussing all things about Koding, so stay tuned!
+</description>
+  </item>
+  
+  <item>
+    <title>Author A Guide: Basic</title>
+    <link>//learn.koding.com/contribute/basic</link>
+    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/contribute/basic</guid>
+    <author>Team Koding</author>
+    <description>In this guide we&amp;apos;ll go over how to contribute to the Koding University 
+the easy way. We&amp;apos;ll be using Github&amp;apos;s built in editor, to make the 
+forking &amp;amp; merging process easy. If you&amp;apos;re unfamiliar with Git, but you 
+still want to contribute to Learn, this is the guide for you. So, lets 
+get started!
+  Edit on Github Each Koding guide comes with a simple &amp;quot;Edit this on Github&amp;quot; link. This 
+link directs you back to a file editor on Github. Github will 
+automatically fork the repo if you have not yet, and even create a branch 
+so that your eventual pull request does not cause any unintended 
+contributions. Lets look at how this works.
+First up, find the guide that you want to edit, and look for the 
+Improve this Guide button at the bottom of all guides.
+
+  Fork the Repository If you have not contributed before you likely do not have the repository 
+forked yet. Press the green button seen below, and Github will fork the 
+repository for you.
+
+  Make your Edits After forking, or if you already had Koding University Forked, you&amp;apos;ll be 
+presented with a text editor for the guide that you chose to edit. From 
+here, look through the guide and make your edits as you desire.
+
+Don&amp;apos;t forget that there is a preview tab as well. The guide will look 
+slightly different on Github than on Koding University; but because 
+everything is formatted in Markdown you can preview it Github to ensure 
+the correctness of your markdown syntax.
+  Propose File Changes After you have made your edits to the document, scroll down and enter a 
+title and description for the edits you&amp;apos;ve made. After you&amp;apos;re satisfied, 
+press Propose file change.
+
+This will create a new branch of your Fork and store your changes into 
+that branch. To repeat, your changes have been added to your Fork, 
+not to the official Koding University repository yet. To do that, you 
+need to create a Pull Request.
+  Create Pull Request A pull request lets Koding Staff review and merge your changes into the 
+official repository. To do that, after proposing your file changes you 
+will see a page like the one below.
+
+This is your branch, on your forked repository. If you press the Create 
+Pull Request button, your changes in that branch will be sent to the 
+official repository to be reviewed and merged in.
+This is it! You&amp;apos;ve gone from the guide on University, to editing it and 
+submitting your changes for review, all without leaving your browser or 
+using any complex Git commands.
+  Creating a New Guide The above process is nice and simple, but there&amp;apos;s one core thing missing. 
+We didn&amp;apos;t create a guide, we only edited a guide. What if we want to 
+create a new guide? Luckily this Basic workflow also works with new 
+guides! Lets go over that real quick.
+First, click here. That link will send you to the Github 
+editor with no file loaded. You can write in the editor, add a file name, 
+and propose changes just like the above instructions. Remember to name 
+your file with the .md extension, and adhere to the 
+Guidelines.
+Because you&amp;apos;re creating a new file though, you want to make sure and add 
+the proper metadata to the file. Copy the following code, and place it 
+into the editor.
+---
+author: Your Name
+username: yourUsername
+date: 2014-07-31
+categories: [nginx]
+---
+
+Fill in Your Name with your name, and yourUsername with your Koding 
+Username. The date field should be formatted in YYYY-MM-DD format, and 
+the categories list is just a comma separated list of strings.
+
+Once that&amp;apos;s all taken care of, start writing your guide! Once you&amp;apos;re 
+done, follow the Propose and Pull Request instructions above, as they are 
+identical.
+You should note that with this method, you cannot add images to the 
+repository. For that to work, have a look at the next section which uses 
+Koding&amp;apos;s Editor and Git to make changes to this Koding University.
 </description>
   </item>
   
@@ -1058,79 +1017,6 @@ routes, middleware, and finally templates. Thanks for reading!
   </item>
   
   <item>
-    <title>Ghost Blog Installation</title>
-    <link>//learn.koding.com/guides/ghost-installation</link>
-    <pubDate>"2014-08-01T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/ghost-installation</guid>
-    <author>Team Koding</author>
-    <description>In this article we will go over the installation process for the awesome 
-new blogging software, Ghost. Installation is quick 
-and easy, and just requires a few configuration edits, making this great 
-for beginners. So, lets get started!
-  What is Ghost? Ghost is an awesome new blog software written with &amp;#x201C;Just Blogging&amp;#x201D; in 
-mind. Think WordPress without the complexity, bringing blogging back to 
-it&amp;#x2019;s roots, so to say. This is all well and good, but with any product 
-that is so new there is always confusion on how to install, develop, and 
-run it.
-So lets try and resolve some of that confusion. Lets go over the simple 
-process of setting up Ghost on Koding so you can 
-learn it, toy with it, develop with it, and create your Ghost blog to be 
-exactly what you want.
-  Downloading Ghost We&amp;apos;re going to use the Koding Terminal to download Ghost, so 
-visit the [Ghost Download][download-page] and look for the download link.Copy the url.
-At the time of writing this guide, the download url is: 
-https://ghost.org/zip/ghost-0.4.2.zip (This version is likely 
-outdated, please visit the download page and get the most updated link.)
-Now, go to your Terminal and type in the following commands.
-mkdir ghost
-cd ghost
-wget [ghost-zip-url]
-Replace [ghost-zip-url] with the full URL of the zip file that you 
-copied above.
-  Unzipping Ghost The download is in zip format, so we need to unzip it. Type in the 
-following command.
-unzip [ghost-zip-name]
-  Installing Dependencies Next, we need to install the dependencies.
-npm install --production
-This step will take a minute or two.
-  Edit the config Next up, open up the Ace Editor and double click your ghost 
-directory to expand it. Right click, and rename, the config.example.js 
-file to config.js.
-On line 36, look for the following section:
-        server: {
-            // Host to be passed to node&amp;apos;s `net.Server#listen()`
-            host: &amp;apos;127.0.0.1&amp;apos;,
-            // Port to be passed to node&amp;apos;s `net.Server#listen()`, for 
-iisnode set this to `process.env.PORT`
-            port: &amp;apos;2368&amp;apos;
-        },
-
-Replace 127.0.0.1 with 0.0.0.0, and change the Port to whichever 
-you&amp;apos;d like to use. Save the file with Ctrl-s.
-  Starting Ghost Go back to your Terminal and type in the following command to 
-start your Ghost Blog.
-npm start
-Note: If you had previously closed your Terminal, you&amp;apos;ll need to navigate 
-into the ghost directory again, with cd ghost.
-  Visiting your Ghost Blog Now open up a new tab and visit your Ghost Blog on your Koding domain at 
-the following address.
-http://username.kd.io:port
-Where username is your Koding username, and port is the port you 
-chose above.
-If you navigate to the following address, you can signup as Admin to your 
-Ghost installation.
-http://username.kd.io:port/ghost
-  Running Ghost on Port 80 If you&amp;apos;d like to run Ghost on the default Port 80, you&amp;apos;ll have to Stop 
-Apache, and start Ghost with sudo. Here are the commands to do this.
-sudo service apache2 stop
-sudo npm start
-Remember that yuor Sudo password is the password you signed up to Koding 
-with. This should be typed from the Ghost installation directory.
-And that&amp;apos;s it! You should now have a Ghost installation up and running.Happy Blogging!
-</description>
-  </item>
-  
-  <item>
     <title>Getting Started with NodeJS</title>
     <link>//learn.koding.com/guides/getting-started-nodejs</link>
     <pubDate>"2014-08-01T00:00:00.000Z"</pubDate>
@@ -1250,60 +1136,75 @@ fun with Node!
   </item>
   
   <item>
-    <title>Koding with Sublime Text</title>
-    <link>//learn.koding.com/guides/koding-with-sublime-text</link>
-    <pubDate>"2014-07-31T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/koding-with-sublime-text</guid>
-    <author>Granger Lang</author>
-    <description>This guide will show you how to connect your Koding VM with Sublime Text via SFTP.
-  What you will need 
-Set up SSH on your Koding account: http://learn.koding.com/guides/ssh-into-your-vm/
-Your Koding username
-Your Koding VM Number
-Sublime Text 2 or 3
+    <title>Ghost Blog Installation</title>
+    <link>//learn.koding.com/guides/ghost-installation</link>
+    <pubDate>"2014-08-01T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/ghost-installation</guid>
+    <author>Team Koding</author>
+    <description>In this article we will go over the installation process for the awesome 
+new blogging software, Ghost. Installation is quick 
+and easy, and just requires a few configuration edits, making this great 
+for beginners. So, lets get started!
+  What is Ghost? Ghost is an awesome new blog software written with &amp;#x201C;Just Blogging&amp;#x201D; in 
+mind. Think WordPress without the complexity, bringing blogging back to 
+it&amp;#x2019;s roots, so to say. This is all well and good, but with any product 
+that is so new there is always confusion on how to install, develop, and 
+run it.
+So lets try and resolve some of that confusion. Lets go over the simple 
+process of setting up Ghost on Koding so you can 
+learn it, toy with it, develop with it, and create your Ghost blog to be 
+exactly what you want.
+  Downloading Ghost We&amp;apos;re going to use the Koding Terminal to download Ghost, so 
+visit the [Ghost Download][download-page] and look for the download link.Copy the url.
+At the time of writing this guide, the download url is: 
+https://ghost.org/zip/ghost-0.4.2.zip (This version is likely 
+outdated, please visit the download page and get the most updated link.)
+Now, go to your Terminal and type in the following commands.
+mkdir ghost
+cd ghost
+wget [ghost-zip-url]
+Replace [ghost-zip-url] with the full URL of the zip file that you 
+copied above.
+  Unzipping Ghost The download is in zip format, so we need to unzip it. Type in the 
+following command.
+unzip [ghost-zip-name]
+  Installing Dependencies Next, we need to install the dependencies.
+npm install --production
+This step will take a minute or two.
+  Edit the config Next up, open up the Ace Editor and double click your ghost 
+directory to expand it. Right click, and rename, the config.example.js 
+file to config.js.
+On line 36, look for the following section:
+        server: {
+            // Host to be passed to node&amp;apos;s `net.Server#listen()`
+            host: &amp;apos;127.0.0.1&amp;apos;,
+            // Port to be passed to node&amp;apos;s `net.Server#listen()`, for 
+iisnode set this to `process.env.PORT`
+            port: &amp;apos;2368&amp;apos;
+        },
 
-  Getting Down to Business 
-Download Package Control and use the Package Control: Install Package command from the command palette. The command palette is opened via ctrl+shift+p on Windows and Linux, and cmd+shift+p on OS X.
-
-
-Once you run the Package Control: Install Package command, a list of packages will appear. Type in SFTP and hit enter. Using Package Control ensures Sublime SFTP will stay up to date automatically.
-
-
-Open the folder that you want to sync with your VM using Sublime Text
-
-
-Right click the folder in the sidebar and select SFTP/FTP -&amp;gt; Map to Remote
-
-
-You should now see sftp-config.json opened.
-
-
-Configure your sftp-config.json file and save it.
-&amp;quot;host&amp;quot;: &amp;quot;&amp;lt;vm-number&amp;gt;.&amp;lt;username&amp;gt;.koding.kd.io&amp;quot;,
-&amp;quot;user&amp;quot;: &amp;quot;&amp;lt;username&amp;gt;&amp;quot;,
-&amp;quot;password&amp;quot;: &amp;quot;&amp;lt;koding_password&amp;gt;&amp;quot;,
-//&amp;quot;port&amp;quot;: &amp;quot;22&amp;quot;,
-
-&amp;quot;remote_path&amp;quot;: &amp;quot;/home/&amp;lt;username&amp;gt;/&amp;quot;,
-
-Modify the other configurations if you wish. I personally find the option to upload_on_save very handy.
-
-
-Right click the folder, select SFTP/FTP. You will now see many more options than before.
-
-
-(IMPORTANT) Chose whether you want to Sync Local -&amp;gt; Remote or Sync Remote -&amp;gt; Local. Be very careful about which you choose.
-Sync Local -&amp;gt; Remote overwrites what you have in your remote directory that you specified in you sftp-config.json file with what you have in your local directory.
-Sync Remote -&amp;gt; Local overwrites what you have in your local directory with what you have in your remote directory that you specified in you sftp-config.json file.
-
-
-(IMPORTANT) Check what is about to be performed in the box below before confirming your actions!
-
-
-And there you have it, a folder synced with your Koding VM.
-
-
-
+Replace 127.0.0.1 with 0.0.0.0, and change the Port to whichever 
+you&amp;apos;d like to use. Save the file with Ctrl-s.
+  Starting Ghost Go back to your Terminal and type in the following command to 
+start your Ghost Blog.
+npm start
+Note: If you had previously closed your Terminal, you&amp;apos;ll need to navigate 
+into the ghost directory again, with cd ghost.
+  Visiting your Ghost Blog Now open up a new tab and visit your Ghost Blog on your Koding domain at 
+the following address.
+http://username.kd.io:port
+Where username is your Koding username, and port is the port you 
+chose above.
+If you navigate to the following address, you can signup as Admin to your 
+Ghost installation.
+http://username.kd.io:port/ghost
+  Running Ghost on Port 80 If you&amp;apos;d like to run Ghost on the default Port 80, you&amp;apos;ll have to Stop 
+Apache, and start Ghost with sudo. Here are the commands to do this.
+sudo service apache2 stop
+sudo npm start
+Remember that yuor Sudo password is the password you signed up to Koding 
+with. This should be typed from the Ghost installation directory.
+And that&amp;apos;s it! You should now have a Ghost installation up and running.Happy Blogging!
 </description>
   </item>
   
@@ -1359,6 +1260,64 @@ sudo service nginx restart
 If you visit your domain again you&amp;apos;ll see the same ~/Web files that you are 
 familiar with. You now have an Nginx server up and running, and serving your 
 Web files. Enjoy!
+</description>
+  </item>
+  
+  <item>
+    <title>Koding with Sublime Text</title>
+    <link>//learn.koding.com/guides/koding-with-sublime-text</link>
+    <pubDate>"2014-07-31T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/koding-with-sublime-text</guid>
+    <author>Granger Lang</author>
+    <description>This guide will show you how to connect your Koding VM with Sublime Text via SFTP.
+  What you will need 
+Set up SSH on your Koding account: http://learn.koding.com/guides/ssh-into-your-vm/
+Your Koding username
+Your Koding VM Number
+Sublime Text 2 or 3
+
+  Getting Down to Business 
+Download Package Control and use the Package Control: Install Package command from the command palette. The command palette is opened via ctrl+shift+p on Windows and Linux, and cmd+shift+p on OS X.
+
+
+Once you run the Package Control: Install Package command, a list of packages will appear. Type in SFTP and hit enter. Using Package Control ensures Sublime SFTP will stay up to date automatically.
+
+
+Open the folder that you want to sync with your VM using Sublime Text
+
+
+Right click the folder in the sidebar and select SFTP/FTP -&amp;gt; Map to Remote
+
+
+You should now see sftp-config.json opened.
+
+
+Configure your sftp-config.json file and save it.
+&amp;quot;host&amp;quot;: &amp;quot;&amp;lt;vm-number&amp;gt;.&amp;lt;username&amp;gt;.koding.kd.io&amp;quot;,
+&amp;quot;user&amp;quot;: &amp;quot;&amp;lt;username&amp;gt;&amp;quot;,
+&amp;quot;password&amp;quot;: &amp;quot;&amp;lt;koding_password&amp;gt;&amp;quot;,
+//&amp;quot;port&amp;quot;: &amp;quot;22&amp;quot;,
+
+&amp;quot;remote_path&amp;quot;: &amp;quot;/home/&amp;lt;username&amp;gt;/&amp;quot;,
+
+Modify the other configurations if you wish. I personally find the option to upload_on_save very handy.
+
+
+Right click the folder, select SFTP/FTP. You will now see many more options than before.
+
+
+(IMPORTANT) Chose whether you want to Sync Local -&amp;gt; Remote or Sync Remote -&amp;gt; Local. Be very careful about which you choose.
+Sync Local -&amp;gt; Remote overwrites what you have in your remote directory that you specified in you sftp-config.json file with what you have in your local directory.
+Sync Remote -&amp;gt; Local overwrites what you have in your local directory with what you have in your remote directory that you specified in you sftp-config.json file.
+
+
+(IMPORTANT) Check what is about to be performed in the box below before confirming your actions!
+
+
+And there you have it, a folder synced with your Koding VM.
+
+
+
 </description>
   </item>
   
@@ -1430,24 +1389,6 @@ That&amp;apos;s it for the Drupal on Koding guide! Have fun!
   </item>
   
   <item>
-    <title>CodeIgniter Guide</title>
-    <link>//learn.koding.com/guides/codeigniter-kdapp</link>
-    <pubDate>"2014-07-29T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/codeigniter-kdapp</guid>
-    <author>Granger Lang</author>
-    <description>To install CodeIgniter on Koding, run the CodeIgniter Installer App. [Note: you have to be 
-logged into your Koding account in order to run the app.]
-
-This is what you&amp;apos;ll see when you launch the app:
-
-
-Once your installation is complete, this is what you should see when clicking on the presented link: 
-
-
-</description>
-  </item>
-  
-  <item>
     <title>Apache Tomcat On Koding</title>
     <link>//learn.koding.com/guides/apache-tomcat-on-koding</link>
     <pubDate>"2014-07-29T00:00:00.000Z"</pubDate>
@@ -1478,6 +1419,24 @@ If you see Tomcat Started message, you can now open the localhost by typing in t
 `your_koding_domain:8084` , for me its `vinayjain.kd.io:8084`
 Click on the manager app button and enter your username and password you set in tomcat-users.xml.
 Congratulations, you have Apache Tomcat up and running on your Koding VM. Deploy the .war file of your Java app in tomcat and run it.
+</description>
+  </item>
+  
+  <item>
+    <title>CodeIgniter Guide</title>
+    <link>//learn.koding.com/guides/codeigniter-kdapp</link>
+    <pubDate>"2014-07-29T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/codeigniter-kdapp</guid>
+    <author>Granger Lang</author>
+    <description>To install CodeIgniter on Koding, run the CodeIgniter Installer App. [Note: you have to be 
+logged into your Koding account in order to run the app.]
+
+This is what you&amp;apos;ll see when you launch the app:
+
+
+Once your installation is complete, this is what you should see when clicking on the presented link: 
+
+
 </description>
   </item>
   
@@ -1687,6 +1646,47 @@ This has been a beginner guide from Koding. As always, more Quick Tips and begin
   </item>
   
   <item>
+    <title>How to setup an SSH Tunnel in Unix</title>
+    <link>//learn.koding.com/guides/ssh-tunneling</link>
+    <pubDate>2014-08-9</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/ssh-tunneling</guid>
+    <author>Team Koding</author>
+    <description>In this guide we&amp;apos;ll go over what SSH Tunneling is, what it&amp;apos;s used for, 
+and how to set one up on your Koding VM. So, lets get started!
+  What is SSH Tunneling? SSH Tunneling is the process of sending and receiving TCP and UDP packets 
+through an SSH Connection. This enables you to bypass proxies and go 
+directly to your VM, with whatever data/etc that you need.
+  Why would I want to SSH Tunnel? Koding Virtual Machines do not have direct IP access. They proxy http 
+connections from your domain, to the machine itself. Note that only HTTP 
+is proxied. This is why when you SSH into your VM, you set up a special 
+SSH config to run your connection through ssh.koding.com.
+Because of this Proxy, some things you may want to do on Koding, such as 
+connecting a MySQL Database Client directly to your MySQL Server becomes 
+impossible via the username domains.
+To solve this, you use SSH Tunneling to connect to servers directly on 
+your VM, from your local machine. Lets take a look at how this is done.
+  Using a SSH Tunnel First up, make sure you have gone through the SSH Guide, and 
+can successfully connect to your VM using the steps outlined in that 
+guide. You must have a working SSH connection for this to work.
+Next, run the following command.
+ssh -L 8080:localhost:80 vm-0.username.koding.kd.io
+Where vm-0 is the number of your VM, and username is your Koding 
+username.
+After running this command, you&amp;apos;ll simply connect to your VM.. it may 
+appear like nothing has happened. But now, like magic, try loading the 
+following URL into your browser.
+http://localhost:8080/
+Just like magic, you can see that your Port 8080 on localhost is 
+returning the same thing as:
+http://username.kd.io:80
+Awesome! To connect with something like a MySQL Database Client, simply 
+create an SSH tunnel with the appropriate Port on the Virtual 
+Machine, and any port you&amp;apos;d like for your localhost. Then connect to 
+your localhost with your MySQL Client!
+</description>
+  </item>
+  
+  <item>
     <title>Use Your Favorite Desktop Code Editor with Koding</title>
     <link>//learn.koding.com/guides/dropbox-for-file-sync</link>
     <pubDate>"2014-07-14T00:00:00.000Z"</pubDate>
@@ -1790,6 +1790,42 @@ certainly be different than what was used in this example.
   </item>
   
   <item>
+    <title>Where is my Web Server Root?</title>
+    <link>//learn.koding.com/guides/where-is-my-webserver-root</link>
+    <pubDate>"2014-07-09T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/where-is-my-webserver-root</guid>
+    <author>Team Koding</author>
+    <description>Koding VMs come with Apache preconfigured and serve a sample site to get you 
+started. The files for this site are found in what is typically called your 
+Web Server Root. This is the directory that Apache is serving up files from, 
+and it is located within your Home directory, under the Web directory. The 
+full path being:
+/home/username/Web
+Replace username with your username.
+You can modify the contents of this directory with the Koding 
+Terminal, or the Ace Editor. In this example, we&amp;apos;ll use Ace 
+to browse the files with the FileTree.
+First, open up Ace. In the left hand side you&amp;apos;ll see a FileTree, with a 
+directory called Web. Double click the Web folder to expand it. Your FileTree 
+should look something like this:
+
+Those files are a series of example pages, and they&amp;apos;re being served by Apache 
+on your Koding Domain. You can view this site by visiting your Koding Domain, 
+at:
+http://username.kd.io
+Where username is your Koding username. You should see something like this:
+
+You&amp;apos;ll notice that the PHP, Python, Perl, and Ruby links are actually files 
+being generated from that language. As an example, the python.py file is 
+being served up by Apache, with the aid of Apache&amp;apos;s mod_python module. This 
+serves to illustrate that this is a real Apache server, and you can use it 
+just like you expect.
+You should now understand where your Web Server Root is, and how to access it 
+from the Web to develop and share your web applications. Happy Koding!
+</description>
+  </item>
+  
+  <item>
     <title>Elixir on Koding</title>
     <link>//learn.koding.com/guides/elixir-on-koding</link>
     <pubDate>"2014-07-09T00:00:00.000Z"</pubDate>
@@ -1854,42 +1890,6 @@ Elixir is now updated!
   </item>
   
   <item>
-    <title>Where is my Web Server Root?</title>
-    <link>//learn.koding.com/guides/where-is-my-webserver-root</link>
-    <pubDate>"2014-07-09T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/where-is-my-webserver-root</guid>
-    <author>Team Koding</author>
-    <description>Koding VMs come with Apache preconfigured and serve a sample site to get you 
-started. The files for this site are found in what is typically called your 
-Web Server Root. This is the directory that Apache is serving up files from, 
-and it is located within your Home directory, under the Web directory. The 
-full path being:
-/home/username/Web
-Replace username with your username.
-You can modify the contents of this directory with the Koding 
-Terminal, or the Ace Editor. In this example, we&amp;apos;ll use Ace 
-to browse the files with the FileTree.
-First, open up Ace. In the left hand side you&amp;apos;ll see a FileTree, with a 
-directory called Web. Double click the Web folder to expand it. Your FileTree 
-should look something like this:
-
-Those files are a series of example pages, and they&amp;apos;re being served by Apache 
-on your Koding Domain. You can view this site by visiting your Koding Domain, 
-at:
-http://username.kd.io
-Where username is your Koding username. You should see something like this:
-
-You&amp;apos;ll notice that the PHP, Python, Perl, and Ruby links are actually files 
-being generated from that language. As an example, the python.py file is 
-being served up by Apache, with the aid of Apache&amp;apos;s mod_python module. This 
-serves to illustrate that this is a real Apache server, and you can use it 
-just like you expect.
-You should now understand where your Web Server Root is, and how to access it 
-from the Web to develop and share your web applications. Happy Koding!
-</description>
-  </item>
-  
-  <item>
     <title>Sync files using Google Drive</title>
     <link>//learn.koding.com/guides/sync-files-google-drive</link>
     <pubDate>"2014-07-08T00:00:00.000Z"</pubDate>
@@ -1948,36 +1948,6 @@ folks!
   </item>
   
   <item>
-    <title>Updating Node.js on your VM</title>
-    <link>//learn.koding.com/guides/updating-nodejs-on-your-vm</link>
-    <pubDate>"2014-06-27T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/updating-nodejs-on-your-vm</guid>
-    <author>Darryl Dias</author>
-    <description>Your Koding VM is powered by Ubuntu 13.10, by default your Koding VM comes pre-installed with the Node 0.10.18 that is the current stable version of Node.js. available in the official Ubuntu repository. We can update to the latest stable version of Node.js available for Ubuntu 13.10 by adding the official Node.js PPA to our local sources list and running a dist-upgrade to switch to the latest stable version.
-The Official PPA is updated regularly and is maintained by Chris Lea
-  Instructions Adding the official Node.js PPA
-sudo add-apt-repository ppa:chris-lea/node.js
-
-Updating the local package database and sources list.
-sudo apt-get update
-
-Updating to the latest stable build of Node.js available for Ubuntu 13.10. This will update all the packages that need to update and will also update your Node.js package.
-sudo apt-get dist-upgrade
-
-If you had deleted Node.js from your VM, you can install it by entering the command below. The PPA installs NPM as a part of nodejs and does not require you to install NPM seperately.
-sudo apt-get install nodejs
-
-Check the version of Node.js after installing. 
-node --version
-
-The example output should look like.
-v0.10.25
-
-Now we have the latest stable version of Node.js installed on your VM.
-</description>
-  </item>
-  
-  <item>
     <title>Installing Phalcon on Koding</title>
     <link>//learn.koding.com/guides/installing-phalcon</link>
     <pubDate>"2014-06-27T00:00:00.000Z"</pubDate>
@@ -2017,6 +1987,36 @@ http://USERNAME.kd.io/phpinfo.php
 This page should show you the PHP configuration on your machine. 
 One of the section contains information about Phalcon (search on the page for phalcon by pressing Ctrl + F). 
 If you can see this section, it means that Phalcon has been installed on your machine and you can start using it right away!
+</description>
+  </item>
+  
+  <item>
+    <title>Updating Node.js on your VM</title>
+    <link>//learn.koding.com/guides/updating-nodejs-on-your-vm</link>
+    <pubDate>"2014-06-27T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/updating-nodejs-on-your-vm</guid>
+    <author>Darryl Dias</author>
+    <description>Your Koding VM is powered by Ubuntu 13.10, by default your Koding VM comes pre-installed with the Node 0.10.18 that is the current stable version of Node.js. available in the official Ubuntu repository. We can update to the latest stable version of Node.js available for Ubuntu 13.10 by adding the official Node.js PPA to our local sources list and running a dist-upgrade to switch to the latest stable version.
+The Official PPA is updated regularly and is maintained by Chris Lea
+  Instructions Adding the official Node.js PPA
+sudo add-apt-repository ppa:chris-lea/node.js
+
+Updating the local package database and sources list.
+sudo apt-get update
+
+Updating to the latest stable build of Node.js available for Ubuntu 13.10. This will update all the packages that need to update and will also update your Node.js package.
+sudo apt-get dist-upgrade
+
+If you had deleted Node.js from your VM, you can install it by entering the command below. The PPA installs NPM as a part of nodejs and does not require you to install NPM seperately.
+sudo apt-get install nodejs
+
+Check the version of Node.js after installing. 
+node --version
+
+The example output should look like.
+v0.10.25
+
+Now we have the latest stable version of Node.js installed on your VM.
 </description>
   </item>
   
@@ -2349,54 +2349,6 @@ This brings us right into the next page of this series, the Activity Feed!
   </item>
   
   <item>
-    <title>Getting Started: The Activity Feed</title>
-    <link>//learn.koding.com/guides/getting-started/activity-feed</link>
-    <pubDate>"2014-05-30T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/activity-feed</guid>
-    <author>Team Koding</author>
-    <description>The Activity Feed is the central location for discussion on Koding. A public or 
-private message board, with markdown support, previewing, hashtag topics and 
-more, it&amp;apos;s a central component to Koding&amp;apos;s Social experience.
-
-  Posting and Formatting To post to the activity feed, find the input box in the top of the page.
-
-Simply type something in, and press the green submit button. Just plain text 
-can get a bit boring though, so Koding supports full 
-Markdown, as seen below:
-
-  Previewing To preview your post, simply press the little eye on the right side of the 
-input box. Your Markdown will be rendered and highlighted appropriately, as 
-seen below:
-
-  Tagging Tagging your content is important. It allows us to categorize our content, 
-which makes it easier to search and more likely to be seen by people who follow 
-those topics.
-When you type a hash character # followed by characters, a list of similar 
-topics will popup. Keep typing and it will refine the list. At any time you can 
-choose an existing topic, or keep your own.
-
-In the above image i have half typed the tag #markdown. You can see the 
-Markdown tag, as well as a handful of other tags.
-  Searching Searching the activity feed gets its own dedicated spot in the upper right of 
-the Koding UI.
-
-Searching the activity feed will search for the contents of a post, as well as 
-topics.
-  Topics Topics can also be browsed from the Topics page.The topics page contains a searchable and browsable list of all of the Koding 
-topics ever created.
-
-As seen in the above image, the topics page has the advantage of being able to 
-Follow a topic. Following is Koding&amp;apos;s way of subscribing you to that Topic. And 
-to browse it, check out the Followed section of the Activity Page.
-  Followed As mentioned above, the Followed section shows all of the content that you&amp;apos;re 
-subscribed to. These can be from people you are following, or from topics that 
-you are following.
-
-This is a great way to see only the content you are interested in.
-</description>
-  </item>
-  
-  <item>
     <title>Markdown Basics, for Koding</title>
     <link>//learn.koding.com/guides/markdown</link>
     <pubDate>"2014-05-30T00:00:00.000Z"</pubDate>
@@ -2462,6 +2414,54 @@ prepend your list items with a number, instead of a hyphen. Example:
 2. Item two
 3. Item three
 
+</description>
+  </item>
+  
+  <item>
+    <title>Getting Started: The Activity Feed</title>
+    <link>//learn.koding.com/guides/getting-started/activity-feed</link>
+    <pubDate>"2014-05-30T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/activity-feed</guid>
+    <author>Team Koding</author>
+    <description>The Activity Feed is the central location for discussion on Koding. A public or 
+private message board, with markdown support, previewing, hashtag topics and 
+more, it&amp;apos;s a central component to Koding&amp;apos;s Social experience.
+
+  Posting and Formatting To post to the activity feed, find the input box in the top of the page.
+
+Simply type something in, and press the green submit button. Just plain text 
+can get a bit boring though, so Koding supports full 
+Markdown, as seen below:
+
+  Previewing To preview your post, simply press the little eye on the right side of the 
+input box. Your Markdown will be rendered and highlighted appropriately, as 
+seen below:
+
+  Tagging Tagging your content is important. It allows us to categorize our content, 
+which makes it easier to search and more likely to be seen by people who follow 
+those topics.
+When you type a hash character # followed by characters, a list of similar 
+topics will popup. Keep typing and it will refine the list. At any time you can 
+choose an existing topic, or keep your own.
+
+In the above image i have half typed the tag #markdown. You can see the 
+Markdown tag, as well as a handful of other tags.
+  Searching Searching the activity feed gets its own dedicated spot in the upper right of 
+the Koding UI.
+
+Searching the activity feed will search for the contents of a post, as well as 
+topics.
+  Topics Topics can also be browsed from the Topics page.The topics page contains a searchable and browsable list of all of the Koding 
+topics ever created.
+
+As seen in the above image, the topics page has the advantage of being able to 
+Follow a topic. Following is Koding&amp;apos;s way of subscribing you to that Topic. And 
+to browse it, check out the Followed section of the Activity Page.
+  Followed As mentioned above, the Followed section shows all of the content that you&amp;apos;re 
+subscribed to. These can be from people you are following, or from topics that 
+you are following.
+
+This is a great way to see only the content you are interested in.
 </description>
   </item>
   
@@ -2680,47 +2680,6 @@ depth.
   </item>
   
   <item>
-    <title>Creating KDApps: Tools Needed</title>
-    <link>//learn.koding.com/guides/creating-kdapps/tools-needed</link>
-    <pubDate>"2014-04-23T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/creating-kdapps/tools-needed</guid>
-    <author>Team Koding</author>
-    <description>Before we go into what Koding Apps are and how to create them, lets go over
-required and/or useful knowledge and tools. Don&amp;apos;t forget to checkout the
-Useful Tools page after you get through Getting Started.
-  Services   Github The Koding App infrastructure utilizes Github for storing app
-specific resources (js, images, css, scripts). This enables developers to store
-there apps for free without worry, making the Koding app workflow simple.
-  Languages   CoffeeScript or JavaScript Koding Applications are primarily programmed in CoffeeScript.
-While you can technically use any language, as long as the final output is a
-single javascript file named index.js within the root of your App directory.
-  Tools   KDC, The Koding Compiler The Koding Compiler, otherwise known as kdc is a small utility to
-compile Koding apps to a single index.js file.
-This tool comes with your Koding VM, you do not need to install it.
-  DevTools DevTools is an application designed to help you develop your app.
-It is also used to publish your app. It also comes preinstalled.
-</description>
-  </item>
-  
-  <item>
-    <title>Creating KDApps</title>
-    <link>//learn.koding.com/guides/creating-kdapps</link>
-    <pubDate>"2014-04-23T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/creating-kdapps</guid>
-    <author>Team Koding</author>
-    <description>In this guide series we&amp;apos;ll go over the basics of what KDApps are, from a 
-developer perspective, and how to create them. We&amp;apos;ll touch briefly on the 
-KDFramework source, but mostly we&amp;apos;ll be linking back to the source for method 
-and API references. Lets get started!
-  What is a Koding App (KDApp)? Koding Apps are created using the Koding Framework (KDFramework) and live
-on the Koding App Store. Koding users 
-install KDApps based on interest. It is entirely user driven.
-KDApps come in a variety of flavors. On the App store you will find apps
-in the games, installers, stacks and several other categories.
-</description>
-  </item>
-  
-  <item>
     <title>Creating KDApps: Foundation</title>
     <link>//learn.koding.com/guides/creating-kdapps/foundation</link>
     <pubDate>"2014-04-23T00:00:00.000Z"</pubDate>
@@ -2754,6 +2713,47 @@ directory to compile the files specified in the &amp;quot;files&amp;quot;:[] lis
 kdc then compiles the files to JavaScript, and concatenates them one after
 another and finally writes the product to the index.js file.
   Creating your first KDApp In the next guide, lets create our first KDApp!
+</description>
+  </item>
+  
+  <item>
+    <title>Creating KDApps</title>
+    <link>//learn.koding.com/guides/creating-kdapps</link>
+    <pubDate>"2014-04-23T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/creating-kdapps</guid>
+    <author>Team Koding</author>
+    <description>In this guide series we&amp;apos;ll go over the basics of what KDApps are, from a 
+developer perspective, and how to create them. We&amp;apos;ll touch briefly on the 
+KDFramework source, but mostly we&amp;apos;ll be linking back to the source for method 
+and API references. Lets get started!
+  What is a Koding App (KDApp)? Koding Apps are created using the Koding Framework (KDFramework) and live
+on the Koding App Store. Koding users 
+install KDApps based on interest. It is entirely user driven.
+KDApps come in a variety of flavors. On the App store you will find apps
+in the games, installers, stacks and several other categories.
+</description>
+  </item>
+  
+  <item>
+    <title>Creating KDApps: Tools Needed</title>
+    <link>//learn.koding.com/guides/creating-kdapps/tools-needed</link>
+    <pubDate>"2014-04-23T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/creating-kdapps/tools-needed</guid>
+    <author>Team Koding</author>
+    <description>Before we go into what Koding Apps are and how to create them, lets go over
+required and/or useful knowledge and tools. Don&amp;apos;t forget to checkout the
+Useful Tools page after you get through Getting Started.
+  Services   Github The Koding App infrastructure utilizes Github for storing app
+specific resources (js, images, css, scripts). This enables developers to store
+there apps for free without worry, making the Koding app workflow simple.
+  Languages   CoffeeScript or JavaScript Koding Applications are primarily programmed in CoffeeScript.
+While you can technically use any language, as long as the final output is a
+single javascript file named index.js within the root of your App directory.
+  Tools   KDC, The Koding Compiler The Koding Compiler, otherwise known as kdc is a small utility to
+compile Koding apps to a single index.js file.
+This tool comes with your Koding VM, you do not need to install it.
+  DevTools DevTools is an application designed to help you develop your app.
+It is also used to publish your app. It also comes preinstalled.
 </description>
   </item>
   
@@ -2800,6 +2800,74 @@ Want to skip a few steps? Jump directly to the PrestaShop installation process u
   Step 2. We unzip the file. [code]unzip prestashop_1.5.6.1.zip[/code]
   Step 3. We can now head over to the setup page and begin the installation procedure. Our link is: [code]http://[your_Koding_username].kd.io/prestashop[/code] All we have to do now is to fill in the required fields to set up the shop.
 And that&amp;apos;s it, three simple steps to set up your e-commerce solution. As always, more Quick Tips and beginner friendly guides from Koding coming soon, so stay tuned!
+</description>
+  </item>
+  
+  <item>
+    <title>Connect with SSH, from Unix</title>
+    <link>//learn.koding.com/guides/ssh-into-your-vm</link>
+    <pubDate>"2014-04-08T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/ssh-into-your-vm</guid>
+    <author>Team Koding</author>
+    <description>Connecting to your VM with SSH will allow you to use another Terminal, outside 
+of Koding, to interact with your Koding VM. This is also required if you&amp;apos;re 
+interested in using SSH Tunneling. If you&amp;apos;re connecting with PuTTY, have a look 
+here. If you&amp;apos;re using Cygwin, these instructions will work 
+fine for you.
+We are going to use the terminology &amp;quot;local&amp;quot; to represent the machine that 
+you&amp;apos;re connecting to Koding with.
+  What you will need 
+Your Koding username
+Your Koding VM Number
+Generated SSH Keys on your local machine. If you need to generate them, 
+Github has an awesome tutorial found here.
+
+  Connecting with OpenSSH or Cygwin 
+First, copy your Public Key, usually found in ~/.ssh/id_rsa.pub, and copy 
+it in its entirety! It will look something like this:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyhKankDE4DRM86JqZ3JPdWDeqg+TbzlqlTLf 
+OKTeokhRoMgy5WoMY/ZWUVES3d2vSHHwW3cwWlELmVdc3Ow57boZv3fOsPhybYHVRTClXYr1ncS 
+xyTvjvCfvV5q22aIxHPWQ353543ssda87sa+85XEa4VnveJsEzxBZl4oJ4GB0AGa48+UdIqutrg 
+Zu7D7JCK+Yl228X+3bJf3ddlqDaKaVXPivvvYqImK6ZwFsxh2lNO4E8IOd3OSK9zv6i+io8PxWm 
+wP0tLFokxulAI8Td1sOPBE9s9bdJ5c2T/GfGjKF+aNKsd33TsYEjjc/plMZmRRrOgQwre6OAkgM 
+vyV2X foo@bar.baz
+
+Next, paste this entire Public Key into your SSH Keys section of your 
+Account settings. This can be found by going to 
+Koding/Account and clicking SSH Keys under the 
+DEVELOP. Click the Plus button on the right side of the page, and paste your 
+Public Key into this. Below is a screenshot of this area for clarification.  
+
+
+Now go back to your local machine, and create the file ~/.ssh/config 
+(assuming it&amp;apos;s not already created). Add the following code into that file:
+Host *.kd.io
+ User &amp;lt;username&amp;gt;
+ ProxyCommand ssh %r@ssh.koding.com nc %h %p
+Where &amp;lt;username&amp;gt; is your username, without the &amp;lt;&amp;gt;.
+
+Next, on your local machine and connect to your VM! This can be done by 
+typing:
+ssh &amp;lt;vm-Number&amp;gt;.&amp;lt;username&amp;gt;.koding.kd.io
+An example, here is my connection command:
+ssh vm-0.leeolayvar.koding.kd.io
+You will have to enter your local SSH password, if you chose one when you 
+created your key. After that, presented with username@vm-X:~$, signaling that 
+you have connected successfully.This step has quite a few Gotchas so please 
+review them below.Two likely gotchas, are Agent Failure and 
+ssh_exchange_identification, which can be seen in the Possible Gotchas section 
+below.
+
+  Alternate id_rsa If you&amp;apos;re using an alternately named id_rsa file, you can modify your 
+config to support this with the following example.
+Host *.kd.io User &amp;lt;username&amp;gt;
+ IdentityFile ~/.ssh/alternate
+ ProxyCommand ssh -i ~/.ssh/alternate %r@ssh.koding.com nc %h %p
+Note the IdentityFile ~/.ssh/alternate and -i ~/.ssh/alternate, they tell 
+SSH the location of your public key, and are required. Replace the file 
+location with the location of your alternate key.
+
+
+  Important note If you&amp;apos;re having trouble SSH-ing into your VM, after pasting your SSH key in the box described above, make sure there are NO SPACES in the key other than the one after ssh-rsa and one before your email address.
 </description>
   </item>
   
@@ -2870,74 +2938,6 @@ C:\your\path\to\plink.exe &amp;lt;username&amp;gt;@ssh.koding.com -nc %host:%por
 Modify it, by adding your private key location. So, it will look like this:
 C:\your\path\to\plink.exe -i c:\path\to\private\key.ppk &amp;lt;username&amp;gt;@ssh.koding.com -nc %host:%port
   Important note If you&amp;apos;re having trouble SSH-ing into your VM, after pasting your SSH key in the box located in your Koding account settings, make sure there are NO SPACES in the key other than the one after ssh-rsa and one before your email address.
-</description>
-  </item>
-  
-  <item>
-    <title>Connect with SSH, from Unix</title>
-    <link>//learn.koding.com/guides/ssh-into-your-vm</link>
-    <pubDate>"2014-04-08T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/ssh-into-your-vm</guid>
-    <author>Team Koding</author>
-    <description>Connecting to your VM with SSH will allow you to use another Terminal, outside 
-of Koding, to interact with your Koding VM. This is also required if you&amp;apos;re 
-interested in using SSH Tunneling. If you&amp;apos;re connecting with PuTTY, have a look 
-here. If you&amp;apos;re using Cygwin, these instructions will work 
-fine for you.
-We are going to use the terminology &amp;quot;local&amp;quot; to represent the machine that 
-you&amp;apos;re connecting to Koding with.
-  What you will need 
-Your Koding username
-Your Koding VM Number
-Generated SSH Keys on your local machine. If you need to generate them, 
-Github has an awesome tutorial found here.
-
-  Connecting with OpenSSH or Cygwin 
-First, copy your Public Key, usually found in ~/.ssh/id_rsa.pub, and copy 
-it in its entirety! It will look something like this:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyhKankDE4DRM86JqZ3JPdWDeqg+TbzlqlTLf 
-OKTeokhRoMgy5WoMY/ZWUVES3d2vSHHwW3cwWlELmVdc3Ow57boZv3fOsPhybYHVRTClXYr1ncS 
-xyTvjvCfvV5q22aIxHPWQ353543ssda87sa+85XEa4VnveJsEzxBZl4oJ4GB0AGa48+UdIqutrg 
-Zu7D7JCK+Yl228X+3bJf3ddlqDaKaVXPivvvYqImK6ZwFsxh2lNO4E8IOd3OSK9zv6i+io8PxWm 
-wP0tLFokxulAI8Td1sOPBE9s9bdJ5c2T/GfGjKF+aNKsd33TsYEjjc/plMZmRRrOgQwre6OAkgM 
-vyV2X foo@bar.baz
-
-Next, paste this entire Public Key into your SSH Keys section of your 
-Account settings. This can be found by going to 
-Koding/Account and clicking SSH Keys under the 
-DEVELOP. Click the Plus button on the right side of the page, and paste your 
-Public Key into this. Below is a screenshot of this area for clarification.  
-
-
-Now go back to your local machine, and create the file ~/.ssh/config 
-(assuming it&amp;apos;s not already created). Add the following code into that file:
-Host *.kd.io
- User &amp;lt;username&amp;gt;
- ProxyCommand ssh %r@ssh.koding.com nc %h %p
-Where &amp;lt;username&amp;gt; is your username, without the &amp;lt;&amp;gt;.
-
-Next, on your local machine and connect to your VM! This can be done by 
-typing:
-ssh &amp;lt;vm-Number&amp;gt;.&amp;lt;username&amp;gt;.koding.kd.io
-An example, here is my connection command:
-ssh vm-0.leeolayvar.koding.kd.io
-You will have to enter your local SSH password, if you chose one when you 
-created your key. After that, presented with username@vm-X:~$, signaling that 
-you have connected successfully.This step has quite a few Gotchas so please 
-review them below.Two likely gotchas, are Agent Failure and 
-ssh_exchange_identification, which can be seen in the Possible Gotchas section 
-below.
-
-  Alternate id_rsa If you&amp;apos;re using an alternately named id_rsa file, you can modify your 
-config to support this with the following example.
-Host *.kd.io User &amp;lt;username&amp;gt;
- IdentityFile ~/.ssh/alternate
- ProxyCommand ssh -i ~/.ssh/alternate %r@ssh.koding.com nc %h %p
-Note the IdentityFile ~/.ssh/alternate and -i ~/.ssh/alternate, they tell 
-SSH the location of your public key, and are required. Replace the file 
-location with the location of your alternate key.
-
-
-  Important note If you&amp;apos;re having trouble SSH-ing into your VM, after pasting your SSH key in the box described above, make sure there are NO SPACES in the key other than the one after ssh-rsa and one before your email address.
 </description>
   </item>
   
@@ -3103,53 +3103,6 @@ That is all. If you have any issues setting up WebDav you can drop an email at s
   </item>
   
   <item>
-    <title>AngularJS Step-by-Step Setup</title>
-    <link>//learn.koding.com/guides/angularjs-step-by-step</link>
-    <pubDate>"2014-03-09T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/angularjs-step-by-step</guid>
-    <author>Team Koding</author>
-    <description>This article is all about AngularJS and how to get you started with it on Koding. Follow along, or Try the Koding Demo right now! 
-  AngularJS: What&amp;apos;s it all about. Everything is dynamic these days, or at least in should be. The age of the static documents is slightly fading away and people like to interact with websites and applications in real-time. Queue frameworks that offer dynamism to web apps. These frameworks offer an endless list of possibilities and give developers free reign over how people interact with their application, in real-time. One of the most popular frameworks these days, that is starting to be approached by more and more developers is AngularJS. AngularJS can be used with any application development workflow due to the fact that it&amp;apos;s extensible and because it works well with other libraries. 
-  Setting it up on Koding Ok, but how can we develop a web application in the cloud and preview the 
-result a the same time? It&amp;apos;s easy, we use Koding!Koding&amp;apos;s built-in preview system enables you to preview 
-your progress with a single click. It&amp;apos;s as simple as 1,2,3. So let&amp;apos;s get 
-started then. First we create a new .html file using the Ace editor app, that 
-comes pre-installed with Koding, or any editor you prefer 
-or have installed. The next step is to head over to the AngularJS 
-website and get one of their simple examples. For this 
-tutorial we&amp;apos;re going to use the first tutorial that comes up, a simple &amp;quot;Hello!&amp;quot; 
-example. We copy that and paste it into our file, the one that we created 
-earlier.
-&amp;lt;!doctype html&amp;gt;
-&amp;lt;html ng-app&amp;gt;
-  &amp;lt;head&amp;gt;
-  &amp;lt;script 
-    src=&amp;quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js&amp;quot;&amp;gt;
-  &amp;lt;/script&amp;gt;
-  &amp;lt;/head&amp;gt;
-  &amp;lt;body&amp;gt;
-    &amp;lt;div&amp;gt;
-      &amp;lt;label&amp;gt;Name:&amp;lt;/label&amp;gt;
-      &amp;lt;input type=&amp;quot;text&amp;quot;
-        ng-model=&amp;quot;yourName&amp;quot;
-        placeholder=&amp;quot;Enter a name here&amp;quot;&amp;gt;
-      &amp;lt;hr&amp;gt;
-      &amp;lt;h1&amp;gt;Hello {{yourName}}!&amp;lt;/h1&amp;gt;
-    &amp;lt;/div&amp;gt;
-  &amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-
-We can now save our file and check out the result, by clicking the little 
-&amp;quot;hamburger&amp;quot; menu in the top right corner of Ace editor and then choose Preview.The example we got should display nicely. Go ahead and test to see if it works.Simple and fun! If you want to skip the steps above you can try our Koding 
-demo 
-and see how it goes. And that&amp;apos;s it. Why not continue and experiment with 
-AngularJS on Koding and see what more cool stuff you can 
-make. As always, more Quick Tips and beginner friendly guides coming soon, so 
-stay tuned!
-</description>
-  </item>
-  
-  <item>
     <title>PyroCMS Setup and Installation for Beginners</title>
     <link>//learn.koding.com/guides/pyrocms-installation-for-beginners</link>
     <pubDate>"2014-03-09T00:00:00.000Z"</pubDate>
@@ -3212,6 +3165,53 @@ prerequisite This config will be used to check your Playground is ready if you h
 
 With this article in hand you should be ready to get started making your very own Playgrounds and contributing to the community. As always, ask in the Activity Feed if you have any questions.
 Now go make some awesome content :)
+</description>
+  </item>
+  
+  <item>
+    <title>AngularJS Step-by-Step Setup</title>
+    <link>//learn.koding.com/guides/angularjs-step-by-step</link>
+    <pubDate>"2014-03-09T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/angularjs-step-by-step</guid>
+    <author>Team Koding</author>
+    <description>This article is all about AngularJS and how to get you started with it on Koding. Follow along, or Try the Koding Demo right now! 
+  AngularJS: What&amp;apos;s it all about. Everything is dynamic these days, or at least in should be. The age of the static documents is slightly fading away and people like to interact with websites and applications in real-time. Queue frameworks that offer dynamism to web apps. These frameworks offer an endless list of possibilities and give developers free reign over how people interact with their application, in real-time. One of the most popular frameworks these days, that is starting to be approached by more and more developers is AngularJS. AngularJS can be used with any application development workflow due to the fact that it&amp;apos;s extensible and because it works well with other libraries. 
+  Setting it up on Koding Ok, but how can we develop a web application in the cloud and preview the 
+result a the same time? It&amp;apos;s easy, we use Koding!Koding&amp;apos;s built-in preview system enables you to preview 
+your progress with a single click. It&amp;apos;s as simple as 1,2,3. So let&amp;apos;s get 
+started then. First we create a new .html file using the Ace editor app, that 
+comes pre-installed with Koding, or any editor you prefer 
+or have installed. The next step is to head over to the AngularJS 
+website and get one of their simple examples. For this 
+tutorial we&amp;apos;re going to use the first tutorial that comes up, a simple &amp;quot;Hello!&amp;quot; 
+example. We copy that and paste it into our file, the one that we created 
+earlier.
+&amp;lt;!doctype html&amp;gt;
+&amp;lt;html ng-app&amp;gt;
+  &amp;lt;head&amp;gt;
+  &amp;lt;script 
+    src=&amp;quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js&amp;quot;&amp;gt;
+  &amp;lt;/script&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;div&amp;gt;
+      &amp;lt;label&amp;gt;Name:&amp;lt;/label&amp;gt;
+      &amp;lt;input type=&amp;quot;text&amp;quot;
+        ng-model=&amp;quot;yourName&amp;quot;
+        placeholder=&amp;quot;Enter a name here&amp;quot;&amp;gt;
+      &amp;lt;hr&amp;gt;
+      &amp;lt;h1&amp;gt;Hello {{yourName}}!&amp;lt;/h1&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+
+We can now save our file and check out the result, by clicking the little 
+&amp;quot;hamburger&amp;quot; menu in the top right corner of Ace editor and then choose Preview.The example we got should display nicely. Go ahead and test to see if it works.Simple and fun! If you want to skip the steps above you can try our Koding 
+demo 
+and see how it goes. And that&amp;apos;s it. Why not continue and experiment with 
+AngularJS on Koding and see what more cool stuff you can 
+make. As always, more Quick Tips and beginner friendly guides coming soon, so 
+stay tuned!
 </description>
   </item>
   
@@ -3447,6 +3447,15 @@ This uses the command a2enmod to enable mod_rewrite, and then restarts apache. N
   </item>
   
   <item>
+    <title>Social</title>
+    <link>//learn.koding.com/guides/social</link>
+    <pubDate>"2014-02-01T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/social</guid>
+    <author>Team Koding</author>
+    <description></description>
+  </item>
+  
+  <item>
     <title>Importing your files</title>
     <link>//learn.koding.com/guides/importing-your-files</link>
     <pubDate>"2014-02-01T00:00:00.000Z"</pubDate>
@@ -3460,15 +3469,6 @@ This uses the command a2enmod to enable mod_rewrite, and then restarts apache. N
     <link>//learn.koding.com/guides/your-first-file</link>
     <pubDate>"2014-02-01T00:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/your-first-file</guid>
-    <author>Team Koding</author>
-    <description></description>
-  </item>
-  
-  <item>
-    <title>Social</title>
-    <link>//learn.koding.com/guides/social</link>
-    <pubDate>"2014-02-01T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/social</guid>
     <author>Team Koding</author>
     <description></description>
   </item>
@@ -3507,20 +3507,6 @@ Now save your Record on your domain, and on Koding, click the Create button.
 After that, drag your Domain, onto your VM.
 That&amp;apos;s it! Now visit your domain, and you should see your Koding VM.
 
-</description>
-  </item>
-  
-  <item>
-    <title>Codeigniter Installation for Beginners</title>
-    <link>//learn.koding.com/guides/codeigniter-for-beginners</link>
-    <pubDate>"2014-01-07T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/codeigniter-for-beginners</guid>
-    <author>Team Koding</author>
-    <description>In this article we will go over installing Codeigniter for beginners. Follow along, or Try the Koding Demo right now! 
-  What is Codeigniter? Codeigniter may be old hat to some, but the tried and true frameworks tend to hold their own for quite a long time, and for good reason. It is polished, has an extensive history, and above all has a large community to back it up. 
-  So how do i get started with Codeigniter? In the following video, we&amp;#x2019;ll go over the basic process of running Codeigniter on Koding. 
-As you can see, setting up CI is a pretty simple process. The only trouble is ensuring that your LAMP stack is up and running properly, but thanks to Koding this process was made easy. Koding comes with Apache by default, so Codeigniter just works. On top of that, we were able to get started with Codeigniter entirely in our browser. No downloading and installing LAMP stacks to our localhost required. 
-  Can it get easier? Why yes, it can! With Teamwork we can use the Teamwork Import to import the Codeigniter download immediately. What you are left with is a Codeigniter directory structure which you can immediately access in your browser to develop on. Yes, you read that right, click the link and bam, Codeigniter is up and running. We have more beginner friendly articles and videos coming in the near future, stay tuned!
 </description>
   </item>
   
@@ -3581,6 +3567,20 @@ To find this out, run the following command: ps aux | grep ftpd. This will print
 FileZilla
 FileZilla Download
 
+</description>
+  </item>
+  
+  <item>
+    <title>Codeigniter Installation for Beginners</title>
+    <link>//learn.koding.com/guides/codeigniter-for-beginners</link>
+    <pubDate>"2014-01-07T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/codeigniter-for-beginners</guid>
+    <author>Team Koding</author>
+    <description>In this article we will go over installing Codeigniter for beginners. Follow along, or Try the Koding Demo right now! 
+  What is Codeigniter? Codeigniter may be old hat to some, but the tried and true frameworks tend to hold their own for quite a long time, and for good reason. It is polished, has an extensive history, and above all has a large community to back it up. 
+  So how do i get started with Codeigniter? In the following video, we&amp;#x2019;ll go over the basic process of running Codeigniter on Koding. 
+As you can see, setting up CI is a pretty simple process. The only trouble is ensuring that your LAMP stack is up and running properly, but thanks to Koding this process was made easy. Koding comes with Apache by default, so Codeigniter just works. On top of that, we were able to get started with Codeigniter entirely in our browser. No downloading and installing LAMP stacks to our localhost required. 
+  Can it get easier? Why yes, it can! With Teamwork we can use the Teamwork Import to import the Codeigniter download immediately. What you are left with is a Codeigniter directory structure which you can immediately access in your browser to develop on. Yes, you read that right, click the link and bam, Codeigniter is up and running. We have more beginner friendly articles and videos coming in the near future, stay tuned!
 </description>
   </item>
   
@@ -3680,6 +3680,22 @@ Replace NEWPASSWORD with your MySQL Password of choice.
   </item>
   
   <item>
+    <title>What ports are open on my Koding VM?</title>
+    <link>//learn.koding.com/faq/open-ports</link>
+    <pubDate></pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/open-ports</guid>
+    <author></author>
+    <description>Koding proxies HTTP traffic from your domains to your VMs on the following 
+ports:
+
+Port 80
+Ports 1024 through 10,000
+Port 443 is proxied to port 80 on your VM.
+
+</description>
+  </item>
+  
+  <item>
     <title>MySQL Socket Error 2002</title>
     <link>//learn.koding.com/faq/mysql-socket-error-2002</link>
     <pubDate></pubDate>
@@ -3697,33 +3713,6 @@ Reminder: Your Sudo password is your Koding password.
   </item>
   
   <item>
-    <title>How do turn off my my Koding VM?</title>
-    <link>//learn.koding.com/faq/vm-poweroff</link>
-    <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/vm-poweroff</guid>
-    <author></author>
-    <description>To turn off your VM, simply type in sudo poweroff into a Terminal. This will start a graceful shutdown process for your VM and within a few minutes you will see the UI reflect the powered down state for your VM.
-Similarly, you can also do a sudo restart to restart your VM instead of shutting it down. A sudo shutdown will shutdown (not power off) a VM...there&amp;apos;s a difference. :)
-</description>
-  </item>
-  
-  <item>
-    <title>What ports are open on my Koding VM?</title>
-    <link>//learn.koding.com/faq/open-ports</link>
-    <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/open-ports</guid>
-    <author></author>
-    <description>Koding proxies HTTP traffic from your domains to your VMs on the following 
-ports:
-
-Port 80
-Ports 1024 through 10,000
-Port 443 is proxied to port 80 on your VM.
-
-</description>
-  </item>
-  
-  <item>
     <title>How do I transfer/copy files to my VM?</title>
     <link>//learn.koding.com/faq/transfer-files</link>
     <pubDate></pubDate>
@@ -3733,6 +3722,17 @@ Port 443 is proxied to port 80 on your VM.
   I want to copy a large number of files To copy several files, use FTP. To set up FTP on your VM, simply open up Terminal and type in
 help ftp
 
+</description>
+  </item>
+  
+  <item>
+    <title>How do turn off my my Koding VM?</title>
+    <link>//learn.koding.com/faq/vm-poweroff</link>
+    <pubDate></pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/vm-poweroff</guid>
+    <author></author>
+    <description>To turn off your VM, simply type in sudo poweroff into a Terminal. This will start a graceful shutdown process for your VM and within a few minutes you will see the UI reflect the powered down state for your VM.
+Similarly, you can also do a sudo restart to restart your VM instead of shutting it down. A sudo shutdown will shutdown (not power off) a VM...there&amp;apos;s a difference. :)
 </description>
   </item>
   
