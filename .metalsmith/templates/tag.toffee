@@ -21,7 +21,7 @@ findTagName = (key) ->
       <h3 class="title"><a href="#{guide.httplink}">#{print guide.title}</a></h3>
       <div class="meta">
         by <a class="author" href="/authors/#{guide.author.slug}">#{guide.author.name}</a> &bull; about <span class="date">#{print moment(guide.date).fromNow()}</span>
-        &bull; in categories
+        &bull; in categories&nbsp;
         <ul>
           {#
           for cat in guide.categories
