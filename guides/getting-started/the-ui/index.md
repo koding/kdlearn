@@ -1,5 +1,4 @@
 ---
-title: The UI
 author: Team Koding
 date: 2014-05-30
 categories: [koding]
