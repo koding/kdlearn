@@ -37,9 +37,9 @@ ruby hello.rb
 You should see output similar to this:
 
 ```
-joshmurray@vm-20:~$ ruby hello.rb
+joshmurray: ~ $ ruby hello.rb
 Hello from Ruby!
-joshmurray@vm-20:~$
+joshmurray: ~ $
 ```
 
 Neat! Now that we know how to run some code, lets look at a real example 

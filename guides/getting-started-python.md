@@ -39,9 +39,9 @@ python hello.py
 You should see output similar to this:
 
 ```
-joshmurray@vm-19:~$ python hello.py
+joshmurray: ~ $ python hello.py
 Hello from python!
-joshmurray@vm-19:~$
+joshmurray: ~ $
 ```
 
 Neat! Lets take this a couple steps further, and do something actually 

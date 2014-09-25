@@ -62,9 +62,9 @@ node hello.js
 You should see output similar to this:
 
 ```
-joshmurray@vm-19:~$ node hello.js
+joshmurray: ~ $ node hello.js
 Hello from NodeJS!
-joshmurray@vm-19:~$
+joshmurray: ~ $
 ```
 
 Not surprisingly, it printed our `console.log()` output! Next up, lets 
