@@ -36,10 +36,10 @@ printVideo = (filename) ->
   <div class="video-shadow">
     <img src="http://img.youtube.com/vi/VK8xjRFoJ0k/maxresdefault.jpg" id="shadow-left" />
     <div class="main">
-      <a slug="foo" 
+      <a slug="intro"
         rel="videos" class="youtube-mini fancybox.iframe"
-        href="//www.youtube.com/v/5E85g_ddV3A?autoplay=1&rel=0&controls=0&showinfo=0&modestbranding=1">
-        <img src="http://img.youtube.com/vi/5E85g_ddV3A/maxresdefault.jpg" />
+        href="//www.youtube.com/v/MZOpD8mdFVc?autoplay=1&rel=0&controls=0&showinfo=0&modestbranding=1">
+        <img src="http://img.youtube.com/vi/MZOpD8mdFVc/maxresdefault.jpg" />
         <span class="youtube-play fa fa-play-circle"></span>
       </a>
     </div>
@@ -49,10 +49,10 @@ printVideo = (filename) ->
     Koding Introduction
   </div>
   <ul>
-  {# printVideo 'guides/social/index.html' #}
+  {## printVideo 'guides/social/index.html' ##}
   {## printVideo 'guides/your-first-file/index.html' ##}
-  {# printVideo 'guides/the-terminal/index.html' #}
-  {# printVideo 'guides/get-help-with-teamwork/index.html' #}
+  {## printVideo 'guides/the-terminal/index.html' ##}
+  {## printVideo 'guides/get-help-with-teamwork/index.html' ##}
   </ul>
 </div>
 
