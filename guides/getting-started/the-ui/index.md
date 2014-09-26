@@ -9,92 +9,90 @@ series-index: 1
 template: series.toffee
 ---
 
+# The UI
 
-# Getting Started: The UI
 
-Before we dive into specific features or applications of Koding, lets break 
-down the UI at the most basic level. Understanding the UI will help you make 
-sense of what different sections of the site are, which is important when 
-running user applications that may not always look the same as Koding.
+In this guide we'll take a look at [Koding][koding]'s UI. We'll examine 
+the major sections, and briefly explain some of the features. In future 
+guides of this series we'll explain these parts in more detail. Lets get 
+started!
 
-So, lets get started!
-
-## The Full Thing
+## The Full UI
 
 ![Koding](fullthing.png)
 
-There it is in all it's glory. What we have here is an few applications open in 
-the app dock, the Ace editor app is in focus, and we have a notification that 
-we should probably look at.
+This is the Koding UI of a logged in user, with the [Koding IDE][ide] 
+open. On the left side we have our VMs, Channels, Chats, and Account. To 
+the right we have the Koding IDE. Lets look at each piece, and where they 
+lead us.
 
-But what does all this mean? Well, lets take a look at each area one by one.
+## VMs, Workspaces and IDE
 
-## The Application
+VMs, Workspaces, and the [Koding IDE][ide] can be found on the left hand 
+side, under VMS, as seen in the image below.
 
-Two main features of Koding are its Applications and VMs. We won't go into the 
-full scope of each of these just yet, but just know that *Applications* are 
-important.  So important, that they take up almost all of it's UI!
+![Virtual Machines](vms.png)
 
-![Koding's Ace Editor](ace-app.png)
+Clicking on a VM Name, such as `koding-vm-0` in the above image, will 
+open up the [Koding IDE][ide] for that specific VM.
 
-What you see in the above image is considered a Koding Application. In this 
-case, it's the Ace Editor. This area of the UI is reserved for all sorts of 
-applications. Your Terminal, DevTools, Teamwork, and even Koding specific 
-things such as Environments, the Activity Feed, and user Profiles are all Apps.  
-As an example, here are two more apps:
+The button to the immediate right of the VM Name is the VM Settings. Here 
+you can find useful information, such as your VM Address and VM Specs.
 
-DevTools
+Finally, below the VM Name are your Workspaces for that specific VM.  
+Clicking on a Workspace will open all of the previous editors and 
+Terminals that you had open on it, and opening new Workspaces provides 
+shortcuts for varying tasks. We'll get into the specifics in the 
+[Workspaces guide][workspaces].
 
-![Dev Tools](devtools-app.png)
+## Channels and Activity
 
-and Environments
+Below VMs, are your Channels. To follow a channel, click on a Grey check 
+mark. Green check marks indicate a channel that you are following.
 
-![Environments](environments-app.png)
+![Channels](channels.png)
 
-Don't worry if you haven't seen these apps before, we'll get into them in the 
-future. The key to remember here is that this area of the UI is reserved for 
-Applications.
+A channel is a stream of user submitted content for a certain hash tag, 
+such as [#golang](http://koding.com/Activity/Topic/golang). When you 
+click on a hash tag in the Activity Feed, it opens a channel for that 
+tag, as seen below.
 
-But how do we change applications you ask?
+![Activity Feed](activity.png)
 
-## The App Dock
+Activity Feed posts support [Markdown][markdown], including Markdown Code 
+Blocks.
 
-We change applications with the App Dock!
+## Chat
 
-![Koding App Dock](appbar.png)
+Below Channels are your Chats. These are private conversations between 
+you and any number of users you invite.
 
-Applications that you install will be located in your App Dock. You'll notice 
-that the URL of Koding changes with each app too. Each application has it's own 
-URL, which you can visit directly.  As an example, [Checkout the 
-Terminal!](https://koding.com/Terminal)
+![Chats](chats.png)
 
-When you click on an application, you *load* it into your session. A loaded 
-application, even if not in focus, is indicated by a green bar above it's icon 
-within the App Doc. In the above image you can see that I have multiple 
-applications open.
+To open a new chat, click on the Plus button to the right of the Chat 
+icon. Clicking on a already started chat, will open it as seen below.
 
-The App Dock is pretty wide, but it doesn't quite take up the whole top bar.  
-Lets take a look at the other side!
+![Chat](chat.png)
 
-## Notifications, Profile, and Search
+Your chats will work much in the same way as the Activity Feed. You can 
+invite more users by clicking the Plus next to user icons, or delete the 
+conversation from the Chat Dropdown in the upper right.
 
-![The Right Side of Life](right-navbar.png)
+## Account Settings
 
-The right side of the top bar has some important features. The primary one 
-being Notifications.
+Your Account Settings can be located from the bottom of the navigation 
+panel.
 
-Notifications are Replies to your Activity Posts, or replies to a post that you 
-are communicating in. The circle button next to your profile is a Notification 
-drop down. Click it, and your recent notifications will open. The Red `1` seen 
-in the above image represents 1 unread notification.
+![Account Settings](account-settings.png)
 
-The Arrow next to your profile is a general Koding menu, with links to your 
-[Account Settings](https://koding.com/Account), your 
-[Environments](https://koding.com/Environments), and various other links.
+Here you'll be able to modify your Name, Password, and link your Koding 
+account to various services.
 
-Finally, the little magnifier is a search tool which can be used to search the 
-Activity feed. The search tool always searches the activity feed because that 
-is your central location for communicating with your development team, or the 
-Koding Community in general.
 
-This brings us right into the next page of this series, the Activity Feed!
+
+
+
+[koding]: https:://koding.com
+[ide]: https://koding.com
+[workspaces]: /guides/getting-started/workspaces
+[markdown]: /guides/markdown
