@@ -12,9 +12,9 @@ template: series.toffee
 
 # Getting Started: The Activity Feed
 
-The Activity Feed is the central location for discussion on Koding. A public or 
-private message board, with markdown support, previewing, hashtag topics and 
-more, it's a central component to Koding's Social experience.
+The Activity Feed is the central location for discussion on Koding. A 
+public message board, with markdown support, previewing, hashtag topics 
+and more, it's a central component to Koding's Social experience.
 
 ![Koding Activity Feed](activity-feed.png)
 
@@ -34,18 +34,19 @@ can get a bit boring though, so Koding supports full
 
 ## Previewing
 
-To preview your post, simply press the little eye on the right side of the 
-input box. Your Markdown will be rendered and highlighted appropriately, as 
-seen below:
+To preview your post, simply press the little eye on the right side of 
+the input box. Your Markdown will be rendered and highlighted 
+appropriately.
 
 ![Post Preview](preview.png)
 
 ## Tagging
 
-Tagging your content is important. It allows us to categorize our content, 
-which makes it easier to search and more likely to be seen by people who follow 
-those topics.
+Tagging your content is important. With tags, your content can be
+categorized, which makes it easier to search and more likely to be seen 
+by people who follow those channels.
 
+<!-- Redacted. Not a feature at the moment.
 When you type a hash character `#` followed by characters, a list of similar 
 topics will popup. Keep typing and it will refine the list. At any time you can 
 choose an existing topic, or keep your own.
@@ -54,35 +55,43 @@ choose an existing topic, or keep your own.
 
 In the above image i have half typed the tag `#markdown`. You can see the 
 Markdown tag, as well as a handful of other tags.
+-->
+
+![Tagging](tagging.png)
+
+Here you can see the previous Markdown example, tagged with the 
+[#markdown][markdown channel] tag.
 
 ## Searching
 
-Searching the activity feed gets its own dedicated spot in the upper right of 
-the Koding UI.
+On the [#public][public channel] channel there is a search field next to 
+Most Liked / Most Recent, as seen below.
 
 ![Search](search.png)
 
-Searching the activity feed will search for the contents of a post, as well as 
-topics.
+Searching the activity feed will search for the contents of a post, as 
+well as the tags.
 
-## Topics
+## Channels
 
-Topics can also be browsed from the [Topics page](https://koding.com/Topics).  
-The topics page contains a searchable and browsable list of all of the Koding 
-topics ever created.
+Channels are how you view a steam of posts with a certain Tag. When you 
+click on a tag, it opens a channel for that tag. Clicking on the Grey 
+checkmark next to the channel name, will subscribe you to that channel, 
+and keep it open anytime you visit Koding.
 
-![Topics](topics.png)
+![Following](followed.png)
 
-As seen in the above image, the topics page has the advantage of being able to 
-Follow a topic. Following is Koding's way of subscribing you to that Topic. And 
-to browse it, check out the Followed section of the Activity Page.
+To browse channels that you might be interested in, you can click the 
+Plus button next to "Channel" in the sidebar *(as seen below)*, and 
+search for the channel you're interested in.
 
-## Followed
+![Searching Channels](browsing-channels.png)
 
-As mentioned above, the Followed section shows all of the content that you're 
-subscribed to. These can be from people you are following, or from topics that 
-you are following.
+Following channels is a great way to stay active in content that matters 
+to you.
 
-![Followed](followed.png)
 
-This is a great way to see only the content you are interested in.
+
+[koding]: https://koding.com
+[public channel]: https://koding.com/Activity/Public
+[markdown channel]: https://koding.com/Activity/Topic/markdown
