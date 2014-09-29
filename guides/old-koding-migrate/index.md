@@ -12,9 +12,7 @@ because we could potentially end up causing more harm than good.  Each VM is
 unique and you know it best so we thought it would be best for you to migrate your data 
 and at a time when it was convient for you.
 
-That being said, we still wanted to help as much as we can so we have 
-written a migration script that will assist you with the data migration.  
-This script will copy the home directory and any updated file 
+That being said, we still wanted to help as much as we can so are providing you with a migration script that will assist you with the data migration. This script will copy the home directory and any updated file 
 across the entire VM file tree of your old VM to the `/home/<username>/Backup/<old-vm-name>`
 folder of your new VM.
 
@@ -29,18 +27,15 @@ If you run into any issues, we are here to help. Just send us the details at
 
 #Migration steps
 ## Step 1
-
 Log into your new Koding account. At this point you will have, by default, 
 one new VM. This is the VM into which we will bring data from your VMs on old Koding.
 
 ## Step 2
-
 After the new VM has successfully started, you’ll see the IDE and Terminal.
 
 ![Migrate](migrate.png)
 
 ## Step 3
-
 You will find the migrate script in the home folder of your new VM. To get started
 , in the Terminal tab type the following command.
 
