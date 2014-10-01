@@ -7,23 +7,35 @@ categories: [Git]
 # Migrating Your Old Koding VM
 
 Koding’s new VM infrastructure is vastly different from the old one so we 
-did not want to take the risk of migrating your old VM data for you 
-because we could potentially end up causing more harm than good.  Each VM is 
-unique and you know it best so we thought it would be best for you to migrate your data 
-and at a time when it was convient for you.
+did not want to take the risk of migrating your old VM for you 
+as we could potentially end up causing more harm than good.  Each VM is 
+unique and since you know your VM well so we thought it would be best for you to migrate 
+the data yourslef and do it at a time convient for you.
 
-That being said, we still wanted to help as much as we can so are providing you with a migration script that will assist you with the data migration. This script will copy the home directory and any updated file 
-across the entire VM file tree of your old VM to the `/home/<username>/Backup/<old-vm-name>`
-folder of your new VM.
+That being said, we still wanted to help as much as we can so we are providing 
+you with a migration script that will assist you with data migration. This
+script will copy the **home directory** of your old VM to the 
+`/home/<username>/Backup/<old-vm-name>` folder of your new VM. *If you 
+want to migrate files on your old vm that live outside the home directory,
+you will need to move them into the home directory first.*
 
-**Please note**, this script will simply copy files into the 
-`//home/<username>/Backup/<old-vm-name>` folder. It will not install 
-software/scripts/init files anywhere on your new VM or start 
-servers/services that were running on your old VM. This is to ensure that 
-we don’t accidentally overwrite files that you may need as the new VMs are running
-a newer version of Ubuntu. You will need to re-configure your servers and re-initialize them on the new VM.
-If you run into any issues, we are here to help. Just send us the details at 
-[support@koding.com](mailto:support@koding.com).
+You can access your old VMs at https://old.koding.com
+
+# Why not move all changed files?
+Since the new VMs are running a newer version of Ubuntu, you will need to
+re-install the server software that you may have installed yourself on
+the old VM. If we copied over everything, it would cause a lot of confusion as
+software versions would end up in conflict. You can retrieve a list of all manually
+installed packages with this command:
+
+```
+aptitude search ~i | grep "^i   " | awk '{ print $2 }'
+```
+
+**Please note**, this script will simply copy files from the home directory
+on the old vm to the `/home/<username>/Backup/<old-vm-name>` folder of the new
+VM. It will not install software/scripts/init files anywhere on your new VM or start 
+servers/services that were running on your old VM.
 
 #Migration steps
 ## Step 1
@@ -37,7 +49,7 @@ After the new VM has successfully started, you’ll see the IDE and Terminal.
 
 ## Step 3
 You will find the migrate script in the home folder of your new VM. To get started
-, in the Terminal tab type the following command.
+, in the Terminal tab type the following command:
 
 ```
 ./migrate.sh
@@ -51,6 +63,4 @@ And that’s it!
 
 If you run into any kind of issues please let us know 
 at [support@koding.com](mailto:support@koding.com) and we will gladly 
-help. If you need to log into your old VMs, head on over to 
-<https://old.koding.com>. That server will remain active for another 30 
-days.
+help.
