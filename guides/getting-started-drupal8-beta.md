@@ -55,7 +55,7 @@ One more gotcha - D8 requires (or prefers) curl?! Well, okay.
 
 Now we’re ready to rock! The rest of this is a pretty standard Drupal setup mission, but here's the outline anyway. Go setup yourself up a new database by entering MySql CLI (Koding mysql automatically assumes root) and issue the following commands.
 
-    mysql (into the CLI, then...)
+    mysql -u root (into the CLI, then...)
 
     CREATE DATABASE drupal8;
     GRANT ALL PRIVILEGES ON drupal8db.* TO myusername@localhost IDENTIFIED BY 'mypassword';
