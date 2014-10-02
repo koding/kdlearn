@@ -24,33 +24,33 @@ Issue the following commands to perform the install and tidy up.
 
 Issue the following commands in your shell to sort the path out.
 
-`sed -i '1i export PATH="$HOME/.composer/vendor/bin:$PATH"' $HOME/.bashrc
-source $HOME/.bashrc`
+    sed -i '1i export PATH="$HOME/.composer/vendor/bin:$PATH"' $HOME/.bashrc
+    source $HOME/.bashrc`
 
 Now we can go ahead and use Composer to install drush 7. More long winded than "the old days", but get used to it. Everything is Composer in D8. "So Compose; much baton (sic)."
 
-`composer global require drush/drush:dev-master`
+    composer global require drush/drush:dev-master
 
 Test the install with a random “drush” command in the shell... e.g.
 
-`drush --version`
+    drush --version
 
 As it turns out, we also need to enable `mod_rewrite`, which also requires a restart of Apache. In order to do so, you can type the following commands in the terminal (which don’t seem to require `sudo` as I retest them right now, but maybe…)
 
-`a2enmod rewrite`
-`/etc/init.d/apache2 restart`
+    a2enmod rewrite
+    service apache2 restart
 
 One more gotcha - D8 requires (or prefers) curl?! Well, okay.
 
-`sudo apt-get install php5-curl`
+    sudo apt-get install php5-curl
 
 Now we’re ready to rock! The rest of this is a pretty standard Drupal setup mission. Let’s just do this anyway. Go setup the database by entering MySql CLI (Koding mysql automatically assumes root) and issue the following commands.
 
-`mysql` (into the CLI, then...)
+    mysql (into the CLI, then...)
 
-`CREATE DATABASE drupal8;`
-`GRANT ALL PRIVILEGES ON drupal8db.* TO myusername@localhost IDENTIFIED BY 'mypassword';`
-`FLUSH privileges;`
+    CREATE DATABASE drupal8;
+    GRANT ALL PRIVILEGES ON drupal8db.* TO myusername@localhost IDENTIFIED BY 'mypassword';
+    FLUSH privileges;
 
 You probably don’t want to use your root password in case you’re going to be using the included shared environments that Koding provides.
 
@@ -64,7 +64,9 @@ Unpack the tarball with `tar zxf drupal-8-whatever.tgz`
 
 Alter the dir name if it bothers you or you need a reminder of which version you’re using.
 
-`mv drupal-8-whatever mydrupaldir` (I'm assuming the latter from hereon)
+    mv drupal-8-whatever mydrupaldir
+    
+(I'm assuming the latter from hereon)
 
 Save yourself a few seconds by doing the usual copying of settings.php and set permissions malarky. 
 
