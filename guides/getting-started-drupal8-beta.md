@@ -17,8 +17,8 @@ We must first install Composer as we need Drush master (7) to easily install Dru
 
 Issue the following commands to perform the install and tidy up.
 
-`sudo curl -sS https://getcomposer.org/installer | php
-sudo mv composer.phar /usr/local/bin/composer`
+    sudo curl -sS https://getcomposer.org/installer | php
+    sudo mv composer.phar /usr/local/bin/composer`
 
 >The last step is not required AFAIK, but makes Composer global for the machine. The instructions that I read said “Make sure Composer's global bin directory is on the system PATH (recommended)”. That’s great, although I don’t fully understand the implications.
 
