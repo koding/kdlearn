@@ -57,7 +57,7 @@ Now we’re ready to rock! The rest of this is a pretty standard Drupal setup mi
 
     mysql -u root (into the CLI, then...)
 
-    CREATE DATABASE drupal8;
+    CREATE DATABASE drupal8db;
     GRANT ALL PRIVILEGES ON drupal8db.* TO myusername@localhost IDENTIFIED BY 'mypassword';
     FLUSH privileges;
 
