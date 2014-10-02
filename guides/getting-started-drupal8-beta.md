@@ -44,7 +44,9 @@ One more gotcha - D8 requires (or prefers) curl?! Well, okay.
 
     sudo apt-get install php5-curl
 
-Now we’re ready to rock! The rest of this is a pretty standard Drupal setup mission. Let’s just do this anyway. Go setup the database by entering MySql CLI (Koding mysql automatically assumes root) and issue the following commands.
+## Setting up the Drupal environment
+
+Now we’re ready to rock! The rest of this is a pretty standard Drupal setup mission, but here's the outline anyway. Go setup yourself up a new database by entering MySql CLI (Koding mysql automatically assumes root) and issue the following commands.
 
     mysql (into the CLI, then...)
 
