@@ -22,7 +22,7 @@ Go ahead and open up the Koding Terminal panel. Click the link like `vm0.usernam
 
 We must first install Composer as we need Drush master (7) to easily install Drupal 8. You wanted Drush anyway though, right? :)
 
-Issue the following commands to perform the install and tidy up.
+Issue the following commands to perform the install and tidy up. 
 
     sudo curl -sS https://getcomposer.org/installer | php
     sudo mv composer.phar /usr/local/bin/composer`
@@ -88,4 +88,4 @@ Save yourself a few seconds by doing the usual copying of settings.php and set p
 
 (Change these permissions back to something more sane afterwards… 0644 and 0775 seem to be ok, but I’m open to abuse on the matter.)
 
-And you’re off! Get yourself a new browser tab and punch in <username>.kd.io[/mydrupaldir] and follow the usual Drupal installer instructions!
+And you’re off! Get yourself a new browser tab and punch in `<username>.kd.io[/mydrupaldir]` and follow the usual Drupal installer instructions!
