@@ -1,3 +1,10 @@
+---
+author: Nik LePage
+username: NikLP
+date: 2014-10-02
+categories: [drupal]
+---
+
 # Getting started with Drupal 8 (Prerelease)
 
 A quick rundown of how to setup a development environment for checking out the new Drupal 8 releases. Get hacking, testing, or just trying it out!
