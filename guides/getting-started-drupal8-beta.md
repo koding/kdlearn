@@ -20,7 +20,7 @@ Issue the following commands to perform the install and tidy up.
     sudo curl -sS https://getcomposer.org/installer | php
     sudo mv composer.phar /usr/local/bin/composer`
 
->The last step is not required AFAIK, but makes Composer global for the machine. The instructions that I read said “Make sure Composer's global bin directory is on the system PATH (recommended)”. That’s great, although I don’t fully understand the implications.
+>The last step is not required AFAIK, but makes Composer global for the machine. The instructions that I read said “Make sure Composer's global bin directory is on the system PATH (recommended)”. That’s great, although I don’t fully understand the implications. 
 
 Issue the following commands in your shell to sort the path out.
 
@@ -70,13 +70,14 @@ Alter the dir name if it bothers you or you need a reminder of which version you
 
 Save yourself a few seconds by doing the usual copying of settings.php and set permissions malarky. 
 
-`cd mydrupaldir`
-`cd sites/default`
-`cp default.settings.php settings.php`
-`chmod 0666 settings.php`
-`mkdir files`
-`chown user:www-data files` (NB this is server/user specific!)
-`chmod 0775 files`
+cd mydrupaldir
+cd sites/default
+cp default.settings.php settings.php
+chmod 0666 settings.php
+mkdir files
+chown user:www-data files (NB this is server/user specific!)
+chmod 0775 files
+
 (Change these permissions back to something more sane afterwards… 0644 and 0775 seem to be ok, but I’m open to abuse on the matter.)
 
 And we’re off! Get yourself a new browser tab and punch in <username>.kd.io[/mydrupaldir] and follow the usual Drupal installer instructions!
