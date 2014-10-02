@@ -66,8 +66,7 @@ You probably don’t want to use your root password in case you’re going to be
 Now `cd ~/Web` and install Drupal 8. NB, You can obviously create an optional subdirectory here, but of course you will need to update the `.htaccess` to reflect this. You will need to change the relevant line to mimic: `RewriteBase /mysubdir`
 
 Choose a version: `drush dl drupal-8` (this may give you a choice of versions)
-
-Definitely :) get Drupal 8 Beta 1: `wget http://ftp.drupal.org/files/projects/drupal-8.0.0-beta1.tar.gz` (see: https://www.drupal.org/node/2348025 )
+*OR* Definitely :) get Drupal 8 Beta 1: `wget http://ftp.drupal.org/files/projects/drupal-8.0.0-beta1.tar.gz` (see: https://www.drupal.org/node/2348025 )
 
 Unpack the tarball with `tar zxf drupal-8-whatever.tgz`
 
