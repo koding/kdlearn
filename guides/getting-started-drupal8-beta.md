@@ -11,14 +11,14 @@ NB Your VM is not “always up”. Koding spin down the VM instances when they�
 
 ## Setting up the development environment
 
-Go ahead and open up the Koding Terminal panel. Click the link like `vm0.username.kd.io` to fire up your terminal. We’re assuming you’re in `~/Web` for the site install bits.
+Go ahead and open up the Koding Terminal panel. Click the link like `vm0.username.kd.io` to fire up your terminal. (We’re assuming you’re in `~/Web` for the site install bits).
 
 We must first install Composer as we need Drush master (7) to easily install Drupal 8. You wanted Drush anyway though, right? :)
 
 Issue the following commands to perform the install and tidy up.
 
-`sudo curl -sS https://getcomposer.org/installer | php`
-`sudo mv composer.phar /usr/local/bin/composer`
+`sudo curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer`
 
 >The last step is not required AFAIK, but makes Composer global for the machine. The instructions that I read said “Make sure Composer's global bin directory is on the system PATH (recommended)”. That’s great, although I don’t fully understand the implications.
 
