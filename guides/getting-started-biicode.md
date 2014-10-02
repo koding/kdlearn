@@ -19,7 +19,7 @@ build files for your project.
 You can install it running from your [terminal][terminal]:
 
 ```
-$ http://apt.biicode.com/install.sh && chmod +x install.sh && ./install.sh
+$ wget http://apt.biicode.com/install.sh && chmod +x install.sh && ./install.sh
 ```
 
 After it finish, you can run a helper command that install an updated version of CMake:
@@ -35,6 +35,7 @@ run:
 
 ```
 $ bii init cryptoproject
+$ cd cryptoproject
 $ bii new myuser/crypto --hello=cpp
 $ bii cpp:build
 $ ./bin/myuser_crypto_main
