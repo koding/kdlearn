@@ -1,16 +1,15 @@
 ---
 author: drodri
-date: 2014-08-01
-categories: [C, C++]
+username: drodri
+date: 2014-10-02
+categories: [C/C++]
 ---
 
 
 # Getting Started with C and C++
 
 In this guide we'll introducing C and C++ and how to build your first programs 
-in Koding. Then, biicode tool will be also introduced and how can be used to
-automate builds and manage dependencies.
-
+in Koding. 
 
 C and C++ are the reference languages in many domains, from heavy computations,
 research, robotics, embedded systems, financing and banking...

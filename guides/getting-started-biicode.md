@@ -1,11 +1,12 @@
 ---
 author: drodri
-date: 2014-08-01
-categories: [C, C++]
+username: drodri
+date: 2014-10-02
+categories: [C/C++]
 ---
 
 
-## Building C / C++ applications with biicode
+# Building C / C++ applications with biicode
 
 Building larger applications can be somewhat difficult and cumbersome to the newbie.
 As soon as your application start to have several files, you will need to define
@@ -18,12 +19,12 @@ build files for your project.
 You can install it running from your [terminal][terminal]:
 
 ```
-http://apt.biicode.com/install.sh && chmod +x install.sh && ./install.sh
+$ http://apt.biicode.com/install.sh && chmod +x install.sh && ./install.sh
 ```
 
 After it finish, you can run a helper command that install an updated version of CMake:
 ```
-bii setup:cpp
+$ bii setup:cpp
 ```
 
 Lets build an application that computes the SHA1 of a string. Usually you dont want to write
@@ -33,10 +34,10 @@ The following commands will create a project and a "Hello world" file, which you
 run:
 
 ```
-bii init cryptoproject
-bii new myuser/crypto --hello=cpp
-bii cpp:build
-./bin/myuser_crypto_main
+$ bii init cryptoproject
+$ bii new myuser/crypto --hello=cpp
+$ bii cpp:build
+$ ./bin/myuser_crypto_main
 Hello world!
 ```
 
