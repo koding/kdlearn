@@ -67,4 +67,4 @@ your localhost with your MySQL Client!
 
 
 
-[ssh-guide]: ssh-into-your-vm
+[ssh-guide]: /guides/ssh-into-your-vm
