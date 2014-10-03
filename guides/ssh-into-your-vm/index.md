@@ -61,7 +61,14 @@ shown below. If you do not know your VM Address, instructions to find it
 can be [found here][vm address].
 
 ```
-ssh unkk05c3f84e.joshmurray.koding.io
+ssh username@vmaddress
+```
+
+Replace `username` with your username, and `vmaddress` with your [VM 
+Address][vm address]. As an example, here is a filled our ssh command.
+
+```
+ssh joshmurray@unkk05c3f84e.joshmurray.koding.io
 ```
 
 ## Troubleshooting
@@ -71,7 +78,7 @@ and share the output with Koding users. An example of the above ssh
 command with the `-vv` flag is below.
 
 ```
-ssh -vv unkk05c3f84e.joshmurray.koding.io
+ssh -vv joshmurray@unkk05c3f84e.joshmurray.koding.io
 ```
 
 
