@@ -56,3 +56,6 @@
 /setting-up-ftp-on-koding: /guides
 /migrate: /guides/old-koding-migrate
 /domains: /guides/domains
+/upgrade: /guides/what-happens-upon-upgrade/
+/upgrades: /guides/what-happens-upon-upgrade/
+
