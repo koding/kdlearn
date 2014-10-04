@@ -1,7 +1,7 @@
 ---
 title: What happens upon upgrade?
 author: Team Koding
-date: 2014-08-11
+date: 2014-10-02
 categories: [koding]
 
 improvable: false
@@ -11,28 +11,32 @@ improvable: false
 
 You just upgraded your account, awesome (and thanks!) but what happens now?
 
-Based on the type of resource pack you selected on the [Pricing page][pricing] you now have access to more resources as compared to your free Koding account. Below is a list of the resources that have been upgraded.
+Based on the type of plan you selected on the [Pricing page][pricing] you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
+- Ability to mark your VM(s) as Always-On
+- Add more storage to your VM(s)
 
-### CPU
+### Utilizing new resources when upgrading to the **Hobbyist Plan**
+Once you have upgraded to Hobbyist, you can mark your VM as an Always-On VM and increase its storage from 3GB to 10GB. To to this, head over to the settings panel for your VM and follow these easy steps:
+1. head over to VM settings (as shown in the image below)
+2. expand the "More" panel and then the "Advanced" panel
+3. You will see a new button under the Advanced panel labeled "Resize" (this button only appears for users who have upgraded to the Hobbyist plan and have not yet allocated the 10GB. Once you allocate it, the button will disappear)
+4. Click the button to initiate resize. Once done, your VM will show 10GB. Verify that using the command `df -h /`
+![Hobbyist Plan](hobbyist2.png)
 
-CPU resources available to your account have been upgraded. More compute power ftw!! Note: CPUs are shared among all your running VMs. If you run only one VM, all CPU will be utilized by that one VM; if you have 10 VMs running, they will share your available CPU resources across the 10.
+### Utilizing new resources when upgrading to the **Developer and Professional Plans**
+Under these plans, you can have a total of up to 3 (for Developer) and 5 (for Professional) VMs, mark any of them as Always-On and allocate 25GB (for Developer) / 50GB (for Professional) of storage amonst them. You will start with the default free VM and it is up to you whether you want to leave it at the default 3GB or delete it so that you can make a new one with a storage allocation that you prefer. To delete a VM, simply go the settings panel of the VM and click the Terminate button (as shown in the attached screen shot).
 
-### Storage (Disk)
+![Developer Plan Image 1](dev-pro2.png)
 
-You can distribute this quota across all of your VMs as you need. For e.g. If you have upgraded to get 40GB of storage, you can allocate this 40GB of disk space to one of your VMs or distribute the storage across your VMs.
 
-### Memory (RAM)
 
-Just like CPU and storage, memory/RAM is also shared between your running VMs. Each VM starts with allocated memory. If you have 10GB limit, you can run 10VMs at 1GB, or 3 x 3GB or 1 x 10GB.
+To create a new VM, click the + icon in the VM list and you will be presented wit the option to create a new VM with a space allocation that is preferable to you (as shown below).
 
-### Always on VMs
+![Developer Plan Image 2](dev-pro.png)
 
-The maximum number of VMs that you can keep turned on 24/7. For example, you bought a package that comes with 10 VMs and one always-on VM. The VM you mark as always-on will work 24/7, however the others will be powered off automatically 15 minutes after you log out or 15 minutes of inactivity.
 
-### Other Benefits
 
-Besides the awesome features you get upon upgrade, your VMs get moved to premium infrastucture that will ensure your VMs stay on 24/7 and your data is secure.
 
-If you ever have any question regarding resources or have any issues you can make a [support request](mailto:support@koding.com).
+Enjoy the new resources and thanks again for upgrading! If you have any addtional questions regarding upgrades and resources, please send us a [support request](mailto:support@koding.com) and we will get back to you as soon as possible.
 
 [pricing]: https://koding.com/Pricing
