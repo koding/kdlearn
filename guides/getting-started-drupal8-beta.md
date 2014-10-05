@@ -7,7 +7,7 @@ categories: [drupal]
 
 # Getting started with Drupal 8 (Prerelease)
 
-A quick rundown of how to setup a development environment for checking out the new Drupal 8 releases. Get hacking, testing, or just trying it out!
+A quick rundown of how to setup a development environment for checking out the new Drupal 8 releases. Get hacking, testing, or just trying it out! Now updated for the new version of Koding.
 
 ## A preamble for Drupal developers
 
