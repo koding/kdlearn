@@ -56,7 +56,7 @@ One more gotcha - D8 requires (or prefers) curl?! Well, okay.
 
     sudo apt-get install php5-curl
 
-Restart the web server to enable all the new goodnes
+Restart the web server to enable all the new goodness!
 
     sudo service apache2 restart
 
