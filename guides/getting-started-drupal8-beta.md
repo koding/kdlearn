@@ -7,6 +7,8 @@ categories: [drupal]
 
 # Getting started with Drupal 8 (Prerelease)
 
+## Please note that Koding has updated the VM system in the last few days and I'm working on an updated version of this document.
+
 A quick rundown of how to setup a development environment for checking out the new Drupal 8 releases. Get hacking, testing, or just trying it out!
 
 ## A preamble for Drupal developers
