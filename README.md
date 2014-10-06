@@ -14,5 +14,5 @@ here][extend].
 
 [koding]: https://koding.com
 [learn]: http://learn.koding.com
-[contribute]: contribute.md
+[contribute]: https://github.com/koding/kdlearn/blob/master/contribute/guidelines.md
 [extend]: .metalsmith/README.md
