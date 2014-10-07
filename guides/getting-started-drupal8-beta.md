@@ -7,14 +7,7 @@ categories: [drupal]
 
 # Getting started with Drupal 8 (Prerelease)
 
-A quick rundown of how to setup a development environment for checking out the new Drupal 8 releases. Get hacking, testing, or just trying it out! Now updated for the new version of Koding.
-
-## A preamble for Drupal developers
-
-It occurred to me that not everyone, myself included, always has the necessary resources to set up a separate server instance just because Drupal 8 requires PHP 5.4, or you don’t have enough RAM for a VM, or blah blah blah. Having a local VM is all very well, but I personally don’t like them and prefer to just SSH into a server and “do stuff” via the terminal interface (using a combo of Screen, Vim, IRSSI and others - hat-tip to @Litwol). So when I came across this (PaaS site Koding.com) I jumped onto the task of getting D8 working on that platform. 
-
-NB Your VM is not “always up”. Koding spin down the VM instances when they’re idle, so you can’t expect people to be able to view your projects when you’re sleeping, for example. Your files are persistent, however, so no worries there. Git is pre-installed (currently 1.9.1) and there are ways to pull in your repos from GitHub et al.
-
+A quick rundown of how to setup a development environment for checking out the new Drupal 8 releases.
 
 ## Setting up the development environment
 
@@ -90,6 +83,9 @@ Save yourself a few seconds by doing the usual copying of settings.php and set p
 
     cd mydrupaldir
     cd sites/default
+    # for developers only (sets up some dev mode settings, do this before install!)
+    cp ../example.settings.local.php ./settings.local.php
+    # for everyone
     cp default.settings.php settings.php
     cp default.services.yml services.yml
     chmod 0666 settings.php services.yml
@@ -97,6 +93,6 @@ Save yourself a few seconds by doing the usual copying of settings.php and set p
     sudo chown myuser:www-data files # NB this is server/user specific!
     chmod 0775 files
 
-(Change these permissions back to something more sane afterwards… 0644 and 0775 seem to be ok, but I’m open to abuse on the matter.)
+(You need to change these permissions back to something more sane afterwards… 0644 and 0775 seem to be ok, but I’m open to abuse on the matter.)
 
-And you’re off! To open your VM in a browser, click the ellipsis next to your VM name (probably koding-vm-0) and then the VM name to open the site in a new tab, and follow the usual Drupal installer instructions!
+And you’re off! To open your VM in a browser, click the ellipsis next to your VM name (probably koding-vm-0) and then the VM name to open the site in a new tab, and follow the usual Drupal installer instructions! NB If you're a developer, you might want to check out Webchick's setup video from Drupalcon AMS: http://www.youtube.com/watch?v=wKdU2Q1NIZQ
