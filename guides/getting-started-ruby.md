@@ -175,6 +175,7 @@ Next up, open your `web.rb` file again, and replace the entire contents
 with the following code.
 
 ```ruby
+require 'rubygems'
 require 'sinatra'
 
 set :bind, '0.0.0.0'
@@ -184,8 +185,6 @@ get '/' do
   "Hello World, from Sinatra!"
 end
 ```
-
-Be sure that this may not work on Koding so you may need to add this line ``` require 'rubygems' ``` to the top of the current code.
 
 Now run it just like before, and visit it in your browser. Just like 
 that, you have a working Sinatra web server!
