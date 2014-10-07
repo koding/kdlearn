@@ -185,6 +185,8 @@ get '/' do
 end
 ```
 
+Be sure that this may not work on Koding so you may need to add this line ``` require 'rubygems' ``` to the top of the current code.
+
 Now run it just like before, and visit it in your browser. Just like 
 that, you have a working Sinatra web server!
 
