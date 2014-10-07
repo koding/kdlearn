@@ -175,7 +175,7 @@ Next up, open your `web.rb` file again, and replace the entire contents
 with the following code.
 
 ```ruby
-require 'rubygems'
+require 'rubygems' # This is required because the http://rubygems.org resource is not included automatically for sinatra to boot
 require 'sinatra'
 
 set :bind, '0.0.0.0'
