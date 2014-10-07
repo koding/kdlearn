@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://learn.koding.com/guides/getting-started-c-cpp</loc>
+    <loc>http://learn.koding.com/guides/getting-started-drupal8-beta</loc>
     <lastmod>2014-10-02</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -14,7 +14,7 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/getting-started-drupal8-beta</loc>
+    <loc>http://learn.koding.com/guides/getting-started-c-cpp</loc>
     <lastmod>2014-10-02</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -74,7 +74,13 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/getting-started/editing-your-profile</loc>
+    <loc>http://learn.koding.com/contribute</loc>
+    <lastmod>2014-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://learn.koding.com/guides/getting-started-python</loc>
     <lastmod>2014-08-04</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -86,31 +92,19 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/ssh-tunneling</loc>
-    <lastmod>2014-08-09</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://learn.koding.com/contribute</loc>
-    <lastmod>2014-08-04</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://learn.koding.com/contribute/previewing</loc>
-    <lastmod>2014-08-04</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
     <loc>http://learn.koding.com/contribute/guidelines</loc>
     <lastmod>2014-08-04</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/getting-started-python</loc>
+    <loc>http://learn.koding.com/guides/getting-started/editing-your-profile</loc>
+    <lastmod>2014-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://learn.koding.com/contribute/previewing</loc>
     <lastmod>2014-08-04</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -160,6 +154,12 @@
   <url>
     <loc>http://learn.koding.com/guides/using-bitbucket-on-koding</loc>
     <lastmod>2014-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://learn.koding.com/guides/ssh-tunneling</loc>
+    <lastmod>2014-08-09</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
@@ -236,12 +236,6 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/markdown</loc>
-    <lastmod>2014-05-30</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
     <loc>http://learn.koding.com/guides/getting-started/the-ui</loc>
     <lastmod>2014-05-30</lastmod>
     <changefreq>monthly</changefreq>
@@ -249,6 +243,12 @@
   
   <url>
     <loc>http://learn.koding.com/guides/getting-started/activity-feed</loc>
+    <lastmod>2014-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://learn.koding.com/guides/markdown</loc>
     <lastmod>2014-05-30</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -374,13 +374,13 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/faq/transfer-files</loc>
+    <loc>http://learn.koding.com/faq/vm-poweroff</loc>
     <lastmod>2014-10-07</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/faq/vm-poweroff</loc>
+    <loc>http://learn.koding.com/faq/transfer-files</loc>
     <lastmod>2014-10-07</lastmod>
     <changefreq>monthly</changefreq>
   </url>
