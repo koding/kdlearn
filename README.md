@@ -9,7 +9,7 @@ here][extend].
 
 
 
-
+[Koding University]: http://learn.koding.com
 [koding]: https://koding.com
 [learn]: http://learn.koding.com
 [contribute]: https://github.com/koding/kdlearn/blob/master/contribute/guidelines.md
