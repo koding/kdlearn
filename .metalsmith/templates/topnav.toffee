@@ -5,11 +5,9 @@
       <span class="img"></span>
     </a>
   </h1>
-  <!-- Temporarily disabled due to search reimplementation
   <div class="topSearchButton">
     <span class="searchIcon"></span>
   </div>
-  -->
   <div id="menu">
     <ul class="toplinks">
       <li><a href="https://koding.com">Koding</a></li>
