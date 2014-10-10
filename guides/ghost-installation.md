@@ -32,7 +32,7 @@ visit the [Ghost Download][download-page] and look for the download link.
 Copy the url.
 
 At the time of writing this guide, the download url is: 
-<https://ghost.org/zip/ghost-0.4.2.zip> *(This version is likely 
+<https://ghost.org/zip/ghost-0.5.2.zip> *(This version is likely 
 outdated, please visit the download page and get the most updated link.)*
 
 Now, go to your [Terminal][terminal] and type in the following commands.
