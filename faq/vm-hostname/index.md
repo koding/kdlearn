@@ -22,8 +22,10 @@ so that if you want to configure your apache/nginx web server to serve multiple
 virtual hosts, it's easy to assign them all their own unique sub-domains. [Read more about virtual hosts.](http://www.rackspace.com/knowledge_center/article/how-to-serve-multiple-domains-using-virtual-hosts)
 
 To use this feature, head back to the VM settings panel and follow these 3 easy steps:
+
 1. click the (+) icon next to the "Domains" label to open up an input box where you can type in a new sub-domain. All you need to provide is the sub-domain, we will add the .username.koding.io part automatically.
 ![Add subdomain](/faq/vm-hostname/second.png)
-2. once added, these sub-domains become available on the setting panels of all your VMs for easy reassignment
+2. once added, these sub-domains become available on the setting panels 
+of all your VMs for easy reassignment
 3. deleting a sub-domain is as easy as adding one!
 ![Remove subdomain](/faq/vm-hostname/third.png)
