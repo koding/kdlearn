@@ -18,28 +18,100 @@
   <language>en</language>
   
   <item>
-    <title>What happens upon upgrade?</title>
-    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
-    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
+    <title>Install phpMyAdmin</title>
+    <link>//learn.koding.com/guides/install-phpmyadmin</link>
+    <pubDate>"2014-10-11T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/install-phpmyadmin</guid>
     <author>Team Koding</author>
-    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
-Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
+    <description>This guide will walk you through the steps you need to take in order to get phpMyAdmin installed on your Koding VM.
+Just follow the steps and you should get phpMyAdmin installed in no time.
+  Step 1 The first thing that we need to do is to update our package list. We can do that using the following command.
+sudo apt-get update
+After that we can go ahead and install phpmyadmin using the following command:
+sudo apt-get install phpmyadmin
+  Step 2 During the installation process you will be prompted to answer some questions in order to configure the installation properly.
+When asked to choose the server, you need to select apache2.
 
-Ability to mark your VM(s) as Always-On
-Add more storage to your VM(s)
+For the next question select Ok.
 
-  Utilizing new resources when upgrading to the Hobbyist Plan Once you have upgraded to Hobbyist, you can mark your VM as an Always-On VM and increase its storage from 3GB to 10GB. To get these going, its as simple as heading over to the settings panel for your VM and enabling these features. Follow these easy steps:
+You need to select Yes for the next step in order to set up the database using dbconfig-common.
 
-log out of your Koding account and log back in.
-head over to VM settings (as shown in the image below)
-expand the &amp;quot;More&amp;quot; panel and then the &amp;quot;Advanced&amp;quot; panel
-You will see a new button under the Advanced panel labeled &amp;quot;Resize&amp;quot; (this button only appears for users who have upgraded to the Hobbyist plan and have not yet allocated the 10GB. Once you allocate it, the button will disappear)
-Click the button to initiate resize. Once done, your VM will show 10GB. Verify that using the command df -h /
+Choose a password for your root user.
 
-  Utilizing new resources when upgrading to the Developer Plan Under these plans, you can have a total of up to 3 (for Developer) / 5 (for Professional) VMs, mark any of them as Always-On and allocate 25GB (for Developer) / 50GB (for Professional) of storage amonst them. You will start with the default free VM and it is up to you whether you want to leave it at the default 3GB or delete it so that you can make a new one with a storage allocation that you prefer. To delete a VM, simply go the settings panel of the VM and click the Terminate button (as shown in the attached screen shot).
-To create a new VM, click the + icon in the VM list and create a new VM with a space allocation that is preferable to you (as shown below).
-If you ever have any question regarding resources or have any issues you can make a support request.
+And then a password for the phpmyadmin installation.
+
+Last step is to confirm that password.
+  Step 3 After the installation process has finished we have to make sure that the Apache server is serving phpmyadmin properly. In order to do that we need to edit the Apache configuration file. You can use the following command.
+sudo nano /etc/apache2/apache2.conf
+And at the very bottom of the file we need to include the following line.
+Include /etc/phpmyadmin/apache.conf
+Save the file.
+One more thing that we need to do before we can see everything working is to enable the mcrypt extension. We can do that using the following command.
+sudo php5enmod mcrypt
+  Step 4 Restart the Apache server using the following command and you should see everything working.
+sudo service apache2 restart
+You will now be able to access phpmyadmin by following a similar URL:
+http://KODING_USERNAME.koding.io/phpmyadmin
+Find out more about your VM hostname here.
+And that&amp;apos;s it.
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>Building C / C++ applications with biicode</title>
+    <link>//learn.koding.com/guides/getting-started-biicode</link>
+    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-biicode</guid>
+    <author>drodri</author>
+    <description>Building larger applications can be somewhat difficult and cumbersome to the newbie.
+As soon as your application start to have several files, you will need to define
+how to build them in Makefiles or using the CMake build system.
+We will be using in the following examples biicode, which is a dependency manager
+that allows to easily retrieve existing code and also manages to automatically generate
+build files for your project.
+You can install it running from your terminal:
+$ wget http://apt.biicode.com/install.sh &amp;amp;&amp;amp; chmod +x install.sh &amp;amp;&amp;amp; ./install.sh
+After it finish, you can run a helper command that install an updated version of CMake:
+$ bii setup:cpp
+Lets build an application that computes the SHA1 of a string. Usually you dont want to write
+yourself such algorithm, but rather use an existing implementation.
+The following commands will create a project and a &amp;quot;Hello world&amp;quot; file, which you can build and
+run:
+$ bii init cryptoproject
+$ cd cryptoproject
+$ bii new myuser/crypto --hello=cpp
+$ bii cpp:build
+$ ./bin/myuser_crypto_main
+Hello world!
+Now replace the contents of the &amp;quot;main.cpp&amp;quot; file inside the blocks/myuser/crypto folder with:
+#include &amp;quot;cryptopp/cryptopp/sha.h&amp;quot;
+#include &amp;quot;cryptopp/cryptopp/filters.h&amp;quot;
+#include &amp;quot;cryptopp/cryptopp/hex.h&amp;quot;
+#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;string&amp;gt;
+
+int main() {
+    CryptoPP::SHA1 sha1;
+    std::string source = &amp;quot;Hello&amp;quot;;  
+    std::string hash = &amp;quot;&amp;quot;;
+    CryptoPP::StringSource(source, true, new CryptoPP::HashFilter(sha1,
+                            new CryptoPP::HexEncoder(new CryptoPP::StringSink(hash))));
+    std::cout &amp;lt;&amp;lt; hash &amp;lt;&amp;lt; std::endl;
+}
+If you now try to build this example, it will fail. You can try to do so, and then check
+your dependencies:
+$ bii cpp:build
+$ bii deps
+The code depends on some external code, the Crypto++ library. This can be easily retrieved
+with the &amp;quot;find&amp;quot; command
+$ bii find
+Now you can build and run it:
+$ bii cpp:build
+$ ./bin/myuser_crypto_main
+F7FF9E8B7BB2E09B70935A5D785E0CC5D9D0ABF0
+For further examples, you can have a look to the biicode C/C++ documentation and the 
+examples
 </description>
   </item>
   
@@ -108,6 +180,32 @@ And you&amp;#x2019;re off! To open your VM in a browser, click the ellipsis next
   </item>
   
   <item>
+    <title>What happens upon upgrade?</title>
+    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
+    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
+    <author>Team Koding</author>
+    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
+Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
+
+Ability to mark your VM(s) as Always-On
+Add more storage to your VM(s)
+
+  Utilizing new resources when upgrading to the Hobbyist Plan Once you have upgraded to Hobbyist, you can mark your VM as an Always-On VM and increase its storage from 3GB to 10GB. To get these going, its as simple as heading over to the settings panel for your VM and enabling these features. Follow these easy steps:
+
+log out of your Koding account and log back in.
+head over to VM settings (as shown in the image below)
+expand the &amp;quot;More&amp;quot; panel and then the &amp;quot;Advanced&amp;quot; panel
+You will see a new button under the Advanced panel labeled &amp;quot;Resize&amp;quot; (this button only appears for users who have upgraded to the Hobbyist plan and have not yet allocated the 10GB. Once you allocate it, the button will disappear)
+Click the button to initiate resize. Once done, your VM will show 10GB. Verify that using the command df -h /
+
+  Utilizing new resources when upgrading to the Developer Plan Under these plans, you can have a total of up to 3 (for Developer) / 5 (for Professional) VMs, mark any of them as Always-On and allocate 25GB (for Developer) / 50GB (for Professional) of storage amonst them. You will start with the default free VM and it is up to you whether you want to leave it at the default 3GB or delete it so that you can make a new one with a storage allocation that you prefer. To delete a VM, simply go the settings panel of the VM and click the Terminate button (as shown in the attached screen shot).
+To create a new VM, click the + icon in the VM list and create a new VM with a space allocation that is preferable to you (as shown below).
+If you ever have any question regarding resources or have any issues you can make a support request.
+</description>
+  </item>
+  
+  <item>
     <title>Getting Started with C and C++</title>
     <link>//learn.koding.com/guides/getting-started-c-cpp</link>
     <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
@@ -161,63 +259,6 @@ for many compilers, as Visual Studio, and IDEs as Eclipse.
 The Biicode platform automatically generate CMake files for you, based on 
 your source code files. It also manage dependencies, so it can be used for reusing
 existing code easily.
-</description>
-  </item>
-  
-  <item>
-    <title>Building C / C++ applications with biicode</title>
-    <link>//learn.koding.com/guides/getting-started-biicode</link>
-    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-biicode</guid>
-    <author>drodri</author>
-    <description>Building larger applications can be somewhat difficult and cumbersome to the newbie.
-As soon as your application start to have several files, you will need to define
-how to build them in Makefiles or using the CMake build system.
-We will be using in the following examples biicode, which is a dependency manager
-that allows to easily retrieve existing code and also manages to automatically generate
-build files for your project.
-You can install it running from your terminal:
-$ wget http://apt.biicode.com/install.sh &amp;amp;&amp;amp; chmod +x install.sh &amp;amp;&amp;amp; ./install.sh
-After it finish, you can run a helper command that install an updated version of CMake:
-$ bii setup:cpp
-Lets build an application that computes the SHA1 of a string. Usually you dont want to write
-yourself such algorithm, but rather use an existing implementation.
-The following commands will create a project and a &amp;quot;Hello world&amp;quot; file, which you can build and
-run:
-$ bii init cryptoproject
-$ cd cryptoproject
-$ bii new myuser/crypto --hello=cpp
-$ bii cpp:build
-$ ./bin/myuser_crypto_main
-Hello world!
-Now replace the contents of the &amp;quot;main.cpp&amp;quot; file inside the blocks/myuser/crypto folder with:
-#include &amp;quot;cryptopp/cryptopp/sha.h&amp;quot;
-#include &amp;quot;cryptopp/cryptopp/filters.h&amp;quot;
-#include &amp;quot;cryptopp/cryptopp/hex.h&amp;quot;
-#include &amp;lt;iostream&amp;gt;
-#include &amp;lt;string&amp;gt;
-
-int main() {
-    CryptoPP::SHA1 sha1;
-    std::string source = &amp;quot;Hello&amp;quot;;  
-    std::string hash = &amp;quot;&amp;quot;;
-    CryptoPP::StringSource(source, true, new CryptoPP::HashFilter(sha1,
-                            new CryptoPP::HexEncoder(new CryptoPP::StringSink(hash))));
-    std::cout &amp;lt;&amp;lt; hash &amp;lt;&amp;lt; std::endl;
-}
-If you now try to build this example, it will fail. You can try to do so, and then check
-your dependencies:
-$ bii cpp:build
-$ bii deps
-The code depends on some external code, the Crypto++ library. This can be easily retrieved
-with the &amp;quot;find&amp;quot; command
-$ bii find
-Now you can build and run it:
-$ bii cpp:build
-$ ./bin/myuser_crypto_main
-F7FF9E8B7BB2E09B70935A5D785E0CC5D9D0ABF0
-For further examples, you can have a look to the biicode C/C++ documentation and the 
-examples
 </description>
   </item>
   
@@ -417,17 +458,37 @@ ssh -vv joshmurray@unkk05c3f84e.joshmurray.koding.io
     <description>
 
 
-Koding VMs support custom domains as long as your DNS provider supports 
-one of the following record types.
+Koding VMs support custom domains as long as your domain provider 
+supports one of the following record types.
 
 CNAME Record
 A Record
 
-To configure either of these record types, refer to your DNS providers 
-guides and create the record type which you prefer. Once you have created 
-it, find your VM Address on Koding, and paste in the full 
-VM Address to the Record Value. This will point your Domain, to the 
-Address that the host resolves to.
+  Find your VM Address First, you&amp;apos;ll need to find and copy your VM Address. To 
+find this, please refere to this guide - But it will look 
+something like the address below:
+ulkk3a3a4bb3.joshmurray.koding.io
+  Create Your Domain Record Next, you&amp;apos;ll need to create and configure either a CNAME Record, or 
+an A Record with your domain provider.
+To configure either of these record types, refer to your providers guides 
+and create the record type which you prefer.
+Once you have created it, paste in the VM Address from above to the 
+Record Value. This will point your Domain, to the Address that the host 
+resolves to.
+  The Waiting Game If the record you are creating is new, it should resolve very quickly. If 
+however, it is an older record you must wait for the cache to expire. 
+This may take anywhere from 5 minutes to 24 hours.
+If it has not been resolved after a day, ensure that you used the proper 
+VM Address (as shown above). If it is correct, try contacting your 
+Domain Provider and ensure that they are able to use Addresses rather 
+than IPs in their record values.
+  Can i use my VMs IP? For technical reasons, free VMs have rotating IPs. After your VM goes 
+offline, it is not guaranteed to boot up with the same IP. This means 
+that you should not use your VMs IP as the record value, if you&amp;apos;re 
+using a not-always-on VM.
+If however your VM is Always On, an IP should work, as long as your VM is 
+not shutdown. For more information on Always-On, see the Pricing 
+Page.
 </description>
   </item>
   
@@ -614,106 +675,83 @@ That is all!
   </item>
   
   <item>
-    <title>Author A Guide: Previewing</title>
-    <link>//learn.koding.com/contribute/previewing</link>
+    <title>Author A Guide: Basic</title>
+    <link>//learn.koding.com/contribute/basic</link>
     <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/contribute/previewing</guid>
+    <guid isPermaLink="true">//learn.koding.com/contribute/basic</guid>
     <author>Team Koding</author>
-    <description>While you shouldn&amp;apos;t need to preview your guides, since Markdown is 
-designed to be human friendly in the source, if you insist you can 
-preview your guides as they are on Koding University. This guide will go 
-over that process. Note that this will require a bit of developer 
-know-how, so be prepared to get your hands dirty. Lets get started!
-  Requirements You will need a working NodeJS installation to compile the Koding 
-University source. If you do not, visit the NodeJS downloads 
-page and grab the installer.
-  Installation With a working NodeJS installation, we need to install the KU 
-dependencies, as well as a global installation of the GulpJS. This can be 
-done with the following code:
-npm install -g gulp
-cd .metalsmith
-npm install
-  Building With Gulp installed, simply run the following command, to compile the 
-entire project into HTML.
-(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
-cd .metalsmith
-gulp
-The .metalsmith/build directory will contain all of the compiled html, 
-css, and any static resources (such as images/etc) from the markdown 
-directory.
-Compiling can take 1-2 minutes, so be patient.
-  Previewing If you want to preview the compiled site, open a new Koding Terminal tab 
-and run the following:
-(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
-cd .metalsmith
-gulp preview
-This will run a small HTTP Server on Port 8000, ie: 
-http://hostname.you.koding.io:8000. Keep this tab open, and in  a 
-different Koding Terminal tab run your gulp command from above.Each time you compile the site, this will show your compiled site.
-  Compiling as you type To have your Markdown compiled as you write your documents, run the 
-following commands:
-(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
-cd .metalsmith
-gulp watch
-This, in combination with the preview command above, will compile the 
-site each time you change the Markdown.
-Note that if you add images for your guide to use, you&amp;apos;ll want to run the 
-full gulp command again.
-And that sums it up! You now know how to contribute to Koding University, 
-in multiple ways. Keep up the awesome work, and we look forward to your 
-contribution!
-</description>
-  </item>
-  
-  <item>
-    <title>Author A Guide</title>
-    <link>//learn.koding.com/contribute</link>
-    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/contribute</guid>
-    <author>Team Koding</author>
-    <description>In this guide series we will go over Writing and Editing guides for Koding 
-University. We will cover every step of the process, but basic Git, 
-Github, and Markdown knowledge will be very useful.
-If you already know git, github, and markdown, here is the simple set of 
-tasks you&amp;apos;ll need to do.
+    <description>In this guide we&amp;apos;ll go over how to contribute to the Koding University 
+the easy way. We&amp;apos;ll be using Github&amp;apos;s built in editor, to make the 
+forking &amp;amp; merging process easy. If you&amp;apos;re unfamiliar with Git, but you 
+still want to contribute to Learn, this is the guide for you. So, lets 
+get started!
+  Edit on Github Each Koding guide comes with a simple &amp;quot;Edit this on Github&amp;quot; link. This 
+link directs you back to a file editor on Github. Github will 
+automatically fork the repo if you have not yet, and even create a branch 
+so that your eventual pull request does not cause any unintended 
+contributions. Lets look at how this works.
+First up, find the guide that you want to edit, and look for the 
+Improve this Guide button at the bottom of all guides.
 
-Review the Style Guidelines
-Fork KDLearn
-Clone your forked repo
-Find or create your files, Make your markdown edits
-Commit and push your changes to your repo
-Make a pull request of your changes, against the KDLearn Repo
+  Fork the Repository If you have not contributed before you likely do not have the repository 
+forked yet. Press the green button seen below, and Github will fork the 
+repository for you.
 
-If you need more in depth instructions than that, please continue with 
-this series below. Thanks!
-</description>
-  </item>
-  
-  <item>
-    <title>Getting Started: Editing Your Profile</title>
-    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
-    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
-    <author>Team Koding</author>
-    <description>Your Koding profile is your public information page on Koding. Currently 
-it shows your Avatar, Name and Description, recent Koding activity, and 
-in the near future Badges and additional social information. In this 
-guide we&amp;apos;ll go over the basic usage of your Koding profile.
-  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted 
-below.
+  Make your Edits After forking, or if you already had Koding University Forked, you&amp;apos;ll be 
+presented with a text editor for the guide that you chose to edit. From 
+here, look through the guide and make your edits as you desire.
 
-Clicking on it will open your profile.
-  Avatar, Name and Description When viewing your profile for the first time, you&amp;apos;ll see that your first 
-name is set to your Koding username, and your last name and description 
-are set to default values, as seen in the below image.
+Don&amp;apos;t forget that there is a preview tab as well. The guide will look 
+slightly different on Github than on Koding University; but because 
+everything is formatted in Markdown you can preview it Github to ensure 
+the correctness of your markdown syntax.
+  Propose File Changes After you have made your edits to the document, scroll down and enter a 
+title and description for the edits you&amp;apos;ve made. After you&amp;apos;re satisfied, 
+press Propose file change.
 
-These default values are only seen by you, and if you double click them, 
-you can edit that field.
+This will create a new branch of your Fork and store your changes into 
+that branch. To repeat, your changes have been added to your Fork, 
+not to the official Koding University repository yet. To do that, you 
+need to create a Pull Request.
+  Create Pull Request A pull request lets Koding Staff review and merge your changes into the 
+official repository. To do that, after proposing your file changes you 
+will see a page like the one below.
 
+This is your branch, on your forked repository. If you press the Create 
+Pull Request button, your changes in that branch will be sent to the 
+official repository to be reviewed and merged in.
+This is it! You&amp;apos;ve gone from the guide on University, to editing it and 
+submitting your changes for review, all without leaving your browser or 
+using any complex Git commands.
+  Creating a New Guide The above process is nice and simple, but there&amp;apos;s one core thing missing. 
+We didn&amp;apos;t create a guide, we only edited a guide. What if we want to 
+create a new guide? Luckily this Basic workflow also works with new 
+guides! Lets go over that real quick.
+First, click here. That link will send you to the Github 
+editor with no file loaded. You can write in the editor, add a file name, 
+and propose changes just like the above instructions. Remember to name 
+your file with the .md extension, and adhere to the 
+Guidelines.
+Because you&amp;apos;re creating a new file though, you want to make sure and add 
+the proper metadata to the file. Copy the following code, and place it 
+into the editor.
+---
+author: Your Name
+username: yourUsername
+date: 2014-07-31
+categories: [nginx]
+---
 
+Fill in Your Name with your name, and yourUsername with your Koding 
+Username. The date field should be formatted in YYYY-MM-DD format, and 
+the categories list is just a comma separated list of strings.
 
-
-
+Once that&amp;apos;s all taken care of, start writing your guide! Once you&amp;apos;re 
+done, follow the Propose and Pull Request instructions above, as they are 
+identical.
+You should note that with this method, you cannot add images to the 
+repository. For that to work, have a look at the next section which uses 
+Koding&amp;apos;s Editor and Git to make changes to this Koding University.
 </description>
   </item>
   
@@ -891,6 +929,34 @@ This concludes the getting started with Python guide. Thanks for reading!
   </item>
   
   <item>
+    <title>Getting Started: Editing Your Profile</title>
+    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
+    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
+    <author>Team Koding</author>
+    <description>Your Koding profile is your public information page on Koding. Currently 
+it shows your Avatar, Name and Description, recent Koding activity, and 
+in the near future Badges and additional social information. In this 
+guide we&amp;apos;ll go over the basic usage of your Koding profile.
+  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted 
+below.
+
+Clicking on it will open your profile.
+  Avatar, Name and Description When viewing your profile for the first time, you&amp;apos;ll see that your first 
+name is set to your Koding username, and your last name and description 
+are set to default values, as seen in the below image.
+
+These default values are only seen by you, and if you double click them, 
+you can edit that field.
+
+
+
+
+
+</description>
+  </item>
+  
+  <item>
     <title>Author A Guide: Overview and Guidelines</title>
     <link>//learn.koding.com/contribute/guidelines</link>
     <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
@@ -962,83 +1028,78 @@ forth) should be used to group content just like you do with HTML&amp;apos;s
   </item>
   
   <item>
-    <title>Author A Guide: Basic</title>
-    <link>//learn.koding.com/contribute/basic</link>
+    <title>Author A Guide: Previewing</title>
+    <link>//learn.koding.com/contribute/previewing</link>
     <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/contribute/basic</guid>
+    <guid isPermaLink="true">//learn.koding.com/contribute/previewing</guid>
     <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll go over how to contribute to the Koding University 
-the easy way. We&amp;apos;ll be using Github&amp;apos;s built in editor, to make the 
-forking &amp;amp; merging process easy. If you&amp;apos;re unfamiliar with Git, but you 
-still want to contribute to Learn, this is the guide for you. So, lets 
-get started!
-  Edit on Github Each Koding guide comes with a simple &amp;quot;Edit this on Github&amp;quot; link. This 
-link directs you back to a file editor on Github. Github will 
-automatically fork the repo if you have not yet, and even create a branch 
-so that your eventual pull request does not cause any unintended 
-contributions. Lets look at how this works.
-First up, find the guide that you want to edit, and look for the 
-Improve this Guide button at the bottom of all guides.
+    <description>While you shouldn&amp;apos;t need to preview your guides, since Markdown is 
+designed to be human friendly in the source, if you insist you can 
+preview your guides as they are on Koding University. This guide will go 
+over that process. Note that this will require a bit of developer 
+know-how, so be prepared to get your hands dirty. Lets get started!
+  Requirements You will need a working NodeJS installation to compile the Koding 
+University source. If you do not, visit the NodeJS downloads 
+page and grab the installer.
+  Installation With a working NodeJS installation, we need to install the KU 
+dependencies, as well as a global installation of the GulpJS. This can be 
+done with the following code:
+npm install -g gulp
+cd .metalsmith
+npm install
+  Building With Gulp installed, simply run the following command, to compile the 
+entire project into HTML.
+(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
+cd .metalsmith
+gulp
+The .metalsmith/build directory will contain all of the compiled html, 
+css, and any static resources (such as images/etc) from the markdown 
+directory.
+Compiling can take 1-2 minutes, so be patient.
+  Previewing If you want to preview the compiled site, open a new Koding Terminal tab 
+and run the following:
+(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
+cd .metalsmith
+gulp preview
+This will run a small HTTP Server on Port 8000, ie: 
+http://hostname.you.koding.io:8000. Keep this tab open, and in  a 
+different Koding Terminal tab run your gulp command from above.Each time you compile the site, this will show your compiled site.
+  Compiling as you type To have your Markdown compiled as you write your documents, run the 
+following commands:
+(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
+cd .metalsmith
+gulp watch
+This, in combination with the preview command above, will compile the 
+site each time you change the Markdown.
+Note that if you add images for your guide to use, you&amp;apos;ll want to run the 
+full gulp command again.
+And that sums it up! You now know how to contribute to Koding University, 
+in multiple ways. Keep up the awesome work, and we look forward to your 
+contribution!
+</description>
+  </item>
+  
+  <item>
+    <title>Author A Guide</title>
+    <link>//learn.koding.com/contribute</link>
+    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/contribute</guid>
+    <author>Team Koding</author>
+    <description>In this guide series we will go over Writing and Editing guides for Koding 
+University. We will cover every step of the process, but basic Git, 
+Github, and Markdown knowledge will be very useful.
+If you already know git, github, and markdown, here is the simple set of 
+tasks you&amp;apos;ll need to do.
 
-  Fork the Repository If you have not contributed before you likely do not have the repository 
-forked yet. Press the green button seen below, and Github will fork the 
-repository for you.
+Review the Style Guidelines
+Fork KDLearn
+Clone your forked repo
+Find or create your files, Make your markdown edits
+Commit and push your changes to your repo
+Make a pull request of your changes, against the KDLearn Repo
 
-  Make your Edits After forking, or if you already had Koding University Forked, you&amp;apos;ll be 
-presented with a text editor for the guide that you chose to edit. From 
-here, look through the guide and make your edits as you desire.
-
-Don&amp;apos;t forget that there is a preview tab as well. The guide will look 
-slightly different on Github than on Koding University; but because 
-everything is formatted in Markdown you can preview it Github to ensure 
-the correctness of your markdown syntax.
-  Propose File Changes After you have made your edits to the document, scroll down and enter a 
-title and description for the edits you&amp;apos;ve made. After you&amp;apos;re satisfied, 
-press Propose file change.
-
-This will create a new branch of your Fork and store your changes into 
-that branch. To repeat, your changes have been added to your Fork, 
-not to the official Koding University repository yet. To do that, you 
-need to create a Pull Request.
-  Create Pull Request A pull request lets Koding Staff review and merge your changes into the 
-official repository. To do that, after proposing your file changes you 
-will see a page like the one below.
-
-This is your branch, on your forked repository. If you press the Create 
-Pull Request button, your changes in that branch will be sent to the 
-official repository to be reviewed and merged in.
-This is it! You&amp;apos;ve gone from the guide on University, to editing it and 
-submitting your changes for review, all without leaving your browser or 
-using any complex Git commands.
-  Creating a New Guide The above process is nice and simple, but there&amp;apos;s one core thing missing. 
-We didn&amp;apos;t create a guide, we only edited a guide. What if we want to 
-create a new guide? Luckily this Basic workflow also works with new 
-guides! Lets go over that real quick.
-First, click here. That link will send you to the Github 
-editor with no file loaded. You can write in the editor, add a file name, 
-and propose changes just like the above instructions. Remember to name 
-your file with the .md extension, and adhere to the 
-Guidelines.
-Because you&amp;apos;re creating a new file though, you want to make sure and add 
-the proper metadata to the file. Copy the following code, and place it 
-into the editor.
----
-author: Your Name
-username: yourUsername
-date: 2014-07-31
-categories: [nginx]
----
-
-Fill in Your Name with your name, and yourUsername with your Koding 
-Username. The date field should be formatted in YYYY-MM-DD format, and 
-the categories list is just a comma separated list of strings.
-
-Once that&amp;apos;s all taken care of, start writing your guide! Once you&amp;apos;re 
-done, follow the Propose and Pull Request instructions above, as they are 
-identical.
-You should note that with this method, you cannot add images to the 
-repository. For that to work, have a look at the next section which uses 
-Koding&amp;apos;s Editor and Git to make changes to this Koding University.
+If you need more in depth instructions than that, please continue with 
+this series below. Thanks!
 </description>
   </item>
   
@@ -1236,6 +1297,78 @@ routes, middleware, and finally templates. Thanks for reading!
   </item>
   
   <item>
+    <title>Ghost Blog Installation</title>
+    <link>//learn.koding.com/guides/ghost-installation</link>
+    <pubDate>"2014-08-01T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/ghost-installation</guid>
+    <author>Team Koding</author>
+    <description>In this article we will go over the installation process for the awesome 
+new blogging software, Ghost. Installation is quick 
+and easy, and just requires a few configuration edits, making this great 
+for beginners. So, lets get started!
+  What is Ghost? Ghost is an awesome new blog software written with &amp;#x201C;Just Blogging&amp;#x201D; in 
+mind. Think WordPress without the complexity, bringing blogging back to 
+it&amp;#x2019;s roots, so to say. This is all well and good, but with any product 
+that is so new there is always confusion on how to install, develop, and 
+run it.
+So lets try and resolve some of that confusion. Lets go over the simple 
+process of setting up Ghost on Koding so you can 
+learn it, toy with it, develop with it, and create your Ghost blog to be 
+exactly what you want.
+  Downloading Ghost We&amp;apos;re going to use the Koding Terminal to download Ghost, so 
+visit the [Ghost Download][download-page] and look for the download link.Copy the url.
+At the time of writing this guide, the download url is: 
+https://ghost.org/zip/ghost-0.5.2.zip (This version is likely 
+outdated, please visit the download page and get the most updated link.)
+Now, go to your Terminal and type in the following commands.
+mkdir ghost
+cd ghost
+wget [ghost-zip-url]
+Replace [ghost-zip-url] with the full URL of the zip file that you 
+copied above.
+  Unzipping Ghost The download is in zip format, so we need to unzip it. Type in the 
+following command.
+unzip [ghost-zip-name]
+  Installing Dependencies Next, we need to install the dependencies.
+npm install --production
+This step will take a minute or two.
+  Edit the config Next up, open up the Ace Editor and double click your ghost 
+directory to expand it. Right click, and rename, the config.example.js 
+file to config.js.
+On line 36, look for the following section:
+        server: {
+            // Host to be passed to node&amp;apos;s `net.Server#listen()`
+            host: &amp;apos;127.0.0.1&amp;apos;,
+            // Port to be passed to node&amp;apos;s `net.Server#listen()`, for 
+iisnode set this to `process.env.PORT`
+            port: &amp;apos;2368&amp;apos;
+        },
+
+Replace 127.0.0.1 with 0.0.0.0, and change the Port to whichever 
+you&amp;apos;d like to use. Save the file with Ctrl-s.
+  Starting Ghost Go back to your Terminal and type in the following command to 
+start your Ghost Blog.
+npm start
+Note: If you had previously closed your Terminal, you&amp;apos;ll need to navigate 
+into the ghost directory again, with cd ghost.
+  Visiting your Ghost Blog Now open up a new tab and visit your Ghost Blog on your Koding domain at 
+the following address.
+http://hostname.username.koding.io:port
+Where username is your Koding username, and port is the port you 
+chose above.
+If you navigate to the following address, you can signup as Admin to your 
+Ghost installation.
+http://hostname.username.koding.io:port/ghost
+  Running Ghost on Port 80 If you&amp;apos;d like to run Ghost on the default Port 80, you&amp;apos;ll have to Stop 
+Apache, and start Ghost with sudo. Here are the commands to do this.
+sudo service apache2 stop
+sudo npm start
+This should be typed from the Ghost installation directory.
+And that&amp;apos;s it! You should now have a Ghost installation up and running.Happy Blogging!
+</description>
+  </item>
+  
+  <item>
     <title>Getting Started with NodeJS</title>
     <link>//learn.koding.com/guides/getting-started-nodejs</link>
     <pubDate>"2014-08-01T00:00:00.000Z"</pubDate>
@@ -1351,78 +1484,6 @@ This sums up the Getting Started with NodeJS guide. You should now have a
 good understanding of what Node is, from a very basic perspective. As 
 always, don&amp;apos;t forget to look at the API Documentation. Have 
 fun with Node!
-</description>
-  </item>
-  
-  <item>
-    <title>Ghost Blog Installation</title>
-    <link>//learn.koding.com/guides/ghost-installation</link>
-    <pubDate>"2014-08-01T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/ghost-installation</guid>
-    <author>Team Koding</author>
-    <description>In this article we will go over the installation process for the awesome 
-new blogging software, Ghost. Installation is quick 
-and easy, and just requires a few configuration edits, making this great 
-for beginners. So, lets get started!
-  What is Ghost? Ghost is an awesome new blog software written with &amp;#x201C;Just Blogging&amp;#x201D; in 
-mind. Think WordPress without the complexity, bringing blogging back to 
-it&amp;#x2019;s roots, so to say. This is all well and good, but with any product 
-that is so new there is always confusion on how to install, develop, and 
-run it.
-So lets try and resolve some of that confusion. Lets go over the simple 
-process of setting up Ghost on Koding so you can 
-learn it, toy with it, develop with it, and create your Ghost blog to be 
-exactly what you want.
-  Downloading Ghost We&amp;apos;re going to use the Koding Terminal to download Ghost, so 
-visit the [Ghost Download][download-page] and look for the download link.Copy the url.
-At the time of writing this guide, the download url is: 
-https://ghost.org/zip/ghost-0.5.2.zip (This version is likely 
-outdated, please visit the download page and get the most updated link.)
-Now, go to your Terminal and type in the following commands.
-mkdir ghost
-cd ghost
-wget [ghost-zip-url]
-Replace [ghost-zip-url] with the full URL of the zip file that you 
-copied above.
-  Unzipping Ghost The download is in zip format, so we need to unzip it. Type in the 
-following command.
-unzip [ghost-zip-name]
-  Installing Dependencies Next, we need to install the dependencies.
-npm install --production
-This step will take a minute or two.
-  Edit the config Next up, open up the Ace Editor and double click your ghost 
-directory to expand it. Right click, and rename, the config.example.js 
-file to config.js.
-On line 36, look for the following section:
-        server: {
-            // Host to be passed to node&amp;apos;s `net.Server#listen()`
-            host: &amp;apos;127.0.0.1&amp;apos;,
-            // Port to be passed to node&amp;apos;s `net.Server#listen()`, for 
-iisnode set this to `process.env.PORT`
-            port: &amp;apos;2368&amp;apos;
-        },
-
-Replace 127.0.0.1 with 0.0.0.0, and change the Port to whichever 
-you&amp;apos;d like to use. Save the file with Ctrl-s.
-  Starting Ghost Go back to your Terminal and type in the following command to 
-start your Ghost Blog.
-npm start
-Note: If you had previously closed your Terminal, you&amp;apos;ll need to navigate 
-into the ghost directory again, with cd ghost.
-  Visiting your Ghost Blog Now open up a new tab and visit your Ghost Blog on your Koding domain at 
-the following address.
-http://hostname.username.koding.io:port
-Where username is your Koding username, and port is the port you 
-chose above.
-If you navigate to the following address, you can signup as Admin to your 
-Ghost installation.
-http://hostname.username.koding.io:port/ghost
-  Running Ghost on Port 80 If you&amp;apos;d like to run Ghost on the default Port 80, you&amp;apos;ll have to Stop 
-Apache, and start Ghost with sudo. Here are the commands to do this.
-sudo service apache2 stop
-sudo npm start
-This should be typed from the Ghost installation directory.
-And that&amp;apos;s it! You should now have a Ghost installation up and running.Happy Blogging!
 </description>
   </item>
   
@@ -1993,6 +2054,36 @@ code files, text files, images, etc.
   </item>
   
   <item>
+    <title>Updating Node.js on your VM</title>
+    <link>//learn.koding.com/guides/updating-nodejs-on-your-vm</link>
+    <pubDate>"2014-06-27T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/updating-nodejs-on-your-vm</guid>
+    <author>Darryl Dias</author>
+    <description>Your Koding VM is powered by Ubuntu 13.10, by default your Koding VM comes pre-installed with the Node 0.10.18 that is the current stable version of Node.js. available in the official Ubuntu repository. We can update to the latest stable version of Node.js available for Ubuntu 13.10 by adding the official Node.js PPA to our local sources list and running a dist-upgrade to switch to the latest stable version.
+The Official PPA is updated regularly and is maintained by Chris Lea
+  Instructions Adding the official Node.js PPA
+sudo add-apt-repository ppa:chris-lea/node.js
+
+Updating the local package database and sources list.
+sudo apt-get update
+
+Updating to the latest stable build of Node.js available for Ubuntu 13.10. This will update all the packages that need to update and will also update your Node.js package.
+sudo apt-get dist-upgrade
+
+If you had deleted Node.js from your VM, you can install it by entering the command below. The PPA installs NPM as a part of nodejs and does not require you to install NPM seperately.
+sudo apt-get install nodejs
+
+Check the version of Node.js after installing. 
+node --version
+
+The example output should look like.
+v0.10.25
+
+Now we have the latest stable version of Node.js installed on your VM.
+</description>
+  </item>
+  
+  <item>
     <title>Installing Phalcon on Koding</title>
     <link>//learn.koding.com/guides/installing-phalcon</link>
     <pubDate>"2014-06-27T00:00:00.000Z"</pubDate>
@@ -2031,36 +2122,6 @@ http://hostname.username.koding.io/phpinfo.php
 This page should show you the PHP configuration on your machine. 
 One of the section contains information about Phalcon (search on the page for phalcon by pressing Ctrl + F). 
 If you can see this section, it means that Phalcon has been installed on your machine and you can start using it right away!
-</description>
-  </item>
-  
-  <item>
-    <title>Updating Node.js on your VM</title>
-    <link>//learn.koding.com/guides/updating-nodejs-on-your-vm</link>
-    <pubDate>"2014-06-27T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/updating-nodejs-on-your-vm</guid>
-    <author>Darryl Dias</author>
-    <description>Your Koding VM is powered by Ubuntu 13.10, by default your Koding VM comes pre-installed with the Node 0.10.18 that is the current stable version of Node.js. available in the official Ubuntu repository. We can update to the latest stable version of Node.js available for Ubuntu 13.10 by adding the official Node.js PPA to our local sources list and running a dist-upgrade to switch to the latest stable version.
-The Official PPA is updated regularly and is maintained by Chris Lea
-  Instructions Adding the official Node.js PPA
-sudo add-apt-repository ppa:chris-lea/node.js
-
-Updating the local package database and sources list.
-sudo apt-get update
-
-Updating to the latest stable build of Node.js available for Ubuntu 13.10. This will update all the packages that need to update and will also update your Node.js package.
-sudo apt-get dist-upgrade
-
-If you had deleted Node.js from your VM, you can install it by entering the command below. The PPA installs NPM as a part of nodejs and does not require you to install NPM seperately.
-sudo apt-get install nodejs
-
-Check the version of Node.js after installing. 
-node --version
-
-The example output should look like.
-v0.10.25
-
-Now we have the latest stable version of Node.js installed on your VM.
 </description>
   </item>
   
@@ -2984,23 +3045,6 @@ If you have trouble finding your VM Address, click here.
   </item>
   
   <item>
-    <title>What ports are open on my Koding VM?</title>
-    <link>//learn.koding.com/faq/open-ports</link>
-    <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/open-ports</guid>
-    <author></author>
-    <description>Most Unix ports are available on Koding VMs. See the following list for 
-open ports, as well as ports in use by default.
-
-Ports 2 through 65,534 are open.
-Port 80 is taken by Apache, but this can Apache can be turned off 
-to free the port.
-Ports 2 through 1,024 require sudo access.
-
-</description>
-  </item>
-  
-  <item>
     <title>How do I transfer/copy files to my VM?</title>
     <link>//learn.koding.com/faq/transfer-files</link>
     <pubDate></pubDate>
@@ -3021,6 +3065,23 @@ help ftp
     <author></author>
     <description>To turn off your VM, simply type in sudo poweroff into a Terminal. This will start a graceful shutdown process for your VM and within a few minutes you will see the UI reflect the powered down state for your VM.
 Similarly, you can also do a sudo restart to restart your VM instead of shutting it down. A sudo shutdown will shutdown (not power off) a VM...there&amp;apos;s a difference. :)
+</description>
+  </item>
+  
+  <item>
+    <title>What ports are open on my Koding VM?</title>
+    <link>//learn.koding.com/faq/open-ports</link>
+    <pubDate></pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/open-ports</guid>
+    <author></author>
+    <description>Most Unix ports are available on Koding VMs. See the following list for 
+open ports, as well as ports in use by default.
+
+Ports 2 through 65,534 are open.
+Port 80 is taken by Apache, but this can Apache can be turned off 
+to free the port.
+Ports 2 through 1,024 require sudo access.
+
 </description>
   </item>
   
@@ -3050,7 +3111,8 @@ To use this feature, head back to the VM settings panel and follow these 3 easy 
 
 click the (+) icon next to the &amp;quot;Domains&amp;quot; label to open up an input box where you can type in a new sub-domain. All you need to provide is the sub-domain, we will add the .username.koding.io part automatically.
 
-once added, these sub-domains become available on the setting panels of all your VMs for easy reassignment
+once added, these sub-domains become available on the setting panels 
+of all your VMs for easy reassignment
 deleting a sub-domain is as easy as adding one!
 
 
