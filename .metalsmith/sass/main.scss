@@ -28,7 +28,11 @@ $grey:          #555;
 $light-grey:    #eee;
 $light-grey2:   #838485;
 $green:         #27ae61;
-$footer_grey:   #f6f6f6;
+
+//colors footer
+$color_gallery_approx: #f0f0f0;
+$color_gray_nurse_approx: #e8e8e8;
+$color_tapa_approx: #747474;
 
 $normal_font:   15px;
 //--------------------------
@@ -41,6 +45,25 @@ $normal_font:   15px;
 %extend_4 {
 	font-family: "Ubuntu", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: 300;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-style: normal;
+    src: url("../fonts/OpenSans-Light.woff")
+}
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/OpenSans-Regular.woff")
+}
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-style: normal;
+    src: url("../fonts/OpenSans-Semibold.woff")
 }
 
 body {
@@ -210,122 +233,64 @@ a {
 		color: $color_5;
 	}
 }
-
 footer.main-footer {
-	padding: 70px 0 120px 0;
-	font-size: 13px;
-	font-weight: 400;
-	background: $footer_grey;
-	.inner-container {
-		max-width: 1290px;
-		width: 1200px;
-		margin: 0 auto;
-		display: block;
-		position: relative;
-		@include box-sizing(border-box);
-        nav {
-            background: none;
-            min-height: 85px;
-        }
-	}
-	.footer-block {
-		@include box-sizing(border-box);
-		display: inline-block;
-		vertical-align: top;
-    font-size: 14px;
-
-		&:first-child {
-		    width: 586px;
-        margin-right: 15px;
-        padding-left: 100px;
-		}
-		&:nth-child(2) {
-		    width: 270px;
-            margin: 0 15px;
-		}
-		&:nth-child(3) {
-		    width: 270px;
-            margin-left: 15px;
-		}
-		a {
-			color: #595e61;
-			text-decoration: none;
-			&:hover {
-				text-decoration: none;
-			}
-		}
-    h1, h5 {
-      display: inline-block;
-      margin-bottom: 25px;
-      padding-bottom: 25px;
-      border-bottom: 2px #e4e4e4 solid;
+  padding: 56px 0;
+  font-family: 'Open Sans','Proxima Nova','Helvetica Neue',Helvetica,Arial;
+  font-weight: 400;
+  background: $color_gallery_approx;
+  border-top: 1px solid $color_gray_nurse_approx;
+  height: auto;
+  .inner-container {
+    max-width: 1290px;
+    padding: 0 45px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    nav {
+      background-color: transparent;
     }
-		h5 {
-            color: #c3c6c7;
-            font-size: 14px;
-            font-weight: bold;
-		}
-		#logo {
-      margin-top: 26px;
-      margin-bottom: 20px;
-      padding-bottom: 21px;
-		    color: #878d91;
-            line-height: 25px;
-            span.img {
-                background-image: url(../img/logo.footer.png);
-                background-repeat: no-repeat;
-                background-position: left center;
-                background-size: 90%;
-                width: 100px;
-                margin-bottom: 0;
-            }
-		}
-		.about-text {
-		    padding-right: 100px;
-            color: #595e61;
-            line-height: 20px;
-            font-size: 14px;
-            margin: 0;
-            margin-bottom: 32px;
-            padding-top: 10px;
-		}
-		.copy {
-            color: #afb1b2;
-            font-size: 14px;
-            margin: 0;
-        }
-    	.social-links {
-    		display: block;
-    		margin: 2px 0 0;
-    		word-spacing: 5px;
-    		a {
-    			color: $color_4;
-    			font-size: 13px;
-    			font-weight: bold;
-    			text-decoration: none;
-    			&:hover {
-    				text-decoration: none;
-    			}
-    		}
-    		#twitter {
-    		    color: #55acee;
-    		}
-    		#fb {
-    		    color: #3b5998;
-    		}
-    	}
-    	hr {
-    	    margin: 25px 0;
-            width: 35px;
-            height: 2px;
-            background: #e4e4e4;
-    	}
-	}
-	nav a {
-		line-height: 25px;
-		padding-right: 25px;
-		display: block;
-	}
+  }
+  .footer-block {
+    width: 50%;
+    font-size: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    &:last-child {
+      text-align: right;
+    }
+    a {
+      vertical-align: middle;
+      font-size: 14px;
+      line-height: 22px;
+      color: $color_tapa_approx;
+      display: inline;
+      margin-right: 12px;
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  a.social {
+    display: inline-block;
+    margin-right: 8px;
+    &.tw {
+      background: url(../img/app.sprite.png) 0 -2861px;
+      width: 20px;
+      height: 20px;
+    }
+    &.fb {
+      background: url(../img/app.sprite.png) 0 -2831px;
+      width: 20px;
+      height: 20px;
+    }
+  }
 }
 h1#logo {
   margin: 10px 0;
