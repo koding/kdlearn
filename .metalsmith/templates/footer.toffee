@@ -1,44 +1,16 @@
 <footer class="kdview main-footer"><div class="inner-container clearfix">
 
-<div class="footer-block">
-  <h1 id="logo">
-    <a href="/">
-      <span class="img"></span>
-    </a>
-  </h1>
+  <nav class="footer-block">
+    <a href="https://koding.com/Pricing">Pricing</a>
+    <a href="https://koding.com/Activity">Community</a>
+    <a href="https://koding.com/About">About</a>
+    <a href="https://koding.com/Legal">Legal</a>
+  </nav>
 
-    <p class="about-text">Koding gives you the necessary environment to start developing your apps,
-    run them, collaborate and share with the world.</p>
-
-    <p class="copy">
-      2014 © Koding, Inc. 358 Brannan Street, San Francisco, CA, 94107
-    </p>
-
-    <div class="social-links">
-        <a href="http://twitter.com/koding" id="twitter">Twitter</a> &bull; <a href="http://facebook.com/koding" id="fb">Facebook</a>
-    </div>
-</div>
-
-<nav class="footer-block">
-  <h5>Company</h5>
-  <a href="http://learn.koding.com" target="_blank">Koding University</a>
-  <a href="https://koding.com/About">Jobs</a>
-  <a href="https://koding.com/tos.html" target="_blank">Terms and Conditions</a>
-  <a href="https://koding.com/privacy.html" target="_blank">Privacy Policy</a>
-  <a href="mailto:hello@koding.com" target="_self">Contact Us</a>
-  <a href="http://status.koding.com" target="_blank">Status</a>
-</nav>
-
-<nav class="footer-block">
-    <h5>Community</h5>
-    <a href="/Activity">Activity</a>
-    <a href="http://blog.koding.com">Koding Blog</a>
-    <a href="http://stories.koding.com">Testimonials</a>
-    <a href="https://koding-cdn.s3.amazonaws.com/brand/koding-logo.pdf">Brand Guidelines</a>
-    <a href="https://koding.com/copyright.html" target="_blank">Copyright/DMCA Guidelines</a>
-    <a href="https://koding.com/acceptable.html" target="_blank">Acceptable User Policy</a>
-</nav>
-
+  <nav class="footer-block">
+    <a class="social tw" href="http://twitter.com/koding"></a><a class="social fb" href="http://facebook.com/koding"></a>
+    <a href="/">Copyright © 2014 Koding, Inc</a>
+  </nav>
 </div></footer>
 
 
