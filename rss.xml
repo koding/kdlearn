@@ -59,6 +59,32 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
+    <title>What happens upon upgrade?</title>
+    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
+    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
+    <author>Team Koding</author>
+    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
+Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
+
+Ability to mark your VM(s) as Always-On
+Add more storage to your VM(s)
+
+  Utilizing new resources when upgrading to the Hobbyist Plan Once you have upgraded to Hobbyist, you can mark your VM as an Always-On VM and increase its storage from 3GB to 10GB. To get these going, its as simple as heading over to the settings panel for your VM and enabling these features. Follow these easy steps:
+
+log out of your Koding account and log back in.
+head over to VM settings (as shown in the image below)
+expand the &amp;quot;More&amp;quot; panel and then the &amp;quot;Advanced&amp;quot; panel
+You will see a new button under the Advanced panel labeled &amp;quot;Resize&amp;quot; (this button only appears for users who have upgraded to the Hobbyist plan and have not yet allocated the 10GB. Once you allocate it, the button will disappear)
+Click the button to initiate resize. Once done, your VM will show 10GB. Verify that using the command df -h /
+
+  Utilizing new resources when upgrading to the Developer Plan Under these plans, you can have a total of up to 3 (for Developer) / 5 (for Professional) VMs, mark any of them as Always-On and allocate 25GB (for Developer) / 50GB (for Professional) of storage amonst them. You will start with the default free VM and it is up to you whether you want to leave it at the default 3GB or delete it so that you can make a new one with a storage allocation that you prefer. To delete a VM, simply go the settings panel of the VM and click the Terminate button (as shown in the attached screen shot).
+To create a new VM, click the + icon in the VM list and create a new VM with a space allocation that is preferable to you (as shown below).
+If you ever have any question regarding resources or have any issues you can make a support request.
+</description>
+  </item>
+  
+  <item>
     <title>Building C / C++ applications with biicode</title>
     <link>//learn.koding.com/guides/getting-started-biicode</link>
     <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
@@ -176,32 +202,6 @@ sudo chown myuser:www-data files # NB this is server/user specific!
 chmod 0775 files
 (You need to change these permissions back to something more sane afterwards&amp;#x2026; 0644 and 0775 seem to be ok, but I&amp;#x2019;m open to abuse on the matter.)
 And you&amp;#x2019;re off! To open your VM in a browser, click the ellipsis next to your VM name (probably koding-vm-0) and then the VM name to open the site in a new tab, and follow the usual Drupal installer instructions! NB If you&amp;apos;re a developer, you might want to check out Webchick&amp;apos;s setup video from Drupalcon AMS: http://www.youtube.com/watch?v=wKdU2Q1NIZQ
-</description>
-  </item>
-  
-  <item>
-    <title>What happens upon upgrade?</title>
-    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
-    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
-    <author>Team Koding</author>
-    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
-Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
-
-Ability to mark your VM(s) as Always-On
-Add more storage to your VM(s)
-
-  Utilizing new resources when upgrading to the Hobbyist Plan Once you have upgraded to Hobbyist, you can mark your VM as an Always-On VM and increase its storage from 3GB to 10GB. To get these going, its as simple as heading over to the settings panel for your VM and enabling these features. Follow these easy steps:
-
-log out of your Koding account and log back in.
-head over to VM settings (as shown in the image below)
-expand the &amp;quot;More&amp;quot; panel and then the &amp;quot;Advanced&amp;quot; panel
-You will see a new button under the Advanced panel labeled &amp;quot;Resize&amp;quot; (this button only appears for users who have upgraded to the Hobbyist plan and have not yet allocated the 10GB. Once you allocate it, the button will disappear)
-Click the button to initiate resize. Once done, your VM will show 10GB. Verify that using the command df -h /
-
-  Utilizing new resources when upgrading to the Developer Plan Under these plans, you can have a total of up to 3 (for Developer) / 5 (for Professional) VMs, mark any of them as Always-On and allocate 25GB (for Developer) / 50GB (for Professional) of storage amonst them. You will start with the default free VM and it is up to you whether you want to leave it at the default 3GB or delete it so that you can make a new one with a storage allocation that you prefer. To delete a VM, simply go the settings panel of the VM and click the Terminate button (as shown in the attached screen shot).
-To create a new VM, click the + icon in the VM list and create a new VM with a space allocation that is preferable to you (as shown below).
-If you ever have any question regarding resources or have any issues you can make a support request.
 </description>
   </item>
   
@@ -350,56 +350,6 @@ delete any of your files in the process.
   </item>
   
   <item>
-    <title>Setting up FTP on Koding</title>
-    <link>//learn.koding.com/guides/setting-up-ftp-on-koding</link>
-    <pubDate>"2014-09-15T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-ftp-on-koding</guid>
-    <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll go over how to get your FTP Client connected to your 
-VM&amp;apos;s FTP Server. We will be using FileZilla as the FTP 
-Client, but any client should be able to connect to your FTP Server 
-successfully.
-  What you will need In this tutorial you will need the following.
-
-A Koding account, and your Koding Username.
-The Address of the VM you&amp;apos;d like to connect to. Instructions can be 
-found here.
-
-  Installing PureFTPd First off, we&amp;apos;ll need to install PureFTPd. This can be done by pasting 
-the following command into your Koding IDE&amp;apos;s Terminal.
-sudo apt-get install pure-ftpd
-  Adding an FTP User After PureFTPd has been successfully installed, we need to add an FTP 
-username and password to connect to. These have nothing to do with Koding 
-username and password, and are simply used for ftp authorization. To do 
-this, paste the following command into your Terminal.
-sudo pure-pw useradd FTP_USERNAME -u KODING_USERNAME -d ~/Web
-Make note to replace FTP_USERNAME with the FTP username you want to 
-use, and KODING_USERNAME with your actual Koding Username.
-After hitting enter, you&amp;apos;ll be prompted for the FTP password you wish 
-to use. Not your Koding password.
-  Linking Your FTP Database Next, you&amp;apos;ll have to run a few commands to get the ftp database setup and 
-configured properly. Run the following commands in your Terminal.
-sudo pure-pw mkdb
-sudo ln -s /etc/pure-ftpd/pureftpd.passwd /etc/pureftpd.passwd
-sudo ln -s /etc/pure-ftpd/pureftpd.pdb /etc/pureftpd.pdb
-sudo ln -s /etc/pure-ftpd/conf/PureDB /etc/pure-ftpd/auth/PureDB
-Once the above is ran, simply restart your now-configured FTP Server.This can be done with the following command.
-sudo service pure-ftpd restart
-  Connecting to your FTP Server Finally, in your FTP Client of choice paste your VM Address into the 
-hostname. If you&amp;apos;re not sure what that is, instructions to find it can be 
-found here.
-After the Hostname, enter your FTP Username, and FTP Password that you 
-chose in the above commands. An example image from FileZilla can be seen 
-below.
-
-  Additional Resources 
-FileZilla
-FileZilla Download
-
-</description>
-  </item>
-  
-  <item>
     <title>Connect with SSH, from Unix</title>
     <link>//learn.koding.com/guides/ssh-into-your-vm</link>
     <pubDate>"2014-09-15T00:00:00.000Z"</pubDate>
@@ -446,6 +396,56 @@ ssh joshmurray@unkk05c3f84e.joshmurray.koding.io
 and share the output with Koding users. An example of the above ssh 
 command with the -vv flag is below.
 ssh -vv joshmurray@unkk05c3f84e.joshmurray.koding.io
+</description>
+  </item>
+  
+  <item>
+    <title>Setting up FTP on Koding</title>
+    <link>//learn.koding.com/guides/setting-up-ftp-on-koding</link>
+    <pubDate>"2014-09-15T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-ftp-on-koding</guid>
+    <author>Team Koding</author>
+    <description>In this guide we&amp;apos;ll go over how to get your FTP Client connected to your 
+VM&amp;apos;s FTP Server. We will be using FileZilla as the FTP 
+Client, but any client should be able to connect to your FTP Server 
+successfully.
+  What you will need In this tutorial you will need the following.
+
+A Koding account, and your Koding Username.
+The Address of the VM you&amp;apos;d like to connect to. Instructions can be 
+found here.
+
+  Installing PureFTPd First off, we&amp;apos;ll need to install PureFTPd. This can be done by pasting 
+the following command into your Koding IDE&amp;apos;s Terminal.
+sudo apt-get install pure-ftpd
+  Adding an FTP User After PureFTPd has been successfully installed, we need to add an FTP 
+username and password to connect to. These have nothing to do with Koding 
+username and password, and are simply used for ftp authorization. To do 
+this, paste the following command into your Terminal.
+sudo pure-pw useradd FTP_USERNAME -u KODING_USERNAME -d ~/Web
+Make note to replace FTP_USERNAME with the FTP username you want to 
+use, and KODING_USERNAME with your actual Koding Username.
+After hitting enter, you&amp;apos;ll be prompted for the FTP password you wish 
+to use. Not your Koding password.
+  Linking Your FTP Database Next, you&amp;apos;ll have to run a few commands to get the ftp database setup and 
+configured properly. Run the following commands in your Terminal.
+sudo pure-pw mkdb
+sudo ln -s /etc/pure-ftpd/pureftpd.passwd /etc/pureftpd.passwd
+sudo ln -s /etc/pure-ftpd/pureftpd.pdb /etc/pureftpd.pdb
+sudo ln -s /etc/pure-ftpd/conf/PureDB /etc/pure-ftpd/auth/PureDB
+Once the above is ran, simply restart your now-configured FTP Server.This can be done with the following command.
+sudo service pure-ftpd restart
+  Connecting to your FTP Server Finally, in your FTP Client of choice paste your VM Address into the 
+hostname. If you&amp;apos;re not sure what that is, instructions to find it can be 
+found here.
+After the Hostname, enter your FTP Username, and FTP Password that you 
+chose in the above commands. An example image from FileZilla can be seen 
+below.
+
+  Additional Resources 
+FileZilla
+FileZilla Download
+
 </description>
   </item>
   
@@ -929,6 +929,30 @@ This concludes the getting started with Python guide. Thanks for reading!
   </item>
   
   <item>
+    <title>Author A Guide</title>
+    <link>//learn.koding.com/contribute</link>
+    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/contribute</guid>
+    <author>Team Koding</author>
+    <description>In this guide series we will go over Writing and Editing guides for Koding 
+University. We will cover every step of the process, but basic Git, 
+Github, and Markdown knowledge will be very useful.
+If you already know git, github, and markdown, here is the simple set of 
+tasks you&amp;apos;ll need to do.
+
+Review the Style Guidelines
+Fork KDLearn
+Clone your forked repo
+Find or create your files, Make your markdown edits
+Commit and push your changes to your repo
+Make a pull request of your changes, against the KDLearn Repo
+
+If you need more in depth instructions than that, please continue with 
+this series below. Thanks!
+</description>
+  </item>
+  
+  <item>
     <title>Getting Started: Editing Your Profile</title>
     <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
     <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
@@ -1076,30 +1100,6 @@ full gulp command again.
 And that sums it up! You now know how to contribute to Koding University, 
 in multiple ways. Keep up the awesome work, and we look forward to your 
 contribution!
-</description>
-  </item>
-  
-  <item>
-    <title>Author A Guide</title>
-    <link>//learn.koding.com/contribute</link>
-    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/contribute</guid>
-    <author>Team Koding</author>
-    <description>In this guide series we will go over Writing and Editing guides for Koding 
-University. We will cover every step of the process, but basic Git, 
-Github, and Markdown knowledge will be very useful.
-If you already know git, github, and markdown, here is the simple set of 
-tasks you&amp;apos;ll need to do.
-
-Review the Style Guidelines
-Fork KDLearn
-Clone your forked repo
-Find or create your files, Make your markdown edits
-Commit and push your changes to your repo
-Make a pull request of your changes, against the KDLearn Repo
-
-If you need more in depth instructions than that, please continue with 
-this series below. Thanks!
 </description>
   </item>
   
@@ -3045,14 +3045,18 @@ If you have trouble finding your VM Address, click here.
   </item>
   
   <item>
-    <title>How do I transfer/copy files to my VM?</title>
-    <link>//learn.koding.com/faq/transfer-files</link>
+    <title>What ports are open on my Koding VM?</title>
+    <link>//learn.koding.com/faq/open-ports</link>
     <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/transfer-files</guid>
+    <guid isPermaLink="true">//learn.koding.com/faq/open-ports</guid>
     <author></author>
-    <description>  I want to copy a few files Getting a few files to your Koding VM is simple and there are a variety of methods. We&amp;apos;ve put together a short video titled Importing your files in the Video&amp;apos;s section of Koding University. Check that out for a simple drag-drop method to upload a few files.
-  I want to copy a large number of files To copy several files, use FTP. To set up FTP on your VM, simply open up Terminal and type in
-help ftp
+    <description>Most Unix ports are available on Koding VMs. See the following list for 
+open ports, as well as ports in use by default.
+
+Ports 2 through 65,534 are open.
+Port 80 is taken by Apache, but this can Apache can be turned off 
+to free the port.
+Ports 2 through 1,024 require sudo access.
 
 </description>
   </item>
@@ -3069,18 +3073,14 @@ Similarly, you can also do a sudo restart to restart your VM instead of shutting
   </item>
   
   <item>
-    <title>What ports are open on my Koding VM?</title>
-    <link>//learn.koding.com/faq/open-ports</link>
+    <title>How do I transfer/copy files to my VM?</title>
+    <link>//learn.koding.com/faq/transfer-files</link>
     <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/open-ports</guid>
+    <guid isPermaLink="true">//learn.koding.com/faq/transfer-files</guid>
     <author></author>
-    <description>Most Unix ports are available on Koding VMs. See the following list for 
-open ports, as well as ports in use by default.
-
-Ports 2 through 65,534 are open.
-Port 80 is taken by Apache, but this can Apache can be turned off 
-to free the port.
-Ports 2 through 1,024 require sudo access.
+    <description>  I want to copy a few files Getting a few files to your Koding VM is simple and there are a variety of methods. We&amp;apos;ve put together a short video titled Importing your files in the Video&amp;apos;s section of Koding University. Check that out for a simple drag-drop method to upload a few files.
+  I want to copy a large number of files To copy several files, use FTP. To set up FTP on your VM, simply open up Terminal and type in
+help ftp
 
 </description>
   </item>

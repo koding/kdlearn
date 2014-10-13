@@ -8,6 +8,12 @@
   </url>
   
   <url>
+    <loc>http://learn.koding.com/guides/what-happens-upon-upgrade</loc>
+    <lastmod>2014-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
     <loc>http://learn.koding.com/guides/getting-started-biicode</loc>
     <lastmod>2014-10-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -15,12 +21,6 @@
   
   <url>
     <loc>http://learn.koding.com/guides/getting-started-drupal8-beta</loc>
-    <lastmod>2014-10-02</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://learn.koding.com/guides/what-happens-upon-upgrade</loc>
     <lastmod>2014-10-02</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -44,13 +44,13 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/setting-up-ftp-on-koding</loc>
+    <loc>http://learn.koding.com/guides/ssh-into-your-vm</loc>
     <lastmod>2014-09-15</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/ssh-into-your-vm</loc>
+    <loc>http://learn.koding.com/guides/setting-up-ftp-on-koding</loc>
     <lastmod>2014-09-15</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -92,6 +92,12 @@
   </url>
   
   <url>
+    <loc>http://learn.koding.com/contribute</loc>
+    <lastmod>2014-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
     <loc>http://learn.koding.com/guides/getting-started/editing-your-profile</loc>
     <lastmod>2014-08-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -105,12 +111,6 @@
   
   <url>
     <loc>http://learn.koding.com/contribute/previewing</loc>
-    <lastmod>2014-08-04</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://learn.koding.com/contribute</loc>
     <lastmod>2014-08-04</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -368,7 +368,7 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/faq/transfer-files</loc>
+    <loc>http://learn.koding.com/faq/open-ports</loc>
     <lastmod>2014-10-13</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -380,7 +380,7 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/faq/open-ports</loc>
+    <loc>http://learn.koding.com/faq/transfer-files</loc>
     <lastmod>2014-10-13</lastmod>
     <changefreq>monthly</changefreq>
   </url>
