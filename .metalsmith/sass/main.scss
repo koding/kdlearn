@@ -47,6 +47,67 @@ $normal_font:   15px;
 	font-weight: 300;
 }
 
+@font-face {
+    font-family: "Proxima Nova";
+    font-weight: 300;
+    font-style: normal;
+    src: url("https://koding.com/a/fonts/ProximaNova-Light.otf")
+}
+@font-face {
+    font-family: "Proxima Nova";
+    font-weight: 300;
+    font-style: italic;
+    src: url("https://koding.com/a/fonts/ProximaNova-LightItalic.otf")
+}
+@font-face {
+    font-family: "Proxima Nova";
+    font-weight: 400;
+    font-style: normal;
+    src: url("https://koding.com/a/fonts/ProximaNova-Regular.otf")
+}
+@font-face {
+    font-family: "Proxima Nova";
+    font-weight: 400;
+    font-style: italic;
+    src: url("https://koding.com/a/fonts/ProximaNova-RegularItalic.otf")
+}
+@font-face {
+    font-family: "Proxima Nova";
+    font-weight: 600;
+    font-style: normal;
+    src: url("https://koding.com/a/fonts/ProximaNova-Semibold.otf")
+}
+@font-face {
+    font-family: "Proxima Nova";
+    font-weight: 600;
+    font-style: italic;
+    src: url("https://koding.com/a/fonts/ProximaNova-SemiboldItalic.otf")
+}
+@font-face {
+    font-family: "Proxima Nova";
+    font-weight: 700;
+    font-style: normal;
+    src: url("https://koding.com/a/fonts/ProximaNova-Bold.otf")
+}
+@font-face {
+    font-family: "Proxima Nova";
+    font-weight: 700;
+    font-style: italic;
+    src: url("https://koding.com/a/fonts/ProximaNova-BoldItalic.otf")
+}
+@font-face {
+    font-family: "Proxima Nova";
+    font-weight: 800;
+    font-style: normal;
+    src: url("https://koding.com/a/fonts/ProximaNova-Extrabold.otf")
+}
+@font-face {
+    font-family: "Proxima Nova";
+    font-weight: 900;
+    font-style: normal;
+    src: url("https://koding.com/a/fonts/ProximaNova-Black.otf")
+}
+
 body {
 	margin: 0;
 	padding: 0;
