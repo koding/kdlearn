@@ -1,5 +1,7 @@
 #{partial 'head.toffee', title: 'Videos'}
 #{partial 'topnav.toffee'}
+
+
 {#
 printVideo = (filename, rel="videos") ->
   if typeof filename is 'string'
@@ -28,34 +30,21 @@ printVideo = (filename, rel="videos") ->
   </li>
   :}
 #}
+
+
 <section><div class="container listing">
 <div class="docs-content" id="page-videos">
 
 <div class="category">
   <h3 class="title">Explore Koding</h3>
   <ul>
-  {# printVideo videoId: '5E85g_ddV3A', title: 'Koding Introduction', 'koding' #}
-  {# printVideo 'guides/social/index.html', 'koding' #}
-  {## printVideo 'guides/your-first-file/index.html', 'koding' ##}
-  {## printVideo 'guides/importing-your-files/index.html', 'koding'  ##}
-  {# printVideo 'guides/the-terminal/index.html', 'koding' #}
-  {# printVideo 'guides/get-help-with-teamwork/index.html', 'koding' #}
-  {## printVideo 'guides/add-cname-records-to-your-domain/index.html',
-    'koding' ##}
+  {# printVideo videoId: 'MZOpD8mdFVc', title: 'Koding Introduction', 'koding' #}
+  {# printVideo 'guides/vm-introduction/index.html', 'koding' #}
+  {# printVideo 'guides/ide-introduction/index.html', 'koding' #}
+  {# printVideo 'guides/terminal-introduction/index.html', 'koding' #}
   </ul>
 </div>
 
-<div class="category">
-  <h3 class="title">Installing Apps and Servers</h3>
-  <ul>
-  {# printVideo 'guides/bootstrap-3-quick-tip/index.html', 'install' #}
-  {# printVideo 'guides/getting-started-firebase/index.html', 'install' #}
-  {# printVideo 'guides/getting-started-with-facebook-app-dev/index.html',
-    'install' #}
-  {# printVideo 'guides/getting-started-with-mixpanel/index.html',
-    'install' #}
-  </ul>
-</div>
 
 </div>
 </div></section>
