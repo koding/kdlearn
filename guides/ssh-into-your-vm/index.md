@@ -40,9 +40,8 @@ RRrOgQwre6OAkgMvyV2X foo@bar.baz
 ## Adding to your Authorized Keys
 
 Next, we need to create a file called `authorized_keys` **on your Koding 
-VM**, paste the previously copied key into it. Run the following commands 
-in your
-**Koding Terminal**.
+VM**, and paste the previously copied key into it. Run the following 
+commands in your **Koding Terminal**.
 
 ```
 mkdir -p ~/.ssh
