@@ -200,6 +200,9 @@ header {
 	padding: 0 20px;
 	/* (8) max-width was set before: old value: 650px - new value 1000px */;
 }
+section:not(.page) .container {
+  min-height: 500px;
+}
 strong {
 	font-weight: 700;
 }
