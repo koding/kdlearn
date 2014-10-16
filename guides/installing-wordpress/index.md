@@ -127,6 +127,4 @@ You should see the initial configuration page. It should look like this:
 
 Now you just need to follow the guide and install WordPress.
 
-If you made it to this point then you got it all right on the first try.
-
-If you encounter any issues or ave any questions regarding WordPress on Koding you can email us at [support@koding.com](mailto:support@koding.com) and we'll gladly help.
+If you encounter any issues or have any questions regarding WordPress on Koding you can email us at [support@koding.com](mailto:support@koding.com) and we'll gladly help.
