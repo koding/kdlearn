@@ -71,25 +71,25 @@ unzip latest.zip
 
 The last thing we need to do before we can start the installation process is to set up the link between WordPress and the database we created earlier. We can achieve this by inputing the following commands:
 
-Head over to the wordpress folder:
+* Head over to the wordpress folder:
 
 ```
 cd wordpress
 ```
 
-Rename the default config file:
+* Rename the default config file:
 
 ```
 cp wp-config-sample.php wp-config.php
 ```
 
-Edit the config file via the command line:
+* Edit the config file via the command line:
 
 ```
 nano wp-config.php
 ```
 
-Add the proper database info into the config file and then save it:
+* Add the proper database info into the config file and then save it:
 
 ```
 // ** MySQL settings - You can get this info from your web host ** //
