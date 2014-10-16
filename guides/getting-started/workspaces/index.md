@@ -32,6 +32,10 @@ Workspaces, highlighted in the above image, can be opened simply by
 clicking on them. Creating new workspaces is as simple as using the Plus 
 button, in the upper right of the highlighted area.
 
+Or you can simply right click on a folder from the FileTree and create a Workspace from there. Like in the image below.
+
+![Workspaces1](workspaces1.png)
+
 With the workspace open, simply use the [IDE][ide] as you want. Open 
 files, Terminals, Browsers, and Drawing Boards will be remembered between 
 programming sessions.
@@ -68,6 +72,8 @@ correctly.
 You can freely remove the Workspace file system and replace them with any 
 links you desire, as the steps above use, but just be careful not to 
 delete any of your files in the process.
+
+
 
 *Note: the default Workspace can't be removed as that is the default Web folder on your VM.*
 
