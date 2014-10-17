@@ -12,9 +12,11 @@ This guide will help you install a fresh WordPress instance. Just follow the ste
 
 ## Step 1 - Database creation
 
-First and foremost we need a new database for our WordPress installation. We can either use the command line for this or use phpMyAdmin.
+The first thing we need for our WordPress installation to work is a new database. We can create one using either the command line or use [phpMyAdmin](http://learn.koding.com/guides/install-phpmyadmin/).
 
-For the sake of this guide we are going to use the command line to create a database for our WordPress installation.
+For the sake of this guide we are going to use the command line, to create a database for our WordPress installation.
+
+Please make note that you should have mySQL installed on your VM for this work. If you don't know how to get mySQL installed just follow [this guide](http://learn.koding.com/guides/installing-mysql/) and then comeback here to continue with the rest of the install.
 
 The commands that you should use to set up a database from the command line are as follows.
 
@@ -42,7 +44,7 @@ CREATE USER dbuser@localhost IDENTIFIED BY 'your_password';
 GRANT ALL PRIVILEGES ON wordpress.* TO dbuser@localhost;
 ```
 
-* Apply the changes so that mySQL knows about it:
+* Apply the changes so that mySQL knows about them:
 
 ```
 FLUSH PRIVILEGES;
@@ -57,6 +59,7 @@ The first thing we need to do is to head over to our Web folder like so:
 ```
 cd Web
 ```
+
 After that we need to download the latest WordPress release. We can do that using the following command.
 
 ```
@@ -94,14 +97,16 @@ nano wp-config.php
 ```
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'wordpress');
+define('DB_NAME', 'database_name');
 
 /** MySQL database username */
-define('DB_USER', 'dbuser');
+define('DB_USER', 'username');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'your_password');
+define('DB_PASSWORD', 'password');
 ```
+
+The above variables: *database_name*, *username*, *password* should be replaced with the values you set when creating the database on [Step 1](#step-1).
 
 The last thing that we need to do before we begin the install, is to set up the uploads folder. That can be achieved like so:
 
