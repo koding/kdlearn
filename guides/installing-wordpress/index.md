@@ -8,17 +8,19 @@ template: page.toffee
 
 # How to install WordPress
 
-This guide will help you install a fresh WordPress instance. Just follow the steps outlined below and you'll be done in not time. Let's cut to the chase.
+This guide will walk you through the steps required to install Wordpress on your Koding VM. We will walk through the steps needed to download, install, configure and eventually run a full Wordpress system.
 
 ## Step 1 - Database creation
 
-The first thing we need for our WordPress installation to work is a new database. We can create one using either the command line or use [phpMyAdmin](http://learn.koding.com/guides/install-phpmyadmin/).
+The first thing we need for our WordPress installation to work is a new database. We can create one using either:
+1. the command line
+2. via [phpMyAdmin](http://learn.koding.com/guides/install-phpmyadmin/).
 
-For the sake of this guide we are going to use the command line, to create a database for our WordPress installation.
+The rest of this guide will focus on the command line method to create a database for our WordPress installation. (Note: you should already have MySQL installed on your VM before continuing. If you don't have it installed, just follow [this guide](http://learn.koding.com/guides/installing-mysql/) and then come back here to continue with the rest of the Wordpress install.)
 
-Please make note that you should have mySQL installed on your VM for this work. If you don't know how to get mySQL installed just follow [this guide](http://learn.koding.com/guides/installing-mysql/) and then comeback here to continue with the rest of the install.
+### setting up MySQL:
 
-The commands that you should use to set up a database from the command line are as follows.
+Type in the commands listed below in a Koding Terminal.
 
 * Login to mySQL as the root user:
 
@@ -54,25 +56,27 @@ exit
 
 ## Step 2 - Configuring WordPress
 
-The first thing we need to do is to head over to our Web folder like so:
+The first thing we need to do is to head over to our Web folder like so type in the following command in Terminal:
 
 ```
-cd Web
+cd ~/Web
 ```
 
-After that we need to download the latest WordPress release. We can do that using the following command.
+Now, we need to download the latest WordPress release. We can do that using the following command:
 
 ```
 wget http://wordpress.org/download/latest.zip
 ```
 
-We now need to unzip it. This command should do the trick. Don't worry it will automatically create a folder named **wordpress** that you can rename afterwards.
+Unzip the downloaded file:
 
 ```
 unzip latest.zip
 ```
+All of the wordpress install files will now be extracted into a older named **wordpress** (that you can rename afterwards if you want to).
 
-The last thing we need to do before we can start the installation process is to set up the link between WordPress and the database we created earlier. We can achieve this by inputing the following commands:
+
+The last thing we need to do before we can start the installation process is to set up the link between WordPress and the database we created earlier. We can achieve this by typing in the following commands in Terminal:
 
 * Head over to the wordpress folder:
 
@@ -116,20 +120,20 @@ The last thing that we need to do before we begin the install, is to set up the 
 mkdir wp-content/uploads
 ```
 
-* We need to give the server writing capabilities like so:
+* We need to give the web server write permission to all Wordpress files so you can make changes to the install directly from within Wordpress. You can achieve this by using this command:
 
 ```
 sudo chown -R :www-data wp-content/uploads
 ```
 
-## Step 5 - Installing WordPress
+## Step 5 - Finalizing the Wordpress install
 
-Navigate to your VM hostname, in a new browser tab, and add **/wordpress** at the end. If you don't know what you VM hostname is, follow [this guide](http://learn.koding.com/faq/vm-hostname/) to find out.
+Open up a new browser tab and navigate to your VM's hostname and add **/wordpress** at the end. If you don't know what you VM hostname is, follow [this guide](http://learn.koding.com/faq/vm-hostname/) to find out.
 
 You should see the initial configuration page. It should look like this:
 
 ![WordPress1](wp1.png)
 
-Now you just need to follow the guide and install WordPress.
+Now you just need to follow the instructions on screen and finish the install!
 
 If you encounter any issues or have any questions regarding WordPress on Koding you can email us at [support@koding.com](mailto:support@koding.com) and we'll gladly help.
