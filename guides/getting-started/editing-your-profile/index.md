@@ -5,7 +5,7 @@ categories: [koding]
 
 hideSidebar: true
 series: getting-started
-series-index: 4
+series-index: 5
 template: series.toffee
 ---
 
