@@ -34,7 +34,7 @@ printVideo = (filename) ->
 
 <div class="fancy-youtube-highlight">
   <div class="video-shadow">
-    <img src="http://img.youtube.com/vi/VK8xjRFoJ0k/maxresdefault.jpg" id="shadow-left" />
+    <img src="http://img.youtube.com/vi/1579S_7R6EQ/maxresdefault.jpg" id="shadow-left" />
     <div class="main">
       <a slug="intro"
         rel="videos" class="youtube-mini fancybox.iframe"
@@ -43,7 +43,7 @@ printVideo = (filename) ->
         <span class="youtube-play fa fa-play-circle"></span>
       </a>
     </div>
-    <img src="http://img.youtube.com/vi/lOKIbN40NMQ/maxresdefault.jpg" id="shadow-right" />
+    <img src="http://img.youtube.com/vi/77P1vd4oFok/maxresdefault.jpg" id="shadow-right" />
   </div>
   <div class="title">
     Koding Introduction
