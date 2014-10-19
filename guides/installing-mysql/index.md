@@ -9,11 +9,17 @@ categories: [koding, mysql]
 In this guide we will cover the basics on how you can install MySQL and 
 the latest version of PHP-MySQL modules on your [Koding][koding] VM.
 
-## Installation via Apt-Get
+## Installation via apt-get
 
 First open up your [Koding IDE][ide] and paste the following command into 
-your Terminal. This will install mysql, and it's dependencies, via a tool 
-known as Apt-Get.
+your Terminal. This will ensure that your apt-get database is at the latest
+state. 
+
+```
+sudo apt-get update
+```
+
+Now, type in the command below to install mysql, and it's dependencies.
 
 ```
 sudo apt-get install mysql-server mysql-common mysql-client
