@@ -12,8 +12,8 @@ the latest version of PHP-MySQL modules on your [Koding][koding] VM.
 ## Installation via apt-get
 
 First open up your [Koding IDE][ide] and paste the following command into 
-your Terminal. This will ensure that your apt-get database is at the latest
-state. 
+your Terminal. This will ensure that your [apt-get](https://help.ubuntu.com/community/AptGet/Howto) 
+database is at the latest level. 
 
 ```
 sudo apt-get update
