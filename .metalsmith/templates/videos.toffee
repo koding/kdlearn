@@ -42,6 +42,7 @@ printVideo = (filename, rel="videos") ->
   {# printVideo 'guides/vm-introduction/index.html', 'koding' #}
   {# printVideo 'guides/ide-introduction/index.html', 'koding' #}
   {# printVideo 'guides/terminal-introduction/index.html', 'koding' #}
+  {# printVideo 'guides/chat-introduction/index.html', 'koding' #}
   </ul>
 </div>
 
