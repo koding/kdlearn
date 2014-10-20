@@ -65,7 +65,7 @@ cd ~/Web
 Now, we need to download the latest WordPress release. We can do that using the following command:
 
 ```
-wget http://wordpress.org/download/latest.zip
+wget http://wordpress.org/latest.zip
 ```
 
 Unzip the downloaded file:
