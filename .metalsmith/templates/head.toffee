@@ -32,8 +32,8 @@
 		<meta property="og:image:secure_url" content="https://koding.com/a/images/logos/share_logo.png"/>
 		<meta property="og:description" content="Koding: A robust and feature rich cloud-based development environment complete with free VMs, an attractive IDE and sudo level terminal access. Your ideal software development playground!"/>
 		<meta property="og:image:type" content="image/png">
-		<meta property="og:image:width" content="400"/>
-		<meta property="og:image:height" content="300"/>
+		<meta property="og:image:width" content="130"/>
+		<meta property="og:image:height" content="100"/>
 
 		<!-- twitter cards -->
 		<meta name="twitter:site" content="@koding"/>
