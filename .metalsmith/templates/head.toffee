@@ -25,12 +25,17 @@
     :} #}
 
 		<!-- og meta tags -->
-		<meta property="og:title" content="Koding - Say goodbye to localhost!"/>
+    {#
+    if title?
+		  {: <meta property="og:title" content="#{title} | Koding University"/> :}
+    else
+		  {: <meta property="og:title" content="Koding University"/> :}
+    #}
 		<meta property="og:type" content="website"/>
 		<meta property="og:url" content="http://learn.koding.com"/>
 		<meta property="og:image" content="http://koding.com/a/images/logos/share_logo.png"/>
 		<meta property="og:image:secure_url" content="https://koding.com/a/images/logos/share_logo.png"/>
-		<meta property="og:description" content="Koding: A robust and feature rich cloud-based development environment complete with free VMs, an attractive IDE and sudo level terminal access. Your ideal software development playground!"/>
+		<meta property="og:description" content="#{description}"/>
 		<meta property="og:image:type" content="image/png">
 		<meta property="og:image:width" content="130"/>
 		<meta property="og:image:height" content="100"/>
@@ -38,11 +43,16 @@
 		<!-- twitter cards -->
 		<meta name="twitter:site" content="@koding"/>
 		<meta name="twitter:url" content="https://koding.com"/>
-		<meta name="twitter:title" content="Say goodbye to localhost!"/>
+    {#
+    if title?
+		  {: <meta name="twitter:title" content="#{title} | Koding University"/> :}
+    else
+		  {: <meta name="twitter:title" content="Koding University"/> :}
+    #}
 		<meta name="twitter:creator" content="@koding"/>
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:image" content="https://koding.com/a/images/logos/share_logo.png"/>
-		<meta name="twitter:description" content="Koding: A robust and feature rich cloud-based development environment complete with free VMs, an attractive IDE and sudo level terminal access. Your ideal software development playground!"\>
+		<meta name="twitter:description" content="#{description}"\>
 		<meta name="twitter:domain" content="learn.koding.com">
 
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
