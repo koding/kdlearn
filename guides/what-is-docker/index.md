@@ -72,6 +72,12 @@ sudo apt-get update
 sudo apt-get install lxc-docker
 ```
 
+_Note: You can use the bellow command, that uses curl, for an easier installation process:_
+
+```
+curl -sSL https://get.docker.com/ubuntu/ | sudo sh
+```
+
 If you made it to this point you can run this command to check if Docker is indeed installed and works properly:
 
 ```
