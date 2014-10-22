@@ -15,7 +15,8 @@ In this frequently asked question we'll go over setting up a Koding subdomain to
 
 ## Creating Subdomains
 
-Subdomains can be created from Your Environments, by clicking on the Domains Plus button. For further help see the [Domain Management Guide](/docs/guides/domain-management/). 
+To create a subdomain, refer to the [Subdomain Section 
+here](/faq/vm-hostname/)
 
 ## Creating a VHost
 
