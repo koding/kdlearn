@@ -9,7 +9,7 @@ template: page.toffee
 
 # Octopress Installation for Beginners
 
-In this article we'll go over the basics of setting up Octopress. Want to skip a few steps? [Try the Koding Demo](https://koding.com/Develop/Teamwork?import=https://github.com/imathis/octopress/archive/master.zip) to open Octopress right away!
+In this article we'll go over the basics of setting up Octopress.
 
 ## What is Octopress?
 
