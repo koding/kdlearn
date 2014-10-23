@@ -1,25 +1,34 @@
 ---
-title: PostgreSQL on Koding
 author: Federico Ponzi
 date: 2014-04-07
-categories: [koding, postgresql]
-
-template: page.toffee
+categories: [postgresql, sql]
 ---
 
-# PostgreSQL on Koding
+# Using PostgreSQL
 
-PostgreSQL comes preinstalled with all Koding VMs. First of all, run the service:
+PostgreSQL is an open source relational database management system that 
+provides an implementation of the SQL query language. In this guide, 
+we'll go over using PostgreSQL on your Koding VM. Lets get started!
 
-    sudo service postgresql start
-      * Starting PostgreSQL 9.1 database server
-         ...done.
+## Starting PostgreSQL
 
-Or you will get an error like this:
-  
-    psql: could not connect to server: No such file or directory
-    Is the server running locally and accepting
-    connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+Before we gets started, start your PostgreSQL server with the following 
+command.
+
+```
+sudo service postgresql start
+```
+
+If you see an error like the following message, you may need to go 
+through the [Installing PostgreSQL](/guides/installing-postgresql).
+
+```
+psql: could not connect to server: No such file or directory
+Is the server running locally and accepting
+connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+```
+
+## Getting Started
 
 To getting started with postgreSQL, open your [Terminal](https://koding.com/Terminal), and type:
 
