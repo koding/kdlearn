@@ -154,7 +154,7 @@ http://hostname.username.koding.io
 Congratulations, you're running a Ruby Web server, with a hand made HTTP 
 implementation!
 
-## Installing dependencies with RubyGem
+## Installing dependencies with RubyGems
 
 This is great and all, but it's quite the complex way to run a simple web 
 server. Lets make this a lot easier with the popular web framework, 
