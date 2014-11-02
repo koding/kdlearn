@@ -33,7 +33,7 @@
     #}
 		<meta property="og:type" content="website"/>
 		<meta property="og:url" content="http://learn.koding.com"/>
-		<meta property="og:image" content="/img/logo_150.png"/>
+		<meta property="og:image" content="http://learn.koding.com/img/logo_150.png"/>
     <!-- Don't have a secure url currently -->
 		<!--<meta property="og:image:secure_url" content="https://koding.com/a/images/logos/share_logo.png"/>-->
 		<meta property="og:description" content="#{description}"/>
@@ -52,7 +52,7 @@
     #}
 		<meta name="twitter:creator" content="@koding"/>
 		<meta name="twitter:card" content="summary"/>
-		<meta name="twitter:image" content="/img/logo_150.png"/>
+		<meta name="twitter:image" content="http://learn.koding.com/img/logo_150.png"/>
 		<meta name="twitter:description" content="#{description}"\>
 		<meta name="twitter:domain" content="learn.koding.com">
 
