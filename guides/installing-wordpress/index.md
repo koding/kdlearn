@@ -8,7 +8,7 @@ template: page.toffee
 
 # How to install WordPress
 
-This guide will walk you through the steps required to install Wordpress on your Koding VM. We will walk through the steps needed to download, install, configure and eventually run a full Wordpress system.
+This guide will walk you through the steps required to install WordPress on your Koding VM. We will walk through the steps needed to download, install, configure and eventually run a full WordPress system.
 
 ## Step 1 - Database creation
 
@@ -16,7 +16,7 @@ The first thing we need for our WordPress installation to work is a new database
 1. the command line
 2. via [phpMyAdmin](http://learn.koding.com/guides/install-phpmyadmin/).
 
-The rest of this guide will focus on the command line method to create a database for our WordPress installation. (Note: you should already have MySQL installed on your VM before continuing. If you don't have it installed, just follow [this guide](http://learn.koding.com/guides/installing-mysql/) and then come back here to continue with the rest of the Wordpress install.)
+The rest of this guide will focus on the command line method to create a database for our WordPress installation. (Note: you should already have MySQL installed on your VM before continuing. If you don't have it installed, just follow [this guide](http://learn.koding.com/guides/installing-mysql/) and then come back here to continue with the rest of the WordPress install.)
 
 ### setting up MySQL:
 
@@ -108,6 +108,9 @@ define('DB_USER', 'username');
 
 /** MySQL database password */
 define('DB_PASSWORD', 'password');
+
+/** Stop WordPress from asking for FTP credentials */
+define('FS_METHOD', 'direct');
 ```
 
 The above variables: *database_name*, *username*, *password* should be replaced with the values you set when creating the database on [Step 1](#step-1).
@@ -120,13 +123,15 @@ The last thing that we need to do before we begin the install, is to set up the 
 mkdir wp-content/uploads
 ```
 
-* We need to give the web server write permission to all Wordpress files so you can make changes to the install directly from within Wordpress. You can achieve this by using this command:
+* We need to give the web server write permission to all WordPress files so you can make changes to the install directly from within WordPress. You can achieve this by using the following commands:
 
 ```
-sudo chown -R :www-data wp-content/uploads
+sudo chown -R www-data:www-data wp-content/uploads
+
+sudo chmod -R 755 wp-content/uploads
 ```
 
-## Step 5 - Finalizing the Wordpress install
+## Step 5 - Finalizing the WordPress install
 
 Open up a new browser tab and navigate to your VM's hostname and add **/wordpress** at the end. If you don't know what you VM hostname is, follow [this guide](http://learn.koding.com/faq/vm-hostname/) to find out.
 
