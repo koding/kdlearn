@@ -141,7 +141,7 @@ sudo chown -R www-data:www-data wp-content/uploads
 sudo chmod -R 755 wp-content/uploads
 ```
 
-## Step 5 - Finalizing the WordPress install
+## Step 3 - Finalizing the WordPress install
 
 Open up a new browser tab and navigate to your VM's hostname and add **/wordpress** at the end. If you don't know what you VM hostname is, follow [this guide](http://learn.koding.com/faq/vm-hostname/) to find out.
 
