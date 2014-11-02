@@ -67,33 +67,6 @@ guide.
   </item>
   
   <item>
-    <title>Installing MongoDB</title>
-    <link>//learn.koding.com/guides/install-mongodb</link>
-    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/install-mongodb</guid>
-    <author>Team Koding</author>
-    <description>In this short guide we&amp;apos;ll explain how to install MongoDB, and modify
-it&amp;apos;s configuration to run in a small storage environment. Lets get 
-started!
-  Installation Installation is easy, and can be done with apt-get, as seen in the 
-following command.
-sudo apt-get install mongodb
-That&amp;apos;s it! You can start Mongo with the following command:
-sudo service mongodb start
-NOTE: If you&amp;apos;re running Mongo on a Free Koding VM, read below..
-  Configuring for Limited Storage If you&amp;apos;re running Mongo on a Free VM, you&amp;apos;ll need to configure it to use 
-small files. To do that, open up the /etc/mongodb.conf file with the
-following command:
-sudo nano /etc/mongodb.conf
-With that file open, navigate to the bottom and add the following line:
-smallfiles=true
-Now use ctrl-x to save the file. After you&amp;apos;ve saved the file, simply 
-restart Mongodb with the following command:
-sudo service mongodb restart
-</description>
-  </item>
-  
-  <item>
     <title>Getting Started: File Uploads</title>
     <link>//learn.koding.com/guides/getting-started/file-upload</link>
     <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
@@ -122,6 +95,33 @@ Replace LOCAL_FILE with your local file location, USERNAME with your
 Koding Username, and REMOTE_FILE with your Remote File location. An 
 example of this command can be seen below.
 scp ~/my_image.png joshmurray.koding.io:~/my_image.png
+</description>
+  </item>
+  
+  <item>
+    <title>Installing MongoDB</title>
+    <link>//learn.koding.com/guides/install-mongodb</link>
+    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/install-mongodb</guid>
+    <author>Team Koding</author>
+    <description>In this short guide we&amp;apos;ll explain how to install MongoDB, and modify
+it&amp;apos;s configuration to run in a small storage environment. Lets get 
+started!
+  Installation Installation is easy, and can be done with apt-get, as seen in the 
+following command.
+sudo apt-get install mongodb
+That&amp;apos;s it! You can start Mongo with the following command:
+sudo service mongodb start
+NOTE: If you&amp;apos;re running Mongo on a Free Koding VM, read below..
+  Configuring for Limited Storage If you&amp;apos;re running Mongo on a Free VM, you&amp;apos;ll need to configure it to use 
+small files. To do that, open up the /etc/mongodb.conf file with the
+following command:
+sudo nano /etc/mongodb.conf
+With that file open, navigate to the bottom and add the following line:
+smallfiles=true
+Now use ctrl-x to save the file. After you&amp;apos;ve saved the file, simply 
+restart Mongodb with the following command:
+sudo service mongodb restart
 </description>
   </item>
   
@@ -183,14 +183,21 @@ If you have any question or issues please email us at support@koding.com and we&
     <pubDate>"2014-10-16T00:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/installing-wordpress</guid>
     <author>Team Koding</author>
-    <description>This guide will walk you through the steps required to install Wordpress on your Koding VM. We will walk through the steps needed to download, install, configure and eventually run a full Wordpress system.
+    <description>This guide will walk you through the steps required to install WordPress on your Koding VM. We will walk through the steps needed to download, install, configure and eventually run a full WordPress system.
+  WordPress requirements Before we begin you may want to make sure you have the following things installed on your Koding VM.
+
+PHP 5.2.4 or greater
+MySQL 5.0 or greater
+The mod_rewrite Apache module
+
+After you made sure and/or installed the above requirements you can go ahead a continue with the guide.
   Step 1 - Database creation The first thing we need for our WordPress installation to work is a new database. We can create one using either:
 
 the command line
 via phpMyAdmin.
 
-The rest of this guide will focus on the command line method to create a database for our WordPress installation. (Note: you should already have MySQL installed on your VM before continuing. If you don&amp;apos;t have it installed, just follow this guide and then come back here to continue with the rest of the Wordpress install.)
-  setting up MySQL: Type in the commands listed below in a Koding Terminal.
+The rest of this guide will focus on the command line method to create a database for our WordPress installation.
+  Setting up MySQL: Type in the commands listed below in a Koding Terminal.
 
 Login to mySQL as the root user:
 
@@ -245,6 +252,9 @@ define(&amp;apos;DB_USER&amp;apos;, &amp;apos;username&amp;apos;);
 
 /** MySQL database password */
 define(&amp;apos;DB_PASSWORD&amp;apos;, &amp;apos;password&amp;apos;);
+
+/** Stop WordPress from asking for FTP credentials */
+define(&amp;apos;FS_METHOD&amp;apos;, &amp;apos;direct&amp;apos;);
 The above variables: database_name, username, password should be replaced with the values you set when creating the database on Step 1.
 The last thing that we need to do before we begin the install, is to set up the uploads folder. That can be achieved like so:
 
@@ -252,10 +262,12 @@ From the command line we create a folder:
 
 mkdir wp-content/uploads
 
-We need to give the web server write permission to all Wordpress files so you can make changes to the install directly from within Wordpress. You can achieve this by using this command:
+We need to give the web server write permission to all WordPress files so you can make changes to the install directly from within WordPress. You can achieve this by using the following commands:
 
-sudo chown -R :www-data wp-content/uploads
-  Step 5 - Finalizing the Wordpress install Open up a new browser tab and navigate to your VM&amp;apos;s hostname and add /wordpress at the end. If you don&amp;apos;t know what you VM hostname is, follow this guide to find out.
+sudo chown -R www-data:www-data wp-content/uploads
+
+sudo chmod -R 755 wp-content/uploads
+  Step 3 - Finalizing the WordPress install Open up a new browser tab and navigate to your VM&amp;apos;s hostname and add /wordpress at the end. If you don&amp;apos;t know what you VM hostname is, follow this guide to find out.
 You should see the initial configuration page. It should look like this:
 
 Now you just need to follow the instructions on screen and finish the install!
@@ -305,15 +317,6 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Koding Virtual Machines Introduction</title>
-    <link>//learn.koding.com/guides/vm-introduction</link>
-    <pubDate>"2014-10-10T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/vm-introduction</guid>
-    <author>Team Koding</author>
-    <description></description>
-  </item>
-  
-  <item>
     <title>Koding Terminal Introduction</title>
     <link>//learn.koding.com/guides/terminal-introduction</link>
     <pubDate>"2014-10-10T00:00:00.000Z"</pubDate>
@@ -332,29 +335,12 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>What happens upon upgrade?</title>
-    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
-    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
+    <title>Koding Virtual Machines Introduction</title>
+    <link>//learn.koding.com/guides/vm-introduction</link>
+    <pubDate>"2014-10-10T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/vm-introduction</guid>
     <author>Team Koding</author>
-    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
-Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
-
-Ability to mark your VM(s) as Always-On
-Add more storage to your VM(s)
-
-  Utilizing new resources when upgrading to the Hobbyist Plan Once you have upgraded to Hobbyist, you can mark your VM as an Always-On VM and increase its storage from 3GB to 10GB. To get these going, its as simple as heading over to the settings panel for your VM and enabling these features. Follow these easy steps:
-
-log out of your Koding account and log back in.
-head over to VM settings (as shown in the image below)
-expand the &amp;quot;More&amp;quot; panel and then the &amp;quot;Advanced&amp;quot; panel
-You will see a new button under the Advanced panel labeled &amp;quot;Resize&amp;quot; (this button only appears for users who have upgraded to the Hobbyist plan and have not yet allocated the 10GB. Once you allocate it, the button will disappear)
-Click the button to initiate resize. Once done, your VM will show 10GB. Verify that using the command df -h /
-
-  Utilizing new resources when upgrading to the Developer Plan Under these plans, you can have a total of up to 3 (for Developer) / 5 (for Professional) VMs, mark any of them as Always-On and allocate 25GB (for Developer) / 50GB (for Professional) of storage amonst them. You will start with the default free VM and it is up to you whether you want to leave it at the default 3GB or delete it so that you can make a new one with a storage allocation that you prefer. To delete a VM, simply go the settings panel of the VM and click the Terminate button (as shown in the attached screen shot).
-To create a new VM, click the + icon in the VM list and create a new VM with a space allocation that is preferable to you (as shown below).
-If you ever have any question regarding resources or have any issues you can make a support request.
-</description>
+    <description></description>
   </item>
   
   <item>
@@ -411,6 +397,89 @@ for many compilers, as Visual Studio, and IDEs as Eclipse.
 The Biicode platform automatically generate CMake files for you, based on 
 your source code files. It also manage dependencies, so it can be used for reusing
 existing code easily.
+</description>
+  </item>
+  
+  <item>
+    <title>What happens upon upgrade?</title>
+    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
+    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
+    <author>Team Koding</author>
+    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
+Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
+
+Ability to mark your VM(s) as Always-On
+Add more storage to your VM(s)
+
+  Utilizing new resources when upgrading to the Hobbyist Plan Once you have upgraded to Hobbyist, you can mark your VM as an Always-On VM and increase its storage from 3GB to 10GB. To get these going, its as simple as heading over to the settings panel for your VM and enabling these features. Follow these easy steps:
+
+log out of your Koding account and log back in.
+head over to VM settings (as shown in the image below)
+expand the &amp;quot;More&amp;quot; panel and then the &amp;quot;Advanced&amp;quot; panel
+You will see a new button under the Advanced panel labeled &amp;quot;Resize&amp;quot; (this button only appears for users who have upgraded to the Hobbyist plan and have not yet allocated the 10GB. Once you allocate it, the button will disappear)
+Click the button to initiate resize. Once done, your VM will show 10GB. Verify that using the command df -h /
+
+  Utilizing new resources when upgrading to the Developer Plan Under these plans, you can have a total of up to 3 (for Developer) / 5 (for Professional) VMs, mark any of them as Always-On and allocate 25GB (for Developer) / 50GB (for Professional) of storage amonst them. You will start with the default free VM and it is up to you whether you want to leave it at the default 3GB or delete it so that you can make a new one with a storage allocation that you prefer. To delete a VM, simply go the settings panel of the VM and click the Terminate button (as shown in the attached screen shot).
+To create a new VM, click the + icon in the VM list and create a new VM with a space allocation that is preferable to you (as shown below).
+If you ever have any question regarding resources or have any issues you can make a support request.
+</description>
+  </item>
+  
+  <item>
+    <title>Building C / C++ applications with biicode</title>
+    <link>//learn.koding.com/guides/getting-started-biicode</link>
+    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-biicode</guid>
+    <author>drodri</author>
+    <description>Building larger applications can be somewhat difficult and cumbersome to the newbie.
+As soon as your application start to have several files, you will need to define
+how to build them in Makefiles or using the CMake build system.
+We will be using in the following examples biicode, which is a dependency manager
+that allows to easily retrieve existing code and also manages to automatically generate
+build files for your project.
+You can install it running from your terminal:
+$ wget http://apt.biicode.com/install.sh &amp;amp;&amp;amp; chmod +x install.sh &amp;amp;&amp;amp; ./install.sh
+After it finish, you can run a helper command that install an updated version of CMake:
+$ bii setup:cpp
+Lets build an application that computes the SHA1 of a string. Usually you dont want to write
+yourself such algorithm, but rather use an existing implementation.
+The following commands will create a project and a &amp;quot;Hello world&amp;quot; file, which you can build and
+run:
+$ bii init cryptoproject
+$ cd cryptoproject
+$ bii new myuser/crypto --hello=cpp
+$ bii cpp:build
+$ ./bin/myuser_crypto_main
+Hello world!
+Now replace the contents of the &amp;quot;main.cpp&amp;quot; file inside the blocks/myuser/crypto folder with:
+#include &amp;quot;cryptopp/cryptopp/sha.h&amp;quot;
+#include &amp;quot;cryptopp/cryptopp/filters.h&amp;quot;
+#include &amp;quot;cryptopp/cryptopp/hex.h&amp;quot;
+#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;string&amp;gt;
+
+int main() {
+    CryptoPP::SHA1 sha1;
+    std::string source = &amp;quot;Hello&amp;quot;;  
+    std::string hash = &amp;quot;&amp;quot;;
+    CryptoPP::StringSource(source, true, new CryptoPP::HashFilter(sha1,
+                            new CryptoPP::HexEncoder(new CryptoPP::StringSink(hash))));
+    std::cout &amp;lt;&amp;lt; hash &amp;lt;&amp;lt; std::endl;
+}
+If you now try to build this example, it will fail. You can try to do so, and then check
+your dependencies:
+$ bii cpp:build
+$ bii deps
+The code depends on some external code, the Crypto++ library. This can be easily retrieved
+with the &amp;quot;find&amp;quot; command
+$ bii find
+Now you can build and run it:
+$ bii cpp:build
+$ ./bin/myuser_crypto_main
+F7FF9E8B7BB2E09B70935A5D785E0CC5D9D0ABF0
+For further examples, you can have a look to the biicode C/C++ documentation and the 
+examples
 </description>
   </item>
   
@@ -475,63 +544,6 @@ sudo chown myuser:www-data files # NB this is server/user specific!
 chmod 0775 files
 (You need to change these permissions back to something more sane afterwards&amp;#x2026; 0644 and 0775 seem to be ok, but I&amp;#x2019;m open to abuse on the matter.)
 And you&amp;#x2019;re off! To open your VM in a browser, click the ellipsis next to your VM name (probably koding-vm-0) and then the VM name to open the site in a new tab, and follow the usual Drupal installer instructions! NB If you&amp;apos;re a developer, you might want to check out Webchick&amp;apos;s setup video from Drupalcon AMS: http://www.youtube.com/watch?v=wKdU2Q1NIZQ
-</description>
-  </item>
-  
-  <item>
-    <title>Building C / C++ applications with biicode</title>
-    <link>//learn.koding.com/guides/getting-started-biicode</link>
-    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-biicode</guid>
-    <author>drodri</author>
-    <description>Building larger applications can be somewhat difficult and cumbersome to the newbie.
-As soon as your application start to have several files, you will need to define
-how to build them in Makefiles or using the CMake build system.
-We will be using in the following examples biicode, which is a dependency manager
-that allows to easily retrieve existing code and also manages to automatically generate
-build files for your project.
-You can install it running from your terminal:
-$ wget http://apt.biicode.com/install.sh &amp;amp;&amp;amp; chmod +x install.sh &amp;amp;&amp;amp; ./install.sh
-After it finish, you can run a helper command that install an updated version of CMake:
-$ bii setup:cpp
-Lets build an application that computes the SHA1 of a string. Usually you dont want to write
-yourself such algorithm, but rather use an existing implementation.
-The following commands will create a project and a &amp;quot;Hello world&amp;quot; file, which you can build and
-run:
-$ bii init cryptoproject
-$ cd cryptoproject
-$ bii new myuser/crypto --hello=cpp
-$ bii cpp:build
-$ ./bin/myuser_crypto_main
-Hello world!
-Now replace the contents of the &amp;quot;main.cpp&amp;quot; file inside the blocks/myuser/crypto folder with:
-#include &amp;quot;cryptopp/cryptopp/sha.h&amp;quot;
-#include &amp;quot;cryptopp/cryptopp/filters.h&amp;quot;
-#include &amp;quot;cryptopp/cryptopp/hex.h&amp;quot;
-#include &amp;lt;iostream&amp;gt;
-#include &amp;lt;string&amp;gt;
-
-int main() {
-    CryptoPP::SHA1 sha1;
-    std::string source = &amp;quot;Hello&amp;quot;;  
-    std::string hash = &amp;quot;&amp;quot;;
-    CryptoPP::StringSource(source, true, new CryptoPP::HashFilter(sha1,
-                            new CryptoPP::HexEncoder(new CryptoPP::StringSink(hash))));
-    std::cout &amp;lt;&amp;lt; hash &amp;lt;&amp;lt; std::endl;
-}
-If you now try to build this example, it will fail. You can try to do so, and then check
-your dependencies:
-$ bii cpp:build
-$ bii deps
-The code depends on some external code, the Crypto++ library. This can be easily retrieved
-with the &amp;quot;find&amp;quot; command
-$ bii find
-Now you can build and run it:
-$ bii cpp:build
-$ ./bin/myuser_crypto_main
-F7FF9E8B7BB2E09B70935A5D785E0CC5D9D0ABF0
-For further examples, you can have a look to the biicode C/C++ documentation and the 
-examples
 </description>
   </item>
   
@@ -626,6 +638,46 @@ Note: the default Workspace can&amp;apos;t be removed as that is the default Web
   </item>
   
   <item>
+    <title>Setting up FTP on Koding</title>
+    <link>//learn.koding.com/guides/setting-up-ftp-on-koding</link>
+    <pubDate>"2014-09-15T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-ftp-on-koding</guid>
+    <author>Team Koding</author>
+    <description>In this guide we&amp;apos;ll go over how to get your FTP Client connected to your 
+VM&amp;apos;s FTP Server. We will be using FileZilla as the FTP 
+Client, but any client should be able to connect to your FTP Server 
+successfully.
+  What you will need In this tutorial you will need the following.
+
+A Koding account, and your Koding Username.
+The Address of the VM you&amp;apos;d like to connect to. Instructions can be 
+found here.
+
+  Installing ProFTPd First off, we&amp;apos;ll need to install ProFTPd. This can be done by pasting 
+the following command into your Koding IDE&amp;apos;s Terminal.
+sudo apt-get install proftpd
+During the install process you will be asked to choose to run your VPS as an inetd or standalone server. Choose the standalone option.
+  Setting up the FTP User After ProFTPd has been successfully installed, we need to set a FTP password for your user. To do 
+this, paste the following command into your Terminal.
+sudo passwd KODING_USERNAME
+Make note to replace KODING_USERNAME with your actual Koding username.
+After hitting enter, you&amp;apos;ll be prompted for the FTP password you wish 
+to use. Not your Koding password.
+  Connecting to your FTP Server Finally, in your FTP Client of choice paste your VM Address into the 
+hostname. If you&amp;apos;re not sure what that is, instructions to find it can be 
+found here.
+After the Hostname, enter your Koding username, and FTP Password that you 
+chose in the above commands. An example image from FileZilla can be seen 
+below.
+
+  Additional Resources 
+FileZilla
+FileZilla Download
+
+</description>
+  </item>
+  
+  <item>
     <title>Connect with SSH, from Unix</title>
     <link>//learn.koding.com/guides/ssh-into-your-vm</link>
     <pubDate>"2014-09-15T00:00:00.000Z"</pubDate>
@@ -673,46 +725,6 @@ ssh joshmurray@unkk05c3f84e.joshmurray.koding.io
 and share the output with Koding users. An example of the above ssh 
 command with the -vv flag is below.
 ssh -vv joshmurray@unkk05c3f84e.joshmurray.koding.io
-</description>
-  </item>
-  
-  <item>
-    <title>Setting up FTP on Koding</title>
-    <link>//learn.koding.com/guides/setting-up-ftp-on-koding</link>
-    <pubDate>"2014-09-15T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-ftp-on-koding</guid>
-    <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll go over how to get your FTP Client connected to your 
-VM&amp;apos;s FTP Server. We will be using FileZilla as the FTP 
-Client, but any client should be able to connect to your FTP Server 
-successfully.
-  What you will need In this tutorial you will need the following.
-
-A Koding account, and your Koding Username.
-The Address of the VM you&amp;apos;d like to connect to. Instructions can be 
-found here.
-
-  Installing ProFTPd First off, we&amp;apos;ll need to install ProFTPd. This can be done by pasting 
-the following command into your Koding IDE&amp;apos;s Terminal.
-sudo apt-get install proftpd
-During the install process you will be asked to choose to run your VPS as an inetd or standalone server. Choose the standalone option.
-  Setting up the FTP User After ProFTPd has been successfully installed, we need to set a FTP password for your user. To do 
-this, paste the following command into your Terminal.
-sudo passwd KODING_USERNAME
-Make note to replace KODING_USERNAME with your actual Koding username.
-After hitting enter, you&amp;apos;ll be prompted for the FTP password you wish 
-to use. Not your Koding password.
-  Connecting to your FTP Server Finally, in your FTP Client of choice paste your VM Address into the 
-hostname. If you&amp;apos;re not sure what that is, instructions to find it can be 
-found here.
-After the Hostname, enter your Koding username, and FTP Password that you 
-chose in the above commands. An example image from FileZilla can be seen 
-below.
-
-  Additional Resources 
-FileZilla
-FileZilla Download
-
 </description>
   </item>
   
@@ -940,179 +952,6 @@ That is all!
   </item>
   
   <item>
-    <title>Getting Started with Python</title>
-    <link>//learn.koding.com/guides/getting-started-python</link>
-    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-python</guid>
-    <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll go over explaining what Python is, how to use Python 
-Packaging via the PIP command, and how to write your first Python web 
-server using a small library known as Flask. So, lets get started!
-  What is Python Python is a popular, general purpose, high level programing language. It 
-focuses on readability programmer sanity over raw performance. Python2 
-and Python3 come pre-installed on Koding VMs, and in this guide we&amp;apos;re 
-going to focus on Python2. Lets see what it looks like to run some python 
-code!
-  Running your first Python script Open up your Ace Editor create a new file named hello.py. Paste 
-in the following code into that file.
-print &amp;quot;Hello from python!&amp;quot;
-
-The print keyword takes a string and prints it to the Standard Output 
-(STDOUT) of the process. Lets try running this file so we can see this 
-output, but first save the file with Ctrl-s.  Now, open up your 
-Terminal and type in the following command.
-python hello.py
-You should see output similar to this:
-joshmurray: ~ $ python hello.py
-Hello from python!
-joshmurray: ~ $
-Neat! Lets take this a couple steps further, and do something actually 
-useful, lets run a web server! But first, lets get to know Pip, and 
-install a library that makes making python Web Applications easy!
-  Installing Pip pip is a popular Python Package Manager. However, we need to install it 
-onto our Koding VM to use it. To do that, we&amp;apos;re going to use AptGet, with 
-the following command.
-sudo apt-get install python-pip
-Give that a moment, and once that finishes we can install Flask!
-  Using Pip to install Flask You may be wondering why we&amp;apos;re using Flask to write this little web 
-server of ours. Flask has a really nice API for making compact web 
-applications.  This is great for a beginner guide, since we can look at a 
-few core concepts without getting too bogged down with technical details 
-of a web server.
-Now that you have pip installed, to install Flask type the following 
-command.
-sudo pip install Flask
-Note that we&amp;apos;re using sudo because the default location for the 
-installed packages is in a root directory. A common practice to store 
-these without root permissions is to use a Virtual Environment to keep 
-your packages installed per-project. We&amp;apos;ll save that for a later guide 
-though.
-Once that finishes installing, lets write our Flask code!
-  Creating your first Flask web server Create a new file named web.py, and paste in the following code.
-from flask import Flask
-app = Flask(__name__)
-
-@app.route(&amp;quot;/&amp;quot;)
-def hello():
-    return &amp;quot;Hello World!&amp;quot;
-
-if __name__ == &amp;quot;__main__&amp;quot;:
-    app.run(host=&amp;apos;0.0.0.0&amp;apos;)
-
-There are a few interesting points in this source though, so before we 
-run our web server, lets go over the source.
-from flask import Flask
-
-First up are our from and import keywords. The import imports a 
-module to an object with the same name. When used with the from keyword 
-though, only the Flask object is imported to the current scope. So, 
-this line imports a function named Flask.
-app = Flask(__name__)
-
-Next up, we use that Flask() function to create a Flask instance, 
-stored in the name app.
-__name__ is a special keyword which stores the name of the currently 
-module, or it equals &amp;quot;__main__&amp;quot; if run directly. We&amp;apos;ll see this again 
-at the end of the script.
-def hello():
-    return &amp;quot;Hello World!&amp;quot;
-
-We&amp;apos;re skipping a line, and going straight to the def keyword. This is 
-how we define a function in Python. In this case, we&amp;apos;re using this 
-function as a handler for our Flask &amp;quot;route&amp;quot;.
-@app.route(&amp;quot;/&amp;quot;)
-def hello():
-    return &amp;quot;Hello World!&amp;quot;
-
-If we look at that function again, including the line we skipped, we see 
-a new syntax structure, @app.route(&amp;quot;/&amp;quot;).
-This is known as a Decorator. Decorators are a special syntax for a 
-function wrapping another function. If you&amp;apos;re new to programming, this 
-can be a bit of a tricky concept which involves Higher Order 
-Functions. We&amp;apos;ll briefly touch this below, but for now we&amp;apos;ll just 
-take it at face value. This is how Flask routes our request to our 
-handler.
-A Route is a concept that directs requests (people viewing your web 
-server) and routes them to your Handler functions. &amp;quot;/&amp;quot; is the path 
-for this route, meaning that when someone connects to 
-http://hostname.username.koding.io/ they are given this function.
-If someone connected to http://hostname.username.koding.io/foo/bar, it 
-would not return this handler, because /foo/bar does not match our 
-hello route.
-if __name__ == &amp;quot;__main__&amp;quot;:
-    app.run(host=&amp;apos;0.0.0.0&amp;apos;)
-
-Finally we&amp;apos;re at the end of the script. If you remember the __name__ 
-keyword from before, remember that it holds the name of the current 
-module. If the file is run directly from Python though, ie python 
-web.py, then the value is &amp;quot;__main__&amp;quot;.
-By writing a __name__ == &amp;quot;__main__&amp;quot; condition, we make it so that if 
-this file is run directly it will start the web server. If the file is 
-imported though, it will not. This is great because we don&amp;apos;t want 
-imports to execute a bunch of potentially dangerous code. Good 
-programming practice.
-  Running our Flask web server Now that we have looked at the source, lets run this thing! We can run 
-this file just like above, with..
-python web.py
-And then connect to it with the following address.
-http://hostname.username.koding.io:5000
-Flask will display our text when you request the root path, awesome!
-  Decorators Briefly Explained Now that we&amp;apos;ve gone through the web server source, lets revisit the 
-Decorators and go into a bit more depth. We won&amp;apos;t go over every concept 
-in full detail, so that we can keep this a sanely short beginner 
-tutorial, and not a book.
-To help explain decorators, lets add our own Decorator.
-def from_py(hello):
-  def wrapper(*args, **kwargs):
-    return hello(*args, **kwargs) + &amp;quot; From Python!&amp;quot;
-  return wrapper
-
-@app.route(&amp;quot;/&amp;quot;)
-@from_py
-def hello():
-    return &amp;quot;Hello World!&amp;quot;
-
-Lets analyze this.
-from_py is simply a function, that takes another function. When we add 
-the keyword before of a function def, from_py is called with that 
-function as the first argument. This &amp;quot;wraps&amp;quot; hello() with our 
-from_py() function.
-Next, we create a new function inside the from_py function that acts as a handler.
-The (*args, **kwargs) 
-parameters is a special syntax to keep all of the given arguments in 
-those two objects, so that we can fully pass them to the hello() 
-handler.
-In our wrapper function, we then call then hello() function, with 
-the arguments given to wrapper().
-When hello() returns, we add our own string &amp;quot; From Python!&amp;quot;, and 
-return that as well.
-So that means
-@app.route(&amp;quot;/&amp;quot;)
-@from_py
-def hello():
-    return &amp;quot;Hello World!&amp;quot;
-
-Is actually many functions, more than three. We could write out the 
-entire structure here, but just focus on the @from_py for now, as to 
-avoid being confused by a huge group of nested functions.
-If this still doesn&amp;apos;t make sense, don&amp;apos;t worry! Higher order functions can 
-take some getting used to. Practice them, and make your own, they&amp;apos;re well 
-worth understanding!
-  Python2 vs Python3 Finally, a Python talk is never complete without wrapping everything up 
-in a big Python2 vs Python3 debate! .. Luckily, we won&amp;apos;t do that here.
-If you&amp;apos;re new to Python, and unsure which version to use, it doesn&amp;apos;t 
-really matter. They&amp;apos;re both quite similar, pick one, and learn it. Once 
-you learn one, the other version will be easily usable, and you&amp;apos;ll be 
-able to spot the differences with ease.
-Python3 is the eventual future, but it&amp;apos;s taken many years to gain 
-traction, and will take many more. Choosing which to use can be a hard 
-decision for seasoned programmers wanting to write large code bases. You 
-shouldn&amp;apos;t worry about that, currently. Save that for another day :)
-This concludes the getting started with Python guide. Thanks for reading!
-</description>
-  </item>
-  
-  <item>
     <title>Author A Guide: Previewing</title>
     <link>//learn.koding.com/contribute/previewing</link>
     <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
@@ -1161,30 +1000,6 @@ full gulp command again.
 And that sums it up! You now know how to contribute to Koding University, 
 in multiple ways. Keep up the awesome work, and we look forward to your 
 contribution!
-</description>
-  </item>
-  
-  <item>
-    <title>Author A Guide</title>
-    <link>//learn.koding.com/contribute</link>
-    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/contribute</guid>
-    <author>Team Koding</author>
-    <description>In this guide series we will go over Writing and Editing guides for Koding 
-University. We will cover every step of the process, but basic Git, 
-Github, and Markdown knowledge will be very useful.
-If you already know git, github, and markdown, here is the simple set of 
-tasks you&amp;apos;ll need to do.
-
-Review the Style Guidelines
-Fork KDLearn
-Clone your forked repo
-Find or create your files, Make your markdown edits
-Commit and push your changes to your repo
-Make a pull request of your changes, against the KDLearn Repo
-
-If you need more in depth instructions than that, please continue with 
-this series below. Thanks!
 </description>
   </item>
   
@@ -1365,6 +1180,203 @@ you can edit that field.
 
 
 
+</description>
+  </item>
+  
+  <item>
+    <title>Author A Guide</title>
+    <link>//learn.koding.com/contribute</link>
+    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/contribute</guid>
+    <author>Team Koding</author>
+    <description>In this guide series we will go over Writing and Editing guides for Koding 
+University. We will cover every step of the process, but basic Git, 
+Github, and Markdown knowledge will be very useful.
+If you already know git, github, and markdown, here is the simple set of 
+tasks you&amp;apos;ll need to do.
+
+Review the Style Guidelines
+Fork KDLearn
+Clone your forked repo
+Find or create your files, Make your markdown edits
+Commit and push your changes to your repo
+Make a pull request of your changes, against the KDLearn Repo
+
+If you need more in depth instructions than that, please continue with 
+this series below. Thanks!
+</description>
+  </item>
+  
+  <item>
+    <title>Getting Started with Python</title>
+    <link>//learn.koding.com/guides/getting-started-python</link>
+    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-python</guid>
+    <author>Team Koding</author>
+    <description>In this guide we&amp;apos;ll go over explaining what Python is, how to use Python 
+Packaging via the PIP command, and how to write your first Python web 
+server using a small library known as Flask. So, lets get started!
+  What is Python Python is a popular, general purpose, high level programing language. It 
+focuses on readability programmer sanity over raw performance. Python2 
+and Python3 come pre-installed on Koding VMs, and in this guide we&amp;apos;re 
+going to focus on Python2. Lets see what it looks like to run some python 
+code!
+  Running your first Python script Open up your Ace Editor create a new file named hello.py. Paste 
+in the following code into that file.
+print &amp;quot;Hello from python!&amp;quot;
+
+The print keyword takes a string and prints it to the Standard Output 
+(STDOUT) of the process. Lets try running this file so we can see this 
+output, but first save the file with Ctrl-s.  Now, open up your 
+Terminal and type in the following command.
+python hello.py
+You should see output similar to this:
+joshmurray: ~ $ python hello.py
+Hello from python!
+joshmurray: ~ $
+Neat! Lets take this a couple steps further, and do something actually 
+useful, lets run a web server! But first, lets get to know Pip, and 
+install a library that makes making python Web Applications easy!
+  Installing Pip pip is a popular Python Package Manager. However, we need to install it 
+onto our Koding VM to use it. To do that, we&amp;apos;re going to use AptGet, with 
+the following command.
+sudo apt-get install python-pip
+Give that a moment, and once that finishes we can install Flask!
+  Using Pip to install Flask You may be wondering why we&amp;apos;re using Flask to write this little web 
+server of ours. Flask has a really nice API for making compact web 
+applications.  This is great for a beginner guide, since we can look at a 
+few core concepts without getting too bogged down with technical details 
+of a web server.
+Now that you have pip installed, to install Flask type the following 
+command.
+sudo pip install Flask
+Note that we&amp;apos;re using sudo because the default location for the 
+installed packages is in a root directory. A common practice to store 
+these without root permissions is to use a Virtual Environment to keep 
+your packages installed per-project. We&amp;apos;ll save that for a later guide 
+though.
+Once that finishes installing, lets write our Flask code!
+  Creating your first Flask web server Create a new file named web.py, and paste in the following code.
+from flask import Flask
+app = Flask(__name__)
+
+@app.route(&amp;quot;/&amp;quot;)
+def hello():
+    return &amp;quot;Hello World!&amp;quot;
+
+if __name__ == &amp;quot;__main__&amp;quot;:
+    app.run(host=&amp;apos;0.0.0.0&amp;apos;)
+
+There are a few interesting points in this source though, so before we 
+run our web server, lets go over the source.
+from flask import Flask
+
+First up are our from and import keywords. The import imports a 
+module to an object with the same name. When used with the from keyword 
+though, only the Flask object is imported to the current scope. So, 
+this line imports a function named Flask.
+app = Flask(__name__)
+
+Next up, we use that Flask() function to create a Flask instance, 
+stored in the name app.
+__name__ is a special keyword which stores the name of the currently 
+module, or it equals &amp;quot;__main__&amp;quot; if run directly. We&amp;apos;ll see this again 
+at the end of the script.
+def hello():
+    return &amp;quot;Hello World!&amp;quot;
+
+We&amp;apos;re skipping a line, and going straight to the def keyword. This is 
+how we define a function in Python. In this case, we&amp;apos;re using this 
+function as a handler for our Flask &amp;quot;route&amp;quot;.
+@app.route(&amp;quot;/&amp;quot;)
+def hello():
+    return &amp;quot;Hello World!&amp;quot;
+
+If we look at that function again, including the line we skipped, we see 
+a new syntax structure, @app.route(&amp;quot;/&amp;quot;).
+This is known as a Decorator. Decorators are a special syntax for a 
+function wrapping another function. If you&amp;apos;re new to programming, this 
+can be a bit of a tricky concept which involves Higher Order 
+Functions. We&amp;apos;ll briefly touch this below, but for now we&amp;apos;ll just 
+take it at face value. This is how Flask routes our request to our 
+handler.
+A Route is a concept that directs requests (people viewing your web 
+server) and routes them to your Handler functions. &amp;quot;/&amp;quot; is the path 
+for this route, meaning that when someone connects to 
+http://hostname.username.koding.io/ they are given this function.
+If someone connected to http://hostname.username.koding.io/foo/bar, it 
+would not return this handler, because /foo/bar does not match our 
+hello route.
+if __name__ == &amp;quot;__main__&amp;quot;:
+    app.run(host=&amp;apos;0.0.0.0&amp;apos;)
+
+Finally we&amp;apos;re at the end of the script. If you remember the __name__ 
+keyword from before, remember that it holds the name of the current 
+module. If the file is run directly from Python though, ie python 
+web.py, then the value is &amp;quot;__main__&amp;quot;.
+By writing a __name__ == &amp;quot;__main__&amp;quot; condition, we make it so that if 
+this file is run directly it will start the web server. If the file is 
+imported though, it will not. This is great because we don&amp;apos;t want 
+imports to execute a bunch of potentially dangerous code. Good 
+programming practice.
+  Running our Flask web server Now that we have looked at the source, lets run this thing! We can run 
+this file just like above, with..
+python web.py
+And then connect to it with the following address.
+http://hostname.username.koding.io:5000
+Flask will display our text when you request the root path, awesome!
+  Decorators Briefly Explained Now that we&amp;apos;ve gone through the web server source, lets revisit the 
+Decorators and go into a bit more depth. We won&amp;apos;t go over every concept 
+in full detail, so that we can keep this a sanely short beginner 
+tutorial, and not a book.
+To help explain decorators, lets add our own Decorator.
+def from_py(hello):
+  def wrapper(*args, **kwargs):
+    return hello(*args, **kwargs) + &amp;quot; From Python!&amp;quot;
+  return wrapper
+
+@app.route(&amp;quot;/&amp;quot;)
+@from_py
+def hello():
+    return &amp;quot;Hello World!&amp;quot;
+
+Lets analyze this.
+from_py is simply a function, that takes another function. When we add 
+the keyword before of a function def, from_py is called with that 
+function as the first argument. This &amp;quot;wraps&amp;quot; hello() with our 
+from_py() function.
+Next, we create a new function inside the from_py function that acts as a handler.
+The (*args, **kwargs) 
+parameters is a special syntax to keep all of the given arguments in 
+those two objects, so that we can fully pass them to the hello() 
+handler.
+In our wrapper function, we then call then hello() function, with 
+the arguments given to wrapper().
+When hello() returns, we add our own string &amp;quot; From Python!&amp;quot;, and 
+return that as well.
+So that means
+@app.route(&amp;quot;/&amp;quot;)
+@from_py
+def hello():
+    return &amp;quot;Hello World!&amp;quot;
+
+Is actually many functions, more than three. We could write out the 
+entire structure here, but just focus on the @from_py for now, as to 
+avoid being confused by a huge group of nested functions.
+If this still doesn&amp;apos;t make sense, don&amp;apos;t worry! Higher order functions can 
+take some getting used to. Practice them, and make your own, they&amp;apos;re well 
+worth understanding!
+  Python2 vs Python3 Finally, a Python talk is never complete without wrapping everything up 
+in a big Python2 vs Python3 debate! .. Luckily, we won&amp;apos;t do that here.
+If you&amp;apos;re new to Python, and unsure which version to use, it doesn&amp;apos;t 
+really matter. They&amp;apos;re both quite similar, pick one, and learn it. Once 
+you learn one, the other version will be easily usable, and you&amp;apos;ll be 
+able to spot the differences with ease.
+Python3 is the eventual future, but it&amp;apos;s taken many years to gain 
+traction, and will take many more. Choosing which to use can be a hard 
+decision for seasoned programmers wanting to write large code bases. You 
+shouldn&amp;apos;t worry about that, currently. Save that for another day :)
+This concludes the getting started with Python guide. Thanks for reading!
 </description>
   </item>
   
@@ -1753,6 +1765,63 @@ And that&amp;apos;s it! You should now have a Ghost installation up and running.
   </item>
   
   <item>
+    <title>Installing Nginx</title>
+    <link>//learn.koding.com/guides/nginx</link>
+    <pubDate>"2014-07-31T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/nginx</guid>
+    <author>Team Koding</author>
+    <description>Nginx is an open source proxy server, commonly used as a replace
+Nginx is an open source web server. Built with performance and memory usage in 
+mind, it&amp;apos;s an excellent alternative to Apache. In this guide, we&amp;apos;ll go through 
+the simple process of installing Nginx on Koding. Lets get started!
+  Installing Nginx Koding runs Ubuntu, gives you root, and of course comes with apt-get. This 
+means that installation of many packages, programs and servers simply 
+require using apt-get. To install Nginx with apt-get, run the following 
+command.
+sudo apt-get install nginx
+Confirm the installation by pressing enter at the [Y/n] prompt, and proceed 
+to the next step.
+  Starting Nginx Your Virtual Machine comes with Apache preinstalled and configured. It&amp;apos;s 
+what serves up the web page that you see when you visit 
+http://hostname.username.koding.io. So before we start Nginx, we have 
+to stop Apache with the following command.
+sudo service apache2 stop
+You can then start your Nginx server by using the following command.
+sudo service nginx start
+If you now visit your User (or VM) domain at 
+http://hostname.username.koding.io, you&amp;apos;ll see a welcome to nginx page 
+like the one below. This means your Nginx server is up and running.
+
+  Using ~/Web Your Nginx server is running, but it&amp;apos;s not serving up the files that you expect 
+from your ~/Web directory. To do this we need to edit out 
+/etc/nginx/sites-available/default file with a Terminal editor such as Nano 
+or Vim. In this example we&amp;apos;ll use Nano for simplicity.
+Open up your Terminal and run the following command.
+sudo nano /etc/nginx/sites-available/default
+You&amp;apos;ll see a bunch of green text, similar to the following image. What we&amp;apos;re 
+looking to edit is the text root /usr/share/nginx/html, as seen highlighted 
+in this image:
+
+Using your arrow keys, navigate to the end of the /usr/share/nginx/html text 
+and delete the entire folder name (with your backspace key). Replace it with 
+the folder /var/www.
+    root /var/www
+By doing this, you&amp;apos;re changing the directory of files that nginx is serving by 
+default. /var/www is the default Apache dir, and is soft-linked to ~/Web. 
+In short, we&amp;apos;re telling Nginx to use what we currently use.
+After you&amp;apos;ve made the appropriate edits, use Ctrl-X to close Nano. You&amp;apos;ll be 
+prompted with a Y/n question to save the file. Type y. Next you&amp;apos;ll be 
+prompted for the filename to save it, press Enter, as the filename field is 
+already filled out.
+Now all we have to do is restart our web server!
+sudo service nginx restart
+If you visit your domain again you&amp;apos;ll see the same ~/Web files that you are 
+familiar with. You now have an Nginx server up and running, and serving your 
+Web files. Enjoy!
+</description>
+  </item>
+  
+  <item>
     <title>Koding with Sublime Text</title>
     <link>//learn.koding.com/guides/koding-with-sublime-text</link>
     <pubDate>"2014-07-31T00:00:00.000Z"</pubDate>
@@ -1807,63 +1876,6 @@ And there you have it, a folder synced with your Koding VM.
 
 
 
-</description>
-  </item>
-  
-  <item>
-    <title>Installing Nginx</title>
-    <link>//learn.koding.com/guides/nginx</link>
-    <pubDate>"2014-07-31T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/nginx</guid>
-    <author>Team Koding</author>
-    <description>Nginx is an open source proxy server, commonly used as a replace
-Nginx is an open source web server. Built with performance and memory usage in 
-mind, it&amp;apos;s an excellent alternative to Apache. In this guide, we&amp;apos;ll go through 
-the simple process of installing Nginx on Koding. Lets get started!
-  Installing Nginx Koding runs Ubuntu, gives you root, and of course comes with apt-get. This 
-means that installation of many packages, programs and servers simply 
-require using apt-get. To install Nginx with apt-get, run the following 
-command.
-sudo apt-get install nginx
-Confirm the installation by pressing enter at the [Y/n] prompt, and proceed 
-to the next step.
-  Starting Nginx Your Virtual Machine comes with Apache preinstalled and configured. It&amp;apos;s 
-what serves up the web page that you see when you visit 
-http://hostname.username.koding.io. So before we start Nginx, we have 
-to stop Apache with the following command.
-sudo service apache2 stop
-You can then start your Nginx server by using the following command.
-sudo service nginx start
-If you now visit your User (or VM) domain at 
-http://hostname.username.koding.io, you&amp;apos;ll see a welcome to nginx page 
-like the one below. This means your Nginx server is up and running.
-
-  Using ~/Web Your Nginx server is running, but it&amp;apos;s not serving up the files that you expect 
-from your ~/Web directory. To do this we need to edit out 
-/etc/nginx/sites-available/default file with a Terminal editor such as Nano 
-or Vim. In this example we&amp;apos;ll use Nano for simplicity.
-Open up your Terminal and run the following command.
-sudo nano /etc/nginx/sites-available/default
-You&amp;apos;ll see a bunch of green text, similar to the following image. What we&amp;apos;re 
-looking to edit is the text root /usr/share/nginx/html, as seen highlighted 
-in this image:
-
-Using your arrow keys, navigate to the end of the /usr/share/nginx/html text 
-and delete the entire folder name (with your backspace key). Replace it with 
-the folder /var/www.
-    root /var/www
-By doing this, you&amp;apos;re changing the directory of files that nginx is serving by 
-default. /var/www is the default Apache dir, and is soft-linked to ~/Web. 
-In short, we&amp;apos;re telling Nginx to use what we currently use.
-After you&amp;apos;ve made the appropriate edits, use Ctrl-X to close Nano. You&amp;apos;ll be 
-prompted with a Y/n question to save the file. Type y. Next you&amp;apos;ll be 
-prompted for the filename to save it, press Enter, as the filename field is 
-already filled out.
-Now all we have to do is restart our web server!
-sudo service nginx restart
-If you visit your domain again you&amp;apos;ll see the same ~/Web files that you are 
-familiar with. You now have an Nginx server up and running, and serving your 
-Web files. Enjoy!
 </description>
   </item>
   
@@ -1976,47 +1988,6 @@ As you can see, the codemirror folder exists. Thank you and have a wonderful Kod
   </item>
   
   <item>
-    <title>How to setup an SSH Tunnel in Unix</title>
-    <link>//learn.koding.com/guides/ssh-tunneling</link>
-    <pubDate>2014-08-9</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/ssh-tunneling</guid>
-    <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll go over what SSH Tunneling is, what it&amp;apos;s used for, 
-and how to set one up on your Koding VM. So, lets get started!
-  What is SSH Tunneling? SSH Tunneling is the process of sending and receiving TCP and UDP packets 
-through an SSH Connection. This enables you to bypass proxies and go 
-directly to your VM, with whatever data/etc that you need.
-  Why would I want to SSH Tunnel? Koding Virtual Machines do not have direct IP access. They proxy http 
-connections from your domain, to the machine itself. Note that only HTTP 
-is proxied. This is why when you SSH into your VM, you set up a special 
-SSH config to run your connection through ssh.koding.com.
-Because of this Proxy, some things you may want to do on Koding, such as 
-connecting a MySQL Database Client directly to your MySQL Server becomes 
-impossible via the username domains.
-To solve this, you use SSH Tunneling to connect to servers directly on 
-your VM, from your local machine. Lets take a look at how this is done.
-  Using a SSH Tunnel First up, make sure you have gone through the SSH Guide, and 
-can successfully connect to your VM using the steps outlined in that 
-guide. You must have a working SSH connection for this to work.
-Next, run the following command.
-ssh -L 8080:localhost:80 hostname.username.koding.io
-Where hostname is the hostname of your VM, and username is your 
-Koding username.
-After running this command, you&amp;apos;ll simply connect to your VM.. it may 
-appear like nothing has happened. But now, like magic, try loading the 
-following URL into your browser.
-http://localhost:8080/
-Just like magic, you can see that your Port 8080 on localhost is 
-returning the same thing as:
-http://hostname.username.koding.io:80
-Awesome! To connect with something like a MySQL Database Client, simply 
-create an SSH tunnel with the appropriate Port on the Virtual 
-Machine, and any port you&amp;apos;d like for your localhost. Then connect to 
-your localhost with your MySQL Client!
-</description>
-  </item>
-  
-  <item>
     <title>Drupal Setup and Installation for Beginners</title>
     <link>//learn.koding.com/guides/php-cms/drupal/setup</link>
     <pubDate>"2014-07-15T00:00:00.000Z"</pubDate>
@@ -2120,6 +2091,47 @@ This has been a beginner guide from Koding. As always, more Quick Tips and begin
   </item>
   
   <item>
+    <title>How to setup an SSH Tunnel in Unix</title>
+    <link>//learn.koding.com/guides/ssh-tunneling</link>
+    <pubDate>2014-08-9</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/ssh-tunneling</guid>
+    <author>Team Koding</author>
+    <description>In this guide we&amp;apos;ll go over what SSH Tunneling is, what it&amp;apos;s used for, 
+and how to set one up on your Koding VM. So, lets get started!
+  What is SSH Tunneling? SSH Tunneling is the process of sending and receiving TCP and UDP packets 
+through an SSH Connection. This enables you to bypass proxies and go 
+directly to your VM, with whatever data/etc that you need.
+  Why would I want to SSH Tunnel? Koding Virtual Machines do not have direct IP access. They proxy http 
+connections from your domain, to the machine itself. Note that only HTTP 
+is proxied. This is why when you SSH into your VM, you set up a special 
+SSH config to run your connection through ssh.koding.com.
+Because of this Proxy, some things you may want to do on Koding, such as 
+connecting a MySQL Database Client directly to your MySQL Server becomes 
+impossible via the username domains.
+To solve this, you use SSH Tunneling to connect to servers directly on 
+your VM, from your local machine. Lets take a look at how this is done.
+  Using a SSH Tunnel First up, make sure you have gone through the SSH Guide, and 
+can successfully connect to your VM using the steps outlined in that 
+guide. You must have a working SSH connection for this to work.
+Next, run the following command.
+ssh -L 8080:localhost:80 hostname.username.koding.io
+Where hostname is the hostname of your VM, and username is your 
+Koding username.
+After running this command, you&amp;apos;ll simply connect to your VM.. it may 
+appear like nothing has happened. But now, like magic, try loading the 
+following URL into your browser.
+http://localhost:8080/
+Just like magic, you can see that your Port 8080 on localhost is 
+returning the same thing as:
+http://hostname.username.koding.io:80
+Awesome! To connect with something like a MySQL Database Client, simply 
+create an SSH tunnel with the appropriate Port on the Virtual 
+Machine, and any port you&amp;apos;d like for your localhost. Then connect to 
+your localhost with your MySQL Client!
+</description>
+  </item>
+  
+  <item>
     <title>Enable PHP mail() function</title>
     <link>//learn.koding.com/guides/enable-php-mail-function</link>
     <pubDate>"2014-07-12T00:00:00.000Z"</pubDate>
@@ -2189,42 +2201,6 @@ certainly be different than what was used in this example.
   </item>
   
   <item>
-    <title>Where is my Web Server Root?</title>
-    <link>//learn.koding.com/guides/where-is-my-webserver-root</link>
-    <pubDate>"2014-07-09T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/where-is-my-webserver-root</guid>
-    <author>Team Koding</author>
-    <description>Koding VMs come with Apache preconfigured and serve a sample site to get you 
-started. The files for this site are found in what is typically called your 
-Web Server Root. This is the directory that Apache is serving up files from, 
-and it is located within your Home directory, under the Web directory. The 
-full path being:
-/home/username/Web
-Replace username with your username.
-You can modify the contents of this directory with the Koding 
-Terminal, or the Ace Editor. In this example, we&amp;apos;ll use Ace 
-to browse the files with the FileTree.
-First, open up Ace. In the left hand side you&amp;apos;ll see a FileTree, with a 
-directory called Web. Double click the Web folder to expand it. Your FileTree 
-should look something like this:
-
-Those files are a series of example pages, and they&amp;apos;re being served by Apache 
-on your Koding Domain. You can view this site by visiting your Koding Domain, 
-at:
-http://hostname.username.koding.io
-Where username is your Koding username. You should see something like this:
-
-You&amp;apos;ll notice that the PHP, Python, Perl, and Ruby links are actually files 
-being generated from that language. As an example, the python.py file is 
-being served up by Apache, with the aid of Apache&amp;apos;s mod_python module. This 
-serves to illustrate that this is a real Apache server, and you can use it 
-just like you expect.
-You should now understand where your Web Server Root is, and how to access it 
-from the Web to develop and share your web applications. Happy Koding!
-</description>
-  </item>
-  
-  <item>
     <title>Elixir on Koding</title>
     <link>//learn.koding.com/guides/elixir-on-koding</link>
     <pubDate>"2014-07-09T00:00:00.000Z"</pubDate>
@@ -2290,6 +2266,42 @@ Elixir is now updated!
   </item>
   
   <item>
+    <title>Where is my Web Server Root?</title>
+    <link>//learn.koding.com/guides/where-is-my-webserver-root</link>
+    <pubDate>"2014-07-09T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/where-is-my-webserver-root</guid>
+    <author>Team Koding</author>
+    <description>Koding VMs come with Apache preconfigured and serve a sample site to get you 
+started. The files for this site are found in what is typically called your 
+Web Server Root. This is the directory that Apache is serving up files from, 
+and it is located within your Home directory, under the Web directory. The 
+full path being:
+/home/username/Web
+Replace username with your username.
+You can modify the contents of this directory with the Koding 
+Terminal, or the Ace Editor. In this example, we&amp;apos;ll use Ace 
+to browse the files with the FileTree.
+First, open up Ace. In the left hand side you&amp;apos;ll see a FileTree, with a 
+directory called Web. Double click the Web folder to expand it. Your FileTree 
+should look something like this:
+
+Those files are a series of example pages, and they&amp;apos;re being served by Apache 
+on your Koding Domain. You can view this site by visiting your Koding Domain, 
+at:
+http://hostname.username.koding.io
+Where username is your Koding username. You should see something like this:
+
+You&amp;apos;ll notice that the PHP, Python, Perl, and Ruby links are actually files 
+being generated from that language. As an example, the python.py file is 
+being served up by Apache, with the aid of Apache&amp;apos;s mod_python module. This 
+serves to illustrate that this is a real Apache server, and you can use it 
+just like you expect.
+You should now understand where your Web Server Root is, and how to access it 
+from the Web to develop and share your web applications. Happy Koding!
+</description>
+  </item>
+  
+  <item>
     <title>Sync files using Google Drive</title>
     <link>//learn.koding.com/guides/sync-files-google-drive</link>
     <pubDate>"2014-07-08T00:00:00.000Z"</pubDate>
@@ -2317,6 +2329,36 @@ man cron
  Note 2: As per the author of grive, the application will not download any files that are the traditional Google Docs (Spreadsheet, Documents,
 Presentations, etc.). The app will automatically download/upload any non-native Google Doc format and this inculdes
 code files, text files, images, etc.
+</description>
+  </item>
+  
+  <item>
+    <title>Updating Node.js on your VM</title>
+    <link>//learn.koding.com/guides/updating-nodejs-on-your-vm</link>
+    <pubDate>"2014-06-27T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/updating-nodejs-on-your-vm</guid>
+    <author>Darryl Dias</author>
+    <description>Your Koding VM is powered by Ubuntu 13.10, by default your Koding VM comes pre-installed with the Node 0.10.18 that is the current stable version of Node.js. available in the official Ubuntu repository. We can update to the latest stable version of Node.js available for Ubuntu 13.10 by adding the official Node.js PPA to our local sources list and running a dist-upgrade to switch to the latest stable version.
+The Official PPA is updated regularly and is maintained by Chris Lea
+  Instructions Adding the official Node.js PPA
+sudo add-apt-repository ppa:chris-lea/node.js
+
+Updating the local package database and sources list.
+sudo apt-get update
+
+Updating to the latest stable build of Node.js available for Ubuntu 13.10. This will update all the packages that need to update and will also update your Node.js package.
+sudo apt-get dist-upgrade
+
+If you had deleted Node.js from your VM, you can install it by entering the command below. The PPA installs NPM as a part of nodejs and does not require you to install NPM seperately.
+sudo apt-get install nodejs
+
+Check the version of Node.js after installing. 
+node --version
+
+The example output should look like.
+v0.10.25
+
+Now we have the latest stable version of Node.js installed on your VM.
 </description>
   </item>
   
@@ -2359,36 +2401,6 @@ http://hostname.username.koding.io/phpinfo.php
 This page should show you the PHP configuration on your machine. 
 One of the section contains information about Phalcon (search on the page for phalcon by pressing Ctrl + F). 
 If you can see this section, it means that Phalcon has been installed on your machine and you can start using it right away!
-</description>
-  </item>
-  
-  <item>
-    <title>Updating Node.js on your VM</title>
-    <link>//learn.koding.com/guides/updating-nodejs-on-your-vm</link>
-    <pubDate>"2014-06-27T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/updating-nodejs-on-your-vm</guid>
-    <author>Darryl Dias</author>
-    <description>Your Koding VM is powered by Ubuntu 13.10, by default your Koding VM comes pre-installed with the Node 0.10.18 that is the current stable version of Node.js. available in the official Ubuntu repository. We can update to the latest stable version of Node.js available for Ubuntu 13.10 by adding the official Node.js PPA to our local sources list and running a dist-upgrade to switch to the latest stable version.
-The Official PPA is updated regularly and is maintained by Chris Lea
-  Instructions Adding the official Node.js PPA
-sudo add-apt-repository ppa:chris-lea/node.js
-
-Updating the local package database and sources list.
-sudo apt-get update
-
-Updating to the latest stable build of Node.js available for Ubuntu 13.10. This will update all the packages that need to update and will also update your Node.js package.
-sudo apt-get dist-upgrade
-
-If you had deleted Node.js from your VM, you can install it by entering the command below. The PPA installs NPM as a part of nodejs and does not require you to install NPM seperately.
-sudo apt-get install nodejs
-
-Check the version of Node.js after installing. 
-node --version
-
-The example output should look like.
-v0.10.25
-
-Now we have the latest stable version of Node.js installed on your VM.
 </description>
   </item>
   
@@ -2653,6 +2665,106 @@ installation of Koding University.
   </item>
   
   <item>
+    <title>Getting Started: The UI</title>
+    <link>//learn.koding.com/guides/getting-started/the-ui</link>
+    <pubDate>"2014-05-30T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/the-ui</guid>
+    <author>Team Koding</author>
+    <description>In this guide we&amp;apos;ll take a look at Koding&amp;apos;s UI. We&amp;apos;ll examine 
+the major sections, and briefly explain some of the features. In future 
+guides of this series we&amp;apos;ll explain these parts in more detail. Lets get 
+started!
+  The Full UI 
+This is the Koding UI of a logged in user, with the Koding IDE 
+open. On the left side we have our VMs, Channels, Chats, and Account. To 
+the right we have the Koding IDE. Lets look at each piece, and where they 
+lead us.
+  VMs, Workspaces and IDE VMs, Workspaces, and the Koding IDE can be found on the left hand 
+side, under VMS, as seen in the image below.
+
+Clicking on a VM Name, such as koding-vm-0 in the above image, will 
+open up the Koding IDE for that specific VM.
+The button to the immediate right of the VM Name is the VM Settings. Here 
+you can find useful information, such as your VM Address and VM Specs.
+Finally, below the VM Name are your Workspaces for that specific VM.Clicking on a Workspace will open all of the previous editors and 
+Terminals that you had open on it, and opening new Workspaces provides 
+shortcuts for varying tasks. We&amp;apos;ll get into the specifics in the 
+Workspaces guide.
+  Channels and Activity Below VMs, are your Channels. To follow a channel, click on a Grey check 
+mark. Green check marks indicate a channel that you are following.
+
+A channel is a stream of user submitted content for a certain hash tag, 
+such as #golang. When you 
+click on a hash tag in the Activity Feed, it opens a channel for that 
+tag, as seen below.
+
+Activity Feed posts support Markdown, including Markdown Code 
+Blocks.
+  Chat Below Channels are your Chats. These are private conversations between 
+you and any number of users you invite.
+
+To open a new chat, click on the Plus button to the right of the Chat 
+icon. Clicking on a already started chat, will open it as seen below.
+
+Your chats will work much in the same way as the Activity Feed. You can 
+invite more users by clicking the Plus next to user icons, or delete the 
+conversation from the Chat Dropdown in the upper right.
+  Account Settings Your Account Settings can be located from the bottom of the navigation 
+panel.
+
+Here you&amp;apos;ll be able to modify your Name, Password, and link your Koding 
+account to various services.
+</description>
+  </item>
+  
+  <item>
+    <title>Getting Started: The Activity Feed</title>
+    <link>//learn.koding.com/guides/getting-started/activity-feed</link>
+    <pubDate>"2014-05-30T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/activity-feed</guid>
+    <author>Team Koding</author>
+    <description>The Activity Feed is the central location for discussion on Koding. A 
+public message board, with markdown support, previewing, hashtag topics 
+and more, it&amp;apos;s a central component to Koding&amp;apos;s Social experience.
+
+  Posting and Formatting To post to the activity feed, find the input box in the top of the page.
+
+Simply type something in, and press the green submit button. Just plain text 
+can get a bit boring though, so Koding supports full 
+Markdown, as seen below:
+
+  Previewing To preview your post, simply press the little eye on the right side of 
+the input box. Your Markdown will be rendered and highlighted 
+appropriately.
+
+  Tagging Tagging your content is important. With tags, your content can be
+categorized, which makes it easier to search and more likely to be seen 
+by people who follow those channels.
+
+
+
+Here you can see the previous Markdown example, tagged with the 
+#markdown tag.
+  Searching On the #public channel there is a search field next to 
+Most Liked / Most Recent, as seen below.
+
+Searching the activity feed will search for the contents of a post, as 
+well as the tags.
+  Channels Channels are how you view a steam of posts with a certain Tag. When you 
+click on a tag, it opens a channel for that tag. Clicking on the Grey 
+checkmark next to the channel name, will subscribe you to that channel, 
+and keep it open anytime you visit Koding.
+
+To browse channels that you might be interested in, you can click the 
+Plus button next to &amp;quot;Channel&amp;quot; in the sidebar (as seen below), and 
+search for the channel you&amp;apos;re interested in.
+
+Following channels is a great way to stay active in content that matters 
+to you.
+</description>
+  </item>
+  
+  <item>
     <title>Markdown Basics, for Koding</title>
     <link>//learn.koding.com/guides/markdown</link>
     <pubDate>"2014-05-30T00:00:00.000Z"</pubDate>
@@ -2722,106 +2834,6 @@ prepend your list items with a number, instead of a hyphen. Example:
 ![Alt text](full url to the image)
 ![Alt text](full url to the image &amp;quot;Optional title&amp;quot;)
 
-</description>
-  </item>
-  
-  <item>
-    <title>Getting Started: The Activity Feed</title>
-    <link>//learn.koding.com/guides/getting-started/activity-feed</link>
-    <pubDate>"2014-05-30T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/activity-feed</guid>
-    <author>Team Koding</author>
-    <description>The Activity Feed is the central location for discussion on Koding. A 
-public message board, with markdown support, previewing, hashtag topics 
-and more, it&amp;apos;s a central component to Koding&amp;apos;s Social experience.
-
-  Posting and Formatting To post to the activity feed, find the input box in the top of the page.
-
-Simply type something in, and press the green submit button. Just plain text 
-can get a bit boring though, so Koding supports full 
-Markdown, as seen below:
-
-  Previewing To preview your post, simply press the little eye on the right side of 
-the input box. Your Markdown will be rendered and highlighted 
-appropriately.
-
-  Tagging Tagging your content is important. With tags, your content can be
-categorized, which makes it easier to search and more likely to be seen 
-by people who follow those channels.
-
-
-
-Here you can see the previous Markdown example, tagged with the 
-#markdown tag.
-  Searching On the #public channel there is a search field next to 
-Most Liked / Most Recent, as seen below.
-
-Searching the activity feed will search for the contents of a post, as 
-well as the tags.
-  Channels Channels are how you view a steam of posts with a certain Tag. When you 
-click on a tag, it opens a channel for that tag. Clicking on the Grey 
-checkmark next to the channel name, will subscribe you to that channel, 
-and keep it open anytime you visit Koding.
-
-To browse channels that you might be interested in, you can click the 
-Plus button next to &amp;quot;Channel&amp;quot; in the sidebar (as seen below), and 
-search for the channel you&amp;apos;re interested in.
-
-Following channels is a great way to stay active in content that matters 
-to you.
-</description>
-  </item>
-  
-  <item>
-    <title>Getting Started: The UI</title>
-    <link>//learn.koding.com/guides/getting-started/the-ui</link>
-    <pubDate>"2014-05-30T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/the-ui</guid>
-    <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll take a look at Koding&amp;apos;s UI. We&amp;apos;ll examine 
-the major sections, and briefly explain some of the features. In future 
-guides of this series we&amp;apos;ll explain these parts in more detail. Lets get 
-started!
-  The Full UI 
-This is the Koding UI of a logged in user, with the Koding IDE 
-open. On the left side we have our VMs, Channels, Chats, and Account. To 
-the right we have the Koding IDE. Lets look at each piece, and where they 
-lead us.
-  VMs, Workspaces and IDE VMs, Workspaces, and the Koding IDE can be found on the left hand 
-side, under VMS, as seen in the image below.
-
-Clicking on a VM Name, such as koding-vm-0 in the above image, will 
-open up the Koding IDE for that specific VM.
-The button to the immediate right of the VM Name is the VM Settings. Here 
-you can find useful information, such as your VM Address and VM Specs.
-Finally, below the VM Name are your Workspaces for that specific VM.Clicking on a Workspace will open all of the previous editors and 
-Terminals that you had open on it, and opening new Workspaces provides 
-shortcuts for varying tasks. We&amp;apos;ll get into the specifics in the 
-Workspaces guide.
-  Channels and Activity Below VMs, are your Channels. To follow a channel, click on a Grey check 
-mark. Green check marks indicate a channel that you are following.
-
-A channel is a stream of user submitted content for a certain hash tag, 
-such as #golang. When you 
-click on a hash tag in the Activity Feed, it opens a channel for that 
-tag, as seen below.
-
-Activity Feed posts support Markdown, including Markdown Code 
-Blocks.
-  Chat Below Channels are your Chats. These are private conversations between 
-you and any number of users you invite.
-
-To open a new chat, click on the Plus button to the right of the Chat 
-icon. Clicking on a already started chat, will open it as seen below.
-
-Your chats will work much in the same way as the Activity Feed. You can 
-invite more users by clicking the Plus next to user icons, or delete the 
-conversation from the Chat Dropdown in the upper right.
-  Account Settings Your Account Settings can be located from the bottom of the navigation 
-panel.
-
-Here you&amp;apos;ll be able to modify your Name, Password, and link your Koding 
-account to various services.
 </description>
   </item>
   
