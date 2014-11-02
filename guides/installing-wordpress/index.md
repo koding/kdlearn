@@ -108,6 +108,9 @@ define('DB_USER', 'username');
 
 /** MySQL database password */
 define('DB_PASSWORD', 'password');
+
+define('FS_METHOD', 'direct');
+/* That's all, stop editing! Happy blogging. */
 ```
 
 The above variables: *database_name*, *username*, *password* should be replaced with the values you set when creating the database on [Step 1](#step-1).
@@ -124,6 +127,11 @@ mkdir wp-content/uploads
 
 ```
 sudo chown -R :www-data wp-content/uploads
+```
+
+*Setting the permission of the wp-config.php to 777
+```
+chmod -R 777 /wordpress/wp-config.php
 ```
 
 ## Step 5 - Finalizing the Wordpress install
