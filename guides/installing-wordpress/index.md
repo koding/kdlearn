@@ -10,6 +10,16 @@ template: page.toffee
 
 This guide will walk you through the steps required to install WordPress on your Koding VM. We will walk through the steps needed to download, install, configure and eventually run a full WordPress system.
 
+## WordPress requirements
+
+Before we begin you may want to check if you have the following things installed on your Koding VM.
+
+* [PHP 5.2.4 or greater](http://learn.koding.com/guides/installing-php/)
+* [MySQL 5.0 or greater](http://learn.koding.com/guides/installing-mysql/)
+* [The mod_rewrite Apache module](http://learn.koding.com/guides/general-htaccess/#rewriteengine-amp-mod_rewrite)
+
+After you checked and/or installed the above requirements you can go ahead a continue with the guide.
+
 ## Step 1 - Database creation
 
 The first thing we need for our WordPress installation to work is a new database. We can create one using either:
