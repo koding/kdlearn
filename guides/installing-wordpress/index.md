@@ -12,13 +12,13 @@ This guide will walk you through the steps required to install WordPress on your
 
 ## WordPress requirements
 
-Before we begin you may want to check if you have the following things installed on your Koding VM.
+Before we begin you may want to make sure you have the following things installed on your Koding VM.
 
-* [PHP 5.2.4 or greater](http://learn.koding.com/guides/installing-php/)
-* [MySQL 5.0 or greater](http://learn.koding.com/guides/installing-mysql/)
-* [The mod_rewrite Apache module](http://learn.koding.com/guides/general-htaccess/#rewriteengine-amp-mod_rewrite)
+1. [PHP 5.2.4 or greater](http://learn.koding.com/guides/installing-php/)
+2. [MySQL 5.0 or greater](http://learn.koding.com/guides/installing-mysql/)
+3. [The mod_rewrite Apache module](http://learn.koding.com/guides/general-htaccess/#rewriteengine-amp-mod_rewrite)
 
-After you checked and/or installed the above requirements you can go ahead a continue with the guide.
+After you made sure and/or installed the above requirements you can go ahead a continue with the guide.
 
 ## Step 1 - Database creation
 
@@ -26,9 +26,9 @@ The first thing we need for our WordPress installation to work is a new database
 1. the command line
 2. via [phpMyAdmin](http://learn.koding.com/guides/install-phpmyadmin/).
 
-The rest of this guide will focus on the command line method to create a database for our WordPress installation. (Note: you should already have MySQL installed on your VM before continuing. If you don't have it installed, just follow [this guide](http://learn.koding.com/guides/installing-mysql/) and then come back here to continue with the rest of the WordPress install.)
+The rest of this guide will focus on the command line method to create a database for our WordPress installation.
 
-### setting up MySQL:
+### Setting up MySQL:
 
 Type in the commands listed below in a Koding Terminal.
 
