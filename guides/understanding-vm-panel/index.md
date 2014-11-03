@@ -43,7 +43,7 @@ The more section includes some additional settings for your VM. Each setting has
 
 The advanced section includes settings that only advanced users should use. If you are an unexperienced user then this section should be of limits.
 
-* Reinitialize VM. This button will bring your VM to it's default state. This means that everything will be reverted to it's default state and every file in your home folder will be removed. 
+* Reinitialize VM. This button will bring your VM to it's default state. This means that everything will be reverted to it's default state and every file in your home folder will be removed. [This guide](/faq/vm-reinit/) explains the reinit function in more detail.
 * Terminate VM. If you're a paying customer you can choose to remove your VM and create a new one if you so choose.
 
 If you encounter any issues or have any questions regarding the VM settings panel you can email us at [support@koding.com](mailto:support@koding.com) and we'll gladly help.
