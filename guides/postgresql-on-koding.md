@@ -36,8 +36,8 @@ To getting started with postgreSQL, open your [Terminal](https://koding.com/Term
 
 Now you are logged into your vm with the postgres user. Then connect to template1 database using the postgresql's psql client:
 
-    postgres@vm-0:~$  psql template1
-    postgres@vm-0:~$  template1=#
+    postgres ~$  psql template1
+    postgres ~$  template1=#
     
 Note the # symbol, declaring that you are logged to the database as a *Super User*. Now for enchaned security change your default postgres's password:
 
@@ -47,7 +47,7 @@ Note the # symbol, declaring that you are logged to the database as a *Super Use
     
 Nice, we are near the end: now create a new user with createdb permission with same username of your vm. So if your username is koding02, your prompt should be like:
 
-    koding02@vm-0:~$
+    koding02 ~$
     
 **Create a new user** using the CREATE USER command like this:
 
