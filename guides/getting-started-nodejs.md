@@ -28,6 +28,42 @@ rather low level by itself, but like all major languages people have
 built frameworks ontop of the raw API to make it easier to create 
 applications.
 
+## Installing NodeJS and NPM
+
+By default every Koding VM comes preinstalled with NodeJS and NPM, but in case you somehow removed it you can use the following commands to get it back.
+
+To install it use the following command:
+
+```
+sudo apt-get install nodejs
+```
+
+If the above should fail you can install NodeJS through a PPA repository like so:
+
+```
+sudo apt-get install python-software-properties  
+sudo add-apt-repository ppa:chris-lea/node.js  
+sudo apt-get update  
+sudo apt-get install nodejs  
+```
+
+You can check the NodeJS version and if it installed correctly, after the installation process has finished, using the following command:
+
+```
+nodejs -v
+```
+
+You will also need the Node Packaged Modules or NPM. To install NPM, simply run the following command:
+
+```
+sudo apt-get install npm
+```
+
+To make sure NPM has installed successfully, run:
+
+```
+npm -v
+```
 
 ## Running your first Node Script
 
