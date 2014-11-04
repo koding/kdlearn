@@ -10,7 +10,7 @@ template: page.toffee
 
 This guide will cover the basics on how to get Apache Cordova installed on your Koding VM.
 
-Before we begin please check that you have the following things installed on your Koding VM. For each requirement run each command to make sure that you have that requirement installed on your VM.
+Before you begin please check that you have the following things installed on your Koding VM. For each requirement run each command to make sure that you have that requirement installed on your VM.
 
 _Note: By default all Koding VMs come preinstalled with the below requirements._
 
@@ -34,7 +34,7 @@ git --version
 
 ## Step 1 - Install
 
-In order to install Apache Cordova we will need to use NPM. Input the following command to install Apache Cordova.
+In order to install Apache Cordova you will need to use NPM. Input the following command to install Apache Cordova.
 
 ```
 sudo npm install -g cordova
@@ -42,7 +42,7 @@ sudo npm install -g cordova
 
 ## Step 2 - Finish up
 
-After the process has finished installing, the module, we need to make sure it has installed correctly. You can simply check the version using the following command:
+After the process has finished installing, the module, you need to make sure it has installed correctly. You can simply check the version using the following command:
 
 ```
 cordova -v
@@ -78,7 +78,7 @@ In order to fix this issue you can run the following:
 ln -s /usr/bin/nodejs /usr/bin/node
 ```
 
-You now need to switch to the app folder, the one that we mentioned above, where the source is stored, in order to add platforms:
+You now need to switch to the app folder, the one that you used above, where the source is stored, in order to add platforms:
 
 ```
 cd FOLDER
