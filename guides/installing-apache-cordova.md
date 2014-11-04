@@ -42,7 +42,7 @@ sudo npm install -g cordova
 
 ## Step 2 - Finish up
 
-After the process has finished installing, the module, we need to make sure it has installed correctly. We can simply check the version using the following command:
+After the process has finished installing, the module, we need to make sure it has installed correctly. You can simply check the version using the following command:
 
 ```
 cordova -v
@@ -78,13 +78,13 @@ In order to fix this issue you can run the following:
 ln -s /usr/bin/nodejs /usr/bin/node
 ```
 
-We now need to switch to the app folder, the one that we mentioned above, where the source is stored, in order to add platforms:
+You now need to switch to the app folder, the one that we mentioned above, where the source is stored, in order to add platforms:
 
-``
+```
 cd FOLDER
 ```
 
-We can add platforms like so:
+You can add platforms like so:
 
 ```
 cordova platform add PLATFORM_NAME
