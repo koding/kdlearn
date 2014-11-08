@@ -89,3 +89,40 @@ If you see a plain white page saying **"Not Found"** with mentions of
 Apache and Ubuntu, then Apache is correctly loading a directory, but the 
 directory is empty. Confirm that your `DocumentRoot` is a correct, and an 
 **absolute** directory.
+
+### Forbidden
+
+By default, Apache is configured to not allow access to directories 
+outside of `/var/www`. So, if you link to an absolute directory outside 
+of `/var/www`, such as `/home/joshmurray/hello`, you may see a message 
+similar to the following.
+
+```
+You do not have permission to access / on this server.
+```
+
+To resolve this, you can use the `<Directory>` directive inside of your 
+`VirtualHost` directive from above. Example:
+
+```xml
+<Virtualhost *:80>
+  ServerName hello.joshmurray.koding.io
+  DocumentRoot /home/joshmurray/hello
+  <Directory /home/joshmurray/hello/>
+    Options Indexes FollowSymLinks
+    AllowOverride None
+    Require all granted
+  </Directory>
+</Virtualhost>
+```
+
+Afterwards, don't forget to reload Apache, with the following command.
+
+```text
+sudo service apache2 reload
+```
+
+**Important**: It is recommended that you review the [Directory directive 
+documentation](http://httpd.apache.org/docs/current/mod/core.html#directory), 
+as there are security implications to allowing directory access, that you 
+should understand.
