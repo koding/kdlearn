@@ -9,7 +9,8 @@ template: page.toffee
 
 # AngularJS Step-by-Step Setup
 
-This article is all about AngularJS and how to get you started with it on [Koding](https://koding.com). Follow along, or [Try the Koding Demo](https://koding.com/Develop/Teamwork?import=http://tinyurl.com/o39oovy) right now! 
+This article is all about AngularJS and how to get you started with it on 
+[Koding](https://koding.com).
 
 ## AngularJS: What's it all about.
 
@@ -52,10 +53,10 @@ earlier.
 
 We can now save our file and check out the result, by clicking the little 
 "hamburger" menu in the top right corner of Ace editor and then choose Preview.  
-The example we got should display nicely. Go ahead and test to see if it works.  
-Simple and fun! If you want to skip the steps above you can [try our Koding 
-demo](https://koding.com/Develop/Teamwork?import=http://tinyurl.com/o39oovy) 
-and see how it goes. And that's it. Why not continue and experiment with 
-AngularJS on [Koding](https://koding.com) and see what more cool stuff you can 
-make. As always, more Quick Tips and beginner friendly guides coming soon, so 
-stay tuned!
+The example we got should display nicely. Go ahead and test to see if it 
+works.  Simple and fun!
+
+And that's it. Why not continue and experiment with AngularJS on 
+[Koding](https://koding.com) and see what more cool stuff you can 
+make. As always, more Quick Tips and beginner friendly guides coming 
+soon, so stay tuned!

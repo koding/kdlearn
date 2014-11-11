@@ -117,3 +117,12 @@ prepend your list items with a number, instead of a hyphen. Example:
 2. Item two
 3. Item three
 ```
+
+## Images
+
+You can easily include images in your markdown by using the following notation:
+
+```markdown
+![Alt text](full url to the image)
+![Alt text](full url to the image "Optional title")
+```

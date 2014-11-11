@@ -21,50 +21,30 @@ In this tutorial you will need the following.
 [found here][vm address].
 
 
-## Installing PureFTPd
+## Installing ProFTPd
 
-First off, we'll need to install PureFTPd. This can be done by pasting 
+First off, we'll need to install ProFTPd. This can be done by pasting 
 the following command into your [Koding IDE][ide]'s Terminal.
 
 ```
-sudo apt-get install pure-ftpd
+sudo apt-get install proftpd
 ```
 
-## Adding an FTP User
+During the install process you will be asked to choose to run your VPS as an inetd or standalone server. Choose the **standalone** option.
 
-After PureFTPd has been successfully installed, we need to add an FTP 
-username and password to connect to. These have nothing to do with Koding 
-username and password, and are simply used for ftp authorization. To do 
+## Setting up the FTP User
+
+After ProFTPd has been successfully installed, we need to set a FTP password for your user. To do 
 this, paste the following command into your Terminal.
 
 ```
-sudo pure-pw useradd FTP_USERNAME -u KODING_USERNAME -d ~/Web
+sudo passwd KODING_USERNAME
 ```
 
-Make note to replace `FTP_USERNAME` with the FTP username you want to 
-use, and `KODING_USERNAME` with your actual Koding Username.
+Make note to replace `KODING_USERNAME` with your actual Koding username.
 
 After hitting enter, you'll be prompted for the **FTP** password you wish 
 to use. *Not* your Koding password.
-
-## Linking Your FTP Database
-
-Next, you'll have to run a few commands to get the ftp database setup and 
-configured properly. Run the following commands in your Terminal.
-
-```
-sudo pure-pw mkdb
-sudo ln -s /etc/pure-ftpd/pureftpd.passwd /etc/pureftpd.passwd
-sudo ln -s /etc/pure-ftpd/pureftpd.pdb /etc/pureftpd.pdb
-sudo ln -s /etc/pure-ftpd/conf/PureDB /etc/pure-ftpd/auth/PureDB
-```
-
-Once the above is ran, simply restart your now-configured FTP Server.  
-This can be done with the following command.
-
-```
-sudo service pure-ftpd restart
-```
 
 ## Connecting to your FTP Server
 
@@ -72,7 +52,7 @@ Finally, in your FTP Client of choice paste your VM Address into the
 hostname. If you're not sure what that is, instructions to find it can be 
 [found here][vm address].
 
-After the Hostname, enter your FTP Username, and FTP Password that you 
+After the Hostname, enter your Koding username, and FTP Password that you 
 chose in the above commands. An example image from FileZilla can be seen 
 below.
 

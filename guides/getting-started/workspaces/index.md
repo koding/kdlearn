@@ -32,6 +32,10 @@ Workspaces, highlighted in the above image, can be opened simply by
 clicking on them. Creating new workspaces is as simple as using the Plus 
 button, in the upper right of the highlighted area.
 
+Or you can simply right click on a folder from the FileTree and create a Workspace from there. Like in the image below.
+
+![Workspaces1](workspaces1.png)
+
 With the workspace open, simply use the [IDE][ide] as you want. Open 
 files, Terminals, Browsers, and Drawing Boards will be remembered between 
 programming sessions.
@@ -46,7 +50,7 @@ directly into it as you like.
 
 ## Linking Workspaces to Existing Directories
 
-Workspace folders are just normal folders on the filesystem. As such, as 
+Workspace folders are just normal folders on the file system. As such, as 
 can use Unix symbolic links to folders to achieve what we want. As an 
 example, lets create a Workspace linked to our Web directory.
 
@@ -65,10 +69,13 @@ It should be noted that we created our link **before** we created the
 Workspace. If the workspace already existed, the link would not be set 
 correctly.
 
-You can freely remove the Workspace filesystem and replace them with any 
+You can freely remove the Workspace file system and replace them with any 
 links you desire, as the steps above use, but just be careful not to 
 delete any of your files in the process.
 
+
+
+*Note: the default Workspace can't be removed as that is the default Web folder on your VM.*
 
 
 [koding]: https://koding.com

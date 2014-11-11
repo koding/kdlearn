@@ -10,7 +10,7 @@ Koding’s new VM infrastructure is vastly different from the old one so we
 did not want to take the risk of migrating your old VM for you 
 as we could potentially end up causing more harm than good.  Each VM is 
 unique and since you know your VM well so we thought it would be best for you to migrate 
-the data yourslef and do it at a time convient for you.
+the data yourself and do it at a time convient for you.
 
 That being said, we still wanted to help as much as we can so we are providing 
 you with a migration script that will assist you with data migration. This

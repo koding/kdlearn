@@ -11,10 +11,15 @@ ERROR 2002 (HY000): Can't connect to local MySQL server through socket
 '/var/run/mysqld/mysqld.sock'
 ```
 
-That means MySQL is installed but not running.
+First, make sure MySQL is installed and running on your VM. To install
+MySQL, follow this [installation guide](http://learn.koding.com/guides/installing-mysql/).
 
-To start it, simply run the following command to start it.
+Once you have confirmed that MySQL is installed, start it by running the following 
+command:
 
 ```
 sudo service mysql start
 ```
+This should get rid of the `Socket Error 2002` error.
+
+If not, send us an email at support@koding.com and we can troubleshoot for you.

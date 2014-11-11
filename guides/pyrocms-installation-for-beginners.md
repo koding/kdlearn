@@ -9,7 +9,7 @@ template: page.toffee
 
 # PyroCMS Setup and Installation for Beginners
 
-This article will cover the basic steps on how to setup a blog using PyroCMS as the base. You can skip the step-by-step tutorial down below and start directly from the PyroCMS setup process by using this [link](https://koding.com/Develop/Teamwork?import=https://www.pyrocms.com/downloads/v2.2.3).
+This article will cover the basic steps on how to setup a blog using PyroCMS as the base.
 
 ## What's PyroCMS?
 

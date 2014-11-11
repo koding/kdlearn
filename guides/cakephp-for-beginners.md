@@ -7,7 +7,7 @@ template: page.toffee
 
 # CakePHP Installation for Beginners
 
-In this article we will installing CakePHP for beginners. Follow along, or try the [Try the Koding Demo](https://koding.com/Develop/Teamwork?import=http://tinyurl.com/my7fkyz) right now! 
+In this article we will installing CakePHP for beginners.
 
 ## What is CakePHP?
 
@@ -51,10 +51,6 @@ Configure::write('Security.cipherSeed', '76859309657453542496749683645');
 7.) That's it! Now just open up http://hostname.username.koding.io/cake 
 in your browser, making sure to use your own username in the username 
 url, and you'll see Cake up and running! 
-
-## Can i skip some steps?
-
-Of course! Simply [Try the Koding Demo](https://koding.com/Develop/Teamwork?import=http://tinyurl.com/my7fkyz) and you'll have CakePHP downloaded and open in seconds. Then just follow along with the editing steps. Awesome! 
 
 ## All in the browser
 

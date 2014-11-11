@@ -20,6 +20,9 @@ checkActiveItems = (items) ->
         <a href="/guides/getting-started/workspaces">Workspaces</a>
       </li>
       <li>
+        <a href="/guides/getting-started/file-upload">File Upload</a>
+      </li>
+      <li>
         <a href="/guides/getting-started/activity-feed">The Activity Feed</a>
       </li>
       <li>

@@ -9,7 +9,7 @@ template: page.toffee
 
 # PrestaShop Installation for Beginners
 
-In this article we’ll go over the basics of setting up PrestaShop. Follow along, or [Try the Koding Demo](https://koding.com/Develop/Teamwork?import=http://www.prestashop.com/download/prestashop_1.5.6.1.zip) right now!
+In this article we’ll go over the basics of setting up PrestaShop.
 
 ## About PrestaShop
 
@@ -18,8 +18,6 @@ A lot of retail stores these days are turning to online shops. It gives them a d
 There are a lot of e-commerce solutions, but a there is one that stands out, PrestaShop. You may have heard of it, because it's all over the news. It's one of the most reliable and flexible Open-source e-commerce software out there and with a team of 70 developers and with a community that has more than 500.000 members, it sure is a platform worth developing for.
 
 Luckily you can do that on [Koding](https://koding.com) with ease. So how do you setup a PrestaShop shop on [Koding](https://koding.com)? You just follow the next few simple steps and you're good to go.
-
-Want to skip a few steps? Jump directly to the PrestaShop installation process using this [link](https://koding.com/Develop/Teamwork?import=http://www.prestashop.com/download/prestashop_1.5.6.1.zip)!
 
 ## Setting up PrestaShop
 
