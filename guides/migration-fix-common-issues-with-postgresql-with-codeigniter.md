@@ -5,7 +5,7 @@ date: 2014-10-08
 categories: [postgresql, codeigniter]
 ---
 
-# Migration: Fix issues with PostgreSQL and Codeigniter
+# Fix migration issues with PostgreSQL and Codeigniter
 
 This guide will help you fix the issues with Codeigniter and PostgreSQL that you might have after migrating to the new Koding VM.
 
