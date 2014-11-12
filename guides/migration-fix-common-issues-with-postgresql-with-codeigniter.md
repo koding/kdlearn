@@ -1,4 +1,3 @@
-
 ---
 title: Migration: Fix issues with PostgreSQL and Codeigniter
 author: Federico Ponzi
@@ -6,6 +5,7 @@ username: federicoponzi
 date: 2014-10-08
 categories: [postgresql, codeigniter]
 ---
+
 This guide will help you fix the issues with Codeigniter and PostgreSQL that you might have after migrating to the new Koding VM.
 
 These are the steps that will help you debug your problems:
