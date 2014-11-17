@@ -33,6 +33,9 @@ $green:         #27ae61;
 $color_gallery_approx: #f0f0f0;
 $color_gray_nurse_approx: #e8e8e8;
 $color_tapa_approx: #747474;
+$color_pumice_approx: #cacaca;
+$color_picton_blue_approx: #55acee;
+$color_azure_approx: #3b5998;
 
 $normal_font:   15px;
 //--------------------------
@@ -239,7 +242,7 @@ a {
 }
 footer.main-footer {
   padding: 56px 0;
-  font-family: 'Open Sans','Proxima Nova','Helvetica Neue',Helvetica,Arial;
+  font-family: Open Sans, Proxima Nova, Helvetica Neue, Helvetica, Arial;
   font-weight: 400;
   background: $color_gallery_approx;
   border-top: 1px solid $color_gray_nurse_approx;
@@ -284,15 +287,42 @@ footer.main-footer {
   a.social {
     display: inline-block;
     margin-right: 8px;
+    width: 32px;
+    height: 32px;
+    background: $color_pumice_approx;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    padding: 8px 0 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+    }
     &.tw {
-      background: url(../img/app.sprite.png) 0 -2861px;
-      width: 20px;
-      height: 20px;
+      &:hover {
+        background: $color_picton_blue_approx;
+      }
+      &:after {
+        background: url(../img/app.sprite.png) 0 -2934px;
+        width: 16px;
+        height: 16px;
+      }
     }
     &.fb {
-      background: url(../img/app.sprite.png) 0 -2831px;
-      width: 20px;
-      height: 20px;
+      &:hover {
+        background: $color_azure_approx;
+      }
+      &:after {
+        background: url(../img/app.sprite.png) 0 -2908px;
+        width: 16px;
+        height: 16px;
+      }
     }
   }
 }
