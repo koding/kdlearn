@@ -106,42 +106,6 @@ If you encounter any issues or have any questions regarding Apache Cordova on Ko
   </item>
   
   <item>
-    <title>Understanding the VM settings panel</title>
-    <link>//learn.koding.com/guides/understanding-vm-panel</link>
-    <pubDate>"2014-11-03T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/understanding-vm-panel</guid>
-    <author>Team Koding</author>
-    <description>This guide will explain the basics of the VM settings panel.
-
-In order to open the VM settings panel you need to hover over the VM name on the right side of Koding (in the sidebar at the top) and then click on the little three points icon on the right, as picture above. 
-
-After you clicked on the icon mentioned above the VM modal should open and it should look like the one pictured above.
-The VM settings panel has three main section: Basic section, the More section and the Advanced section.
-  Basic section The basic section includes basic information about your VM and some basic functionality over it. Each line is explained below.
-
-Assigned URL. This is the long assigned URL of your Koding VM.
-Nickname. You can rename your VM and this will update the name that appears in the right sidebar.
-On/Off toggle. The current status of the VM. You can also turn off your VM from here, though we don&amp;apos;t recommend it.
-Public IP. Your VMs public IP. If you are a free user this will change, but if you&amp;apos;re a paying customer this will remain the same.
-Specs. What specifications does your VM have. This is based on your current plan.
-Provider. Who&amp;apos;s your VM provider. In the future you will be able to choose from multiple providers.
-Guides. What are the most common and useful guides to get you started with your VM.
-
-  More section The more section includes some additional settings for your VM. Each setting has been explained below.
-
-Keep VM always on toggle. If you are a paying customer than you can chose to keep your VM always on. This means that the 60 min restriction will not be applied to your VM.
-Domains. You can enable a short URL for your VM and/or define subdomains and custom domains for your VM.
-
-  Advanced section The advanced section includes settings that only advanced users should use. If you are an unexperienced user then this section should be of limits.
-
-Reinitialize VM. This button will bring your VM to it&amp;apos;s default state. This means that everything will be reverted to it&amp;apos;s default state and every file in your home folder will be removed. This guide explains the reinit function in more detail.
-Terminate VM. If you&amp;apos;re a paying customer you can choose to remove your VM and create a new one if you so choose.
-
-If you encounter any issues or have any questions regarding the VM settings panel you can email us at support@koding.com and we&amp;apos;ll gladly help.
-</description>
-  </item>
-  
-  <item>
     <title>Koding Subdomains and VHosts</title>
     <link>//learn.koding.com/guides/vhosts-and-subdomains</link>
     <pubDate>"2014-11-03T00:00:00.000Z"</pubDate>
@@ -226,6 +190,42 @@ should understand.
   </item>
   
   <item>
+    <title>Understanding the VM settings panel</title>
+    <link>//learn.koding.com/guides/understanding-vm-panel</link>
+    <pubDate>"2014-11-03T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/understanding-vm-panel</guid>
+    <author>Team Koding</author>
+    <description>This guide will explain the basics of the VM settings panel.
+
+In order to open the VM settings panel you need to hover over the VM name on the right side of Koding (in the sidebar at the top) and then click on the little three points icon on the right, as picture above. 
+
+After you clicked on the icon mentioned above the VM modal should open and it should look like the one pictured above.
+The VM settings panel has three main section: Basic section, the More section and the Advanced section.
+  Basic section The basic section includes basic information about your VM and some basic functionality over it. Each line is explained below.
+
+Assigned URL. This is the long assigned URL of your Koding VM.
+Nickname. You can rename your VM and this will update the name that appears in the right sidebar.
+On/Off toggle. The current status of the VM. You can also turn off your VM from here, though we don&amp;apos;t recommend it.
+Public IP. Your VMs public IP. If you are a free user this will change, but if you&amp;apos;re a paying customer this will remain the same.
+Specs. What specifications does your VM have. This is based on your current plan.
+Provider. Who&amp;apos;s your VM provider. In the future you will be able to choose from multiple providers.
+Guides. What are the most common and useful guides to get you started with your VM.
+
+  More section The more section includes some additional settings for your VM. Each setting has been explained below.
+
+Keep VM always on toggle. If you are a paying customer than you can chose to keep your VM always on. This means that the 60 min restriction will not be applied to your VM.
+Domains. You can enable a short URL for your VM and/or define subdomains and custom domains for your VM.
+
+  Advanced section The advanced section includes settings that only advanced users should use. If you are an unexperienced user then this section should be of limits.
+
+Reinitialize VM. This button will bring your VM to it&amp;apos;s default state. This means that everything will be reverted to it&amp;apos;s default state and every file in your home folder will be removed. This guide explains the reinit function in more detail.
+Terminate VM. If you&amp;apos;re a paying customer you can choose to remove your VM and create a new one if you so choose.
+
+If you encounter any issues or have any questions regarding the VM settings panel you can email us at support@koding.com and we&amp;apos;ll gladly help.
+</description>
+  </item>
+  
+  <item>
     <title>Changing your IDE and Terminal themes</title>
     <link>//learn.koding.com/guides/change-theme</link>
     <pubDate>"2014-10-28T00:00:00.000Z"</pubDate>
@@ -275,34 +275,29 @@ guide.
   </item>
   
   <item>
-    <title>Getting Started: File Uploads</title>
-    <link>//learn.koding.com/guides/getting-started/file-upload</link>
+    <title>Installing MongoDB</title>
+    <link>//learn.koding.com/guides/install-mongodb</link>
     <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/file-upload</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/install-mongodb</guid>
     <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll take a look at uploading your files and projects to 
-Koding, in multiple ways. Lets get started!
-  Uploading with Drag and Drop The simplest way, is simply by using Drag and Drop file upload! To do 
-this, open your Koding IDE, locate your FileTree on the left hand
-side, and drag a file from your Desktop onto the FileTree. An example 
-image is below.
-
-After you let go of the file, your file will be uploaded to your 
-~/Uploads directory.
-  Uploading with FTP FTP is another common way to upload files to your VM. Before uploading 
-with FTP though, you&amp;apos;ll need to set up an FTP Server on your VM.
-The FTP Guide will take you through both the installation, and 
-connecting process, so check it out!
-  Uploading with SCP SCP is is a tool that will copy files from your local Unix filesystem 
-to a remote filesystem over SSH connections. To use it, make sure you 
-have SSH setup with your Koding VM beforehand. Instructions can be found 
-here if needed.
-After that, use the following command to copy a local file to your VM.
-scp LOCAL_FILE USERNAME.koding.io:REMOTE_FILE
-Replace LOCAL_FILE with your local file location, USERNAME with your 
-Koding Username, and REMOTE_FILE with your Remote File location. An 
-example of this command can be seen below.
-scp ~/my_image.png joshmurray.koding.io:~/my_image.png
+    <description>In this short guide we&amp;apos;ll explain how to install MongoDB, and modify
+it&amp;apos;s configuration to run in a small storage environment. Lets get 
+started!
+  Installation Installation is easy, and can be done with apt-get, as seen in the 
+following command.
+sudo apt-get install mongodb
+That&amp;apos;s it! You can start Mongo with the following command:
+sudo service mongodb start
+NOTE: If you&amp;apos;re running Mongo on a Free Koding VM, read below..
+  Configuring for Limited Storage If you&amp;apos;re running Mongo on a Free VM, you&amp;apos;ll need to configure it to use 
+small files. To do that, open up the /etc/mongodb.conf file with the
+following command:
+sudo nano /etc/mongodb.conf
+With that file open, navigate to the bottom and add the following line:
+smallfiles=true
+Now use ctrl-x to save the file. After you&amp;apos;ve saved the file, simply 
+restart Mongodb with the following command:
+sudo service mongodb restart
 </description>
   </item>
   
@@ -359,29 +354,34 @@ If you have any question or issues please email us at support@koding.com and we&
   </item>
   
   <item>
-    <title>Installing MongoDB</title>
-    <link>//learn.koding.com/guides/install-mongodb</link>
+    <title>Getting Started: File Uploads</title>
+    <link>//learn.koding.com/guides/getting-started/file-upload</link>
     <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/install-mongodb</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/file-upload</guid>
     <author>Team Koding</author>
-    <description>In this short guide we&amp;apos;ll explain how to install MongoDB, and modify
-it&amp;apos;s configuration to run in a small storage environment. Lets get 
-started!
-  Installation Installation is easy, and can be done with apt-get, as seen in the 
-following command.
-sudo apt-get install mongodb
-That&amp;apos;s it! You can start Mongo with the following command:
-sudo service mongodb start
-NOTE: If you&amp;apos;re running Mongo on a Free Koding VM, read below..
-  Configuring for Limited Storage If you&amp;apos;re running Mongo on a Free VM, you&amp;apos;ll need to configure it to use 
-small files. To do that, open up the /etc/mongodb.conf file with the
-following command:
-sudo nano /etc/mongodb.conf
-With that file open, navigate to the bottom and add the following line:
-smallfiles=true
-Now use ctrl-x to save the file. After you&amp;apos;ve saved the file, simply 
-restart Mongodb with the following command:
-sudo service mongodb restart
+    <description>In this guide we&amp;apos;ll take a look at uploading your files and projects to 
+Koding, in multiple ways. Lets get started!
+  Uploading with Drag and Drop The simplest way, is simply by using Drag and Drop file upload! To do 
+this, open your Koding IDE, locate your FileTree on the left hand
+side, and drag a file from your Desktop onto the FileTree. An example 
+image is below.
+
+After you let go of the file, your file will be uploaded to your 
+~/Uploads directory.
+  Uploading with FTP FTP is another common way to upload files to your VM. Before uploading 
+with FTP though, you&amp;apos;ll need to set up an FTP Server on your VM.
+The FTP Guide will take you through both the installation, and 
+connecting process, so check it out!
+  Uploading with SCP SCP is is a tool that will copy files from your local Unix filesystem 
+to a remote filesystem over SSH connections. To use it, make sure you 
+have SSH setup with your Koding VM beforehand. Instructions can be found 
+here if needed.
+After that, use the following command to copy a local file to your VM.
+scp LOCAL_FILE USERNAME.koding.io:REMOTE_FILE
+Replace LOCAL_FILE with your local file location, USERNAME with your 
+Koding Username, and REMOTE_FILE with your Remote File location. An 
+example of this command can be seen below.
+scp ~/my_image.png joshmurray.koding.io:~/my_image.png
 </description>
   </item>
   
@@ -525,15 +525,6 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Koding Terminal Introduction</title>
-    <link>//learn.koding.com/guides/terminal-introduction</link>
-    <pubDate>"2014-10-10T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/terminal-introduction</guid>
-    <author>Team Koding</author>
-    <description></description>
-  </item>
-  
-  <item>
     <title>Koding Virtual Machines Introduction</title>
     <link>//learn.koding.com/guides/vm-introduction</link>
     <pubDate>"2014-10-10T00:00:00.000Z"</pubDate>
@@ -552,26 +543,68 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Fix migration issues with PostgreSQL and Codeigniter</title>
-    <link>//learn.koding.com/guides/migration-fix-postgresql-codeigniter</link>
-    <pubDate>"2014-10-08T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/migration-fix-postgresql-codeigniter</guid>
-    <author>Federico Ponzi</author>
-    <description>This guide will help you fix the issues with Codeigniter and PostgreSQL that you might have after migrating to the new Koding VM.
-These are the steps that will help you debug your problems:
+    <title>Koding Terminal Introduction</title>
+    <link>//learn.koding.com/guides/terminal-introduction</link>
+    <pubDate>"2014-10-10T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/terminal-introduction</guid>
+    <author>Team Koding</author>
+    <description></description>
+  </item>
+  
+  <item>
+    <title>Building C / C++ applications with biicode</title>
+    <link>//learn.koding.com/guides/getting-started-biicode</link>
+    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-biicode</guid>
+    <author>drodri</author>
+    <description>Building larger applications can be somewhat difficult and cumbersome to the newbie.
+As soon as your application start to have several files, you will need to define
+how to build them in Makefiles or using the CMake build system.
+We will be using in the following examples biicode, which is a dependency manager
+that allows to easily retrieve existing code and also manages to automatically generate
+build files for your project.
+You can install it running from your terminal:
+$ wget http://apt.biicode.com/install.sh &amp;amp;&amp;amp; chmod +x install.sh &amp;amp;&amp;amp; ./install.sh
+After it finish, you can run a helper command that install an updated version of CMake:
+$ bii setup:cpp
+Lets build an application that computes the SHA1 of a string. Usually you dont want to write
+yourself such algorithm, but rather use an existing implementation.
+The following commands will create a project and a &amp;quot;Hello world&amp;quot; file, which you can build and
+run:
+$ bii init cryptoproject
+$ cd cryptoproject
+$ bii new myuser/crypto --hello=cpp
+$ bii cpp:build
+$ ./bin/myuser_crypto_main
+Hello world!
+Now replace the contents of the &amp;quot;main.cpp&amp;quot; file inside the blocks/myuser/crypto folder with:
+#include &amp;quot;cryptopp/cryptopp/sha.h&amp;quot;
+#include &amp;quot;cryptopp/cryptopp/filters.h&amp;quot;
+#include &amp;quot;cryptopp/cryptopp/hex.h&amp;quot;
+#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;string&amp;gt;
 
-Remember: the VM URL has changed. Update $config[&amp;apos;base_url&amp;apos;] variabile inside the application/config/config.php file.
-Make sure that postgresql is installed: You can achieve this by using the following command in your Terminal:
-sudo apt-get install postgresql-9.3
-Make sure that your database exists, and check the credentials inside application/config/database.php
-Make sure that php-postgre drivers are installed. Use the following commands to achieve this: 
-sudo apt-get install php5-pgsql
-and then: 
-sudo service apache2 restart
-Inside application/config/database.php, Make sure that this line is set like this:
-$db[&amp;apos;default&amp;apos;][&amp;apos;db_debug&amp;apos;] = FALSE;
-
-And that should fix your PostgreSQL and Codeigniter issues upon migration.
+int main() {
+    CryptoPP::SHA1 sha1;
+    std::string source = &amp;quot;Hello&amp;quot;;  
+    std::string hash = &amp;quot;&amp;quot;;
+    CryptoPP::StringSource(source, true, new CryptoPP::HashFilter(sha1,
+                            new CryptoPP::HexEncoder(new CryptoPP::StringSink(hash))));
+    std::cout &amp;lt;&amp;lt; hash &amp;lt;&amp;lt; std::endl;
+}
+If you now try to build this example, it will fail. You can try to do so, and then check
+your dependencies:
+$ bii cpp:build
+$ bii deps
+The code depends on some external code, the Crypto++ library. This can be easily retrieved
+with the &amp;quot;find&amp;quot; command
+$ bii find
+Now you can build and run it:
+$ bii cpp:build
+$ ./bin/myuser_crypto_main
+F7FF9E8B7BB2E09B70935A5D785E0CC5D9D0ABF0
+For further examples, you can have a look to the biicode C/C++ documentation and the 
+examples
 </description>
   </item>
   
@@ -723,108 +756,6 @@ existing code easily.
   </item>
   
   <item>
-    <title>Building C / C++ applications with biicode</title>
-    <link>//learn.koding.com/guides/getting-started-biicode</link>
-    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-biicode</guid>
-    <author>drodri</author>
-    <description>Building larger applications can be somewhat difficult and cumbersome to the newbie.
-As soon as your application start to have several files, you will need to define
-how to build them in Makefiles or using the CMake build system.
-We will be using in the following examples biicode, which is a dependency manager
-that allows to easily retrieve existing code and also manages to automatically generate
-build files for your project.
-You can install it running from your terminal:
-$ wget http://apt.biicode.com/install.sh &amp;amp;&amp;amp; chmod +x install.sh &amp;amp;&amp;amp; ./install.sh
-After it finish, you can run a helper command that install an updated version of CMake:
-$ bii setup:cpp
-Lets build an application that computes the SHA1 of a string. Usually you dont want to write
-yourself such algorithm, but rather use an existing implementation.
-The following commands will create a project and a &amp;quot;Hello world&amp;quot; file, which you can build and
-run:
-$ bii init cryptoproject
-$ cd cryptoproject
-$ bii new myuser/crypto --hello=cpp
-$ bii cpp:build
-$ ./bin/myuser_crypto_main
-Hello world!
-Now replace the contents of the &amp;quot;main.cpp&amp;quot; file inside the blocks/myuser/crypto folder with:
-#include &amp;quot;cryptopp/cryptopp/sha.h&amp;quot;
-#include &amp;quot;cryptopp/cryptopp/filters.h&amp;quot;
-#include &amp;quot;cryptopp/cryptopp/hex.h&amp;quot;
-#include &amp;lt;iostream&amp;gt;
-#include &amp;lt;string&amp;gt;
-
-int main() {
-    CryptoPP::SHA1 sha1;
-    std::string source = &amp;quot;Hello&amp;quot;;  
-    std::string hash = &amp;quot;&amp;quot;;
-    CryptoPP::StringSource(source, true, new CryptoPP::HashFilter(sha1,
-                            new CryptoPP::HexEncoder(new CryptoPP::StringSink(hash))));
-    std::cout &amp;lt;&amp;lt; hash &amp;lt;&amp;lt; std::endl;
-}
-If you now try to build this example, it will fail. You can try to do so, and then check
-your dependencies:
-$ bii cpp:build
-$ bii deps
-The code depends on some external code, the Crypto++ library. This can be easily retrieved
-with the &amp;quot;find&amp;quot; command
-$ bii find
-Now you can build and run it:
-$ bii cpp:build
-$ ./bin/myuser_crypto_main
-F7FF9E8B7BB2E09B70935A5D785E0CC5D9D0ABF0
-For further examples, you can have a look to the biicode C/C++ documentation and the 
-examples
-</description>
-  </item>
-  
-  <item>
-    <title>Migrating Your Old Koding VM</title>
-    <link>//learn.koding.com/guides/old-koding-migrate</link>
-    <pubDate>"2014-09-27T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/old-koding-migrate</guid>
-    <author>Team Koding</author>
-    <description>Koding&amp;#x2019;s new VM infrastructure is vastly different from the old one so we 
-did not want to take the risk of migrating your old VM for you 
-as we could potentially end up causing more harm than good.  Each VM is 
-unique and since you know your VM well so we thought it would be best for you to migrate 
-the data yourself and do it at a time convient for you.
-That being said, we still wanted to help as much as we can so we are providing 
-you with a migration script that will assist you with data migration. This
-script will copy the home directory of your old VM to the 
-/home/&amp;lt;username&amp;gt;/Backup/&amp;lt;old-vm-name&amp;gt; folder of your new VM. If you 
-want to migrate files on your old vm that live outside the home directory,
-you will need to move them into the home directory first.
-You can access your old VMs at https://old.koding.com
-  Why not move all changed files? Since the new VMs are running a newer version of Ubuntu, you will need to
-re-install the server software that you may have installed yourself on
-the old VM. If we copied over everything, it would cause a lot of confusion as
-software versions would end up in conflict. You can retrieve a list of all manually
-installed packages with this command:
-aptitude search ~i | grep &amp;quot;^i   &amp;quot; | awk &amp;apos;{ print $2 }&amp;apos;
-Please note, this script will simply copy files from the home directory
-on the old vm to the /home/&amp;lt;username&amp;gt;/Backup/&amp;lt;old-vm-name&amp;gt; folder of the new
-VM. It will not install software/scripts/init files anywhere on your new VM or start 
-servers/services that were running on your old VM.
-  Migration steps   Step 1 Log into your new Koding account. At this point you will have, by default, 
-one new VM. This is the VM into which we will bring data from your VMs on old Koding.
-  Step 2 After the new VM has successfully started, you&amp;#x2019;ll see the IDE and Terminal.
-
-  Step 3 You will find the migrate script in the home folder of your new VM. To get started
-, in the Terminal tab type the following command:
-./migrate.sh
-This command will start the migration process and will guide you on how 
-to migrate data from old VMs. Note: You need run the above command for 
-every old VM that you want to migrate.
-And that&amp;#x2019;s it!
-If you run into any kind of issues please let us know 
-at support@koding.com and we will gladly 
-help.
-</description>
-  </item>
-  
-  <item>
     <title>Getting Started: Workspaces</title>
     <link>//learn.koding.com/guides/getting-started/workspaces</link>
     <pubDate>"2014-09-18T00:00:00.000Z"</pubDate>
@@ -866,6 +797,46 @@ You can freely remove the Workspace file system and replace them with any
 links you desire, as the steps above use, but just be careful not to 
 delete any of your files in the process.
 Note: the default Workspace can&amp;apos;t be removed as that is the default Web folder on your VM.
+</description>
+  </item>
+  
+  <item>
+    <title>Setting up FTP on Koding</title>
+    <link>//learn.koding.com/guides/setting-up-ftp-on-koding</link>
+    <pubDate>"2014-09-15T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-ftp-on-koding</guid>
+    <author>Team Koding</author>
+    <description>In this guide we&amp;apos;ll go over how to get your FTP Client connected to your 
+VM&amp;apos;s FTP Server. We will be using FileZilla as the FTP 
+Client, but any client should be able to connect to your FTP Server 
+successfully.
+  What you will need In this tutorial you will need the following.
+
+A Koding account, and your Koding Username.
+The Address of the VM you&amp;apos;d like to connect to. Instructions can be 
+found here.
+
+  Installing ProFTPd First off, we&amp;apos;ll need to install ProFTPd. This can be done by pasting 
+the following command into your Koding IDE&amp;apos;s Terminal.
+sudo apt-get install proftpd
+During the install process you will be asked to choose to run your VPS as an inetd or standalone server. Choose the standalone option.
+  Setting up the FTP User After ProFTPd has been successfully installed, we need to set a FTP password for your user. To do 
+this, paste the following command into your Terminal.
+sudo passwd KODING_USERNAME
+Make note to replace KODING_USERNAME with your actual Koding username.
+After hitting enter, you&amp;apos;ll be prompted for the FTP password you wish 
+to use. Not your Koding password.
+  Connecting to your FTP Server Finally, in your FTP Client of choice paste your VM Address into the 
+hostname. If you&amp;apos;re not sure what that is, instructions to find it can be 
+found here.
+After the Hostname, enter your Koding username, and FTP Password that you 
+chose in the above commands. An example image from FileZilla can be seen 
+below.
+
+  Additional Resources 
+FileZilla
+FileZilla Download
+
 </description>
   </item>
   
@@ -917,46 +888,6 @@ ssh joshmurray@unkk05c3f84e.joshmurray.koding.io
 and share the output with Koding users. An example of the above ssh 
 command with the -vv flag is below.
 ssh -vv joshmurray@unkk05c3f84e.joshmurray.koding.io
-</description>
-  </item>
-  
-  <item>
-    <title>Setting up FTP on Koding</title>
-    <link>//learn.koding.com/guides/setting-up-ftp-on-koding</link>
-    <pubDate>"2014-09-15T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-ftp-on-koding</guid>
-    <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll go over how to get your FTP Client connected to your 
-VM&amp;apos;s FTP Server. We will be using FileZilla as the FTP 
-Client, but any client should be able to connect to your FTP Server 
-successfully.
-  What you will need In this tutorial you will need the following.
-
-A Koding account, and your Koding Username.
-The Address of the VM you&amp;apos;d like to connect to. Instructions can be 
-found here.
-
-  Installing ProFTPd First off, we&amp;apos;ll need to install ProFTPd. This can be done by pasting 
-the following command into your Koding IDE&amp;apos;s Terminal.
-sudo apt-get install proftpd
-During the install process you will be asked to choose to run your VPS as an inetd or standalone server. Choose the standalone option.
-  Setting up the FTP User After ProFTPd has been successfully installed, we need to set a FTP password for your user. To do 
-this, paste the following command into your Terminal.
-sudo passwd KODING_USERNAME
-Make note to replace KODING_USERNAME with your actual Koding username.
-After hitting enter, you&amp;apos;ll be prompted for the FTP password you wish 
-to use. Not your Koding password.
-  Connecting to your FTP Server Finally, in your FTP Client of choice paste your VM Address into the 
-hostname. If you&amp;apos;re not sure what that is, instructions to find it can be 
-found here.
-After the Hostname, enter your Koding username, and FTP Password that you 
-chose in the above commands. An example image from FileZilla can be seen 
-below.
-
-  Additional Resources 
-FileZilla
-FileZilla Download
-
 </description>
   </item>
   
@@ -1236,30 +1167,6 @@ contribution!
   </item>
   
   <item>
-    <title>Author A Guide</title>
-    <link>//learn.koding.com/contribute</link>
-    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/contribute</guid>
-    <author>Team Koding</author>
-    <description>In this guide series we will go over Writing and Editing guides for Koding 
-University. We will cover every step of the process, but basic Git, 
-Github, and Markdown knowledge will be very useful.
-If you already know git, github, and markdown, here is the simple set of 
-tasks you&amp;apos;ll need to do.
-
-Review the Style Guidelines
-Fork KDLearn
-Clone your forked repo
-Find or create your files, Make your markdown edits
-Commit and push your changes to your repo
-Make a pull request of your changes, against the KDLearn Repo
-
-If you need more in depth instructions than that, please continue with 
-this series below. Thanks!
-</description>
-  </item>
-  
-  <item>
     <title>Author A Guide: Overview and Guidelines</title>
     <link>//learn.koding.com/contribute/guidelines</link>
     <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
@@ -1327,6 +1234,111 @@ instructions.
 Don&amp;apos;t forget, headers with levels (## Header1, ### Header 3, and so 
 forth) should be used to group content just like you do with HTML&amp;apos;s 
 &amp;lt;h2&amp;gt;s and so forth. You can review Header Markdown here
+</description>
+  </item>
+  
+  <item>
+    <title>Author A Guide</title>
+    <link>//learn.koding.com/contribute</link>
+    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/contribute</guid>
+    <author>Team Koding</author>
+    <description>In this guide series we will go over Writing and Editing guides for Koding 
+University. We will cover every step of the process, but basic Git, 
+Github, and Markdown knowledge will be very useful.
+If you already know git, github, and markdown, here is the simple set of 
+tasks you&amp;apos;ll need to do.
+
+Review the Style Guidelines
+Fork KDLearn
+Clone your forked repo
+Find or create your files, Make your markdown edits
+Commit and push your changes to your repo
+Make a pull request of your changes, against the KDLearn Repo
+
+If you need more in depth instructions than that, please continue with 
+this series below. Thanks!
+</description>
+  </item>
+  
+  <item>
+    <title>Author A Guide: Basic</title>
+    <link>//learn.koding.com/contribute/basic</link>
+    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/contribute/basic</guid>
+    <author>Team Koding</author>
+    <description>In this guide we&amp;apos;ll go over how to contribute to the Koding University 
+the easy way. We&amp;apos;ll be using Github&amp;apos;s built in editor, to make the 
+forking &amp;amp; merging process easy. If you&amp;apos;re unfamiliar with Git, but you 
+still want to contribute to Learn, this is the guide for you. So, lets 
+get started!
+  Edit on Github Each Koding guide comes with a simple &amp;quot;Edit this on Github&amp;quot; link. This 
+link directs you back to a file editor on Github. Github will 
+automatically fork the repo if you have not yet, and even create a branch 
+so that your eventual pull request does not cause any unintended 
+contributions. Lets look at how this works.
+First up, find the guide that you want to edit, and look for the 
+Improve this Guide button at the bottom of all guides.
+
+  Fork the Repository If you have not contributed before you likely do not have the repository 
+forked yet. Press the green button seen below, and Github will fork the 
+repository for you.
+
+  Make your Edits After forking, or if you already had Koding University Forked, you&amp;apos;ll be 
+presented with a text editor for the guide that you chose to edit. From 
+here, look through the guide and make your edits as you desire.
+
+Don&amp;apos;t forget that there is a preview tab as well. The guide will look 
+slightly different on Github than on Koding University; but because 
+everything is formatted in Markdown you can preview it Github to ensure 
+the correctness of your markdown syntax.
+  Propose File Changes After you have made your edits to the document, scroll down and enter a 
+title and description for the edits you&amp;apos;ve made. After you&amp;apos;re satisfied, 
+press Propose file change.
+
+This will create a new branch of your Fork and store your changes into 
+that branch. To repeat, your changes have been added to your Fork, 
+not to the official Koding University repository yet. To do that, you 
+need to create a Pull Request.
+  Create Pull Request A pull request lets Koding Staff review and merge your changes into the 
+official repository. To do that, after proposing your file changes you 
+will see a page like the one below.
+
+This is your branch, on your forked repository. If you press the Create 
+Pull Request button, your changes in that branch will be sent to the 
+official repository to be reviewed and merged in.
+This is it! You&amp;apos;ve gone from the guide on University, to editing it and 
+submitting your changes for review, all without leaving your browser or 
+using any complex Git commands.
+  Creating a New Guide The above process is nice and simple, but there&amp;apos;s one core thing missing. 
+We didn&amp;apos;t create a guide, we only edited a guide. What if we want to 
+create a new guide? Luckily this Basic workflow also works with new 
+guides! Lets go over that real quick.
+First, click here. That link will send you to the Github 
+editor with no file loaded. You can write in the editor, add a file name, 
+and propose changes just like the above instructions. Remember to name 
+your file with the .md extension, and adhere to the 
+Guidelines.
+Because you&amp;apos;re creating a new file though, you want to make sure and add 
+the proper metadata to the file. Copy the following code, and place it 
+into the editor.
+---
+author: Your Name
+username: yourUsername
+date: 2014-07-31
+categories: [nginx]
+---
+
+Fill in Your Name with your name, and yourUsername with your Koding 
+Username. The date field should be formatted in YYYY-MM-DD format, and 
+the categories list is just a comma separated list of strings.
+
+Once that&amp;apos;s all taken care of, start writing your guide! Once you&amp;apos;re 
+done, follow the Propose and Pull Request instructions above, as they are 
+identical.
+You should note that with this method, you cannot add images to the 
+repository. For that to work, have a look at the next section which uses 
+Koding&amp;apos;s Editor and Git to make changes to this Koding University.
 </description>
   </item>
   
@@ -1500,87 +1512,6 @@ traction, and will take many more. Choosing which to use can be a hard
 decision for seasoned programmers wanting to write large code bases. You 
 shouldn&amp;apos;t worry about that, currently. Save that for another day :)
 This concludes the getting started with Python guide. Thanks for reading!
-</description>
-  </item>
-  
-  <item>
-    <title>Author A Guide: Basic</title>
-    <link>//learn.koding.com/contribute/basic</link>
-    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/contribute/basic</guid>
-    <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll go over how to contribute to the Koding University 
-the easy way. We&amp;apos;ll be using Github&amp;apos;s built in editor, to make the 
-forking &amp;amp; merging process easy. If you&amp;apos;re unfamiliar with Git, but you 
-still want to contribute to Learn, this is the guide for you. So, lets 
-get started!
-  Edit on Github Each Koding guide comes with a simple &amp;quot;Edit this on Github&amp;quot; link. This 
-link directs you back to a file editor on Github. Github will 
-automatically fork the repo if you have not yet, and even create a branch 
-so that your eventual pull request does not cause any unintended 
-contributions. Lets look at how this works.
-First up, find the guide that you want to edit, and look for the 
-Improve this Guide button at the bottom of all guides.
-
-  Fork the Repository If you have not contributed before you likely do not have the repository 
-forked yet. Press the green button seen below, and Github will fork the 
-repository for you.
-
-  Make your Edits After forking, or if you already had Koding University Forked, you&amp;apos;ll be 
-presented with a text editor for the guide that you chose to edit. From 
-here, look through the guide and make your edits as you desire.
-
-Don&amp;apos;t forget that there is a preview tab as well. The guide will look 
-slightly different on Github than on Koding University; but because 
-everything is formatted in Markdown you can preview it Github to ensure 
-the correctness of your markdown syntax.
-  Propose File Changes After you have made your edits to the document, scroll down and enter a 
-title and description for the edits you&amp;apos;ve made. After you&amp;apos;re satisfied, 
-press Propose file change.
-
-This will create a new branch of your Fork and store your changes into 
-that branch. To repeat, your changes have been added to your Fork, 
-not to the official Koding University repository yet. To do that, you 
-need to create a Pull Request.
-  Create Pull Request A pull request lets Koding Staff review and merge your changes into the 
-official repository. To do that, after proposing your file changes you 
-will see a page like the one below.
-
-This is your branch, on your forked repository. If you press the Create 
-Pull Request button, your changes in that branch will be sent to the 
-official repository to be reviewed and merged in.
-This is it! You&amp;apos;ve gone from the guide on University, to editing it and 
-submitting your changes for review, all without leaving your browser or 
-using any complex Git commands.
-  Creating a New Guide The above process is nice and simple, but there&amp;apos;s one core thing missing. 
-We didn&amp;apos;t create a guide, we only edited a guide. What if we want to 
-create a new guide? Luckily this Basic workflow also works with new 
-guides! Lets go over that real quick.
-First, click here. That link will send you to the Github 
-editor with no file loaded. You can write in the editor, add a file name, 
-and propose changes just like the above instructions. Remember to name 
-your file with the .md extension, and adhere to the 
-Guidelines.
-Because you&amp;apos;re creating a new file though, you want to make sure and add 
-the proper metadata to the file. Copy the following code, and place it 
-into the editor.
----
-author: Your Name
-username: yourUsername
-date: 2014-07-31
-categories: [nginx]
----
-
-Fill in Your Name with your name, and yourUsername with your Koding 
-Username. The date field should be formatted in YYYY-MM-DD format, and 
-the categories list is just a comma separated list of strings.
-
-Once that&amp;apos;s all taken care of, start writing your guide! Once you&amp;apos;re 
-done, follow the Propose and Pull Request instructions above, as they are 
-identical.
-You should note that with this method, you cannot add images to the 
-repository. For that to work, have a look at the next section which uses 
-Koding&amp;apos;s Editor and Git to make changes to this Koding University.
 </description>
   </item>
   
