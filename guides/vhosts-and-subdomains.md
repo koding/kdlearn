@@ -122,6 +122,10 @@ Afterwards, don't forget to reload Apache, with the following command.
 sudo service apache2 reload
 ```
 
+Post you setup these files, Go to your IDE window in the browser and Click Options ( a circle right next to your VM ) . Click on 'more' from the Settings Baloon and Add the domain you wish to.
+
+Cheers !
+
 **Important**: It is recommended that you review the [Directory directive 
 documentation](http://httpd.apache.org/docs/current/mod/core.html#directory), 
 as there are security implications to allowing directory access, that you 
