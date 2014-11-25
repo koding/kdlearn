@@ -1,5 +1,4 @@
 ---
-draft: true
 title: Getting started with the Koding Package Manager
 author: Team Koding
 date: 2014-11-17
