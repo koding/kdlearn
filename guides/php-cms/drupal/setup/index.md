@@ -7,7 +7,8 @@ categories: [drupal, php]
 
 # Drupal Setup and Installation for Beginners
 
-This article will cover the basic steps on how to setup a blog using Drupal. Also you can install Drupal via Koding App [here](http://learn.koding.com/guides/drupal-kdapp/).
+This article will cover the basic steps on how to setup a blog using 
+Drupal.
 
 ## What's Drupal?
 
