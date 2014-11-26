@@ -18,7 +18,7 @@ This guide will cover the basics of the Koding Package Manager and how to get st
 
 KPM runs in the Terminal of your Koding account. In order to use the Koding Package Manager you first need to install it. To do that you have to run the following command in your Terminal:
 
-```
+```text
 curl -sSL "https://raw.githubusercontent.com/koding\
 /kpm-scripts/master/installers/meta" | fish
 ```
