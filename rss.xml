@@ -47,7 +47,8 @@ That&amp;apos;s it. Next time you open a new Terminal, it should be running the 
     <description>Koding Package Manager is a tool that we have set up to make it easy for you to install (and soon remove) your favorite packages like WordPress, Mongodb, blah blah. The KPM takes care of measuring disk space requirements, analyzing dependencies and installing all required packages to bring you a running system. It&amp;apos;s the easiest way to get up and running with your favorite technology or package.
   Getting started with the Koding Package Manager This guide will cover the basics of the Koding Package Manager and how to get started with it.
   Usage KPM runs in the Terminal of your Koding account. In order to use the Koding Package Manager you first need to install it. To do that you have to run the following command in your Terminal:
-curl -sSL https://raw.githubusercontent.com/koding/kpm-scripts/master/installers/meta | fish
+curl -sSL &amp;quot;https://raw.githubusercontent.com/koding\
+/kpm-scripts/master/installers/meta&amp;quot; | fish
 After the process is complete you should have access to the kpm command in your Terminal.
 The basic syntax for kpm is as follows. You have access to the following commands:
 kpm install &amp;lt;name&amp;gt;
@@ -157,42 +158,6 @@ If you encounter any issues or have any questions regarding Apache Cordova on Ko
   </item>
   
   <item>
-    <title>Understanding the VM settings panel</title>
-    <link>//learn.koding.com/guides/understanding-vm-panel</link>
-    <pubDate>"2014-11-03T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/understanding-vm-panel</guid>
-    <author>Team Koding</author>
-    <description>This guide will explain the basics of the VM settings panel.
-
-In order to open the VM settings panel you need to hover over the VM name on the right side of Koding (in the sidebar at the top) and then click on the little three points icon on the right, as picture above. 
-
-After you clicked on the icon mentioned above the VM modal should open and it should look like the one pictured above.
-The VM settings panel has three main section: Basic section, the More section and the Advanced section.
-  Basic section The basic section includes basic information about your VM and some basic functionality over it. Each line is explained below.
-
-Assigned URL. This is the long assigned URL of your Koding VM.
-Nickname. You can rename your VM and this will update the name that appears in the right sidebar.
-On/Off toggle. The current status of the VM. You can also turn off your VM from here, though we don&amp;apos;t recommend it.
-Public IP. Your VMs public IP. If you are a free user this will change, but if you&amp;apos;re a paying customer this will remain the same.
-Specs. What specifications does your VM have. This is based on your current plan.
-Provider. Who&amp;apos;s your VM provider. In the future you will be able to choose from multiple providers.
-Guides. What are the most common and useful guides to get you started with your VM.
-
-  More section The more section includes some additional settings for your VM. Each setting has been explained below.
-
-Keep VM always on toggle. If you are a paying customer than you can chose to keep your VM always on. This means that the 60 min restriction will not be applied to your VM.
-Domains. You can enable a short URL for your VM and/or define subdomains and custom domains for your VM.
-
-  Advanced section The advanced section includes settings that only advanced users should use. If you are an unexperienced user then this section should be of limits.
-
-Reinitialize VM. This button will bring your VM to it&amp;apos;s default state. This means that everything will be reverted to it&amp;apos;s default state and every file in your home folder will be removed. This guide explains the reinit function in more detail.
-Terminate VM. If you&amp;apos;re a paying customer you can choose to remove your VM and create a new one if you so choose.
-
-If you encounter any issues or have any questions regarding the VM settings panel you can email us at support@koding.com and we&amp;apos;ll gladly help.
-</description>
-  </item>
-  
-  <item>
     <title>Koding Subdomains and VHosts</title>
     <link>//learn.koding.com/guides/vhosts-and-subdomains</link>
     <pubDate>"2014-11-03T00:00:00.000Z"</pubDate>
@@ -277,6 +242,42 @@ should understand.
   </item>
   
   <item>
+    <title>Understanding the VM settings panel</title>
+    <link>//learn.koding.com/guides/understanding-vm-panel</link>
+    <pubDate>"2014-11-03T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/understanding-vm-panel</guid>
+    <author>Team Koding</author>
+    <description>This guide will explain the basics of the VM settings panel.
+
+In order to open the VM settings panel you need to hover over the VM name on the right side of Koding (in the sidebar at the top) and then click on the little three points icon on the right, as picture above. 
+
+After you clicked on the icon mentioned above the VM modal should open and it should look like the one pictured above.
+The VM settings panel has three main section: Basic section, the More section and the Advanced section.
+  Basic section The basic section includes basic information about your VM and some basic functionality over it. Each line is explained below.
+
+Assigned URL. This is the long assigned URL of your Koding VM.
+Nickname. You can rename your VM and this will update the name that appears in the right sidebar.
+On/Off toggle. The current status of the VM. You can also turn off your VM from here, though we don&amp;apos;t recommend it.
+Public IP. Your VMs public IP. If you are a free user this will change, but if you&amp;apos;re a paying customer this will remain the same.
+Specs. What specifications does your VM have. This is based on your current plan.
+Provider. Who&amp;apos;s your VM provider. In the future you will be able to choose from multiple providers.
+Guides. What are the most common and useful guides to get you started with your VM.
+
+  More section The more section includes some additional settings for your VM. Each setting has been explained below.
+
+Keep VM always on toggle. If you are a paying customer than you can chose to keep your VM always on. This means that the 60 min restriction will not be applied to your VM.
+Domains. You can enable a short URL for your VM and/or define subdomains and custom domains for your VM.
+
+  Advanced section The advanced section includes settings that only advanced users should use. If you are an unexperienced user then this section should be of limits.
+
+Reinitialize VM. This button will bring your VM to it&amp;apos;s default state. This means that everything will be reverted to it&amp;apos;s default state and every file in your home folder will be removed. This guide explains the reinit function in more detail.
+Terminate VM. If you&amp;apos;re a paying customer you can choose to remove your VM and create a new one if you so choose.
+
+If you encounter any issues or have any questions regarding the VM settings panel you can email us at support@koding.com and we&amp;apos;ll gladly help.
+</description>
+  </item>
+  
+  <item>
     <title>Changing your IDE and Terminal themes</title>
     <link>//learn.koding.com/guides/change-theme</link>
     <pubDate>"2014-10-28T00:00:00.000Z"</pubDate>
@@ -323,6 +324,38 @@ guide.
     <guid isPermaLink="true">//learn.koding.com/guides/chat-introduction</guid>
     <author>Team Koding</author>
     <description></description>
+  </item>
+  
+  <item>
+    <title>Getting Started: File Uploads</title>
+    <link>//learn.koding.com/guides/getting-started/file-upload</link>
+    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/file-upload</guid>
+    <author>Team Koding</author>
+    <description>In this guide we&amp;apos;ll take a look at uploading your files and projects to 
+Koding, in multiple ways. Lets get started!
+  Uploading with Drag and Drop The simplest way, is simply by using Drag and Drop file upload! To do 
+this, open your Koding IDE, locate your FileTree on the left hand
+side, and drag a file from your Desktop onto the FileTree. An example 
+image is below.
+
+After you let go of the file, your file will be uploaded to your 
+~/Uploads directory.
+  Uploading with FTP FTP is another common way to upload files to your VM. Before uploading 
+with FTP though, you&amp;apos;ll need to set up an FTP Server on your VM.
+The FTP Guide will take you through both the installation, and 
+connecting process, so check it out!
+  Uploading with SCP SCP is is a tool that will copy files from your local Unix filesystem 
+to a remote filesystem over SSH connections. To use it, make sure you 
+have SSH setup with your Koding VM beforehand. Instructions can be found 
+here if needed.
+After that, use the following command to copy a local file to your VM.
+scp LOCAL_FILE USERNAME.koding.io:REMOTE_FILE
+Replace LOCAL_FILE with your local file location, USERNAME with your 
+Koding Username, and REMOTE_FILE with your Remote File location. An 
+example of this command can be seen below.
+scp ~/my_image.png joshmurray.koding.io:~/my_image.png
+</description>
   </item>
   
   <item>
@@ -401,38 +434,6 @@ smallfiles=true
 Now use ctrl-x to save the file. After you&amp;apos;ve saved the file, simply 
 restart Mongodb with the following command:
 sudo service mongodb restart
-</description>
-  </item>
-  
-  <item>
-    <title>Getting Started: File Uploads</title>
-    <link>//learn.koding.com/guides/getting-started/file-upload</link>
-    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/file-upload</guid>
-    <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll take a look at uploading your files and projects to 
-Koding, in multiple ways. Lets get started!
-  Uploading with Drag and Drop The simplest way, is simply by using Drag and Drop file upload! To do 
-this, open your Koding IDE, locate your FileTree on the left hand
-side, and drag a file from your Desktop onto the FileTree. An example 
-image is below.
-
-After you let go of the file, your file will be uploaded to your 
-~/Uploads directory.
-  Uploading with FTP FTP is another common way to upload files to your VM. Before uploading 
-with FTP though, you&amp;apos;ll need to set up an FTP Server on your VM.
-The FTP Guide will take you through both the installation, and 
-connecting process, so check it out!
-  Uploading with SCP SCP is is a tool that will copy files from your local Unix filesystem 
-to a remote filesystem over SSH connections. To use it, make sure you 
-have SSH setup with your Koding VM beforehand. Instructions can be found 
-here if needed.
-After that, use the following command to copy a local file to your VM.
-scp LOCAL_FILE USERNAME.koding.io:REMOTE_FILE
-Replace LOCAL_FILE with your local file location, USERNAME with your 
-Koding Username, and REMOTE_FILE with your Remote File location. An 
-example of this command can be seen below.
-scp ~/my_image.png joshmurray.koding.io:~/my_image.png
 </description>
   </item>
   
@@ -576,19 +577,19 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Koding IDE Introduction</title>
-    <link>//learn.koding.com/guides/ide-introduction</link>
+    <title>Koding Terminal Introduction</title>
+    <link>//learn.koding.com/guides/terminal-introduction</link>
     <pubDate>"2014-10-10T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/ide-introduction</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/terminal-introduction</guid>
     <author>Team Koding</author>
     <description></description>
   </item>
   
   <item>
-    <title>Koding Terminal Introduction</title>
-    <link>//learn.koding.com/guides/terminal-introduction</link>
+    <title>Koding IDE Introduction</title>
+    <link>//learn.koding.com/guides/ide-introduction</link>
     <pubDate>"2014-10-10T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/terminal-introduction</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/ide-introduction</guid>
     <author>Team Koding</author>
     <description></description>
   </item>
@@ -600,6 +601,63 @@ If you encounter any issues or have any questions please drop an email here.
     <guid isPermaLink="true">//learn.koding.com/guides/vm-introduction</guid>
     <author>Team Koding</author>
     <description></description>
+  </item>
+  
+  <item>
+    <title>Getting Started with C and C++</title>
+    <link>//learn.koding.com/guides/getting-started-c-cpp</link>
+    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-c-cpp</guid>
+    <author>drodri</author>
+    <description>In this guide we&amp;apos;ll introducing C and C++ and how to build your first programs 
+in Koding. 
+C and C++ are the reference languages in many domains, from heavy computations,
+research, robotics, embedded systems, financing and banking...
+They are compiled languages, you write source code and a compiler translate it to
+native binaries, that typically can run only in the platform they were compiled to
+(Win, Linux, Mac). The process of converting source code to executable binaries,
+that involve compiling and linking is called the build process. This process can
+be specified by different means, e.g. using an IDE or Makefiles. 
+  Running your first C program Lets create our first &amp;quot;Hello world&amp;quot; C application, and build it.
+Open up your Ace editor, and open up a new file by pressing the Plus Button on the 
+tab list. If your file says Untitled.txt, you&amp;apos;re good to go.
+Next, paste the following code into the file.
+#include &amp;lt;stdio.h&amp;gt;
+
+void main(){
+    printf(&amp;quot;Hello world\n&amp;quot;);
+}
+We haven&amp;apos;t saved our file yet , so use Ctrl-S to save the file, 
+and name it main.c (note the extension c, not cpp).
+Finally, open up the Koding Terminal 
+and build and run your application.
+$ gcc -o hello main.c                                                                            
+$ ./hello
+Hello world
+  Running your first C++ program Create another file, this time named &amp;quot;main.cpp&amp;quot; with the following code:
+#include &amp;lt;iostream&amp;gt;
+
+using namespace std;
+
+int main(){
+    cout &amp;lt;&amp;lt; &amp;quot;Hello World&amp;quot; &amp;lt;&amp;lt; endl;
+    return 0;
+}
+Now we will build it with the g++ compiler, and run it. Please note that
+even if they are similar, C++ is not an &amp;quot;extension&amp;quot; of C or C with classes but
+a very different language by itself.
+$ g++ -o hellopp main.cpp
+$ ./hellopp
+Hello world
+Building larger applications can be somewhat difficult and cumbersome to the newbie.
+As soon as your application start to have several files, you will need to define
+how to build them in Makefiles, but we would rather recommend using the CMake build system,
+which is much simpler and fully portable to Windows and Mac platforms, with support
+for many compilers, as Visual Studio, and IDEs as Eclipse.
+The Biicode platform automatically generate CMake files for you, based on 
+your source code files. It also manage dependencies, so it can be used for reusing
+existing code easily.
+</description>
   </item>
   
   <item>
@@ -663,63 +721,6 @@ sudo chown myuser:www-data files # NB this is server/user specific!
 chmod 0775 files
 (You need to change these permissions back to something more sane afterwards&amp;#x2026; 0644 and 0775 seem to be ok, but I&amp;#x2019;m open to abuse on the matter.)
 And you&amp;#x2019;re off! To open your VM in a browser, click the ellipsis next to your VM name (probably koding-vm-0) and then the VM name to open the site in a new tab, and follow the usual Drupal installer instructions! NB If you&amp;apos;re a developer, you might want to check out Webchick&amp;apos;s setup video from Drupalcon AMS: http://www.youtube.com/watch?v=wKdU2Q1NIZQ
-</description>
-  </item>
-  
-  <item>
-    <title>Getting Started with C and C++</title>
-    <link>//learn.koding.com/guides/getting-started-c-cpp</link>
-    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-c-cpp</guid>
-    <author>drodri</author>
-    <description>In this guide we&amp;apos;ll introducing C and C++ and how to build your first programs 
-in Koding. 
-C and C++ are the reference languages in many domains, from heavy computations,
-research, robotics, embedded systems, financing and banking...
-They are compiled languages, you write source code and a compiler translate it to
-native binaries, that typically can run only in the platform they were compiled to
-(Win, Linux, Mac). The process of converting source code to executable binaries,
-that involve compiling and linking is called the build process. This process can
-be specified by different means, e.g. using an IDE or Makefiles. 
-  Running your first C program Lets create our first &amp;quot;Hello world&amp;quot; C application, and build it.
-Open up your Ace editor, and open up a new file by pressing the Plus Button on the 
-tab list. If your file says Untitled.txt, you&amp;apos;re good to go.
-Next, paste the following code into the file.
-#include &amp;lt;stdio.h&amp;gt;
-
-void main(){
-    printf(&amp;quot;Hello world\n&amp;quot;);
-}
-We haven&amp;apos;t saved our file yet , so use Ctrl-S to save the file, 
-and name it main.c (note the extension c, not cpp).
-Finally, open up the Koding Terminal 
-and build and run your application.
-$ gcc -o hello main.c                                                                            
-$ ./hello
-Hello world
-  Running your first C++ program Create another file, this time named &amp;quot;main.cpp&amp;quot; with the following code:
-#include &amp;lt;iostream&amp;gt;
-
-using namespace std;
-
-int main(){
-    cout &amp;lt;&amp;lt; &amp;quot;Hello World&amp;quot; &amp;lt;&amp;lt; endl;
-    return 0;
-}
-Now we will build it with the g++ compiler, and run it. Please note that
-even if they are similar, C++ is not an &amp;quot;extension&amp;quot; of C or C with classes but
-a very different language by itself.
-$ g++ -o hellopp main.cpp
-$ ./hellopp
-Hello world
-Building larger applications can be somewhat difficult and cumbersome to the newbie.
-As soon as your application start to have several files, you will need to define
-how to build them in Makefiles, but we would rather recommend using the CMake build system,
-which is much simpler and fully portable to Windows and Mac platforms, with support
-for many compilers, as Visual Studio, and IDEs as Eclipse.
-The Biicode platform automatically generate CMake files for you, based on 
-your source code files. It also manage dependencies, so it can be used for reusing
-existing code easily.
 </description>
   </item>
   
@@ -1166,6 +1167,115 @@ That is all!
   </item>
   
   <item>
+    <title>Getting Started: Editing Your Profile</title>
+    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
+    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
+    <author>Team Koding</author>
+    <description>Your Koding profile is your public information page on Koding. Currently 
+it shows your Avatar, Name and Description, recent Koding activity, and 
+in the near future Badges and additional social information. In this 
+guide we&amp;apos;ll go over the basic usage of your Koding profile.
+  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted 
+below.
+
+Clicking on it will open your profile.
+  Avatar, Name and Description When viewing your profile for the first time, you&amp;apos;ll see that your first 
+name is set to your Koding username, and your last name and description 
+are set to default values, as seen in the below image.
+
+These default values are only seen by you, and if you double click them, 
+you can edit that field.
+
+
+
+
+
+</description>
+  </item>
+  
+  <item>
+    <title>Author A Guide: Basic</title>
+    <link>//learn.koding.com/contribute/basic</link>
+    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/contribute/basic</guid>
+    <author>Team Koding</author>
+    <description>In this guide we&amp;apos;ll go over how to contribute to the Koding University 
+the easy way. We&amp;apos;ll be using Github&amp;apos;s built in editor, to make the 
+forking &amp;amp; merging process easy. If you&amp;apos;re unfamiliar with Git, but you 
+still want to contribute to Learn, this is the guide for you. So, lets 
+get started!
+  Edit on Github Each Koding guide comes with a simple &amp;quot;Edit this on Github&amp;quot; link. This 
+link directs you back to a file editor on Github. Github will 
+automatically fork the repo if you have not yet, and even create a branch 
+so that your eventual pull request does not cause any unintended 
+contributions. Lets look at how this works.
+First up, find the guide that you want to edit, and look for the 
+Improve this Guide button at the bottom of all guides.
+
+  Fork the Repository If you have not contributed before you likely do not have the repository 
+forked yet. Press the green button seen below, and Github will fork the 
+repository for you.
+
+  Make your Edits After forking, or if you already had Koding University Forked, you&amp;apos;ll be 
+presented with a text editor for the guide that you chose to edit. From 
+here, look through the guide and make your edits as you desire.
+
+Don&amp;apos;t forget that there is a preview tab as well. The guide will look 
+slightly different on Github than on Koding University; but because 
+everything is formatted in Markdown you can preview it Github to ensure 
+the correctness of your markdown syntax.
+  Propose File Changes After you have made your edits to the document, scroll down and enter a 
+title and description for the edits you&amp;apos;ve made. After you&amp;apos;re satisfied, 
+press Propose file change.
+
+This will create a new branch of your Fork and store your changes into 
+that branch. To repeat, your changes have been added to your Fork, 
+not to the official Koding University repository yet. To do that, you 
+need to create a Pull Request.
+  Create Pull Request A pull request lets Koding Staff review and merge your changes into the 
+official repository. To do that, after proposing your file changes you 
+will see a page like the one below.
+
+This is your branch, on your forked repository. If you press the Create 
+Pull Request button, your changes in that branch will be sent to the 
+official repository to be reviewed and merged in.
+This is it! You&amp;apos;ve gone from the guide on University, to editing it and 
+submitting your changes for review, all without leaving your browser or 
+using any complex Git commands.
+  Creating a New Guide The above process is nice and simple, but there&amp;apos;s one core thing missing. 
+We didn&amp;apos;t create a guide, we only edited a guide. What if we want to 
+create a new guide? Luckily this Basic workflow also works with new 
+guides! Lets go over that real quick.
+First, click here. That link will send you to the Github 
+editor with no file loaded. You can write in the editor, add a file name, 
+and propose changes just like the above instructions. Remember to name 
+your file with the .md extension, and adhere to the 
+Guidelines.
+Because you&amp;apos;re creating a new file though, you want to make sure and add 
+the proper metadata to the file. Copy the following code, and place it 
+into the editor.
+---
+author: Your Name
+username: yourUsername
+date: 2014-07-31
+categories: [nginx]
+---
+
+Fill in Your Name with your name, and yourUsername with your Koding 
+Username. The date field should be formatted in YYYY-MM-DD format, and 
+the categories list is just a comma separated list of strings.
+
+Once that&amp;apos;s all taken care of, start writing your guide! Once you&amp;apos;re 
+done, follow the Propose and Pull Request instructions above, as they are 
+identical.
+You should note that with this method, you cannot add images to the 
+repository. For that to work, have a look at the next section which uses 
+Koding&amp;apos;s Editor and Git to make changes to this Koding University.
+</description>
+  </item>
+  
+  <item>
     <title>Getting Started with Python</title>
     <link>//learn.koding.com/guides/getting-started-python</link>
     <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
@@ -1339,139 +1449,6 @@ This concludes the getting started with Python guide. Thanks for reading!
   </item>
   
   <item>
-    <title>Getting Started: Editing Your Profile</title>
-    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
-    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
-    <author>Team Koding</author>
-    <description>Your Koding profile is your public information page on Koding. Currently 
-it shows your Avatar, Name and Description, recent Koding activity, and 
-in the near future Badges and additional social information. In this 
-guide we&amp;apos;ll go over the basic usage of your Koding profile.
-  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted 
-below.
-
-Clicking on it will open your profile.
-  Avatar, Name and Description When viewing your profile for the first time, you&amp;apos;ll see that your first 
-name is set to your Koding username, and your last name and description 
-are set to default values, as seen in the below image.
-
-These default values are only seen by you, and if you double click them, 
-you can edit that field.
-
-
-
-
-
-</description>
-  </item>
-  
-  <item>
-    <title>Author A Guide</title>
-    <link>//learn.koding.com/contribute</link>
-    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/contribute</guid>
-    <author>Team Koding</author>
-    <description>In this guide series we will go over Writing and Editing guides for Koding 
-University. We will cover every step of the process, but basic Git, 
-Github, and Markdown knowledge will be very useful.
-If you already know git, github, and markdown, here is the simple set of 
-tasks you&amp;apos;ll need to do.
-
-Review the Style Guidelines
-Fork KDLearn
-Clone your forked repo
-Find or create your files, Make your markdown edits
-Commit and push your changes to your repo
-Make a pull request of your changes, against the KDLearn Repo
-
-If you need more in depth instructions than that, please continue with 
-this series below. Thanks!
-</description>
-  </item>
-  
-  <item>
-    <title>Author A Guide: Basic</title>
-    <link>//learn.koding.com/contribute/basic</link>
-    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/contribute/basic</guid>
-    <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll go over how to contribute to the Koding University 
-the easy way. We&amp;apos;ll be using Github&amp;apos;s built in editor, to make the 
-forking &amp;amp; merging process easy. If you&amp;apos;re unfamiliar with Git, but you 
-still want to contribute to Learn, this is the guide for you. So, lets 
-get started!
-  Edit on Github Each Koding guide comes with a simple &amp;quot;Edit this on Github&amp;quot; link. This 
-link directs you back to a file editor on Github. Github will 
-automatically fork the repo if you have not yet, and even create a branch 
-so that your eventual pull request does not cause any unintended 
-contributions. Lets look at how this works.
-First up, find the guide that you want to edit, and look for the 
-Improve this Guide button at the bottom of all guides.
-
-  Fork the Repository If you have not contributed before you likely do not have the repository 
-forked yet. Press the green button seen below, and Github will fork the 
-repository for you.
-
-  Make your Edits After forking, or if you already had Koding University Forked, you&amp;apos;ll be 
-presented with a text editor for the guide that you chose to edit. From 
-here, look through the guide and make your edits as you desire.
-
-Don&amp;apos;t forget that there is a preview tab as well. The guide will look 
-slightly different on Github than on Koding University; but because 
-everything is formatted in Markdown you can preview it Github to ensure 
-the correctness of your markdown syntax.
-  Propose File Changes After you have made your edits to the document, scroll down and enter a 
-title and description for the edits you&amp;apos;ve made. After you&amp;apos;re satisfied, 
-press Propose file change.
-
-This will create a new branch of your Fork and store your changes into 
-that branch. To repeat, your changes have been added to your Fork, 
-not to the official Koding University repository yet. To do that, you 
-need to create a Pull Request.
-  Create Pull Request A pull request lets Koding Staff review and merge your changes into the 
-official repository. To do that, after proposing your file changes you 
-will see a page like the one below.
-
-This is your branch, on your forked repository. If you press the Create 
-Pull Request button, your changes in that branch will be sent to the 
-official repository to be reviewed and merged in.
-This is it! You&amp;apos;ve gone from the guide on University, to editing it and 
-submitting your changes for review, all without leaving your browser or 
-using any complex Git commands.
-  Creating a New Guide The above process is nice and simple, but there&amp;apos;s one core thing missing. 
-We didn&amp;apos;t create a guide, we only edited a guide. What if we want to 
-create a new guide? Luckily this Basic workflow also works with new 
-guides! Lets go over that real quick.
-First, click here. That link will send you to the Github 
-editor with no file loaded. You can write in the editor, add a file name, 
-and propose changes just like the above instructions. Remember to name 
-your file with the .md extension, and adhere to the 
-Guidelines.
-Because you&amp;apos;re creating a new file though, you want to make sure and add 
-the proper metadata to the file. Copy the following code, and place it 
-into the editor.
----
-author: Your Name
-username: yourUsername
-date: 2014-07-31
-categories: [nginx]
----
-
-Fill in Your Name with your name, and yourUsername with your Koding 
-Username. The date field should be formatted in YYYY-MM-DD format, and 
-the categories list is just a comma separated list of strings.
-
-Once that&amp;apos;s all taken care of, start writing your guide! Once you&amp;apos;re 
-done, follow the Propose and Pull Request instructions above, as they are 
-identical.
-You should note that with this method, you cannot add images to the 
-repository. For that to work, have a look at the next section which uses 
-Koding&amp;apos;s Editor and Git to make changes to this Koding University.
-</description>
-  </item>
-  
-  <item>
     <title>Author A Guide: Overview and Guidelines</title>
     <link>//learn.koding.com/contribute/guidelines</link>
     <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
@@ -1539,6 +1516,30 @@ instructions.
 Don&amp;apos;t forget, headers with levels (## Header1, ### Header 3, and so 
 forth) should be used to group content just like you do with HTML&amp;apos;s 
 &amp;lt;h2&amp;gt;s and so forth. You can review Header Markdown here
+</description>
+  </item>
+  
+  <item>
+    <title>Author A Guide</title>
+    <link>//learn.koding.com/contribute</link>
+    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/contribute</guid>
+    <author>Team Koding</author>
+    <description>In this guide series we will go over Writing and Editing guides for Koding 
+University. We will cover every step of the process, but basic Git, 
+Github, and Markdown knowledge will be very useful.
+If you already know git, github, and markdown, here is the simple set of 
+tasks you&amp;apos;ll need to do.
+
+Review the Style Guidelines
+Fork KDLearn
+Clone your forked repo
+Find or create your files, Make your markdown edits
+Commit and push your changes to your repo
+Make a pull request of your changes, against the KDLearn Repo
+
+If you need more in depth instructions than that, please continue with 
+this series below. Thanks!
 </description>
   </item>
   
@@ -3568,23 +3569,6 @@ So to be clear , you may change your display name at any time but this does not 
   </item>
   
   <item>
-    <title>Should I use my VM's IP or Address?</title>
-    <link>//learn.koding.com/faq/vm-ip-vs-address</link>
-    <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/vm-ip-vs-address</guid>
-    <author></author>
-    <description>Koding gives you access to your VMs IP, as well as an Address that 
-always points to that VM&amp;apos;s IP, so which should you use, and why?
-While your VMs IP will operate perfectly fine, the IP is dynamic. In 
-otherwords, it will change. Because of this, Koding gives you a VM
-Address, which will always point to your VM, regardless of 
-IP changes, so this is what you usually want to use.
-Note: IP addresses of &amp;quot;Always On&amp;quot; VMs don&amp;apos;t change until they are rebooted.
-If you have trouble finding your VM Address, click here.
-</description>
-  </item>
-  
-  <item>
     <title>How can I reset my VM back to it's original state?</title>
     <link>//learn.koding.com/faq/vm-reinit</link>
     <pubDate></pubDate>
@@ -3619,6 +3603,23 @@ Once you initiate a reinit, you will see appropriate messages on the screen as y
     <author></author>
     <description>You do not have to contact Koding support if you wish to delete your account. Simply head over to Account Settings from where you can easily initiate the deletion process.
 It would help us immensly if you can take the quick 3 question survey right after the deletion process ends. It will help us understand why we lost you and how we can improve.
+</description>
+  </item>
+  
+  <item>
+    <title>Should I use my VM's IP or Address?</title>
+    <link>//learn.koding.com/faq/vm-ip-vs-address</link>
+    <pubDate></pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/vm-ip-vs-address</guid>
+    <author></author>
+    <description>Koding gives you access to your VMs IP, as well as an Address that 
+always points to that VM&amp;apos;s IP, so which should you use, and why?
+While your VMs IP will operate perfectly fine, the IP is dynamic. In 
+otherwords, it will change. Because of this, Koding gives you a VM
+Address, which will always point to your VM, regardless of 
+IP changes, so this is what you usually want to use.
+Note: IP addresses of &amp;quot;Always On&amp;quot; VMs don&amp;apos;t change until they are rebooted.
+If you have trouble finding your VM Address, click here.
 </description>
   </item>
   

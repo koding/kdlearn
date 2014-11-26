@@ -26,13 +26,13 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/understanding-vm-panel</loc>
+    <loc>http://learn.koding.com/guides/vhosts-and-subdomains</loc>
     <lastmod>2014-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/vhosts-and-subdomains</loc>
+    <loc>http://learn.koding.com/guides/understanding-vm-panel</loc>
     <lastmod>2014-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -56,6 +56,12 @@
   </url>
   
   <url>
+    <loc>http://learn.koding.com/guides/getting-started/file-upload</loc>
+    <lastmod>2014-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
     <loc>http://learn.koding.com/guides/what-is-docker</loc>
     <lastmod>2014-10-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -63,12 +69,6 @@
   
   <url>
     <loc>http://learn.koding.com/guides/install-mongodb</loc>
-    <lastmod>2014-10-17</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://learn.koding.com/guides/getting-started/file-upload</loc>
     <lastmod>2014-10-17</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -86,13 +86,13 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/ide-introduction</loc>
+    <loc>http://learn.koding.com/guides/terminal-introduction</loc>
     <lastmod>2014-10-10</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/terminal-introduction</loc>
+    <loc>http://learn.koding.com/guides/ide-introduction</loc>
     <lastmod>2014-10-10</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -104,13 +104,13 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/getting-started-drupal8-beta</loc>
+    <loc>http://learn.koding.com/guides/getting-started-c-cpp</loc>
     <lastmod>2014-10-02</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/getting-started-c-cpp</loc>
+    <loc>http://learn.koding.com/guides/getting-started-drupal8-beta</loc>
     <lastmod>2014-10-02</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -170,19 +170,7 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/getting-started-python</loc>
-    <lastmod>2014-08-04</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
     <loc>http://learn.koding.com/guides/getting-started/editing-your-profile</loc>
-    <lastmod>2014-08-04</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://learn.koding.com/contribute</loc>
     <lastmod>2014-08-04</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -194,7 +182,19 @@
   </url>
   
   <url>
+    <loc>http://learn.koding.com/guides/getting-started-python</loc>
+    <lastmod>2014-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
     <loc>http://learn.koding.com/contribute/guidelines</loc>
+    <lastmod>2014-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://learn.koding.com/contribute</loc>
     <lastmod>2014-08-04</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -452,12 +452,6 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/faq/vm-ip-vs-address</loc>
-    <lastmod>2014-11-26</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
     <loc>http://learn.koding.com/faq/vm-reinit</loc>
     <lastmod>2014-11-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -465,6 +459,12 @@
   
   <url>
     <loc>http://learn.koding.com/faq/delete-account</loc>
+    <lastmod>2014-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://learn.koding.com/faq/vm-ip-vs-address</loc>
     <lastmod>2014-11-26</lastmod>
     <changefreq>monthly</changefreq>
   </url>
