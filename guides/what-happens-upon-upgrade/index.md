@@ -7,6 +7,7 @@ categories: [koding]
 improvable: false
 ---
 
+
 # What happens upon upgrade?
 
 You just upgraded your account, awesome (and thanks!) but what happens now?
@@ -27,7 +28,6 @@ Once you have upgraded to Hobbyist, you can mark your VM as an Always-On VM and 
 Under these plans, you can have a total of up to 3 (for Developer) and 5 (for Professional) VMs, mark any of them as Always-On and allocate 25GB (for Developer) / 50GB (for Professional) of storage amonst them. You will start with the default free VM and it is up to you whether you want to leave it at the default 3GB or delete it so that you can make a new one with a storage allocation that you prefer. To delete a VM, simply go the settings panel of the VM and click the Terminate button (as shown in the attached screen shot).
 
 ![Developer Plan Image 1](dev-pro2.png)
-
 
 
 To create a new VM, click the + icon in the VM list and you will be presented wit the option to create a new VM with a space allocation that is preferable to you (as shown below).
