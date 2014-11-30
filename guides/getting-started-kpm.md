@@ -8,15 +8,15 @@ template: page.toffee
 
 # What is Koding Package Manager?
 
-Koding Package Manager is a tool that we have set up to make it easy for you to install (and soon remove) your favorite packages like WordPress, Mongodb, blah blah. The KPM takes care of measuring disk space requirements, analyzing dependencies and installing all required packages to bring you a running system. It's the easiest way to get up and running with your favorite technology or package.
+Koding Package Manager (kpm) is a command line tool that we have set up to make it easy for you to install (and soon remove) your favorite packages like WordPress, Mongodb, Laravel, etc. KPM takes care of measuring disk space requirements, analyzing dependencies and installing all required packages to bring you a running system. It's the easiest way to get up and running with your favorite technology or package. KPM also replaces the older generation KDApps (most of which were installers).
 
 # Getting started with the Koding Package Manager
 
-This guide will cover the basics of the Koding Package Manager and how to get started with it.
+This guide will cover the basics of the KPM and how to get started with it.
 
 ## Usage
 
-KPM runs in the Terminal of your Koding account. In order to use the Koding Package Manager you first need to install it. To do that you have to run the following command in your Terminal:
+KPM runs in the Terminal of your Koding account. In order to use KPM you first need to install it. To do that you have to run the following command in your Terminal:
 
 ```text
 curl -sSL "https://raw.githubusercontent.com/koding\
@@ -35,7 +35,7 @@ kpm --version
 ```
 
 1. The first command `kpm install` will install a program or a framework from the list of available programs or frameworks.
-2. The second command `kpm list` will list all available installers that you can currently install on your VM.
+2. The second command `kpm list` will list all available installers that you can currently install on your VM. We keep adding to the list and if you wish, you can contribute as well!
 3. The third command `kpm -h` or  `kpm  --help` will show the help for this command. The help command will showcase the syntax and a short version of this guide.
 4. The last command `kpm --version` will showcase the current version of your local Koding Package Manager.
 
