@@ -6,6 +6,12 @@ categories: [koding, mysql]
 
 # Installing MySQL
 
+Before you read the guide why not try a more easy way using the [Koding Package Manager (kpm)](/getting-started-kpm) and install mySQL using just one command:
+
+```
+kpm install mysql
+```
+
 In this guide we will cover the basics on how you can install MySQL and 
 the latest version of PHP-MySQL modules on your [Koding][koding] VM.
 
