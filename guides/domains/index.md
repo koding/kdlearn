@@ -24,7 +24,7 @@ supports one of the following record types.
 ## Find your VM Address
 
 First, you'll need to find and copy your [VM Address][vm hostname]. To 
-find this, please refere to [this guide][vm hostname] - But it will look 
+find this, please refer to [this guide][vm hostname] - But it will look 
 something like the address below:
 
 ```
@@ -40,7 +40,7 @@ To configure either of these record types, refer to your providers guides
 and create the record type which you prefer.
 
 Once you have created it, paste in the VM Address from above to the 
-Record Value. This will point your Domain, to the Address that the host 
+Record Value. This will point your Domain to the Address that the host 
 resolves to.
 
 ## The Waiting Game
@@ -54,15 +54,15 @@ VM Address *(as shown above)*. If it is correct, try contacting your
 Domain Provider and ensure that they are able to use Addresses rather 
 than IPs in their record values.
 
-## Can i use my VMs IP?
+## Can I use my VMs IP?
 
 For technical reasons, free VMs have rotating IPs. After your VM goes 
 offline, it is not guaranteed to boot up with the same IP. This means 
-that you **should not** use your VMs IP as the record value, if you're 
-using a not-always-on VM.
+that you **should not** use your VMs IP as the record value if you're 
+**not** using an Always-On VM.
 
-If however your VM is Always On, an IP should work, as long as your VM is 
-not shutdown. For more information on Always-On, see the [Pricing 
+If however your VM is Always-On, an IP should work, as long as your VM is 
+not shutdown. For more information on Always-On VMs, see the [Pricing 
 Page][pricing].
 
 
