@@ -15,7 +15,7 @@ development to everyone. It does this by offering Free VMs for development
 to anyone. The Koding VMs provide you with a _real_ Ubuntu OS, with a _real_ 
 Terminal, and allow you to work on _real_ code. It can be any language, be 
 it Python, PHP, C++, C, or anything else, it doesn't matter. Even better, 
-the VMs are hosted online, so they're accessible from just about anywhere 
+the VMs are hosted on the cloud, so they're accessible from just about anywhere 
 in the world.
 
 ## Is Koding a Production Host?
