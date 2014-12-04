@@ -21,7 +21,7 @@ To achieve the sync, we will use an app called [grive](http://www.lbreda.com/gri
 sudo apt-get install grive
 ```
 
-After that you need to create a folder where the Google Drive folders and files will be synced
+After that you need to create a folder where the Google Drive folders and files will be synced.
 
 ```
 mkdir GDrive
@@ -54,5 +54,5 @@ man cron
 ```
 
 ** Note 2:** As per the author of grive, the application will not download any files that are the traditional Google Docs (Spreadsheet, Documents,
-Presentations, etc.). The app will automatically download/upload any non-native Google Doc format and this inculdes
+Presentations, etc.). The app will only automatically upload/download any non-native Google Doc formats which include
 code files, text files, images, etc.

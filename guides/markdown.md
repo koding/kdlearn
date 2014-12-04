@@ -16,7 +16,7 @@ their text. In this guide, we'll go over the basics of Markdown and it's usage.
 ## Official Documentation
 
 The official [Markdown 
-documentation](http://daringfireball.net/projects/markdown/syntax) covers the 
+documentation](http://daringfireball.net/projects/markdown/syntax) covers the 
 Markdown syntax quite well, and as such this guide will only briefly touch on 
 each major syntax structure. If any questions remain, please refer to the 
 official documentation.
@@ -41,7 +41,7 @@ Hello, **this is strong** and this isn't!
 ## Inline Code
 
 Typing code within a sentence is considered *inline* code. Inline code is 
-accomplished by wrapping the code with backticks `\`` For example:
+accomplished by wrapping the code with backticks `\` For example:
 
 ```markdown
 Foo `bar` baz
