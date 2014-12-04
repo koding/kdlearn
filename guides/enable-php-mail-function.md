@@ -17,7 +17,7 @@ The first thing you need to do is install the sendmail package. Do this by runni
 sudo apt-get install sendmail
 ```
 
-After the previous command finishes installing the sendmail package, you need to configure it. You can do that by running the following command, which will configure the mail server.
+After the previous command finishes installing the sendmail package, you need to configure it. You can do that by running the following command, which will configure the mail server:
 
 ```
 sudo sendmailconfig
