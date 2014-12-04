@@ -50,7 +50,7 @@ directly into it as you like.
 
 ## Linking Workspaces to Existing Directories
 
-Workspace folders are just normal folders on the file system. As such, as 
+Workspace folders are just normal folders on the file system. As such, we 
 can use Unix symbolic links to folders to achieve what we want. As an 
 example, lets create a Workspace linked to our Web directory.
 
