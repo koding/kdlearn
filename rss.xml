@@ -31,7 +31,6 @@ until you hit &amp;quot;End Session&amp;quot;. Every person you share a session 
 Note: Since the user(s) with whom you share your session have access to all the files on your VM, make 
 sure that you are sharing with people that you know.
 
-
   What can I share? When you collaborate with someone, you can give them full access to your VM. This means that an invited
 user can view/edit files and directories on your VM.
 Besides file sharing, you can also share your IDE, Terminal and your Drawing board. When you start a 
@@ -63,6 +62,58 @@ ever happen!
   What does &amp;quot;Kick&amp;quot; do? This is available to the host if they want to remove someone from a shared session without ending
 the session.
 
+</description>
+  </item>
+  
+  <item>
+    <title>Using Github with Koding</title>
+    <link>//learn.koding.com/guides/using-github</link>
+    <pubDate>"2014-12-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/using-github</guid>
+    <author>Team Koding</author>
+    <description>This guide will cover the basics on how to get started with Github on you Koding VM using Ungit.
+  What is Ungit? Ungit is a web based interface for Github made by Fredrik Noren that runs on any platform. It has a clean and intuitive UI that makes it easy to understand git. It runs on any platform that node.js &amp;amp; git supports and it works well with GitHub. 
+  Getting started Before we begin please make sure you the Koding Package Manager (KPM) installer on your VM. Follow this guide to understand wha KPM is and how to install it so you will be able to continue with this guide.
+  Setup Please note that git is installed by default with every Koding VM. So you will be able to get started right away.
+Before you can get started with Github on your Koding VM you need to first setup the environment to be able to work properly with Github.
+Run the following command, in your Koding Terminal, to install the necessary dependency:
+kpm install ungit
+This will install a visually friendly interface for Github, where you will be able to interact with Github and your Koding VM. Think of it as a bridge between Koding and Github.
+After the installation process has finished you will need to start the Github interface using the following command:
+ungit
+When the process has finished you should see a link outputted in the Terminal similar to this one:
+your_koding_username.koding.io:8448
+Copy that link and open it in a separate browser window. You should see something like this:
+
+  Basic interaction In the top area of the screen, in the input box you will be able to input the path to a local existing repository on your Koding VM or start with a fresh empty one.
+Please note that the input field has autocomplete
+Start with a basic path like this one. Just make sure that folder exists before you input the path. If that folder doesn&amp;#x2019;t exist then you will be able to create it using this interface.
+/home/your_koding_username/Web/demo
+After that hit Enter || Return
+You should see something like this:
+
+Now, you can either transform that folder into a git repository or clone a repository in a subfolder in that folder.
+Let&amp;#x2019;s transform this folder into a git repository. After transformation is complete just hit the little + sign at the top next to path, in order to see repository on the main view of the interface.
+Before we continue, please make sure you have a Github repository ready in your Github account. Now you have to link that repository to your local Koding one using the Add new remote modal.
+
+Copy the URL from your Github repository in this modal window and hit Submit.
+Now head over to the Koding IDE and start adding code to your newly created repository. After you finished with your changes, you should already see you changes in the Ungit interface, just ready to be committed to your Github repository.
+After you have named your commit, hit the commit button.
+Now you can push your changes to the desired branch in your Github repository. Click on the name of the branch and then on the Push button.
+
+You will be required to input your Github username and password before you can push your changes.
+
+Input them, so you can continue with pushing your changes. After that you should see a successful commit of your changes.
+Cloning an existing repository is a really straightforward process.
+In order to clone a repository we need to have a location where we want to store our cloned repository.
+Following the first step from above, in the input field at the top of Ungit select your desired path. For eg.
+/home/your_koding_username/Web
+Now you can clone any desired repository in this folder using this form:
+
+Just copy the repository URL from Github, in the input field and then hit Clone repository. 
+Wait for the cloning process to finish and now you should see all the commit history and you are now able to work on that repository, perform commits, push changes, using the Koding IDE.
+Note: Whenever you turn on Koding VM you will have to run the ungit command to get this interface started.
+If you encounter any issues or have any questions please drop an email here.
 </description>
   </item>
   
@@ -377,33 +428,6 @@ guide.
   </item>
   
   <item>
-    <title>Installing MongoDB</title>
-    <link>//learn.koding.com/guides/install-mongodb</link>
-    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/install-mongodb</guid>
-    <author>Team Koding</author>
-    <description>In this short guide we&amp;apos;ll explain how to install MongoDB, and modify
-it&amp;apos;s configuration to run in a small storage environment. Lets get 
-started!
-  Installation Installation is easy, and can be done with apt-get, as seen in the 
-following command.
-sudo apt-get install mongodb
-That&amp;apos;s it! You can start Mongo with the following command:
-sudo service mongodb start
-NOTE: If you&amp;apos;re running Mongo on a Free Koding VM, read below..
-  Configuring for Limited Storage If you&amp;apos;re running Mongo on a Free VM, you&amp;apos;ll need to configure it to use 
-small files. To do that, open up the /etc/mongodb.conf file with the
-following command:
-sudo nano /etc/mongodb.conf
-With that file open, navigate to the bottom and add the following line:
-smallfiles=true
-Now use ctrl-x to save the file. After you&amp;apos;ve saved the file, simply 
-restart Mongodb with the following command:
-sudo service mongodb restart
-</description>
-  </item>
-  
-  <item>
     <title>Getting Started: File Uploads</title>
     <link>//learn.koding.com/guides/getting-started/file-upload</link>
     <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
@@ -432,6 +456,33 @@ Replace LOCAL_FILE with your local file location, USERNAME with your
 Koding Username, and REMOTE_FILE with your Remote File location. An 
 example of this command can be seen below.
 scp ~/my_image.png joshmurray.koding.io:~/my_image.png
+</description>
+  </item>
+  
+  <item>
+    <title>Installing MongoDB</title>
+    <link>//learn.koding.com/guides/install-mongodb</link>
+    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/install-mongodb</guid>
+    <author>Team Koding</author>
+    <description>In this short guide we&amp;apos;ll explain how to install MongoDB, and modify
+it&amp;apos;s configuration to run in a small storage environment. Lets get 
+started!
+  Installation Installation is easy, and can be done with apt-get, as seen in the 
+following command.
+sudo apt-get install mongodb
+That&amp;apos;s it! You can start Mongo with the following command:
+sudo service mongodb start
+NOTE: If you&amp;apos;re running Mongo on a Free Koding VM, read below..
+  Configuring for Limited Storage If you&amp;apos;re running Mongo on a Free VM, you&amp;apos;ll need to configure it to use 
+small files. To do that, open up the /etc/mongodb.conf file with the
+following command:
+sudo nano /etc/mongodb.conf
+With that file open, navigate to the bottom and add the following line:
+smallfiles=true
+Now use ctrl-x to save the file. After you&amp;apos;ve saved the file, simply 
+restart Mongodb with the following command:
+sudo service mongodb restart
 </description>
   </item>
   
@@ -627,15 +678,6 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Koding IDE Introduction</title>
-    <link>//learn.koding.com/guides/ide-introduction</link>
-    <pubDate>"2014-10-10T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/ide-introduction</guid>
-    <author>Team Koding</author>
-    <description></description>
-  </item>
-  
-  <item>
     <title>Koding Terminal Introduction</title>
     <link>//learn.koding.com/guides/terminal-introduction</link>
     <pubDate>"2014-10-10T00:00:00.000Z"</pubDate>
@@ -649,6 +691,15 @@ If you encounter any issues or have any questions please drop an email here.
     <link>//learn.koding.com/guides/vm-introduction</link>
     <pubDate>"2014-10-10T00:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/vm-introduction</guid>
+    <author>Team Koding</author>
+    <description></description>
+  </item>
+  
+  <item>
+    <title>Koding IDE Introduction</title>
+    <link>//learn.koding.com/guides/ide-introduction</link>
+    <pubDate>"2014-10-10T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/ide-introduction</guid>
     <author>Team Koding</author>
     <description></description>
   </item>
@@ -707,6 +758,63 @@ for many compilers, as Visual Studio, and IDEs as Eclipse.
 The Biicode platform automatically generate CMake files for you, based on 
 your source code files. It also manage dependencies, so it can be used for reusing
 existing code easily.
+</description>
+  </item>
+  
+  <item>
+    <title>Building C / C++ applications with biicode</title>
+    <link>//learn.koding.com/guides/getting-started-biicode</link>
+    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-biicode</guid>
+    <author>drodri</author>
+    <description>Building larger applications can be somewhat difficult and cumbersome to the newbie.
+As soon as your application start to have several files, you will need to define
+how to build them in Makefiles or using the CMake build system.
+We will be using in the following examples biicode, which is a dependency manager
+that allows to easily retrieve existing code and also manages to automatically generate
+build files for your project.
+You can install it running from your terminal:
+$ wget http://apt.biicode.com/install.sh &amp;amp;&amp;amp; chmod +x install.sh &amp;amp;&amp;amp; ./install.sh
+After it finish, you can run a helper command that install an updated version of CMake:
+$ bii setup:cpp
+Lets build an application that computes the SHA1 of a string. Usually you dont want to write
+yourself such algorithm, but rather use an existing implementation.
+The following commands will create a project and a &amp;quot;Hello world&amp;quot; file, which you can build and
+run:
+$ bii init cryptoproject
+$ cd cryptoproject
+$ bii new myuser/crypto --hello=cpp
+$ bii cpp:build
+$ ./bin/myuser_crypto_main
+Hello world!
+Now replace the contents of the &amp;quot;main.cpp&amp;quot; file inside the blocks/myuser/crypto folder with:
+#include &amp;quot;cryptopp/cryptopp/sha.h&amp;quot;
+#include &amp;quot;cryptopp/cryptopp/filters.h&amp;quot;
+#include &amp;quot;cryptopp/cryptopp/hex.h&amp;quot;
+#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;string&amp;gt;
+
+int main() {
+    CryptoPP::SHA1 sha1;
+    std::string source = &amp;quot;Hello&amp;quot;;  
+    std::string hash = &amp;quot;&amp;quot;;
+    CryptoPP::StringSource(source, true, new CryptoPP::HashFilter(sha1,
+                            new CryptoPP::HexEncoder(new CryptoPP::StringSink(hash))));
+    std::cout &amp;lt;&amp;lt; hash &amp;lt;&amp;lt; std::endl;
+}
+If you now try to build this example, it will fail. You can try to do so, and then check
+your dependencies:
+$ bii cpp:build
+$ bii deps
+The code depends on some external code, the Crypto++ library. This can be easily retrieved
+with the &amp;quot;find&amp;quot; command
+$ bii find
+Now you can build and run it:
+$ bii cpp:build
+$ ./bin/myuser_crypto_main
+F7FF9E8B7BB2E09B70935A5D785E0CC5D9D0ABF0
+For further examples, you can have a look to the biicode C/C++ documentation and the 
+examples
 </description>
   </item>
   
@@ -803,63 +911,6 @@ And you&amp;#x2019;re off! To open your VM in a browser, click the ellipsis next
   </item>
   
   <item>
-    <title>Building C / C++ applications with biicode</title>
-    <link>//learn.koding.com/guides/getting-started-biicode</link>
-    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-biicode</guid>
-    <author>drodri</author>
-    <description>Building larger applications can be somewhat difficult and cumbersome to the newbie.
-As soon as your application start to have several files, you will need to define
-how to build them in Makefiles or using the CMake build system.
-We will be using in the following examples biicode, which is a dependency manager
-that allows to easily retrieve existing code and also manages to automatically generate
-build files for your project.
-You can install it running from your terminal:
-$ wget http://apt.biicode.com/install.sh &amp;amp;&amp;amp; chmod +x install.sh &amp;amp;&amp;amp; ./install.sh
-After it finish, you can run a helper command that install an updated version of CMake:
-$ bii setup:cpp
-Lets build an application that computes the SHA1 of a string. Usually you dont want to write
-yourself such algorithm, but rather use an existing implementation.
-The following commands will create a project and a &amp;quot;Hello world&amp;quot; file, which you can build and
-run:
-$ bii init cryptoproject
-$ cd cryptoproject
-$ bii new myuser/crypto --hello=cpp
-$ bii cpp:build
-$ ./bin/myuser_crypto_main
-Hello world!
-Now replace the contents of the &amp;quot;main.cpp&amp;quot; file inside the blocks/myuser/crypto folder with:
-#include &amp;quot;cryptopp/cryptopp/sha.h&amp;quot;
-#include &amp;quot;cryptopp/cryptopp/filters.h&amp;quot;
-#include &amp;quot;cryptopp/cryptopp/hex.h&amp;quot;
-#include &amp;lt;iostream&amp;gt;
-#include &amp;lt;string&amp;gt;
-
-int main() {
-    CryptoPP::SHA1 sha1;
-    std::string source = &amp;quot;Hello&amp;quot;;  
-    std::string hash = &amp;quot;&amp;quot;;
-    CryptoPP::StringSource(source, true, new CryptoPP::HashFilter(sha1,
-                            new CryptoPP::HexEncoder(new CryptoPP::StringSink(hash))));
-    std::cout &amp;lt;&amp;lt; hash &amp;lt;&amp;lt; std::endl;
-}
-If you now try to build this example, it will fail. You can try to do so, and then check
-your dependencies:
-$ bii cpp:build
-$ bii deps
-The code depends on some external code, the Crypto++ library. This can be easily retrieved
-with the &amp;quot;find&amp;quot; command
-$ bii find
-Now you can build and run it:
-$ bii cpp:build
-$ ./bin/myuser_crypto_main
-F7FF9E8B7BB2E09B70935A5D785E0CC5D9D0ABF0
-For further examples, you can have a look to the biicode C/C++ documentation and the 
-examples
-</description>
-  </item>
-  
-  <item>
     <title>Getting Started: Workspaces</title>
     <link>//learn.koding.com/guides/getting-started/workspaces</link>
     <pubDate>"2014-09-18T00:00:00.000Z"</pubDate>
@@ -901,6 +952,46 @@ You can freely remove the Workspace file system and replace them with any
 links you desire, as the steps above use, but just be careful not to 
 delete any of your files in the process.
 Note: the default Workspace can&amp;apos;t be removed as that is the default Web folder on your VM.
+</description>
+  </item>
+  
+  <item>
+    <title>Setting up FTP on Koding</title>
+    <link>//learn.koding.com/guides/setting-up-ftp-on-koding</link>
+    <pubDate>"2014-09-15T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-ftp-on-koding</guid>
+    <author>Team Koding</author>
+    <description>In this guide we&amp;apos;ll go over how to get your FTP Client connected to your 
+VM&amp;apos;s FTP Server. We will be using FileZilla as the FTP 
+Client, but any client should be able to connect to your FTP Server 
+successfully.
+  What you will need In this tutorial you will need the following.
+
+A Koding account, and your Koding Username.
+The Address of the VM you&amp;apos;d like to connect to. Instructions can be 
+found here.
+
+  Installing ProFTPd First off, we&amp;apos;ll need to install ProFTPd. This can be done by pasting 
+the following command into your Koding IDE&amp;apos;s Terminal.
+sudo apt-get install proftpd
+During the install process you will be asked to choose to run your VPS as an inetd or standalone server. Choose the standalone option.
+  Setting up the FTP User After ProFTPd has been successfully installed, we need to set a FTP password for your user. To do 
+this, paste the following command into your Terminal.
+sudo passwd KODING_USERNAME
+Make note to replace KODING_USERNAME with your actual Koding username.
+After hitting enter, you&amp;apos;ll be prompted for the FTP password you wish 
+to use. Not your Koding password.
+  Connecting to your FTP Server Finally, in your FTP Client of choice paste your VM Address into the 
+hostname. If you&amp;apos;re not sure what that is, instructions to find it can be 
+found here.
+After the Hostname, enter your Koding username, and FTP Password that you 
+chose in the above commands. An example image from FileZilla can be seen 
+below.
+
+  Additional Resources 
+FileZilla
+FileZilla Download
+
 </description>
   </item>
   
@@ -952,46 +1043,6 @@ ssh joshmurray@unkk05c3f84e.joshmurray.koding.io
 and share the output with Koding users. An example of the above ssh 
 command with the -vv flag is below.
 ssh -vv joshmurray@unkk05c3f84e.joshmurray.koding.io
-</description>
-  </item>
-  
-  <item>
-    <title>Setting up FTP on Koding</title>
-    <link>//learn.koding.com/guides/setting-up-ftp-on-koding</link>
-    <pubDate>"2014-09-15T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-ftp-on-koding</guid>
-    <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll go over how to get your FTP Client connected to your 
-VM&amp;apos;s FTP Server. We will be using FileZilla as the FTP 
-Client, but any client should be able to connect to your FTP Server 
-successfully.
-  What you will need In this tutorial you will need the following.
-
-A Koding account, and your Koding Username.
-The Address of the VM you&amp;apos;d like to connect to. Instructions can be 
-found here.
-
-  Installing ProFTPd First off, we&amp;apos;ll need to install ProFTPd. This can be done by pasting 
-the following command into your Koding IDE&amp;apos;s Terminal.
-sudo apt-get install proftpd
-During the install process you will be asked to choose to run your VPS as an inetd or standalone server. Choose the standalone option.
-  Setting up the FTP User After ProFTPd has been successfully installed, we need to set a FTP password for your user. To do 
-this, paste the following command into your Terminal.
-sudo passwd KODING_USERNAME
-Make note to replace KODING_USERNAME with your actual Koding username.
-After hitting enter, you&amp;apos;ll be prompted for the FTP password you wish 
-to use. Not your Koding password.
-  Connecting to your FTP Server Finally, in your FTP Client of choice paste your VM Address into the 
-hostname. If you&amp;apos;re not sure what that is, instructions to find it can be 
-found here.
-After the Hostname, enter your Koding username, and FTP Password that you 
-chose in the above commands. An example image from FileZilla can be seen 
-below.
-
-  Additional Resources 
-FileZilla
-FileZilla Download
-
 </description>
   </item>
   
@@ -1219,82 +1270,6 @@ That is all!
   </item>
   
   <item>
-    <title>Author a guide: Previewing</title>
-    <link>//learn.koding.com/contribute/previewing</link>
-    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/contribute/previewing</guid>
-    <author>Team Koding</author>
-    <description>While you shouldn&amp;apos;t need to preview your guides, since Markdown is 
-designed to be human friendly in the source, if you insist you can 
-preview your guides as they are on Koding University. This guide will go 
-over that process. Note that this will require a bit of developer 
-know-how, so be prepared to get your hands dirty. Lets get started!
-  Requirements You will need a working NodeJS installation to compile the Koding 
-University source. If you do not, visit the NodeJS downloads 
-page and grab the installer.
-  Installation With a working NodeJS installation, we need to install the KU 
-dependencies, as well as a global installation of the GulpJS. This can be 
-done with the following code:
-npm install -g gulp
-cd .metalsmith
-npm install
-  Building With Gulp installed, simply run the following command, to compile the 
-entire project into HTML.
-(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
-cd .metalsmith
-gulp
-The .metalsmith/build directory will contain all of the compiled html, 
-css, and any static resources (such as images/etc) from the markdown 
-directory.
-Compiling can take 1-2 minutes, so be patient.
-  Previewing If you want to preview the compiled site, open a new Koding Terminal tab 
-and run the following:
-(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
-cd .metalsmith
-gulp preview
-This will run a small HTTP Server on Port 8000, ie: 
-http://hostname.you.koding.io:8000. Keep this tab open, and in  a 
-different Koding Terminal tab run your gulp command from above.Each time you compile the site, this will show your compiled site.
-  Compiling as you type To have your Markdown compiled as you write your documents, run the 
-following commands:
-(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
-cd .metalsmith
-gulp watch
-This, in combination with the preview command above, will compile the 
-site each time you change the Markdown.
-Note that if you add images for your guide to use, you&amp;apos;ll want to run the 
-full gulp command again.
-And that sums it up! You now know how to contribute to Koding University, 
-in multiple ways. Keep up the awesome work, and we look forward to your 
-contribution!
-</description>
-  </item>
-  
-  <item>
-    <title>Author a guide</title>
-    <link>//learn.koding.com/contribute</link>
-    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/contribute</guid>
-    <author>Team Koding</author>
-    <description>In this guide series we will go over Writing and Editing guides for Koding 
-University. We will cover every step of the process, but basic Git, 
-Github, and Markdown knowledge will be very useful.
-If you already know git, github, and markdown, here is the simple set of 
-tasks you&amp;apos;ll need to do.
-
-Review the Style Guidelines
-Fork KDLearn
-Clone your forked repo
-Find or create your files, Make your markdown edits
-Commit and push your changes to your repo
-Make a pull request of your changes, against the KDLearn Repo
-
-If you need more in depth instructions than that, please continue with 
-this series below. Thanks!
-</description>
-  </item>
-  
-  <item>
     <title>Author a guide: Overview and Guidelines</title>
     <link>//learn.koding.com/contribute/guidelines</link>
     <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
@@ -1366,83 +1341,26 @@ forth) should be used to group content just like you do with HTML&amp;apos;s
   </item>
   
   <item>
-    <title>Author a guide: Basic</title>
-    <link>//learn.koding.com/contribute/basic</link>
+    <title>Author a guide</title>
+    <link>//learn.koding.com/contribute</link>
     <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/contribute/basic</guid>
+    <guid isPermaLink="true">//learn.koding.com/contribute</guid>
     <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll go over how to contribute to the Koding University 
-the easy way. We&amp;apos;ll be using Github&amp;apos;s built in editor, to make the 
-forking &amp;amp; merging process easy. If you&amp;apos;re unfamiliar with Git, but you 
-still want to contribute to Learn, this is the guide for you. So, lets 
-get started!
-  Edit on Github Each Koding guide comes with a simple &amp;quot;Edit this on Github&amp;quot; link. This 
-link directs you back to a file editor on Github. Github will 
-automatically fork the repo if you have not yet, and even create a branch 
-so that your eventual pull request does not cause any unintended 
-contributions. Lets look at how this works.
-First up, find the guide that you want to edit, and look for the 
-Improve this Guide button at the bottom of all guides.
+    <description>In this guide series we will go over Writing and Editing guides for Koding 
+University. We will cover every step of the process, but basic Git, 
+Github, and Markdown knowledge will be very useful.
+If you already know git, github, and markdown, here is the simple set of 
+tasks you&amp;apos;ll need to do.
 
-  Fork the Repository If you have not contributed before you likely do not have the repository 
-forked yet. Press the green button seen below, and Github will fork the 
-repository for you.
+Review the Style Guidelines
+Fork KDLearn
+Clone your forked repo
+Find or create your files, Make your markdown edits
+Commit and push your changes to your repo
+Make a pull request of your changes, against the KDLearn Repo
 
-  Make your Edits After forking, or if you already had Koding University Forked, you&amp;apos;ll be 
-presented with a text editor for the guide that you chose to edit. From 
-here, look through the guide and make your edits as you desire.
-
-Don&amp;apos;t forget that there is a preview tab as well. The guide will look 
-slightly different on Github than on Koding University; but because 
-everything is formatted in Markdown you can preview it Github to ensure 
-the correctness of your markdown syntax.
-  Propose File Changes After you have made your edits to the document, scroll down and enter a 
-title and description for the edits you&amp;apos;ve made. After you&amp;apos;re satisfied, 
-press Propose file change.
-
-This will create a new branch of your Fork and store your changes into 
-that branch. To repeat, your changes have been added to your Fork, 
-not to the official Koding University repository yet. To do that, you 
-need to create a Pull Request.
-  Create Pull Request A pull request lets Koding Staff review and merge your changes into the 
-official repository. To do that, after proposing your file changes you 
-will see a page like the one below.
-
-This is your branch, on your forked repository. If you press the Create 
-Pull Request button, your changes in that branch will be sent to the 
-official repository to be reviewed and merged in.
-This is it! You&amp;apos;ve gone from the guide on University, to editing it and 
-submitting your changes for review, all without leaving your browser or 
-using any complex Git commands.
-  Creating a New Guide The above process is nice and simple, but there&amp;apos;s one core thing missing. 
-We didn&amp;apos;t create a guide, we only edited a guide. What if we want to 
-create a new guide? Luckily this Basic workflow also works with new 
-guides! Lets go over that real quick.
-First, click here. That link will send you to the Github 
-editor with no file loaded. You can write in the editor, add a file name, 
-and propose changes just like the above instructions. Remember to name 
-your file with the .md extension, and adhere to the 
-Guidelines.
-Because you&amp;apos;re creating a new file though, you want to make sure and add 
-the proper metadata to the file. Copy the following code, and place it 
-into the editor.
----
-author: Your Name
-username: yourUsername
-date: 2014-07-31
-categories: [nginx]
----
-
-Fill in Your Name with your name, and yourUsername with your Koding 
-Username. The date field should be formatted in YYYY-MM-DD format, and 
-the categories list is just a comma separated list of strings.
-
-Once that&amp;apos;s all taken care of, start writing your guide! Once you&amp;apos;re 
-done, follow the Propose and Pull Request instructions above, as they are 
-identical.
-You should note that with this method, you cannot add images to the 
-repository. For that to work, have a look at the next section which uses 
-Koding&amp;apos;s Editor and Git to make changes to this Koding University.
+If you need more in depth instructions than that, please continue with 
+this series below. Thanks!
 </description>
   </item>
   
@@ -1471,6 +1389,58 @@ you can edit that field.
 
 
 
+</description>
+  </item>
+  
+  <item>
+    <title>Author a guide: Previewing</title>
+    <link>//learn.koding.com/contribute/previewing</link>
+    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/contribute/previewing</guid>
+    <author>Team Koding</author>
+    <description>While you shouldn&amp;apos;t need to preview your guides, since Markdown is 
+designed to be human friendly in the source, if you insist you can 
+preview your guides as they are on Koding University. This guide will go 
+over that process. Note that this will require a bit of developer 
+know-how, so be prepared to get your hands dirty. Lets get started!
+  Requirements You will need a working NodeJS installation to compile the Koding 
+University source. If you do not, visit the NodeJS downloads 
+page and grab the installer.
+  Installation With a working NodeJS installation, we need to install the KU 
+dependencies, as well as a global installation of the GulpJS. This can be 
+done with the following code:
+npm install -g gulp
+cd .metalsmith
+npm install
+  Building With Gulp installed, simply run the following command, to compile the 
+entire project into HTML.
+(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
+cd .metalsmith
+gulp
+The .metalsmith/build directory will contain all of the compiled html, 
+css, and any static resources (such as images/etc) from the markdown 
+directory.
+Compiling can take 1-2 minutes, so be patient.
+  Previewing If you want to preview the compiled site, open a new Koding Terminal tab 
+and run the following:
+(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
+cd .metalsmith
+gulp preview
+This will run a small HTTP Server on Port 8000, ie: 
+http://hostname.you.koding.io:8000. Keep this tab open, and in  a 
+different Koding Terminal tab run your gulp command from above.Each time you compile the site, this will show your compiled site.
+  Compiling as you type To have your Markdown compiled as you write your documents, run the 
+following commands:
+(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
+cd .metalsmith
+gulp watch
+This, in combination with the preview command above, will compile the 
+site each time you change the Markdown.
+Note that if you add images for your guide to use, you&amp;apos;ll want to run the 
+full gulp command again.
+And that sums it up! You now know how to contribute to Koding University, 
+in multiple ways. Keep up the awesome work, and we look forward to your 
+contribution!
 </description>
   </item>
   
@@ -1644,6 +1614,87 @@ traction, and will take many more. Choosing which to use can be a hard
 decision for seasoned programmers wanting to write large code bases. You 
 shouldn&amp;apos;t worry about that, currently. Save that for another day :)
 This concludes the getting started with Python guide. Thanks for reading!
+</description>
+  </item>
+  
+  <item>
+    <title>Author a guide: Basic</title>
+    <link>//learn.koding.com/contribute/basic</link>
+    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/contribute/basic</guid>
+    <author>Team Koding</author>
+    <description>In this guide we&amp;apos;ll go over how to contribute to the Koding University 
+the easy way. We&amp;apos;ll be using Github&amp;apos;s built in editor, to make the 
+forking &amp;amp; merging process easy. If you&amp;apos;re unfamiliar with Git, but you 
+still want to contribute to Learn, this is the guide for you. So, lets 
+get started!
+  Edit on Github Each Koding guide comes with a simple &amp;quot;Edit this on Github&amp;quot; link. This 
+link directs you back to a file editor on Github. Github will 
+automatically fork the repo if you have not yet, and even create a branch 
+so that your eventual pull request does not cause any unintended 
+contributions. Lets look at how this works.
+First up, find the guide that you want to edit, and look for the 
+Improve this Guide button at the bottom of all guides.
+
+  Fork the Repository If you have not contributed before you likely do not have the repository 
+forked yet. Press the green button seen below, and Github will fork the 
+repository for you.
+
+  Make your Edits After forking, or if you already had Koding University Forked, you&amp;apos;ll be 
+presented with a text editor for the guide that you chose to edit. From 
+here, look through the guide and make your edits as you desire.
+
+Don&amp;apos;t forget that there is a preview tab as well. The guide will look 
+slightly different on Github than on Koding University; but because 
+everything is formatted in Markdown you can preview it Github to ensure 
+the correctness of your markdown syntax.
+  Propose File Changes After you have made your edits to the document, scroll down and enter a 
+title and description for the edits you&amp;apos;ve made. After you&amp;apos;re satisfied, 
+press Propose file change.
+
+This will create a new branch of your Fork and store your changes into 
+that branch. To repeat, your changes have been added to your Fork, 
+not to the official Koding University repository yet. To do that, you 
+need to create a Pull Request.
+  Create Pull Request A pull request lets Koding Staff review and merge your changes into the 
+official repository. To do that, after proposing your file changes you 
+will see a page like the one below.
+
+This is your branch, on your forked repository. If you press the Create 
+Pull Request button, your changes in that branch will be sent to the 
+official repository to be reviewed and merged in.
+This is it! You&amp;apos;ve gone from the guide on University, to editing it and 
+submitting your changes for review, all without leaving your browser or 
+using any complex Git commands.
+  Creating a New Guide The above process is nice and simple, but there&amp;apos;s one core thing missing. 
+We didn&amp;apos;t create a guide, we only edited a guide. What if we want to 
+create a new guide? Luckily this Basic workflow also works with new 
+guides! Lets go over that real quick.
+First, click here. That link will send you to the Github 
+editor with no file loaded. You can write in the editor, add a file name, 
+and propose changes just like the above instructions. Remember to name 
+your file with the .md extension, and adhere to the 
+Guidelines.
+Because you&amp;apos;re creating a new file though, you want to make sure and add 
+the proper metadata to the file. Copy the following code, and place it 
+into the editor.
+---
+author: Your Name
+username: yourUsername
+date: 2014-07-31
+categories: [nginx]
+---
+
+Fill in Your Name with your name, and yourUsername with your Koding 
+Username. The date field should be formatted in YYYY-MM-DD format, and 
+the categories list is just a comma separated list of strings.
+
+Once that&amp;apos;s all taken care of, start writing your guide! Once you&amp;apos;re 
+done, follow the Propose and Pull Request instructions above, as they are 
+identical.
+You should note that with this method, you cannot add images to the 
+repository. For that to work, have a look at the next section which uses 
+Koding&amp;apos;s Editor and Git to make changes to this Koding University.
 </description>
   </item>
   
@@ -2375,47 +2426,6 @@ This has been a beginner guide from Koding. As always, more Quick Tips and begin
   </item>
   
   <item>
-    <title>How to setup an SSH Tunnel in Unix</title>
-    <link>//learn.koding.com/guides/ssh-tunneling</link>
-    <pubDate>2014-08-9</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/ssh-tunneling</guid>
-    <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll go over what SSH Tunneling is, what it&amp;apos;s used for, 
-and how to set one up on your Koding VM. So, lets get started!
-  What is SSH Tunneling? SSH Tunneling is the process of sending and receiving TCP and UDP packets 
-through an SSH Connection. This enables you to bypass proxies and go 
-directly to your VM, with whatever data/etc that you need.
-  Why would I want to SSH Tunnel? Koding Virtual Machines do not have direct IP access. They proxy http 
-connections from your domain, to the machine itself. Note that only HTTP 
-is proxied. This is why when you SSH into your VM, you set up a special 
-SSH config to run your connection through ssh.koding.com.
-Because of this Proxy, some things you may want to do on Koding, such as 
-connecting a MySQL Database Client directly to your MySQL Server becomes 
-impossible via the username domains.
-To solve this, you use SSH Tunneling to connect to servers directly on 
-your VM, from your local machine. Lets take a look at how this is done.
-  Using a SSH Tunnel First up, make sure you have gone through the SSH Guide, and 
-can successfully connect to your VM using the steps outlined in that 
-guide. You must have a working SSH connection for this to work.
-Next, run the following command.
-ssh -L 8080:localhost:80 hostname.username.koding.io
-Where hostname is the hostname of your VM, and username is your 
-Koding username.
-After running this command, you&amp;apos;ll simply connect to your VM.. it may 
-appear like nothing has happened. But now, like magic, try loading the 
-following URL into your browser.
-http://localhost:8080/
-Just like magic, you can see that your Port 8080 on localhost is 
-returning the same thing as:
-http://hostname.username.koding.io:80
-Awesome! To connect with something like a MySQL Database Client, simply 
-create an SSH tunnel with the appropriate Port on the Virtual 
-Machine, and any port you&amp;apos;d like for your localhost. Then connect to 
-your localhost with your MySQL Client!
-</description>
-  </item>
-  
-  <item>
     <title>Enable PHP mail() function</title>
     <link>//learn.koding.com/guides/enable-php-mail-function</link>
     <pubDate>"2014-07-12T00:00:00.000Z"</pubDate>
@@ -2485,42 +2495,6 @@ certainly be different than what was used in this example.
   </item>
   
   <item>
-    <title>Where is my Web Server Root?</title>
-    <link>//learn.koding.com/guides/where-is-my-webserver-root</link>
-    <pubDate>"2014-07-09T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/where-is-my-webserver-root</guid>
-    <author>Team Koding</author>
-    <description>Koding VMs come with Apache preconfigured and serve a sample site to get you 
-started. The files for this site are found in what is typically called your 
-Web Server Root. This is the directory that Apache is serving up files from, 
-and it is located within your Home directory, under the Web directory. The 
-full path being:
-/home/username/Web
-Replace username with your username.
-You can modify the contents of this directory with the Koding 
-Terminal, or the Ace Editor. In this example, we&amp;apos;ll use Ace 
-to browse the files with the FileTree.
-First, open up Ace. In the left hand side you&amp;apos;ll see a FileTree, with a 
-directory called Web. Double click the Web folder to expand it. Your FileTree 
-should look something like this:
-
-Those files are a series of example pages, and they&amp;apos;re being served by Apache 
-on your Koding Domain. You can view this site by visiting your Koding Domain, 
-at:
-http://hostname.username.koding.io
-Where username is your Koding username. You should see something like this:
-
-You&amp;apos;ll notice that the PHP, Python, Perl, and Ruby links are actually files 
-being generated from that language. As an example, the python.py file is 
-being served up by Apache, with the aid of Apache&amp;apos;s mod_python module. This 
-serves to illustrate that this is a real Apache server, and you can use it 
-just like you expect.
-You should now understand where your Web Server Root is, and how to access it 
-from the Web to develop and share your web applications. Happy Koding!
-</description>
-  </item>
-  
-  <item>
     <title>Elixir on Koding</title>
     <link>//learn.koding.com/guides/elixir-on-koding</link>
     <pubDate>"2014-07-09T00:00:00.000Z"</pubDate>
@@ -2586,6 +2560,42 @@ Elixir is now updated!
   </item>
   
   <item>
+    <title>Where is my Web Server Root?</title>
+    <link>//learn.koding.com/guides/where-is-my-webserver-root</link>
+    <pubDate>"2014-07-09T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/where-is-my-webserver-root</guid>
+    <author>Team Koding</author>
+    <description>Koding VMs come with Apache preconfigured and serve a sample site to get you 
+started. The files for this site are found in what is typically called your 
+Web Server Root. This is the directory that Apache is serving up files from, 
+and it is located within your Home directory, under the Web directory. The 
+full path being:
+/home/username/Web
+Replace username with your username.
+You can modify the contents of this directory with the Koding 
+Terminal, or the Ace Editor. In this example, we&amp;apos;ll use Ace 
+to browse the files with the FileTree.
+First, open up Ace. In the left hand side you&amp;apos;ll see a FileTree, with a 
+directory called Web. Double click the Web folder to expand it. Your FileTree 
+should look something like this:
+
+Those files are a series of example pages, and they&amp;apos;re being served by Apache 
+on your Koding Domain. You can view this site by visiting your Koding Domain, 
+at:
+http://hostname.username.koding.io
+Where username is your Koding username. You should see something like this:
+
+You&amp;apos;ll notice that the PHP, Python, Perl, and Ruby links are actually files 
+being generated from that language. As an example, the python.py file is 
+being served up by Apache, with the aid of Apache&amp;apos;s mod_python module. This 
+serves to illustrate that this is a real Apache server, and you can use it 
+just like you expect.
+You should now understand where your Web Server Root is, and how to access it 
+from the Web to develop and share your web applications. Happy Koding!
+</description>
+  </item>
+  
+  <item>
     <title>Sync files using Google Drive</title>
     <link>//learn.koding.com/guides/sync-files-google-drive</link>
     <pubDate>"2014-07-08T00:00:00.000Z"</pubDate>
@@ -2613,6 +2623,36 @@ man cron
  Note 2: As per the author of grive, the application will not download any files that are the traditional Google Docs (Spreadsheet, Documents,
 Presentations, etc.). The app will only automatically upload/download any non-native Google Doc formats which include
 code files, text files, images, etc.
+</description>
+  </item>
+  
+  <item>
+    <title>Updating Node.js on your VM</title>
+    <link>//learn.koding.com/guides/updating-nodejs-on-your-vm</link>
+    <pubDate>"2014-06-27T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/updating-nodejs-on-your-vm</guid>
+    <author>Darryl Dias</author>
+    <description>Your Koding VM is powered by Ubuntu 14.04; by default your Koding VM comes pre-installed with Node 0.10.26, the current stable version of Node.js available in the official Ubuntu repository. We can update to the latest stable version of Node.js available for Ubuntu 14.04 by adding the official Node.js PPA to our local sources list and running a dist-upgrade to switch to the latest stable version.
+The Official PPA is updated regularly and is maintained by Chris Lea
+  Instructions Adding the official Node.js PPA
+sudo add-apt-repository ppa:chris-lea/node.js
+
+Updating the local package database and sources list.
+sudo apt-get update
+
+Updating to the latest stable build of Node.js available for Ubuntu 14.04. This will update all the packages that need to update and will also update your Node.js package.
+sudo apt-get dist-upgrade
+
+If you had deleted Node.js from your VM, you can install it by entering the command below. The PPA installs NPM as a part of nodejs and does not require you to install NPM seperately.
+sudo apt-get install nodejs
+
+Check the version of Node.js after installing. 
+node --version
+
+The example output should look like.
+v0.10.33
+
+Now you have the latest stable version of Node.js installed on your VM.
 </description>
   </item>
   
@@ -2655,36 +2695,6 @@ http://hostname.username.koding.io/phpinfo.php
 This page should show you the PHP configuration on your machine. 
 One of the section contains information about Phalcon (search on the page for phalcon by pressing Ctrl + F). 
 If you can see this section, it means that Phalcon has been installed on your machine and you can start using it right away!
-</description>
-  </item>
-  
-  <item>
-    <title>Updating Node.js on your VM</title>
-    <link>//learn.koding.com/guides/updating-nodejs-on-your-vm</link>
-    <pubDate>"2014-06-27T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/updating-nodejs-on-your-vm</guid>
-    <author>Darryl Dias</author>
-    <description>Your Koding VM is powered by Ubuntu 14.04; by default your Koding VM comes pre-installed with Node 0.10.26, the current stable version of Node.js available in the official Ubuntu repository. We can update to the latest stable version of Node.js available for Ubuntu 14.04 by adding the official Node.js PPA to our local sources list and running a dist-upgrade to switch to the latest stable version.
-The Official PPA is updated regularly and is maintained by Chris Lea
-  Instructions Adding the official Node.js PPA
-sudo add-apt-repository ppa:chris-lea/node.js
-
-Updating the local package database and sources list.
-sudo apt-get update
-
-Updating to the latest stable build of Node.js available for Ubuntu 14.04. This will update all the packages that need to update and will also update your Node.js package.
-sudo apt-get dist-upgrade
-
-If you had deleted Node.js from your VM, you can install it by entering the command below. The PPA installs NPM as a part of nodejs and does not require you to install NPM seperately.
-sudo apt-get install nodejs
-
-Check the version of Node.js after installing. 
-node --version
-
-The example output should look like.
-v0.10.33
-
-Now you have the latest stable version of Node.js installed on your VM.
 </description>
   </item>
   
@@ -3122,22 +3132,6 @@ account to various services.
   </item>
   
   <item>
-    <title>Using Tmux on Koding</title>
-    <link>//learn.koding.com/guides/using-tmux-on-koding</link>
-    <pubDate>"2014-05-13T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/using-tmux-on-koding</guid>
-    <author>Team Koding</author>
-    <description>In this Tmux FAQ we will address an issue people have had with Tmux on Koding. It&amp;apos;s easy to deal with, but not an obvious workaround.
-  Odd Behavior When you first try and install and run tmux on Koding, it seems to load properly, but many commands just don&amp;apos;t seem to work. Some, like C-b c (used to create a new window) even force close the Terminal. What is going on?
-Well, Koding uses GNU Screen to help reconnect your Terminal sessions after connection issues. Koding&amp;apos;s preconfigured Screen is set to use C-b as it&amp;apos;s own prefix key. So when you run and use Tmux, and attempt to use C-b commands, you are actually sending commands to Screen. This explains the general odd behavior, as things like C-b c in Screen mean &amp;quot;close&amp;quot;, so you unintentionally logout of screen and close your Terminal.
-  The Solution The solution is quite simple, rebind your Tmux Prefix key. This can be done by creating a ~/.tmux.conf file and placing the following command into it:
-set-option -g prefix C-a
-Where C-a is Control key. This sets it to Control-a, a popular alternative for Tmux users (and the traditional Screen PREFIX). You can of course bind it to whatever you want. Once you have your PREFIX rebound, killall tmux instances and reopen, and it will run just like you expect.. just remember to use Control-a as your PREFIX :)
-  But i love C-b! Unfortunately, this is the way it has to be for now. A guru developer over at Koding did mention that they would like to make their version of screen not use any keybinds, so that it does not block your input at all. So, think of this alternate bind as a short-term workaround, until this &amp;quot;issue&amp;quot; is resolved.
-</description>
-  </item>
-  
-  <item>
     <title>Octopress Installation for Beginners</title>
     <link>//learn.koding.com/guides/octopress-for-beginners</link>
     <pubDate>"2014-04-13T00:00:00.000Z"</pubDate>
@@ -3163,38 +3157,6 @@ ln -s ~/octopress/public ~/Web
 work!
   All in the browser As always, with Koding, this process was entirely in the browser. No localhost modifications needed, and no worries about installing something incorrectly and mucking up your OS. There is no localhost hassle with Koding!
 This has been a getting started tutorial from Koding, with more coming soon. Stay tuned!
-</description>
-  </item>
-  
-  <item>
-    <title>PrestaShop Installation for Beginners</title>
-    <link>//learn.koding.com/guides/prestashop-installation-for-beginners</link>
-    <pubDate>"2014-04-09T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/prestashop-installation-for-beginners</guid>
-    <author>Team Koding</author>
-    <description>In this article we&amp;#x2019;ll go over the basics of setting up PrestaShop.
-  About PrestaShop A lot of retail stores these days are turning to online shops. It gives them a different power over the products they are selling and in the era of smart gadgets, consumers can now buy almost anything online.
-There are a lot of e-commerce solutions, but a there is one that stands out, PrestaShop. You may have heard of it, because it&amp;apos;s all over the news. It&amp;apos;s one of the most reliable and flexible Open-source e-commerce software out there and with a team of 70 developers and with a community that has more than 500.000 members, it sure is a platform worth developing for.
-Luckily you can do that on Koding with ease. So how do you setup a PrestaShop shop on Koding? You just follow the next few simple steps and you&amp;apos;re good to go.
-  Setting up PrestaShop   Step 1. Open up a Terminal window in Koding and type the following commands to get you started. We navigate to our Web folder and then we try to get the latest version of PrestaShop available on their website. In this case PrestaShop 1.6.0.9 
-cd Web; 
-wget http://www.prestashop.com/download/prestashop_1.6.0.9.zip;
-```
-
-### Step 2.
-
-We unzip the file.
-unzip prestashop_1.6.0.9.zip
-
-### Step 3.
-
-We can now head over to the setup page and begin the installation 
-procedure. Our link is:
-http://[your_vm_hostname].[your_Koding_username].koding.io/prestashop
-```
-All we have to do now is to fill in the required fields to set up the 
-shop.
-And that&amp;apos;s it, three simple steps to set up your e-commerce solution. As always, more Quick Tips and beginner friendly guides from Koding coming soon, so stay tuned!
 </description>
   </item>
   
@@ -3256,6 +3218,165 @@ Have fun!
   </item>
   
   <item>
+    <title>General .htaccess</title>
+    <link>//learn.koding.com/guides/general-htaccess</link>
+    <pubDate>"2014-02-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/general-htaccess</guid>
+    <author>Team Koding</author>
+    <description>Htaccess is a pretty well understood and standard feature among web hosts. Koding&amp;apos;s .htaccess is no different than any other, so the plethora of tutorials and information out there will work perfectly fine on Koding.
+  RewriteEngine &amp;amp; mod_rewrite For the sake of discussion, lets say I have two Koding domains 
+http://username.koding.io and http://my.name.is.username.koding.io.How would I forward the first to the second?
+Htaccess makes this pretty simple. Create a .htaccess file in your Web directory, if you don&amp;apos;t already have one, touch ~/Web/.htaccess &amp;amp;&amp;amp; chmod 644 ~/Web/.htaccess and add the following RewriteRule:
+RewriteEngine On RewriteCond %{HTTP_HOST} ^username.koding.io [NC] 
+RewriteRule ^(.*) http://my.name.is.username.koding.io/$1 [R=301]
+But wait, if we go to http://username.koding.io now we are presented 
+with the following error:
+`\ Internal Server Error
+The server encountered an internal error or misconfiguration and was unable to complete your request.
+Please contact the server administrator, webmaster@localhost and inform them of the time the error occurred, and anything you might have done that may have caused the error.
+More information about this error may be available in the server error log. `\
+The reason for this is that mod_rewrite is not enabled by default. The fix for this is insanely easy, run the following command:
+sudo a2enmod rewrite &amp;amp;&amp;amp; sudo service apache2 restart
+This uses the command a2enmod to enable mod_rewrite, and then restarts 
+apache. Now if we go to http://username.koding.io we are redirected to 
+http://my.name.is.username.koding.io. Yay!
+</description>
+  </item>
+  
+  <item>
+    <title>PrestaShop Installation for Beginners</title>
+    <link>//learn.koding.com/guides/prestashop-installation-for-beginners</link>
+    <pubDate>"2014-04-09T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/prestashop-installation-for-beginners</guid>
+    <author>Team Koding</author>
+    <description>In this article we&amp;#x2019;ll go over the basics of setting up PrestaShop.
+  About PrestaShop A lot of retail stores these days are turning to online shops. It gives them a different power over the products they are selling and in the era of smart gadgets, consumers can now buy almost anything online.
+There are a lot of e-commerce solutions, but a there is one that stands out, PrestaShop. You may have heard of it, because it&amp;apos;s all over the news. It&amp;apos;s one of the most reliable and flexible Open-source e-commerce software out there and with a team of 70 developers and with a community that has more than 500.000 members, it sure is a platform worth developing for.
+Luckily you can do that on Koding with ease. So how do you setup a PrestaShop shop on Koding? You just follow the next few simple steps and you&amp;apos;re good to go.
+  Setting up PrestaShop   Step 1. Open up a Terminal window in Koding and type the following commands to get you started. We navigate to our Web folder and then we try to get the latest version of PrestaShop available on their website. In this case PrestaShop 1.6.0.9 
+cd Web; 
+wget http://www.prestashop.com/download/prestashop_1.6.0.9.zip;
+```
+
+### Step 2.
+
+We unzip the file.
+unzip prestashop_1.6.0.9.zip
+
+### Step 3.
+
+We can now head over to the setup page and begin the installation 
+procedure. Our link is:
+http://[your_vm_hostname].[your_Koding_username].koding.io/prestashop
+```
+All we have to do now is to fill in the required fields to set up the 
+shop.
+And that&amp;apos;s it, three simple steps to set up your e-commerce solution. As always, more Quick Tips and beginner friendly guides from Koding coming soon, so stay tuned!
+</description>
+  </item>
+  
+  <item>
+    <title>EmberJS: A Starting Kit for Beginners</title>
+    <link>//learn.koding.com/guides/emberjs-starting-kit</link>
+    <pubDate>"2014-03-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/emberjs-starting-kit</guid>
+    <author>Team Koding</author>
+    <description>Ambitious applications are the future. The way we interact with a web application will impact our productivity. That&amp;apos;s why in this short tutorial we are going to cover some of the basics of EmberJS.
+  EmberJS: The facts They say that if you use EmberJS you don&amp;apos;t have to reinvent the wheel. Well we say that they are right. EmberJS is built for developers by developers. It&amp;apos;s friendly, fast and definitely a good alternative if you want to build something awesome. And we here at Koding like it when people build awesome stuff, therefor this tutorial is here to help you get started with one of the most on-growing and well-built frameworks out there. Right, now let&amp;apos;s get started on how to set up EmberJS on Koding. 
+  The Steps   Step 1. We open up a new file using your favorite code editor inside Koding, because as you may know, you have Ace pre-installed or maybe you&amp;apos;re a Vim or Emacs individual. For the sake of this tutorial we are going to use the Ace editor. 
+  Step 2. We copy and paste the following code into are newly created file.
+&amp;lt;!doctype html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=utf-8 /&amp;gt; &amp;lt;title&amp;gt;Ember Koding 
+Demo&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;script type=&amp;quot;text/x-handlebars&amp;quot; 
+data-template-name=&amp;quot;index&amp;quot;&amp;gt; &amp;lt;h2&amp;gt;Ember.js on Koding&amp;lt;/h2&amp;gt; &amp;lt;ul&amp;gt; {{#each item 
+in model}} &amp;lt;li&amp;gt;{{item}}&amp;lt;/li&amp;gt; {{/each}} &amp;lt;/ul&amp;gt; &amp;lt;/script&amp;gt; &amp;lt;script 
+src=&amp;quot;//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; 
+&amp;lt;script 
+src=&amp;quot;//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.1.2/handlebars.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; 
+&amp;lt;script 
+src=&amp;quot;//cdnjs.cloudflare.com/ajax/libs/ember.js/1.1.2/ember.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; 
+&amp;lt;script&amp;gt; App = Ember.Application.create({}); App.IndexRoute = 
+Ember.Route.extend({ setupController: function(controller) { 
+controller.set(&amp;apos;content&amp;apos;, [&amp;apos;cyan&amp;apos;, &amp;apos;magenta&amp;apos;, &amp;apos;penguin&amp;apos;, &amp;apos;pie&amp;apos;]); } }); 
+&amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;
+ Ok now that we saved the file and opened up the preview and saw that 
+everything worked as it should let&amp;apos;s explain a bit what is actually 
+happening. First, before everything, we need the following libraries that 
+make our EmberJS app work: jQuery, handlebars and of course emberJS. The 
+app uses handlebars for templating.  After we set up the template and 
+loaded the libraries we need to create the actual app. First we 
+initialize ember and then we use a Router that helps to manage the state 
+of the application and the resources needed as a user navigates the app.In our case set some content using the already created template that was 
+made possible with the help of the handlebars library. And there you have 
+it. A short tutorial on how to use EmberJS on 
+Koding.
+As always, more Quick Tips and beginner friendly guides 
+from Koding coming soon, so stay tuned!
+</description>
+  </item>
+  
+  <item>
+    <title>PyroCMS Setup and Installation for Beginners</title>
+    <link>//learn.koding.com/guides/pyrocms-installation-for-beginners</link>
+    <pubDate>"2014-03-09T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/pyrocms-installation-for-beginners</guid>
+    <author>Team Koding</author>
+    <description>This article will cover the basic steps on how to setup a blog using PyroCMS as the base.
+  What&amp;apos;s PyroCMS? Good question. It&amp;apos;s a really simple, flexible and community driven CMS built with the CodeIgniter PHP framework that has an on-growing community of developers and supporters around it.
+But how do you set up PyroCMS on Koding? Well it&amp;apos;s simple, you just follow the simple tutorial below step by step. After you&amp;apos;ve finished with the tutorial you&amp;apos;ll have a brand new website that runs PyroCMS.
+  Step-by-step PyroCMS   Step 1. Open up your Koding Terminal and type in the following command to get you started. [code]cd Web;[/code]
+  Step 2. Still in the terminal window download the source code like so: [code]wget https://www.pyrocms.com/downloads/v2.2.3[/code] or whatever the latest version you can find on the official website.
+  Step 3. We rename the downloaded file, unzip it and rename the newly created folder. [code] mv v2.2.3 v2.2.3.zip; unzip v2.2.3.zip; mv pyrocms-pyrocms-08759da pyrocms [/code]
+  Step 4. We now can navigate to our newly created folder. We open up a new browser 
+window and type in 
+[code]http://[your-vm-hostname].[your-Koding-username].koding.io/pyrocms[/code] 
+then just follow the steps that show up on the screen to install it.
+Alright then, that was fun. You now have a brand new website that runs PyroCMS.
+This has been a beginner guide from Koding. As always, more Quick Tips and beginner friendly guides coming soon, so stay tuned!
+</description>
+  </item>
+  
+  <item>
+    <title>TogetherJS Setup and Usage for Beginners</title>
+    <link>//learn.koding.com/guides/togetherjs-setup-for-beginners</link>
+    <pubDate>"2014-03-05T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/togetherjs-setup-for-beginners</guid>
+    <author>Team Koding</author>
+    <description>In this article we will go over beginner steps for TogetherJS.
+  What is TogetherJS? TogetherJS is a drop-in collaboration framework. Think of it like easily adding Google Docs to any site. Normally when you program a real time site, you use a framework like SocketIO, SockJS, or Firebase, and it takes a considerable amount of work just to make content sync up between clients. Adding text chat/mouse tracking/voice chat is a lot of additional work that is often outside the scope of your project. TogetherJS takes away that problem. You focus on your application, and TogetherJS can focus on the difficulty of mouse tracking. With just two lines of code, you get all of these features. Easy! 
+  Setting up TogetherJS In the following example, we&amp;apos;ll setup TogetherJS by using a plain html page and the TogetherJS Scripts. 
+And just like that, we have a static page with text chat, voice chat, and mouse tracking built into our html page! And because we used Koding we can share this project with our friends easily. On localhost you would have to run a web server, expose and forward your ports, figure out your ip, and finally share it with a friend. Koding saves you that localhost-hassle, and makes this a one-step process. Just share your domain and you&amp;apos;re done. 
+</description>
+  </item>
+  
+  <item>
+    <title>Getting Started</title>
+    <link>//learn.koding.com/guides/getting-started</link>
+    <pubDate>"2014-02-07T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started</guid>
+    <author>Team Koding</author>
+    <description>In this Getting Started series, lets go over some basic usage of Koding. We&amp;apos;ll 
+go over each section, and by the end you should have a basic understanding how 
+where everything is located in Koding. 
+</description>
+  </item>
+  
+  <item>
+    <title>Using Tmux on Koding</title>
+    <link>//learn.koding.com/guides/using-tmux-on-koding</link>
+    <pubDate>"2014-05-13T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/using-tmux-on-koding</guid>
+    <author>Team Koding</author>
+    <description>In this Tmux FAQ we will address an issue people have had with Tmux on Koding. It&amp;apos;s easy to deal with, but not an obvious workaround.
+  Odd Behavior When you first try and install and run tmux on Koding, it seems to load properly, but many commands just don&amp;apos;t seem to work. Some, like C-b c (used to create a new window) even force close the Terminal. What is going on?
+Well, Koding uses GNU Screen to help reconnect your Terminal sessions after connection issues. Koding&amp;apos;s preconfigured Screen is set to use C-b as it&amp;apos;s own prefix key. So when you run and use Tmux, and attempt to use C-b commands, you are actually sending commands to Screen. This explains the general odd behavior, as things like C-b c in Screen mean &amp;quot;close&amp;quot;, so you unintentionally logout of screen and close your Terminal.
+  The Solution The solution is quite simple, rebind your Tmux Prefix key. This can be done by creating a ~/.tmux.conf file and placing the following command into it:
+set-option -g prefix C-a
+Where C-a is Control key. This sets it to Control-a, a popular alternative for Tmux users (and the traditional Screen PREFIX). You can of course bind it to whatever you want. Once you have your PREFIX rebound, killall tmux instances and reopen, and it will run just like you expect.. just remember to use Control-a as your PREFIX :)
+  But i love C-b! Unfortunately, this is the way it has to be for now. A guru developer over at Koding did mention that they would like to make their version of screen not use any keybinds, so that it does not block your input at all. So, think of this alternate bind as a short-term workaround, until this &amp;quot;issue&amp;quot; is resolved.
+</description>
+  </item>
+  
+  <item>
     <title>CakePHP Installation for Beginners</title>
     <link>//learn.koding.com/guides/cakephp-for-beginners</link>
     <pubDate>"2014-04-01T00:00:00.000Z"</pubDate>
@@ -3291,6 +3412,113 @@ Configure::write(&amp;apos;Security.cipherSeed&amp;apos;, &amp;apos;768593096574
 in your browser, making sure to use your own username in the username 
 url, and you&amp;apos;ll see Cake up and running! 
   All in the browser Thanks to Koding, our only requirement to get cake downloaded and running, in the browser. No special OS installation steps, no need to set up your own LAMP stack, no localhost hassle. This has been a beginner guide for CakePHP from Koding and we have more tutorials and guides on the way soon. Stay tuned!
+</description>
+  </item>
+  
+  <item>
+    <title>What is Koding?</title>
+    <link>//learn.koding.com/guides/what-is-koding</link>
+    <pubDate>"2014-02-17T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/what-is-koding</guid>
+    <author>Team Koding</author>
+    <description>Koding is an online cloud-based development environment with the goal of 
+simplifying worldwide development and providing free computation and 
+development to everyone. It does this by offering Free VMs for development 
+to anyone. The Koding VMs provide you with a real Ubuntu OS, with a real 
+Terminal, and allow you to work on real code. It can be any language, be 
+it Python, PHP, C++, C, or anything else, it doesn&amp;apos;t matter. Even better, 
+the VMs are hosted on the cloud, so they&amp;apos;re accessible from just about anywhere 
+in the world.
+  Is Koding a Production Host? Koding is first and foremost a Development Environment, and not a Production 
+Host. All features have been tailored with this in mind and evidence of this is 
+reflected in all of the features you see implemented. Lets highlight some of 
+these items.
+  VMs Shutdown After Logout Approximately 60 minutes after you log out, your Free VMs will shut down. Why? 
+Koding&amp;apos;s development focus is not centered around hosting your blog/site. 
+Koding is here to enable you and to help you make great things. Attempting to 
+be yet another host in a sea of perfectly capable production hosts won&amp;apos;t help 
+achieve that goal.
+Another benefit of this system, is that it helps avoid security concerns that 
+collectively harm us all. There are plenty of users out there who have used 
+Koding to host dangerous applications. Phishing, scamming, spamming, all of it. 
+This directly harms all of us, by giving Koding a bad name, wasting resources, 
+and hindering a service that we are trying to be productive with. It&amp;apos;s no 
+surprise that restrictions need to be put in place to inhibit this behavior, 
+for the benefit of everyone.
+However, if you upgrade your plan, you will have at least one Always-On VM. The 
+number of Always-On VMs you have depends on which plan you upgrade to. More 
+information about these plans can be found here. 
+You can upgrade your plan from the Pricing page. 
+Always-On VMs will never shut down automatically.
+  CPU Bursts vs Sustained Koding wants to help you get work done, and get work done fast. Things like 
+compilers have a lot to compute, but in short sporadic bursts. 
+Koding&amp;apos;s CPU allocation has been tailored with this in mind. It wants you to 
+compute what you need, as soon as possible. It is not designed for a long 
+running process that expects heavy and consistent usage, such as a 
+Minecraft server.
+  Raw Ubuntu OS These days a lot of hosting platforms are heavily optimized for their specific 
+niche(s). They streamline the process of hosting your language or application 
+style of choice, which gives you added stability and performance gains. 
+Examples of this are the plethora of Apache-PHP hosts, Nodejitsu, Google App 
+Engine, Heroku, AppFog, and a nearly limitless amount of others.
+Why is this? Well, production hosting is hard, and there are obvious benefits 
+to letting someone else do it. The idea of uploading your php site to a 
+standard php host is easy. The idea of buying a dedicated server, setting up 
+Apache, firewalls, updates, etc, just seems a bit crazy in comparison. On top 
+of that, what about load balancing and CDNs? Doing it all yourself can be hard.
+Well, Koding gives you that raw machine. It&amp;apos;s not trying to make production 
+hosting for you, but rather it&amp;apos;s giving you a completely open and powerful 
+environment to make stuff! So by all means make your Wordpress blog on 
+Koding, and if you really want to host it on Koding, upgrade your plan to 
+include an Always-On VM. Just be aware of the design goals.
+</description>
+  </item>
+  
+  <item>
+    <title>AngularJS Step-by-Step Setup</title>
+    <link>//learn.koding.com/guides/angularjs-step-by-step</link>
+    <pubDate>"2014-03-09T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/angularjs-step-by-step</guid>
+    <author>Team Koding</author>
+    <description>This article is all about AngularJS and how to get you started with it on 
+Koding.
+  AngularJS: What&amp;apos;s it all about. Everything is dynamic these days, or at least in should be. The age of the static documents is slightly fading away and people like to interact with websites and applications in real-time. Queue frameworks that offer dynamism to web apps. These frameworks offer an endless list of possibilities and give developers free reign over how people interact with their application, in real-time. One of the most popular frameworks these days, that is starting to be approached by more and more developers is AngularJS. AngularJS can be used with any application development workflow due to the fact that it&amp;apos;s extensible and because it works well with other libraries. 
+  Setting it up on Koding Ok, but how can we develop a web application in the cloud and preview the 
+result a the same time? It&amp;apos;s easy, we use Koding!Koding&amp;apos;s built-in preview system enables you to preview 
+your progress with a single click. It&amp;apos;s as simple as 1,2,3. So let&amp;apos;s get 
+started then. First we create a new .html file using the Ace editor app, that 
+comes pre-installed with Koding, or any editor you prefer 
+or have installed. The next step is to head over to the AngularJS 
+website and get one of their simple examples. For this 
+tutorial we&amp;apos;re going to use the first tutorial that comes up, a simple &amp;quot;Hello!&amp;quot; 
+example. We copy that and paste it into our file, the one that we created 
+earlier.
+&amp;lt;!doctype html&amp;gt;
+&amp;lt;html ng-app&amp;gt;
+  &amp;lt;head&amp;gt;
+  &amp;lt;script 
+    src=&amp;quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js&amp;quot;&amp;gt;
+  &amp;lt;/script&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;div&amp;gt;
+      &amp;lt;label&amp;gt;Name:&amp;lt;/label&amp;gt;
+      &amp;lt;input type=&amp;quot;text&amp;quot;
+        ng-model=&amp;quot;yourName&amp;quot;
+        placeholder=&amp;quot;Enter a name here&amp;quot;&amp;gt;
+      &amp;lt;hr&amp;gt;
+      &amp;lt;h1&amp;gt;Hello {{yourName}}!&amp;lt;/h1&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+
+We can now save our file and check out the result, by clicking the little 
+&amp;quot;hamburger&amp;quot; menu in the top right corner of Ace editor and then choose Preview.The example we got should display nicely. Go ahead and test to see if it 
+works.  Simple and fun!
+And that&amp;apos;s it. Why not continue and experiment with AngularJS on 
+Koding and see what more cool stuff you can 
+make. As always, more Quick Tips and beginner friendly guides coming 
+soon, so stay tuned!
 </description>
   </item>
   
@@ -3365,220 +3593,43 @@ That is all. If you have any issues setting up WebDav you can drop an email at s
   </item>
   
   <item>
-    <title>AngularJS Step-by-Step Setup</title>
-    <link>//learn.koding.com/guides/angularjs-step-by-step</link>
-    <pubDate>"2014-03-09T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/angularjs-step-by-step</guid>
+    <title>How to setup an SSH Tunnel in Unix</title>
+    <link>//learn.koding.com/guides/ssh-tunneling</link>
+    <pubDate>2014-08-9</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/ssh-tunneling</guid>
     <author>Team Koding</author>
-    <description>This article is all about AngularJS and how to get you started with it on 
-Koding.
-  AngularJS: What&amp;apos;s it all about. Everything is dynamic these days, or at least in should be. The age of the static documents is slightly fading away and people like to interact with websites and applications in real-time. Queue frameworks that offer dynamism to web apps. These frameworks offer an endless list of possibilities and give developers free reign over how people interact with their application, in real-time. One of the most popular frameworks these days, that is starting to be approached by more and more developers is AngularJS. AngularJS can be used with any application development workflow due to the fact that it&amp;apos;s extensible and because it works well with other libraries. 
-  Setting it up on Koding Ok, but how can we develop a web application in the cloud and preview the 
-result a the same time? It&amp;apos;s easy, we use Koding!Koding&amp;apos;s built-in preview system enables you to preview 
-your progress with a single click. It&amp;apos;s as simple as 1,2,3. So let&amp;apos;s get 
-started then. First we create a new .html file using the Ace editor app, that 
-comes pre-installed with Koding, or any editor you prefer 
-or have installed. The next step is to head over to the AngularJS 
-website and get one of their simple examples. For this 
-tutorial we&amp;apos;re going to use the first tutorial that comes up, a simple &amp;quot;Hello!&amp;quot; 
-example. We copy that and paste it into our file, the one that we created 
-earlier.
-&amp;lt;!doctype html&amp;gt;
-&amp;lt;html ng-app&amp;gt;
-  &amp;lt;head&amp;gt;
-  &amp;lt;script 
-    src=&amp;quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js&amp;quot;&amp;gt;
-  &amp;lt;/script&amp;gt;
-  &amp;lt;/head&amp;gt;
-  &amp;lt;body&amp;gt;
-    &amp;lt;div&amp;gt;
-      &amp;lt;label&amp;gt;Name:&amp;lt;/label&amp;gt;
-      &amp;lt;input type=&amp;quot;text&amp;quot;
-        ng-model=&amp;quot;yourName&amp;quot;
-        placeholder=&amp;quot;Enter a name here&amp;quot;&amp;gt;
-      &amp;lt;hr&amp;gt;
-      &amp;lt;h1&amp;gt;Hello {{yourName}}!&amp;lt;/h1&amp;gt;
-    &amp;lt;/div&amp;gt;
-  &amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-
-We can now save our file and check out the result, by clicking the little 
-&amp;quot;hamburger&amp;quot; menu in the top right corner of Ace editor and then choose Preview.The example we got should display nicely. Go ahead and test to see if it 
-works.  Simple and fun!
-And that&amp;apos;s it. Why not continue and experiment with AngularJS on 
-Koding and see what more cool stuff you can 
-make. As always, more Quick Tips and beginner friendly guides coming 
-soon, so stay tuned!
-</description>
-  </item>
-  
-  <item>
-    <title>PyroCMS Setup and Installation for Beginners</title>
-    <link>//learn.koding.com/guides/pyrocms-installation-for-beginners</link>
-    <pubDate>"2014-03-09T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/pyrocms-installation-for-beginners</guid>
-    <author>Team Koding</author>
-    <description>This article will cover the basic steps on how to setup a blog using PyroCMS as the base.
-  What&amp;apos;s PyroCMS? Good question. It&amp;apos;s a really simple, flexible and community driven CMS built with the CodeIgniter PHP framework that has an on-growing community of developers and supporters around it.
-But how do you set up PyroCMS on Koding? Well it&amp;apos;s simple, you just follow the simple tutorial below step by step. After you&amp;apos;ve finished with the tutorial you&amp;apos;ll have a brand new website that runs PyroCMS.
-  Step-by-step PyroCMS   Step 1. Open up your Koding Terminal and type in the following command to get you started. [code]cd Web;[/code]
-  Step 2. Still in the terminal window download the source code like so: [code]wget https://www.pyrocms.com/downloads/v2.2.3[/code] or whatever the latest version you can find on the official website.
-  Step 3. We rename the downloaded file, unzip it and rename the newly created folder. [code] mv v2.2.3 v2.2.3.zip; unzip v2.2.3.zip; mv pyrocms-pyrocms-08759da pyrocms [/code]
-  Step 4. We now can navigate to our newly created folder. We open up a new browser 
-window and type in 
-[code]http://[your-vm-hostname].[your-Koding-username].koding.io/pyrocms[/code] 
-then just follow the steps that show up on the screen to install it.
-Alright then, that was fun. You now have a brand new website that runs PyroCMS.
-This has been a beginner guide from Koding. As always, more Quick Tips and beginner friendly guides coming soon, so stay tuned!
-</description>
-  </item>
-  
-  <item>
-    <title>TogetherJS Setup and Usage for Beginners</title>
-    <link>//learn.koding.com/guides/togetherjs-setup-for-beginners</link>
-    <pubDate>"2014-03-05T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/togetherjs-setup-for-beginners</guid>
-    <author>Team Koding</author>
-    <description>In this article we will go over beginner steps for TogetherJS.
-  What is TogetherJS? TogetherJS is a drop-in collaboration framework. Think of it like easily adding Google Docs to any site. Normally when you program a real time site, you use a framework like SocketIO, SockJS, or Firebase, and it takes a considerable amount of work just to make content sync up between clients. Adding text chat/mouse tracking/voice chat is a lot of additional work that is often outside the scope of your project. TogetherJS takes away that problem. You focus on your application, and TogetherJS can focus on the difficulty of mouse tracking. With just two lines of code, you get all of these features. Easy! 
-  Setting up TogetherJS In the following example, we&amp;apos;ll setup TogetherJS by using a plain html page and the TogetherJS Scripts. 
-And just like that, we have a static page with text chat, voice chat, and mouse tracking built into our html page! And because we used Koding we can share this project with our friends easily. On localhost you would have to run a web server, expose and forward your ports, figure out your ip, and finally share it with a friend. Koding saves you that localhost-hassle, and makes this a one-step process. Just share your domain and you&amp;apos;re done. 
-</description>
-  </item>
-  
-  <item>
-    <title>EmberJS: A Starting Kit for Beginners</title>
-    <link>//learn.koding.com/guides/emberjs-starting-kit</link>
-    <pubDate>"2014-03-02T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/emberjs-starting-kit</guid>
-    <author>Team Koding</author>
-    <description>Ambitious applications are the future. The way we interact with a web application will impact our productivity. That&amp;apos;s why in this short tutorial we are going to cover some of the basics of EmberJS.
-  EmberJS: The facts They say that if you use EmberJS you don&amp;apos;t have to reinvent the wheel. Well we say that they are right. EmberJS is built for developers by developers. It&amp;apos;s friendly, fast and definitely a good alternative if you want to build something awesome. And we here at Koding like it when people build awesome stuff, therefor this tutorial is here to help you get started with one of the most on-growing and well-built frameworks out there. Right, now let&amp;apos;s get started on how to set up EmberJS on Koding. 
-  The Steps   Step 1. We open up a new file using your favorite code editor inside Koding, because as you may know, you have Ace pre-installed or maybe you&amp;apos;re a Vim or Emacs individual. For the sake of this tutorial we are going to use the Ace editor. 
-  Step 2. We copy and paste the following code into are newly created file.
-&amp;lt;!doctype html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=utf-8 /&amp;gt; &amp;lt;title&amp;gt;Ember Koding 
-Demo&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;script type=&amp;quot;text/x-handlebars&amp;quot; 
-data-template-name=&amp;quot;index&amp;quot;&amp;gt; &amp;lt;h2&amp;gt;Ember.js on Koding&amp;lt;/h2&amp;gt; &amp;lt;ul&amp;gt; {{#each item 
-in model}} &amp;lt;li&amp;gt;{{item}}&amp;lt;/li&amp;gt; {{/each}} &amp;lt;/ul&amp;gt; &amp;lt;/script&amp;gt; &amp;lt;script 
-src=&amp;quot;//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; 
-&amp;lt;script 
-src=&amp;quot;//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.1.2/handlebars.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; 
-&amp;lt;script 
-src=&amp;quot;//cdnjs.cloudflare.com/ajax/libs/ember.js/1.1.2/ember.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; 
-&amp;lt;script&amp;gt; App = Ember.Application.create({}); App.IndexRoute = 
-Ember.Route.extend({ setupController: function(controller) { 
-controller.set(&amp;apos;content&amp;apos;, [&amp;apos;cyan&amp;apos;, &amp;apos;magenta&amp;apos;, &amp;apos;penguin&amp;apos;, &amp;apos;pie&amp;apos;]); } }); 
-&amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;
- Ok now that we saved the file and opened up the preview and saw that 
-everything worked as it should let&amp;apos;s explain a bit what is actually 
-happening. First, before everything, we need the following libraries that 
-make our EmberJS app work: jQuery, handlebars and of course emberJS. The 
-app uses handlebars for templating.  After we set up the template and 
-loaded the libraries we need to create the actual app. First we 
-initialize ember and then we use a Router that helps to manage the state 
-of the application and the resources needed as a user navigates the app.In our case set some content using the already created template that was 
-made possible with the help of the handlebars library. And there you have 
-it. A short tutorial on how to use EmberJS on 
-Koding.
-As always, more Quick Tips and beginner friendly guides 
-from Koding coming soon, so stay tuned!
-</description>
-  </item>
-  
-  <item>
-    <title>What is Koding?</title>
-    <link>//learn.koding.com/guides/what-is-koding</link>
-    <pubDate>"2014-02-17T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/what-is-koding</guid>
-    <author>Team Koding</author>
-    <description>Koding is an online cloud-based development environment with the goal of 
-simplifying worldwide development and providing free computation and 
-development to everyone. It does this by offering Free VMs for development 
-to anyone. The Koding VMs provide you with a real Ubuntu OS, with a real 
-Terminal, and allow you to work on real code. It can be any language, be 
-it Python, PHP, C++, C, or anything else, it doesn&amp;apos;t matter. Even better, 
-the VMs are hosted on the cloud, so they&amp;apos;re accessible from just about anywhere 
-in the world.
-  Is Koding a Production Host? Koding is first and foremost a Development Environment, and not a Production 
-Host. All features have been tailored with this in mind and evidence of this is 
-reflected in all of the features you see implemented. Lets highlight some of 
-these items.
-  VMs Shutdown After Logout Approximately 60 minutes after you log out, your Free VMs will shut down. Why? 
-Koding&amp;apos;s development focus is not centered around hosting your blog/site. 
-Koding is here to enable you and to help you make great things. Attempting to 
-be yet another host in a sea of perfectly capable production hosts won&amp;apos;t help 
-achieve that goal.
-Another benefit of this system, is that it helps avoid security concerns that 
-collectively harm us all. There are plenty of users out there who have used 
-Koding to host dangerous applications. Phishing, scamming, spamming, all of it. 
-This directly harms all of us, by giving Koding a bad name, wasting resources, 
-and hindering a service that we are trying to be productive with. It&amp;apos;s no 
-surprise that restrictions need to be put in place to inhibit this behavior, 
-for the benefit of everyone.
-However, if you upgrade your plan, you will have at least one Always-On VM. The 
-number of Always-On VMs you have depends on which plan you upgrade to. More 
-information about these plans can be found here. 
-You can upgrade your plan from the Pricing page. 
-Always-On VMs will never shut down automatically.
-  CPU Bursts vs Sustained Koding wants to help you get work done, and get work done fast. Things like 
-compilers have a lot to compute, but in short sporadic bursts. 
-Koding&amp;apos;s CPU allocation has been tailored with this in mind. It wants you to 
-compute what you need, as soon as possible. It is not designed for a long 
-running process that expects heavy and consistent usage, such as a 
-Minecraft server.
-  Raw Ubuntu OS These days a lot of hosting platforms are heavily optimized for their specific 
-niche(s). They streamline the process of hosting your language or application 
-style of choice, which gives you added stability and performance gains. 
-Examples of this are the plethora of Apache-PHP hosts, Nodejitsu, Google App 
-Engine, Heroku, AppFog, and a nearly limitless amount of others.
-Why is this? Well, production hosting is hard, and there are obvious benefits 
-to letting someone else do it. The idea of uploading your php site to a 
-standard php host is easy. The idea of buying a dedicated server, setting up 
-Apache, firewalls, updates, etc, just seems a bit crazy in comparison. On top 
-of that, what about load balancing and CDNs? Doing it all yourself can be hard.
-Well, Koding gives you that raw machine. It&amp;apos;s not trying to make production 
-hosting for you, but rather it&amp;apos;s giving you a completely open and powerful 
-environment to make stuff! So by all means make your Wordpress blog on 
-Koding, and if you really want to host it on Koding, upgrade your plan to 
-include an Always-On VM. Just be aware of the design goals.
-</description>
-  </item>
-  
-  <item>
-    <title>Getting Started</title>
-    <link>//learn.koding.com/guides/getting-started</link>
-    <pubDate>"2014-02-07T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started</guid>
-    <author>Team Koding</author>
-    <description>In this Getting Started series, lets go over some basic usage of Koding. We&amp;apos;ll 
-go over each section, and by the end you should have a basic understanding how 
-where everything is located in Koding. 
-</description>
-  </item>
-  
-  <item>
-    <title>General .htaccess</title>
-    <link>//learn.koding.com/guides/general-htaccess</link>
-    <pubDate>"2014-02-02T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/general-htaccess</guid>
-    <author>Team Koding</author>
-    <description>Htaccess is a pretty well understood and standard feature among web hosts. Koding&amp;apos;s .htaccess is no different than any other, so the plethora of tutorials and information out there will work perfectly fine on Koding.
-  RewriteEngine &amp;amp; mod_rewrite For the sake of discussion, lets say I have two Koding domains 
-http://username.koding.io and http://my.name.is.username.koding.io.How would I forward the first to the second?
-Htaccess makes this pretty simple. Create a .htaccess file in your Web directory, if you don&amp;apos;t already have one, touch ~/Web/.htaccess &amp;amp;&amp;amp; chmod 644 ~/Web/.htaccess and add the following RewriteRule:
-RewriteEngine On RewriteCond %{HTTP_HOST} ^username.koding.io [NC] 
-RewriteRule ^(.*) http://my.name.is.username.koding.io/$1 [R=301]
-But wait, if we go to http://username.koding.io now we are presented 
-with the following error:
-`\ Internal Server Error
-The server encountered an internal error or misconfiguration and was unable to complete your request.
-Please contact the server administrator, webmaster@localhost and inform them of the time the error occurred, and anything you might have done that may have caused the error.
-More information about this error may be available in the server error log. `\
-The reason for this is that mod_rewrite is not enabled by default. The fix for this is insanely easy, run the following command:
-sudo a2enmod rewrite &amp;amp;&amp;amp; sudo service apache2 restart
-This uses the command a2enmod to enable mod_rewrite, and then restarts 
-apache. Now if we go to http://username.koding.io we are redirected to 
-http://my.name.is.username.koding.io. Yay!
+    <description>In this guide we&amp;apos;ll go over what SSH Tunneling is, what it&amp;apos;s used for, 
+and how to set one up on your Koding VM. So, lets get started!
+  What is SSH Tunneling? SSH Tunneling is the process of sending and receiving TCP and UDP packets 
+through an SSH Connection. This enables you to bypass proxies and go 
+directly to your VM, with whatever data/etc that you need.
+  Why would I want to SSH Tunnel? Koding Virtual Machines do not have direct IP access. They proxy http 
+connections from your domain, to the machine itself. Note that only HTTP 
+is proxied. This is why when you SSH into your VM, you set up a special 
+SSH config to run your connection through ssh.koding.com.
+Because of this Proxy, some things you may want to do on Koding, such as 
+connecting a MySQL Database Client directly to your MySQL Server becomes 
+impossible via the username domains.
+To solve this, you use SSH Tunneling to connect to servers directly on 
+your VM, from your local machine. Lets take a look at how this is done.
+  Using a SSH Tunnel First up, make sure you have gone through the SSH Guide, and 
+can successfully connect to your VM using the steps outlined in that 
+guide. You must have a working SSH connection for this to work.
+Next, run the following command.
+ssh -L 8080:localhost:80 hostname.username.koding.io
+Where hostname is the hostname of your VM, and username is your 
+Koding username.
+After running this command, you&amp;apos;ll simply connect to your VM.. it may 
+appear like nothing has happened. But now, like magic, try loading the 
+following URL into your browser.
+http://localhost:8080/
+Just like magic, you can see that your Port 8080 on localhost is 
+returning the same thing as:
+http://hostname.username.koding.io:80
+Awesome! To connect with something like a MySQL Database Client, simply 
+create an SSH tunnel with the appropriate Port on the Virtual 
+Machine, and any port you&amp;apos;d like for your localhost. Then connect to 
+your localhost with your MySQL Client!
 </description>
   </item>
   
