@@ -1,0 +1,70 @@
+#!/usr/bin/env fish
+#
+# # Helper
+#
+
+
+if test (count $argv) -lt 1
+  echo "
+Helper command required. See the following command for help
+
+    ./helper help
+"
+else
+  switch $argv[1]
+    case "help"
+      echo "
+Commands:
+  build   # Build kdlearn
+  deploy  # Deploy kdlearn
+  init    # Use once to setup a new repo
+  preview # Run a server to preview on port 8000
+
+Example Deploy:
+  ./helper build
+  ./helper deploy
+"
+      exit 0
+
+    case "build"
+      cd ./build
+      and git pull origin gh-pages
+      and cd ..
+      and gulp
+      or begin
+        set -l err $status
+        echo "Unknown Error. Exit status: $err"
+        exit $err
+      end
+
+    case "deploy"
+      cd ./build
+      and git add .
+      and git commit -m "updated site"
+      and git push
+      or begin
+        set -l err $status
+        echo "Unknown Error. Exit status: $err"
+        exit $err
+      end
+
+    case "init"
+      rm -rf ./build
+      and git clone git@github.com:koding/kdlearn build
+      and cd ./build
+      and git checkout gh-pages
+      and cd ..
+      or begin
+        set -l err $status
+        echo "Unknown Error. Exit status: $err"
+        exit $err
+      end
+
+    case "preview"
+      cd ./build
+      and python -m SimpleHTTPServer
+  end
+end
+
+
+# vim: set filetype=fish:
