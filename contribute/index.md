@@ -9,7 +9,7 @@ series-index: 0
 template: series.toffee
 ---
 
-# Author A Guide
+# Author a guide
 
 In this guide series we will go over Writing and Editing guides for Koding 
 University. We will cover every step of the process, but basic Git, 
