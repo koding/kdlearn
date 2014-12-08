@@ -27,22 +27,22 @@ Open up a Terminal window in [Koding](https://koding.com) and type the following
 ````
 cd Web; 
 wget http://www.prestashop.com/download/prestashop_1.6.0.9.zip;
-```
+````
 
 ### Step 2.
 
 We unzip the file. 
 ````
 unzip prestashop_1.6.0.9.zip
-```
+````
 
 ### Step 3.
 
 We can now head over to the setup page and begin the installation 
 procedure. Our link is: 
-```
+````
 http://[your_vm_hostname].[your_Koding_username].koding.io/prestashop
-```
+````
 All we have to do now is to fill in the required fields to set up the 
 shop.
 
