@@ -24,7 +24,7 @@ Luckily you can do that on [Koding](https://koding.com) with ease. So how do you
 ### Step 1.
 
 Open up a Terminal window in [Koding](https://koding.com) and type the following commands to get you started. We navigate to our Web folder and then we try to get the latest version of PrestaShop available on their website. In this case PrestaShop 1.6.0.9 
-````
+```
 cd Web; 
 wget http://www.prestashop.com/download/prestashop_1.6.0.9.zip;
 ```
@@ -32,7 +32,7 @@ wget http://www.prestashop.com/download/prestashop_1.6.0.9.zip;
 ### Step 2.
 
 We unzip the file. 
-````
+```
 unzip prestashop_1.6.0.9.zip
 ```
 
