@@ -27,7 +27,7 @@ Before you can get started with Github on your Koding VM you need to first setup
 Run the following command, in your Koding Terminal, to install the necessary dependency:
 
 ```
-kpm install ungit
+npm install ungit
 ```
 
 This will install a visually friendly interface for Github, where you will be able to interact with Github and your Koding VM. Think of it as a bridge between Koding and Github.
