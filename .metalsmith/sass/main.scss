@@ -455,11 +455,11 @@ section {
   float: left;
   width: 240px;
 	a {
-		display: block;
-		margin: 0 -20px;
-		padding: 0 20px;
+		// display: block;
+		// margin: 0 -20px;
+		// padding: 0 20px;
 		text-decoration: none;
-		border-right: 2px solid transparent;
+		// border-right: 2px solid transparent;
 		color: #818181;
 		line-height: 18px;
 	}
@@ -503,9 +503,12 @@ section {
       padding: 3px 0 3px 10px;
       line-height: 14px;
       margin-bottom: 4px;
-    }
-    li:hover {
-      background-color: $light-grey;
+      &:hover a {
+        border-bottom-style: dotted;
+        border-width: 1px;
+        border-color: #555;
+        // background-color: $light-grey;
+      }
     }
   }
 }
