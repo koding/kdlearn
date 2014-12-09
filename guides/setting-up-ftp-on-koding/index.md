@@ -7,6 +7,14 @@ categories: [ftp]
 
 # Setting up FTP on Koding
 
+Before you continue reading this guide why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install FTP using just one command:
+
+```
+kpm install ftp
+```
+
+***
+
 In this guide we'll go over how to get your FTP Client connected to your 
 VM's FTP Server. We will be using [FileZilla][filezilla] as the FTP 
 Client, but any client should be able to connect to your FTP Server 

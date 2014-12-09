@@ -8,6 +8,14 @@ template: page.toffee
 
 # How to install phpMyAdmin
 
+Before you continue reading this guide why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install phpMyAdmin using just one command:
+
+```
+kpm install phpmyadmin
+```
+
+***
+
 This guide will walk you through the steps you need to take in order to get **phpMyAdmin** installed on your Koding VM.
 
 Just follow the steps and you should get phpMyAdmin installed in no time.

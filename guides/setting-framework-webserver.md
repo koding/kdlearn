@@ -57,6 +57,14 @@ Voilà! A working Laravel and Artisan webserver.
 
 # MeteorJS
 
+Before you continue reading this guide why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install MeteorJS using just one command:
+
+```
+kpm install meteor
+```
+
+***
+
 Install MeteorJS
 ```
 curl https://install.meteor.com/ | sh

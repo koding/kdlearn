@@ -8,6 +8,14 @@ template: page.toffee
 
 # How to install WordPress
 
+Before you continue reading this guide why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install WordPress using just one command:
+
+```
+kpm install wordpress
+```
+
+***
+
 This guide will walk you through the steps required to install WordPress on your Koding VM. We will walk through the steps needed to download, install, configure and eventually run a full WordPress system.
 
 ## WordPress requirements

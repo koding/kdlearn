@@ -6,6 +6,14 @@ categories: [mongodb]
 
 # Installing MongoDB
 
+Before you continue reading this guide why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install MongoDB using just one command:
+
+```
+kpm install mongodb
+```
+
+***
+
 In this short guide we'll explain how to install MongoDB, and modify
 it's configuration to run in a small storage environment. Lets get 
 started!
