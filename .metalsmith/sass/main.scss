@@ -149,10 +149,23 @@ img {
 	height: auto;
   margin: 0 auto;
 }
-.docs-content img {
-	max-width: 600px;
-  max-height: 400px;
-  cursor: pointer;
+.docs-content{
+  img {
+  	max-width: 600px;
+    max-height: 400px;
+    cursor: pointer;
+  }
+  p a {
+    color: $grey;
+    border-bottom-style: dotted;
+    border-color: $grey;
+    border-width: 1px;
+    padding-bottom: 3px;
+    &:hover {
+      text-decoration: none;
+      border-bottom-style: solid;
+    }
+  }
 }
 iframe {
 	max-width: 100%;
@@ -857,7 +870,7 @@ section {
       margin-top:    0;
       margin-bottom: 10px;
       a {
-        color: #555;
+        color: $grey;
         font-weight: 600;
         font-size: 18px;
         text-transform: capitalize;
