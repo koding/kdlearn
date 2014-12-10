@@ -484,8 +484,11 @@ section {
         padding-left: 10px;
         border-left: 4px $dark-grey solid;
       }
-      li.zactive {
-        background-color: $light-grey;
+      li.zactive a {
+        border-bottom-style: dotted;
+        border-width: 1px;
+        border-color: #555;
+        // background-color: $light-grey;
       }
 
     }
