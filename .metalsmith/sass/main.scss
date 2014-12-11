@@ -155,14 +155,26 @@ img {
     max-height: 400px;
     cursor: pointer;
   }
-  p a {
+  a {
     color: $grey;
     border-bottom-style: dotted;
     border-color: $grey;
     border-width: 1px;
     &:hover {
       text-decoration: none;
-      border-bottom-style: solid;
+    }
+  }
+  .guide-button a {
+    border: none;
+  }
+  .tag-list {
+    a {
+      border: none;
+      &:hover {
+        border-bottom-style: dotted;
+        border-color: $grey;
+        border-width: 1px;
+      }
     }
   }
 }
@@ -726,10 +738,10 @@ section {
                     @extend %extend_8;
                     color: $grey;
                     position: relative;
-                    display: block;
-                    &:hover {
-            			color: $color_4;
-            		}
+                    // display: block;
+                    border-bottom-style: dotted;
+                    border-color: $grey;
+                    border-width: 1px;
                 }
                 img {
                     width: 300px;
@@ -807,15 +819,15 @@ section {
             &:hover .readmore a {
                 padding-left: 20px;
             }
-    		.title {
+    		    .title {
                 display: block;
             }
             a {
+                color: $grey;
+                border-bottom-style: dotted;
+                border-color: $grey;
+                border-width: 1px;
                 text-decoration: none;
-                color: $color_0;
-                &:hover {
-                    color: $color_4;
-                }
             }
             .meta {
                 font-style: italic;
