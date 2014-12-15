@@ -28,6 +28,7 @@ Example Deploy:
 
     case "build"
       cd ./build
+      and git checkout .
       and git pull origin gh-pages
       and cd ..
       and gulp
