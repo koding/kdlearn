@@ -17,8 +17,6 @@
       <meta name="keywords" content="#{categories.join ','}">
     :} #}
 		<meta name="description" content="#{description}">
-		<meta name="HandheldFriendly" content="True">
-		<meta name="MobileOptimized" content="320">
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     {# if redirect? {:
       <meta http-equiv="refresh" content="0; url=#{redirect}">
@@ -68,5 +66,7 @@
     <link rel="stylesheet" href="/css/vendor.css?#{Math.floor(Math.random()*1000)}" />
     <!-- Main CSS -->
     <link rel="stylesheet" href="/css/main.css?#{Math.floor(Math.random()*1000)}" />
+    <!-- RWD CSS -->
+    <link rel="stylesheet" href="/css/rwd.css?#{Math.floor(Math.random()*1000)}" />
 	</head>
 	<body>
