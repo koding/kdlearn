@@ -25,14 +25,22 @@
 		}
 		.topSearchBox {
 			width: 305px;
-			margin-left: -160px;
-			z-index: 10;
 			input {
 				padding: 5px 10px;
 			}
 		}
 	}
 	header {
+		nav {
+			.topSearchBox {
+				width: 305px;
+				margin-left: -160px;
+				z-index: 10;
+				input {
+					padding: 5px 10px;
+				}
+			}
+		}
 		>.container {
 			width: 300px;
 		}
