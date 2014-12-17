@@ -86,8 +86,48 @@
 				img {
 					max-width: 240px;
 				}
+				.tag-list {
+					.tag-name {
+						font-size: 1.5em;
+					}
+					li {
+						margin-bottom: 20px;
+					}
+					a {
+						font-size: 1.3em;
+					}
+				}
 			}
 		}
+	}
+	.guides-intro {
+		margin-bottom: 30px;
+		p {
+			width: 300px;
+		}
+	}
+	#page-guides {
+		>ul {
+			-webkit-column-count: 1;
+			-moz-column-count: 1;
+			column-count: 1;
+			margin-top: 0;
+			font-size: 1em;
+		}
+	}
+	.listing #page-videos ul li {
+		display: block;
+		width: 240px;
+		padding: 10px 0 30px 0;
+		margin: 0 30px;
+	}
+	.guide-button {
+		display: block;
+		margin-bottom: 10px;
+		font-size: 1em;
+	}
+	.rrssb-buttons {
+		width: 300px;
 	}
 }
 
