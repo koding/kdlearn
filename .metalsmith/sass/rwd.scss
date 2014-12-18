@@ -7,11 +7,11 @@
 	nav {
 		.container {
 			.topSearchButton {
-				margin-right: 30px;
+				margin-right: 15px;
 			}
 			.toplinks {
 				margin: 0;
-				padding: 0 18px;
+				padding: 0 12px;
 			}
 			#menu {
 				padding-top: 20px;
@@ -24,7 +24,12 @@
 			}
 		}
 		.topSearchBox {
-			width: 305px;
+			position: absolute;
+			top: 70px;
+			left: 50%;
+			width: 280px;
+			margin-left: -140px;
+			z-index: 10;
 			input {
 				padding: 5px 10px;
 			}
@@ -33,8 +38,8 @@
 	header {
 		nav {
 			.topSearchBox {
-				width: 305px;
-				margin-left: -160px;
+				width: 280px;
+				margin-left: -140px;
 				z-index: 10;
 				input {
 					padding: 5px 10px;
@@ -42,12 +47,12 @@
 			}
 		}
 		>.container {
-			width: 300px;
+			width: 280px;
 		}
 	}
 	.page {
 		>.container {
-			width: 300px;
+			width: 280px;
 			.video-shadow {
 				margin: 80px 0 50px;
 				height: 120px;
@@ -56,7 +61,7 @@
 					display: none;
 				}
 				.main {
-					width: 300px;
+					width: 280px;
 					height: 167px;
 					.youtube-mini .youtube-play {
 						top: 30%;
@@ -69,7 +74,7 @@
 	section {
 		padding: 1em 0;
 		>.container {
-			width: 300px;
+			width: 280px;
 			#left-nav {
 				width: 100%;
 				margin: 0;
@@ -87,14 +92,8 @@
 					max-width: 240px;
 				}
 				.tag-list {
-					.tag-name {
-						font-size: 1.5em;
-					}
 					li {
 						margin-bottom: 20px;
-					}
-					a {
-						font-size: 1.3em;
 					}
 				}
 			}
@@ -103,10 +102,11 @@
 	.guides-intro {
 		margin-bottom: 30px;
 		p {
-			width: 300px;
+			width: 280px;
 		}
 	}
-	#page-guides {
+	#page-guides,
+	#authors-page {
 		>ul {
 			-webkit-column-count: 1;
 			-moz-column-count: 1;
@@ -127,14 +127,144 @@
 		font-size: 1em;
 	}
 	.rrssb-buttons {
-		width: 300px;
+		width: 280px;
+		height: auto;
 	}
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) { 
-
-
+@media (min-width: 480px) and (max-width: 768px) { 
+	body {
+		background-color: #5c656d !important;
+		background-image: none !important;
+	}
+	nav {
+		.container {
+			.topSearchButton {
+				margin-right: 15px;
+			}
+			.toplinks {
+				margin: 0;
+				padding: 0 12px;
+			}
+			#menu {
+				padding-top: 20px;
+				width: 100%;
+				li {
+					width: 50%;
+					display: inline-block;
+					margin-right: 0;
+					padding-bottom: 10px;
+				}
+			}
+		}
+		.topSearchBox {
+			position: absolute;
+			top: 70px;
+			left: 50%;
+			width: 400px;
+			margin-left: -200px;
+			z-index: 10;
+			input {
+				padding: 5px 10px;
+			}
+		}
+	}
+	header {
+		nav {
+			.topSearchBox {
+				width: 400px;
+				margin-left: -200px;
+				z-index: 10;
+				input {
+					padding: 5px 10px;
+				}
+			}
+		}
+		>.container {
+			width: 400px;
+		}
+	}
+	.page {
+		>.container {
+			width: 400px;
+			.video-shadow {
+				margin: 80px 0 50px;
+				height: 120px;
+				#shadow-right,
+				#shadow-left {
+					display: none;
+				}
+				.main {
+					width: 400px;
+					height: 167px;
+					.youtube-mini .youtube-play {
+						top: 30%;
+						right: 35%;
+					}
+				}
+			}
+		}
+	}
+	section {
+		padding: 1em 0;
+		>.container {
+			width: 400px;
+			#left-nav {
+				width: 100%;
+				margin: 0;
+				float: none;
+				+.docs-content {
+					margin-top: 20px;
+					margin-left: 0;
+				}
+				a {
+					font-size: 1.2em;
+				}
+			}
+			.docs-content {
+				img {
+					max-width: 240px;
+				}
+				.tag-list {
+					li {
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
+	.guides-intro {
+		margin-bottom: 30px;
+		p {
+			width: 400px;
+		}
+	}
+	#page-guides,
+	#authors-page {
+		>ul {
+			-webkit-column-count: 1;
+			-moz-column-count: 1;
+			column-count: 1;
+			margin-top: 0;
+			font-size: 1em;
+		}
+	}
+	.listing #page-videos ul li {
+		display: block;
+		width: 240px;
+		padding: 10px 0 30px 0;
+		margin: 0 30px;
+	}
+	.guide-button {
+		display: block;
+		margin-bottom: 10px;
+		font-size: 1em;
+	}
+	.rrssb-buttons {
+		width: 400px;
+		height: auto;
+	}
 }
 
 /* Portrait tablet to landscape and desktop */
