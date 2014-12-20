@@ -1,7 +1,7 @@
 ---
-author: Granger Lang
-username: glang
-date: 2014-07-31
+author: William
+username: willwac
+date: 2014-12-20
 description: 'Koding with Sublime Text'
 categories: [Sublime Text]
 ---
@@ -12,7 +12,7 @@ This guide will show you how to connect your Koding VM with Sublime Text via SFT
 
 ## What you will need
 
-- Set up SSH on your [Koding](https://koding.com) account: [http://learn.koding.com/guides/ssh-into-your-vm/](http://learn.koding.com/guides/ssh-into-your-vm/)
+- Set up FTP on your [Koding](https://koding.com) account: http://learn.koding.com/guides/setting-up-ftp-on-koding
 - Your [Koding](https://koding.com) username
 - Your [Koding](https://koding.com) VM Hostname
 - [Sublime Text](https://www.sublimetext.com/) 2 or 3
@@ -42,6 +42,8 @@ This guide will show you how to connect your Koding VM with Sublime Text via SFT
 6. Configure your `sftp-config.json` file and save it.
 
   ```
+  // sftp, ftp or ftps
+    "type": "ftp",
   "host": "<hostname>.<username>.koding.io",
   "user": "<username>",
   "password": "<koding_password>",
