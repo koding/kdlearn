@@ -1,12 +1,12 @@
 ---
-title: Upgrading the OS (and other packages) your VM
+title: Updating the OS (and other packages) your VM
 author: Team Koding
 date: 2014-12-21
 categories: [koding]
 template: page.toffee
 ---
 
-# Upgrading the OS on your Koding VM
+# Updating the OS on your Koding VM
 
 This guide will walk you through the process of upgrading the OS, Kernel and core packages on your Koding VM.
 
