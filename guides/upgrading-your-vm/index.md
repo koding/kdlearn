@@ -8,19 +8,20 @@ template: page.toffee
 
 # Upgrading the OS on your Koding VM
 
-This guide will walk you through the process of upgrading the OS on your Koding VM. We will walk
-through the following steps:
-1. upgrading the packages              # Strictly upgrade the current packages
-2. upgrading the distribution/OS       # Install update (new ones)
+This guide will walk you through the process of upgrading the OS, Kernel and core packages on your Koding VM.
+
+We will walk through the following steps:
+1. upgrading the packages (strictly upgrade the current packages)
+2. upgrading the distribution/OS (install newly released packages)
 
 So depending on your need, you can do 1) or 2) or both.
 
-*Note:* Even though we have tested upgrading the VM, some updates may render your VM inaccessible so
+*Note: Even though we have tested upgrading the VM, some updates may render your VM inaccessible so
 please proceed only if you know what you are doing. If you run into problems, you can always 
-re-init your VM or send us a request via [support@koding.com](mailto:support@koding.com)
+re-init your VM or send us a request via [support@koding.com](mailto:support@koding.com).*
 
 
-## A few prep commands
+### A few prep commands
 To get started, log into your Koding account and check what version of the OS and Kernel that
 you currently have by typing the following command in Terminal:
 ```
@@ -30,6 +31,8 @@ this should return you something like this:
 ```
 3.13.0-29-generic #53-Ubuntu SMP Wed Jun 4 21:00:20 UTC 2014
 ```
+Make a note of the kernel version, you can reference it later to ensure that the kernel upgrade
+worked.
 
 You should also take a note of available disk space before you begin to ensure that you have adequate
 space for all the upgrades. To get available disk space, type this command in Terminal:
@@ -58,7 +61,7 @@ sudo apt-get update
 ```
 Note: nothing has been upgraded at this time, just the list of available packages has been updated.
 
-## Upgrading existing packages
+### Upgrading existing packages
 These series of commands will upgrade all _existing_ packages. These will NOT install new packages.
 
 To update all currently installed packages  to their latest levels, issue the following command in
@@ -98,7 +101,7 @@ software packages.
 If you just wanted to upgrade, you can stop now. If you also wish to update your Ubuntu distribution,
  then you can continue to the next section.
  
-## Upgrading your Ubuntu Distribution
+### Upgrading your Ubuntu Distribution
 This command will install new packages that have been released for Ubuntu. As before, please make
 sure that you have re-checked the available disk space before proceeding.
 
@@ -126,8 +129,7 @@ you should see output as the following:
 note that the kernel version has updated. You've just updated your VM to the latest Linux
 kernel!
 
-## If something goes wrong
+### If something goes wrong
 Your Koding VM can easily be reinitialized to our official version (the version you got when you 
 made a new Koding account) so if all these upgrades leave you with an unusable VM, try [reinitializing
 your VM back to its original state](http://learn.koding.com/faq/vm-reinit/).
-
