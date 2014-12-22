@@ -47,6 +47,20 @@ In order to install a framework or program you need to provide the above command
 kpm install <name>
 ```
 
+## Available packages
+
+Bellow is a list of the current available packages that can be installed using the `kpm` command.
+
+1. [FTP](http://learn.koding.com/guides/setting-up-ftp-on-koding)
+2. [MeteorJS](http://learn.koding.com/guides/setting-framework-webserver/#meteorjs)
+3. [mySQL](http://learn.koding.com/guides/installing-mysql)
+4. [MongoDB](http://learn.koding.com/guides/install-mongodb)
+5. [phpMyAdmin](http://learn.koding.com/guides/install-phpmyadmin)
+6. [Ungit](http://learn.koding.com/guides/using-github)
+7. [WordPress](http://learn.koding.com/guides/installing-wordpress)
+
+The above list will be updated periodically to include more packages, that you can use on your VM.
+
 KPM is fully extensible so if you want to contribute, you can fork the project on Github and add your own installers for the Koding community!
 
 If we are missing any packages and frameworks that you would like KPM to be able to handle, please let us know via email at support@koding.com.
