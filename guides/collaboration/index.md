@@ -59,9 +59,10 @@ ever happen!
 This is available to the host if they want to remove someone from a shared session without ending
 the session.
 
+![Collaboration 1](watch-kick.png)
+
 ### Do sessions "auto-close"?
 Generally, we recommend that you exit/close your sessions yourself. However, there are situations when
 you cannot close/end your session (e.g. browser crash). In such cases, you have up to one (1) minute
 to reconnect otherwise at the end of a minute, all sessions are auto-terminated.
 
-![Collaboration 1](watch-kick.png)
