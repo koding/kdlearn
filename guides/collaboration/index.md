@@ -14,8 +14,8 @@ team, students, peers or friends. When you enable Collaboration, you are effecti
 virtual machine (VM) with those whom you invite into the sharing session. The session remains active
 until you hit "End Session". Every person you share a session with requires a Koding account (free or paid).
 
-Note: Since the user(s) with whom you share your session have access to all the files on your VM, make 
-sure that you are sharing with people that you know.
+_Note: Since the user(s) with whom you share your session have access to all the files on your VM, make 
+sure that you are sharing with people that you know._
 
 ![Collaboration 1](otheruser.png)
 
@@ -58,5 +58,10 @@ ever happen!
 ### What does "Kick" do?
 This is available to the host if they want to remove someone from a shared session without ending
 the session.
+
+### Do sessions "auto-close"?
+Generally, we recommend that you exit/close your sessions yourself. However, there are situations when
+you cannot close/end your session (e.g. browser crash). In such cases, you have up to one (1) minute
+to reconnect otherwise at the end of a minute, all sessions are auto-terminated.
 
 ![Collaboration 1](watch-kick.png)
