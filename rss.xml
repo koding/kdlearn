@@ -595,6 +595,58 @@ guide.
   </item>
   
   <item>
+    <title>A guide to Docker</title>
+    <link>//learn.koding.com/guides/what-is-docker</link>
+    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/what-is-docker</guid>
+    <author>Team Koding</author>
+    <description>Docker is a platform that helps developers build apps in whatever language they feel comfortable using and using any toolchain they want. Using Docker developers can build, ship and run distributed applications because it enables them to quickly put together an app by eliminating the stress between development, QA and production environments.
+A developer that uses Docker can run his / hers app anywhere without the fear of it not performing as it should.
+Apps that are built using Docker are completely portable and can run anywhere.
+  Docker apps Anyone can get started with Docker by checking out one of the 13,000+ apps that are available in the Docker Hub. You can get started working on WordPress or a new nodejs project in just a few seconds without the hassle of having to install any other dependencies (other then Docker of course) on your Koding VM.
+  Benefits The difference between a virtualized application and the Docker Engine container is that the first one includes not only the app and the necessary binaries and libraries but it contains the guest OS as well. The later runs as an separate process on the OS and thus it has the resources separation and allocation of a VM but is much more portable.
+  Installing Docker on Koding The version of Ubuntu that is installed on each Koding VM comes with a docker.io package and it should install Docker 0.9.1. 
+We can install Docker on our Koding VM using the following commands:
+
+We update the package list
+
+sudo apt-get update
+
+Install Docker
+
+sudo apt-get install docker.io
+
+We create a link 
+
+sudo ln -sf /usr/bin/docker.io /usr/local/bin/docker
+
+We need to edit the docker file in order to continue
+
+sudo sed -i &amp;apos;$acomplete -F _docker docker&amp;apos; /etc/bash_completion.d/docker.io
+
+And we now execute that file
+
+source /etc/bash_completion.d/docker.io
+
+After that we need to add the Docker repo key to the local keychain
+
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9
+
+The last step is to add the Docker repo to the apt sources list, update and install the lxc-docker package. You can do that using the following commands
+
+sudo sh -c &amp;quot;echo deb https://get.docker.com/ubuntu docker main\
+&amp;gt; /etc/apt/sources.list.d/docker.list&amp;quot;
+sudo apt-get update
+sudo apt-get install lxc-docker
+Note: You can use the below command, that uses curl, for an easier installation process:
+curl -sSL https://get.docker.com/ubuntu/ | sudo sh
+If you made it to this point you can run this command to check if Docker is indeed installed and works properly:
+sudo docker run -i -t ubuntu /bin/bash
+If you have any question or issues please email us at support@koding.com and we&amp;apos;ll gladly help.
+</description>
+  </item>
+  
+  <item>
     <title>Getting Started: File Uploads</title>
     <link>//learn.koding.com/guides/getting-started/file-upload</link>
     <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
@@ -653,58 +705,6 @@ smallfiles=true
 Now use ctrl-x to save the file. After you&amp;apos;ve saved the file, simply 
 restart Mongodb with the following command:
 sudo service mongodb restart
-</description>
-  </item>
-  
-  <item>
-    <title>A guide to Docker</title>
-    <link>//learn.koding.com/guides/what-is-docker</link>
-    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/what-is-docker</guid>
-    <author>Team Koding</author>
-    <description>Docker is a platform that helps developers build apps in whatever language they feel comfortable using and using any toolchain they want. Using Docker developers can build, ship and run distributed applications because it enables them to quickly put together an app by eliminating the stress between development, QA and production environments.
-A developer that uses Docker can run his / hers app anywhere without the fear of it not performing as it should.
-Apps that are built using Docker are completely portable and can run anywhere.
-  Docker apps Anyone can get started with Docker by checking out one of the 13,000+ apps that are available in the Docker Hub. You can get started working on WordPress or a new nodejs project in just a few seconds without the hassle of having to install any other dependencies (other then Docker of course) on your Koding VM.
-  Benefits The difference between a virtualized application and the Docker Engine container is that the first one includes not only the app and the necessary binaries and libraries but it contains the guest OS as well. The later runs as an separate process on the OS and thus it has the resources separation and allocation of a VM but is much more portable.
-  Installing Docker on Koding The version of Ubuntu that is installed on each Koding VM comes with a docker.io package and it should install Docker 0.9.1. 
-We can install Docker on our Koding VM using the following commands:
-
-We update the package list
-
-sudo apt-get update
-
-Install Docker
-
-sudo apt-get install docker.io
-
-We create a link 
-
-sudo ln -sf /usr/bin/docker.io /usr/local/bin/docker
-
-We need to edit the docker file in order to continue
-
-sudo sed -i &amp;apos;$acomplete -F _docker docker&amp;apos; /etc/bash_completion.d/docker.io
-
-And we now execute that file
-
-source /etc/bash_completion.d/docker.io
-
-After that we need to add the Docker repo key to the local keychain
-
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9
-
-The last step is to add the Docker repo to the apt sources list, update and install the lxc-docker package. You can do that using the following commands
-
-sudo sh -c &amp;quot;echo deb https://get.docker.com/ubuntu docker main\
-&amp;gt; /etc/apt/sources.list.d/docker.list&amp;quot;
-sudo apt-get update
-sudo apt-get install lxc-docker
-Note: You can use the below command, that uses curl, for an easier installation process:
-curl -sSL https://get.docker.com/ubuntu/ | sudo sh
-If you made it to this point you can run this command to check if Docker is indeed installed and works properly:
-sudo docker run -i -t ubuntu /bin/bash
-If you have any question or issues please email us at support@koding.com and we&amp;apos;ll gladly help.
 </description>
   </item>
   
@@ -854,10 +854,10 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Koding Virtual Machines Introduction</title>
-    <link>//learn.koding.com/guides/vm-introduction</link>
+    <title>Koding IDE Introduction</title>
+    <link>//learn.koding.com/guides/ide-introduction</link>
     <pubDate>"2014-10-10T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/vm-introduction</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/ide-introduction</guid>
     <author>Team Koding</author>
     <description></description>
   </item>
@@ -872,40 +872,12 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Koding IDE Introduction</title>
-    <link>//learn.koding.com/guides/ide-introduction</link>
+    <title>Koding Virtual Machines Introduction</title>
+    <link>//learn.koding.com/guides/vm-introduction</link>
     <pubDate>"2014-10-10T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/ide-introduction</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/vm-introduction</guid>
     <author>Team Koding</author>
     <description></description>
-  </item>
-  
-  <item>
-    <title>What happens upon upgrade?</title>
-    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
-    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
-    <author>Team Koding</author>
-    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
-Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
-
-Ability to mark your VM(s) as Always-On
-Add more storage to your VM(s)
-
-  Utilizing new resources when upgrading to the Hobbyist Plan Once you have upgraded to Hobbyist, you can mark your VM as an Always-On VM and increase its storage from 3GB to 10GB. To to this, head over to the settings panel for your VM and follow these easy steps:
-
-head over to VM settings (as shown in the image below)
-expand the &amp;quot;More&amp;quot; panel and then the &amp;quot;Advanced&amp;quot; panel
-You will see a new button under the Advanced panel labeled &amp;quot;Resize&amp;quot; (this button only appears for users who have upgraded to the Hobbyist plan and have not yet allocated the 10GB. Once you allocate it, the button will disappear)
-Click the button to initiate resize. Once done, your VM will show 10GB. Verify that using the command df -h /
-
-
-  Utilizing new resources when upgrading to the Developer and Professional Plans Under these plans, you can have a total of up to 3 (for Developer) and 5 (for Professional) VMs, mark any of them as Always-On and allocate 25GB (for Developer) / 50GB (for Professional) of storage amonst them. You will start with the default free VM and it is up to you whether you want to leave it at the default 3GB or delete it so that you can make a new one with a storage allocation that you prefer. To delete a VM, simply go the settings panel of the VM and click the Terminate button (as shown in the attached screen shot).
-
-To create a new VM, click the + icon in the VM list and you will be presented wit the option to create a new VM with a space allocation that is preferable to you (as shown below).
-
-Enjoy the new resources and thanks again for upgrading! If you have any addtional questions regarding upgrades and resources, please send us a support request and we will get back to you as soon as possible.
-</description>
   </item>
   
   <item>
@@ -1083,6 +1055,34 @@ $ ./bin/myuser_crypto_main
 F7FF9E8B7BB2E09B70935A5D785E0CC5D9D0ABF0
 For further examples, you can have a look to the biicode C/C++ documentation and the 
 examples
+</description>
+  </item>
+  
+  <item>
+    <title>What happens upon upgrade?</title>
+    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
+    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
+    <author>Team Koding</author>
+    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
+Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
+
+Ability to mark your VM(s) as Always-On
+Add more storage to your VM(s)
+
+  Utilizing new resources when upgrading to the Hobbyist Plan Once you have upgraded to Hobbyist, you can mark your VM as an Always-On VM and increase its storage from 3GB to 10GB. To to this, head over to the settings panel for your VM and follow these easy steps:
+
+head over to VM settings (as shown in the image below)
+expand the &amp;quot;More&amp;quot; panel and then the &amp;quot;Advanced&amp;quot; panel
+You will see a new button under the Advanced panel labeled &amp;quot;Resize&amp;quot; (this button only appears for users who have upgraded to the Hobbyist plan and have not yet allocated the 10GB. Once you allocate it, the button will disappear)
+Click the button to initiate resize. Once done, your VM will show 10GB. Verify that using the command df -h /
+
+
+  Utilizing new resources when upgrading to the Developer and Professional Plans Under these plans, you can have a total of up to 3 (for Developer) and 5 (for Professional) VMs, mark any of them as Always-On and allocate 25GB (for Developer) / 50GB (for Professional) of storage amonst them. You will start with the default free VM and it is up to you whether you want to leave it at the default 3GB or delete it so that you can make a new one with a storage allocation that you prefer. To delete a VM, simply go the settings panel of the VM and click the Terminate button (as shown in the attached screen shot).
+
+To create a new VM, click the + icon in the VM list and you will be presented wit the option to create a new VM with a space allocation that is preferable to you (as shown below).
+
+Enjoy the new resources and thanks again for upgrading! If you have any addtional questions regarding upgrades and resources, please send us a support request and we will get back to you as soon as possible.
 </description>
   </item>
   
@@ -1449,163 +1449,6 @@ That is all!
   </item>
   
   <item>
-    <title>Author a guide: Previewing</title>
-    <link>//learn.koding.com/contribute/previewing</link>
-    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/contribute/previewing</guid>
-    <author>Team Koding</author>
-    <description>While you shouldn&amp;apos;t need to preview your guides, since Markdown is 
-designed to be human friendly in the source, if you insist you can 
-preview your guides as they are on Koding University. This guide will go 
-over that process. Note that this will require a bit of developer 
-know-how, so be prepared to get your hands dirty. Lets get started!
-  Requirements You will need a working NodeJS installation to compile the Koding 
-University source. If you do not, visit the NodeJS downloads 
-page and grab the installer.
-  Installation With a working NodeJS installation, we need to install the KU 
-dependencies, as well as a global installation of the GulpJS. This can be 
-done with the following code:
-npm install -g gulp
-cd .metalsmith
-npm install
-  Building With Gulp installed, simply run the following command, to compile the 
-entire project into HTML.
-(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
-cd .metalsmith
-gulp
-The .metalsmith/build directory will contain all of the compiled html, 
-css, and any static resources (such as images/etc) from the markdown 
-directory.
-Compiling can take 1-2 minutes, so be patient.
-  Previewing If you want to preview the compiled site, open a new Koding Terminal tab 
-and run the following:
-(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
-cd .metalsmith
-gulp preview
-This will run a small HTTP Server on Port 8000, ie: 
-http://hostname.you.koding.io:8000. Keep this tab open, and in  a 
-different Koding Terminal tab run your gulp command from above.Each time you compile the site, this will show your compiled site.
-  Compiling as you type To have your Markdown compiled as you write your documents, run the 
-following commands:
-(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
-cd .metalsmith
-gulp watch
-This, in combination with the preview command above, will compile the 
-site each time you change the Markdown.
-Note that if you add images for your guide to use, you&amp;apos;ll want to run the 
-full gulp command again.
-And that sums it up! You now know how to contribute to Koding University, 
-in multiple ways. Keep up the awesome work, and we look forward to your 
-contribution!
-</description>
-  </item>
-  
-  <item>
-    <title>Author a guide</title>
-    <link>//learn.koding.com/contribute</link>
-    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/contribute</guid>
-    <author>Team Koding</author>
-    <description>In this guide series we will go over Writing and Editing guides for Koding 
-University. We will cover every step of the process, but basic Git, 
-Github, and Markdown knowledge will be very useful.
-If you already know git, github, and markdown, here is the simple set of 
-tasks you&amp;apos;ll need to do.
-
-Review the Style Guidelines
-Fork KDLearn
-Clone your forked repo
-Find or create your files, Make your markdown edits
-Commit and push your changes to your repo
-Make a pull request of your changes, against the KDLearn Repo
-
-If you need more in depth instructions than that, please continue with 
-this series below. Thanks!
-</description>
-  </item>
-  
-  <item>
-    <title>Author a guide: Basic</title>
-    <link>//learn.koding.com/contribute/basic</link>
-    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/contribute/basic</guid>
-    <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll go over how to contribute to the Koding University 
-the easy way. We&amp;apos;ll be using Github&amp;apos;s built in editor, to make the 
-forking &amp;amp; merging process easy. If you&amp;apos;re unfamiliar with Git, but you 
-still want to contribute to Learn, this is the guide for you. So, lets 
-get started!
-  Edit on Github Each Koding guide comes with a simple &amp;quot;Edit this on Github&amp;quot; link. This 
-link directs you back to a file editor on Github. Github will 
-automatically fork the repo if you have not yet, and even create a branch 
-so that your eventual pull request does not cause any unintended 
-contributions. Lets look at how this works.
-First up, find the guide that you want to edit, and look for the 
-Improve this Guide button at the bottom of all guides.
-
-  Fork the Repository If you have not contributed before you likely do not have the repository 
-forked yet. Press the green button seen below, and Github will fork the 
-repository for you.
-
-  Make your Edits After forking, or if you already had Koding University Forked, you&amp;apos;ll be 
-presented with a text editor for the guide that you chose to edit. From 
-here, look through the guide and make your edits as you desire.
-
-Don&amp;apos;t forget that there is a preview tab as well. The guide will look 
-slightly different on Github than on Koding University; but because 
-everything is formatted in Markdown you can preview it Github to ensure 
-the correctness of your markdown syntax.
-  Propose File Changes After you have made your edits to the document, scroll down and enter a 
-title and description for the edits you&amp;apos;ve made. After you&amp;apos;re satisfied, 
-press Propose file change.
-
-This will create a new branch of your Fork and store your changes into 
-that branch. To repeat, your changes have been added to your Fork, 
-not to the official Koding University repository yet. To do that, you 
-need to create a Pull Request.
-  Create Pull Request A pull request lets Koding Staff review and merge your changes into the 
-official repository. To do that, after proposing your file changes you 
-will see a page like the one below.
-
-This is your branch, on your forked repository. If you press the Create 
-Pull Request button, your changes in that branch will be sent to the 
-official repository to be reviewed and merged in.
-This is it! You&amp;apos;ve gone from the guide on University, to editing it and 
-submitting your changes for review, all without leaving your browser or 
-using any complex Git commands.
-  Creating a New Guide The above process is nice and simple, but there&amp;apos;s one core thing missing. 
-We didn&amp;apos;t create a guide, we only edited a guide. What if we want to 
-create a new guide? Luckily this Basic workflow also works with new 
-guides! Lets go over that real quick.
-First, click here. That link will send you to the Github 
-editor with no file loaded. You can write in the editor, add a file name, 
-and propose changes just like the above instructions. Remember to name 
-your file with the .md extension, and adhere to the 
-Guidelines.
-Because you&amp;apos;re creating a new file though, you want to make sure and add 
-the proper metadata to the file. Copy the following code, and place it 
-into the editor.
----
-author: Your Name
-username: yourUsername
-date: 2014-07-31
-categories: [nginx]
----
-
-Fill in Your Name with your name, and yourUsername with your Koding 
-Username. The date field should be formatted in YYYY-MM-DD format, and 
-the categories list is just a comma separated list of strings.
-
-Once that&amp;apos;s all taken care of, start writing your guide! Once you&amp;apos;re 
-done, follow the Propose and Pull Request instructions above, as they are 
-identical.
-You should note that with this method, you cannot add images to the 
-repository. For that to work, have a look at the next section which uses 
-Koding&amp;apos;s Editor and Git to make changes to this Koding University.
-</description>
-  </item>
-  
-  <item>
     <title>Getting Started with Python</title>
     <link>//learn.koding.com/guides/getting-started-python</link>
     <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
@@ -1878,61 +1721,159 @@ you can edit that field.
   </item>
   
   <item>
-    <title>Using Tmux on Koding</title>
-    <link>//learn.koding.com/guides/using-tmux-on-koding</link>
-    <pubDate>"2014-05-13T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/using-tmux-on-koding</guid>
+    <title>Author a guide: Previewing</title>
+    <link>//learn.koding.com/contribute/previewing</link>
+    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/contribute/previewing</guid>
     <author>Team Koding</author>
-    <description>In this Tmux FAQ we will address an issue people have had with Tmux on Koding. It&amp;apos;s easy to deal with, but not an obvious workaround.
-  Odd Behavior When you first try and install and run tmux on Koding, it seems to load properly, but many commands just don&amp;apos;t seem to work. Some, like C-b c (used to create a new window) even force close the Terminal. What is going on?
-Well, Koding uses GNU Screen to help reconnect your Terminal sessions after connection issues. Koding&amp;apos;s preconfigured Screen is set to use C-b as it&amp;apos;s own prefix key. So when you run and use Tmux, and attempt to use C-b commands, you are actually sending commands to Screen. This explains the general odd behavior, as things like C-b c in Screen mean &amp;quot;close&amp;quot;, so you unintentionally logout of screen and close your Terminal.
-  The Solution The solution is quite simple, rebind your Tmux Prefix key. This can be done by creating a ~/.tmux.conf file and placing the following command into it:
-set-option -g prefix C-a
-Where C-a is Control key. This sets it to Control-a, a popular alternative for Tmux users (and the traditional Screen PREFIX). You can of course bind it to whatever you want. Once you have your PREFIX rebound, killall tmux instances and reopen, and it will run just like you expect.. just remember to use Control-a as your PREFIX :)
-  But i love C-b! Unfortunately, this is the way it has to be for now. A guru developer over at Koding did mention that they would like to make their version of screen not use any keybinds, so that it does not block your input at all. So, think of this alternate bind as a short-term workaround, until this &amp;quot;issue&amp;quot; is resolved.
+    <description>While you shouldn&amp;apos;t need to preview your guides, since Markdown is 
+designed to be human friendly in the source, if you insist you can 
+preview your guides as they are on Koding University. This guide will go 
+over that process. Note that this will require a bit of developer 
+know-how, so be prepared to get your hands dirty. Lets get started!
+  Requirements You will need a working NodeJS installation to compile the Koding 
+University source. If you do not, visit the NodeJS downloads 
+page and grab the installer.
+  Installation With a working NodeJS installation, we need to install the KU 
+dependencies, as well as a global installation of the GulpJS. This can be 
+done with the following code:
+npm install -g gulp
+cd .metalsmith
+npm install
+  Building With Gulp installed, simply run the following command, to compile the 
+entire project into HTML.
+(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
+cd .metalsmith
+gulp
+The .metalsmith/build directory will contain all of the compiled html, 
+css, and any static resources (such as images/etc) from the markdown 
+directory.
+Compiling can take 1-2 minutes, so be patient.
+  Previewing If you want to preview the compiled site, open a new Koding Terminal tab 
+and run the following:
+(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
+cd .metalsmith
+gulp preview
+This will run a small HTTP Server on Port 8000, ie: 
+http://hostname.you.koding.io:8000. Keep this tab open, and in  a 
+different Koding Terminal tab run your gulp command from above.Each time you compile the site, this will show your compiled site.
+  Compiling as you type To have your Markdown compiled as you write your documents, run the 
+following commands:
+(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
+cd .metalsmith
+gulp watch
+This, in combination with the preview command above, will compile the 
+site each time you change the Markdown.
+Note that if you add images for your guide to use, you&amp;apos;ll want to run the 
+full gulp command again.
+And that sums it up! You now know how to contribute to Koding University, 
+in multiple ways. Keep up the awesome work, and we look forward to your 
+contribution!
 </description>
   </item>
   
   <item>
-    <title>Updating Node.js on your VM</title>
-    <link>//learn.koding.com/guides/updating-nodejs-on-your-vm</link>
-    <pubDate>"2014-06-27T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/updating-nodejs-on-your-vm</guid>
-    <author>Darryl Dias</author>
-    <description>Your Koding VM is powered by Ubuntu 14.04; by default your Koding VM comes pre-installed with Node 0.10.26, the current stable version of Node.js available in the official Ubuntu repository. We can update to the latest stable version of Node.js available for Ubuntu 14.04 by adding the official Node.js PPA to our local sources list and running a dist-upgrade to switch to the latest stable version.
-The Official PPA is updated regularly and is maintained by Chris Lea
-  Instructions Adding the official Node.js PPA
-sudo add-apt-repository ppa:chris-lea/node.js
+    <title>Author a guide: Basic</title>
+    <link>//learn.koding.com/contribute/basic</link>
+    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/contribute/basic</guid>
+    <author>Team Koding</author>
+    <description>In this guide we&amp;apos;ll go over how to contribute to the Koding University 
+the easy way. We&amp;apos;ll be using Github&amp;apos;s built in editor, to make the 
+forking &amp;amp; merging process easy. If you&amp;apos;re unfamiliar with Git, but you 
+still want to contribute to Learn, this is the guide for you. So, lets 
+get started!
+  Edit on Github Each Koding guide comes with a simple &amp;quot;Edit this on Github&amp;quot; link. This 
+link directs you back to a file editor on Github. Github will 
+automatically fork the repo if you have not yet, and even create a branch 
+so that your eventual pull request does not cause any unintended 
+contributions. Lets look at how this works.
+First up, find the guide that you want to edit, and look for the 
+Improve this Guide button at the bottom of all guides.
 
-Updating the local package database and sources list.
-sudo apt-get update
+  Fork the Repository If you have not contributed before you likely do not have the repository 
+forked yet. Press the green button seen below, and Github will fork the 
+repository for you.
 
-Updating to the latest stable build of Node.js available for Ubuntu 14.04. This will update all the packages that need to update and will also update your Node.js package.
-sudo apt-get dist-upgrade
+  Make your Edits After forking, or if you already had Koding University Forked, you&amp;apos;ll be 
+presented with a text editor for the guide that you chose to edit. From 
+here, look through the guide and make your edits as you desire.
 
-If you had deleted Node.js from your VM, you can install it by entering the command below. The PPA installs NPM as a part of nodejs and does not require you to install NPM seperately.
-sudo apt-get install nodejs
+Don&amp;apos;t forget that there is a preview tab as well. The guide will look 
+slightly different on Github than on Koding University; but because 
+everything is formatted in Markdown you can preview it Github to ensure 
+the correctness of your markdown syntax.
+  Propose File Changes After you have made your edits to the document, scroll down and enter a 
+title and description for the edits you&amp;apos;ve made. After you&amp;apos;re satisfied, 
+press Propose file change.
 
-Check the version of Node.js after installing. 
-node --version
+This will create a new branch of your Fork and store your changes into 
+that branch. To repeat, your changes have been added to your Fork, 
+not to the official Koding University repository yet. To do that, you 
+need to create a Pull Request.
+  Create Pull Request A pull request lets Koding Staff review and merge your changes into the 
+official repository. To do that, after proposing your file changes you 
+will see a page like the one below.
 
-The example output should look like.
-v0.10.33
+This is your branch, on your forked repository. If you press the Create 
+Pull Request button, your changes in that branch will be sent to the 
+official repository to be reviewed and merged in.
+This is it! You&amp;apos;ve gone from the guide on University, to editing it and 
+submitting your changes for review, all without leaving your browser or 
+using any complex Git commands.
+  Creating a New Guide The above process is nice and simple, but there&amp;apos;s one core thing missing. 
+We didn&amp;apos;t create a guide, we only edited a guide. What if we want to 
+create a new guide? Luckily this Basic workflow also works with new 
+guides! Lets go over that real quick.
+First, click here. That link will send you to the Github 
+editor with no file loaded. You can write in the editor, add a file name, 
+and propose changes just like the above instructions. Remember to name 
+your file with the .md extension, and adhere to the 
+Guidelines.
+Because you&amp;apos;re creating a new file though, you want to make sure and add 
+the proper metadata to the file. Copy the following code, and place it 
+into the editor.
+---
+author: Your Name
+username: yourUsername
+date: 2014-07-31
+categories: [nginx]
+---
 
-Now you have the latest stable version of Node.js installed on your VM.
+Fill in Your Name with your name, and yourUsername with your Koding 
+Username. The date field should be formatted in YYYY-MM-DD format, and 
+the categories list is just a comma separated list of strings.
+
+Once that&amp;apos;s all taken care of, start writing your guide! Once you&amp;apos;re 
+done, follow the Propose and Pull Request instructions above, as they are 
+identical.
+You should note that with this method, you cannot add images to the 
+repository. For that to work, have a look at the next section which uses 
+Koding&amp;apos;s Editor and Git to make changes to this Koding University.
 </description>
   </item>
   
   <item>
-    <title>TogetherJS Setup and Usage for Beginners</title>
-    <link>//learn.koding.com/guides/togetherjs-setup-for-beginners</link>
-    <pubDate>"2014-03-05T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/togetherjs-setup-for-beginners</guid>
+    <title>Author a guide</title>
+    <link>//learn.koding.com/contribute</link>
+    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/contribute</guid>
     <author>Team Koding</author>
-    <description>In this article we will go over beginner steps for TogetherJS.
-  What is TogetherJS? TogetherJS is a drop-in collaboration framework. Think of it like easily adding Google Docs to any site. Normally when you program a real time site, you use a framework like SocketIO, SockJS, or Firebase, and it takes a considerable amount of work just to make content sync up between clients. Adding text chat/mouse tracking/voice chat is a lot of additional work that is often outside the scope of your project. TogetherJS takes away that problem. You focus on your application, and TogetherJS can focus on the difficulty of mouse tracking. With just two lines of code, you get all of these features. Easy! 
-  Setting up TogetherJS In the following example, we&amp;apos;ll setup TogetherJS by using a plain html page and the TogetherJS Scripts. 
-And just like that, we have a static page with text chat, voice chat, and mouse tracking built into our html page! And because we used Koding we can share this project with our friends easily. On localhost you would have to run a web server, expose and forward your ports, figure out your ip, and finally share it with a friend. Koding saves you that localhost-hassle, and makes this a one-step process. Just share your domain and you&amp;apos;re done. 
+    <description>In this guide series we will go over Writing and Editing guides for Koding 
+University. We will cover every step of the process, but basic Git, 
+Github, and Markdown knowledge will be very useful.
+If you already know git, github, and markdown, here is the simple set of 
+tasks you&amp;apos;ll need to do.
+
+Review the Style Guidelines
+Fork KDLearn
+Clone your forked repo
+Find or create your files, Make your markdown edits
+Commit and push your changes to your repo
+Make a pull request of your changes, against the KDLearn Repo
+
+If you need more in depth instructions than that, please continue with 
+this series below. Thanks!
 </description>
   </item>
   
@@ -1996,6 +1937,65 @@ include an Always-On VM. Just be aware of the design goals.
   </item>
   
   <item>
+    <title>Updating Node.js on your VM</title>
+    <link>//learn.koding.com/guides/updating-nodejs-on-your-vm</link>
+    <pubDate>"2014-06-27T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/updating-nodejs-on-your-vm</guid>
+    <author>Darryl Dias</author>
+    <description>Your Koding VM is powered by Ubuntu 14.04; by default your Koding VM comes pre-installed with Node 0.10.26, the current stable version of Node.js available in the official Ubuntu repository. We can update to the latest stable version of Node.js available for Ubuntu 14.04 by adding the official Node.js PPA to our local sources list and running a dist-upgrade to switch to the latest stable version.
+The Official PPA is updated regularly and is maintained by Chris Lea
+  Instructions Adding the official Node.js PPA
+sudo add-apt-repository ppa:chris-lea/node.js
+
+Updating the local package database and sources list.
+sudo apt-get update
+
+Updating to the latest stable build of Node.js available for Ubuntu 14.04. This will update all the packages that need to update and will also update your Node.js package.
+sudo apt-get dist-upgrade
+
+If you had deleted Node.js from your VM, you can install it by entering the command below. The PPA installs NPM as a part of nodejs and does not require you to install NPM seperately.
+sudo apt-get install nodejs
+
+Check the version of Node.js after installing. 
+node --version
+
+The example output should look like.
+v0.10.33
+
+Now you have the latest stable version of Node.js installed on your VM.
+</description>
+  </item>
+  
+  <item>
+    <title>TogetherJS Setup and Usage for Beginners</title>
+    <link>//learn.koding.com/guides/togetherjs-setup-for-beginners</link>
+    <pubDate>"2014-03-05T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/togetherjs-setup-for-beginners</guid>
+    <author>Team Koding</author>
+    <description>In this article we will go over beginner steps for TogetherJS.
+  What is TogetherJS? TogetherJS is a drop-in collaboration framework. Think of it like easily adding Google Docs to any site. Normally when you program a real time site, you use a framework like SocketIO, SockJS, or Firebase, and it takes a considerable amount of work just to make content sync up between clients. Adding text chat/mouse tracking/voice chat is a lot of additional work that is often outside the scope of your project. TogetherJS takes away that problem. You focus on your application, and TogetherJS can focus on the difficulty of mouse tracking. With just two lines of code, you get all of these features. Easy! 
+  Setting up TogetherJS In the following example, we&amp;apos;ll setup TogetherJS by using a plain html page and the TogetherJS Scripts. 
+And just like that, we have a static page with text chat, voice chat, and mouse tracking built into our html page! And because we used Koding we can share this project with our friends easily. On localhost you would have to run a web server, expose and forward your ports, figure out your ip, and finally share it with a friend. Koding saves you that localhost-hassle, and makes this a one-step process. Just share your domain and you&amp;apos;re done. 
+</description>
+  </item>
+  
+  <item>
+    <title>Using Tmux on Koding</title>
+    <link>//learn.koding.com/guides/using-tmux-on-koding</link>
+    <pubDate>"2014-05-13T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/using-tmux-on-koding</guid>
+    <author>Team Koding</author>
+    <description>In this Tmux FAQ we will address an issue people have had with Tmux on Koding. It&amp;apos;s easy to deal with, but not an obvious workaround.
+  Odd Behavior When you first try and install and run tmux on Koding, it seems to load properly, but many commands just don&amp;apos;t seem to work. Some, like C-b c (used to create a new window) even force close the Terminal. What is going on?
+Well, Koding uses GNU Screen to help reconnect your Terminal sessions after connection issues. Koding&amp;apos;s preconfigured Screen is set to use C-b as it&amp;apos;s own prefix key. So when you run and use Tmux, and attempt to use C-b commands, you are actually sending commands to Screen. This explains the general odd behavior, as things like C-b c in Screen mean &amp;quot;close&amp;quot;, so you unintentionally logout of screen and close your Terminal.
+  The Solution The solution is quite simple, rebind your Tmux Prefix key. This can be done by creating a ~/.tmux.conf file and placing the following command into it:
+set-option -g prefix C-a
+Where C-a is Control key. This sets it to Control-a, a popular alternative for Tmux users (and the traditional Screen PREFIX). You can of course bind it to whatever you want. Once you have your PREFIX rebound, killall tmux instances and reopen, and it will run just like you expect.. just remember to use Control-a as your PREFIX :)
+  But i love C-b! Unfortunately, this is the way it has to be for now. A guru developer over at Koding did mention that they would like to make their version of screen not use any keybinds, so that it does not block your input at all. So, think of this alternate bind as a short-term workaround, until this &amp;quot;issue&amp;quot; is resolved.
+</description>
+  </item>
+  
+  <item>
     <title>Sync files using Google Drive</title>
     <link>//learn.koding.com/guides/sync-files-google-drive</link>
     <pubDate>"2014-07-08T00:00:00.000Z"</pubDate>
@@ -2023,138 +2023,6 @@ man cron
  Note 2: As per the author of grive, the application will not download any files that are the traditional Google Docs (Spreadsheet, Documents,
 Presentations, etc.). The app will only automatically upload/download any non-native Google Doc formats which include
 code files, text files, images, etc.
-</description>
-  </item>
-  
-  <item>
-    <title>Author a guide: Advanced</title>
-    <link>//learn.koding.com/contribute/advanced</link>
-    <pubDate>"2014-06-01T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/contribute/advanced</guid>
-    <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll go over contributing by using Git directly in your 
-Terminal, and editing our documents on Koding. While we will go over 
-every step, general Git and Terminal knowledge will be very helpful, and 
-are recommended. So, lets get started!
-  Forking and Cloning First up, we should cover the requirements.
-
-A Koding Account
-A Github Account
-Git (Comes with your Koding VM)
-SSH Key on Github. If you&amp;apos;re not familiar with this, refer to this 
-tutorial
-
-Next, we need to &amp;quot;Fork&amp;quot; the KDLearn Repo. This will create your 
-own version of the repo on Github, and lets you push your changes to this 
-repo.
-To do this, press the Fork button seen in the following image, from the 
-KDLearn repo page:
-
-This will create a new Github repository with the name 
-github.com/yourUsername/kdlearn. The purpose of this forked repository 
-will become clear once we make our Pull Request.
-Next, we will want to clone our newly forked repository. Head on over to 
-your Koding Terminal and type in the following command:
-git clone https://github.com/yourUsername/kdlearn.git
-This will clone your Forked Repository to your Koding VM, into the folder 
-kdlearn.
-  Writing a new Guide Now that we have our repo cloned, lets add our guide. Open up the Ace 
-editor and open a folder titled kdlearn. In this section we&amp;apos;re 
-going to write a guide, but if you just want to edit another guide, 
-scroll down to the edit section.
-Lets create a file in the guides folder with the name myguide.md.Name the file whatever you like, just try to keep it short and url 
-friendly.
-
-This is where we will write all of our content, in Markdown. For this 
-tutorial i am just going to use the following text:
-# Awesome Guide
-
-This is my **awesome** guide! Follow along, and learn to be awesome!
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dui 
-nulla, posuere non urna in, lobortis malesuada erat. Morbi ultricies 
-fringilla condimentum. Aliquam vel sodales mi, ornare ullamcorper est.  
-Nulla laoreet dapibus libero, in consectetur dolor fermentum vel. Etiam 
-quis magna eget orci fringilla tincidunt et non justo. Phasellus porta 
-dictum libero. Suspendisse fringilla gravida arcu, eu venenatis nunc 
-fermentum sed. Phasellus est libero, auctor ac dignissim ac, consequat a 
-libero. Pellentesque iaculis sem tortor.  Suspendisse viverra, arcu ac 
-viverra dapibus, massa odio adipiscing neque, eget adipiscing magna quam 
-id dui. Morbi semper nisi ac accumsan tincidunt.
-
-Now that we have written our guide, we need to add some metadata to it.
-  Metadata Metadata is, as the name says, data about our data. This is where you can 
-specify the title of your document, the author, the date, and categories.Lets take a look at our above markdown with some of this metadata.
----
-author: Lee Olayvar
-username: leeolayvar
-date: 2014-06-11
-description: &amp;apos;My awesome guide, about awesome stuff.&amp;apos;
-categories: [awesome]
----
-
-# Awesome Guide
-
-This is my **awesome** guide! Follow along, and learn to be awesome!
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dui nulla, 
-posuere non urna in, lobortis malesuada erat. Morbi ultricies fringilla 
-condimentum. Aliquam vel sodales mi, ornare ullamcorper est. Nulla laoreet 
-dapibus libero, in consectetur dolor fermentum vel. Etiam quis magna eget orci 
-fringilla tincidunt et non justo. Phasellus porta dictum libero. Suspendisse 
-fringilla gravida arcu, eu venenatis nunc fermentum sed. Phasellus est libero, 
-auctor ac dignissim ac, consequat a libero. Pellentesque iaculis sem tortor.  
-Suspendisse viverra, arcu ac viverra dapibus, massa odio adipiscing neque, eget 
-adipiscing magna quam id dui. Morbi semper nisi ac accumsan tincidunt.
-
-Most of that is pretty logical. The --- before and after signifies the 
-metadata start and end, and author, date, description, and categories 
-should be standard nomenclature to you.
-  Editing a Guide If you&amp;apos;re just looking to update a guide, fix typos, or make general 
-improvements you have it even easier.
-Just like before, open up Ace and find the file you want to edit.If you&amp;apos;re not sure where the proper markdown is located, find the url of 
-the page you want to edit and think of them like folders. Then, review 
-the File Structre section and you should have a pretty 
-good idea where the files are located.
-Make your edits, and follow onto the next section!
-  Adding, Committing, Pushing Now that we have made our changes, whether it&amp;apos;s a new guide or an edited 
-guide, we need to add the file, commit it, and push it to our repo. Open 
-up the Terminal one last time.
-To add your changes, run the following command. Replacing myguide with 
-the files you changed.
-git add guides/myguide.md
-To commit your changes, run the following command. Replacing I added an 
-awesome guide with a message that clearly describes your changes.
-git commit -m &amp;quot;I added an awesome guide&amp;quot;
-You can also ommit the whole -m &amp;quot;message&amp;quot; flag and use an editor such 
-as Nano or Vim to make your changes. But the above is simpler for this 
-guide.
-And finally, lets push our changes to our repo on Github.
-git push origin master
-If you&amp;apos;re not familiar with Git at all, run each of these commands in 
-sequence.  We won&amp;apos;t be covering Git in full, so for more information 
-please see the official documentation.
-  Making a Pull Request Now that you pushed to Github you can visit your forked Github repository 
-and make a pull request. To do this, look for the &amp;quot;Pull Request&amp;quot; button 
-on your forked repo:
-
-This will take you to a page where you can review all of the commits you 
-made, and ensure that you want to make a pull request. Please review your 
-changes for typos, spelling, and grammar.
-If you spot an issue, and need to make more changes, go back to 
-Koding and make the edits you need. Make sure to add, commit, and 
-push them just like before.
-If you&amp;apos;re happy with your changes, press the big green Create Pull 
-Request button.
-  Waiting for your PR to be Accepted Once your PR is made, you&amp;apos;re done! The Koding Team will review your edits 
-or new guides and make feedback.
-If we need you to make corrections, formatting or otherwise, go through 
-the same steps as before. Your changes, once pushed to Github, will 
-automatically be reflected in your Pull Request.
-Once they are accepted, and your pull request is merged, the site will be 
-updated and you&amp;apos;re changes will be live. Thanks for your contribution!
-In the next guide we&amp;apos;ll go over previewing your work in a local 
-installation of Koding University.
 </description>
   </item>
   
@@ -2372,6 +2240,79 @@ This has been a getting started tutorial from Koding, with more coming soon. Sta
   </item>
   
   <item>
+    <title>Markdown Basics, for Koding</title>
+    <link>//learn.koding.com/guides/markdown</link>
+    <pubDate>"2014-05-30T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/markdown</guid>
+    <author>Team Koding</author>
+    <description>Markdown is a simple language whose syntax can be easily converted into HTML.Koding, like many other sites, use Markdown as a way for users to easily style 
+their text. In this guide, we&amp;apos;ll go over the basics of Markdown and it&amp;apos;s usage.
+  Official Documentation The official Markdown 
+documentation covers the 
+Markdown syntax quite well, and as such this guide will only briefly touch on 
+each major syntax structure. If any questions remain, please refer to the 
+official documentation.
+  Emphasis Emphasis can be achieved by wrapping the word you&amp;apos;d like to emphasise with a 
+single asterisk or underline. Example:
+Hello, *this is emphasised* and this isn&amp;apos;t!
+
+  Strengthen To strengthen your text wrap it with double asterisks or underlines. Example:
+Hello, **this is strong** and this isn&amp;apos;t!
+
+  Inline Code Typing code within a sentence is considered inline code. Inline code is 
+accomplished by wrapping the code with backticks \ For example:
+Foo `bar` baz
+
+  Code Blocks Codeblocks can be achieved by wrapping your code in triple backticks, but make 
+sure to include a newline after each tripple backtick. Example:
+Take a look at my awesome code:
+
+```coffee
+do -&amp;gt; console.log &amp;apos;Weee&amp;apos; while true
+```
+
+Nifty eh?
+Note the coffee text right behind the first triple backtick. This signifies 
+the language of the code used in that code block, and Koding will add syntax 
+highlighting if you specify the language.
+  Headers # This is a Header 1
+
+## This is a Header 2
+
+The # foo syntax represents headers of varying levels. The number of hashes 
+represents the level of header, with a maximum of 6.
+  Links [Koding](https://koding.com)
+[Koding Terminal, from Koding](/Terminal)
+
+The [foo](bar) syntax will create a link. Links can be absolute or relative, 
+just like html links.
+  Unordered Lists Unordered lists can be by prepending your items with a hyphen. Example:
+- Item one
+- Item two
+- Item three
+
+Markdown will also embed lists and list content, if you add indentation.Example:
+- Item one
+- Item two
+  This is still within item two.
+  - This is a list item in item two.
+  - And another
+- Item three
+
+  Ordered Lists Ordered lists are identical to unordered lists in features, you just have to 
+prepend your list items with a number, instead of a hyphen. Example:
+1. Item one
+2. Item two
+3. Item three
+
+  Images You can easily include images in your markdown by using the following notation:
+![Alt text](full url to the image)
+![Alt text](full url to the image &amp;quot;Optional title&amp;quot;)
+
+</description>
+  </item>
+  
+  <item>
     <title>Installing MySQL</title>
     <link>//learn.koding.com/guides/installing-mysql</link>
     <pubDate>"2014-07-30T00:00:00.000Z"</pubDate>
@@ -2463,79 +2404,6 @@ sudo service nginx restart
 If you visit your domain again you&amp;apos;ll see the same ~/Web files that you are 
 familiar with. You now have an Nginx server up and running, and serving your 
 Web files. Enjoy!
-</description>
-  </item>
-  
-  <item>
-    <title>Markdown Basics, for Koding</title>
-    <link>//learn.koding.com/guides/markdown</link>
-    <pubDate>"2014-05-30T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/markdown</guid>
-    <author>Team Koding</author>
-    <description>Markdown is a simple language whose syntax can be easily converted into HTML.Koding, like many other sites, use Markdown as a way for users to easily style 
-their text. In this guide, we&amp;apos;ll go over the basics of Markdown and it&amp;apos;s usage.
-  Official Documentation The official Markdown 
-documentation covers the 
-Markdown syntax quite well, and as such this guide will only briefly touch on 
-each major syntax structure. If any questions remain, please refer to the 
-official documentation.
-  Emphasis Emphasis can be achieved by wrapping the word you&amp;apos;d like to emphasise with a 
-single asterisk or underline. Example:
-Hello, *this is emphasised* and this isn&amp;apos;t!
-
-  Strengthen To strengthen your text wrap it with double asterisks or underlines. Example:
-Hello, **this is strong** and this isn&amp;apos;t!
-
-  Inline Code Typing code within a sentence is considered inline code. Inline code is 
-accomplished by wrapping the code with backticks \ For example:
-Foo `bar` baz
-
-  Code Blocks Codeblocks can be achieved by wrapping your code in triple backticks, but make 
-sure to include a newline after each tripple backtick. Example:
-Take a look at my awesome code:
-
-```coffee
-do -&amp;gt; console.log &amp;apos;Weee&amp;apos; while true
-```
-
-Nifty eh?
-Note the coffee text right behind the first triple backtick. This signifies 
-the language of the code used in that code block, and Koding will add syntax 
-highlighting if you specify the language.
-  Headers # This is a Header 1
-
-## This is a Header 2
-
-The # foo syntax represents headers of varying levels. The number of hashes 
-represents the level of header, with a maximum of 6.
-  Links [Koding](https://koding.com)
-[Koding Terminal, from Koding](/Terminal)
-
-The [foo](bar) syntax will create a link. Links can be absolute or relative, 
-just like html links.
-  Unordered Lists Unordered lists can be by prepending your items with a hyphen. Example:
-- Item one
-- Item two
-- Item three
-
-Markdown will also embed lists and list content, if you add indentation.Example:
-- Item one
-- Item two
-  This is still within item two.
-  - This is a list item in item two.
-  - And another
-- Item three
-
-  Ordered Lists Ordered lists are identical to unordered lists in features, you just have to 
-prepend your list items with a number, instead of a hyphen. Example:
-1. Item one
-2. Item two
-3. Item three
-
-  Images You can easily include images in your markdown by using the following notation:
-![Alt text](full url to the image)
-![Alt text](full url to the image &amp;quot;Optional title&amp;quot;)
-
 </description>
   </item>
   
@@ -2652,18 +2520,6 @@ That is all. If you have any issues setting up WebDav you can drop an email at s
   </item>
   
   <item>
-    <title>Getting started with Git</title>
-    <link>//learn.koding.com/guides/git</link>
-    <pubDate>"2014-06-14T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/git</guid>
-    <author>Team Koding</author>
-    <description>Git has become an integral part of the modern software development cycle. As per Wikipedia, Git
-&amp;quot;is a distributed revision control and source code management (SCM) system with an emphasis on speed. Git was initially designed and developed by Linus Torvalds for Linux kernel development in 2005.&amp;quot;
-Several tutorials exist on the Internet that teach you the basics of Git. A simple Google search will reveal many of them. Here&amp;apos;s our favorite from the good folks over at Atlassian.
-</description>
-  </item>
-  
-  <item>
     <title>What is Bitbucket?</title>
     <link>//learn.koding.com/guides/using-bitbucket-on-koding</link>
     <pubDate>"2014-07-16T00:00:00.000Z"</pubDate>
@@ -2702,50 +2558,183 @@ As you can see, the codemirror folder exists. Thank you and have a wonderful Kod
   </item>
   
   <item>
-    <title>AngularJS Step-by-Step Setup</title>
-    <link>//learn.koding.com/guides/angularjs-step-by-step</link>
-    <pubDate>"2014-03-09T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/angularjs-step-by-step</guid>
-    <author>Team Koding</author>
-    <description>This article is all about AngularJS and how to get you started with it on 
-Koding.
-  AngularJS: What&amp;apos;s it all about. Everything is dynamic these days, or at least in should be. The age of the static documents is slightly fading away and people like to interact with websites and applications in real-time. Queue frameworks that offer dynamism to web apps. These frameworks offer an endless list of possibilities and give developers free reign over how people interact with their application, in real-time. One of the most popular frameworks these days, that is starting to be approached by more and more developers is AngularJS. AngularJS can be used with any application development workflow due to the fact that it&amp;apos;s extensible and because it works well with other libraries. 
-  Setting it up on Koding Ok, but how can we develop a web application in the cloud and preview the 
-result a the same time? It&amp;apos;s easy, we use Koding!Koding&amp;apos;s built-in preview system enables you to preview 
-your progress with a single click. It&amp;apos;s as simple as 1,2,3. So let&amp;apos;s get 
-started then. First we create a new .html file using the Ace editor app, that 
-comes pre-installed with Koding, or any editor you prefer 
-or have installed. The next step is to head over to the AngularJS 
-website and get one of their simple examples. For this 
-tutorial we&amp;apos;re going to use the first tutorial that comes up, a simple &amp;quot;Hello!&amp;quot; 
-example. We copy that and paste it into our file, the one that we created 
-earlier.
-&amp;lt;!doctype html&amp;gt;
-&amp;lt;html ng-app&amp;gt;
-  &amp;lt;head&amp;gt;
-  &amp;lt;script 
-    src=&amp;quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js&amp;quot;&amp;gt;
-  &amp;lt;/script&amp;gt;
-  &amp;lt;/head&amp;gt;
-  &amp;lt;body&amp;gt;
-    &amp;lt;div&amp;gt;
-      &amp;lt;label&amp;gt;Name:&amp;lt;/label&amp;gt;
-      &amp;lt;input type=&amp;quot;text&amp;quot;
-        ng-model=&amp;quot;yourName&amp;quot;
-        placeholder=&amp;quot;Enter a name here&amp;quot;&amp;gt;
-      &amp;lt;hr&amp;gt;
-      &amp;lt;h1&amp;gt;Hello {{yourName}}!&amp;lt;/h1&amp;gt;
-    &amp;lt;/div&amp;gt;
-  &amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
+    <title>Webmin for Koding</title>
+    <link>//learn.koding.com/guides/webmin-for-koding</link>
+    <pubDate>"2014-06-24T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/webmin-for-koding</guid>
+    <author>Mike Spick</author>
+    <description>  The Details This guide will cover the installation of Webmin on your Koding Virtual Machine. Webmin is a web-based adminstration tool for Unix based operating systems. 
+This tool will allow you to modify and control applications like Apache, and view/modify your MySQL DBs. Webmin also allows you to modify other system tools 
+from the web like users, passwords, iptables, log file rotations and more! If you&amp;apos;d like to read more about Webmin, you can check out their website here.
+  Downloading and installing Webmin Alright, first thing&amp;apos;s first, we want to add the webmin team&amp;apos;s repo to our apt sources. Run the following command to open apt&amp;apos;s source list for editing.
+sudo vi /etc/apt/sources.list
+Press i to enter the vi input mode to edit the list. Add the following to the bottom of the file.
+deb http://download.webmin.com/download/repository sarge contrib
+It should look like below when you are done.
 
-We can now save our file and check out the result, by clicking the little 
-&amp;quot;hamburger&amp;quot; menu in the top right corner of Ace editor and then choose Preview.The example we got should display nicely. Go ahead and test to see if it 
-works.  Simple and fun!
-And that&amp;apos;s it. Why not continue and experiment with AngularJS on 
-Koding and see what more cool stuff you can 
-make. As always, more Quick Tips and beginner friendly guides coming 
-soon, so stay tuned!
+After adding this line press ESC to exit input mode. Then type :wq to write(save) and quit the file.
+Now that apt has the source, lets run the following command to download and install the key needed for webmin.
+wget -q http://www.webmin.com/jcameron-key.asc -O- | sudo apt-key add -
+We can now update apt, and install Webmin. You can use the following commands.
+sudo apt-get update
+
+sudo apt-get install webmin
+You will be prompted if you want to continue, press Y to accept.
+Once the install is complete, you will see the following as the final output:
+
+Make note of the url given here as you will need it to access Webmin once it is setup.
+  Configuration Congratulations! Webmin is now installed on your Koding VM. We only have a few things left to do before it is useable. We need to change the SSL setting in the miniserv config file from 1 to 0. Enter the following command to open the config file for editing.
+sudo vim /etc/webmin/miniserv.conf
+Once the file is open press i to enter input mode. Use the arrow keys to navigate to the line SSL=1 change this line to read SSL=0. Again, hit ESC and type :wq to write(save) and quit the file.
+The file should look like below before editing. 
+
+In order to apply the changes we have made to the configuration, we will need to restart the webmin service. To do that enter the following command.
+sudo service webmin restart
+You&amp;apos;ve done it! Webmin is installend and configured!
+</description>
+  </item>
+  
+  <item>
+    <title>Getting started with Git</title>
+    <link>//learn.koding.com/guides/git</link>
+    <pubDate>"2014-06-14T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/git</guid>
+    <author>Team Koding</author>
+    <description>Git has become an integral part of the modern software development cycle. As per Wikipedia, Git
+&amp;quot;is a distributed revision control and source code management (SCM) system with an emphasis on speed. Git was initially designed and developed by Linus Torvalds for Linux kernel development in 2005.&amp;quot;
+Several tutorials exist on the Internet that teach you the basics of Git. A simple Google search will reveal many of them. Here&amp;apos;s our favorite from the good folks over at Atlassian.
+</description>
+  </item>
+  
+  <item>
+    <title>Author a guide: Advanced</title>
+    <link>//learn.koding.com/contribute/advanced</link>
+    <pubDate>"2014-06-01T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/contribute/advanced</guid>
+    <author>Team Koding</author>
+    <description>In this guide we&amp;apos;ll go over contributing by using Git directly in your 
+Terminal, and editing our documents on Koding. While we will go over 
+every step, general Git and Terminal knowledge will be very helpful, and 
+are recommended. So, lets get started!
+  Forking and Cloning First up, we should cover the requirements.
+
+A Koding Account
+A Github Account
+Git (Comes with your Koding VM)
+SSH Key on Github. If you&amp;apos;re not familiar with this, refer to this 
+tutorial
+
+Next, we need to &amp;quot;Fork&amp;quot; the KDLearn Repo. This will create your 
+own version of the repo on Github, and lets you push your changes to this 
+repo.
+To do this, press the Fork button seen in the following image, from the 
+KDLearn repo page:
+
+This will create a new Github repository with the name 
+github.com/yourUsername/kdlearn. The purpose of this forked repository 
+will become clear once we make our Pull Request.
+Next, we will want to clone our newly forked repository. Head on over to 
+your Koding Terminal and type in the following command:
+git clone https://github.com/yourUsername/kdlearn.git
+This will clone your Forked Repository to your Koding VM, into the folder 
+kdlearn.
+  Writing a new Guide Now that we have our repo cloned, lets add our guide. Open up the Ace 
+editor and open a folder titled kdlearn. In this section we&amp;apos;re 
+going to write a guide, but if you just want to edit another guide, 
+scroll down to the edit section.
+Lets create a file in the guides folder with the name myguide.md.Name the file whatever you like, just try to keep it short and url 
+friendly.
+
+This is where we will write all of our content, in Markdown. For this 
+tutorial i am just going to use the following text:
+# Awesome Guide
+
+This is my **awesome** guide! Follow along, and learn to be awesome!
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dui 
+nulla, posuere non urna in, lobortis malesuada erat. Morbi ultricies 
+fringilla condimentum. Aliquam vel sodales mi, ornare ullamcorper est.  
+Nulla laoreet dapibus libero, in consectetur dolor fermentum vel. Etiam 
+quis magna eget orci fringilla tincidunt et non justo. Phasellus porta 
+dictum libero. Suspendisse fringilla gravida arcu, eu venenatis nunc 
+fermentum sed. Phasellus est libero, auctor ac dignissim ac, consequat a 
+libero. Pellentesque iaculis sem tortor.  Suspendisse viverra, arcu ac 
+viverra dapibus, massa odio adipiscing neque, eget adipiscing magna quam 
+id dui. Morbi semper nisi ac accumsan tincidunt.
+
+Now that we have written our guide, we need to add some metadata to it.
+  Metadata Metadata is, as the name says, data about our data. This is where you can 
+specify the title of your document, the author, the date, and categories.Lets take a look at our above markdown with some of this metadata.
+---
+author: Lee Olayvar
+username: leeolayvar
+date: 2014-06-11
+description: &amp;apos;My awesome guide, about awesome stuff.&amp;apos;
+categories: [awesome]
+---
+
+# Awesome Guide
+
+This is my **awesome** guide! Follow along, and learn to be awesome!
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dui nulla, 
+posuere non urna in, lobortis malesuada erat. Morbi ultricies fringilla 
+condimentum. Aliquam vel sodales mi, ornare ullamcorper est. Nulla laoreet 
+dapibus libero, in consectetur dolor fermentum vel. Etiam quis magna eget orci 
+fringilla tincidunt et non justo. Phasellus porta dictum libero. Suspendisse 
+fringilla gravida arcu, eu venenatis nunc fermentum sed. Phasellus est libero, 
+auctor ac dignissim ac, consequat a libero. Pellentesque iaculis sem tortor.  
+Suspendisse viverra, arcu ac viverra dapibus, massa odio adipiscing neque, eget 
+adipiscing magna quam id dui. Morbi semper nisi ac accumsan tincidunt.
+
+Most of that is pretty logical. The --- before and after signifies the 
+metadata start and end, and author, date, description, and categories 
+should be standard nomenclature to you.
+  Editing a Guide If you&amp;apos;re just looking to update a guide, fix typos, or make general 
+improvements you have it even easier.
+Just like before, open up Ace and find the file you want to edit.If you&amp;apos;re not sure where the proper markdown is located, find the url of 
+the page you want to edit and think of them like folders. Then, review 
+the File Structre section and you should have a pretty 
+good idea where the files are located.
+Make your edits, and follow onto the next section!
+  Adding, Committing, Pushing Now that we have made our changes, whether it&amp;apos;s a new guide or an edited 
+guide, we need to add the file, commit it, and push it to our repo. Open 
+up the Terminal one last time.
+To add your changes, run the following command. Replacing myguide with 
+the files you changed.
+git add guides/myguide.md
+To commit your changes, run the following command. Replacing I added an 
+awesome guide with a message that clearly describes your changes.
+git commit -m &amp;quot;I added an awesome guide&amp;quot;
+You can also ommit the whole -m &amp;quot;message&amp;quot; flag and use an editor such 
+as Nano or Vim to make your changes. But the above is simpler for this 
+guide.
+And finally, lets push our changes to our repo on Github.
+git push origin master
+If you&amp;apos;re not familiar with Git at all, run each of these commands in 
+sequence.  We won&amp;apos;t be covering Git in full, so for more information 
+please see the official documentation.
+  Making a Pull Request Now that you pushed to Github you can visit your forked Github repository 
+and make a pull request. To do this, look for the &amp;quot;Pull Request&amp;quot; button 
+on your forked repo:
+
+This will take you to a page where you can review all of the commits you 
+made, and ensure that you want to make a pull request. Please review your 
+changes for typos, spelling, and grammar.
+If you spot an issue, and need to make more changes, go back to 
+Koding and make the edits you need. Make sure to add, commit, and 
+push them just like before.
+If you&amp;apos;re happy with your changes, press the big green Create Pull 
+Request button.
+  Waiting for your PR to be Accepted Once your PR is made, you&amp;apos;re done! The Koding Team will review your edits 
+or new guides and make feedback.
+If we need you to make corrections, formatting or otherwise, go through 
+the same steps as before. Your changes, once pushed to Github, will 
+automatically be reflected in your Pull Request.
+Once they are accepted, and your pull request is merged, the site will be 
+updated and you&amp;apos;re changes will be live. Thanks for your contribution!
+In the next guide we&amp;apos;ll go over previewing your work in a local 
+installation of Koding University.
 </description>
   </item>
   
@@ -2799,78 +2788,6 @@ greatly between web frameworks. In this above example, we wrote our own web
 server, which accepts a single argument (the bind ip).
 Look at the documentation for your web framework of choice, as it will almost 
 certainly be different than what was used in this example.
-</description>
-  </item>
-  
-  <item>
-    <title>Ghost Blog Installation</title>
-    <link>//learn.koding.com/guides/ghost-installation</link>
-    <pubDate>"2014-08-01T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/ghost-installation</guid>
-    <author>Team Koding</author>
-    <description>In this article we will go over the installation process for the awesome 
-new blogging software, Ghost. Installation is quick 
-and easy, and just requires a few configuration edits, making this great 
-for beginners. So, lets get started!
-  What is Ghost? Ghost is an awesome new blog software written with &amp;#x201C;Just Blogging&amp;#x201D; in 
-mind. Think WordPress without the complexity, bringing blogging back to 
-it&amp;#x2019;s roots, so to say. This is all well and good, but with any product 
-that is so new there is always confusion on how to install, develop, and 
-run it.
-So lets try and resolve some of that confusion. Lets go over the simple 
-process of setting up Ghost on Koding so you can 
-learn it, toy with it, develop with it, and create your Ghost blog to be 
-exactly what you want.
-  Downloading Ghost We&amp;apos;re going to use the Koding Terminal to download Ghost, so 
-visit the [Ghost Download][download-page] and look for the download link.Copy the url.
-At the time of writing this guide, the download url is: 
-https://ghost.org/zip/ghost-0.5.2.zip (This version is likely 
-outdated, please visit the download page and get the most updated link.)
-Now, go to your Terminal and type in the following commands.
-mkdir ghost
-cd ghost
-wget [ghost-zip-url]
-Replace [ghost-zip-url] with the full URL of the zip file that you 
-copied above.
-  Unzipping Ghost The download is in zip format, so we need to unzip it. Type in the 
-following command.
-unzip [ghost-zip-name]
-  Installing Dependencies Next, we need to install the dependencies.
-npm install --production
-This step will take a minute or two.
-  Edit the config Next up, open up the Ace Editor and double click your ghost 
-directory to expand it. Right click, and rename, the config.example.js 
-file to config.js.
-On line 36, look for the following section:
-        server: {
-            // Host to be passed to node&amp;apos;s `net.Server#listen()`
-            host: &amp;apos;127.0.0.1&amp;apos;,
-            // Port to be passed to node&amp;apos;s `net.Server#listen()`, for 
-iisnode set this to `process.env.PORT`
-            port: &amp;apos;2368&amp;apos;
-        },
-
-Replace 127.0.0.1 with 0.0.0.0, and change the Port to whichever 
-you&amp;apos;d like to use. Save the file with Ctrl-s.
-  Starting Ghost Go back to your Terminal and type in the following command to 
-start your Ghost Blog.
-npm start
-Note: If you had previously closed your Terminal, you&amp;apos;ll need to navigate 
-into the ghost directory again, with cd ghost.
-  Visiting your Ghost Blog Now open up a new tab and visit your Ghost Blog on your Koding domain at 
-the following address.
-http://hostname.username.koding.io:port
-Where username is your Koding username, and port is the port you 
-chose above.
-If you navigate to the following address, you can signup as Admin to your 
-Ghost installation.
-http://hostname.username.koding.io:port/ghost
-  Running Ghost on Port 80 If you&amp;apos;d like to run Ghost on the default Port 80, you&amp;apos;ll have to Stop 
-Apache, and start Ghost with sudo. Here are the commands to do this.
-sudo service apache2 stop
-sudo npm start
-This should be typed from the Ghost installation directory.
-And that&amp;apos;s it! You should now have a Ghost installation up and running.Happy Blogging!
 </description>
   </item>
   
@@ -3004,6 +2921,42 @@ This sums up the Getting Started with NodeJS guide. You should now have a
 good understanding of what Node is, from a very basic perspective. As 
 always, don&amp;apos;t forget to look at the API Documentation. Have 
 fun with Node!
+</description>
+  </item>
+  
+  <item>
+    <title>Where is my Web Server Root?</title>
+    <link>//learn.koding.com/guides/where-is-my-webserver-root</link>
+    <pubDate>"2014-07-09T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/where-is-my-webserver-root</guid>
+    <author>Team Koding</author>
+    <description>Koding VMs come with Apache preconfigured and serve a sample site to get you 
+started. The files for this site are found in what is typically called your 
+Web Server Root. This is the directory that Apache is serving up files from, 
+and it is located within your Home directory, under the Web directory. The 
+full path being:
+/home/username/Web
+Replace username with your username.
+You can modify the contents of this directory with the Koding 
+Terminal, or the Ace Editor. In this example, we&amp;apos;ll use Ace 
+to browse the files with the FileTree.
+First, open up Ace. In the left hand side you&amp;apos;ll see a FileTree, with a 
+directory called Web. Double click the Web folder to expand it. Your FileTree 
+should look something like this:
+
+Those files are a series of example pages, and they&amp;apos;re being served by Apache 
+on your Koding Domain. You can view this site by visiting your Koding Domain, 
+at:
+http://hostname.username.koding.io
+Where username is your Koding username. You should see something like this:
+
+You&amp;apos;ll notice that the PHP, Python, Perl, and Ruby links are actually files 
+being generated from that language. As an example, the python.py file is 
+being served up by Apache, with the aid of Apache&amp;apos;s mod_python module. This 
+serves to illustrate that this is a real Apache server, and you can use it 
+just like you expect.
+You should now understand where your Web Server Root is, and how to access it 
+from the Web to develop and share your web applications. Happy Koding!
 </description>
   </item>
   
@@ -3201,42 +3154,6 @@ routes, middleware, and finally templates. Thanks for reading!
   </item>
   
   <item>
-    <title>Where is my Web Server Root?</title>
-    <link>//learn.koding.com/guides/where-is-my-webserver-root</link>
-    <pubDate>"2014-07-09T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/where-is-my-webserver-root</guid>
-    <author>Team Koding</author>
-    <description>Koding VMs come with Apache preconfigured and serve a sample site to get you 
-started. The files for this site are found in what is typically called your 
-Web Server Root. This is the directory that Apache is serving up files from, 
-and it is located within your Home directory, under the Web directory. The 
-full path being:
-/home/username/Web
-Replace username with your username.
-You can modify the contents of this directory with the Koding 
-Terminal, or the Ace Editor. In this example, we&amp;apos;ll use Ace 
-to browse the files with the FileTree.
-First, open up Ace. In the left hand side you&amp;apos;ll see a FileTree, with a 
-directory called Web. Double click the Web folder to expand it. Your FileTree 
-should look something like this:
-
-Those files are a series of example pages, and they&amp;apos;re being served by Apache 
-on your Koding Domain. You can view this site by visiting your Koding Domain, 
-at:
-http://hostname.username.koding.io
-Where username is your Koding username. You should see something like this:
-
-You&amp;apos;ll notice that the PHP, Python, Perl, and Ruby links are actually files 
-being generated from that language. As an example, the python.py file is 
-being served up by Apache, with the aid of Apache&amp;apos;s mod_python module. This 
-serves to illustrate that this is a real Apache server, and you can use it 
-just like you expect.
-You should now understand where your Web Server Root is, and how to access it 
-from the Web to develop and share your web applications. Happy Koding!
-</description>
-  </item>
-  
-  <item>
     <title>Getting Started</title>
     <link>//learn.koding.com/guides/getting-started</link>
     <pubDate>"2014-02-07T00:00:00.000Z"</pubDate>
@@ -3296,59 +3213,6 @@ to you.
   </item>
   
   <item>
-    <title>Getting Started: The UI</title>
-    <link>//learn.koding.com/guides/getting-started/the-ui</link>
-    <pubDate>"2014-05-30T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/the-ui</guid>
-    <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll take a look at Koding&amp;apos;s UI. We&amp;apos;ll examine 
-the major sections, and briefly explain some of the features. In future 
-guides of this series we&amp;apos;ll explain these parts in more detail. Lets get 
-started!
-  The Full UI 
-This is the Koding UI of a logged in user, with the Koding IDE 
-open. On the left side we have our VMs, Channels, Chats, and Account. To 
-the right we have the Koding IDE. Lets look at each piece, and where they 
-lead us.
-  VMs, Workspaces and IDE VMs, Workspaces, and the Koding IDE can be found on the left hand 
-side, under VMS, as seen in the image below.
-
-Clicking on a VM Name, such as koding-vm-0 in the above image, will 
-open up the Koding IDE for that specific VM.
-The button to the immediate right of the VM Name is the VM Settings. Here 
-you can find useful information, such as your VM Address and VM Specs.
-Finally, below the VM Name are your Workspaces for that specific VM.Clicking on a Workspace will open all of the previous editors and 
-Terminals that you had open on it, and opening new Workspaces provides 
-shortcuts for varying tasks. We&amp;apos;ll get into the specifics in the 
-Workspaces guide.
-  Channels and Activity Below VMs, are your Channels. To follow a channel, click on a Grey check 
-mark. Green check marks indicate a channel that you are following.
-
-A channel is a stream of user submitted content for a certain hash tag, 
-such as #golang. When you 
-click on a hash tag in the Activity Feed, it opens a channel for that 
-tag, as seen below.
-
-Activity Feed posts support Markdown, including Markdown Code 
-Blocks.
-  Chat Below Channels are your Chats. These are private conversations between 
-you and any number of users you invite.
-
-To open a new chat, click on the Plus button to the right of the Chat 
-icon. Clicking on a already started chat, will open it as seen below.
-
-Your chats will work much in the same way as the Activity Feed. You can 
-invite more users by clicking the Plus next to user icons, or delete the 
-conversation from the Chat Dropdown in the upper right.
-  Account Settings Your Account Settings can be located from the bottom of the navigation 
-panel.
-
-Here you&amp;apos;ll be able to modify your Name, Password, and link your Koding 
-account to various services.
-</description>
-  </item>
-  
-  <item>
     <title>General .htaccess</title>
     <link>//learn.koding.com/guides/general-htaccess</link>
     <pubDate>"2014-02-02T00:00:00.000Z"</pubDate>
@@ -3371,25 +3235,6 @@ sudo a2enmod rewrite &amp;amp;&amp;amp; sudo service apache2 restart
 This uses the command a2enmod to enable mod_rewrite, and then restarts 
 apache. Now if we go to http://username.koding.io we are redirected to 
 http://my.name.is.username.koding.io. Yay!
-</description>
-  </item>
-  
-  <item>
-    <title>Codeigniter Installation for Beginners</title>
-    <link>//learn.koding.com/guides/codeigniter-for-beginners</link>
-    <pubDate>"2014-01-07T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/codeigniter-for-beginners</guid>
-    <author>Team Koding</author>
-    <description>In this article we will go over installing Codeigniter for beginners.
-  What is Codeigniter? Codeigniter may be old hat to some, but the tried and true frameworks tend to hold their own for quite a long time, and for good reason. It is polished, has an extensive history, and above all has a large community to back it up. 
-  So how do i get started with Codeigniter? In the following video, we&amp;#x2019;ll go over the basic process of running Codeigniter on Koding. 
-As you can see, setting up CI is a pretty simple process. The only 
-trouble is ensuring that your LAMP stack is up and running properly, but 
-thanks to Koding this process was made easy. Koding 
-comes with Apache by default, so Codeigniter just works. On top of 
-that, we were able to get started with Codeigniter entirely in our 
-browser. No downloading and installing LAMP stacks to our localhost 
-required. 
 </description>
   </item>
   
@@ -3510,6 +3355,78 @@ wget -O elixir.zip https://github.com/elixir-lang/elixir/releases/download/v[eli
 unzip elixir.zip -d ~/lang/elixir
 
 Elixir is now updated!
+</description>
+  </item>
+  
+  <item>
+    <title>Codeigniter Installation for Beginners</title>
+    <link>//learn.koding.com/guides/codeigniter-for-beginners</link>
+    <pubDate>"2014-01-07T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/codeigniter-for-beginners</guid>
+    <author>Team Koding</author>
+    <description>In this article we will go over installing Codeigniter for beginners.
+  What is Codeigniter? Codeigniter may be old hat to some, but the tried and true frameworks tend to hold their own for quite a long time, and for good reason. It is polished, has an extensive history, and above all has a large community to back it up. 
+  So how do i get started with Codeigniter? In the following video, we&amp;#x2019;ll go over the basic process of running Codeigniter on Koding. 
+As you can see, setting up CI is a pretty simple process. The only 
+trouble is ensuring that your LAMP stack is up and running properly, but 
+thanks to Koding this process was made easy. Koding 
+comes with Apache by default, so Codeigniter just works. On top of 
+that, we were able to get started with Codeigniter entirely in our 
+browser. No downloading and installing LAMP stacks to our localhost 
+required. 
+</description>
+  </item>
+  
+  <item>
+    <title>Getting Started: The UI</title>
+    <link>//learn.koding.com/guides/getting-started/the-ui</link>
+    <pubDate>"2014-05-30T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/the-ui</guid>
+    <author>Team Koding</author>
+    <description>In this guide we&amp;apos;ll take a look at Koding&amp;apos;s UI. We&amp;apos;ll examine 
+the major sections, and briefly explain some of the features. In future 
+guides of this series we&amp;apos;ll explain these parts in more detail. Lets get 
+started!
+  The Full UI 
+This is the Koding UI of a logged in user, with the Koding IDE 
+open. On the left side we have our VMs, Channels, Chats, and Account. To 
+the right we have the Koding IDE. Lets look at each piece, and where they 
+lead us.
+  VMs, Workspaces and IDE VMs, Workspaces, and the Koding IDE can be found on the left hand 
+side, under VMS, as seen in the image below.
+
+Clicking on a VM Name, such as koding-vm-0 in the above image, will 
+open up the Koding IDE for that specific VM.
+The button to the immediate right of the VM Name is the VM Settings. Here 
+you can find useful information, such as your VM Address and VM Specs.
+Finally, below the VM Name are your Workspaces for that specific VM.Clicking on a Workspace will open all of the previous editors and 
+Terminals that you had open on it, and opening new Workspaces provides 
+shortcuts for varying tasks. We&amp;apos;ll get into the specifics in the 
+Workspaces guide.
+  Channels and Activity Below VMs, are your Channels. To follow a channel, click on a Grey check 
+mark. Green check marks indicate a channel that you are following.
+
+A channel is a stream of user submitted content for a certain hash tag, 
+such as #golang. When you 
+click on a hash tag in the Activity Feed, it opens a channel for that 
+tag, as seen below.
+
+Activity Feed posts support Markdown, including Markdown Code 
+Blocks.
+  Chat Below Channels are your Chats. These are private conversations between 
+you and any number of users you invite.
+
+To open a new chat, click on the Plus button to the right of the Chat 
+icon. Clicking on a already started chat, will open it as seen below.
+
+Your chats will work much in the same way as the Activity Feed. You can 
+invite more users by clicking the Plus next to user icons, or delete the 
+conversation from the Chat Dropdown in the upper right.
+  Account Settings Your Account Settings can be located from the bottom of the navigation 
+panel.
+
+Here you&amp;apos;ll be able to modify your Name, Password, and link your Koding 
+account to various services.
 </description>
   </item>
   
@@ -3692,6 +3609,54 @@ Congratulations, you have Apache Tomcat up and running on your Koding VM. Deploy
   </item>
   
   <item>
+    <title>AngularJS Step-by-Step Setup</title>
+    <link>//learn.koding.com/guides/angularjs-step-by-step</link>
+    <pubDate>"2014-03-09T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/angularjs-step-by-step</guid>
+    <author>Team Koding</author>
+    <description>This article is all about AngularJS and how to get you started with it on 
+Koding.
+  AngularJS: What&amp;apos;s it all about. Everything is dynamic these days, or at least in should be. The age of the static documents is slightly fading away and people like to interact with websites and applications in real-time. Queue frameworks that offer dynamism to web apps. These frameworks offer an endless list of possibilities and give developers free reign over how people interact with their application, in real-time. One of the most popular frameworks these days, that is starting to be approached by more and more developers is AngularJS. AngularJS can be used with any application development workflow due to the fact that it&amp;apos;s extensible and because it works well with other libraries. 
+  Setting it up on Koding Ok, but how can we develop a web application in the cloud and preview the 
+result a the same time? It&amp;apos;s easy, we use Koding!Koding&amp;apos;s built-in preview system enables you to preview 
+your progress with a single click. It&amp;apos;s as simple as 1,2,3. So let&amp;apos;s get 
+started then. First we create a new .html file using the Ace editor app, that 
+comes pre-installed with Koding, or any editor you prefer 
+or have installed. The next step is to head over to the AngularJS 
+website and get one of their simple examples. For this 
+tutorial we&amp;apos;re going to use the first tutorial that comes up, a simple &amp;quot;Hello!&amp;quot; 
+example. We copy that and paste it into our file, the one that we created 
+earlier.
+&amp;lt;!doctype html&amp;gt;
+&amp;lt;html ng-app&amp;gt;
+  &amp;lt;head&amp;gt;
+  &amp;lt;script 
+    src=&amp;quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js&amp;quot;&amp;gt;
+  &amp;lt;/script&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;div&amp;gt;
+      &amp;lt;label&amp;gt;Name:&amp;lt;/label&amp;gt;
+      &amp;lt;input type=&amp;quot;text&amp;quot;
+        ng-model=&amp;quot;yourName&amp;quot;
+        placeholder=&amp;quot;Enter a name here&amp;quot;&amp;gt;
+      &amp;lt;hr&amp;gt;
+      &amp;lt;h1&amp;gt;Hello {{yourName}}!&amp;lt;/h1&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+
+We can now save our file and check out the result, by clicking the little 
+&amp;quot;hamburger&amp;quot; menu in the top right corner of Ace editor and then choose Preview.The example we got should display nicely. Go ahead and test to see if it 
+works.  Simple and fun!
+And that&amp;apos;s it. Why not continue and experiment with AngularJS on 
+Koding and see what more cool stuff you can 
+make. As always, more Quick Tips and beginner friendly guides coming 
+soon, so stay tuned!
+</description>
+  </item>
+  
+  <item>
     <title>How to setup an SSH Tunnel in Unix</title>
     <link>//learn.koding.com/guides/ssh-tunneling</link>
     <pubDate>2014-08-9</pubDate>
@@ -3733,39 +3698,74 @@ your localhost with your MySQL Client!
   </item>
   
   <item>
-    <title>Webmin for Koding</title>
-    <link>//learn.koding.com/guides/webmin-for-koding</link>
-    <pubDate>"2014-06-24T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/webmin-for-koding</guid>
-    <author>Mike Spick</author>
-    <description>  The Details This guide will cover the installation of Webmin on your Koding Virtual Machine. Webmin is a web-based adminstration tool for Unix based operating systems. 
-This tool will allow you to modify and control applications like Apache, and view/modify your MySQL DBs. Webmin also allows you to modify other system tools 
-from the web like users, passwords, iptables, log file rotations and more! If you&amp;apos;d like to read more about Webmin, you can check out their website here.
-  Downloading and installing Webmin Alright, first thing&amp;apos;s first, we want to add the webmin team&amp;apos;s repo to our apt sources. Run the following command to open apt&amp;apos;s source list for editing.
-sudo vi /etc/apt/sources.list
-Press i to enter the vi input mode to edit the list. Add the following to the bottom of the file.
-deb http://download.webmin.com/download/repository sarge contrib
-It should look like below when you are done.
+    <title>Ghost Blog Installation</title>
+    <link>//learn.koding.com/guides/ghost-installation</link>
+    <pubDate>"2014-08-01T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/ghost-installation</guid>
+    <author>Team Koding</author>
+    <description>In this article we will go over the installation process for the awesome 
+new blogging software, Ghost. Installation is quick 
+and easy, and just requires a few configuration edits, making this great 
+for beginners. So, lets get started!
+  What is Ghost? Ghost is an awesome new blog software written with &amp;#x201C;Just Blogging&amp;#x201D; in 
+mind. Think WordPress without the complexity, bringing blogging back to 
+it&amp;#x2019;s roots, so to say. This is all well and good, but with any product 
+that is so new there is always confusion on how to install, develop, and 
+run it.
+So lets try and resolve some of that confusion. Lets go over the simple 
+process of setting up Ghost on Koding so you can 
+learn it, toy with it, develop with it, and create your Ghost blog to be 
+exactly what you want.
+  Downloading Ghost We&amp;apos;re going to use the Koding Terminal to download Ghost, so 
+visit the [Ghost Download][download-page] and look for the download link.Copy the url.
+At the time of writing this guide, the download url is: 
+https://ghost.org/zip/ghost-0.5.2.zip (This version is likely 
+outdated, please visit the download page and get the most updated link.)
+Now, go to your Terminal and type in the following commands.
+mkdir ghost
+cd ghost
+wget [ghost-zip-url]
+Replace [ghost-zip-url] with the full URL of the zip file that you 
+copied above.
+  Unzipping Ghost The download is in zip format, so we need to unzip it. Type in the 
+following command.
+unzip [ghost-zip-name]
+  Installing Dependencies Next, we need to install the dependencies.
+npm install --production
+This step will take a minute or two.
+  Edit the config Next up, open up the Ace Editor and double click your ghost 
+directory to expand it. Right click, and rename, the config.example.js 
+file to config.js.
+On line 36, look for the following section:
+        server: {
+            // Host to be passed to node&amp;apos;s `net.Server#listen()`
+            host: &amp;apos;127.0.0.1&amp;apos;,
+            // Port to be passed to node&amp;apos;s `net.Server#listen()`, for 
+iisnode set this to `process.env.PORT`
+            port: &amp;apos;2368&amp;apos;
+        },
 
-After adding this line press ESC to exit input mode. Then type :wq to write(save) and quit the file.
-Now that apt has the source, lets run the following command to download and install the key needed for webmin.
-wget -q http://www.webmin.com/jcameron-key.asc -O- | sudo apt-key add -
-We can now update apt, and install Webmin. You can use the following commands.
-sudo apt-get update
-
-sudo apt-get install webmin
-You will be prompted if you want to continue, press Y to accept.
-Once the install is complete, you will see the following as the final output:
-
-Make note of the url given here as you will need it to access Webmin once it is setup.
-  Configuration Congratulations! Webmin is now installed on your Koding VM. We only have a few things left to do before it is useable. We need to change the SSL setting in the miniserv config file from 1 to 0. Enter the following command to open the config file for editing.
-sudo vim /etc/webmin/miniserv.conf
-Once the file is open press i to enter input mode. Use the arrow keys to navigate to the line SSL=1 change this line to read SSL=0. Again, hit ESC and type :wq to write(save) and quit the file.
-The file should look like below before editing. 
-
-In order to apply the changes we have made to the configuration, we will need to restart the webmin service. To do that enter the following command.
-sudo service webmin restart
-You&amp;apos;ve done it! Webmin is installend and configured!
+Replace 127.0.0.1 with 0.0.0.0, and change the Port to whichever 
+you&amp;apos;d like to use. Save the file with Ctrl-s.
+  Starting Ghost Go back to your Terminal and type in the following command to 
+start your Ghost Blog.
+npm start
+Note: If you had previously closed your Terminal, you&amp;apos;ll need to navigate 
+into the ghost directory again, with cd ghost.
+  Visiting your Ghost Blog Now open up a new tab and visit your Ghost Blog on your Koding domain at 
+the following address.
+http://hostname.username.koding.io:port
+Where username is your Koding username, and port is the port you 
+chose above.
+If you navigate to the following address, you can signup as Admin to your 
+Ghost installation.
+http://hostname.username.koding.io:port/ghost
+  Running Ghost on Port 80 If you&amp;apos;d like to run Ghost on the default Port 80, you&amp;apos;ll have to Stop 
+Apache, and start Ghost with sudo. Here are the commands to do this.
+sudo service apache2 stop
+sudo npm start
+This should be typed from the Ghost installation directory.
+And that&amp;apos;s it! You should now have a Ghost installation up and running.Happy Blogging!
 </description>
   </item>
   
@@ -3799,13 +3799,31 @@ Requests for new guides can be sent here
   </item>
   
   <item>
-    <title>How can I delete my account?</title>
-    <link>//learn.koding.com/faq/delete-account</link>
+    <title>Can I change my Koding username?</title>
+    <link>//learn.koding.com/faq/change-username</link>
     <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/delete-account</guid>
+    <guid isPermaLink="true">//learn.koding.com/faq/change-username</guid>
     <author></author>
-    <description>You do not have to contact Koding support if you wish to delete your account. Simply head over to Account Settings from where you can easily initiate the deletion process.
-It would help us immensly if you can take the quick 3 question survey right after the deletion process ends. It will help us understand why we lost you and how we can improve.
+    <description>In short no. Why...? It&amp;apos;s because when you first create your account we provision a lot of support services in the background for your account and all of these would need to get updated. This becomes problematic if you have made changes to your VM (even if you have created one file). If you really want to change your username, the only option is to delete your current account and make a new one with the desired username.
+But ... you can however , change your display name as seen associated with your the bulletin board posts. Just browse to https://koding.com/Account/Profile where you may change &amp;quot;Name&amp;quot; and/or &amp;quot;LastName&amp;quot; as you would like them to appear to other koding users wherever you chat on koding. This quite niftily has the side-effect of changing your nick on all of you past postings instantaneously. Note that this feature does not in any way allow you to be anonymous. Anyone who clicks on your chat nick (whatever it may be at the time) will always see your canonical username in the URL of your profile.
+So to be clear , you may change your display name at any time but this does not affect your login username or VM URL. As stated above that is your system UID and can not be changed.
+</description>
+  </item>
+  
+  <item>
+    <title>Should I use my VM's IP or Address?</title>
+    <link>//learn.koding.com/faq/vm-ip-vs-address</link>
+    <pubDate></pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/vm-ip-vs-address</guid>
+    <author></author>
+    <description>Koding gives you access to your VMs IP, as well as an Address that 
+always points to that VM&amp;apos;s IP, so which should you use, and why?
+While your VMs IP will operate perfectly fine, the IP is dynamic. In 
+other words, it will change. Because of this, Koding gives you a VM
+Address, which will always point to your VM, regardless of 
+IP changes, so this is what you usually want to use.
+Note: IP addresses of &amp;quot;Always On&amp;quot; VMs don&amp;apos;t change until they are rebooted.
+If you have trouble finding your VM Address, click here.
 </description>
   </item>
   
@@ -3837,43 +3855,30 @@ Once you initiate a reinit, you will see appropriate messages on the screen as y
   </item>
   
   <item>
-    <title>Should I use my VM's IP or Address?</title>
-    <link>//learn.koding.com/faq/vm-ip-vs-address</link>
+    <title>How can I delete my account?</title>
+    <link>//learn.koding.com/faq/delete-account</link>
     <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/vm-ip-vs-address</guid>
+    <guid isPermaLink="true">//learn.koding.com/faq/delete-account</guid>
     <author></author>
-    <description>Koding gives you access to your VMs IP, as well as an Address that 
-always points to that VM&amp;apos;s IP, so which should you use, and why?
-While your VMs IP will operate perfectly fine, the IP is dynamic. In 
-other words, it will change. Because of this, Koding gives you a VM
-Address, which will always point to your VM, regardless of 
-IP changes, so this is what you usually want to use.
-Note: IP addresses of &amp;quot;Always On&amp;quot; VMs don&amp;apos;t change until they are rebooted.
-If you have trouble finding your VM Address, click here.
+    <description>You do not have to contact Koding support if you wish to delete your account. Simply head over to Account Settings from where you can easily initiate the deletion process.
+It would help us immensly if you can take the quick 3 question survey right after the deletion process ends. It will help us understand why we lost you and how we can improve.
 </description>
   </item>
   
   <item>
-    <title>Can I change my Koding username?</title>
-    <link>//learn.koding.com/faq/change-username</link>
+    <title>What ports are open on my Koding VM?</title>
+    <link>//learn.koding.com/faq/open-ports</link>
     <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/change-username</guid>
+    <guid isPermaLink="true">//learn.koding.com/faq/open-ports</guid>
     <author></author>
-    <description>In short no. Why...? It&amp;apos;s because when you first create your account we provision a lot of support services in the background for your account and all of these would need to get updated. This becomes problematic if you have made changes to your VM (even if you have created one file). If you really want to change your username, the only option is to delete your current account and make a new one with the desired username.
-But ... you can however , change your display name as seen associated with your the bulletin board posts. Just browse to https://koding.com/Account/Profile where you may change &amp;quot;Name&amp;quot; and/or &amp;quot;LastName&amp;quot; as you would like them to appear to other koding users wherever you chat on koding. This quite niftily has the side-effect of changing your nick on all of you past postings instantaneously. Note that this feature does not in any way allow you to be anonymous. Anyone who clicks on your chat nick (whatever it may be at the time) will always see your canonical username in the URL of your profile.
-So to be clear , you may change your display name at any time but this does not affect your login username or VM URL. As stated above that is your system UID and can not be changed.
-</description>
-  </item>
-  
-  <item>
-    <title>How do I transfer/copy files to my VM?</title>
-    <link>//learn.koding.com/faq/transfer-files</link>
-    <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/transfer-files</guid>
-    <author></author>
-    <description>  I want to copy a few files Getting a few files to your Koding VM is simple and there are a variety of methods. We&amp;apos;ve put together a short video titled Importing your files in the Video&amp;apos;s section of Koding University. Check that out for a simple drag-drop method to upload a few files.
-  I want to copy a large number of files To copy several files, use FTP. To set up FTP on your VM, simply open up Terminal and type in
-help ftp
+    <description>Most Unix ports are available on Koding VMs. We do not block any TCP traffic
+(inbound or outbound). See the following list for 
+open ports, as well as ports in use by default.
+
+Ports 2 through 65,534 are open.
+Port 80 is taken by Apache, but this can be turned off to free up the port. To turn
+off Apache, type in: sudo service apache2 stop in Terminal.
+Ports 2 through 1,024 require sudo access.
 
 </description>
   </item>
@@ -3894,24 +3899,6 @@ kodingvm: ~ $     (/dev/pts/4) at 23:11 ...
 
 The system is going down for reboot NOW!
 Wating for a few minutes and then entering CTRL-ALT-T will yield a new terminal in your freshly rebooted machine.
-</description>
-  </item>
-  
-  <item>
-    <title>What ports are open on my Koding VM?</title>
-    <link>//learn.koding.com/faq/open-ports</link>
-    <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/open-ports</guid>
-    <author></author>
-    <description>Most Unix ports are available on Koding VMs. We do not block any TCP traffic
-(inbound or outbound). See the following list for 
-open ports, as well as ports in use by default.
-
-Ports 2 through 65,534 are open.
-Port 80 is taken by Apache, but this can be turned off to free up the port. To turn
-off Apache, type in: sudo service apache2 stop in Terminal.
-Ports 2 through 1,024 require sudo access.
-
 </description>
   </item>
   
@@ -3945,6 +3932,19 @@ once added, these sub-domains become available on the setting panels
 of all your VMs for easy reassignment
 deleting a sub-domain is as easy as adding one!
 
+
+</description>
+  </item>
+  
+  <item>
+    <title>How do I transfer/copy files to my VM?</title>
+    <link>//learn.koding.com/faq/transfer-files</link>
+    <pubDate></pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/transfer-files</guid>
+    <author></author>
+    <description>  I want to copy a few files Getting a few files to your Koding VM is simple and there are a variety of methods. We&amp;apos;ve put together a short video titled Importing your files in the Video&amp;apos;s section of Koding University. Check that out for a simple drag-drop method to upload a few files.
+  I want to copy a large number of files To copy several files, use FTP. To set up FTP on your VM, simply open up Terminal and type in
+help ftp
 
 </description>
   </item>
