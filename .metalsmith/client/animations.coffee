@@ -71,10 +71,13 @@ setupSearchAnimations = ->
     jQuery('.topSearchBox').slideToggle()
     jQuery('.topSearchBox #topSearch').focus()
 
-
+setupMenuAnimations = ->
+  jQuery('#mobile-menu').on 'click', ->
+    jQuery('.toplinks').slideToggle()
 
 
 # When jquery is ready, setup our animations.
 jQuery(document).ready ->
   setupSearchAnimations()
   setupShareAnimations()
+  setupMenuAnimations()

@@ -7,11 +7,13 @@
 	nav {
 		.container {
 			.topSearchButton {
-				margin-right: 15px;
+				margin-right: 55px;
+				padding: 5px;
 			}
 			.toplinks {
 				margin: 0;
 				padding: 0 12px;
+				display: none;
 			}
 			#menu {
 				padding-top: 20px;
@@ -20,6 +22,9 @@
 					display: inline-block;
 					margin-right: 0;
 					padding-bottom: 10px;
+				}
+				#mobile-menu {
+					display: block;
 				}
 			}
 		}
@@ -146,6 +151,7 @@
 			.toplinks {
 				margin: 0;
 				padding: 0 12px;
+				display: none;
 			}
 			#menu {
 				padding-top: 20px;
@@ -155,6 +161,9 @@
 					display: inline-block;
 					margin-right: 0;
 					padding-bottom: 10px;
+				}
+				#mobile-menu {
+					display: block;
 				}
 			}
 		}

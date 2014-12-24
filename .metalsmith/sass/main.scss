@@ -388,6 +388,28 @@ nav {
     .contribute {
       font-weight: bold;
     }
+
+    #mobile-menu {
+      display: none;
+      position: absolute;
+      padding-left: 1.25em;
+      font-size: 1.6em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      height: 30px;
+      top: 1.45em;
+      right: .6em;
+      &:before {
+        content: "";
+        position: absolute;
+        top: .3em;
+        left: .24em;
+        width: .8em;
+        height: .125em;
+        border-top: 0.375em double $light-grey;
+        border-bottom: 0.135em solid $light-grey;
+      }
+    }
   }
 	.container {
         padding: 20px 0;
