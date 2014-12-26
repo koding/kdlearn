@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://learn.koding.com/guides/ssh-chromebook</loc>
+    <lastmod>2014-12-26</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
     <loc>http://learn.koding.com/guides/upgrading-your-vm</loc>
     <lastmod>2014-12-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -110,7 +116,7 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/ide-introduction</loc>
+    <loc>http://learn.koding.com/guides/vm-introduction</loc>
     <lastmod>2014-10-10</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -122,13 +128,13 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/vm-introduction</loc>
+    <loc>http://learn.koding.com/guides/ide-introduction</loc>
     <lastmod>2014-10-10</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/what-happens-upon-upgrade</loc>
+    <loc>http://learn.koding.com/guides/getting-started-drupal8-beta</loc>
     <lastmod>2014-10-02</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -140,13 +146,13 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/getting-started-drupal8-beta</loc>
+    <loc>http://learn.koding.com/guides/getting-started-biicode</loc>
     <lastmod>2014-10-02</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/getting-started-biicode</loc>
+    <loc>http://learn.koding.com/guides/what-happens-upon-upgrade</loc>
     <lastmod>2014-10-02</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -158,19 +164,13 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/ssh-chromebook</loc>
+    <loc>http://learn.koding.com/guides/setting-up-ftp-on-koding</loc>
     <lastmod>2014-09-15</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>http://learn.koding.com/guides/ssh-into-your-vm</loc>
-    <lastmod>2014-09-15</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://learn.koding.com/guides/setting-up-ftp-on-koding</loc>
     <lastmod>2014-09-15</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -200,7 +200,7 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/contribute/basic</loc>
+    <loc>http://learn.koding.com/guides/getting-started/editing-your-profile</loc>
     <lastmod>2014-08-04</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -212,19 +212,13 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/getting-started-python</loc>
-    <lastmod>2014-08-04</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
     <loc>http://learn.koding.com/contribute/previewing</loc>
     <lastmod>2014-08-04</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/getting-started/editing-your-profile</loc>
+    <loc>http://learn.koding.com/guides/getting-started-python</loc>
     <lastmod>2014-08-04</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -236,19 +230,25 @@
   </url>
   
   <url>
+    <loc>http://learn.koding.com/contribute/basic</loc>
+    <lastmod>2014-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
     <loc>http://learn.koding.com/guides/getting-started-expressjs</loc>
     <lastmod>2014-08-02</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/ghost-installation</loc>
+    <loc>http://learn.koding.com/guides/getting-started-nodejs</loc>
     <lastmod>2014-08-01</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/getting-started-nodejs</loc>
+    <loc>http://learn.koding.com/guides/ghost-installation</loc>
     <lastmod>2014-08-01</lastmod>
     <changefreq>monthly</changefreq>
   </url>
