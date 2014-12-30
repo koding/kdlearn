@@ -10,8 +10,8 @@
   <nav class="footer-block">
     <a class="social tw" href="http://twitter.com/koding"></a><a class="social fb" href="http://facebook.com/koding"></a>
     <a href="/">Copyright © 2014 Koding, Inc</a>
-    <a class="cclicense" rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-      <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+    <a class="cclicense" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+      <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" />
     </a>
   </nav>
 </div></footer>
