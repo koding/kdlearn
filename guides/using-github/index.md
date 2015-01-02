@@ -24,7 +24,26 @@ __Please note that git is installed by default with every Koding VM. So you will
 
 Before you can get started with Github on your Koding VM you need to first setup the environment to be able to work properly with Github.
 
-Run the following command, in your Koding Terminal, to install the necessary dependency:
+You'll need to generate an SSH key that will be used to authenticate with Github. You can use the following command to generate one:
+
+```
+ssh-keygen -t rsa -C "your_email@example.com"
+```
+
+After that you'll need to copy your Public Key, usually found in ~/.ssh/id_rsa.pub, and copy it in its entirety. Note the .pub in the filename. This is the public key, and it is very important that you copy this one. It will look something like this.
+
+```
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyhKankDE4DRM86JqZ3JPdWDeqg+Tbzlql
+TLfOKTeokhRoMgy5WoMY/ZWUVES3d2vSHHwW3cwWlELmVdc3Ow57boZv3fOsPhybYHVRTClX
+Yr1ncSxyTvjvCfvV5q22aIxHPWQ353543ssda87sa+85XEa4VnveJsEzxBZl4oJ4GB0AGa48
++UdIqutrgZu7D7JCK+Yl228X+3bJf3ddlqDaKaVXPivvvYqImK6ZwFsxh2lNO4E8IOd3OSK9
+zv6i+io8PxWmwP0tLFokxulAI8Td1sOPBE9s9bdJ5c2T/GfGjKF+aNKsd33TsYEjjc/plMZm
+RRrOgQwre6OAkgMvyV2X your_email@example.com
+```
+
+Head over to this [page](https://github.com/settings/ssh) on Github and add the SSH key, that you just generated.
+
+After that run the following command, in your Koding Terminal, to install the necessary dependency:
 
 ```
 kpm install ungit
