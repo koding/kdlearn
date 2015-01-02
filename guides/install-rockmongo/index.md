@@ -7,6 +7,10 @@ categories: [rockmongo, mongo]
 
 # How to install Rockmongo
 
+## What is Rockmongo
+
+Rockmongo is a MongoDB administration tool using which you can manage your server, databases, collections, documents, indexes and a lot more. It provides a very user-friendly way for reading, writing and creating documents. It is similar to PHPMyAdmin tool for PHP and MySQL. 
+
 ### Step 1.
 
 Open up your [Koding](https://koding.com) Terminal and type in the following command to get started.
