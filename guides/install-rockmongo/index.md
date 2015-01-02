@@ -11,21 +11,20 @@ categories: [rockmongo, mongo]
 
 Open up your [Koding](https://koding.com) Terminal and type in the following command to get started.
 	
-	```
-	cd Web
-	```
-
-### Step 2.
-Next up, You must download Rockmongo verison that you're planing on using. In this case, we are going to use laster version
-
+```
+cd Web
 ```
 
-	git clone --depth=1 https://github.com/iwind/rockmongo.git
+### Step 2.
+Next up, You must download Rockmongo verison that you're planing on using. In this case, we are going to use latest version
+
+```
+git clone --depth=1 https://github.com/iwind/rockmongo.git
 ```
 
 ### Step 3
 
-Open the config.php with your convenient editor, change host, port, admins and so on to yours
+Open the config.php with your convenient editor, change host, port, admins and so on to yours, note that  which is set "admin" and "admin" as default.
 
 ### Step 4
 
@@ -55,3 +54,10 @@ You will now be able to access rockmongo by following a similar URL:
 ```
 http://KODING_USERNAME.koding.io/rockmongo
 ```
+If everything goes fine, you should see the following screen in your browser:
+
+![](rockmongo.png)
+
+That's it! You're now running Rockmongo on Koding! Have fun!
+
+This has been a beginner guide from [Koding](https://koding.com/). As always, more Quick Tips and beginner friendly guides coming soon, so stay tuned!
