@@ -137,7 +137,7 @@ the following screen in your browser:
 
 If you see this error  ```Writable (public download method)```, you need to run following code in the command line.
 
-``
+```
  cd $ROOT/site        #/var/www/drupal-8.x-dev/sites
  sudo chmod a+w -R default 
 
