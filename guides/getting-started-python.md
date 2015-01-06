@@ -6,6 +6,14 @@ categories: [python, flask]
 
 # Getting Started with Python
 
+Before you continue reading this guide make sure you have PIP installed. You can use the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install PIP using just one command:
+
+```
+kpm install pip
+```
+
+***
+
 In this guide we'll go over explaining what Python is, how to use Python 
 Packaging via the PIP command, and how to write your first Python web 
 server using a small library known as Flask. So, lets get started!

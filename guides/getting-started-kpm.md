@@ -51,13 +51,18 @@ kpm install <name>
 
 Bellow is a list of the current available packages that can be installed using the `kpm` command.
 
-1. [FTP](http://learn.koding.com/guides/setting-up-ftp-on-koding)
-2. [MeteorJS](http://learn.koding.com/guides/setting-framework-webserver/#meteorjs)
-3. [mySQL](http://learn.koding.com/guides/installing-mysql)
-4. [MongoDB](http://learn.koding.com/guides/install-mongodb)
-5. [phpMyAdmin](http://learn.koding.com/guides/install-phpmyadmin)
-6. [Ungit](http://learn.koding.com/guides/using-github)
-7. [WordPress](http://learn.koding.com/guides/installing-wordpress)
+1. [Codeigniter](http://learn.koding.com/guides/codeigniter-for-beginners/)
+2. [Django](http://learn.koding.com/guides/setting-framework-webserver/#django)
+3. [Dropbox](#)
+4. [FTP](http://learn.koding.com/guides/setting-up-ftp-on-koding)
+5. [MeteorJS](http://learn.koding.com/guides/setting-framework-webserver/#meteorjs)
+6. [mySQL](http://learn.koding.com/guides/installing-mysql)
+7. [MongoDB](http://learn.koding.com/guides/install-mongodb)
+8. [phpMyAdmin](http://learn.koding.com/guides/install-phpmyadmin)
+9. [PIP](http://learn.koding.com/guides/getting-started-python/)
+10. [Rails](http://learn.koding.com/guides/setting-framework-webserver/#rails)
+11. [Ungit](http://learn.koding.com/guides/using-github)
+12. [WordPress](http://learn.koding.com/guides/installing-wordpress)
 
 The above list will be updated periodically to include more packages, that you can use on your VM.
 

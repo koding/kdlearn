@@ -16,6 +16,14 @@ Here are a couple of examples on how to make your project available publicly by 
 
 # Django
 
+Before you continue reading this guide why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install Django using just one command:
+
+```
+kpm install django
+```
+
+***
+
 First we install Django and then create a project.
 ```
 sudo pip install django 
@@ -83,6 +91,14 @@ sudo netstat -tnlp
 ```
 
 #Rails
+
+Before you continue reading this guide why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install Rails using just one command:
+
+```
+kpm install rails
+```
+
+***
 
 Rails listens to 0.0.0.0:3000 by default. 
 

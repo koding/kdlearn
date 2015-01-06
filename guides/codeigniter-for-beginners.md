@@ -9,6 +9,14 @@ template: page.toffee
 
 # Codeigniter Installation for Beginners
 
+Before you continue reading this guide why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install Codeigniter using just one command:
+
+```
+kpm install codeigniter
+```
+
+***
+
 In this article we will go over installing Codeigniter for beginners.
 
 ## What is Codeigniter?
