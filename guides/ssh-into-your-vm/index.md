@@ -83,6 +83,19 @@ ssh -vv joshmurray@unkk05c3f84e.joshmurray.koding.io
 ```
 
 
+**Just a quick tip :**
+
+If you want to open GUI for any app, while you SSH include "-X" to enable X11 forwarding.
+
+ ```
+ ssh vm-0.leeolayvar.koding.kd.io -X 
+ ```
+Enable trusted X11 forwarding, by using the -Y option.
+
+ ```
+ ssh vm-0.leeolayvar.koding.kd.io -Y
+ ```
+ 
 
 
 [koding]: https://koding.com
