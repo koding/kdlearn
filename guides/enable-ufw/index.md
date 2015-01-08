@@ -12,15 +12,15 @@ adding key services like ssh, you may be locked out of your VM. Please proceed w
 
 From time to time, a need may arise when you need to secure your Koding VM from prying eyes. There are several solutions
 available when it comes to enabling a firewall on Ubuntu (the operating system that runs on a Koding VM) and you are free
-to try any/all of those. For the purposes of this guide, we will focus on the `ufw` firewall software that is already
+to try any/all of those. For the purposes of this guide, we will focus on the ufw firewall software that is already
 installed by default on all Koding VMs.
 
-UFW stands for "Uncomplicated Firewall" and is essentially a wrapper around the more complicated `iptables` firewall. It 
+UFW stands for "Uncomplicated Firewall" and is essentially a wrapper around the more complicated iptables firewall. It 
 was built to provide an easy interface that is more usable for most users as compared to the more complicated interface that
-comes with `iptables`.
+comes with iptables.
 
-## Checking the state of `ufw` on your VM
-`ufw` should be pre-installed on your VM and you can easily check that by typing the following command in Terminal:
+## Checking the state of ufw on your VM
+ufw should be pre-installed on your VM and you can easily check that by typing the following command in Terminal:
 ```
 sudo ufw status
 ```
@@ -28,7 +28,7 @@ you should see the following result (in most cases):
 ```
 Status: inactive
 ```
-If for some reason, `ufw` is not installed on your VM, you can easily install it by using the following command:
+If for some reason, ufw is not installed on your VM, you can easily install it by using the following command:
 ```
 sudo apt-get install ufw
 ```
@@ -45,7 +45,7 @@ Default: deny (incoming), allow (outgoing)
 New profiles: skip
 ```
 
-## Enable `ufw`
+## Enable ufw
 Type in this command to turn on the firewall
 ```
 sudo ufw enable
@@ -53,13 +53,12 @@ sudo ufw enable
 Please follow the steps in the next section immediately as by default every incoming connection is denied and
 if we don't add some specific rules quickly, you may get locked out of your own VM... yikes!
 
-## Adding rules to ensure that your Koding VM works just fine even with `ufw` enabled.
+## Adding rules to ensure that your Koding VM works just fine even with ufw enabled.
 Since you are using Koding via a browser, there are services running on your VM that the Koding application
 needs to talk to. When you enable the firewall, you essentially are cutting off access to these services so 
 it is VERY IMPORTANT that you enable the services below as soon as you turn on the firewall.
 
-### Enable `ssh`
-Type in this command to enable `ssh` access through the firewall
+Type in this command to enable ssh access through the firewall
 ```
 sudo ufw allow ssh
 
@@ -76,7 +75,7 @@ sudo ufw allow 56789/tcp
 ```
 
 ## Allowing access to specific standard services.
-`ufw` already knows what to do for standard services like ftp, http, ssh, telnet, etc. so if you want to enable
+ufw already knows what to do for standard services like ftp, http, ssh, telnet, etc. so if you want to enable
 any of these services, simply type in:
 ```
 sudo ufw enable ftp
@@ -92,13 +91,13 @@ Sometimes, you may have a non-standard port that you want to allow access to, yo
 ```
 sudo ufw allow 2290:2300/tcp
 ```
-where `2290:2300` represents the port range you want to allow access to. Please note that you will need to replace
-`tcp` with `udp` if you wish to allow access to both tcp and udp ports within that range.
+where 2290:2300 represents the port range you want to allow access to. Please note that you will need to replace
+tcp with udp if you wish to allow access to both tcp and udp ports within that range.
 
 ## Adding a specific IP address
 As you saw, you can add rules for specific ports and so similarly, you can also add rules for specific IP addresses.
 ```
-sudo ufw allow form 192.168.0.0
+sudo ufw allow from 192.168.0.0
 ```
 
 you can also combine ports and IP addresses to create specific rules:
