@@ -28,7 +28,7 @@ Example Deploy:
 
     case "build"
       cd ./build
-      and set -l cur_br (git br | sed -n 's/^\* //p')
+      and set -l cur_br (git branch | sed -n 's/^\* //p')
       and test "$cur_br" = "gh-pages"
       and git reset --hard HEAD
       and git clean -fd
