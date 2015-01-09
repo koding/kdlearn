@@ -6,6 +6,14 @@ categories: [nginx]
 
 # Installing Nginx
 
+Before you continue reading this guide why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install Nginx using just one command:
+
+```
+kpm install nginx
+```
+
+***
+
 Nginx is an open source proxy server, commonly used as a replace
 Nginx is an open source web server. Built with performance and memory usage in 
 mind, it's an excellent alternative to Apache. In this guide, we'll go through 
