@@ -53,7 +53,7 @@ Bellow is a list of the current available packages that can be installed using t
 
 1. [Codeigniter](http://learn.koding.com/guides/codeigniter-for-beginners/)
 2. [Django](http://learn.koding.com/guides/setting-framework-webserver/#django)
-3. [Dropbox](#)
+3. [Dropbox](http://learn.koding.com/guides/dropbox-for-file-sync/)
 4. [FTP](http://learn.koding.com/guides/setting-up-ftp-on-koding)
 5. [MeteorJS](http://learn.koding.com/guides/setting-framework-webserver/#meteorjs)
 6. [mySQL](http://learn.koding.com/guides/installing-mysql)
