@@ -10,7 +10,7 @@ In this guide we'll walk you through how to set up Dropbox right on your Koding 
 
 ## Getting started
 
-Before we begin please make sure you have the Koding Package Manager (KPM) installer on your VM. Follow [this guide](http://learn.koding.com/kpm) to understand what KPM is and how to install it so you will be able to continue with this guide.
+Before we begin please make sure you have the Koding Package Manager (KPM) installed on your VM. Follow [this guide](http://learn.koding.com/kpm) to understand what KPM is and how to install it so you will be able to continue with this guide.
 
 Also make sure you have an active Dropbox account (free or paid).
 
