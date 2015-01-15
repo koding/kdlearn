@@ -16,7 +16,7 @@ This guide will cover the basics on how to get started with Github on you Koding
 
 ## Getting started
 
-Before we begin please make sure you the Koding Package Manager (KPM) installer on your VM. Follow [this guide](http://learn.koding.com/kpm) to understand what KPM is and how to install it so you will be able to continue with this guide.
+Before we begin please make sure you have the Koding Package Manager (KPM) installer on your VM. Follow [this guide](http://learn.koding.com/kpm) to understand what KPM is and how to install it so you will be able to continue with this guide.
 
 ## Setup
 
