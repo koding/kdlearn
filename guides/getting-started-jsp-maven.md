@@ -14,7 +14,7 @@ set up an [Apache Tomcat Server](http://tomcat.apache.org/) by following this [t
 
 ## What is JSP
 
-JavaServer Pages (JSP) is used to create dynamic web pages of HTML or XML. 
+JavaServer Pages (JSP) is used to create dynamic web pages of HTML or XML by using embedded Java and/or Java backend. 
 JSP is known for its rapid development and ease of maintenance. JSP seperates the UI of an application from
 content generation, which allows designers and developers to work together without changes affecting eachother. 
 
@@ -26,11 +26,21 @@ By using a POM, Maven is able to manage a projects build, reporting, and documen
 ## Installing Maven
 
 First check and see if you have Maven installed with the following:
+
 ```
 mvn -v
 ```
+If you have a new VM then chances are you do not have Maven installed. If you see the following message you have Maven installed and can skip over the next step for Maven Installation. The message below contains which version of Maven and Java you are using as well as the directory for Maven and Java.
 
-If you have a new VM then chances are you do not have Maven installed. To install the latest version type the following:
+```
+Apache Maven 3.0.5
+Maven home: /usr/share/maven
+Java version: 1.7.0_65, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-7-openjdk-amd64/jre
+Default locale: en_US, platform encoding: ANSI_X3.4-1968
+OS name: "linux", version: "3.13.0-29-generic", arch: "amd64", family: "unix"
+```
+To install the latest version type the following:
 ```
 sudo apt-get install maven
 ```
