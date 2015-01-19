@@ -22,13 +22,13 @@ Just follow the steps and you should get phpMyAdmin installed in no time.
 
 ## Step 1
 
-The first thing that we need to do is to update our package list. We can do that using the following command.
+The first thing that you need to do is to update our package list. You can do that using the following command.
 
 ```
 sudo apt-get update
 ```
 
-After that we can go ahead and install phpmyadmin using the following command:
+After that you can go ahead and install phpmyadmin using the following command:
 
 ```
 sudo apt-get install phpmyadmin
@@ -36,7 +36,7 @@ sudo apt-get install phpmyadmin
 
 ## Step 2
 
-During the installation process you will be prompted to answer some questions in order to configure the installation properly.
+During the installation process you will be prompted to ansyour some questions in order to configure the installation properly.
 
 When asked to choose the server, you need to select **apache2**.
 
@@ -62,13 +62,13 @@ Last step is to confirm that password.
 
 ## Step 3
 
-After the installation process has finished we have to make sure that the Apache server is serving phpmyadmin properly. In order to do that we need to edit the Apache configuration file. You can use the following command.
+After the installation process has finished you have to make sure that the Apache server is serving phpmyadmin properly. In order to do that you need to edit the Apache configuration file. You can use the following command.
 
 ```
 sudo nano /etc/apache2/apache2.conf
 ```
 
-And at the very bottom of the file we need to include the following line.
+And at the very bottom of the file you need to include the following line.
 
 ```
 Include /etc/phpmyadmin/apache.conf
@@ -76,7 +76,7 @@ Include /etc/phpmyadmin/apache.conf
 
 Save the file.
 
-One more thing that we need to do before we can see everything working is to enable the **mcrypt** extension. We can do that using the following command.
+One more thing that you need to do before you can see everything working is to enable the **mcrypt** extension. You can do that using the following command.
 
 ```
 sudo php5enmod mcrypt
