@@ -982,6 +982,36 @@ If you have any question or issues please email us at support@koding.com and we&
   </item>
   
   <item>
+    <title>Installing MongoDB</title>
+    <link>//learn.koding.com/guides/install-mongodb</link>
+    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/install-mongodb</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install MongoDB using just one command:
+kpm install mongodb
+
+In this short guide we&amp;apos;ll explain how to install MongoDB, and modify
+it&amp;apos;s configuration to run in a small storage environment. Lets get 
+started!
+  Installation Installation is easy, and can be done with apt-get, as seen in the 
+following command.
+sudo apt-get install mongodb
+That&amp;apos;s it! You can start Mongo with the following command:
+sudo service mongodb start
+NOTE: If you&amp;apos;re running Mongo on a Free Koding VM, read below..
+  Configuring for Limited Storage If you&amp;apos;re running Mongo on a Free VM, you&amp;apos;ll need to configure it to use 
+small files. To do that, open up the /etc/mongodb.conf file with the
+following command:
+sudo nano /etc/mongodb.conf
+With that file open, navigate to the bottom and add the following line:
+smallfiles=true
+Now use ctrl-x to save the file. After you&amp;apos;ve saved the file, simply 
+restart Mongodb with the following command:
+sudo service mongodb restart
+</description>
+  </item>
+  
+  <item>
     <title>Getting Started: File Uploads</title>
     <link>//learn.koding.com/guides/getting-started/file-upload</link>
     <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
@@ -1010,36 +1040,6 @@ Replace LOCAL_FILE with your local file location, USERNAME with your
 Koding Username, and REMOTE_FILE with your Remote File location. An 
 example of this command can be seen below.
 scp ~/my_image.png joshmurray.koding.io:~/my_image.png
-</description>
-  </item>
-  
-  <item>
-    <title>Installing MongoDB</title>
-    <link>//learn.koding.com/guides/install-mongodb</link>
-    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/install-mongodb</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install MongoDB using just one command:
-kpm install mongodb
-
-In this short guide we&amp;apos;ll explain how to install MongoDB, and modify
-it&amp;apos;s configuration to run in a small storage environment. Lets get 
-started!
-  Installation Installation is easy, and can be done with apt-get, as seen in the 
-following command.
-sudo apt-get install mongodb
-That&amp;apos;s it! You can start Mongo with the following command:
-sudo service mongodb start
-NOTE: If you&amp;apos;re running Mongo on a Free Koding VM, read below..
-  Configuring for Limited Storage If you&amp;apos;re running Mongo on a Free VM, you&amp;apos;ll need to configure it to use 
-small files. To do that, open up the /etc/mongodb.conf file with the
-following command:
-sudo nano /etc/mongodb.conf
-With that file open, navigate to the bottom and add the following line:
-smallfiles=true
-Now use ctrl-x to save the file. After you&amp;apos;ve saved the file, simply 
-restart Mongodb with the following command:
-sudo service mongodb restart
 </description>
   </item>
   
@@ -1189,19 +1189,19 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Koding Virtual Machines Introduction</title>
-    <link>//learn.koding.com/guides/vm-introduction</link>
+    <title>Koding Terminal Introduction</title>
+    <link>//learn.koding.com/guides/terminal-introduction</link>
     <pubDate>"2014-10-10T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/vm-introduction</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/terminal-introduction</guid>
     <author>Team Koding</author>
     <description></description>
   </item>
   
   <item>
-    <title>Koding Terminal Introduction</title>
-    <link>//learn.koding.com/guides/terminal-introduction</link>
+    <title>Koding Virtual Machines Introduction</title>
+    <link>//learn.koding.com/guides/vm-introduction</link>
     <pubDate>"2014-10-10T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/terminal-introduction</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/vm-introduction</guid>
     <author>Team Koding</author>
     <description></description>
   </item>
@@ -1273,6 +1273,34 @@ examples
   </item>
   
   <item>
+    <title>What happens upon upgrade?</title>
+    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
+    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
+    <author>Team Koding</author>
+    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
+Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
+
+Ability to mark your VM(s) as Always-On
+Add more storage to your VM(s)
+
+  Utilizing new resources when upgrading to the Hobbyist Plan Once you have upgraded to Hobbyist, you can mark your VM as an Always-On VM and increase its storage from 3GB to 10GB. To to this, head over to the settings panel for your VM and follow these easy steps:
+
+head over to VM settings (as shown in the image below)
+expand the &amp;quot;More&amp;quot; panel and then the &amp;quot;Advanced&amp;quot; panel
+You will see a new button under the Advanced panel labeled &amp;quot;Resize&amp;quot; (this button only appears for users who have upgraded to the Hobbyist plan and have not yet allocated the 10GB. Once you allocate it, the button will disappear)
+Click the button to initiate resize. Once done, your VM will show 10GB. Verify that using the command df -h /
+
+
+  Utilizing new resources when upgrading to the Developer and Professional Plans Under these plans, you can have a total of up to 3 (for Developer) and 5 (for Professional) VMs, mark any of them as Always-On and allocate 25GB (for Developer) / 50GB (for Professional) of storage amonst them. You will start with the default free VM and it is up to you whether you want to leave it at the default 3GB or delete it so that you can make a new one with a storage allocation that you prefer. To delete a VM, simply go the settings panel of the VM and click the Terminate button (as shown in the attached screen shot).
+
+To create a new VM, click the + icon in the VM list and you will be presented wit the option to create a new VM with a space allocation that is preferable to you (as shown below).
+
+Enjoy the new resources and thanks again for upgrading! If you have any addtional questions regarding upgrades and resources, please send us a support request and we will get back to you as soon as possible.
+</description>
+  </item>
+  
+  <item>
     <title>Getting Started with C and C++</title>
     <link>//learn.koding.com/guides/getting-started-c-cpp</link>
     <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
@@ -1326,34 +1354,6 @@ for many compilers, as Visual Studio, and IDEs as Eclipse.
 The Biicode platform automatically generate CMake files for you, based on 
 your source code files. It also manage dependencies, so it can be used for reusing
 existing code easily.
-</description>
-  </item>
-  
-  <item>
-    <title>What happens upon upgrade?</title>
-    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
-    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
-    <author>Team Koding</author>
-    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
-Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
-
-Ability to mark your VM(s) as Always-On
-Add more storage to your VM(s)
-
-  Utilizing new resources when upgrading to the Hobbyist Plan Once you have upgraded to Hobbyist, you can mark your VM as an Always-On VM and increase its storage from 3GB to 10GB. To to this, head over to the settings panel for your VM and follow these easy steps:
-
-head over to VM settings (as shown in the image below)
-expand the &amp;quot;More&amp;quot; panel and then the &amp;quot;Advanced&amp;quot; panel
-You will see a new button under the Advanced panel labeled &amp;quot;Resize&amp;quot; (this button only appears for users who have upgraded to the Hobbyist plan and have not yet allocated the 10GB. Once you allocate it, the button will disappear)
-Click the button to initiate resize. Once done, your VM will show 10GB. Verify that using the command df -h /
-
-
-  Utilizing new resources when upgrading to the Developer and Professional Plans Under these plans, you can have a total of up to 3 (for Developer) and 5 (for Professional) VMs, mark any of them as Always-On and allocate 25GB (for Developer) / 50GB (for Professional) of storage amonst them. You will start with the default free VM and it is up to you whether you want to leave it at the default 3GB or delete it so that you can make a new one with a storage allocation that you prefer. To delete a VM, simply go the settings panel of the VM and click the Terminate button (as shown in the attached screen shot).
-
-To create a new VM, click the + icon in the VM list and you will be presented wit the option to create a new VM with a space allocation that is preferable to you (as shown below).
-
-Enjoy the new resources and thanks again for upgrading! If you have any addtional questions regarding upgrades and resources, please send us a support request and we will get back to you as soon as possible.
 </description>
   </item>
   
@@ -1784,6 +1784,37 @@ That is all!
   </item>
   
   <item>
+    <title>Install Rockmongo</title>
+    <link>//learn.koding.com/guides/install-rockmongo</link>
+    <pubDate>2015-01-2</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/install-rockmongo</guid>
+    <author>Thien</author>
+    <description>  What is Rockmongo Rockmongo is a MongoDB administration tool that can be used to manage servers, databases, collections, documents, indexes etc. It provides a very user-friendly way for reading, writing and creating documents. It is very similar to phpMyAdmin. 
+  Step 1 The first thing you need to do is to open up your Koding Terminal and type in the following command:
+cd Web
+  Step 2. Next up, you need to download the Rockmongo version that you&amp;apos;re planing on using. In this case, you are going to use the latest version:
+git clone --depth=1 https://github.com/iwind/rockmongo.git
+  Step 3 Open the config.php file and change the following things:
+
+Host - should be set to 0.0.0.0
+Port - choose a desired port
+Chose a username and password. Note that by default they are set to admin and admin.
+
+  Step 4 Now Mongodb will need the PHP driver to work. You need to install it by running this command:
+sudo pecl install mongo
+After that you will need to edit the file 20-mono.ini, that is located at this path /etc/php5/apache2/conf.d/, and you you will need to add this line at the very end:
+extension=mongo.so
+  Step 5 Restart the Apache server using the following command and you should see everything working.
+sudo service apache2 restart
+You will now be able to access Rockmongo by following a similar URL:
+http://YOUR_KODING_USERNAME.koding.io/rockmongo
+If everything is working properly, you should see the following screen in your browser:
+
+That&amp;apos;s it! You&amp;apos;re now running Rockmongo on Koding!
+</description>
+  </item>
+  
+  <item>
     <title>Getting Started with Python</title>
     <link>//learn.koding.com/guides/getting-started-python</link>
     <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
@@ -1960,132 +1991,26 @@ This concludes the getting started with Python guide. Thanks for reading!
   </item>
   
   <item>
-    <title>Install Rockmongo</title>
-    <link>//learn.koding.com/guides/install-rockmongo</link>
-    <pubDate>2015-01-2</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/install-rockmongo</guid>
-    <author>Thien</author>
-    <description>  What is Rockmongo Rockmongo is a MongoDB administration tool that can be used to manage servers, databases, collections, documents, indexes etc. It provides a very user-friendly way for reading, writing and creating documents. It is very similar to phpMyAdmin. 
-  Step 1 The first thing you need to do is to open up your Koding Terminal and type in the following command:
-cd Web
-  Step 2. Next up, you need to download the Rockmongo version that you&amp;apos;re planing on using. In this case, you are going to use the latest version:
-git clone --depth=1 https://github.com/iwind/rockmongo.git
-  Step 3 Open the config.php file and change the following things:
-
-Host - should be set to 0.0.0.0
-Port - choose a desired port
-Chose a username and password. Note that by default they are set to admin and admin.
-
-  Step 4 Now Mongodb will need the PHP driver to work. You need to install it by running this command:
-sudo pecl install mongo
-After that you will need to edit the file 20-mono.ini, that is located at this path /etc/php5/apache2/conf.d/, and you you will need to add this line at the very end:
-extension=mongo.so
-  Step 5 Restart the Apache server using the following command and you should see everything working.
-sudo service apache2 restart
-You will now be able to access Rockmongo by following a similar URL:
-http://YOUR_KODING_USERNAME.koding.io/rockmongo
-If everything is working properly, you should see the following screen in your browser:
-
-That&amp;apos;s it! You&amp;apos;re now running Rockmongo on Koding!
-</description>
-  </item>
-  
-  <item>
-    <title>Author a guide: Overview and Guidelines</title>
-    <link>//learn.koding.com/contribute/guidelines</link>
+    <title>Author a guide</title>
+    <link>//learn.koding.com/contribute</link>
     <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/contribute/guidelines</guid>
+    <guid isPermaLink="true">//learn.koding.com/contribute</guid>
     <author>Team Koding</author>
-    <description>When submitting guides to Koding University you must understand the 
-document structure, as well as writing styles. Guides on Koding 
-University should be formatted in a similar style and tone. This guide 
-will outline some guideliness for guide submissions to adhere to.
-Note that while these should be taken as best practices more than 
-absolute law, submissions may be rejected if they deviate too far from 
-the guidelines.
-  What is Koding University? Koding University is an Open Source, statically generated site.  Each 
-document is stored as Markdown files found in the KDLearn 
-Repository. The actual implementation code is hidden in the 
-dotfile directory named .metalsmith. We&amp;apos;ll go over this directory in 
-the Previewing guide.
-  File Structure By keeping the content in the main directory, and hiding the 
-implementation, the file structure becomes content first. Meaning 
-that at the root of the repo you see the actual content structure. You do 
-not need to know how to compile the site, or any real implementation 
-details, just write markdown!
-As an example, lets look at the markdown file that you&amp;apos;re reading now.If you look at the repo, you&amp;apos;ll see a file named 
-contribute/guidelines.md. This file compiles to 
-http://learn.koding.com/contribute/guidelines/index.html. Notice how 
-the path contribute/guidelines is the same for the source and output 
-html? Below are a few more examples.
+    <description>In this guide series we will go over Writing and Editing guides for Koding 
+University. We will cover every step of the process, but basic Git, 
+Github, and Markdown knowledge will be very useful.
+If you already know git, github, and markdown, here is the simple set of 
+tasks you&amp;apos;ll need to do.
 
-./contribute/index.md becomes
-http://learn.koding.com/contribute/index.html
-./guides/markdown.md becomes
-http://learn.koding.com/guides/markdown/index.html
-./faq/one-more-step.md becomes
-http://learn.koding.com/faq/one-more-step/index.html
-./guides/your-new-guide.md becomes
-http://learn.koding.com/guides/your-new-guide/index.html
+Review the Style Guidelines
+Fork KDLearn
+Clone your forked repo
+Find or create your files, Make your markdown edits
+Commit and push your changes to your repo
+Make a pull request of your changes, against the KDLearn Repo
 
-See the pattern? Each file can be accessed from the same name on the 
-website, minus the .md. ./foo.md becomes /foo on the website.
-That means if you add a file, either markdown or image, it will be 
-added to the site with the same location relative to the project root.It&amp;apos;s not hidden away in some obscure and complicated file structure, what 
-you see in markdown is what shows up on the site. Content first.
-  Recommended URL Structure Now that you understand the File Structure and how it correlates to the 
-generated URL, we recommend that you adhere to the following naming 
-conventions for your document URLs.
-
-Guides should be within the kdlearn/guides directory.
-Your filename should describe your guide in clear wording.
-Be concise. Try not to have more than 5 words for a filename.
-No special characters. Plain words and hyphens only. Example: 
-foo-bar-baz.md.
-
-  Title and Description A guide&amp;apos;s title and description are also very important to the document.These will be how people find your guide.
-The title is your Markdown Header 1. It should be similar to the URL, 
-concise, no more than 7 words.
-The description is the first paragraph of your guide, directly following 
-the Markdown Header (title). Explain what the guide is about, and what 
-the technologies being explained are. Keep it to a single paragraph.
-  Headers are awesome, use them. Headers are a great way to separate content sections. They stand out, can 
-be linked to directly, and have levels built into them without nesting 
-indentation.
-These are preferred over ordered lists for larger sections. Ordered lists 
-are great for small steps, headers are great for larger steps / 
-instructions.
-Don&amp;apos;t forget, headers with levels (## Header1, ### Header 3, and so 
-forth) should be used to group content just like you do with HTML&amp;apos;s 
-&amp;lt;h2&amp;gt;s and so forth. You can review Header Markdown here
-</description>
-  </item>
-  
-  <item>
-    <title>Getting Started: Editing Your Profile</title>
-    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
-    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
-    <author>Team Koding</author>
-    <description>Your Koding profile is your public information page on Koding. Currently 
-it shows your Avatar, Name and Description, recent Koding activity, and 
-in the near future Badges and additional social information. In this 
-guide we&amp;apos;ll go over the basic usage of your Koding profile.
-  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted 
-below.
-
-Clicking on it will open your profile.
-  Avatar, Name and Description When viewing your profile for the first time, you&amp;apos;ll see that your first 
-name is set to your Koding username, and your last name and description 
-are set to default values, as seen in the below image.
-
-These default values are only seen by you, and if you double click them, 
-you can edit that field.
-
-
-
-
-
+If you need more in depth instructions than that, please continue with 
+this series below. Thanks!
 </description>
   </item>
   
@@ -2212,26 +2137,73 @@ your localhost with your MySQL Client!
   </item>
   
   <item>
-    <title>Author a guide</title>
-    <link>//learn.koding.com/contribute</link>
+    <title>Author a guide: Overview and Guidelines</title>
+    <link>//learn.koding.com/contribute/guidelines</link>
     <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/contribute</guid>
+    <guid isPermaLink="true">//learn.koding.com/contribute/guidelines</guid>
     <author>Team Koding</author>
-    <description>In this guide series we will go over Writing and Editing guides for Koding 
-University. We will cover every step of the process, but basic Git, 
-Github, and Markdown knowledge will be very useful.
-If you already know git, github, and markdown, here is the simple set of 
-tasks you&amp;apos;ll need to do.
+    <description>When submitting guides to Koding University you must understand the 
+document structure, as well as writing styles. Guides on Koding 
+University should be formatted in a similar style and tone. This guide 
+will outline some guideliness for guide submissions to adhere to.
+Note that while these should be taken as best practices more than 
+absolute law, submissions may be rejected if they deviate too far from 
+the guidelines.
+  What is Koding University? Koding University is an Open Source, statically generated site.  Each 
+document is stored as Markdown files found in the KDLearn 
+Repository. The actual implementation code is hidden in the 
+dotfile directory named .metalsmith. We&amp;apos;ll go over this directory in 
+the Previewing guide.
+  File Structure By keeping the content in the main directory, and hiding the 
+implementation, the file structure becomes content first. Meaning 
+that at the root of the repo you see the actual content structure. You do 
+not need to know how to compile the site, or any real implementation 
+details, just write markdown!
+As an example, lets look at the markdown file that you&amp;apos;re reading now.If you look at the repo, you&amp;apos;ll see a file named 
+contribute/guidelines.md. This file compiles to 
+http://learn.koding.com/contribute/guidelines/index.html. Notice how 
+the path contribute/guidelines is the same for the source and output 
+html? Below are a few more examples.
 
-Review the Style Guidelines
-Fork KDLearn
-Clone your forked repo
-Find or create your files, Make your markdown edits
-Commit and push your changes to your repo
-Make a pull request of your changes, against the KDLearn Repo
+./contribute/index.md becomes
+http://learn.koding.com/contribute/index.html
+./guides/markdown.md becomes
+http://learn.koding.com/guides/markdown/index.html
+./faq/one-more-step.md becomes
+http://learn.koding.com/faq/one-more-step/index.html
+./guides/your-new-guide.md becomes
+http://learn.koding.com/guides/your-new-guide/index.html
 
-If you need more in depth instructions than that, please continue with 
-this series below. Thanks!
+See the pattern? Each file can be accessed from the same name on the 
+website, minus the .md. ./foo.md becomes /foo on the website.
+That means if you add a file, either markdown or image, it will be 
+added to the site with the same location relative to the project root.It&amp;apos;s not hidden away in some obscure and complicated file structure, what 
+you see in markdown is what shows up on the site. Content first.
+  Recommended URL Structure Now that you understand the File Structure and how it correlates to the 
+generated URL, we recommend that you adhere to the following naming 
+conventions for your document URLs.
+
+Guides should be within the kdlearn/guides directory.
+Your filename should describe your guide in clear wording.
+Be concise. Try not to have more than 5 words for a filename.
+No special characters. Plain words and hyphens only. Example: 
+foo-bar-baz.md.
+
+  Title and Description A guide&amp;apos;s title and description are also very important to the document.These will be how people find your guide.
+The title is your Markdown Header 1. It should be similar to the URL, 
+concise, no more than 7 words.
+The description is the first paragraph of your guide, directly following 
+the Markdown Header (title). Explain what the guide is about, and what 
+the technologies being explained are. Keep it to a single paragraph.
+  Headers are awesome, use them. Headers are a great way to separate content sections. They stand out, can 
+be linked to directly, and have levels built into them without nesting 
+indentation.
+These are preferred over ordered lists for larger sections. Ordered lists 
+are great for small steps, headers are great for larger steps / 
+instructions.
+Don&amp;apos;t forget, headers with levels (## Header1, ### Header 3, and so 
+forth) should be used to group content just like you do with HTML&amp;apos;s 
+&amp;lt;h2&amp;gt;s and so forth. You can review Header Markdown here
 </description>
   </item>
   
@@ -2284,6 +2256,34 @@ full gulp command again.
 And that sums it up! You now know how to contribute to Koding University, 
 in multiple ways. Keep up the awesome work, and we look forward to your 
 contribution!
+</description>
+  </item>
+  
+  <item>
+    <title>Getting Started: Editing Your Profile</title>
+    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
+    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
+    <author>Team Koding</author>
+    <description>Your Koding profile is your public information page on Koding. Currently 
+it shows your Avatar, Name and Description, recent Koding activity, and 
+in the near future Badges and additional social information. In this 
+guide we&amp;apos;ll go over the basic usage of your Koding profile.
+  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted 
+below.
+
+Clicking on it will open your profile.
+  Avatar, Name and Description When viewing your profile for the first time, you&amp;apos;ll see that your first 
+name is set to your Koding username, and your last name and description 
+are set to default values, as seen in the below image.
+
+These default values are only seen by you, and if you double click them, 
+you can edit that field.
+
+
+
+
+
 </description>
   </item>
   
@@ -2481,6 +2481,78 @@ routes, middleware, and finally templates. Thanks for reading!
   </item>
   
   <item>
+    <title>Ghost Blog Installation</title>
+    <link>//learn.koding.com/guides/ghost-installation</link>
+    <pubDate>"2014-08-01T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/ghost-installation</guid>
+    <author>Team Koding</author>
+    <description>In this article we will go over the installation process for the awesome 
+new blogging software, Ghost. Installation is quick 
+and easy, and just requires a few configuration edits, making this great 
+for beginners. So, lets get started!
+  What is Ghost? Ghost is an awesome new blog software written with &amp;#x201C;Just Blogging&amp;#x201D; in 
+mind. Think WordPress without the complexity, bringing blogging back to 
+it&amp;#x2019;s roots, so to say. This is all well and good, but with any product 
+that is so new there is always confusion on how to install, develop, and 
+run it.
+So lets try and resolve some of that confusion. Lets go over the simple 
+process of setting up Ghost on Koding so you can 
+learn it, toy with it, develop with it, and create your Ghost blog to be 
+exactly what you want.
+  Downloading Ghost We&amp;apos;re going to use the Koding Terminal to download Ghost, so 
+visit the [Ghost Download][download-page] and look for the download link.Copy the url.
+At the time of writing this guide, the download url is: 
+https://ghost.org/zip/ghost-0.5.2.zip (This version is likely 
+outdated, please visit the download page and get the most updated link.)
+Now, go to your Terminal and type in the following commands.
+mkdir ghost
+cd ghost
+wget [ghost-zip-url]
+Replace [ghost-zip-url] with the full URL of the zip file that you 
+copied above.
+  Unzipping Ghost The download is in zip format, so we need to unzip it. Type in the 
+following command.
+unzip [ghost-zip-name]
+  Installing Dependencies Next, we need to install the dependencies.
+npm install --production
+This step will take a minute or two.
+  Edit the config Next up, open up the Ace Editor and double click your ghost 
+directory to expand it. Right click, and rename, the config.example.js 
+file to config.js.
+On line 36, look for the following section:
+        server: {
+            // Host to be passed to node&amp;apos;s `net.Server#listen()`
+            host: &amp;apos;127.0.0.1&amp;apos;,
+            // Port to be passed to node&amp;apos;s `net.Server#listen()`, for 
+iisnode set this to `process.env.PORT`
+            port: &amp;apos;2368&amp;apos;
+        },
+
+Replace 127.0.0.1 with 0.0.0.0, and change the Port to whichever 
+you&amp;apos;d like to use. Save the file with Ctrl-s.
+  Starting Ghost Go back to your Terminal and type in the following command to 
+start your Ghost Blog.
+npm start
+Note: If you had previously closed your Terminal, you&amp;apos;ll need to navigate 
+into the ghost directory again, with cd ghost.
+  Visiting your Ghost Blog Now open up a new tab and visit your Ghost Blog on your Koding domain at 
+the following address.
+http://hostname.username.koding.io:port
+Where username is your Koding username, and port is the port you 
+chose above.
+If you navigate to the following address, you can signup as Admin to your 
+Ghost installation.
+http://hostname.username.koding.io:port/ghost
+  Running Ghost on Port 80 If you&amp;apos;d like to run Ghost on the default Port 80, you&amp;apos;ll have to Stop 
+Apache, and start Ghost with sudo. Here are the commands to do this.
+sudo service apache2 stop
+sudo npm start
+This should be typed from the Ghost installation directory.
+And that&amp;apos;s it! You should now have a Ghost installation up and running.Happy Blogging!
+</description>
+  </item>
+  
+  <item>
     <title>Getting Started with NodeJS</title>
     <link>//learn.koding.com/guides/getting-started-nodejs</link>
     <pubDate>"2014-08-01T00:00:00.000Z"</pubDate>
@@ -2610,78 +2682,6 @@ This sums up the Getting Started with NodeJS guide. You should now have a
 good understanding of what Node is, from a very basic perspective. As 
 always, don&amp;apos;t forget to look at the API Documentation. Have 
 fun with Node!
-</description>
-  </item>
-  
-  <item>
-    <title>Ghost Blog Installation</title>
-    <link>//learn.koding.com/guides/ghost-installation</link>
-    <pubDate>"2014-08-01T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/ghost-installation</guid>
-    <author>Team Koding</author>
-    <description>In this article we will go over the installation process for the awesome 
-new blogging software, Ghost. Installation is quick 
-and easy, and just requires a few configuration edits, making this great 
-for beginners. So, lets get started!
-  What is Ghost? Ghost is an awesome new blog software written with &amp;#x201C;Just Blogging&amp;#x201D; in 
-mind. Think WordPress without the complexity, bringing blogging back to 
-it&amp;#x2019;s roots, so to say. This is all well and good, but with any product 
-that is so new there is always confusion on how to install, develop, and 
-run it.
-So lets try and resolve some of that confusion. Lets go over the simple 
-process of setting up Ghost on Koding so you can 
-learn it, toy with it, develop with it, and create your Ghost blog to be 
-exactly what you want.
-  Downloading Ghost We&amp;apos;re going to use the Koding Terminal to download Ghost, so 
-visit the [Ghost Download][download-page] and look for the download link.Copy the url.
-At the time of writing this guide, the download url is: 
-https://ghost.org/zip/ghost-0.5.2.zip (This version is likely 
-outdated, please visit the download page and get the most updated link.)
-Now, go to your Terminal and type in the following commands.
-mkdir ghost
-cd ghost
-wget [ghost-zip-url]
-Replace [ghost-zip-url] with the full URL of the zip file that you 
-copied above.
-  Unzipping Ghost The download is in zip format, so we need to unzip it. Type in the 
-following command.
-unzip [ghost-zip-name]
-  Installing Dependencies Next, we need to install the dependencies.
-npm install --production
-This step will take a minute or two.
-  Edit the config Next up, open up the Ace Editor and double click your ghost 
-directory to expand it. Right click, and rename, the config.example.js 
-file to config.js.
-On line 36, look for the following section:
-        server: {
-            // Host to be passed to node&amp;apos;s `net.Server#listen()`
-            host: &amp;apos;127.0.0.1&amp;apos;,
-            // Port to be passed to node&amp;apos;s `net.Server#listen()`, for 
-iisnode set this to `process.env.PORT`
-            port: &amp;apos;2368&amp;apos;
-        },
-
-Replace 127.0.0.1 with 0.0.0.0, and change the Port to whichever 
-you&amp;apos;d like to use. Save the file with Ctrl-s.
-  Starting Ghost Go back to your Terminal and type in the following command to 
-start your Ghost Blog.
-npm start
-Note: If you had previously closed your Terminal, you&amp;apos;ll need to navigate 
-into the ghost directory again, with cd ghost.
-  Visiting your Ghost Blog Now open up a new tab and visit your Ghost Blog on your Koding domain at 
-the following address.
-http://hostname.username.koding.io:port
-Where username is your Koding username, and port is the port you 
-chose above.
-If you navigate to the following address, you can signup as Admin to your 
-Ghost installation.
-http://hostname.username.koding.io:port/ghost
-  Running Ghost on Port 80 If you&amp;apos;d like to run Ghost on the default Port 80, you&amp;apos;ll have to Stop 
-Apache, and start Ghost with sudo. Here are the commands to do this.
-sudo service apache2 stop
-sudo npm start
-This should be typed from the Ghost installation directory.
-And that&amp;apos;s it! You should now have a Ghost installation up and running.Happy Blogging!
 </description>
   </item>
   
@@ -3574,6 +3574,53 @@ prepend your list items with a number, instead of a hyphen. Example:
   </item>
   
   <item>
+    <title>Getting Started: The Activity Feed</title>
+    <link>//learn.koding.com/guides/getting-started/activity-feed</link>
+    <pubDate>"2014-05-30T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/activity-feed</guid>
+    <author>Team Koding</author>
+    <description>The Activity Feed is the central location for discussion on Koding. A 
+public message board, with markdown support, previewing, hashtag topics 
+and more, it&amp;apos;s a central component to Koding&amp;apos;s Social experience.
+
+  Posting and Formatting To post to the activity feed, find the input box in the top of the page.
+
+Simply type something in, and press the green submit button. Just plain text 
+can get a bit boring though, so Koding supports full 
+Markdown, as seen below:
+
+  Previewing To preview your post, simply press the little eye on the right side of 
+the input box. Your Markdown will be rendered and highlighted 
+appropriately.
+
+  Tagging Tagging your content is important. With tags, your content can be
+categorized, which makes it easier to search and more likely to be seen 
+by people who follow those channels.
+
+
+
+Here you can see the previous Markdown example, tagged with the 
+#markdown tag.
+  Searching On the #public channel there is a search field next to 
+Most Liked / Most Recent, as seen below.
+
+Searching the activity feed will search for the contents of a post, as 
+well as the tags.
+  Channels Channels are how you view a steam of posts with a certain Tag. When you 
+click on a tag, it opens a channel for that tag. Clicking on the Grey 
+checkmark next to the channel name, will subscribe you to that channel, 
+and keep it open anytime you visit Koding.
+
+To browse channels that you might be interested in, you can click the 
+Plus button next to &amp;quot;Channel&amp;quot; in the sidebar (as seen below), and 
+search for the channel you&amp;apos;re interested in.
+
+Following channels is a great way to stay active in content that matters 
+to you.
+</description>
+  </item>
+  
+  <item>
     <title>Getting Started: The UI</title>
     <link>//learn.koding.com/guides/getting-started/the-ui</link>
     <pubDate>"2014-05-30T00:00:00.000Z"</pubDate>
@@ -3623,53 +3670,6 @@ panel.
 
 Here you&amp;apos;ll be able to modify your Name, Password, and link your Koding 
 account to various services.
-</description>
-  </item>
-  
-  <item>
-    <title>Getting Started: The Activity Feed</title>
-    <link>//learn.koding.com/guides/getting-started/activity-feed</link>
-    <pubDate>"2014-05-30T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/activity-feed</guid>
-    <author>Team Koding</author>
-    <description>The Activity Feed is the central location for discussion on Koding. A 
-public message board, with markdown support, previewing, hashtag topics 
-and more, it&amp;apos;s a central component to Koding&amp;apos;s Social experience.
-
-  Posting and Formatting To post to the activity feed, find the input box in the top of the page.
-
-Simply type something in, and press the green submit button. Just plain text 
-can get a bit boring though, so Koding supports full 
-Markdown, as seen below:
-
-  Previewing To preview your post, simply press the little eye on the right side of 
-the input box. Your Markdown will be rendered and highlighted 
-appropriately.
-
-  Tagging Tagging your content is important. With tags, your content can be
-categorized, which makes it easier to search and more likely to be seen 
-by people who follow those channels.
-
-
-
-Here you can see the previous Markdown example, tagged with the 
-#markdown tag.
-  Searching On the #public channel there is a search field next to 
-Most Liked / Most Recent, as seen below.
-
-Searching the activity feed will search for the contents of a post, as 
-well as the tags.
-  Channels Channels are how you view a steam of posts with a certain Tag. When you 
-click on a tag, it opens a channel for that tag. Clicking on the Grey 
-checkmark next to the channel name, will subscribe you to that channel, 
-and keep it open anytime you visit Koding.
-
-To browse channels that you might be interested in, you can click the 
-Plus button next to &amp;quot;Channel&amp;quot; in the sidebar (as seen below), and 
-search for the channel you&amp;apos;re interested in.
-
-Following channels is a great way to stay active in content that matters 
-to you.
 </description>
   </item>
   
@@ -3909,27 +3909,6 @@ That is all. If you have any issues setting up WebDav you can drop an email at s
   </item>
   
   <item>
-    <title>PyroCMS Setup and Installation for Beginners</title>
-    <link>//learn.koding.com/guides/pyrocms-installation-for-beginners</link>
-    <pubDate>"2014-03-09T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/pyrocms-installation-for-beginners</guid>
-    <author>Team Koding</author>
-    <description>This article will cover the basic steps on how to setup a blog using PyroCMS as the base.
-  What&amp;apos;s PyroCMS? Good question. It&amp;apos;s a really simple, flexible and community driven CMS built with the CodeIgniter PHP framework that has an on-growing community of developers and supporters around it.
-But how do you set up PyroCMS on Koding? Well it&amp;apos;s simple, you just follow the simple tutorial below step by step. After you&amp;apos;ve finished with the tutorial you&amp;apos;ll have a brand new website that runs PyroCMS.
-  Step-by-step PyroCMS   Step 1. Open up your Koding Terminal and type in the following command to get you started. [code]cd Web;[/code]
-  Step 2. Still in the terminal window download the source code like so: [code]wget https://www.pyrocms.com/downloads/v2.2.3[/code] or whatever the latest version you can find on the official website.
-  Step 3. We rename the downloaded file, unzip it and rename the newly created folder. [code] mv v2.2.3 v2.2.3.zip; unzip v2.2.3.zip; mv pyrocms-pyrocms-08759da pyrocms [/code]
-  Step 4. We now can navigate to our newly created folder. We open up a new browser 
-window and type in 
-[code]http://[your-vm-hostname].[your-Koding-username].koding.io/pyrocms[/code] 
-then just follow the steps that show up on the screen to install it.
-Alright then, that was fun. You now have a brand new website that runs PyroCMS.
-This has been a beginner guide from Koding. As always, more Quick Tips and beginner friendly guides coming soon, so stay tuned!
-</description>
-  </item>
-  
-  <item>
     <title>AngularJS Step-by-Step Setup</title>
     <link>//learn.koding.com/guides/angularjs-step-by-step</link>
     <pubDate>"2014-03-09T00:00:00.000Z"</pubDate>
@@ -3974,6 +3953,27 @@ And that&amp;apos;s it. Why not continue and experiment with AngularJS on
 Koding and see what more cool stuff you can 
 make. As always, more Quick Tips and beginner friendly guides coming 
 soon, so stay tuned!
+</description>
+  </item>
+  
+  <item>
+    <title>PyroCMS Setup and Installation for Beginners</title>
+    <link>//learn.koding.com/guides/pyrocms-installation-for-beginners</link>
+    <pubDate>"2014-03-09T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/pyrocms-installation-for-beginners</guid>
+    <author>Team Koding</author>
+    <description>This article will cover the basic steps on how to setup a blog using PyroCMS as the base.
+  What&amp;apos;s PyroCMS? Good question. It&amp;apos;s a really simple, flexible and community driven CMS built with the CodeIgniter PHP framework that has an on-growing community of developers and supporters around it.
+But how do you set up PyroCMS on Koding? Well it&amp;apos;s simple, you just follow the simple tutorial below step by step. After you&amp;apos;ve finished with the tutorial you&amp;apos;ll have a brand new website that runs PyroCMS.
+  Step-by-step PyroCMS   Step 1. Open up your Koding Terminal and type in the following command to get you started. [code]cd Web;[/code]
+  Step 2. Still in the terminal window download the source code like so: [code]wget https://www.pyrocms.com/downloads/v2.2.3[/code] or whatever the latest version you can find on the official website.
+  Step 3. We rename the downloaded file, unzip it and rename the newly created folder. [code] mv v2.2.3 v2.2.3.zip; unzip v2.2.3.zip; mv pyrocms-pyrocms-08759da pyrocms [/code]
+  Step 4. We now can navigate to our newly created folder. We open up a new browser 
+window and type in 
+[code]http://[your-vm-hostname].[your-Koding-username].koding.io/pyrocms[/code] 
+then just follow the steps that show up on the screen to install it.
+Alright then, that was fun. You now have a brand new website that runs PyroCMS.
+This has been a beginner guide from Koding. As always, more Quick Tips and beginner friendly guides coming soon, so stay tuned!
 </description>
   </item>
   
@@ -4137,14 +4137,20 @@ kpm install codeigniter
 
 In this article we will go over installing Codeigniter for beginners.
   What is Codeigniter? Codeigniter may be old hat to some, but the tried and true frameworks tend to hold their own for quite a long time, and for good reason. It is polished, has an extensive history, and above all has a large community to back it up. 
-  So how do i get started with Codeigniter? In the following video, we&amp;#x2019;ll go over the basic process of running Codeigniter on Koding. 
-As you can see, setting up CI is a pretty simple process. The only 
-trouble is ensuring that your LAMP stack is up and running properly, but 
-thanks to Koding this process was made easy. Koding 
-comes with Apache by default, so Codeigniter just works. On top of 
-that, we were able to get started with Codeigniter entirely in our 
-browser. No downloading and installing LAMP stacks to our localhost 
-required. 
+  So how do i get started with Codeigniter? Before you begin make sure you are in your Web folder:
+cd Web
+First you will need to download the latest version of Codeigniter using the following command, in your Terminal:
+wget https://github.com/bcit-ci/CodeIgniter/archive/2.2-stable.zip
+After that you&amp;apos;ll need to unzip the file using the command:
+unzip 2.2-stable.zip
+Next we need to rename the folder to a more friendly one:
+mv CodeIgniter-2.2-stable codeigniter
+You will now be able to access Codeigniter by following a similar URL:
+http://KODING_USERNAME.koding.io/codeigniter
+Find out more about your VM hostname here.
+Koding comes with Apache by default, so Codeigniter just works.
+As you can see, setting up CodeIgniter is a pretty simple process.
+If you encounter any issues or have any questions please drop an email here.
 </description>
   </item>
   
@@ -4207,17 +4213,6 @@ If you have trouble finding your VM Address, click here.
   </item>
   
   <item>
-    <title>How can I delete my account?</title>
-    <link>//learn.koding.com/faq/delete-account</link>
-    <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/delete-account</guid>
-    <author></author>
-    <description>You do not have to contact Koding support if you wish to delete your account. Simply head over to Account Settings from where you can easily initiate the deletion process.
-It would help us immensly if you can take the quick 3 question survey right after the deletion process ends. It will help us understand why we lost you and how we can improve.
-</description>
-  </item>
-  
-  <item>
     <title>How can I reset my VM back to it's original state?</title>
     <link>//learn.koding.com/faq/vm-reinit</link>
     <pubDate></pubDate>
@@ -4245,15 +4240,13 @@ Once you initiate a reinit, you will see appropriate messages on the screen as y
   </item>
   
   <item>
-    <title>How do I transfer/copy files to my VM?</title>
-    <link>//learn.koding.com/faq/transfer-files</link>
+    <title>How can I delete my account?</title>
+    <link>//learn.koding.com/faq/delete-account</link>
     <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/transfer-files</guid>
+    <guid isPermaLink="true">//learn.koding.com/faq/delete-account</guid>
     <author></author>
-    <description>  I want to copy a few files Getting a few files to your Koding VM is simple and there are a variety of methods. We&amp;apos;ve put together a short video titled Importing your files in the Video&amp;apos;s section of Koding University. Check that out for a simple drag-drop method to upload a few files.
-  I want to copy a large number of files To copy several files, use FTP. To set up FTP on your VM, simply open up Terminal and type in
-help ftp
-
+    <description>You do not have to contact Koding support if you wish to delete your account. Simply head over to Account Settings from where you can easily initiate the deletion process.
+It would help us immensly if you can take the quick 3 question survey right after the deletion process ends. It will help us understand why we lost you and how we can improve.
 </description>
   </item>
   
@@ -4324,6 +4317,19 @@ once added, these sub-domains become available on the setting panels
 of all your VMs for easy reassignment
 deleting a sub-domain is as easy as adding one!
 
+
+</description>
+  </item>
+  
+  <item>
+    <title>How do I transfer/copy files to my VM?</title>
+    <link>//learn.koding.com/faq/transfer-files</link>
+    <pubDate></pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/transfer-files</guid>
+    <author></author>
+    <description>  I want to copy a few files Getting a few files to your Koding VM is simple and there are a variety of methods. We&amp;apos;ve put together a short video titled Importing your files in the Video&amp;apos;s section of Koding University. Check that out for a simple drag-drop method to upload a few files.
+  I want to copy a large number of files To copy several files, use FTP. To set up FTP on your VM, simply open up Terminal and type in
+help ftp
 
 </description>
   </item>
