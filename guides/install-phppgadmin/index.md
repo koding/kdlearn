@@ -76,6 +76,12 @@ allow from all
 
 Save the file.
 
+Now you'll need to create a symlink to be able to access phpPgAdmin correctly:
+
+```
+ln -s /usr/share/phppgadmin /var/www/phppgadmin
+```
+
 ## Step 3
 
 Restart the Apache server using the following command:
