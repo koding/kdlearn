@@ -60,6 +60,7 @@ Bellow is a list of the current available packages that can be installed using t
 7. [MongoDB](http://learn.koding.com/guides/install-mongodb)
 8. [phpMyAdmin](http://learn.koding.com/guides/install-phpmyadmin)
 9. [PIP](http://learn.koding.com/guides/getting-started-python/)
+10.  [Rails](http://learn.koding.com/guides/setting-framework-webserver/#rails)
 11. [Ungit](http://learn.koding.com/guides/using-github)
 12. [WordPress](http://learn.koding.com/guides/installing-wordpress)
 

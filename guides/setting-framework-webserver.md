@@ -92,6 +92,14 @@ sudo netstat -tnlp
 
 #Rails
 
+Before you continue reading this guide why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install Rails using just one command:
+
+```
+kpm install rails
+```
+
+***
+
 Rails listens to 0.0.0.0:3000 by default. 
 
 Install Rails via the following command
