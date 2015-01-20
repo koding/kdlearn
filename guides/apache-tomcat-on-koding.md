@@ -8,6 +8,14 @@ categories: [Java]
 
 # Apache Tomcat On Koding
 
+Before you continue reading this guide why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install Tomcat using just one command:
+
+```
+kpm install tomcat
+```
+
+***
+
 In this guide we'll take a look on how to deploy Java Web Applications on [Apache Tomcat](http://tomcat.apache.org/) Server running on your [Koding](https://koding.com) Virtual Machine.
 
 Since you are here I assume that you already know what Web Applications are and why do you need [Apache Tomcat](http://tomcat.apache.org/) to run those applications.
