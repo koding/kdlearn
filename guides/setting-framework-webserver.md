@@ -16,7 +16,7 @@ Here are a couple of examples on how to make your project available publicly by 
 
 # Django
 
-Before you continue reading this guide why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install Django using just one command:
+Before you continue reading this section why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install Django using just one command:
 
 ```
 kpm install django
@@ -40,6 +40,14 @@ python manage.py runserver 0.0.0.0:8000
 Voilà! You should see a working Django server.
 
 # Laravel 4 and Artisan
+
+Before you continue reading this section why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install Laravel using just one command:
+
+```
+kpm install laravel
+```
+
+***
 
 Installing Laravel 4
 ```
@@ -65,7 +73,7 @@ Voilà! A working Laravel and Artisan webserver.
 
 # MeteorJS
 
-Before you continue reading this guide why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install MeteorJS using just one command:
+Before you continue reading this section why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install MeteorJS using just one command:
 
 ```
 kpm install meteor
@@ -90,15 +98,7 @@ Meteor should listen to 0.0.0.0:3000 by default. If you can't reach your project
 sudo netstat -tnlp
 ```
 
-#Rails
-
-Before you continue reading this guide why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install Rails using just one command:
-
-```
-kpm install rails
-```
-
-***
+# Rails
 
 Rails listens to 0.0.0.0:3000 by default. 
 
@@ -117,7 +117,7 @@ rails server
 ```
 Voilà! You have a Rails working webserver
 
-#Tornado
+# Tornado
 
 Create a new Python script using your favorite editor.
 ```
