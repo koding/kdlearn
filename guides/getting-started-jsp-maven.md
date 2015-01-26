@@ -54,9 +54,9 @@ Choose your GroupId.
 the artifactId is your project name.
 the archetypeArtifactId is the type of project that Maven will create. Use "maven-archetype-webapp" to create a web app.
 ```
-mvn archetype:generate -DgroupId=com.mihalik -DartifactId=mywebapp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+mvn archetype:generate -DgroupId=com.[add name here] -DartifactId=mywebapp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
 ```
-mvn archetype:generate -DgroupId=com.mihalik -DartifactId=mywebapp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false     
+mvn archetype:generate -DgroupId=com.[add name here] -DartifactId=mywebapp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false     
 
 Move into the project folder:
 ```
