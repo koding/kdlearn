@@ -30,7 +30,7 @@ Make sure you have [PHP](http://learn.koding.com/guides/installing-php) and the 
 sudo apt-get install php5-curl
 ```
 
-## Step 1
+## Installing
 
 To get Composer working for a new project you'll need to run the following commands:
 
