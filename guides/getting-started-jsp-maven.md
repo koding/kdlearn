@@ -6,17 +6,17 @@ description: 'Getting Started with JSP and Maven'
 categories: [Java]
 ---
 
-# Getting Started with JSP and Maven on Koding
+# Getting Started with JSP and Maven
 
-In this guide we'll take a look on how to set up and deploy a JavaServer Pages website using Maven and Tomcat on your Koding VM. 
+In this guide we'll take a look on how to set up and deploy a JavaServer Pages (JSP) website using Maven and Tomcat on your Koding VM. 
 This tutorial assumes you have [updated your OS](http://learn.koding.com/guides/upgrading-your-vm/) and 
 set up an [Apache Tomcat Server](http://tomcat.apache.org/) by following this [tutorial] (http://learn.koding.com/guides/apache-tomcat-on-koding/).
 
 ## What is JSP
 
-JavaServer Pages (JSP) is used to create dynamic web pages of HTML or XML by using embedded Java and/or Java backend. 
+JavaServer Pages (JSP) are used to create dynamic web pages of HTML or XML by using embedded Java and/or Java backend. 
 JSP is known for its rapid development and ease of maintenance. JSP seperates the UI of an application from
-content generation, which allows designers and developers to work together without changes affecting eachother. 
+content generation, which allows designers and developers to work together without changes affecting eachother. JSP covers the "V" in the Model-View-Controller (MVC) architecture. 
 
 ## What is Maven
 
@@ -25,7 +25,7 @@ By using a POM, Maven is able to manage a projects build, reporting, and documen
 
 ## Installing Maven
 
-First check and see if you have Maven installed with the following:
+First check and see if you have Maven installed with the following command in the terminal:
 
 ```
 mvn -v
@@ -40,7 +40,7 @@ Java home: /usr/lib/jvm/java-7-openjdk-amd64/jre
 Default locale: en_US, platform encoding: ANSI_X3.4-1968
 OS name: "linux", version: "3.13.0-29-generic", arch: "amd64", family: "unix"
 ```
-To install the latest version type the following:
+To install the latest version of Maven type the following:
 ```
 sudo apt-get install maven
 ```
@@ -49,18 +49,21 @@ Next navigate the directories into your Apache Tomcat server to the webapps fold
 cd Documents/tomcat/webapps
 ```
 
-Now we will create a Maven project using the Maven project generator with the following command. 
-Choose your GroupId.
-the artifactId is your project name.
-the archetypeArtifactId is the type of project that Maven will create. Use "maven-archetype-webapp" to create a web app.
+Now we will create a Maven project using the Maven project generator with the following command structure. 
 ```
-mvn archetype:generate -DgroupId=com.[add name here] -DartifactId=mywebapp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+mvn archetype:generate -DgroupId=com.[package name] -DartifactId=[web app name] -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
 ```
-mvn archetype:generate -DgroupId=com.[add name here] -DartifactId=mywebapp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false     
+You need to fill in the following: the GroupId (package name), the artifactId (project name).
+
+The archetypeArtifactId is the type of project that Maven will create. Use "maven-archetype-webapp" to create a web app.
+The following is an example:
+```
+mvn archetype:generate -DgroupId=com.mihalik -DartifactId=myWebApp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false     
+```
 
 Move into the project folder:
 ```
-cd mywebapp
+cd myWebApp
 ```
 
 Use the Maven command to package the project which will install dependies and prepare the project.
@@ -83,11 +86,58 @@ If you did not, please review the instructions and see if you missed anything.
 
 To further understand the structure of your Maven/JSP project, navigate to 
 ```
-cd Documents/tomcat/webapps/mywebapp/src/main/webapp/resources/index.jsp
+cd Documents/tomcat/webapps/myWebApp/src/main/webapp/resources/index.jsp
 ```
 on the tomcat webserver.
 
 In this file you will see basic HTML markup with the message "Hello World!". 
 You can change this message and refresh your webpage in your browser and see the changes you made.
 
-Now lets add some JSP to this file.
+Now lets add some JSP to this file. A simple example is to add the date:
+```
+<html>
+    <body>
+      <h1>Hello, the time & date is now: <%= new java.util.Date() %></h1>
+    </body>
+</html>
+```
+
+In the above example you can see Java code wrapped in the tags <%= [code] %>, this is a JSP expression. A JSP expression will output the result of Java code into the webpage. 
+
+Scriptlets, denoted with <% [code] %> tags are useful in adding Java code to your webpage. Scriptlets are useful for intializing variables, manipulating data, or adding statements/loops to control the content of the webpage.
+
+```
+  <h2>
+    Hello! using a scriptlet 1 + 1 = 
+    <%
+      // This is a scriptlet
+      int a = 1;
+      int b = 1;
+      out.println( a + b); // This code will output the result of a + b to the HTML output.
+    %>
+  </h2>
+```
+
+The following example is a great way to dynamically load content that you may receive from a database call. Rather than writing out a line for every result (which we may not know how many results we are going to receive) we can write the code for the table once and iterate over data or some other parameter to output the rows for the table dynamically.
+
+```
+<TABLE BORDER=2>
+  <%
+  int n = 4;
+      for ( int i = 0; i < n; i++ ) {
+          %>
+          <TR>
+          <TD>Number</TD>
+          <TD><%= i+1 %></TD>
+          </TR>
+          <%
+      }
+  %>
+</TABLE>
+```
+
+Congrats! You have made a simple web app using Java (JSP), Maven, Tomcat, and your Koding VM. JSP is a great primer for simple web apps and a great introduction into learning about the Java Web tier.
+
+The Java web tier development has moved towards utlizing Facelets over JSP for creating views since Java EE 6, but JSP is still utilized in programs today. 
+
+Good luck with your further Java web development and happy coding! 
