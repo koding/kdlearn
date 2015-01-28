@@ -20,7 +20,7 @@ KPM runs in the Terminal of your Koding account. In order to use KPM you first n
 
 ```text
 curl -sSL "https://raw.githubusercontent.com/koding\
-/kpm-scripts/master/installers/meta" | fish
+/kpm-scripts/master/kpm/installer" | fish
 ```
 
 After the process is complete you should have access to the `kpm` command in your Terminal.
@@ -30,6 +30,9 @@ The basic syntax for `kpm` is as follows. You have access to the following comma
 ```
 kpm install <name>
 kpm list
+kpm search <name>
+kpm uninstall <name>
+kpm update
 kpm -h | --help
 kpm --version
 ```
