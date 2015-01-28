@@ -51,22 +51,6 @@ kpm install <name>
 
 Bellow is a list of the current available packages that can be installed using the `kpm` command.
 
-|                                                                                              |                                                                            |
-|----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| -                                                                                            |                                                                            |
-| [Codeigniter](http://learn.koding.com/guides/codeigniter-for-beginners/)                     | [mySQL](http://learn.koding.com/guides/installing-mysql)                   |
-| [Composer](http://learn.koding.com/guides/installing-composer)                               | [nginx](http://learn.koding.com/guides/nginx)                              |
-| [Django](http://learn.koding.com/guides/setting-framework-webserver/#django)                 | [noVNC](#)                                                                 |
-| [Dropbox](http://learn.koding.com/guides/dropbox-for-file-sync/)                             | [phpMyAdmin](http://learn.koding.com/guides/install-phpmyadmin)            |
-| [FTP](http://learn.koding.com/guides/setting-up-ftp-on-koding)                               | [PIP](http://learn.koding.com/guides/getting-started-python/)              |
-| [GruntJS](http://learn.koding.com/guides/installing-gruntjs)                                 | [Rails](http://learn.koding.com/guides/setting-framework-webserver/#rails) |
-| [Laravel](http://learn.koding.com/guides/setting-framework-webserver/#laravel-4-and-artisan) | [Redis](http://learn.koding.com/guides/install-redis/)                     |
-| [MEAN](#)                                                                                    | [Apache Tomcat](http://learn.koding.com/guides/apache-tomcat-on-koding)    |
-| [MEAN.io stack](http://learn.koding.com/guides/installing-mean-io/)                          | [Ungit](http://learn.koding.com/guides/using-github)                       |
-| [Memcached](http://learn.koding.com/guides/install-memcache/)                                | [VNC](#)                                                                   |
-| [MeteorJS](http://learn.koding.com/guides/setting-framework-webserver/#meteorjs)             | [WordPress](http://learn.koding.com/guides/installing-wordpress)           |
-| [MongoDB](http://learn.koding.com/guides/install-mongodb/)                                   |                                                                            |
-
 1. [Codeigniter](http://learn.koding.com/guides/codeigniter-for-beginners/)
 2. [Composer](http://learn.koding.com/guides/installing-composer)
 3. [Django](http://learn.koding.com/guides/setting-framework-webserver/#django)
