@@ -146,9 +146,9 @@ Then just run the script
 python goodbyetolocalhost.py
 ```
 
-# Symphony2
+# Symfony2
 
-**Installing Symphony2**
+**Installing Symfony2**
 
 First we need to install composer. Run the following commands to download, move and give right permissions to composer.
 ```
@@ -165,4 +165,4 @@ Start the server like so.
 ```
 php app/console server:run 0.0.0.0:8080 
 ```
-Enjoy a fully working Symphony2 webserver!
+Enjoy a fully working Symfony2 webserver!
