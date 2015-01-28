@@ -52,6 +52,7 @@ kpm install <name>
 Bellow is a list of the current available packages that can be installed using the `kpm` command.
 
 | [Codeigniter](http://learn.koding.com/guides/codeigniter-for-beginners/)                     | [mySQL](http://learn.koding.com/guides/installing-mysql)                   |
+|----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
 | [Composer](http://learn.koding.com/guides/installing-composer)                               | [nginx](http://learn.koding.com/guides/nginx)                              |
 | [Django](http://learn.koding.com/guides/setting-framework-webserver/#django)                 | [noVNC](#)                                                                 |
 | [Dropbox](http://learn.koding.com/guides/dropbox-for-file-sync/)                             | [phpMyAdmin](http://learn.koding.com/guides/install-phpmyadmin)            |
