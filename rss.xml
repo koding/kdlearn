@@ -106,7 +106,7 @@ If you encounter any issues or have any questions please drop an email here.
     <guid isPermaLink="true">//learn.koding.com/guides/install-memcache</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Memcache using just one command:
-kpm install memcache
+kpm install memcached
 
   Getting started Before you can start the Memcache install process, you&amp;apos;ll need to update all of the apt-get packages:
 sudo apt-get update
@@ -3442,7 +3442,7 @@ if __name__ == &amp;quot;__main__&amp;quot;:
 
 Then just run the script
 python goodbyetolocalhost.py
-  Symphony2 Installing Symphony2
+  Symfony2 Installing Symfony2
 First we need to install composer. Run the following commands to download, move and give right permissions to composer.
 curl -sS https://getcomposer.org/installer | php #!/usr/bin/env php
 sudo mv composer.phar /usr/local/bin/composer
@@ -3452,7 +3452,7 @@ composer create-project symfony/framework-standard-edition goodbyetolocalhost
 cd goodbyetolocalhost
 Start the server like so.
 php app/console server:run 0.0.0.0:8080
-Enjoy a fully working Symphony2 webserver!
+Enjoy a fully working Symfony2 webserver!
 </description>
   </item>
   
@@ -4333,6 +4333,23 @@ So to be clear , you may change your display name at any time but this does not 
   </item>
   
   <item>
+    <title>Should I use my VM's IP or Address?</title>
+    <link>//learn.koding.com/faq/vm-ip-vs-address</link>
+    <pubDate></pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/vm-ip-vs-address</guid>
+    <author></author>
+    <description>Koding gives you access to your VMs IP, as well as an Address that 
+always points to that VM&amp;apos;s IP, so which should you use, and why?
+While your VMs IP will operate perfectly fine, the IP is dynamic. In 
+other words, it will change. Because of this, Koding gives you a VM
+Address, which will always point to your VM, regardless of 
+IP changes, so this is what you usually want to use.
+Note: IP addresses of &amp;quot;Always On&amp;quot; VMs don&amp;apos;t change until they are rebooted.
+If you have trouble finding your VM Address, click here.
+</description>
+  </item>
+  
+  <item>
     <title>How can I reset my VM back to it's original state?</title>
     <link>//learn.koding.com/faq/vm-reinit</link>
     <pubDate></pubDate>
@@ -4371,19 +4388,39 @@ It would help us immensly if you can take the quick 3 question survey right afte
   </item>
   
   <item>
-    <title>Should I use my VM's IP or Address?</title>
-    <link>//learn.koding.com/faq/vm-ip-vs-address</link>
+    <title>What ports are open on my Koding VM?</title>
+    <link>//learn.koding.com/faq/open-ports</link>
     <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/vm-ip-vs-address</guid>
+    <guid isPermaLink="true">//learn.koding.com/faq/open-ports</guid>
     <author></author>
-    <description>Koding gives you access to your VMs IP, as well as an Address that 
-always points to that VM&amp;apos;s IP, so which should you use, and why?
-While your VMs IP will operate perfectly fine, the IP is dynamic. In 
-other words, it will change. Because of this, Koding gives you a VM
-Address, which will always point to your VM, regardless of 
-IP changes, so this is what you usually want to use.
-Note: IP addresses of &amp;quot;Always On&amp;quot; VMs don&amp;apos;t change until they are rebooted.
-If you have trouble finding your VM Address, click here.
+    <description>Most Unix ports are available on Koding VMs. We do not block any TCP traffic
+(inbound or outbound). See the following list for 
+open ports, as well as ports in use by default.
+
+Ports 2 through 65,534 are open.
+Port 80 is taken by Apache, but this can be turned off to free up the port. To turn
+off Apache, type in: sudo service apache2 stop in Terminal.
+Ports 2 through 1,024 require sudo access.
+
+</description>
+  </item>
+  
+  <item>
+    <title>How do turn off my my Koding VM?</title>
+    <link>//learn.koding.com/faq/vm-poweroff</link>
+    <pubDate></pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/vm-poweroff</guid>
+    <author></author>
+    <description>To turn off your VM, simply type in sudo poweroff into a Terminal. This will start a graceful shutdown process for your VM and within a few minutes you will see the UI reflect the powered down state for your VM.
+A sudo shutdown will shutdown (not power off) a VM...there&amp;apos;s a difference. :)
+And a sudo reboot will reboot your machine.  Here is an example of the output after you type in the command:
+kodingvm: ~ $ sudo reboot
+
+Broadcast message from kodingvm@kodingvm
+kodingvm: ~ $     (/dev/pts/4) at 23:11 ...
+
+The system is going down for reboot NOW!
+Wating for a few minutes and then entering CTRL-ALT-T will yield a new terminal in your freshly rebooted machine.
 </description>
   </item>
   
@@ -4417,43 +4454,6 @@ once added, these sub-domains become available on the setting panels
 of all your VMs for easy reassignment
 deleting a sub-domain is as easy as adding one!
 
-
-</description>
-  </item>
-  
-  <item>
-    <title>How do turn off my my Koding VM?</title>
-    <link>//learn.koding.com/faq/vm-poweroff</link>
-    <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/vm-poweroff</guid>
-    <author></author>
-    <description>To turn off your VM, simply type in sudo poweroff into a Terminal. This will start a graceful shutdown process for your VM and within a few minutes you will see the UI reflect the powered down state for your VM.
-A sudo shutdown will shutdown (not power off) a VM...there&amp;apos;s a difference. :)
-And a sudo reboot will reboot your machine.  Here is an example of the output after you type in the command:
-kodingvm: ~ $ sudo reboot
-
-Broadcast message from kodingvm@kodingvm
-kodingvm: ~ $     (/dev/pts/4) at 23:11 ...
-
-The system is going down for reboot NOW!
-Wating for a few minutes and then entering CTRL-ALT-T will yield a new terminal in your freshly rebooted machine.
-</description>
-  </item>
-  
-  <item>
-    <title>What ports are open on my Koding VM?</title>
-    <link>//learn.koding.com/faq/open-ports</link>
-    <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/open-ports</guid>
-    <author></author>
-    <description>Most Unix ports are available on Koding VMs. We do not block any TCP traffic
-(inbound or outbound). See the following list for 
-open ports, as well as ports in use by default.
-
-Ports 2 through 65,534 are open.
-Port 80 is taken by Apache, but this can be turned off to free up the port. To turn
-off Apache, type in: sudo service apache2 stop in Terminal.
-Ports 2 through 1,024 require sudo access.
 
 </description>
   </item>
