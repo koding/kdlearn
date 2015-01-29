@@ -10,13 +10,13 @@ categories: [Java]
 
 In this guide we'll take a look on how to set up and deploy a JavaServer Pages (JSP) website using Maven and Tomcat on your Koding VM. 
 This tutorial assumes you have [updated your OS](http://learn.koding.com/guides/upgrading-your-vm/) and 
-set up an [Apache Tomcat Server](http://tomcat.apache.org/) by following this [tutorial] (http://learn.koding.com/guides/apache-tomcat-on-koding/).
+set up an [Apache Tomcat Server](http://tomcat.apache.org/) by following this [tutorial](http://learn.koding.com/guides/apache-tomcat-on-koding/).
 
 ## What is JSP
 
 JavaServer Pages (JSP) are used to create dynamic web pages of HTML or XML by using embedded Java and/or Java backend. 
-JSP is known for its rapid development and ease of maintenance. JSP seperates the UI of an application from
-content generation, which allows designers and developers to work together without changes affecting eachother. JSP covers the "V" in the Model-View-Controller (MVC) architecture. 
+JSP is known for its rapid development and ease of maintenance. JSP separates the UI of an application from
+content generation, which allows designers and developers to work together without changes affecting each other. JSP covers the "V" in the Model-View-Controller (MVC) architecture. 
 
 ## What is Maven
 
@@ -66,7 +66,7 @@ Move into the project folder:
 cd myWebApp
 ```
 
-Use the Maven command to package the project which will install dependies and prepare the project.
+Use the Maven command to package the project which will install dependencies and prepare the project.
 ```
 mvn package
 ```
@@ -88,7 +88,7 @@ To further understand the structure of your Maven/JSP project, navigate to
 ```
 cd Documents/tomcat/webapps/myWebApp/src/main/webapp/resources/index.jsp
 ```
-on the tomcat webserver.
+on the tomcat web-server.
 
 In this file you will see basic HTML markup with the message "Hello World!". 
 You can change this message and refresh your webpage in your browser and see the changes you made.
@@ -102,9 +102,9 @@ Now lets add some JSP to this file. A simple example is to add the date:
 </html>
 ```
 
-In the above example you can see Java code wrapped in the tags <%= [code] %>, this is a JSP expression. A JSP expression will output the result of Java code into the webpage. 
+In the above example you can see Java code wrapped in the tags <%= [code] %>, this is a JSP expression. A JSP expression will output the result of Java code into the web page. 
 
-Scriptlets, denoted with <% [code] %> tags are useful in adding Java code to your webpage. Scriptlets are useful for intializing variables, manipulating data, or adding statements/loops to control the content of the webpage.
+Scriptlets, denoted with <% [code] %> tags are useful in adding Java code to your web page. Scriptlets are useful for initializing variables, manipulating data, or adding statements/loops to control the content of the web page.
 
 ```
   <h2>
@@ -138,6 +138,6 @@ The following example is a great way to dynamically load content that you may re
 
 Congrats! You have made a simple web app using Java (JSP), Maven, Tomcat, and your Koding VM. JSP is a great primer for simple web apps and a great introduction into learning about the Java Web tier.
 
-The Java web tier development has moved towards utlizing Facelets over JSP for creating views since Java EE 6, but JSP is still utilized in programs today. 
+The Java web tier development has moved towards utilizing Facelets over JSP for creating views since Java EE 6, but JSP is still utilized in programs today. 
 
 Good luck with your further Java web development and happy coding! 
