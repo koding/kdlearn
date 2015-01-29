@@ -9,7 +9,15 @@ template: page.toffee
 
 # Sync files using Google Drive
 
-This guide will cover how to get started with syncronizing your files that are hosted on your Google Drive account (works
+Before you continue reading this guide why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and start synchronizing your files using Google Drive with just one command:
+
+```
+kpm install gdrive
+```
+
+***
+
+This guide will cover how to get started with synchronizing your files that are hosted on your Google Drive account (works
 with both personal and business Google Apps accounts).
 
 You can install Google Drive on your [Koding](https://koding.com) VM by following these simple steps in [Terminal](https://koding.com/Terminal).
@@ -28,7 +36,7 @@ mkdir GDrive
 cd GDrive
 ```
 
-We need to softlink some dependencies for the `grive` app to work properly. Use the following command to achieve this.
+We need to soft-link some dependencies for the `grive` app to work properly. Use the following command to achieve this.
 
 ```
 sudo ln -s /usr/lib/libbfd-2.23.2-system.so /usr/lib/libbfd-2.23-system.so
