@@ -28,6 +28,12 @@ In this tutorial you will need the following.
 2. The Address of the VM you'd like to connect to. Instructions can be 
 [found here][vm address].
 
+## Update your software sources
+Before getting started, make sure you have the latest sources locked down. Type in:
+```
+sudo apt-get update
+```
+and let the update process complete. It should not require any input.
 
 ## Installing ProFTPd
 
