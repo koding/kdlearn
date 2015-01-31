@@ -4541,7 +4541,7 @@ Once you initiate a reinit, you will see appropriate messages on the screen as y
     <description>By default, there is no sudo password on your Koding VM. It is blank/empty which means that if you want to use sudo, all
 you need to do is as follows:
 sudo &amp;lt;command you wish to use&amp;gt;
-When you hit enter, the sudo level command you wish to execute will simply execute.
+When you hit enter, the sudo level command you wish to run without a password prompt.
 </description>
   </item>
   
