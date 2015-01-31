@@ -554,13 +554,19 @@
   </url>
   
   <url>
+    <loc>http://learn.koding.com/faq/delete-account</loc>
+    <lastmod>2015-01-31</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
     <loc>http://learn.koding.com/faq/vm-reinit</loc>
     <lastmod>2015-01-31</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/faq/delete-account</loc>
+    <loc>http://learn.koding.com/faq/sudo-password</loc>
     <lastmod>2015-01-31</lastmod>
     <changefreq>monthly</changefreq>
   </url>
