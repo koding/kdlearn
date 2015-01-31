@@ -8,4 +8,4 @@ you need to do is as follows:
 ```
 sudo <command you wish to use>
 ```
-When you hit enter, the sudo level command you wish to execute will simply execute.
+When you hit enter, the sudo level command you wish to run without a password prompt.
