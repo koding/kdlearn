@@ -8,6 +8,22 @@ categories: [node, angular, express, mongodb]
 
 # Installing & Setting Up a MEAN.io stack
 
+Before you continue reading this guide why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install MEAN or MEAN.io stack using just one command:
+
+If you want to install MEAN:
+
+```
+kpm install mean
+```
+
+and if you want to install MEAN.io stack you can use:
+
+```
+kpm install mean-io-stack
+```
+
+***
+
 This article will cover the process of installing and setting up a [MEAN.io](http://mean.io) stack in your [Koding](https://koding.com) environment.
 
 What is MEAN.io
