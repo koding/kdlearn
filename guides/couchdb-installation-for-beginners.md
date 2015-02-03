@@ -8,6 +8,14 @@ template: page.toffee
 
 # CouchDB installation for beginners
 
+Before you continue reading this guide why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install CouchDB using just one command:
+
+```
+kpm install couchdb
+```
+
+***
+
 This guide will help install CouchDB on your Koding VM.
 
 ## Getting started
