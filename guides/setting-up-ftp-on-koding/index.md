@@ -72,7 +72,6 @@ below.
 
 ![FileZilla FTP Settings](ftpsettings.png)
 
-
 ## Additional Resources
 
 - [FileZilla](https://filezilla-project.org/)
