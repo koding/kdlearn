@@ -1,7 +1,7 @@
 ---
 title: Setting up SFTP on Koding
 author: Team Koding
-date: 2014-09-15
+date: 2015-02-04
 categories: [ftp]
 ---
 
