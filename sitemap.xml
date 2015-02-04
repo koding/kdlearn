@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://learn.koding.com/guides/setting-up-sftp-on-koding</loc>
+    <lastmod>2015-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
     <loc>http://learn.koding.com/guides/installing-composer</loc>
     <lastmod>2015-01-27</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/couchdb-installation-for-beginners</loc>
+    <loc>http://learn.koding.com/guides/installing-gruntjs</loc>
     <lastmod>2015-01-20</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -20,7 +26,7 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/installing-gruntjs</loc>
+    <loc>http://learn.koding.com/guides/couchdb-installation-for-beginners</loc>
     <lastmod>2015-01-20</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -38,13 +44,13 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/getting-started-jsp-maven</loc>
+    <loc>http://learn.koding.com/guides/dropbox-for-file-sync</loc>
     <lastmod>2015-01-15</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/dropbox-for-file-sync</loc>
+    <loc>http://learn.koding.com/guides/getting-started-jsp-maven</loc>
     <lastmod>2015-01-15</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -152,12 +158,6 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/install-mongodb</loc>
-    <lastmod>2014-10-17</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
     <loc>http://learn.koding.com/guides/what-is-docker</loc>
     <lastmod>2014-10-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -165,6 +165,12 @@
   
   <url>
     <loc>http://learn.koding.com/guides/getting-started/file-upload</loc>
+    <lastmod>2014-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://learn.koding.com/guides/install-mongodb</loc>
     <lastmod>2014-10-17</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -182,12 +188,6 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/vm-introduction</loc>
-    <lastmod>2014-10-10</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
     <loc>http://learn.koding.com/guides/ide-introduction</loc>
     <lastmod>2014-10-10</lastmod>
     <changefreq>monthly</changefreq>
@@ -200,8 +200,8 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/getting-started-biicode</loc>
-    <lastmod>2014-10-02</lastmod>
+    <loc>http://learn.koding.com/guides/vm-introduction</loc>
+    <lastmod>2014-10-10</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
@@ -213,6 +213,12 @@
   
   <url>
     <loc>http://learn.koding.com/guides/getting-started-drupal8-beta</loc>
+    <lastmod>2014-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://learn.koding.com/guides/getting-started-biicode</loc>
     <lastmod>2014-10-02</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -230,19 +236,13 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/setting-up-ftp-on-koding</loc>
-    <lastmod>2014-09-15</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://learn.koding.com/guides/setting-up-sftp-on-koding</loc>
-    <lastmod>2014-09-15</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
     <loc>http://learn.koding.com/guides/ssh-into-your-vm</loc>
+    <lastmod>2014-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://learn.koding.com/guides/setting-up-ftp-on-koding</loc>
     <lastmod>2014-09-15</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -272,6 +272,18 @@
   </url>
   
   <url>
+    <loc>http://learn.koding.com/contribute/basic</loc>
+    <lastmod>2014-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://learn.koding.com/guides/getting-started/editing-your-profile</loc>
+    <lastmod>2014-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
     <loc>http://learn.koding.com/contribute</loc>
     <lastmod>2014-08-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -290,18 +302,6 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/contribute/basic</loc>
-    <lastmod>2014-08-04</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://learn.koding.com/guides/getting-started/editing-your-profile</loc>
-    <lastmod>2014-08-04</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
     <loc>http://learn.koding.com/guides/getting-started-python</loc>
     <lastmod>2014-08-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -314,13 +314,13 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/ghost-installation</loc>
+    <loc>http://learn.koding.com/guides/getting-started-nodejs</loc>
     <lastmod>2014-08-01</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/getting-started-nodejs</loc>
+    <loc>http://learn.koding.com/guides/ghost-installation</loc>
     <lastmod>2014-08-01</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -368,8 +368,8 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/elixir-on-koding</loc>
-    <lastmod>2014-07-09</lastmod>
+    <loc>http://learn.koding.com/guides/install-rockmongo</loc>
+    <lastmod>2015-01-02</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
@@ -380,20 +380,20 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/install-rockmongo</loc>
-    <lastmod>2015-01-02</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://learn.koding.com/guides/sync-files-google-drive</loc>
-    <lastmod>2014-07-08</lastmod>
+    <loc>http://learn.koding.com/guides/elixir-on-koding</loc>
+    <lastmod>2014-07-09</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>http://learn.koding.com/guides/ssh-tunneling</loc>
     <lastmod>2014-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://learn.koding.com/guides/sync-files-google-drive</loc>
+    <lastmod>2014-07-08</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
@@ -440,13 +440,13 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/getting-started/the-ui</loc>
+    <loc>http://learn.koding.com/guides/getting-started/activity-feed</loc>
     <lastmod>2014-05-30</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/getting-started/activity-feed</loc>
+    <loc>http://learn.koding.com/guides/getting-started/the-ui</loc>
     <lastmod>2014-05-30</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -488,13 +488,13 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/pyrocms-installation-for-beginners</loc>
+    <loc>http://learn.koding.com/guides/angularjs-step-by-step</loc>
     <lastmod>2014-03-09</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/angularjs-step-by-step</loc>
+    <loc>http://learn.koding.com/guides/pyrocms-installation-for-beginners</loc>
     <lastmod>2014-03-09</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -548,19 +548,7 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/faq/vm-reinit</loc>
-    <lastmod>2015-02-04</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
     <loc>http://learn.koding.com/faq/delete-account</loc>
-    <lastmod>2015-02-04</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://learn.koding.com/faq/change-username</loc>
     <lastmod>2015-02-04</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -572,19 +560,31 @@
   </url>
   
   <url>
+    <loc>http://learn.koding.com/faq/change-username</loc>
+    <lastmod>2015-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://learn.koding.com/faq/vm-reinit</loc>
+    <lastmod>2015-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
     <loc>http://learn.koding.com/faq/transfer-files</loc>
     <lastmod>2015-02-04</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/faq/vm-poweroff</loc>
+    <loc>http://learn.koding.com/faq/sudo-password</loc>
     <lastmod>2015-02-04</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/faq/sudo-password</loc>
+    <loc>http://learn.koding.com/faq/vm-poweroff</loc>
     <lastmod>2015-02-04</lastmod>
     <changefreq>monthly</changefreq>
   </url>
