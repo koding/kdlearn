@@ -29,7 +29,7 @@ and let the update process complete. It should not require any input.
 
 First off, you'll need to install `openssh-server`. This can be done by pasting the following command into your [Koding IDE][ide]'s Terminal.
 
-_Note: The `openssh-server` packages comes preinstalled on all Koding VMs._
+_Note: The `openssh-server` package comes preinstalled on all Koding VMs._
 
 ```
 sudo apt-get install openssh-server
