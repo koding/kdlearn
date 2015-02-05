@@ -321,6 +321,32 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
+    <title>Using Dropbox with Koding</title>
+    <link>//learn.koding.com/guides/dropbox-for-file-sync</link>
+    <pubDate>"2015-01-15T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/dropbox-for-file-sync</guid>
+    <author>Team Koding</author>
+    <description>In this guide we&amp;apos;ll walk you through how to set up Dropbox right on your Koding VM for a seamless sync experience between your local system and your Koding VM. Dropbox has built a best-in-class file sync and storage service.
+  Getting started Before we begin please make sure you have the Koding Package Manager (KPM) installed on your VM. Follow this guide to understand what KPM is and how to install it so you will be able to continue with this guide.
+Also make sure you have an active Dropbox account (free or paid).
+  Setup Run the following command, in your Koding Terminal, to install the necessary dependency:
+Note: If you already have Dropbox installed via KPM then you need to run kpm uninstall dropbox and then the below command to get the latest version.
+kpm install dropbox
+This will install the Dropbox daemon on your Koding VM, that will make the file sync possible.
+After the install has finished you&amp;apos;ll need to configure the daemon with your Dropbox account. In order to that you&amp;apos;ll need to type this command:
+dropboxd
+Next you&amp;apos;ll see a message similar to this one:
+Please visit https://www.dropbox.com/cli_link_nonce?nonce=A_VERY_LONG_NUMBER to link this device.
+Copy the link and past it in a new tab.
+Sign in to your Dropbox account.
+That&amp;apos;s it! You should see a message in your Terminal similar to this one:
+This computer is now linked to Dropbox. Welcome YOUR_DROPBOX_NAME
+Note: Whenever you turn on Koding VM you will have to run the dropbox start command to get dropbox started.
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
     <title>Getting Started with JSP and Maven</title>
     <link>//learn.koding.com/guides/getting-started-jsp-maven</link>
     <pubDate>"2015-01-15T00:00:00.000Z"</pubDate>
@@ -406,32 +432,6 @@ Good luck with your further Java web development and happy coding!
   </item>
   
   <item>
-    <title>Using Dropbox with Koding</title>
-    <link>//learn.koding.com/guides/dropbox-for-file-sync</link>
-    <pubDate>"2015-01-15T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/dropbox-for-file-sync</guid>
-    <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll walk you through how to set up Dropbox right on your Koding VM for a seamless sync experience between your local system and your Koding VM. Dropbox has built a best-in-class file sync and storage service.
-  Getting started Before we begin please make sure you have the Koding Package Manager (KPM) installed on your VM. Follow this guide to understand what KPM is and how to install it so you will be able to continue with this guide.
-Also make sure you have an active Dropbox account (free or paid).
-  Setup Run the following command, in your Koding Terminal, to install the necessary dependency:
-Note: If you already have Dropbox installed via KPM then you need to run kpm uninstall dropbox and then the below command to get the latest version.
-kpm install dropbox
-This will install the Dropbox daemon on your Koding VM, that will make the file sync possible.
-After the install has finished you&amp;apos;ll need to configure the daemon with your Dropbox account. In order to that you&amp;apos;ll need to type this command:
-dropboxd
-Next you&amp;apos;ll see a message similar to this one:
-Please visit https://www.dropbox.com/cli_link_nonce?nonce=A_VERY_LONG_NUMBER to link this device.
-Copy the link and past it in a new tab.
-Sign in to your Dropbox account.
-That&amp;apos;s it! You should see a message in your Terminal similar to this one:
-This computer is now linked to Dropbox. Welcome YOUR_DROPBOX_NAME
-Note: Whenever you turn on Koding VM you will have to run the dropbox start command to get dropbox started.
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
     <title>How to free up space on a VM</title>
     <link>//learn.koding.com/guides/freeing-up-space</link>
     <pubDate>"2015-01-13T00:00:00.000Z"</pubDate>
@@ -458,6 +458,52 @@ If you wan to search for big files the bellow commands will help you do that:
 find / -type f -size +1024k
 or
 find / -size +50000  -exec ls -lahg {} \;
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>Using mySQL</title>
+    <link>//learn.koding.com/guides/using-mysql</link>
+    <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/using-mysql</guid>
+    <author>Alvin Wan</author>
+    <description>mySQL offers a popular implementation of the SQL language. This guide will get you started on using mySQL on Koding.
+First make sure you have mySQL installed. Have a look at this guide to learn how to install it.
+Are you using PostgreSQL? Have a look at this guide.
+  Starting mySQL Let&amp;apos;s start the mySQL server using the following command:
+sudo service mysql start
+  Getting Started First, you&amp;apos;ll need to login using th root user that was configured during the mySQL installation. Open your Terminal and type in the following:
+mysql -u root p
+Enter your password, and hit enter. You&amp;apos;re now logged in.
+  Creating a User You&amp;apos;ll now create a new account for our code, with the username &amp;quot;bob&amp;quot; and password &amp;quot;pass&amp;quot;.
+create user &amp;apos;bob&amp;apos;@&amp;apos;localhost&amp;apos; identified by &amp;apos;pass&amp;apos;;
+If you see an arrow
+-&amp;gt;
+that means you forgot the end semicolon &amp;quot;;&amp;quot;. Enter that and hit enter.
+You can exit the server by using Ctrl+D and then login again as Bob:
+mysql -u bob -p;
+After entering the password, you&amp;apos;ll be readmitted into the mySQL server. To continue with this guide, you&amp;apos;ll need to be logged in as root.
+  Creating a Database Each mySQL server includes a variety of databases. The initial installation comes with several. You can view them by typing:
+show databases;
+You should see a short list of databases:
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
++--------------------+
+3 rows in set (0.00 sec)
+Let&amp;apos;s create your first database:
+create database test;
+  Linking Users and Databases You&amp;apos;ll need to grant privileges to the user, so that &amp;quot;Bob&amp;quot; can access the database &amp;quot;test&amp;quot; and modify it accordingly.
+To grant &amp;quot;Bob&amp;quot; all privileges on all tables in database &amp;quot;test&amp;quot;:
+grant all on test.* to &amp;apos;bob&amp;apos;@&amp;apos;localhost&amp;apos;;
+  Using the Database Exit out of root by using Ctrl+D, and login as &amp;quot;Bob&amp;quot;. To connect to a database, prefix the database name with &amp;quot;use&amp;quot;.
+use test;
+Once here, you&amp;#x2019;ll be able to execute mySQL commands. 
+And that&amp;apos;s it!
 If you encounter any issues or have any questions please drop an email here.
 </description>
   </item>
@@ -540,6 +586,19 @@ When you hit &amp;quot;y&amp;quot; ufw will backup all existing rules before doi
   Help, I locked myself out of my VM If for some reason you enabled your firewall and did not take the steps needed to open up the ports needed for Koding to work, then
 your only recourse is to reinit your VM. That process is described in this guide. If you 
 encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>Installing LinuxBrew</title>
+    <link>//learn.koding.com/guides/installing-linuxbrew</link>
+    <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/installing-linuxbrew</guid>
+    <author>Alvin Wan</author>
+    <description>There are a variety of package installers to help with what would otherwise be complex installations. Follow these instructions to install HomeBrew for Linux.
+  The One-Line Solution Input the following in your shell, as Koding already has Ruby pre-installed:
+ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)&amp;quot;
+From here, you&amp;apos;ll be poised for yet more installations. See their website for more information.
 </description>
   </item>
   
@@ -1114,42 +1173,6 @@ If you encounter any issues or have any questions regarding Apache Cordova on Ko
   </item>
   
   <item>
-    <title>Understanding the VM settings panel</title>
-    <link>//learn.koding.com/guides/understanding-vm-panel</link>
-    <pubDate>"2014-11-03T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/understanding-vm-panel</guid>
-    <author>Team Koding</author>
-    <description>This guide will explain the basics of the VM settings panel.
-
-In order to open the VM settings panel you need to hover over the VM name on the right side of Koding (in the sidebar at the top) and then click on the little three points icon on the right, as picture above. 
-
-After you click on the icon mentioned above the VM modal should open, which should look like the one pictured above.
-The VM settings panel has three main sections: the Basic section, the More section and the Advanced section.
-  Basic section The basic section includes basic information about your VM and some basic functionality over it. Each line is explained below.
-
-Assigned URL: This is the long assigned URL of your Koding VM.
-Nickname: You can rename your VM and this will update the name that appears in the right sidebar.
-On/Off toggle: The current status of the VM. You can also turn off your VM from here, though we don&amp;apos;t recommend it.
-Public IP: Your VM&amp;apos;s public IP. This will change every time you start up your VM. For users on the Free plan, this will change each time you start up your VM. If your VM is Always-On, it will only change when you restart your VM.
-Specs: Specifications your VM has. This is based on your current plan.
-Provider: Your VM provider. In the future you will be able to choose from multiple providers.
-Guides: The most common and useful guides to get you started using your VM.
-
-  More section The more section includes some additional settings for your VM. Each setting has been explained below.
-
-Keep VM always on toggle: If you are a paying customer than you can chose to keep your VM Always-On. This means that your VM will not be shut down automatically after 60 minutes.
-Domains: You can enable a short URL for your VM and/or define subdomains and custom domains for your VM.
-
-  Advanced section The advanced section includes settings that only advanced users should use. If you are an unexperienced user then this section should be off limits.
-
-Reinitialize VM: This button will set your VM back to its default state. This means that the VM will be re-imaged, as if you deleted the VM and created a new one. This guide explains the reinit function in more detail.
-Terminate VM: If you&amp;apos;re a paying customer you can remove your VM and create a new one if you so choose.
-
-If you encounter any issues or have any questions regarding the VM settings panel you can email us at support@koding.com and we&amp;apos;ll gladly help.
-</description>
-  </item>
-  
-  <item>
     <title>Koding Subdomains and VHosts</title>
     <link>//learn.koding.com/guides/vhosts-and-subdomains</link>
     <pubDate>"2014-11-03T00:00:00.000Z"</pubDate>
@@ -1234,6 +1257,42 @@ should understand.
   </item>
   
   <item>
+    <title>Understanding the VM settings panel</title>
+    <link>//learn.koding.com/guides/understanding-vm-panel</link>
+    <pubDate>"2014-11-03T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/understanding-vm-panel</guid>
+    <author>Team Koding</author>
+    <description>This guide will explain the basics of the VM settings panel.
+
+In order to open the VM settings panel you need to hover over the VM name on the right side of Koding (in the sidebar at the top) and then click on the little three points icon on the right, as picture above. 
+
+After you click on the icon mentioned above the VM modal should open, which should look like the one pictured above.
+The VM settings panel has three main sections: the Basic section, the More section and the Advanced section.
+  Basic section The basic section includes basic information about your VM and some basic functionality over it. Each line is explained below.
+
+Assigned URL: This is the long assigned URL of your Koding VM.
+Nickname: You can rename your VM and this will update the name that appears in the right sidebar.
+On/Off toggle: The current status of the VM. You can also turn off your VM from here, though we don&amp;apos;t recommend it.
+Public IP: Your VM&amp;apos;s public IP. This will change every time you start up your VM. For users on the Free plan, this will change each time you start up your VM. If your VM is Always-On, it will only change when you restart your VM.
+Specs: Specifications your VM has. This is based on your current plan.
+Provider: Your VM provider. In the future you will be able to choose from multiple providers.
+Guides: The most common and useful guides to get you started using your VM.
+
+  More section The more section includes some additional settings for your VM. Each setting has been explained below.
+
+Keep VM always on toggle: If you are a paying customer than you can chose to keep your VM Always-On. This means that your VM will not be shut down automatically after 60 minutes.
+Domains: You can enable a short URL for your VM and/or define subdomains and custom domains for your VM.
+
+  Advanced section The advanced section includes settings that only advanced users should use. If you are an unexperienced user then this section should be off limits.
+
+Reinitialize VM: This button will set your VM back to its default state. This means that the VM will be re-imaged, as if you deleted the VM and created a new one. This guide explains the reinit function in more detail.
+Terminate VM: If you&amp;apos;re a paying customer you can remove your VM and create a new one if you so choose.
+
+If you encounter any issues or have any questions regarding the VM settings panel you can email us at support@koding.com and we&amp;apos;ll gladly help.
+</description>
+  </item>
+  
+  <item>
     <title>Changing your IDE and Terminal themes</title>
     <link>//learn.koding.com/guides/change-theme</link>
     <pubDate>"2014-10-28T00:00:00.000Z"</pubDate>
@@ -1280,68 +1339,6 @@ guide.
     <guid isPermaLink="true">//learn.koding.com/guides/chat-introduction</guid>
     <author>Team Koding</author>
     <description></description>
-  </item>
-  
-  <item>
-    <title>Getting Started: File Uploads</title>
-    <link>//learn.koding.com/guides/getting-started/file-upload</link>
-    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/file-upload</guid>
-    <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll take a look at uploading your files and projects to 
-Koding, in multiple ways. Lets get started!
-  Uploading with Drag and Drop The simplest way, is simply by using Drag and Drop file upload! To do 
-this, open your Koding IDE, locate your FileTree on the left hand
-side, and drag a file from your Desktop onto the FileTree. An example 
-image is below.
-
-After you let go of the file, your file will be uploaded to your 
-~/Uploads directory.
-  Uploading with FTP FTP is another common way to upload files to your VM. Before uploading 
-with FTP though, you&amp;apos;ll need to set up an FTP Server on your VM.
-The FTP Guide will take you through both the installation, and 
-connecting process, so check it out!
-  Uploading with SCP SCP is is a tool that will copy files from your local Unix filesystem 
-to a remote filesystem over SSH connections. To use it, make sure you 
-have SSH setup with your Koding VM beforehand. Instructions can be found 
-here if needed.
-After that, use the following command to copy a local file to your VM.
-scp LOCAL_FILE USERNAME.koding.io:REMOTE_FILE
-Replace LOCAL_FILE with your local file location, USERNAME with your 
-Koding Username, and REMOTE_FILE with your Remote File location. An 
-example of this command can be seen below.
-scp ~/my_image.png joshmurray.koding.io:~/my_image.png
-</description>
-  </item>
-  
-  <item>
-    <title>Installing MongoDB</title>
-    <link>//learn.koding.com/guides/install-mongodb</link>
-    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/install-mongodb</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install MongoDB using just one command:
-kpm install mongodb
-
-In this short guide we&amp;apos;ll explain how to install MongoDB, and modify
-it&amp;apos;s configuration to run in a small storage environment. Lets get 
-started!
-  Installation Installation is easy, and can be done with apt-get, as seen in the 
-following command.
-sudo apt-get install mongodb
-That&amp;apos;s it! You can start Mongo with the following command:
-sudo service mongodb start
-NOTE: If you&amp;apos;re running Mongo on a Free Koding VM, read below..
-  Configuring for Limited Storage If you&amp;apos;re running Mongo on a Free VM, you&amp;apos;ll need to configure it to use 
-small files. To do that, open up the /etc/mongodb.conf file with the
-following command:
-sudo nano /etc/mongodb.conf
-With that file open, navigate to the bottom and add the following line:
-smallfiles=true
-Now use ctrl-x to save the file. After you&amp;apos;ve saved the file, simply 
-restart Mongodb with the following command:
-sudo service mongodb restart
-</description>
   </item>
   
   <item>
@@ -1393,6 +1390,68 @@ curl -sSL https://get.docker.com/ubuntu/ | sudo sh
 If you made it to this point you can run this command to check if Docker is indeed installed and works properly:
 sudo docker run -i -t ubuntu /bin/bash
 If you have any question or issues please email us at support@koding.com and we&amp;apos;ll gladly help.
+</description>
+  </item>
+  
+  <item>
+    <title>Installing MongoDB</title>
+    <link>//learn.koding.com/guides/install-mongodb</link>
+    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/install-mongodb</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install MongoDB using just one command:
+kpm install mongodb
+
+In this short guide we&amp;apos;ll explain how to install MongoDB, and modify
+it&amp;apos;s configuration to run in a small storage environment. Lets get 
+started!
+  Installation Installation is easy, and can be done with apt-get, as seen in the 
+following command.
+sudo apt-get install mongodb
+That&amp;apos;s it! You can start Mongo with the following command:
+sudo service mongodb start
+NOTE: If you&amp;apos;re running Mongo on a Free Koding VM, read below..
+  Configuring for Limited Storage If you&amp;apos;re running Mongo on a Free VM, you&amp;apos;ll need to configure it to use 
+small files. To do that, open up the /etc/mongodb.conf file with the
+following command:
+sudo nano /etc/mongodb.conf
+With that file open, navigate to the bottom and add the following line:
+smallfiles=true
+Now use ctrl-x to save the file. After you&amp;apos;ve saved the file, simply 
+restart Mongodb with the following command:
+sudo service mongodb restart
+</description>
+  </item>
+  
+  <item>
+    <title>Getting Started: File Uploads</title>
+    <link>//learn.koding.com/guides/getting-started/file-upload</link>
+    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/file-upload</guid>
+    <author>Team Koding</author>
+    <description>In this guide we&amp;apos;ll take a look at uploading your files and projects to 
+Koding, in multiple ways. Lets get started!
+  Uploading with Drag and Drop The simplest way, is simply by using Drag and Drop file upload! To do 
+this, open your Koding IDE, locate your FileTree on the left hand
+side, and drag a file from your Desktop onto the FileTree. An example 
+image is below.
+
+After you let go of the file, your file will be uploaded to your 
+~/Uploads directory.
+  Uploading with FTP FTP is another common way to upload files to your VM. Before uploading 
+with FTP though, you&amp;apos;ll need to set up an FTP Server on your VM.
+The FTP Guide will take you through both the installation, and 
+connecting process, so check it out!
+  Uploading with SCP SCP is is a tool that will copy files from your local Unix filesystem 
+to a remote filesystem over SSH connections. To use it, make sure you 
+have SSH setup with your Koding VM beforehand. Instructions can be found 
+here if needed.
+After that, use the following command to copy a local file to your VM.
+scp LOCAL_FILE USERNAME.koding.io:REMOTE_FILE
+Replace LOCAL_FILE with your local file location, USERNAME with your 
+Koding Username, and REMOTE_FILE with your Remote File location. An 
+example of this command can be seen below.
+scp ~/my_image.png joshmurray.koding.io:~/my_image.png
 </description>
   </item>
   
@@ -1551,15 +1610,6 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Koding Virtual Machines Introduction</title>
-    <link>//learn.koding.com/guides/vm-introduction</link>
-    <pubDate>"2014-10-10T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/vm-introduction</guid>
-    <author>Team Koding</author>
-    <description></description>
-  </item>
-  
-  <item>
     <title>Koding Terminal Introduction</title>
     <link>//learn.koding.com/guides/terminal-introduction</link>
     <pubDate>"2014-10-10T00:00:00.000Z"</pubDate>
@@ -1569,67 +1619,12 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Getting started with Drupal 8 (Prerelease)</title>
-    <link>//learn.koding.com/guides/getting-started-drupal8-beta</link>
-    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-drupal8-beta</guid>
-    <author>Nik LePage</author>
-    <description>A quick rundown of how to setup a development environment for checking out the new Drupal 8 releases.
-  Setting up the development environment Go ahead and open up the Koding dev UI. The terminal is available in the bottom right panel. (I&amp;apos;m assuming you&amp;#x2019;re in ~/Web for the actual site install bits).
-We must first install Composer as we need Drush master (7) to easily install Drupal 8. You wanted Drush anyway though, right? :)
-Issue the following commands to perform the install and tidy up. 
-sudo curl -sS https://getcomposer.org/installer | php
-sudo mv composer.phar /usr/local/bin/composer
-
-The last step is not required AFAIK, but makes Composer global for the machine. The instructions that I read said &amp;#x201C;Make sure Composer&amp;apos;s global bin directory is on the system PATH (recommended)&amp;#x201D;. That&amp;#x2019;s great, although I don&amp;#x2019;t fully understand the implications. 
-
-Issue the following commands in your shell to sort the path out.
-sed -i &amp;apos;1i export PATH=&amp;quot;$HOME/.composer/vendor/bin:$PATH&amp;quot;&amp;apos; $HOME/.bashrc
-source $HOME/.bashrc
-Now we can go ahead and use Composer to install drush 7. More long winded than &amp;quot;the old days&amp;quot;, but get used to it. Everything is Composer in D8. &amp;quot;So Compose; much baton (sic).&amp;quot;
-composer global require drush/drush:dev-master
-Test the install with a random &amp;#x201C;drush&amp;#x201D; command in the shell... e.g.
-drush --version
-As it turns out, we also need to enable mod_rewrite, although this appears to be set up by default in the new Koding. In order to do so, you can type the following command.
-sudo a2enmod rewrite
-MySQL is not installed by default in the new Koding setup. We need to add MariaDB, and the necessary PHP extensions.
-# Follow the instructions at https://downloads.mariadb.org/mariadb/repositories/#mirror=coreix
-# Select &amp;quot;Ubuntu&amp;quot;, &amp;quot;14.04&amp;quot;, &amp;quot;5.5&amp;quot; and then a mirror, and the instructions are below
-sudo apt-get install php5-mysql php5-gd
-One more gotcha - D8 requires (or prefers) curl?! Well, okay.
-sudo apt-get install php5-curl
-Restart the web server to enable all the new goodness!
-sudo service apache2 restart
-  Setting up the Drupal environment Now we&amp;#x2019;re ready to rock! The rest of this is a pretty standard Drupal setup mission, but here&amp;apos;s the outline anyway. Go setup yourself up a new database by entering MySql CLI (Koding mysql automatically assumes root) and issue the following commands.
-mysql -u root -p  # to get into the CLI, then...
-
-CREATE DATABASE drupal8db;
-GRANT ALL PRIVILEGES ON drupal8db.* TO myusername@localhost IDENTIFIED BY &amp;apos;mypassword&amp;apos;;
-FLUSH privileges;
-You probably (almost certainly) don&amp;#x2019;t want to use your root password again in case you&amp;#x2019;re going to be using the included shared environments that Koding provides.
-Now cd ~/Web and install Drupal 8. 
-Choose a version: drush dl drupal-8 (this may give you a choice of versions)
-OR Definitely :) get Drupal 8 Beta 1: wget http://ftp.drupal.org/files/projects/drupal-8.0.0-beta1.tar.gz (see: https://www.drupal.org/node/2348025 )
-Unpack the tarball with tar zxf drupal-8-whatever.tgz
-Alter the dir name if it bothers you or you need a reminder of which version you&amp;#x2019;re using.
-mv drupal-8-whatever mydrupaldir
-I&amp;apos;m assuming a subdirectory from here on - which means you should set the RewriteBase in .htaccess
-RewriteBase /mydrupaldir  # in .htaccess in ~/Web/mydrupaldir
-Save yourself a few seconds by doing the usual copying of settings.php and set permissions malarky. 
-cd mydrupaldir
-cd sites/default
-# for developers only (sets up some dev mode settings, do this before install!)
-cp ../example.settings.local.php ./settings.local.php
-# for everyone
-cp default.settings.php settings.php
-cp default.services.yml services.yml
-chmod 0666 settings.php services.yml
-mkdir files
-sudo chown myuser:www-data files # NB this is server/user specific!
-chmod 0775 files
-(You need to change these permissions back to something more sane afterwards&amp;#x2026; 0644 and 0775 seem to be ok, but I&amp;#x2019;m open to abuse on the matter.)
-And you&amp;#x2019;re off! To open your VM in a browser, click the ellipsis next to your VM name (probably koding-vm-0) and then the VM name to open the site in a new tab, and follow the usual Drupal installer instructions! NB If you&amp;apos;re a developer, you might want to check out Webchick&amp;apos;s setup video from Drupalcon AMS: http://www.youtube.com/watch?v=wKdU2Q1NIZQ
-</description>
+    <title>Koding Virtual Machines Introduction</title>
+    <link>//learn.koding.com/guides/vm-introduction</link>
+    <pubDate>"2014-10-10T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/vm-introduction</guid>
+    <author>Team Koding</author>
+    <description></description>
   </item>
   
   <item>
@@ -1714,6 +1709,70 @@ for many compilers, as Visual Studio, and IDEs as Eclipse.
 The Biicode platform automatically generate CMake files for you, based on 
 your source code files. It also manage dependencies, so it can be used for reusing
 existing code easily.
+</description>
+  </item>
+  
+  <item>
+    <title>Getting started with Drupal 8 (Prerelease)</title>
+    <link>//learn.koding.com/guides/getting-started-drupal8-beta</link>
+    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-drupal8-beta</guid>
+    <author>Nik LePage</author>
+    <description>A quick rundown of how to setup a development environment for checking out the new Drupal 8 releases.
+  Setting up the development environment Go ahead and open up the Koding dev UI. The terminal is available in the bottom right panel. (I&amp;apos;m assuming you&amp;#x2019;re in ~/Web for the actual site install bits).
+We must first install Composer as we need Drush master (7) to easily install Drupal 8. You wanted Drush anyway though, right? :)
+Issue the following commands to perform the install and tidy up. 
+sudo curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer
+
+The last step is not required AFAIK, but makes Composer global for the machine. The instructions that I read said &amp;#x201C;Make sure Composer&amp;apos;s global bin directory is on the system PATH (recommended)&amp;#x201D;. That&amp;#x2019;s great, although I don&amp;#x2019;t fully understand the implications. 
+
+Issue the following commands in your shell to sort the path out.
+sed -i &amp;apos;1i export PATH=&amp;quot;$HOME/.composer/vendor/bin:$PATH&amp;quot;&amp;apos; $HOME/.bashrc
+source $HOME/.bashrc
+Now we can go ahead and use Composer to install drush 7. More long winded than &amp;quot;the old days&amp;quot;, but get used to it. Everything is Composer in D8. &amp;quot;So Compose; much baton (sic).&amp;quot;
+composer global require drush/drush:dev-master
+Test the install with a random &amp;#x201C;drush&amp;#x201D; command in the shell... e.g.
+drush --version
+As it turns out, we also need to enable mod_rewrite, although this appears to be set up by default in the new Koding. In order to do so, you can type the following command.
+sudo a2enmod rewrite
+MySQL is not installed by default in the new Koding setup. We need to add MariaDB, and the necessary PHP extensions.
+# Follow the instructions at https://downloads.mariadb.org/mariadb/repositories/#mirror=coreix
+# Select &amp;quot;Ubuntu&amp;quot;, &amp;quot;14.04&amp;quot;, &amp;quot;5.5&amp;quot; and then a mirror, and the instructions are below
+sudo apt-get install php5-mysql php5-gd
+One more gotcha - D8 requires (or prefers) curl?! Well, okay.
+sudo apt-get install php5-curl
+Restart the web server to enable all the new goodness!
+sudo service apache2 restart
+  Setting up the Drupal environment Now we&amp;#x2019;re ready to rock! The rest of this is a pretty standard Drupal setup mission, but here&amp;apos;s the outline anyway. Go setup yourself up a new database by entering MySql CLI (Koding mysql automatically assumes root) and issue the following commands.
+mysql -u root -p  # to get into the CLI, then...
+
+CREATE DATABASE drupal8db;
+GRANT ALL PRIVILEGES ON drupal8db.* TO myusername@localhost IDENTIFIED BY &amp;apos;mypassword&amp;apos;;
+FLUSH privileges;
+You probably (almost certainly) don&amp;#x2019;t want to use your root password again in case you&amp;#x2019;re going to be using the included shared environments that Koding provides.
+Now cd ~/Web and install Drupal 8. 
+Choose a version: drush dl drupal-8 (this may give you a choice of versions)
+OR Definitely :) get Drupal 8 Beta 1: wget http://ftp.drupal.org/files/projects/drupal-8.0.0-beta1.tar.gz (see: https://www.drupal.org/node/2348025 )
+Unpack the tarball with tar zxf drupal-8-whatever.tgz
+Alter the dir name if it bothers you or you need a reminder of which version you&amp;#x2019;re using.
+mv drupal-8-whatever mydrupaldir
+I&amp;apos;m assuming a subdirectory from here on - which means you should set the RewriteBase in .htaccess
+RewriteBase /mydrupaldir  # in .htaccess in ~/Web/mydrupaldir
+Save yourself a few seconds by doing the usual copying of settings.php and set permissions malarky. 
+cd mydrupaldir
+cd sites/default
+# for developers only (sets up some dev mode settings, do this before install!)
+cp ../example.settings.local.php ./settings.local.php
+# for everyone
+cp default.settings.php settings.php
+cp default.services.yml services.yml
+chmod 0666 settings.php services.yml
+mkdir files
+sudo chown myuser:www-data files # NB this is server/user specific!
+chmod 0775 files
+(You need to change these permissions back to something more sane afterwards&amp;#x2026; 0644 and 0775 seem to be ok, but I&amp;#x2019;m open to abuse on the matter.)
+And you&amp;#x2019;re off! To open your VM in a browser, click the ellipsis next to your VM name (probably koding-vm-0) and then the VM name to open the site in a new tab, and follow the usual Drupal installer instructions! NB If you&amp;apos;re a developer, you might want to check out Webchick&amp;apos;s setup video from Drupalcon AMS: http://www.youtube.com/watch?v=wKdU2Q1NIZQ
 </description>
   </item>
   
@@ -2143,170 +2202,6 @@ That is all!
   </item>
   
   <item>
-    <title>Author a guide: Previewing</title>
-    <link>//learn.koding.com/contribute/previewing</link>
-    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/contribute/previewing</guid>
-    <author>Team Koding</author>
-    <description>While you shouldn&amp;apos;t need to preview your guides, since Markdown is 
-designed to be human friendly in the source, if you insist you can 
-preview your guides as they are on Koding University. This guide will go 
-over that process. Note that this will require a bit of developer 
-know-how, so be prepared to get your hands dirty. Lets get started!
-  Requirements You will need a working NodeJS installation to compile the Koding 
-University source. If you do not, visit the NodeJS downloads 
-page and grab the installer.
-  Installation With a working NodeJS installation, we need to install the KU 
-dependencies, as well as a global installation of the GulpJS. This can be 
-done with the following code:
-npm install -g gulp
-cd .metalsmith
-npm install
-  Building With Gulp installed, simply run the following command, to compile the 
-entire project into HTML.
-(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
-cd .metalsmith
-gulp
-The .metalsmith/build directory will contain all of the compiled html, 
-css, and any static resources (such as images/etc) from the markdown 
-directory.
-Compiling can take 1-2 minutes, so be patient.
-  Previewing If you want to preview the compiled site, open a new Koding Terminal tab 
-and run the following:
-(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
-cd .metalsmith
-gulp preview
-This will run a small HTTP Server on Port 8000, ie: 
-http://hostname.you.koding.io:8000. Keep this tab open, and in  a 
-different Koding Terminal tab run your gulp command from above.Each time you compile the site, this will show your compiled site.
-  Compiling as you type To have your Markdown compiled as you write your documents, run the 
-following commands:
-(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
-cd .metalsmith
-gulp watch
-This, in combination with the preview command above, will compile the 
-site each time you change the Markdown.
-Note that if you add images for your guide to use, you&amp;apos;ll want to run the 
-full gulp command again.
-And that sums it up! You now know how to contribute to Koding University, 
-in multiple ways. Keep up the awesome work, and we look forward to your 
-contribution!
-</description>
-  </item>
-  
-  <item>
-    <title>Install Rockmongo</title>
-    <link>//learn.koding.com/guides/install-rockmongo</link>
-    <pubDate>2015-01-2</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/install-rockmongo</guid>
-    <author>Thien</author>
-    <description>  What is Rockmongo Rockmongo is a MongoDB administration tool that can be used to manage servers, databases, collections, documents, indexes etc. It provides a very user-friendly way for reading, writing and creating documents. It is very similar to phpMyAdmin. 
-  Step 1 The first thing you need to do is to open up your Koding Terminal and type in the following command:
-cd Web
-  Step 2. Next up, you need to download the Rockmongo version that you&amp;apos;re planing on using. In this case, you are going to use the latest version:
-git clone --depth=1 https://github.com/iwind/rockmongo.git
-  Step 3 Open the config.php file and change the following things:
-
-Host - should be set to 0.0.0.0
-Port - choose a desired port
-Chose a username and password. Note that by default they are set to admin and admin.
-
-  Step 4 Now Mongodb will need the PHP driver to work. You need to install it by running this command:
-sudo pecl install mongo
-After that you will need to edit the file 20-mono.ini, that is located at this path /etc/php5/apache2/conf.d/, and you you will need to add this line at the very end:
-extension=mongo.so
-  Step 5 Restart the Apache server using the following command and you should see everything working.
-sudo service apache2 restart
-You will now be able to access Rockmongo by following a similar URL:
-http://YOUR_KODING_USERNAME.koding.io/rockmongo
-If everything is working properly, you should see the following screen in your browser:
-
-That&amp;apos;s it! You&amp;apos;re now running Rockmongo on Koding!
-</description>
-  </item>
-  
-  <item>
-    <title>Author a guide: Basic</title>
-    <link>//learn.koding.com/contribute/basic</link>
-    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/contribute/basic</guid>
-    <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll go over how to contribute to the Koding University 
-the easy way. We&amp;apos;ll be using Github&amp;apos;s built in editor, to make the 
-forking &amp;amp; merging process easy. If you&amp;apos;re unfamiliar with Git, but you 
-still want to contribute to Learn, this is the guide for you. So, lets 
-get started!
-  Edit on Github Each Koding guide comes with a simple &amp;quot;Edit this on Github&amp;quot; link. This 
-link directs you back to a file editor on Github. Github will 
-automatically fork the repo if you have not yet, and even create a branch 
-so that your eventual pull request does not cause any unintended 
-contributions. Lets look at how this works.
-First up, find the guide that you want to edit, and look for the 
-Improve this Guide button at the bottom of all guides.
-
-  Fork the Repository If you have not contributed before you likely do not have the repository 
-forked yet. Press the green button seen below, and Github will fork the 
-repository for you.
-
-  Make your Edits After forking, or if you already had Koding University Forked, you&amp;apos;ll be 
-presented with a text editor for the guide that you chose to edit. From 
-here, look through the guide and make your edits as you desire.
-
-Don&amp;apos;t forget that there is a preview tab as well. The guide will look 
-slightly different on Github than on Koding University; but because 
-everything is formatted in Markdown you can preview it Github to ensure 
-the correctness of your markdown syntax.
-  Propose File Changes After you have made your edits to the document, scroll down and enter a 
-title and description for the edits you&amp;apos;ve made. After you&amp;apos;re satisfied, 
-press Propose file change.
-
-This will create a new branch of your Fork and store your changes into 
-that branch. To repeat, your changes have been added to your Fork, 
-not to the official Koding University repository yet. To do that, you 
-need to create a Pull Request.
-  Create Pull Request A pull request lets Koding Staff review and merge your changes into the 
-official repository. To do that, after proposing your file changes you 
-will see a page like the one below.
-
-This is your branch, on your forked repository. If you press the Create 
-Pull Request button, your changes in that branch will be sent to the 
-official repository to be reviewed and merged in.
-This is it! You&amp;apos;ve gone from the guide on University, to editing it and 
-submitting your changes for review, all without leaving your browser or 
-using any complex Git commands.
-  Creating a New Guide The above process is nice and simple, but there&amp;apos;s one core thing missing. 
-We didn&amp;apos;t create a guide, we only edited a guide. What if we want to 
-create a new guide? Luckily this Basic workflow also works with new 
-guides! Lets go over that real quick.
-First, click here. That link will send you to the Github 
-editor with no file loaded. You can write in the editor, add a file name, 
-and propose changes just like the above instructions. Remember to name 
-your file with the .md extension, and adhere to the 
-Guidelines.
-Because you&amp;apos;re creating a new file though, you want to make sure and add 
-the proper metadata to the file. Copy the following code, and place it 
-into the editor.
----
-author: Your Name
-username: yourUsername
-date: 2014-07-31
-categories: [nginx]
----
-
-Fill in Your Name with your name, and yourUsername with your Koding 
-Username. The date field should be formatted in YYYY-MM-DD format, and 
-the categories list is just a comma separated list of strings.
-
-Once that&amp;apos;s all taken care of, start writing your guide! Once you&amp;apos;re 
-done, follow the Propose and Pull Request instructions above, as they are 
-identical.
-You should note that with this method, you cannot add images to the 
-repository. For that to work, have a look at the next section which uses 
-Koding&amp;apos;s Editor and Git to make changes to this Koding University.
-</description>
-  </item>
-  
-  <item>
     <title>Getting Started with Python</title>
     <link>//learn.koding.com/guides/getting-started-python</link>
     <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
@@ -2483,54 +2378,114 @@ This concludes the getting started with Python guide. Thanks for reading!
   </item>
   
   <item>
-    <title>Getting Started: Editing Your Profile</title>
-    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
-    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
-    <author>Team Koding</author>
-    <description>Your Koding profile is your public information page on Koding. Currently 
-it shows your Avatar, Name and Description, recent Koding activity, and 
-in the near future Badges and additional social information. In this 
-guide we&amp;apos;ll go over the basic usage of your Koding profile.
-  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted 
-below.
+    <title>Install Rockmongo</title>
+    <link>//learn.koding.com/guides/install-rockmongo</link>
+    <pubDate>2015-01-2</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/install-rockmongo</guid>
+    <author>Thien</author>
+    <description>  What is Rockmongo Rockmongo is a MongoDB administration tool that can be used to manage servers, databases, collections, documents, indexes etc. It provides a very user-friendly way for reading, writing and creating documents. It is very similar to phpMyAdmin. 
+  Step 1 The first thing you need to do is to open up your Koding Terminal and type in the following command:
+cd Web
+  Step 2. Next up, you need to download the Rockmongo version that you&amp;apos;re planing on using. In this case, you are going to use the latest version:
+git clone --depth=1 https://github.com/iwind/rockmongo.git
+  Step 3 Open the config.php file and change the following things:
 
-Clicking on it will open your profile.
-  Avatar, Name and Description When viewing your profile for the first time, you&amp;apos;ll see that your first 
-name is set to your Koding username, and your last name and description 
-are set to default values, as seen in the below image.
+Host - should be set to 0.0.0.0
+Port - choose a desired port
+Chose a username and password. Note that by default they are set to admin and admin.
 
-These default values are only seen by you, and if you double click them, 
-you can edit that field.
+  Step 4 Now Mongodb will need the PHP driver to work. You need to install it by running this command:
+sudo pecl install mongo
+After that you will need to edit the file 20-mono.ini, that is located at this path /etc/php5/apache2/conf.d/, and you you will need to add this line at the very end:
+extension=mongo.so
+  Step 5 Restart the Apache server using the following command and you should see everything working.
+sudo service apache2 restart
+You will now be able to access Rockmongo by following a similar URL:
+http://YOUR_KODING_USERNAME.koding.io/rockmongo
+If everything is working properly, you should see the following screen in your browser:
 
-
-
-
-
+That&amp;apos;s it! You&amp;apos;re now running Rockmongo on Koding!
 </description>
   </item>
   
   <item>
-    <title>Author a guide</title>
-    <link>//learn.koding.com/contribute</link>
+    <title>Author a guide: Basic</title>
+    <link>//learn.koding.com/contribute/basic</link>
     <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/contribute</guid>
+    <guid isPermaLink="true">//learn.koding.com/contribute/basic</guid>
     <author>Team Koding</author>
-    <description>In this guide series we will go over Writing and Editing guides for Koding 
-University. We will cover every step of the process, but basic Git, 
-Github, and Markdown knowledge will be very useful.
-If you already know git, github, and markdown, here is the simple set of 
-tasks you&amp;apos;ll need to do.
+    <description>In this guide we&amp;apos;ll go over how to contribute to the Koding University 
+the easy way. We&amp;apos;ll be using Github&amp;apos;s built in editor, to make the 
+forking &amp;amp; merging process easy. If you&amp;apos;re unfamiliar with Git, but you 
+still want to contribute to Learn, this is the guide for you. So, lets 
+get started!
+  Edit on Github Each Koding guide comes with a simple &amp;quot;Edit this on Github&amp;quot; link. This 
+link directs you back to a file editor on Github. Github will 
+automatically fork the repo if you have not yet, and even create a branch 
+so that your eventual pull request does not cause any unintended 
+contributions. Lets look at how this works.
+First up, find the guide that you want to edit, and look for the 
+Improve this Guide button at the bottom of all guides.
 
-Review the Style Guidelines
-Fork KDLearn
-Clone your forked repo
-Find or create your files, Make your markdown edits
-Commit and push your changes to your repo
-Make a pull request of your changes, against the KDLearn Repo
+  Fork the Repository If you have not contributed before you likely do not have the repository 
+forked yet. Press the green button seen below, and Github will fork the 
+repository for you.
 
-If you need more in depth instructions than that, please continue with 
-this series below. Thanks!
+  Make your Edits After forking, or if you already had Koding University Forked, you&amp;apos;ll be 
+presented with a text editor for the guide that you chose to edit. From 
+here, look through the guide and make your edits as you desire.
+
+Don&amp;apos;t forget that there is a preview tab as well. The guide will look 
+slightly different on Github than on Koding University; but because 
+everything is formatted in Markdown you can preview it Github to ensure 
+the correctness of your markdown syntax.
+  Propose File Changes After you have made your edits to the document, scroll down and enter a 
+title and description for the edits you&amp;apos;ve made. After you&amp;apos;re satisfied, 
+press Propose file change.
+
+This will create a new branch of your Fork and store your changes into 
+that branch. To repeat, your changes have been added to your Fork, 
+not to the official Koding University repository yet. To do that, you 
+need to create a Pull Request.
+  Create Pull Request A pull request lets Koding Staff review and merge your changes into the 
+official repository. To do that, after proposing your file changes you 
+will see a page like the one below.
+
+This is your branch, on your forked repository. If you press the Create 
+Pull Request button, your changes in that branch will be sent to the 
+official repository to be reviewed and merged in.
+This is it! You&amp;apos;ve gone from the guide on University, to editing it and 
+submitting your changes for review, all without leaving your browser or 
+using any complex Git commands.
+  Creating a New Guide The above process is nice and simple, but there&amp;apos;s one core thing missing. 
+We didn&amp;apos;t create a guide, we only edited a guide. What if we want to 
+create a new guide? Luckily this Basic workflow also works with new 
+guides! Lets go over that real quick.
+First, click here. That link will send you to the Github 
+editor with no file loaded. You can write in the editor, add a file name, 
+and propose changes just like the above instructions. Remember to name 
+your file with the .md extension, and adhere to the 
+Guidelines.
+Because you&amp;apos;re creating a new file though, you want to make sure and add 
+the proper metadata to the file. Copy the following code, and place it 
+into the editor.
+---
+author: Your Name
+username: yourUsername
+date: 2014-07-31
+categories: [nginx]
+---
+
+Fill in Your Name with your name, and yourUsername with your Koding 
+Username. The date field should be formatted in YYYY-MM-DD format, and 
+the categories list is just a comma separated list of strings.
+
+Once that&amp;apos;s all taken care of, start writing your guide! Once you&amp;apos;re 
+done, follow the Propose and Pull Request instructions above, as they are 
+identical.
+You should note that with this method, you cannot add images to the 
+repository. For that to work, have a look at the next section which uses 
+Koding&amp;apos;s Editor and Git to make changes to this Koding University.
 </description>
   </item>
   
@@ -2606,90 +2561,106 @@ forth) should be used to group content just like you do with HTML&amp;apos;s
   </item>
   
   <item>
-    <title>Setting up a framework webserver</title>
-    <link>//learn.koding.com/guides/setting-framework-webserver</link>
-    <pubDate>"2014-06-25T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-framework-webserver</guid>
-    <author>Levent Yalcin</author>
-    <description>Koding is the easiest way to say goodbye to your localhost. 
-Using your personal machine for projects means you have to bind your daemons to public IP address, which can be a bit frustrating for a beginner. Developers usually tend to use certain frameworks that have built-in web servers. These web servers give you the ability to develop your projects and then test them. But there is a downside to that approach. Those web servers are not designated for production usage and besides that they only run locally which makes your daemon/project not accessible to the rest of the world. This means you can&amp;apos;t reach them from your Koding public domain. If you want to achieve this and make you daemons available for public access you have to bind your daemons to 0.0.0.0 which listens to all IPv4 addresses. 
-Here are a couple of examples on how to make your project available publicly by using Koding as your development playground.
-  Django Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Django using just one command:
-kpm install django
+    <title>Getting Started: Editing Your Profile</title>
+    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
+    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
+    <author>Team Koding</author>
+    <description>Your Koding profile is your public information page on Koding. Currently 
+it shows your Avatar, Name and Description, recent Koding activity, and 
+in the near future Badges and additional social information. In this 
+guide we&amp;apos;ll go over the basic usage of your Koding profile.
+  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted 
+below.
 
-First we install Django and then create a project.
-sudo pip install django
-After Django has finished installing we start a new project like so:
-django-admin.py startproject goodbyelocalhost
-After that we run our built-in web server without binding it to localhost
-cd goodbyelocalhost/
-python manage.py runserver 0.0.0.0:8000
-Voil&amp;#xE0;! You should see a working Django server.
-  Laravel 4 and Artisan Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Laravel using just one command:
-kpm install laravel
+Clicking on it will open your profile.
+  Avatar, Name and Description When viewing your profile for the first time, you&amp;apos;ll see that your first 
+name is set to your Koding username, and your last name and description 
+are set to default values, as seen in the below image.
 
-Installing Laravel 4
-sudo curl -o /usr/local/bin/laravel &amp;apos;http://laravel.com/laravel.phar&amp;apos;
-Set execute permission on the Laravel executeable.
-sudo chmod +x /usr/local/bin/laravel
-We create a new new Laravel project.
-laravel new goodbyelocalhost
-Navigate into the directory:
-cd goodbyelocalhost
-And then we start the webserver:
-php artisan serve --host=0.0.0.0 --port=8080
-Voil&amp;#xE0;! A working Laravel and Artisan webserver.
-  MeteorJS Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install MeteorJS using just one command:
-kpm install meteor
+These default values are only seen by you, and if you double click them, 
+you can edit that field.
 
-Install MeteorJS
-curl https://install.meteor.com/ | sh
-Creating a Meteor project is as simple as 1, 2, 3
-meteor create goodbyelocalhost
-Running the project 
-meteor
-Meteor should listen to 0.0.0.0:3000 by default. If you can&amp;apos;t reach your project via the browser you have to make sure it listens to 0.0.0.0:3000. You can check this using the netstat command in another terminal window. 
-sudo netstat -tnlp
-  Rails Rails listens to 0.0.0.0:3000 by default. 
-Install Rails via the following command
-sudo gem install rails
-Create a new project
-rails new goodbyetolocalhost
-cd goodbyetolocalhost
-Start the webserver
-rails server
-Voil&amp;#xE0;! You have a Rails working webserver
-  Tornado Create a new Python script using your favorite editor.
-vim goodbyetolocalhost.py
-Create a Hello, World! like so, to test if the webserver is running correctly.
-import tornado.ioloop
-import tornado.web
 
-class MainHandler(tornado.web.RequestHandler):
-    def get(self):
-        self.write(&amp;quot;Hello, world&amp;quot;)
 
-application = tornado.web.Application([
-    (r&amp;quot;/&amp;quot;, MainHandler),
-])
 
-if __name__ == &amp;quot;__main__&amp;quot;:
-    application.listen(8888, &amp;apos;0.0.0.0&amp;apos;) 
-    tornado.ioloop.IOLoop.instance().start()
 
-Then just run the script
-python goodbyetolocalhost.py
-  Symfony2 Installing Symfony2
-First we need to install composer. Run the following commands to download, move and give right permissions to composer.
-curl -sS https://getcomposer.org/installer | php #!/usr/bin/env php
-sudo mv composer.phar /usr/local/bin/composer
-chmod +x /usr/local/bin/composer
-Create a new project to test you webserver.
-composer create-project symfony/framework-standard-edition goodbyetolocalhost 
-cd goodbyetolocalhost
-Start the server like so.
-php app/console server:run 0.0.0.0:8080
-Enjoy a fully working Symfony2 webserver!
+</description>
+  </item>
+  
+  <item>
+    <title>Author a guide: Previewing</title>
+    <link>//learn.koding.com/contribute/previewing</link>
+    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/contribute/previewing</guid>
+    <author>Team Koding</author>
+    <description>While you shouldn&amp;apos;t need to preview your guides, since Markdown is 
+designed to be human friendly in the source, if you insist you can 
+preview your guides as they are on Koding University. This guide will go 
+over that process. Note that this will require a bit of developer 
+know-how, so be prepared to get your hands dirty. Lets get started!
+  Requirements You will need a working NodeJS installation to compile the Koding 
+University source. If you do not, visit the NodeJS downloads 
+page and grab the installer.
+  Installation With a working NodeJS installation, we need to install the KU 
+dependencies, as well as a global installation of the GulpJS. This can be 
+done with the following code:
+npm install -g gulp
+cd .metalsmith
+npm install
+  Building With Gulp installed, simply run the following command, to compile the 
+entire project into HTML.
+(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
+cd .metalsmith
+gulp
+The .metalsmith/build directory will contain all of the compiled html, 
+css, and any static resources (such as images/etc) from the markdown 
+directory.
+Compiling can take 1-2 minutes, so be patient.
+  Previewing If you want to preview the compiled site, open a new Koding Terminal tab 
+and run the following:
+(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
+cd .metalsmith
+gulp preview
+This will run a small HTTP Server on Port 8000, ie: 
+http://hostname.you.koding.io:8000. Keep this tab open, and in  a 
+different Koding Terminal tab run your gulp command from above.Each time you compile the site, this will show your compiled site.
+  Compiling as you type To have your Markdown compiled as you write your documents, run the 
+following commands:
+(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
+cd .metalsmith
+gulp watch
+This, in combination with the preview command above, will compile the 
+site each time you change the Markdown.
+Note that if you add images for your guide to use, you&amp;apos;ll want to run the 
+full gulp command again.
+And that sums it up! You now know how to contribute to Koding University, 
+in multiple ways. Keep up the awesome work, and we look forward to your 
+contribution!
+</description>
+  </item>
+  
+  <item>
+    <title>Author a guide</title>
+    <link>//learn.koding.com/contribute</link>
+    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/contribute</guid>
+    <author>Team Koding</author>
+    <description>In this guide series we will go over Writing and Editing guides for Koding 
+University. We will cover every step of the process, but basic Git, 
+Github, and Markdown knowledge will be very useful.
+If you already know git, github, and markdown, here is the simple set of 
+tasks you&amp;apos;ll need to do.
+
+Review the Style Guidelines
+Fork KDLearn
+Clone your forked repo
+Find or create your files, Make your markdown edits
+Commit and push your changes to your repo
+Make a pull request of your changes, against the KDLearn Repo
+
+If you need more in depth instructions than that, please continue with 
+this series below. Thanks!
 </description>
   </item>
   
@@ -2898,36 +2869,90 @@ prepend your list items with a number, instead of a hyphen. Example:
   </item>
   
   <item>
-    <title>Sync files using Google Drive</title>
-    <link>//learn.koding.com/guides/sync-files-google-drive</link>
-    <pubDate>"2014-07-08T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/sync-files-google-drive</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and start synchronizing your files using Google Drive with just one command:
-kpm install gdrive
+    <title>Setting up a framework webserver</title>
+    <link>//learn.koding.com/guides/setting-framework-webserver</link>
+    <pubDate>"2014-06-25T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-framework-webserver</guid>
+    <author>Levent Yalcin</author>
+    <description>Koding is the easiest way to say goodbye to your localhost. 
+Using your personal machine for projects means you have to bind your daemons to public IP address, which can be a bit frustrating for a beginner. Developers usually tend to use certain frameworks that have built-in web servers. These web servers give you the ability to develop your projects and then test them. But there is a downside to that approach. Those web servers are not designated for production usage and besides that they only run locally which makes your daemon/project not accessible to the rest of the world. This means you can&amp;apos;t reach them from your Koding public domain. If you want to achieve this and make you daemons available for public access you have to bind your daemons to 0.0.0.0 which listens to all IPv4 addresses. 
+Here are a couple of examples on how to make your project available publicly by using Koding as your development playground.
+  Django Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Django using just one command:
+kpm install django
 
-This guide will cover how to get started with synchronizing your files that are hosted on your Google Drive account (works
-with both personal and business Google Apps accounts).
-You can install Google Drive on your Koding VM by following these simple steps in Terminal.
-  Steps To achieve the sync, we will use an app called grive so first you need to install the grive app using the following command:
-sudo apt-get install grive
-After that you need to create a folder where the Google Drive folders and files will be synced.
-mkdir GDrive
-cd GDrive
-We need to soft-link some dependencies for the grive app to work properly. Use the following command to achieve this.
-sudo ln -s /usr/lib/libbfd-2.23.2-system.so /usr/lib/libbfd-2.23-system.so
-The last step is to start the Google Drive app and authorize it with the Google services.
-grive -a
-Cut and paste the link that the grive app shows you into a new browser tab/window to get an authorization code. 
-Once you have an auth code, paste it back in the Terminal window to continue the installation process.
-Now you can sync you files using the command grive in the GDrive folder you created.
-Note 1: The app does not run in the background automatically continuously doing a sync. In order to achieve that, you can
-set up a cron job on your VM that runs every x seconds/minutes/hours depending on your preference. To learn
-more about cron, open up a new Terminal tab and type in:
-man cron
- Note 2: As per the author of grive, the application will not download any files that are the traditional Google Docs (Spreadsheet, Documents,
-Presentations, etc.). The app will only automatically upload/download any non-native Google Doc formats which include
-code files, text files, images, etc.
+First we install Django and then create a project.
+sudo pip install django
+After Django has finished installing we start a new project like so:
+django-admin.py startproject goodbyelocalhost
+After that we run our built-in web server without binding it to localhost
+cd goodbyelocalhost/
+python manage.py runserver 0.0.0.0:8000
+Voil&amp;#xE0;! You should see a working Django server.
+  Laravel 4 and Artisan Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Laravel using just one command:
+kpm install laravel
+
+Installing Laravel 4
+sudo curl -o /usr/local/bin/laravel &amp;apos;http://laravel.com/laravel.phar&amp;apos;
+Set execute permission on the Laravel executeable.
+sudo chmod +x /usr/local/bin/laravel
+We create a new new Laravel project.
+laravel new goodbyelocalhost
+Navigate into the directory:
+cd goodbyelocalhost
+And then we start the webserver:
+php artisan serve --host=0.0.0.0 --port=8080
+Voil&amp;#xE0;! A working Laravel and Artisan webserver.
+  MeteorJS Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install MeteorJS using just one command:
+kpm install meteor
+
+Install MeteorJS
+curl https://install.meteor.com/ | sh
+Creating a Meteor project is as simple as 1, 2, 3
+meteor create goodbyelocalhost
+Running the project 
+meteor
+Meteor should listen to 0.0.0.0:3000 by default. If you can&amp;apos;t reach your project via the browser you have to make sure it listens to 0.0.0.0:3000. You can check this using the netstat command in another terminal window. 
+sudo netstat -tnlp
+  Rails Rails listens to 0.0.0.0:3000 by default. 
+Install Rails via the following command
+sudo gem install rails
+Create a new project
+rails new goodbyetolocalhost
+cd goodbyetolocalhost
+Start the webserver
+rails server
+Voil&amp;#xE0;! You have a Rails working webserver
+  Tornado Create a new Python script using your favorite editor.
+vim goodbyetolocalhost.py
+Create a Hello, World! like so, to test if the webserver is running correctly.
+import tornado.ioloop
+import tornado.web
+
+class MainHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.write(&amp;quot;Hello, world&amp;quot;)
+
+application = tornado.web.Application([
+    (r&amp;quot;/&amp;quot;, MainHandler),
+])
+
+if __name__ == &amp;quot;__main__&amp;quot;:
+    application.listen(8888, &amp;apos;0.0.0.0&amp;apos;) 
+    tornado.ioloop.IOLoop.instance().start()
+
+Then just run the script
+python goodbyetolocalhost.py
+  Symfony2 Installing Symfony2
+First we need to install composer. Run the following commands to download, move and give right permissions to composer.
+curl -sS https://getcomposer.org/installer | php #!/usr/bin/env php
+sudo mv composer.phar /usr/local/bin/composer
+chmod +x /usr/local/bin/composer
+Create a new project to test you webserver.
+composer create-project symfony/framework-standard-edition goodbyetolocalhost 
+cd goodbyetolocalhost
+Start the server like so.
+php app/console server:run 0.0.0.0:8080
+Enjoy a fully working Symfony2 webserver!
 </description>
   </item>
   
@@ -2970,6 +2995,40 @@ http://hostname.username.koding.io/phpinfo.php
 This page should show you the PHP configuration on your machine. 
 One of the section contains information about Phalcon (search on the page for phalcon by pressing Ctrl + F). 
 If you can see this section, it means that Phalcon has been installed on your machine and you can start using it right away!
+</description>
+  </item>
+  
+  <item>
+    <title>Sync files using Google Drive</title>
+    <link>//learn.koding.com/guides/sync-files-google-drive</link>
+    <pubDate>"2014-07-08T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/sync-files-google-drive</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and start synchronizing your files using Google Drive with just one command:
+kpm install gdrive
+
+This guide will cover how to get started with synchronizing your files that are hosted on your Google Drive account (works
+with both personal and business Google Apps accounts).
+You can install Google Drive on your Koding VM by following these simple steps in Terminal.
+  Steps To achieve the sync, we will use an app called grive so first you need to install the grive app using the following command:
+sudo apt-get install grive
+After that you need to create a folder where the Google Drive folders and files will be synced.
+mkdir GDrive
+cd GDrive
+We need to soft-link some dependencies for the grive app to work properly. Use the following command to achieve this.
+sudo ln -s /usr/lib/libbfd-2.23.2-system.so /usr/lib/libbfd-2.23-system.so
+The last step is to start the Google Drive app and authorize it with the Google services.
+grive -a
+Cut and paste the link that the grive app shows you into a new browser tab/window to get an authorization code. 
+Once you have an auth code, paste it back in the Terminal window to continue the installation process.
+Now you can sync you files using the command grive in the GDrive folder you created.
+Note 1: The app does not run in the background automatically continuously doing a sync. In order to achieve that, you can
+set up a cron job on your VM that runs every x seconds/minutes/hours depending on your preference. To learn
+more about cron, open up a new Terminal tab and type in:
+man cron
+ Note 2: As per the author of grive, the application will not download any files that are the traditional Google Docs (Spreadsheet, Documents,
+Presentations, etc.). The app will only automatically upload/download any non-native Google Doc formats which include
+code files, text files, images, etc.
 </description>
   </item>
   
@@ -4024,6 +4083,18 @@ http://my.name.is.username.koding.io. Yay!
   </item>
   
   <item>
+    <title>Getting Started</title>
+    <link>//learn.koding.com/guides/getting-started</link>
+    <pubDate>"2014-02-07T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started</guid>
+    <author>Team Koding</author>
+    <description>In this Getting Started series, lets go over some basic usage of Koding. We&amp;apos;ll 
+go over each section, and by the end you should have a basic understanding how 
+where everything is located in Koding. 
+</description>
+  </item>
+  
+  <item>
     <title>Enable PHP mail() function</title>
     <link>//learn.koding.com/guides/enable-php-mail-function</link>
     <pubDate>"2014-07-12T00:00:00.000Z"</pubDate>
@@ -4036,18 +4107,6 @@ After the previous command finishes installing the sendmail package, you need to
 sudo sendmailconfig
 You need to choose Yes to every question or otherwise configure it as you see fit.
 That&amp;apos;s it! You can now use the mail() function in your PHP app. 
-</description>
-  </item>
-  
-  <item>
-    <title>Getting Started</title>
-    <link>//learn.koding.com/guides/getting-started</link>
-    <pubDate>"2014-02-07T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started</guid>
-    <author>Team Koding</author>
-    <description>In this Getting Started series, lets go over some basic usage of Koding. We&amp;apos;ll 
-go over each section, and by the end you should have a basic understanding how 
-where everything is located in Koding. 
 </description>
   </item>
   
@@ -4087,53 +4146,6 @@ it. A short tutorial on how to use EmberJS on
 Koding.
 As always, more Quick Tips and beginner friendly guides 
 from Koding coming soon, so stay tuned!
-</description>
-  </item>
-  
-  <item>
-    <title>Getting Started: The Activity Feed</title>
-    <link>//learn.koding.com/guides/getting-started/activity-feed</link>
-    <pubDate>"2014-05-30T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/activity-feed</guid>
-    <author>Team Koding</author>
-    <description>The Activity Feed is the central location for discussion on Koding. A 
-public message board, with markdown support, previewing, hashtag topics 
-and more, it&amp;apos;s a central component to Koding&amp;apos;s Social experience.
-
-  Posting and Formatting To post to the activity feed, find the input box in the top of the page.
-
-Simply type something in, and press the green submit button. Just plain text 
-can get a bit boring though, so Koding supports full 
-Markdown, as seen below:
-
-  Previewing To preview your post, simply press the little eye on the right side of 
-the input box. Your Markdown will be rendered and highlighted 
-appropriately.
-
-  Tagging Tagging your content is important. With tags, your content can be
-categorized, which makes it easier to search and more likely to be seen 
-by people who follow those channels.
-
-
-
-Here you can see the previous Markdown example, tagged with the 
-#markdown tag.
-  Searching On the #public channel there is a search field next to 
-Most Liked / Most Recent, as seen below.
-
-Searching the activity feed will search for the contents of a post, as 
-well as the tags.
-  Channels Channels are how you view a steam of posts with a certain Tag. When you 
-click on a tag, it opens a channel for that tag. Clicking on the Grey 
-checkmark next to the channel name, will subscribe you to that channel, 
-and keep it open anytime you visit Koding.
-
-To browse channels that you might be interested in, you can click the 
-Plus button next to &amp;quot;Channel&amp;quot; in the sidebar (as seen below), and 
-search for the channel you&amp;apos;re interested in.
-
-Following channels is a great way to stay active in content that matters 
-to you.
 </description>
   </item>
   
@@ -4203,6 +4215,81 @@ Elixir is now updated!
   </item>
   
   <item>
+    <title>Getting Started: The Activity Feed</title>
+    <link>//learn.koding.com/guides/getting-started/activity-feed</link>
+    <pubDate>"2014-05-30T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/activity-feed</guid>
+    <author>Team Koding</author>
+    <description>The Activity Feed is the central location for discussion on Koding. A 
+public message board, with markdown support, previewing, hashtag topics 
+and more, it&amp;apos;s a central component to Koding&amp;apos;s Social experience.
+
+  Posting and Formatting To post to the activity feed, find the input box in the top of the page.
+
+Simply type something in, and press the green submit button. Just plain text 
+can get a bit boring though, so Koding supports full 
+Markdown, as seen below:
+
+  Previewing To preview your post, simply press the little eye on the right side of 
+the input box. Your Markdown will be rendered and highlighted 
+appropriately.
+
+  Tagging Tagging your content is important. With tags, your content can be
+categorized, which makes it easier to search and more likely to be seen 
+by people who follow those channels.
+
+
+
+Here you can see the previous Markdown example, tagged with the 
+#markdown tag.
+  Searching On the #public channel there is a search field next to 
+Most Liked / Most Recent, as seen below.
+
+Searching the activity feed will search for the contents of a post, as 
+well as the tags.
+  Channels Channels are how you view a steam of posts with a certain Tag. When you 
+click on a tag, it opens a channel for that tag. Clicking on the Grey 
+checkmark next to the channel name, will subscribe you to that channel, 
+and keep it open anytime you visit Koding.
+
+To browse channels that you might be interested in, you can click the 
+Plus button next to &amp;quot;Channel&amp;quot; in the sidebar (as seen below), and 
+search for the channel you&amp;apos;re interested in.
+
+Following channels is a great way to stay active in content that matters 
+to you.
+</description>
+  </item>
+  
+  <item>
+    <title>Codeigniter Installation for Beginners</title>
+    <link>//learn.koding.com/guides/codeigniter-for-beginners</link>
+    <pubDate>"2014-01-07T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/codeigniter-for-beginners</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Codeigniter using just one command:
+kpm install codeigniter
+
+In this article we will go over installing Codeigniter for beginners.
+  What is Codeigniter? Codeigniter may be old hat to some, but the tried and true frameworks tend to hold their own for quite a long time, and for good reason. It is polished, has an extensive history, and above all has a large community to back it up. 
+  So how do i get started with Codeigniter? Before you begin make sure you are in your Web folder:
+cd Web
+First you will need to download the latest version of Codeigniter using the following command, in your Terminal:
+wget https://github.com/bcit-ci/CodeIgniter/archive/2.2-stable.zip
+After that you&amp;apos;ll need to unzip the file using the command:
+unzip 2.2-stable.zip
+Next we need to rename the folder to a more friendly one:
+mv CodeIgniter-2.2-stable codeigniter
+You will now be able to access Codeigniter by following a similar URL:
+http://KODING_USERNAME.koding.io/codeigniter
+Find out more about your VM hostname here.
+Koding comes with Apache by default, so Codeigniter just works.
+As you can see, setting up CodeIgniter is a pretty simple process.
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
     <title>Getting Started: The UI</title>
     <link>//learn.koding.com/guides/getting-started/the-ui</link>
     <pubDate>"2014-05-30T00:00:00.000Z"</pubDate>
@@ -4256,29 +4343,38 @@ account to various services.
   </item>
   
   <item>
-    <title>Codeigniter Installation for Beginners</title>
-    <link>//learn.koding.com/guides/codeigniter-for-beginners</link>
-    <pubDate>"2014-01-07T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/codeigniter-for-beginners</guid>
+    <title>CakePHP Installation for Beginners</title>
+    <link>//learn.koding.com/guides/cakephp-for-beginners</link>
+    <pubDate>"2014-04-01T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/cakephp-for-beginners</guid>
     <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Codeigniter using just one command:
-kpm install codeigniter
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install CakePHP using just one command:
+kpm install cakephp
 
-In this article we will go over installing Codeigniter for beginners.
-  What is Codeigniter? Codeigniter may be old hat to some, but the tried and true frameworks tend to hold their own for quite a long time, and for good reason. It is polished, has an extensive history, and above all has a large community to back it up. 
-  So how do i get started with Codeigniter? Before you begin make sure you are in your Web folder:
+If you are a beginner with CakePHP than this article will help you with the install process.
+  What is CakePHP? CakePHP is a popular PHP framework created with ease of use, small codebase, and MVC in mind. It&amp;apos;s also being actively developed, with two point releases in the last month alone. With a solid codebase, a supportive community, and active developers, it is a strong choice for any project. 
+  Installing On the homepage of CakePHP, copy the download link for the latest version of CakePHP. In this case you&amp;apos;re going to be using CakePHP 2.4.2. 
+Open your Koding Terminal and type:
 cd Web
-First you will need to download the latest version of Codeigniter using the following command, in your Terminal:
-wget https://github.com/bcit-ci/CodeIgniter/archive/2.2-stable.zip
-After that you&amp;apos;ll need to unzip the file using the command:
-unzip 2.2-stable.zip
-Next we need to rename the folder to a more friendly one:
-mv CodeIgniter-2.2-stable codeigniter
-You will now be able to access Codeigniter by following a similar URL:
-http://KODING_USERNAME.koding.io/codeigniter
+wget -O cake.zip
+and then paste your download link with Ctrl-Shift-V. As an example, it should look like this: 
+wget -O cake.zip https://github.com/cakephp/cakephp/zipball/2.4.2
+On the left hand side, in the Koding FileTree, right click your file and choose Extract. This will extract your downloaded cake.zip into a directory cake/.
+Expand that directory, and you&amp;apos;ll see a directory with a name similar to cakephp-cakephp-f53efef. 
+Drag that into your Web/ directory. You can rename this directory to &amp;quot;cake&amp;quot;, or whatever you like, as this will make it easier to type in your browser. 
+Finally make sure that you have Apache&amp;apos;s mod_rewrite enabled. Follow this guide to learn you can do that.
+The last step is a security step enforced by CakePHP. 
+Open up app/Config/core.php and look for the following two lines. 
+Edit the DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi and 76859309657453542496749683645 strings to have randomized content for your deploy. Just remember that the second string is numbers only.  
+/** * A random string used in security hashing methods. */ 
+Configure::write(&amp;apos;Security.salt&amp;apos;, &amp;apos;DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi&amp;apos;);
+
+/** * A random numeric string (digits only) used to encrypt/decrypt strings. */ 
+Configure::write(&amp;apos;Security.cipherSeed&amp;apos;, &amp;apos;76859309657453542496749683645&amp;apos;);
+You will now be able to access CakePHP by following a similar URL:
+http://KODING_USERNAME.koding.io/cake
 Find out more about your VM hostname here.
-Koding comes with Apache by default, so Codeigniter just works.
-As you can see, setting up CodeIgniter is a pretty simple process.
+And that&amp;apos;s it!
 If you encounter any issues or have any questions please drop an email here.
 </description>
   </item>
@@ -4366,43 +4462,6 @@ And that&amp;apos;s it. Why not continue and experiment with AngularJS on
 Koding and see what more cool stuff you can 
 make. As always, more Quick Tips and beginner friendly guides coming 
 soon, so stay tuned!
-</description>
-  </item>
-  
-  <item>
-    <title>CakePHP Installation for Beginners</title>
-    <link>//learn.koding.com/guides/cakephp-for-beginners</link>
-    <pubDate>"2014-04-01T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/cakephp-for-beginners</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install CakePHP using just one command:
-kpm install cakephp
-
-If you are a beginner with CakePHP than this article will help you with the install process.
-  What is CakePHP? CakePHP is a popular PHP framework created with ease of use, small codebase, and MVC in mind. It&amp;apos;s also being actively developed, with two point releases in the last month alone. With a solid codebase, a supportive community, and active developers, it is a strong choice for any project. 
-  Installing On the homepage of CakePHP, copy the download link for the latest version of CakePHP. In this case you&amp;apos;re going to be using CakePHP 2.4.2. 
-Open your Koding Terminal and type:
-cd Web
-wget -O cake.zip
-and then paste your download link with Ctrl-Shift-V. As an example, it should look like this: 
-wget -O cake.zip https://github.com/cakephp/cakephp/zipball/2.4.2
-On the left hand side, in the Koding FileTree, right click your file and choose Extract. This will extract your downloaded cake.zip into a directory cake/.
-Expand that directory, and you&amp;apos;ll see a directory with a name similar to cakephp-cakephp-f53efef. 
-Drag that into your Web/ directory. You can rename this directory to &amp;quot;cake&amp;quot;, or whatever you like, as this will make it easier to type in your browser. 
-Finally make sure that you have Apache&amp;apos;s mod_rewrite enabled. Follow this guide to learn you can do that.
-The last step is a security step enforced by CakePHP. 
-Open up app/Config/core.php and look for the following two lines. 
-Edit the DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi and 76859309657453542496749683645 strings to have randomized content for your deploy. Just remember that the second string is numbers only.  
-/** * A random string used in security hashing methods. */ 
-Configure::write(&amp;apos;Security.salt&amp;apos;, &amp;apos;DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi&amp;apos;);
-
-/** * A random numeric string (digits only) used to encrypt/decrypt strings. */ 
-Configure::write(&amp;apos;Security.cipherSeed&amp;apos;, &amp;apos;76859309657453542496749683645&amp;apos;);
-You will now be able to access CakePHP by following a similar URL:
-http://KODING_USERNAME.koding.io/cake
-Find out more about your VM hostname here.
-And that&amp;apos;s it!
-If you encounter any issues or have any questions please drop an email here.
 </description>
   </item>
   
@@ -4614,6 +4673,19 @@ Once you initiate a reinit, you will see appropriate messages on the screen as y
   </item>
   
   <item>
+    <title>What is my sudo password?</title>
+    <link>//learn.koding.com/faq/sudo-password</link>
+    <pubDate></pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/sudo-password</guid>
+    <author></author>
+    <description>By default, there is no sudo password on your Koding VM. It is blank/empty which means that if you want to use sudo, all
+you need to do is as follows:
+sudo &amp;lt;command you wish to use&amp;gt;
+When you hit enter, the sudo level command you wish to run without a password prompt.
+</description>
+  </item>
+  
+  <item>
     <title>What ports are open on my Koding VM?</title>
     <link>//learn.koding.com/faq/open-ports</link>
     <pubDate></pubDate>
@@ -4628,19 +4700,6 @@ Port 80 is taken by Apache, but this can be turned off to free up the port. To t
 off Apache, type in: sudo service apache2 stop in Terminal.
 Ports 2 through 1,024 require sudo access.
 
-</description>
-  </item>
-  
-  <item>
-    <title>What is my sudo password?</title>
-    <link>//learn.koding.com/faq/sudo-password</link>
-    <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/sudo-password</guid>
-    <author></author>
-    <description>By default, there is no sudo password on your Koding VM. It is blank/empty which means that if you want to use sudo, all
-you need to do is as follows:
-sudo &amp;lt;command you wish to use&amp;gt;
-When you hit enter, the sudo level command you wish to run without a password prompt.
 </description>
   </item>
   
