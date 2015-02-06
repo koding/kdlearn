@@ -55,6 +55,10 @@ open the `~/.ssh/authorized_keys` file.
 
 Once the key has been pasted in, save the file.
 
+**Note: Make sure that the key you have pasted is one long line and that
+there are not line breaks anywhere. If there are line breaks in the file,
+ your ssh connection will fail.**
+
 ## Connecting with SSH
 
 Lastly, open up your local Terminal client and ssh to your VM Address as 

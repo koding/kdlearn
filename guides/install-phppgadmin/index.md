@@ -8,6 +8,14 @@ template: page.toffee
 
 # How to install phpPgAdmin
 
+Before you continue reading this guide why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install phpPgAdmin using just one command:
+
+```
+kpm install phppgadmin
+```
+
+***
+
 This guide will walk you through the steps you need to take in order to get **phpPgAdmin** installed on your Koding VM.
 
 Just follow the steps and you should get phpPgAdmin installed in no time.

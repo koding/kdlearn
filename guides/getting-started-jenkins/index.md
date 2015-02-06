@@ -8,6 +8,14 @@ template: page.toffee
 
 # Getting started with Jenkins
 
+Before you continue reading this guide why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install Jenkins using just one command:
+
+```
+kpm install jenkins
+```
+
+***
+
 This guide will cover the basics on how to install and configure Jenkins on your Koding VM. Just follow the steps and you should have Jenkins running in no time.
 
 ## Installing Jenkins
