@@ -14,9 +14,14 @@ module.exports = (opts={}) ->
 
   (files, metalsmith, done) ->
     metadata = metalsmith.metadata()
+    # The full list of tags
     metadata.tags ?= {}
-    {tags} = metalsmith.metadata()
+    # Only store each file, once.
+    metadata.tagsByUnique ?= {}
+    {tags}          = metadata
+    {tagsByUnique}  = metadata
 
+    # Go through each file, pulling the tag list from it
     for filename, file of files
       if not file[opts.metaKey]? then continue
 
@@ -25,7 +30,7 @@ module.exports = (opts={}) ->
           of strings but got #{JSON.stringify file[opts.metaKey]} instead."
         continue
 
-      for tag in file[opts.metaKey]
+      for tag, i in file[opts.metaKey]
         if typeof tag isnt 'string'
           console.warn "The tag '#{tag}' for #{filename} is not a string.
             It is being ignored."
@@ -33,6 +38,15 @@ module.exports = (opts={}) ->
         tag = tag.toLowerCase()
         tags[tag] ?= []
         tags[tag].push file
+        # For the tagsByUnique list, only push this file once.
+        # Note that this also only pushes the first tag
+        # listed in the file's tag list, which is a good thing.
+        # Example being, file[nodejs, javascript] will push to
+        # nodejs first, and not javascript. Allows you to
+        # prioritize the list.
+        if i is 0
+          tagsByUnique[tag] ?= []
+          tagsByUnique[tag].push file
 
     for tagName,tag of tags
       if typeof opts.sort is 'function' then tag.sort opts.sort

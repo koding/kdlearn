@@ -17,7 +17,7 @@ if paginate.current is 0 {:
 
 <div class="docs-content" id="page-guides">
   <ul>
-  {# for tagKey of tags {:
+  {# for tagKey of tagsByUnique {:
     <li>#{partial 'taglist.toffee', tagKey: tagKey}</li>
   :} #}
   </ul>
