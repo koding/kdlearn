@@ -1,7 +1,7 @@
 ---
 author: Team Koding
 date: 2014-06-01
-categories: [koding]
+categories: []
 collection: guide
 
 series: contribute
