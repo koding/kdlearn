@@ -3,14 +3,39 @@
 #
 # Take the `tags` metadata and turn it into collection objects.
 #
+# Two objects are producted with this plugin:
+#
+# 1. tags
+# 2. tagsByUnique
+#
+# `tags` is a collection where key is the tag name, and the value is
+# a list of all files with that tag.
+#
+# `tagsByUnique` is a collection where key is the tag name, and value
+# is a list of files with that tag, **but** each file only shows up
+# once in the *entire collection*.
+#
 
 
 
 
 module.exports = (opts={}) ->
-  opts.metaKey ?= 'tags'
-  opts.sort    ?= 'date'
-  opts.reverse ?= false
+  opts.metaKey        ?= 'tags'
+  opts.sort           ?= 'date'
+  opts.reverse        ?= false
+  # Unique Limit is the maximum size of a tagsByUnique list.
+  # Example:
+  #
+  # Take a guide like: guide{tags: [nodejs, js]}
+  # When this guide is added to the tags and tagsByUnique list, if
+  # the tagsByUnique['nodejs'] list is already at 5 size, but this
+  # guide is added to that list anyway, then it's that guide will
+  # not be seen on the rendered page (since the page only displays
+  # 5 from each unique tag list). With this option however,
+  # this guide will instead be assigned to the `js` list, if it
+  # is less than 5. If both lists are larger than 5, well then
+  # it won't be seen anywhere.
+  opts.uniqueMax ?= 5
 
   (files, metalsmith, done) ->
     metadata = metalsmith.metadata()
@@ -30,6 +55,7 @@ module.exports = (opts={}) ->
           of strings but got #{JSON.stringify file[opts.metaKey]} instead."
         continue
 
+      uniqueSet = false
       for tag, i in file[opts.metaKey]
         if typeof tag isnt 'string'
           console.warn "The tag '#{tag}' for #{filename} is not a string.
@@ -44,9 +70,10 @@ module.exports = (opts={}) ->
         # Example being, file[nodejs, javascript] will push to
         # nodejs first, and not javascript. Allows you to
         # prioritize the list.
-        if i is 0
-          tagsByUnique[tag] ?= []
+        tagsByUnique[tag] ?= []
+        if not uniqueSet and tagsByUnique[tag].length < opts.uniqueMax
           tagsByUnique[tag].push file
+          uniqueSet = true
 
     for tagName,tag of tags
       if typeof opts.sort is 'function' then tag.sort opts.sort

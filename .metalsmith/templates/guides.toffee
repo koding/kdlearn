@@ -17,9 +17,13 @@ if paginate.current is 0 {:
 
 <div class="docs-content" id="page-guides">
   <ul>
-  {# for tagKey of tagsByUnique {:
-    <li>#{partial 'taglist.toffee', tagKey: tagKey}</li>
-  :} #}
+  {#
+  for tagKey, t of tagsByUnique
+    continue if t.length is 0
+    {:
+    <li>#{partial 'taglist.toffee', tags: tagsByUnique, tagKey: tagKey}</li>
+    :}
+  #}
   </ul>
 </div>
 </div></section>
