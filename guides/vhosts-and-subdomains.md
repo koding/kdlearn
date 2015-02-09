@@ -130,8 +130,8 @@ should understand.
 ### I don't have a Subdomain
 
 If you do not already have a Subdomain, you need to create one with the 
-same name that you used in your Virtual Host configuration, as [seen 
-here](#creating-a-virtual-host).
+same name that you used in your [Virtual Host 
+configuration](#creating-a-virtual-host).
 
 To do this, from Koding navigate to your IDE window and go to your VM 
 Settings. This will appear as little circle next to your VM Name in the 
