@@ -122,11 +122,21 @@ Afterwards, don't forget to reload Apache, with the following command.
 sudo service apache2 reload
 ```
 
-Post you setup these files, Go to your IDE window in the browser and Click Options ( a circle right next to your VM ) . Click on 'more' from the Settings Baloon and Add the domain you wish to.
-
-Cheers !
-
 **Important**: It is recommended that you review the [Directory directive 
 documentation](http://httpd.apache.org/docs/current/mod/core.html#directory), 
 as there are security implications to allowing directory access, that you 
 should understand.
+
+### I don't have a Subdomain
+
+If you do not already have a Subdomain, you need to create one with the 
+same name that you used in your Virtual Host configuration, as [seen 
+here](#creating-a-virtual-host).
+
+To do this, from Koding navigate to your IDE window and go to your VM 
+Settings. This will appear as little circle next to your VM Name in the 
+left sidebar of Koding. From the settings menu, Click "More", and add any 
+subdomains that you need.
+
+For a more indepth explanation of this process, refer to the [Subdomain 
+Section here](/faq/vm-hostname/).
