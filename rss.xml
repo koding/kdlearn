@@ -18,6 +18,57 @@
   <language>en</language>
   
   <item>
+    <title>Cassandra installation for beginners</title>
+    <link>//learn.koding.com/guides/cassandra-installation-beginners</link>
+    <pubDate>"2015-02-10T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/cassandra-installation-beginners</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Cassandra using just one command:
+kpm install cassandra
+
+Apache Cassandra, is a highly scalable open source database system, that can achieve great performance on multi-node setups. This guide will help install Cassandra on your Koding VM.
+  Getting started Before you can start the Cassandra install process, you&amp;apos;ll need to update all of the apt-get packages:
+sudo apt-get update
+Make sure you have Oracle Java7 installed on your VM before you continue. You can install it using the following commands:
+Add the repository:
+sudo add-apt-repository -y ppa:webupd8team/java
+Install the package:
+sudo apt-get install -y oracle-jdk7-installer
+Or you can use the KPM version by running:
+kpm install oracle-java7
+  Installing Installing Cassandra is fairly easy. You just need to download the binary files from the official website and unpack them:
+Download the files into the temp folder:
+cd ~/temp
+wget http://www.us.apache.org/dist/cassandra/1.2.16/apache-cassandra-1.2.16-bin.tar.gz
+Unzip them:
+tar -xvzf apache-cassandra-1.2.16-bin.tar.gz
+Move them into your personal folder:
+mv apache-cassandra-1.2.16 ~/cassandra
+The next thing you need to do is to make sure that the folders Cassandra accesses, such as the log folder, exist and that Cassandra has the rights to write on them. Use the bellow commands to achieve this:
+sudo mkdir /var/lib/cassandra
+sudo mkdir /var/log/cassandra
+sudo chown -R $USER:$GROUP /var/lib/cassandra
+sudo chown -R $USER:$GROUP /var/log/cassandra
+You now need to set Cassandra&amp;#x2019;s variables by running the following commands:
+export CASSANDRA_HOME=~/cassandra
+export PATH=$PATH:$CASSANDRA_HOME/bin
+The default per-thread stack size needs to be increased. You can do that by running:
+nano ~/cassandra/conf/cassandra-env.sh
+and then scroll down to the line that says:
+JVM_OPTS=&amp;quot;$JVM_OPTS -Xss180k&amp;quot;
+and change it to:
+JVM_OPTS=&amp;quot;$JVM_OPTS -Xss280k&amp;quot;
+  Running Cassandra To run Cassandra, you won&amp;apos;t need to change anything in the cassandra.yaml file. You can simply run:
+sudo sh ~/cassandra/bin/cassandra
+and then run:
+sudo sh ~/cassandra/bin/cassandra-cli
+The result of the above commands should output Connected to: &amp;apos;Test Cluster&amp;apos;. So you are now running your single-node cluster.
+And that&amp;apos;s it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
     <title>Elasticsearch install for beginners</title>
     <link>//learn.koding.com/guides/elasticsearch-install-for-beginners</link>
     <pubDate>"2015-02-06T00:00:00.000Z"</pubDate>
@@ -212,6 +263,45 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
+    <title>How to install Memcache</title>
+    <link>//learn.koding.com/guides/install-memcache</link>
+    <pubDate>"2015-01-20T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/install-memcache</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Memcache using just one command:
+kpm install memcached
+
+  Getting started Before you can start the Memcache install process, you&amp;apos;ll need to update all of the apt-get packages:
+sudo apt-get update
+Make sure you have mySQL and PHP installed on your VM before you continue.
+  Step 1 To install Memcache you&amp;apos;ll need to run the following command:
+sudo apt-get install php5-memcached memcached
+This will install the required package for PHP and also the Memcached package.
+  Step 2 You can now check if the packages have been installed correctly. Run the following commands from your Terminal:
+cd Web
+sudo nano info.php
+Copy the following lines into the file:
+&amp;lt;?php
+phpinfo();
+?&amp;gt;
+You&amp;apos;ll now be able to check if Memcache has installed correctly by accessing a url similar to this one:
+http://KODING_USERNAME.koding.io/info.php
+Find out more about your VM hostname here.
+If you scroll down or search for the &amp;quot;memcached&amp;quot; section header, you should find something that looks like this:
+
+You can check whether the Memcache service is running by typing:
+ps aux | grep memcached
+And it should output something similar to this:
+memcache  6584  0.0  0.0 327448  3004 ?        Sl   14:07   0:00 /usr/bin/memcached -m 64 -p 11211 -u memcache -l 127.0.0.1
+demouser  6636  0.0  0.0  11744   904 pts/0    S+   14:29   0:00 grep --color=auto memcached
+You can query Memcache for stats by typing:
+echo &amp;quot;stats settings&amp;quot; | nc localhost 11211
+And that&amp;apos;s it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
     <title>How to install Redis</title>
     <link>//learn.koding.com/guides/install-redis</link>
     <pubDate>"2015-01-20T00:00:00.000Z"</pubDate>
@@ -254,45 +344,6 @@ You now have Redis installed and running. The prompt will look like this:
 redis 127.0.0.1:6379&amp;gt;
 If you want to set Redis to automatically start when you boot up your VM, run the next command:
 sudo update-rc.d redis_6379 defaults
-And that&amp;apos;s it!
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
-    <title>How to install Memcache</title>
-    <link>//learn.koding.com/guides/install-memcache</link>
-    <pubDate>"2015-01-20T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/install-memcache</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Memcache using just one command:
-kpm install memcached
-
-  Getting started Before you can start the Memcache install process, you&amp;apos;ll need to update all of the apt-get packages:
-sudo apt-get update
-Make sure you have mySQL and PHP installed on your VM before you continue.
-  Step 1 To install Memcache you&amp;apos;ll need to run the following command:
-sudo apt-get install php5-memcached memcached
-This will install the required package for PHP and also the Memcached package.
-  Step 2 You can now check if the packages have been installed correctly. Run the following commands from your Terminal:
-cd Web
-sudo nano info.php
-Copy the following lines into the file:
-&amp;lt;?php
-phpinfo();
-?&amp;gt;
-You&amp;apos;ll now be able to check if Memcache has installed correctly by accessing a url similar to this one:
-http://KODING_USERNAME.koding.io/info.php
-Find out more about your VM hostname here.
-If you scroll down or search for the &amp;quot;memcached&amp;quot; section header, you should find something that looks like this:
-
-You can check whether the Memcache service is running by typing:
-ps aux | grep memcached
-And it should output something similar to this:
-memcache  6584  0.0  0.0 327448  3004 ?        Sl   14:07   0:00 /usr/bin/memcached -m 64 -p 11211 -u memcache -l 127.0.0.1
-demouser  6636  0.0  0.0  11744   904 pts/0    S+   14:29   0:00 grep --color=auto memcached
-You can query Memcache for stats by typing:
-echo &amp;quot;stats settings&amp;quot; | nc localhost 11211
 And that&amp;apos;s it!
 If you encounter any issues or have any questions please drop an email here.
 </description>
@@ -563,6 +614,52 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
+    <title>Using mySQL</title>
+    <link>//learn.koding.com/guides/using-mysql</link>
+    <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/using-mysql</guid>
+    <author>Alvin Wan</author>
+    <description>mySQL offers a popular implementation of the SQL language. This guide will get you started on using mySQL on Koding.
+First make sure you have mySQL installed. Have a look at this guide to learn how to install it.
+Are you using PostgreSQL? Have a look at this guide.
+  Starting mySQL Let&amp;apos;s start the mySQL server using the following command:
+sudo service mysql start
+  Getting Started First, you&amp;apos;ll need to login using th root user that was configured during the mySQL installation. Open your Terminal and type in the following:
+mysql -u root p
+Enter your password, and hit enter. You&amp;apos;re now logged in.
+  Creating a User You&amp;apos;ll now create a new account for our code, with the username &amp;quot;bob&amp;quot; and password &amp;quot;pass&amp;quot;.
+create user &amp;apos;bob&amp;apos;@&amp;apos;localhost&amp;apos; identified by &amp;apos;pass&amp;apos;;
+If you see an arrow
+-&amp;gt;
+that means you forgot the end semicolon &amp;quot;;&amp;quot;. Enter that and hit enter.
+You can exit the server by using Ctrl+D and then login again as Bob:
+mysql -u bob -p;
+After entering the password, you&amp;apos;ll be readmitted into the mySQL server. To continue with this guide, you&amp;apos;ll need to be logged in as root.
+  Creating a Database Each mySQL server includes a variety of databases. The initial installation comes with several. You can view them by typing:
+show databases;
+You should see a short list of databases:
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
++--------------------+
+3 rows in set (0.00 sec)
+Let&amp;apos;s create your first database:
+create database test;
+  Linking Users and Databases You&amp;apos;ll need to grant privileges to the user, so that &amp;quot;Bob&amp;quot; can access the database &amp;quot;test&amp;quot; and modify it accordingly.
+To grant &amp;quot;Bob&amp;quot; all privileges on all tables in database &amp;quot;test&amp;quot;:
+grant all on test.* to &amp;apos;bob&amp;apos;@&amp;apos;localhost&amp;apos;;
+  Using the Database Exit out of root by using Ctrl+D, and login as &amp;quot;Bob&amp;quot;. To connect to a database, prefix the database name with &amp;quot;use&amp;quot;.
+use test;
+Once here, you&amp;#x2019;ll be able to execute mySQL commands. 
+And that&amp;apos;s it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
     <title>Installing LinuxBrew</title>
     <link>//learn.koding.com/guides/installing-linuxbrew</link>
     <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
@@ -653,52 +750,6 @@ When you hit &amp;quot;y&amp;quot; ufw will backup all existing rules before doi
   Help, I locked myself out of my VM If for some reason you enabled your firewall and did not take the steps needed to open up the ports needed for Koding to work, then
 your only recourse is to reinit your VM. That process is described in this guide. If you 
 encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
-    <title>Using mySQL</title>
-    <link>//learn.koding.com/guides/using-mysql</link>
-    <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/using-mysql</guid>
-    <author>Alvin Wan</author>
-    <description>mySQL offers a popular implementation of the SQL language. This guide will get you started on using mySQL on Koding.
-First make sure you have mySQL installed. Have a look at this guide to learn how to install it.
-Are you using PostgreSQL? Have a look at this guide.
-  Starting mySQL Let&amp;apos;s start the mySQL server using the following command:
-sudo service mysql start
-  Getting Started First, you&amp;apos;ll need to login using th root user that was configured during the mySQL installation. Open your Terminal and type in the following:
-mysql -u root p
-Enter your password, and hit enter. You&amp;apos;re now logged in.
-  Creating a User You&amp;apos;ll now create a new account for our code, with the username &amp;quot;bob&amp;quot; and password &amp;quot;pass&amp;quot;.
-create user &amp;apos;bob&amp;apos;@&amp;apos;localhost&amp;apos; identified by &amp;apos;pass&amp;apos;;
-If you see an arrow
--&amp;gt;
-that means you forgot the end semicolon &amp;quot;;&amp;quot;. Enter that and hit enter.
-You can exit the server by using Ctrl+D and then login again as Bob:
-mysql -u bob -p;
-After entering the password, you&amp;apos;ll be readmitted into the mySQL server. To continue with this guide, you&amp;apos;ll need to be logged in as root.
-  Creating a Database Each mySQL server includes a variety of databases. The initial installation comes with several. You can view them by typing:
-show databases;
-You should see a short list of databases:
-+--------------------+
-| Database           |
-+--------------------+
-| information_schema |
-| mysql              |
-| performance_schema |
-+--------------------+
-3 rows in set (0.00 sec)
-Let&amp;apos;s create your first database:
-create database test;
-  Linking Users and Databases You&amp;apos;ll need to grant privileges to the user, so that &amp;quot;Bob&amp;quot; can access the database &amp;quot;test&amp;quot; and modify it accordingly.
-To grant &amp;quot;Bob&amp;quot; all privileges on all tables in database &amp;quot;test&amp;quot;:
-grant all on test.* to &amp;apos;bob&amp;apos;@&amp;apos;localhost&amp;apos;;
-  Using the Database Exit out of root by using Ctrl+D, and login as &amp;quot;Bob&amp;quot;. To connect to a database, prefix the database name with &amp;quot;use&amp;quot;.
-use test;
-Once here, you&amp;#x2019;ll be able to execute mySQL commands. 
-And that&amp;apos;s it!
-If you encounter any issues or have any questions please drop an email here.
 </description>
   </item>
   
@@ -1450,6 +1501,36 @@ guide.
   </item>
   
   <item>
+    <title>Installing MongoDB</title>
+    <link>//learn.koding.com/guides/install-mongodb</link>
+    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/install-mongodb</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install MongoDB using just one command:
+kpm install mongodb
+
+In this short guide we&amp;apos;ll explain how to install MongoDB, and modify
+it&amp;apos;s configuration to run in a small storage environment. Lets get 
+started!
+  Installation Installation is easy, and can be done with apt-get, as seen in the 
+following command.
+sudo apt-get install mongodb
+That&amp;apos;s it! You can start Mongo with the following command:
+sudo service mongodb start
+NOTE: If you&amp;apos;re running Mongo on a Free Koding VM, read below..
+  Configuring for Limited Storage If you&amp;apos;re running Mongo on a Free VM, you&amp;apos;ll need to configure it to use 
+small files. To do that, open up the /etc/mongodb.conf file with the
+following command:
+sudo nano /etc/mongodb.conf
+With that file open, navigate to the bottom and add the following line:
+smallfiles=true
+Now use ctrl-x to save the file. After you&amp;apos;ve saved the file, simply 
+restart Mongodb with the following command:
+sudo service mongodb restart
+</description>
+  </item>
+  
+  <item>
     <title>A guide to Docker</title>
     <link>//learn.koding.com/guides/what-is-docker</link>
     <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
@@ -1530,36 +1611,6 @@ Replace LOCAL_FILE with your local file location, USERNAME with your
 Koding Username, and REMOTE_FILE with your Remote File location. An 
 example of this command can be seen below.
 scp ~/my_image.png joshmurray.koding.io:~/my_image.png
-</description>
-  </item>
-  
-  <item>
-    <title>Installing MongoDB</title>
-    <link>//learn.koding.com/guides/install-mongodb</link>
-    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/install-mongodb</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install MongoDB using just one command:
-kpm install mongodb
-
-In this short guide we&amp;apos;ll explain how to install MongoDB, and modify
-it&amp;apos;s configuration to run in a small storage environment. Lets get 
-started!
-  Installation Installation is easy, and can be done with apt-get, as seen in the 
-following command.
-sudo apt-get install mongodb
-That&amp;apos;s it! You can start Mongo with the following command:
-sudo service mongodb start
-NOTE: If you&amp;apos;re running Mongo on a Free Koding VM, read below..
-  Configuring for Limited Storage If you&amp;apos;re running Mongo on a Free VM, you&amp;apos;ll need to configure it to use 
-small files. To do that, open up the /etc/mongodb.conf file with the
-following command:
-sudo nano /etc/mongodb.conf
-With that file open, navigate to the bottom and add the following line:
-smallfiles=true
-Now use ctrl-x to save the file. After you&amp;apos;ve saved the file, simply 
-restart Mongodb with the following command:
-sudo service mongodb restart
 </description>
   </item>
   
@@ -1718,6 +1769,15 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
+    <title>Koding Virtual Machines Introduction</title>
+    <link>//learn.koding.com/guides/vm-introduction</link>
+    <pubDate>"2014-10-10T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/vm-introduction</guid>
+    <author>Team Koding</author>
+    <description></description>
+  </item>
+  
+  <item>
     <title>Koding Terminal Introduction</title>
     <link>//learn.koding.com/guides/terminal-introduction</link>
     <pubDate>"2014-10-10T00:00:00.000Z"</pubDate>
@@ -1727,12 +1787,95 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Koding Virtual Machines Introduction</title>
-    <link>//learn.koding.com/guides/vm-introduction</link>
-    <pubDate>"2014-10-10T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/vm-introduction</guid>
+    <title>Getting started with Drupal 8 (Prerelease)</title>
+    <link>//learn.koding.com/guides/getting-started-drupal8-beta</link>
+    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-drupal8-beta</guid>
+    <author>Nik LePage</author>
+    <description>A quick rundown of how to setup a development environment for checking out the new Drupal 8 releases.
+  Setting up the development environment Go ahead and open up the Koding dev UI. The terminal is available in the bottom right panel. (I&amp;apos;m assuming you&amp;#x2019;re in ~/Web for the actual site install bits).
+We must first install Composer as we need Drush master (7) to easily install Drupal 8. You wanted Drush anyway though, right? :)
+Issue the following commands to perform the install and tidy up. 
+sudo curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer
+
+The last step is not required AFAIK, but makes Composer global for the machine. The instructions that I read said &amp;#x201C;Make sure Composer&amp;apos;s global bin directory is on the system PATH (recommended)&amp;#x201D;. That&amp;#x2019;s great, although I don&amp;#x2019;t fully understand the implications. 
+
+Issue the following commands in your shell to sort the path out.
+sed -i &amp;apos;1i export PATH=&amp;quot;$HOME/.composer/vendor/bin:$PATH&amp;quot;&amp;apos; $HOME/.bashrc
+source $HOME/.bashrc
+Now we can go ahead and use Composer to install drush 7. More long winded than &amp;quot;the old days&amp;quot;, but get used to it. Everything is Composer in D8. &amp;quot;So Compose; much baton (sic).&amp;quot;
+composer global require drush/drush:dev-master
+Test the install with a random &amp;#x201C;drush&amp;#x201D; command in the shell... e.g.
+drush --version
+As it turns out, we also need to enable mod_rewrite, although this appears to be set up by default in the new Koding. In order to do so, you can type the following command.
+sudo a2enmod rewrite
+MySQL is not installed by default in the new Koding setup. We need to add MariaDB, and the necessary PHP extensions.
+# Follow the instructions at https://downloads.mariadb.org/mariadb/repositories/#mirror=coreix
+# Select &amp;quot;Ubuntu&amp;quot;, &amp;quot;14.04&amp;quot;, &amp;quot;5.5&amp;quot; and then a mirror, and the instructions are below
+sudo apt-get install php5-mysql php5-gd
+One more gotcha - D8 requires (or prefers) curl?! Well, okay.
+sudo apt-get install php5-curl
+Restart the web server to enable all the new goodness!
+sudo service apache2 restart
+  Setting up the Drupal environment Now we&amp;#x2019;re ready to rock! The rest of this is a pretty standard Drupal setup mission, but here&amp;apos;s the outline anyway. Go setup yourself up a new database by entering MySql CLI (Koding mysql automatically assumes root) and issue the following commands.
+mysql -u root -p  # to get into the CLI, then...
+
+CREATE DATABASE drupal8db;
+GRANT ALL PRIVILEGES ON drupal8db.* TO myusername@localhost IDENTIFIED BY &amp;apos;mypassword&amp;apos;;
+FLUSH privileges;
+You probably (almost certainly) don&amp;#x2019;t want to use your root password again in case you&amp;#x2019;re going to be using the included shared environments that Koding provides.
+Now cd ~/Web and install Drupal 8. 
+Choose a version: drush dl drupal-8 (this may give you a choice of versions)
+OR Definitely :) get Drupal 8 Beta 1: wget http://ftp.drupal.org/files/projects/drupal-8.0.0-beta1.tar.gz (see: https://www.drupal.org/node/2348025 )
+Unpack the tarball with tar zxf drupal-8-whatever.tgz
+Alter the dir name if it bothers you or you need a reminder of which version you&amp;#x2019;re using.
+mv drupal-8-whatever mydrupaldir
+I&amp;apos;m assuming a subdirectory from here on - which means you should set the RewriteBase in .htaccess
+RewriteBase /mydrupaldir  # in .htaccess in ~/Web/mydrupaldir
+Save yourself a few seconds by doing the usual copying of settings.php and set permissions malarky. 
+cd mydrupaldir
+cd sites/default
+# for developers only (sets up some dev mode settings, do this before install!)
+cp ../example.settings.local.php ./settings.local.php
+# for everyone
+cp default.settings.php settings.php
+cp default.services.yml services.yml
+chmod 0666 settings.php services.yml
+mkdir files
+sudo chown myuser:www-data files # NB this is server/user specific!
+chmod 0775 files
+(You need to change these permissions back to something more sane afterwards&amp;#x2026; 0644 and 0775 seem to be ok, but I&amp;#x2019;m open to abuse on the matter.)
+And you&amp;#x2019;re off! To open your VM in a browser, click the ellipsis next to your VM name (probably koding-vm-0) and then the VM name to open the site in a new tab, and follow the usual Drupal installer instructions! NB If you&amp;apos;re a developer, you might want to check out Webchick&amp;apos;s setup video from Drupalcon AMS: http://www.youtube.com/watch?v=wKdU2Q1NIZQ
+</description>
+  </item>
+  
+  <item>
+    <title>What happens upon upgrade?</title>
+    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
+    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
     <author>Team Koding</author>
-    <description></description>
+    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
+Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
+
+Ability to mark your VM(s) as Always-On
+Add more storage to your VM(s)
+
+  Utilizing new resources when upgrading to the Hobbyist Plan Once you have upgraded to Hobbyist, you can mark your VM as an Always-On VM and increase its storage from 3GB to 10GB. To to this, head over to the settings panel for your VM and follow these easy steps:
+
+head over to VM settings (as shown in the image below)
+expand the &amp;quot;More&amp;quot; panel and then the &amp;quot;Advanced&amp;quot; panel
+You will see a new button under the Advanced panel labeled &amp;quot;Resize&amp;quot; (this button only appears for users who have upgraded to the Hobbyist plan and have not yet allocated the 10GB. Once you allocate it, the button will disappear)
+Click the button to initiate resize. Once done, your VM will show 10GB. Verify that using the command df -h /
+
+
+  Utilizing new resources when upgrading to the Developer and Professional Plans Under these plans, you can have a total of up to 3 (for Developer) and 5 (for Professional) VMs, mark any of them as Always-On and allocate 25GB (for Developer) / 50GB (for Professional) of storage amonst them. You will start with the default free VM and it is up to you whether you want to leave it at the default 3GB or delete it so that you can make a new one with a storage allocation that you prefer. To delete a VM, simply go the settings panel of the VM and click the Terminate button (as shown in the attached screen shot).
+
+To create a new VM, click the + icon in the VM list and you will be presented wit the option to create a new VM with a space allocation that is preferable to you (as shown below).
+
+Enjoy the new resources and thanks again for upgrading! If you have any addtional questions regarding upgrades and resources, please send us a support request and we will get back to you as soon as possible.
+</description>
   </item>
   
   <item>
@@ -1846,98 +1989,6 @@ for many compilers, as Visual Studio, and IDEs as Eclipse.
 The Biicode platform automatically generate CMake files for you, based on 
 your source code files. It also manage dependencies, so it can be used for reusing
 existing code easily.
-</description>
-  </item>
-  
-  <item>
-    <title>Getting started with Drupal 8 (Prerelease)</title>
-    <link>//learn.koding.com/guides/getting-started-drupal8-beta</link>
-    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-drupal8-beta</guid>
-    <author>Nik LePage</author>
-    <description>A quick rundown of how to setup a development environment for checking out the new Drupal 8 releases.
-  Setting up the development environment Go ahead and open up the Koding dev UI. The terminal is available in the bottom right panel. (I&amp;apos;m assuming you&amp;#x2019;re in ~/Web for the actual site install bits).
-We must first install Composer as we need Drush master (7) to easily install Drupal 8. You wanted Drush anyway though, right? :)
-Issue the following commands to perform the install and tidy up. 
-sudo curl -sS https://getcomposer.org/installer | php
-sudo mv composer.phar /usr/local/bin/composer
-
-The last step is not required AFAIK, but makes Composer global for the machine. The instructions that I read said &amp;#x201C;Make sure Composer&amp;apos;s global bin directory is on the system PATH (recommended)&amp;#x201D;. That&amp;#x2019;s great, although I don&amp;#x2019;t fully understand the implications. 
-
-Issue the following commands in your shell to sort the path out.
-sed -i &amp;apos;1i export PATH=&amp;quot;$HOME/.composer/vendor/bin:$PATH&amp;quot;&amp;apos; $HOME/.bashrc
-source $HOME/.bashrc
-Now we can go ahead and use Composer to install drush 7. More long winded than &amp;quot;the old days&amp;quot;, but get used to it. Everything is Composer in D8. &amp;quot;So Compose; much baton (sic).&amp;quot;
-composer global require drush/drush:dev-master
-Test the install with a random &amp;#x201C;drush&amp;#x201D; command in the shell... e.g.
-drush --version
-As it turns out, we also need to enable mod_rewrite, although this appears to be set up by default in the new Koding. In order to do so, you can type the following command.
-sudo a2enmod rewrite
-MySQL is not installed by default in the new Koding setup. We need to add MariaDB, and the necessary PHP extensions.
-# Follow the instructions at https://downloads.mariadb.org/mariadb/repositories/#mirror=coreix
-# Select &amp;quot;Ubuntu&amp;quot;, &amp;quot;14.04&amp;quot;, &amp;quot;5.5&amp;quot; and then a mirror, and the instructions are below
-sudo apt-get install php5-mysql php5-gd
-One more gotcha - D8 requires (or prefers) curl?! Well, okay.
-sudo apt-get install php5-curl
-Restart the web server to enable all the new goodness!
-sudo service apache2 restart
-  Setting up the Drupal environment Now we&amp;#x2019;re ready to rock! The rest of this is a pretty standard Drupal setup mission, but here&amp;apos;s the outline anyway. Go setup yourself up a new database by entering MySql CLI (Koding mysql automatically assumes root) and issue the following commands.
-mysql -u root -p  # to get into the CLI, then...
-
-CREATE DATABASE drupal8db;
-GRANT ALL PRIVILEGES ON drupal8db.* TO myusername@localhost IDENTIFIED BY &amp;apos;mypassword&amp;apos;;
-FLUSH privileges;
-You probably (almost certainly) don&amp;#x2019;t want to use your root password again in case you&amp;#x2019;re going to be using the included shared environments that Koding provides.
-Now cd ~/Web and install Drupal 8. 
-Choose a version: drush dl drupal-8 (this may give you a choice of versions)
-OR Definitely :) get Drupal 8 Beta 1: wget http://ftp.drupal.org/files/projects/drupal-8.0.0-beta1.tar.gz (see: https://www.drupal.org/node/2348025 )
-Unpack the tarball with tar zxf drupal-8-whatever.tgz
-Alter the dir name if it bothers you or you need a reminder of which version you&amp;#x2019;re using.
-mv drupal-8-whatever mydrupaldir
-I&amp;apos;m assuming a subdirectory from here on - which means you should set the RewriteBase in .htaccess
-RewriteBase /mydrupaldir  # in .htaccess in ~/Web/mydrupaldir
-Save yourself a few seconds by doing the usual copying of settings.php and set permissions malarky. 
-cd mydrupaldir
-cd sites/default
-# for developers only (sets up some dev mode settings, do this before install!)
-cp ../example.settings.local.php ./settings.local.php
-# for everyone
-cp default.settings.php settings.php
-cp default.services.yml services.yml
-chmod 0666 settings.php services.yml
-mkdir files
-sudo chown myuser:www-data files # NB this is server/user specific!
-chmod 0775 files
-(You need to change these permissions back to something more sane afterwards&amp;#x2026; 0644 and 0775 seem to be ok, but I&amp;#x2019;m open to abuse on the matter.)
-And you&amp;#x2019;re off! To open your VM in a browser, click the ellipsis next to your VM name (probably koding-vm-0) and then the VM name to open the site in a new tab, and follow the usual Drupal installer instructions! NB If you&amp;apos;re a developer, you might want to check out Webchick&amp;apos;s setup video from Drupalcon AMS: http://www.youtube.com/watch?v=wKdU2Q1NIZQ
-</description>
-  </item>
-  
-  <item>
-    <title>What happens upon upgrade?</title>
-    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
-    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
-    <author>Team Koding</author>
-    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
-Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
-
-Ability to mark your VM(s) as Always-On
-Add more storage to your VM(s)
-
-  Utilizing new resources when upgrading to the Hobbyist Plan Once you have upgraded to Hobbyist, you can mark your VM as an Always-On VM and increase its storage from 3GB to 10GB. To to this, head over to the settings panel for your VM and follow these easy steps:
-
-head over to VM settings (as shown in the image below)
-expand the &amp;quot;More&amp;quot; panel and then the &amp;quot;Advanced&amp;quot; panel
-You will see a new button under the Advanced panel labeled &amp;quot;Resize&amp;quot; (this button only appears for users who have upgraded to the Hobbyist plan and have not yet allocated the 10GB. Once you allocate it, the button will disappear)
-Click the button to initiate resize. Once done, your VM will show 10GB. Verify that using the command df -h /
-
-
-  Utilizing new resources when upgrading to the Developer and Professional Plans Under these plans, you can have a total of up to 3 (for Developer) and 5 (for Professional) VMs, mark any of them as Always-On and allocate 25GB (for Developer) / 50GB (for Professional) of storage amonst them. You will start with the default free VM and it is up to you whether you want to leave it at the default 3GB or delete it so that you can make a new one with a storage allocation that you prefer. To delete a VM, simply go the settings panel of the VM and click the Terminate button (as shown in the attached screen shot).
-
-To create a new VM, click the + icon in the VM list and you will be presented wit the option to create a new VM with a space allocation that is preferable to you (as shown below).
-
-Enjoy the new resources and thanks again for upgrading! If you have any addtional questions regarding upgrades and resources, please send us a support request and we will get back to you as soon as possible.
 </description>
   </item>
   
@@ -2534,6 +2585,58 @@ you can edit that field.
   </item>
   
   <item>
+    <title>Author a guide: Previewing</title>
+    <link>//learn.koding.com/contribute/previewing</link>
+    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/contribute/previewing</guid>
+    <author>Team Koding</author>
+    <description>While you shouldn&amp;apos;t need to preview your guides, since Markdown is 
+designed to be human friendly in the source, if you insist you can 
+preview your guides as they are on Koding University. This guide will go 
+over that process. Note that this will require a bit of developer 
+know-how, so be prepared to get your hands dirty. Lets get started!
+  Requirements You will need a working NodeJS installation to compile the Koding 
+University source. If you do not, visit the NodeJS downloads 
+page and grab the installer.
+  Installation With a working NodeJS installation, we need to install the KU 
+dependencies, as well as a global installation of the GulpJS. This can be 
+done with the following code:
+npm install -g gulp
+cd .metalsmith
+npm install
+  Building With Gulp installed, simply run the following command, to compile the 
+entire project into HTML.
+(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
+cd .metalsmith
+gulp
+The .metalsmith/build directory will contain all of the compiled html, 
+css, and any static resources (such as images/etc) from the markdown 
+directory.
+Compiling can take 1-2 minutes, so be patient.
+  Previewing If you want to preview the compiled site, open a new Koding Terminal tab 
+and run the following:
+(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
+cd .metalsmith
+gulp preview
+This will run a small HTTP Server on Port 8000, ie: 
+http://hostname.you.koding.io:8000. Keep this tab open, and in  a 
+different Koding Terminal tab run your gulp command from above.Each time you compile the site, this will show your compiled site.
+  Compiling as you type To have your Markdown compiled as you write your documents, run the 
+following commands:
+(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
+cd .metalsmith
+gulp watch
+This, in combination with the preview command above, will compile the 
+site each time you change the Markdown.
+Note that if you add images for your guide to use, you&amp;apos;ll want to run the 
+full gulp command again.
+And that sums it up! You now know how to contribute to Koding University, 
+in multiple ways. Keep up the awesome work, and we look forward to your 
+contribution!
+</description>
+  </item>
+  
+  <item>
     <title>Getting Started with Python</title>
     <link>//learn.koding.com/guides/getting-started-python</link>
     <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
@@ -2710,78 +2813,23 @@ This concludes the getting started with Python guide. Thanks for reading!
   </item>
   
   <item>
-    <title>Author a guide: Previewing</title>
-    <link>//learn.koding.com/contribute/previewing</link>
-    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/contribute/previewing</guid>
+    <title>PyroCMS Setup and Installation for Beginners</title>
+    <link>//learn.koding.com/guides/pyrocms-installation-for-beginners</link>
+    <pubDate>"2014-03-09T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/pyrocms-installation-for-beginners</guid>
     <author>Team Koding</author>
-    <description>While you shouldn&amp;apos;t need to preview your guides, since Markdown is 
-designed to be human friendly in the source, if you insist you can 
-preview your guides as they are on Koding University. This guide will go 
-over that process. Note that this will require a bit of developer 
-know-how, so be prepared to get your hands dirty. Lets get started!
-  Requirements You will need a working NodeJS installation to compile the Koding 
-University source. If you do not, visit the NodeJS downloads 
-page and grab the installer.
-  Installation With a working NodeJS installation, we need to install the KU 
-dependencies, as well as a global installation of the GulpJS. This can be 
-done with the following code:
-npm install -g gulp
-cd .metalsmith
-npm install
-  Building With Gulp installed, simply run the following command, to compile the 
-entire project into HTML.
-(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
-cd .metalsmith
-gulp
-The .metalsmith/build directory will contain all of the compiled html, 
-css, and any static resources (such as images/etc) from the markdown 
-directory.
-Compiling can take 1-2 minutes, so be patient.
-  Previewing If you want to preview the compiled site, open a new Koding Terminal tab 
-and run the following:
-(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
-cd .metalsmith
-gulp preview
-This will run a small HTTP Server on Port 8000, ie: 
-http://hostname.you.koding.io:8000. Keep this tab open, and in  a 
-different Koding Terminal tab run your gulp command from above.Each time you compile the site, this will show your compiled site.
-  Compiling as you type To have your Markdown compiled as you write your documents, run the 
-following commands:
-(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
-cd .metalsmith
-gulp watch
-This, in combination with the preview command above, will compile the 
-site each time you change the Markdown.
-Note that if you add images for your guide to use, you&amp;apos;ll want to run the 
-full gulp command again.
-And that sums it up! You now know how to contribute to Koding University, 
-in multiple ways. Keep up the awesome work, and we look forward to your 
-contribution!
-</description>
-  </item>
-  
-  <item>
-    <title>PrestaShop Installation for Beginners</title>
-    <link>//learn.koding.com/guides/prestashop-installation-for-beginners</link>
-    <pubDate>"2014-04-09T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/prestashop-installation-for-beginners</guid>
-    <author>Team Koding</author>
-    <description>In this article we&amp;#x2019;ll go over the basics of setting up PrestaShop.
-  About PrestaShop A lot of retail stores these days are turning to online shops. It gives them a different power over the products they are selling and in the era of smart gadgets, consumers can now buy almost anything online.
-There are a lot of e-commerce solutions, but a there is one that stands out, PrestaShop. You may have heard of it, because it&amp;apos;s all over the news. It&amp;apos;s one of the most reliable and flexible Open-source e-commerce software out there and with a team of 70 developers and with a community that has more than 500.000 members, it sure is a platform worth developing for.
-Luckily you can do that on Koding with ease. So how do you setup a PrestaShop shop on Koding? You just follow the next few simple steps and you&amp;apos;re good to go.
-  Setting up PrestaShop   Step 1. Open up a Terminal window in Koding and type the following commands to get you started. We navigate to our Web folder and then we try to get the latest version of PrestaShop available on their website. In this case PrestaShop 1.6.0.9 
-cd Web; 
-wget http://www.prestashop.com/download/prestashop_1.6.0.9.zip;
-  Step 2. We unzip the file. 
-unzip prestashop_1.6.0.9.zip
-  Step 3. We can now head over to the setup page and begin the installation 
-procedure. Our link is: 
-http://[your_vm_hostname].[your_Koding_username].koding.io/prestashop
-All we have to do now is to fill in the required fields to set up the 
-shop.
-And that&amp;apos;s it, three simple steps to set up your e-commerce solution. As always, more Quick Tips and beginner friendly guides from Koding coming soon, so stay tuned!
+    <description>This article will cover the basic steps on how to setup a blog using PyroCMS as the base.
+  What&amp;apos;s PyroCMS? Good question. It&amp;apos;s a really simple, flexible and community driven CMS built with the CodeIgniter PHP framework that has an on-growing community of developers and supporters around it.
+But how do you set up PyroCMS on Koding? Well it&amp;apos;s simple, you just follow the simple tutorial below step by step. After you&amp;apos;ve finished with the tutorial you&amp;apos;ll have a brand new website that runs PyroCMS.
+  Step-by-step PyroCMS   Step 1. Open up your Koding Terminal and type in the following command to get you started. [code]cd Web;[/code]
+  Step 2. Still in the terminal window download the source code like so: [code]wget https://www.pyrocms.com/downloads/v2.2.3[/code] or whatever the latest version you can find on the official website.
+  Step 3. We rename the downloaded file, unzip it and rename the newly created folder. [code] mv v2.2.3 v2.2.3.zip; unzip v2.2.3.zip; mv pyrocms-pyrocms-08759da pyrocms [/code]
+  Step 4. We now can navigate to our newly created folder. We open up a new browser 
+window and type in 
+[code]http://[your-vm-hostname].[your-Koding-username].koding.io/pyrocms[/code] 
+then just follow the steps that show up on the screen to install it.
+Alright then, that was fun. You now have a brand new website that runs PyroCMS.
+This has been a beginner guide from Koding. As always, more Quick Tips and beginner friendly guides coming soon, so stay tuned!
 </description>
   </item>
   
@@ -2945,23 +2993,26 @@ prepend your list items with a number, instead of a hyphen. Example:
   </item>
   
   <item>
-    <title>PyroCMS Setup and Installation for Beginners</title>
-    <link>//learn.koding.com/guides/pyrocms-installation-for-beginners</link>
-    <pubDate>"2014-03-09T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/pyrocms-installation-for-beginners</guid>
+    <title>PrestaShop Installation for Beginners</title>
+    <link>//learn.koding.com/guides/prestashop-installation-for-beginners</link>
+    <pubDate>"2014-04-09T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/prestashop-installation-for-beginners</guid>
     <author>Team Koding</author>
-    <description>This article will cover the basic steps on how to setup a blog using PyroCMS as the base.
-  What&amp;apos;s PyroCMS? Good question. It&amp;apos;s a really simple, flexible and community driven CMS built with the CodeIgniter PHP framework that has an on-growing community of developers and supporters around it.
-But how do you set up PyroCMS on Koding? Well it&amp;apos;s simple, you just follow the simple tutorial below step by step. After you&amp;apos;ve finished with the tutorial you&amp;apos;ll have a brand new website that runs PyroCMS.
-  Step-by-step PyroCMS   Step 1. Open up your Koding Terminal and type in the following command to get you started. [code]cd Web;[/code]
-  Step 2. Still in the terminal window download the source code like so: [code]wget https://www.pyrocms.com/downloads/v2.2.3[/code] or whatever the latest version you can find on the official website.
-  Step 3. We rename the downloaded file, unzip it and rename the newly created folder. [code] mv v2.2.3 v2.2.3.zip; unzip v2.2.3.zip; mv pyrocms-pyrocms-08759da pyrocms [/code]
-  Step 4. We now can navigate to our newly created folder. We open up a new browser 
-window and type in 
-[code]http://[your-vm-hostname].[your-Koding-username].koding.io/pyrocms[/code] 
-then just follow the steps that show up on the screen to install it.
-Alright then, that was fun. You now have a brand new website that runs PyroCMS.
-This has been a beginner guide from Koding. As always, more Quick Tips and beginner friendly guides coming soon, so stay tuned!
+    <description>In this article we&amp;#x2019;ll go over the basics of setting up PrestaShop.
+  About PrestaShop A lot of retail stores these days are turning to online shops. It gives them a different power over the products they are selling and in the era of smart gadgets, consumers can now buy almost anything online.
+There are a lot of e-commerce solutions, but a there is one that stands out, PrestaShop. You may have heard of it, because it&amp;apos;s all over the news. It&amp;apos;s one of the most reliable and flexible Open-source e-commerce software out there and with a team of 70 developers and with a community that has more than 500.000 members, it sure is a platform worth developing for.
+Luckily you can do that on Koding with ease. So how do you setup a PrestaShop shop on Koding? You just follow the next few simple steps and you&amp;apos;re good to go.
+  Setting up PrestaShop   Step 1. Open up a Terminal window in Koding and type the following commands to get you started. We navigate to our Web folder and then we try to get the latest version of PrestaShop available on their website. In this case PrestaShop 1.6.0.9 
+cd Web; 
+wget http://www.prestashop.com/download/prestashop_1.6.0.9.zip;
+  Step 2. We unzip the file. 
+unzip prestashop_1.6.0.9.zip
+  Step 3. We can now head over to the setup page and begin the installation 
+procedure. Our link is: 
+http://[your_vm_hostname].[your_Koding_username].koding.io/prestashop
+All we have to do now is to fill in the required fields to set up the 
+shop.
+And that&amp;apos;s it, three simple steps to set up your e-commerce solution. As always, more Quick Tips and beginner friendly guides from Koding coming soon, so stay tuned!
 </description>
   </item>
   
@@ -3189,6 +3240,18 @@ Where C-a is Control key. This sets it to Control-a, a popular alternative for T
   </item>
   
   <item>
+    <title>Getting started with Git</title>
+    <link>//learn.koding.com/guides/git</link>
+    <pubDate>"2014-06-14T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/git</guid>
+    <author>Team Koding</author>
+    <description>Git has become an integral part of the modern software development cycle. As per Wikipedia, Git
+&amp;quot;is a distributed revision control and source code management (SCM) system with an emphasis on speed. Git was initially designed and developed by Linus Torvalds for Linux kernel development in 2005.&amp;quot;
+Several tutorials exist on the Internet that teach you the basics of Git. A simple Google search will reveal many of them. Here&amp;apos;s our favorite from the good folks over at Atlassian.
+</description>
+  </item>
+  
+  <item>
     <title>What is Koding?</title>
     <link>//learn.koding.com/guides/what-is-koding</link>
     <pubDate>"2014-02-17T00:00:00.000Z"</pubDate>
@@ -3244,6 +3307,78 @@ hosting for you, but rather it&amp;apos;s giving you a completely open and power
 environment to make stuff! So by all means make your Wordpress blog on 
 Koding, and if you really want to host it on Koding, upgrade your plan to 
 include an Always-On VM. Just be aware of the design goals.
+</description>
+  </item>
+  
+  <item>
+    <title>Ghost Blog Installation</title>
+    <link>//learn.koding.com/guides/ghost-installation</link>
+    <pubDate>"2014-08-01T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/ghost-installation</guid>
+    <author>Team Koding</author>
+    <description>In this article we will go over the installation process for the awesome 
+new blogging software, Ghost. Installation is quick 
+and easy, and just requires a few configuration edits, making this great 
+for beginners. So, lets get started!
+  What is Ghost? Ghost is an awesome new blog software written with &amp;#x201C;Just Blogging&amp;#x201D; in 
+mind. Think WordPress without the complexity, bringing blogging back to 
+it&amp;#x2019;s roots, so to say. This is all well and good, but with any product 
+that is so new there is always confusion on how to install, develop, and 
+run it.
+So lets try and resolve some of that confusion. Lets go over the simple 
+process of setting up Ghost on Koding so you can 
+learn it, toy with it, develop with it, and create your Ghost blog to be 
+exactly what you want.
+  Downloading Ghost We&amp;apos;re going to use the Koding Terminal to download Ghost, so 
+visit the [Ghost Download][download-page] and look for the download link.Copy the url.
+At the time of writing this guide, the download url is: 
+https://ghost.org/zip/ghost-0.5.2.zip (This version is likely 
+outdated, please visit the download page and get the most updated link.)
+Now, go to your Terminal and type in the following commands.
+mkdir ghost
+cd ghost
+wget [ghost-zip-url]
+Replace [ghost-zip-url] with the full URL of the zip file that you 
+copied above.
+  Unzipping Ghost The download is in zip format, so we need to unzip it. Type in the 
+following command.
+unzip [ghost-zip-name]
+  Installing Dependencies Next, we need to install the dependencies.
+npm install --production
+This step will take a minute or two.
+  Edit the config Next up, open up the Ace Editor and double click your ghost 
+directory to expand it. Right click, and rename, the config.example.js 
+file to config.js.
+On line 36, look for the following section:
+        server: {
+            // Host to be passed to node&amp;apos;s `net.Server#listen()`
+            host: &amp;apos;127.0.0.1&amp;apos;,
+            // Port to be passed to node&amp;apos;s `net.Server#listen()`, for 
+iisnode set this to `process.env.PORT`
+            port: &amp;apos;2368&amp;apos;
+        },
+
+Replace 127.0.0.1 with 0.0.0.0, and change the Port to whichever 
+you&amp;apos;d like to use. Save the file with Ctrl-s.
+  Starting Ghost Go back to your Terminal and type in the following command to 
+start your Ghost Blog.
+npm start
+Note: If you had previously closed your Terminal, you&amp;apos;ll need to navigate 
+into the ghost directory again, with cd ghost.
+  Visiting your Ghost Blog Now open up a new tab and visit your Ghost Blog on your Koding domain at 
+the following address.
+http://hostname.username.koding.io:port
+Where username is your Koding username, and port is the port you 
+chose above.
+If you navigate to the following address, you can signup as Admin to your 
+Ghost installation.
+http://hostname.username.koding.io:port/ghost
+  Running Ghost on Port 80 If you&amp;apos;d like to run Ghost on the default Port 80, you&amp;apos;ll have to Stop 
+Apache, and start Ghost with sudo. Here are the commands to do this.
+sudo service apache2 stop
+sudo npm start
+This should be typed from the Ghost installation directory.
+And that&amp;apos;s it! You should now have a Ghost installation up and running.Happy Blogging!
 </description>
   </item>
   
@@ -3346,128 +3481,6 @@ If you see this error  Writable (public download method), you need to run follow
  sudo chmod a+w -R default
 That&amp;apos;s it! You&amp;apos;re now running Drupal on Koding! Have fun!
 This has been a beginner guide from Koding. As always, more Quick Tips and beginner friendly guides coming soon, so stay tuned!
-</description>
-  </item>
-  
-  <item>
-    <title>Getting started with Git</title>
-    <link>//learn.koding.com/guides/git</link>
-    <pubDate>"2014-06-14T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/git</guid>
-    <author>Team Koding</author>
-    <description>Git has become an integral part of the modern software development cycle. As per Wikipedia, Git
-&amp;quot;is a distributed revision control and source code management (SCM) system with an emphasis on speed. Git was initially designed and developed by Linus Torvalds for Linux kernel development in 2005.&amp;quot;
-Several tutorials exist on the Internet that teach you the basics of Git. A simple Google search will reveal many of them. Here&amp;apos;s our favorite from the good folks over at Atlassian.
-</description>
-  </item>
-  
-  <item>
-    <title>Ghost Blog Installation</title>
-    <link>//learn.koding.com/guides/ghost-installation</link>
-    <pubDate>"2014-08-01T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/ghost-installation</guid>
-    <author>Team Koding</author>
-    <description>In this article we will go over the installation process for the awesome 
-new blogging software, Ghost. Installation is quick 
-and easy, and just requires a few configuration edits, making this great 
-for beginners. So, lets get started!
-  What is Ghost? Ghost is an awesome new blog software written with &amp;#x201C;Just Blogging&amp;#x201D; in 
-mind. Think WordPress without the complexity, bringing blogging back to 
-it&amp;#x2019;s roots, so to say. This is all well and good, but with any product 
-that is so new there is always confusion on how to install, develop, and 
-run it.
-So lets try and resolve some of that confusion. Lets go over the simple 
-process of setting up Ghost on Koding so you can 
-learn it, toy with it, develop with it, and create your Ghost blog to be 
-exactly what you want.
-  Downloading Ghost We&amp;apos;re going to use the Koding Terminal to download Ghost, so 
-visit the [Ghost Download][download-page] and look for the download link.Copy the url.
-At the time of writing this guide, the download url is: 
-https://ghost.org/zip/ghost-0.5.2.zip (This version is likely 
-outdated, please visit the download page and get the most updated link.)
-Now, go to your Terminal and type in the following commands.
-mkdir ghost
-cd ghost
-wget [ghost-zip-url]
-Replace [ghost-zip-url] with the full URL of the zip file that you 
-copied above.
-  Unzipping Ghost The download is in zip format, so we need to unzip it. Type in the 
-following command.
-unzip [ghost-zip-name]
-  Installing Dependencies Next, we need to install the dependencies.
-npm install --production
-This step will take a minute or two.
-  Edit the config Next up, open up the Ace Editor and double click your ghost 
-directory to expand it. Right click, and rename, the config.example.js 
-file to config.js.
-On line 36, look for the following section:
-        server: {
-            // Host to be passed to node&amp;apos;s `net.Server#listen()`
-            host: &amp;apos;127.0.0.1&amp;apos;,
-            // Port to be passed to node&amp;apos;s `net.Server#listen()`, for 
-iisnode set this to `process.env.PORT`
-            port: &amp;apos;2368&amp;apos;
-        },
-
-Replace 127.0.0.1 with 0.0.0.0, and change the Port to whichever 
-you&amp;apos;d like to use. Save the file with Ctrl-s.
-  Starting Ghost Go back to your Terminal and type in the following command to 
-start your Ghost Blog.
-npm start
-Note: If you had previously closed your Terminal, you&amp;apos;ll need to navigate 
-into the ghost directory again, with cd ghost.
-  Visiting your Ghost Blog Now open up a new tab and visit your Ghost Blog on your Koding domain at 
-the following address.
-http://hostname.username.koding.io:port
-Where username is your Koding username, and port is the port you 
-chose above.
-If you navigate to the following address, you can signup as Admin to your 
-Ghost installation.
-http://hostname.username.koding.io:port/ghost
-  Running Ghost on Port 80 If you&amp;apos;d like to run Ghost on the default Port 80, you&amp;apos;ll have to Stop 
-Apache, and start Ghost with sudo. Here are the commands to do this.
-sudo service apache2 stop
-sudo npm start
-This should be typed from the Ghost installation directory.
-And that&amp;apos;s it! You should now have a Ghost installation up and running.Happy Blogging!
-</description>
-  </item>
-  
-  <item>
-    <title>Installing MySQL</title>
-    <link>//learn.koding.com/guides/installing-mysql</link>
-    <pubDate>"2014-07-30T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/installing-mysql</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way using the Koding Package Manager (kpm) and install mySQL using just one command:
-kpm install mysql
-
-In this guide we will cover the basics on how you can install MySQL and 
-the latest version of PHP-MySQL modules on your Koding VM.
-  Installation via apt-get First open up your Koding IDE and paste the following command into 
-your Terminal. This will ensure that your apt-get 
-database is at the latest level. 
-sudo apt-get update
-Now, type in the command below to install mysql, and it&amp;apos;s dependencies.
-sudo apt-get install mysql-server mysql-common mysql-client
-As part of the installation process, you&amp;apos;ll be presented with the 
-following screen.
-
-This is to create your MySQL Root user passphrase. Enter a passphrase 
-of your choice, and repeat it at the next screen.
-  Logging into MySQL Afterwards, you can confirm your installation by running the following 
-command.
-mysql -u root -p
-When prompted, enter the MySQL root user passphrase that you created 
-above.
-  PHP MySQL Extensions (Optional) A popular addition to this installation process, are the PHP extensions 
-needed to use MySQL form PHP. This is optional, and if you don&amp;apos;t use PHP, 
-you can ignore these.
-To install the PHP MySQL Extension, simply run the following command.
-sudo apt-get install php5-mysql
-After that, you&amp;apos;ll need to restart Apache to make use of this extension.This can be done with the following command.
-sudo service apache2 restart
-That&amp;apos;s it!
 </description>
   </item>
   
@@ -3601,198 +3614,6 @@ This sums up the Getting Started with NodeJS guide. You should now have a
 good understanding of what Node is, from a very basic perspective. As 
 always, don&amp;apos;t forget to look at the API Documentation. Have 
 fun with Node!
-</description>
-  </item>
-  
-  <item>
-    <title>Installing Nginx</title>
-    <link>//learn.koding.com/guides/nginx</link>
-    <pubDate>"2014-07-31T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/nginx</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Nginx using just one command:
-kpm install nginx
-
-Nginx is an open source proxy server, commonly used as a replace
-Nginx is an open source web server. Built with performance and memory usage in 
-mind, it&amp;apos;s an excellent alternative to Apache. In this guide, we&amp;apos;ll go through 
-the simple process of installing Nginx on Koding. Lets get started!
-  Installing Nginx Koding runs Ubuntu, gives you root, and of course comes with apt-get. This 
-means that installation of many packages, programs and servers simply 
-require using apt-get. To install Nginx with apt-get, run the following 
-command.
-sudo apt-get install nginx
-Confirm the installation by pressing enter at the [Y/n] prompt, and proceed 
-to the next step.
-  Starting Nginx Your Virtual Machine comes with Apache preinstalled and configured. It&amp;apos;s 
-what serves up the web page that you see when you visit 
-http://hostname.username.koding.io. So before we start Nginx, we have 
-to stop Apache with the following command.
-sudo service apache2 stop
-You can then start your Nginx server by using the following command.
-sudo service nginx start
-If you now visit your User (or VM) domain at 
-http://hostname.username.koding.io, you&amp;apos;ll see a welcome to nginx page 
-like the one below. This means your Nginx server is up and running.
-
-  Using ~/Web Your Nginx server is running, but it&amp;apos;s not serving up the files that you expect 
-from your ~/Web directory. To do this we need to edit out 
-/etc/nginx/sites-available/default file with a Terminal editor such as Nano 
-or Vim. In this example we&amp;apos;ll use Nano for simplicity.
-Open up your Terminal and run the following command.
-sudo nano /etc/nginx/sites-available/default
-You&amp;apos;ll see a bunch of green text, similar to the following image. What we&amp;apos;re 
-looking to edit is the text root /usr/share/nginx/html, as seen highlighted 
-in this image:
-
-Using your arrow keys, navigate to the end of the /usr/share/nginx/html text 
-and delete the entire folder name (with your backspace key). Replace it with 
-the folder /var/www.
-    root /var/www
-By doing this, you&amp;apos;re changing the directory of files that nginx is serving by 
-default. /var/www is the default Apache dir, and is soft-linked to ~/Web. 
-In short, we&amp;apos;re telling Nginx to use what we currently use.
-After you&amp;apos;ve made the appropriate edits, use Ctrl-X to close Nano. You&amp;apos;ll be 
-prompted with a Y/n question to save the file. Type y. Next you&amp;apos;ll be 
-prompted for the filename to save it, press Enter, as the filename field is 
-already filled out.
-Now all we have to do is restart our web server!
-sudo service nginx restart
-If you visit your domain again you&amp;apos;ll see the same ~/Web files that you are 
-familiar with. You now have an Nginx server up and running, and serving your 
-Web files. Enjoy!
-</description>
-  </item>
-  
-  <item>
-    <title>Author a guide: Advanced</title>
-    <link>//learn.koding.com/contribute/advanced</link>
-    <pubDate>"2014-06-01T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/contribute/advanced</guid>
-    <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll go over contributing by using Git directly in your 
-Terminal, and editing our documents on Koding. While we will go over 
-every step, general Git and Terminal knowledge will be very helpful, and 
-are recommended. So, lets get started!
-  Forking and Cloning First up, we should cover the requirements.
-
-A Koding Account
-A Github Account
-Git (Comes with your Koding VM)
-SSH Key on Github. If you&amp;apos;re not familiar with this, refer to this 
-tutorial
-
-Next, we need to &amp;quot;Fork&amp;quot; the KDLearn Repo. This will create your 
-own version of the repo on Github, and lets you push your changes to this 
-repo.
-To do this, press the Fork button seen in the following image, from the 
-KDLearn repo page:
-
-This will create a new Github repository with the name 
-github.com/yourUsername/kdlearn. The purpose of this forked repository 
-will become clear once we make our Pull Request.
-Next, we will want to clone our newly forked repository. Head on over to 
-your Koding Terminal and type in the following command:
-git clone https://github.com/yourUsername/kdlearn.git
-This will clone your Forked Repository to your Koding VM, into the folder 
-kdlearn.
-  Writing a new Guide Now that we have our repo cloned, lets add our guide. Open up the Ace 
-editor and open a folder titled kdlearn. In this section we&amp;apos;re 
-going to write a guide, but if you just want to edit another guide, 
-scroll down to the edit section.
-Lets create a file in the guides folder with the name myguide.md.Name the file whatever you like, just try to keep it short and url 
-friendly.
-
-This is where we will write all of our content, in Markdown. For this 
-tutorial i am just going to use the following text:
-# Awesome Guide
-
-This is my **awesome** guide! Follow along, and learn to be awesome!
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dui 
-nulla, posuere non urna in, lobortis malesuada erat. Morbi ultricies 
-fringilla condimentum. Aliquam vel sodales mi, ornare ullamcorper est.  
-Nulla laoreet dapibus libero, in consectetur dolor fermentum vel. Etiam 
-quis magna eget orci fringilla tincidunt et non justo. Phasellus porta 
-dictum libero. Suspendisse fringilla gravida arcu, eu venenatis nunc 
-fermentum sed. Phasellus est libero, auctor ac dignissim ac, consequat a 
-libero. Pellentesque iaculis sem tortor.  Suspendisse viverra, arcu ac 
-viverra dapibus, massa odio adipiscing neque, eget adipiscing magna quam 
-id dui. Morbi semper nisi ac accumsan tincidunt.
-
-Now that we have written our guide, we need to add some metadata to it.
-  Metadata Metadata is, as the name says, data about our data. This is where you can 
-specify the title of your document, the author, the date, and categories.Lets take a look at our above markdown with some of this metadata.
----
-author: Lee Olayvar
-username: leeolayvar
-date: 2014-06-11
-description: &amp;apos;My awesome guide, about awesome stuff.&amp;apos;
-categories: [awesome]
----
-
-# Awesome Guide
-
-This is my **awesome** guide! Follow along, and learn to be awesome!
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dui nulla, 
-posuere non urna in, lobortis malesuada erat. Morbi ultricies fringilla 
-condimentum. Aliquam vel sodales mi, ornare ullamcorper est. Nulla laoreet 
-dapibus libero, in consectetur dolor fermentum vel. Etiam quis magna eget orci 
-fringilla tincidunt et non justo. Phasellus porta dictum libero. Suspendisse 
-fringilla gravida arcu, eu venenatis nunc fermentum sed. Phasellus est libero, 
-auctor ac dignissim ac, consequat a libero. Pellentesque iaculis sem tortor.  
-Suspendisse viverra, arcu ac viverra dapibus, massa odio adipiscing neque, eget 
-adipiscing magna quam id dui. Morbi semper nisi ac accumsan tincidunt.
-
-Most of that is pretty logical. The --- before and after signifies the 
-metadata start and end, and author, date, description, and categories 
-should be standard nomenclature to you.
-  Editing a Guide If you&amp;apos;re just looking to update a guide, fix typos, or make general 
-improvements you have it even easier.
-Just like before, open up Ace and find the file you want to edit.If you&amp;apos;re not sure where the proper markdown is located, find the url of 
-the page you want to edit and think of them like folders. Then, review 
-the File Structre section and you should have a pretty 
-good idea where the files are located.
-Make your edits, and follow onto the next section!
-  Adding, Committing, Pushing Now that we have made our changes, whether it&amp;apos;s a new guide or an edited 
-guide, we need to add the file, commit it, and push it to our repo. Open 
-up the Terminal one last time.
-To add your changes, run the following command. Replacing myguide with 
-the files you changed.
-git add guides/myguide.md
-To commit your changes, run the following command. Replacing I added an 
-awesome guide with a message that clearly describes your changes.
-git commit -m &amp;quot;I added an awesome guide&amp;quot;
-You can also ommit the whole -m &amp;quot;message&amp;quot; flag and use an editor such 
-as Nano or Vim to make your changes. But the above is simpler for this 
-guide.
-And finally, lets push our changes to our repo on Github.
-git push origin master
-If you&amp;apos;re not familiar with Git at all, run each of these commands in 
-sequence.  We won&amp;apos;t be covering Git in full, so for more information 
-please see the official documentation.
-  Making a Pull Request Now that you pushed to Github you can visit your forked Github repository 
-and make a pull request. To do this, look for the &amp;quot;Pull Request&amp;quot; button 
-on your forked repo:
-
-This will take you to a page where you can review all of the commits you 
-made, and ensure that you want to make a pull request. Please review your 
-changes for typos, spelling, and grammar.
-If you spot an issue, and need to make more changes, go back to 
-Koding and make the edits you need. Make sure to add, commit, and 
-push them just like before.
-If you&amp;apos;re happy with your changes, press the big green Create Pull 
-Request button.
-  Waiting for your PR to be Accepted Once your PR is made, you&amp;apos;re done! The Koding Team will review your edits 
-or new guides and make feedback.
-If we need you to make corrections, formatting or otherwise, go through 
-the same steps as before. Your changes, once pushed to Github, will 
-automatically be reflected in your Pull Request.
-Once they are accepted, and your pull request is merged, the site will be 
-updated and you&amp;apos;re changes will be live. Thanks for your contribution!
-In the next guide we&amp;apos;ll go over previewing your work in a local 
-installation of Koding University.
 </description>
   </item>
   
@@ -3990,6 +3811,236 @@ routes, middleware, and finally templates. Thanks for reading!
   </item>
   
   <item>
+    <title>Installing MySQL</title>
+    <link>//learn.koding.com/guides/installing-mysql</link>
+    <pubDate>"2014-07-30T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/installing-mysql</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this guide why not try a more easy way using the Koding Package Manager (kpm) and install mySQL using just one command:
+kpm install mysql
+
+In this guide we will cover the basics on how you can install MySQL and 
+the latest version of PHP-MySQL modules on your Koding VM.
+  Installation via apt-get First open up your Koding IDE and paste the following command into 
+your Terminal. This will ensure that your apt-get 
+database is at the latest level. 
+sudo apt-get update
+Now, type in the command below to install mysql, and it&amp;apos;s dependencies.
+sudo apt-get install mysql-server mysql-common mysql-client
+As part of the installation process, you&amp;apos;ll be presented with the 
+following screen.
+
+This is to create your MySQL Root user passphrase. Enter a passphrase 
+of your choice, and repeat it at the next screen.
+  Logging into MySQL Afterwards, you can confirm your installation by running the following 
+command.
+mysql -u root -p
+When prompted, enter the MySQL root user passphrase that you created 
+above.
+  PHP MySQL Extensions (Optional) A popular addition to this installation process, are the PHP extensions 
+needed to use MySQL form PHP. This is optional, and if you don&amp;apos;t use PHP, 
+you can ignore these.
+To install the PHP MySQL Extension, simply run the following command.
+sudo apt-get install php5-mysql
+After that, you&amp;apos;ll need to restart Apache to make use of this extension.This can be done with the following command.
+sudo service apache2 restart
+That&amp;apos;s it!
+</description>
+  </item>
+  
+  <item>
+    <title>Author a guide: Advanced</title>
+    <link>//learn.koding.com/contribute/advanced</link>
+    <pubDate>"2014-06-01T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/contribute/advanced</guid>
+    <author>Team Koding</author>
+    <description>In this guide we&amp;apos;ll go over contributing by using Git directly in your 
+Terminal, and editing our documents on Koding. While we will go over 
+every step, general Git and Terminal knowledge will be very helpful, and 
+are recommended. So, lets get started!
+  Forking and Cloning First up, we should cover the requirements.
+
+A Koding Account
+A Github Account
+Git (Comes with your Koding VM)
+SSH Key on Github. If you&amp;apos;re not familiar with this, refer to this 
+tutorial
+
+Next, we need to &amp;quot;Fork&amp;quot; the KDLearn Repo. This will create your 
+own version of the repo on Github, and lets you push your changes to this 
+repo.
+To do this, press the Fork button seen in the following image, from the 
+KDLearn repo page:
+
+This will create a new Github repository with the name 
+github.com/yourUsername/kdlearn. The purpose of this forked repository 
+will become clear once we make our Pull Request.
+Next, we will want to clone our newly forked repository. Head on over to 
+your Koding Terminal and type in the following command:
+git clone https://github.com/yourUsername/kdlearn.git
+This will clone your Forked Repository to your Koding VM, into the folder 
+kdlearn.
+  Writing a new Guide Now that we have our repo cloned, lets add our guide. Open up the Ace 
+editor and open a folder titled kdlearn. In this section we&amp;apos;re 
+going to write a guide, but if you just want to edit another guide, 
+scroll down to the edit section.
+Lets create a file in the guides folder with the name myguide.md.Name the file whatever you like, just try to keep it short and url 
+friendly.
+
+This is where we will write all of our content, in Markdown. For this 
+tutorial i am just going to use the following text:
+# Awesome Guide
+
+This is my **awesome** guide! Follow along, and learn to be awesome!
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dui 
+nulla, posuere non urna in, lobortis malesuada erat. Morbi ultricies 
+fringilla condimentum. Aliquam vel sodales mi, ornare ullamcorper est.  
+Nulla laoreet dapibus libero, in consectetur dolor fermentum vel. Etiam 
+quis magna eget orci fringilla tincidunt et non justo. Phasellus porta 
+dictum libero. Suspendisse fringilla gravida arcu, eu venenatis nunc 
+fermentum sed. Phasellus est libero, auctor ac dignissim ac, consequat a 
+libero. Pellentesque iaculis sem tortor.  Suspendisse viverra, arcu ac 
+viverra dapibus, massa odio adipiscing neque, eget adipiscing magna quam 
+id dui. Morbi semper nisi ac accumsan tincidunt.
+
+Now that we have written our guide, we need to add some metadata to it.
+  Metadata Metadata is, as the name says, data about our data. This is where you can 
+specify the title of your document, the author, the date, and categories.Lets take a look at our above markdown with some of this metadata.
+---
+author: Lee Olayvar
+username: leeolayvar
+date: 2014-06-11
+description: &amp;apos;My awesome guide, about awesome stuff.&amp;apos;
+categories: [awesome]
+---
+
+# Awesome Guide
+
+This is my **awesome** guide! Follow along, and learn to be awesome!
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dui nulla, 
+posuere non urna in, lobortis malesuada erat. Morbi ultricies fringilla 
+condimentum. Aliquam vel sodales mi, ornare ullamcorper est. Nulla laoreet 
+dapibus libero, in consectetur dolor fermentum vel. Etiam quis magna eget orci 
+fringilla tincidunt et non justo. Phasellus porta dictum libero. Suspendisse 
+fringilla gravida arcu, eu venenatis nunc fermentum sed. Phasellus est libero, 
+auctor ac dignissim ac, consequat a libero. Pellentesque iaculis sem tortor.  
+Suspendisse viverra, arcu ac viverra dapibus, massa odio adipiscing neque, eget 
+adipiscing magna quam id dui. Morbi semper nisi ac accumsan tincidunt.
+
+Most of that is pretty logical. The --- before and after signifies the 
+metadata start and end, and author, date, description, and categories 
+should be standard nomenclature to you.
+  Editing a Guide If you&amp;apos;re just looking to update a guide, fix typos, or make general 
+improvements you have it even easier.
+Just like before, open up Ace and find the file you want to edit.If you&amp;apos;re not sure where the proper markdown is located, find the url of 
+the page you want to edit and think of them like folders. Then, review 
+the File Structre section and you should have a pretty 
+good idea where the files are located.
+Make your edits, and follow onto the next section!
+  Adding, Committing, Pushing Now that we have made our changes, whether it&amp;apos;s a new guide or an edited 
+guide, we need to add the file, commit it, and push it to our repo. Open 
+up the Terminal one last time.
+To add your changes, run the following command. Replacing myguide with 
+the files you changed.
+git add guides/myguide.md
+To commit your changes, run the following command. Replacing I added an 
+awesome guide with a message that clearly describes your changes.
+git commit -m &amp;quot;I added an awesome guide&amp;quot;
+You can also ommit the whole -m &amp;quot;message&amp;quot; flag and use an editor such 
+as Nano or Vim to make your changes. But the above is simpler for this 
+guide.
+And finally, lets push our changes to our repo on Github.
+git push origin master
+If you&amp;apos;re not familiar with Git at all, run each of these commands in 
+sequence.  We won&amp;apos;t be covering Git in full, so for more information 
+please see the official documentation.
+  Making a Pull Request Now that you pushed to Github you can visit your forked Github repository 
+and make a pull request. To do this, look for the &amp;quot;Pull Request&amp;quot; button 
+on your forked repo:
+
+This will take you to a page where you can review all of the commits you 
+made, and ensure that you want to make a pull request. Please review your 
+changes for typos, spelling, and grammar.
+If you spot an issue, and need to make more changes, go back to 
+Koding and make the edits you need. Make sure to add, commit, and 
+push them just like before.
+If you&amp;apos;re happy with your changes, press the big green Create Pull 
+Request button.
+  Waiting for your PR to be Accepted Once your PR is made, you&amp;apos;re done! The Koding Team will review your edits 
+or new guides and make feedback.
+If we need you to make corrections, formatting or otherwise, go through 
+the same steps as before. Your changes, once pushed to Github, will 
+automatically be reflected in your Pull Request.
+Once they are accepted, and your pull request is merged, the site will be 
+updated and you&amp;apos;re changes will be live. Thanks for your contribution!
+In the next guide we&amp;apos;ll go over previewing your work in a local 
+installation of Koding University.
+</description>
+  </item>
+  
+  <item>
+    <title>Installing Nginx</title>
+    <link>//learn.koding.com/guides/nginx</link>
+    <pubDate>"2014-07-31T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/nginx</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Nginx using just one command:
+kpm install nginx
+
+Nginx is an open source proxy server, commonly used as a replace
+Nginx is an open source web server. Built with performance and memory usage in 
+mind, it&amp;apos;s an excellent alternative to Apache. In this guide, we&amp;apos;ll go through 
+the simple process of installing Nginx on Koding. Lets get started!
+  Installing Nginx Koding runs Ubuntu, gives you root, and of course comes with apt-get. This 
+means that installation of many packages, programs and servers simply 
+require using apt-get. To install Nginx with apt-get, run the following 
+command.
+sudo apt-get install nginx
+Confirm the installation by pressing enter at the [Y/n] prompt, and proceed 
+to the next step.
+  Starting Nginx Your Virtual Machine comes with Apache preinstalled and configured. It&amp;apos;s 
+what serves up the web page that you see when you visit 
+http://hostname.username.koding.io. So before we start Nginx, we have 
+to stop Apache with the following command.
+sudo service apache2 stop
+You can then start your Nginx server by using the following command.
+sudo service nginx start
+If you now visit your User (or VM) domain at 
+http://hostname.username.koding.io, you&amp;apos;ll see a welcome to nginx page 
+like the one below. This means your Nginx server is up and running.
+
+  Using ~/Web Your Nginx server is running, but it&amp;apos;s not serving up the files that you expect 
+from your ~/Web directory. To do this we need to edit out 
+/etc/nginx/sites-available/default file with a Terminal editor such as Nano 
+or Vim. In this example we&amp;apos;ll use Nano for simplicity.
+Open up your Terminal and run the following command.
+sudo nano /etc/nginx/sites-available/default
+You&amp;apos;ll see a bunch of green text, similar to the following image. What we&amp;apos;re 
+looking to edit is the text root /usr/share/nginx/html, as seen highlighted 
+in this image:
+
+Using your arrow keys, navigate to the end of the /usr/share/nginx/html text 
+and delete the entire folder name (with your backspace key). Replace it with 
+the folder /var/www.
+    root /var/www
+By doing this, you&amp;apos;re changing the directory of files that nginx is serving by 
+default. /var/www is the default Apache dir, and is soft-linked to ~/Web. 
+In short, we&amp;apos;re telling Nginx to use what we currently use.
+After you&amp;apos;ve made the appropriate edits, use Ctrl-X to close Nano. You&amp;apos;ll be 
+prompted with a Y/n question to save the file. Type y. Next you&amp;apos;ll be 
+prompted for the filename to save it, press Enter, as the filename field is 
+already filled out.
+Now all we have to do is restart our web server!
+sudo service nginx restart
+If you visit your domain again you&amp;apos;ll see the same ~/Web files that you are 
+familiar with. You now have an Nginx server up and running, and serving your 
+Web files. Enjoy!
+</description>
+  </item>
+  
+  <item>
     <title>What is Bitbucket?</title>
     <link>//learn.koding.com/guides/using-bitbucket-on-koding</link>
     <pubDate>"2014-07-16T00:00:00.000Z"</pubDate>
@@ -4065,6 +4116,32 @@ You&amp;apos;ve done it! Webmin is installend and configured!
   </item>
   
   <item>
+    <title>General .htaccess</title>
+    <link>//learn.koding.com/guides/general-htaccess</link>
+    <pubDate>"2014-02-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/general-htaccess</guid>
+    <author>Team Koding</author>
+    <description>Htaccess is a pretty well understood and standard feature among web hosts. Koding&amp;apos;s .htaccess is no different than any other, so the plethora of tutorials and information out there will work perfectly fine on Koding.
+  RewriteEngine &amp;amp; mod_rewrite For the sake of discussion, lets say I have two Koding domains 
+http://username.koding.io and http://my.name.is.username.koding.io.How would I forward the first to the second?
+Htaccess makes this pretty simple. Create a .htaccess file in your Web directory, if you don&amp;apos;t already have one, touch ~/Web/.htaccess &amp;amp;&amp;amp; chmod 644 ~/Web/.htaccess and add the following RewriteRule:
+RewriteEngine On RewriteCond %{HTTP_HOST} ^username.koding.io [NC] 
+RewriteRule ^(.*) http://my.name.is.username.koding.io/$1 [R=301]
+But wait, if we go to http://username.koding.io now we are presented 
+with the following error:
+`\ Internal Server Error
+The server encountered an internal error or misconfiguration and was unable to complete your request.
+Please contact the server administrator, webmaster@localhost and inform them of the time the error occurred, and anything you might have done that may have caused the error.
+More information about this error may be available in the server error log. `\
+The reason for this is that mod_rewrite is not enabled by default. The fix for this is insanely easy, run the following command:
+sudo a2enmod rewrite &amp;amp;&amp;amp; sudo service apache2 restart
+This uses the command a2enmod to enable mod_rewrite, and then restarts 
+apache. Now if we go to http://username.koding.io we are redirected to 
+http://my.name.is.username.koding.io. Yay!
+</description>
+  </item>
+  
+  <item>
     <title>What happened to 127.0.0.1?</title>
     <link>//learn.koding.com/guides/what-happened-to-127-0-0-1</link>
     <pubDate>"2014-07-10T00:00:00.000Z"</pubDate>
@@ -4118,68 +4195,6 @@ certainly be different than what was used in this example.
   </item>
   
   <item>
-    <title>General .htaccess</title>
-    <link>//learn.koding.com/guides/general-htaccess</link>
-    <pubDate>"2014-02-02T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/general-htaccess</guid>
-    <author>Team Koding</author>
-    <description>Htaccess is a pretty well understood and standard feature among web hosts. Koding&amp;apos;s .htaccess is no different than any other, so the plethora of tutorials and information out there will work perfectly fine on Koding.
-  RewriteEngine &amp;amp; mod_rewrite For the sake of discussion, lets say I have two Koding domains 
-http://username.koding.io and http://my.name.is.username.koding.io.How would I forward the first to the second?
-Htaccess makes this pretty simple. Create a .htaccess file in your Web directory, if you don&amp;apos;t already have one, touch ~/Web/.htaccess &amp;amp;&amp;amp; chmod 644 ~/Web/.htaccess and add the following RewriteRule:
-RewriteEngine On RewriteCond %{HTTP_HOST} ^username.koding.io [NC] 
-RewriteRule ^(.*) http://my.name.is.username.koding.io/$1 [R=301]
-But wait, if we go to http://username.koding.io now we are presented 
-with the following error:
-`\ Internal Server Error
-The server encountered an internal error or misconfiguration and was unable to complete your request.
-Please contact the server administrator, webmaster@localhost and inform them of the time the error occurred, and anything you might have done that may have caused the error.
-More information about this error may be available in the server error log. `\
-The reason for this is that mod_rewrite is not enabled by default. The fix for this is insanely easy, run the following command:
-sudo a2enmod rewrite &amp;amp;&amp;amp; sudo service apache2 restart
-This uses the command a2enmod to enable mod_rewrite, and then restarts 
-apache. Now if we go to http://username.koding.io we are redirected to 
-http://my.name.is.username.koding.io. Yay!
-</description>
-  </item>
-  
-  <item>
-    <title>Where is my Web Server Root?</title>
-    <link>//learn.koding.com/guides/where-is-my-webserver-root</link>
-    <pubDate>"2014-07-09T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/where-is-my-webserver-root</guid>
-    <author>Team Koding</author>
-    <description>Koding VMs come with Apache preconfigured and serve a sample site to get you 
-started. The files for this site are found in what is typically called your 
-Web Server Root. This is the directory that Apache is serving up files from, 
-and it is located within your Home directory, under the Web directory. The 
-full path being:
-/home/username/Web
-Replace username with your username.
-You can modify the contents of this directory with the Koding 
-Terminal, or the Ace Editor. In this example, we&amp;apos;ll use Ace 
-to browse the files with the FileTree.
-First, open up Ace. In the left hand side you&amp;apos;ll see a FileTree, with a 
-directory called Web. Double click the Web folder to expand it. Your FileTree 
-should look something like this:
-
-Those files are a series of example pages, and they&amp;apos;re being served by Apache 
-on your Koding Domain. You can view this site by visiting your Koding Domain, 
-at:
-http://hostname.username.koding.io
-Where username is your Koding username. You should see something like this:
-
-You&amp;apos;ll notice that the PHP, Python, Perl, and Ruby links are actually files 
-being generated from that language. As an example, the python.py file is 
-being served up by Apache, with the aid of Apache&amp;apos;s mod_python module. This 
-serves to illustrate that this is a real Apache server, and you can use it 
-just like you expect.
-You should now understand where your Web Server Root is, and how to access it 
-from the Web to develop and share your web applications. Happy Koding!
-</description>
-  </item>
-  
-  <item>
     <title>Enable PHP mail() function</title>
     <link>//learn.koding.com/guides/enable-php-mail-function</link>
     <pubDate>"2014-07-12T00:00:00.000Z"</pubDate>
@@ -4192,45 +4207,6 @@ After the previous command finishes installing the sendmail package, you need to
 sudo sendmailconfig
 You need to choose Yes to every question or otherwise configure it as you see fit.
 That&amp;apos;s it! You can now use the mail() function in your PHP app. 
-</description>
-  </item>
-  
-  <item>
-    <title>EmberJS: A Starting Kit for Beginners</title>
-    <link>//learn.koding.com/guides/emberjs-starting-kit</link>
-    <pubDate>"2014-03-02T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/emberjs-starting-kit</guid>
-    <author>Team Koding</author>
-    <description>Ambitious applications are the future. The way we interact with a web application will impact our productivity. That&amp;apos;s why in this short tutorial we are going to cover some of the basics of EmberJS.
-  EmberJS: The facts They say that if you use EmberJS you don&amp;apos;t have to reinvent the wheel. Well we say that they are right. EmberJS is built for developers by developers. It&amp;apos;s friendly, fast and definitely a good alternative if you want to build something awesome. And we here at Koding like it when people build awesome stuff, therefor this tutorial is here to help you get started with one of the most on-growing and well-built frameworks out there. Right, now let&amp;apos;s get started on how to set up EmberJS on Koding. 
-  The Steps   Step 1. We open up a new file using your favorite code editor inside Koding, because as you may know, you have Ace pre-installed or maybe you&amp;apos;re a Vim or Emacs individual. For the sake of this tutorial we are going to use the Ace editor. 
-  Step 2. We copy and paste the following code into are newly created file.
-&amp;lt;!doctype html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=utf-8 /&amp;gt; &amp;lt;title&amp;gt;Ember Koding 
-Demo&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;script type=&amp;quot;text/x-handlebars&amp;quot; 
-data-template-name=&amp;quot;index&amp;quot;&amp;gt; &amp;lt;h2&amp;gt;Ember.js on Koding&amp;lt;/h2&amp;gt; &amp;lt;ul&amp;gt; {{#each item 
-in model}} &amp;lt;li&amp;gt;{{item}}&amp;lt;/li&amp;gt; {{/each}} &amp;lt;/ul&amp;gt; &amp;lt;/script&amp;gt; &amp;lt;script 
-src=&amp;quot;//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; 
-&amp;lt;script 
-src=&amp;quot;//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.1.2/handlebars.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; 
-&amp;lt;script 
-src=&amp;quot;//cdnjs.cloudflare.com/ajax/libs/ember.js/1.1.2/ember.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; 
-&amp;lt;script&amp;gt; App = Ember.Application.create({}); App.IndexRoute = 
-Ember.Route.extend({ setupController: function(controller) { 
-controller.set(&amp;apos;content&amp;apos;, [&amp;apos;cyan&amp;apos;, &amp;apos;magenta&amp;apos;, &amp;apos;penguin&amp;apos;, &amp;apos;pie&amp;apos;]); } }); 
-&amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;
- Ok now that we saved the file and opened up the preview and saw that 
-everything worked as it should let&amp;apos;s explain a bit what is actually 
-happening. First, before everything, we need the following libraries that 
-make our EmberJS app work: jQuery, handlebars and of course emberJS. The 
-app uses handlebars for templating.  After we set up the template and 
-loaded the libraries we need to create the actual app. First we 
-initialize ember and then we use a Router that helps to manage the state 
-of the application and the resources needed as a user navigates the app.In our case set some content using the already created template that was 
-made possible with the help of the handlebars library. And there you have 
-it. A short tutorial on how to use EmberJS on 
-Koding.
-As always, more Quick Tips and beginner friendly guides 
-from Koding coming soon, so stay tuned!
 </description>
   </item>
   
@@ -4300,6 +4276,146 @@ Elixir is now updated!
   </item>
   
   <item>
+    <title>Where is my Web Server Root?</title>
+    <link>//learn.koding.com/guides/where-is-my-webserver-root</link>
+    <pubDate>"2014-07-09T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/where-is-my-webserver-root</guid>
+    <author>Team Koding</author>
+    <description>Koding VMs come with Apache preconfigured and serve a sample site to get you 
+started. The files for this site are found in what is typically called your 
+Web Server Root. This is the directory that Apache is serving up files from, 
+and it is located within your Home directory, under the Web directory. The 
+full path being:
+/home/username/Web
+Replace username with your username.
+You can modify the contents of this directory with the Koding 
+Terminal, or the Ace Editor. In this example, we&amp;apos;ll use Ace 
+to browse the files with the FileTree.
+First, open up Ace. In the left hand side you&amp;apos;ll see a FileTree, with a 
+directory called Web. Double click the Web folder to expand it. Your FileTree 
+should look something like this:
+
+Those files are a series of example pages, and they&amp;apos;re being served by Apache 
+on your Koding Domain. You can view this site by visiting your Koding Domain, 
+at:
+http://hostname.username.koding.io
+Where username is your Koding username. You should see something like this:
+
+You&amp;apos;ll notice that the PHP, Python, Perl, and Ruby links are actually files 
+being generated from that language. As an example, the python.py file is 
+being served up by Apache, with the aid of Apache&amp;apos;s mod_python module. This 
+serves to illustrate that this is a real Apache server, and you can use it 
+just like you expect.
+You should now understand where your Web Server Root is, and how to access it 
+from the Web to develop and share your web applications. Happy Koding!
+</description>
+  </item>
+  
+  <item>
+    <title>EmberJS: A Starting Kit for Beginners</title>
+    <link>//learn.koding.com/guides/emberjs-starting-kit</link>
+    <pubDate>"2014-03-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/emberjs-starting-kit</guid>
+    <author>Team Koding</author>
+    <description>Ambitious applications are the future. The way we interact with a web application will impact our productivity. That&amp;apos;s why in this short tutorial we are going to cover some of the basics of EmberJS.
+  EmberJS: The facts They say that if you use EmberJS you don&amp;apos;t have to reinvent the wheel. Well we say that they are right. EmberJS is built for developers by developers. It&amp;apos;s friendly, fast and definitely a good alternative if you want to build something awesome. And we here at Koding like it when people build awesome stuff, therefor this tutorial is here to help you get started with one of the most on-growing and well-built frameworks out there. Right, now let&amp;apos;s get started on how to set up EmberJS on Koding. 
+  The Steps   Step 1. We open up a new file using your favorite code editor inside Koding, because as you may know, you have Ace pre-installed or maybe you&amp;apos;re a Vim or Emacs individual. For the sake of this tutorial we are going to use the Ace editor. 
+  Step 2. We copy and paste the following code into are newly created file.
+&amp;lt;!doctype html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=utf-8 /&amp;gt; &amp;lt;title&amp;gt;Ember Koding 
+Demo&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;script type=&amp;quot;text/x-handlebars&amp;quot; 
+data-template-name=&amp;quot;index&amp;quot;&amp;gt; &amp;lt;h2&amp;gt;Ember.js on Koding&amp;lt;/h2&amp;gt; &amp;lt;ul&amp;gt; {{#each item 
+in model}} &amp;lt;li&amp;gt;{{item}}&amp;lt;/li&amp;gt; {{/each}} &amp;lt;/ul&amp;gt; &amp;lt;/script&amp;gt; &amp;lt;script 
+src=&amp;quot;//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; 
+&amp;lt;script 
+src=&amp;quot;//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.1.2/handlebars.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; 
+&amp;lt;script 
+src=&amp;quot;//cdnjs.cloudflare.com/ajax/libs/ember.js/1.1.2/ember.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; 
+&amp;lt;script&amp;gt; App = Ember.Application.create({}); App.IndexRoute = 
+Ember.Route.extend({ setupController: function(controller) { 
+controller.set(&amp;apos;content&amp;apos;, [&amp;apos;cyan&amp;apos;, &amp;apos;magenta&amp;apos;, &amp;apos;penguin&amp;apos;, &amp;apos;pie&amp;apos;]); } }); 
+&amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;
+ Ok now that we saved the file and opened up the preview and saw that 
+everything worked as it should let&amp;apos;s explain a bit what is actually 
+happening. First, before everything, we need the following libraries that 
+make our EmberJS app work: jQuery, handlebars and of course emberJS. The 
+app uses handlebars for templating.  After we set up the template and 
+loaded the libraries we need to create the actual app. First we 
+initialize ember and then we use a Router that helps to manage the state 
+of the application and the resources needed as a user navigates the app.In our case set some content using the already created template that was 
+made possible with the help of the handlebars library. And there you have 
+it. A short tutorial on how to use EmberJS on 
+Koding.
+As always, more Quick Tips and beginner friendly guides 
+from Koding coming soon, so stay tuned!
+</description>
+  </item>
+  
+  <item>
+    <title>Codeigniter Installation for Beginners</title>
+    <link>//learn.koding.com/guides/codeigniter-for-beginners</link>
+    <pubDate>"2014-01-07T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/codeigniter-for-beginners</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Codeigniter using just one command:
+kpm install codeigniter
+
+In this article we will go over installing Codeigniter for beginners.
+  What is Codeigniter? Codeigniter may be old hat to some, but the tried and true frameworks tend to hold their own for quite a long time, and for good reason. It is polished, has an extensive history, and above all has a large community to back it up. 
+  So how do i get started with Codeigniter? Before you begin make sure you are in your Web folder:
+cd Web
+First you will need to download the latest version of Codeigniter using the following command, in your Terminal:
+wget https://github.com/bcit-ci/CodeIgniter/archive/2.2-stable.zip
+After that you&amp;apos;ll need to unzip the file using the command:
+unzip 2.2-stable.zip
+Next we need to rename the folder to a more friendly one:
+mv CodeIgniter-2.2-stable codeigniter
+You will now be able to access Codeigniter by following a similar URL:
+http://KODING_USERNAME.koding.io/codeigniter
+Find out more about your VM hostname here.
+Koding comes with Apache by default, so Codeigniter just works.
+As you can see, setting up CodeIgniter is a pretty simple process.
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>CakePHP Installation for Beginners</title>
+    <link>//learn.koding.com/guides/cakephp-for-beginners</link>
+    <pubDate>"2014-04-01T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/cakephp-for-beginners</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install CakePHP using just one command:
+kpm install cakephp
+
+If you are a beginner with CakePHP than this article will help you with the install process.
+  What is CakePHP? CakePHP is a popular PHP framework created with ease of use, small codebase, and MVC in mind. It&amp;apos;s also being actively developed, with two point releases in the last month alone. With a solid codebase, a supportive community, and active developers, it is a strong choice for any project. 
+  Installing On the homepage of CakePHP, copy the download link for the latest version of CakePHP. In this case you&amp;apos;re going to be using CakePHP 2.4.2. 
+Open your Koding Terminal and type:
+cd Web
+wget -O cake.zip
+and then paste your download link with Ctrl-Shift-V. As an example, it should look like this: 
+wget -O cake.zip https://github.com/cakephp/cakephp/zipball/2.4.2
+On the left hand side, in the Koding FileTree, right click your file and choose Extract. This will extract your downloaded cake.zip into a directory cake/.
+Expand that directory, and you&amp;apos;ll see a directory with a name similar to cakephp-cakephp-f53efef. 
+Drag that into your Web/ directory. You can rename this directory to &amp;quot;cake&amp;quot;, or whatever you like, as this will make it easier to type in your browser. 
+Finally make sure that you have Apache&amp;apos;s mod_rewrite enabled. Follow this guide to learn you can do that.
+The last step is a security step enforced by CakePHP. 
+Open up app/Config/core.php and look for the following two lines. 
+Edit the DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi and 76859309657453542496749683645 strings to have randomized content for your deploy. Just remember that the second string is numbers only.  
+/** * A random string used in security hashing methods. */ 
+Configure::write(&amp;apos;Security.salt&amp;apos;, &amp;apos;DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi&amp;apos;);
+
+/** * A random numeric string (digits only) used to encrypt/decrypt strings. */ 
+Configure::write(&amp;apos;Security.cipherSeed&amp;apos;, &amp;apos;76859309657453542496749683645&amp;apos;);
+You will now be able to access CakePHP by following a similar URL:
+http://KODING_USERNAME.koding.io/cake
+Find out more about your VM hostname here.
+And that&amp;apos;s it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
     <title>Getting Started</title>
     <link>//learn.koding.com/guides/getting-started</link>
     <pubDate>"2014-02-07T00:00:00.000Z"</pubDate>
@@ -4355,124 +4471,6 @@ search for the channel you&amp;apos;re interested in.
 
 Following channels is a great way to stay active in content that matters 
 to you.
-</description>
-  </item>
-  
-  <item>
-    <title>Codeigniter Installation for Beginners</title>
-    <link>//learn.koding.com/guides/codeigniter-for-beginners</link>
-    <pubDate>"2014-01-07T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/codeigniter-for-beginners</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Codeigniter using just one command:
-kpm install codeigniter
-
-In this article we will go over installing Codeigniter for beginners.
-  What is Codeigniter? Codeigniter may be old hat to some, but the tried and true frameworks tend to hold their own for quite a long time, and for good reason. It is polished, has an extensive history, and above all has a large community to back it up. 
-  So how do i get started with Codeigniter? Before you begin make sure you are in your Web folder:
-cd Web
-First you will need to download the latest version of Codeigniter using the following command, in your Terminal:
-wget https://github.com/bcit-ci/CodeIgniter/archive/2.2-stable.zip
-After that you&amp;apos;ll need to unzip the file using the command:
-unzip 2.2-stable.zip
-Next we need to rename the folder to a more friendly one:
-mv CodeIgniter-2.2-stable codeigniter
-You will now be able to access Codeigniter by following a similar URL:
-http://KODING_USERNAME.koding.io/codeigniter
-Find out more about your VM hostname here.
-Koding comes with Apache by default, so Codeigniter just works.
-As you can see, setting up CodeIgniter is a pretty simple process.
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
-    <title>Getting Started: The UI</title>
-    <link>//learn.koding.com/guides/getting-started/the-ui</link>
-    <pubDate>"2014-05-30T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/the-ui</guid>
-    <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll take a look at Koding&amp;apos;s UI. We&amp;apos;ll examine 
-the major sections, and briefly explain some of the features. In future 
-guides of this series we&amp;apos;ll explain these parts in more detail. Lets get 
-started!
-  The Full UI 
-This is the Koding UI of a logged in user, with the Koding IDE 
-open. On the left side we have our VMs, Channels, Chats, and Account. To 
-the right we have the Koding IDE. Lets look at each piece, and where they 
-lead us.
-  VMs, Workspaces and IDE VMs, Workspaces, and the Koding IDE can be found on the left hand 
-side, under VMS, as seen in the image below.
-
-Clicking on a VM Name, such as koding-vm-0 in the above image, will 
-open up the Koding IDE for that specific VM.
-The button to the immediate right of the VM Name is the VM Settings. Here 
-you can find useful information, such as your VM Address and VM Specs.
-Finally, below the VM Name are your Workspaces for that specific VM.Clicking on a Workspace will open all of the previous editors and 
-Terminals that you had open on it, and opening new Workspaces provides 
-shortcuts for varying tasks. We&amp;apos;ll get into the specifics in the 
-Workspaces guide.
-  Channels and Activity Below VMs, are your Channels. To follow a channel, click on a Grey check 
-mark. Green check marks indicate a channel that you are following.
-
-A channel is a stream of user submitted content for a certain hash tag, 
-such as #golang. When you 
-click on a hash tag in the Activity Feed, it opens a channel for that 
-tag, as seen below.
-
-Activity Feed posts support Markdown, including Markdown Code 
-Blocks.
-  Chat Below Channels are your Chats. These are private conversations between 
-you and any number of users you invite.
-
-To open a new chat, click on the Plus button to the right of the Chat 
-icon. Clicking on a already started chat, will open it as seen below.
-
-Your chats will work much in the same way as the Activity Feed. You can 
-invite more users by clicking the Plus next to user icons, or delete the 
-conversation from the Chat Dropdown in the upper right.
-  Account Settings Your Account Settings can be located from the bottom of the navigation 
-panel.
-
-Here you&amp;apos;ll be able to modify your Name, Password, and link your Koding 
-account to various services.
-</description>
-  </item>
-  
-  <item>
-    <title>CakePHP Installation for Beginners</title>
-    <link>//learn.koding.com/guides/cakephp-for-beginners</link>
-    <pubDate>"2014-04-01T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/cakephp-for-beginners</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install CakePHP using just one command:
-kpm install cakephp
-
-If you are a beginner with CakePHP than this article will help you with the install process.
-  What is CakePHP? CakePHP is a popular PHP framework created with ease of use, small codebase, and MVC in mind. It&amp;apos;s also being actively developed, with two point releases in the last month alone. With a solid codebase, a supportive community, and active developers, it is a strong choice for any project. 
-  Installing On the homepage of CakePHP, copy the download link for the latest version of CakePHP. In this case you&amp;apos;re going to be using CakePHP 2.4.2. 
-Open your Koding Terminal and type:
-cd Web
-wget -O cake.zip
-and then paste your download link with Ctrl-Shift-V. As an example, it should look like this: 
-wget -O cake.zip https://github.com/cakephp/cakephp/zipball/2.4.2
-On the left hand side, in the Koding FileTree, right click your file and choose Extract. This will extract your downloaded cake.zip into a directory cake/.
-Expand that directory, and you&amp;apos;ll see a directory with a name similar to cakephp-cakephp-f53efef. 
-Drag that into your Web/ directory. You can rename this directory to &amp;quot;cake&amp;quot;, or whatever you like, as this will make it easier to type in your browser. 
-Finally make sure that you have Apache&amp;apos;s mod_rewrite enabled. Follow this guide to learn you can do that.
-The last step is a security step enforced by CakePHP. 
-Open up app/Config/core.php and look for the following two lines. 
-Edit the DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi and 76859309657453542496749683645 strings to have randomized content for your deploy. Just remember that the second string is numbers only.  
-/** * A random string used in security hashing methods. */ 
-Configure::write(&amp;apos;Security.salt&amp;apos;, &amp;apos;DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi&amp;apos;);
-
-/** * A random numeric string (digits only) used to encrypt/decrypt strings. */ 
-Configure::write(&amp;apos;Security.cipherSeed&amp;apos;, &amp;apos;76859309657453542496749683645&amp;apos;);
-You will now be able to access CakePHP by following a similar URL:
-http://KODING_USERNAME.koding.io/cake
-Find out more about your VM hostname here.
-And that&amp;apos;s it!
-If you encounter any issues or have any questions please drop an email here.
 </description>
   </item>
   
@@ -4559,6 +4557,59 @@ And that&amp;apos;s it. Why not continue and experiment with AngularJS on
 Koding and see what more cool stuff you can 
 make. As always, more Quick Tips and beginner friendly guides coming 
 soon, so stay tuned!
+</description>
+  </item>
+  
+  <item>
+    <title>Getting Started: The UI</title>
+    <link>//learn.koding.com/guides/getting-started/the-ui</link>
+    <pubDate>"2014-05-30T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/the-ui</guid>
+    <author>Team Koding</author>
+    <description>In this guide we&amp;apos;ll take a look at Koding&amp;apos;s UI. We&amp;apos;ll examine 
+the major sections, and briefly explain some of the features. In future 
+guides of this series we&amp;apos;ll explain these parts in more detail. Lets get 
+started!
+  The Full UI 
+This is the Koding UI of a logged in user, with the Koding IDE 
+open. On the left side we have our VMs, Channels, Chats, and Account. To 
+the right we have the Koding IDE. Lets look at each piece, and where they 
+lead us.
+  VMs, Workspaces and IDE VMs, Workspaces, and the Koding IDE can be found on the left hand 
+side, under VMS, as seen in the image below.
+
+Clicking on a VM Name, such as koding-vm-0 in the above image, will 
+open up the Koding IDE for that specific VM.
+The button to the immediate right of the VM Name is the VM Settings. Here 
+you can find useful information, such as your VM Address and VM Specs.
+Finally, below the VM Name are your Workspaces for that specific VM.Clicking on a Workspace will open all of the previous editors and 
+Terminals that you had open on it, and opening new Workspaces provides 
+shortcuts for varying tasks. We&amp;apos;ll get into the specifics in the 
+Workspaces guide.
+  Channels and Activity Below VMs, are your Channels. To follow a channel, click on a Grey check 
+mark. Green check marks indicate a channel that you are following.
+
+A channel is a stream of user submitted content for a certain hash tag, 
+such as #golang. When you 
+click on a hash tag in the Activity Feed, it opens a channel for that 
+tag, as seen below.
+
+Activity Feed posts support Markdown, including Markdown Code 
+Blocks.
+  Chat Below Channels are your Chats. These are private conversations between 
+you and any number of users you invite.
+
+To open a new chat, click on the Plus button to the right of the Chat 
+icon. Clicking on a already started chat, will open it as seen below.
+
+Your chats will work much in the same way as the Activity Feed. You can 
+invite more users by clicking the Plus next to user icons, or delete the 
+conversation from the Chat Dropdown in the upper right.
+  Account Settings Your Account Settings can be located from the bottom of the navigation 
+panel.
+
+Here you&amp;apos;ll be able to modify your Name, Password, and link your Koding 
+account to various services.
 </description>
   </item>
   
@@ -4703,6 +4754,44 @@ Requests for new guides can be sent here
   </item>
   
   <item>
+    <title>How can I reset my VM back to it's original state?</title>
+    <link>//learn.koding.com/faq/vm-reinit</link>
+    <pubDate></pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/vm-reinit</guid>
+    <author></author>
+    <description>Sometimes, after you&amp;apos;re installed a slew of software and things have started to conflict,
+there&amp;apos;s a need to send your VM back to it&amp;apos;s original state. To achieve that, Koding offers
+an easy reinitialization function which you can use at any time you like. 
+  What does reinitialization do? When you reinit your VM, the system will delete everything on your VM and create a new one from
+scratch. NOTE: You will lose all existing data (unless you back it up somewhere) on the VM
+that you are reinitializing. This is an irreversible process so please proceed with caution. To backup
+your data, we recommend you use FTP 
+to transfer the files.
+Reinitialization will however preserve your VM settings and any domain names that you may have created.
+  How do I reinit my VM? To reinit your VM, follow these easy steps:
+
+turn your VM to &amp;quot;on&amp;quot; state
+head over to the VM settings panel (as shown in the screen shot below)
+expand the &amp;quot;More&amp;quot; and &amp;quot;Advanced&amp;quot; sections
+click the &amp;quot;Reinitialize&amp;quot; button inside the Advanced section.
+
+Once you initiate a reinit, you will see appropriate messages on the screen as your VM rebuilds.
+
+</description>
+  </item>
+  
+  <item>
+    <title>How can I delete my account?</title>
+    <link>//learn.koding.com/faq/delete-account</link>
+    <pubDate></pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/delete-account</guid>
+    <author></author>
+    <description>You do not have to contact Koding support if you wish to delete your account. Simply head over to Account Settings from where you can easily initiate the deletion process.
+It would help us immensly if you can take the quick 3 question survey right after the deletion process ends. It will help us understand why we lost you and how we can improve.
+</description>
+  </item>
+  
+  <item>
     <title>Can I change my Koding username?</title>
     <link>//learn.koding.com/faq/change-username</link>
     <pubDate></pubDate>
@@ -4732,57 +4821,6 @@ If you have trouble finding your VM Address, click here.
   </item>
   
   <item>
-    <title>How can I delete my account?</title>
-    <link>//learn.koding.com/faq/delete-account</link>
-    <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/delete-account</guid>
-    <author></author>
-    <description>You do not have to contact Koding support if you wish to delete your account. Simply head over to Account Settings from where you can easily initiate the deletion process.
-It would help us immensly if you can take the quick 3 question survey right after the deletion process ends. It will help us understand why we lost you and how we can improve.
-</description>
-  </item>
-  
-  <item>
-    <title>How can I reset my VM back to it's original state?</title>
-    <link>//learn.koding.com/faq/vm-reinit</link>
-    <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/vm-reinit</guid>
-    <author></author>
-    <description>Sometimes, after you&amp;apos;re installed a slew of software and things have started to conflict,
-there&amp;apos;s a need to send your VM back to it&amp;apos;s original state. To achieve that, Koding offers
-an easy reinitialization function which you can use at any time you like. 
-  What does reinitialization do? When you reinit your VM, the system will delete everything on your VM and create a new one from
-scratch. NOTE: You will lose all existing data (unless you back it up somewhere) on the VM
-that you are reinitializing. This is an irreversible process so please proceed with caution. To backup
-your data, we recommend you use FTP 
-to transfer the files.
-Reinitialization will however preserve your VM settings and any domain names that you may have created.
-  How do I reinit my VM? To reinit your VM, follow these easy steps:
-
-turn your VM to &amp;quot;on&amp;quot; state
-head over to the VM settings panel (as shown in the screen shot below)
-expand the &amp;quot;More&amp;quot; and &amp;quot;Advanced&amp;quot; sections
-click the &amp;quot;Reinitialize&amp;quot; button inside the Advanced section.
-
-Once you initiate a reinit, you will see appropriate messages on the screen as your VM rebuilds.
-
-</description>
-  </item>
-  
-  <item>
-    <title>What is my sudo password?</title>
-    <link>//learn.koding.com/faq/sudo-password</link>
-    <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/sudo-password</guid>
-    <author></author>
-    <description>By default, there is no sudo password on your Koding VM. It is blank/empty which means that if you want to use sudo, all
-you need to do is as follows:
-sudo &amp;lt;command you wish to use&amp;gt;
-When you hit enter, the sudo level command you wish to run without a password prompt.
-</description>
-  </item>
-  
-  <item>
     <title>What ports are open on my Koding VM?</title>
     <link>//learn.koding.com/faq/open-ports</link>
     <pubDate></pubDate>
@@ -4796,6 +4834,19 @@ Ports 2 through 65,534 are open.
 Port 80 is taken by Apache, but this can be turned off to free up the port. To turn
 off Apache, type in: sudo service apache2 stop in Terminal.
 Ports 2 through 1,024 require sudo access.
+
+</description>
+  </item>
+  
+  <item>
+    <title>How do I transfer/copy files to my VM?</title>
+    <link>//learn.koding.com/faq/transfer-files</link>
+    <pubDate></pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/transfer-files</guid>
+    <author></author>
+    <description>  I want to copy a few files Getting a few files to your Koding VM is simple and there are a variety of methods. We&amp;apos;ve put together a short video titled Importing your files in the Video&amp;apos;s section of Koding University. Check that out for a simple drag-drop method to upload a few files.
+  I want to copy a large number of files To copy several files, use FTP. To set up FTP on your VM, simply open up Terminal and type in
+help ftp
 
 </description>
   </item>
@@ -4816,6 +4867,19 @@ kodingvm: ~ $     (/dev/pts/4) at 23:11 ...
 
 The system is going down for reboot NOW!
 Wating for a few minutes and then entering CTRL-ALT-T will yield a new terminal in your freshly rebooted machine.
+</description>
+  </item>
+  
+  <item>
+    <title>What is my sudo password?</title>
+    <link>//learn.koding.com/faq/sudo-password</link>
+    <pubDate></pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/sudo-password</guid>
+    <author></author>
+    <description>By default, there is no sudo password on your Koding VM. It is blank/empty which means that if you want to use sudo, all
+you need to do is as follows:
+sudo &amp;lt;command you wish to use&amp;gt;
+When you hit enter, the sudo level command you wish to run without a password prompt.
 </description>
   </item>
   
@@ -4849,19 +4913,6 @@ once added, these sub-domains become available on the setting panels
 of all your VMs for easy reassignment
 deleting a sub-domain is as easy as adding one!
 
-
-</description>
-  </item>
-  
-  <item>
-    <title>How do I transfer/copy files to my VM?</title>
-    <link>//learn.koding.com/faq/transfer-files</link>
-    <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/transfer-files</guid>
-    <author></author>
-    <description>  I want to copy a few files Getting a few files to your Koding VM is simple and there are a variety of methods. We&amp;apos;ve put together a short video titled Importing your files in the Video&amp;apos;s section of Koding University. Check that out for a simple drag-drop method to upload a few files.
-  I want to copy a large number of files To copy several files, use FTP. To set up FTP on your VM, simply open up Terminal and type in
-help ftp
 
 </description>
   </item>
