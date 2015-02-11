@@ -1,17 +1,18 @@
-# Welcome to your new Koding workspace
 
-This workspace, which lives inside the 'Workspaces' folder of your
-home directory, is the place where you can store all relevant and
-related files to this project.
+# KDLearn
 
-Workspaces help keep your projects organized. You can create any
-number of sub-folders within this workspace in order to further
-organize your work.
+Welcome to the main repository for the [Koding University][learn]. Here 
+you can contribute guides/how-to's that will help users of 
+[Koding][koding]. A public version of this repo is viewable 
+[here][learn].
 
-As you move back and forth between your workspaces, Koding will try
-and remember everything about each workspace. This includes things
-like IDE settings, files open, Terminals open, etc.
+If you're looking to contribute to Learn please see the [contributor's 
+guide][contribute]. If you're looking to extend the framework's 
+functionality, [look here][extend].
 
-You can create as many new workspaces as you need on your VM.
 
-Enjoy and Happy Koding!
+
+[koding]: https://koding.com
+[learn]: http://learn.koding.com
+[contribute]: https://github.com/koding/kdlearn/blob/master/contribute/guidelines.md
+[extend]: .metalsmith/README.md
