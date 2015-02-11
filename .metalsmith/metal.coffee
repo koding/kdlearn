@@ -25,6 +25,7 @@ moment       = require './plugins/moment'
 feed         = require './plugins/feed'
 filename     = require './plugins/filename'
 newPage      = require './plugins/new-page'
+recentApi    = require './plugins/recentapi'
 redirects    = require './plugins/redirects'
 series       = require './plugins/series'
 snapshot     = require './plugins/snapshot'
@@ -173,6 +174,8 @@ module.exports = build = (callback=->) ->
       collections: ['guide', 'faq']
       output: 'sitemap.xml'
       metadata: template: 'sitemap.toffee'
+    # Exposes /api/recent.json and all variants
+    .use recentApi()
     .use templates 'toffee'
     .build callback
 
