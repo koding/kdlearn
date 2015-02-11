@@ -16,6 +16,8 @@ kpm install elasticsearch
 
 ***
 
+Elasticsearch is a flexible and powerful open source, distributed, real-time search and analytics engine. It can be scaled as needed. This tutorial will cover the installation process on a Koding VM.
+
 ## Getting started
 
 Before you can start the Elasticsearch install process, you'll need to update all of the apt-get packages:
@@ -49,19 +51,19 @@ To get Elasticsearch installed you'll need to run the following commands in your
 Download the archive:
 
 ```
-wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.7.zip
+wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.4.2.zip
 ```
 
 Now unzip the downloaded archive:
 
 ```
-unzip elasticsearch-0.90.7.zip
+unzip elasticsearch-1.4.2.zip
 ```
 
-This will create a directory called `elasticsearch-0.90.7`. You now need to change into that directory by entering:
+This will create a directory called `elasticsearch-1.4.2`. You now need to change into that directory by entering:
 
 ```
-cd elasticsearch-0.90.7
+cd elasticsearch-1.4.2
 ```
 
 and you'll be able to find the binaries in the bin folder.
