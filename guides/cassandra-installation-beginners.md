@@ -54,19 +54,19 @@ Download the files into the temp folder:
 
 ```
 cd ~/temp
-wget http://www.us.apache.org/dist/cassandra/1.2.16/apache-cassandra-1.2.16-bin.tar.gz
+wget http://www.us.apache.org/dist/cassandra/2.1.2/apache-cassandra-2.1.2-bin.tar.gz
 ```
 
 Unzip them:
 
 ```
-tar -xvzf apache-cassandra-1.2.16-bin.tar.gz
+tar -xvzf apache-cassandra-2.1.2-bin.tar.gz
 ```
 
 Move them into your personal folder:
 
 ```
-mv apache-cassandra-1.2.16 ~/cassandra
+mv apache-cassandra-2.1.2 ~/cassandra
 ```
 
 The next thing you need to do is to make sure that the folders Cassandra accesses, such as the log folder, exist and that Cassandra has the rights to write on them. Use the bellow commands to achieve this:
