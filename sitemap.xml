@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://learn.koding.com/guides/freeing-up-space</loc>
+    <lastmod>2015-02-13</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
     <loc>http://learn.koding.com/guides/cassandra-installation-beginners</loc>
     <lastmod>2015-02-10</lastmod>
     <changefreq>monthly</changefreq>
@@ -32,6 +38,18 @@
   </url>
   
   <url>
+    <loc>http://learn.koding.com/guides/installing-gruntjs</loc>
+    <lastmod>2015-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://learn.koding.com/guides/install-redis</loc>
+    <lastmod>2015-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
     <loc>http://learn.koding.com/guides/install-memcache</loc>
     <lastmod>2015-01-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -44,26 +62,8 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/install-redis</loc>
-    <lastmod>2015-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://learn.koding.com/guides/installing-gruntjs</loc>
-    <lastmod>2015-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
     <loc>http://learn.koding.com/guides/install-phppgadmin</loc>
     <lastmod>2015-01-19</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://learn.koding.com/guides/dropbox-for-file-sync</loc>
-    <lastmod>2015-01-15</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
@@ -74,8 +74,8 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/freeing-up-space</loc>
-    <lastmod>2015-01-13</lastmod>
+    <loc>http://learn.koding.com/guides/dropbox-for-file-sync</loc>
+    <lastmod>2015-01-15</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
@@ -567,73 +567,73 @@
   
   <url>
     <loc>http://learn.koding.com/faq/what-is-koding</loc>
-    <lastmod>2015-02-11</lastmod>
+    <lastmod>2015-02-12</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>http://learn.koding.com/faq/support</loc>
-    <lastmod>2015-02-11</lastmod>
+    <lastmod>2015-02-12</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>http://learn.koding.com/faq/change-username</loc>
-    <lastmod>2015-02-11</lastmod>
+    <lastmod>2015-02-12</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>http://learn.koding.com/faq/vm-ip-vs-address</loc>
-    <lastmod>2015-02-11</lastmod>
+    <lastmod>2015-02-12</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>http://learn.koding.com/faq/delete-account</loc>
-    <lastmod>2015-02-11</lastmod>
+    <lastmod>2015-02-12</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>http://learn.koding.com/faq/vm-reinit</loc>
-    <lastmod>2015-02-11</lastmod>
+    <lastmod>2015-02-12</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>http://learn.koding.com/faq/sudo-password</loc>
-    <lastmod>2015-02-11</lastmod>
+    <lastmod>2015-02-12</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>http://learn.koding.com/faq/open-ports</loc>
-    <lastmod>2015-02-11</lastmod>
+    <lastmod>2015-02-12</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>http://learn.koding.com/faq/vm-poweroff</loc>
-    <lastmod>2015-02-11</lastmod>
+    <lastmod>2015-02-12</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>http://learn.koding.com/faq/vm-hostname</loc>
-    <lastmod>2015-02-11</lastmod>
+    <lastmod>2015-02-12</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>http://learn.koding.com/faq/transfer-files</loc>
-    <lastmod>2015-02-11</lastmod>
+    <lastmod>2015-02-12</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>http://learn.koding.com/faq/mysql-socket-error-2002</loc>
-    <lastmod>2015-02-11</lastmod>
+    <lastmod>2015-02-12</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   

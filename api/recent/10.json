@@ -1,5 +1,11 @@
 [
   {
+    "title": "How to free up space on a VM",
+    "url": "http://learn.koding.com/guides/freeing-up-space/index.html",
+    "author": "Team Koding",
+    "date": "2015-02-13T00:00:00.000Z"
+  },
+  {
     "title": "Cassandra installation for beginners",
     "url": "http://learn.koding.com/guides/cassandra-installation-beginners/index.html",
     "author": "Team Koding",
@@ -36,6 +42,12 @@
     "date": "2015-01-20T00:00:00.000Z"
   },
   {
+    "title": "CouchDB installation for beginners",
+    "url": "http://learn.koding.com/guides/couchdb-installation-for-beginners/index.html",
+    "author": "Team Koding",
+    "date": "2015-01-20T00:00:00.000Z"
+  },
+  {
     "title": "How to install Memcache",
     "url": "http://learn.koding.com/guides/install-memcache/index.html",
     "author": "Team Koding",
@@ -46,17 +58,5 @@
     "url": "http://learn.koding.com/guides/installing-gruntjs/index.html",
     "author": "Team Koding",
     "date": "2015-01-20T00:00:00.000Z"
-  },
-  {
-    "title": "CouchDB installation for beginners",
-    "url": "http://learn.koding.com/guides/couchdb-installation-for-beginners/index.html",
-    "author": "Team Koding",
-    "date": "2015-01-20T00:00:00.000Z"
-  },
-  {
-    "title": "Install phpPgAdmin",
-    "url": "http://learn.koding.com/guides/install-phppgadmin/index.html",
-    "author": "Team Koding",
-    "date": "2015-01-19T00:00:00.000Z"
   }
 ]
