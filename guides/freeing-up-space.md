@@ -1,30 +1,30 @@
 ---
 title: How to free up space on a VM
 author: Team Koding
-date: 2015-01-13
+date: 2015-02-13
 categories: [koding]
 template: page.toffee
 ---
 
 # How to free up space on a VM
 
-This tutorial will cover some basic steps and some more advanced ones, that will help you clear some space on your VM.
+This tutorial will cover some basic steps and advanced that will help you clear space on your VM by deleting software packages that you don't need or use.
 
 ## Basics
 
-You can use the bellow command to delete downloaded packages (.deb) already installed and that you no longer need:
+Use the command below to delete downloaded packages (.deb) already installed and that you no longer need:
 
 ```
 sudo apt-get clean
 ```
 
-To remove all stored archives in your cache for packages that can not be downloaded anymore, thus packages that are no longer in the repository or that have a newer version in the repository, use this command:
+Use this command to remove all stored archives in your cache for packages that can not be downloaded anymore (since the packages are no longer in the repository or they have a new version in the repo).
 
 ```
 sudo apt-get autoclean
 ```
 
-To remove unnecessary packages, after uninstalling an app there could be packages you don't need anymore this command will do just that.
+Some apps leave behind remnant files even after you uninstall them. This command will clean up those orphaned files.
 
 ```
 sudo apt-get autoremove
@@ -73,5 +73,7 @@ or
 ```
 find / -size +50000  -exec ls -lahg {} \;
 ```
+
+That should give you plenty to consider for deletion and once you are done deleting, hopefully you can recover storage space on your VM.
 
 If you encounter any issues or have any questions please drop an email [here](mailto:support@koding.com).
