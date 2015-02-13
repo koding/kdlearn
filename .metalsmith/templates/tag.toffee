@@ -26,7 +26,8 @@ findTagName = (key) ->
         <ul>
           {#
           for cat in guide.categories
-            {: <li><a href="/categories/#{cat}">#{findTagName cat}</a></li> :}
+            catUrl = cat.replace(/\s+/, "-") 
+            {: <li><a href="/categories/#{catUrl}">#{findTagName cat}</a></li> :}
           #}
         </ul>
       </div>
