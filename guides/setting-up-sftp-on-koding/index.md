@@ -2,7 +2,7 @@
 title: Setting up SFTP on Koding
 author: Team Koding
 date: 2015-02-04
-categories: [ftp]
+categories: [ftp, file transfer]
 ---
 
 # Setting up SFTP on Koding

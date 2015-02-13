@@ -2,7 +2,7 @@
 title: Setting up FTP with vsftpd
 author: Team Koding
 date: 2015-02-05
-categories: [ftp]
+categories: [ftp, file transfer]
 ---
 
 # Setting up FTP with vsftpd
@@ -86,7 +86,7 @@ sudo service vsftpd restart
 
 ## Setting up the FTP User
 
-After vsftpd has been successfully installed, you need to set a FTP password for your user. To do 
+After vsftpd has been successfully installed, you need to set a FTP password for your user. To do
 this, paste the following command into your Terminal.
 
 ```

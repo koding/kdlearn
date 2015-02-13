@@ -2,7 +2,7 @@
 title: Sync files using Google Drive
 author: Team Koding
 date: 2014-07-08
-categories: [koding,file sync,google drive]
+categories: [koding,file sync,google drive, file transfer]
 
 template: page.toffee
 ---
@@ -44,11 +44,11 @@ sudo ln -s /usr/lib/libbfd-2.23.2-system.so /usr/lib/libbfd-2.23-system.so
 
 The last step is to start the Google Drive app and authorize it with the Google services.
 
-``` 
+```
 grive -a
 ```
 
-Cut and paste the link that the grive app shows you into a new browser tab/window to get an authorization code. 
+Cut and paste the link that the grive app shows you into a new browser tab/window to get an authorization code.
 Once you have an auth code, paste it back in the Terminal window to continue the installation process.
 
 Now you can sync you files using the command `grive` in the `GDrive` folder you created.
