@@ -325,29 +325,48 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>CouchDB installation for beginners</title>
-    <link>//learn.koding.com/guides/couchdb-installation-for-beginners</link>
+    <title>How to install Redis</title>
+    <link>//learn.koding.com/guides/install-redis</link>
     <pubDate>"2015-01-20T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/couchdb-installation-for-beginners</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/install-redis</guid>
     <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install CouchDB using just one command:
-kpm install couchdb
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Redis using just one command:
+kpm install redis
 
-This guide will help install CouchDB on your Koding VM.
-  Getting started Before you can start the CouchDB install process, you&amp;apos;ll need to update all of the apt-get packages:
+  Getting started Before you start the Redis install process, you&amp;apos;ll need to install a few things.
+But first update all of the apt-get packages:
 sudo apt-get update
-Make sure you have curl installed on your VM before you continue. You can install it using the following command:
-sudo apt-get install curl
-  Installing CouchDB can be installed by running the following command:
-sudo apt-get install couchdb
-By default CouchDB runs on port :5984. If you want to check CouchDB and see if it&amp;apos;s running correctly you can issue this command:
-curl localhost:5984
-and it should output something like this:
-{&amp;quot;couchdb&amp;quot;:&amp;quot;Welcome&amp;quot;,&amp;quot;uuid&amp;quot;:&amp;quot;dfd16361e5321d4a90d01feedee6c0b1&amp;quot;,&amp;quot;version&amp;quot;:&amp;quot;1.5.0&amp;quot;,&amp;quot;vendor&amp;quot;:{&amp;quot;name&amp;quot;:&amp;quot;Ubuntu&amp;quot;,&amp;quot;version&amp;quot;:&amp;quot;14.04&amp;quot;}}
-  Usage If you want to create a new database you can use the PUT command:
-curl -X PUT localhost:5984/new_database
-The output should look like this:
-{&amp;quot;ok&amp;quot;:true}
+You&amp;apos;ll need to download a compiler with build essential which will help you install Redis from the source:
+sudo apt-get install build-essential
+Last but not least download and install tcl:
+sudo apt-get install tcl8.5
+  Step 1 Download the source from the official website.
+wget http://download.redis.io/releases/redis-2.8.19.tar.gz
+Untar it and switch into the newly created directory:
+tar xzf redis-2.8.19.tar.gz
+
+cd redis-2.8.19
+Continue with the make command:
+make
+After that you should run the recommended command:
+make test
+Lastly run make install, which installs the program system-wide.
+sudo make install
+  Step 2 Once Redis has finished installing, you&amp;apos;ll be able to run it as a background daemon because it comes with a built in script that allows you to do that.
+To access the script switch into the utils directory:
+cd utils
+From there, run the Ubuntu install script using the following command:
+sudo ./install_server.sh
+While the script is running, you can choose the default options by pressing enter. Once the script is done, the redis-server will be running in the background.
+You now have access to these commands that can start and stop Redis (the number depends on the port you set during the installation. 6379 is the default port setting):
+sudo service redis_6379 start
+sudo service redis_6379 stop
+  Step 3 You can now access the Redis database by typing the following command:
+redis-cli
+You now have Redis installed and running. The prompt will look like this:
+redis 127.0.0.1:6379&amp;gt;
+If you want to set Redis to automatically start when you boot up your VM, run the next command:
+sudo update-rc.d redis_6379 defaults
 And that&amp;apos;s it!
 If you encounter any issues or have any questions please drop an email here.
 </description>
@@ -393,48 +412,29 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>How to install Redis</title>
-    <link>//learn.koding.com/guides/install-redis</link>
+    <title>CouchDB installation for beginners</title>
+    <link>//learn.koding.com/guides/couchdb-installation-for-beginners</link>
     <pubDate>"2015-01-20T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/install-redis</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/couchdb-installation-for-beginners</guid>
     <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Redis using just one command:
-kpm install redis
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install CouchDB using just one command:
+kpm install couchdb
 
-  Getting started Before you start the Redis install process, you&amp;apos;ll need to install a few things.
-But first update all of the apt-get packages:
+This guide will help install CouchDB on your Koding VM.
+  Getting started Before you can start the CouchDB install process, you&amp;apos;ll need to update all of the apt-get packages:
 sudo apt-get update
-You&amp;apos;ll need to download a compiler with build essential which will help you install Redis from the source:
-sudo apt-get install build-essential
-Last but not least download and install tcl:
-sudo apt-get install tcl8.5
-  Step 1 Download the source from the official website.
-wget http://download.redis.io/releases/redis-2.8.19.tar.gz
-Untar it and switch into the newly created directory:
-tar xzf redis-2.8.19.tar.gz
-
-cd redis-2.8.19
-Continue with the make command:
-make
-After that you should run the recommended command:
-make test
-Lastly run make install, which installs the program system-wide.
-sudo make install
-  Step 2 Once Redis has finished installing, you&amp;apos;ll be able to run it as a background daemon because it comes with a built in script that allows you to do that.
-To access the script switch into the utils directory:
-cd utils
-From there, run the Ubuntu install script using the following command:
-sudo ./install_server.sh
-While the script is running, you can choose the default options by pressing enter. Once the script is done, the redis-server will be running in the background.
-You now have access to these commands that can start and stop Redis (the number depends on the port you set during the installation. 6379 is the default port setting):
-sudo service redis_6379 start
-sudo service redis_6379 stop
-  Step 3 You can now access the Redis database by typing the following command:
-redis-cli
-You now have Redis installed and running. The prompt will look like this:
-redis 127.0.0.1:6379&amp;gt;
-If you want to set Redis to automatically start when you boot up your VM, run the next command:
-sudo update-rc.d redis_6379 defaults
+Make sure you have curl installed on your VM before you continue. You can install it using the following command:
+sudo apt-get install curl
+  Installing CouchDB can be installed by running the following command:
+sudo apt-get install couchdb
+By default CouchDB runs on port :5984. If you want to check CouchDB and see if it&amp;apos;s running correctly you can issue this command:
+curl localhost:5984
+and it should output something like this:
+{&amp;quot;couchdb&amp;quot;:&amp;quot;Welcome&amp;quot;,&amp;quot;uuid&amp;quot;:&amp;quot;dfd16361e5321d4a90d01feedee6c0b1&amp;quot;,&amp;quot;version&amp;quot;:&amp;quot;1.5.0&amp;quot;,&amp;quot;vendor&amp;quot;:{&amp;quot;name&amp;quot;:&amp;quot;Ubuntu&amp;quot;,&amp;quot;version&amp;quot;:&amp;quot;14.04&amp;quot;}}
+  Usage If you want to create a new database you can use the PUT command:
+curl -X PUT localhost:5984/new_database
+The output should look like this:
+{&amp;quot;ok&amp;quot;:true}
 And that&amp;apos;s it!
 If you encounter any issues or have any questions please drop an email here.
 </description>
@@ -500,32 +500,6 @@ http://KODING_USERNAME.koding.io/phppgadmin
 
 Find out more about your VM hostname here.
 And that&amp;apos;s it.
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
-    <title>Using Dropbox with Koding</title>
-    <link>//learn.koding.com/guides/dropbox-for-file-sync</link>
-    <pubDate>"2015-01-15T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/dropbox-for-file-sync</guid>
-    <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll walk you through how to set up Dropbox right on your Koding VM for a seamless sync experience between your local system and your Koding VM. Dropbox has built a best-in-class file sync and storage service.
-  Getting started Before we begin please make sure you have the Koding Package Manager (KPM) installed on your VM. Follow this guide to understand what KPM is and how to install it so you will be able to continue with this guide.
-Also make sure you have an active Dropbox account (free or paid).
-  Setup Run the following command, in your Koding Terminal, to install the necessary dependency:
-Note: If you already have Dropbox installed via KPM then you need to run kpm uninstall dropbox and then the below command to get the latest version.
-kpm install dropbox
-This will install the Dropbox daemon on your Koding VM, that will make the file sync possible.
-After the install has finished you&amp;apos;ll need to configure the daemon with your Dropbox account. In order to that you&amp;apos;ll need to type this command:
-dropboxd
-Next you&amp;apos;ll see a message similar to this one:
-Please visit https://www.dropbox.com/cli_link_nonce?nonce=A_VERY_LONG_NUMBER to link this device.
-Copy the link and past it in a new tab.
-Sign in to your Dropbox account.
-That&amp;apos;s it! You should see a message in your Terminal similar to this one:
-This computer is now linked to Dropbox. Welcome YOUR_DROPBOX_NAME
-Note: Whenever you turn on Koding VM you will have to run the dropbox start command to get dropbox started.
 If you encounter any issues or have any questions please drop an email here.
 </description>
   </item>
@@ -616,6 +590,32 @@ Good luck with your further Java web development and happy coding!
   </item>
   
   <item>
+    <title>Using Dropbox with Koding</title>
+    <link>//learn.koding.com/guides/dropbox-for-file-sync</link>
+    <pubDate>"2015-01-15T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/dropbox-for-file-sync</guid>
+    <author>Team Koding</author>
+    <description>In this guide we&amp;apos;ll walk you through how to set up Dropbox right on your Koding VM for a seamless sync experience between your local system and your Koding VM. Dropbox has built a best-in-class file sync and storage service.
+  Getting started Before we begin please make sure you have the Koding Package Manager (KPM) installed on your VM. Follow this guide to understand what KPM is and how to install it so you will be able to continue with this guide.
+Also make sure you have an active Dropbox account (free or paid).
+  Setup Run the following command, in your Koding Terminal, to install the necessary dependency:
+Note: If you already have Dropbox installed via KPM then you need to run kpm uninstall dropbox and then the below command to get the latest version.
+kpm install dropbox
+This will install the Dropbox daemon on your Koding VM, that will make the file sync possible.
+After the install has finished you&amp;apos;ll need to configure the daemon with your Dropbox account. In order to that you&amp;apos;ll need to type this command:
+dropboxd
+Next you&amp;apos;ll see a message similar to this one:
+Please visit https://www.dropbox.com/cli_link_nonce?nonce=A_VERY_LONG_NUMBER to link this device.
+Copy the link and past it in a new tab.
+Sign in to your Dropbox account.
+That&amp;apos;s it! You should see a message in your Terminal similar to this one:
+This computer is now linked to Dropbox. Welcome YOUR_DROPBOX_NAME
+Note: Whenever you turn on Koding VM you will have to run the dropbox start command to get dropbox started.
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
     <title>Installing LinuxBrew</title>
     <link>//learn.koding.com/guides/installing-linuxbrew</link>
     <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
@@ -625,6 +625,52 @@ Good luck with your further Java web development and happy coding!
   The One-Line Solution Input the following in your shell, as Koding already has Ruby pre-installed:
 ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)&amp;quot;
 From here, you&amp;apos;ll be poised for yet more installations. See their website for more information.
+</description>
+  </item>
+  
+  <item>
+    <title>Using mySQL</title>
+    <link>//learn.koding.com/guides/using-mysql</link>
+    <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/using-mysql</guid>
+    <author>Alvin Wan</author>
+    <description>mySQL offers a popular implementation of the SQL language. This guide will get you started on using mySQL on Koding.
+First make sure you have mySQL installed. Have a look at this guide to learn how to install it.
+Are you using PostgreSQL? Have a look at this guide.
+  Starting mySQL Let&amp;apos;s start the mySQL server using the following command:
+sudo service mysql start
+  Getting Started First, you&amp;apos;ll need to login using th root user that was configured during the mySQL installation. Open your Terminal and type in the following:
+mysql -u root p
+Enter your password, and hit enter. You&amp;apos;re now logged in.
+  Creating a User You&amp;apos;ll now create a new account for our code, with the username &amp;quot;bob&amp;quot; and password &amp;quot;pass&amp;quot;.
+create user &amp;apos;bob&amp;apos;@&amp;apos;localhost&amp;apos; identified by &amp;apos;pass&amp;apos;;
+If you see an arrow
+-&amp;gt;
+that means you forgot the end semicolon &amp;quot;;&amp;quot;. Enter that and hit enter.
+You can exit the server by using Ctrl+D and then login again as Bob:
+mysql -u bob -p;
+After entering the password, you&amp;apos;ll be readmitted into the mySQL server. To continue with this guide, you&amp;apos;ll need to be logged in as root.
+  Creating a Database Each mySQL server includes a variety of databases. The initial installation comes with several. You can view them by typing:
+show databases;
+You should see a short list of databases:
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
++--------------------+
+3 rows in set (0.00 sec)
+Let&amp;apos;s create your first database:
+create database test;
+  Linking Users and Databases You&amp;apos;ll need to grant privileges to the user, so that &amp;quot;Bob&amp;quot; can access the database &amp;quot;test&amp;quot; and modify it accordingly.
+To grant &amp;quot;Bob&amp;quot; all privileges on all tables in database &amp;quot;test&amp;quot;:
+grant all on test.* to &amp;apos;bob&amp;apos;@&amp;apos;localhost&amp;apos;;
+  Using the Database Exit out of root by using Ctrl+D, and login as &amp;quot;Bob&amp;quot;. To connect to a database, prefix the database name with &amp;quot;use&amp;quot;.
+use test;
+Once here, you&amp;#x2019;ll be able to execute mySQL commands. 
+And that&amp;apos;s it!
+If you encounter any issues or have any questions please drop an email here.
 </description>
   </item>
   
@@ -706,52 +752,6 @@ When you hit &amp;quot;y&amp;quot; ufw will backup all existing rules before doi
   Help, I locked myself out of my VM If for some reason you enabled your firewall and did not take the steps needed to open up the ports needed for Koding to work, then
 your only recourse is to reinit your VM. That process is described in this guide. If you 
 encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
-    <title>Using mySQL</title>
-    <link>//learn.koding.com/guides/using-mysql</link>
-    <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/using-mysql</guid>
-    <author>Alvin Wan</author>
-    <description>mySQL offers a popular implementation of the SQL language. This guide will get you started on using mySQL on Koding.
-First make sure you have mySQL installed. Have a look at this guide to learn how to install it.
-Are you using PostgreSQL? Have a look at this guide.
-  Starting mySQL Let&amp;apos;s start the mySQL server using the following command:
-sudo service mysql start
-  Getting Started First, you&amp;apos;ll need to login using th root user that was configured during the mySQL installation. Open your Terminal and type in the following:
-mysql -u root p
-Enter your password, and hit enter. You&amp;apos;re now logged in.
-  Creating a User You&amp;apos;ll now create a new account for our code, with the username &amp;quot;bob&amp;quot; and password &amp;quot;pass&amp;quot;.
-create user &amp;apos;bob&amp;apos;@&amp;apos;localhost&amp;apos; identified by &amp;apos;pass&amp;apos;;
-If you see an arrow
--&amp;gt;
-that means you forgot the end semicolon &amp;quot;;&amp;quot;. Enter that and hit enter.
-You can exit the server by using Ctrl+D and then login again as Bob:
-mysql -u bob -p;
-After entering the password, you&amp;apos;ll be readmitted into the mySQL server. To continue with this guide, you&amp;apos;ll need to be logged in as root.
-  Creating a Database Each mySQL server includes a variety of databases. The initial installation comes with several. You can view them by typing:
-show databases;
-You should see a short list of databases:
-+--------------------+
-| Database           |
-+--------------------+
-| information_schema |
-| mysql              |
-| performance_schema |
-+--------------------+
-3 rows in set (0.00 sec)
-Let&amp;apos;s create your first database:
-create database test;
-  Linking Users and Databases You&amp;apos;ll need to grant privileges to the user, so that &amp;quot;Bob&amp;quot; can access the database &amp;quot;test&amp;quot; and modify it accordingly.
-To grant &amp;quot;Bob&amp;quot; all privileges on all tables in database &amp;quot;test&amp;quot;:
-grant all on test.* to &amp;apos;bob&amp;apos;@&amp;apos;localhost&amp;apos;;
-  Using the Database Exit out of root by using Ctrl+D, and login as &amp;quot;Bob&amp;quot;. To connect to a database, prefix the database name with &amp;quot;use&amp;quot;.
-use test;
-Once here, you&amp;#x2019;ll be able to execute mySQL commands. 
-And that&amp;apos;s it!
-If you encounter any issues or have any questions please drop an email here.
 </description>
   </item>
   
@@ -1503,58 +1503,6 @@ guide.
   </item>
   
   <item>
-    <title>A guide to Docker</title>
-    <link>//learn.koding.com/guides/what-is-docker</link>
-    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/what-is-docker</guid>
-    <author>Team Koding</author>
-    <description>Docker is a platform that helps developers build apps in whatever language they feel comfortable using and using any toolchain they want. Using Docker developers can build, ship and run distributed applications because it enables them to quickly put together an app by eliminating the stress between development, QA and production environments.
-A developer that uses Docker can run his / hers app anywhere without the fear of it not performing as it should.
-Apps that are built using Docker are completely portable and can run anywhere.
-  Docker apps Anyone can get started with Docker by checking out one of the 13,000+ apps that are available in the Docker Hub. You can get started working on WordPress or a new nodejs project in just a few seconds without the hassle of having to install any other dependencies (other then Docker of course) on your Koding VM.
-  Benefits The difference between a virtualized application and the Docker Engine container is that the first one includes not only the app and the necessary binaries and libraries but it contains the guest OS as well. The later runs as an separate process on the OS and thus it has the resources separation and allocation of a VM but is much more portable.
-  Installing Docker on Koding The version of Ubuntu that is installed on each Koding VM comes with a docker.io package and it should install Docker 0.9.1. 
-We can install Docker on our Koding VM using the following commands:
-
-We update the package list
-
-sudo apt-get update
-
-Install Docker
-
-sudo apt-get install docker.io
-
-We create a link 
-
-sudo ln -sf /usr/bin/docker.io /usr/local/bin/docker
-
-We need to edit the docker file in order to continue
-
-sudo sed -i &amp;apos;$acomplete -F _docker docker&amp;apos; /etc/bash_completion.d/docker.io
-
-And we now execute that file
-
-source /etc/bash_completion.d/docker.io
-
-After that we need to add the Docker repo key to the local keychain
-
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9
-
-The last step is to add the Docker repo to the apt sources list, update and install the lxc-docker package. You can do that using the following commands
-
-sudo sh -c &amp;quot;echo deb https://get.docker.com/ubuntu docker main\
-&amp;gt; /etc/apt/sources.list.d/docker.list&amp;quot;
-sudo apt-get update
-sudo apt-get install lxc-docker
-Note: You can use the below command, that uses curl, for an easier installation process:
-curl -sSL https://get.docker.com/ubuntu/ | sudo sh
-If you made it to this point you can run this command to check if Docker is indeed installed and works properly:
-sudo docker run -i -t ubuntu /bin/bash
-If you have any question or issues please email us at support@koding.com and we&amp;apos;ll gladly help.
-</description>
-  </item>
-  
-  <item>
     <title>Getting Started: File Uploads</title>
     <link>//learn.koding.com/guides/getting-started/file-upload</link>
     <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
@@ -1613,6 +1561,58 @@ smallfiles=true
 Now use ctrl-x to save the file. After you&amp;apos;ve saved the file, simply 
 restart Mongodb with the following command:
 sudo service mongodb restart
+</description>
+  </item>
+  
+  <item>
+    <title>A guide to Docker</title>
+    <link>//learn.koding.com/guides/what-is-docker</link>
+    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/what-is-docker</guid>
+    <author>Team Koding</author>
+    <description>Docker is a platform that helps developers build apps in whatever language they feel comfortable using and using any toolchain they want. Using Docker developers can build, ship and run distributed applications because it enables them to quickly put together an app by eliminating the stress between development, QA and production environments.
+A developer that uses Docker can run his / hers app anywhere without the fear of it not performing as it should.
+Apps that are built using Docker are completely portable and can run anywhere.
+  Docker apps Anyone can get started with Docker by checking out one of the 13,000+ apps that are available in the Docker Hub. You can get started working on WordPress or a new nodejs project in just a few seconds without the hassle of having to install any other dependencies (other then Docker of course) on your Koding VM.
+  Benefits The difference between a virtualized application and the Docker Engine container is that the first one includes not only the app and the necessary binaries and libraries but it contains the guest OS as well. The later runs as an separate process on the OS and thus it has the resources separation and allocation of a VM but is much more portable.
+  Installing Docker on Koding The version of Ubuntu that is installed on each Koding VM comes with a docker.io package and it should install Docker 0.9.1. 
+We can install Docker on our Koding VM using the following commands:
+
+We update the package list
+
+sudo apt-get update
+
+Install Docker
+
+sudo apt-get install docker.io
+
+We create a link 
+
+sudo ln -sf /usr/bin/docker.io /usr/local/bin/docker
+
+We need to edit the docker file in order to continue
+
+sudo sed -i &amp;apos;$acomplete -F _docker docker&amp;apos; /etc/bash_completion.d/docker.io
+
+And we now execute that file
+
+source /etc/bash_completion.d/docker.io
+
+After that we need to add the Docker repo key to the local keychain
+
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9
+
+The last step is to add the Docker repo to the apt sources list, update and install the lxc-docker package. You can do that using the following commands
+
+sudo sh -c &amp;quot;echo deb https://get.docker.com/ubuntu docker main\
+&amp;gt; /etc/apt/sources.list.d/docker.list&amp;quot;
+sudo apt-get update
+sudo apt-get install lxc-docker
+Note: You can use the below command, that uses curl, for an easier installation process:
+curl -sSL https://get.docker.com/ubuntu/ | sudo sh
+If you made it to this point you can run this command to check if Docker is indeed installed and works properly:
+sudo docker run -i -t ubuntu /bin/bash
+If you have any question or issues please email us at support@koding.com and we&amp;apos;ll gladly help.
 </description>
   </item>
   
@@ -1762,10 +1762,10 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Koding Terminal Introduction</title>
-    <link>//learn.koding.com/guides/terminal-introduction</link>
+    <title>Koding IDE Introduction</title>
+    <link>//learn.koding.com/guides/ide-introduction</link>
     <pubDate>"2014-10-10T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/terminal-introduction</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/ide-introduction</guid>
     <author>Team Koding</author>
     <description></description>
   </item>
@@ -1780,12 +1780,69 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Koding IDE Introduction</title>
-    <link>//learn.koding.com/guides/ide-introduction</link>
+    <title>Koding Terminal Introduction</title>
+    <link>//learn.koding.com/guides/terminal-introduction</link>
     <pubDate>"2014-10-10T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/ide-introduction</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/terminal-introduction</guid>
     <author>Team Koding</author>
     <description></description>
+  </item>
+  
+  <item>
+    <title>Building C / C++ applications with biicode</title>
+    <link>//learn.koding.com/guides/getting-started-biicode</link>
+    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-biicode</guid>
+    <author>drodri</author>
+    <description>Building larger applications can be somewhat difficult and cumbersome to the newbie.
+As soon as your application start to have several files, you will need to define
+how to build them in Makefiles or using the CMake build system.
+We will be using in the following examples biicode, which is a dependency manager
+that allows to easily retrieve existing code and also manages to automatically generate
+build files for your project.
+You can install it running from your terminal:
+$ wget http://apt.biicode.com/install.sh &amp;amp;&amp;amp; chmod +x install.sh &amp;amp;&amp;amp; ./install.sh
+After it finish, you can run a helper command that install an updated version of CMake:
+$ bii setup:cpp
+Lets build an application that computes the SHA1 of a string. Usually you dont want to write
+yourself such algorithm, but rather use an existing implementation.
+The following commands will create a project and a &amp;quot;Hello world&amp;quot; file, which you can build and
+run:
+$ bii init cryptoproject
+$ cd cryptoproject
+$ bii new myuser/crypto --hello=cpp
+$ bii cpp:build
+$ ./bin/myuser_crypto_main
+Hello world!
+Now replace the contents of the &amp;quot;main.cpp&amp;quot; file inside the blocks/myuser/crypto folder with:
+#include &amp;quot;cryptopp/cryptopp/sha.h&amp;quot;
+#include &amp;quot;cryptopp/cryptopp/filters.h&amp;quot;
+#include &amp;quot;cryptopp/cryptopp/hex.h&amp;quot;
+#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;string&amp;gt;
+
+int main() {
+    CryptoPP::SHA1 sha1;
+    std::string source = &amp;quot;Hello&amp;quot;;  
+    std::string hash = &amp;quot;&amp;quot;;
+    CryptoPP::StringSource(source, true, new CryptoPP::HashFilter(sha1,
+                            new CryptoPP::HexEncoder(new CryptoPP::StringSink(hash))));
+    std::cout &amp;lt;&amp;lt; hash &amp;lt;&amp;lt; std::endl;
+}
+If you now try to build this example, it will fail. You can try to do so, and then check
+your dependencies:
+$ bii cpp:build
+$ bii deps
+The code depends on some external code, the Crypto++ library. This can be easily retrieved
+with the &amp;quot;find&amp;quot; command
+$ bii find
+Now you can build and run it:
+$ bii cpp:build
+$ ./bin/myuser_crypto_main
+F7FF9E8B7BB2E09B70935A5D785E0CC5D9D0ABF0
+For further examples, you can have a look to the biicode C/C++ documentation and the 
+examples
+</description>
   </item>
   
   <item>
@@ -1842,6 +1899,34 @@ for many compilers, as Visual Studio, and IDEs as Eclipse.
 The Biicode platform automatically generate CMake files for you, based on 
 your source code files. It also manage dependencies, so it can be used for reusing
 existing code easily.
+</description>
+  </item>
+  
+  <item>
+    <title>What happens upon upgrade?</title>
+    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
+    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
+    <author>Team Koding</author>
+    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
+Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
+
+Ability to mark your VM(s) as Always-On
+Add more storage to your VM(s)
+
+  Utilizing new resources when upgrading to the Hobbyist Plan Once you have upgraded to Hobbyist, you can mark your VM as an Always-On VM and increase its storage from 3GB to 10GB. To to this, head over to the settings panel for your VM and follow these easy steps:
+
+head over to VM settings (as shown in the image below)
+expand the &amp;quot;More&amp;quot; panel and then the &amp;quot;Advanced&amp;quot; panel
+You will see a new button under the Advanced panel labeled &amp;quot;Resize&amp;quot; (this button only appears for users who have upgraded to the Hobbyist plan and have not yet allocated the 10GB. Once you allocate it, the button will disappear)
+Click the button to initiate resize. Once done, your VM will show 10GB. Verify that using the command df -h /
+
+
+  Utilizing new resources when upgrading to the Developer and Professional Plans Under these plans, you can have a total of up to 3 (for Developer) and 5 (for Professional) VMs, mark any of them as Always-On and allocate 25GB (for Developer) / 50GB (for Professional) of storage amonst them. You will start with the default free VM and it is up to you whether you want to leave it at the default 3GB or delete it so that you can make a new one with a storage allocation that you prefer. To delete a VM, simply go the settings panel of the VM and click the Terminate button (as shown in the attached screen shot).
+
+To create a new VM, click the + icon in the VM list and you will be presented wit the option to create a new VM with a space allocation that is preferable to you (as shown below).
+
+Enjoy the new resources and thanks again for upgrading! If you have any addtional questions regarding upgrades and resources, please send us a support request and we will get back to you as soon as possible.
 </description>
   </item>
   
@@ -1906,91 +1991,6 @@ sudo chown myuser:www-data files # NB this is server/user specific!
 chmod 0775 files
 (You need to change these permissions back to something more sane afterwards&amp;#x2026; 0644 and 0775 seem to be ok, but I&amp;#x2019;m open to abuse on the matter.)
 And you&amp;#x2019;re off! To open your VM in a browser, click the ellipsis next to your VM name (probably koding-vm-0) and then the VM name to open the site in a new tab, and follow the usual Drupal installer instructions! NB If you&amp;apos;re a developer, you might want to check out Webchick&amp;apos;s setup video from Drupalcon AMS: http://www.youtube.com/watch?v=wKdU2Q1NIZQ
-</description>
-  </item>
-  
-  <item>
-    <title>What happens upon upgrade?</title>
-    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
-    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
-    <author>Team Koding</author>
-    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
-Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
-
-Ability to mark your VM(s) as Always-On
-Add more storage to your VM(s)
-
-  Utilizing new resources when upgrading to the Hobbyist Plan Once you have upgraded to Hobbyist, you can mark your VM as an Always-On VM and increase its storage from 3GB to 10GB. To to this, head over to the settings panel for your VM and follow these easy steps:
-
-head over to VM settings (as shown in the image below)
-expand the &amp;quot;More&amp;quot; panel and then the &amp;quot;Advanced&amp;quot; panel
-You will see a new button under the Advanced panel labeled &amp;quot;Resize&amp;quot; (this button only appears for users who have upgraded to the Hobbyist plan and have not yet allocated the 10GB. Once you allocate it, the button will disappear)
-Click the button to initiate resize. Once done, your VM will show 10GB. Verify that using the command df -h /
-
-
-  Utilizing new resources when upgrading to the Developer and Professional Plans Under these plans, you can have a total of up to 3 (for Developer) and 5 (for Professional) VMs, mark any of them as Always-On and allocate 25GB (for Developer) / 50GB (for Professional) of storage amonst them. You will start with the default free VM and it is up to you whether you want to leave it at the default 3GB or delete it so that you can make a new one with a storage allocation that you prefer. To delete a VM, simply go the settings panel of the VM and click the Terminate button (as shown in the attached screen shot).
-
-To create a new VM, click the + icon in the VM list and you will be presented wit the option to create a new VM with a space allocation that is preferable to you (as shown below).
-
-Enjoy the new resources and thanks again for upgrading! If you have any addtional questions regarding upgrades and resources, please send us a support request and we will get back to you as soon as possible.
-</description>
-  </item>
-  
-  <item>
-    <title>Building C / C++ applications with biicode</title>
-    <link>//learn.koding.com/guides/getting-started-biicode</link>
-    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-biicode</guid>
-    <author>drodri</author>
-    <description>Building larger applications can be somewhat difficult and cumbersome to the newbie.
-As soon as your application start to have several files, you will need to define
-how to build them in Makefiles or using the CMake build system.
-We will be using in the following examples biicode, which is a dependency manager
-that allows to easily retrieve existing code and also manages to automatically generate
-build files for your project.
-You can install it running from your terminal:
-$ wget http://apt.biicode.com/install.sh &amp;amp;&amp;amp; chmod +x install.sh &amp;amp;&amp;amp; ./install.sh
-After it finish, you can run a helper command that install an updated version of CMake:
-$ bii setup:cpp
-Lets build an application that computes the SHA1 of a string. Usually you dont want to write
-yourself such algorithm, but rather use an existing implementation.
-The following commands will create a project and a &amp;quot;Hello world&amp;quot; file, which you can build and
-run:
-$ bii init cryptoproject
-$ cd cryptoproject
-$ bii new myuser/crypto --hello=cpp
-$ bii cpp:build
-$ ./bin/myuser_crypto_main
-Hello world!
-Now replace the contents of the &amp;quot;main.cpp&amp;quot; file inside the blocks/myuser/crypto folder with:
-#include &amp;quot;cryptopp/cryptopp/sha.h&amp;quot;
-#include &amp;quot;cryptopp/cryptopp/filters.h&amp;quot;
-#include &amp;quot;cryptopp/cryptopp/hex.h&amp;quot;
-#include &amp;lt;iostream&amp;gt;
-#include &amp;lt;string&amp;gt;
-
-int main() {
-    CryptoPP::SHA1 sha1;
-    std::string source = &amp;quot;Hello&amp;quot;;  
-    std::string hash = &amp;quot;&amp;quot;;
-    CryptoPP::StringSource(source, true, new CryptoPP::HashFilter(sha1,
-                            new CryptoPP::HexEncoder(new CryptoPP::StringSink(hash))));
-    std::cout &amp;lt;&amp;lt; hash &amp;lt;&amp;lt; std::endl;
-}
-If you now try to build this example, it will fail. You can try to do so, and then check
-your dependencies:
-$ bii cpp:build
-$ bii deps
-The code depends on some external code, the Crypto++ library. This can be easily retrieved
-with the &amp;quot;find&amp;quot; command
-$ bii find
-Now you can build and run it:
-$ bii cpp:build
-$ ./bin/myuser_crypto_main
-F7FF9E8B7BB2E09B70935A5D785E0CC5D9D0ABF0
-For further examples, you can have a look to the biicode C/C++ documentation and the 
-examples
 </description>
   </item>
   
