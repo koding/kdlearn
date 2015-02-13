@@ -4,17 +4,18 @@ findTagName = (key) ->
     name = tagNames[key]
   else
     name = key.charAt(0).toUpperCase() + key.slice(1)
+    name = name.replace(/-/g, " ")
 #}
 
 
-#{partial 'head.toffee', title: "#{findTagName tagKey} Guides"}
+#{partial 'head.toffee', title: "#{findTagName tagKey} guides"}
 #{partial 'topnav.toffee'}
 <section><div class="container">
 
 #{partial 'sidebar.toffee'}
 
 <div class="docs-content" id="page-category">
-  <h1>#{findTagName tagKey} Guides</h1>
+  <h1>#{findTagName tagKey} guides</h1>
   <ul class="verbose-guide-list">
   {# for guide in paginate.files {:
     <li>

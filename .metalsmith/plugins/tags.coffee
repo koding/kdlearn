@@ -62,6 +62,7 @@ module.exports = (opts={}) ->
             It is being ignored."
           continue
         tag = tag.toLowerCase()
+        tag = tag.replace(/\s+/, "-") 
         tags[tag] ?= []
         tags[tag].push file
         # For the tagsByUnique list, only push this file once.

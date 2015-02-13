@@ -4,10 +4,11 @@ if tagNames[tagKey]?
   tagName = tagNames[tagKey]
 else
   tagName = tagKey.charAt(0).toUpperCase() + tagKey.slice(1)
+  tagName = tagName.replace(/-/g, " ")
 #}
 
 <div class="tag-list">
-  <h4 class="tag-name">#{tagName}</h4> 
+  <h4 class="tag-name">#{tagName}</h4>
   <ul>
   {# for tag in tags[tagKey][..5] {:
     <li class="tag-link">
