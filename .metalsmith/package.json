@@ -30,5 +30,7 @@
     "sanitize-html": "^1.1.5",
     "toffee": "^0.1.8"
   },
-  "dependencies": {}
+  "dependencies": {
+    "googleapis": "^1.1.3"
+  }
 }

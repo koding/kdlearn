@@ -21,6 +21,7 @@ defaultMeta  = require './plugins/defaultmeta'
 descMeta     = require './plugins/descriptionMeta'
 paginate     = require './plugins/paginate'
 paginateTags = require './plugins/paginatetags'
+popularApi   = require './plugins/popularapi'
 moment       = require './plugins/moment'
 feed         = require './plugins/feed'
 filename     = require './plugins/filename'
@@ -174,8 +175,10 @@ module.exports = build = (callback=->) ->
       collections: ['guide', 'faq']
       output: 'sitemap.xml'
       metadata: template: 'sitemap.toffee'
-    # Exposes /api/recent.json and all variants
+    # Exposes /api/recent and all variants
     .use recentApi()
+    # Exposes /api/popular and all variants
+    .use popularApi()
     .use templates 'toffee'
     .build callback
 
