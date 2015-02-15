@@ -1,12 +1,12 @@
 ---
-title: How to free up space on a VM
+title: How to free up space on a Koding VM
 author: Team Koding
 date: 2015-02-13
 categories: [koding]
 template: page.toffee
 ---
 
-# How to free up space on a VM
+# How to free up space on a Koding VM
 
 This tutorial will cover some basic steps and advanced that will help you clear space on your VM by deleting software packages that you don't need or use.
 
