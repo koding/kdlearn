@@ -126,6 +126,9 @@
 		padding: 10px 0 30px 0;
 		margin: 0 20px;
 	}
+	.guide-footer {
+	    height: auto !important;
+	}
 	.guide-button {
 		display: block;
 		margin-bottom: 10px;
@@ -134,6 +137,16 @@
 	.rrssb-buttons {
 		width: 280px;
 		height: auto;
+	}
+	#disqus_thread {
+	    margin-bottom: -205px;
+	    &:after {
+	        height: 230px !important;
+	    }
+	}
+	footer.main-footer {
+        z-index: 20;
+        position: relative;
 	}
 }
 
@@ -265,6 +278,9 @@
 		padding: 10px 0 30px;
 		margin: 0 5px;
 	}
+	.guide-footer {
+	    height: auto !important;
+	}
 	.guide-button {
 		display: block;
 		margin-bottom: 10px;
@@ -273,6 +289,16 @@
 	.rrssb-buttons {
 		width: 400px;
 		height: auto;
+	}
+	#disqus_thread {
+	    margin-bottom: -180px;
+	    &:after {
+	        height: 230px !important;
+	    }
+	}
+	footer.main-footer {
+        z-index: 20;
+        position: relative;
 	}
 }
 
