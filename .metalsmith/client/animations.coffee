@@ -60,8 +60,6 @@ setupShareAnimations = ->
         animate shareBtns, 'animated fadeInDown',
           display: 'block'
 
-
-
 # ## Search Animations
 #
 # Setup the animations for when the top search
@@ -72,12 +70,26 @@ setupSearchAnimations = ->
     jQuery('.topSearchBox #topSearch').focus()
 
 setupMenuAnimations = ->
-  jQuery('#mobile-menu').on 'click', ->
-    jQuery('.toplinks').slideToggle()
+    jQuery('#mobile-menu').on 'click', ->
+        jQuery('.toplinks').slideToggle()
 
+setupBackTopAnimations = ->
+    offset = 250
+    duration = 300
+    jQuery(window).scroll ->
+      if jQuery(this).scrollTop() > offset
+        jQuery('.back-to-top').fadeIn duration
+      else
+        jQuery('.back-to-top').fadeOut duration
+      return
+    jQuery('.back-to-top').click (event) ->
+      event.preventDefault()
+      jQuery('html, body').animate { scrollTop: 0 }, duration
+      false
 
 # When jquery is ready, setup our animations.
 jQuery(document).ready ->
   setupSearchAnimations()
   setupShareAnimations()
   setupMenuAnimations()
+  setupBackTopAnimations()

@@ -1632,7 +1632,7 @@ pre code {
 // Guide Footer
 .guide-footer {
   margin-top: 30px;
-  margin-bottom: 60px;
+//   margin-bottom: 60px;
   height: 80px;
   padding: 0;
   text-align: center;
@@ -1695,7 +1695,38 @@ footer.main-footer .cclicense img {
 
 //--------------------------
 
-@media only screen and (min-width: 400px) { }
-@media only screen and (min-width: 600px) { }
-@media only screen and (min-width: 680px) { }
-@media only screen and (min-width: 960px) { }
+#disqus_thread {
+    position: relative;
+    &:after {
+        content: "";
+        display: block;
+        height: 55px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        background: white;
+    }
+}
+
+//--------------------------
+
+.back-to-top {
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    z-index: 100;
+    display: none;
+    text-decoration: none;
+    text-align: center;
+    color: #434343;
+    i {
+        font-size: 50px;
+    }
+    &:hover {
+        text-decoration: none;
+        color: #a2a2a2;
+    }
+}

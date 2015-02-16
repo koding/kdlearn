@@ -1,21 +1,25 @@
-<footer class="kdview main-footer"><div class="inner-container clearfix">
+<footer class="kdview main-footer">
+    <div class="inner-container clearfix">
+      <nav class="footer-block">
+        <a href="https://koding.com/Pricing">Pricing</a>
+        <a href="https://koding.com/Activity">Community</a>
+        <a href="https://koding.com/About">About</a>
+        <a href="https://koding.com/Legal">Legal</a>
+      </nav>
+    
+      <nav class="footer-block">
+        <a class="social tw" href="http://twitter.com/koding"></a><a class="social fb" href="http://facebook.com/koding"></a>
+        <a href="/">Copyright © 2015 Koding, Inc</a>
+        <a class="cclicense" rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">
+          <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" />
+        </a>
+      </nav>
+    </div>
+</footer>
 
-  <nav class="footer-block">
-    <a href="https://koding.com/Pricing">Pricing</a>
-    <a href="https://koding.com/Activity">Community</a>
-    <a href="https://koding.com/About">About</a>
-    <a href="https://koding.com/Legal">Legal</a>
-  </nav>
-
-  <nav class="footer-block">
-    <a class="social tw" href="http://twitter.com/koding"></a><a class="social fb" href="http://facebook.com/koding"></a>
-    <a href="/">Copyright © 2015 Koding, Inc</a>
-    <a class="cclicense" rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">
-      <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" />
-    </a>
-  </nav>
-</div></footer>
-
+<a href="#" class="back-to-top">
+    <i class="fa fa-arrow-circle-up"></i>
+</a>
 
 <!-- load our cdn and local vendors -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
