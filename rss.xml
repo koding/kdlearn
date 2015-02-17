@@ -18,6 +18,145 @@
   <language>en</language>
   
   <item>
+    <title>Getting Started with Ruby</title>
+    <link>//learn.koding.com/guides/getting-started-ruby</link>
+    <pubDate>"2016-06-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-ruby</guid>
+    <author>Team Koding</author>
+    <description>In this guide we&amp;apos;ll explain what Ruby is, and how to write a simple web
+server using the built in Socket library. So, lets get started!
+  What is Ruby Ruby is a popular, general purpose, high level programing language. It
+focuses on readability programmer enjoyment over raw performance. Koding
+VMs come pre-installed with Ruby and RubyGem, making it super easy to get
+started. Lets see what it looks like to run some Ruby code!
+  Installing Ruby You can install Ruby rather easily, using the bellow command:
+\curl -sSL https://get.rvm.io | bash -s stable --rails
+During the installation you will prompted to input your root password.
+The above command will install the latest stable Rails version, which will pull in the associated Ruby.
+After the very long installation process, all you need to do is source the rvm scripts using the following command:
+source ~/.rvm/scripts/rvm
+You should now have a full Ruby on Rails environment configured and you should be ready for the next steps.
+  Running your first Ruby script Open up your Ace Editor and create a new file named hello.rb.Paste in the following code into that file.
+puts &amp;quot;Hello from Ruby!&amp;quot;
+
+The puts name is a function which takes a string and prints it to the
+Standard Output (STDOUT) of the process. Lets try running this file and
+see the output, but first save the file with Ctrl-s. Now, open up
+your Terminal and type in the following command.
+ruby hello.rb
+You should see output similar to this:
+joshmurray: ~ $ ruby hello.rb
+Hello from Ruby!
+joshmurray: ~ $
+Neat! Now that we know how to run some code, lets look at a real example
+of some Ruby code.
+  Your first Ruby web server Just like before, create a new file named web.rb, and paste in the
+following code.
+require &amp;apos;socket&amp;apos;
+
+server = TCPServer.new &amp;apos;0.0.0.0&amp;apos;, 3000
+
+loop do
+  socket  = server.accept
+  request = socket.gets
+  puts request
+
+  response = &amp;quot;Hello World!\n&amp;quot;
+  socket.print &amp;quot;HTTP/1.1 200 OK\r\n&amp;quot; +
+               &amp;quot;Content-Type: text/plain\r\n&amp;quot; +
+               &amp;quot;Content-Length: #{response.bytesize}\r\n&amp;quot; +
+               &amp;quot;Connection: close\r\n&amp;quot;
+  socket.print &amp;quot;\r\n&amp;quot;
+
+  socket.print response
+  socket.close
+end
+
+That looks a bit complicated, so lets break it down piece by piece.
+require &amp;apos;socket&amp;apos;
+server = TCPServer.new &amp;apos;0.0.0.0&amp;apos;, 3000
+
+First, we use require to import the socket module. TCPServer comes
+from this module, and we use it to create a new Socket server on
+0.0.0.0:3000. This is a plain socket server, meaning that we&amp;apos;re
+going to implement an HTTP response ourselves. Getting our hands dirty!
+loop do
+  socket  = server.accept
+  puts socket.gets
+
+Next up, loop do creates a never ending loop. Each iteration of the
+loop executes until server.accept. This blocks, waiting for connections
+from our TCP Server.
+When your browser connects to the TCP Server, the socket servers returns
+a connection object named socket. From that object, we use gets to
+read a line from the incoming data Stream.
+The incoming stream is what your browser sent to the TCP Server as part
+of it&amp;apos;s request. So with socket.gets you&amp;apos;re simply reading what your
+browser sent. We then take that, and use puts to print it to the STDOUT
+just like in our Hello example above. Note that we&amp;apos;re just printing to
+STDOUT to help us understand when requests are incoming, it is not
+required.
+  response = &amp;quot;Hello World!\n&amp;quot;
+  socket.print &amp;quot;HTTP/1.1 200 OK\r\n&amp;quot; +
+               &amp;quot;Content-Type: text/plain\r\n&amp;quot; +
+               &amp;quot;Content-Length: #{response.bytesize}\r\n&amp;quot; +
+               &amp;quot;Connection: close\r\n&amp;quot;
+  socket.print &amp;quot;\r\n&amp;quot;
+
+Next up, we start building our response. We start by writing &amp;quot;Hello
+World!\n&amp;quot; to the variable response. We then print a series of strings
+to the socket.
+This section can get a little confusing, because it involves returning
+HTTP Headers to the requesting browser. We won&amp;apos;t go into detail of this
+here, but just understand that this is part of the HTTP Spec, that we&amp;apos;re
+manually implementing.
+As part of these headers, we print the Content-Length, which is the
+number of bytes in our response string. After all the headers are done,
+we follow up by adding one more new line, to separate the headers from
+the content we want to print. Again, as part of the HTTP Spec.
+  socket.print response
+  socket.close
+end
+
+Finally, we use that same socket.print method to print our response
+variable. After that&amp;apos;s done, we close the socket.
+But does this work? Open up your Terminal just like before,
+and run it with the following command.
+ruby web.rb
+Once that&amp;apos;s running, open up your browser and connect to the following
+address, replacing username with your Koding Username.
+http://hostname.username.koding.io
+Congratulations, you&amp;apos;re running a Ruby Web server, with a hand made HTTP
+implementation!
+  Installing dependencies with RubyGems This is great and all, but it&amp;apos;s quite the complex way to run a simple web
+server. Lets make this a lot easier with the popular web framework,
+Sinatra.
+To use Sinatra, we need to install it. Run the following command to
+install Sinatra with RubyGems.
+sudo gem install sinatra
+RubyGems is Ruby&amp;apos;s answer to Dependency Management. Similar to NPM and
+PIP, the above command will install Sinatra and all dependencies of that
+library.
+Next up, open your web.rb file again, and replace the entire contents
+with the following code.
+require &amp;apos;rubygems&amp;apos; # This is required because the http://rubygems.org resource is not included automatically for sinatra to boot
+require &amp;apos;sinatra&amp;apos;
+
+set :bind, &amp;apos;0.0.0.0&amp;apos;
+set :port, 3000
+
+get &amp;apos;/&amp;apos; do
+  &amp;quot;Hello World, from Sinatra!&amp;quot;
+end
+
+Now run it just like before, and visit it in your browser. Just like
+that, you have a working Sinatra web server!
+In a following tutorial we&amp;apos;ll dig deeper into Sinatra, but for now check
+out the Official Documentation. And as always, Happy Koding!
+</description>
+  </item>
+  
+  <item>
     <title>How to free up space on a Koding VM</title>
     <link>//learn.koding.com/guides/freeing-up-space</link>
     <pubDate>"2015-02-13T00:00:00.000Z"</pubDate>
@@ -296,83 +435,6 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>How to install GruntJS</title>
-    <link>//learn.koding.com/guides/installing-gruntjs</link>
-    <pubDate>"2015-01-20T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/installing-gruntjs</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install GruntJS using just one command:
-kpm install grunt
-
-  Getting started Before you can start the Memcache install process, you&amp;apos;ll need to update all of the apt-get packages:
-sudo apt-get update
-By default every Koding VM comes preinstalled with NodeJS and npm but if it is missing, from your VM, have a look at this guide to learn how to install it.
-  Installing To install GruntJS you&amp;apos;ll need to run the following command:
-sudo npm install -g grunt-cli
-This will install GruntJS globally on your VM.
-You can verify if GruntJS has installed correctly using the following command:
-grunt --version
-  Usage You can use GruntJS in your project by inputting some basic commands.
-Move into your project:
-cd ~/your_project
-Generate an empty package file:
-echo &amp;quot;{}&amp;quot; &amp;gt; package.json
-Finally, install GruntJS into that project using the following command:
-npm install grunt --save-dev
-And that&amp;apos;s it!
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
-    <title>How to install Redis</title>
-    <link>//learn.koding.com/guides/install-redis</link>
-    <pubDate>"2015-01-20T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/install-redis</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Redis using just one command:
-kpm install redis
-
-  Getting started Before you start the Redis install process, you&amp;apos;ll need to install a few things.
-But first update all of the apt-get packages:
-sudo apt-get update
-You&amp;apos;ll need to download a compiler with build essential which will help you install Redis from the source:
-sudo apt-get install build-essential
-Last but not least download and install tcl:
-sudo apt-get install tcl8.5
-  Step 1 Download the source from the official website.
-wget http://download.redis.io/releases/redis-2.8.19.tar.gz
-Untar it and switch into the newly created directory:
-tar xzf redis-2.8.19.tar.gz
-
-cd redis-2.8.19
-Continue with the make command:
-make
-After that you should run the recommended command:
-make test
-Lastly run make install, which installs the program system-wide.
-sudo make install
-  Step 2 Once Redis has finished installing, you&amp;apos;ll be able to run it as a background daemon because it comes with a built in script that allows you to do that.
-To access the script switch into the utils directory:
-cd utils
-From there, run the Ubuntu install script using the following command:
-sudo ./install_server.sh
-While the script is running, you can choose the default options by pressing enter. Once the script is done, the redis-server will be running in the background.
-You now have access to these commands that can start and stop Redis (the number depends on the port you set during the installation. 6379 is the default port setting):
-sudo service redis_6379 start
-sudo service redis_6379 stop
-  Step 3 You can now access the Redis database by typing the following command:
-redis-cli
-You now have Redis installed and running. The prompt will look like this:
-redis 127.0.0.1:6379&amp;gt;
-If you want to set Redis to automatically start when you boot up your VM, run the next command:
-sudo update-rc.d redis_6379 defaults
-And that&amp;apos;s it!
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
     <title>How to install Memcache</title>
     <link>//learn.koding.com/guides/install-memcache</link>
     <pubDate>"2015-01-20T00:00:00.000Z"</pubDate>
@@ -441,6 +503,83 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
+    <title>How to install Redis</title>
+    <link>//learn.koding.com/guides/install-redis</link>
+    <pubDate>"2015-01-20T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/install-redis</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Redis using just one command:
+kpm install redis
+
+  Getting started Before you start the Redis install process, you&amp;apos;ll need to install a few things.
+But first update all of the apt-get packages:
+sudo apt-get update
+You&amp;apos;ll need to download a compiler with build essential which will help you install Redis from the source:
+sudo apt-get install build-essential
+Last but not least download and install tcl:
+sudo apt-get install tcl8.5
+  Step 1 Download the source from the official website.
+wget http://download.redis.io/releases/redis-2.8.19.tar.gz
+Untar it and switch into the newly created directory:
+tar xzf redis-2.8.19.tar.gz
+
+cd redis-2.8.19
+Continue with the make command:
+make
+After that you should run the recommended command:
+make test
+Lastly run make install, which installs the program system-wide.
+sudo make install
+  Step 2 Once Redis has finished installing, you&amp;apos;ll be able to run it as a background daemon because it comes with a built in script that allows you to do that.
+To access the script switch into the utils directory:
+cd utils
+From there, run the Ubuntu install script using the following command:
+sudo ./install_server.sh
+While the script is running, you can choose the default options by pressing enter. Once the script is done, the redis-server will be running in the background.
+You now have access to these commands that can start and stop Redis (the number depends on the port you set during the installation. 6379 is the default port setting):
+sudo service redis_6379 start
+sudo service redis_6379 stop
+  Step 3 You can now access the Redis database by typing the following command:
+redis-cli
+You now have Redis installed and running. The prompt will look like this:
+redis 127.0.0.1:6379&amp;gt;
+If you want to set Redis to automatically start when you boot up your VM, run the next command:
+sudo update-rc.d redis_6379 defaults
+And that&amp;apos;s it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>How to install GruntJS</title>
+    <link>//learn.koding.com/guides/installing-gruntjs</link>
+    <pubDate>"2015-01-20T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/installing-gruntjs</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install GruntJS using just one command:
+kpm install grunt
+
+  Getting started Before you can start the Memcache install process, you&amp;apos;ll need to update all of the apt-get packages:
+sudo apt-get update
+By default every Koding VM comes preinstalled with NodeJS and npm but if it is missing, from your VM, have a look at this guide to learn how to install it.
+  Installing To install GruntJS you&amp;apos;ll need to run the following command:
+sudo npm install -g grunt-cli
+This will install GruntJS globally on your VM.
+You can verify if GruntJS has installed correctly using the following command:
+grunt --version
+  Usage You can use GruntJS in your project by inputting some basic commands.
+Move into your project:
+cd ~/your_project
+Generate an empty package file:
+echo &amp;quot;{}&amp;quot; &amp;gt; package.json
+Finally, install GruntJS into that project using the following command:
+npm install grunt --save-dev
+And that&amp;apos;s it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
     <title>Install phpPgAdmin</title>
     <link>//learn.koding.com/guides/install-phppgadmin</link>
     <pubDate>"2015-01-19T00:00:00.000Z"</pubDate>
@@ -500,6 +639,32 @@ http://KODING_USERNAME.koding.io/phppgadmin
 
 Find out more about your VM hostname here.
 And that&amp;apos;s it.
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>Using Dropbox with Koding</title>
+    <link>//learn.koding.com/guides/dropbox-for-file-sync</link>
+    <pubDate>"2015-01-15T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/dropbox-for-file-sync</guid>
+    <author>Team Koding</author>
+    <description>In this guide we&amp;apos;ll walk you through how to set up Dropbox right on your Koding VM for a seamless sync experience between your local system and your Koding VM. Dropbox has built a best-in-class file sync and storage service.
+  Getting started Before we begin please make sure you have the Koding Package Manager (KPM) installed on your VM. Follow this guide to understand what KPM is and how to install it so you will be able to continue with this guide.
+Also make sure you have an active Dropbox account (free or paid).
+  Setup Run the following command, in your Koding Terminal, to install the necessary dependency:
+Note: If you already have Dropbox installed via KPM then you need to run kpm uninstall dropbox and then the below command to get the latest version.
+kpm install dropbox
+This will install the Dropbox daemon on your Koding VM, that will make the file sync possible.
+After the install has finished you&amp;apos;ll need to configure the daemon with your Dropbox account. In order to that you&amp;apos;ll need to type this command:
+dropboxd
+Next you&amp;apos;ll see a message similar to this one:
+Please visit https://www.dropbox.com/cli_link_nonce?nonce=A_VERY_LONG_NUMBER to link this device.
+Copy the link and past it in a new tab.
+Sign in to your Dropbox account.
+That&amp;apos;s it! You should see a message in your Terminal similar to this one:
+This computer is now linked to Dropbox. Welcome YOUR_DROPBOX_NAME
+Note: Whenever you turn on Koding VM you will have to run the dropbox start command to get dropbox started.
 If you encounter any issues or have any questions please drop an email here.
 </description>
   </item>
@@ -590,91 +755,6 @@ Good luck with your further Java web development and happy coding!
   </item>
   
   <item>
-    <title>Using Dropbox with Koding</title>
-    <link>//learn.koding.com/guides/dropbox-for-file-sync</link>
-    <pubDate>"2015-01-15T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/dropbox-for-file-sync</guid>
-    <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll walk you through how to set up Dropbox right on your Koding VM for a seamless sync experience between your local system and your Koding VM. Dropbox has built a best-in-class file sync and storage service.
-  Getting started Before we begin please make sure you have the Koding Package Manager (KPM) installed on your VM. Follow this guide to understand what KPM is and how to install it so you will be able to continue with this guide.
-Also make sure you have an active Dropbox account (free or paid).
-  Setup Run the following command, in your Koding Terminal, to install the necessary dependency:
-Note: If you already have Dropbox installed via KPM then you need to run kpm uninstall dropbox and then the below command to get the latest version.
-kpm install dropbox
-This will install the Dropbox daemon on your Koding VM, that will make the file sync possible.
-After the install has finished you&amp;apos;ll need to configure the daemon with your Dropbox account. In order to that you&amp;apos;ll need to type this command:
-dropboxd
-Next you&amp;apos;ll see a message similar to this one:
-Please visit https://www.dropbox.com/cli_link_nonce?nonce=A_VERY_LONG_NUMBER to link this device.
-Copy the link and past it in a new tab.
-Sign in to your Dropbox account.
-That&amp;apos;s it! You should see a message in your Terminal similar to this one:
-This computer is now linked to Dropbox. Welcome YOUR_DROPBOX_NAME
-Note: Whenever you turn on Koding VM you will have to run the dropbox start command to get dropbox started.
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
-    <title>Installing LinuxBrew</title>
-    <link>//learn.koding.com/guides/installing-linuxbrew</link>
-    <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/installing-linuxbrew</guid>
-    <author>Alvin Wan</author>
-    <description>There are a variety of package installers to help with what would otherwise be complex installations. Follow these instructions to install HomeBrew for Linux.
-  The One-Line Solution Input the following in your shell, as Koding already has Ruby pre-installed:
-ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)&amp;quot;
-From here, you&amp;apos;ll be poised for yet more installations. See their website for more information.
-</description>
-  </item>
-  
-  <item>
-    <title>Using mySQL</title>
-    <link>//learn.koding.com/guides/using-mysql</link>
-    <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/using-mysql</guid>
-    <author>Alvin Wan</author>
-    <description>mySQL offers a popular implementation of the SQL language. This guide will get you started on using mySQL on Koding.
-First make sure you have mySQL installed. Have a look at this guide to learn how to install it.
-Are you using PostgreSQL? Have a look at this guide.
-  Starting mySQL Let&amp;apos;s start the mySQL server using the following command:
-sudo service mysql start
-  Getting Started First, you&amp;apos;ll need to login using th root user that was configured during the mySQL installation. Open your Terminal and type in the following:
-mysql -u root p
-Enter your password, and hit enter. You&amp;apos;re now logged in.
-  Creating a User You&amp;apos;ll now create a new account for our code, with the username &amp;quot;bob&amp;quot; and password &amp;quot;pass&amp;quot;.
-create user &amp;apos;bob&amp;apos;@&amp;apos;localhost&amp;apos; identified by &amp;apos;pass&amp;apos;;
-If you see an arrow
--&amp;gt;
-that means you forgot the end semicolon &amp;quot;;&amp;quot;. Enter that and hit enter.
-You can exit the server by using Ctrl+D and then login again as Bob:
-mysql -u bob -p;
-After entering the password, you&amp;apos;ll be readmitted into the mySQL server. To continue with this guide, you&amp;apos;ll need to be logged in as root.
-  Creating a Database Each mySQL server includes a variety of databases. The initial installation comes with several. You can view them by typing:
-show databases;
-You should see a short list of databases:
-+--------------------+
-| Database           |
-+--------------------+
-| information_schema |
-| mysql              |
-| performance_schema |
-+--------------------+
-3 rows in set (0.00 sec)
-Let&amp;apos;s create your first database:
-create database test;
-  Linking Users and Databases You&amp;apos;ll need to grant privileges to the user, so that &amp;quot;Bob&amp;quot; can access the database &amp;quot;test&amp;quot; and modify it accordingly.
-To grant &amp;quot;Bob&amp;quot; all privileges on all tables in database &amp;quot;test&amp;quot;:
-grant all on test.* to &amp;apos;bob&amp;apos;@&amp;apos;localhost&amp;apos;;
-  Using the Database Exit out of root by using Ctrl+D, and login as &amp;quot;Bob&amp;quot;. To connect to a database, prefix the database name with &amp;quot;use&amp;quot;.
-use test;
-Once here, you&amp;#x2019;ll be able to execute mySQL commands. 
-And that&amp;apos;s it!
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
     <title>Making your VM secure using Ubuntu UFW (Uncomplicated Firewall)</title>
     <link>//learn.koding.com/guides/enable-ufw</link>
     <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
@@ -752,6 +832,65 @@ When you hit &amp;quot;y&amp;quot; ufw will backup all existing rules before doi
   Help, I locked myself out of my VM If for some reason you enabled your firewall and did not take the steps needed to open up the ports needed for Koding to work, then
 your only recourse is to reinit your VM. That process is described in this guide. If you 
 encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>Using mySQL</title>
+    <link>//learn.koding.com/guides/using-mysql</link>
+    <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/using-mysql</guid>
+    <author>Alvin Wan</author>
+    <description>mySQL offers a popular implementation of the SQL language. This guide will get you started on using mySQL on Koding.
+First make sure you have mySQL installed. Have a look at this guide to learn how to install it.
+Are you using PostgreSQL? Have a look at this guide.
+  Starting mySQL Let&amp;apos;s start the mySQL server using the following command:
+sudo service mysql start
+  Getting Started First, you&amp;apos;ll need to login using th root user that was configured during the mySQL installation. Open your Terminal and type in the following:
+mysql -u root p
+Enter your password, and hit enter. You&amp;apos;re now logged in.
+  Creating a User You&amp;apos;ll now create a new account for our code, with the username &amp;quot;bob&amp;quot; and password &amp;quot;pass&amp;quot;.
+create user &amp;apos;bob&amp;apos;@&amp;apos;localhost&amp;apos; identified by &amp;apos;pass&amp;apos;;
+If you see an arrow
+-&amp;gt;
+that means you forgot the end semicolon &amp;quot;;&amp;quot;. Enter that and hit enter.
+You can exit the server by using Ctrl+D and then login again as Bob:
+mysql -u bob -p;
+After entering the password, you&amp;apos;ll be readmitted into the mySQL server. To continue with this guide, you&amp;apos;ll need to be logged in as root.
+  Creating a Database Each mySQL server includes a variety of databases. The initial installation comes with several. You can view them by typing:
+show databases;
+You should see a short list of databases:
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
++--------------------+
+3 rows in set (0.00 sec)
+Let&amp;apos;s create your first database:
+create database test;
+  Linking Users and Databases You&amp;apos;ll need to grant privileges to the user, so that &amp;quot;Bob&amp;quot; can access the database &amp;quot;test&amp;quot; and modify it accordingly.
+To grant &amp;quot;Bob&amp;quot; all privileges on all tables in database &amp;quot;test&amp;quot;:
+grant all on test.* to &amp;apos;bob&amp;apos;@&amp;apos;localhost&amp;apos;;
+  Using the Database Exit out of root by using Ctrl+D, and login as &amp;quot;Bob&amp;quot;. To connect to a database, prefix the database name with &amp;quot;use&amp;quot;.
+use test;
+Once here, you&amp;#x2019;ll be able to execute mySQL commands. 
+And that&amp;apos;s it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>Installing LinuxBrew</title>
+    <link>//learn.koding.com/guides/installing-linuxbrew</link>
+    <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/installing-linuxbrew</guid>
+    <author>Alvin Wan</author>
+    <description>There are a variety of package installers to help with what would otherwise be complex installations. Follow these instructions to install HomeBrew for Linux.
+  The One-Line Solution Input the following in your shell, as Koding already has Ruby pre-installed:
+ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)&amp;quot;
+From here, you&amp;apos;ll be poised for yet more installations. See their website for more information.
 </description>
   </item>
   
@@ -1505,38 +1644,6 @@ guide.
   </item>
   
   <item>
-    <title>Getting Started: File Uploads</title>
-    <link>//learn.koding.com/guides/getting-started/file-upload</link>
-    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/file-upload</guid>
-    <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll take a look at uploading your files and projects to
-Koding, in multiple ways. Lets get started!
-  Uploading with Drag and Drop The simplest way, is simply by using Drag and Drop file upload! To do
-this, open your Koding IDE, locate your FileTree on the left hand
-side, and drag a file from your Desktop onto the FileTree. An example
-image is below.
-
-After you let go of the file, your file will be uploaded to your
-~/Uploads directory.
-  Uploading with FTP FTP is another common way to upload files to your VM. Before uploading
-with FTP though, you&amp;apos;ll need to set up an FTP Server on your VM.
-The FTP Guide will take you through both the installation, and
-connecting process, so check it out!
-  Uploading with SCP SCP is is a tool that will copy files from your local Unix filesystem
-to a remote filesystem over SSH connections. To use it, make sure you
-have SSH setup with your Koding VM beforehand. Instructions can be found
-here if needed.
-After that, use the following command to copy a local file to your VM.
-scp LOCAL_FILE USERNAME.koding.io:REMOTE_FILE
-Replace LOCAL_FILE with your local file location, USERNAME with your
-Koding Username, and REMOTE_FILE with your Remote File location. An
-example of this command can be seen below.
-scp ~/my_image.png joshmurray.koding.io:~/my_image.png
-</description>
-  </item>
-  
-  <item>
     <title>Installing MongoDB</title>
     <link>//learn.koding.com/guides/install-mongodb</link>
     <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
@@ -1615,6 +1722,38 @@ curl -sSL https://get.docker.com/ubuntu/ | sudo sh
 If you made it to this point you can run this command to check if Docker is indeed installed and works properly:
 sudo docker run -i -t ubuntu /bin/bash
 If you have any question or issues please email us at support@koding.com and we&amp;apos;ll gladly help.
+</description>
+  </item>
+  
+  <item>
+    <title>Getting Started: File Uploads</title>
+    <link>//learn.koding.com/guides/getting-started/file-upload</link>
+    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/file-upload</guid>
+    <author>Team Koding</author>
+    <description>In this guide we&amp;apos;ll take a look at uploading your files and projects to
+Koding, in multiple ways. Lets get started!
+  Uploading with Drag and Drop The simplest way, is simply by using Drag and Drop file upload! To do
+this, open your Koding IDE, locate your FileTree on the left hand
+side, and drag a file from your Desktop onto the FileTree. An example
+image is below.
+
+After you let go of the file, your file will be uploaded to your
+~/Uploads directory.
+  Uploading with FTP FTP is another common way to upload files to your VM. Before uploading
+with FTP though, you&amp;apos;ll need to set up an FTP Server on your VM.
+The FTP Guide will take you through both the installation, and
+connecting process, so check it out!
+  Uploading with SCP SCP is is a tool that will copy files from your local Unix filesystem
+to a remote filesystem over SSH connections. To use it, make sure you
+have SSH setup with your Koding VM beforehand. Instructions can be found
+here if needed.
+After that, use the following command to copy a local file to your VM.
+scp LOCAL_FILE USERNAME.koding.io:REMOTE_FILE
+Replace LOCAL_FILE with your local file location, USERNAME with your
+Koding Username, and REMOTE_FILE with your Remote File location. An
+example of this command can be seen below.
+scp ~/my_image.png joshmurray.koding.io:~/my_image.png
 </description>
   </item>
   
@@ -2170,138 +2309,6 @@ not using an Always-On VM.
 If however your VM is Always-On, an IP should work, as long as your VM is 
 not shutdown. For more information on Always-On VMs, see the Pricing 
 Page.
-</description>
-  </item>
-  
-  <item>
-    <title>Getting Started with Ruby</title>
-    <link>//learn.koding.com/guides/getting-started-ruby</link>
-    <pubDate>"2014-08-20T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-ruby</guid>
-    <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll explain what Ruby is, and how to write a simple web 
-server using the built in Socket library. So, lets get started!
-  What is Ruby Ruby is a popular, general purpose, high level programing language. It 
-focuses on readability programmer enjoyment over raw performance. Koding 
-VMs come pre-installed with Ruby and RubyGem, making it super easy to get 
-started. Lets see what it looks like to run some Ruby code!
-  Running your first Ruby script Open up your Ace Editor and create a new file named hello.rb.Paste in the following code into that file.
-puts &amp;quot;Hello from Ruby!&amp;quot;
-
-The puts name is a function which takes a string and prints it to the 
-Standard Output (STDOUT) of the process. Lets try running this file and 
-see the output, but first save the file with Ctrl-s. Now, open up 
-your Terminal and type in the following command.
-ruby hello.rb
-You should see output similar to this:
-joshmurray: ~ $ ruby hello.rb
-Hello from Ruby!
-joshmurray: ~ $
-Neat! Now that we know how to run some code, lets look at a real example 
-of some Ruby code.
-  Your first Ruby web server Just like before, create a new file named web.rb, and paste in the 
-following code.
-require &amp;apos;socket&amp;apos;
-
-server = TCPServer.new &amp;apos;0.0.0.0&amp;apos;, 3000
-
-loop do
-  socket  = server.accept
-  request = socket.gets
-  puts request
-
-  response = &amp;quot;Hello World!\n&amp;quot;
-  socket.print &amp;quot;HTTP/1.1 200 OK\r\n&amp;quot; +
-               &amp;quot;Content-Type: text/plain\r\n&amp;quot; +
-               &amp;quot;Content-Length: #{response.bytesize}\r\n&amp;quot; +
-               &amp;quot;Connection: close\r\n&amp;quot;
-  socket.print &amp;quot;\r\n&amp;quot;
-
-  socket.print response
-  socket.close
-end
-
-That looks a bit complicated, so lets break it down piece by piece.
-require &amp;apos;socket&amp;apos;
-server = TCPServer.new &amp;apos;0.0.0.0&amp;apos;, 3000
-
-First, we use require to import the socket module. TCPServer comes 
-from this module, and we use it to create a new Socket server on 
-0.0.0.0:3000. This is a plain socket server, meaning that we&amp;apos;re 
-going to implement an HTTP response ourselves. Getting our hands dirty!
-loop do
-  socket  = server.accept
-  puts socket.gets
-
-Next up, loop do creates a never ending loop. Each iteration of the 
-loop executes until server.accept. This blocks, waiting for connections 
-from our TCP Server.
-When your browser connects to the TCP Server, the socket servers returns 
-a connection object named socket. From that object, we use gets to 
-read a line from the incoming data Stream.
-The incoming stream is what your browser sent to the TCP Server as part 
-of it&amp;apos;s request. So with socket.gets you&amp;apos;re simply reading what your 
-browser sent. We then take that, and use puts to print it to the STDOUT 
-just like in our Hello example above. Note that we&amp;apos;re just printing to 
-STDOUT to help us understand when requests are incoming, it is not 
-required.
-  response = &amp;quot;Hello World!\n&amp;quot;
-  socket.print &amp;quot;HTTP/1.1 200 OK\r\n&amp;quot; +
-               &amp;quot;Content-Type: text/plain\r\n&amp;quot; +
-               &amp;quot;Content-Length: #{response.bytesize}\r\n&amp;quot; +
-               &amp;quot;Connection: close\r\n&amp;quot;
-  socket.print &amp;quot;\r\n&amp;quot;
-
-Next up, we start building our response. We start by writing &amp;quot;Hello 
-World!\n&amp;quot; to the variable response. We then print a series of strings 
-to the socket.
-This section can get a little confusing, because it involves returning 
-HTTP Headers to the requesting browser. We won&amp;apos;t go into detail of this 
-here, but just understand that this is part of the HTTP Spec, that we&amp;apos;re 
-manually implementing.
-As part of these headers, we print the Content-Length, which is the 
-number of bytes in our response string. After all the headers are done, 
-we follow up by adding one more new line, to separate the headers from 
-the content we want to print. Again, as part of the HTTP Spec.
-  socket.print response
-  socket.close
-end
-
-Finally, we use that same socket.print method to print our response 
-variable. After that&amp;apos;s done, we close the socket.
-But does this work? Open up your Terminal just like before, 
-and run it with the following command.
-ruby web.rb
-Once that&amp;apos;s running, open up your browser and connect to the following 
-address, replacing username with your Koding Username.
-http://hostname.username.koding.io
-Congratulations, you&amp;apos;re running a Ruby Web server, with a hand made HTTP 
-implementation!
-  Installing dependencies with RubyGems This is great and all, but it&amp;apos;s quite the complex way to run a simple web 
-server. Lets make this a lot easier with the popular web framework, 
-Sinatra.
-To use Sinatra, we need to install it. Run the following command to 
-install Sinatra with RubyGems.
-sudo gem install sinatra
-RubyGems is Ruby&amp;apos;s answer to Dependency Management. Similar to NPM and 
-PIP, the above command will install Sinatra and all dependencies of that 
-library.
-Next up, open your web.rb file again, and replace the entire contents 
-with the following code.
-require &amp;apos;rubygems&amp;apos; # This is required because the http://rubygems.org resource is not included automatically for sinatra to boot
-require &amp;apos;sinatra&amp;apos;
-
-set :bind, &amp;apos;0.0.0.0&amp;apos;
-set :port, 3000
-
-get &amp;apos;/&amp;apos; do
-  &amp;quot;Hello World, from Sinatra!&amp;quot;
-end
-
-Now run it just like before, and visit it in your browser. Just like 
-that, you have a working Sinatra web server!
-In a following tutorial we&amp;apos;ll dig deeper into Sinatra, but for now check 
-out the Official Documentation. And as always, Happy Koding!
 </description>
   </item>
   

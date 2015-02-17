@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://learn.koding.com/guides/getting-started-ruby</loc>
+    <lastmod>2016-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
     <loc>http://learn.koding.com/guides/freeing-up-space</loc>
     <lastmod>2015-02-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -38,18 +44,6 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/installing-gruntjs</loc>
-    <lastmod>2015-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://learn.koding.com/guides/install-redis</loc>
-    <lastmod>2015-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
     <loc>http://learn.koding.com/guides/install-memcache</loc>
     <lastmod>2015-01-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -62,14 +56,20 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/install-phppgadmin</loc>
-    <lastmod>2015-01-19</lastmod>
+    <loc>http://learn.koding.com/guides/install-redis</loc>
+    <lastmod>2015-01-20</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/getting-started-jsp-maven</loc>
-    <lastmod>2015-01-15</lastmod>
+    <loc>http://learn.koding.com/guides/installing-gruntjs</loc>
+    <lastmod>2015-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://learn.koding.com/guides/install-phppgadmin</loc>
+    <lastmod>2015-01-19</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
@@ -80,7 +80,13 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/installing-linuxbrew</loc>
+    <loc>http://learn.koding.com/guides/getting-started-jsp-maven</loc>
+    <lastmod>2015-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://learn.koding.com/guides/enable-ufw</loc>
     <lastmod>2015-01-08</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -92,7 +98,7 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/enable-ufw</loc>
+    <loc>http://learn.koding.com/guides/installing-linuxbrew</loc>
     <lastmod>2015-01-08</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -188,12 +194,6 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/getting-started/file-upload</loc>
-    <lastmod>2014-10-17</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
     <loc>http://learn.koding.com/guides/install-mongodb</loc>
     <lastmod>2014-10-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -201,6 +201,12 @@
   
   <url>
     <loc>http://learn.koding.com/guides/what-is-docker</loc>
+    <lastmod>2014-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://learn.koding.com/guides/getting-started/file-upload</loc>
     <lastmod>2014-10-17</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -280,12 +286,6 @@
   <url>
     <loc>http://learn.koding.com/guides/domains</loc>
     <lastmod>2014-09-02</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://learn.koding.com/guides/getting-started-ruby</loc>
-    <lastmod>2014-08-20</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   

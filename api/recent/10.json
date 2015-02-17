@@ -1,5 +1,11 @@
 [
   {
+    "title": "Getting Started with Ruby",
+    "url": "http://learn.koding.com/guides/getting-started-ruby/index.html",
+    "author": "Team Koding",
+    "date": "2016-06-02T00:00:00.000Z"
+  },
+  {
     "title": "How to free up space on a Koding VM",
     "url": "http://learn.koding.com/guides/freeing-up-space/index.html",
     "author": "Team Koding",
@@ -36,20 +42,14 @@
     "date": "2015-01-27T00:00:00.000Z"
   },
   {
-    "title": "How to install Redis",
-    "url": "http://learn.koding.com/guides/install-redis/index.html",
-    "author": "Team Koding",
-    "date": "2015-01-20T00:00:00.000Z"
-  },
-  {
-    "title": "CouchDB installation for beginners",
-    "url": "http://learn.koding.com/guides/couchdb-installation-for-beginners/index.html",
-    "author": "Team Koding",
-    "date": "2015-01-20T00:00:00.000Z"
-  },
-  {
     "title": "How to install Memcache",
     "url": "http://learn.koding.com/guides/install-memcache/index.html",
+    "author": "Team Koding",
+    "date": "2015-01-20T00:00:00.000Z"
+  },
+  {
+    "title": "How to install Redis",
+    "url": "http://learn.koding.com/guides/install-redis/index.html",
     "author": "Team Koding",
     "date": "2015-01-20T00:00:00.000Z"
   },
