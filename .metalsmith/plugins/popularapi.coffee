@@ -16,9 +16,14 @@
 #
 # TODO: Unify recentapi & popular api codebases
 #
+path      = require 'path'
 google    = require 'googleapis'
 analytics = google.analytics 'v3'
-secrets   = require("../secret_config.json").analytics
+
+
+
+# Load secrets from the home directory
+secrets = require(path.join "/", process.env.USER, ".kdlearn", "secret_config.json").analytics
 
 
 # Create a new file in the files object.
@@ -53,7 +58,7 @@ sortByKey = (sortKey) -> (a,b) ->
 queryAnalytics = (opts={}, callback) ->
   authClient = new google.auth.JWT(
     secrets.email,
-    secrets["key-file"],
+    path.join("/", process.env.USER, ".kdlearn", secrets["key-file"]),
     secrets.key,
     ['https://www.googleapis.com/auth/analytics.readonly']
   )
