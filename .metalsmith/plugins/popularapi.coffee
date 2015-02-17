@@ -65,7 +65,7 @@ queryAnalytics = (opts={}, callback) ->
 
   authClient.authorize (err, tokens) ->
     # Bail on any errors
-    if err? then return throw err
+    if err? then return callback err, tokens
 
     analytics.data.ga.get
       auth: authClient
@@ -75,10 +75,10 @@ queryAnalytics = (opts={}, callback) ->
       "metrics":"ga:pageViews",
       "dimensions":"ga:pagePath",
       "sort":"-ga:pageViews",
-      "max-results":"100"
+      "max-results":"25"
       (err, result) ->
-        if err? then return throw err
-        callback result.rows ? []
+        if err? then return callback err, result, tokens
+        callback null, result.rows ? []
 
 
 # Query Google Analytics for Page Views and add the
@@ -88,7 +88,12 @@ addPageViews = (files, opts={}, callback) ->
     callback = opts
     opts = {}
 
-  queryAnalytics null, (rows) ->
+  queryAnalytics null, (err, rows) ->
+    if err?
+      console.log "[Warning] Google Authorization Failed!"
+      console.log "[Warning] Auth Debug:", arguments
+      return callback err, rows
+
     # Convery rows to an object (key/value) for easy lookup
     pageViews = {}
     for row in rows
@@ -109,7 +114,7 @@ addPageViews = (files, opts={}, callback) ->
         #delete pageViews[filename]
       else
         file.pageViews = 0
-    callback()
+    callback null
 
 
 addApiFiles = (files, metalsmith, opts={}, callback) ->
@@ -165,6 +170,7 @@ module.exports = (opts={}) ->
     {tags} = metadata
     guides = metadata.collections.guide ? []
 
-    addPageViews files, null, ->
-      addApiFiles files, metalsmith, opts, done
+    addPageViews files, null, (err) ->
+      if err? then return done()
+      addApiFiles files, metalsmith, opts, -> done()
 
