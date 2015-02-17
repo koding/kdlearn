@@ -413,7 +413,7 @@ nav {
   }
 	.container {
         padding: 20px 0;
-    
+
         &:after {
           content: " ";
           display: table;
@@ -722,7 +722,7 @@ section {
           font-size: 26px;
           padding-left: 56px;
           margin-bottom: 50px;
- 
+
            span {
             display: inline-block;
              background: url(/img/sprite.png) -2px -62px;
@@ -1051,7 +1051,7 @@ body > .page {
         color: inherit;
       }
     }
-  } 
+  }
 
   > .title {
     margin-bottom: 15px;
@@ -1713,7 +1713,7 @@ footer.main-footer .cclicense img {
 .back-to-top {
     margin: 0;
     position: fixed;
-    bottom: 0;
+    bottom: 135px;
     right: 0;
     width: 70px;
     height: 70px;
