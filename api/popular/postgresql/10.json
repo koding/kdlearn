@@ -6,15 +6,15 @@
     "date": "2015-01-19T00:00:00.000Z"
   },
   {
-    "title": "Using PostgreSQL",
-    "url": "http://learn.koding.com/guides/postgresql-on-koding/index.html",
-    "author": "Federico Ponzi",
-    "date": "2014-04-07T00:00:00.000Z"
-  },
-  {
     "title": "Installing PostgreSQL",
     "url": "http://learn.koding.com/guides/installing-postgresql/index.html",
     "author": "Koding Team",
     "date": "2014-10-22T00:00:00.000Z"
+  },
+  {
+    "title": "Using PostgreSQL",
+    "url": "http://learn.koding.com/guides/postgresql-on-koding/index.html",
+    "author": "Federico Ponzi",
+    "date": "2014-04-07T00:00:00.000Z"
   }
 ]
