@@ -23,7 +23,7 @@ analytics = google.analytics 'v3'
 
 
 # Load secrets from the home directory
-secrets = require(path.join "/", process.env.USER, ".kdlearn", "secret_config.json").analytics
+secrets = require(path.join process.env.HOME, ".kdlearn", "secret_config.json").analytics
 
 
 # Create a new file in the files object.
@@ -58,7 +58,7 @@ sortByKey = (sortKey) -> (a,b) ->
 queryAnalytics = (opts={}, callback) ->
   authClient = new google.auth.JWT(
     secrets.email,
-    path.join("/", process.env.USER, ".kdlearn", secrets["key-file"]),
+    path.join(process.env.HOME, ".kdlearn", secrets["key-file"]),
     secrets.key,
     ['https://www.googleapis.com/auth/analytics.readonly']
   )
