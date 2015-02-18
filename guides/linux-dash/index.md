@@ -14,8 +14,8 @@ Koding. Lets get started!
 
 ## Installation
 
-To install dash on we simply need download linux-dash from source, and then 
-place it into an Apache directory. To do this, run the following 
+To install Linux Dash we simply need download the source and then 
+place it into the Apache directory. To do this, run the following 
 commands. Note, you can simply copy the entire group of commands and 
 paste it into your Terminal. They will execute sequentially.
 
@@ -26,7 +26,7 @@ rm master.zip
 mv linux-dash-master ~/Web/dash
 ```
 
-That's it! Dash uses PHP, which means there is no traditional 
+That's it! Linux Dash uses PHP, which means there is no traditional 
 installation process. We only need a few things, all of which Koding 
 comes with by default!
 
