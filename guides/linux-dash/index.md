@@ -14,8 +14,8 @@ Koding. Lets get started!
 
 ## Installation
 
-To install Linux Dash we simply need download the source and then 
-place it into the Apache directory. To do this, run the following 
+To install Linux Dash we simply need to download the source and then 
+place it into the Web folder. To do this, run the following 
 commands. Note, you can simply copy the entire group of commands and 
 paste it into your Terminal. They will execute sequentially.
 
@@ -47,8 +47,5 @@ similar to the following image.
 ![Linux Dash](https://raw.githubusercontent.com/afaqurk/screenshots/master/linux-dash/system-status-full.png)
 
 That's all there is to it! Enjoy!
-
-
-
 
 [dash]: linuxdash.com

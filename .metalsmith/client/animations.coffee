@@ -76,6 +76,12 @@ setupMenuAnimations = ->
 setupBackTopAnimations = ->
     offset = 250
     duration = 300
+    t = $('#').offset().top
+    $(document).scroll ->
+      if $(this).scrollTop() > t
+        $('#voice2').css 'border-bottom': '2px solid #f4f5f8'
+        $('#voice3').css 'border-bottom': '2px solid #2e375b'
+      return
     jQuery(window).scroll ->
       if jQuery(this).scrollTop() > offset
         jQuery('.back-to-top').fadeIn duration
