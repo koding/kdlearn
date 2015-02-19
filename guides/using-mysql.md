@@ -27,7 +27,7 @@ sudo service mysql start
 First, you'll need to login using th root user that was configured during the mySQL installation. Open your [Terminal](https://koding.com/Terminal) and type in the following:
 
 ```
-mysql -u root p
+mysql -u root -p
 ```
 
 Enter your password, and hit enter. You're now logged in.
