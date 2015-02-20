@@ -14,6 +14,59 @@ Before you continue reading this guide why not try a more easy way, using the [K
 kpm install tomcat
 ```
 
+#Make the setup below
+
+Create this links:
+```
+curl -sSL learn.koding.com/kpm.sh | sh
+kpm install tomcat
+ln -s /etc/tomcat7 usrtomcat
+ls -l
+ln -s /usr/share/tomcat7 tomcat
+ls -l
+sudo mkdir tomcat/temp
+sudo mkdir tomcat/logs
+
+```
+Edit the users at tomcat server:
+```
+cd usrtomcat
+sudo nano tomcat-users.xml  
+```
+Replace the file to look like below:
+```
+<?xml version='1.0' encoding='utf-8'?>
+<tomcat-users>
+<role rolename="admin"/>
+<role rolename="manager"/>
+<role rolename="role1"/>
+<role rolename="manager-gui"/>
+<role rolename="admin-gui"/>
+<role rolename="manager-status"/>
+<user username="tomcat" password="tomcat" roles="admin,manager,admin-gui,manager-gui,manager-status,role1" />
+</tomcat-users>
+```
+Edit server config at:
+```
+sudo nano server.xml
+```
+Edit the file to fit the port to 8084 in the node like below:
+```
+<Connector port="8084" protocol="HTTP/1.1"                                                                                   
+               connectionTimeout="20000"                                                                                         
+               URIEncoding="UTF-8"
+               redirectPort="8443" />
+```
+At last execute:
+```
+sudo bash tomcat/bin/startup.sh
+```
+Access: 
+http://your_koding_domain.koding.io:8084/manager/html/list
+
+more information in:
+http://tomcat.apache.org/tomcat-7.0-doc/manager-howto.html
+
 ***
 
 In this guide we'll take a look on how to deploy Java Web Applications on [Apache Tomcat](http://tomcat.apache.org/) Server running on your [Koding](https://koding.com) Virtual Machine.
