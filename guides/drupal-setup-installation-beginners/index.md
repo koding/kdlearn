@@ -7,6 +7,14 @@ categories: [drupal, php]
 
 # Drupal Setup and Installation for Beginners
 
+Before you continue reading this guide why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install Drupal using just one command:
+
+```
+kpm install drupa
+```
+
+***
+
 This article will cover the basic steps on how to setup a blog using 
 Drupal.
 
