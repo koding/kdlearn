@@ -2868,7 +2868,10 @@ contribution!
     <pubDate>"2014-04-07T00:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/postgresql-on-koding</guid>
     <author>Federico Ponzi</author>
-    <description>PostgreSQL is an open source relational database management system that 
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install PostgreSQL using just one command:
+kpm install postgresql
+
+PostgreSQL is an open source relational database management system that 
 provides an implementation of the SQL query language. In this guide, 
 we&amp;apos;ll go over using PostgreSQL on your Koding VM. Lets get started!
   Starting PostgreSQL Before we gets started, start your PostgreSQL server with the following 
