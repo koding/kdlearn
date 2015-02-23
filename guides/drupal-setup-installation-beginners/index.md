@@ -10,7 +10,7 @@ categories: [drupal, php]
 Before you continue reading this guide why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install Drupal using just one command:
 
 ```
-kpm install drupa
+kpm install drupal
 ```
 
 ***
