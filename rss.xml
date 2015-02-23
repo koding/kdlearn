@@ -1653,7 +1653,7 @@ Enjoy your new theme!
     <link>//learn.koding.com/guides/installing-postgresql</link>
     <pubDate>"2014-10-22T00:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/installing-postgresql</guid>
-    <author>Koding Team</author>
+    <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install PostgreSQL using just one command:
 kpm install postgresql
 
