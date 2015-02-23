@@ -6,13 +6,6 @@ categories: [postgresql, sql]
 
 # Using PostgreSQL
 
-Before you continue reading this guide why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install PostgreSQL using just one command:
-
-```
-kpm install postgresql
-```
-
-***
 
 PostgreSQL is an open source relational database management system that 
 provides an implementation of the SQL query language. In this guide, 
