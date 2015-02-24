@@ -1725,7 +1725,10 @@ A developer that uses Docker can run his / hers app anywhere without the fear of
 Apps that are built using Docker are completely portable and can run anywhere.
   Docker apps Anyone can get started with Docker by checking out one of the 13,000+ apps that are available in the Docker Hub. You can get started working on WordPress or a new nodejs project in just a few seconds without the hassle of having to install any other dependencies (other then Docker of course) on your Koding VM.
   Benefits The difference between a virtualized application and the Docker Engine container is that the first one includes not only the app and the necessary binaries and libraries but it contains the guest OS as well. The later runs as an separate process on the OS and thus it has the resources separation and allocation of a VM but is much more portable.
-  Installing Docker on Koding The version of Ubuntu that is installed on each Koding VM comes with a docker.io package and it should install Docker 0.9.1. 
+  Installing Docker on Koding Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Docker using just one command:
+kpm install docker
+
+The version of Ubuntu that is installed on each Koding VM comes with a docker.io package and it should install Docker 0.9.1. 
 We can install Docker on our Koding VM using the following commands:
 
 We update the package list
