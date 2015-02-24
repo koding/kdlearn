@@ -24,6 +24,14 @@ The difference between a virtualized application and the Docker Engine container
 
 ## Installing Docker on Koding
 
+Before you continue reading this section why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install Docker using just one command:
+
+```
+kpm install docker
+```
+
+***
+
 The version of Ubuntu that is installed on each Koding VM comes with a `docker.io` package and it should install Docker 0.9.1. 
 We can install Docker on our Koding VM using the following commands:
 
