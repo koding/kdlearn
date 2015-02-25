@@ -2362,27 +2362,30 @@ Page.
     <pubDate>"2014-08-15T00:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/linux-dash</guid>
     <author>Team Koding</author>
-    <description>Linux Dash is a low-overhead monitoring web dashboard for a GNU/Linux 
-machine. With a dead-simple installation and easy to view information, it 
-can make viewing an overview of your Linux system a beginner friendly 
-endevour. In this guide we&amp;apos;ll go over this two step install process on 
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Linux Dash using just one command:
+kpm install linux-dash
+
+Linux Dash is a low-overhead monitoring web dashboard for a GNU/Linux
+machine. With a dead-simple installation and easy to view information, it
+can make viewing an overview of your Linux system a beginner friendly
+endevour. In this guide we&amp;apos;ll go over this two step install process on
 Koding. Lets get started!
-  Installation To install Linux Dash we simply need to download the source and then 
-place it into the Web folder. To do this, run the following 
-commands. Note, you can simply copy the entire group of commands and 
+  Installation To install Linux Dash we simply need to download the source and then
+place it into the Web folder. To do this, run the following
+commands. Note, you can simply copy the entire group of commands and
 paste it into your Terminal. They will execute sequentially.
 wget https://github.com/afaqurk/linux-dash/archive/master.zip
 unzip master.zip
 rm master.zip
 mv linux-dash-master ~/Web/dash
-That&amp;apos;s it! Linux Dash uses PHP, which means there is no traditional 
-installation process. We only need a few things, all of which Koding 
+That&amp;apos;s it! Linux Dash uses PHP, which means there is no traditional
+installation process. We only need a few things, all of which Koding
 comes with by default!
 Linux Dash also supports NodeJS and Go in the same copy of the source. You can find instructions for those alternative server languages here.
-  Dashboard To access your dashboard, visit your Koding Domain, which will look like 
+  Dashboard To access your dashboard, visit your Koding Domain, which will look like
 the following address.
 http://hostname.username.koding.io/dash
-Where username is your Koding Username. You will see a Dashboard, 
+Where username is your Koding Username. You will see a Dashboard,
 similar to the following image.
 
 That&amp;apos;s all there is to it! Enjoy!
@@ -3033,19 +3036,22 @@ prepend your list items with a number, instead of a hyphen. Example:
     <pubDate>"2014-04-09T00:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/prestashop-installation-for-beginners</guid>
     <author>Team Koding</author>
-    <description>In this article we&amp;#x2019;ll go over the basics of setting up PrestaShop.
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Prestashop using just one command:
+kpm install prestashop
+
+In this article we&amp;#x2019;ll go over the basics of setting up PrestaShop.
   About PrestaShop A lot of retail stores these days are turning to online shops. It gives them a different power over the products they are selling and in the era of smart gadgets, consumers can now buy almost anything online.
 There are a lot of e-commerce solutions, but a there is one that stands out, PrestaShop. You may have heard of it, because it&amp;apos;s all over the news. It&amp;apos;s one of the most reliable and flexible Open-source e-commerce software out there and with a team of 70 developers and with a community that has more than 500.000 members, it sure is a platform worth developing for.
 Luckily you can do that on Koding with ease. So how do you setup a PrestaShop shop on Koding? You just follow the next few simple steps and you&amp;apos;re good to go.
-  Setting up PrestaShop   Step 1. Open up a Terminal window in Koding and type the following commands to get you started. We navigate to our Web folder and then we try to get the latest version of PrestaShop available on their website. In this case PrestaShop 1.6.0.9 
-cd Web; 
-wget http://www.prestashop.com/download/prestashop_1.6.0.9.zip;
-  Step 2. We unzip the file. 
-unzip prestashop_1.6.0.9.zip
-  Step 3. We can now head over to the setup page and begin the installation 
-procedure. Our link is: 
+  Setting up PrestaShop   Step 1. Open up a Terminal window in Koding and type the following commands to get you started. We navigate to our Web folder and then we try to get the latest version of PrestaShop available on their website. In this case PrestaShop 1.6.0.13
+cd Web;
+wget http://www.prestashop.com/download/prestashop_1.6.0.13.zip;
+  Step 2. We unzip the file.
+unzip prestashop_1.6.0.13.zip
+  Step 3. We can now head over to the setup page and begin the installation
+procedure. Our link is:
 http://[your_vm_hostname].[your_Koding_username].koding.io/prestashop
-All we have to do now is to fill in the required fields to set up the 
+All we have to do now is to fill in the required fields to set up the
 shop.
 And that&amp;apos;s it, three simple steps to set up your e-commerce solution. As always, more Quick Tips and beginner friendly guides from Koding coming soon, so stay tuned!
 </description>
