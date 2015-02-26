@@ -122,14 +122,20 @@
   </url>
   
   <url>
+    <loc>http://learn.koding.com/guides/getting-started-jsp-maven</loc>
+    <lastmod>2015-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
     <loc>http://learn.koding.com/guides/dropbox-for-file-sync</loc>
     <lastmod>2015-01-15</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/getting-started-jsp-maven</loc>
-    <lastmod>2015-01-15</lastmod>
+    <loc>http://learn.koding.com/guides/installing-linuxbrew</loc>
+    <lastmod>2015-01-08</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
@@ -141,12 +147,6 @@
   
   <url>
     <loc>http://learn.koding.com/guides/enable-ufw</loc>
-    <lastmod>2015-01-08</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://learn.koding.com/guides/installing-linuxbrew</loc>
     <lastmod>2015-01-08</lastmod>
     <changefreq>monthly</changefreq>
   </url>

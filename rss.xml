@@ -982,32 +982,6 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Using Dropbox with Koding</title>
-    <link>//learn.koding.com/guides/dropbox-for-file-sync</link>
-    <pubDate>"2015-01-15T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/dropbox-for-file-sync</guid>
-    <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll walk you through how to set up Dropbox right on your Koding VM for a seamless sync experience between your local system and your Koding VM. Dropbox has built a best-in-class file sync and storage service.
-  Getting started Before we begin please make sure you have the Koding Package Manager (KPM) installed on your VM. Follow this guide to understand what KPM is and how to install it so you will be able to continue with this guide.
-Also make sure you have an active Dropbox account (free or paid).
-  Setup Run the following command, in your Koding Terminal, to install the necessary dependency:
-Note: If you already have Dropbox installed via KPM then you need to run kpm uninstall dropbox and then the below command to get the latest version.
-kpm install dropbox
-This will install the Dropbox daemon on your Koding VM, that will make the file sync possible.
-After the install has finished you&amp;apos;ll need to configure the daemon with your Dropbox account. In order to that you&amp;apos;ll need to type this command:
-dropboxd
-Next you&amp;apos;ll see a message similar to this one:
-Please visit https://www.dropbox.com/cli_link_nonce?nonce=A_VERY_LONG_NUMBER to link this device.
-Copy the link and past it in a new tab.
-Sign in to your Dropbox account.
-That&amp;apos;s it! You should see a message in your Terminal similar to this one:
-This computer is now linked to Dropbox. Welcome YOUR_DROPBOX_NAME
-Note: Whenever you turn on Koding VM you will have to run the dropbox start command to get dropbox started.
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
     <title>Getting Started with JSP and Maven</title>
     <link>//learn.koding.com/guides/getting-started-jsp-maven</link>
     <pubDate>"2015-01-15T00:00:00.000Z"</pubDate>
@@ -1089,6 +1063,45 @@ The following example is a great way to dynamically load content that you may re
 Congrats! You have made a simple web app using Java (JSP), Maven, Tomcat, and your Koding VM. JSP is a great primer for simple web apps and a great introduction into learning about the Java Web tier.
 The Java web tier development has moved towards utilizing Facelets over JSP for creating views since Java EE 6, but JSP is still utilized in programs today. 
 Good luck with your further Java web development and happy coding! 
+</description>
+  </item>
+  
+  <item>
+    <title>Using Dropbox with Koding</title>
+    <link>//learn.koding.com/guides/dropbox-for-file-sync</link>
+    <pubDate>"2015-01-15T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/dropbox-for-file-sync</guid>
+    <author>Team Koding</author>
+    <description>In this guide we&amp;apos;ll walk you through how to set up Dropbox right on your Koding VM for a seamless sync experience between your local system and your Koding VM. Dropbox has built a best-in-class file sync and storage service.
+  Getting started Before we begin please make sure you have the Koding Package Manager (KPM) installed on your VM. Follow this guide to understand what KPM is and how to install it so you will be able to continue with this guide.
+Also make sure you have an active Dropbox account (free or paid).
+  Setup Run the following command, in your Koding Terminal, to install the necessary dependency:
+Note: If you already have Dropbox installed via KPM then you need to run kpm uninstall dropbox and then the below command to get the latest version.
+kpm install dropbox
+This will install the Dropbox daemon on your Koding VM, that will make the file sync possible.
+After the install has finished you&amp;apos;ll need to configure the daemon with your Dropbox account. In order to that you&amp;apos;ll need to type this command:
+dropboxd
+Next you&amp;apos;ll see a message similar to this one:
+Please visit https://www.dropbox.com/cli_link_nonce?nonce=A_VERY_LONG_NUMBER to link this device.
+Copy the link and past it in a new tab.
+Sign in to your Dropbox account.
+That&amp;apos;s it! You should see a message in your Terminal similar to this one:
+This computer is now linked to Dropbox. Welcome YOUR_DROPBOX_NAME
+Note: Whenever you turn on Koding VM you will have to run the dropbox start command to get dropbox started.
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>Installing LinuxBrew</title>
+    <link>//learn.koding.com/guides/installing-linuxbrew</link>
+    <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/installing-linuxbrew</guid>
+    <author>Alvin Wan</author>
+    <description>There are a variety of package installers to help with what would otherwise be complex installations. Follow these instructions to install HomeBrew for Linux.
+  The One-Line Solution Input the following in your shell, as Koding already has Ruby pre-installed:
+ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)&amp;quot;
+From here, you&amp;apos;ll be poised for yet more installations. See their website for more information.
 </description>
   </item>
   
@@ -1216,19 +1229,6 @@ When you hit &amp;quot;y&amp;quot; ufw will backup all existing rules before doi
   Help, I locked myself out of my VM If for some reason you enabled your firewall and did not take the steps needed to open up the ports needed for Koding to work, then
 your only recourse is to reinit your VM. That process is described in this guide. If you 
 encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
-    <title>Installing LinuxBrew</title>
-    <link>//learn.koding.com/guides/installing-linuxbrew</link>
-    <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/installing-linuxbrew</guid>
-    <author>Alvin Wan</author>
-    <description>There are a variety of package installers to help with what would otherwise be complex installations. Follow these instructions to install HomeBrew for Linux.
-  The One-Line Solution Input the following in your shell, as Koding already has Ruby pre-installed:
-ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)&amp;quot;
-From here, you&amp;apos;ll be poised for yet more installations. See their website for more information.
 </description>
   </item>
   
@@ -5152,7 +5152,7 @@ Wating for a few minutes and then entering CTRL-ALT-T will yield a new terminal 
     <guid isPermaLink="true">//learn.koding.com/faq/transfer-files</guid>
     <author></author>
     <description>  I want to copy a few files Getting a few files to your Koding VM is simple and there are a variety of methods. We&amp;apos;ve put together a short video titled Importing your files in the Video&amp;apos;s section of Koding University. Check that out for a simple drag-drop method to upload a few files.
-  I want to copy or download a large number of files To copy several files, we prepared a number of guides that can help you. Head over to our file transfer category and chose one of the methods that you think best suits your needs.
+  I want to copy or download a large number of files To copy several files, we prepared a number of guides that can help you. Head over to our file transfer category and choose one of the methods that you think best suits your needs.
   I want to download my files If you want an easier way to download your files follow this steps:
 Select multiple files in the IDE (you can use CTRL/CMD + left click) and then click on the little arrow.
 
