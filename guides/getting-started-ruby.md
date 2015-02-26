@@ -21,7 +21,7 @@ started. Lets see what it looks like to run some Ruby code!
 You can install Ruby rather easily, using the bellow command:
 
 ```
-\curl -sSL https://get.rvm.io | bash -s stable --rails
+curl -sSL https://get.rvm.io | bash -s stable --rails
 ```
 
 During the installation you will prompted to input your root password.
