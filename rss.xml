@@ -5031,18 +5031,6 @@ Requests for new guides can be sent here
   </item>
   
   <item>
-    <title>Can I change my Koding username?</title>
-    <link>//learn.koding.com/faq/change-username</link>
-    <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/change-username</guid>
-    <author></author>
-    <description>In short no. Why...? It&amp;apos;s because when you first create your account we provision a lot of support services in the background for your account and all of these would need to get updated. This becomes problematic if you have made changes to your VM (even if you have created one file). If you really want to change your username, the only option is to delete your current account and make a new one with the desired username.
-But ... you can however , change your display name as seen associated with your the bulletin board posts. Just browse to https://koding.com/Account/Profile where you may change &amp;quot;Name&amp;quot; and/or &amp;quot;LastName&amp;quot; as you would like them to appear to other koding users wherever you chat on koding. This quite niftily has the side-effect of changing your nick on all of you past postings instantaneously. Note that this feature does not in any way allow you to be anonymous. Anyone who clicks on your chat nick (whatever it may be at the time) will always see your canonical username in the URL of your profile.
-So to be clear , you may change your display name at any time but this does not affect your login username or VM URL. As stated above that is your system UID and can not be changed.
-</description>
-  </item>
-  
-  <item>
     <title>Should I use my VM's IP or Address?</title>
     <link>//learn.koding.com/faq/vm-ip-vs-address</link>
     <pubDate></pubDate>
@@ -5067,6 +5055,18 @@ If you have trouble finding your VM Address, click here.
     <author></author>
     <description>You do not have to contact Koding support if you wish to delete your account. Simply head over to Account Settings from where you can easily initiate the deletion process.
 It would help us immensly if you can take the quick 3 question survey right after the deletion process ends. It will help us understand why we lost you and how we can improve.
+</description>
+  </item>
+  
+  <item>
+    <title>Can I change my Koding username?</title>
+    <link>//learn.koding.com/faq/change-username</link>
+    <pubDate></pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/change-username</guid>
+    <author></author>
+    <description>In short no. Why...? It&amp;apos;s because when you first create your account we provision a lot of support services in the background for your account and all of these would need to get updated. This becomes problematic if you have made changes to your VM (even if you have created one file). If you really want to change your username, the only option is to delete your current account and make a new one with the desired username.
+But ... you can however , change your display name as seen associated with your the bulletin board posts. Just browse to https://koding.com/Account/Profile where you may change &amp;quot;Name&amp;quot; and/or &amp;quot;LastName&amp;quot; as you would like them to appear to other koding users wherever you chat on koding. This quite niftily has the side-effect of changing your nick on all of you past postings instantaneously. Note that this feature does not in any way allow you to be anonymous. Anyone who clicks on your chat nick (whatever it may be at the time) will always see your canonical username in the URL of your profile.
+So to be clear , you may change your display name at any time but this does not affect your login username or VM URL. As stated above that is your system UID and can not be changed.
 </description>
   </item>
   
@@ -5103,8 +5103,7 @@ Once you initiate a reinit, you will see appropriate messages on the screen as y
     <pubDate></pubDate>
     <guid isPermaLink="true">//learn.koding.com/faq/sudo-password</guid>
     <author></author>
-    <description>By default, there is no sudo password on your Koding VM. It is blank/empty which means that if you want to use sudo, all
-you need to do is as follows:
+    <description>By default, there is no sudo password on your Koding VM. It is blank/empty which means that if you want to use sudo, all you need to do is as follows:
 sudo &amp;lt;command you wish to use&amp;gt;
 When you hit enter, the sudo level command you wish to run without a password prompt.
 </description>
@@ -5117,8 +5116,7 @@ When you hit enter, the sudo level command you wish to run without a password pr
     <guid isPermaLink="true">//learn.koding.com/faq/open-ports</guid>
     <author></author>
     <description>Most Unix ports are available on Koding VMs. We do not block any TCP traffic
-(inbound or outbound). See the following list for 
-open ports, as well as ports in use by default.
+(inbound or outbound). See the following list for open ports, as well as ports in use by default.
 
 Ports 2 through 65,534 are open.
 Port 80 is taken by Apache, but this can be turned off to free up the port. To turn
@@ -5144,6 +5142,24 @@ kodingvm: ~ $     (/dev/pts/4) at 23:11 ...
 
 The system is going down for reboot NOW!
 Wating for a few minutes and then entering CTRL-ALT-T will yield a new terminal in your freshly rebooted machine.
+</description>
+  </item>
+  
+  <item>
+    <title>How do I transfer/copy files to and from my VM?</title>
+    <link>//learn.koding.com/faq/transfer-files</link>
+    <pubDate></pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/transfer-files</guid>
+    <author></author>
+    <description>  I want to copy a few files Getting a few files to your Koding VM is simple and there are a variety of methods. We&amp;apos;ve put together a short video titled Importing your files in the Video&amp;apos;s section of Koding University. Check that out for a simple drag-drop method to upload a few files.
+  I want to copy or download a large number of files To copy several files, we prepared a number of guides that can help you. Head over to our file transfer category and chose one of the methods that you think best suits your needs.
+  I want to download my files If you want an easier way to download your files follow this steps:
+Select multiple files in the IDE (you can use CTRL/CMD + left click) and then click on the little arrow.
+
+After that select the Compress option and the type of archive you want to create.
+The last step you need to do it to place the archive into the Web folder and then just access the a similar URL:
+http://KODING_USERNAME.koding.io/&amp;lt;path/name of the archive&amp;gt;
+Find out more about your VM hostname here.
 </description>
   </item>
   
@@ -5182,32 +5198,18 @@ deleting a sub-domain is as easy as adding one!
   </item>
   
   <item>
-    <title>How do I transfer/copy files to my VM?</title>
-    <link>//learn.koding.com/faq/transfer-files</link>
-    <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/transfer-files</guid>
-    <author></author>
-    <description>  I want to copy a few files Getting a few files to your Koding VM is simple and there are a variety of methods. We&amp;apos;ve put together a short video titled Importing your files in the Video&amp;apos;s section of Koding University. Check that out for a simple drag-drop method to upload a few files.
-  I want to copy a large number of files To copy several files, use FTP. To set up FTP on your VM, simply open up Terminal and type in
-help ftp
-
-</description>
-  </item>
-  
-  <item>
     <title>MySQL Socket Error 2002</title>
     <link>//learn.koding.com/faq/mysql-socket-error-2002</link>
     <pubDate></pubDate>
     <guid isPermaLink="true">//learn.koding.com/faq/mysql-socket-error-2002</guid>
     <author></author>
-    <description>If you try to use MySQL and receive an error that looks similar to the 
+    <description>If you try to use MySQL and receive an error that looks similar to the
 following:
-ERROR 2002 (HY000): Can&amp;apos;t connect to local MySQL server through socket 
+ERROR 2002 (HY000): Can&amp;apos;t connect to local MySQL server through socket
 &amp;apos;/var/run/mysqld/mysqld.sock&amp;apos;
 First, make sure MySQL is installed and running on your VM. To install
 MySQL, follow this installation guide.
-Once you have confirmed that MySQL is installed, start it by running the following 
-command:
+Once you have confirmed that MySQL is installed, start it by running the following command:
 sudo service mysql start
 This should get rid of the Socket Error 2002 error.
 If not, send us an email at support@koding.com and we can troubleshoot for you.
