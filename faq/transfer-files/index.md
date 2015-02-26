@@ -7,7 +7,7 @@ importance: 5
 Getting a few files to your Koding VM is simple and there are a variety of methods. We've put together a short video titled [Importing your files](/videos) in the Video's section of Koding University. Check that out for a simple drag-drop method to upload a few files.
 
 ### I want to copy or download a large number of files
-To copy several files, we prepared a number of guides that can help you. Head over to our [file transfer category](/categories/file-transfer) and chose one of the methods that you think best suits your needs.
+To copy several files, we prepared a number of guides that can help you. Head over to our [file transfer category](/categories/file-transfer) and choose one of the methods that you think best suits your needs.
 
 ### I want to download my files
 If you want an easier way to download your files follow this steps:
