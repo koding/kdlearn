@@ -26,10 +26,11 @@ image is below.
 
 After you let go of the file, your file will be uploaded to your
 `~/Uploads` directory. If `~/Uploads` does not exist, it will be automatically
-created. (Note: files uploaded this way are not automatically available for
+created.
+[Note: files uploaded this way are not automatically available for
 serving over your VMs web server as the `~/Uploads` directory is not inside
 `~/Web` (the default web root for Koding VMs). If you wish to use any uploaded
-files in your web project, please move them to a directory under `~/Web`.
+files in your web project, please move them to a directory under `~/Web`.]
 
 ## Uploading with FTP
 
