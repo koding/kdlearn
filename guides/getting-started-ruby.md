@@ -1,6 +1,6 @@
 ---
 author: Team Koding
-date: 2015-18-02
+date: 2015-02-18
 categories: [ruby]
 ---
 
