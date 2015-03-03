@@ -49,7 +49,7 @@ int main()
 
 The int is what is called the return value (in this case of the type integer). Every C program must have a `main()` function since this is the starting point.
 
-````
+```
 {}
 ```
 

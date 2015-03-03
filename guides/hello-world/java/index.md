@@ -55,7 +55,7 @@ The main method has to have this exact signature in order to be able to run your
 
 The arguments inside the method are the arguments that you will get when running the program with parameters. It's an array of strings.
 
-````
+```
 {}
 ```
 
