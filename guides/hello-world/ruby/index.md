@@ -1,4 +1,5 @@
 ---
+draft: true
 title: Ruby
 author: Team Koding
 date: 2015-03-03
