@@ -3,13 +3,20 @@ title: Octopress Installation for Beginners
 author: Team Koding
 date: 2014-04-13
 categories: [octopress, markdown]
-
 template: page.toffee
 ---
 
 # Octopress Installation for Beginners
 
-In this article we'll go over the basics of setting up Octopress.
+Before you continue reading this guide why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install Octopress using just one command:
+
+```
+kpm install octopress
+```
+
+***
+
+In this guide we'll go over the basics of setting up Octopress.
 
 ## What is Octopress?
 
@@ -25,14 +32,14 @@ With [Koding](https://koding.com) this is not the issue. Koding enables the "loc
 
 ## Tutorial Steps
 
-1.) First, we want to get ahold of the Octopress code base. Open your [Terminal](https://koding.com/Develop/Terminal) and run the following two commands to clone Octopress, and navigate into the directory.
+First, we want to get a hold of the Octopress code base. Open your [Terminal](https://koding.com/Develop/Terminal) and run the following two commands to clone Octopress, and navigate into the directory.
 
 ```
-git clone git://github.com/imathis/octopress.git octopress 
+git clone git://github.com/imathis/octopress.git octopress
 cd octopress
 ```
 
-2.) Next, we need to install some dependencies for Octopress. Run the following commands, which will install Bundle, then use Bundle to install the Octopress dependencies. Lastly, we use `rake` to set up some directories and initialize our project.
+Next, we need to install some dependencies for Octopress. Run the following commands, which will install Bundle, then use Bundle to install the Octopress dependencies. Lastly, we use `rake` to set up some directories and initialize our project.
 
 ```
 sudo gem install bundle
@@ -40,19 +47,22 @@ bundle install
 rake install
 ```
 
-3.) That's it for Octopress! But how do we view it? To view it, we need to compile the html and expose that to Apache _(our web server)_. To do this, run the following commands which will generate the html, then symlink our compiled directory as our main Web directory.
+That's it for Octopress! But how do we view it? To view it, we need to compile the html and expose that to Apache _(our web server)_. To do this, run the following commands which will generate the html, then symlink our compiled directory as our main Web directory.
 
 ```
-rake generate 
-mv ~/Web ~/Web.bkp 
+rake generate
+mv ~/Web ~/Web.bkp
 ln -s ~/octopress/public ~/Web
 ```
 
-4.) Now open up `http://hostname.username.koding.io` and view your hard 
-work!
+You will now be able to access the Octopress by following a similar URL:
 
-## All in the browser
+```
+http://KODING_USERNAME.koding.io
+```
 
-As always, with [Koding](https://koding.com), this process was entirely in the browser. No localhost modifications needed, and no worries about installing something incorrectly and mucking up your OS. There is no localhost hassle with Koding!
+Find out more about your VM hostname [here](http://learn.koding.com/faq/vm-hostname/).
 
-This has been a getting started tutorial from [Koding](https://koding.com), with more coming soon. Stay tuned!
+And that's it!
+
+If you encounter any issues or have any questions please drop an email [here](mailto:support@koding.com).
