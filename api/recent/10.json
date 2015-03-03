@@ -1,19 +1,49 @@
 [
   {
+    "title": "Hello World on Koding: PHP",
+    "url": "http://learn.koding.com/guides/hello-world/php/index.html",
+    "author": "Team Koding",
+    "date": "2015-03-03T00:00:00.000Z"
+  },
+  {
+    "title": "Hello World on Koding: Perl",
+    "url": "http://learn.koding.com/guides/hello-world/perl/index.html",
+    "author": "Team Koding",
+    "date": "2015-03-03T00:00:00.000Z"
+  },
+  {
+    "title": "Hello World on Koding: C++",
+    "url": "http://learn.koding.com/guides/hello-world/c++/index.html",
+    "author": "Team Koding",
+    "date": "2015-03-03T00:00:00.000Z"
+  },
+  {
+    "title": "Hello World on Koding: C",
+    "url": "http://learn.koding.com/guides/hello-world/c/index.html",
+    "author": "Team Koding",
+    "date": "2015-03-03T00:00:00.000Z"
+  },
+  {
+    "title": "Hello World on Koding",
+    "url": "http://learn.koding.com/guides/hello-world/index.html",
+    "author": "Team Koding",
+    "date": "2015-03-03T00:00:00.000Z"
+  },
+  {
+    "title": "Hello World on Koding: Java",
+    "url": "http://learn.koding.com/guides/hello-world/java/index.html",
+    "author": "Team Koding",
+    "date": "2015-03-03T00:00:00.000Z"
+  },
+  {
     "title": "VNC Startup Guide",
     "url": "http://learn.koding.com/guides/vnc-startup-guide/index.html",
     "author": "Kaitlyn Schmidt",
     "date": "2015-03-01T00:00:00.000Z"
   },
   {
-    "title": "Setting up a Tornado webserver",
-    "url": "http://learn.koding.com/guides/setting-tornado-webserver/index.html",
-    "author": "Team Koding",
-    "date": "2015-02-26T00:00:00.000Z"
-  },
-  {
-    "title": "Setting up a Django webserver",
-    "url": "http://learn.koding.com/guides/setting-django-webserver/index.html",
+    "title": "Setting up a Rails webserver",
+    "url": "http://learn.koding.com/guides/setting-rails-webserver/index.html",
     "author": "Team Koding",
     "date": "2015-02-26T00:00:00.000Z"
   },
@@ -24,39 +54,9 @@
     "date": "2015-02-26T00:00:00.000Z"
   },
   {
-    "title": "Setting up a MeteorJS webserver",
-    "url": "http://learn.koding.com/guides/setting-meteorjs-webserver/index.html",
+    "title": "Setting up a Tornado webserver",
+    "url": "http://learn.koding.com/guides/setting-tornado-webserver/index.html",
     "author": "Team Koding",
     "date": "2015-02-26T00:00:00.000Z"
-  },
-  {
-    "title": "Setting up a Symfony2 webserver",
-    "url": "http://learn.koding.com/guides/setting-symfony2-webserver/index.html",
-    "author": "Team Koding",
-    "date": "2015-02-26T00:00:00.000Z"
-  },
-  {
-    "title": "Setting up a Rails webserver",
-    "url": "http://learn.koding.com/guides/setting-rails-webserver/index.html",
-    "author": "Team Koding",
-    "date": "2015-02-26T00:00:00.000Z"
-  },
-  {
-    "title": "Understanding file permissions",
-    "url": "http://learn.koding.com/guides/understanding-file-permissions/index.html",
-    "author": "Team Koding",
-    "date": "2015-02-25T00:00:00.000Z"
-  },
-  {
-    "title": "Setup Cockpit on Koding",
-    "url": "http://learn.koding.com/guides/setting-up-cockpit/index.html",
-    "author": "Team Koding",
-    "date": "2015-02-18T00:00:00.000Z"
-  },
-  {
-    "title": "Getting Started with Ruby",
-    "url": "http://learn.koding.com/guides/getting-started-ruby/index.html",
-    "author": "Team Koding",
-    "date": "2015-02-18T00:00:00.000Z"
   }
 ]

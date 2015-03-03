@@ -1,5 +1,41 @@
 [
   {
+    "title": "Hello World on Koding: PHP",
+    "url": "http://learn.koding.com/guides/hello-world/php/index.html",
+    "author": "Team Koding",
+    "date": "2015-03-03T00:00:00.000Z"
+  },
+  {
+    "title": "Hello World on Koding: Perl",
+    "url": "http://learn.koding.com/guides/hello-world/perl/index.html",
+    "author": "Team Koding",
+    "date": "2015-03-03T00:00:00.000Z"
+  },
+  {
+    "title": "Hello World on Koding: C++",
+    "url": "http://learn.koding.com/guides/hello-world/c++/index.html",
+    "author": "Team Koding",
+    "date": "2015-03-03T00:00:00.000Z"
+  },
+  {
+    "title": "Hello World on Koding: C",
+    "url": "http://learn.koding.com/guides/hello-world/c/index.html",
+    "author": "Team Koding",
+    "date": "2015-03-03T00:00:00.000Z"
+  },
+  {
+    "title": "Hello World on Koding",
+    "url": "http://learn.koding.com/guides/hello-world/index.html",
+    "author": "Team Koding",
+    "date": "2015-03-03T00:00:00.000Z"
+  },
+  {
+    "title": "Hello World on Koding: Java",
+    "url": "http://learn.koding.com/guides/hello-world/java/index.html",
+    "author": "Team Koding",
+    "date": "2015-03-03T00:00:00.000Z"
+  },
+  {
     "title": "Understanding file permissions",
     "url": "http://learn.koding.com/guides/understanding-file-permissions/index.html",
     "author": "Team Koding",
@@ -22,41 +58,5 @@
     "url": "http://learn.koding.com/guides/enable-ufw/index.html",
     "author": "Team Koding",
     "date": "2015-01-08T00:00:00.000Z"
-  },
-  {
-    "title": "Using mySQL",
-    "url": "http://learn.koding.com/guides/using-mysql/index.html",
-    "author": "Alvin Wan",
-    "date": "2015-01-08T00:00:00.000Z"
-  },
-  {
-    "title": "Updating the OS (and other packages) your VM",
-    "url": "http://learn.koding.com/guides/upgrading-your-vm/index.html",
-    "author": "Team Koding",
-    "date": "2014-12-21T00:00:00.000Z"
-  },
-  {
-    "title": "How can I do real-time collaboration on Koding?",
-    "url": "http://learn.koding.com/guides/collaboration/index.html",
-    "author": "Team Koding",
-    "date": "2014-12-05T00:00:00.000Z"
-  },
-  {
-    "title": "Using Github with Koding",
-    "url": "http://learn.koding.com/guides/using-github/index.html",
-    "author": "Team Koding",
-    "date": "2014-12-04T00:00:00.000Z"
-  },
-  {
-    "title": "How to change your command shell",
-    "url": "http://learn.koding.com/guides/change-shell/index.html",
-    "author": "Team Koding",
-    "date": "2014-11-19T00:00:00.000Z"
-  },
-  {
-    "title": "Getting started with the Koding Package Manager",
-    "url": "http://learn.koding.com/guides/getting-started-kpm/index.html",
-    "author": "Team Koding",
-    "date": "2014-11-17T00:00:00.000Z"
   }
 ]
