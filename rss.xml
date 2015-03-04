@@ -18,6 +18,83 @@
   <language>en</language>
   
   <item>
+    <title>Hello World on Koding: Ruby</title>
+    <link>//learn.koding.com/guides/hello-world/ruby</link>
+    <pubDate>"2015-03-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/ruby</guid>
+    <author>Team Koding</author>
+    <description>  Introduction Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, and Lisp. It supports multiple programming paradigms, including functional, object-oriented, and imperative. It also has a dynamic type system and automatic memory management.
+  Implementation The first thing you need to do is to create a file called helloworld.rb in your Koding VM and paste the bellow snippet into it.
+#!/usr/bin/ruby
+
+puts &amp;apos;Hello, world!&amp;apos;
+To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
+ruby helloworld.rb
+  Explanation #!/usr/bin/ruby
+The shebang line is read by the program loader to determine what program to use to run the script. This line cannot be preceded by any blank lines or any leading spaces.
+puts &amp;apos;Hello, world!&amp;apos;
+The above line is pretty self explanatory. It will put something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
+And that&amp;apos;s it!
+You just wrote and ran your first Hello World in Ruby.
+</description>
+  </item>
+  
+  <item>
+    <title>Hello World on Koding: Python</title>
+    <link>//learn.koding.com/guides/hello-world/python</link>
+    <pubDate>"2015-03-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/python</guid>
+    <author>Team Koding</author>
+    <description>  Introduction Python is a widely used general-purpose, high-level programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java. The language provides constructs intended to enable clear programs on both a small and large scale.
+  Implementation The first thing you need to do is to create a file called helloworld.py in your Koding VM and paste the bellow snippet into it.
+print &amp;quot;Hello World!&amp;quot;
+To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
+python helloworld.py
+  Explanation print &amp;quot;Hello World!&amp;quot;
+Since Python emphasizes code readability, the above line is pretty self explanatory. It will print out something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
+And that&amp;apos;s it!
+You just wrote and ran your first Hello World in Python.
+</description>
+  </item>
+  
+  <item>
+    <title>Hello World on Koding: Go</title>
+    <link>//learn.koding.com/guides/hello-world/go</link>
+    <pubDate>"2015-03-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/go</guid>
+    <author>Team Koding</author>
+    <description>  Introduction Go or golang is a statically-typed language with syntax loosely derived from C, that adds garbage collection, type safety, some dynamic-typing capabilities, additional built-in types such as variable-length arrays and key-value maps, and a large standard library.
+  Implementation The first thing you need to do is to create a file called helloworld.go in your Koding VM and paste the bellow snippet into it.
+package main
+
+import &amp;quot;fmt&amp;quot;
+
+func main() {
+    fmt.Println(&amp;quot;Hello World!&amp;quot;)
+}
+To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
+go run helloworld.go
+Or you can build the program into a binary. You can do this using the bellow command:
+go build helloworld.go
+And you can then execute the built binary directly.
+./hello-world
+  Explanation package main
+This is known as a &amp;#x201C;package declaration&amp;#x201D;. Every Go program must start with a package declaration. There are two types of Go programs: executables and libraries. Executable applications are the kinds of programs that you can run directly from the terminal.
+import &amp;quot;fmt&amp;quot;
+The import keyword is how you include code from other packages to use with you program. The fmt package (shorthand for format) implements formatting for input and output.
+func main()
+Functions are the building blocks of a Go program. They have inputs, outputs and a series of steps called statements which are executed in order. All functions start with the keyword func followed by the name of the function (main in this case), a list of zero or more &amp;#x201C;parameters&amp;#x201D; surrounded by parentheses, an optional return type and a &amp;#x201C;body&amp;#x201D; which is surrounded by curly braces.
+{}
+The two curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
+group or function.
+fmt.Println(&amp;quot;Hello World&amp;quot;)
+This statement is made of three pieces. First you access another function inside of the fmt package called Println (that&amp;apos;s the fmt.Println piece, Println means Print Line). Then you create a new string that contains Hello World and call that function with the string as the first and only argument.
+And that&amp;apos;s it!
+You just wrote and ran your first Hello World in Go.
+</description>
+  </item>
+  
+  <item>
     <title>Hello World on Koding: PHP</title>
     <link>//learn.koding.com/guides/hello-world/php</link>
     <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
@@ -327,28 +404,31 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Setting up a Rails webserver</title>
-    <link>//learn.koding.com/guides/setting-rails-webserver</link>
+    <title>Setting up a Symfony2 webserver</title>
+    <link>//learn.koding.com/guides/setting-symfony2-webserver</link>
     <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-rails-webserver</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-symfony2-webserver</guid>
     <author>Team Koding</author>
-    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Rails using just one command:
-kpm install rails
-
-  Getting started Before you can start the Rails install process, you&amp;apos;ll need to update all of the apt-get packages:
+    <description>  Getting started Before you can start the Symfony2 install process, you&amp;apos;ll need to update all of the apt-get packages:
 sudo apt-get update
-Then make sure you have Ruby installed on your VM. You can install it by following this guide.
-  Installing You can install Rails using the bellow command:
-sudo gem install rails
-  Usage Creating a Rails project is really easy. It just takes one command and you&amp;apos;re good to go:
-rails new goodbyetolocalhost
+Then make sure you have curl installed on your VM. You can install it using the bellow command:
+sudo apt-get install curl
+Also you&amp;apos;ll have to have Composer installed on your VM. You can install it either manually or using the Koding Package Manager (kpm).
+Run the following commands to download, move and give right permissions to Composer:
+curl -sS https://getcomposer.org/installer | php #!/usr/bin/env php
+sudo mv composer.phar /usr/local/bin/composer
+chmod +x /usr/local/bin/composer
+or you can just run
+kpm install composer
+  Usage Create a new project to test your webserver and move into that project:
+composer create-project symfony/framework-standard-edition goodbyetolocalhost
 cd goodbyetolocalhost
-You can run the Rails webserver like so:
-rails server
-You will now be able to access the Rails webserver by following a similar URL:
-http://KODING_USERNAME.koding.io:3000
+You can now start the Symfony2 webserver like so:
+php app/console server:run 0.0.0.0:8080
+You will now be able to access the Symfony2 webserver by following a similar URL:
+http://KODING_USERNAME.koding.io:8080
 Find out more about your VM hostname here.
-Rails should listen to 0.0.0.0:3000 by default. If you can&amp;apos;t reach your project via the browser you have to make sure it listens to 0.0.0.0:3000. You can check this, using the netstat command in another terminal window and the bellow command:
+If you can&amp;apos;t reach your project via the browser you have to make sure it listens to 0.0.0.0:8080. You can check this, using the netstat command in another terminal window and the bellow command:
 sudo netstat -tnlp
 And that&amp;apos;s it!
 If you encounter any issues or have any questions please drop an email here.
@@ -386,36 +466,6 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Setting up a MeteorJS webserver</title>
-    <link>//learn.koding.com/guides/setting-meteorjs-webserver</link>
-    <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-meteorjs-webserver</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install MeteorJS using just one command:
-kpm install meteor
-
-  Getting started Before you can start the MeteorJS install process, you&amp;apos;ll need to update all of the apt-get packages:
-sudo apt-get update
-Then make sure you have curl installed on your VM. You can install it using the bellow command:
-sudo apt-get install curl
-  Installing You can install MeteorJS using the bellow command:
-curl https://install.meteor.com/ | sh
-  Usage Creating a new MeteorJS project is really easy. It just takes one command and you&amp;apos;re good to go:
-meteor create goodbyelocalhost
-You can run that project like so:
-cd goodbyelocalhost
-meteor
-You will now be able to access the MeteorJS webserver by following a similar URL:
-http://KODING_USERNAME.koding.io:3000
-Find out more about your VM hostname here.
-MeteorJS should listen to 0.0.0.0:3000 by default. If you can&amp;apos;t reach your project via the browser you have to make sure it listens to 0.0.0.0:3000. You can check this, using the netstat command in another terminal window and the bellow command:
-sudo netstat -tnlp
-And that&amp;apos;s it!
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
     <title>Setting up a Laravel webserver with Artisan</title>
     <link>//learn.koding.com/guides/setting-laravel-artisan-webserver</link>
     <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
@@ -442,6 +492,36 @@ You will now be able to access the Laravel webserver by following a similar URL:
 http://KODING_USERNAME.koding.io:8080
 Find out more about your VM hostname here.
 If you can&amp;apos;t reach your project via the browser you have to make sure it listens to 0.0.0.0:8080. You can check this, using the netstat command in another terminal window and the bellow command:
+sudo netstat -tnlp
+And that&amp;apos;s it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>Setting up a MeteorJS webserver</title>
+    <link>//learn.koding.com/guides/setting-meteorjs-webserver</link>
+    <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-meteorjs-webserver</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install MeteorJS using just one command:
+kpm install meteor
+
+  Getting started Before you can start the MeteorJS install process, you&amp;apos;ll need to update all of the apt-get packages:
+sudo apt-get update
+Then make sure you have curl installed on your VM. You can install it using the bellow command:
+sudo apt-get install curl
+  Installing You can install MeteorJS using the bellow command:
+curl https://install.meteor.com/ | sh
+  Usage Creating a new MeteorJS project is really easy. It just takes one command and you&amp;apos;re good to go:
+meteor create goodbyelocalhost
+You can run that project like so:
+cd goodbyelocalhost
+meteor
+You will now be able to access the MeteorJS webserver by following a similar URL:
+http://KODING_USERNAME.koding.io:3000
+Find out more about your VM hostname here.
+MeteorJS should listen to 0.0.0.0:3000 by default. If you can&amp;apos;t reach your project via the browser you have to make sure it listens to 0.0.0.0:3000. You can check this, using the netstat command in another terminal window and the bellow command:
 sudo netstat -tnlp
 And that&amp;apos;s it!
 If you encounter any issues or have any questions please drop an email here.
@@ -488,31 +568,28 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Setting up a Symfony2 webserver</title>
-    <link>//learn.koding.com/guides/setting-symfony2-webserver</link>
+    <title>Setting up a Rails webserver</title>
+    <link>//learn.koding.com/guides/setting-rails-webserver</link>
     <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-symfony2-webserver</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-rails-webserver</guid>
     <author>Team Koding</author>
-    <description>  Getting started Before you can start the Symfony2 install process, you&amp;apos;ll need to update all of the apt-get packages:
+    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Rails using just one command:
+kpm install rails
+
+  Getting started Before you can start the Rails install process, you&amp;apos;ll need to update all of the apt-get packages:
 sudo apt-get update
-Then make sure you have curl installed on your VM. You can install it using the bellow command:
-sudo apt-get install curl
-Also you&amp;apos;ll have to have Composer installed on your VM. You can install it either manually or using the Koding Package Manager (kpm).
-Run the following commands to download, move and give right permissions to Composer:
-curl -sS https://getcomposer.org/installer | php #!/usr/bin/env php
-sudo mv composer.phar /usr/local/bin/composer
-chmod +x /usr/local/bin/composer
-or you can just run
-kpm install composer
-  Usage Create a new project to test your webserver and move into that project:
-composer create-project symfony/framework-standard-edition goodbyetolocalhost
+Then make sure you have Ruby installed on your VM. You can install it by following this guide.
+  Installing You can install Rails using the bellow command:
+sudo gem install rails
+  Usage Creating a Rails project is really easy. It just takes one command and you&amp;apos;re good to go:
+rails new goodbyetolocalhost
 cd goodbyetolocalhost
-You can now start the Symfony2 webserver like so:
-php app/console server:run 0.0.0.0:8080
-You will now be able to access the Symfony2 webserver by following a similar URL:
-http://KODING_USERNAME.koding.io:8080
+You can run the Rails webserver like so:
+rails server
+You will now be able to access the Rails webserver by following a similar URL:
+http://KODING_USERNAME.koding.io:3000
 Find out more about your VM hostname here.
-If you can&amp;apos;t reach your project via the browser you have to make sure it listens to 0.0.0.0:8080. You can check this, using the netstat command in another terminal window and the bellow command:
+Rails should listen to 0.0.0.0:3000 by default. If you can&amp;apos;t reach your project via the browser you have to make sure it listens to 0.0.0.0:3000. You can check this, using the netstat command in another terminal window and the bellow command:
 sudo netstat -tnlp
 And that&amp;apos;s it!
 If you encounter any issues or have any questions please drop an email here.
@@ -1082,6 +1159,35 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
+    <title>How to install GruntJS</title>
+    <link>//learn.koding.com/guides/installing-gruntjs</link>
+    <pubDate>"2015-01-20T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/installing-gruntjs</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install GruntJS using just one command:
+kpm install grunt
+
+  Getting started Before you can start the Memcache install process, you&amp;apos;ll need to update all of the apt-get packages:
+sudo apt-get update
+By default every Koding VM comes preinstalled with NodeJS and npm but if it is missing, from your VM, have a look at this guide to learn how to install it.
+  Installing To install GruntJS you&amp;apos;ll need to run the following command:
+sudo npm install -g grunt-cli
+This will install GruntJS globally on your VM.
+You can verify if GruntJS has installed correctly using the following command:
+grunt --version
+  Usage You can use GruntJS in your project by inputting some basic commands.
+Move into your project:
+cd ~/your_project
+Generate an empty package file:
+echo &amp;quot;{}&amp;quot; &amp;gt; package.json
+Finally, install GruntJS into that project using the following command:
+npm install grunt --save-dev
+And that&amp;apos;s it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
     <title>CouchDB installation for beginners</title>
     <link>//learn.koding.com/guides/couchdb-installation-for-beginners</link>
     <pubDate>"2015-01-20T00:00:00.000Z"</pubDate>
@@ -1153,35 +1259,6 @@ You now have Redis installed and running. The prompt will look like this:
 redis 127.0.0.1:6379&amp;gt;
 If you want to set Redis to automatically start when you boot up your VM, run the next command:
 sudo update-rc.d redis_6379 defaults
-And that&amp;apos;s it!
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
-    <title>How to install GruntJS</title>
-    <link>//learn.koding.com/guides/installing-gruntjs</link>
-    <pubDate>"2015-01-20T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/installing-gruntjs</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install GruntJS using just one command:
-kpm install grunt
-
-  Getting started Before you can start the Memcache install process, you&amp;apos;ll need to update all of the apt-get packages:
-sudo apt-get update
-By default every Koding VM comes preinstalled with NodeJS and npm but if it is missing, from your VM, have a look at this guide to learn how to install it.
-  Installing To install GruntJS you&amp;apos;ll need to run the following command:
-sudo npm install -g grunt-cli
-This will install GruntJS globally on your VM.
-You can verify if GruntJS has installed correctly using the following command:
-grunt --version
-  Usage You can use GruntJS in your project by inputting some basic commands.
-Move into your project:
-cd ~/your_project
-Generate an empty package file:
-echo &amp;quot;{}&amp;quot; &amp;gt; package.json
-Finally, install GruntJS into that project using the following command:
-npm install grunt --save-dev
 And that&amp;apos;s it!
 If you encounter any issues or have any questions please drop an email here.
 </description>
@@ -1291,32 +1368,6 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Using Dropbox with Koding</title>
-    <link>//learn.koding.com/guides/dropbox-for-file-sync</link>
-    <pubDate>"2015-01-15T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/dropbox-for-file-sync</guid>
-    <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll walk you through how to set up Dropbox right on your Koding VM for a seamless sync experience between your local system and your Koding VM. Dropbox has built a best-in-class file sync and storage service.
-  Getting started Before we begin please make sure you have the Koding Package Manager (KPM) installed on your VM. Follow this guide to understand what KPM is and how to install it so you will be able to continue with this guide.
-Also make sure you have an active Dropbox account (free or paid).
-  Setup Run the following command, in your Koding Terminal, to install the necessary dependency:
-Note: If you already have Dropbox installed via KPM then you need to run kpm uninstall dropbox and then the below command to get the latest version.
-kpm install dropbox
-This will install the Dropbox daemon on your Koding VM, that will make the file sync possible.
-After the install has finished you&amp;apos;ll need to configure the daemon with your Dropbox account. In order to that you&amp;apos;ll need to type this command:
-dropboxd
-Next you&amp;apos;ll see a message similar to this one:
-Please visit https://www.dropbox.com/cli_link_nonce?nonce=A_VERY_LONG_NUMBER to link this device.
-Copy the link and past it in a new tab.
-Sign in to your Dropbox account.
-That&amp;apos;s it! You should see a message in your Terminal similar to this one:
-This computer is now linked to Dropbox. Welcome YOUR_DROPBOX_NAME
-Note: Whenever you turn on Koding VM you will have to run the dropbox start command to get dropbox started.
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
     <title>Getting Started with JSP and Maven</title>
     <link>//learn.koding.com/guides/getting-started-jsp-maven</link>
     <pubDate>"2015-01-15T00:00:00.000Z"</pubDate>
@@ -1398,6 +1449,32 @@ The following example is a great way to dynamically load content that you may re
 Congrats! You have made a simple web app using Java (JSP), Maven, Tomcat, and your Koding VM. JSP is a great primer for simple web apps and a great introduction into learning about the Java Web tier.
 The Java web tier development has moved towards utilizing Facelets over JSP for creating views since Java EE 6, but JSP is still utilized in programs today. 
 Good luck with your further Java web development and happy coding! 
+</description>
+  </item>
+  
+  <item>
+    <title>Using Dropbox with Koding</title>
+    <link>//learn.koding.com/guides/dropbox-for-file-sync</link>
+    <pubDate>"2015-01-15T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/dropbox-for-file-sync</guid>
+    <author>Team Koding</author>
+    <description>In this guide we&amp;apos;ll walk you through how to set up Dropbox right on your Koding VM for a seamless sync experience between your local system and your Koding VM. Dropbox has built a best-in-class file sync and storage service.
+  Getting started Before we begin please make sure you have the Koding Package Manager (KPM) installed on your VM. Follow this guide to understand what KPM is and how to install it so you will be able to continue with this guide.
+Also make sure you have an active Dropbox account (free or paid).
+  Setup Run the following command, in your Koding Terminal, to install the necessary dependency:
+Note: If you already have Dropbox installed via KPM then you need to run kpm uninstall dropbox and then the below command to get the latest version.
+kpm install dropbox
+This will install the Dropbox daemon on your Koding VM, that will make the file sync possible.
+After the install has finished you&amp;apos;ll need to configure the daemon with your Dropbox account. In order to that you&amp;apos;ll need to type this command:
+dropboxd
+Next you&amp;apos;ll see a message similar to this one:
+Please visit https://www.dropbox.com/cli_link_nonce?nonce=A_VERY_LONG_NUMBER to link this device.
+Copy the link and past it in a new tab.
+Sign in to your Dropbox account.
+That&amp;apos;s it! You should see a message in your Terminal similar to this one:
+This computer is now linked to Dropbox. Welcome YOUR_DROPBOX_NAME
+Note: Whenever you turn on Koding VM you will have to run the dropbox start command to get dropbox started.
+If you encounter any issues or have any questions please drop an email here.
 </description>
   </item>
   
@@ -2111,6 +2188,44 @@ If you encounter any issues or have any questions regarding Apache Cordova on Ko
   </item>
   
   <item>
+    <title>Understanding the VM settings panel</title>
+    <link>//learn.koding.com/guides/understanding-vm-panel</link>
+    <pubDate>"2014-11-03T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/understanding-vm-panel</guid>
+    <author>Team Koding</author>
+    <description>This guide will explain the basics of the VM settings panel.
+
+In order to open the VM settings panel you need to hover over the VM name on the right side of Koding (in the sidebar at the top) and then click on the little three points icon on the right, as picture above.
+
+After you click on the icon mentioned above the VM modal should open, which should look like the one pictured above.
+The VM settings panel has three main sections: the Basic section, the More section and the Advanced section.
+  Basic section The basic section includes basic information about your VM and some basic functionality over it. Each line is explained below.
+
+Assigned URL: This is the long assigned URL of your Koding VM.
+Nickname: You can rename your VM and this will update the name that appears in the right sidebar.
+On/Off toggle: The current status of the VM. You can also turn off your VM from here, though we don&amp;apos;t recommend it.
+Disk usage: How much space you have used of your VMs available space.
+Public IP: Your VM&amp;apos;s public IP. This will change every time you start up your VM. For users on the Free plan, this will change each time you start up your VM. If your VM is Always-On, it will only change when you restart your VM.
+Specs: Specifications your VM has. This is based on your current plan.
+Provider: Your VM provider. In the future you will be able to choose from multiple providers.
+Guides: The most common and useful guides to get you started using your VM.
+
+  More section The more section includes some additional settings for your VM. Each setting has been explained below.
+
+Keep VM always on toggle: If you are a paying customer than you can chose to keep your VM Always-On. This means that your VM will not be shut down automatically after 60 minutes.
+Domains: You can enable a short URL for your VM and/or define subdomains and custom domains for your VM.
+
+  Advanced section The advanced section includes settings that only advanced users should use. If you are an unexperienced user then this section should be off limits.
+
+Reinitialize VM: This button will set your VM back to its default state. This means that the VM will be re-imaged, as if you deleted the VM and created a new one. This guide explains the reinit function in more detail.
+Resize VM: If you just upgraded to a paid plan you can choose to assign the necessary space.
+Terminate VM: If you&amp;apos;re a paying customer you can remove your VM and create a new one if you so choose.
+
+If you encounter any issues or have any questions regarding the VM settings panel you can email us at support@koding.com and we&amp;apos;ll gladly help.
+</description>
+  </item>
+  
+  <item>
     <title>Koding Subdomains and VHosts</title>
     <link>//learn.koding.com/guides/vhosts-and-subdomains</link>
     <pubDate>"2014-11-03T00:00:00.000Z"</pubDate>
@@ -2204,44 +2319,6 @@ Section here.
   </item>
   
   <item>
-    <title>Understanding the VM settings panel</title>
-    <link>//learn.koding.com/guides/understanding-vm-panel</link>
-    <pubDate>"2014-11-03T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/understanding-vm-panel</guid>
-    <author>Team Koding</author>
-    <description>This guide will explain the basics of the VM settings panel.
-
-In order to open the VM settings panel you need to hover over the VM name on the right side of Koding (in the sidebar at the top) and then click on the little three points icon on the right, as picture above.
-
-After you click on the icon mentioned above the VM modal should open, which should look like the one pictured above.
-The VM settings panel has three main sections: the Basic section, the More section and the Advanced section.
-  Basic section The basic section includes basic information about your VM and some basic functionality over it. Each line is explained below.
-
-Assigned URL: This is the long assigned URL of your Koding VM.
-Nickname: You can rename your VM and this will update the name that appears in the right sidebar.
-On/Off toggle: The current status of the VM. You can also turn off your VM from here, though we don&amp;apos;t recommend it.
-Disk usage: How much space you have used of your VMs available space.
-Public IP: Your VM&amp;apos;s public IP. This will change every time you start up your VM. For users on the Free plan, this will change each time you start up your VM. If your VM is Always-On, it will only change when you restart your VM.
-Specs: Specifications your VM has. This is based on your current plan.
-Provider: Your VM provider. In the future you will be able to choose from multiple providers.
-Guides: The most common and useful guides to get you started using your VM.
-
-  More section The more section includes some additional settings for your VM. Each setting has been explained below.
-
-Keep VM always on toggle: If you are a paying customer than you can chose to keep your VM Always-On. This means that your VM will not be shut down automatically after 60 minutes.
-Domains: You can enable a short URL for your VM and/or define subdomains and custom domains for your VM.
-
-  Advanced section The advanced section includes settings that only advanced users should use. If you are an unexperienced user then this section should be off limits.
-
-Reinitialize VM: This button will set your VM back to its default state. This means that the VM will be re-imaged, as if you deleted the VM and created a new one. This guide explains the reinit function in more detail.
-Resize VM: If you just upgraded to a paid plan you can choose to assign the necessary space.
-Terminate VM: If you&amp;apos;re a paying customer you can remove your VM and create a new one if you so choose.
-
-If you encounter any issues or have any questions regarding the VM settings panel you can email us at support@koding.com and we&amp;apos;ll gladly help.
-</description>
-  </item>
-  
-  <item>
     <title>Changing your IDE and Terminal themes</title>
     <link>//learn.koding.com/guides/change-theme</link>
     <pubDate>"2014-10-28T00:00:00.000Z"</pubDate>
@@ -2331,6 +2408,36 @@ scp ~/my_image.png joshmurray.koding.io:~/my_image.png
   </item>
   
   <item>
+    <title>Installing MongoDB</title>
+    <link>//learn.koding.com/guides/install-mongodb</link>
+    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/install-mongodb</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install MongoDB using just one command:
+kpm install mongodb
+
+In this short guide we&amp;apos;ll explain how to install MongoDB, and modify
+it&amp;apos;s configuration to run in a small storage environment. Lets get 
+started!
+  Installation Installation is easy, and can be done with apt-get, as seen in the 
+following command.
+sudo apt-get install mongodb
+That&amp;apos;s it! You can start Mongo with the following command:
+sudo service mongodb start
+NOTE: If you&amp;apos;re running Mongo on a Free Koding VM, read below..
+  Configuring for Limited Storage If you&amp;apos;re running Mongo on a Free VM, you&amp;apos;ll need to configure it to use 
+small files. To do that, open up the /etc/mongodb.conf file with the
+following command:
+sudo nano /etc/mongodb.conf
+With that file open, navigate to the bottom and add the following line:
+smallfiles=true
+Now use ctrl-x to save the file. After you&amp;apos;ve saved the file, simply 
+restart Mongodb with the following command:
+sudo service mongodb restart
+</description>
+  </item>
+  
+  <item>
     <title>A guide to Docker</title>
     <link>//learn.koding.com/guides/what-is-docker</link>
     <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
@@ -2382,36 +2489,6 @@ curl -sSL https://get.docker.com/ubuntu/ | sudo sh
 If you made it to this point you can run this command to check if Docker is indeed installed and works properly:
 sudo docker run -i -t ubuntu /bin/bash
 If you have any question or issues please email us at support@koding.com and we&amp;apos;ll gladly help.
-</description>
-  </item>
-  
-  <item>
-    <title>Installing MongoDB</title>
-    <link>//learn.koding.com/guides/install-mongodb</link>
-    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/install-mongodb</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install MongoDB using just one command:
-kpm install mongodb
-
-In this short guide we&amp;apos;ll explain how to install MongoDB, and modify
-it&amp;apos;s configuration to run in a small storage environment. Lets get 
-started!
-  Installation Installation is easy, and can be done with apt-get, as seen in the 
-following command.
-sudo apt-get install mongodb
-That&amp;apos;s it! You can start Mongo with the following command:
-sudo service mongodb start
-NOTE: If you&amp;apos;re running Mongo on a Free Koding VM, read below..
-  Configuring for Limited Storage If you&amp;apos;re running Mongo on a Free VM, you&amp;apos;ll need to configure it to use 
-small files. To do that, open up the /etc/mongodb.conf file with the
-following command:
-sudo nano /etc/mongodb.conf
-With that file open, navigate to the bottom and add the following line:
-smallfiles=true
-Now use ctrl-x to save the file. After you&amp;apos;ve saved the file, simply 
-restart Mongodb with the following command:
-sudo service mongodb restart
 </description>
   </item>
   
@@ -2561,34 +2638,12 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Install Rockmongo</title>
-    <link>//learn.koding.com/guides/install-rockmongo</link>
-    <pubDate>2015-01-2</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/install-rockmongo</guid>
-    <author>Thien</author>
-    <description>  What is Rockmongo Rockmongo is a MongoDB administration tool that can be used to manage servers, databases, collections, documents, indexes etc. It provides a very user-friendly way for reading, writing and creating documents. It is very similar to phpMyAdmin. 
-  Step 1 The first thing you need to do is to open up your Koding Terminal and type in the following command:
-cd Web
-  Step 2. Next up, you need to download the Rockmongo version that you&amp;apos;re planing on using. In this case, you are going to use the latest version:
-git clone --depth=1 https://github.com/iwind/rockmongo.git
-  Step 3 Open the config.php file and change the following things:
-
-Host - should be set to 0.0.0.0
-Port - choose a desired port
-Chose a username and password. Note that by default they are set to admin and admin.
-
-  Step 4 Now Mongodb will need the PHP driver to work. You need to install it by running this command:
-sudo pecl install mongo
-After that you will need to edit the file 20-mono.ini, that is located at this path /etc/php5/apache2/conf.d/, and you you will need to add this line at the very end:
-extension=mongo.so
-  Step 5 Restart the Apache server using the following command and you should see everything working.
-sudo service apache2 restart
-You will now be able to access Rockmongo by following a similar URL:
-http://YOUR_KODING_USERNAME.koding.io/rockmongo
-If everything is working properly, you should see the following screen in your browser:
-
-That&amp;apos;s it! You&amp;apos;re now running Rockmongo on Koding!
-</description>
+    <title>Koding IDE Introduction</title>
+    <link>//learn.koding.com/guides/ide-introduction</link>
+    <pubDate>"2014-10-10T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/ide-introduction</guid>
+    <author>Team Koding</author>
+    <description></description>
   </item>
   
   <item>
@@ -2607,84 +2662,6 @@ That&amp;apos;s it! You&amp;apos;re now running Rockmongo on Koding!
     <guid isPermaLink="true">//learn.koding.com/guides/terminal-introduction</guid>
     <author>Team Koding</author>
     <description></description>
-  </item>
-  
-  <item>
-    <title>How to setup an SSH Tunnel in Unix</title>
-    <link>//learn.koding.com/guides/ssh-tunneling</link>
-    <pubDate>2014-08-9</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/ssh-tunneling</guid>
-    <author>Team Koding</author>
-    <description>In this guide we&amp;apos;ll go over what SSH Tunneling is, what it&amp;apos;s used for, 
-and how to set one up on your Koding VM. So, lets get started!
-  What is SSH Tunneling? SSH Tunneling is the process of sending and receiving TCP and UDP packets 
-through an SSH Connection. This enables you to bypass proxies and go 
-directly to your VM, with whatever data/etc that you need.
-  Why would I want to SSH Tunnel? Koding Virtual Machines do not have direct IP access. They proxy http 
-connections from your domain, to the machine itself. Note that only HTTP 
-is proxied. This is why when you SSH into your VM, you set up a special 
-SSH config to run your connection through ssh.koding.com.
-Because of this Proxy, some things you may want to do on Koding, such as 
-connecting a MySQL Database Client directly to your MySQL Server becomes 
-impossible via the username domains.
-To solve this, you use SSH Tunneling to connect to servers directly on 
-your VM, from your local machine. Lets take a look at how this is done.
-  Using a SSH Tunnel First up, make sure you have gone through the SSH Guide, and 
-can successfully connect to your VM using the steps outlined in that 
-guide. You must have a working SSH connection for this to work.
-Next, run the following command.
-ssh -L 8080:localhost:80 hostname.username.koding.io
-Where hostname is the hostname of your VM, and username is your 
-Koding username.
-After running this command, you&amp;apos;ll simply connect to your VM.. it may 
-appear like nothing has happened. But now, like magic, try loading the 
-following URL into your browser.
-http://localhost:8080/
-Just like magic, you can see that your Port 8080 on localhost is 
-returning the same thing as:
-http://hostname.username.koding.io:80
-Awesome! To connect with something like a MySQL Database Client, simply 
-create an SSH tunnel with the appropriate Port on the Virtual 
-Machine, and any port you&amp;apos;d like for your localhost. Then connect to 
-your localhost with your MySQL Client!
-</description>
-  </item>
-  
-  <item>
-    <title>Koding IDE Introduction</title>
-    <link>//learn.koding.com/guides/ide-introduction</link>
-    <pubDate>"2014-10-10T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/ide-introduction</guid>
-    <author>Team Koding</author>
-    <description></description>
-  </item>
-  
-  <item>
-    <title>What happens upon upgrade?</title>
-    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
-    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
-    <author>Team Koding</author>
-    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
-Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
-
-Ability to mark your VM(s) as Always-On
-Add more storage to your VM(s)
-
-  Utilizing new resources when upgrading to the Hobbyist Plan Once you have upgraded to Hobbyist, you can mark your VM as an Always-On VM and increase its storage from 3GB to 10GB. To to this, head over to the settings panel for your VM and follow these easy steps:
-
-head over to VM settings (as shown in the image below)
-expand the &amp;quot;More&amp;quot; panel and then the &amp;quot;Advanced&amp;quot; panel
-You will see a new button under the Advanced panel labeled &amp;quot;Resize&amp;quot; (this button only appears for users who have upgraded to the Hobbyist plan and have not yet allocated the 10GB. Once you allocate it, the button will disappear)
-Click the button to initiate resize. Once done, your VM will show 10GB. Verify that using the command df -h /
-
-
-  Utilizing new resources when upgrading to the Developer and Professional Plans Under these plans, you can have a total of up to 3 (for Developer) and 5 (for Professional) VMs, mark any of them as Always-On and allocate 25GB (for Developer) / 50GB (for Professional) of storage amonst them. You will start with the default free VM and it is up to you whether you want to leave it at the default 3GB or delete it so that you can make a new one with a storage allocation that you prefer. To delete a VM, simply go the settings panel of the VM and click the Terminate button (as shown in the attached screen shot).
-
-To create a new VM, click the + icon in the VM list and you will be presented wit the option to create a new VM with a space allocation that is preferable to you (as shown below).
-
-Enjoy the new resources and thanks again for upgrading! If you have any addtional questions regarding upgrades and resources, please send us a support request and we will get back to you as soon as possible.
-</description>
   </item>
   
   <item>
@@ -2802,6 +2779,34 @@ existing code easily.
   </item>
   
   <item>
+    <title>What happens upon upgrade?</title>
+    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
+    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
+    <author>Team Koding</author>
+    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
+Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
+
+Ability to mark your VM(s) as Always-On
+Add more storage to your VM(s)
+
+  Utilizing new resources when upgrading to the Hobbyist Plan Once you have upgraded to Hobbyist, you can mark your VM as an Always-On VM and increase its storage from 3GB to 10GB. To to this, head over to the settings panel for your VM and follow these easy steps:
+
+head over to VM settings (as shown in the image below)
+expand the &amp;quot;More&amp;quot; panel and then the &amp;quot;Advanced&amp;quot; panel
+You will see a new button under the Advanced panel labeled &amp;quot;Resize&amp;quot; (this button only appears for users who have upgraded to the Hobbyist plan and have not yet allocated the 10GB. Once you allocate it, the button will disappear)
+Click the button to initiate resize. Once done, your VM will show 10GB. Verify that using the command df -h /
+
+
+  Utilizing new resources when upgrading to the Developer and Professional Plans Under these plans, you can have a total of up to 3 (for Developer) and 5 (for Professional) VMs, mark any of them as Always-On and allocate 25GB (for Developer) / 50GB (for Professional) of storage amonst them. You will start with the default free VM and it is up to you whether you want to leave it at the default 3GB or delete it so that you can make a new one with a storage allocation that you prefer. To delete a VM, simply go the settings panel of the VM and click the Terminate button (as shown in the attached screen shot).
+
+To create a new VM, click the + icon in the VM list and you will be presented wit the option to create a new VM with a space allocation that is preferable to you (as shown below).
+
+Enjoy the new resources and thanks again for upgrading! If you have any addtional questions regarding upgrades and resources, please send us a support request and we will get back to you as soon as possible.
+</description>
+  </item>
+  
+  <item>
     <title>Getting started with Drupal 8 (Prerelease)</title>
     <link>//learn.koding.com/guides/getting-started-drupal8-beta</link>
     <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
@@ -2911,6 +2916,41 @@ Note: the default Workspace can&amp;apos;t be removed as that is the default Web
   </item>
   
   <item>
+    <title>Setting up FTP on Koding</title>
+    <link>//learn.koding.com/guides/setting-up-ftp-on-koding</link>
+    <pubDate>"2014-09-15T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-ftp-on-koding</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install FTP using just one command:
+kpm install ftp
+
+In this guide you&amp;apos;ll go over how to get your FTP Client connected to your VM&amp;apos;s FTP Server. You will be using FileZilla as the FTP Client, but any client should be able to connect to your FTP Server successfully.
+  What you will need In this tutorial you will need the following.
+
+A Koding account, and your Koding Username.
+The Address of the VM you&amp;apos;d like to connect to. Instructions can be found here.
+
+  Update your software sources Before getting started, make sure you have the latest sources locked down. Type in:
+sudo apt-get update
+and let the update process complete. It should not require any input.
+  Installing ProFTPd First off, you&amp;apos;ll need to install ProFTPd. This can be done by pasting the following command into your Koding IDE&amp;apos;s Terminal.
+sudo apt-get install proftpd
+During the install process you will be asked to choose to run your VPS as an inetd or standalone server. Choose the standalone option.
+  Setting up the FTP User After ProFTPd has been successfully installed, you need to set a FTP password for your user. To do this, paste the following command into your Terminal.
+sudo passwd KODING_USERNAME
+Make note to replace KODING_USERNAME with your actual Koding username.
+After hitting enter, you&amp;apos;ll be prompted for the FTP password you wish to use. Not your Koding password.
+  Connecting to your FTP Server Finally, in your FTP Client of choice paste your VM Address into the hostname. If you&amp;apos;re not sure what that is, instructions to find it can be found here.
+After the hostname, enter your Koding username, and FTP Password that you chose in the above commands. An example image from FileZilla can be seen below.
+
+  Additional Resources 
+FileZilla
+FileZilla Download
+
+</description>
+  </item>
+  
+  <item>
     <title>Connect with SSH, from Unix</title>
     <link>//learn.koding.com/guides/ssh-into-your-vm</link>
     <pubDate>"2014-09-15T00:00:00.000Z"</pubDate>
@@ -2961,41 +3001,6 @@ ssh joshmurray@unkk05c3f84e.joshmurray.koding.io
 and share the output with Koding users. An example of the above ssh 
 command with the -vv flag is below.
 ssh -vv joshmurray@unkk05c3f84e.joshmurray.koding.io
-</description>
-  </item>
-  
-  <item>
-    <title>Setting up FTP on Koding</title>
-    <link>//learn.koding.com/guides/setting-up-ftp-on-koding</link>
-    <pubDate>"2014-09-15T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-ftp-on-koding</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install FTP using just one command:
-kpm install ftp
-
-In this guide you&amp;apos;ll go over how to get your FTP Client connected to your VM&amp;apos;s FTP Server. You will be using FileZilla as the FTP Client, but any client should be able to connect to your FTP Server successfully.
-  What you will need In this tutorial you will need the following.
-
-A Koding account, and your Koding Username.
-The Address of the VM you&amp;apos;d like to connect to. Instructions can be found here.
-
-  Update your software sources Before getting started, make sure you have the latest sources locked down. Type in:
-sudo apt-get update
-and let the update process complete. It should not require any input.
-  Installing ProFTPd First off, you&amp;apos;ll need to install ProFTPd. This can be done by pasting the following command into your Koding IDE&amp;apos;s Terminal.
-sudo apt-get install proftpd
-During the install process you will be asked to choose to run your VPS as an inetd or standalone server. Choose the standalone option.
-  Setting up the FTP User After ProFTPd has been successfully installed, you need to set a FTP password for your user. To do this, paste the following command into your Terminal.
-sudo passwd KODING_USERNAME
-Make note to replace KODING_USERNAME with your actual Koding username.
-After hitting enter, you&amp;apos;ll be prompted for the FTP password you wish to use. Not your Koding password.
-  Connecting to your FTP Server Finally, in your FTP Client of choice paste your VM Address into the hostname. If you&amp;apos;re not sure what that is, instructions to find it can be found here.
-After the hostname, enter your Koding username, and FTP Password that you chose in the above commands. An example image from FileZilla can be seen below.
-
-  Additional Resources 
-FileZilla
-FileZilla Download
-
 </description>
   </item>
   
@@ -3091,6 +3096,61 @@ sudo apt-get install libapache2-mod-php5
 Now, you need to restart the Apache server to see the changes.
 sudo /etc/init.d/apache2 restart
 That is all!
+</description>
+  </item>
+  
+  <item>
+    <title>Author a guide</title>
+    <link>//learn.koding.com/contribute</link>
+    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/contribute</guid>
+    <author>Team Koding</author>
+    <description>In this guide series we will go over Writing and Editing guides for Koding 
+University. We will cover every step of the process, but basic Git, 
+Github, and Markdown knowledge will be very useful.
+If you already know git, github, and markdown, here is the simple set of 
+tasks you&amp;apos;ll need to do.
+
+Review the Style Guidelines
+Fork KDLearn
+Clone your forked repo
+Find or create your files, Make your markdown edits
+Commit and push your changes to your repo
+Make a pull request of your changes, against the KDLearn Repo
+
+If you need more in depth instructions than that, please continue with 
+this series below. Thanks!
+</description>
+  </item>
+  
+  <item>
+    <title>Install Rockmongo</title>
+    <link>//learn.koding.com/guides/install-rockmongo</link>
+    <pubDate>2015-01-2</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/install-rockmongo</guid>
+    <author>Thien</author>
+    <description>  What is Rockmongo Rockmongo is a MongoDB administration tool that can be used to manage servers, databases, collections, documents, indexes etc. It provides a very user-friendly way for reading, writing and creating documents. It is very similar to phpMyAdmin. 
+  Step 1 The first thing you need to do is to open up your Koding Terminal and type in the following command:
+cd Web
+  Step 2. Next up, you need to download the Rockmongo version that you&amp;apos;re planing on using. In this case, you are going to use the latest version:
+git clone --depth=1 https://github.com/iwind/rockmongo.git
+  Step 3 Open the config.php file and change the following things:
+
+Host - should be set to 0.0.0.0
+Port - choose a desired port
+Chose a username and password. Note that by default they are set to admin and admin.
+
+  Step 4 Now Mongodb will need the PHP driver to work. You need to install it by running this command:
+sudo pecl install mongo
+After that you will need to edit the file 20-mono.ini, that is located at this path /etc/php5/apache2/conf.d/, and you you will need to add this line at the very end:
+extension=mongo.so
+  Step 5 Restart the Apache server using the following command and you should see everything working.
+sudo service apache2 restart
+You will now be able to access Rockmongo by following a similar URL:
+http://YOUR_KODING_USERNAME.koding.io/rockmongo
+If everything is working properly, you should see the following screen in your browser:
+
+That&amp;apos;s it! You&amp;apos;re now running Rockmongo on Koding!
 </description>
   </item>
   
@@ -3271,6 +3331,86 @@ This concludes the getting started with Python guide. Thanks for reading!
   </item>
   
   <item>
+    <title>Getting Started: Editing Your Profile</title>
+    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
+    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
+    <author>Team Koding</author>
+    <description>Your Koding profile is your public information page on Koding. Currently 
+it shows your Avatar, Name and Description, recent Koding activity, and 
+in the near future Badges and additional social information. In this 
+guide we&amp;apos;ll go over the basic usage of your Koding profile.
+  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted 
+below.
+
+Clicking on it will open your profile.
+  Avatar, Name and Description When viewing your profile for the first time, you&amp;apos;ll see that your first 
+name is set to your Koding username, and your last name and description 
+are set to default values, as seen in the below image.
+
+These default values are only seen by you, and if you double click them, 
+you can edit that field.
+
+
+
+
+
+</description>
+  </item>
+  
+  <item>
+    <title>Author a guide: Previewing</title>
+    <link>//learn.koding.com/contribute/previewing</link>
+    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/contribute/previewing</guid>
+    <author>Team Koding</author>
+    <description>While you shouldn&amp;apos;t need to preview your guides, since Markdown is 
+designed to be human friendly in the source, if you insist you can 
+preview your guides as they are on Koding University. This guide will go 
+over that process. Note that this will require a bit of developer 
+know-how, so be prepared to get your hands dirty. Lets get started!
+  Requirements You will need a working NodeJS installation to compile the Koding 
+University source. If you do not, visit the NodeJS downloads 
+page and grab the installer.
+  Installation With a working NodeJS installation, we need to install the KU 
+dependencies, as well as a global installation of the GulpJS. This can be 
+done with the following code:
+npm install -g gulp
+cd .metalsmith
+npm install
+  Building With Gulp installed, simply run the following command, to compile the 
+entire project into HTML.
+(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
+cd .metalsmith
+gulp
+The .metalsmith/build directory will contain all of the compiled html, 
+css, and any static resources (such as images/etc) from the markdown 
+directory.
+Compiling can take 1-2 minutes, so be patient.
+  Previewing If you want to preview the compiled site, open a new Koding Terminal tab 
+and run the following:
+(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
+cd .metalsmith
+gulp preview
+This will run a small HTTP Server on Port 8000, ie: 
+http://hostname.you.koding.io:8000. Keep this tab open, and in  a 
+different Koding Terminal tab run your gulp command from above.Each time you compile the site, this will show your compiled site.
+  Compiling as you type To have your Markdown compiled as you write your documents, run the 
+following commands:
+(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
+cd .metalsmith
+gulp watch
+This, in combination with the preview command above, will compile the 
+site each time you change the Markdown.
+Note that if you add images for your guide to use, you&amp;apos;ll want to run the 
+full gulp command again.
+And that sums it up! You now know how to contribute to Koding University, 
+in multiple ways. Keep up the awesome work, and we look forward to your 
+contribution!
+</description>
+  </item>
+  
+  <item>
     <title>Author a guide: Basic</title>
     <link>//learn.koding.com/contribute/basic</link>
     <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
@@ -3352,26 +3492,43 @@ Koding&amp;apos;s Editor and Git to make changes to this Koding University.
   </item>
   
   <item>
-    <title>Author a guide</title>
-    <link>//learn.koding.com/contribute</link>
-    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/contribute</guid>
+    <title>How to setup an SSH Tunnel in Unix</title>
+    <link>//learn.koding.com/guides/ssh-tunneling</link>
+    <pubDate>2014-08-9</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/ssh-tunneling</guid>
     <author>Team Koding</author>
-    <description>In this guide series we will go over Writing and Editing guides for Koding 
-University. We will cover every step of the process, but basic Git, 
-Github, and Markdown knowledge will be very useful.
-If you already know git, github, and markdown, here is the simple set of 
-tasks you&amp;apos;ll need to do.
-
-Review the Style Guidelines
-Fork KDLearn
-Clone your forked repo
-Find or create your files, Make your markdown edits
-Commit and push your changes to your repo
-Make a pull request of your changes, against the KDLearn Repo
-
-If you need more in depth instructions than that, please continue with 
-this series below. Thanks!
+    <description>In this guide we&amp;apos;ll go over what SSH Tunneling is, what it&amp;apos;s used for, 
+and how to set one up on your Koding VM. So, lets get started!
+  What is SSH Tunneling? SSH Tunneling is the process of sending and receiving TCP and UDP packets 
+through an SSH Connection. This enables you to bypass proxies and go 
+directly to your VM, with whatever data/etc that you need.
+  Why would I want to SSH Tunnel? Koding Virtual Machines do not have direct IP access. They proxy http 
+connections from your domain, to the machine itself. Note that only HTTP 
+is proxied. This is why when you SSH into your VM, you set up a special 
+SSH config to run your connection through ssh.koding.com.
+Because of this Proxy, some things you may want to do on Koding, such as 
+connecting a MySQL Database Client directly to your MySQL Server becomes 
+impossible via the username domains.
+To solve this, you use SSH Tunneling to connect to servers directly on 
+your VM, from your local machine. Lets take a look at how this is done.
+  Using a SSH Tunnel First up, make sure you have gone through the SSH Guide, and 
+can successfully connect to your VM using the steps outlined in that 
+guide. You must have a working SSH connection for this to work.
+Next, run the following command.
+ssh -L 8080:localhost:80 hostname.username.koding.io
+Where hostname is the hostname of your VM, and username is your 
+Koding username.
+After running this command, you&amp;apos;ll simply connect to your VM.. it may 
+appear like nothing has happened. But now, like magic, try loading the 
+following URL into your browser.
+http://localhost:8080/
+Just like magic, you can see that your Port 8080 on localhost is 
+returning the same thing as:
+http://hostname.username.koding.io:80
+Awesome! To connect with something like a MySQL Database Client, simply 
+create an SSH tunnel with the appropriate Port on the Virtual 
+Machine, and any port you&amp;apos;d like for your localhost. Then connect to 
+your localhost with your MySQL Client!
 </description>
   </item>
   
@@ -3443,86 +3600,6 @@ instructions.
 Don&amp;apos;t forget, headers with levels (## Header1, ### Header 3, and so 
 forth) should be used to group content just like you do with HTML&amp;apos;s 
 &amp;lt;h2&amp;gt;s and so forth. You can review Header Markdown here
-</description>
-  </item>
-  
-  <item>
-    <title>Getting Started: Editing Your Profile</title>
-    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
-    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
-    <author>Team Koding</author>
-    <description>Your Koding profile is your public information page on Koding. Currently 
-it shows your Avatar, Name and Description, recent Koding activity, and 
-in the near future Badges and additional social information. In this 
-guide we&amp;apos;ll go over the basic usage of your Koding profile.
-  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted 
-below.
-
-Clicking on it will open your profile.
-  Avatar, Name and Description When viewing your profile for the first time, you&amp;apos;ll see that your first 
-name is set to your Koding username, and your last name and description 
-are set to default values, as seen in the below image.
-
-These default values are only seen by you, and if you double click them, 
-you can edit that field.
-
-
-
-
-
-</description>
-  </item>
-  
-  <item>
-    <title>Author a guide: Previewing</title>
-    <link>//learn.koding.com/contribute/previewing</link>
-    <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/contribute/previewing</guid>
-    <author>Team Koding</author>
-    <description>While you shouldn&amp;apos;t need to preview your guides, since Markdown is 
-designed to be human friendly in the source, if you insist you can 
-preview your guides as they are on Koding University. This guide will go 
-over that process. Note that this will require a bit of developer 
-know-how, so be prepared to get your hands dirty. Lets get started!
-  Requirements You will need a working NodeJS installation to compile the Koding 
-University source. If you do not, visit the NodeJS downloads 
-page and grab the installer.
-  Installation With a working NodeJS installation, we need to install the KU 
-dependencies, as well as a global installation of the GulpJS. This can be 
-done with the following code:
-npm install -g gulp
-cd .metalsmith
-npm install
-  Building With Gulp installed, simply run the following command, to compile the 
-entire project into HTML.
-(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
-cd .metalsmith
-gulp
-The .metalsmith/build directory will contain all of the compiled html, 
-css, and any static resources (such as images/etc) from the markdown 
-directory.
-Compiling can take 1-2 minutes, so be patient.
-  Previewing If you want to preview the compiled site, open a new Koding Terminal tab 
-and run the following:
-(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
-cd .metalsmith
-gulp preview
-This will run a small HTTP Server on Port 8000, ie: 
-http://hostname.you.koding.io:8000. Keep this tab open, and in  a 
-different Koding Terminal tab run your gulp command from above.Each time you compile the site, this will show your compiled site.
-  Compiling as you type To have your Markdown compiled as you write your documents, run the 
-following commands:
-(Ignore cd .metalsmtih if you&amp;apos;re already in that directory)
-cd .metalsmith
-gulp watch
-This, in combination with the preview command above, will compile the 
-site each time you change the Markdown.
-Note that if you add images for your guide to use, you&amp;apos;ll want to run the 
-full gulp command again.
-And that sums it up! You now know how to contribute to Koding University, 
-in multiple ways. Keep up the awesome work, and we look forward to your 
-contribution!
 </description>
   </item>
   
@@ -3720,6 +3797,78 @@ routes, middleware, and finally templates. Thanks for reading!
   </item>
   
   <item>
+    <title>Ghost Blog Installation</title>
+    <link>//learn.koding.com/guides/ghost-installation</link>
+    <pubDate>"2014-08-01T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/ghost-installation</guid>
+    <author>Team Koding</author>
+    <description>In this article we will go over the installation process for the awesome 
+new blogging software, Ghost. Installation is quick 
+and easy, and just requires a few configuration edits, making this great 
+for beginners. So, lets get started!
+  What is Ghost? Ghost is an awesome new blog software written with &amp;#x201C;Just Blogging&amp;#x201D; in 
+mind. Think WordPress without the complexity, bringing blogging back to 
+it&amp;#x2019;s roots, so to say. This is all well and good, but with any product 
+that is so new there is always confusion on how to install, develop, and 
+run it.
+So lets try and resolve some of that confusion. Lets go over the simple 
+process of setting up Ghost on Koding so you can 
+learn it, toy with it, develop with it, and create your Ghost blog to be 
+exactly what you want.
+  Downloading Ghost We&amp;apos;re going to use the Koding Terminal to download Ghost, so 
+visit the [Ghost Download][download-page] and look for the download link.Copy the url.
+At the time of writing this guide, the download url is: 
+https://ghost.org/zip/ghost-0.5.2.zip (This version is likely 
+outdated, please visit the download page and get the most updated link.)
+Now, go to your Terminal and type in the following commands.
+mkdir ghost
+cd ghost
+wget [ghost-zip-url]
+Replace [ghost-zip-url] with the full URL of the zip file that you 
+copied above.
+  Unzipping Ghost The download is in zip format, so we need to unzip it. Type in the 
+following command.
+unzip [ghost-zip-name]
+  Installing Dependencies Next, we need to install the dependencies.
+npm install --production
+This step will take a minute or two.
+  Edit the config Next up, open up the Ace Editor and double click your ghost 
+directory to expand it. Right click, and rename, the config.example.js 
+file to config.js.
+On line 36, look for the following section:
+        server: {
+            // Host to be passed to node&amp;apos;s `net.Server#listen()`
+            host: &amp;apos;127.0.0.1&amp;apos;,
+            // Port to be passed to node&amp;apos;s `net.Server#listen()`, for 
+iisnode set this to `process.env.PORT`
+            port: &amp;apos;2368&amp;apos;
+        },
+
+Replace 127.0.0.1 with 0.0.0.0, and change the Port to whichever 
+you&amp;apos;d like to use. Save the file with Ctrl-s.
+  Starting Ghost Go back to your Terminal and type in the following command to 
+start your Ghost Blog.
+npm start
+Note: If you had previously closed your Terminal, you&amp;apos;ll need to navigate 
+into the ghost directory again, with cd ghost.
+  Visiting your Ghost Blog Now open up a new tab and visit your Ghost Blog on your Koding domain at 
+the following address.
+http://hostname.username.koding.io:port
+Where username is your Koding username, and port is the port you 
+chose above.
+If you navigate to the following address, you can signup as Admin to your 
+Ghost installation.
+http://hostname.username.koding.io:port/ghost
+  Running Ghost on Port 80 If you&amp;apos;d like to run Ghost on the default Port 80, you&amp;apos;ll have to Stop 
+Apache, and start Ghost with sudo. Here are the commands to do this.
+sudo service apache2 stop
+sudo npm start
+This should be typed from the Ghost installation directory.
+And that&amp;apos;s it! You should now have a Ghost installation up and running.Happy Blogging!
+</description>
+  </item>
+  
+  <item>
     <title>Getting Started with NodeJS</title>
     <link>//learn.koding.com/guides/getting-started-nodejs</link>
     <pubDate>"2014-08-01T00:00:00.000Z"</pubDate>
@@ -3849,78 +3998,6 @@ This sums up the Getting Started with NodeJS guide. You should now have a
 good understanding of what Node is, from a very basic perspective. As 
 always, don&amp;apos;t forget to look at the API Documentation. Have 
 fun with Node!
-</description>
-  </item>
-  
-  <item>
-    <title>Ghost Blog Installation</title>
-    <link>//learn.koding.com/guides/ghost-installation</link>
-    <pubDate>"2014-08-01T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/ghost-installation</guid>
-    <author>Team Koding</author>
-    <description>In this article we will go over the installation process for the awesome 
-new blogging software, Ghost. Installation is quick 
-and easy, and just requires a few configuration edits, making this great 
-for beginners. So, lets get started!
-  What is Ghost? Ghost is an awesome new blog software written with &amp;#x201C;Just Blogging&amp;#x201D; in 
-mind. Think WordPress without the complexity, bringing blogging back to 
-it&amp;#x2019;s roots, so to say. This is all well and good, but with any product 
-that is so new there is always confusion on how to install, develop, and 
-run it.
-So lets try and resolve some of that confusion. Lets go over the simple 
-process of setting up Ghost on Koding so you can 
-learn it, toy with it, develop with it, and create your Ghost blog to be 
-exactly what you want.
-  Downloading Ghost We&amp;apos;re going to use the Koding Terminal to download Ghost, so 
-visit the [Ghost Download][download-page] and look for the download link.Copy the url.
-At the time of writing this guide, the download url is: 
-https://ghost.org/zip/ghost-0.5.2.zip (This version is likely 
-outdated, please visit the download page and get the most updated link.)
-Now, go to your Terminal and type in the following commands.
-mkdir ghost
-cd ghost
-wget [ghost-zip-url]
-Replace [ghost-zip-url] with the full URL of the zip file that you 
-copied above.
-  Unzipping Ghost The download is in zip format, so we need to unzip it. Type in the 
-following command.
-unzip [ghost-zip-name]
-  Installing Dependencies Next, we need to install the dependencies.
-npm install --production
-This step will take a minute or two.
-  Edit the config Next up, open up the Ace Editor and double click your ghost 
-directory to expand it. Right click, and rename, the config.example.js 
-file to config.js.
-On line 36, look for the following section:
-        server: {
-            // Host to be passed to node&amp;apos;s `net.Server#listen()`
-            host: &amp;apos;127.0.0.1&amp;apos;,
-            // Port to be passed to node&amp;apos;s `net.Server#listen()`, for 
-iisnode set this to `process.env.PORT`
-            port: &amp;apos;2368&amp;apos;
-        },
-
-Replace 127.0.0.1 with 0.0.0.0, and change the Port to whichever 
-you&amp;apos;d like to use. Save the file with Ctrl-s.
-  Starting Ghost Go back to your Terminal and type in the following command to 
-start your Ghost Blog.
-npm start
-Note: If you had previously closed your Terminal, you&amp;apos;ll need to navigate 
-into the ghost directory again, with cd ghost.
-  Visiting your Ghost Blog Now open up a new tab and visit your Ghost Blog on your Koding domain at 
-the following address.
-http://hostname.username.koding.io:port
-Where username is your Koding username, and port is the port you 
-chose above.
-If you navigate to the following address, you can signup as Admin to your 
-Ghost installation.
-http://hostname.username.koding.io:port/ghost
-  Running Ghost on Port 80 If you&amp;apos;d like to run Ghost on the default Port 80, you&amp;apos;ll have to Stop 
-Apache, and start Ghost with sudo. Here are the commands to do this.
-sudo service apache2 stop
-sudo npm start
-This should be typed from the Ghost installation directory.
-And that&amp;apos;s it! You should now have a Ghost installation up and running.Happy Blogging!
 </description>
   </item>
   
@@ -4273,42 +4350,6 @@ certainly be different than what was used in this example.
   </item>
   
   <item>
-    <title>Where is my Web Server Root?</title>
-    <link>//learn.koding.com/guides/where-is-my-webserver-root</link>
-    <pubDate>"2014-07-09T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/where-is-my-webserver-root</guid>
-    <author>Team Koding</author>
-    <description>Koding VMs come with Apache preconfigured and serve a sample site to get you 
-started. The files for this site are found in what is typically called your 
-Web Server Root. This is the directory that Apache is serving up files from, 
-and it is located within your Home directory, under the Web directory. The 
-full path being:
-/home/username/Web
-Replace username with your username.
-You can modify the contents of this directory with the Koding 
-Terminal, or the Ace Editor. In this example, we&amp;apos;ll use Ace 
-to browse the files with the FileTree.
-First, open up Ace. In the left hand side you&amp;apos;ll see a FileTree, with a 
-directory called Web. Double click the Web folder to expand it. Your FileTree 
-should look something like this:
-
-Those files are a series of example pages, and they&amp;apos;re being served by Apache 
-on your Koding Domain. You can view this site by visiting your Koding Domain, 
-at:
-http://hostname.username.koding.io
-Where username is your Koding username. You should see something like this:
-
-You&amp;apos;ll notice that the PHP, Python, Perl, and Ruby links are actually files 
-being generated from that language. As an example, the python.py file is 
-being served up by Apache, with the aid of Apache&amp;apos;s mod_python module. This 
-serves to illustrate that this is a real Apache server, and you can use it 
-just like you expect.
-You should now understand where your Web Server Root is, and how to access it 
-from the Web to develop and share your web applications. Happy Koding!
-</description>
-  </item>
-  
-  <item>
     <title>Elixir on Koding</title>
     <link>//learn.koding.com/guides/elixir-on-koding</link>
     <pubDate>"2014-07-09T00:00:00.000Z"</pubDate>
@@ -4374,6 +4415,42 @@ Elixir is now updated!
   </item>
   
   <item>
+    <title>Where is my Web Server Root?</title>
+    <link>//learn.koding.com/guides/where-is-my-webserver-root</link>
+    <pubDate>"2014-07-09T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/where-is-my-webserver-root</guid>
+    <author>Team Koding</author>
+    <description>Koding VMs come with Apache preconfigured and serve a sample site to get you 
+started. The files for this site are found in what is typically called your 
+Web Server Root. This is the directory that Apache is serving up files from, 
+and it is located within your Home directory, under the Web directory. The 
+full path being:
+/home/username/Web
+Replace username with your username.
+You can modify the contents of this directory with the Koding 
+Terminal, or the Ace Editor. In this example, we&amp;apos;ll use Ace 
+to browse the files with the FileTree.
+First, open up Ace. In the left hand side you&amp;apos;ll see a FileTree, with a 
+directory called Web. Double click the Web folder to expand it. Your FileTree 
+should look something like this:
+
+Those files are a series of example pages, and they&amp;apos;re being served by Apache 
+on your Koding Domain. You can view this site by visiting your Koding Domain, 
+at:
+http://hostname.username.koding.io
+Where username is your Koding username. You should see something like this:
+
+You&amp;apos;ll notice that the PHP, Python, Perl, and Ruby links are actually files 
+being generated from that language. As an example, the python.py file is 
+being served up by Apache, with the aid of Apache&amp;apos;s mod_python module. This 
+serves to illustrate that this is a real Apache server, and you can use it 
+just like you expect.
+You should now understand where your Web Server Root is, and how to access it 
+from the Web to develop and share your web applications. Happy Koding!
+</description>
+  </item>
+  
+  <item>
     <title>Sync files using Google Drive</title>
     <link>//learn.koding.com/guides/sync-files-google-drive</link>
     <pubDate>"2014-07-08T00:00:00.000Z"</pubDate>
@@ -4404,6 +4481,36 @@ man cron
  Note 2: As per the author of grive, the application will not download any files that are the traditional Google Docs (Spreadsheet, Documents,
 Presentations, etc.). The app will only automatically upload/download any non-native Google Doc formats which include
 code files, text files, images, etc.
+</description>
+  </item>
+  
+  <item>
+    <title>Updating Node.js on your VM</title>
+    <link>//learn.koding.com/guides/updating-nodejs-on-your-vm</link>
+    <pubDate>"2014-06-27T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/updating-nodejs-on-your-vm</guid>
+    <author>Darryl Dias</author>
+    <description>Your Koding VM is powered by Ubuntu 14.04; by default your Koding VM comes pre-installed with Node 0.10.26, the current stable version of Node.js available in the official Ubuntu repository. We can update to the latest stable version of Node.js available for Ubuntu 14.04 by adding the official Node.js PPA to our local sources list and running a dist-upgrade to switch to the latest stable version.
+The Official PPA is updated regularly and is maintained by Chris Lea
+  Instructions Adding the official Node.js PPA
+sudo add-apt-repository ppa:chris-lea/node.js
+
+Updating the local package database and sources list.
+sudo apt-get update
+
+Updating to the latest stable build of Node.js available for Ubuntu 14.04. This will update all the packages that need to update and will also update your Node.js package.
+sudo apt-get dist-upgrade
+
+If you had deleted Node.js from your VM, you can install it by entering the command below. The PPA installs NPM as a part of nodejs and does not require you to install NPM seperately.
+sudo apt-get install nodejs
+
+Check the version of Node.js after installing. 
+node --version
+
+The example output should look like.
+v0.10.33
+
+Now you have the latest stable version of Node.js installed on your VM.
 </description>
   </item>
   
@@ -4446,36 +4553,6 @@ http://hostname.username.koding.io/phpinfo.php
 This page should show you the PHP configuration on your machine. 
 One of the section contains information about Phalcon (search on the page for phalcon by pressing Ctrl + F). 
 If you can see this section, it means that Phalcon has been installed on your machine and you can start using it right away!
-</description>
-  </item>
-  
-  <item>
-    <title>Updating Node.js on your VM</title>
-    <link>//learn.koding.com/guides/updating-nodejs-on-your-vm</link>
-    <pubDate>"2014-06-27T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/updating-nodejs-on-your-vm</guid>
-    <author>Darryl Dias</author>
-    <description>Your Koding VM is powered by Ubuntu 14.04; by default your Koding VM comes pre-installed with Node 0.10.26, the current stable version of Node.js available in the official Ubuntu repository. We can update to the latest stable version of Node.js available for Ubuntu 14.04 by adding the official Node.js PPA to our local sources list and running a dist-upgrade to switch to the latest stable version.
-The Official PPA is updated regularly and is maintained by Chris Lea
-  Instructions Adding the official Node.js PPA
-sudo add-apt-repository ppa:chris-lea/node.js
-
-Updating the local package database and sources list.
-sudo apt-get update
-
-Updating to the latest stable build of Node.js available for Ubuntu 14.04. This will update all the packages that need to update and will also update your Node.js package.
-sudo apt-get dist-upgrade
-
-If you had deleted Node.js from your VM, you can install it by entering the command below. The PPA installs NPM as a part of nodejs and does not require you to install NPM seperately.
-sudo apt-get install nodejs
-
-Check the version of Node.js after installing. 
-node --version
-
-The example output should look like.
-v0.10.33
-
-Now you have the latest stable version of Node.js installed on your VM.
 </description>
   </item>
   
@@ -4667,6 +4744,53 @@ installation of Koding University.
   </item>
   
   <item>
+    <title>Getting Started: The Activity Feed</title>
+    <link>//learn.koding.com/guides/getting-started/activity-feed</link>
+    <pubDate>"2014-05-30T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/activity-feed</guid>
+    <author>Team Koding</author>
+    <description>The Activity Feed is the central location for discussion on Koding. A 
+public message board, with markdown support, previewing, hashtag topics 
+and more, it&amp;apos;s a central component to Koding&amp;apos;s Social experience.
+
+  Posting and Formatting To post to the activity feed, find the input box in the top of the page.
+
+Simply type something in, and press the green submit button. Just plain text 
+can get a bit boring though, so Koding supports full 
+Markdown, as seen below:
+
+  Previewing To preview your post, simply press the little eye on the right side of 
+the input box. Your Markdown will be rendered and highlighted 
+appropriately.
+
+  Tagging Tagging your content is important. With tags, your content can be
+categorized, which makes it easier to search and more likely to be seen 
+by people who follow those channels.
+
+
+
+Here you can see the previous Markdown example, tagged with the 
+#markdown tag.
+  Searching On the #public channel there is a search field next to 
+Most Liked / Most Recent, as seen below.
+
+Searching the activity feed will search for the contents of a post, as 
+well as the tags.
+  Channels Channels are how you view a steam of posts with a certain Tag. When you 
+click on a tag, it opens a channel for that tag. Clicking on the Grey 
+checkmark next to the channel name, will subscribe you to that channel, 
+and keep it open anytime you visit Koding.
+
+To browse channels that you might be interested in, you can click the 
+Plus button next to &amp;quot;Channel&amp;quot; in the sidebar (as seen below), and 
+search for the channel you&amp;apos;re interested in.
+
+Following channels is a great way to stay active in content that matters 
+to you.
+</description>
+  </item>
+  
+  <item>
     <title>Markdown Basics, for Koding</title>
     <link>//learn.koding.com/guides/markdown</link>
     <pubDate>"2014-05-30T00:00:00.000Z"</pubDate>
@@ -4736,53 +4860,6 @@ prepend your list items with a number, instead of a hyphen. Example:
 ![Alt text](full url to the image)
 ![Alt text](full url to the image &amp;quot;Optional title&amp;quot;)
 
-</description>
-  </item>
-  
-  <item>
-    <title>Getting Started: The Activity Feed</title>
-    <link>//learn.koding.com/guides/getting-started/activity-feed</link>
-    <pubDate>"2014-05-30T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/activity-feed</guid>
-    <author>Team Koding</author>
-    <description>The Activity Feed is the central location for discussion on Koding. A 
-public message board, with markdown support, previewing, hashtag topics 
-and more, it&amp;apos;s a central component to Koding&amp;apos;s Social experience.
-
-  Posting and Formatting To post to the activity feed, find the input box in the top of the page.
-
-Simply type something in, and press the green submit button. Just plain text 
-can get a bit boring though, so Koding supports full 
-Markdown, as seen below:
-
-  Previewing To preview your post, simply press the little eye on the right side of 
-the input box. Your Markdown will be rendered and highlighted 
-appropriately.
-
-  Tagging Tagging your content is important. With tags, your content can be
-categorized, which makes it easier to search and more likely to be seen 
-by people who follow those channels.
-
-
-
-Here you can see the previous Markdown example, tagged with the 
-#markdown tag.
-  Searching On the #public channel there is a search field next to 
-Most Liked / Most Recent, as seen below.
-
-Searching the activity feed will search for the contents of a post, as 
-well as the tags.
-  Channels Channels are how you view a steam of posts with a certain Tag. When you 
-click on a tag, it opens a channel for that tag. Clicking on the Grey 
-checkmark next to the channel name, will subscribe you to that channel, 
-and keep it open anytime you visit Koding.
-
-To browse channels that you might be interested in, you can click the 
-Plus button next to &amp;quot;Channel&amp;quot; in the sidebar (as seen below), and 
-search for the channel you&amp;apos;re interested in.
-
-Following channels is a great way to stay active in content that matters 
-to you.
 </description>
   </item>
   
