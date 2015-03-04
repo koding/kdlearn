@@ -5,7 +5,7 @@ date: 2015-03-03
 categories: [hello world, php, koding]
 
 series: hello-world
-series-index: 5
+series-index: 6
 template: series.toffee
 ---
 
