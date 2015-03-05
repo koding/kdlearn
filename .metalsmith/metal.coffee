@@ -60,6 +60,23 @@ markedRenderer.heading = (text, level) ->
   </h#{level}>
   "
 
+markedRenderer.blockquote = (quote) ->
+  quoteTypes = ["good", "warning", "error"]
+  quoteType = ""
+  for _quoteType in quoteTypes
+    seeking = "<p>type:#{_quoteType}\n"
+    if quote.indexOf(seeking) == 0
+      # Set the quoteType to the current _quoteType
+      quoteType = _quoteType
+      # Trim the seeking from the quote
+      quote = quote[seeking.length...]
+      break
+  "
+  <blockquote class=\"#{quoteType}\">
+    #{quote}
+  </blockquote>
+  "
+
 
 # ## build
 #
