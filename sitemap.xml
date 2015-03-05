@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://learn.koding.com/guides/hello-world/go</loc>
+    <lastmod>2015-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
     <loc>http://learn.koding.com/guides/hello-world/ruby</loc>
     <lastmod>2015-03-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -9,12 +15,6 @@
   
   <url>
     <loc>http://learn.koding.com/guides/hello-world/python</loc>
-    <lastmod>2015-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://learn.koding.com/guides/hello-world/go</loc>
     <lastmod>2015-03-04</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -669,79 +669,79 @@
   
   <url>
     <loc>http://learn.koding.com/faq/what-is-koding</loc>
-    <lastmod>2015-03-05</lastmod>
+    <lastmod>2015-03-06</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>http://learn.koding.com/faq/support</loc>
-    <lastmod>2015-03-05</lastmod>
+    <lastmod>2015-03-06</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>http://learn.koding.com/faq/vm-ip-vs-address</loc>
-    <lastmod>2015-03-05</lastmod>
+    <lastmod>2015-03-06</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>http://learn.koding.com/faq/change-username</loc>
-    <lastmod>2015-03-05</lastmod>
+    <lastmod>2015-03-06</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>http://learn.koding.com/faq/delete-account</loc>
-    <lastmod>2015-03-05</lastmod>
+    <lastmod>2015-03-06</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>http://learn.koding.com/faq/sidebar-collapse</loc>
-    <lastmod>2015-03-05</lastmod>
+    <lastmod>2015-03-06</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>http://learn.koding.com/faq/vm-reinit</loc>
-    <lastmod>2015-03-05</lastmod>
+    <lastmod>2015-03-06</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>http://learn.koding.com/faq/sudo-password</loc>
-    <lastmod>2015-03-05</lastmod>
+    <lastmod>2015-03-06</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>http://learn.koding.com/faq/vm-poweroff</loc>
-    <lastmod>2015-03-05</lastmod>
+    <lastmod>2015-03-06</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>http://learn.koding.com/faq/open-ports</loc>
-    <lastmod>2015-03-05</lastmod>
+    <lastmod>2015-03-06</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>http://learn.koding.com/faq/transfer-files</loc>
-    <lastmod>2015-03-05</lastmod>
+    <lastmod>2015-03-06</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>http://learn.koding.com/faq/vm-hostname</loc>
-    <lastmod>2015-03-05</lastmod>
+    <lastmod>2015-03-06</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>http://learn.koding.com/faq/mysql-socket-error-2002</loc>
-    <lastmod>2015-03-05</lastmod>
+    <lastmod>2015-03-06</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
