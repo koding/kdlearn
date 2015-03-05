@@ -7,14 +7,22 @@ categories: [rockmongo, mongo]
 
 # How to install Rockmongo
 
+Before you continue reading this guide why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install Rockmongo using just one command:
+
+```
+kpm install rockmongo
+```
+
+***
+
 ## What is Rockmongo
 
-Rockmongo is a MongoDB administration tool that can be used to manage servers, databases, collections, documents, indexes etc. It provides a very user-friendly way for reading, writing and creating documents. It is very similar to [phpMyAdmin](http://learn.koding.com/guides/install-phpmyadmin/). 
+Rockmongo is a MongoDB administration tool that can be used to manage servers, databases, collections, documents, indexes etc. It provides a very user-friendly way for reading, writing and creating documents. It is very similar to [phpMyAdmin](http://learn.koding.com/guides/install-phpmyadmin/).
 
 ### Step 1
 
 The first thing you need to do is to open up your [Koding](https://koding.com/IDE) Terminal and type in the following command:
-	
+
 ```
 cd Web
 ```
@@ -67,4 +75,6 @@ If everything is working properly, you should see the following screen in your b
 
 ![](rockmongo.png)
 
-That's it! You're now running Rockmongo on Koding!
+And that's it!
+
+If you encounter any issues or have any questions please drop an email [here](mailto:support@koding.com).
