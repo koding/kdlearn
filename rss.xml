@@ -2042,7 +2042,18 @@ That&amp;apos;s it. Next time you open a new Terminal, it should be running the 
     <guid isPermaLink="true">//learn.koding.com/guides/getting-started-kpm</guid>
     <author>Team Koding</author>
     <description>Koding Package Manager (kpm) is a command line tool that we have set up to make it easy for you to install (and soon remove) your favorite packages like WordPress, Mongodb, Laravel, etc. KPM takes care of measuring disk space requirements, analyzing dependencies and installing all required packages to bring you a running system. It&amp;apos;s the easiest way to get up and running with your favorite technology or package. KPM also replaces the older generation KDApps (most of which were installers).
-  Getting started with the Koding Package Manager This guide will cover the basics of the KPM and how to get started with it.
+  Demos Plain
+ This is a demo block quote. What does it look like?
+ Good
+ This is a demo block quote. What does it look like?
+ Warning
+ This is a demo block quote. What does it look like?
+ Error
+ This is a demo block quote. What does it look like?
+ Invalid (not a valid quote type)
+ type:invalid
+This is a demo block quote. What does it look like?
+   Getting started with the Koding Package Manager This guide will cover the basics of the KPM and how to get started with it.
   Usage KPM runs in the Terminal of your Koding account. In order to use KPM you first need to install it. To do that you have to run the following command in your Terminal:
 curl -sSL learn.koding.com/kpm.sh | sh
 
@@ -2818,10 +2829,8 @@ We must first install Composer as we need Drush master (7) to easily install Dru
 Issue the following commands to perform the install and tidy up. 
 sudo curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
-
-The last step is not required AFAIK, but makes Composer global for the machine. The instructions that I read said &amp;#x201C;Make sure Composer&amp;apos;s global bin directory is on the system PATH (recommended)&amp;#x201D;. That&amp;#x2019;s great, although I don&amp;#x2019;t fully understand the implications. 
-
-Issue the following commands in your shell to sort the path out.
+ The last step is not required AFAIK, but makes Composer global for the machine. The instructions that I read said &amp;#x201C;Make sure Composer&amp;apos;s global bin directory is on the system PATH (recommended)&amp;#x201D;. That&amp;#x2019;s great, although I don&amp;#x2019;t fully understand the implications. 
+ Issue the following commands in your shell to sort the path out.
 sed -i &amp;apos;1i export PATH=&amp;quot;$HOME/.composer/vendor/bin:$PATH&amp;quot;&amp;apos; $HOME/.bashrc
 source $HOME/.bashrc
 Now we can go ahead and use Composer to install drush 7. More long winded than &amp;quot;the old days&amp;quot;, but get used to it. Everything is Composer in D8. &amp;quot;So Compose; much baton (sic).&amp;quot;
@@ -4357,10 +4366,8 @@ certainly be different than what was used in this example.
     <author>Antoine Proulx</author>
     <description>This tutorial will show you how to install Elixir on your Koding VM and then how to update it when a new version is available.
   What is Elixir? From Elixir website:
-
-Elixir is a functional, meta-programming aware language built on top of the Erlang VM. It is a dynamic language that focuses on tooling to leverage Erlang&amp;apos;s abilities to build concurrent, distributed and fault-tolerant applications with hot code upgrades.
-
-  Installation Because Elixir runs on the Erlang VM, you need to install Erlang first. At the time of this 
+ Elixir is a functional, meta-programming aware language built on top of the Erlang VM. It is a dynamic language that focuses on tooling to leverage Erlang&amp;apos;s abilities to build concurrent, distributed and fault-tolerant applications with hot code upgrades.
+   Installation Because Elixir runs on the Erlang VM, you need to install Erlang first. At the time of this 
 writing, Elixir is at version 0.14.2 and it needs at least Erlang 17.
   Erlang To install Erlang, you can use the Erlang Solutions repository.
 The first thing to do is to add the repository. To do that, open the Terminal and then enter the following:
