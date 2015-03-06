@@ -2,12 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://learn.koding.com/guides/hello-world/go</loc>
-    <lastmod>2015-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
     <loc>http://learn.koding.com/guides/hello-world/ruby</loc>
     <lastmod>2015-03-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -15,6 +9,12 @@
   
   <url>
     <loc>http://learn.koding.com/guides/hello-world/python</loc>
+    <lastmod>2015-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://learn.koding.com/guides/hello-world/go</loc>
     <lastmod>2015-03-04</lastmod>
     <changefreq>monthly</changefreq>
   </url>
