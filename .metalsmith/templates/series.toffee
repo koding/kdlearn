@@ -51,14 +51,19 @@
     </ol> 
   :} #}
 
-  {# if series.prev? {:
-    <ul class="series-nav">
-      <li><a href="#{series.prev.httplink}">Previous</a></li>
-    {# if series.next? {:
-      <li><a href="#{series.next.httplink}">Next</a></li>
-    :} #}
-    </ul>
-  :} #}
+  {# 
+    if series.name is 'contribute'
+        if series.prev? {:
+            <ul class="series-nav">
+              <li><a href="#{series.prev.httplink}">Previous</a></li>
+            {# 
+                if series.next? {:
+                    <li><a href="#{series.next.httplink}">Next</a></li>
+                :} 
+            #}
+            </ul>
+        :} 
+  #}
 
   #{partial 'guidefooter.toffee'}
   
