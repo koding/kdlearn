@@ -1,6 +1,7 @@
 <footer class="kdview main-footer">
     <div class="inner-container clearfix">
       <nav class="footer-block">
+        <a href="https://koding.com">Koding</a>
         <a href="https://koding.com/Pricing">Pricing</a>
         <a href="https://koding.com/Activity">Community</a>
         <a href="https://koding.com/About">About</a>

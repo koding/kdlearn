@@ -17,10 +17,18 @@ From [Elixir website](http://elixir-lang.org/):
 
 ## Installation
 
-Because Elixir runs on the Erlang VM, you need to install Erlang first. At the time of this 
+Because Elixir runs on the Erlang VM, you need to install Erlang first. At the time of this
 writing, Elixir is at version 0.14.2 and it needs at least Erlang 17.
 
 ### Erlang
+
+Before you continue reading this section why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install Erlang using just one command:
+
+```
+kpm install erlang
+```
+
+***
 
 To install Erlang, you can use the [Erlang Solutions repository](https://www.erlang-solutions.com/downloads/download-erlang-otp#tabs-ubuntu).
 
@@ -31,7 +39,7 @@ wget http://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb
 sudo dpkg -i erlang-solutions_1.0_all.deb
 ```
 
-The `wget` command will download a package that will be used to add the 
+The `wget` command will download a package that will be used to add the
 Erlang Solutions repository and the other one installs it.
 
 You can now install Erlang by typing this in the Terminal:
@@ -46,6 +54,14 @@ sudo apt-get install erlang
 This will refresh the list of available packages and then install Erlang.
 
 ### Elixir
+
+Before you continue reading this section why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install Elixir using just one command:
+
+```
+kpm install elixir
+```
+
+***
 
 Now that you have Erlang, you can install Elixir. To do this, we'll use a precompiled version and place it in `~/lang/elixir`.
 
@@ -100,7 +116,7 @@ sudo apt-get update
 sudo apt-get upgrade
 ```
 
-The first command will update the list of the available packages and the second one will download 
+The first command will update the list of the available packages and the second one will download
 and install the packages that have been updated in the repositories.
 
 ### Elixir
@@ -119,4 +135,6 @@ wget -O elixir.zip https://github.com/elixir-lang/elixir/releases/download/v[eli
 unzip elixir.zip -d ~/lang/elixir
 ```
 
-Elixir is now updated!
+And that's it!
+
+If you encounter any issues or have any questions please drop an email [here](mailto:support@koding.com).
