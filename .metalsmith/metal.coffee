@@ -69,10 +69,10 @@ markedRenderer.blockquote = (quote) ->
       # Set the quoteType to the current _quoteType
       quoteType = _quoteType
       # Trim the seeking from the quote
-      quote = quote[seeking.length...]
+      quote = "<p>#{quote[seeking.length...]}"
       break
   "
-  <blockquote class=\"#{quoteType}\">
+  <blockquote class=\"fa fa-check #{quoteType}\">
     #{quote}
   </blockquote>
   "
