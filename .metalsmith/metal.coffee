@@ -60,22 +60,56 @@ markedRenderer.heading = (text, level) ->
   </h#{level}>
   "
 
+# In our version of blockquote, we're looking for `type:foo` strings
+# and styling the blockquote based on that string.
+#
+# It's also worth noting that we're *only* looking at that string if
+# it starts a paragraph on a line of it's own. This is mainly for
+# implementation simplicity, but also helps provide a sane way to
+# split up the markdown. If you want two blockquotes, add a newline to
+# ensure a new paragraph.
 markedRenderer.blockquote = (quote) ->
-  quoteTypes = ["good", "warning", "error"]
-  quoteType = ""
-  for _quoteType in quoteTypes
-    seeking = "<p>type:#{_quoteType}\n"
-    if quote.indexOf(seeking) == 0
-      # Set the quoteType to the current _quoteType
-      quoteType = _quoteType
-      # Trim the seeking from the quote
-      quote = "<p>#{quote[seeking.length...]}"
-      break
-  "
-  <blockquote class=\"fa fa-check #{quoteType}\">
-    #{quote}
-  </blockquote>
-  "
+  quoteTypes =
+    "good": "good fa fa-check-circle"
+    "warning": "warning fa fa-info-circle"
+    "error": "error fa fa-exclamation-circle"
+
+  # Blocks is the final list of blockquotes that we're going to return
+  blocks = []
+  # Split the quote based on `<p>type:`, since we know that is what
+  # starts any quote types. We can then iterate over it, with the
+  # knowledge that each item in the array is a potentially blockquote
+  for block, i in quote.split "<p>type:"
+    # If block is empty, skip it. This means that <p>type: was at
+    # the beginning of the quote, and we can ignore it
+    continue if block == ""
+    typeMatch = false
+    classes = ""
+    for quoteType, _classes of quoteTypes
+      # If the blockquote starts with our type, we found it!
+      if block.indexOf("#{quoteType}\n") == 0
+        typeMatch = true
+        classes = _classes
+        # Remove the quoteType\n from the block. Eg,
+        # `good\nfoo\nbar` becomes `foo\nbar`
+        block = block[quoteType.length+1...]
+        # Add back the <p> that we stole, but ignore the type, since
+        # we don't want that in the final quote for matches
+        block = "<p>" + block
+    # If there was no match for any quoteType, then add back the
+    # <p>type: that we stole
+    # Note that the zero index (0) wasn't actually split on the type,
+    # so make sure not to add type back.
+    if not typeMatch and i != 0 then block = "<p>type:" + block
+    console.log "[#{i}] Writing block: '#{block}'"
+    # Now add our block to the final list
+    blocks.push "
+    <blockquote class=\"#{classes}\">
+      #{block}
+    </blockquote>
+    "
+  # And finally, return our blocks
+  blocks.join '\n'
 
 
 # ## build
