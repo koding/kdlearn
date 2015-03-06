@@ -73,6 +73,7 @@ and then add a rule for a specific port that Koding requires
 ```
 sudo ufw allow 56789/tcp
 ```
+**Note: If you do not open up the ports mentioned above, then you will be locked out of your VM and will need to send us a support request to have it fixed.**
 
 ## Allowing access to specific standard services.
 ufw already knows what to do for standard services like ftp, http, ssh, telnet, etc. so if you want to enable
