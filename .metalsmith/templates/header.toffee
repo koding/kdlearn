@@ -3,7 +3,7 @@
 	<div class="container">
 		<h2>What is Koding University?</h2>
     <p align=left>
-    Koding reduces setup time from hours to minutes so that you can focus
+    <a href="https://koding.com" target=_blank><span style="color:white;text-decoration: underline">Koding</span></a> reduces setup time from hours to minutes so that you can focus
     on learning to code vs installing and configuring packages and frameworks. 
     Koding accounts come with a VM that has everything pre-installed and ready to go! 
     </p>
