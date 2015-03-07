@@ -2,10 +2,15 @@
 	#{partial 'topnav.toffee'}
 	<div class="container">
 		<h2>What is Koding University?</h2>
-    We've built this learning community to
-    get you acquainted with Koding itself as well as some of the more popular
-    technologies and how you can get up and running with them on your Koding
-    environment. Start with the video's below for an overview of Koding or use
-    the links above to dig into other topics. Let the learning begin! 
+    <p align=left>
+    Koding reduces setup time from hours to minutes so that you can focus
+    on learning to code vs installing and configuring packages and frameworks. 
+    Koding accounts come with a VM that has everything pre-installed and ready to go! 
+    </p>
+    <p align=left>
+    Koding University will get you acquainted with Koding itself as well as some of the popular
+    technologies that are prevelant today and how you how you can get up and running with them in no time.
+    Start with the video's below for an overview of Koding or use the links above to dig into other topics. Let the learning begin! 
+    </p>
 	</div>
 </header>
