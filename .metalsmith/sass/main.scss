@@ -382,6 +382,20 @@ footer.main-footer {
 h1#logo {
   margin: 10px 0;
 }
+.hasHeader {
+    #logo {
+        span.img {
+            width: 185px;
+        }
+    }
+}
+.noHeader {
+    #logo {
+        span.img {
+            width: 216px;
+        }
+    }
+}
 #logo {
   span.img {
     display: inline-block;
@@ -389,7 +403,6 @@ h1#logo {
     background-size: 185px;
     background-position: center;
     background-repeat: no-repeat;
-    width: 185px;
     height: 23px;
     vertical-align: middle;
     margin-bottom: 10px;

@@ -1,5 +1,5 @@
 <header>
-	#{partial 'topnav.toffee'}
+	#{partial 'topnav.toffee', nav: 'hasHeader'}
 	<div class="container">
 		<h2>What is Koding University?</h2>
     <p align=left>
