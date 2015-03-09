@@ -101,7 +101,6 @@ markedRenderer.blockquote = (quote) ->
     # Note that the zero index (0) wasn't actually split on the type,
     # so make sure not to add type back.
     if not typeMatch and i != 0 then block = "<p>type:" + block
-    console.log "[#{i}] Writing block: '#{block}'"
     # Now add our block to the final list
     blocks.push "
     <blockquote class=\"#{classes}\">
