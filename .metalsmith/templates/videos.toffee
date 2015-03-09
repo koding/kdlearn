@@ -1,5 +1,5 @@
 #{partial 'head.toffee', title: 'Videos'}
-#{partial 'topnav.toffee'}
+#{partial 'topnav.toffee', nav: 'hasHeader'}
 
 
 {#

@@ -3,6 +3,7 @@
 <section><div class="container">
 
 {# if not hideSidebar? then print partial 'sidebar.toffee' #}
+
 <div
   class="docs-content guide-content"
   itemscope itemtype="http://schema.org/TechArticle"

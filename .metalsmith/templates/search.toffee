@@ -1,5 +1,5 @@
 #{partial 'head.toffee'}
-#{partial 'topnav.toffee'}
+#{partial 'topnav.toffee', nav: 'hasHeader'}
 <section>
   <div id="page-search" class="container">
     <div class="docs-content">

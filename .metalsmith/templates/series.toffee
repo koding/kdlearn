@@ -1,6 +1,7 @@
 #{partial 'head.toffee'}
 #{partial 'topnav.toffee'}
 <section><div class="container">
+
 {# if not hideSidebar? then print partial 'sidebar.toffee' #}
 
 <div
