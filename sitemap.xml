@@ -680,19 +680,13 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/faq/vm-ip-vs-address</loc>
+    <loc>http://learn.koding.com/faq/redeem-referrals</loc>
     <lastmod>2015-03-10</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>http://learn.koding.com/faq/change-username</loc>
-    <lastmod>2015-03-10</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://learn.koding.com/faq/delete-account</loc>
     <lastmod>2015-03-10</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -710,13 +704,19 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/faq/sudo-password</loc>
+    <loc>http://learn.koding.com/faq/vm-ip-vs-address</loc>
     <lastmod>2015-03-10</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/faq/vm-poweroff</loc>
+    <loc>http://learn.koding.com/faq/delete-account</loc>
+    <lastmod>2015-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://learn.koding.com/faq/sudo-password</loc>
     <lastmod>2015-03-10</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -735,6 +735,12 @@
   
   <url>
     <loc>http://learn.koding.com/faq/vm-hostname</loc>
+    <lastmod>2015-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://learn.koding.com/faq/vm-poweroff</loc>
     <lastmod>2015-03-10</lastmod>
     <changefreq>monthly</changefreq>
   </url>
