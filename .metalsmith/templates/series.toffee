@@ -1,5 +1,13 @@
 #{partial 'head.toffee'}
-#{partial 'topnav.toffee'}
+{#
+    if hideSidebar? and hideSidebar is true {:
+        #{partial 'topnav.toffee', nav: 'hasHeader'}
+    :}
+    else {:
+        #{partial 'topnav.toffee'}
+    :}
+#}
+
 <section><div class="container">
 
 {# if not hideSidebar? then print partial 'sidebar.toffee' #}
