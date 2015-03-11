@@ -13,7 +13,7 @@ of Koding, to interact with your Koding VM. This is also required if you're inte
 
 We are going to be connecting using PuTTY, and we are going to use the terminology "local" to represent the machine that you're connecting to Koding with.
 
-> type: warning
+> type:warning
 > Note that PuTTY can be troublesome. You may want to consider [Cygwin][cygwin]
 to easily connect with the [Unix instructions][connect-unix].
 
@@ -29,7 +29,7 @@ to easily connect with the [Unix instructions][connect-unix].
 For this connection method, you will need the [PuTTY SSH client suite][putty
 suite] `putty.exe`, `plink.exe`, and `pageant.exe`.
 
-> type: warning
+> type:warning
 > PuTTY has proven difficult to support due to the UI and ease of checking/configuring PuTTY incorrectly. With that said, we highly recommend using [Cygwin][cygwin], since it offers a real and normal Unix SSH Config.
 
 * Copy the text contents of your PuTTY public key. If you are not sure what or where it is, please refer to the **Requirements** section of this guide.
