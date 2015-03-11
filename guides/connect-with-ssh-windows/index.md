@@ -1,8 +1,8 @@
 ---
 title: Connect with SSH from Windows
 author: Team Koding
-date: 2014-04-08
-categories: [ssh]
+date: 2015-03-11
+categories: [ssh, windows]
 template: page.toffee
 ---
 
