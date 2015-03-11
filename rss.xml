@@ -26,8 +26,7 @@
     <description>Connecting to your VM with SSH will allow you to use another Terminal, outside
 of Koding, to interact with your Koding VM. This is also required if you&amp;apos;re interested in using SSH Tunneling. If you&amp;apos;re connecting from a Mac or Linux, have a look here.
 We are going to be connecting using PuTTY, and we are going to use the terminology &amp;quot;local&amp;quot; to represent the machine that you&amp;apos;re connecting to Koding with.
- type: warning
-Note that PuTTY can be troublesome. You may want to consider Cygwin
+ Note that PuTTY can be troublesome. You may want to consider Cygwin
 to easily connect with the Unix instructions.
    Requirements 
 Your Koding VM address
@@ -36,8 +35,7 @@ A PuTTY Auth Key. If you need to generate one, please refer to
 this tutorial.
 
   Connecting with PuTTY For this connection method, you will need the PuTTY SSH client suite putty.exe, plink.exe, and pageant.exe.
- type: warning
-PuTTY has proven difficult to support due to the UI and ease of checking/configuring PuTTY incorrectly. With that said, we highly recommend using Cygwin, since it offers a real and normal Unix SSH Config.
+ PuTTY has proven difficult to support due to the UI and ease of checking/configuring PuTTY incorrectly. With that said, we highly recommend using Cygwin, since it offers a real and normal Unix SSH Config.
  
 Copy the text contents of your PuTTY public key. If you are not sure what or where it is, please refer to the Requirements section of this guide.
 As in Step #2 of the Linux guide above, paste the entirety of your public key into the SSH Keys section of your Koding account settings.
