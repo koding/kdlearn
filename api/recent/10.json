@@ -1,9 +1,9 @@
 [
   {
-    "title": "Hello World on Koding: Ruby",
-    "url": "http://learn.koding.com/guides/hello-world/ruby/index.html",
+    "title": "Connect with SSH from Windows",
+    "url": "http://learn.koding.com/guides/connect-with-ssh-windows/index.html",
     "author": "Team Koding",
-    "date": "2015-03-04T00:00:00.000Z"
+    "date": "2015-03-11T00:00:00.000Z"
   },
   {
     "title": "Hello World on Koding: Python",
@@ -14,6 +14,12 @@
   {
     "title": "Hello World on Koding: Go",
     "url": "http://learn.koding.com/guides/hello-world/go/index.html",
+    "author": "Team Koding",
+    "date": "2015-03-04T00:00:00.000Z"
+  },
+  {
+    "title": "Hello World on Koding: Ruby",
+    "url": "http://learn.koding.com/guides/hello-world/ruby/index.html",
     "author": "Team Koding",
     "date": "2015-03-04T00:00:00.000Z"
   },
@@ -52,11 +58,5 @@
     "url": "http://learn.koding.com/guides/hello-world/c++/index.html",
     "author": "Team Koding",
     "date": "2015-03-03T00:00:00.000Z"
-  },
-  {
-    "title": "VNC Startup Guide",
-    "url": "http://learn.koding.com/guides/vnc-startup-guide/index.html",
-    "author": "Kaitlyn Schmidt",
-    "date": "2015-03-01T00:00:00.000Z"
   }
 ]
