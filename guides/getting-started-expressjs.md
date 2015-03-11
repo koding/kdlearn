@@ -156,11 +156,8 @@ var server = app.listen(3000, '0.0.0.0', function() {
 });
 ```
 
-**Note:** It's important to remember that order of execution matters! If 
-we define a piece of middleware *after* a route, requests to that route 
-will not run through that middleware. In the above example, the very 
-first thing we do is declare our `app.use()` middleware, and in the 
-`/:name` middleware we use the `logName` function *before* our handler.
+> type:warning
+> It's important to remember that order of execution matters! If we define a piece of middleware *after* a route, requests to that route will not run through that middleware. In the above example, the very first thing we do is declare our `app.use()` middleware, and in the `/:name` middleware we use the `logName` function *before* our handler.
 
 ## Adding Templates
 

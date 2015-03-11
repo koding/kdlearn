@@ -18,7 +18,8 @@ Also make sure you have an active Dropbox account (free or paid).
 
 Run the following command, in your Koding Terminal, to install the necessary dependency:
 
-_Note: If you already have Dropbox installed via KPM then you need to run `kpm uninstall dropbox` and then the below command to get the latest version._
+> type:warning
+> If you already have Dropbox installed via KPM then you need to run `kpm uninstall dropbox` and then the below command to get the latest version.
 
 ```
 kpm install dropbox
@@ -47,7 +48,7 @@ That's it! You should see a message in your Terminal similar to this one:
 ```
 This computer is now linked to Dropbox. Welcome YOUR_DROPBOX_NAME
 ```
-
-_Note: Whenever you turn on Koding VM you will have to run the `dropbox start` command to get dropbox started._
+> type:good
+> Whenever you turn on Koding VM you will have to run the `dropbox start` command to get dropbox started.
 
 If you encounter any issues or have any questions please drop an email [here](mailto:support@koding.com).

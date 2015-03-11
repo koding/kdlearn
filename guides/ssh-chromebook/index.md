@@ -24,8 +24,9 @@ build of Chrome OS or that your device manufacturer has opted to remove crosh fr
 their customd build of the Chrome OS.
 
 ### Step 2: Generate the required ssh private and public keys on your VM
-_Note: if you already have a private and public key generated, you can
-skip the section below_
+> type:good
+> If you already have a private and public key generated, you can
+skip the section below
 
 Open up Terminal on your Koding VM and type in the following command: 
 ```
@@ -76,7 +77,8 @@ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 To achieve this, we will first copy over the private key to
 our Web folder so that we can download it over the browser.
 
-Note: after downloading the private key you should immediately
+> type:warning
+> After downloading the private key you should immediately
 delete if from your Web folder. This is not the most secure way
 of copying over your file but is the easiest. If you prefer, you
 can also upload the file to your Google Drive account and then

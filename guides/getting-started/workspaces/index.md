@@ -73,9 +73,8 @@ You can freely remove the Workspace file system and replace them with any
 links you desire, as the steps above use, but just be careful not to 
 delete any of your files in the process.
 
-
-
-*Note: the default Workspace can't be removed as that is the default Web folder on your VM.*
+> type:error
+> The default Workspace can't be removed as that is the default Web folder on your VM.
 
 
 [koding]: https://koding.com

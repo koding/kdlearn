@@ -42,7 +42,8 @@ sudo apt-get install oracle-java7-installer
 
 You can check if Java has installed correctly by running `java -version`.
 
-_Note: All Koding VMs come preinstalled with Java._
+> type:good
+> All Koding VMs come preinstalled with Java.
 
 ## Installing
 

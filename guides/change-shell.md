@@ -17,7 +17,10 @@ Since the user account on your Koding VM's does not have a default password, you
 sudo passwd <your koding username>
 ```
 Input a password at the prompt and make sure you pick something secure. Going forward, this will be the password for the user account
-on your Koding VM. Note: This does not change your Koding.com password. That remain the same.
+on your Koding VM. 
+
+> type:good
+> Note: This does not change your Koding.com password. That remain the same.
 
 Now type in:
 ```shell

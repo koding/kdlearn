@@ -32,7 +32,8 @@ Within the terminal type the following command:
 sudo apt-get install python-tk
 ```
 
-_NOTE: The terminal will ask you for your password before it installs Tkinter.  Be ready to type in your password._
+> type:warning
+> The terminal will ask you for your password before it installs Tkinter.  Be ready to type in your password.
 
 This process downloads and installs Tkinter into your VM.
 
@@ -87,7 +88,8 @@ Type the following into your terminal
 sudo apt-get install tightvncserver
 ```
 
-_NOTE: The terminal will ask you for your password before it installs TightVNC.  Be ready to type in your password._
+> type:warning
+> The terminal will ask you for your password before it installs TightVNC.  Be ready to type in your password.
 
 This process downloads and installs TightVNC into your VM.
 

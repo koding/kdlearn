@@ -7,8 +7,9 @@ template: page.toffee
 ---
 
 # Securing your VM using the built-in (and pre-installed) Ubuntu UFW
-_(Note: you should follow the steps in this guide to its entirety otherwise if you enable the firewall and don't finish
-adding key services like ssh, you may be locked out of your VM. Please proceed with caution.)_
+> type:error`
+> You should follow the steps in this guide to its entirety otherwise if you enable the firewall and don't finish
+adding key services like ssh, you may be locked out of your VM. Please proceed with caution.
 
 From time to time, a need may arise when you need to secure your Koding VM from prying eyes. There are several solutions
 available when it comes to enabling a firewall on Ubuntu (the operating system that runs on a Koding VM) and you are free
@@ -73,7 +74,8 @@ and then add a rule for a specific port that Koding requires
 ```
 sudo ufw allow 56789/tcp
 ```
-**Note: If you do not open up the ports mentioned above, then you will be locked out of your VM and will need to send us a support request to have it fixed.**
+> type:error
+> If you do not open up the ports mentioned above, then you will be locked out of your VM and will need to send us a support request to have it fixed.
 
 ## Allowing access to specific standard services.
 ufw already knows what to do for standard services like ftp, http, ssh, telnet, etc. so if you want to enable

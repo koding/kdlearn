@@ -22,7 +22,8 @@ This guide will cover the basics on how to install and configure Jenkins on your
 
 The first thing you need to do before you install Jenkins is to make sure you add the key and source list to apt. Using the following commands you will be able to do just that.
 
-_Note: you should be logged in as root to continue with the following steps._
+> type:warning
+> You should be logged in as root to continue with the following steps.
 
 First add the key:
 

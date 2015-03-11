@@ -60,10 +60,8 @@ the given example, `/var/www/myDirectory` equals `~/Web/myDirectory`.
 </Virtualhost>
 ```
 
-**Note:** The DocumentRoot has to be an absolute path. Relative 
-directories such as `/var/www/../foo` and `~/MyDirectory` will not work.  
-If you would like to supply an directory *outside* of `~/Web`, use your 
-full home path, eg: `/home/joshmurray/myNotWebDirectory`
+> type:warning
+> The DocumentRoot has to be an absolute path. Relative directories such as `/var/www/../foo` and `~/MyDirectory` will not work.  If you would like to supply an directory *outside* of `~/Web`, use your full home path, eg: `/home/joshmurray/myNotWebDirectory`
 
 ## Enable the Subdomain
 

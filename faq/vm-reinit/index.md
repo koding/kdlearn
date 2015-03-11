@@ -9,7 +9,10 @@ an easy reinitialization function which you can use at any time you like.
 
 #### What does reinitialization do?
 When you reinit your VM, the system will delete everything on your VM and create a new one from
-scratch. **NOTE: You will lose all existing data (unless you back it up somewhere) on the VM
+scratch. 
+
+> type:error
+> **NOTE: You will lose all existing data (unless you back it up somewhere) on the VM
 that you are reinitializing. This is an irreversible process so please proceed with caution.** To backup
 your data, we recommend you [use FTP](http://learn.koding.com/guides/setting-up-ftp-on-koding/) 
 to transfer the files.

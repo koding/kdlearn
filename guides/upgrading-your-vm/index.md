@@ -16,9 +16,8 @@ We will walk through the following steps:
 
 So depending on your need, you can do 1) or 2) or both.
 
-*Note: Even though we have tested upgrading the VM, some updates may render your VM inaccessible so
-please proceed only if you know what you are doing. If you run into problems, you can always 
-re-init your VM or send us a request via [support@koding.com](mailto:support@koding.com).*
+> type:warning
+> Even though we have tested upgrading the VM, some updates may render your VM inaccessible so please proceed only if you know what you are doing. If you run into problems, you can always re-init your VM or send us a request via [support@koding.com](mailto:support@koding.com).
 
 
 ### A few prep commands
@@ -59,7 +58,8 @@ To update your package list, type the following command in Terminal:
 ```
 sudo apt-get update
 ```
-Note: no software has been updated at this time, just the list of available packages has been updated.
+> type:warning
+> No software has been updated at this time, just the list of available packages has been updated.
 
 ### Upgrading existing packages
 These series of commands will update all _existing_ packages. These will NOT install new packages.

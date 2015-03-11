@@ -6,7 +6,8 @@ categories: [koding]
 
 improvable: false
 ---
-_Note: This guide is not complete as the Collaboration feature is still experimental_
+> type:good
+> This guide is not complete as the Collaboration feature is still experimental.
 
 ### What is Collaboration?
 Koding Collaboration allows you to easily and effectively collaborate and share resources with your
@@ -14,8 +15,8 @@ team, students, peers or friends. When you enable Collaboration, you are effecti
 virtual machine (VM) with those whom you invite into the sharing session. The session remains active
 until you hit "End Session". Every person you share a session with requires a Koding account (free or paid).
 
-_Note: Since the user(s) with whom you share your session have access to all the files on your VM, make
-sure that you are sharing with people that you know._
+> type:error
+> Since the user(s) with whom you share your session have access to all the files on your VM, make sure that you are sharing with people that you know.
 
 ![Collaboration 1](otheruser.png)
 
