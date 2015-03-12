@@ -34,7 +34,7 @@ findTagName = (key) ->
     </li>
   :} #}
   </ul>
-  <!--
+
   <ul class="pagination">
   {# if paginate.prev? {:
     <li><a href="/#{paginate.prev.name}">Previous</a></li>
@@ -49,7 +49,6 @@ findTagName = (key) ->
     <li><a href="/#{paginate.next.name}">Next</a></li>
   :} #}
   </ul>
-  -->
 </div>
 
 </div></section>

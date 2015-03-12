@@ -9,7 +9,9 @@ clone = require 'clone'
 
 
 module.exports = (opts={}) ->
+  # A hard limit on the total number of items to paginate
   opts.limit            ?= null
+  # The number of items to show per page, within the limit / count
   opts.perPage          ?= 10
   opts.startPage        ?= 1
   opts.metadata         ?= {}

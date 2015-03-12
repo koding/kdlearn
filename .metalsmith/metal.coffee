@@ -186,7 +186,7 @@ module.exports = build = (callback=->) ->
     .use snapshot collection: 'guide'
     .use paginateTags
       collectionSource: 'tags'
-      limit: 10
+      perPage: 10
       output: 'categories'
       metadata: template: 'tag.toffee'
     .use paginate

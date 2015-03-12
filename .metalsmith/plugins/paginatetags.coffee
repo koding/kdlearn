@@ -9,7 +9,7 @@ paginate = require './paginate'
 
 
 module.exports = (opts={}) ->
-  opts.limit            ?= 10
+  opts.perPage          ?= 10
   opts.collectionSource ?= 'tags'
 
   (files, metalsmith, done) ->
@@ -26,11 +26,12 @@ module.exports = (opts={}) ->
     do next = (index=0) ->
       if not tagKeys[index]? then return done()
       tagKey = tagKeys[index]
-      tag     = tags[tagKey]
+      tag    = tags[tagKey]
       fn = paginate
         collection: tagKey
         collectionSource: 'tags'
-        limit: 10
+        limit: opts.limit
+        perPage: opts.perPage
         output: "#{opts.output}/#{tagKey}"
         metadata:
           tagKey: tagKey
