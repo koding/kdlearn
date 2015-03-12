@@ -18,4 +18,4 @@ your existing disk and add all or some of your earned storage.
 ![disk resize](/faq/redeem-referrals/resizeaction.png)
 
 > type:warning
-> If you feel there's an error in your reported earned storage space, please send us a note at support@koding.com.
+> If you feel there's an error in your reported earned storage space, please [send us a note](mailto:support@koding.com).
