@@ -53,14 +53,10 @@ Once you have an auth code, paste it back in the Terminal window to continue the
 
 Now you can sync you files using the command `grive` in the `GDrive` folder you created.
 
-**Note 1:** The app does not run in the background automatically continuously doing a sync. In order to achieve that, you can
-set up a cron job on your VM that runs every x seconds/minutes/hours depending on your preference. To learn
-more about cron, open up a new Terminal tab and type in:
+**Note 1:** The app does not run in the background automatically continuously doing a sync. In order to achieve that, you can set up a cron job on your VM that runs every x seconds/minutes/hours depending on your preference. To learn more about cron, open up a new Terminal tab and type in:
 
 ```
 man cron
 ```
 
-** Note 2:** As per the author of grive, the application will not download any files that are the traditional Google Docs (Spreadsheet, Documents,
-Presentations, etc.). The app will only automatically upload/download any non-native Google Doc formats which include
-code files, text files, images, etc.
+** Note 2:** As per the author of grive, the application will not download any files that are the traditional Google Docs (Spreadsheet, Documents,Presentations, etc.). The app will only automatically upload/download any non-native Google Doc formats which include code files, text files, images, etc.

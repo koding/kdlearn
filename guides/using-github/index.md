@@ -72,7 +72,8 @@ Copy that link and open it in a separate browser window. You should see somethin
 
 In the top area of the screen, in the input box you will be able to input the path to a local existing repository on your Koding VM or start with a fresh empty one.
 
-__Please note that the input field has autocomplete__
+> type:warning
+> Please note that the input field has autocomplete
 
 Start with a basic path like this one. Just make sure that folder exists before you input the path. If that folder doesn’t exist then you will be able to create it using this interface.
 
@@ -128,6 +129,7 @@ Just copy the repository URL from Github, in the input field and then hit Clone 
 
 Wait for the cloning process to finish and now you should see all the commit history and you are now able to work on that repository, perform commits, push changes, using the Koding IDE.
 
-__Note: Whenever you turn on Koding VM you will have to run the `ungit` command to get this interface started.__
+> type:warning
+> Whenever you turn on Koding VM you will have to run the `ungit` command to get this interface started.
 
 If you encounter any issues or have any questions please drop an email [here](mailto:support@koding.com).
