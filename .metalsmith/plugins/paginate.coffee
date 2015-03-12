@@ -13,6 +13,10 @@ module.exports = (opts={}) ->
   opts.limit            ?= null
   # The number of items to show per page, within the limit / count
   opts.perPage          ?= 10
+  # The start page is the number that the pages will start on. For example,
+  # - foo, foo-1, foo-2 # startPage of 0
+  # - foo, foo-2, foo-3 # startPage of 1
+  # - foo, foo-3, foo-4 # startPage of 2
   opts.startPage        ?= 1
   opts.metadata         ?= {}
   opts.collectionSource ?= 'collections'
@@ -30,7 +34,7 @@ module.exports = (opts={}) ->
 
     base = path.basename out, '.html'
     dir  = path.dirname out
-    if index is 0 then return path.join dir, base
+    if index is opts.startPage then return path.join dir, base
     if base is 'index'
       return path.join dir, "page-#{index}"
     else
@@ -66,13 +70,14 @@ module.exports = (opts={}) ->
       page = clone opts.metadata
       page.contents ?= new Buffer('')
       page.mode     ?= '0664'
-      page.name     = prettyOutput opts.output, pageIndex
+      page.name     = prettyOutput opts.output, pageIndex + opts.startPage
       page.paginate =
         pages: pages
         prev: prevPage
         next: null
         total: pageCount
-        current: pageIndex
+        current: page
+        index: pageIndex + opts.startPage
         files: pageFiles
       pageName = "#{page.name}.html"
       pages.push page

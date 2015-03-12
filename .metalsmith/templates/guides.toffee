@@ -2,8 +2,6 @@
 #{partial 'topnav.toffee'}
 <section><div class="container">
 
-{#
-if paginate.current is 0 {:
 <div class="guides-intro">
   <h1>Guides</h1>
   <p>
@@ -11,7 +9,6 @@ if paginate.current is 0 {:
     configuring or updating software packages and application in your Koding VM.
   </p>
 </div>
-:} #}
 
 #{partial 'sidebar.toffee'}
 
