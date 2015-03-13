@@ -49,7 +49,8 @@ You can now install Jenkins using the following command:
 apt-get install jenkins
 ```
 
-_Please note that Jenkins has a lot of dependencies, so it might take some time to install them all._
+> type:warning
+> Please note that Jenkins has a lot of dependencies, so it might take some time to install them all.
 
 ## Configuring Jenkins
 

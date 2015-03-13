@@ -98,7 +98,8 @@ For example, the following command would transfer the ownership and change the g
 chown demo:www-data demo1
 ```
 
-_Note that the same principles apply also for folders_
+> type:good
+> Note: The same principles also apply to folders
 
 You should now be able to understand how ownership and permissions work in Linux.
 

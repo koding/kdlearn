@@ -20,7 +20,7 @@ Issue the following commands to perform the install and tidy up.
     sudo curl -sS https://getcomposer.org/installer | php
     sudo mv composer.phar /usr/local/bin/composer
 
->The last step is not required AFAIK, but makes Composer global for the machine. The instructions that I read said “Make sure Composer's global bin directory is on the system PATH (recommended)”. That’s great, although I don’t fully understand the implications. 
+The last step is not required AFAIK, but makes Composer global for the machine. The instructions that I read said “Make sure Composer's global bin directory is on the system PATH (recommended)”. That’s great, although I don’t fully understand the implications. 
 
 Issue the following commands in your shell to sort the path out.
 
@@ -93,6 +93,7 @@ Save yourself a few seconds by doing the usual copying of settings.php and set p
     sudo chown myuser:www-data files # NB this is server/user specific!
     chmod 0775 files
 
-(You need to change these permissions back to something more sane afterwards… 0644 and 0775 seem to be ok, but I’m open to abuse on the matter.)
+> type:warning
+> You need to change these permissions back to something more sane afterwards… 0644 and 0775 seem to be ok, but I’m open to abuse on the matter.)
 
 And you’re off! To open your VM in a browser, click the ellipsis next to your VM name (probably koding-vm-0) and then the VM name to open the site in a new tab, and follow the usual Drupal installer instructions! NB If you're a developer, you might want to check out Webchick's setup video from Drupalcon AMS: http://www.youtube.com/watch?v=wKdU2Q1NIZQ

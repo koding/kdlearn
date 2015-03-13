@@ -7,7 +7,7 @@ template: page.toffee
 ---
 
 # Securing your VM using the built-in (and pre-installed) Ubuntu UFW
-> type:error`
+> type:error
 > You should follow the steps in this guide to its entirety otherwise if you enable the firewall and don't finish
 adding key services like ssh, you may be locked out of your VM. Please proceed with caution.
 
