@@ -99,7 +99,7 @@ chown demo:www-data demo1
 ```
 
 > type:good
-> Note: The same principles apply also for folders_
+> Note: The same principles also apply to folders
 
 You should now be able to understand how ownership and permissions work in Linux.
 
