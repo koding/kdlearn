@@ -37,16 +37,17 @@ findTagName = (key) ->
 
   <ul class="pagination">
   {# if paginate.prev? {:
-    <li><a href="/#{paginate.prev.name}">Previous</a></li>
+    <li class="previous"><a href="/#{paginate.prev.name}">Previous</a></li>
   :} #}
   {# for page, _ in paginate.pages {:
-    <li><a
-      href="/#{page.name}"
+    <li
       class="#{if page.paginate.index is paginate.index then 'currentPage'}"
+    ><a
+      href="/#{page.name}"
     >#{page.paginate.index}</a></li>
   :} #}
   {# if paginate.next? {:
-    <li><a href="/#{paginate.next.name}">Next</a></li>
+    <li class="next"><a href="/#{paginate.next.name}">Next</a></li>
   :} #}
   </ul>
 </div>

@@ -1232,12 +1232,13 @@ a.youtube-mini {
 
 .series-nav {
   margin-top: 40px;
-  padding: 0 20px;
+  padding: 0;
   li {
-    width: 110px;
+    width: 85px;
     list-style: none;
     text-align: center;
     line-height: 28px;
+    font-size: 12px;
     color: #000;
     background-color: $light-grey;
     border: 1px $light-grey solid;
@@ -1267,6 +1268,41 @@ a.youtube-mini {
 }
 .series-nav li:first-child {
   float: left;
+}
+
+.pagination {
+  margin-top: 40px;
+  li {
+    display: inline-block;
+    width: 28px;
+    list-style: none;
+    text-align: center;
+    line-height: 28px;
+    font-size: 12px;
+    color: #000;
+    background-color: $light-grey;
+    border: 1px $light-grey solid;
+    border-radius: 4px;
+    margin-right: 5px;
+  }
+  .previous,
+  .next {
+      width: 85px;
+  }
+  .currentPage {
+      background-color: $green;
+      a { color: $white; }
+  }
+  a {
+    display: block;
+    border: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  li:hover {
+    border: 1px $green solid;
+  }
 }
 
 
