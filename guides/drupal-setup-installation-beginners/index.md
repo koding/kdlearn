@@ -34,21 +34,13 @@ Open up your [Koding](https://koding.com) Terminal and type in the following com
 
 ### Step 2.
 
-Next up, you must download Drupal version that you're planing on using, in this case we are going to use [Drupal 8](https://www.drupal.org/node/572834)
+Next up, you must download Drupal version that you're planing on using, in this case we are going to use [Drupal 8](https://www.drupal.org/node/572834). Git clone the latest dev (8.0.x) release in the current directory.
 
-	wget http://ftp.drupal.org/files/projects/drupal-8.x-dev.tar.gz
+```
+	git clone --branch 8.0.x http://git.drupal.org/project/drupal.git .
+```
 
-### Step 3.
-
-Extracting Drupal, type the following command (replacing "x.x" with your downloaded version's number):
-
-	tar zxvf drupal-8.x-dev.tar.gz  && rm -rf drupal-8.x-dev.tar.gz
-
-### Step 4.
-
-Moving Drupal to its intended location
-
-### Step 5
+### Step 3
 
 In order to Drupal working on Nginx, open up the default virtual host(block) file.
 
@@ -125,32 +117,57 @@ The configuration should include the changes below (the details of the changes a
 	}
 ```
 
-Save and Exit. If you want to run Drupal on Apache, you need to edit the Apache configuration file configuration Apache
+Save and Exit. If you want to run Drupal on Apache, you need to edit the Apache configuration file configuration Apache. If you cloned Drupal under the Web directory you can just skip this. More about Virtual Host files http://httpd.apache.org/docs/2.4/vhosts/examples.html.
 
 ```
-sudo vi /etc/apache2/sites-available/default
-
+	sudo vi /etc/apache2/sites-available/default
 ```
+
+Drupal requires the gd library to be insalled.
+```
+	sudo apt-get install php5-gd
+	sudo service apache2 restart
+```
+
 Then you'll need to create the database for Drupal, by running the following code.
 
 ```
-	echo 'CREATE DATABASE drupal8' | mysql -u root
+	echo 'CREATE DATABASE drupal8' | mysql -u root -p
 ```
 
 If you haven't installed MySQL, head on over to [this tutorial 
-here](/guides/installing-mysql). If everything goes fine, you should see 
+here](/guides/installing-mysql).
+
+### Step 4
+
+Return in the Drupal root directory if needed (~/Web in this example).
+
+```
+cd ~/Web
+```
+
+Make your own copy of the settings files, to be writed by the Drupal installer (single site install).
+
+```
+	cd sites/default
+	cp default.services.yml services.yml
+	cp default.settings.php settings.php
+	sudo chmod a+w services.yml settings.php
+```
+
+Create the files directory and make it writeable. If you see this error  ```Writable (public download method)```, you need to run following code in the command line, on the Drupal directory (~/Web by default).
+
+```
+	mkdir files
+ 	sudo chmod a+w -R files 
+```
+
+Head now to your Koding domain (http://username.koding.io). If everything goes fine, you should see 
 the following screen in your browser:
 
 ![](welcome.png)
 
-If you see this error  ```Writable (public download method)```, you need to run following code in the command line.
-
-```
- cd $ROOT/site        #/var/www/drupal-8.x-dev/sites
- sudo chmod a+w -R default 
-
-```
-
+Drupal will then ask you the database credentials to finish the installation.
 
 That's it! You're now running Drupal on Koding! Have fun!
 
