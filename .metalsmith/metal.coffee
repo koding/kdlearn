@@ -71,8 +71,8 @@ markedRenderer.heading = (text, level) ->
 markedRenderer.blockquote = (quote) ->
   quoteTypes =
     "success": "success fa fa-check-circle"
-    "warning": "warning fa fa-info-circle"
-    "error": "error fa fa-exclamation-circle"
+    "warning": "warning fa fa-exclamation-circle"
+    "error": "error fa fa-exclamation-triagle"
     "tip": "tip fa fa-info-circle"
 
   # Blocks is the final list of blockquotes that we're going to return
