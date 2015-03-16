@@ -2189,7 +2189,15 @@ That's it. Next time you open a new Terminal, it should be running the new comma
     <author>Team Koding</author>
     <description>Koding Package Manager (kpm) is a command line tool that we have set up to make it easy for you to install (and soon remove) your favorite packages like WordPress, Mongodb, Laravel, etc. KPM takes care of measuring disk space requirements, analyzing dependencies and installing all required packages to bring you a running system. It's the easiest way to get up and running with your favorite technology or package. KPM also replaces the older generation KDApps (most of which were installers).
   Getting started with the Koding Package Manager This guide will cover the basics of the KPM and how to get started with it.
-  Usage KPM runs in the Terminal of your Koding account. In order to use KPM you first need to install it. To do that you have to run the following command in your Terminal:
+  Usage KPM runs in the Terminal of your Koding account. In order to use KPM you first need to install it. KPM comes pre-installed on Koding VMs and you can easily verify that it is installed by typing in kpm in Terminal. If installed, you should see:
+Usage:
+    kpm install &amp;lt;name&amp;gt;
+    kpm list
+    kpm search &amp;lt;name&amp;gt;
+    kpm uninstall &amp;lt;name&amp;gt;
+    kpm -h | --help
+    kpm --version
+If you get an error, you can easily install KPM by using the following command in Terminal:
 curl -sSL learn.koding.com/kpm.sh | sh
 
 After the process is complete you should have access to the kpm command in your Terminal.
@@ -4164,6 +4172,42 @@ That's it!
     <author>Vinay Jain</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Tomcat using just one command:
 kpm install tomcat
+  Make the setup below Create this links:
+curl -sSL learn.koding.com/kpm.sh | sh
+kpm install tomcat
+ln -s /etc/tomcat7 usrtomcat
+ls -l
+ln -s /usr/share/tomcat7 tomcat
+ls -l
+sudo mkdir tomcat/temp
+sudo mkdir tomcat/logs
+Edit the users at tomcat server:
+cd usrtomcat
+sudo nano tomcat-users.xml
+Replace the file to look like below:
+&amp;lt;?xml version='1.0' encoding='utf-8'?&amp;gt;
+&amp;lt;tomcat-users&amp;gt;
+&amp;lt;role rolename=&amp;quot;admin&amp;quot;/&amp;gt;
+&amp;lt;role rolename=&amp;quot;manager&amp;quot;/&amp;gt;
+&amp;lt;role rolename=&amp;quot;role1&amp;quot;/&amp;gt;
+&amp;lt;role rolename=&amp;quot;manager-gui&amp;quot;/&amp;gt;
+&amp;lt;role rolename=&amp;quot;admin-gui&amp;quot;/&amp;gt;
+&amp;lt;role rolename=&amp;quot;manager-status&amp;quot;/&amp;gt;
+&amp;lt;user username=&amp;quot;tomcat&amp;quot; password=&amp;quot;tomcat&amp;quot; roles=&amp;quot;admin,manager,admin-gui,manager-gui,manager-status,role1&amp;quot; /&amp;gt;
+&amp;lt;/tomcat-users&amp;gt;
+Edit server config at:
+sudo nano server.xml
+Edit the file to fit the port to 8084 in the node like below:
+&amp;lt;Connector port=&amp;quot;8084&amp;quot; protocol=&amp;quot;HTTP/1.1&amp;quot;                                                                                   
+               connectionTimeout=&amp;quot;20000&amp;quot;                                                                                         
+               URIEncoding=&amp;quot;UTF-8&amp;quot;
+               redirectPort=&amp;quot;8443&amp;quot; /&amp;gt;
+At last execute:
+sudo bash tomcat/bin/startup.sh
+Access: 
+http://your_koding_domain.koding.io:8084/manager/html/list
+more information in:
+http://tomcat.apache.org/tomcat-7.0-doc/manager-howto.html
 
 In this guide we'll take a look on how to deploy Java Web Applications on Apache Tomcat Server running on your Koding Virtual Machine.
 Since you are here I assume that you already know what Web Applications are and why do you need Apache Tomcat to run those applications.
@@ -4880,7 +4924,14 @@ prepend your list items with a number, instead of a hyphen. Example:
 ![Alt text](full url to the image)
 ![Alt text](full url to the image &amp;quot;Optional title&amp;quot;)
 
-</description>
+ foo bar
+ 
+ foo bar
+ 
+ foo bar
+ 
+ foo bar
+ </description>
   </item>
   
   <item>
