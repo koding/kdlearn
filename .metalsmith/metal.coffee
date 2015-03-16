@@ -72,7 +72,7 @@ markedRenderer.blockquote = (quote) ->
   quoteTypes =
     "success": "success fa fa-check-circle"
     "warning": "warning fa fa-exclamation-circle"
-    "error": "error fa fa-exclamation-triagle"
+    "error": "error fa fa-exclamation-triangle"
     "tip": "tip fa fa-info-circle"
 
   # Blocks is the final list of blockquotes that we're going to return

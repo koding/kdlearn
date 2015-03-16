@@ -126,3 +126,21 @@ You can easily include images in your markdown by using the following notation:
 ![Alt text](full url to the image)
 ![Alt text](full url to the image "Optional title")
 ```
+
+> type:success
+> foo bar
+
+***
+
+> type:warning
+> foo bar
+
+***
+
+> type:error
+> foo bar
+
+***
+
+> type:tip
+> foo bar

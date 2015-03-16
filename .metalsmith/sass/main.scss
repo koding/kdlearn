@@ -251,7 +251,8 @@ blockquote {
 }
 .success,
 .error,
-.warning {
+.warning,
+.tip {
     display: block;
     border-radius: 3px;
     position: relative;
