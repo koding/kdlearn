@@ -39,13 +39,16 @@ findTagName = (key) ->
   {# if paginate.prev? {:
     <li class="previous"><a href="/#{paginate.prev.name}">Previous</a></li>
   :} #}
-  {# for page, _ in paginate.pages {:
-    <li
-      class="#{if page.paginate.index is paginate.index then 'currentPage'}"
-    ><a
-      href="/#{page.name}"
-    >#{page.paginate.index}</a></li>
-  :} #}
+  {# if paginate.total != 1 {:
+      {# for page, _ in paginate.pages {:
+        <li
+          class="#{if page.paginate.index is paginate.index then 'currentPage'}"
+        ><a
+          href="/#{page.name}"
+        >#{page.paginate.index}</a></li>
+      :} #}
+    :}
+  #}
   {# if paginate.next? {:
     <li class="next"><a href="/#{paginate.next.name}">Next</a></li>
   :} #}
