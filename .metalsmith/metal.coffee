@@ -73,6 +73,7 @@ markedRenderer.blockquote = (quote) ->
     "good": "good fa fa-check-circle"
     "warning": "warning fa fa-info-circle"
     "error": "error fa fa-exclamation-circle"
+    "tip": "tip fa fa-info-circle"
 
   # Blocks is the final list of blockquotes that we're going to return
   blocks = []
