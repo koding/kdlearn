@@ -16,8 +16,17 @@ This guide will cover the basics of the KPM and how to get started with it.
 
 ## Usage
 
-KPM runs in the Terminal of your Koding account. In order to use KPM you first need to install it. To do that you have to run the following command in your Terminal:
-
+KPM runs in the Terminal of your Koding account. In order to use KPM you first need to install it. KPM comes pre-installed on Koding VMs and you can easily verify that it is installed by typing in `kpm` in Terminal. If installed, you should see:
+```
+Usage:
+    kpm install <name>
+    kpm list
+    kpm search <name>
+    kpm uninstall <name>
+    kpm -h | --help
+    kpm --version
+```
+If you get an error, you can easily install KPM by using the following command in Terminal:
 ```text
 curl -sSL learn.koding.com/kpm.sh | sh
 ```
