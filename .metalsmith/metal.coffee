@@ -70,7 +70,7 @@ markedRenderer.heading = (text, level) ->
 # ensure a new paragraph.
 markedRenderer.blockquote = (quote) ->
   quoteTypes =
-    "good": "good fa fa-check-circle"
+    "success": "success fa fa-check-circle"
     "warning": "warning fa fa-info-circle"
     "error": "error fa fa-exclamation-circle"
     "tip": "tip fa fa-info-circle"

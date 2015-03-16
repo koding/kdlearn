@@ -33,7 +33,7 @@ That's it! You can start Mongo with the following command:
 sudo service mongodb start
 ```
 
-> type:good
+> type:success
 > If you're running Mongo on a Free Koding VM, read the section below regarding enabling small files...
 
 ## Configuring for Limited Storage

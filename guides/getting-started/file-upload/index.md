@@ -28,7 +28,7 @@ After you let go of the file, your file will be uploaded to your
 `~/Uploads` directory. If `~/Uploads` does not exist, it will be automatically
 created.
 
-> type:good
+> type:success
 > Files uploaded this way are not automatically available for
 serving over your VMs web server as the `~/Uploads` directory is not inside
 `~/Web` (the default web root for Koding VMs). If you wish to use any uploaded

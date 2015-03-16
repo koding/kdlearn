@@ -6,7 +6,7 @@ categories: [koding]
 
 improvable: false
 ---
-> type:good
+> type:success
 > This guide is not complete as the Collaboration feature is still experimental.
 
 ### What is Collaboration?

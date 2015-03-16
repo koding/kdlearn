@@ -24,7 +24,7 @@ build of Chrome OS or that your device manufacturer has opted to remove crosh fr
 their customd build of the Chrome OS.
 
 ### Step 2: Generate the required ssh private and public keys on your VM
-> type:good
+> type:success
 > If you already have a private and public key generated, you can
 skip the section below
 

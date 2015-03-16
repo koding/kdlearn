@@ -20,7 +20,7 @@ Before we begin please make sure you have the Koding Package Manager (KPM) insta
 
 ## Setup
 
-> type:good
+> type:success
 > `git` is installed by default with every Koding VM. So you will be able to get started right away.
 
 Before you can get started with Github on your Koding VM you need to first setup the environment to be able to work properly with Github.

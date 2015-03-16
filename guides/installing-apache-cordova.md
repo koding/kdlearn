@@ -12,7 +12,7 @@ This guide will cover the basics on how to get Apache Cordova installed on your 
 
 Before you begin please check that you have the following things installed on your Koding VM. For each requirement run each command to make sure that you have that requirement installed on your VM.
 
-> type:good
+> type:success
 > Note: By default all Koding VMs come preinstalled with the below requirements.
 
 * [NodeJS](/getting-started-nodejs/)
