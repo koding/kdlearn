@@ -17,10 +17,10 @@ Java is a general-purpose computer programming language that is concurrent, clas
 
 ## Implementation
 
-The first thing you need to do is to create a file called `Main.java` in your Koding VM and paste the bellow snippet into it.
+The first thing you need to do is to create a file called `HelloWorld.java` in your Koding VM and paste the bellow snippet into it.
 
 ```
-public class Main {
+public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
     }
@@ -30,14 +30,14 @@ public class Main {
 To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
 
 ```
-javac Main.java
-java Main
+javac HelloWorld.java
+java HelloWorld
 ```
 
 ## Explanation
 
 ```
-public class Main
+public class HelloWorld
 ```
 
 The first line defines a class called Main. In Java, every line of code that can actually run needs to be inside a class. This line declares a class named Main, which is public, that means that any other class can access it.
