@@ -17,7 +17,7 @@ Java is a general-purpose computer programming language that is concurrent, clas
 
 ## Implementation
 
-The first thing you need to do is to create a file called `helloworld.java` in your Koding VM and paste the bellow snippet into it.
+The first thing you need to do is to create a file called `Main.java` in your Koding VM and paste the bellow snippet into it.
 
 ```
 public class Main {
@@ -30,8 +30,8 @@ public class Main {
 To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
 
 ```
-javac helloworld.java
-java helloworld
+javac Main.java
+java Main
 ```
 
 ## Explanation
