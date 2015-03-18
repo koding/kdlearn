@@ -9,7 +9,7 @@ videoId: VdFt7N4Y2IA
 
 # Koding IDE Introduction
 
-In this guide we’ll go over the Koding Integrated Development Environment or IDE for short. We'll try to explain how it works, how to use it and in end share some useful tips to be more productive.
+In this guide we’ll go over the Koding Integrated Development Environment or IDE for short. We'll try to explain how it works, how to use it and in end share some useful tips that you can use to be more productive.
 
 ## Getting started
 
@@ -24,26 +24,55 @@ Then click on the `Turn it on` button in the modal.
 
 ![IDE 2](ide2.png)
 
-After your VM is started, you’ll see your Koding IDE.
+After the VM has started, you’ll see your Koding IDE.
 
 ## Usage
 
-The Koding IDE consists of two main parts. The FileTree, and the Editor.
+The Koding IDE consists of two main parts: the FileTree, and the Editor.
 
 ![IDE 3](ide3.png)
 
-The FileTree, on the left, enables file navigation around your VM.
+The IDE can be customized by clicking on the little cog icon and then modifying the seetings based on your needs.
 
-Right clicking files and folders yields shortcuts to various actions.
+> type:tip
+> You can also customize the Koding Terminal from here
 
-Both the FileTree, and the main navigation sidebar, can be resized by dragging the separator, as seen here. Double clicking the separator will hide the panel.
+![IDE 4](ide4.png)
 
-The FileTree can be resized by dragging the separator, as seen here. Both the FileTree and the main sidebar can be hidden by double clicking the separators.
+The FileTree, on the left, enables file navigation around your VM. You can drag files or folders from one location to another one and if you right click files and folders you'll yield shortcuts to various actions as exemplified in the bellow images.
 
-In the editor, tabs can be opened, split and merged at will. They can also be made full screen.
+* File actions
+![IDE 5](ide5.png)
 
-All of this functionality, and much more, have keyboard shortcuts as well. A shortcut reference, can be located by clicking the keyboard icon in the lower right.
+* Folder actions
+![IDE 6](ide6.png)
 
-The Koding IDE is a simple, yet powerful, editor for your browser based development.
+The Editor, that sits on the right of the FileTree, is the main driving force behing the Koding IDE. It allows you to edit a wide variaty of files types, such as .php, .rb, .html, .css just to name a few.
 
-Explore it today for free, at Koding.com
+By default the editor will be opened in a horizontal two pane view. Panes can be opened, split and merged at will. They can also be made full screen.
+
+You can open a new tab, in a pane, by clicking on the plus button and then chosing the type of tab you want to open, either a new Terminal tab, a new drawing board or a new file.
+
+![IDE 7](ide7.png)
+
+![IDE 8](ide8.png)
+
+If you choose to open a new file tab you'll have access to some actions on that tab. Clicking on the little arrow next to the tab name wil bring up a menu with multiple actions.
+
+![IDE 9](ide9.png)
+
+Choosing the Terminal tab will open the Terminal to your Koding VM. We won't go into much detail about the Terminal in this guide. Head over to [this guide](/guides/terminal-introduction) for a more in depth explanation of the Terminal.
+
+The Drawing board tab is there to help you draft ideas / share them with others or when you want to doddle the next big thing.
+
+Everything has a keyboard shortcut as well. A shortcut reference, can be located by clicking the keyboard icon in the lower right.
+
+![IDE 10](ide10.png)
+
+The Koding IDE can be used when you are in the collaboration mode. You can share your VM by click on the `Share` button in the bottom right corner of the IDE.
+
+![IDE 11](ide11.png)
+
+This will share the VM with your teammate(s) or friend(s). Learn more about the collaboration feature [here](/collaboration).
+
+If you ever need help with the IDE you can just click on the bottom right corner questions mark icon and the support modal will pop-up or email us at [support@koding.com](mailto:support@koding.com) and we'll gladly help.
