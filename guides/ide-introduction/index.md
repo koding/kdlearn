@@ -27,7 +27,7 @@ Then click on the `Turn it on` button in the modal.
 After the VM has started, you'll see your Koding IDE.
 
 > type:tip
-> The IDE will remember what files you had opened last time and the FileTree will remember the folder location.
+> The IDE will remember what files / tabs you had opened last time and the FileTree will remember the folder location.
 
 ## Usage
 
@@ -89,4 +89,4 @@ This will share the VM with your teammate(s) or friend(s). Learn more about the 
 
 The Koding IDE is a simple, yet powerful, editor for your browser based development.
 
-Explore it today and if you ever need help with the IDE you can just click on the bottom right corner questions mark icon and the support modal will pop-up or email us at [support@koding.com](mailto:support@koding.com) and we'll gladly help.
+Explore it today and if you ever need help with the IDE you can just click on the bottom right corner question mark icon and the support modal will pop-up or email us at [support@koding.com](mailto:support@koding.com) and we'll gladly help.
