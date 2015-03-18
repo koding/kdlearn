@@ -2,7 +2,7 @@
 draft: true
 title: Koding IDE Introduction
 author: Team Koding
-date: 2014-10-10
+date: 2015-18-03
 categories: [koding]
 videoId: VdFt7N4Y2IA
 ---
