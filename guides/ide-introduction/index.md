@@ -77,4 +77,6 @@ The Koding IDE can be used when you are in the collaboration mode. You can share
 
 This will share the VM with your teammate(s) or friend(s). Learn more about the collaboration feature [here](/collaboration).
 
-If you ever need help with the IDE you can just click on the bottom right corner questions mark icon and the support modal will pop-up or email us at [support@koding.com](mailto:support@koding.com) and we'll gladly help.
+The Koding IDE is a simple, yet powerful, editor for your browser based development.
+
+Explore it today and if you ever need help with the IDE you can just click on the bottom right corner questions mark icon and the support modal will pop-up or email us at [support@koding.com](mailto:support@koding.com) and we'll gladly help.
