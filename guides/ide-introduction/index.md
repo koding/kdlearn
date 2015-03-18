@@ -77,6 +77,12 @@ The Koding IDE can be used when you are in the collaboration mode. You can share
 
 This will share the VM with your teammate(s) or friend(s). Learn more about the collaboration feature [here](/collaboration).
 
+## Tips
+
+1. Use the `Ctrl(Cmd) + Alt + M` keyboard shortcut to merge all panes.
+2. Never worry about saving files again. Enable the autosave feature from the IDE settings.
+3. Double click on the sidebar and FileTree deviders to minimize them and make more room for the Editor.
+
 The Koding IDE is a simple, yet powerful, editor for your browser based development.
 
 Explore it today and if you ever need help with the IDE you can just click on the bottom right corner questions mark icon and the support modal will pop-up or email us at [support@koding.com](mailto:support@koding.com) and we'll gladly help.
