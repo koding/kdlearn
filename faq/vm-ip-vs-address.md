@@ -11,7 +11,7 @@ other words, it will change. Because of this, Koding gives you a [VM
 Address][vm address], which will *always* point to your VM, regardless of 
 IP changes, so this is what you usually want to use.
 
-> type:warning
+> type:tip
 > IP addresses of "Always On" VMs don't change even after the VM reboots.
 
 If you have trouble finding your VM Address, [click here][vm address].
