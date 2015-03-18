@@ -42,9 +42,11 @@ The IDE can be customized by clicking on the little cog icon and then modifying 
 The FileTree, on the left, enables file navigation around your VM. You can drag files or folders from one location to another one and if you right click files and folders you'll yield shortcuts to various actions as exemplified in the bellow images.
 
 * File actions
+
 ![IDE 5](ide5.png)
 
 * Folder actions
+
 ![IDE 6](ide6.png)
 
 The Editor, that sits on the right of the FileTree, is the main driving force behing the Koding IDE. It allows you to edit a wide variaty of files types, such as .php, .rb, .html, .css just to name a few.
