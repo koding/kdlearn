@@ -7,11 +7,26 @@ categories: [koding]
 videoId: 1579S_7R6EQ
 ---
 
-Welcome to Koding
+# Koding Terminal Introduction
 
-In this video we’ll introduce you to the Koding Terminal.
+In this guide we'll go over the Koding Terminal. We'll try to explain how it works, how to use it and in end share some useful tips that you can use to be more productive.
 
-To access your Terminal, select your Virtual Machine on the left hand side.
+## Getting started
+
+To access a Koding Terminal, select your Virtual Machine on the left hand side as pictured bellow.
+
+![Terminal 1](term1.png)
+
+> type:warning
+> If you have a Developer or Professional account then select the VM you want to start, from the list.
+
+Then click on the `Turn it on` button in the modal.
+
+![Terminal 2](term2.png)
+
+After the VM has started, you'll see your Koding IDE.
+
+## Usage
 
 After your VM is started, you will see a Terminal prompt in the lower right portion of your Integrated Development Environment. 
 

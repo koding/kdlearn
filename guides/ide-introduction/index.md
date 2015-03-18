@@ -9,7 +9,7 @@ videoId: VdFt7N4Y2IA
 
 # Koding IDE Introduction
 
-In this guide we’ll go over the Koding Integrated Development Environment or IDE for short. We'll try to explain how it works, how to use it and in end share some useful tips that you can use to be more productive.
+In this guide we'll go over the Koding Integrated Development Environment or IDE for short. We'll try to explain how it works, how to use it and in end share some useful tips that you can use to be more productive.
 
 ## Getting started
 
@@ -24,7 +24,10 @@ Then click on the `Turn it on` button in the modal.
 
 ![IDE 2](ide2.png)
 
-After the VM has started, you’ll see your Koding IDE.
+After the VM has started, you'll see your Koding IDE.
+
+> type:tip
+> The IDE will remember what files you had opened last time and the FileTree will remember the folder location.
 
 ## Usage
 
@@ -35,7 +38,7 @@ The Koding IDE consists of two main parts: the FileTree, and the Editor.
 The IDE can be customized by clicking on the little cog icon and then modifying the seetings based on your needs.
 
 > type:tip
-> You can also customize the Koding Terminal from here
+> You can also customize the Koding Terminal from here.
 
 ![IDE 4](ide4.png)
 
@@ -82,6 +85,7 @@ This will share the VM with your teammate(s) or friend(s). Learn more about the 
 1. Use the `Ctrl(Cmd) + Alt + M` keyboard shortcut to merge all panes.
 2. Never worry about saving files again. Enable the autosave feature from the IDE settings.
 3. Double click on the sidebar and FileTree deviders to minimize them and make more room for the Editor.
+4. `Ctrl(Cmd) + Enter(Return)` keyboard shortcut will make everything fullscreen.
 
 The Koding IDE is a simple, yet powerful, editor for your browser based development.
 
