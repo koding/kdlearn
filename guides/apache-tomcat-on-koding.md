@@ -1,7 +1,8 @@
 ---
 author: Vinay Jain
 username: vinayjain
-date: 2014-07-29
+title: Apache Tomcat on Koding
+date: 2015-03-19
 description: 'Running Apache Tomcat On Koding'
 categories: [Java]
 ---
@@ -14,124 +15,84 @@ Before you continue reading this guide why not try a more easy way, using the [K
 kpm install tomcat
 ```
 
-#Make the setup below
-
-Create this links:
-```
-curl -sSL learn.koding.com/kpm.sh | sh
-kpm install tomcat
-ln -s /etc/tomcat7 usrtomcat
-ls -l
-ln -s /usr/share/tomcat7 tomcat
-ls -l
-sudo mkdir tomcat/temp
-sudo mkdir tomcat/logs
-
-```
-Edit the users at tomcat server:
-```
-cd usrtomcat
-sudo nano tomcat-users.xml  
-```
-Replace the file to look like below:
-```
-<?xml version='1.0' encoding='utf-8'?>
-<tomcat-users>
-<role rolename="admin"/>
-<role rolename="manager"/>
-<role rolename="role1"/>
-<role rolename="manager-gui"/>
-<role rolename="admin-gui"/>
-<role rolename="manager-status"/>
-<user username="tomcat" password="tomcat" roles="admin,manager,admin-gui,manager-gui,manager-status,role1" />
-</tomcat-users>
-```
-Edit server config at:
-```
-sudo nano server.xml
-```
-Edit the file to fit the port to 8084 in the node like below:
-```
-<Connector port="8084" protocol="HTTP/1.1"                                                                                   
-               connectionTimeout="20000"                                                                                         
-               URIEncoding="UTF-8"
-               redirectPort="8443" />
-```
-At last execute:
-```
-sudo bash tomcat/bin/startup.sh
-```
-Access: 
-http://your_koding_domain.koding.io:8084/manager/html/list
-
-more information in:
-http://tomcat.apache.org/tomcat-7.0-doc/manager-howto.html
-
 ***
 
 In this guide we'll take a look on how to deploy Java Web Applications on [Apache Tomcat](http://tomcat.apache.org/) Server running on your [Koding](https://koding.com) Virtual Machine.
 
-Since you are here I assume that you already know what Web Applications are and why do you need [Apache Tomcat](http://tomcat.apache.org/) to run those applications.
+Since you are here we assume that you already know what Web Applications are and why do you need [Apache Tomcat](http://tomcat.apache.org/) to run those applications.
 
-Tomcat doesn't come preinstalled with your VMs, so you need do download, install and configure Tomcat manually. Follow the steps below to get started :-
+> type:warning
+> Tomcat doesn't come preinstalled with your VM, so you need do download, install and configure Tomcat manually. 
 
-Go to the [Terminal](https://koding.com/Terminal), and download tomcat 7.0 using the `wget` command.
+Follow the steps below to get started:
+
+Head over to your VM [Terminal](https://koding.com/Terminal), and download Apache Tomcat 7.0 using the `wget` command.
     
-    
-    wget http://apache.mirrors.hoobly.com/tomcat/tomcat-7/v7.0.55/bin/apache-tomcat-7.0.55.tar.gz  
-    
+```
+wget http://apache.mirrors.hoobly.com/tomcat/tomcat-7/v7.0.55/bin/apache-tomcat-7.0.55.tar.gz  
+```    
    
-If the above link doesn't work, make sure you get the link from the tomcat's download page. 
+If the above link doesn't work, make sure you get the link from Tomcat's official download page. 
 
-Extract the downloaded file by typing :-
+Extract the downloaded file by typing:
     
-    
-    tar -xvzf apache-tomcat-7*
-    
+```
+tar -xvzf apache-tomcat-7*
+``` 
 
 Rename the directory for easy access in future.
     
-    
-    mv apache-tomcat-7.0.55 tomcat
-    
+```
+mv apache-tomcat-7.0.55 tomcat
+```    
 
-Now we need to set role and password in `tomcat-users.xml` . Use the command below to edit the tomcat-user.xml.
+Now we need to set role and password in `tomcat-users.xml`. Use the command below to edit the tomcat-user.xml file.
     
+```
+nano apache/conf/tomcat-users.xml
+```
     
-    nano apache/conf/tomcat-users.xml
-    
-    
-Add these lines just above `</tomcat-users>`
+Add this line just above `</tomcat-users>`
 	
-	
-	<user name="anyusername" password="anypassword" roles="admin-gui,manager-gui" />
-		
-	
-Since we have apache server (for PHP) running on our VM on port 80, we must specify another running port for tomcat. So we will edit  server.xml file now. Use the command below to open it in nano.
+```
+<user name="CHOOSE A USERNAME" password="INSERT A PASSWORD HERE" roles="admin-gui,manager-gui" />
+```
 
-	
-	nano apache/conf/server.xml
-	
+> type:warning
+> Make sure you replace the `CHOOSE A USERNAME` and `INSERT A PASSWORD HERE` with a desired username and password.
+
+Since you already have the Apache server running on your VM on port 80, you must specify another running port for Apache Tomcat. So we will edit the server.xml file now. Use the command below to open it using `nano`.
+
+```
+nano apache/conf/server.xml
+```	
 	
 Find this line
 	
-	
-	<Connector port="8080" protocol="HTTP/1.1" ....>
-		
+```
+<Connector port="8080" protocol="HTTP/1.1" ....>
+```		
     
-Change the port number to 8084
+Change the port number to `8084`.
     
-Everything is setup now. Its time to run tomcat.
+Everything is setup now. It's time to run Apache Tomcat. Use the bellow command to achieve this.
 	
-	
-	bash tomcat/bin/startup.sh
-		
+```
+bash tomcat/bin/startup.sh
+```		
 
-If you see `Tomcat Started` message, you can now open the localhost by typing in the address bar :-
+If you see the `Tomcat Started` message, you can now follow a similar url as the bellow one:
 
-    `your_koding_domain:8084` , for me its 
-`hostname.vinayjain.koding.io:8084`
+```
+http://KODING_USERNAME.koding.io:8084
+```
 
-Click on the manager app button and enter your username and password you set in tomcat-users.xml.
+Find out more about your VM hostname [here](http://learn.koding.com/faq/vm-hostname/).
 
-Congratulations, you have Apache Tomcat up and running on your Koding VM. Deploy the `.war` file of your Java app in tomcat and run it.
+Click on the manager app button and enter your username and password you set in `tomcat-users.xml`.
+
+Deploy the `.war` file of your Java app to Apache Tomcat and run it.
+
+And that's it.
+
+If you encounter any issues or have any questions please drop an email [here](mailto:support@koding.com)
