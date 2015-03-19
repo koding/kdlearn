@@ -1,5 +1,4 @@
 ---
-draft: true
 title: Koding IDE Introduction
 author: Team Koding
 date: 2015-18-03

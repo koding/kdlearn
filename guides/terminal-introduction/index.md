@@ -1,5 +1,4 @@
 ---
-draft: true
 title: Koding Terminal Introduction
 author: Team Koding
 date: 2015-18-03
@@ -51,7 +50,7 @@ Because the Terminal is in a tab in the IDE you can also split, merge splits, an
 
 ## Tips
 
-The Koding Terminal (VM) comes preinstalled with some useful programms that can be run using these commands.
+The Koding Terminal comes preinstalled with some useful programms that can be run using these commands.
 
 * `fish` - is a smart and user-friendly command line shell for OS X, Linux.
 * `mc` - Midnight Commander is a powerful file manager. GNU Midnight Commander is a text-mode full-screen file manager.
@@ -65,7 +64,7 @@ Bellow you can read more about some other useful commands that you can use in yo
 
 ### File & Directory Commands
 
-The tilde (~) symbol stands for your home directory. If you are user, then the tilde (~) stands for /home/user
+The tilde (~) symbol stands for your home directory. If you are user, then the tilde (~) stands for `/home/user`
 
 * `pwd` - The `pwd` command will allow you to know in which directory you're located. A useful gnemonic is "present working directory."
 * `ls` - The `ls` command will show you ('list') the files in your current directory.
@@ -75,7 +74,7 @@ The tilde (~) symbol stands for your home directory. If you are user, then the t
 * `rm` - Use this command to remove or delete a file in your directory.
 * `rmdir` - The `rmdir` command will delete an empty directory. To delete a directory and all of its contents recursively, use `rm -r`.
 * `mkdir` - The `mkdir` command will allow you to create directories. Example: "mkdir demo" will create a directory called "demo".
-* `man`: The `man` command is used to show you the manual of other commands.
+* `man`- The `man` command is used to show you the manual of other commands.
 
 ### System Information Commands
 
