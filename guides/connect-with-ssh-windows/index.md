@@ -9,7 +9,7 @@ template: page.toffee
 # Connect with SSH from Windows
 
 Connecting to your VM with SSH will allow you to use another Terminal, outside
-of Koding, to interact with your Koding VM. This is also required if you're interested in using [SSH Tunneling](tunneling). If you're connecting from a Mac or Linux, have a look [here][connect-unix].
+of Koding, to interact with your Koding VM. This is also required if you're interested in using [SSH Tunneling][tunneling]. If you're connecting from a Mac or Linux, have a look [here][connect-unix].
 
 We are going to be connecting using PuTTY, and we are going to use the terminology "local" to represent the machine that you're connecting to Koding with.
 
