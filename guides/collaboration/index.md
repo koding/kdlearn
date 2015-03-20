@@ -6,8 +6,9 @@ categories: [koding]
 
 improvable: false
 ---
-> type:success
-> This guide is not complete as the Collaboration feature is still experimental.
+> type:warning
+> This guide is not complete as the Collaboration feature is still under development. If you run into any
+  issues while using it, please [let us know](mailto:support@koding.com).
 
 ### What is Collaboration?
 Koding Collaboration allows you to easily and effectively collaborate and share resources with your
