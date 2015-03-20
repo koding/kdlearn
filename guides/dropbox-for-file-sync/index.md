@@ -48,9 +48,20 @@ That's it! You should see a message in your Terminal similar to this one:
 ```
 This computer is now linked to Dropbox. Welcome YOUR_DROPBOX_NAME
 ```
-The Dropbox deamon will sync files into the `~/Dropbox` folder.
+The Dropbox deamon will sync files into the `~/Dropbox` folder. At this point, the Dropbox deamon is syncing all the files from your Dropbox account to your Koding VM. If you have a lot of files on your Dropbox account, this can quickly eat up the space on your VM so we recommend you configure "Selective Sync" as described below. To immediately stop the Dropbox deamon and cancel the download that is in progress, hit `Ctrl-c`.
 
 > type:tip
 > Whenever you turn on Koding VM you will have to run the `dropbox start` command to get dropbox started.
+
+# Using the Dropbox selective sync feature
+Selective sync allows you to specify which files from your Dropbox folder you would like to sync between your Koding VM and your Dropbox account.
+
+To set up selective sync, follow these easy steps:
+1. Download the Dropbox [command line instructions script](https://www.dropbox.com/download?dl=packages/dropbox.py) that Dropbox has created for this purpose.
+2. Now all you need to do is add the folder that you wish to omit to the "do not sync" list. You can do that as follows:
+```
+/path/to/dropbox.py exclude add ~/Dropbox/path/to/folder/
+```
+Simply substitute the `/path/to/` above to the actual path to the Dropbox script you downloaded.
 
 If you encounter any issues or have any questions please drop an email [here](mailto:support@koding.com).
