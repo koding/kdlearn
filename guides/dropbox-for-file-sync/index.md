@@ -48,7 +48,9 @@ That's it! You should see a message in your Terminal similar to this one:
 ```
 This computer is now linked to Dropbox. Welcome YOUR_DROPBOX_NAME
 ```
-> type:success
+The Dropbox deamon will sync files into the `~/Dropbox` folder.
+
+> type:tip
 > Whenever you turn on Koding VM you will have to run the `dropbox start` command to get dropbox started.
 
 If you encounter any issues or have any questions please drop an email [here](mailto:support@koding.com).
