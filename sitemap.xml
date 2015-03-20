@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://learn.koding.com/guides/how-to-install-joomla</loc>
+    <lastmod>2015-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
     <loc>http://learn.koding.com/guides/apache-tomcat-on-koding</loc>
     <lastmod>2015-03-19</lastmod>
     <changefreq>monthly</changefreq>
@@ -26,12 +32,6 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/hello-world/ruby</loc>
-    <lastmod>2015-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
     <loc>http://learn.koding.com/guides/hello-world/go</loc>
     <lastmod>2015-03-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -44,13 +44,13 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/hello-world/java</loc>
-    <lastmod>2015-03-03</lastmod>
+    <loc>http://learn.koding.com/guides/hello-world/ruby</loc>
+    <lastmod>2015-03-04</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/hello-world/perl</loc>
+    <loc>http://learn.koding.com/guides/hello-world/c++</loc>
     <lastmod>2015-03-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -68,13 +68,19 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/hello-world/php</loc>
+    <loc>http://learn.koding.com/guides/hello-world/java</loc>
     <lastmod>2015-03-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/hello-world/c++</loc>
+    <loc>http://learn.koding.com/guides/hello-world/perl</loc>
+    <lastmod>2015-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://learn.koding.com/guides/hello-world/php</loc>
     <lastmod>2015-03-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -82,12 +88,6 @@
   <url>
     <loc>http://learn.koding.com/guides/vnc-startup-guide</loc>
     <lastmod>2015-03-01</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://learn.koding.com/guides/setting-django-webserver</loc>
-    <lastmod>2015-02-26</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
@@ -105,6 +105,12 @@
   
   <url>
     <loc>http://learn.koding.com/guides/setting-meteorjs-webserver</loc>
+    <lastmod>2015-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://learn.koding.com/guides/setting-django-webserver</loc>
     <lastmod>2015-02-26</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -128,13 +134,13 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/getting-started-ruby</loc>
+    <loc>http://learn.koding.com/guides/setting-up-cockpit</loc>
     <lastmod>2015-02-18</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/setting-up-cockpit</loc>
+    <loc>http://learn.koding.com/guides/getting-started-ruby</loc>
     <lastmod>2015-02-18</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -176,12 +182,6 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/installing-gruntjs</loc>
-    <lastmod>2015-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
     <loc>http://learn.koding.com/guides/install-memcache</loc>
     <lastmod>2015-01-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -200,14 +200,14 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/install-phppgadmin</loc>
-    <lastmod>2015-01-19</lastmod>
+    <loc>http://learn.koding.com/guides/installing-gruntjs</loc>
+    <lastmod>2015-01-20</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/getting-started-jsp-maven</loc>
-    <lastmod>2015-01-15</lastmod>
+    <loc>http://learn.koding.com/guides/install-phppgadmin</loc>
+    <lastmod>2015-01-19</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
@@ -218,14 +218,20 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/ssh-tunneling</loc>
-    <lastmod>2014-08-09</lastmod>
+    <loc>http://learn.koding.com/guides/getting-started-jsp-maven</loc>
+    <lastmod>2015-01-15</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>http://learn.koding.com/guides/install-rockmongo</loc>
     <lastmod>2015-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://learn.koding.com/guides/ssh-tunneling</loc>
+    <lastmod>2014-08-09</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   

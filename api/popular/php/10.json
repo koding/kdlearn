@@ -12,6 +12,12 @@
     "date": "2014-08-06T00:00:00.000Z"
   },
   {
+    "title": "Setting up a Laravel webserver with Artisan",
+    "url": "http://learn.koding.com/guides/setting-laravel-artisan-webserver/index.html",
+    "author": "Team Koding",
+    "date": "2015-02-26T00:00:00.000Z"
+  },
+  {
     "title": "Setting up a Symfony2 webserver",
     "url": "http://learn.koding.com/guides/setting-symfony2-webserver/index.html",
     "author": "Team Koding",
@@ -30,16 +36,16 @@
     "date": "2015-01-20T00:00:00.000Z"
   },
   {
+    "title": "How to install Joomla",
+    "url": "http://learn.koding.com/guides/how-to-install-joomla/index.html",
+    "author": "Team Koding",
+    "date": "2015-03-20T00:00:00.000Z"
+  },
+  {
     "title": "Hello World on Koding: PHP",
     "url": "http://learn.koding.com/guides/hello-world/php/index.html",
     "author": "Team Koding",
     "date": "2015-03-03T00:00:00.000Z"
-  },
-  {
-    "title": "Setting up a Laravel webserver with Artisan",
-    "url": "http://learn.koding.com/guides/setting-laravel-artisan-webserver/index.html",
-    "author": "Team Koding",
-    "date": "2015-02-26T00:00:00.000Z"
   },
   {
     "title": "Drupal Setup and Installation for Beginners",
@@ -52,11 +58,5 @@
     "url": "http://learn.koding.com/guides/enable-php-mail-function/index.html",
     "author": "Team Koding",
     "date": "2014-07-12T00:00:00.000Z"
-  },
-  {
-    "title": "Installing Phalcon on Koding",
-    "url": "http://learn.koding.com/guides/installing-phalcon/index.html",
-    "author": "Jay",
-    "date": "2014-06-27T00:00:00.000Z"
   }
 ]
