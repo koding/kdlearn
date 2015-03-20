@@ -91,12 +91,13 @@ Unzip the downloaded file:
 ```
 unzip latest.zip
 ```
-All of the wordpress install files will now be extracted into a older named **wordpress** (that you can rename afterwards if you want to).
+
+All of the WordPress install files will now be extracted into a older named **wordpress** (that you can rename afterwards if you want to).
 
 
 The last thing we need to do before we can start the installation process is to set up the link between WordPress and the database we created earlier. We can achieve this by typing in the following commands in Terminal:
 
-* Head over to the wordpress folder:
+* Head over to the WordPress folder:
 
 ```
 cd wordpress
