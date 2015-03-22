@@ -5896,8 +5896,7 @@ deleting a sub-domain is as easy as adding one!
     <guid isPermaLink="true">//learn.koding.com/faq/vm-poweroff</guid>
     <author></author>
     <description>To turn off your VM, we recommend that you use the power on/off toggle in the VM settings panel. This ensures that all internal API calls are triggered and all Koding services are aware that you have powered down your VM.
- type: tip
-VMs for our free accounts automatically turn off after 60 minutes of inactivity on our IDE or Terminal
+ VMs for our free accounts automatically turn off after 60 minutes of inactivity on our IDE or Terminal
 so there's no need to manually turn the VM off.
  That being said, sometimes you may need to restart your VM and want to do it via the Terminal. In such cases, simple type the following command in Terminal:
 sudo reboot
