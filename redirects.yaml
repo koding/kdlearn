@@ -64,9 +64,11 @@
 /collaboration: /guides/collaboration
 /guides/php-cms/drupal/setup: /guides/drupal-setup-installation-beginners
 /guides/setting-framework-webserver: /guides
-/guides/setting-framework-webserver/#django: /guides/setting-django-webserver
-/guides/setting-framework-webserver/#laravel-4-and-artisan: /guides/setting-laravel-artisan-webserver
-/guides/setting-framework-webserver/#meteorjs: /guides/setting-meteorjs-webserver
-/guides/setting-framework-webserver/#rails: /guides/setting-rails-webserver
-/guides/setting-framework-webserver/#tornado: /guides/setting-tornado-webserver
-/guides/setting-framework-webserver/#symfony2: /guides/setting-symfony2-webserver
+/guides/setting-framework-webserver#django: /guides/setting-django-webserver
+/guides/setting-framework-webserver#laravel-4-and-artisan: /guides/setting-laravel-artisan-webserver
+/guides/setting-framework-webserver#meteorjs: /guides/setting-meteorjs-webserver
+/guides/setting-framework-webserver#rails: /guides/setting-rails-webserver
+/guides/setting-framework-webserver#tornado: /guides/setting-tornado-webserver
+/guides/setting-framework-webserver#symfony2: /guides/setting-symfony2-webserver
+/terminal: /guides/terminal-introduction
+/ide: /guides/ide-introduction
