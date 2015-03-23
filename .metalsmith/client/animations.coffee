@@ -72,6 +72,16 @@ setupSearchAnimations = ->
 setupMenuAnimations = ->
     jQuery('#mobile-menu').on 'click', ->
         jQuery('.toplinks').slideToggle()
+        
+setupSubmenuAnimations = ->
+    jQuery('nav #menu li').hover (->
+      jQuery(this).find(".icon").removeClass "fa-angle-down"
+      jQuery(this).find(".icon").addClass "fa-angle-up"
+      return
+    ), ->
+      jQuery(this).find(".icon").removeClass "fa-angle-up"
+      jQuery(this).find(".icon").addClass "fa-angle-down"
+      return
 
 setupBackTopAnimations = ->
     offset = 250
@@ -92,4 +102,5 @@ jQuery(document).ready ->
   setupSearchAnimations()
   setupShareAnimations()
   setupMenuAnimations()
+  setupSubmenuAnimations()
   setupBackTopAnimations()

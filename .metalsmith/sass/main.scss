@@ -438,14 +438,36 @@ nav {
       display: inline;
       margin-right: 10px;
       padding: 6px 10px;
+      position: relative;
+      cursor: pointer;
       &:hover {
           border-radius: 4px;
           background: rgba(0,0,0,.2);
+          .submenu {
+              display: block;
+          }
       }
       .icon {
         vertical-align: middle;
         font-size: 1.2em;
+        color: $light-grey;
         padding-left: 7px;
+      }
+      .submenu {
+        display: none;
+        position: absolute;
+        width: 595px;
+        height: 250px;
+        background: rgba(0,0,0,.6);
+        border-radius: 4px;
+        top: 0;
+        z-index: 30;
+        margin: 40px auto 0 auto;
+        li {
+            display: block;
+            width: 100%;
+            color: $light-grey;
+        }
       }
     }
 
