@@ -458,7 +458,8 @@ nav {
         position: absolute;
         width: 595px;
         height: 250px;
-        background: rgba(0,0,0,.6);
+        background: $white;
+        border: 1px solid $light-black;
         border-radius: 4px;
         top: 0;
         z-index: 30;
