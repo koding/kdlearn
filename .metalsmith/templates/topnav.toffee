@@ -17,7 +17,10 @@ else
     <a href="#" id="mobile-menu"></a> 
     <ul class="toplinks">
       <li><a href="/faq">Common Questions</a></li>
-      <li><a href="/guides">Guides</a></li>
+      <li>
+        <a href="/guides">Guides</a>
+        <span class="icon fa fa-angle-down"></span>
+      </li>
       <li><a href="/guides/hello-world">"Hello World"</a></li>
       <li><a href="/videos">Videos</a></li>
       <li class="contribute">

@@ -429,11 +429,24 @@ nav {
 
     a {
       color: $light-grey;
+      &:hover {
+          text-decoration: none;
+      }
     }
 
     li {
       display: inline;
-      margin-right: 20px;
+      margin-right: 10px;
+      padding: 6px 10px;
+      &:hover {
+          border-radius: 4px;
+          background: rgba(0,0,0,.2);
+      }
+      .icon {
+        vertical-align: middle;
+        font-size: 1.2em;
+        padding-left: 7px;
+      }
     }
 
     // .contribute {
@@ -476,7 +489,7 @@ nav {
             padding: 5px 15px;
             border: 1px solid #ccc;
             border-radius: 4px;
-            margin: 15px 0;
+            margin: 14px 0;
             .searchIcon {
                 background-image: url(../img/sprite.png);
                 background-position: -6px -2px;
