@@ -18,7 +18,7 @@ kpm install grunt
 
 ## Getting started
 
-Before you can start the Memcache install process, you'll need to update all of the apt-get packages:
+Before you can start the GruntJS install process, you'll need to update all of the apt-get packages:
 
 ```
 sudo apt-get update
