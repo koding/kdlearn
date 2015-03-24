@@ -464,17 +464,14 @@ nav {
         top: 0;
         z-index: 30;
         margin: 40px auto 0 auto;
-        li {
+        a {
             display: block;
             width: 100%;
-            color: $light-grey;
+            box-sizing: border-box;
+            color: $grey;
         }
       }
     }
-
-    // .contribute {
-    //   font-weight: bold;
-    // }
 
     #mobile-menu {
       display: none;

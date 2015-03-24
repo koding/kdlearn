@@ -21,13 +21,11 @@ else
         <a href="/guides">Guides</a>
         <span class="icon fa fa-angle-down"></span>
         <div class="submenu">
-            <ul class="">
-                <li>Getting Started with Koding</li>
-                <li>Configuring and installing popular frameworks</li>
-                <li>Collaborating on Koding</li>
-                <li>Developing on Koding</li>
-                <li>Previewing your work</li>
-            </ul>
+            <a href="#">Getting Started with Koding</a>
+            <a href="#">Configuring and installing popular frameworks</a>
+            <a href="#">Collaborating on Koding</a>
+            <a href="#">Developing on Koding</a>
+            <a href="#">Previewing your work</a>
         </div>
       </li>
       <li><a href="/guides/hello-world">"Hello World"</a></li>
