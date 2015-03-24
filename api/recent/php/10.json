@@ -1,5 +1,11 @@
 [
   {
+    "title": "How to install MediaWiki",
+    "url": "http://learn.koding.com/guides/how-to-install-mediawiki/index.html",
+    "author": "Team Koding",
+    "date": "2015-03-24T00:00:00.000Z"
+  },
+  {
     "title": "How to install Joomla",
     "url": "http://learn.koding.com/guides/how-to-install-joomla/index.html",
     "author": "Team Koding",
@@ -52,11 +58,5 @@
     "url": "http://learn.koding.com/guides/drupal-setup-installation-beginners/index.html",
     "author": "Thien",
     "date": "2014-07-15T00:00:00.000Z"
-  },
-  {
-    "title": "Enable PHP mail() function",
-    "url": "http://learn.koding.com/guides/enable-php-mail-function/index.html",
-    "author": "Team Koding",
-    "date": "2014-07-12T00:00:00.000Z"
   }
 ]

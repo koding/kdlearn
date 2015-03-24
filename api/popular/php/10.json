@@ -6,10 +6,16 @@
     "date": "2014-10-16T00:00:00.000Z"
   },
   {
-    "title": "Installing PHP",
-    "url": "http://learn.koding.com/guides/installing-php/index.html",
+    "title": "How to install MediaWiki",
+    "url": "http://learn.koding.com/guides/how-to-install-mediawiki/index.html",
     "author": "Team Koding",
-    "date": "2014-08-06T00:00:00.000Z"
+    "date": "2015-03-24T00:00:00.000Z"
+  },
+  {
+    "title": "Hello World on Koding: PHP",
+    "url": "http://learn.koding.com/guides/hello-world/php/index.html",
+    "author": "Team Koding",
+    "date": "2015-03-03T00:00:00.000Z"
   },
   {
     "title": "Setting up a Laravel webserver with Artisan",
@@ -42,21 +48,15 @@
     "date": "2015-03-20T00:00:00.000Z"
   },
   {
-    "title": "Hello World on Koding: PHP",
-    "url": "http://learn.koding.com/guides/hello-world/php/index.html",
+    "title": "Installing PHP",
+    "url": "http://learn.koding.com/guides/installing-php/index.html",
     "author": "Team Koding",
-    "date": "2015-03-03T00:00:00.000Z"
+    "date": "2014-08-06T00:00:00.000Z"
   },
   {
     "title": "Drupal Setup and Installation for Beginners",
     "url": "http://learn.koding.com/guides/drupal-setup-installation-beginners/index.html",
     "author": "Thien",
     "date": "2014-07-15T00:00:00.000Z"
-  },
-  {
-    "title": "Enable PHP mail() function",
-    "url": "http://learn.koding.com/guides/enable-php-mail-function/index.html",
-    "author": "Team Koding",
-    "date": "2014-07-12T00:00:00.000Z"
   }
 ]

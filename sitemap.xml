@@ -8,6 +8,12 @@
   </url>
   
   <url>
+    <loc>http://learn.koding.com/guides/how-to-install-mediawiki</loc>
+    <lastmod>2015-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
     <loc>http://learn.koding.com/guides/how-to-install-joomla</loc>
     <lastmod>2015-03-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -44,19 +50,19 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/hello-world/go</loc>
-    <lastmod>2015-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
     <loc>http://learn.koding.com/guides/hello-world/python</loc>
     <lastmod>2015-03-04</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/hello-world/c++</loc>
+    <loc>http://learn.koding.com/guides/hello-world/go</loc>
+    <lastmod>2015-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://learn.koding.com/guides/hello-world/c</loc>
     <lastmod>2015-03-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -68,7 +74,7 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/hello-world/java</loc>
+    <loc>http://learn.koding.com/guides/hello-world/c++</loc>
     <lastmod>2015-03-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -80,13 +86,13 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/hello-world/php</loc>
+    <loc>http://learn.koding.com/guides/hello-world/java</loc>
     <lastmod>2015-03-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/hello-world/c</loc>
+    <loc>http://learn.koding.com/guides/hello-world/php</loc>
     <lastmod>2015-03-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -98,19 +104,19 @@
   </url>
   
   <url>
+    <loc>http://learn.koding.com/guides/setting-django-webserver</loc>
+    <lastmod>2015-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://learn.koding.com/guides/setting-laravel-artisan-webserver</loc>
+    <lastmod>2015-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
     <loc>http://learn.koding.com/guides/setting-meteorjs-webserver</loc>
-    <lastmod>2015-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://learn.koding.com/guides/setting-tornado-webserver</loc>
-    <lastmod>2015-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://learn.koding.com/guides/setting-symfony2-webserver</loc>
     <lastmod>2015-02-26</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -122,13 +128,13 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/setting-django-webserver</loc>
+    <loc>http://learn.koding.com/guides/setting-symfony2-webserver</loc>
     <lastmod>2015-02-26</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/setting-laravel-artisan-webserver</loc>
+    <loc>http://learn.koding.com/guides/setting-tornado-webserver</loc>
     <lastmod>2015-02-26</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -188,6 +194,12 @@
   </url>
   
   <url>
+    <loc>http://learn.koding.com/guides/installing-gruntjs</loc>
+    <lastmod>2015-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
     <loc>http://learn.koding.com/guides/install-memcache</loc>
     <lastmod>2015-01-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -201,12 +213,6 @@
   
   <url>
     <loc>http://learn.koding.com/guides/couchdb-installation-for-beginners</loc>
-    <lastmod>2015-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://learn.koding.com/guides/installing-gruntjs</loc>
     <lastmod>2015-01-20</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -230,14 +236,14 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/install-rockmongo</loc>
-    <lastmod>2015-01-02</lastmod>
+    <loc>http://learn.koding.com/guides/installing-linuxbrew</loc>
+    <lastmod>2015-01-08</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/installing-linuxbrew</loc>
-    <lastmod>2015-01-08</lastmod>
+    <loc>http://learn.koding.com/guides/install-rockmongo</loc>
+    <lastmod>2015-01-02</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   

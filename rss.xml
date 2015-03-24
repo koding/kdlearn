@@ -45,6 +45,80 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
+    <title>How to install MediaWiki</title>
+    <link>//learn.koding.com/guides/how-to-install-mediawiki</link>
+    <pubDate>"2015-03-24T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/how-to-install-mediawiki</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install MediaWiki using just one command:
+kpm install mediawiki
+
+  MediaWiki requirements Before we begin you may want to make sure you have the following things installed on your Koding VM.
+
+PHP 5.3.5 or greater
+MySQL 5.0.2 or greater
+The mod_rewrite Apache module
+
+  Getting started You&amp;apos;ll need to update all of the apt-get packages first:
+sudo apt-get update
+  Database creation The first thing we need for our MediaWiki installation to work, is a new database. We can create one using either:
+
+the command line
+via phpMyAdmin.
+
+The rest of this guide will focus on the command line method to create a database for our MediaWiki installation.
+  Setting up MySQL Type in the commands listed below in a Koding Terminal.
+
+Login to mySQL as the root user:
+
+mysql -u root -p
+
+Create a new database:
+
+CREATE DATABASE mediawiki;
+
+Create a new user and assign a password:
+
+CREATE USER mediawikiuser@localhost IDENTIFIED BY &amp;apos;your_password&amp;apos;;
+
+Give that user permission to access that database using the following command:
+
+GRANT ALL PRIVILEGES ON mediawiki.* TO mediawikiuser@localhost;
+
+Apply the changes so that mySQL knows about them:
+
+FLUSH PRIVILEGES;
+
+exit
+ Keep the database user and password somewhere safe because you&amp;apos;ll need them later on in the install process.
+ Restart the Apache and mySQL server to make sure everything is working properly:
+sudo service apache2 restart
+sudo service mysql restart
+  Installing First you&amp;apos;ll need to download the Mediawiki package, like so:
+cd Web
+wget http://releases.wikimedia.org/mediawiki/1.24/mediawiki-1.24.1.tar.gz
+Extract the archive:
+tar zxvf mediawiki-1.24.1.tar.gz
+Rename the folder:
+mv mediawiki-1.24.1 mediawiki
+ You can rename this folder afterwords anyway you like.
+   Finalizing the MediaWiki install Open up a new browser tab and navigate to your VM&amp;apos;s hostname and add /mediawiki at the end. If you don&amp;apos;t know what you VM hostname is, follow this guide to find out.
+You should see the initial setup page. It should look like this:
+
+Press the setup the wiki first button and now you&amp;apos;ll just need to follow the instructions on screen and finish the install.
+At the very last step of the install process you&amp;apos;ll need to download a file and place it&amp;apos;s contents in your MediaWiki folder. 
+Download the file, open it with your local editor and copy it&amp;apos;s contents to a newly created file in your MediaWiki folder. You can use the following commands to achieve this:
+Create the file on your VM:
+touch LocalSettings.php
+Open it using nano:
+nano LocalSettings.php
+copy the contents from the file you just downloaded and then save the file.
+And that&amp;apos;s it! If you navigate to your VM&amp;apos;s hostname and add /mediawiki at the end you should see a working wiki.
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
     <title>How to install Joomla</title>
     <link>//learn.koding.com/guides/how-to-install-joomla</link>
     <pubDate>"2015-03-20T00:00:00.000Z"</pubDate>
@@ -369,6 +443,24 @@ You just wrote and ran your first Hello World in Ruby.
   </item>
   
   <item>
+    <title>Hello World on Koding: Python</title>
+    <link>//learn.koding.com/guides/hello-world/python</link>
+    <pubDate>"2015-03-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/python</guid>
+    <author>Team Koding</author>
+    <description>  Introduction Python is a widely used general-purpose, high-level programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java. The language provides constructs intended to enable clear programs on both a small and large scale.
+  Implementation The first thing you need to do is to create a file called helloworld.py in your Koding VM and paste the bellow snippet into it.
+print &amp;quot;Hello World!&amp;quot;
+To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
+python helloworld.py
+  Explanation print &amp;quot;Hello World!&amp;quot;
+Since Python emphasizes code readability, the above line is pretty self explanatory. It will print out something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
+And that&amp;apos;s it!
+You just wrote and ran your first Hello World in Python.
+</description>
+  </item>
+  
+  <item>
     <title>Hello World on Koding: Go</title>
     <link>//learn.koding.com/guides/hello-world/go</link>
     <pubDate>"2015-03-04T00:00:00.000Z"</pubDate>
@@ -406,20 +498,47 @@ You just wrote and ran your first Hello World in Go.
   </item>
   
   <item>
-    <title>Hello World on Koding: Python</title>
-    <link>//learn.koding.com/guides/hello-world/python</link>
-    <pubDate>"2015-03-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/python</guid>
+    <title>Hello World on Koding: C</title>
+    <link>//learn.koding.com/guides/hello-world/c</link>
+    <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/c</guid>
     <author>Team Koding</author>
-    <description>  Introduction Python is a widely used general-purpose, high-level programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java. The language provides constructs intended to enable clear programs on both a small and large scale.
-  Implementation The first thing you need to do is to create a file called helloworld.py in your Koding VM and paste the bellow snippet into it.
-print &amp;quot;Hello World!&amp;quot;
-To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
-python helloworld.py
-  Explanation print &amp;quot;Hello World!&amp;quot;
-Since Python emphasizes code readability, the above line is pretty self explanatory. It will print out something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
+    <description>  Introduction C is a general-purpose, imperative computer programming language. As a language it supports structured programming, lexical variable scope and recursion, also having a static type system that prevents unintended operations is a major advantage.
+  Implementation The first thing you need to do is to create a file called helloworld.c in your Koding VM and paste the bellow snippet into it.
+#include&amp;lt;stdio.h&amp;gt;
+
+int main() {
+    printf(&amp;#x201C;Hello World&amp;#x201D;);
+    return 0;
+}
+To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
+gcc -o hello helloworld.c
+./hello
+  Explanation #include&amp;lt;stdio.h&amp;gt;
+This line will include a file called stdio.h that represents the standard Input/Output header file. This file allow you to use certain commands for input or output which you can use in you program.
+int main()
+The int is what is called the return value (in this case of the type integer). Every C program must have a main() function since this is the starting point.
+{}
+The two curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
+group or function.
+printf(&amp;#x201C;Hello World&amp;#x201D;);
+The printf is used for printing things on the screen, in this case the words: Hello World. As you can see the data that is to be printed is put inside round brackets. The words Hello World are inside inverted commas, because they are what is called a string (a single letter is called a character and a series of characters is called a string). Strings must always be put between inverted commas. After the last round bracket there must be a semi-colon. The semi-colon shows that it is the end of the command.
+return 0;
+When you wrote the first line int main(),  you declared that main must return an integer int main(). With return 0; you can return the value null to the operating system. When you return with a zero you tell the operating system that there were no errors while running the program.
 And that&amp;apos;s it!
-You just wrote and ran your first Hello World in Python.
+You just wrote and ran your first Hello World in C.
+</description>
+  </item>
+  
+  <item>
+    <title>Hello World on Koding</title>
+    <link>//learn.koding.com/guides/hello-world</link>
+    <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world</guid>
+    <author>Team Koding</author>
+    <description>In this Hello World series we&amp;apos;ll go over some of the most popular programming languages and learn how to implement a simple Hello World script in each one of them.
+By the end of the series you should be familiar with the most popular languages and you&amp;apos;ll be able to continue with the one you like best, on Koding of course!
+As a challenge after you&amp;apos;re done with the entire series have a go at this quiz and test your knowledge. 
 </description>
   </item>
   
@@ -455,14 +574,33 @@ You just wrote and ran your first Hello World in C++.
   </item>
   
   <item>
-    <title>Hello World on Koding</title>
-    <link>//learn.koding.com/guides/hello-world</link>
+    <title>Hello World on Koding: Perl</title>
+    <link>//learn.koding.com/guides/hello-world/perl</link>
     <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/perl</guid>
     <author>Team Koding</author>
-    <description>In this Hello World series we&amp;apos;ll go over some of the most popular programming languages and learn how to implement a simple Hello World script in each one of them.
-By the end of the series you should be familiar with the most popular languages and you&amp;apos;ll be able to continue with the one you like best, on Koding of course!
-As a challenge after you&amp;apos;re done with the entire series have a go at this quiz and test your knowledge. 
+    <description>  Introduction Perl is a family of high-level, general-purpose, interpreted, dynamic programming languages. The Perl languages borrow features from other programming languages including C, shell scripting (sh) etc. They provide powerful text processing facilities without the arbitrary data-length limits of many contemporary Unix commandline tools, facilitating easy manipulation of text files.
+  Implementation The first thing you need to do is to create a file called helloworld in your Koding VM and paste the bellow snippet into it.
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+print &amp;quot;Hello, World!&amp;quot;;
+To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
+first ensure the file is given executable permissions:
+chmod u+x helloworld
+and then run this command
+perl helloworld
+  Explanation #!/usr/bin/perl
+Every Perl program should start with this as its very first line, although this may vary from system to system. This line tells the machine what to do with the file when it is executed.
+use strict;
+use warnings;
+These two statements turn on the &amp;apos;strict&amp;apos; and &amp;apos;warnings&amp;apos; pragmas. These are strongly encouraged for all Perl programs since they tell the Perl interpreter to check for programming errors like undeclared variables.
+print &amp;quot;Hello, World!&amp;quot;;
+The print function outputs some data. In the above case it prints out the string Hello world, and as always the statement ends with a semicolon.
+And that&amp;apos;s it!
+You just wrote and ran your first Hello World in Perl.
 </description>
   </item>
   
@@ -504,37 +642,6 @@ You just wrote and ran your first Hello World in Java.
   </item>
   
   <item>
-    <title>Hello World on Koding: Perl</title>
-    <link>//learn.koding.com/guides/hello-world/perl</link>
-    <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/perl</guid>
-    <author>Team Koding</author>
-    <description>  Introduction Perl is a family of high-level, general-purpose, interpreted, dynamic programming languages. The Perl languages borrow features from other programming languages including C, shell scripting (sh) etc. They provide powerful text processing facilities without the arbitrary data-length limits of many contemporary Unix commandline tools, facilitating easy manipulation of text files.
-  Implementation The first thing you need to do is to create a file called helloworld in your Koding VM and paste the bellow snippet into it.
-#!/usr/bin/perl
-
-use strict;
-use warnings;
-
-print &amp;quot;Hello, World!&amp;quot;;
-To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
-first ensure the file is given executable permissions:
-chmod u+x helloworld
-and then run this command
-perl helloworld
-  Explanation #!/usr/bin/perl
-Every Perl program should start with this as its very first line, although this may vary from system to system. This line tells the machine what to do with the file when it is executed.
-use strict;
-use warnings;
-These two statements turn on the &amp;apos;strict&amp;apos; and &amp;apos;warnings&amp;apos; pragmas. These are strongly encouraged for all Perl programs since they tell the Perl interpreter to check for programming errors like undeclared variables.
-print &amp;quot;Hello, World!&amp;quot;;
-The print function outputs some data. In the above case it prints out the string Hello world, and as always the statement ends with a semicolon.
-And that&amp;apos;s it!
-You just wrote and ran your first Hello World in Perl.
-</description>
-  </item>
-  
-  <item>
     <title>Hello World on Koding: PHP</title>
     <link>//learn.koding.com/guides/hello-world/php</link>
     <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
@@ -565,39 +672,6 @@ echo outputs one or more strings. echo is not actually a function (it is a langu
 The last part after the closing ?&amp;gt; tag if just basic HTML code.
 And that&amp;apos;s it!
 You just wrote and ran your first Hello World in PHP.
-</description>
-  </item>
-  
-  <item>
-    <title>Hello World on Koding: C</title>
-    <link>//learn.koding.com/guides/hello-world/c</link>
-    <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/c</guid>
-    <author>Team Koding</author>
-    <description>  Introduction C is a general-purpose, imperative computer programming language. As a language it supports structured programming, lexical variable scope and recursion, also having a static type system that prevents unintended operations is a major advantage.
-  Implementation The first thing you need to do is to create a file called helloworld.c in your Koding VM and paste the bellow snippet into it.
-#include&amp;lt;stdio.h&amp;gt;
-
-int main() {
-    printf(&amp;#x201C;Hello World&amp;#x201D;);
-    return 0;
-}
-To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
-gcc -o hello helloworld.c
-./hello
-  Explanation #include&amp;lt;stdio.h&amp;gt;
-This line will include a file called stdio.h that represents the standard Input/Output header file. This file allow you to use certain commands for input or output which you can use in you program.
-int main()
-The int is what is called the return value (in this case of the type integer). Every C program must have a main() function since this is the starting point.
-{}
-The two curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
-group or function.
-printf(&amp;#x201C;Hello World&amp;#x201D;);
-The printf is used for printing things on the screen, in this case the words: Hello World. As you can see the data that is to be printed is put inside round brackets. The words Hello World are inside inverted commas, because they are what is called a string (a single letter is called a character and a series of characters is called a string). Strings must always be put between inverted commas. After the last round bracket there must be a semi-colon. The semi-colon shows that it is the end of the command.
-return 0;
-When you wrote the first line int main(),  you declared that main must return an integer int main(). With return 0; you can return the value null to the operating system. When you return with a zero you tell the operating system that there were no errors while running the program.
-And that&amp;apos;s it!
-You just wrote and ran your first Hello World in C.
 </description>
   </item>
   
@@ -733,136 +807,6 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Setting up a MeteorJS webserver</title>
-    <link>//learn.koding.com/guides/setting-meteorjs-webserver</link>
-    <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-meteorjs-webserver</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install MeteorJS using just one command:
-kpm install meteor
-
-  Getting started Before you can start the MeteorJS install process, you&amp;apos;ll need to update all of the apt-get packages:
-sudo apt-get update
-Then make sure you have curl installed on your VM. You can install it using the bellow command:
-sudo apt-get install curl
-  Installing You can install MeteorJS using the bellow command:
-curl https://install.meteor.com/ | sh
-  Usage Creating a new MeteorJS project is really easy. It just takes one command and you&amp;apos;re good to go:
-meteor create goodbyelocalhost
-You can run that project like so:
-cd goodbyelocalhost
-meteor
-You will now be able to access the MeteorJS webserver by following a similar URL:
-http://KODING_USERNAME.koding.io:3000
-Find out more about your VM hostname here.
-MeteorJS should listen to 0.0.0.0:3000 by default. If you can&amp;apos;t reach your project via the browser you have to make sure it listens to 0.0.0.0:3000. You can check this, using the netstat command in another terminal window and the bellow command:
-sudo netstat -tnlp
-And that&amp;apos;s it!
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
-    <title>Setting up a Tornado webserver</title>
-    <link>//learn.koding.com/guides/setting-tornado-webserver</link>
-    <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-tornado-webserver</guid>
-    <author>Team Koding</author>
-    <description>  Getting started Before you can start the Tornado install process, you&amp;apos;ll need to update all of the apt-get packages:
-sudo apt-get update
-Then make sure you have pip installed on your VM. You can install it using the Koding Package Manager (kpm) like so:
-kpm install pip
-  Installing You can install Tornado using the bellow command:
-pip install tornado
-  Usage To test if you can run a Tornado webserver correctly, create a goodbyetolocalhost.py file. Then insert the bellow code snippet:
-import tornado.ioloop
-import tornado.web
-
-class MainHandler(tornado.web.RequestHandler):
-    def get(self):
-        self.write(&amp;quot;Hello, world&amp;quot;)
-
-application = tornado.web.Application([
-    (r&amp;quot;/&amp;quot;, MainHandler),
-])
-
-if __name__ == &amp;quot;__main__&amp;quot;:
-    application.listen(8888, &amp;apos;0.0.0.0&amp;apos;)
-    tornado.ioloop.IOLoop.instance().start()
-You can run that script like so:
-python goodbyetolocalhost.py
-You will now be able to access the Tornado webserver by following a similar URL:
-http://KODING_USERNAME.koding.io:8888
-Find out more about your VM hostname here.
-If you can&amp;apos;t reach your project via the browser you have to make sure it listens to 0.0.0.0:8888. You can check this, using the netstat command in another terminal window and the bellow command:
-sudo netstat -tnlp
-And that&amp;apos;s it!
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
-    <title>Setting up a Symfony2 webserver</title>
-    <link>//learn.koding.com/guides/setting-symfony2-webserver</link>
-    <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-symfony2-webserver</guid>
-    <author>Team Koding</author>
-    <description>  Getting started Before you can start the Symfony2 install process, you&amp;apos;ll need to update all of the apt-get packages:
-sudo apt-get update
-Then make sure you have curl installed on your VM. You can install it using the bellow command:
-sudo apt-get install curl
-Also you&amp;apos;ll have to have Composer installed on your VM. You can install it either manually or using the Koding Package Manager (kpm).
-Run the following commands to download, move and give right permissions to Composer:
-curl -sS https://getcomposer.org/installer | php #!/usr/bin/env php
-sudo mv composer.phar /usr/local/bin/composer
-chmod +x /usr/local/bin/composer
-or you can just run
-kpm install composer
-  Usage Create a new project to test your webserver and move into that project:
-composer create-project symfony/framework-standard-edition goodbyetolocalhost
-cd goodbyetolocalhost
-You can now start the Symfony2 webserver like so:
-php app/console server:run 0.0.0.0:8080
-You will now be able to access the Symfony2 webserver by following a similar URL:
-http://KODING_USERNAME.koding.io:8080
-Find out more about your VM hostname here.
-If you can&amp;apos;t reach your project via the browser you have to make sure it listens to 0.0.0.0:8080. You can check this, using the netstat command in another terminal window and the bellow command:
-sudo netstat -tnlp
-And that&amp;apos;s it!
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
-    <title>Setting up a Rails webserver</title>
-    <link>//learn.koding.com/guides/setting-rails-webserver</link>
-    <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-rails-webserver</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Rails using just one command:
-kpm install rails
-
-  Getting started Before you can start the Rails install process, you&amp;apos;ll need to update all of the apt-get packages:
-sudo apt-get update
-Then make sure you have Ruby installed on your VM. You can install it by following this guide.
-  Installing You can install Rails using the bellow command:
-sudo gem install rails
-  Usage Creating a Rails project is really easy. It just takes one command and you&amp;apos;re good to go:
-rails new goodbyetolocalhost
-cd goodbyetolocalhost
-You can run the Rails webserver like so:
-rails server
-You will now be able to access the Rails webserver by following a similar URL:
-http://KODING_USERNAME.koding.io:3000
-Find out more about your VM hostname here.
-Rails should listen to 0.0.0.0:3000 by default. If you can&amp;apos;t reach your project via the browser you have to make sure it listens to 0.0.0.0:3000. You can check this, using the netstat command in another terminal window and the bellow command:
-sudo netstat -tnlp
-And that&amp;apos;s it!
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
     <title>Setting up a Django webserver</title>
     <link>//learn.koding.com/guides/setting-django-webserver</link>
     <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
@@ -919,6 +863,136 @@ You will now be able to access the Laravel webserver by following a similar URL:
 http://KODING_USERNAME.koding.io:8080
 Find out more about your VM hostname here.
 If you can&amp;apos;t reach your project via the browser you have to make sure it listens to 0.0.0.0:8080. You can check this, using the netstat command in another terminal window and the bellow command:
+sudo netstat -tnlp
+And that&amp;apos;s it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>Setting up a MeteorJS webserver</title>
+    <link>//learn.koding.com/guides/setting-meteorjs-webserver</link>
+    <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-meteorjs-webserver</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install MeteorJS using just one command:
+kpm install meteor
+
+  Getting started Before you can start the MeteorJS install process, you&amp;apos;ll need to update all of the apt-get packages:
+sudo apt-get update
+Then make sure you have curl installed on your VM. You can install it using the bellow command:
+sudo apt-get install curl
+  Installing You can install MeteorJS using the bellow command:
+curl https://install.meteor.com/ | sh
+  Usage Creating a new MeteorJS project is really easy. It just takes one command and you&amp;apos;re good to go:
+meteor create goodbyelocalhost
+You can run that project like so:
+cd goodbyelocalhost
+meteor
+You will now be able to access the MeteorJS webserver by following a similar URL:
+http://KODING_USERNAME.koding.io:3000
+Find out more about your VM hostname here.
+MeteorJS should listen to 0.0.0.0:3000 by default. If you can&amp;apos;t reach your project via the browser you have to make sure it listens to 0.0.0.0:3000. You can check this, using the netstat command in another terminal window and the bellow command:
+sudo netstat -tnlp
+And that&amp;apos;s it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>Setting up a Rails webserver</title>
+    <link>//learn.koding.com/guides/setting-rails-webserver</link>
+    <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-rails-webserver</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Rails using just one command:
+kpm install rails
+
+  Getting started Before you can start the Rails install process, you&amp;apos;ll need to update all of the apt-get packages:
+sudo apt-get update
+Then make sure you have Ruby installed on your VM. You can install it by following this guide.
+  Installing You can install Rails using the bellow command:
+sudo gem install rails
+  Usage Creating a Rails project is really easy. It just takes one command and you&amp;apos;re good to go:
+rails new goodbyetolocalhost
+cd goodbyetolocalhost
+You can run the Rails webserver like so:
+rails server
+You will now be able to access the Rails webserver by following a similar URL:
+http://KODING_USERNAME.koding.io:3000
+Find out more about your VM hostname here.
+Rails should listen to 0.0.0.0:3000 by default. If you can&amp;apos;t reach your project via the browser you have to make sure it listens to 0.0.0.0:3000. You can check this, using the netstat command in another terminal window and the bellow command:
+sudo netstat -tnlp
+And that&amp;apos;s it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>Setting up a Symfony2 webserver</title>
+    <link>//learn.koding.com/guides/setting-symfony2-webserver</link>
+    <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-symfony2-webserver</guid>
+    <author>Team Koding</author>
+    <description>  Getting started Before you can start the Symfony2 install process, you&amp;apos;ll need to update all of the apt-get packages:
+sudo apt-get update
+Then make sure you have curl installed on your VM. You can install it using the bellow command:
+sudo apt-get install curl
+Also you&amp;apos;ll have to have Composer installed on your VM. You can install it either manually or using the Koding Package Manager (kpm).
+Run the following commands to download, move and give right permissions to Composer:
+curl -sS https://getcomposer.org/installer | php #!/usr/bin/env php
+sudo mv composer.phar /usr/local/bin/composer
+chmod +x /usr/local/bin/composer
+or you can just run
+kpm install composer
+  Usage Create a new project to test your webserver and move into that project:
+composer create-project symfony/framework-standard-edition goodbyetolocalhost
+cd goodbyetolocalhost
+You can now start the Symfony2 webserver like so:
+php app/console server:run 0.0.0.0:8080
+You will now be able to access the Symfony2 webserver by following a similar URL:
+http://KODING_USERNAME.koding.io:8080
+Find out more about your VM hostname here.
+If you can&amp;apos;t reach your project via the browser you have to make sure it listens to 0.0.0.0:8080. You can check this, using the netstat command in another terminal window and the bellow command:
+sudo netstat -tnlp
+And that&amp;apos;s it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>Setting up a Tornado webserver</title>
+    <link>//learn.koding.com/guides/setting-tornado-webserver</link>
+    <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-tornado-webserver</guid>
+    <author>Team Koding</author>
+    <description>  Getting started Before you can start the Tornado install process, you&amp;apos;ll need to update all of the apt-get packages:
+sudo apt-get update
+Then make sure you have pip installed on your VM. You can install it using the Koding Package Manager (kpm) like so:
+kpm install pip
+  Installing You can install Tornado using the bellow command:
+pip install tornado
+  Usage To test if you can run a Tornado webserver correctly, create a goodbyetolocalhost.py file. Then insert the bellow code snippet:
+import tornado.ioloop
+import tornado.web
+
+class MainHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.write(&amp;quot;Hello, world&amp;quot;)
+
+application = tornado.web.Application([
+    (r&amp;quot;/&amp;quot;, MainHandler),
+])
+
+if __name__ == &amp;quot;__main__&amp;quot;:
+    application.listen(8888, &amp;apos;0.0.0.0&amp;apos;)
+    tornado.ioloop.IOLoop.instance().start()
+You can run that script like so:
+python goodbyetolocalhost.py
+You will now be able to access the Tornado webserver by following a similar URL:
+http://KODING_USERNAME.koding.io:8888
+Find out more about your VM hostname here.
+If you can&amp;apos;t reach your project via the browser you have to make sure it listens to 0.0.0.0:8888. You can check this, using the netstat command in another terminal window and the bellow command:
 sudo netstat -tnlp
 And that&amp;apos;s it!
 If you encounter any issues or have any questions please drop an email here.
@@ -1488,6 +1562,35 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
+    <title>How to install GruntJS</title>
+    <link>//learn.koding.com/guides/installing-gruntjs</link>
+    <pubDate>"2015-01-20T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/installing-gruntjs</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install GruntJS using just one command:
+kpm install grunt
+
+  Getting started Before you can start the GruntJS install process, you&amp;apos;ll need to update all of the apt-get packages:
+sudo apt-get update
+By default every Koding VM comes preinstalled with NodeJS and npm but if it is missing, from your VM, have a look at this guide to learn how to install it.
+  Installing To install GruntJS you&amp;apos;ll need to run the following command:
+sudo npm install -g grunt-cli
+This will install GruntJS globally on your VM.
+You can verify if GruntJS has installed correctly using the following command:
+grunt --version
+  Usage You can use GruntJS in your project by inputting some basic commands.
+Move into your project:
+cd ~/your_project
+Generate an empty package file:
+echo &amp;quot;{}&amp;quot; &amp;gt; package.json
+Finally, install GruntJS into that project using the following command:
+npm install grunt --save-dev
+And that&amp;apos;s it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
     <title>How to install Memcache</title>
     <link>//learn.koding.com/guides/install-memcache</link>
     <pubDate>"2015-01-20T00:00:00.000Z"</pubDate>
@@ -1598,35 +1701,6 @@ and it should output something like this:
 curl -X PUT localhost:5984/new_database
 The output should look like this:
 {&amp;quot;ok&amp;quot;:true}
-And that&amp;apos;s it!
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
-    <title>How to install GruntJS</title>
-    <link>//learn.koding.com/guides/installing-gruntjs</link>
-    <pubDate>"2015-01-20T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/installing-gruntjs</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install GruntJS using just one command:
-kpm install grunt
-
-  Getting started Before you can start the GruntJS install process, you&amp;apos;ll need to update all of the apt-get packages:
-sudo apt-get update
-By default every Koding VM comes preinstalled with NodeJS and npm but if it is missing, from your VM, have a look at this guide to learn how to install it.
-  Installing To install GruntJS you&amp;apos;ll need to run the following command:
-sudo npm install -g grunt-cli
-This will install GruntJS globally on your VM.
-You can verify if GruntJS has installed correctly using the following command:
-grunt --version
-  Usage You can use GruntJS in your project by inputting some basic commands.
-Move into your project:
-cd ~/your_project
-Generate an empty package file:
-echo &amp;quot;{}&amp;quot; &amp;gt; package.json
-Finally, install GruntJS into that project using the following command:
-npm install grunt --save-dev
 And that&amp;apos;s it!
 If you encounter any issues or have any questions please drop an email here.
 </description>
@@ -1816,6 +1890,19 @@ Good luck with your further Java web development and happy coding!
   </item>
   
   <item>
+    <title>Installing LinuxBrew</title>
+    <link>//learn.koding.com/guides/installing-linuxbrew</link>
+    <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/installing-linuxbrew</guid>
+    <author>Alvin Wan</author>
+    <description>There are a variety of package installers to help with what would otherwise be complex installations. Follow these instructions to install HomeBrew for Linux.
+  The One-Line Solution Input the following in your shell, as Koding already has Ruby pre-installed:
+ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)&amp;quot;
+From here, you&amp;apos;ll be poised for yet more installations. See their website for more information.
+</description>
+  </item>
+  
+  <item>
     <title>Install Rockmongo</title>
     <link>//learn.koding.com/guides/install-rockmongo</link>
     <pubDate>2015-01-2</pubDate>
@@ -1847,19 +1934,6 @@ If everything is working properly, you should see the following screen in your b
 
 And that&amp;apos;s it!
 If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
-    <title>Installing LinuxBrew</title>
-    <link>//learn.koding.com/guides/installing-linuxbrew</link>
-    <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/installing-linuxbrew</guid>
-    <author>Alvin Wan</author>
-    <description>There are a variety of package installers to help with what would otherwise be complex installations. Follow these instructions to install HomeBrew for Linux.
-  The One-Line Solution Input the following in your shell, as Koding already has Ruby pre-installed:
-ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)&amp;quot;
-From here, you&amp;apos;ll be poised for yet more installations. See their website for more information.
 </description>
   </item>
   
