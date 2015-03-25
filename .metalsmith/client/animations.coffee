@@ -74,7 +74,7 @@ setupMenuAnimations = ->
         jQuery('.toplinks').slideToggle()
         
 setupSubmenuAnimations = ->
-    jQuery('nav #menu li').hover (->
+    jQuery('nav #menu > .toplinks > li').hover (->
       jQuery(this).find(".icon").removeClass "fa-angle-down"
       jQuery(this).find(".icon").addClass "fa-angle-up"
       return
@@ -82,6 +82,20 @@ setupSubmenuAnimations = ->
       jQuery(this).find(".icon").removeClass "fa-angle-up"
       jQuery(this).find(".icon").addClass "fa-angle-down"
       return
+    
+    jQuery(".submenu .column:first-child span").each (i) ->
+        jQuery(this).hover (->
+            jQuery(".submenu .column:last-child span").each (j) ->
+                if i == j
+                    jQuery(this).show()
+                return
+            return
+        ), ->
+            jQuery(".submenu .column:last-child span").each (j) ->
+                if i == j
+                    jQuery(this).hide()
+                return
+            return
 
 setupBackTopAnimations = ->
     offset = 250

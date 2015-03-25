@@ -21,11 +21,32 @@ else
         <a href="/guides">Guides</a>
         <span class="icon fa fa-angle-down"></span>
         <div class="submenu">
-            <a href="#">Getting Started with Koding</a>
-            <a href="#">Configuring and installing popular frameworks</a>
-            <a href="#">Collaborating on Koding</a>
-            <a href="#">Developing on Koding</a>
-            <a href="#">Previewing your work</a>
+            <div class="column col-2">
+                <span class="submenu-header">Getting Started with Koding</span>
+                <span class="submenu-item">Common Questions</span>
+                <span class="submenu-item">Understanding your VM</span>
+                <span class="submenu-item">Koding features in detail</span>
+                <span class="submenu-header">Developing on Koding</span>
+                <span class="submenu-item">Writting Hello World programs</span>
+                <span class="submenu-item">Configuring and installing popular frameworks</span>
+                <span class="submenu-item">Previewing your work</span>
+                <span class="submenu-item">Testing your app</span>
+                <span class="submenu-item">Deploying your code to cloud providers</span>
+                <span class="submenu-header">Collaborating on Koding</span>
+            </div>
+            <div class="column col-2">
+                <span class="submenu-desc">Getting Started with Koding</span>
+                <span class="submenu-desc">Common Questions</span>
+                <span class="submenu-desc">Understanding your VM</span>
+                <span class="submenu-desc">Koding features in detail</span>
+                <span class="submenu-desc">Developing on Koding</span>
+                <span class="submenu-desc">Writting Hello World programs</span>
+                <span class="submenu-desc">Configuring and installing popular frameworks</span>
+                <span class="submenu-desc">Previewing your work</span>
+                <span class="submenu-desc">Testing your app</span>
+                <span class="submenu-desc">Deploying your code to cloud providers</span>
+                <span class="submenu-desc">Collaborating on Koding</span>
+            </div>
         </div>
       </li>
       <li><a href="/guides/hello-world">"Hello World"</a></li>
