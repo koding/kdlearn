@@ -89,12 +89,12 @@ setupSubmenuAnimations = ->
     
     jQuery(".submenu").hover (->
         jQuery(this).css "width", "595px"
-        jQuery(this).animate left: "-170px"
+        jQuery(this).animate { left: "-170px" }, 100
         jQuery(".submenu .column:last-child").css "display", "inline-block"
         jQuery(".submenu .column:last-child").css width: "285px"
     ), ->
         jQuery(this).css "width", "auto"
-        jQuery(this).animate left: "-105px"
+        jQuery(this).animate { left: "-105px" }, 100
         jQuery(".submenu .column:last-child").hide()
         jQuery(".submenu .column:last-child").css width: "0px"
     
