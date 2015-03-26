@@ -442,9 +442,7 @@ nav {
           &:hover {
               border-radius: 4px;
               background: rgba(0,0,0,.2);
-              .submenu {
-                  display: block;
-              }
+              .submenu { display: block; }
           }
           .icon {
             vertical-align: middle;
@@ -455,7 +453,7 @@ nav {
           .submenu {
             display: none;
             position: absolute;
-            width: 595px;
+            // width: 595px;
             background: #fff;
             color: #555;
             box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.2);
@@ -474,42 +472,51 @@ nav {
                 left: 170px;
             }
             a {
-                display: block;
-                width: 100%;
-                box-sizing: border-box;
+                width: 95%;
                 color: $grey;
-            }
-            .column {
                 display: inline-block;
-                vertical-align: top;
-                padding: 0 10px;
-                margin: 10px 0;
-                border-right: 1px solid $light-grey;
-                min-height: 110px;
-            }
-            .col-2 { width: 46.5%; }
-            .col-2:last-child { border: none; }
-            .submenu-header {
-                margin: 5px 0;
-                font-weight: bold;
-                display: block;
+                vertical-align: middle;
                 &:hover {
                     text-decoration: underline;
                     cursor: pointer;
                 }
+            }
+            .column {
+                display: inline-block;
+                vertical-align: top;
+                padding: 0 0 0 10px;
+                margin: 10px 0;
+                border-right: 1px solid $light-grey;
+                min-height: 110px;
+            }
+            // .col-2 { width: 48.2%; }\
+            .col-2 { width: 285px; }
+            .col-2:last-child { border: none; display:none; width: 0; }
+            .submenu-header {
+                margin: 5px 0;
+                font-weight: bold;
+                font-size: 16px;
+                display: block;
+                position: relative;
+                overflow: hidden;
+                &:hover .sub-icon { display: inline-block; }
             }
             .submenu-item {
                 font-size: 12px;
                 padding-left: 10px;
                 display: block;
-                &:hover {
-                    text-decoration: underline;
-                    cursor: pointer;
-                }
+                position: relative;
+                overflow: hidden;
+                &:hover .sub-icon { display: inline-block; }
             }
             .submenu-desc {
                 font-size: 12px;
                 display: none;
+            }
+            .sub-icon {
+                display: none;
+                font-size: 22px;
+                vertical-align: middle;
             }
           }
         }

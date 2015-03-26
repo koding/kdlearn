@@ -87,15 +87,24 @@ setupSubmenuAnimations = ->
       jQuery(this).find(".icon").addClass "fa-angle-down"
       return
     
-    jQuery(".submenu .column:first-child span").each (i) ->
+    jQuery(".submenu").hover (->
+        jQuery(this).css "width", "595px"
+        jQuery(".submenu .column:last-child").css "display", "inline-block"
+        jQuery(".submenu .column:last-child").css width: "285px"
+    ), ->
+        jQuery(this).css "width", "auto"
+        jQuery(".submenu .column:last-child").hide()
+        jQuery(".submenu .column:last-child").css width: "0px"
+    
+    jQuery(".submenu .column:first-child > span").each (i) ->
         jQuery(this).hover (->
-            jQuery(".submenu .column:last-child span").each (j) ->
+            jQuery(".submenu .column:last-child > span").each (j) ->
                 if i == j
                     jQuery(this).show()
                 return
             return
         ), ->
-            jQuery(".submenu .column:last-child span").each (j) ->
+            jQuery(".submenu .column:last-child > span").each (j) ->
                 if i == j
                     jQuery(this).hide()
                 return
