@@ -459,17 +459,17 @@ nav {
             box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.2);
             border-radius: 4px;
             top: 45px;
-            left: -170px;
+            left: -105px;
             z-index: 30;
             cursor: initial;
             &:before {
                 content: "";
                 display: block;
                 height: 20px;
-                width: 91px;
+                width: 595px;
                 position: absolute;
                 top: -20px;
-                left: 170px;
+                left: 0;
             }
             a {
                 width: 95%;
