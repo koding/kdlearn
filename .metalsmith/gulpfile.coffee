@@ -78,10 +78,14 @@ gulp.task 'metalsmith', (callback) -> metal callback
 # Note: This is a "hack" until i can find a clear
 # metalsmith->gulp pipe solution. When that happens, we'll
 # just pipe straight from metalsmith into gulp-minify-html.
-gulp.task 'metalsmith:minify', ['metalsmith'], ->
-  gulp.src 'build/**/*.html'
-    .pipe minifyHtml()
-    .pipe gulp.dest 'build'
+gulp.task 'metalsmith:minify', ['metalsmith']
+# DISABLED
+# The minify-html module was returning a callstack error. To deal with this
+# i am disabling it.
+#gulp.task 'metalsmith:minify', ['metalsmith'], ->
+#  gulp.src 'build/**/*.html'
+#    .pipe minifyHtml()
+#    .pipe gulp.dest 'build'
 
 
 # ## preview
