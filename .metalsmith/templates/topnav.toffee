@@ -22,17 +22,39 @@ else
         <span class="icon fa fa-angle-down"></span>
         <div class="submenu">
             <div class="column col-2">
-                <span class="submenu-header">Getting Started with Koding</span>
-                <span class="submenu-item">Common Questions</span>
-                <span class="submenu-item">Understanding your VM</span>
-                <span class="submenu-item">Koding features in detail</span>
-                <span class="submenu-header">Developing on Koding</span>
-                <span class="submenu-item">Writting Hello World programs</span>
-                <span class="submenu-item">Configuring and installing popular frameworks</span>
-                <span class="submenu-item">Previewing your work</span>
-                <span class="submenu-item">Testing your app</span>
-                <span class="submenu-item">Deploying your code to cloud providers</span>
-                <span class="submenu-header">Collaborating on Koding</span>
+                <span class="submenu-header">
+                    <a href="#">Getting Started with Koding</a>
+                </span>
+                <span class="submenu-item">
+                    <a href="#">Common Questions</a>
+                </span>
+                <span class="submenu-item">
+                    <a href="#">Understanding your VM</a>
+                </span>
+                <span class="submenu-item">
+                    <a href="#">Koding features in detail</a>
+                </span>
+                <span class="submenu-header">
+                    <a href="#">Developing on Koding</a>
+                </span>
+                <span class="submenu-item">
+                    <a href="#">Writting Hello World programs</a>
+                </span>
+                <span class="submenu-item">
+                    <a href="#">Configuring and installing popular frameworks</a>
+                </span>
+                <span class="submenu-item">
+                    <a href="#">Previewing your work</a>
+                </span>
+                <span class="submenu-item">
+                    <a href="#">Testing your app</a>
+                </span>
+                <span class="submenu-item">
+                    <a href="#">Deploying your code to cloud providers</a>
+                </span>
+                <span class="submenu-header">
+                    <a href="#">Collaborating on Koding</a>
+                </span>
             </div>
             <div class="column col-2">
                 <span class="submenu-desc">Getting Started with Koding</span>

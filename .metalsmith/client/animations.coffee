@@ -69,6 +69,10 @@ setupSearchAnimations = ->
     jQuery('.topSearchBox').slideToggle()
     jQuery('.topSearchBox #topSearch').focus()
 
+# ## Mobile menu Animations
+#
+# Setup the animations for when the mobile menu
+# is clicked.
 setupMenuAnimations = ->
     jQuery('#mobile-menu').on 'click', ->
         jQuery('.toplinks').slideToggle()
