@@ -52,11 +52,11 @@ Cygwin, these instructions will work fine for you."\>
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?669" />
+    <link rel="stylesheet" href="/css/vendor.css?770" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?480" />
+    <link rel="stylesheet" href="/css/main.css?736" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?783" />
+    <link rel="stylesheet" href="/css/rwd.css?142" />
 	</head>
 	<body>
 
@@ -256,7 +256,16 @@ can be <a href="/faq/vm-address">found here</a>.</p>
 </code></pre><p>Replace <code>username</code> with your username, and <code>vmaddress</code> with your <a href="/faq/vm-address">VM
 Address</a>. As an example, here is a filled our ssh command.</p>
 <pre><code>ssh joshmurray@unkk05c3f84e<span class="hljs-class">.joshmurray</span><span class="hljs-class">.koding</span><span class="hljs-class">.io</span>
-</code></pre><h2 class="heading"> <a name="troubleshooting" class="anchor" href="#troubleshooting"></a> Troubleshooting </h2><p>If you experience trouble, try connecting to your VM with the <code>-vv</code> flag
+</code></pre><h2 class="heading"> <a name="deleting-a-key" class="anchor" href="#deleting-a-key"></a> Deleting a key </h2><p>If you no longer wish to authorize an existing key from connecting to your
+VM, simply delete that key from your <code>authorized_keys</code> file. This can be
+easily achieved by opening up the <code>~/.ssh/authorized_keys</code> file in your 
+favorite editor (e.g. nano or vi) and deleting the one line that contains
+the key for which you wish to remove access.</p>
+<blockquote class="tip fa fa-info-circle"> <p>Even though a key may span across multiple lines in your editor, it&apos;s
+usually just one long line. Make sure you delete the entire line and
+not leave any parts behind. Also, be careful not to accidentally delete
+parts of another key.</p>
+ </blockquote><h2 class="heading"> <a name="troubleshooting" class="anchor" href="#troubleshooting"></a> Troubleshooting </h2><p>If you experience trouble, try connecting to your VM with the <code>-vv</code> flag
 and share the output with Koding users. An example of the above ssh
 command with the <code>-vv</code> flag is below.</p>
 <pre><code>ssh -vv joshmurray@unkk05c3f84e<span class="hljs-class">.joshmurray</span><span class="hljs-class">.koding</span><span class="hljs-class">.io</span>

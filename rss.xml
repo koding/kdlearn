@@ -3433,7 +3433,16 @@ ssh username@vmaddress
 Replace username with your username, and vmaddress with your VM
 Address. As an example, here is a filled our ssh command.
 ssh joshmurray@unkk05c3f84e.joshmurray.koding.io
-  Troubleshooting If you experience trouble, try connecting to your VM with the -vv flag
+  Deleting a key If you no longer wish to authorize an existing key from connecting to your
+VM, simply delete that key from your authorized_keys file. This can be
+easily achieved by opening up the ~/.ssh/authorized_keys file in your 
+favorite editor (e.g. nano or vi) and deleting the one line that contains
+the key for which you wish to remove access.
+ Even though a key may span across multiple lines in your editor, it's
+usually just one long line. Make sure you delete the entire line and
+not leave any parts behind. Also, be careful not to accidentally delete
+parts of another key.
+   Troubleshooting If you experience trouble, try connecting to your VM with the -vv flag
 and share the output with Koding users. An example of the above ssh
 command with the -vv flag is below.
 ssh -vv joshmurray@unkk05c3f84e.joshmurray.koding.io
