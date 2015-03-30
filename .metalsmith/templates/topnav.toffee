@@ -22,56 +22,94 @@ else
         <div class="submenu">
             <div class="column col-2">
                 <span class="submenu-header">
-                    Getting Started with Koding
+                    Getting Started
                 </span>
-                <span class="submenu-item">
-                    <a href="#">Common Questions</a>
-                    <span class="sub-icon fa fa-angle-right"></span>
-                </span>
-                <span class="submenu-item">
-                    <a href="#">Understanding your VM</a>
-                    <span class="sub-icon fa fa-angle-right"></span>
-                </span>
-                <span class="submenu-item">
-                    <a href="#">Koding features in detail</a>
-                    <span class="sub-icon fa fa-angle-right"></span>
-                </span>
+                    <span class="submenu-item">
+                        <a href="#">Common Questions</a>
+                        <span class="sub-icon fa fa-angle-right"></span>
+                    </span>
+                    <span class="submenu-item">
+                        <a href="#">Understanding your VM</a>
+                        <span class="sub-icon fa fa-angle-right"></span>
+                    </span>
+                    <span class="submenu-item">
+                        <a href="#">Koding features in detail</a>
+                        <span class="sub-icon fa fa-angle-right"></span>
+                    </span>
                 <span class="submenu-header">
                     Developing on Koding
                 </span>
-                <span class="submenu-item">
-                    <a href="#">Writting Hello World programs</a>
-                    <span class="sub-icon fa fa-angle-right"></span>
-                </span>
-                <span class="submenu-item">
-                    <a href="#">Configuring and installing popular frameworks</a>
-                    <span class="sub-icon fa fa-angle-right"></span>
-                </span>
-                <span class="submenu-item">
-                    <a href="#">Previewing your work</a>
-                    <span class="sub-icon fa fa-angle-right"></span>
-                </span>
-                <span class="submenu-item">
-                    <a href="#">Testing your app</a>
-                    <span class="sub-icon fa fa-angle-right"></span>
-                </span>
-                <span class="submenu-item">
-                    <a href="#">Deploying your code to cloud providers</a>
-                    <span class="sub-icon fa fa-angle-right"></span>
-                </span>
-                <span class="submenu-header">
-                    Collaborating on Koding
-                </span>
+                    <span class="submenu-item">
+                        <a href="#">Writing your first program</a>
+                        <span class="sub-icon fa fa-angle-right"></span>
+                    </span>
+                    <span class="submenu-item">
+                        <a href="#">Previewing your work</a>
+                        <span class="sub-icon fa fa-angle-right"></span>
+                    </span>
+                    <span class="submenu-item">
+                        <a href="#">Testing</a>
+                        <span class="sub-icon fa fa-angle-right"></span>
+                    </span>
+                    <span class="submenu-item">
+                        <a href="#">Deploying</a>
+                        <span class="sub-icon fa fa-angle-right"></span>
+                    </span>
             </div>
             <div class="column col-2">
-                <span class="submenu-desc">Common Questions</span>
-                <span class="submenu-desc">Understanding your VM</span>
-                <span class="submenu-desc">Koding features in detail</span>
-                <span class="submenu-desc">Writting Hello World programs</span>
-                <span class="submenu-desc">Configuring and installing popular frameworks</span>
-                <span class="submenu-desc">Previewing your work</span>
-                <span class="submenu-desc">Testing your app</span>
-                <span class="submenu-desc">Deploying your code to cloud providers</span>
+                <span class="submenu-header">
+                    Installing popular software
+                </span>
+                    <span class="submenu-item">
+                        <a href="#">Databases</a>
+                        <span class="sub-icon fa fa-angle-right"></span>
+                    </span>
+                    <span class="submenu-item">
+                        <a href="#">Content management systems</a>
+                        <span class="sub-icon fa fa-angle-right"></span>
+                    </span>
+                    <span class="submenu-item">
+                        <a href="#">Frameworks & Platforms</a>
+                        <span class="sub-icon fa fa-angle-right"></span>
+                    </span>
+                    <span class="submenu-item">
+                        <a href="#">Developer tools</a>
+                        <span class="sub-icon fa fa-angle-right"></span>
+                    </span>
+                <span class="submenu-header">
+                    Working with others
+                </span>
+                    <span class="submenu-item">
+                        <a href="#">Real-time collaboration on Koding</a>
+                        <span class="sub-icon fa fa-angle-right"></span>
+                    </span>
+                <span class="submenu-header">
+                    Contributing
+                </span>
+                    <span class="submenu-item">
+                        <a href="#">Contribute</a>
+                        <span class="sub-icon fa fa-angle-right"></span>
+                    </span>
+                    <span class="submenu-item">
+                        <a href="#">Request a new guide</a>
+                        <span class="sub-icon fa fa-angle-right"></span>
+                    </span>
+            </div>
+            <div class="column col-2">
+                <span class="submenu-desc">1</span>
+                <span class="submenu-desc">2</span>
+                <span class="submenu-desc">3</span>
+                <span class="submenu-desc">4</span>
+                <span class="submenu-desc">5</span>
+                <span class="submenu-desc">6</span>
+                <span class="submenu-desc">7</span>
+                <span class="submenu-desc">8</span>
+                <span class="submenu-desc">9</span>
+                <span class="submenu-desc">10</span>
+                <span class="submenu-desc">11</span>
+                <span class="submenu-desc">12</span>
+                <span class="submenu-desc">13</span>
+                <span class="submenu-desc">14</span>
             </div>
         </div>
       </li>

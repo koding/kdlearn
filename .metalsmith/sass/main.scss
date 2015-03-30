@@ -453,20 +453,20 @@ nav {
           .submenu {
             display: none;
             position: absolute;
-            width: 595px;
-            background: #fff;
-            color: #555;
+            width: 740px;
+            background: $white;
+            color: $grey;
             box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.2);
             border-radius: 4px;
             top: 45px;
-            left: -225px;
+            left: -375px;
             z-index: 30;
             cursor: initial;
             &:before {
                 content: "";
                 display: block;
                 height: 20px;
-                width: 595px;
+                width: 740px;
                 position: absolute;
                 top: -20px;
                 left: 0;
@@ -489,7 +489,7 @@ nav {
                 border-right: 1px solid $light-grey;
                 min-height: 110px;
             }
-            .col-2 { width: 48.2%; }
+            .col-2 { width: 31.5%; }
             .col-2:last-child { border: none; }
             .submenu-header {
                 margin: 5px 0;
