@@ -17,7 +17,7 @@ else
     <a href="#" id="mobile-menu"></a> 
     <ul class="toplinks">
       <li>
-        <a href="/guides">FAQ and Guides</a>
+        <a href="#">FAQ and Guides</a>
         <span class="icon fa fa-angle-down"></span>
         <div class="submenu">
             <div class="column col-2">
@@ -87,7 +87,7 @@ else
                     Contributing
                 </span>
                     <span class="submenu-item">
-                        <a href="#">Contribute</a>
+                        <a href="/contribute">Contribute</a>
                         <span class="sub-icon fa fa-angle-right"></span>
                     </span>
                     <span class="submenu-item">

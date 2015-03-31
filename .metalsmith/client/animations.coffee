@@ -100,6 +100,22 @@ setupSubmenuAnimations = ->
                     jQuery(this).hide()
                 return
             return
+    
+    countFirst = jQuery('.submenu .column:first-child > span.submenu-item').length;
+    
+    jQuery(".submenu .column:nth-child(2) > span.submenu-item").each (i) ->
+        jQuery(this).hover (->
+            jQuery(".submenu .column:last-child > span.submenu-desc").each (j) ->
+                if countFirst + i == j
+                    jQuery(this).show()
+                return
+            return
+        ), ->
+            jQuery(".submenu .column:last-child > span.submenu-desc").each (j) ->
+                if countFirst + i == j
+                    jQuery(this).hide()
+                return
+            return
 
 setupBackTopAnimations = ->
     offset = 250

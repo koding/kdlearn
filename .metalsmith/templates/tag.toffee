@@ -16,6 +16,11 @@ findTagName = (key) ->
 
 <div class="docs-content" id="page-category">
   <h1>#{findTagName tagKey} guides</h1>
+  
+  <div itemprop="articleBody">
+    #{print contents}
+  </div>
+  
   <ul class="verbose-guide-list">
   {# for guide in paginate.files {:
     <li>

@@ -490,6 +490,7 @@ nav {
                 min-height: 110px;
             }
             .col-2 { width: 31.5%; }
+            .col-2:first-child,
             .col-2:last-child { border: none; }
             .submenu-header {
                 margin: 5px 0;
@@ -505,7 +506,7 @@ nav {
                 display: block;
                 position: relative;
                 overflow: hidden;
-                &:hover .sub-icon { display: inline-block; }
+                &:hover .sub-icon { display: block; }
             }
             .submenu-desc {
                 font-size: 12px;
@@ -514,7 +515,10 @@ nav {
             .sub-icon {
                 display: none;
                 font-size: 22px;
-                vertical-align: middle;
+                // vertical-align: middle;
+                position: absolute;
+                top: 4px;
+                left: 0;
             }
           }
         }
