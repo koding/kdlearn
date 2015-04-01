@@ -1,0 +1,59 @@
+{#
+findTagName = (key) ->
+  if tagNames[key]?
+    name = tagNames[key]
+  else
+    name = key.charAt(0).toUpperCase() + key.slice(1)
+    name = name.replace(/-/g, " ")
+#}
+
+
+#{partial 'head.toffee', title: "#{findTagName tagKey} guides"}
+#{partial 'topnav.toffee'}
+<section><div class="container">
+
+#{partial 'sidebar.toffee'}
+
+<div class="docs-content" id="page-custom-category">
+ <h1>#{findTagName tagKey} guides</h1>
+  <ul class="verbose-guide-list">
+  {# for guide in paginate.files {:
+    <li>
+      <h3 class="title"><a href="#{guide.httplink}">#{print guide.title}</a></h3>
+      <div class="meta">
+        by <a class="author" href="/authors/#{guide.author.slug}">#{guide.author.name}</a> &bull; about <span class="date">#{print moment(guide.date).fromNow()}</span>
+        &bull; in categories&nbsp;
+        <ul>
+          {#
+          for cat in guide.categories
+            catUrl = cat.replace(/\s+/, "-") 
+            {: <li><a href="/categories/#{catUrl}">#{findTagName catUrl}</a></li> :}
+          #}
+        </ul>
+      </div>
+    </li>
+  :} #}
+  </ul>
+
+<ul class="pagination">
+  {# if paginate.prev? {:
+    <li class="previous"><a href="/#{paginate.prev.name}">Previous</a></li>
+  :} #}
+  {# if paginate.total != 1 {:
+      {# for page, _ in paginate.pages {:
+        <li
+          class="#{if page.paginate.index is paginate.index then 'currentPage'}"
+        ><a
+          href="/#{page.name}"
+        >#{page.paginate.index}</a></li>
+      :} #}
+    :}
+  #}
+  {# if paginate.next? {:
+    <li class="next"><a href="/#{paginate.next.name}">Next</a></li>
+  :} #}
+  </ul>
+</div>
+
+</div></section>
+#{partial 'footer.toffee'}
