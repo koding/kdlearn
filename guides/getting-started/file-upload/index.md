@@ -1,7 +1,7 @@
 ---
 author: Team Koding
 date: 2014-10-17
-categories: [koding, file transfer]
+categories: [koding features, koding, file transfer]
 
 hideSidebar: true
 series: getting-started

@@ -2,7 +2,7 @@
 title: Drupal Setup and Installation for Beginners
 author: Thien
 date: 2014-07-15
-categories: [drupal, php]
+categories: [content management systems, drupal, php]
 ---
 
 # Drupal Setup and Installation for Beginners

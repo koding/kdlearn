@@ -1,7 +1,7 @@
 ---
 author: Team Koding
 date: 2014-10-28
-categories: [koding]
+categories: [koding features, koding]
 ---
 
 # Changing your IDE and Terminal themes

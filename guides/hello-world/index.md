@@ -2,7 +2,7 @@
 title: Hello World on Koding
 author: Team Koding
 date: 2015-03-03
-categories: [hello world, koding]
+categories: [writting first program, hello world, koding]
 
 series: hello-world
 series-index: 0

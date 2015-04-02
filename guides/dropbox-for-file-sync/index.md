@@ -1,7 +1,7 @@
 ---
 author: Team Koding
 date: 2015-01-15
-categories: [koding, dropbox, file sync, file transfer]
+categories: [developer tools, koding, dropbox, file sync, file transfer]
 ---
 
 # Using Dropbox with Koding
