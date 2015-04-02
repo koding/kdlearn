@@ -1,10 +1,10 @@
 ---
-title: How can I reset my VM back to it's original state?
+title: How can I reset my VM back to its original state?
 importance: 4
 ---
 
 Sometimes, after you're installed a slew of software and things have started to conflict,
-there's a need to send your VM back to it's original state. To achieve that, Koding offers
+there's a need to send your VM back to its original state. To achieve that, Koding offers
 an easy reinitialization function which you can use at any time you like. 
 
 #### What does reinitialization do?
