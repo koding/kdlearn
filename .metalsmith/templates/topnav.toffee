@@ -25,7 +25,7 @@ else
                     Getting Started
                 </span>
                     <span class="submenu-item">
-                        <a href="/categories/common-questions">Common Questions</a>
+                        <a href="/faq">Common Questions</a>
                         <span class="sub-icon fa fa-angle-right"></span>
                     </span>
                     <span class="submenu-item">
@@ -80,7 +80,7 @@ else
                     Working with others
                 </span>
                     <span class="submenu-item">
-                        <a href="/categories/real-time-collaboration">Real-time collaboration on Koding</a>
+                        <a href="/collaboration">Real-time collaboration on Koding</a>
                         <span class="sub-icon fa fa-angle-right"></span>
                     </span>
                 <span class="submenu-header">
