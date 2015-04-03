@@ -4,7 +4,7 @@ username: vinayjain
 title: Apache Tomcat on Koding
 date: 2015-03-19
 description: 'Running Apache Tomcat On Koding'
-categories: [Java]
+categories: [frameworks platforms, Java]
 ---
 
 # Apache Tomcat On Koding

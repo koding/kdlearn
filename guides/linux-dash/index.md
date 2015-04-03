@@ -1,7 +1,7 @@
 ---
 author: Team Koding
 date: 2014-08-15
-categories: [apache, monitoring, linux, web dashboard]
+categories: [developer tools, apache, monitoring, linux, web dashboard]
 ---
 
 # Installing Linux Dash

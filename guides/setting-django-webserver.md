@@ -2,7 +2,7 @@
 title: Setting up a Django webserver
 author: Team Koding
 date: 2015-02-26
-categories: [django,python]
+categories: [frameworks platforms, django,python]
 template: page.toffee
 ---
 

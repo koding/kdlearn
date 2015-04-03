@@ -2,7 +2,7 @@
 title: Setting up a Rails webserver
 author: Team Koding
 date: 2015-02-26
-categories: [rails,ruby]
+categories: [frameworks platforms, rails,ruby]
 template: page.toffee
 ---
 

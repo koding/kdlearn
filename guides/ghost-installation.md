@@ -1,7 +1,7 @@
 ---
 author: Team Koding
 date: 2014-08-01
-categories: [ghost, nodejs]
+categories: [content management systems, ghost, nodejs]
 ---
 
 # Ghost Blog Installation

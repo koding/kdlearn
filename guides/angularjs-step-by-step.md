@@ -2,7 +2,7 @@
 title: AngularJS Step-by-Step Setup
 author: Team Koding
 date: 2014-03-09
-categories: [angularjs, javascript]
+categories: [frameworks platforms, angularjs, javascript]
 
 template: page.toffee
 ---

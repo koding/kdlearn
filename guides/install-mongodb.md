@@ -1,7 +1,7 @@
 ---
 author: Team Koding
 date: 2014-10-17
-categories: [mongodb]
+categories: [databases, mongodb]
 ---
 
 # Installing MongoDB

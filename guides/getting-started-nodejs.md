@@ -1,7 +1,7 @@
 ---
 author: Team Koding
 date: 2014-08-01
-categories: [nodejs, javascript]
+categories: [frameworks platforms, nodejs, javascript]
 ---
 
 

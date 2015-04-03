@@ -2,7 +2,7 @@
 title: Understanding file permissions
 author: Team Koding
 date: 2015-02-25
-categories: [file permissions,koding]
+categories: [understanding vm, file permissions,koding]
 template: page.toffee
 ---
 

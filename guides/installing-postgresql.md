@@ -1,7 +1,7 @@
 ---
 author: Team Koding
 date: 2014-10-22
-categories: [postgresql, sql]
+categories: [databases, postgresql, sql]
 ---
 
 # Installing PostgreSQL

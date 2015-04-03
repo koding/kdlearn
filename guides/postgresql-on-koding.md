@@ -1,7 +1,7 @@
 ---
 author: Federico Ponzi
 date: 2014-04-07
-categories: [postgresql, sql]
+categories: [databases, postgresql, sql]
 ---
 
 # Using PostgreSQL

@@ -2,7 +2,7 @@
 title: Elasticsearch install for beginners
 author: Team Koding
 date: 2015-02-06
-categories: [elasticsearch]
+categories: [developer tools, elasticsearch]
 template: page.toffee
 ---
 

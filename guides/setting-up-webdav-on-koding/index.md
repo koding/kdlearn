@@ -2,7 +2,7 @@
 title: Setting up WebDav on Koding
 author: Team Koding
 date: 2014-03-16
-categories: [koding, apache, file transfer]
+categories: [common questions, koding, apache, file transfer]
 
 template: page.toffee
 ---

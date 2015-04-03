@@ -2,7 +2,7 @@
 title: Setting up a Symfony2 webserver
 author: Team Koding
 date: 2015-02-26
-categories: [symfony2,composer,php]
+categories: [frameworks platforms, symfony2,composer,php]
 template: page.toffee
 ---
 

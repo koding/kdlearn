@@ -3,7 +3,7 @@ author: Gregory Mihalik
 username: gmihalik
 date: 2015-01-15
 description: 'Getting Started with JSP and Maven'
-categories: [Java]
+categories: [frameworks platforms, Java]
 ---
 
 # Getting Started with JSP and Maven

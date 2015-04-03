@@ -1,7 +1,7 @@
 ---
 author: Team Koding
 date: 2014-08-04
-categories: [python, flask]
+categories: [writing first program, python, flask]
 ---
 
 # Getting Started with Python

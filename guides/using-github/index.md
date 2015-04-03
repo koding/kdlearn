@@ -2,7 +2,7 @@
 title: Using Github with Koding
 author: Team Koding
 date: 2014-12-04
-categories: [koding]
+categories: [developer tools, koding]
 template: page.toffee
 ---
 

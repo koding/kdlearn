@@ -2,7 +2,7 @@
 title: Java
 author: Team Koding
 date: 2015-03-03
-categories: [hello world, java, koding]
+categories: [writing first program, hello world, java, koding]
 
 series: hello-world
 series-index: 4

@@ -1,7 +1,7 @@
 ---
 author: Team Koding
 date: 2014-07-31
-categories: [nginx]
+categories: [frameworks platforms, nginx]
 ---
 
 # Installing Nginx

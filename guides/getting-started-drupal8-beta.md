@@ -2,7 +2,7 @@
 author: Nik LePage
 username: NikLP
 date: 2014-10-02
-categories: [drupal]
+categories: [content management systems, drupal]
 ---
 
 # Getting started with Drupal 8 (Prerelease)

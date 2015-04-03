@@ -2,7 +2,7 @@
 title: How to install Redis
 author: Team Koding
 date: 2015-01-20
-categories: [redis]
+categories: [databases, redis]
 template: page.toffee
 ---
 

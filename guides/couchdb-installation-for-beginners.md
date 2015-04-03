@@ -2,7 +2,7 @@
 title: CouchDB installation for beginners
 author: Team Koding
 date: 2015-01-20
-categories: [gruntjs]
+categories: [databases, gruntjs]
 template: page.toffee
 ---
 

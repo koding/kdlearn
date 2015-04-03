@@ -2,7 +2,7 @@
 title: Ruby
 author: Team Koding
 date: 2015-03-04
-categories: [hello world, ruby, koding]
+categories: [writing first program, hello world, ruby, koding]
 
 series: hello-world
 series-index: 8

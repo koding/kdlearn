@@ -2,7 +2,7 @@
 title: Getting started with Git
 author: Team Koding
 date: 2014-06-14
-categories: [Git]
+categories: [developer tools, Git]
 
 template: page.toffee
 ---

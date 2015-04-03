@@ -3,7 +3,7 @@ title: Updating Node.js on your VM
 author: Darryl Dias
 username: darryldias
 date: 2014-06-27
-categories: [nodejs, ppa]
+categories: [understanding vm, nodejs, ppa]
 
 template: page.toffee
 ---

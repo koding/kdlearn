@@ -2,7 +2,7 @@
 title: Sync files using Google Drive
 author: Team Koding
 date: 2014-07-08
-categories: [koding,file sync,google drive, file transfer]
+categories: [common questions, koding, file sync, google drive, file transfer]
 
 template: page.toffee
 ---

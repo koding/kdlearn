@@ -1,7 +1,7 @@
 ---
 author: Team Koding
 date: 2015-02-18
-categories: [ruby]
+categories: [writing first program, ruby]
 ---
 
 # Getting Started with Ruby
