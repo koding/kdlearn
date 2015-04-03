@@ -25,7 +25,7 @@ else
                     Getting Started
                 </span>
                     <span class="submenu-item">
-                        <a href="/faq">Common Questions</a>
+                        <a href="/categories/common-questions">Common Questions</a>
                         <span class="sub-icon fa fa-angle-right"></span>
                     </span>
                     <span class="submenu-item">
@@ -40,19 +40,19 @@ else
                     Developing on Koding
                 </span>
                     <span class="submenu-item">
-                        <a href="/categories/writing-first-program">Writing your first program</a>
+                        <a href="/categories/first-program">Writing your first program</a>
                         <span class="sub-icon fa fa-angle-right"></span>
                     </span>
                     <span class="submenu-item">
-                        <a href="/categories/previewing-work">Previewing your work</a>
+                        <a href="/guides">Previewing your work</a>
                         <span class="sub-icon fa fa-angle-right"></span>
                     </span>
                     <span class="submenu-item">
-                        <a href="/categories/testing">Testing</a>
+                        <a href="/guides">Testing</a>
                         <span class="sub-icon fa fa-angle-right"></span>
                     </span>
                     <span class="submenu-item">
-                        <a href="/categories/deploying">Deploying</a>
+                        <a href="/guides">Deploying</a>
                         <span class="sub-icon fa fa-angle-right"></span>
                     </span>
             </div>
@@ -65,7 +65,7 @@ else
                         <span class="sub-icon fa fa-angle-right"></span>
                     </span>
                     <span class="submenu-item">
-                        <a href="/categories/content-management-systems">Content management systems</a>
+                        <a href="/categories/cms">Content management systems</a>
                         <span class="sub-icon fa fa-angle-right"></span>
                     </span>
                     <span class="submenu-item">
@@ -96,20 +96,20 @@ else
                     </span>
             </div>
             <div class="column col-2">
-                <span class="submenu-desc">1</span>
-                <span class="submenu-desc">2</span>
-                <span class="submenu-desc">3</span>
-                <span class="submenu-desc">4</span>
-                <span class="submenu-desc">5</span>
-                <span class="submenu-desc">6</span>
-                <span class="submenu-desc">7</span>
-                <span class="submenu-desc">8</span>
-                <span class="submenu-desc">9</span>
-                <span class="submenu-desc">10</span>
-                <span class="submenu-desc">11</span>
-                <span class="submenu-desc">12</span>
-                <span class="submenu-desc">13</span>
-                <span class="submenu-desc">14</span>
+                <span class="submenu-desc">Get answers to the most common of questions. Setting FTP or ssh-ing into your VM, no matter the question you'll find an answer here.</span>
+                <span class="submenu-desc">If you're a beginner then you should here. Understand what powers your Koding and how you can perform better to build beter projects.</span>
+                <span class="submenu-desc">All the Koding features in one place explained. Since we keep adding ones very often, you should come back here from time to time to see the newly added ones.</span>
+                <span class="submenu-desc">If you're a beginner to programming than this section will help and guide you in the right direction. Wheather you're developing in Go or Ruby, we have a guide for it.</span>
+                <span class="submenu-desc">Learn how you can preview your work and showcase it to potential clients and teammates.</span>
+                <span class="submenu-desc">Testing your code is very important. This section contains guides that will help you into writting tests and implementing third-party software to test your apps.</span>
+                <span class="submenu-desc">When you're finished with an app the next logical step is to deploy it to production. The guides in this section will help to deploy to the most common deployment platforms.</span>
+                <span class="submenu-desc">Many apps require a database to store data. If your app requires data storage and you don't know how to configure a database on your VM these guides will help you.</span>
+                <span class="submenu-desc">A content management system will help you build an app much faster. You won't have to worry how you handle the content. Just choose the one that is suitable for your needs.</span>
+                <span class="submenu-desc">With the help of the guides in this sections you'll learn how to configure and setup the most popular frameworks and platforms out there.</span>
+                <span class="submenu-desc">Make your life easier by installing popular developer tools or learn how to configure the ones that you have already installed.</span>
+                <span class="submenu-desc">Koding Collaboration allows you to easily and effectively collaborate and share resources with your team, students, peers or friends.</span>
+                <span class="submenu-desc">Help us grow the Koding University. This section will outline some guideliness for guide submissions to adhere to.</span>
+                <span class="submenu-desc">You can't find a guide. You don't have experience with the tools that are used to write a guide? Request one here.</span>
             </div>
         </div>
       </li>

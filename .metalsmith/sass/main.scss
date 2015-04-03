@@ -492,6 +492,7 @@ nav {
             .col-2 { width: 31.5%; }
             .col-2:first-child,
             .col-2:last-child { border: none; }
+            .col-2:last-child { padding: 80px 0 0 10px; }
             .submenu-header {
                 margin: 5px 0;
                 font-weight: bold;
@@ -1365,6 +1366,7 @@ a.youtube-mini {
 
 .pagination {
   margin-top: 40px;
+  padding-left: 15px;
   li {
     display: inline-block;
     width: 28px;
@@ -1736,13 +1738,18 @@ table {
 .verbose-guide-list li {
   list-style: none;
   margin-bottom: 12px;
+  border-bottom: 1px solid $light-grey;
 }
 .verbose-guide-list li:last-child {
   margin-bottom: 0px;
 }
 .verbose-guide-list .title {
-  font-size: 15px;
+  font-size: 16px;
   color: $light-black;
+  a { border-bottom: none; }
+  a:hover {
+      border-bottom: 1px dotted $grey;
+  }
 }
 .verbose-guide-list .meta {
   line-height: 18px;
@@ -1760,6 +1767,8 @@ table {
 }
 .verbose-guide-list .meta li {
   display: inline-block;
+  padding-right: 5px;
+  margin-bottom: 12px;
 }
 .verbose-guide-list .meta li:after {
   content: ",";
