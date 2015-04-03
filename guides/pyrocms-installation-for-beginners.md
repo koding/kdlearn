@@ -2,7 +2,7 @@
 title: PyroCMS Setup and Installation for Beginners
 author: Team Koding
 date: 2014-03-09
-categories: [content management systems, pyrocms, php]
+categories: [cms, pyrocms, php]
 
 template: page.toffee
 ---

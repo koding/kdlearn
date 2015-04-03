@@ -2,7 +2,7 @@
 author: Nik LePage
 username: NikLP
 date: 2014-10-02
-categories: [content management systems, drupal]
+categories: [cms, drupal]
 ---
 
 # Getting started with Drupal 8 (Prerelease)
@@ -15,12 +15,12 @@ Go ahead and open up the Koding dev UI. The terminal is available in the bottom 
 
 We must first install Composer as we need Drush master (7) to easily install Drupal 8. You wanted Drush anyway though, right? :)
 
-Issue the following commands to perform the install and tidy up. 
+Issue the following commands to perform the install and tidy up.
 
     sudo curl -sS https://getcomposer.org/installer | php
     sudo mv composer.phar /usr/local/bin/composer
 
-The last step is not required AFAIK, but makes Composer global for the machine. The instructions that I read said “Make sure Composer's global bin directory is on the system PATH (recommended)”. That’s great, although I don’t fully understand the implications. 
+The last step is not required AFAIK, but makes Composer global for the machine. The instructions that I read said “Make sure Composer's global bin directory is on the system PATH (recommended)”. That’s great, although I don’t fully understand the implications.
 
 Issue the following commands in your shell to sort the path out.
 
@@ -44,7 +44,7 @@ MySQL is not installed by default in the new Koding setup. We need to add MariaD
     # Follow the instructions at https://downloads.mariadb.org/mariadb/repositories/#mirror=coreix
     # Select "Ubuntu", "14.04", "5.5" and then a mirror, and the instructions are below
     sudo apt-get install php5-mysql php5-gd
-    
+
 One more gotcha - D8 requires (or prefers) curl?! Well, okay.
 
     sudo apt-get install php5-curl
@@ -65,7 +65,7 @@ Now we’re ready to rock! The rest of this is a pretty standard Drupal setup mi
 
 You probably (almost certainly) don’t want to use your root password again in case you’re going to be using the included shared environments that Koding provides.
 
-Now `cd ~/Web` and install Drupal 8. 
+Now `cd ~/Web` and install Drupal 8.
 Choose a version: `drush dl drupal-8` (this may give you a choice of versions)
 *OR* Definitely :) get Drupal 8 Beta 1: `wget http://ftp.drupal.org/files/projects/drupal-8.0.0-beta1.tar.gz` (see: https://www.drupal.org/node/2348025 )
 
@@ -74,12 +74,12 @@ Unpack the tarball with `tar zxf drupal-8-whatever.tgz`
 Alter the dir name if it bothers you or you need a reminder of which version you’re using.
 
     mv drupal-8-whatever mydrupaldir
-    
+
 I'm assuming a subdirectory from here on - which means you should set the RewriteBase in .htaccess
 
     RewriteBase /mydrupaldir  # in .htaccess in ~/Web/mydrupaldir
 
-Save yourself a few seconds by doing the usual copying of settings.php and set permissions malarky. 
+Save yourself a few seconds by doing the usual copying of settings.php and set permissions malarky.
 
     cd mydrupaldir
     cd sites/default

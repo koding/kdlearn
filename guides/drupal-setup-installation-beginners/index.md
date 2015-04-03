@@ -2,7 +2,7 @@
 title: Drupal Setup and Installation for Beginners
 author: Thien
 date: 2014-07-15
-categories: [content management systems, drupal, php]
+categories: [cms, drupal, php]
 ---
 
 # Drupal Setup and Installation for Beginners
@@ -15,7 +15,7 @@ kpm install drupal
 
 ***
 
-This article will cover the basic steps on how to setup a blog using 
+This article will cover the basic steps on how to setup a blog using
 Drupal.
 
 ## What's Drupal?
@@ -50,14 +50,14 @@ The configuration should include the changes below (the details of the changes a
 
 ```
 	server {
-	 
+
 	    listen   80;
       server_name hostname.duythien.koding.io;
-	 
+
 	    index index.php index.html index.htm;
 	    set $root_path '/home/duythien/Web/drupal-8.x-dev';
 	    root $root_path;
-	 
+
 	    gzip_static on;
 
 	    location = /favicon.ico {
@@ -135,7 +135,7 @@ Then you'll need to create the database for Drupal, by running the following cod
 	echo 'CREATE DATABASE drupal8' | mysql -u root -p
 ```
 
-If you haven't installed MySQL, head on over to [this tutorial 
+If you haven't installed MySQL, head on over to [this tutorial
 here](/guides/installing-mysql).
 
 ### Step 4
@@ -159,10 +159,10 @@ Create the files directory and make it writeable. If you see this error  ```Writ
 
 ```
 	mkdir files
- 	sudo chmod a+w -R files 
+ 	sudo chmod a+w -R files
 ```
 
-Head now to your Koding domain (http://username.koding.io). If everything goes fine, you should see 
+Head now to your Koding domain (http://username.koding.io). If everything goes fine, you should see
 the following screen in your browser:
 
 ![](welcome.png)

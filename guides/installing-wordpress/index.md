@@ -2,7 +2,7 @@
 title: Install WordPress
 author: Team Koding
 date: 2014-10-16
-categories: [content management systems, wordpress, php]
+categories: [cms, wordpress, php]
 template: page.toffee
 ---
 
