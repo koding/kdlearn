@@ -2,7 +2,7 @@
 title: C
 author: Team Koding
 date: 2015-03-03
-categories: [writing first program, hello world, c, koding]
+categories: [first program, hello world, c, koding]
 
 series: hello-world
 series-index: 1
