@@ -22,16 +22,14 @@ There are several use cases where this makes sense. For example:
 Can you think of more? If yes, [let us know](mailto:sharedvms@koding.com)!
 
 ### How do I share my VM?
-1. Head over to VM settings and locate the "Share VM" feature
-2. Click the "+" sign to add the username of a Koding user with whom you wish to share your VM ![1](1.png)
-3. The user with whom the VM has been shared will now see an accept/reject notice ![2](2.png)
-4. Once they accept, the shared VM will appear in the sidebar as a new avaialble resource ![3](3.png)
+1. Head over to VM settings and locate the "Share VM" feature.
+2. Click the "+" sign to add the username of a Koding user with whom you wish to share your VM. ![1](1.png)
+3. The user with whom the VM has been shared will now see an accept/reject notice. ![2](2.png)
+4. Once they accept, the shared VM will appear in the sidebar as a new avaialble resource. ![3](3.png)
 
 
 ### How do I leave a shared VM?
-1. Click the VM settings for the shared VM and then select "Leave Shared VM" to remove the VM from your Sidebar.
-
-![4](4.png)
+1. Click the VM settings for the shared VM and then select "Leave Shared VM" to remove the VM from your Sidebar.![4](4.png)
 
 
 > type:tip
