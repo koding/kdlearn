@@ -48,14 +48,14 @@
     "date": "2015-01-08T00:00:00.000Z"
   },
   {
-    "title": "Understanding the VM settings panel",
-    "url": "http://learn.koding.com/guides/understanding-vm-panel/index.html",
+    "title": "Koding Subdomains and VHosts",
+    "url": "http://learn.koding.com/guides/vhosts-and-subdomains/index.html",
     "author": "Team Koding",
     "date": "2014-11-03T00:00:00.000Z"
   },
   {
-    "title": "Hello World on Koding: C++",
-    "url": "http://learn.koding.com/guides/hello-world/c++/index.html",
+    "title": "Hello World on Koding: C",
+    "url": "http://learn.koding.com/guides/hello-world/c/index.html",
     "author": "Team Koding",
     "date": "2015-03-03T00:00:00.000Z"
   }
