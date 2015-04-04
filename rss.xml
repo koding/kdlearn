@@ -455,6 +455,46 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
+    <title>Hello World on Koding: Python</title>
+    <link>//learn.koding.com/guides/hello-world/python</link>
+    <pubDate>"2015-03-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/python</guid>
+    <author>Team Koding</author>
+    <description>  Introduction Python is a widely used general-purpose, high-level programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java. The language provides constructs intended to enable clear programs on both a small and large scale.
+  Implementation The first thing you need to do is to create a file called helloworld.py in your Koding VM and paste the bellow snippet into it.
+print &amp;quot;Hello World!&amp;quot;
+To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
+python helloworld.py
+  Explanation print &amp;quot;Hello World!&amp;quot;
+Since Python emphasizes code readability, the above line is pretty self explanatory. It will print out something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
+And that's it!
+You just wrote and ran your first Hello World in Python.
+</description>
+  </item>
+  
+  <item>
+    <title>Hello World on Koding: Ruby</title>
+    <link>//learn.koding.com/guides/hello-world/ruby</link>
+    <pubDate>"2015-03-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/ruby</guid>
+    <author>Team Koding</author>
+    <description>  Introduction Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, and Lisp. It supports multiple programming paradigms, including functional, object-oriented, and imperative. It also has a dynamic type system and automatic memory management.
+  Implementation The first thing you need to do is to create a file called helloworld.rb in your Koding VM and paste the bellow snippet into it.
+#!/usr/bin/ruby
+
+puts 'Hello, world!'
+To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
+ruby helloworld.rb
+  Explanation #!/usr/bin/ruby
+The shebang line is read by the program loader to determine what program to use to run the script. This line cannot be preceded by any blank lines or any leading spaces.
+puts 'Hello, world!'
+The above line is pretty self explanatory. It will put something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
+And that's it!
+You just wrote and ran your first Hello World in Ruby.
+</description>
+  </item>
+  
+  <item>
     <title>Hello World on Koding: Go</title>
     <link>//learn.koding.com/guides/hello-world/go</link>
     <pubDate>"2015-03-04T00:00:00.000Z"</pubDate>
@@ -492,42 +532,14 @@ You just wrote and ran your first Hello World in Go.
   </item>
   
   <item>
-    <title>Hello World on Koding: Ruby</title>
-    <link>//learn.koding.com/guides/hello-world/ruby</link>
-    <pubDate>"2015-03-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/ruby</guid>
+    <title>Hello World on Koding</title>
+    <link>//learn.koding.com/guides/hello-world</link>
+    <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world</guid>
     <author>Team Koding</author>
-    <description>  Introduction Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, and Lisp. It supports multiple programming paradigms, including functional, object-oriented, and imperative. It also has a dynamic type system and automatic memory management.
-  Implementation The first thing you need to do is to create a file called helloworld.rb in your Koding VM and paste the bellow snippet into it.
-#!/usr/bin/ruby
-
-puts 'Hello, world!'
-To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
-ruby helloworld.rb
-  Explanation #!/usr/bin/ruby
-The shebang line is read by the program loader to determine what program to use to run the script. This line cannot be preceded by any blank lines or any leading spaces.
-puts 'Hello, world!'
-The above line is pretty self explanatory. It will put something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
-And that's it!
-You just wrote and ran your first Hello World in Ruby.
-</description>
-  </item>
-  
-  <item>
-    <title>Hello World on Koding: Python</title>
-    <link>//learn.koding.com/guides/hello-world/python</link>
-    <pubDate>"2015-03-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/python</guid>
-    <author>Team Koding</author>
-    <description>  Introduction Python is a widely used general-purpose, high-level programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java. The language provides constructs intended to enable clear programs on both a small and large scale.
-  Implementation The first thing you need to do is to create a file called helloworld.py in your Koding VM and paste the bellow snippet into it.
-print &amp;quot;Hello World!&amp;quot;
-To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
-python helloworld.py
-  Explanation print &amp;quot;Hello World!&amp;quot;
-Since Python emphasizes code readability, the above line is pretty self explanatory. It will print out something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
-And that's it!
-You just wrote and ran your first Hello World in Python.
+    <description>In this Hello World series we'll go over some of the most popular programming languages and learn how to implement a simple Hello World script in each one of them.
+By the end of the series you should be familiar with the most popular languages and you'll be able to continue with the one you like best, on Koding of course!
+As a challenge after you're done with the entire series have a go at this quiz and test your knowledge. 
 </description>
   </item>
   
@@ -596,39 +608,36 @@ You just wrote and ran your first Hello World in C++.
   </item>
   
   <item>
-    <title>Hello World on Koding: Java</title>
-    <link>//learn.koding.com/guides/hello-world/java</link>
+    <title>Hello World on Koding: PHP</title>
+    <link>//learn.koding.com/guides/hello-world/php</link>
     <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/java</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/php</guid>
     <author>Team Koding</author>
-    <description>  Introduction Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.
-  Implementation The first thing you need to do is to create a file called HelloWorld.java in your Koding VM and paste the bellow snippet into it.
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(&amp;quot;Hello, World!&amp;quot;);
-    }
-}
-To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
-javac HelloWorld.java
-java HelloWorld
-  Explanation public class HelloWorld
-The first line defines a class called Main. In Java, every line of code that can actually run needs to be inside a class. This line declares a class named Main, which is public, that means that any other class can access it.
-public static void main(String[] args)
-The main method has to have this exact signature in order to be able to run your program.
+    <description>  Introduction PHP is a server-side scripting language designed for web development but also used as a general-purpose programming language. PHP code can be simply mixed with HTML code, or it can be used in combination with various templating engines and web frameworks.
+  Implementation The first thing you need to do is to create a file called helloworld.php, place it in your Web folder and paste the bellow snippet into it.
+&amp;lt;html&amp;gt;
+    &amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;Hello World&amp;lt;/title&amp;gt;
+    &amp;lt;/head&amp;gt;
+    &amp;lt;body&amp;gt;
+        &amp;lt;?php
+            echo &amp;quot;Hello World&amp;quot;;
+        ?&amp;gt;
+    &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+To run the above file in your Koding VM, follow a similar URL in your browser:
+http://KODING_USERNAME.koding.io/helloworld.php
+Find out more about your VM hostname here.
+  Explanation The first part until the initial &amp;lt;?php tag is just basic HTML code.
+&amp;lt;?php
 
-public - means that anyone can access it.
-static  - means that you can run this method without creating an instance of Main.
-void - means that this method doesn't return any value.
-main - is the name of the method.
-
-The arguments inside the method are the arguments that you will get when running the program with parameters. It's an array of strings.
-{}
-The curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
-group or function.
-System.out.println(&amp;quot;Hello, World!&amp;quot;);
-System is a pre-defined class that Java provides and it also holds some useful methods and variables. out is a static variable within System that represents the output of your program. println is a method of out that can be used to print a line.
+?&amp;gt;
+You need to tell the server when the PHP will start and end. In PHP you use the tags &amp;lt;?php and ?&amp;gt; to mark the start and end for the PHP code that the server must execute.
+echo &amp;quot;Hello World&amp;quot;;
+echo outputs one or more strings. echo is not actually a function (it is a language construct). echo does not behave like a function, so it cannot always be used in the context of a function.
+The last part after the closing ?&amp;gt; tag if just basic HTML code.
 And that's it!
-You just wrote and ran your first Hello World in Java.
+You just wrote and ran your first Hello World in PHP.
 </description>
   </item>
   
@@ -664,48 +673,39 @@ You just wrote and ran your first Hello World in Perl.
   </item>
   
   <item>
-    <title>Hello World on Koding: PHP</title>
-    <link>//learn.koding.com/guides/hello-world/php</link>
+    <title>Hello World on Koding: Java</title>
+    <link>//learn.koding.com/guides/hello-world/java</link>
     <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/php</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/java</guid>
     <author>Team Koding</author>
-    <description>  Introduction PHP is a server-side scripting language designed for web development but also used as a general-purpose programming language. PHP code can be simply mixed with HTML code, or it can be used in combination with various templating engines and web frameworks.
-  Implementation The first thing you need to do is to create a file called helloworld.php, place it in your Web folder and paste the bellow snippet into it.
-&amp;lt;html&amp;gt;
-    &amp;lt;head&amp;gt;
-    &amp;lt;title&amp;gt;Hello World&amp;lt;/title&amp;gt;
-    &amp;lt;/head&amp;gt;
-    &amp;lt;body&amp;gt;
-        &amp;lt;?php
-            echo &amp;quot;Hello World&amp;quot;;
-        ?&amp;gt;
-    &amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-To run the above file in your Koding VM, follow a similar URL in your browser:
-http://KODING_USERNAME.koding.io/helloworld.php
-Find out more about your VM hostname here.
-  Explanation The first part until the initial &amp;lt;?php tag is just basic HTML code.
-&amp;lt;?php
+    <description>  Introduction Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.
+  Implementation The first thing you need to do is to create a file called HelloWorld.java in your Koding VM and paste the bellow snippet into it.
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println(&amp;quot;Hello, World!&amp;quot;);
+    }
+}
+To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
+javac HelloWorld.java
+java HelloWorld
+  Explanation public class HelloWorld
+The first line defines a class called Main. In Java, every line of code that can actually run needs to be inside a class. This line declares a class named Main, which is public, that means that any other class can access it.
+public static void main(String[] args)
+The main method has to have this exact signature in order to be able to run your program.
 
-?&amp;gt;
-You need to tell the server when the PHP will start and end. In PHP you use the tags &amp;lt;?php and ?&amp;gt; to mark the start and end for the PHP code that the server must execute.
-echo &amp;quot;Hello World&amp;quot;;
-echo outputs one or more strings. echo is not actually a function (it is a language construct). echo does not behave like a function, so it cannot always be used in the context of a function.
-The last part after the closing ?&amp;gt; tag if just basic HTML code.
+public - means that anyone can access it.
+static  - means that you can run this method without creating an instance of Main.
+void - means that this method doesn't return any value.
+main - is the name of the method.
+
+The arguments inside the method are the arguments that you will get when running the program with parameters. It's an array of strings.
+{}
+The curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
+group or function.
+System.out.println(&amp;quot;Hello, World!&amp;quot;);
+System is a pre-defined class that Java provides and it also holds some useful methods and variables. out is a static variable within System that represents the output of your program. println is a method of out that can be used to print a line.
 And that's it!
-You just wrote and ran your first Hello World in PHP.
-</description>
-  </item>
-  
-  <item>
-    <title>Hello World on Koding</title>
-    <link>//learn.koding.com/guides/hello-world</link>
-    <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world</guid>
-    <author>Team Koding</author>
-    <description>In this Hello World series we'll go over some of the most popular programming languages and learn how to implement a simple Hello World script in each one of them.
-By the end of the series you should be familiar with the most popular languages and you'll be able to continue with the one you like best, on Koding of course!
-As a challenge after you're done with the entire series have a go at this quiz and test your knowledge. 
+You just wrote and ran your first Hello World in Java.
 </description>
   </item>
   
@@ -841,6 +841,35 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
+    <title>Setting up a Rails webserver</title>
+    <link>//learn.koding.com/guides/setting-rails-webserver</link>
+    <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-rails-webserver</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Rails using just one command:
+kpm install rails
+
+  Getting started Before you can start the Rails install process, you'll need to update all of the apt-get packages:
+sudo apt-get update
+Then make sure you have Ruby installed on your VM. You can install it by following this guide.
+  Installing You can install Rails using the bellow command:
+sudo gem install rails
+  Usage Creating a Rails project is really easy. It just takes one command and you're good to go:
+rails new goodbyetolocalhost
+cd goodbyetolocalhost
+You can run the Rails webserver like so:
+rails server
+You will now be able to access the Rails webserver by following a similar URL:
+http://KODING_USERNAME.koding.io:3000
+Find out more about your VM hostname here.
+Rails should listen to 0.0.0.0:3000 by default. If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:3000. You can check this, using the netstat command in another terminal window and the bellow command:
+sudo netstat -tnlp
+And that's it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
     <title>Setting up a MeteorJS webserver</title>
     <link>//learn.koding.com/guides/setting-meteorjs-webserver</link>
     <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
@@ -871,28 +900,29 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Setting up a Symfony2 webserver</title>
-    <link>//learn.koding.com/guides/setting-symfony2-webserver</link>
+    <title>Setting up a Laravel webserver with Artisan</title>
+    <link>//learn.koding.com/guides/setting-laravel-artisan-webserver</link>
     <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-symfony2-webserver</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-laravel-artisan-webserver</guid>
     <author>Team Koding</author>
-    <description>  Getting started Before you can start the Symfony2 install process, you'll need to update all of the apt-get packages:
+    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Laravel using just one command:
+kpm install laravel
+
+  Getting started Before you can start the Laravel install process, you'll need to update all of the apt-get packages:
 sudo apt-get update
 Then make sure you have curl installed on your VM. You can install it using the bellow command:
 sudo apt-get install curl
-Also you'll have to have Composer installed on your VM. You can install it either manually or using the Koding Package Manager (kpm).
-Run the following commands to download, move and give right permissions to Composer:
-curl -sS https://getcomposer.org/installer | php #!/usr/bin/env php
-sudo mv composer.phar /usr/local/bin/composer
-chmod +x /usr/local/bin/composer
-or you can just run
-kpm install composer
-  Usage Create a new project to test your webserver and move into that project:
-composer create-project symfony/framework-standard-edition goodbyetolocalhost
-cd goodbyetolocalhost
-You can now start the Symfony2 webserver like so:
-php app/console server:run 0.0.0.0:8080
-You will now be able to access the Symfony2 webserver by following a similar URL:
+  Installing You can install Laravel using the bellow command:
+sudo curl -o /usr/local/bin/laravel 'http://laravel.com/laravel.phar'
+After that process is over you need to set execute permission on the Laravel executable.
+sudo chmod +x /usr/local/bin/laravel
+  Usage You can now create a new Laravel project.
+laravel new goodbyelocalhost
+After that you should navigate into the newly created directory:
+cd goodbyelocalhost
+and you should have the ability to start the webserver using the bellow command:
+php artisan serve --host=0.0.0.0 --port=8080
+You will now be able to access the Laravel webserver by following a similar URL:
 http://KODING_USERNAME.koding.io:8080
 Find out more about your VM hostname here.
 If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:8080. You can check this, using the netstat command in another terminal window and the bellow command:
@@ -942,68 +972,6 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Setting up a Rails webserver</title>
-    <link>//learn.koding.com/guides/setting-rails-webserver</link>
-    <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-rails-webserver</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Rails using just one command:
-kpm install rails
-
-  Getting started Before you can start the Rails install process, you'll need to update all of the apt-get packages:
-sudo apt-get update
-Then make sure you have Ruby installed on your VM. You can install it by following this guide.
-  Installing You can install Rails using the bellow command:
-sudo gem install rails
-  Usage Creating a Rails project is really easy. It just takes one command and you're good to go:
-rails new goodbyetolocalhost
-cd goodbyetolocalhost
-You can run the Rails webserver like so:
-rails server
-You will now be able to access the Rails webserver by following a similar URL:
-http://KODING_USERNAME.koding.io:3000
-Find out more about your VM hostname here.
-Rails should listen to 0.0.0.0:3000 by default. If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:3000. You can check this, using the netstat command in another terminal window and the bellow command:
-sudo netstat -tnlp
-And that's it!
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
-    <title>Setting up a Laravel webserver with Artisan</title>
-    <link>//learn.koding.com/guides/setting-laravel-artisan-webserver</link>
-    <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-laravel-artisan-webserver</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Laravel using just one command:
-kpm install laravel
-
-  Getting started Before you can start the Laravel install process, you'll need to update all of the apt-get packages:
-sudo apt-get update
-Then make sure you have curl installed on your VM. You can install it using the bellow command:
-sudo apt-get install curl
-  Installing You can install Laravel using the bellow command:
-sudo curl -o /usr/local/bin/laravel 'http://laravel.com/laravel.phar'
-After that process is over you need to set execute permission on the Laravel executable.
-sudo chmod +x /usr/local/bin/laravel
-  Usage You can now create a new Laravel project.
-laravel new goodbyelocalhost
-After that you should navigate into the newly created directory:
-cd goodbyelocalhost
-and you should have the ability to start the webserver using the bellow command:
-php artisan serve --host=0.0.0.0 --port=8080
-You will now be able to access the Laravel webserver by following a similar URL:
-http://KODING_USERNAME.koding.io:8080
-Find out more about your VM hostname here.
-If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:8080. You can check this, using the netstat command in another terminal window and the bellow command:
-sudo netstat -tnlp
-And that's it!
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
     <title>Setting up a Django webserver</title>
     <link>//learn.koding.com/guides/setting-django-webserver</link>
     <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
@@ -1027,6 +995,38 @@ You will now be able to access the Django webserver by following a similar URL:
 http://KODING_USERNAME.koding.io:8000
 Find out more about your VM hostname here.
 If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:8000. You can check this, using the netstat command in another terminal window and the bellow command:
+sudo netstat -tnlp
+And that's it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>Setting up a Symfony2 webserver</title>
+    <link>//learn.koding.com/guides/setting-symfony2-webserver</link>
+    <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-symfony2-webserver</guid>
+    <author>Team Koding</author>
+    <description>  Getting started Before you can start the Symfony2 install process, you'll need to update all of the apt-get packages:
+sudo apt-get update
+Then make sure you have curl installed on your VM. You can install it using the bellow command:
+sudo apt-get install curl
+Also you'll have to have Composer installed on your VM. You can install it either manually or using the Koding Package Manager (kpm).
+Run the following commands to download, move and give right permissions to Composer:
+curl -sS https://getcomposer.org/installer | php #!/usr/bin/env php
+sudo mv composer.phar /usr/local/bin/composer
+chmod +x /usr/local/bin/composer
+or you can just run
+kpm install composer
+  Usage Create a new project to test your webserver and move into that project:
+composer create-project symfony/framework-standard-edition goodbyetolocalhost
+cd goodbyetolocalhost
+You can now start the Symfony2 webserver like so:
+php app/console server:run 0.0.0.0:8080
+You will now be able to access the Symfony2 webserver by following a similar URL:
+http://KODING_USERNAME.koding.io:8080
+Find out more about your VM hostname here.
+If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:8080. You can check this, using the netstat command in another terminal window and the bellow command:
 sudo netstat -tnlp
 And that's it!
 If you encounter any issues or have any questions please drop an email here.
@@ -1644,39 +1644,29 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>How to install Memcache</title>
-    <link>//learn.koding.com/guides/install-memcache</link>
+    <title>How to install GruntJS</title>
+    <link>//learn.koding.com/guides/installing-gruntjs</link>
     <pubDate>"2015-01-20T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/install-memcache</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/installing-gruntjs</guid>
     <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Memcache using just one command:
-kpm install memcached
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install GruntJS using just one command:
+kpm install grunt
 
-  Getting started Before you can start the Memcache install process, you'll need to update all of the apt-get packages:
+  Getting started Before you can start the GruntJS install process, you'll need to update all of the apt-get packages:
 sudo apt-get update
-Make sure you have mySQL and PHP installed on your VM before you continue.
-  Step 1 To install Memcache you'll need to run the following command:
-sudo apt-get install php5-memcached memcached
-This will install the required package for PHP and also the Memcached package.
-  Step 2 You can now check if the packages have been installed correctly. Run the following commands from your Terminal:
-cd Web
-sudo nano info.php
-Copy the following lines into the file:
-&amp;lt;?php
-phpinfo();
-?&amp;gt;
-You'll now be able to check if Memcache has installed correctly by accessing a url similar to this one:
-http://KODING_USERNAME.koding.io/info.php
-Find out more about your VM hostname here.
-If you scroll down or search for the &amp;quot;memcached&amp;quot; section header, you should find something that looks like this:
-
-You can check whether the Memcache service is running by typing:
-ps aux | grep memcached
-And it should output something similar to this:
-memcache  6584  0.0  0.0 327448  3004 ?        Sl   14:07   0:00 /usr/bin/memcached -m 64 -p 11211 -u memcache -l 127.0.0.1
-demouser  6636  0.0  0.0  11744   904 pts/0    S+   14:29   0:00 grep --color=auto memcached
-You can query Memcache for stats by typing:
-echo &amp;quot;stats settings&amp;quot; | nc localhost 11211
+By default every Koding VM comes preinstalled with NodeJS and npm but if it is missing, from your VM, have a look at this guide to learn how to install it.
+  Installing To install GruntJS you'll need to run the following command:
+sudo npm install -g grunt-cli
+This will install GruntJS globally on your VM.
+You can verify if GruntJS has installed correctly using the following command:
+grunt --version
+  Usage You can use GruntJS in your project by inputting some basic commands.
+Move into your project:
+cd ~/your_project
+Generate an empty package file:
+echo &amp;quot;{}&amp;quot; &amp;gt; package.json
+Finally, install GruntJS into that project using the following command:
+npm install grunt --save-dev
 And that's it!
 If you encounter any issues or have any questions please drop an email here.
 </description>
@@ -1712,29 +1702,39 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>How to install GruntJS</title>
-    <link>//learn.koding.com/guides/installing-gruntjs</link>
+    <title>How to install Memcache</title>
+    <link>//learn.koding.com/guides/install-memcache</link>
     <pubDate>"2015-01-20T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/installing-gruntjs</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/install-memcache</guid>
     <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install GruntJS using just one command:
-kpm install grunt
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Memcache using just one command:
+kpm install memcached
 
-  Getting started Before you can start the GruntJS install process, you'll need to update all of the apt-get packages:
+  Getting started Before you can start the Memcache install process, you'll need to update all of the apt-get packages:
 sudo apt-get update
-By default every Koding VM comes preinstalled with NodeJS and npm but if it is missing, from your VM, have a look at this guide to learn how to install it.
-  Installing To install GruntJS you'll need to run the following command:
-sudo npm install -g grunt-cli
-This will install GruntJS globally on your VM.
-You can verify if GruntJS has installed correctly using the following command:
-grunt --version
-  Usage You can use GruntJS in your project by inputting some basic commands.
-Move into your project:
-cd ~/your_project
-Generate an empty package file:
-echo &amp;quot;{}&amp;quot; &amp;gt; package.json
-Finally, install GruntJS into that project using the following command:
-npm install grunt --save-dev
+Make sure you have mySQL and PHP installed on your VM before you continue.
+  Step 1 To install Memcache you'll need to run the following command:
+sudo apt-get install php5-memcached memcached
+This will install the required package for PHP and also the Memcached package.
+  Step 2 You can now check if the packages have been installed correctly. Run the following commands from your Terminal:
+cd Web
+sudo nano info.php
+Copy the following lines into the file:
+&amp;lt;?php
+phpinfo();
+?&amp;gt;
+You'll now be able to check if Memcache has installed correctly by accessing a url similar to this one:
+http://KODING_USERNAME.koding.io/info.php
+Find out more about your VM hostname here.
+If you scroll down or search for the &amp;quot;memcached&amp;quot; section header, you should find something that looks like this:
+
+You can check whether the Memcache service is running by typing:
+ps aux | grep memcached
+And it should output something similar to this:
+memcache  6584  0.0  0.0 327448  3004 ?        Sl   14:07   0:00 /usr/bin/memcached -m 64 -p 11211 -u memcache -l 127.0.0.1
+demouser  6636  0.0  0.0  11744   904 pts/0    S+   14:29   0:00 grep --color=auto memcached
+You can query Memcache for stats by typing:
+echo &amp;quot;stats settings&amp;quot; | nc localhost 11211
 And that's it!
 If you encounter any issues or have any questions please drop an email here.
 </description>
@@ -1924,65 +1924,6 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Installing LinuxBrew</title>
-    <link>//learn.koding.com/guides/installing-linuxbrew</link>
-    <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/installing-linuxbrew</guid>
-    <author>Alvin Wan</author>
-    <description>There are a variety of package installers to help with what would otherwise be complex installations. Follow these instructions to install HomeBrew for Linux.
-  The One-Line Solution Input the following in your shell, as Koding already has Ruby pre-installed:
-ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)&amp;quot;
-From here, you'll be poised for yet more installations. See their website for more information.
-</description>
-  </item>
-  
-  <item>
-    <title>Using mySQL</title>
-    <link>//learn.koding.com/guides/using-mysql</link>
-    <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/using-mysql</guid>
-    <author>Alvin Wan</author>
-    <description>mySQL offers a popular implementation of the SQL language. This guide will get you started on using mySQL on Koding.
-First make sure you have mySQL installed. Have a look at this guide to learn how to install it.
-Are you using PostgreSQL? Have a look at this guide.
-  Starting mySQL Let's start the mySQL server using the following command:
-sudo service mysql start
-  Getting Started First, you'll need to login using th root user that was configured during the mySQL installation. Open your Terminal and type in the following:
-mysql -u root -p
-Enter your password, and hit enter. You're now logged in.
-  Creating a User You'll now create a new account for our code, with the username &amp;quot;bob&amp;quot; and password &amp;quot;pass&amp;quot;.
-create user 'bob'@'localhost' identified by 'pass';
-If you see an arrow
--&amp;gt;
-that means you forgot the end semicolon &amp;quot;;&amp;quot;. Enter that and hit enter.
-You can exit the server by using Ctrl+D and then login again as Bob:
-mysql -u bob -p;
-After entering the password, you'll be readmitted into the mySQL server. To continue with this guide, you'll need to be logged in as root.
-  Creating a Database Each mySQL server includes a variety of databases. The initial installation comes with several. You can view them by typing:
-show databases;
-You should see a short list of databases:
-+--------------------+
-| Database           |
-+--------------------+
-| information_schema |
-| mysql              |
-| performance_schema |
-+--------------------+
-3 rows in set (0.00 sec)
-Let's create your first database:
-create database test;
-  Linking Users and Databases You'll need to grant privileges to the user, so that &amp;quot;Bob&amp;quot; can access the database &amp;quot;test&amp;quot; and modify it accordingly.
-To grant &amp;quot;Bob&amp;quot; all privileges on all tables in database &amp;quot;test&amp;quot;:
-grant all on test.* to 'bob'@'localhost';
-  Using the Database Exit out of root by using Ctrl+D, and login as &amp;quot;Bob&amp;quot;. To connect to a database, prefix the database name with &amp;quot;use&amp;quot;.
-use test;
-Once here, you’ll be able to execute mySQL commands. 
-And that's it!
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
     <title>Making your VM secure using Ubuntu UFW (Uncomplicated Firewall)</title>
     <link>//learn.koding.com/guides/enable-ufw</link>
     <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
@@ -2061,6 +2002,65 @@ When you hit &amp;quot;y&amp;quot; ufw will backup all existing rules before doi
   Help, I locked myself out of my VM If for some reason you enabled your firewall and did not take the steps needed to open up the ports needed for Koding to work, then
 your only recourse is to reinit your VM. That process is described in this guide. If you 
 encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>Using mySQL</title>
+    <link>//learn.koding.com/guides/using-mysql</link>
+    <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/using-mysql</guid>
+    <author>Alvin Wan</author>
+    <description>mySQL offers a popular implementation of the SQL language. This guide will get you started on using mySQL on Koding.
+First make sure you have mySQL installed. Have a look at this guide to learn how to install it.
+Are you using PostgreSQL? Have a look at this guide.
+  Starting mySQL Let's start the mySQL server using the following command:
+sudo service mysql start
+  Getting Started First, you'll need to login using th root user that was configured during the mySQL installation. Open your Terminal and type in the following:
+mysql -u root -p
+Enter your password, and hit enter. You're now logged in.
+  Creating a User You'll now create a new account for our code, with the username &amp;quot;bob&amp;quot; and password &amp;quot;pass&amp;quot;.
+create user 'bob'@'localhost' identified by 'pass';
+If you see an arrow
+-&amp;gt;
+that means you forgot the end semicolon &amp;quot;;&amp;quot;. Enter that and hit enter.
+You can exit the server by using Ctrl+D and then login again as Bob:
+mysql -u bob -p;
+After entering the password, you'll be readmitted into the mySQL server. To continue with this guide, you'll need to be logged in as root.
+  Creating a Database Each mySQL server includes a variety of databases. The initial installation comes with several. You can view them by typing:
+show databases;
+You should see a short list of databases:
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
++--------------------+
+3 rows in set (0.00 sec)
+Let's create your first database:
+create database test;
+  Linking Users and Databases You'll need to grant privileges to the user, so that &amp;quot;Bob&amp;quot; can access the database &amp;quot;test&amp;quot; and modify it accordingly.
+To grant &amp;quot;Bob&amp;quot; all privileges on all tables in database &amp;quot;test&amp;quot;:
+grant all on test.* to 'bob'@'localhost';
+  Using the Database Exit out of root by using Ctrl+D, and login as &amp;quot;Bob&amp;quot;. To connect to a database, prefix the database name with &amp;quot;use&amp;quot;.
+use test;
+Once here, you’ll be able to execute mySQL commands. 
+And that's it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>Installing LinuxBrew</title>
+    <link>//learn.koding.com/guides/installing-linuxbrew</link>
+    <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/installing-linuxbrew</guid>
+    <author>Alvin Wan</author>
+    <description>There are a variety of package installers to help with what would otherwise be complex installations. Follow these instructions to install HomeBrew for Linux.
+  The One-Line Solution Input the following in your shell, as Koding already has Ruby pre-installed:
+ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)&amp;quot;
+From here, you'll be poised for yet more installations. See their website for more information.
 </description>
   </item>
   
@@ -2852,43 +2852,6 @@ sudo service mongodb restart
   </item>
   
   <item>
-    <title>Getting Started: File Uploads</title>
-    <link>//learn.koding.com/guides/getting-started/file-upload</link>
-    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/file-upload</guid>
-    <author>Team Koding</author>
-    <description>In this guide we'll take a look at uploading your files and projects to
-Koding, in multiple ways. Lets get started!
-  Uploading with Drag and Drop The simplest way, is simply by using Drag and Drop file upload! To do
-this, open your Koding IDE, locate your FileTree on the left hand
-side, and drag a file from your Desktop onto the FileTree. An example
-image is below.
-
-After you let go of the file, your file will be uploaded to your
-~/Uploads directory. If ~/Uploads does not exist, it will be automatically
-created.
- Files uploaded this way are not automatically available for
-serving over your VMs web server as the ~/Uploads directory is not inside
-~/Web (the default web root for Koding VMs). If you wish to use any uploaded
-files in your web project, please move them to a directory under ~/Web.
-   Uploading with FTP FTP is another common way to upload files to your VM. Before uploading
-with FTP though, you'll need to set up an FTP Server on your VM.
-The FTP Guide will take you through both the installation, and
-connecting process, so check it out!
-  Uploading with SCP SCP is is a tool that will copy files from your local Unix filesystem
-to a remote filesystem over SSH connections. To use it, make sure you
-have SSH setup with your Koding VM beforehand. Instructions can be found
-here if needed.
-After that, use the following command to copy a local file to your VM.
-scp LOCAL_FILE USERNAME.koding.io:REMOTE_FILE
-Replace LOCAL_FILE with your local file location, USERNAME with your
-Koding Username, and REMOTE_FILE with your Remote File location. An
-example of this command can be seen below.
-scp ~/my_image.png joshmurray.koding.io:~/my_image.png
-</description>
-  </item>
-  
-  <item>
     <title>A guide to Docker</title>
     <link>//learn.koding.com/guides/what-is-docker</link>
     <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
@@ -2940,6 +2903,43 @@ sudo apt-get install lxc-docker
 If you made it to this point you can run this command to check if Docker is indeed installed and works properly:
 sudo docker run -i -t ubuntu /bin/bash
 If you have any question or issues please email us at support@koding.com and we'll gladly help.
+</description>
+  </item>
+  
+  <item>
+    <title>Getting Started: File Uploads</title>
+    <link>//learn.koding.com/guides/getting-started/file-upload</link>
+    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/file-upload</guid>
+    <author>Team Koding</author>
+    <description>In this guide we'll take a look at uploading your files and projects to
+Koding, in multiple ways. Lets get started!
+  Uploading with Drag and Drop The simplest way, is simply by using Drag and Drop file upload! To do
+this, open your Koding IDE, locate your FileTree on the left hand
+side, and drag a file from your Desktop onto the FileTree. An example
+image is below.
+
+After you let go of the file, your file will be uploaded to your
+~/Uploads directory. If ~/Uploads does not exist, it will be automatically
+created.
+ Files uploaded this way are not automatically available for
+serving over your VMs web server as the ~/Uploads directory is not inside
+~/Web (the default web root for Koding VMs). If you wish to use any uploaded
+files in your web project, please move them to a directory under ~/Web.
+   Uploading with FTP FTP is another common way to upload files to your VM. Before uploading
+with FTP though, you'll need to set up an FTP Server on your VM.
+The FTP Guide will take you through both the installation, and
+connecting process, so check it out!
+  Uploading with SCP SCP is is a tool that will copy files from your local Unix filesystem
+to a remote filesystem over SSH connections. To use it, make sure you
+have SSH setup with your Koding VM beforehand. Instructions can be found
+here if needed.
+After that, use the following command to copy a local file to your VM.
+scp LOCAL_FILE USERNAME.koding.io:REMOTE_FILE
+Replace LOCAL_FILE with your local file location, USERNAME with your
+Koding Username, and REMOTE_FILE with your Remote File location. An
+example of this command can be seen below.
+scp ~/my_image.png joshmurray.koding.io:~/my_image.png
 </description>
   </item>
   
@@ -3098,6 +3098,63 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
+    <title>Getting Started with C and C++</title>
+    <link>//learn.koding.com/guides/getting-started-c-cpp</link>
+    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-c-cpp</guid>
+    <author>drodri</author>
+    <description>In this guide we'll introducing C and C++ and how to build your first programs 
+in Koding. 
+C and C++ are the reference languages in many domains, from heavy computations,
+research, robotics, embedded systems, financing and banking...
+They are compiled languages, you write source code and a compiler translate it to
+native binaries, that typically can run only in the platform they were compiled to
+(Win, Linux, Mac). The process of converting source code to executable binaries,
+that involve compiling and linking is called the build process. This process can
+be specified by different means, e.g. using an IDE or Makefiles. 
+  Running your first C program Lets create our first &amp;quot;Hello world&amp;quot; C application, and build it.
+Open up your Ace editor, and open up a new file by pressing the Plus Button on the 
+tab list. If your file says Untitled.txt, you're good to go.
+Next, paste the following code into the file.
+#include &amp;lt;stdio.h&amp;gt;
+
+void main(){
+    printf(&amp;quot;Hello world\n&amp;quot;);
+}
+We haven't saved our file yet , so use Ctrl-S to save the file, 
+and name it main.c (note the extension c, not cpp).
+Finally, open up the Koding Terminal 
+and build and run your application.
+$ gcc -o hello main.c                                                                            
+$ ./hello
+Hello world
+  Running your first C++ program Create another file, this time named &amp;quot;main.cpp&amp;quot; with the following code:
+#include &amp;lt;iostream&amp;gt;
+
+using namespace std;
+
+int main(){
+    cout &amp;lt;&amp;lt; &amp;quot;Hello World&amp;quot; &amp;lt;&amp;lt; endl;
+    return 0;
+}
+Now we will build it with the g++ compiler, and run it. Please note that
+even if they are similar, C++ is not an &amp;quot;extension&amp;quot; of C or C with classes but
+a very different language by itself.
+$ g++ -o hellopp main.cpp
+$ ./hellopp
+Hello world
+Building larger applications can be somewhat difficult and cumbersome to the newbie.
+As soon as your application start to have several files, you will need to define
+how to build them in Makefiles, but we would rather recommend using the CMake build system,
+which is much simpler and fully portable to Windows and Mac platforms, with support
+for many compilers, as Visual Studio, and IDEs as Eclipse.
+The Biicode platform automatically generate CMake files for you, based on 
+your source code files. It also manage dependencies, so it can be used for reusing
+existing code easily.
+</description>
+  </item>
+  
+  <item>
     <title>Getting started with Drupal 8 (Prerelease)</title>
     <link>//learn.koding.com/guides/getting-started-drupal8-beta</link>
     <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
@@ -3160,6 +3217,34 @@ chmod 0775 files
   </item>
   
   <item>
+    <title>What happens upon upgrade?</title>
+    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
+    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
+    <author>Team Koding</author>
+    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
+Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
+
+Ability to mark your VM(s) as Always-On
+Add more storage to your VM(s)
+
+  Utilizing new resources when upgrading to the Hobbyist Plan Once you have upgraded to Hobbyist, you can mark your VM as an Always-On VM and increase its storage from 3GB to 10GB. To to this, head over to the settings panel for your VM and follow these easy steps:
+
+head over to VM settings (as shown in the image below)
+expand the &amp;quot;More&amp;quot; panel and then the &amp;quot;Advanced&amp;quot; panel
+You will see a new button under the Advanced panel labeled &amp;quot;Resize&amp;quot; (this button only appears for users who have upgraded to the Hobbyist plan and have not yet allocated the 10GB. Once you allocate it, the button will disappear)
+Click the button to initiate resize. Once done, your VM will show 10GB. Verify that using the command df -h /
+
+
+  Utilizing new resources when upgrading to the Developer and Professional Plans Under these plans, you can have a total of up to 3 (for Developer) and 5 (for Professional) VMs, mark any of them as Always-On and allocate 25GB (for Developer) / 50GB (for Professional) of storage amonst them. You will start with the default free VM and it is up to you whether you want to leave it at the default 3GB or delete it so that you can make a new one with a storage allocation that you prefer. To delete a VM, simply go the settings panel of the VM and click the Terminate button (as shown in the attached screen shot).
+
+To create a new VM, click the + icon in the VM list and you will be presented wit the option to create a new VM with a space allocation that is preferable to you (as shown below).
+
+Enjoy the new resources and thanks again for upgrading! If you have any addtional questions regarding upgrades and resources, please send us a support request and we will get back to you as soon as possible.
+</description>
+  </item>
+  
+  <item>
     <title>Building C / C++ applications with biicode</title>
     <link>//learn.koding.com/guides/getting-started-biicode</link>
     <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
@@ -3213,91 +3298,6 @@ $ ./bin/myuser_crypto_main
 F7FF9E8B7BB2E09B70935A5D785E0CC5D9D0ABF0
 For further examples, you can have a look to the biicode C/C++ documentation and the 
 examples
-</description>
-  </item>
-  
-  <item>
-    <title>What happens upon upgrade?</title>
-    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
-    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
-    <author>Team Koding</author>
-    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
-Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
-
-Ability to mark your VM(s) as Always-On
-Add more storage to your VM(s)
-
-  Utilizing new resources when upgrading to the Hobbyist Plan Once you have upgraded to Hobbyist, you can mark your VM as an Always-On VM and increase its storage from 3GB to 10GB. To to this, head over to the settings panel for your VM and follow these easy steps:
-
-head over to VM settings (as shown in the image below)
-expand the &amp;quot;More&amp;quot; panel and then the &amp;quot;Advanced&amp;quot; panel
-You will see a new button under the Advanced panel labeled &amp;quot;Resize&amp;quot; (this button only appears for users who have upgraded to the Hobbyist plan and have not yet allocated the 10GB. Once you allocate it, the button will disappear)
-Click the button to initiate resize. Once done, your VM will show 10GB. Verify that using the command df -h /
-
-
-  Utilizing new resources when upgrading to the Developer and Professional Plans Under these plans, you can have a total of up to 3 (for Developer) and 5 (for Professional) VMs, mark any of them as Always-On and allocate 25GB (for Developer) / 50GB (for Professional) of storage amonst them. You will start with the default free VM and it is up to you whether you want to leave it at the default 3GB or delete it so that you can make a new one with a storage allocation that you prefer. To delete a VM, simply go the settings panel of the VM and click the Terminate button (as shown in the attached screen shot).
-
-To create a new VM, click the + icon in the VM list and you will be presented wit the option to create a new VM with a space allocation that is preferable to you (as shown below).
-
-Enjoy the new resources and thanks again for upgrading! If you have any addtional questions regarding upgrades and resources, please send us a support request and we will get back to you as soon as possible.
-</description>
-  </item>
-  
-  <item>
-    <title>Getting Started with C and C++</title>
-    <link>//learn.koding.com/guides/getting-started-c-cpp</link>
-    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-c-cpp</guid>
-    <author>drodri</author>
-    <description>In this guide we'll introducing C and C++ and how to build your first programs 
-in Koding. 
-C and C++ are the reference languages in many domains, from heavy computations,
-research, robotics, embedded systems, financing and banking...
-They are compiled languages, you write source code and a compiler translate it to
-native binaries, that typically can run only in the platform they were compiled to
-(Win, Linux, Mac). The process of converting source code to executable binaries,
-that involve compiling and linking is called the build process. This process can
-be specified by different means, e.g. using an IDE or Makefiles. 
-  Running your first C program Lets create our first &amp;quot;Hello world&amp;quot; C application, and build it.
-Open up your Ace editor, and open up a new file by pressing the Plus Button on the 
-tab list. If your file says Untitled.txt, you're good to go.
-Next, paste the following code into the file.
-#include &amp;lt;stdio.h&amp;gt;
-
-void main(){
-    printf(&amp;quot;Hello world\n&amp;quot;);
-}
-We haven't saved our file yet , so use Ctrl-S to save the file, 
-and name it main.c (note the extension c, not cpp).
-Finally, open up the Koding Terminal 
-and build and run your application.
-$ gcc -o hello main.c                                                                            
-$ ./hello
-Hello world
-  Running your first C++ program Create another file, this time named &amp;quot;main.cpp&amp;quot; with the following code:
-#include &amp;lt;iostream&amp;gt;
-
-using namespace std;
-
-int main(){
-    cout &amp;lt;&amp;lt; &amp;quot;Hello World&amp;quot; &amp;lt;&amp;lt; endl;
-    return 0;
-}
-Now we will build it with the g++ compiler, and run it. Please note that
-even if they are similar, C++ is not an &amp;quot;extension&amp;quot; of C or C with classes but
-a very different language by itself.
-$ g++ -o hellopp main.cpp
-$ ./hellopp
-Hello world
-Building larger applications can be somewhat difficult and cumbersome to the newbie.
-As soon as your application start to have several files, you will need to define
-how to build them in Makefiles, but we would rather recommend using the CMake build system,
-which is much simpler and fully portable to Windows and Mac platforms, with support
-for many compilers, as Visual Studio, and IDEs as Eclipse.
-The Biicode platform automatically generate CMake files for you, based on 
-your source code files. It also manage dependencies, so it can be used for reusing
-existing code easily.
 </description>
   </item>
   
@@ -3535,178 +3535,54 @@ That is all!
   </item>
   
   <item>
-    <title>Getting Started with Python</title>
-    <link>//learn.koding.com/guides/getting-started-python</link>
+    <title>Author a guide: Previewing</title>
+    <link>//learn.koding.com/contribute/previewing</link>
     <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-python</guid>
+    <guid isPermaLink="true">//learn.koding.com/contribute/previewing</guid>
     <author>Team Koding</author>
-    <description>Before you continue reading this guide make sure you have PIP installed. You can use the Koding Package Manager (kpm) and install PIP using just one command:
-kpm install pip
-
-In this guide we'll go over explaining what Python is, how to use Python 
-Packaging via the PIP command, and how to write your first Python web 
-server using a small library known as Flask. So, lets get started!
-  What is Python Python is a popular, general purpose, high level programing language. It 
-focuses on readability programmer sanity over raw performance. Python2 
-and Python3 come pre-installed on Koding VMs, and in this guide we're 
-going to focus on Python2. Lets see what it looks like to run some python 
-code!
-  Running your first Python script Open up your Ace Editor create a new file named hello.py. Paste 
-in the following code into that file.
-print &amp;quot;Hello from python!&amp;quot;
-
-The print keyword takes a string and prints it to the Standard Output 
-(STDOUT) of the process. Lets try running this file so we can see this 
-output, but first save the file with Ctrl-s.  Now, open up your 
-Terminal and type in the following command.
-python hello.py
-You should see output similar to this:
-joshmurray: ~ $ python hello.py
-Hello from python!
-joshmurray: ~ $
-Neat! Lets take this a couple steps further, and do something actually 
-useful, lets run a web server! But first, lets get to know Pip, and 
-install a library that makes making python Web Applications easy!
-  Installing Pip pip is a popular Python Package Manager. However, we need to install it 
-onto our Koding VM to use it. To do that, we're going to use AptGet, with 
-the following command.
-sudo apt-get install python-pip
-Give that a moment, and once that finishes we can install Flask!
-  Using Pip to install Flask You may be wondering why we're using Flask to write this little web 
-server of ours. Flask has a really nice API for making compact web 
-applications.  This is great for a beginner guide, since we can look at a 
-few core concepts without getting too bogged down with technical details 
-of a web server.
-Now that you have pip installed, to install Flask type the following 
-command.
-sudo pip install Flask
-Note that we're using sudo because the default location for the 
-installed packages is in a root directory. A common practice to store 
-these without root permissions is to use a Virtual Environment to keep 
-your packages installed per-project. We'll save that for a later guide 
-though.
-Once that finishes installing, lets write our Flask code!
-  Creating your first Flask web server Create a new file named web.py, and paste in the following code.
-from flask import Flask
-app = Flask(__name__)
-
-@app.route(&amp;quot;/&amp;quot;)
-def hello():
-    return &amp;quot;Hello World!&amp;quot;
-
-if __name__ == &amp;quot;__main__&amp;quot;:
-    app.run(host='0.0.0.0')
-
-There are a few interesting points in this source though, so before we 
-run our web server, lets go over the source.
-from flask import Flask
-
-First up are our from and import keywords. The import imports a 
-module to an object with the same name. When used with the from keyword 
-though, only the Flask object is imported to the current scope. So, 
-this line imports a function named Flask.
-app = Flask(__name__)
-
-Next up, we use that Flask() function to create a Flask instance, 
-stored in the name app.
-__name__ is a special keyword which stores the name of the currently 
-module, or it equals &amp;quot;__main__&amp;quot; if run directly. We'll see this again 
-at the end of the script.
-def hello():
-    return &amp;quot;Hello World!&amp;quot;
-
-We're skipping a line, and going straight to the def keyword. This is 
-how we define a function in Python. In this case, we're using this 
-function as a handler for our Flask &amp;quot;route&amp;quot;.
-@app.route(&amp;quot;/&amp;quot;)
-def hello():
-    return &amp;quot;Hello World!&amp;quot;
-
-If we look at that function again, including the line we skipped, we see 
-a new syntax structure, @app.route(&amp;quot;/&amp;quot;).
-This is known as a Decorator. Decorators are a special syntax for a 
-function wrapping another function. If you're new to programming, this 
-can be a bit of a tricky concept which involves Higher Order 
-Functions. We'll briefly touch this below, but for now we'll just 
-take it at face value. This is how Flask routes our request to our 
-handler.
-A Route is a concept that directs requests (people viewing your web 
-server) and routes them to your Handler functions. &amp;quot;/&amp;quot; is the path 
-for this route, meaning that when someone connects to 
-http://hostname.username.koding.io/ they are given this function.
-If someone connected to http://hostname.username.koding.io/foo/bar, it 
-would not return this handler, because /foo/bar does not match our 
-hello route.
-if __name__ == &amp;quot;__main__&amp;quot;:
-    app.run(host='0.0.0.0')
-
-Finally we're at the end of the script. If you remember the __name__ 
-keyword from before, remember that it holds the name of the current 
-module. If the file is run directly from Python though, ie python 
-web.py, then the value is &amp;quot;__main__&amp;quot;.
-By writing a __name__ == &amp;quot;__main__&amp;quot; condition, we make it so that if 
-this file is run directly it will start the web server. If the file is 
-imported though, it will not. This is great because we don't want 
-imports to execute a bunch of potentially dangerous code. Good 
-programming practice.
-  Running our Flask web server Now that we have looked at the source, lets run this thing! We can run 
-this file just like above, with..
-python web.py
-And then connect to it with the following address.
-http://hostname.username.koding.io:5000
-Flask will display our text when you request the root path, awesome!
-  Decorators Briefly Explained Now that we've gone through the web server source, lets revisit the 
-Decorators and go into a bit more depth. We won't go over every concept 
-in full detail, so that we can keep this a sanely short beginner 
-tutorial, and not a book.
-To help explain decorators, lets add our own Decorator.
-def from_py(hello):
-  def wrapper(*args, **kwargs):
-    return hello(*args, **kwargs) + &amp;quot; From Python!&amp;quot;
-  return wrapper
-
-@app.route(&amp;quot;/&amp;quot;)
-@from_py
-def hello():
-    return &amp;quot;Hello World!&amp;quot;
-
-Lets analyze this.
-from_py is simply a function, that takes another function. When we add 
-the keyword before of a function def, from_py is called with that 
-function as the first argument. This &amp;quot;wraps&amp;quot; hello() with our 
-from_py() function.
-Next, we create a new function inside the from_py function that acts as a handler.
-The (*args, **kwargs) 
-parameters is a special syntax to keep all of the given arguments in 
-those two objects, so that we can fully pass them to the hello() 
-handler.
-In our wrapper function, we then call then hello() function, with 
-the arguments given to wrapper().
-When hello() returns, we add our own string &amp;quot; From Python!&amp;quot;, and 
-return that as well.
-So that means
-@app.route(&amp;quot;/&amp;quot;)
-@from_py
-def hello():
-    return &amp;quot;Hello World!&amp;quot;
-
-Is actually many functions, more than three. We could write out the 
-entire structure here, but just focus on the @from_py for now, as to 
-avoid being confused by a huge group of nested functions.
-If this still doesn't make sense, don't worry! Higher order functions can 
-take some getting used to. Practice them, and make your own, they're well 
-worth understanding!
-  Python2 vs Python3 Finally, a Python talk is never complete without wrapping everything up 
-in a big Python2 vs Python3 debate! .. Luckily, we won't do that here.
-If you're new to Python, and unsure which version to use, it doesn't 
-really matter. They're both quite similar, pick one, and learn it. Once 
-you learn one, the other version will be easily usable, and you'll be 
-able to spot the differences with ease.
-Python3 is the eventual future, but it's taken many years to gain 
-traction, and will take many more. Choosing which to use can be a hard 
-decision for seasoned programmers wanting to write large code bases. You 
-shouldn't worry about that, currently. Save that for another day :)
-This concludes the getting started with Python guide. Thanks for reading!
+    <description>While you shouldn't need to preview your guides, since Markdown is 
+designed to be human friendly in the source, if you insist you can 
+preview your guides as they are on Koding University. This guide will go 
+over that process. Note that this will require a bit of developer 
+know-how, so be prepared to get your hands dirty. Lets get started!
+  Requirements You will need a working NodeJS installation to compile the Koding 
+University source. If you do not, visit the NodeJS downloads 
+page and grab the installer.
+  Installation With a working NodeJS installation, we need to install the KU 
+dependencies, as well as a global installation of the GulpJS. This can be 
+done with the following code:
+npm install -g gulp
+cd .metalsmith
+npm install
+  Building With Gulp installed, simply run the following command, to compile the 
+entire project into HTML.
+(Ignore cd .metalsmtih if you're already in that directory)
+cd .metalsmith
+gulp
+The .metalsmith/build directory will contain all of the compiled html, 
+css, and any static resources (such as images/etc) from the markdown 
+directory.
+Compiling can take 1-2 minutes, so be patient.
+  Previewing If you want to preview the compiled site, open a new Koding Terminal tab 
+and run the following:
+(Ignore cd .metalsmtih if you're already in that directory)
+cd .metalsmith
+gulp preview
+This will run a small HTTP Server on Port 8000, ie: 
+http://hostname.you.koding.io:8000. Keep this tab open, and in  a 
+different Koding Terminal tab run your gulp command from above.Each time you compile the site, this will show your compiled site.
+  Compiling as you type To have your Markdown compiled as you write your documents, run the 
+following commands:
+(Ignore cd .metalsmtih if you're already in that directory)
+cd .metalsmith
+gulp watch
+This, in combination with the preview command above, will compile the 
+site each time you change the Markdown.
+Note that if you add images for your guide to use, you'll want to run the 
+full gulp command again.
+And that sums it up! You now know how to contribute to Koding University, 
+in multiple ways. Keep up the awesome work, and we look forward to your 
+contribution!
 </description>
   </item>
   
@@ -3988,54 +3864,178 @@ your localhost with your MySQL Client!
   </item>
   
   <item>
-    <title>Author a guide: Previewing</title>
-    <link>//learn.koding.com/contribute/previewing</link>
+    <title>Getting Started with Python</title>
+    <link>//learn.koding.com/guides/getting-started-python</link>
     <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/contribute/previewing</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-python</guid>
     <author>Team Koding</author>
-    <description>While you shouldn't need to preview your guides, since Markdown is 
-designed to be human friendly in the source, if you insist you can 
-preview your guides as they are on Koding University. This guide will go 
-over that process. Note that this will require a bit of developer 
-know-how, so be prepared to get your hands dirty. Lets get started!
-  Requirements You will need a working NodeJS installation to compile the Koding 
-University source. If you do not, visit the NodeJS downloads 
-page and grab the installer.
-  Installation With a working NodeJS installation, we need to install the KU 
-dependencies, as well as a global installation of the GulpJS. This can be 
-done with the following code:
-npm install -g gulp
-cd .metalsmith
-npm install
-  Building With Gulp installed, simply run the following command, to compile the 
-entire project into HTML.
-(Ignore cd .metalsmtih if you're already in that directory)
-cd .metalsmith
-gulp
-The .metalsmith/build directory will contain all of the compiled html, 
-css, and any static resources (such as images/etc) from the markdown 
-directory.
-Compiling can take 1-2 minutes, so be patient.
-  Previewing If you want to preview the compiled site, open a new Koding Terminal tab 
-and run the following:
-(Ignore cd .metalsmtih if you're already in that directory)
-cd .metalsmith
-gulp preview
-This will run a small HTTP Server on Port 8000, ie: 
-http://hostname.you.koding.io:8000. Keep this tab open, and in  a 
-different Koding Terminal tab run your gulp command from above.Each time you compile the site, this will show your compiled site.
-  Compiling as you type To have your Markdown compiled as you write your documents, run the 
-following commands:
-(Ignore cd .metalsmtih if you're already in that directory)
-cd .metalsmith
-gulp watch
-This, in combination with the preview command above, will compile the 
-site each time you change the Markdown.
-Note that if you add images for your guide to use, you'll want to run the 
-full gulp command again.
-And that sums it up! You now know how to contribute to Koding University, 
-in multiple ways. Keep up the awesome work, and we look forward to your 
-contribution!
+    <description>Before you continue reading this guide make sure you have PIP installed. You can use the Koding Package Manager (kpm) and install PIP using just one command:
+kpm install pip
+
+In this guide we'll go over explaining what Python is, how to use Python 
+Packaging via the PIP command, and how to write your first Python web 
+server using a small library known as Flask. So, lets get started!
+  What is Python Python is a popular, general purpose, high level programing language. It 
+focuses on readability programmer sanity over raw performance. Python2 
+and Python3 come pre-installed on Koding VMs, and in this guide we're 
+going to focus on Python2. Lets see what it looks like to run some python 
+code!
+  Running your first Python script Open up your Ace Editor create a new file named hello.py. Paste 
+in the following code into that file.
+print &amp;quot;Hello from python!&amp;quot;
+
+The print keyword takes a string and prints it to the Standard Output 
+(STDOUT) of the process. Lets try running this file so we can see this 
+output, but first save the file with Ctrl-s.  Now, open up your 
+Terminal and type in the following command.
+python hello.py
+You should see output similar to this:
+joshmurray: ~ $ python hello.py
+Hello from python!
+joshmurray: ~ $
+Neat! Lets take this a couple steps further, and do something actually 
+useful, lets run a web server! But first, lets get to know Pip, and 
+install a library that makes making python Web Applications easy!
+  Installing Pip pip is a popular Python Package Manager. However, we need to install it 
+onto our Koding VM to use it. To do that, we're going to use AptGet, with 
+the following command.
+sudo apt-get install python-pip
+Give that a moment, and once that finishes we can install Flask!
+  Using Pip to install Flask You may be wondering why we're using Flask to write this little web 
+server of ours. Flask has a really nice API for making compact web 
+applications.  This is great for a beginner guide, since we can look at a 
+few core concepts without getting too bogged down with technical details 
+of a web server.
+Now that you have pip installed, to install Flask type the following 
+command.
+sudo pip install Flask
+Note that we're using sudo because the default location for the 
+installed packages is in a root directory. A common practice to store 
+these without root permissions is to use a Virtual Environment to keep 
+your packages installed per-project. We'll save that for a later guide 
+though.
+Once that finishes installing, lets write our Flask code!
+  Creating your first Flask web server Create a new file named web.py, and paste in the following code.
+from flask import Flask
+app = Flask(__name__)
+
+@app.route(&amp;quot;/&amp;quot;)
+def hello():
+    return &amp;quot;Hello World!&amp;quot;
+
+if __name__ == &amp;quot;__main__&amp;quot;:
+    app.run(host='0.0.0.0')
+
+There are a few interesting points in this source though, so before we 
+run our web server, lets go over the source.
+from flask import Flask
+
+First up are our from and import keywords. The import imports a 
+module to an object with the same name. When used with the from keyword 
+though, only the Flask object is imported to the current scope. So, 
+this line imports a function named Flask.
+app = Flask(__name__)
+
+Next up, we use that Flask() function to create a Flask instance, 
+stored in the name app.
+__name__ is a special keyword which stores the name of the currently 
+module, or it equals &amp;quot;__main__&amp;quot; if run directly. We'll see this again 
+at the end of the script.
+def hello():
+    return &amp;quot;Hello World!&amp;quot;
+
+We're skipping a line, and going straight to the def keyword. This is 
+how we define a function in Python. In this case, we're using this 
+function as a handler for our Flask &amp;quot;route&amp;quot;.
+@app.route(&amp;quot;/&amp;quot;)
+def hello():
+    return &amp;quot;Hello World!&amp;quot;
+
+If we look at that function again, including the line we skipped, we see 
+a new syntax structure, @app.route(&amp;quot;/&amp;quot;).
+This is known as a Decorator. Decorators are a special syntax for a 
+function wrapping another function. If you're new to programming, this 
+can be a bit of a tricky concept which involves Higher Order 
+Functions. We'll briefly touch this below, but for now we'll just 
+take it at face value. This is how Flask routes our request to our 
+handler.
+A Route is a concept that directs requests (people viewing your web 
+server) and routes them to your Handler functions. &amp;quot;/&amp;quot; is the path 
+for this route, meaning that when someone connects to 
+http://hostname.username.koding.io/ they are given this function.
+If someone connected to http://hostname.username.koding.io/foo/bar, it 
+would not return this handler, because /foo/bar does not match our 
+hello route.
+if __name__ == &amp;quot;__main__&amp;quot;:
+    app.run(host='0.0.0.0')
+
+Finally we're at the end of the script. If you remember the __name__ 
+keyword from before, remember that it holds the name of the current 
+module. If the file is run directly from Python though, ie python 
+web.py, then the value is &amp;quot;__main__&amp;quot;.
+By writing a __name__ == &amp;quot;__main__&amp;quot; condition, we make it so that if 
+this file is run directly it will start the web server. If the file is 
+imported though, it will not. This is great because we don't want 
+imports to execute a bunch of potentially dangerous code. Good 
+programming practice.
+  Running our Flask web server Now that we have looked at the source, lets run this thing! We can run 
+this file just like above, with..
+python web.py
+And then connect to it with the following address.
+http://hostname.username.koding.io:5000
+Flask will display our text when you request the root path, awesome!
+  Decorators Briefly Explained Now that we've gone through the web server source, lets revisit the 
+Decorators and go into a bit more depth. We won't go over every concept 
+in full detail, so that we can keep this a sanely short beginner 
+tutorial, and not a book.
+To help explain decorators, lets add our own Decorator.
+def from_py(hello):
+  def wrapper(*args, **kwargs):
+    return hello(*args, **kwargs) + &amp;quot; From Python!&amp;quot;
+  return wrapper
+
+@app.route(&amp;quot;/&amp;quot;)
+@from_py
+def hello():
+    return &amp;quot;Hello World!&amp;quot;
+
+Lets analyze this.
+from_py is simply a function, that takes another function. When we add 
+the keyword before of a function def, from_py is called with that 
+function as the first argument. This &amp;quot;wraps&amp;quot; hello() with our 
+from_py() function.
+Next, we create a new function inside the from_py function that acts as a handler.
+The (*args, **kwargs) 
+parameters is a special syntax to keep all of the given arguments in 
+those two objects, so that we can fully pass them to the hello() 
+handler.
+In our wrapper function, we then call then hello() function, with 
+the arguments given to wrapper().
+When hello() returns, we add our own string &amp;quot; From Python!&amp;quot;, and 
+return that as well.
+So that means
+@app.route(&amp;quot;/&amp;quot;)
+@from_py
+def hello():
+    return &amp;quot;Hello World!&amp;quot;
+
+Is actually many functions, more than three. We could write out the 
+entire structure here, but just focus on the @from_py for now, as to 
+avoid being confused by a huge group of nested functions.
+If this still doesn't make sense, don't worry! Higher order functions can 
+take some getting used to. Practice them, and make your own, they're well 
+worth understanding!
+  Python2 vs Python3 Finally, a Python talk is never complete without wrapping everything up 
+in a big Python2 vs Python3 debate! .. Luckily, we won't do that here.
+If you're new to Python, and unsure which version to use, it doesn't 
+really matter. They're both quite similar, pick one, and learn it. Once 
+you learn one, the other version will be easily usable, and you'll be 
+able to spot the differences with ease.
+Python3 is the eventual future, but it's taken many years to gain 
+traction, and will take many more. Choosing which to use can be a hard 
+decision for seasoned programmers wanting to write large code bases. You 
+shouldn't worry about that, currently. Save that for another day :)
+This concludes the getting started with Python guide. Thanks for reading!
 </description>
   </item>
   
@@ -5874,6 +5874,17 @@ So to be clear , you may change your display name at any time but this does not 
   </item>
   
   <item>
+    <title>How can I delete my account?</title>
+    <link>//learn.koding.com/faq/delete-account</link>
+    <pubDate></pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/delete-account</guid>
+    <author></author>
+    <description>You do not have to contact Koding support if you wish to delete your account. Simply head over to Account Settings from where you can easily initiate the deletion process.
+It would help us immensly if you can take the quick 3 question survey right after the deletion process ends. It will help us understand why we lost you and how we can improve.
+</description>
+  </item>
+  
+  <item>
     <title>How can I close the VM panel/sidebar to get more screen space?</title>
     <link>//learn.koding.com/faq/sidebar-collapse</link>
     <pubDate></pubDate>
@@ -5887,6 +5898,23 @@ the panel! To expand, click the logo. (see image below for an example).
   Collapsing/Closing the file tree Double click the dividing column line between the file tree and the IDE/Terminal and it will collapse
 the file tree panel! To expand, click the folder icon. (see image below for an example).
 
+</description>
+  </item>
+  
+  <item>
+    <title>Should I use my VM's IP or Address?</title>
+    <link>//learn.koding.com/faq/vm-ip-vs-address</link>
+    <pubDate></pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/vm-ip-vs-address</guid>
+    <author></author>
+    <description>Koding gives you access to your VMs IP, as well as an Address that 
+always points to that VM's IP, so which should you use, and why?
+While your VMs IP will operate perfectly fine, the IP is dynamic. In 
+other words, it will change. Because of this, Koding gives you a VM
+Address, which will always point to your VM, regardless of 
+IP changes, so this is what you usually want to use.
+ IP addresses of &amp;quot;Always On&amp;quot; VMs don't change even after the VM reboots.
+ If you have trouble finding your VM Address, click here.
 </description>
   </item>
   
@@ -5915,34 +5943,6 @@ click the &amp;quot;Reinitialize&amp;quot; button inside the Advanced section.
 
 Once you initiate a reinit, you will see appropriate messages on the screen as your VM rebuilds.
 
-</description>
-  </item>
-  
-  <item>
-    <title>Should I use my VM's IP or Address?</title>
-    <link>//learn.koding.com/faq/vm-ip-vs-address</link>
-    <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/vm-ip-vs-address</guid>
-    <author></author>
-    <description>Koding gives you access to your VMs IP, as well as an Address that 
-always points to that VM's IP, so which should you use, and why?
-While your VMs IP will operate perfectly fine, the IP is dynamic. In 
-other words, it will change. Because of this, Koding gives you a VM
-Address, which will always point to your VM, regardless of 
-IP changes, so this is what you usually want to use.
- IP addresses of &amp;quot;Always On&amp;quot; VMs don't change even after the VM reboots.
- If you have trouble finding your VM Address, click here.
-</description>
-  </item>
-  
-  <item>
-    <title>How can I delete my account?</title>
-    <link>//learn.koding.com/faq/delete-account</link>
-    <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/delete-account</guid>
-    <author></author>
-    <description>You do not have to contact Koding support if you wish to delete your account. Simply head over to Account Settings from where you can easily initiate the deletion process.
-It would help us immensly if you can take the quick 3 question survey right after the deletion process ends. It will help us understand why we lost you and how we can improve.
 </description>
   </item>
   
@@ -5978,6 +5978,29 @@ Port 80 is taken by Apache, but this can be turned off to free up the port. To t
 off Apache, type in: sudo service apache2 stop in Terminal.
 Ports 2 through 1,024 require sudo access.
 
+</description>
+  </item>
+  
+  <item>
+    <title>How do turn off my my Koding VM?</title>
+    <link>//learn.koding.com/faq/vm-poweroff</link>
+    <pubDate></pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/vm-poweroff</guid>
+    <author></author>
+    <description>To turn off your VM, we recommend that you use the power on/off toggle in the VM settings panel. This ensures that all internal API calls are triggered and all Koding services are aware that you have powered down your VM.
+ type: tip
+VMs for our free accounts automatically turn off after 60 minutes of inactivity on our IDE or Terminal
+so there's no need to manually turn the VM off.
+ That being said, sometimes you may need to restart your VM and want to do it via the Terminal. In such cases, simple type the following command in Terminal:
+sudo reboot
+you will see the following msg on your Terminal while the reboot command is processed and your VM restarts
+connecting................
+followed by
+Failed to connect to terminal, click here to try again.
+followed by
+An unknown error occured, please open a new tab. Click here to dismiss this one.
+both of the above messages, even though they look like errors are normal because a manual reboot has been requested.
+We don't recommend using sudo poweroff or sudo shutdown to power down your VM as it will leave the associated sub-systems in an unknown state which may disrupt you from using your account. Use the settings panel to stop/turn off your VM.
 </description>
   </item>
   
@@ -6030,29 +6053,6 @@ of all your VMs for easy reassignment
 deleting a sub-domain is as easy as adding one!
 
 
-</description>
-  </item>
-  
-  <item>
-    <title>How do turn off my my Koding VM?</title>
-    <link>//learn.koding.com/faq/vm-poweroff</link>
-    <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/vm-poweroff</guid>
-    <author></author>
-    <description>To turn off your VM, we recommend that you use the power on/off toggle in the VM settings panel. This ensures that all internal API calls are triggered and all Koding services are aware that you have powered down your VM.
- type: tip
-VMs for our free accounts automatically turn off after 60 minutes of inactivity on our IDE or Terminal
-so there's no need to manually turn the VM off.
- That being said, sometimes you may need to restart your VM and want to do it via the Terminal. In such cases, simple type the following command in Terminal:
-sudo reboot
-you will see the following msg on your Terminal while the reboot command is processed and your VM restarts
-connecting................
-followed by
-Failed to connect to terminal, click here to try again.
-followed by
-An unknown error occured, please open a new tab. Click here to dismiss this one.
-both of the above messages, even though they look like errors are normal because a manual reboot has been requested.
-We don't recommend using sudo poweroff or sudo shutdown to power down your VM as it will leave the associated sub-systems in an unknown state which may disrupt you from using your account. Use the settings panel to stop/turn off your VM.
 </description>
   </item>
   
