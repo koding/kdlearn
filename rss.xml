@@ -18,7 +18,7 @@
   <language>en</language>
   
   <item>
-    <title>How to sharing your VM with someone?</title>
+    <title>How to share your VM with someone?</title>
     <link>//learn.koding.com/guides/permanent-shared-vm</link>
     <pubDate>"2015-04-03T00:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/permanent-shared-vm</guid>
@@ -40,6 +40,9 @@ Head over to VM settings and locate the &amp;quot;Share VM&amp;quot; feature.
 Click the &amp;quot;+&amp;quot; sign to add the username of a Koding user with whom you wish to share your VM. 
 The user with whom the VM has been shared will now see an accept/reject notice. 
 Once they accept, the shared VM will appear in the sidebar as a new avaialble resource. 
+
+  How can I stop sharing my VM? 
+Go into VM settings and remove the user with whom you no longer wish to share your VM. 
 
   How do I leave a shared VM? 
 Click the VM settings for the shared VM and then select &amp;quot;Leave Shared VM&amp;quot; to remove the VM from your Sidebar.
