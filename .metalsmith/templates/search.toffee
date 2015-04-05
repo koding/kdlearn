@@ -2,9 +2,11 @@
 #{partial 'topnav.toffee', nav: 'hasHeader'}
 <section>
   <div id="page-search" class="container">
+    <!--
     <blockquote class="error fa fa-exclamation-triangle"><p>
 Search is currently down due to an outage. We are working hard to get the issue resolved. In the meanwhile, please note that search results will not be produced.
     </p></blockquote>
+    -->
 
     <div class="docs-content">
       <h2>Search Results</h2>

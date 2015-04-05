@@ -17,6 +17,7 @@ setupSearch = ->
   # Get the search results element, and use tapir to populate it.
   jQuery '#search-results'
     .tapir
+      'host':           'http://ulkk65a182f3.leeolayvar.koding.io:3000/search'
       'token':          '543475ab3493cda4d1000001'
       'query_param':    'q'
       'summary_limit':  400
