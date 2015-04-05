@@ -44,11 +44,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?518" />
+    <link rel="stylesheet" href="/css/vendor.css?773" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?958" />
+    <link rel="stylesheet" href="/css/main.css?565" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?792" />
+    <link rel="stylesheet" href="/css/rwd.css?572" />
 	</head>
 	<body>
 
@@ -115,14 +115,14 @@
     
       <li>
         <a
-          href="#vm-reinit"
-          class="title">How can I reset my VM back to its original state?</a>
+          href="#sidebar-collapse"
+          class="title">How can I close the VM panel/sidebar to get more screen space?</a>
       </li>
     
       <li>
         <a
-          href="#sidebar-collapse"
-          class="title">How can I close the VM panel/sidebar to get more screen space?</a>
+          href="#vm-reinit"
+          class="title">How can I reset my VM back to its original state?</a>
       </li>
     
       <li>
@@ -139,26 +139,26 @@
     
       <li>
         <a
-          href="#open-ports"
-          class="title">What ports are open on my Koding VM?</a>
-      </li>
-    
-      <li>
-        <a
           href="#sudo-password"
           class="title">What is my sudo password?</a>
       </li>
     
       <li>
         <a
-          href="#vm-hostname"
-          class="title">What is my VM Hostname/Address/Domain Name?</a>
+          href="#open-ports"
+          class="title">What ports are open on my Koding VM?</a>
       </li>
     
       <li>
         <a
           href="#transfer-files"
           class="title">How do I transfer/copy files to and from my VM?</a>
+      </li>
+    
+      <li>
+        <a
+          href="#vm-hostname"
+          class="title">What is my VM Hostname/Address/Domain Name?</a>
       </li>
     
       <li>
@@ -276,6 +276,31 @@ your existing disk and add all or some of your earned storage.</p>
     </li>
   
     <li>
+      <a name="sidebar-collapse">
+      <h3
+        class="question"
+        itemscope itemtype="http://schema.org/Question"
+      >
+        <a href="/faq/sidebar-collapse">How can I close the VM panel/sidebar to get more screen space?</a>
+      </h3>
+      <div
+        class="answer"
+        itemscope itemtype="http://schema.org/Answer"
+        itemprop="acceptedAnswer"
+      >
+        <p>Our computer screens come in all shapes and sizes and if you don&apos;t have a high res screen,
+then the amount of space occupied by the VM panel/sidebar and the file tree can be a bit
+too much. Did you know that both the VM panel/sidebar and file tree can be collapsed?</p>
+<h4 class="heading"> <a name="collapsing-closing-the-vm-panel-sidebar" class="anchor" href="#collapsing-closing-the-vm-panel-sidebar"></a> Collapsing/Closing the VM Panel/Sidebar </h4><p>Double click the dividing column line between the VM panel and file tree and it will collapse
+the panel! To expand, click the logo. (see image below for an example).</p>
+<h4 class="heading"> <a name="collapsing-closing-the-file-tree" class="anchor" href="#collapsing-closing-the-file-tree"></a> Collapsing/Closing the file tree </h4><p>Double click the dividing column line between the file tree and the IDE/Terminal and it will collapse
+the file tree panel! To expand, click the folder icon. (see image below for an example).</p>
+<p><img src="/faq/sidebar-collapse/sidebar.gif" alt="Sidebar Collapse"></p>
+
+      </div>
+    </li>
+  
+    <li>
       <a name="vm-reinit">
       <h3
         class="question"
@@ -307,31 +332,6 @@ to transfer the files.</p>
 </ol>
 <p>Once you initiate a reinit, you will see appropriate messages on the screen as your VM rebuilds.</p>
 <p><img src="/faq/vm-reinit/reinit.png" alt="VM Reinit"></p>
-
-      </div>
-    </li>
-  
-    <li>
-      <a name="sidebar-collapse">
-      <h3
-        class="question"
-        itemscope itemtype="http://schema.org/Question"
-      >
-        <a href="/faq/sidebar-collapse">How can I close the VM panel/sidebar to get more screen space?</a>
-      </h3>
-      <div
-        class="answer"
-        itemscope itemtype="http://schema.org/Answer"
-        itemprop="acceptedAnswer"
-      >
-        <p>Our computer screens come in all shapes and sizes and if you don&apos;t have a high res screen,
-then the amount of space occupied by the VM panel/sidebar and the file tree can be a bit
-too much. Did you know that both the VM panel/sidebar and file tree can be collapsed?</p>
-<h4 class="heading"> <a name="collapsing-closing-the-vm-panel-sidebar" class="anchor" href="#collapsing-closing-the-vm-panel-sidebar"></a> Collapsing/Closing the VM Panel/Sidebar </h4><p>Double click the dividing column line between the VM panel and file tree and it will collapse
-the panel! To expand, click the logo. (see image below for an example).</p>
-<h4 class="heading"> <a name="collapsing-closing-the-file-tree" class="anchor" href="#collapsing-closing-the-file-tree"></a> Collapsing/Closing the file tree </h4><p>Double click the dividing column line between the file tree and the IDE/Terminal and it will collapse
-the file tree panel! To expand, click the folder icon. (see image below for an example).</p>
-<p><img src="/faq/sidebar-collapse/sidebar.gif" alt="Sidebar Collapse"></p>
 
       </div>
     </li>
@@ -381,6 +381,32 @@ IP changes, so this is what you usually want to use.</p>
     </li>
   
     <li>
+      <a name="sudo-password">
+      <h3
+        class="question"
+        itemscope itemtype="http://schema.org/Question"
+      >
+        <a href="/faq/sudo-password">What is my sudo password?</a>
+      </h3>
+      <div
+        class="answer"
+        itemscope itemtype="http://schema.org/Answer"
+        itemprop="acceptedAnswer"
+      >
+        <p>By default, there is no <code>sudo</code> password on your Koding VM. It is blank/empty which means that if you want to use <code>sudo</code>, all you need to do is as follows:</p>
+<pre><code>sudo &lt;command you wish <span class="hljs-keyword">to</span> <span class="hljs-keyword">use</span>&gt;
+</code></pre><p>When you hit enter, the sudo level command you wish to run without a password prompt.</p>
+<p>If you wish to, you can add a sudo password yourself. To do this, change user to root by typing:</p>
+<pre><code><span class="hljs-title">sudo</span> su
+</code></pre><p>and then create a password for the root user by typing:</p>
+<pre><code>passwd
+</code></pre><p>You will be asked to type in the new password twice. Once done, the new password you picked is the password you will need to use when
+using the <code>sudo</code> command from that point on.</p>
+
+      </div>
+    </li>
+  
+    <li>
       <a name="open-ports">
       <h3
         class="question"
@@ -406,27 +432,27 @@ off Apache, type in: <code>sudo service apache2 stop</code> in Terminal.</li>
     </li>
   
     <li>
-      <a name="sudo-password">
+      <a name="transfer-files">
       <h3
         class="question"
         itemscope itemtype="http://schema.org/Question"
       >
-        <a href="/faq/sudo-password">What is my sudo password?</a>
+        <a href="/faq/transfer-files">How do I transfer/copy files to and from my VM?</a>
       </h3>
       <div
         class="answer"
         itemscope itemtype="http://schema.org/Answer"
         itemprop="acceptedAnswer"
       >
-        <p>By default, there is no <code>sudo</code> password on your Koding VM. It is blank/empty which means that if you want to use <code>sudo</code>, all you need to do is as follows:</p>
-<pre><code>sudo &lt;command you wish <span class="hljs-keyword">to</span> <span class="hljs-keyword">use</span>&gt;
-</code></pre><p>When you hit enter, the sudo level command you wish to run without a password prompt.</p>
-<p>If you wish to, you can add a sudo password yourself. To do this, change user to root by typing:</p>
-<pre><code><span class="hljs-title">sudo</span> su
-</code></pre><p>and then create a password for the root user by typing:</p>
-<pre><code>passwd
-</code></pre><p>You will be asked to type in the new password twice. Once done, the new password you picked is the password you will need to use when
-using the <code>sudo</code> command from that point on.</p>
+        <h4 class="heading"> <a name="i-want-to-copy-a-few-files" class="anchor" href="#i-want-to-copy-a-few-files"></a> I want to copy a few files </h4><p>Getting a few files to your Koding VM is simple and there are a variety of methods. We&apos;ve put together a short video titled <a href="/videos">Importing your files</a> in the Video&apos;s section of Koding University. Check that out for a simple drag-drop method to upload a few files.</p>
+<h4 class="heading"> <a name="i-want-to-copy-or-download-a-large-number-of-files" class="anchor" href="#i-want-to-copy-or-download-a-large-number-of-files"></a> I want to copy or download a large number of files </h4><p>To copy several files, we prepared a number of guides that can help you. Head over to our <a href="/categories/file-transfer">file transfer category</a> and choose one of the methods that you think best suits your needs.</p>
+<h4 class="heading"> <a name="i-want-to-download-my-files" class="anchor" href="#i-want-to-download-my-files"></a> I want to download my files </h4><p>If you want an easier way to download your files follow this steps:</p>
+<p>Select multiple files in the IDE (you can use CTRL/CMD + left click) and then click on the little arrow.</p>
+<p><img src="/faq/transfer-files/first.png" alt="zip"></p>
+<p>After that select the Compress option and the type of archive you want to create.</p>
+<p>The last step you need to do it to place the archive into the Web folder and then just access the a similar URL:</p>
+<pre><code><span class="hljs-string">http:</span><span class="hljs-comment">//KODING_USERNAME.koding.io/&lt;path/name of the archive&gt;</span>
+</code></pre><p>Find out more about your VM hostname <a href="http://learn.koding.com/faq/vm-hostname/">here</a>.</p>
 
       </div>
     </li>
@@ -469,32 +495,6 @@ of all your VMs for easy reassignment</li>
 <li>deleting a sub-domain is as easy as adding one!
 <img src="/faq/vm-hostname/third.png" alt="Remove subdomain"></li>
 </ol>
-
-      </div>
-    </li>
-  
-    <li>
-      <a name="transfer-files">
-      <h3
-        class="question"
-        itemscope itemtype="http://schema.org/Question"
-      >
-        <a href="/faq/transfer-files">How do I transfer/copy files to and from my VM?</a>
-      </h3>
-      <div
-        class="answer"
-        itemscope itemtype="http://schema.org/Answer"
-        itemprop="acceptedAnswer"
-      >
-        <h4 class="heading"> <a name="i-want-to-copy-a-few-files" class="anchor" href="#i-want-to-copy-a-few-files"></a> I want to copy a few files </h4><p>Getting a few files to your Koding VM is simple and there are a variety of methods. We&apos;ve put together a short video titled <a href="/videos">Importing your files</a> in the Video&apos;s section of Koding University. Check that out for a simple drag-drop method to upload a few files.</p>
-<h4 class="heading"> <a name="i-want-to-copy-or-download-a-large-number-of-files" class="anchor" href="#i-want-to-copy-or-download-a-large-number-of-files"></a> I want to copy or download a large number of files </h4><p>To copy several files, we prepared a number of guides that can help you. Head over to our <a href="/categories/file-transfer">file transfer category</a> and choose one of the methods that you think best suits your needs.</p>
-<h4 class="heading"> <a name="i-want-to-download-my-files" class="anchor" href="#i-want-to-download-my-files"></a> I want to download my files </h4><p>If you want an easier way to download your files follow this steps:</p>
-<p>Select multiple files in the IDE (you can use CTRL/CMD + left click) and then click on the little arrow.</p>
-<p><img src="/faq/transfer-files/first.png" alt="zip"></p>
-<p>After that select the Compress option and the type of archive you want to create.</p>
-<p>The last step you need to do it to place the archive into the Web folder and then just access the a similar URL:</p>
-<pre><code><span class="hljs-string">http:</span><span class="hljs-comment">//KODING_USERNAME.koding.io/&lt;path/name of the archive&gt;</span>
-</code></pre><p>Find out more about your VM hostname <a href="http://learn.koding.com/faq/vm-hostname/">here</a>.</p>
 
       </div>
     </li>
