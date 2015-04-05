@@ -44,11 +44,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?68" />
+    <link rel="stylesheet" href="/css/vendor.css?518" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?543" />
+    <link rel="stylesheet" href="/css/main.css?958" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?907" />
+    <link rel="stylesheet" href="/css/rwd.css?792" />
 	</head>
 	<body>
 
@@ -115,8 +115,8 @@
     
       <li>
         <a
-          href="#delete-account"
-          class="title">How can I delete my account?</a>
+          href="#vm-reinit"
+          class="title">How can I reset my VM back to its original state?</a>
       </li>
     
       <li>
@@ -133,14 +133,8 @@
     
       <li>
         <a
-          href="#vm-reinit"
-          class="title">How can I reset my VM back to its original state?</a>
-      </li>
-    
-      <li>
-        <a
-          href="#sudo-password"
-          class="title">What is my sudo password?</a>
+          href="#delete-account"
+          class="title">How can I delete my account?</a>
       </li>
     
       <li>
@@ -151,8 +145,14 @@
     
       <li>
         <a
-          href="#vm-poweroff"
-          class="title">How do turn off my my Koding VM?</a>
+          href="#sudo-password"
+          class="title">What is my sudo password?</a>
+      </li>
+    
+      <li>
+        <a
+          href="#vm-hostname"
+          class="title">What is my VM Hostname/Address/Domain Name?</a>
       </li>
     
       <li>
@@ -163,8 +163,8 @@
     
       <li>
         <a
-          href="#vm-hostname"
-          class="title">What is my VM Hostname/Address/Domain Name?</a>
+          href="#vm-poweroff"
+          class="title">How do turn off my my Koding VM?</a>
       </li>
     
       <li>
@@ -276,20 +276,37 @@ your existing disk and add all or some of your earned storage.</p>
     </li>
   
     <li>
-      <a name="delete-account">
+      <a name="vm-reinit">
       <h3
         class="question"
         itemscope itemtype="http://schema.org/Question"
       >
-        <a href="/faq/delete-account">How can I delete my account?</a>
+        <a href="/faq/vm-reinit">How can I reset my VM back to its original state?</a>
       </h3>
       <div
         class="answer"
         itemscope itemtype="http://schema.org/Answer"
         itemprop="acceptedAnswer"
       >
-        <p>You do not have to contact Koding support if you wish to delete your account. Simply head over to <a href="https://koding.com/Account/Delete">Account Settings</a> from where you can easily initiate the deletion process.</p>
-<p>It would help us immensly if you can take the quick 3 question survey right after the deletion process ends. It will help us understand why we lost you and how we can improve.</p>
+        <p>Sometimes, after you&apos;re installed a slew of software and things have started to conflict,
+there&apos;s a need to send your VM back to its original state. To achieve that, Koding offers
+an easy reinitialization function which you can use at any time you like. </p>
+<h4 class="heading"> <a name="what-does-reinitialization-do-" class="anchor" href="#what-does-reinitialization-do-"></a> What does reinitialization do? </h4><p>When you reinit your VM, the system will delete everything on your VM and create a new one from
+scratch. </p>
+<blockquote class="error fa fa-exclamation-triangle"> <p><strong>NOTE: You will lose all existing data (unless you back it up somewhere) on the VM
+that you are reinitializing. This is an irreversible process so please proceed with caution.</strong> To backup
+your data, we recommend you <a href="http://learn.koding.com/guides/setting-up-ftp-on-koding/">use FTP</a> 
+to transfer the files.</p>
+ </blockquote><p>Reinitialization will however preserve your VM settings and any domain names that you may have created.</p>
+<h4 class="heading"> <a name="how-do-i-reinit-my-vm-" class="anchor" href="#how-do-i-reinit-my-vm-"></a> How do I reinit my VM? </h4><p>To reinit your VM, follow these easy steps:</p>
+<ol>
+<li>turn your VM to &quot;on&quot; state</li>
+<li>head over to the VM settings panel (as shown in the screen shot below)</li>
+<li>expand the &quot;More&quot; and &quot;Advanced&quot; sections</li>
+<li>click the &quot;Reinitialize&quot; button inside the Advanced section.</li>
+</ol>
+<p>Once you initiate a reinit, you will see appropriate messages on the screen as your VM rebuilds.</p>
+<p><img src="/faq/vm-reinit/reinit.png" alt="VM Reinit"></p>
 
       </div>
     </li>
@@ -345,63 +362,20 @@ IP changes, so this is what you usually want to use.</p>
     </li>
   
     <li>
-      <a name="vm-reinit">
+      <a name="delete-account">
       <h3
         class="question"
         itemscope itemtype="http://schema.org/Question"
       >
-        <a href="/faq/vm-reinit">How can I reset my VM back to its original state?</a>
+        <a href="/faq/delete-account">How can I delete my account?</a>
       </h3>
       <div
         class="answer"
         itemscope itemtype="http://schema.org/Answer"
         itemprop="acceptedAnswer"
       >
-        <p>Sometimes, after you&apos;re installed a slew of software and things have started to conflict,
-there&apos;s a need to send your VM back to its original state. To achieve that, Koding offers
-an easy reinitialization function which you can use at any time you like. </p>
-<h4 class="heading"> <a name="what-does-reinitialization-do-" class="anchor" href="#what-does-reinitialization-do-"></a> What does reinitialization do? </h4><p>When you reinit your VM, the system will delete everything on your VM and create a new one from
-scratch. </p>
-<blockquote class="error fa fa-exclamation-triangle"> <p><strong>NOTE: You will lose all existing data (unless you back it up somewhere) on the VM
-that you are reinitializing. This is an irreversible process so please proceed with caution.</strong> To backup
-your data, we recommend you <a href="http://learn.koding.com/guides/setting-up-ftp-on-koding/">use FTP</a> 
-to transfer the files.</p>
- </blockquote><p>Reinitialization will however preserve your VM settings and any domain names that you may have created.</p>
-<h4 class="heading"> <a name="how-do-i-reinit-my-vm-" class="anchor" href="#how-do-i-reinit-my-vm-"></a> How do I reinit my VM? </h4><p>To reinit your VM, follow these easy steps:</p>
-<ol>
-<li>turn your VM to &quot;on&quot; state</li>
-<li>head over to the VM settings panel (as shown in the screen shot below)</li>
-<li>expand the &quot;More&quot; and &quot;Advanced&quot; sections</li>
-<li>click the &quot;Reinitialize&quot; button inside the Advanced section.</li>
-</ol>
-<p>Once you initiate a reinit, you will see appropriate messages on the screen as your VM rebuilds.</p>
-<p><img src="/faq/vm-reinit/reinit.png" alt="VM Reinit"></p>
-
-      </div>
-    </li>
-  
-    <li>
-      <a name="sudo-password">
-      <h3
-        class="question"
-        itemscope itemtype="http://schema.org/Question"
-      >
-        <a href="/faq/sudo-password">What is my sudo password?</a>
-      </h3>
-      <div
-        class="answer"
-        itemscope itemtype="http://schema.org/Answer"
-        itemprop="acceptedAnswer"
-      >
-        <p>By default, there is no <code>sudo</code> password on your Koding VM. It is blank/empty which means that if you want to use <code>sudo</code>, all you need to do is as follows:</p>
-<pre><code>sudo &lt;command you wish <span class="hljs-keyword">to</span> <span class="hljs-keyword">use</span>&gt;
-</code></pre><p>When you hit enter, the sudo level command you wish to run without a password prompt.</p>
-<p>If you wish to, you can add a sudo password yourself. To do this, change user to root by typing:</p>
-<pre><code><span class="hljs-title">sudo</span> su
-</code></pre><p>and then create a password for the root user by typing:</p>
-<pre><code>passwd
-</code></pre><p>You will be asked to type in the new password twice. Once done, the new password you picked is the password you will need to use when
-using the <code>sudo</code> command from that point on.</p>
+        <p>You do not have to contact Koding support if you wish to delete your account. Simply head over to <a href="https://koding.com/Account/Delete">Account Settings</a> from where you can easily initiate the deletion process.</p>
+<p>It would help us immensly if you can take the quick 3 question survey right after the deletion process ends. It will help us understand why we lost you and how we can improve.</p>
 
       </div>
     </li>
@@ -432,58 +406,27 @@ off Apache, type in: <code>sudo service apache2 stop</code> in Terminal.</li>
     </li>
   
     <li>
-      <a name="vm-poweroff">
+      <a name="sudo-password">
       <h3
         class="question"
         itemscope itemtype="http://schema.org/Question"
       >
-        <a href="/faq/vm-poweroff">How do turn off my my Koding VM?</a>
+        <a href="/faq/sudo-password">What is my sudo password?</a>
       </h3>
       <div
         class="answer"
         itemscope itemtype="http://schema.org/Answer"
         itemprop="acceptedAnswer"
       >
-        <p>To turn off your VM, we recommend that you use the power on/off toggle in the <a href="http://learn.koding.com/guides/understanding-vm-panel/">VM settings panel</a>. This ensures that all internal API calls are triggered and all Koding services are aware that you have powered down your VM.</p>
-<blockquote class=""> <p>type: tip
-VMs for our free accounts automatically turn off after 60 minutes of inactivity on our IDE or Terminal
-so there&apos;s no need to manually turn the VM off.</p>
- </blockquote><p>That being said, sometimes you may need to restart your VM and want to do it via the Terminal. In such cases, simple type the following command in Terminal:</p>
-<pre><code><span class="hljs-title">sudo</span> reboot
-</code></pre><p>you will see the following msg on your Terminal while the reboot command is processed and your VM restarts</p>
-<pre><code>connecting<span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-built_in">.</span>
-</code></pre><p>followed by</p>
-<pre><code>Failed <span class="hljs-keyword">to</span> connect <span class="hljs-keyword">to</span> terminal, click here <span class="hljs-keyword">to</span> <span class="hljs-keyword">try</span> again.
-</code></pre><p>followed by</p>
-<pre><code>An unknown error occured, please <span class="hljs-built_in">open</span> <span class="hljs-operator">a</span> <span class="hljs-built_in">new</span> <span class="hljs-constant">tab</span>. Click here <span class="hljs-built_in">to</span> dismiss this <span class="hljs-constant">one</span>.
-</code></pre><p>both of the above messages, even though they look like errors are normal because a manual reboot has been requested.</p>
-<p>We don&apos;t recommend using <code>sudo poweroff</code> or <code>sudo shutdown</code> to power down your VM as it will leave the associated sub-systems in an unknown state which may disrupt you from using your account. Use the settings panel to stop/turn off your VM.</p>
-
-      </div>
-    </li>
-  
-    <li>
-      <a name="transfer-files">
-      <h3
-        class="question"
-        itemscope itemtype="http://schema.org/Question"
-      >
-        <a href="/faq/transfer-files">How do I transfer/copy files to and from my VM?</a>
-      </h3>
-      <div
-        class="answer"
-        itemscope itemtype="http://schema.org/Answer"
-        itemprop="acceptedAnswer"
-      >
-        <h4 class="heading"> <a name="i-want-to-copy-a-few-files" class="anchor" href="#i-want-to-copy-a-few-files"></a> I want to copy a few files </h4><p>Getting a few files to your Koding VM is simple and there are a variety of methods. We&apos;ve put together a short video titled <a href="/videos">Importing your files</a> in the Video&apos;s section of Koding University. Check that out for a simple drag-drop method to upload a few files.</p>
-<h4 class="heading"> <a name="i-want-to-copy-or-download-a-large-number-of-files" class="anchor" href="#i-want-to-copy-or-download-a-large-number-of-files"></a> I want to copy or download a large number of files </h4><p>To copy several files, we prepared a number of guides that can help you. Head over to our <a href="/categories/file-transfer">file transfer category</a> and choose one of the methods that you think best suits your needs.</p>
-<h4 class="heading"> <a name="i-want-to-download-my-files" class="anchor" href="#i-want-to-download-my-files"></a> I want to download my files </h4><p>If you want an easier way to download your files follow this steps:</p>
-<p>Select multiple files in the IDE (you can use CTRL/CMD + left click) and then click on the little arrow.</p>
-<p><img src="/faq/transfer-files/first.png" alt="zip"></p>
-<p>After that select the Compress option and the type of archive you want to create.</p>
-<p>The last step you need to do it to place the archive into the Web folder and then just access the a similar URL:</p>
-<pre><code><span class="hljs-string">http:</span><span class="hljs-comment">//KODING_USERNAME.koding.io/&lt;path/name of the archive&gt;</span>
-</code></pre><p>Find out more about your VM hostname <a href="http://learn.koding.com/faq/vm-hostname/">here</a>.</p>
+        <p>By default, there is no <code>sudo</code> password on your Koding VM. It is blank/empty which means that if you want to use <code>sudo</code>, all you need to do is as follows:</p>
+<pre><code>sudo &lt;command you wish <span class="hljs-keyword">to</span> <span class="hljs-keyword">use</span>&gt;
+</code></pre><p>When you hit enter, the sudo level command you wish to run without a password prompt.</p>
+<p>If you wish to, you can add a sudo password yourself. To do this, change user to root by typing:</p>
+<pre><code><span class="hljs-title">sudo</span> su
+</code></pre><p>and then create a password for the root user by typing:</p>
+<pre><code>passwd
+</code></pre><p>You will be asked to type in the new password twice. Once done, the new password you picked is the password you will need to use when
+using the <code>sudo</code> command from that point on.</p>
 
       </div>
     </li>
@@ -526,6 +469,63 @@ of all your VMs for easy reassignment</li>
 <li>deleting a sub-domain is as easy as adding one!
 <img src="/faq/vm-hostname/third.png" alt="Remove subdomain"></li>
 </ol>
+
+      </div>
+    </li>
+  
+    <li>
+      <a name="transfer-files">
+      <h3
+        class="question"
+        itemscope itemtype="http://schema.org/Question"
+      >
+        <a href="/faq/transfer-files">How do I transfer/copy files to and from my VM?</a>
+      </h3>
+      <div
+        class="answer"
+        itemscope itemtype="http://schema.org/Answer"
+        itemprop="acceptedAnswer"
+      >
+        <h4 class="heading"> <a name="i-want-to-copy-a-few-files" class="anchor" href="#i-want-to-copy-a-few-files"></a> I want to copy a few files </h4><p>Getting a few files to your Koding VM is simple and there are a variety of methods. We&apos;ve put together a short video titled <a href="/videos">Importing your files</a> in the Video&apos;s section of Koding University. Check that out for a simple drag-drop method to upload a few files.</p>
+<h4 class="heading"> <a name="i-want-to-copy-or-download-a-large-number-of-files" class="anchor" href="#i-want-to-copy-or-download-a-large-number-of-files"></a> I want to copy or download a large number of files </h4><p>To copy several files, we prepared a number of guides that can help you. Head over to our <a href="/categories/file-transfer">file transfer category</a> and choose one of the methods that you think best suits your needs.</p>
+<h4 class="heading"> <a name="i-want-to-download-my-files" class="anchor" href="#i-want-to-download-my-files"></a> I want to download my files </h4><p>If you want an easier way to download your files follow this steps:</p>
+<p>Select multiple files in the IDE (you can use CTRL/CMD + left click) and then click on the little arrow.</p>
+<p><img src="/faq/transfer-files/first.png" alt="zip"></p>
+<p>After that select the Compress option and the type of archive you want to create.</p>
+<p>The last step you need to do it to place the archive into the Web folder and then just access the a similar URL:</p>
+<pre><code><span class="hljs-string">http:</span><span class="hljs-comment">//KODING_USERNAME.koding.io/&lt;path/name of the archive&gt;</span>
+</code></pre><p>Find out more about your VM hostname <a href="http://learn.koding.com/faq/vm-hostname/">here</a>.</p>
+
+      </div>
+    </li>
+  
+    <li>
+      <a name="vm-poweroff">
+      <h3
+        class="question"
+        itemscope itemtype="http://schema.org/Question"
+      >
+        <a href="/faq/vm-poweroff">How do turn off my my Koding VM?</a>
+      </h3>
+      <div
+        class="answer"
+        itemscope itemtype="http://schema.org/Answer"
+        itemprop="acceptedAnswer"
+      >
+        <p>To turn off your VM, we recommend that you use the power on/off toggle in the <a href="http://learn.koding.com/guides/understanding-vm-panel/">VM settings panel</a>. This ensures that all internal API calls are triggered and all Koding services are aware that you have powered down your VM.</p>
+<blockquote class=""> <p>type: tip
+VMs for our free accounts automatically turn off after 60 minutes of inactivity on our IDE or Terminal
+so there&apos;s no need to manually turn the VM off.</p>
+ </blockquote><p>That being said, sometimes you may need to restart your VM and want to do it via the Terminal. In such cases, simple type the following command in Terminal:</p>
+<pre><code><span class="hljs-title">sudo</span> reboot
+</code></pre><p>you will see the following msg on your Terminal while the reboot command is processed and your VM restarts</p>
+<pre><code>connecting<span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-built_in">.</span>
+</code></pre><p>followed by</p>
+<pre><code>Failed <span class="hljs-keyword">to</span> connect <span class="hljs-keyword">to</span> terminal, click here <span class="hljs-keyword">to</span> <span class="hljs-keyword">try</span> again.
+</code></pre><p>followed by</p>
+<pre><code>An unknown error occured, please <span class="hljs-built_in">open</span> <span class="hljs-operator">a</span> <span class="hljs-built_in">new</span> <span class="hljs-constant">tab</span>. Click here <span class="hljs-built_in">to</span> dismiss this <span class="hljs-constant">one</span>.
+</code></pre><p>both of the above messages, even though they look like errors are normal because a manual reboot has been requested.</p>
+<p>We don&apos;t recommend using <code>sudo poweroff</code> or <code>sudo shutdown</code> to power down your VM as it will leave the associated sub-systems in an unknown state which may disrupt you from using your account. Use the settings panel to stop/turn off your VM.</p>
 
       </div>
     </li>
