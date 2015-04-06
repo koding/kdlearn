@@ -91,13 +91,13 @@ setupSubmenuAnimations = ->
         jQuery(this).hover (->
             jQuery(".submenu .column:last-child > span.submenu-desc").each (j) ->
                 if i == j
-                    jQuery(this).show()
+                    jQuery(this).css 'display', 'block'
                 return
             return
         ), ->
             jQuery(".submenu .column:last-child > span.submenu-desc").each (j) ->
                 if i == j
-                    jQuery(this).hide()
+                    jQuery(this).css 'display', 'none'
                 return
             return
     
@@ -107,13 +107,13 @@ setupSubmenuAnimations = ->
         jQuery(this).hover (->
             jQuery(".submenu .column:last-child > span.submenu-desc").each (j) ->
                 if countFirst + i == j
-                    jQuery(this).show()
+                    jQuery(this).css 'display', 'block'
                 return
             return
         ), ->
             jQuery(".submenu .column:last-child > span.submenu-desc").each (j) ->
                 if countFirst + i == j
-                    jQuery(this).hide()
+                    jQuery(this).css 'display', 'none'
                 return
             return
 

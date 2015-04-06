@@ -28,6 +28,7 @@ $grey:          #555;
 $light-grey:    #eee;
 $light-grey2:   #838485;
 $green:         #27ae61;
+$kd-green:      #00B057;
 
 //colors footer
 $color_gallery_approx: #f0f0f0;
@@ -492,34 +493,45 @@ nav {
             .col-2 { width: 31.5%; }
             .col-2:first-child,
             .col-2:last-child { border: none; }
-            .col-2:last-child { padding: 80px 0 0 10px; }
+            .col-2:last-child { padding: 0 0 0 10px; }
             .submenu-header {
-                margin: 5px 0;
                 font-weight: bold;
-                font-size: 16px;
+                font-size: 14px;
+                line-height: 16px;
                 display: block;
                 position: relative;
                 overflow: hidden;
+                text-transform: uppercase;
             }
             .submenu-item {
                 font-size: 12px;
+                line-height: 20px;
                 padding-left: 10px;
                 display: block;
                 position: relative;
                 overflow: hidden;
                 &:hover .sub-icon { display: block; }
+                + .submenu-header { margin-top: 20px; }
             }
             .submenu-desc {
                 font-size: 12px;
+                line-height: 19px;
                 display: none;
             }
             .sub-icon {
                 display: none;
                 font-size: 22px;
-                // vertical-align: middle;
                 position: absolute;
-                top: 4px;
+                top: 2px;
                 left: 0;
+                color: $kd-green;
+            }
+            .sub-desc-icon {
+                font-size: 8em;
+                display: block;
+                text-align: center;
+                color: $light-grey;
+                margin-bottom: 18px;
             }
           }
         }
