@@ -32,13 +32,13 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/ide-introduction</loc>
+    <loc>http://learn.koding.com/guides/terminal-introduction</loc>
     <lastmod>2015-03-18</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/terminal-introduction</loc>
+    <loc>http://learn.koding.com/guides/ide-introduction</loc>
     <lastmod>2015-03-18</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -68,12 +68,6 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/hello-world/java</loc>
-    <lastmod>2015-03-03</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
     <loc>http://learn.koding.com/guides/hello-world/c</loc>
     <lastmod>2015-03-03</lastmod>
     <changefreq>monthly</changefreq>
@@ -86,13 +80,19 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/hello-world/php</loc>
+    <loc>http://learn.koding.com/guides/hello-world/java</loc>
     <lastmod>2015-03-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>http://learn.koding.com/guides/hello-world/perl</loc>
+    <lastmod>2015-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://learn.koding.com/guides/hello-world/php</loc>
     <lastmod>2015-03-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -110,7 +110,7 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/setting-laravel-artisan-webserver</loc>
+    <loc>http://learn.koding.com/guides/setting-meteorjs-webserver</loc>
     <lastmod>2015-02-26</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -122,25 +122,25 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/setting-django-webserver</loc>
-    <lastmod>2015-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
     <loc>http://learn.koding.com/guides/setting-tornado-webserver</loc>
     <lastmod>2015-02-26</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/setting-meteorjs-webserver</loc>
+    <loc>http://learn.koding.com/guides/setting-rails-webserver</loc>
     <lastmod>2015-02-26</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/setting-rails-webserver</loc>
+    <loc>http://learn.koding.com/guides/setting-laravel-artisan-webserver</loc>
+    <lastmod>2015-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://learn.koding.com/guides/setting-django-webserver</loc>
     <lastmod>2015-02-26</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -200,7 +200,7 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/couchdb-installation-for-beginners</loc>
+    <loc>http://learn.koding.com/guides/install-redis</loc>
     <lastmod>2015-01-20</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -212,7 +212,7 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/install-redis</loc>
+    <loc>http://learn.koding.com/guides/couchdb-installation-for-beginners</loc>
     <lastmod>2015-01-20</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -230,13 +230,13 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/dropbox-for-file-sync</loc>
+    <loc>http://learn.koding.com/guides/getting-started-jsp-maven</loc>
     <lastmod>2015-01-15</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/guides/getting-started-jsp-maven</loc>
+    <loc>http://learn.koding.com/guides/dropbox-for-file-sync</loc>
     <lastmod>2015-01-15</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -470,13 +470,13 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/contribute/guidelines</loc>
+    <loc>http://learn.koding.com/contribute/basic</loc>
     <lastmod>2014-08-04</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/contribute/basic</loc>
+    <loc>http://learn.koding.com/contribute/guidelines</loc>
     <lastmod>2014-08-04</lastmod>
     <changefreq>monthly</changefreq>
   </url>
