@@ -17,7 +17,7 @@ else
     <a href="#" id="mobile-menu"></a> 
     <ul class="toplinks">
       <li>
-        <a href="#">"FAQs and Guides"</a>
+        <a href="#">FAQs and Guides</a>
         <span class="icon fa fa-angle-down"></span>
         <div class="submenu">
             <div class="column col-2">
