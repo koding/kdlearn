@@ -29,10 +29,10 @@ Example Deploy:
     case "build"
       cd ./build
       and set -l cur_br (git branch | sed -n 's/^\* //p')
-      and test "$cur_br" = "gh-pages"
+      and test "$cur_br" = "production"
       and git reset --hard HEAD
       and git clean -fd
-      and git pull origin gh-pages
+      and git pull origin production
       and cd ..
       and gulp
       or begin
@@ -56,7 +56,7 @@ Example Deploy:
       rm -rf ./build
       and git clone git@github.com:koding/kdlearn build
       and cd ./build
-      and git checkout gh-pages
+      and git checkout production
       and cd ..
       or begin
         set -l err $status
