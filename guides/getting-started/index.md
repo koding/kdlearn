@@ -2,7 +2,7 @@
 title: Getting Started
 author: Team Koding
 date: 2014-02-07
-categories: [koding]
+categories: [common questions, koding]
 
 series: getting-started
 series-index: 0

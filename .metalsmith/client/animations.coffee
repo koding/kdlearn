@@ -69,9 +69,53 @@ setupSearchAnimations = ->
     jQuery('.topSearchBox').slideToggle()
     jQuery('.topSearchBox #topSearch').focus()
 
+# ## Mobile menu Animations
+#
+# Setup the animations for when the mobile menu
+# is clicked.
 setupMenuAnimations = ->
     jQuery('#mobile-menu').on 'click', ->
         jQuery('.toplinks').slideToggle()
+        
+setupSubmenuAnimations = ->
+    jQuery('nav #menu > .toplinks > li').hover (->
+      jQuery(this).find(".icon").removeClass "fa-angle-down"
+      jQuery(this).find(".icon").addClass "fa-angle-up"
+      return
+    ), ->
+      jQuery(this).find(".icon").removeClass "fa-angle-up"
+      jQuery(this).find(".icon").addClass "fa-angle-down"
+      return
+    
+    jQuery(".submenu .column:first-child > span.submenu-item").each (i) ->
+        jQuery(this).hover (->
+            jQuery(".submenu .column:last-child > span.submenu-desc").each (j) ->
+                if i == j
+                    jQuery(this).css 'display', 'block'
+                return
+            return
+        ), ->
+            jQuery(".submenu .column:last-child > span.submenu-desc").each (j) ->
+                if i == j
+                    jQuery(this).css 'display', 'none'
+                return
+            return
+    
+    countFirst = jQuery('.submenu .column:first-child > span.submenu-item').length;
+    
+    jQuery(".submenu .column:nth-child(2) > span.submenu-item").each (i) ->
+        jQuery(this).hover (->
+            jQuery(".submenu .column:last-child > span.submenu-desc").each (j) ->
+                if countFirst + i == j
+                    jQuery(this).css 'display', 'block'
+                return
+            return
+        ), ->
+            jQuery(".submenu .column:last-child > span.submenu-desc").each (j) ->
+                if countFirst + i == j
+                    jQuery(this).css 'display', 'none'
+                return
+            return
 
 setupBackTopAnimations = ->
     offset = 250
@@ -92,4 +136,5 @@ jQuery(document).ready ->
   setupSearchAnimations()
   setupShareAnimations()
   setupMenuAnimations()
+  setupSubmenuAnimations()
   setupBackTopAnimations()

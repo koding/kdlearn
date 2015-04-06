@@ -2,7 +2,7 @@
 title: Install Rockmongo
 author: Thien
 date: 2015-01-2
-categories: [rockmongo, mongo]
+categories: [databases, rockmongo, mongo]
 ---
 
 # How to install Rockmongo

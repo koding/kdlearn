@@ -2,7 +2,7 @@
 title: Getting started with Jenkins
 author: Team Koding
 date: 2014-11-12
-categories: [jenkins]
+categories: [frameworks platforms, jenkins]
 template: page.toffee
 ---
 

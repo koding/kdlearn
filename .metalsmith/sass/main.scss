@@ -28,6 +28,7 @@ $grey:          #555;
 $light-grey:    #eee;
 $light-grey2:   #838485;
 $green:         #27ae61;
+$kd-green:      #00B057;
 
 //colors footer
 $color_gallery_approx: #f0f0f0;
@@ -426,19 +427,115 @@ nav {
 
   #menu {
     float: right;
-
     a {
       color: $light-grey;
+      &:hover {
+          text-decoration: none;
+      }
     }
-
-    li {
-      display: inline;
-      margin-right: 20px;
+    > .toplinks {
+        > li {
+          display: inline-block;
+          margin-right: 10px;
+          padding: 1px 10px;
+          position: relative;
+          cursor: pointer;
+          &:hover {
+              border-radius: 4px;
+              background: rgba(0,0,0,.2);
+              .submenu { display: block; }
+          }
+          .icon {
+            vertical-align: middle;
+            font-size: 1.2em;
+            color: $light-grey;
+            padding-left: 7px;
+          }
+          .submenu {
+            display: none;
+            position: absolute;
+            width: 740px;
+            background: $white;
+            color: $grey;
+            box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.2);
+            border-radius: 4px;
+            top: 45px;
+            left: -355px;
+            z-index: 30;
+            cursor: initial;
+            &:before {
+                content: "";
+                display: block;
+                height: 20px;
+                width: 740px;
+                position: absolute;
+                top: -20px;
+                left: 0;
+            }
+            a {
+                width: 95%;
+                color: $grey;
+                display: inline-block;
+                vertical-align: middle;
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+            .column {
+                display: inline-block;
+                vertical-align: top;
+                padding: 0 0 0 10px;
+                margin: 10px 0;
+                border-right: 1px solid $light-grey;
+                min-height: 110px;
+            }
+            .col-2 { width: 31.5%; }
+            .col-2:first-child,
+            .col-2:last-child { border: none; }
+            .col-2:last-child { padding: 0 0 0 10px; }
+            .submenu-header {
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 16px;
+                display: block;
+                position: relative;
+                overflow: hidden;
+                text-transform: uppercase;
+            }
+            .submenu-item {
+                font-size: 12px;
+                line-height: 20px;
+                padding-left: 10px;
+                display: block;
+                position: relative;
+                overflow: hidden;
+                &:hover .sub-icon { display: block; }
+                + .submenu-header { margin-top: 20px; }
+            }
+            .submenu-desc {
+                font-size: 12px;
+                line-height: 19px;
+                display: none;
+            }
+            .sub-icon {
+                display: none;
+                font-size: 22px;
+                position: absolute;
+                top: 2px;
+                left: 0;
+                color: $kd-green;
+            }
+            .sub-desc-icon {
+                font-size: 8em;
+                display: block;
+                text-align: center;
+                color: $light-grey;
+                margin-bottom: 18px;
+            }
+          }
+        }
     }
-
-    // .contribute {
-    //   font-weight: bold;
-    // }
 
     #mobile-menu {
       display: none;
@@ -476,7 +573,7 @@ nav {
             padding: 5px 15px;
             border: 1px solid #ccc;
             border-radius: 4px;
-            margin: 15px 0;
+            margin: 14px 0;
             .searchIcon {
                 background-image: url(../img/sprite.png);
                 background-position: -6px -2px;
@@ -572,7 +669,7 @@ section {
       li.zactive a {
         border-bottom-style: dotted;
         border-width: 1px;
-        border-color: #555;
+        border-color: $grey;
         // background-color: $light-grey;
       }
 
@@ -594,7 +691,7 @@ section {
       &:hover a {
         border-bottom-style: dotted;
         border-width: 1px;
-        border-color: #555;
+        border-color: $grey;
         // background-color: $light-grey;
       }
     }
@@ -1027,6 +1124,10 @@ body > .page {
   h1 {
     margin-bottom: 20px;
   }
+  .verbose-guide-list {
+    padding: 0;
+    margin: 0 0 0 15px;
+  }
 }
 
 
@@ -1277,6 +1378,7 @@ a.youtube-mini {
 
 .pagination {
   margin-top: 40px;
+  padding-left: 15px;
   li {
     display: inline-block;
     width: 28px;
@@ -1648,13 +1750,18 @@ table {
 .verbose-guide-list li {
   list-style: none;
   margin-bottom: 12px;
+  border-bottom: 1px solid $light-grey;
 }
 .verbose-guide-list li:last-child {
   margin-bottom: 0px;
 }
 .verbose-guide-list .title {
-  font-size: 15px;
+  font-size: 16px;
   color: $light-black;
+  a { border-bottom: none; }
+  a:hover {
+      border-bottom: 1px dotted $grey;
+  }
 }
 .verbose-guide-list .meta {
   line-height: 18px;
@@ -1672,6 +1779,8 @@ table {
 }
 .verbose-guide-list .meta li {
   display: inline-block;
+  padding-right: 5px;
+  margin-bottom: 12px;
 }
 .verbose-guide-list .meta li:after {
   content: ",";

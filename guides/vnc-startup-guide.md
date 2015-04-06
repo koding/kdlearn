@@ -3,7 +3,7 @@ title: VNC Startup Guide
 author: Kaitlyn Schmidt
 username: Hoshiko86
 date: 2015-03-01
-categories: [noVNC, VNC, GUI Development]
+categories: [developer tools, noVNC, VNC, GUI Development]
 template: page.toffee
 ---
 

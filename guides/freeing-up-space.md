@@ -2,7 +2,7 @@
 title: How to free up space on a Koding VM
 author: Team Koding
 date: 2015-02-13
-categories: [koding]
+categories: [common questions, koding]
 template: page.toffee
 ---
 

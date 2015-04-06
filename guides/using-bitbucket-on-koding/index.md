@@ -1,7 +1,7 @@
 ---
 author: Team Koding
 date: 2014-07-16
-categories: [koding, bitbucket]
+categories: [developer tools, koding, bitbucket]
 
 template: page.toffee
 ---

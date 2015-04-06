@@ -2,7 +2,7 @@
 title: Understanding the VM settings panel
 author: Team Koding
 date: 2014-11-03
-categories: [koding]
+categories: [koding features, koding]
 template: page.toffee
 ---
 

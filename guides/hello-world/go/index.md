@@ -2,7 +2,7 @@
 title: Go
 author: Team Koding
 date: 2015-03-04
-categories: [hello world, go, koding]
+categories: [first program, hello world, go, koding]
 
 series: hello-world
 series-index: 3

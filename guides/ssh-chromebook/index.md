@@ -2,7 +2,7 @@
 title: Using SSH on a Chromebook to connect to your Koding VM
 author: Team Koding
 date: 2014-12-26
-categories: [ssh]
+categories: [koding features, ssh]
 ---
 
 In this guide, we will cover how to set up ssh on your Chromebook. There are

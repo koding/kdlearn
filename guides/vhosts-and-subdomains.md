@@ -2,7 +2,7 @@
 title: Koding Subdomains and VHosts
 author: Team Koding
 date: 2014-11-03
-categories: [koding, apache]
+categories: [koding features, koding, apache]
 ---
 
 # Koding Subdomains and VHosts

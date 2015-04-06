@@ -2,7 +2,7 @@
 title: Installing Apache Cordova
 author: Team Koding
 date: 2014-11-04
-categories: [apache, nodejs, javascript]
+categories: [frameworks platforms, apache, nodejs, javascript]
 template: page.toffee
 ---
 

@@ -1,7 +1,7 @@
 ---
 author: Team Koding
 date: 2015-02-18
-categories: [ruby]
+categories: [first program, ruby]
 ---
 
 # Getting Started with Ruby
@@ -38,7 +38,7 @@ You should now have a full Ruby on Rails environment configured and you should b
 
 ## Running your first Ruby script
 
-Open up your [Ace Editor][ace] and create a new file named `hello.rb`.  
+Open up your [Ace Editor][ace] and create a new file named `hello.rb`.
 Paste in the following code into that file.
 
 ```ruby

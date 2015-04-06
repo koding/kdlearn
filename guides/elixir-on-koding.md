@@ -2,7 +2,7 @@
 author: Antoine Proulx
 username: proulxantoine
 date: 2014-07-09
-categories: [elixir]
+categories: [frameworks platforms, elixir]
 ---
 
 # Elixir on Koding

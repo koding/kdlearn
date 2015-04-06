@@ -2,7 +2,7 @@
 author: drodri
 username: drodri
 date: 2014-10-02
-categories: [C/C++]
+categories: [first program, C/C++]
 ---
 
 
@@ -53,7 +53,7 @@ Now replace the contents of the "main.cpp" file inside the blocks/myuser/crypto 
 
 int main() {
 	CryptoPP::SHA1 sha1;
-	std::string source = "Hello";  
+	std::string source = "Hello";
 	std::string hash = "";
 	CryptoPP::StringSource(source, true, new CryptoPP::HashFilter(sha1,
 							new CryptoPP::HexEncoder(new CryptoPP::StringSink(hash))));
@@ -83,7 +83,7 @@ F7FF9E8B7BB2E09B70935A5D785E0CC5D9D0ABF0
 ```
 
 
-For further examples, you can have a look to the [biicode C/C++ documentation][biicodedocs] and the 
+For further examples, you can have a look to the [biicode C/C++ documentation][biicodedocs] and the
 [examples][biicodeexamples]
 
 

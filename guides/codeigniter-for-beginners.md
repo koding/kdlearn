@@ -2,7 +2,7 @@
 title: Codeigniter Installation for Beginners
 author: Team Koding
 date: 2014-01-07
-categories: [codeigniter, php]
+categories: [frameworks platforms, codeigniter, php]
 
 template: page.toffee
 ---

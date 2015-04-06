@@ -2,7 +2,7 @@
 title: Making your VM secure using Ubuntu UFW (Uncomplicated Firewall)
 author: Team Koding
 date: 2015-01-08
-categories: [koding]
+categories: [understanding vm, koding]
 template: page.toffee
 ---
 

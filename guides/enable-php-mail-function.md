@@ -2,7 +2,7 @@
 title: Enable PHP mail() function
 author: Team Koding
 date: 2014-07-12
-categories: [php]
+categories: [understanding vm, php]
 
 template: page.toffee
 ---

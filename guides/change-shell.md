@@ -2,7 +2,7 @@
 title: How to change your command shell
 author: Team Koding
 date: 2014-11-19
-categories: [koding, shell]
+categories: [understanding vm, koding, shell]
 ---
 
 # Changing your default command/login shell

@@ -2,7 +2,7 @@
 title: PrestaShop Installation for Beginners
 author: Team Koding
 date: 2014-04-09
-categories: [prestashop, php]
+categories: [frameworks platforms, prestashop, php]
 
 template: page.toffee
 ---

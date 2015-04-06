@@ -2,7 +2,7 @@
 title: TogetherJS Setup and Usage for Beginners
 author: Team Koding
 date: 2014-03-05
-categories: [togetherjs, javascript]
+categories: [frameworks platforms, togetherjs, javascript]
 
 template: page.toffee
 ---

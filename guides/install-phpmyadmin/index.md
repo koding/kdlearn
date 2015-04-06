@@ -2,7 +2,7 @@
 title: Install phpMyAdmin
 author: Team Koding
 date: 2014-10-11
-categories: [phpmyadmin, mysql]
+categories: [developer tools, phpmyadmin, mysql]
 template: page.toffee
 ---
 

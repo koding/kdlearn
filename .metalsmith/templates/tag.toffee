@@ -16,7 +16,24 @@ findTagName = (key) ->
 
 <div class="docs-content" id="page-category">
   <h1>#{findTagName tagKey} guides</h1>
+  
+  <div itemprop="articleBody">
+    #{print contents}
+  </div>
+  
   <ul class="verbose-guide-list">
+  {# if tagKey is 'common-questions' {:
+    <li>
+      <h3 class="title"><a href="/faq">Common questions</a></h3>
+      <div class="meta">
+        by <a class="author" href="/authors/teamkoding">Team Koding</a> 
+        &bull; in categories&nbsp;
+        <ul>
+          <li><a href="/categories/common-questions">Common questions</a></li>
+        </ul>
+      </div>
+    </li>
+  :} #}
   {# for guide in paginate.files {:
     <li>
       <h3 class="title"><a href="#{guide.httplink}">#{print guide.title}</a></h3>

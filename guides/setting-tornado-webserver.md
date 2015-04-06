@@ -2,7 +2,7 @@
 title: Setting up a Tornado webserver
 author: Team Koding
 date: 2015-02-26
-categories: [tornado,python]
+categories: [frameworks platforms, tornado,python]
 template: page.toffee
 ---
 

@@ -1,7 +1,7 @@
 ---
 author: Team Koding
 date: 2014-07-30
-categories: [koding, mysql]
+categories: [databases, koding, mysql]
 ---
 
 # Installing MySQL

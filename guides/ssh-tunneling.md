@@ -1,7 +1,7 @@
 ---
 author: Team Koding
 date: 2014-08-9
-categories: [ssh]
+categories: [understanding vm, ssh]
 ---
 
 # How to setup an SSH Tunnel in Unix

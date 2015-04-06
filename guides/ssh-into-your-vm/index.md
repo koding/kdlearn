@@ -2,7 +2,7 @@
 title: Connect with SSH, from Unix
 author: Team Koding
 date: 2014-09-15
-categories: [ssh, unix]
+categories: [understanding vm, ssh, unix]
 ---
 
 # Connect with SSH, from Unix

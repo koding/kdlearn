@@ -2,7 +2,7 @@
 title: Updating the OS (and other packages) your VM
 author: Team Koding
 date: 2014-12-21
-categories: [koding]
+categories: [understanding vm, koding]
 template: page.toffee
 ---
 

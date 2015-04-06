@@ -2,7 +2,7 @@
 title: Getting started with the Koding Package Manager
 author: Team Koding
 date: 2014-11-17
-categories: [koding]
+categories: [koding features, koding]
 template: page.toffee
 ---
 

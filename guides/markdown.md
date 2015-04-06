@@ -2,7 +2,7 @@
 title: Markdown Basics, for Koding
 author: Team Koding
 date: 2014-05-30
-categories: [markdown]
+categories: [koding features, markdown]
 
 template: page.toffee
 ---

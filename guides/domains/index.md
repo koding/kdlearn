@@ -1,7 +1,7 @@
 ---
 author: Team Koding
 date: 2014-09-02
-categories: [koding, domain]
+categories: [understanding vm, koding, domain]
 ---
 
 # Custom Domains with your Koding VM
