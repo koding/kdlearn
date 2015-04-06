@@ -6,10 +6,10 @@
     "date": "2014-10-16T00:00:00.000Z"
   },
   {
-    "title": "How to install MediaWiki",
-    "url": "http://learn.koding.com/guides/how-to-install-mediawiki/index.html",
+    "title": "Installing PHP",
+    "url": "http://learn.koding.com/guides/installing-php/index.html",
     "author": "Team Koding",
-    "date": "2015-03-24T00:00:00.000Z"
+    "date": "2014-08-06T00:00:00.000Z"
   },
   {
     "title": "Hello World on Koding: PHP",
@@ -42,16 +42,16 @@
     "date": "2015-01-20T00:00:00.000Z"
   },
   {
+    "title": "How to install MediaWiki",
+    "url": "http://learn.koding.com/guides/how-to-install-mediawiki/index.html",
+    "author": "Team Koding",
+    "date": "2015-03-24T00:00:00.000Z"
+  },
+  {
     "title": "How to install Joomla",
     "url": "http://learn.koding.com/guides/how-to-install-joomla/index.html",
     "author": "Team Koding",
     "date": "2015-03-20T00:00:00.000Z"
-  },
-  {
-    "title": "Installing PHP",
-    "url": "http://learn.koding.com/guides/installing-php/index.html",
-    "author": "Team Koding",
-    "date": "2014-08-06T00:00:00.000Z"
   },
   {
     "title": "Drupal Setup and Installation for Beginners",

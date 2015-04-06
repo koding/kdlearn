@@ -9,7 +9,7 @@
      <title>Elasticsearch install for beginners | Koding University</title> 
 		<meta charset="utf-8">
     
-      <meta name="keywords" content="elasticsearch">
+      <meta name="keywords" content="developer tools,elasticsearch">
     
 		<meta name="description" content="Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Elasticsearch using just one command:">
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -42,15 +42,15 @@
     <!-- CDN CSS -->
     <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css"> -->
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:700,300" rel="stylesheet" type="text/css">
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?967" />
+    <link rel="stylesheet" href="/css/vendor.css?265" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?703" />
+    <link rel="stylesheet" href="/css/main.css?464" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?365" />
+    <link rel="stylesheet" href="/css/rwd.css?358" />
 	</head>
 	<body>
 
@@ -68,13 +68,147 @@
   <div id="menu">
     <a href="#" id="mobile-menu"></a> 
     <ul class="toplinks">
-      <li><a href="/faq">Common Questions</a></li>
-      <li><a href="/guides">Guides</a></li>
-      <li><a href="/guides/hello-world">"Hello World"</a></li>
-      <li><a href="/videos">Videos</a></li>
-      <li class="contribute">
-        <a href="/contribute">Author A Guide</a>
+      <li>
+        <a href="#">FAQs and Guides</a>
+        <span class="icon fa fa-angle-down"></span>
+        <div class="submenu">
+            <div class="column col-2">
+                <span class="submenu-header">
+                    Getting Started
+                </span>
+                    <span class="submenu-item">
+                        <a href="/categories/common-questions">Common Questions</a>
+                        <span class="sub-icon fa fa-angle-right"></span>
+                    </span>
+                    <span class="submenu-item">
+                        <a href="/categories/understanding-vm">Understanding your VM</a>
+                        <span class="sub-icon fa fa-angle-right"></span>
+                    </span>
+                    <span class="submenu-item">
+                        <a href="/categories/koding-features">Koding features in detail</a>
+                        <span class="sub-icon fa fa-angle-right"></span>
+                    </span>
+                <span class="submenu-header">
+                    Developing on Koding
+                </span>
+                    <span class="submenu-item">
+                        <a href="/categories/first-program">Writing your first program</a>
+                        <span class="sub-icon fa fa-angle-right"></span>
+                    </span>
+                    <span class="submenu-item">
+                        <a href="/guides">Previewing your work</a>
+                        <span class="sub-icon fa fa-angle-right"></span>
+                    </span>
+                    <span class="submenu-item">
+                        <a href="/guides">Testing</a>
+                        <span class="sub-icon fa fa-angle-right"></span>
+                    </span>
+                    <span class="submenu-item">
+                        <a href="/guides">Deploying</a>
+                        <span class="sub-icon fa fa-angle-right"></span>
+                    </span>
+            </div>
+            <div class="column col-2">
+                <span class="submenu-header">
+                    Installing popular software
+                </span>
+                    <span class="submenu-item">
+                        <a href="/categories/databases">Databases</a>
+                        <span class="sub-icon fa fa-angle-right"></span>
+                    </span>
+                    <span class="submenu-item">
+                        <a href="/categories/cms">Content management systems</a>
+                        <span class="sub-icon fa fa-angle-right"></span>
+                    </span>
+                    <span class="submenu-item">
+                        <a href="/categories/frameworks-platforms">Frameworks & Platforms</a>
+                        <span class="sub-icon fa fa-angle-right"></span>
+                    </span>
+                    <span class="submenu-item">
+                        <a href="/categories/developer-tools">Developer tools</a>
+                        <span class="sub-icon fa fa-angle-right"></span>
+                    </span>
+                <span class="submenu-header">
+                    Working with others
+                </span>
+                    <span class="submenu-item">
+                        <a href="/collaboration">Real-time collaboration on Koding</a>
+                        <span class="sub-icon fa fa-angle-right"></span>
+                    </span>
+                <span class="submenu-header">
+                    Contributing
+                </span>
+                    <span class="submenu-item">
+                        <a href="/contribute">Contribute</a>
+                        <span class="sub-icon fa fa-angle-right"></span>
+                    </span>
+                    <span class="submenu-item">
+                        <a href="mailto:learn@koding.com?Subject=Koding%20University%20Guide%20Request&Body=Hi%20Team%20Koding%2C%0APlease%20add%20the%20following%20guide%20to%20Koding%20University%3A%20_____%0A%0AThanks%21">Request a new guide</a>
+                        <span class="sub-icon fa fa-angle-right"></span>
+                    </span>
+            </div>
+            <div class="column col-2">
+                <span class="submenu-desc">
+                    <span class="sub-desc-icon fa fa-question"></span>
+                    Get answers to the most common of questions. Setting up FTP or ssh-ing into your VM, no matter the question you'll find an answer here.
+                </span>
+                <span class="submenu-desc">
+                    <span class="sub-desc-icon fa fa-server"></span>
+                    If you're a beginner then you should start here. Understand what powers your Koding VM has and how you can perform better to build beter projects.
+                </span>
+                <span class="submenu-desc">
+                    <span class="sub-desc-icon fa fa-gears"></span>
+                    All the Koding features in one place explained. Since we keep adding ones very often, you should come back here from time to time to see the newly added ones.
+                </span>
+                <span class="submenu-desc">
+                    <span class="sub-desc-icon fa fa-pencil"></span>
+                    If you're a beginner to programming than this section will help and guide you in the right direction. Wheather you're developing in Go or Ruby, we have a guide for it.
+                </span>
+                <span class="submenu-desc">
+                    <span class="sub-desc-icon fa fa-eye"></span>
+                    Learn how you can preview your work and showcase it to potential clients and teammates.
+                </span>
+                <span class="submenu-desc">
+                    <span class="sub-desc-icon fa fa-list-ol"></span>
+                    Testing your code is very important. This section contains guides that will help you into writting tests and implementing third-party software to test your apps.
+                </span>
+                <span class="submenu-desc">
+                    <span class="sub-desc-icon fa fa-rocket"></span>
+                    When you're finished with an app the next logical step is to deploy it to production. The guides in this section will help you to deploy to the most common deployment platforms.
+                </span>
+                <span class="submenu-desc">
+                    <span class="sub-desc-icon fa fa-database"></span>
+                    Many apps require a database to store data. If your app requires data storage and you don't know how to configure a database on your VM, these guides will help you.
+                </span>
+                <span class="submenu-desc">
+                    <span class="sub-desc-icon fa fa-paper-plane"></span>
+                    A content management system will help you build an app much faster. You won't have to worry how you handle the content. Just choose the one that is suitable for your needs.
+                </span>
+                <span class="submenu-desc">
+                    <span class="sub-desc-icon fa fa-cubes"></span>
+                    With the help of the guides in this sections you'll learn how to configure and setup the most popular frameworks and platforms out there.
+                </span>
+                <span class="submenu-desc">
+                    <span class="sub-desc-icon fa fa-wrench"></span>
+                    Make your life easier by installing popular developer tools or learn how to configure the ones that you have already installed.
+                </span>
+                <span class="submenu-desc">
+                    <span class="sub-desc-icon fa fa-users"></span>
+                    Koding Collaboration allows you to easily and effectively collaborate and share resources with your team, students, peers or friends.
+                </span>
+                <span class="submenu-desc">
+                    <span class="sub-desc-icon fa fa-code-fork"></span>
+                    Help us grow the Koding University. This section will outline some guideliness for guide submissions to adhere to.
+                </span>
+                <span class="submenu-desc">
+                    <span class="sub-desc-icon fa fa-bell-o"></span>
+                    Can't find a guide? You don't have experience with the tools that are used to write a guide? Request one here.
+                </span>
+            </div>
+        </div>
       </li>
+      <li><a href="/videos">Videos</a></li>
+      <li><a href="https://koding.com">Sign up</a></li>
     </ul>
   </div>
 </div>
@@ -91,26 +225,6 @@
 
 
 <ul id="left-nav">
-  <li>
-    <h5><a href="/guides/getting-started">Getting Started</a></h5>
-    <ul>
-      <li>
-        <a href="/guides/getting-started/the-ui">The Koding UI</a>
-      </li>
-      <li>
-        <a href="/guides/getting-started/workspaces">Workspaces</a>
-      </li>
-      <li>
-        <a href="/guides/getting-started/file-upload">File Upload</a>
-      </li>
-      <li>
-        <a href="/guides/getting-started/activity-feed">The Activity Feed</a>
-      </li>
-      <li>
-        <a href="/guides/getting-started/editing-your-profile">Editing Your Profile</a>
-      </li>
-    </ul>
-  </li>
   
   <li class="">
     <h5>Common Questions</h5>
@@ -165,11 +279,11 @@
       </li>
     
       <li class="">
-        <a href="/guides/ide-introduction">Koding IDE Introduction</a>
+        <a href="/guides/terminal-introduction">Koding Terminal Introduction</a>
       </li>
     
       <li class="">
-        <a href="/guides/terminal-introduction">Koding Terminal Introduction</a>
+        <a href="/guides/ide-introduction">Koding IDE Introduction</a>
       </li>
     
       <li class="">
@@ -180,16 +294,6 @@
   </li>
 
   
-  <li>
-    <h5>Koding University</h5>
-    <ul>
-    <li>
-      <a href="/authors">Authors</a>
-    </li>
-    <li>
-      <a href="mailto:learn@koding.com?Subject=Koding%20University%20Guide%20Request&Body=Hi%20Team%20Koding%2C%0APlease%20add%20the%20following%20guide%20to%20Koding%20University%3A%20_____%0A%0AThanks%21"
-      >Request A Guide</a>
-    </li>
   </ul>
 </ul>
 
