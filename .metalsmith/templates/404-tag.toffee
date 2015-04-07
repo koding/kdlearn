@@ -1,0 +1,17 @@
+#{partial 'head.toffee'}
+#{partial 'topnav.toffee'}
+
+<section><div id="page-404" class="container">
+
+#{partial 'sidebar.toffee'}
+
+<div class="content">
+  <h2>Category Not Found</h2>
+  <p>
+    There are no guides for this category yet. You can request a new guide, for this category, by <a href="mailto:learn@koding.com" target="_self">contacting us</a> or checkout our <a href="/contribute">guide</a> on how to submit one.
+  </p>
+</div>
+
+</div></section>
+#{partial 'footer.toffee'}
+
