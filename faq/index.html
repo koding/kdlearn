@@ -44,11 +44,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?105" />
+    <link rel="stylesheet" href="/css/vendor.css?684" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?716" />
+    <link rel="stylesheet" href="/css/main.css?502" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?255" />
+    <link rel="stylesheet" href="/css/rwd.css?647" />
 	</head>
 	<body>
 
@@ -195,7 +195,7 @@
                 </span>
                 <span class="submenu-desc">
                     <span class="sub-desc-icon fa fa-code-fork"></span>
-                    Help us grow Koding University. This section will outline  guideliness for submitting your own articles for this site.
+                    Help us grow Koding University. This section outlines guidelines for submitting your own articles that can appear on this site. Help educate the community!
                 </span>
                 <span class="submenu-desc">
                     <span class="sub-desc-icon fa fa-bell-o"></span>
@@ -249,14 +249,14 @@
     
       <li>
         <a
-          href="#sidebar-collapse"
-          class="title">How can I close the VM panel/sidebar to get more screen space?</a>
+          href="#vm-reinit"
+          class="title">How can I reset my VM back to its original state?</a>
       </li>
     
       <li>
         <a
-          href="#vm-reinit"
-          class="title">How can I reset my VM back to its original state?</a>
+          href="#sidebar-collapse"
+          class="title">How can I close the VM panel/sidebar to get more screen space?</a>
       </li>
     
       <li>
@@ -273,14 +273,14 @@
     
       <li>
         <a
-          href="#sudo-password"
-          class="title">What is my sudo password?</a>
+          href="#open-ports"
+          class="title">What ports are open on my Koding VM?</a>
       </li>
     
       <li>
         <a
-          href="#open-ports"
-          class="title">What ports are open on my Koding VM?</a>
+          href="#sudo-password"
+          class="title">What is my sudo password?</a>
       </li>
     
       <li>
@@ -410,31 +410,6 @@ your existing disk and add all or some of your earned storage.</p>
     </li>
   
     <li>
-      <a name="sidebar-collapse">
-      <h3
-        class="question"
-        itemscope itemtype="http://schema.org/Question"
-      >
-        <a href="/faq/sidebar-collapse">How can I close the VM panel/sidebar to get more screen space?</a>
-      </h3>
-      <div
-        class="answer"
-        itemscope itemtype="http://schema.org/Answer"
-        itemprop="acceptedAnswer"
-      >
-        <p>Our computer screens come in all shapes and sizes and if you don&apos;t have a high res screen,
-then the amount of space occupied by the VM panel/sidebar and the file tree can be a bit
-too much. Did you know that both the VM panel/sidebar and file tree can be collapsed?</p>
-<h4 class="heading"> <a name="collapsing-closing-the-vm-panel-sidebar" class="anchor" href="#collapsing-closing-the-vm-panel-sidebar"></a> Collapsing/Closing the VM Panel/Sidebar </h4><p>Double click the dividing column line between the VM panel and file tree and it will collapse
-the panel! To expand, click the logo. (see image below for an example).</p>
-<h4 class="heading"> <a name="collapsing-closing-the-file-tree" class="anchor" href="#collapsing-closing-the-file-tree"></a> Collapsing/Closing the file tree </h4><p>Double click the dividing column line between the file tree and the IDE/Terminal and it will collapse
-the file tree panel! To expand, click the folder icon. (see image below for an example).</p>
-<p><img src="/faq/sidebar-collapse/sidebar.gif" alt="Sidebar Collapse"></p>
-
-      </div>
-    </li>
-  
-    <li>
       <a name="vm-reinit">
       <h3
         class="question"
@@ -466,6 +441,31 @@ to transfer the files.</p>
 </ol>
 <p>Once you initiate a reinit, you will see appropriate messages on the screen as your VM rebuilds.</p>
 <p><img src="/faq/vm-reinit/reinit.png" alt="VM Reinit"></p>
+
+      </div>
+    </li>
+  
+    <li>
+      <a name="sidebar-collapse">
+      <h3
+        class="question"
+        itemscope itemtype="http://schema.org/Question"
+      >
+        <a href="/faq/sidebar-collapse">How can I close the VM panel/sidebar to get more screen space?</a>
+      </h3>
+      <div
+        class="answer"
+        itemscope itemtype="http://schema.org/Answer"
+        itemprop="acceptedAnswer"
+      >
+        <p>Our computer screens come in all shapes and sizes and if you don&apos;t have a high res screen,
+then the amount of space occupied by the VM panel/sidebar and the file tree can be a bit
+too much. Did you know that both the VM panel/sidebar and file tree can be collapsed?</p>
+<h4 class="heading"> <a name="collapsing-closing-the-vm-panel-sidebar" class="anchor" href="#collapsing-closing-the-vm-panel-sidebar"></a> Collapsing/Closing the VM Panel/Sidebar </h4><p>Double click the dividing column line between the VM panel and file tree and it will collapse
+the panel! To expand, click the logo. (see image below for an example).</p>
+<h4 class="heading"> <a name="collapsing-closing-the-file-tree" class="anchor" href="#collapsing-closing-the-file-tree"></a> Collapsing/Closing the file tree </h4><p>Double click the dividing column line between the file tree and the IDE/Terminal and it will collapse
+the file tree panel! To expand, click the folder icon. (see image below for an example).</p>
+<p><img src="/faq/sidebar-collapse/sidebar.gif" alt="Sidebar Collapse"></p>
 
       </div>
     </li>
@@ -515,6 +515,31 @@ IP changes, so this is what you usually want to use.</p>
     </li>
   
     <li>
+      <a name="open-ports">
+      <h3
+        class="question"
+        itemscope itemtype="http://schema.org/Question"
+      >
+        <a href="/faq/open-ports">What ports are open on my Koding VM?</a>
+      </h3>
+      <div
+        class="answer"
+        itemscope itemtype="http://schema.org/Answer"
+        itemprop="acceptedAnswer"
+      >
+        <p>Most Unix ports are available on Koding VMs. We do not block any TCP traffic
+(inbound or outbound). See the following list for open ports, as well as ports in use by default.</p>
+<ul>
+<li>Ports <strong>2</strong> through <strong>65,534</strong> are open.</li>
+<li>Port <strong>80</strong> is taken by Apache, but this can be turned off to free up the port. To turn
+off Apache, type in: <code>sudo service apache2 stop</code> in Terminal.</li>
+<li>Ports <strong>2</strong> through <strong>1,024</strong> require <code>sudo</code> access.</li>
+</ul>
+
+      </div>
+    </li>
+  
+    <li>
       <a name="sudo-password">
       <h3
         class="question"
@@ -536,31 +561,6 @@ IP changes, so this is what you usually want to use.</p>
 <pre><code>passwd
 </code></pre><p>You will be asked to type in the new password twice. Once done, the new password you picked is the password you will need to use when
 using the <code>sudo</code> command from that point on.</p>
-
-      </div>
-    </li>
-  
-    <li>
-      <a name="open-ports">
-      <h3
-        class="question"
-        itemscope itemtype="http://schema.org/Question"
-      >
-        <a href="/faq/open-ports">What ports are open on my Koding VM?</a>
-      </h3>
-      <div
-        class="answer"
-        itemscope itemtype="http://schema.org/Answer"
-        itemprop="acceptedAnswer"
-      >
-        <p>Most Unix ports are available on Koding VMs. We do not block any TCP traffic
-(inbound or outbound). See the following list for open ports, as well as ports in use by default.</p>
-<ul>
-<li>Ports <strong>2</strong> through <strong>65,534</strong> are open.</li>
-<li>Port <strong>80</strong> is taken by Apache, but this can be turned off to free up the port. To turn
-off Apache, type in: <code>sudo service apache2 stop</code> in Terminal.</li>
-<li>Ports <strong>2</strong> through <strong>1,024</strong> require <code>sudo</code> access.</li>
-</ul>
 
       </div>
     </li>
