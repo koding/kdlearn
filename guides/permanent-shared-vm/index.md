@@ -2,11 +2,9 @@
 title: How to share your VM with someone?
 author: Team Koding
 date: 2015-04-03
-categories: [koding]
-
-improvable: false
+categories: [koding features, koding]
+template: page.toffee
 ---
-
 ### What does "Shared VM" mean?
 The "Share VM" feature allows you to give another Koding user full access to your
 VM even if you are not using your Koding.com account. This is very different from
