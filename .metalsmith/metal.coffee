@@ -183,6 +183,9 @@ module.exports = build = (callback=->) ->
     .use newPage
       output: '404'
       metadata: template: '404.toffee'
+    .use newPage
+      output: '404-tag'
+      metadata: template: '404-tag.toffee'
     .use snapshot collection: 'faq'
     .use snapshot collection: 'guide'
     .use paginateTags
