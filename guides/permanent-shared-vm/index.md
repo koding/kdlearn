@@ -32,4 +32,4 @@ Can you think of more? If yes, [let us know](mailto:sharedvms@koding.com)!
 1. Click the VM settings for the shared VM and then select "Leave Shared VM" to remove the VM from your Sidebar.![4](4.png)
 
 > type:tip
-> This feature is only available to our paying users.
+> This feature is only available for accounts with a paid plan (hobbyist, developer or pro level).
