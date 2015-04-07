@@ -2,7 +2,7 @@
 title: How to share your VM with someone?
 author: Team Koding
 date: 2015-04-03
-categories: [koding features, koding]
+categories: [koding features, collaboration, koding]
 template: page.toffee
 ---
 ### What does "Shared VM" mean?
