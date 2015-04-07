@@ -24,6 +24,12 @@
     "date": "2014-05-30T00:00:00.000Z"
   },
   {
+    "title": "How to share your VM with someone?",
+    "url": "http://learn.koding.com/guides/permanent-shared-vm/index.html",
+    "author": "Team Koding",
+    "date": "2015-04-03T00:00:00.000Z"
+  },
+  {
     "title": "Koding Subdomains and VHosts",
     "url": "http://learn.koding.com/guides/vhosts-and-subdomains/index.html",
     "author": "Team Koding",
@@ -48,15 +54,9 @@
     "date": "2014-10-19T00:00:00.000Z"
   },
   {
-    "title": "Koding Terminal Introduction",
-    "url": "http://learn.koding.com/guides/terminal-introduction/index.html",
+    "title": "Koding IDE Introduction",
+    "url": "http://learn.koding.com/guides/ide-introduction/index.html",
     "author": "Team Koding",
     "date": "2015-03-18T00:00:00.000Z"
-  },
-  {
-    "title": "Koding Virtual Machines Introduction",
-    "url": "http://learn.koding.com/guides/vm-introduction/index.html",
-    "author": "Team Koding",
-    "date": "2014-10-10T00:00:00.000Z"
   }
 ]
