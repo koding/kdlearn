@@ -576,12 +576,14 @@ nav {
             border-radius: 4px;
             margin: 14px 0;
             .searchIcon {
-                background-image: url(../img/sprite.png);
-                background-position: -6px -2px;
-                background-repeat: no-repeat;
+                // background-image: url(../img/sprite.png);
+                // background-position: -6px -2px;
+                // background-repeat: no-repeat;
                 height: 20px;
                 width: 20px;
                 display: block;
+                font-size: 18px;
+                text-align: center;
             }
         }
 	}
