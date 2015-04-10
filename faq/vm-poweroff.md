@@ -4,7 +4,7 @@ importance: 5
 ---
 To turn off your VM, we recommend that you use the power on/off toggle in the [VM settings panel](http://learn.koding.com/guides/understanding-vm-panel/). This ensures that all internal API calls are triggered and all Koding services are aware that you have powered down your VM.
 
-> type: tip
+> type:tip
 > VMs for our free accounts automatically turn off after 60 minutes of inactivity on our IDE or Terminal
 > so there's no need to manually turn the VM off.
 
