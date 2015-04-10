@@ -274,19 +274,23 @@ blockquote {
 }
 .success {
     background-color: #f3f8f3;
-    border: 1px solid #50af51;
+    border: 0px solid #50af51;
+    border-left-width: 10px;
 }
 .error {
     background-color: #fdf7f7;
-    border: 1px solid #d9534f;
+    border: 0px solid #d9534f;
+    border-left-width: 10px;
 }
 .warning {
     background-color: #fcf8f2;
-    border: 1px solid #f0ad4e;
+    border: 0px solid #f0ad4e;
+    border-left-width: 10px;
 }
 .tip {
     background-color: #F7F9FD;
-    border: 1px solid #4F7BD9;
+    border: 0px solid #4F7BD9;
+    border-left-width: 10px;
 }
 dd {
 	padding: 0;
