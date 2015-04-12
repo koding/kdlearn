@@ -40,7 +40,7 @@ java HelloWorld
 public class HelloWorld
 ```
 
-The first line defines a class called Main. In Java, every line of code that can actually run needs to be inside a class. This line declares a class named Main, which is public, that means that any other class can access it.
+The first line defines a class called HelloWorld. In Java, every line of code that can actually run needs to be inside a class. This line declares a class named HelloWorld, which is public, that means that any other class can access it.
 
 ```
 public static void main(String[] args)
