@@ -274,23 +274,27 @@ blockquote {
 }
 .success {
     background-color: #f3f8f3;
-    border: 0px solid #50af51;
+    border: 1px solid #ededed;
     border-left-width: 10px;
+    border-left-color: #50af51;
 }
 .error {
     background-color: #fdf7f7;
-    border: 0px solid #d9534f;
+    border: 1px solid #ededed;
     border-left-width: 10px;
+    border-left-color: #d9534f;
 }
 .warning {
     background-color: #fcf8f2;
-    border: 0px solid #f0ad4e;
+    border: 1px solid #ededed;
     border-left-width: 10px;
+    border-left-color: #f0ad4e;
 }
 .tip {
-    background-color: #F7F9FD;
-    border: 0px solid #4F7BD9;
+    background-color: #f7f9fd;
+    border: 1px solid #ededed;
     border-left-width: 10px;
+    border-left-color: #4f7bd9;
 }
 dd {
 	padding: 0;
