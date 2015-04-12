@@ -1,5 +1,5 @@
 ---
-title: How do I earn and claim additional storage space through referrals?
+title: How can I earn & claim additional storage space through referrals?
 importance: 2
 ---
 
