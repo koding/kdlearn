@@ -33,8 +33,8 @@ is now easier than ever.
 
 > type:warning
 > Before we proceed, please note that referral space can only be claimed in increments of
-> whole number GBs. That means if you have referred one person and earned 500MB (.5GB) then
-> you will need to wait until another person signs up using your link so that you get to a 
+> whole number GBs. That means if you have referred one person and earned 500MB (0.5GB) then
+> you will need to wait until another person signs up using your referral link so that you get to a 
 > whole number (1GB) of earned space which can then be redeemed by following the process
 > outlined below.
 
