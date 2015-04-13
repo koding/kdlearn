@@ -3,7 +3,7 @@ title: How can I earn & claim additional storage space through referrals?
 importance: 2
 ---
 
-### Earning referral space
+### Earning free referral space
 You can earn up to 500MB per referral on Koding. Earning referrals is as easy as
 inviting your friends, colleagues, classmates, students, etc. to join Koding! 
 
