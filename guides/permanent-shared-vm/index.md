@@ -11,6 +11,13 @@ VM even if you are not using your Koding.com account. This is very different fro
 [Collaboratiom on Koding](/guides/collaboration/) where you are working with someone in
 real-time and sharing the IDE and Terminal.
 
+> type:tip
+> This feature is only available for accounts with a paid plan (hobbyist, developer or pro level).
+> Paid accounts can initiate the share however, the recipient can be a free account or a paid account.
+
+that as a paid plan owner, you can share your VM with another paid or free plan account.
+> 
+
 ### What's the benefit?
 There are several use cases where this makes sense. For example:
 1. Multiple people are working on a project. They don't need to collaborate real-time but still need to access the same VM independently.
@@ -30,6 +37,3 @@ Can you think of more? If yes, [let us know](mailto:sharedvms@koding.com)!
 
 ### How do I leave a shared VM?
 1. Click the VM settings for the shared VM and then select "Leave Shared VM" to remove the VM from your Sidebar.![4](4.png)
-
-> type:tip
-> This feature is only available for accounts with a paid plan (hobbyist, developer or pro level).
