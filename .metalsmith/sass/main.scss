@@ -400,27 +400,29 @@ footer.main-footer {
 h1#logo {
   margin: 10px 0;
 }
-.hasHeader {
-    #logo {
-        span.img {
-            width: 185px;
-        }
-    }
-}
+// .hasHeader {
+//     #logo {
+//         span.img {
+//             width: 185px;
+//         }
+//     }
+// }
 .noHeader {
     #logo {
         span.img {
-            width: 216px;
+            // width: 185px;
+            margin-left: 15px;
         }
     }
 }
 #logo {
   span.img {
     display: inline-block;
-    background-image: url(../img/logo.header.png);
-    background-size: 185px;
-    background-position: center;
+    background-image: url(../img/logo.header.svg);
+    background-size: 195px;
+    background-position: -14px;
     background-repeat: no-repeat;
+    width: 185px;
     height: 23px;
     vertical-align: middle;
     margin-bottom: 10px;
