@@ -614,7 +614,7 @@ To run the above file in your Koding VM, just open your Koding Terminal and type
 javac HelloWorld.java
 java HelloWorld
   Explanation public class HelloWorld
-The first line defines a class called Main. In Java, every line of code that can actually run needs to be inside a class. This line declares a class named Main, which is public, that means that any other class can access it.
+The first line defines a class called HelloWorld. In Java, every line of code that can actually run needs to be inside a class. This line declares a class named HelloWorld, which is public, that means that any other class can access it.
 public static void main(String[] args)
 The main method has to have this exact signature in order to be able to run your program.
 
