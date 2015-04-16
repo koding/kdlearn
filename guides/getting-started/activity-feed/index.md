@@ -34,6 +34,7 @@ can get a bit boring though, so Koding supports full
 
 > type:tip
 > Make sure to familiarize yourself with our [posting guidelines](/faq/posting-guidelines/).
+
 ## Previewing
 
 To preview your post, simply press the little eye on the right side of
