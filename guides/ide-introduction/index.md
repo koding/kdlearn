@@ -8,7 +8,7 @@ videoId: VdFt7N4Y2IA
 
 # Koding IDE Introduction
 
-In this guide we'll go over the Koding Integrated Development Environment or IDE for short. We'll try to explain how it works, how to use it and in end share some useful tips that you can use to be more productive.
+In this guide we'll go over the Koding Integrated Development Environment or IDE for short. We'll try to explain how it works, how to use it and in the end share some useful tips that you can use to be more productive.
 
 ## Getting started
 
@@ -34,7 +34,7 @@ The Koding IDE consists of two main parts: the FileTree, and the Editor.
 
 ![IDE 3](ide3.png)
 
-The IDE can be customized by clicking on the little cog icon and then modifying the seetings based on your needs.
+The IDE can be customized by clicking on the little cog icon and then modifying the settings based on your needs.
 
 > type:tip
 > You can also customize the Koding Terminal from here.
