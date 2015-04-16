@@ -338,7 +338,7 @@ Explore it today and if you ever need help with the Terminal you can just click 
     <pubDate>"2015-03-18T00:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/ide-introduction</guid>
     <author>Team Koding</author>
-    <description>In this guide we'll go over the Koding Integrated Development Environment or IDE for short. We'll try to explain how it works, how to use it and in end share some useful tips that you can use to be more productive.
+    <description>In this guide we'll go over the Koding Integrated Development Environment or IDE for short. We'll try to explain how it works, how to use it and in the end share some useful tips that you can use to be more productive.
   Getting started To access your IDE, select your Virtual Machine on the left hand side as pictured bellow.
 
  If you have a Developer or Professional account then select the VM you want to start, from the list.
@@ -348,7 +348,7 @@ After the VM has started, you'll see your Koding IDE.
  The IDE will remember what files / tabs you had opened last time and the FileTree will remember the folder location.
    Usage The Koding IDE consists of two main parts: the FileTree, and the Editor.
 
-The IDE can be customized by clicking on the little cog icon and then modifying the seetings based on your needs.
+The IDE can be customized by clicking on the little cog icon and then modifying the settings based on your needs.
  You can also customize the Koding Terminal from here.
  
 The FileTree, on the left, enables file navigation around your VM. You can drag files or folders from one location to another one and if you right click files and folders you'll yield shortcuts to various actions as exemplified in the bellow images.
@@ -5941,6 +5941,17 @@ So to be clear , you may change your display name at any time but this does not 
   </item>
   
   <item>
+    <title>How can I delete my account?</title>
+    <link>//learn.koding.com/faq/delete-account</link>
+    <pubDate></pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/delete-account</guid>
+    <author></author>
+    <description>You do not have to contact Koding support if you wish to delete your account. Simply head over to Account Settings from where you can easily initiate the deletion process.
+It would help us immensly if you can take the quick 3 question survey right after the deletion process ends. It will help us understand why we lost you and how we can improve.
+</description>
+  </item>
+  
+  <item>
     <title>How can I close the VM panel/sidebar to get more screen space?</title>
     <link>//learn.koding.com/faq/sidebar-collapse</link>
     <pubDate></pubDate>
@@ -5954,17 +5965,6 @@ the panel! To expand, click the logo. (see image below for an example).
   Collapsing/Closing the file tree Double click the dividing column line between the file tree and the IDE/Terminal and it will collapse
 the file tree panel! To expand, click the folder icon. (see image below for an example).
 
-</description>
-  </item>
-  
-  <item>
-    <title>How can I delete my account?</title>
-    <link>//learn.koding.com/faq/delete-account</link>
-    <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/delete-account</guid>
-    <author></author>
-    <description>You do not have to contact Koding support if you wish to delete your account. Simply head over to Account Settings from where you can easily initiate the deletion process.
-It would help us immensly if you can take the quick 3 question survey right after the deletion process ends. It will help us understand why we lost you and how we can improve.
 </description>
   </item>
   
@@ -5997,6 +5997,24 @@ Once you initiate a reinit, you will see appropriate messages on the screen as y
   </item>
   
   <item>
+    <title>What is my sudo password?</title>
+    <link>//learn.koding.com/faq/sudo-password</link>
+    <pubDate></pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/sudo-password</guid>
+    <author></author>
+    <description>By default, there is no sudo password on your Koding VM. It is blank/empty which means that if you want to use sudo, all you need to do is as follows:
+sudo &amp;lt;command you wish to use&amp;gt;
+When you hit enter, the sudo level command you wish to run without a password prompt.
+If you wish to, you can add a sudo password yourself. To do this, change user to root by typing:
+sudo su
+and then create a password for the root user by typing:
+passwd
+You will be asked to type in the new password twice. Once done, the new password you picked is the password you will need to use when
+using the sudo command from that point on.
+</description>
+  </item>
+  
+  <item>
     <title>How do turn off my my Koding VM?</title>
     <link>//learn.koding.com/faq/vm-poweroff</link>
     <pubDate></pubDate>
@@ -6019,20 +6037,34 @@ We don't recommend using sudo poweroff or sudo shutdown to power down your VM as
   </item>
   
   <item>
-    <title>What is my sudo password?</title>
-    <link>//learn.koding.com/faq/sudo-password</link>
+    <title>Guidelines to keep in mind when sharing on Koding's Activity Feed.</title>
+    <link>//learn.koding.com/faq/posting-guidelines</link>
     <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/sudo-password</guid>
+    <guid isPermaLink="true">//learn.koding.com/faq/posting-guidelines</guid>
     <author></author>
-    <description>By default, there is no sudo password on your Koding VM. It is blank/empty which means that if you want to use sudo, all you need to do is as follows:
-sudo &amp;lt;command you wish to use&amp;gt;
-When you hit enter, the sudo level command you wish to run without a password prompt.
-If you wish to, you can add a sudo password yourself. To do this, change user to root by typing:
-sudo su
-and then create a password for the root user by typing:
-passwd
-You will be asked to type in the new password twice. Once done, the new password you picked is the password you will need to use when
-using the sudo command from that point on.
+    <description>  A few basic rules: 
+If your question in of the category “how do I…” then always check Koding University. Chances are high that we have a handy dandy guide for you.
+Ask your questions in a way that would make it easy for others to answer. (hint: ask the question as if you were trying to answer it). More awesome “question asking techniques” here.
+Posts that contain any of these will be mercilessly deleted by the moderators and your account could be banned:
+abusive, racist or derogatory posts
+meaningless posts
+referral links to 3rd party sites
+
+
+If someone answers your question with a relevant answer, be polite and thank them (or go the extra step and “like” them!).
+We all need to collaborate to keep the Koding community klean. Report any abuse to abuse@koding.com. Fight back on any abuse!
+Don’t share private info (email address, phone number, etc.)
+Use Markdown whenever possible (posting code fragments, links, images, etc.) Our handy Markdown guide can be found here. Preview your Markdown before posting using the M↓ button.
+When posting code, only post relevant portions. A good rule of thumb is not to exceed 10-15 lines.
+Don’t ask for the Koding support team to help via a post here. Instead, hit us up at support@koding.com. We monitor that inbox constantly (visualize a Koder positioned like a Hawk, watching that inbox).
+If you think you can remotely help someone, expert or not, just do it.
+
+  Tools we recommend: 
+For screen grabs: Monosnap
+For posting code: Gist
+For executables: IDEone
+For HTML, CSS and JS: JSFiddle
+
 </description>
   </item>
   

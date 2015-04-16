@@ -44,11 +44,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?302" />
+    <link rel="stylesheet" href="/css/vendor.css?47" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?438" />
+    <link rel="stylesheet" href="/css/main.css?50" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?540" />
+    <link rel="stylesheet" href="/css/rwd.css?276" />
 	</head>
 	<body>
 
@@ -261,14 +261,14 @@
     
       <li>
         <a
-          href="#sidebar-collapse"
-          class="title">How can I close the VM panel/sidebar to get more screen space?</a>
+          href="#delete-account"
+          class="title">How can I delete my account?</a>
       </li>
     
       <li>
         <a
-          href="#delete-account"
-          class="title">How can I delete my account?</a>
+          href="#sidebar-collapse"
+          class="title">How can I close the VM panel/sidebar to get more screen space?</a>
       </li>
     
       <li>
@@ -279,14 +279,20 @@
     
       <li>
         <a
+          href="#sudo-password"
+          class="title">What is my sudo password?</a>
+      </li>
+    
+      <li>
+        <a
           href="#vm-poweroff"
           class="title">How do turn off my my Koding VM?</a>
       </li>
     
       <li>
         <a
-          href="#sudo-password"
-          class="title">What is my sudo password?</a>
+          href="#posting-guidelines"
+          class="title">Guidelines to keep in mind when sharing on Koding's Activity Feed.</a>
       </li>
     
       <li>
@@ -494,6 +500,25 @@ IP changes, so this is what you usually want to use.</p>
     </li>
   
     <li>
+      <a name="delete-account">
+      <h3
+        class="question"
+        itemscope itemtype="http://schema.org/Question"
+      >
+        <a href="/faq/delete-account">How can I delete my account?</a>
+      </h3>
+      <div
+        class="answer"
+        itemscope itemtype="http://schema.org/Answer"
+        itemprop="acceptedAnswer"
+      >
+        <p>You do not have to contact Koding support if you wish to delete your account. Simply head over to <a href="https://koding.com/Account/Delete">Account Settings</a> from where you can easily initiate the deletion process.</p>
+<p>It would help us immensly if you can take the quick 3 question survey right after the deletion process ends. It will help us understand why we lost you and how we can improve.</p>
+
+      </div>
+    </li>
+  
+    <li>
       <a name="sidebar-collapse">
       <h3
         class="question"
@@ -514,25 +539,6 @@ the panel! To expand, click the logo. (see image below for an example).</p>
 <h4 class="heading"> <a name="collapsing-closing-the-file-tree" class="anchor" href="#collapsing-closing-the-file-tree"></a> Collapsing/Closing the file tree </h4><p>Double click the dividing column line between the file tree and the IDE/Terminal and it will collapse
 the file tree panel! To expand, click the folder icon. (see image below for an example).</p>
 <p><img src="/faq/sidebar-collapse/sidebar.gif" alt="Sidebar Collapse"></p>
-
-      </div>
-    </li>
-  
-    <li>
-      <a name="delete-account">
-      <h3
-        class="question"
-        itemscope itemtype="http://schema.org/Question"
-      >
-        <a href="/faq/delete-account">How can I delete my account?</a>
-      </h3>
-      <div
-        class="answer"
-        itemscope itemtype="http://schema.org/Answer"
-        itemprop="acceptedAnswer"
-      >
-        <p>You do not have to contact Koding support if you wish to delete your account. Simply head over to <a href="https://koding.com/Account/Delete">Account Settings</a> from where you can easily initiate the deletion process.</p>
-<p>It would help us immensly if you can take the quick 3 question survey right after the deletion process ends. It will help us understand why we lost you and how we can improve.</p>
 
       </div>
     </li>
@@ -574,6 +580,32 @@ to transfer the files.</p>
     </li>
   
     <li>
+      <a name="sudo-password">
+      <h3
+        class="question"
+        itemscope itemtype="http://schema.org/Question"
+      >
+        <a href="/faq/sudo-password">What is my sudo password?</a>
+      </h3>
+      <div
+        class="answer"
+        itemscope itemtype="http://schema.org/Answer"
+        itemprop="acceptedAnswer"
+      >
+        <p>By default, there is no <code>sudo</code> password on your Koding VM. It is blank/empty which means that if you want to use <code>sudo</code>, all you need to do is as follows:</p>
+<pre><code>sudo &lt;command you wish <span class="hljs-keyword">to</span> <span class="hljs-keyword">use</span>&gt;
+</code></pre><p>When you hit enter, the sudo level command you wish to run without a password prompt.</p>
+<p>If you wish to, you can add a sudo password yourself. To do this, change user to root by typing:</p>
+<pre><code><span class="hljs-title">sudo</span> su
+</code></pre><p>and then create a password for the root user by typing:</p>
+<pre><code>passwd
+</code></pre><p>You will be asked to type in the new password twice. Once done, the new password you picked is the password you will need to use when
+using the <code>sudo</code> command from that point on.</p>
+
+      </div>
+    </li>
+  
+    <li>
       <a name="vm-poweroff">
       <h3
         class="question"
@@ -604,27 +636,41 @@ so there&apos;s no need to manually turn the VM off.</p>
     </li>
   
     <li>
-      <a name="sudo-password">
+      <a name="posting-guidelines">
       <h3
         class="question"
         itemscope itemtype="http://schema.org/Question"
       >
-        <a href="/faq/sudo-password">What is my sudo password?</a>
+        <a href="/faq/posting-guidelines">Guidelines to keep in mind when sharing on Koding's Activity Feed.</a>
       </h3>
       <div
         class="answer"
         itemscope itemtype="http://schema.org/Answer"
         itemprop="acceptedAnswer"
       >
-        <p>By default, there is no <code>sudo</code> password on your Koding VM. It is blank/empty which means that if you want to use <code>sudo</code>, all you need to do is as follows:</p>
-<pre><code>sudo &lt;command you wish <span class="hljs-keyword">to</span> <span class="hljs-keyword">use</span>&gt;
-</code></pre><p>When you hit enter, the sudo level command you wish to run without a password prompt.</p>
-<p>If you wish to, you can add a sudo password yourself. To do this, change user to root by typing:</p>
-<pre><code><span class="hljs-title">sudo</span> su
-</code></pre><p>and then create a password for the root user by typing:</p>
-<pre><code>passwd
-</code></pre><p>You will be asked to type in the new password twice. Once done, the new password you picked is the password you will need to use when
-using the <code>sudo</code> command from that point on.</p>
+        <h3 class="heading"> <a name="a-few-basic-rules-" class="anchor" href="#a-few-basic-rules-"></a> A few basic rules: </h3><ol>
+<li>If your question in of the category &#x201C;how do I&#x2026;&#x201D; then always check Koding University. Chances are high that we have a handy dandy guide for you.</li>
+<li>Ask your questions in a way that would make it easy for others to answer. (hint: ask the question as if you were trying to answer it). More awesome &#x201C;question asking techniques&#x201D; <a href="http://codeblog.jonskeet.uk/2010/08/29/writing-the-perfect-question/">here</a>.</li>
+<li>Posts that contain any of these will be mercilessly deleted by the moderators and your account could be banned:<ul>
+<li>abusive, racist or derogatory posts</li>
+<li>meaningless posts</li>
+<li>referral links to 3rd party sites</li>
+</ul>
+</li>
+<li>If someone answers your question with a relevant answer, be polite and thank them (or go the extra step and &#x201C;like&#x201D; them!).</li>
+<li>We all need to collaborate to keep the Koding community klean. Report any abuse to <a href="abuse@koding.com">abuse@koding.com</a>. Fight back on any abuse!</li>
+<li>Don&#x2019;t share private info (email address, phone number, etc.)</li>
+<li>Use Markdown whenever possible (posting code fragments, links, images, etc.) Our handy Markdown guide can be found <a href="http://learn.koding.com/guides/markdown/">here</a>. Preview your Markdown before posting using the M&#x2193; button.</li>
+<li>When posting code, only post relevant portions. A good rule of thumb is not to exceed 10-15 lines.</li>
+<li>Don&#x2019;t ask for the Koding support team to help via a post here. Instead, hit us up at <a href="support@koding.com">support@koding.com</a>. We monitor that inbox constantly (visualize a Koder positioned like a Hawk, watching that inbox).</li>
+<li>If you think you can remotely help someone, expert or not, just do it.</li>
+</ol>
+<h3 class="heading"> <a name="tools-we-recommend-" class="anchor" href="#tools-we-recommend-"></a> Tools we recommend: </h3><ul>
+<li>For screen grabs: <a href="http://monosnap.com/">Monosnap</a></li>
+<li>For posting code: <a href="https://gist.github.com/">Gist</a></li>
+<li>For executables: <a href="http://ideone.com/">IDEone</a></li>
+<li>For HTML, CSS and JS: <a href="http://jsfiddle.net/">JSFiddle</a></li>
+</ul>
 
       </div>
     </li>

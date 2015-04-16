@@ -734,13 +734,13 @@
   </url>
   
   <url>
-    <loc>http://learn.koding.com/faq/sidebar-collapse</loc>
+    <loc>http://learn.koding.com/faq/delete-account</loc>
     <lastmod>2015-04-16</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/faq/delete-account</loc>
+    <loc>http://learn.koding.com/faq/sidebar-collapse</loc>
     <lastmod>2015-04-16</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -752,13 +752,19 @@
   </url>
   
   <url>
+    <loc>http://learn.koding.com/faq/sudo-password</loc>
+    <lastmod>2015-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
     <loc>http://learn.koding.com/faq/vm-poweroff</loc>
     <lastmod>2015-04-16</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>http://learn.koding.com/faq/sudo-password</loc>
+    <loc>http://learn.koding.com/faq/posting-guidelines</loc>
     <lastmod>2015-04-16</lastmod>
     <changefreq>monthly</changefreq>
   </url>
