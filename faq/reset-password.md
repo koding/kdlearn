@@ -3,7 +3,7 @@ title: How do I reset my password?
 importance: 3
 ---
 
-### How do I reset my password?
+### How do I reset the password for my Koding account?
 To reset your password, head over to [Account Settings](https://koding.com/Account/Profile). The password change
 field is located at the bottom of the Profile tab.
 
