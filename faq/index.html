@@ -44,11 +44,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?107" />
+    <link rel="stylesheet" href="/css/vendor.css?932" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?603" />
+    <link rel="stylesheet" href="/css/main.css?461" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?158" />
+    <link rel="stylesheet" href="/css/rwd.css?431" />
 	</head>
 	<body>
 
@@ -243,6 +243,18 @@
     
       <li>
         <a
+          href="#reset-password"
+          class="title">How do I reset my password?</a>
+      </li>
+    
+      <li>
+        <a
+          href="#vm-ip-vs-address"
+          class="title">Should I use my VM's IP or Address?</a>
+      </li>
+    
+      <li>
+        <a
           href="#change-username"
           class="title">Can I change my Koding username?</a>
       </li>
@@ -255,20 +267,20 @@
     
       <li>
         <a
+          href="#delete-account"
+          class="title">How can I delete my account?</a>
+      </li>
+    
+      <li>
+        <a
           href="#vm-reinit"
           class="title">How can I reset my VM back to its original state?</a>
       </li>
     
       <li>
         <a
-          href="#vm-ip-vs-address"
-          class="title">Should I use my VM's IP or Address?</a>
-      </li>
-    
-      <li>
-        <a
-          href="#delete-account"
-          class="title">How can I delete my account?</a>
+          href="#vm-poweroff"
+          class="title">How do turn off my my Koding VM?</a>
       </li>
     
       <li>
@@ -293,12 +305,6 @@
         <a
           href="#vm-hostname"
           class="title">What is my VM Hostname/Address/Domain Name?</a>
-      </li>
-    
-      <li>
-        <a
-          href="#vm-poweroff"
-          class="title">How do turn off my my Koding VM?</a>
       </li>
     
       <li>
@@ -410,6 +416,63 @@ your existing disk and add all or some of your earned storage.</p>
     </li>
   
     <li>
+      <a name="reset-password">
+      <h3
+        class="question"
+        itemscope itemtype="http://schema.org/Question"
+      >
+        <a href="/faq/reset-password">How do I reset my password?</a>
+      </h3>
+      <div
+        class="answer"
+        itemscope itemtype="http://schema.org/Answer"
+        itemprop="acceptedAnswer"
+      >
+        <h3 class="heading"> <a name="how-do-i-reset-my-password-" class="anchor" href="#how-do-i-reset-my-password-"></a> How do I reset my password? </h3><p>To reset your password, head over to <a href="https://koding.com/Account/Profile">Account Settings</a>. The password change
+field is located at the bottom of the Profile tab.</p>
+<p>Once you input the new password, the system will prompt you for the current password before making the change. Once
+your password is verified, the password will be changed and you will also receive an email notification letting you
+know that your password has been updated.</p>
+<h3 class="heading"> <a name="how-do-i-reset-my-password-if-i-login-using-github-twitter-facebook-google-etc-" class="anchor" href="#how-do-i-reset-my-password-if-i-login-using-github-twitter-facebook-google-etc-"></a> How do I reset my password if I login using GitHub / Twitter / Facebook / Google+ etc.? </h3><p>If you are logging into Koding using Twitter, Github, Facebook, Google+, etc. then you were not required to set up
+a password when you first created your account. In a sitution such as this, follow the steps below to set up your 
+password:</p>
+<ol>
+<li>Log out from koding.com</li>
+<li>Head over to the <a href="https://koding.com/Recover">password recovery</a> page</li>
+<li>Enter your email address and the system will send you an email with the link to reset/set your password</li>
+</ol>
+<blockquote class="tip fa fa-info-circle"> <p>Even if you set up a password using the steps above, you can still log in using GitHub, Twitter, Facebook, 
+Google+, etc. or you can use the new password to log in. Both will work.</p>
+ </blockquote>
+      </div>
+    </li>
+  
+    <li>
+      <a name="vm-ip-vs-address">
+      <h3
+        class="question"
+        itemscope itemtype="http://schema.org/Question"
+      >
+        <a href="/faq/vm-ip-vs-address">Should I use my VM's IP or Address?</a>
+      </h3>
+      <div
+        class="answer"
+        itemscope itemtype="http://schema.org/Answer"
+        itemprop="acceptedAnswer"
+      >
+        <p>Koding gives you access to your VMs IP, as well as an Address that 
+always points to that VM&apos;s IP, so which should you use, and why?</p>
+<p>While your VMs IP will operate perfectly fine, the IP is dynamic. In 
+other words, it will change. Because of this, Koding gives you a <a href="/faq/vm-address">VM
+Address</a>, which will <em>always</em> point to your VM, regardless of 
+IP changes, so this is what you usually want to use.</p>
+<blockquote class="tip fa fa-info-circle"> <p>IP addresses of &quot;Always On&quot; VMs don&apos;t change even after the VM reboots.</p>
+ </blockquote><p>If you have trouble finding your VM Address, <a href="/faq/vm-address">click here</a>.</p>
+
+      </div>
+    </li>
+  
+    <li>
       <a name="change-username">
       <h3
         class="question"
@@ -456,6 +519,25 @@ the file tree panel! To expand, click the folder icon. (see image below for an e
     </li>
   
     <li>
+      <a name="delete-account">
+      <h3
+        class="question"
+        itemscope itemtype="http://schema.org/Question"
+      >
+        <a href="/faq/delete-account">How can I delete my account?</a>
+      </h3>
+      <div
+        class="answer"
+        itemscope itemtype="http://schema.org/Answer"
+        itemprop="acceptedAnswer"
+      >
+        <p>You do not have to contact Koding support if you wish to delete your account. Simply head over to <a href="https://koding.com/Account/Delete">Account Settings</a> from where you can easily initiate the deletion process.</p>
+<p>It would help us immensly if you can take the quick 3 question survey right after the deletion process ends. It will help us understand why we lost you and how we can improve.</p>
+
+      </div>
+    </li>
+  
+    <li>
       <a name="vm-reinit">
       <h3
         class="question"
@@ -492,45 +574,31 @@ to transfer the files.</p>
     </li>
   
     <li>
-      <a name="vm-ip-vs-address">
+      <a name="vm-poweroff">
       <h3
         class="question"
         itemscope itemtype="http://schema.org/Question"
       >
-        <a href="/faq/vm-ip-vs-address">Should I use my VM's IP or Address?</a>
+        <a href="/faq/vm-poweroff">How do turn off my my Koding VM?</a>
       </h3>
       <div
         class="answer"
         itemscope itemtype="http://schema.org/Answer"
         itemprop="acceptedAnswer"
       >
-        <p>Koding gives you access to your VMs IP, as well as an Address that 
-always points to that VM&apos;s IP, so which should you use, and why?</p>
-<p>While your VMs IP will operate perfectly fine, the IP is dynamic. In 
-other words, it will change. Because of this, Koding gives you a <a href="/faq/vm-address">VM
-Address</a>, which will <em>always</em> point to your VM, regardless of 
-IP changes, so this is what you usually want to use.</p>
-<blockquote class="tip fa fa-info-circle"> <p>IP addresses of &quot;Always On&quot; VMs don&apos;t change even after the VM reboots.</p>
- </blockquote><p>If you have trouble finding your VM Address, <a href="/faq/vm-address">click here</a>.</p>
-
-      </div>
-    </li>
-  
-    <li>
-      <a name="delete-account">
-      <h3
-        class="question"
-        itemscope itemtype="http://schema.org/Question"
-      >
-        <a href="/faq/delete-account">How can I delete my account?</a>
-      </h3>
-      <div
-        class="answer"
-        itemscope itemtype="http://schema.org/Answer"
-        itemprop="acceptedAnswer"
-      >
-        <p>You do not have to contact Koding support if you wish to delete your account. Simply head over to <a href="https://koding.com/Account/Delete">Account Settings</a> from where you can easily initiate the deletion process.</p>
-<p>It would help us immensly if you can take the quick 3 question survey right after the deletion process ends. It will help us understand why we lost you and how we can improve.</p>
+        <p>To turn off your VM, we recommend that you use the power on/off toggle in the <a href="http://learn.koding.com/guides/understanding-vm-panel/">VM settings panel</a>. This ensures that all internal API calls are triggered and all Koding services are aware that you have powered down your VM.</p>
+<blockquote class="tip fa fa-info-circle"> <p>VMs for our free accounts automatically turn off after 60 minutes of inactivity on our IDE or Terminal
+so there&apos;s no need to manually turn the VM off.</p>
+ </blockquote><p>That being said, sometimes you may need to restart your VM and want to do it via the Terminal. In such cases, simple type the following command in Terminal:</p>
+<pre><code><span class="hljs-title">sudo</span> reboot
+</code></pre><p>you will see the following msg on your Terminal while the reboot command is processed and your VM restarts</p>
+<pre><code>connecting<span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-built_in">.</span>
+</code></pre><p>followed by</p>
+<pre><code>Failed <span class="hljs-keyword">to</span> connect <span class="hljs-keyword">to</span> terminal, click here <span class="hljs-keyword">to</span> <span class="hljs-keyword">try</span> again.
+</code></pre><p>followed by</p>
+<pre><code>An unknown error occured, please <span class="hljs-built_in">open</span> <span class="hljs-operator">a</span> <span class="hljs-built_in">new</span> <span class="hljs-constant">tab</span>. Click here <span class="hljs-built_in">to</span> dismiss this <span class="hljs-constant">one</span>.
+</code></pre><p>both of the above messages, even though they look like errors are normal because a manual reboot has been requested.</p>
+<p>We don&apos;t recommend using <code>sudo poweroff</code> or <code>sudo shutdown</code> to power down your VM as it will leave the associated sub-systems in an unknown state which may disrupt you from using your account. Use the settings panel to stop/turn off your VM.</p>
 
       </div>
     </li>
@@ -650,36 +718,6 @@ of all your VMs for easy reassignment</li>
 <li>deleting a sub-domain is as easy as adding one!
 <img src="/faq/vm-hostname/third.png" alt="Remove subdomain"></li>
 </ol>
-
-      </div>
-    </li>
-  
-    <li>
-      <a name="vm-poweroff">
-      <h3
-        class="question"
-        itemscope itemtype="http://schema.org/Question"
-      >
-        <a href="/faq/vm-poweroff">How do turn off my my Koding VM?</a>
-      </h3>
-      <div
-        class="answer"
-        itemscope itemtype="http://schema.org/Answer"
-        itemprop="acceptedAnswer"
-      >
-        <p>To turn off your VM, we recommend that you use the power on/off toggle in the <a href="http://learn.koding.com/guides/understanding-vm-panel/">VM settings panel</a>. This ensures that all internal API calls are triggered and all Koding services are aware that you have powered down your VM.</p>
-<blockquote class="tip fa fa-info-circle"> <p>VMs for our free accounts automatically turn off after 60 minutes of inactivity on our IDE or Terminal
-so there&apos;s no need to manually turn the VM off.</p>
- </blockquote><p>That being said, sometimes you may need to restart your VM and want to do it via the Terminal. In such cases, simple type the following command in Terminal:</p>
-<pre><code><span class="hljs-title">sudo</span> reboot
-</code></pre><p>you will see the following msg on your Terminal while the reboot command is processed and your VM restarts</p>
-<pre><code>connecting<span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-built_in">.</span>
-</code></pre><p>followed by</p>
-<pre><code>Failed <span class="hljs-keyword">to</span> connect <span class="hljs-keyword">to</span> terminal, click here <span class="hljs-keyword">to</span> <span class="hljs-keyword">try</span> again.
-</code></pre><p>followed by</p>
-<pre><code>An unknown error occured, please <span class="hljs-built_in">open</span> <span class="hljs-operator">a</span> <span class="hljs-built_in">new</span> <span class="hljs-constant">tab</span>. Click here <span class="hljs-built_in">to</span> dismiss this <span class="hljs-constant">one</span>.
-</code></pre><p>both of the above messages, even though they look like errors are normal because a manual reboot has been requested.</p>
-<p>We don&apos;t recommend using <code>sudo poweroff</code> or <code>sudo shutdown</code> to power down your VM as it will leave the associated sub-systems in an unknown state which may disrupt you from using your account. Use the settings panel to stop/turn off your VM.</p>
 
       </div>
     </li>
