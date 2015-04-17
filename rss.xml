@@ -631,6 +631,7 @@ System.out.println(&amp;quot;Hello, World!&amp;quot;);
 System is a pre-defined class that Java provides and it also holds some useful methods and variables. out is a static variable within System that represents the output of your program. println is a method of out that can be used to print a line.
 And that's it!
 You just wrote and ran your first Hello World in Java.
+If you'd like to continue dabbling in Java, we recommend taking a look at this tutorial written for Koding over at Andriodauthority.com
 </description>
   </item>
   
