@@ -8,7 +8,7 @@ template: page.toffee
 ### What does "Shared VM" mean?
 The "Share VM" feature allows you to give another Koding user full access to your
 VM even if you are not using your Koding.com account. This is very different from
-[Collaboratiom on Koding](/guides/collaboration/) where you are working with someone in
+[Collaboration on Koding](/guides/collaboration/) where you are working with someone in
 real-time and sharing the IDE and Terminal.
 
 > type:tip
