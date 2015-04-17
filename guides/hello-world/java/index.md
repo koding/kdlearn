@@ -71,3 +71,5 @@ System.out.println("Hello, World!");
 And that's it!
 
 You just wrote and ran your first Hello World in Java.
+
+If you'd like to continue dabbling in Java, we recommend taking a look at [this tutorial](http://www.androidauthority.com/java-tutorial-beginners-582147/) written for Koding over at Andriodauthority.com
