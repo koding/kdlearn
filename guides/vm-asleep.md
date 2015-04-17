@@ -20,5 +20,5 @@ that means the global DNS propagation for your particular VM has not yet
 completed. Global DNS propagation can take anywhere from 1 to 10 minutes
 from the time you turn on your VM.
 
-If you have tried the above and are still seeing issues, please [send us a note](mailto:support@koding.com)
+If you have tried the above and are still having issues, please [send us a note](mailto:support@koding.com)
  with the details.
