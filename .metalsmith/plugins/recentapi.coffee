@@ -29,7 +29,7 @@ newFile = (files, uri, content) ->
   null
 
 printableFile = (file, opts={}) ->
-  opts.baseHttp ?= "http://learn.koding.com/"
+  opts.baseHttp ?= "https://learn.koding.com/"
   file =
     title:        file.title
     url:          [opts.baseHttp, file.filename].join ""
