@@ -17,3 +17,7 @@ Double click the dividing column line between the file tree and the IDE/Terminal
 the file tree panel! To expand, click the folder icon. (see image below for an example).
 
 ![Sidebar Collapse](/faq/sidebar-collapse/sidebar.gif)
+
+> type:tip
+> The sidebar and filetree can only be collapsed when you are in the VM section of Koding.
+> They cannot be collapsed when in Channels or Messages.
