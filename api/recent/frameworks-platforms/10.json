@@ -1,61 +1,61 @@
 [
   {
     "title": "Apache Tomcat on Koding",
-    "url": "http://learn.koding.com/guides/apache-tomcat-on-koding/index.html",
+    "url": "https://learn.koding.com/guides/apache-tomcat-on-koding/index.html",
     "author": "Vinay Jain",
     "date": "2015-03-19T00:00:00.000Z"
   },
   {
     "title": "Setting up a MeteorJS webserver",
-    "url": "http://learn.koding.com/guides/setting-meteorjs-webserver/index.html",
+    "url": "https://learn.koding.com/guides/setting-meteorjs-webserver/index.html",
     "author": "Team Koding",
     "date": "2015-02-26T00:00:00.000Z"
   },
   {
     "title": "Setting up a Django webserver",
-    "url": "http://learn.koding.com/guides/setting-django-webserver/index.html",
+    "url": "https://learn.koding.com/guides/setting-django-webserver/index.html",
     "author": "Team Koding",
     "date": "2015-02-26T00:00:00.000Z"
   },
   {
     "title": "Setting up a Tornado webserver",
-    "url": "http://learn.koding.com/guides/setting-tornado-webserver/index.html",
+    "url": "https://learn.koding.com/guides/setting-tornado-webserver/index.html",
     "author": "Team Koding",
     "date": "2015-02-26T00:00:00.000Z"
   },
   {
     "title": "Setting up a Symfony2 webserver",
-    "url": "http://learn.koding.com/guides/setting-symfony2-webserver/index.html",
+    "url": "https://learn.koding.com/guides/setting-symfony2-webserver/index.html",
     "author": "Team Koding",
     "date": "2015-02-26T00:00:00.000Z"
   },
   {
     "title": "Setting up a Rails webserver",
-    "url": "http://learn.koding.com/guides/setting-rails-webserver/index.html",
+    "url": "https://learn.koding.com/guides/setting-rails-webserver/index.html",
     "author": "Team Koding",
     "date": "2015-02-26T00:00:00.000Z"
   },
   {
     "title": "Setting up a Laravel webserver with Artisan",
-    "url": "http://learn.koding.com/guides/setting-laravel-artisan-webserver/index.html",
+    "url": "https://learn.koding.com/guides/setting-laravel-artisan-webserver/index.html",
     "author": "Team Koding",
     "date": "2015-02-26T00:00:00.000Z"
   },
   {
     "title": "Cassandra installation for beginners",
-    "url": "http://learn.koding.com/guides/cassandra-installation-beginners/index.html",
+    "url": "https://learn.koding.com/guides/cassandra-installation-beginners/index.html",
     "author": "Team Koding",
     "date": "2015-02-10T00:00:00.000Z"
   },
   {
     "title": "How to install Composer",
-    "url": "http://learn.koding.com/guides/installing-composer/index.html",
+    "url": "https://learn.koding.com/guides/installing-composer/index.html",
     "author": "Team Koding",
     "date": "2015-01-27T00:00:00.000Z"
   },
   {
     "title": "How to install GruntJS",
-    "url": "http://learn.koding.com/guides/installing-gruntjs/index.html",
+    "url": "https://learn.koding.com/guides/installing-gruntjs/index.html",
     "author": "Team Koding",
     "date": "2015-01-20T00:00:00.000Z"
   }

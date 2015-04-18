@@ -1,19 +1,19 @@
 [
   {
     "title": "Hello World on Koding: Ruby",
-    "url": "http://learn.koding.com/guides/hello-world/ruby/index.html",
+    "url": "https://learn.koding.com/guides/hello-world/ruby/index.html",
     "author": "Team Koding",
     "date": "2015-03-04T00:00:00.000Z"
   },
   {
     "title": "Setting up a Rails webserver",
-    "url": "http://learn.koding.com/guides/setting-rails-webserver/index.html",
+    "url": "https://learn.koding.com/guides/setting-rails-webserver/index.html",
     "author": "Team Koding",
     "date": "2015-02-26T00:00:00.000Z"
   },
   {
     "title": "Getting Started with Ruby",
-    "url": "http://learn.koding.com/guides/getting-started-ruby/index.html",
+    "url": "https://learn.koding.com/guides/getting-started-ruby/index.html",
     "author": "Team Koding",
     "date": "2015-02-18T00:00:00.000Z"
   }

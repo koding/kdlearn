@@ -1,61 +1,61 @@
 [
   {
     "title": "VNC Startup Guide",
-    "url": "http://learn.koding.com/guides/vnc-startup-guide/index.html",
+    "url": "https://learn.koding.com/guides/vnc-startup-guide/index.html",
     "author": "Kaitlyn Schmidt",
     "date": "2015-03-01T00:00:00.000Z"
   },
   {
     "title": "Setup Cockpit on Koding",
-    "url": "http://learn.koding.com/guides/setting-up-cockpit/index.html",
+    "url": "https://learn.koding.com/guides/setting-up-cockpit/index.html",
     "author": "Team Koding",
     "date": "2015-02-18T00:00:00.000Z"
   },
   {
     "title": "Elasticsearch install for beginners",
-    "url": "http://learn.koding.com/guides/elasticsearch-install-for-beginners/index.html",
+    "url": "https://learn.koding.com/guides/elasticsearch-install-for-beginners/index.html",
     "author": "Team Koding",
     "date": "2015-02-06T00:00:00.000Z"
   },
   {
     "title": "Setting up FTP with vsftpd",
-    "url": "http://learn.koding.com/guides/setting-up-ftp-with-vsftpd/index.html",
+    "url": "https://learn.koding.com/guides/setting-up-ftp-with-vsftpd/index.html",
     "author": "Team Koding",
     "date": "2015-02-05T00:00:00.000Z"
   },
   {
     "title": "Install phpPgAdmin",
-    "url": "http://learn.koding.com/guides/install-phppgadmin/index.html",
+    "url": "https://learn.koding.com/guides/install-phppgadmin/index.html",
     "author": "Team Koding",
     "date": "2015-01-19T00:00:00.000Z"
   },
   {
     "title": "Using Dropbox with Koding",
-    "url": "http://learn.koding.com/guides/dropbox-for-file-sync/index.html",
+    "url": "https://learn.koding.com/guides/dropbox-for-file-sync/index.html",
     "author": "Team Koding",
     "date": "2015-01-15T00:00:00.000Z"
   },
   {
     "title": "Using Github with Koding",
-    "url": "http://learn.koding.com/guides/using-github/index.html",
+    "url": "https://learn.koding.com/guides/using-github/index.html",
     "author": "Team Koding",
     "date": "2014-12-04T00:00:00.000Z"
   },
   {
     "title": "Install phpMyAdmin",
-    "url": "http://learn.koding.com/guides/install-phpmyadmin/index.html",
+    "url": "https://learn.koding.com/guides/install-phpmyadmin/index.html",
     "author": "Team Koding",
     "date": "2014-10-11T00:00:00.000Z"
   },
   {
     "title": "Installing Linux Dash",
-    "url": "http://learn.koding.com/guides/linux-dash/index.html",
+    "url": "https://learn.koding.com/guides/linux-dash/index.html",
     "author": "Team Koding",
     "date": "2014-08-15T00:00:00.000Z"
   },
   {
     "title": "What is Bitbucket?",
-    "url": "http://learn.koding.com/guides/using-bitbucket-on-koding/index.html",
+    "url": "https://learn.koding.com/guides/using-bitbucket-on-koding/index.html",
     "author": "Team Koding",
     "date": "2014-07-16T00:00:00.000Z"
   }

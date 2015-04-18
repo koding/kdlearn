@@ -1,55 +1,55 @@
 [
   {
     "title": "Installing MySQL",
-    "url": "http://learn.koding.com/guides/installing-mysql/index.html",
+    "url": "https://learn.koding.com/guides/installing-mysql/index.html",
     "author": "Team Koding",
     "date": "2014-07-30T00:00:00.000Z"
   },
   {
     "title": "Install Rockmongo",
-    "url": "http://learn.koding.com/guides/install-rockmongo/index.html",
+    "url": "https://learn.koding.com/guides/install-rockmongo/index.html",
     "author": "Thien",
     "date": "2015-01-2"
   },
   {
     "title": "How to install Memcache",
-    "url": "http://learn.koding.com/guides/install-memcache/index.html",
+    "url": "https://learn.koding.com/guides/install-memcache/index.html",
     "author": "Team Koding",
     "date": "2015-01-20T00:00:00.000Z"
   },
   {
     "title": "How to install Redis",
-    "url": "http://learn.koding.com/guides/install-redis/index.html",
+    "url": "https://learn.koding.com/guides/install-redis/index.html",
     "author": "Team Koding",
     "date": "2015-01-20T00:00:00.000Z"
   },
   {
     "title": "CouchDB installation for beginners",
-    "url": "http://learn.koding.com/guides/couchdb-installation-for-beginners/index.html",
+    "url": "https://learn.koding.com/guides/couchdb-installation-for-beginners/index.html",
     "author": "Team Koding",
     "date": "2015-01-20T00:00:00.000Z"
   },
   {
     "title": "Using mySQL",
-    "url": "http://learn.koding.com/guides/using-mysql/index.html",
+    "url": "https://learn.koding.com/guides/using-mysql/index.html",
     "author": "Alvin Wan",
     "date": "2015-01-08T00:00:00.000Z"
   },
   {
     "title": "Installing PostgreSQL",
-    "url": "http://learn.koding.com/guides/installing-postgresql/index.html",
+    "url": "https://learn.koding.com/guides/installing-postgresql/index.html",
     "author": "Team Koding",
     "date": "2014-10-22T00:00:00.000Z"
   },
   {
     "title": "Installing MongoDB",
-    "url": "http://learn.koding.com/guides/install-mongodb/index.html",
+    "url": "https://learn.koding.com/guides/install-mongodb/index.html",
     "author": "Team Koding",
     "date": "2014-10-17T00:00:00.000Z"
   },
   {
     "title": "Using PostgreSQL",
-    "url": "http://learn.koding.com/guides/postgresql-on-koding/index.html",
+    "url": "https://learn.koding.com/guides/postgresql-on-koding/index.html",
     "author": "Federico Ponzi",
     "date": "2014-04-07T00:00:00.000Z"
   }

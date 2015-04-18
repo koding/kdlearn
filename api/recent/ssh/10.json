@@ -1,25 +1,25 @@
 [
   {
     "title": "Connect with SSH from Windows",
-    "url": "http://learn.koding.com/guides/connect-with-ssh-windows/index.html",
+    "url": "https://learn.koding.com/guides/connect-with-ssh-windows/index.html",
     "author": "Team Koding",
     "date": "2015-03-11T00:00:00.000Z"
   },
   {
     "title": "Using SSH on a Chromebook to connect to your Koding VM",
-    "url": "http://learn.koding.com/guides/ssh-chromebook/index.html",
+    "url": "https://learn.koding.com/guides/ssh-chromebook/index.html",
     "author": "Team Koding",
     "date": "2014-12-26T00:00:00.000Z"
   },
   {
     "title": "Connect with SSH, from Unix",
-    "url": "http://learn.koding.com/guides/ssh-into-your-vm/index.html",
+    "url": "https://learn.koding.com/guides/ssh-into-your-vm/index.html",
     "author": "Team Koding",
     "date": "2014-09-15T00:00:00.000Z"
   },
   {
     "title": "How to setup an SSH Tunnel in Unix",
-    "url": "http://learn.koding.com/guides/ssh-tunneling/index.html",
+    "url": "https://learn.koding.com/guides/ssh-tunneling/index.html",
     "author": "Team Koding",
     "date": "2014-08-9"
   }

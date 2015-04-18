@@ -1,19 +1,19 @@
 [
   {
     "title": "Using mySQL",
-    "url": "http://learn.koding.com/guides/using-mysql/index.html",
+    "url": "https://learn.koding.com/guides/using-mysql/index.html",
     "author": "Alvin Wan",
     "date": "2015-01-08T00:00:00.000Z"
   },
   {
     "title": "Install phpMyAdmin",
-    "url": "http://learn.koding.com/guides/install-phpmyadmin/index.html",
+    "url": "https://learn.koding.com/guides/install-phpmyadmin/index.html",
     "author": "Team Koding",
     "date": "2014-10-11T00:00:00.000Z"
   },
   {
     "title": "Installing MySQL",
-    "url": "http://learn.koding.com/guides/installing-mysql/index.html",
+    "url": "https://learn.koding.com/guides/installing-mysql/index.html",
     "author": "Team Koding",
     "date": "2014-07-30T00:00:00.000Z"
   }
