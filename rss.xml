@@ -482,6 +482,46 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
+    <title>Hello World on Koding: Ruby</title>
+    <link>//learn.koding.com/guides/hello-world/ruby</link>
+    <pubDate>"2015-03-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/ruby</guid>
+    <author>Team Koding</author>
+    <description>  Introduction Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, and Lisp. It supports multiple programming paradigms, including functional, object-oriented, and imperative. It also has a dynamic type system and automatic memory management.
+  Implementation The first thing you need to do is to create a file called helloworld.rb in your Koding VM and paste the bellow snippet into it.
+#!/usr/bin/ruby
+
+puts 'Hello, world!'
+To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
+ruby helloworld.rb
+  Explanation #!/usr/bin/ruby
+The shebang line is read by the program loader to determine what program to use to run the script. This line cannot be preceded by any blank lines or any leading spaces.
+puts 'Hello, world!'
+The above line is pretty self explanatory. It will put something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
+And that's it!
+You just wrote and ran your first Hello World in Ruby.
+</description>
+  </item>
+  
+  <item>
+    <title>Hello World on Koding: Python</title>
+    <link>//learn.koding.com/guides/hello-world/python</link>
+    <pubDate>"2015-03-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/python</guid>
+    <author>Team Koding</author>
+    <description>  Introduction Python is a widely used general-purpose, high-level programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java. The language provides constructs intended to enable clear programs on both a small and large scale.
+  Implementation The first thing you need to do is to create a file called helloworld.py in your Koding VM and paste the bellow snippet into it.
+print &amp;quot;Hello World!&amp;quot;
+To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
+python helloworld.py
+  Explanation print &amp;quot;Hello World!&amp;quot;
+Since Python emphasizes code readability, the above line is pretty self explanatory. It will print out something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
+And that's it!
+You just wrote and ran your first Hello World in Python.
+</description>
+  </item>
+  
+  <item>
     <title>Hello World on Koding: Go</title>
     <link>//learn.koding.com/guides/hello-world/go</link>
     <pubDate>"2015-03-04T00:00:00.000Z"</pubDate>
@@ -519,42 +559,66 @@ You just wrote and ran your first Hello World in Go.
   </item>
   
   <item>
-    <title>Hello World on Koding: Python</title>
-    <link>//learn.koding.com/guides/hello-world/python</link>
-    <pubDate>"2015-03-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/python</guid>
+    <title>Hello World on Koding: C</title>
+    <link>//learn.koding.com/guides/hello-world/c</link>
+    <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/c</guid>
     <author>Team Koding</author>
-    <description>  Introduction Python is a widely used general-purpose, high-level programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java. The language provides constructs intended to enable clear programs on both a small and large scale.
-  Implementation The first thing you need to do is to create a file called helloworld.py in your Koding VM and paste the bellow snippet into it.
-print &amp;quot;Hello World!&amp;quot;
-To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
-python helloworld.py
-  Explanation print &amp;quot;Hello World!&amp;quot;
-Since Python emphasizes code readability, the above line is pretty self explanatory. It will print out something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
+    <description>  Introduction C is a general-purpose, imperative computer programming language. As a language it supports structured programming, lexical variable scope and recursion, also having a static type system that prevents unintended operations is a major advantage.
+  Implementation The first thing you need to do is to create a file called helloworld.c in your Koding VM and paste the bellow snippet into it.
+#include&amp;lt;stdio.h&amp;gt;
+
+int main() {
+    printf(“Hello World”);
+    return 0;
+}
+To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
+gcc -o hello helloworld.c
+./hello
+  Explanation #include&amp;lt;stdio.h&amp;gt;
+This line will include a file called stdio.h that represents the standard Input/Output header file. This file allow you to use certain commands for input or output which you can use in you program.
+int main()
+The int is what is called the return value (in this case of the type integer). Every C program must have a main() function since this is the starting point.
+{}
+The two curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
+group or function.
+printf(“Hello World”);
+The printf is used for printing things on the screen, in this case the words: Hello World. As you can see the data that is to be printed is put inside round brackets. The words Hello World are inside inverted commas, because they are what is called a string (a single letter is called a character and a series of characters is called a string). Strings must always be put between inverted commas. After the last round bracket there must be a semi-colon. The semi-colon shows that it is the end of the command.
+return 0;
+When you wrote the first line int main(),  you declared that main must return an integer int main(). With return 0; you can return the value null to the operating system. When you return with a zero you tell the operating system that there were no errors while running the program.
 And that's it!
-You just wrote and ran your first Hello World in Python.
+You just wrote and ran your first Hello World in C.
 </description>
   </item>
   
   <item>
-    <title>Hello World on Koding: Ruby</title>
-    <link>//learn.koding.com/guides/hello-world/ruby</link>
-    <pubDate>"2015-03-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/ruby</guid>
+    <title>Hello World on Koding: C++</title>
+    <link>//learn.koding.com/guides/hello-world/c++</link>
+    <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/c++</guid>
     <author>Team Koding</author>
-    <description>  Introduction Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, and Lisp. It supports multiple programming paradigms, including functional, object-oriented, and imperative. It also has a dynamic type system and automatic memory management.
-  Implementation The first thing you need to do is to create a file called helloworld.rb in your Koding VM and paste the bellow snippet into it.
-#!/usr/bin/ruby
+    <description>  Introduction C++ is a general-purpose programming language. It has imperative, object-oriented and generic programming features, while also providing the facilities for low-level memory manipulation.
+  Implementation The first thing you need to do is to create a file called helloworld.cpp in your Koding VM and paste the bellow snippet into it.
+#include &amp;lt;iostream&amp;gt;
 
-puts 'Hello, world!'
-To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
-ruby helloworld.rb
-  Explanation #!/usr/bin/ruby
-The shebang line is read by the program loader to determine what program to use to run the script. This line cannot be preceded by any blank lines or any leading spaces.
-puts 'Hello, world!'
-The above line is pretty self explanatory. It will put something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
+int main() {
+    std::cout &amp;lt;&amp;lt; &amp;quot;Hello World!&amp;quot;;
+}
+To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
+g++ -o hellopp helloworld.cpp
+./hellopp
+  Explanation #include &amp;lt;iostream&amp;gt;
+Lines beginning with the hash sign # are commands read and interpreted by the preprocessor. They are lines interpreted before the compilation of the program itself begins. In this case, the command #include &amp;lt;iostream&amp;gt;, instructs the preprocessor to include a section of standard C++ code, known as header iostream, that allows to perform standard input and output operations, such as writing the output of this program (Hello World) on the screen.
+int main()
+The int is what is called the return value (in this case of the type integer). Every C++ program must have a main() function since this is the starting point.
+{}
+The two curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
+group or function.
+std::cout &amp;lt;&amp;lt; &amp;quot;Hello World!&amp;quot;;
+This line is a C++ statement. Statements are executed in the same order that they appear within a function's body.
+Your statement has three parts: first std::cout, which identifies the standard character output device; Second, the insertion operator &amp;lt;&amp;lt;, which indicates that what follows is inserted into std::cout. Finally, a sentence within quotes &amp;quot;Hello world!&amp;quot;, is the content inserted into the standard output. The semi-colon and the end shows that it is the end of the command.
 And that's it!
-You just wrote and ran your first Hello World in Ruby.
+You just wrote and ran your first Hello World in C++.
 </description>
   </item>
   
@@ -597,47 +661,33 @@ If you'd like to continue dabbling in Java, we recommend taking a look at this t
   </item>
   
   <item>
-    <title>Hello World on Koding</title>
-    <link>//learn.koding.com/guides/hello-world</link>
+    <title>Hello World on Koding: Perl</title>
+    <link>//learn.koding.com/guides/hello-world/perl</link>
     <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/perl</guid>
     <author>Team Koding</author>
-    <description>In this Hello World series we'll go over some of the most popular programming languages and learn how to implement a simple Hello World script in each one of them.
-By the end of the series you should be familiar with the most popular languages and you'll be able to continue with the one you like best, on Koding of course!
-As a challenge after you're done with the entire series have a go at this quiz and test your knowledge.
-</description>
-  </item>
-  
-  <item>
-    <title>Hello World on Koding: C</title>
-    <link>//learn.koding.com/guides/hello-world/c</link>
-    <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/c</guid>
-    <author>Team Koding</author>
-    <description>  Introduction C is a general-purpose, imperative computer programming language. As a language it supports structured programming, lexical variable scope and recursion, also having a static type system that prevents unintended operations is a major advantage.
-  Implementation The first thing you need to do is to create a file called helloworld.c in your Koding VM and paste the bellow snippet into it.
-#include&amp;lt;stdio.h&amp;gt;
+    <description>  Introduction Perl is a family of high-level, general-purpose, interpreted, dynamic programming languages. The Perl languages borrow features from other programming languages including C, shell scripting (sh) etc. They provide powerful text processing facilities without the arbitrary data-length limits of many contemporary Unix commandline tools, facilitating easy manipulation of text files.
+  Implementation The first thing you need to do is to create a file called helloworld in your Koding VM and paste the bellow snippet into it.
+#!/usr/bin/perl
 
-int main() {
-    printf(“Hello World”);
-    return 0;
-}
+use strict;
+use warnings;
+
+print &amp;quot;Hello, World!&amp;quot;;
 To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
-gcc -o hello helloworld.c
-./hello
-  Explanation #include&amp;lt;stdio.h&amp;gt;
-This line will include a file called stdio.h that represents the standard Input/Output header file. This file allow you to use certain commands for input or output which you can use in you program.
-int main()
-The int is what is called the return value (in this case of the type integer). Every C program must have a main() function since this is the starting point.
-{}
-The two curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
-group or function.
-printf(“Hello World”);
-The printf is used for printing things on the screen, in this case the words: Hello World. As you can see the data that is to be printed is put inside round brackets. The words Hello World are inside inverted commas, because they are what is called a string (a single letter is called a character and a series of characters is called a string). Strings must always be put between inverted commas. After the last round bracket there must be a semi-colon. The semi-colon shows that it is the end of the command.
-return 0;
-When you wrote the first line int main(),  you declared that main must return an integer int main(). With return 0; you can return the value null to the operating system. When you return with a zero you tell the operating system that there were no errors while running the program.
+first ensure the file is given executable permissions:
+chmod u+x helloworld
+and then run this command
+perl helloworld
+  Explanation #!/usr/bin/perl
+Every Perl program should start with this as its very first line, although this may vary from system to system. This line tells the machine what to do with the file when it is executed.
+use strict;
+use warnings;
+These two statements turn on the 'strict' and 'warnings' pragmas. These are strongly encouraged for all Perl programs since they tell the Perl interpreter to check for programming errors like undeclared variables.
+print &amp;quot;Hello, World!&amp;quot;;
+The print function outputs some data. In the above case it prints out the string Hello world, and as always the statement ends with a semicolon.
 And that's it!
-You just wrote and ran your first Hello World in C.
+You just wrote and ran your first Hello World in Perl.
 </description>
   </item>
   
@@ -676,64 +726,14 @@ You just wrote and ran your first Hello World in PHP.
   </item>
   
   <item>
-    <title>Hello World on Koding: C++</title>
-    <link>//learn.koding.com/guides/hello-world/c++</link>
+    <title>Hello World on Koding</title>
+    <link>//learn.koding.com/guides/hello-world</link>
     <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/c++</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world</guid>
     <author>Team Koding</author>
-    <description>  Introduction C++ is a general-purpose programming language. It has imperative, object-oriented and generic programming features, while also providing the facilities for low-level memory manipulation.
-  Implementation The first thing you need to do is to create a file called helloworld.cpp in your Koding VM and paste the bellow snippet into it.
-#include &amp;lt;iostream&amp;gt;
-
-int main() {
-    std::cout &amp;lt;&amp;lt; &amp;quot;Hello World!&amp;quot;;
-}
-To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
-g++ -o hellopp helloworld.cpp
-./hellopp
-  Explanation #include &amp;lt;iostream&amp;gt;
-Lines beginning with the hash sign # are commands read and interpreted by the preprocessor. They are lines interpreted before the compilation of the program itself begins. In this case, the command #include &amp;lt;iostream&amp;gt;, instructs the preprocessor to include a section of standard C++ code, known as header iostream, that allows to perform standard input and output operations, such as writing the output of this program (Hello World) on the screen.
-int main()
-The int is what is called the return value (in this case of the type integer). Every C++ program must have a main() function since this is the starting point.
-{}
-The two curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
-group or function.
-std::cout &amp;lt;&amp;lt; &amp;quot;Hello World!&amp;quot;;
-This line is a C++ statement. Statements are executed in the same order that they appear within a function's body.
-Your statement has three parts: first std::cout, which identifies the standard character output device; Second, the insertion operator &amp;lt;&amp;lt;, which indicates that what follows is inserted into std::cout. Finally, a sentence within quotes &amp;quot;Hello world!&amp;quot;, is the content inserted into the standard output. The semi-colon and the end shows that it is the end of the command.
-And that's it!
-You just wrote and ran your first Hello World in C++.
-</description>
-  </item>
-  
-  <item>
-    <title>Hello World on Koding: Perl</title>
-    <link>//learn.koding.com/guides/hello-world/perl</link>
-    <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/perl</guid>
-    <author>Team Koding</author>
-    <description>  Introduction Perl is a family of high-level, general-purpose, interpreted, dynamic programming languages. The Perl languages borrow features from other programming languages including C, shell scripting (sh) etc. They provide powerful text processing facilities without the arbitrary data-length limits of many contemporary Unix commandline tools, facilitating easy manipulation of text files.
-  Implementation The first thing you need to do is to create a file called helloworld in your Koding VM and paste the bellow snippet into it.
-#!/usr/bin/perl
-
-use strict;
-use warnings;
-
-print &amp;quot;Hello, World!&amp;quot;;
-To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
-first ensure the file is given executable permissions:
-chmod u+x helloworld
-and then run this command
-perl helloworld
-  Explanation #!/usr/bin/perl
-Every Perl program should start with this as its very first line, although this may vary from system to system. This line tells the machine what to do with the file when it is executed.
-use strict;
-use warnings;
-These two statements turn on the 'strict' and 'warnings' pragmas. These are strongly encouraged for all Perl programs since they tell the Perl interpreter to check for programming errors like undeclared variables.
-print &amp;quot;Hello, World!&amp;quot;;
-The print function outputs some data. In the above case it prints out the string Hello world, and as always the statement ends with a semicolon.
-And that's it!
-You just wrote and ran your first Hello World in Perl.
+    <description>In this Hello World series we'll go over some of the most popular programming languages and learn how to implement a simple Hello World script in each one of them.
+By the end of the series you should be familiar with the most popular languages and you'll be able to continue with the one you like best, on Koding of course!
+As a challenge after you're done with the entire series have a go at this quiz and test your knowledge.
 </description>
   </item>
   
@@ -869,36 +869,6 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Setting up a MeteorJS webserver</title>
-    <link>//learn.koding.com/guides/setting-meteorjs-webserver</link>
-    <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-meteorjs-webserver</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install MeteorJS using just one command:
-kpm install meteor
-
-  Getting started Before you can start the MeteorJS install process, you'll need to update all of the apt-get packages:
-sudo apt-get update
-Then make sure you have curl installed on your VM. You can install it using the bellow command:
-sudo apt-get install curl
-  Installing You can install MeteorJS using the bellow command:
-curl https://install.meteor.com/ | sh
-  Usage Creating a new MeteorJS project is really easy. It just takes one command and you're good to go:
-meteor create goodbyelocalhost
-You can run that project like so:
-cd goodbyelocalhost
-meteor
-You will now be able to access the MeteorJS webserver by following a similar URL:
-http://KODING_USERNAME.koding.io:3000
-Find out more about your VM hostname here.
-MeteorJS should listen to 0.0.0.0:3000 by default. If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:3000. You can check this, using the netstat command in another terminal window and the bellow command:
-sudo netstat -tnlp
-And that's it!
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
     <title>Setting up a Symfony2 webserver</title>
     <link>//learn.koding.com/guides/setting-symfony2-webserver</link>
     <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
@@ -999,32 +969,29 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Setting up a Laravel webserver with Artisan</title>
-    <link>//learn.koding.com/guides/setting-laravel-artisan-webserver</link>
+    <title>Setting up a MeteorJS webserver</title>
+    <link>//learn.koding.com/guides/setting-meteorjs-webserver</link>
     <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-laravel-artisan-webserver</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-meteorjs-webserver</guid>
     <author>Team Koding</author>
-    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Laravel using just one command:
-kpm install laravel
+    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install MeteorJS using just one command:
+kpm install meteor
 
-  Getting started Before you can start the Laravel install process, you'll need to update all of the apt-get packages:
+  Getting started Before you can start the MeteorJS install process, you'll need to update all of the apt-get packages:
 sudo apt-get update
 Then make sure you have curl installed on your VM. You can install it using the bellow command:
 sudo apt-get install curl
-  Installing You can install Laravel using the bellow command:
-sudo curl -o /usr/local/bin/laravel 'http://laravel.com/laravel.phar'
-After that process is over you need to set execute permission on the Laravel executable.
-sudo chmod +x /usr/local/bin/laravel
-  Usage You can now create a new Laravel project.
-laravel new goodbyelocalhost
-After that you should navigate into the newly created directory:
+  Installing You can install MeteorJS using the bellow command:
+curl https://install.meteor.com/ | sh
+  Usage Creating a new MeteorJS project is really easy. It just takes one command and you're good to go:
+meteor create goodbyelocalhost
+You can run that project like so:
 cd goodbyelocalhost
-and you should have the ability to start the webserver using the bellow command:
-php artisan serve --host=0.0.0.0 --port=8080
-You will now be able to access the Laravel webserver by following a similar URL:
-http://KODING_USERNAME.koding.io:8080
+meteor
+You will now be able to access the MeteorJS webserver by following a similar URL:
+http://KODING_USERNAME.koding.io:3000
 Find out more about your VM hostname here.
-If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:8080. You can check this, using the netstat command in another terminal window and the bellow command:
+MeteorJS should listen to 0.0.0.0:3000 by default. If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:3000. You can check this, using the netstat command in another terminal window and the bellow command:
 sudo netstat -tnlp
 And that's it!
 If you encounter any issues or have any questions please drop an email here.
@@ -1055,6 +1022,39 @@ You will now be able to access the Django webserver by following a similar URL:
 http://KODING_USERNAME.koding.io:8000
 Find out more about your VM hostname here.
 If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:8000. You can check this, using the netstat command in another terminal window and the bellow command:
+sudo netstat -tnlp
+And that's it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>Setting up a Laravel webserver with Artisan</title>
+    <link>//learn.koding.com/guides/setting-laravel-artisan-webserver</link>
+    <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-laravel-artisan-webserver</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Laravel using just one command:
+kpm install laravel
+
+  Getting started Before you can start the Laravel install process, you'll need to update all of the apt-get packages:
+sudo apt-get update
+Then make sure you have curl installed on your VM. You can install it using the bellow command:
+sudo apt-get install curl
+  Installing You can install Laravel using the bellow command:
+sudo curl -o /usr/local/bin/laravel 'http://laravel.com/laravel.phar'
+After that process is over you need to set execute permission on the Laravel executable.
+sudo chmod +x /usr/local/bin/laravel
+  Usage You can now create a new Laravel project.
+laravel new goodbyelocalhost
+After that you should navigate into the newly created directory:
+cd goodbyelocalhost
+and you should have the ability to start the webserver using the bellow command:
+php artisan serve --host=0.0.0.0 --port=8080
+You will now be able to access the Laravel webserver by following a similar URL:
+http://KODING_USERNAME.koding.io:8080
+Find out more about your VM hostname here.
+If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:8080. You can check this, using the netstat command in another terminal window and the bellow command:
 sudo netstat -tnlp
 And that's it!
 If you encounter any issues or have any questions please drop an email here.
@@ -1673,6 +1673,35 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
+    <title>How to install GruntJS</title>
+    <link>//learn.koding.com/guides/installing-gruntjs</link>
+    <pubDate>"2015-01-20T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/installing-gruntjs</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install GruntJS using just one command:
+kpm install grunt
+
+  Getting started Before you can start the GruntJS install process, you'll need to update all of the apt-get packages:
+sudo apt-get update
+By default every Koding VM comes preinstalled with NodeJS and npm but if it is missing, from your VM, have a look at this guide to learn how to install it.
+  Installing To install GruntJS you'll need to run the following command:
+sudo npm install -g grunt-cli
+This will install GruntJS globally on your VM.
+You can verify if GruntJS has installed correctly using the following command:
+grunt --version
+  Usage You can use GruntJS in your project by inputting some basic commands.
+Move into your project:
+cd ~/your_project
+Generate an empty package file:
+echo &amp;quot;{}&amp;quot; &amp;gt; package.json
+Finally, install GruntJS into that project using the following command:
+npm install grunt --save-dev
+And that's it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
     <title>How to install Memcache</title>
     <link>//learn.koding.com/guides/install-memcache</link>
     <pubDate>"2015-01-20T00:00:00.000Z"</pubDate>
@@ -1735,35 +1764,6 @@ and it should output something like this:
 curl -X PUT localhost:5984/new_database
 The output should look like this:
 {&amp;quot;ok&amp;quot;:true}
-And that's it!
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
-    <title>How to install GruntJS</title>
-    <link>//learn.koding.com/guides/installing-gruntjs</link>
-    <pubDate>"2015-01-20T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/installing-gruntjs</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install GruntJS using just one command:
-kpm install grunt
-
-  Getting started Before you can start the GruntJS install process, you'll need to update all of the apt-get packages:
-sudo apt-get update
-By default every Koding VM comes preinstalled with NodeJS and npm but if it is missing, from your VM, have a look at this guide to learn how to install it.
-  Installing To install GruntJS you'll need to run the following command:
-sudo npm install -g grunt-cli
-This will install GruntJS globally on your VM.
-You can verify if GruntJS has installed correctly using the following command:
-grunt --version
-  Usage You can use GruntJS in your project by inputting some basic commands.
-Move into your project:
-cd ~/your_project
-Generate an empty package file:
-echo &amp;quot;{}&amp;quot; &amp;gt; package.json
-Finally, install GruntJS into that project using the following command:
-npm install grunt --save-dev
 And that's it!
 If you encounter any issues or have any questions please drop an email here.
 </description>
@@ -1966,52 +1966,6 @@ From here, you'll be poised for yet more installations. See their website for mo
   </item>
   
   <item>
-    <title>Using mySQL</title>
-    <link>//learn.koding.com/guides/using-mysql</link>
-    <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/using-mysql</guid>
-    <author>Alvin Wan</author>
-    <description>mySQL offers a popular implementation of the SQL language. This guide will get you started on using mySQL on Koding.
-First make sure you have mySQL installed. Have a look at this guide to learn how to install it.
-Are you using PostgreSQL? Have a look at this guide.
-  Starting mySQL Let's start the mySQL server using the following command:
-sudo service mysql start
-  Getting Started First, you'll need to login using th root user that was configured during the mySQL installation. Open your Terminal and type in the following:
-mysql -u root -p
-Enter your password, and hit enter. You're now logged in.
-  Creating a User You'll now create a new account for our code, with the username &amp;quot;bob&amp;quot; and password &amp;quot;pass&amp;quot;.
-create user 'bob'@'localhost' identified by 'pass';
-If you see an arrow
--&amp;gt;
-that means you forgot the end semicolon &amp;quot;;&amp;quot;. Enter that and hit enter.
-You can exit the server by using Ctrl+D and then login again as Bob:
-mysql -u bob -p;
-After entering the password, you'll be readmitted into the mySQL server. To continue with this guide, you'll need to be logged in as root.
-  Creating a Database Each mySQL server includes a variety of databases. The initial installation comes with several. You can view them by typing:
-show databases;
-You should see a short list of databases:
-+--------------------+
-| Database           |
-+--------------------+
-| information_schema |
-| mysql              |
-| performance_schema |
-+--------------------+
-3 rows in set (0.00 sec)
-Let's create your first database:
-create database test;
-  Linking Users and Databases You'll need to grant privileges to the user, so that &amp;quot;Bob&amp;quot; can access the database &amp;quot;test&amp;quot; and modify it accordingly.
-To grant &amp;quot;Bob&amp;quot; all privileges on all tables in database &amp;quot;test&amp;quot;:
-grant all on test.* to 'bob'@'localhost';
-  Using the Database Exit out of root by using Ctrl+D, and login as &amp;quot;Bob&amp;quot;. To connect to a database, prefix the database name with &amp;quot;use&amp;quot;.
-use test;
-Once here, you’ll be able to execute mySQL commands. 
-And that's it!
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
     <title>Making your VM secure using Ubuntu UFW (Uncomplicated Firewall)</title>
     <link>//learn.koding.com/guides/enable-ufw</link>
     <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
@@ -2090,6 +2044,52 @@ When you hit &amp;quot;y&amp;quot; ufw will backup all existing rules before doi
   Help, I locked myself out of my VM If for some reason you enabled your firewall and did not take the steps needed to open up the ports needed for Koding to work, then
 your only recourse is to reinit your VM. That process is described in this guide. If you 
 encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>Using mySQL</title>
+    <link>//learn.koding.com/guides/using-mysql</link>
+    <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/using-mysql</guid>
+    <author>Alvin Wan</author>
+    <description>mySQL offers a popular implementation of the SQL language. This guide will get you started on using mySQL on Koding.
+First make sure you have mySQL installed. Have a look at this guide to learn how to install it.
+Are you using PostgreSQL? Have a look at this guide.
+  Starting mySQL Let's start the mySQL server using the following command:
+sudo service mysql start
+  Getting Started First, you'll need to login using th root user that was configured during the mySQL installation. Open your Terminal and type in the following:
+mysql -u root -p
+Enter your password, and hit enter. You're now logged in.
+  Creating a User You'll now create a new account for our code, with the username &amp;quot;bob&amp;quot; and password &amp;quot;pass&amp;quot;.
+create user 'bob'@'localhost' identified by 'pass';
+If you see an arrow
+-&amp;gt;
+that means you forgot the end semicolon &amp;quot;;&amp;quot;. Enter that and hit enter.
+You can exit the server by using Ctrl+D and then login again as Bob:
+mysql -u bob -p;
+After entering the password, you'll be readmitted into the mySQL server. To continue with this guide, you'll need to be logged in as root.
+  Creating a Database Each mySQL server includes a variety of databases. The initial installation comes with several. You can view them by typing:
+show databases;
+You should see a short list of databases:
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
++--------------------+
+3 rows in set (0.00 sec)
+Let's create your first database:
+create database test;
+  Linking Users and Databases You'll need to grant privileges to the user, so that &amp;quot;Bob&amp;quot; can access the database &amp;quot;test&amp;quot; and modify it accordingly.
+To grant &amp;quot;Bob&amp;quot; all privileges on all tables in database &amp;quot;test&amp;quot;:
+grant all on test.* to 'bob'@'localhost';
+  Using the Database Exit out of root by using Ctrl+D, and login as &amp;quot;Bob&amp;quot;. To connect to a database, prefix the database name with &amp;quot;use&amp;quot;.
+use test;
+Once here, you’ll be able to execute mySQL commands. 
+And that's it!
+If you encounter any issues or have any questions please drop an email here.
 </description>
   </item>
   
@@ -2851,73 +2851,6 @@ guide.
   </item>
   
   <item>
-    <title>Installing MongoDB</title>
-    <link>//learn.koding.com/guides/install-mongodb</link>
-    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/install-mongodb</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install MongoDB using just one command:
-kpm install mongodb
-
-In this short guide we'll explain how to install MongoDB, and modify
-it's configuration to run in a small storage environment. Lets get 
-started!
-  Installation Installation is easy, and can be done with apt-get, as seen in the 
-following command.
-sudo apt-get install mongodb
-That's it! You can start Mongo with the following command:
-sudo service mongodb start
- If you're running Mongo on a Free Koding VM, read the section below regarding enabling small files...
-   Configuring for Limited Storage If you're running Mongo on a Free VM, you'll need to configure it to use 
-small files. To do that, open up the /etc/mongodb.conf file with the
-following command:
-sudo nano /etc/mongodb.conf
-With that file open, navigate to the bottom and add the following line:
-smallfiles=true
-Now use ctrl-x to save the file. After you've saved the file, simply 
-restart Mongodb with the following command:
-sudo service mongodb restart
-</description>
-  </item>
-  
-  <item>
-    <title>Getting Started: File Uploads</title>
-    <link>//learn.koding.com/guides/getting-started/file-upload</link>
-    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/file-upload</guid>
-    <author>Team Koding</author>
-    <description>In this guide we'll take a look at uploading your files and projects to
-Koding, in multiple ways. Lets get started!
-  Uploading with Drag and Drop The simplest way, is simply by using Drag and Drop file upload! To do
-this, open your Koding IDE, locate your FileTree on the left hand
-side, and drag a file from your Desktop onto the FileTree. An example
-image is below.
-
-After you let go of the file, your file will be uploaded to your
-~/Uploads directory. If ~/Uploads does not exist, it will be automatically
-created.
- Files uploaded this way are not automatically available for
-serving over your VMs web server as the ~/Uploads directory is not inside
-~/Web (the default web root for Koding VMs). If you wish to use any uploaded
-files in your web project, please move them to a directory under ~/Web.
-   Uploading with FTP FTP is another common way to upload files to your VM. Before uploading
-with FTP though, you'll need to set up an FTP Server on your VM.
-The FTP Guide will take you through both the installation, and
-connecting process, so check it out!
-  Uploading with SCP SCP is is a tool that will copy files from your local Unix filesystem
-to a remote filesystem over SSH connections. To use it, make sure you
-have SSH setup with your Koding VM beforehand. Instructions can be found
-here if needed.
-After that, use the following command to copy a local file to your VM.
-scp LOCAL_FILE USERNAME.koding.io:REMOTE_FILE
-Replace LOCAL_FILE with your local file location, USERNAME with your
-Koding Username, and REMOTE_FILE with your Remote File location. An
-example of this command can be seen below.
-scp ~/my_image.png joshmurray.koding.io:~/my_image.png
-</description>
-  </item>
-  
-  <item>
     <title>A guide to Docker</title>
     <link>//learn.koding.com/guides/what-is-docker</link>
     <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
@@ -2969,6 +2902,73 @@ sudo apt-get install lxc-docker
 If you made it to this point you can run this command to check if Docker is indeed installed and works properly:
 sudo docker run -i -t ubuntu /bin/bash
 If you have any question or issues please email us at support@koding.com and we'll gladly help.
+</description>
+  </item>
+  
+  <item>
+    <title>Getting Started: File Uploads</title>
+    <link>//learn.koding.com/guides/getting-started/file-upload</link>
+    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/file-upload</guid>
+    <author>Team Koding</author>
+    <description>In this guide we'll take a look at uploading your files and projects to
+Koding, in multiple ways. Lets get started!
+  Uploading with Drag and Drop The simplest way, is simply by using Drag and Drop file upload! To do
+this, open your Koding IDE, locate your FileTree on the left hand
+side, and drag a file from your Desktop onto the FileTree. An example
+image is below.
+
+After you let go of the file, your file will be uploaded to your
+~/Uploads directory. If ~/Uploads does not exist, it will be automatically
+created.
+ Files uploaded this way are not automatically available for
+serving over your VMs web server as the ~/Uploads directory is not inside
+~/Web (the default web root for Koding VMs). If you wish to use any uploaded
+files in your web project, please move them to a directory under ~/Web.
+   Uploading with FTP FTP is another common way to upload files to your VM. Before uploading
+with FTP though, you'll need to set up an FTP Server on your VM.
+The FTP Guide will take you through both the installation, and
+connecting process, so check it out!
+  Uploading with SCP SCP is is a tool that will copy files from your local Unix filesystem
+to a remote filesystem over SSH connections. To use it, make sure you
+have SSH setup with your Koding VM beforehand. Instructions can be found
+here if needed.
+After that, use the following command to copy a local file to your VM.
+scp LOCAL_FILE USERNAME.koding.io:REMOTE_FILE
+Replace LOCAL_FILE with your local file location, USERNAME with your
+Koding Username, and REMOTE_FILE with your Remote File location. An
+example of this command can be seen below.
+scp ~/my_image.png joshmurray.koding.io:~/my_image.png
+</description>
+  </item>
+  
+  <item>
+    <title>Installing MongoDB</title>
+    <link>//learn.koding.com/guides/install-mongodb</link>
+    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/install-mongodb</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install MongoDB using just one command:
+kpm install mongodb
+
+In this short guide we'll explain how to install MongoDB, and modify
+it's configuration to run in a small storage environment. Lets get 
+started!
+  Installation Installation is easy, and can be done with apt-get, as seen in the 
+following command.
+sudo apt-get install mongodb
+That's it! You can start Mongo with the following command:
+sudo service mongodb start
+ If you're running Mongo on a Free Koding VM, read the section below regarding enabling small files...
+   Configuring for Limited Storage If you're running Mongo on a Free VM, you'll need to configure it to use 
+small files. To do that, open up the /etc/mongodb.conf file with the
+following command:
+sudo nano /etc/mongodb.conf
+With that file open, navigate to the bottom and add the following line:
+smallfiles=true
+Now use ctrl-x to save the file. After you've saved the file, simply 
+restart Mongodb with the following command:
+sudo service mongodb restart
 </description>
   </item>
   
@@ -3127,6 +3127,34 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
+    <title>What happens upon upgrade?</title>
+    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
+    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
+    <author>Team Koding</author>
+    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
+Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
+
+Ability to mark your VM(s) as Always-On
+Add more storage to your VM(s)
+
+  Utilizing new resources when upgrading to the Hobbyist Plan Once you have upgraded to Hobbyist, you can mark your VM as an Always-On VM and increase its storage from 3GB to 10GB. To to this, head over to the settings panel for your VM and follow these easy steps:
+
+head over to VM settings (as shown in the image below)
+expand the &amp;quot;More&amp;quot; panel and then the &amp;quot;Advanced&amp;quot; panel
+You will see a new button under the Advanced panel labeled &amp;quot;Resize&amp;quot; (this button only appears for users who have upgraded to the Hobbyist plan and have not yet allocated the 10GB. Once you allocate it, the button will disappear)
+Click the button to initiate resize. Once done, your VM will show 10GB. Verify that using the command df -h /
+
+
+  Utilizing new resources when upgrading to the Developer and Professional Plans Under these plans, you can have a total of up to 3 (for Developer) and 5 (for Professional) VMs, mark any of them as Always-On and allocate 25GB (for Developer) / 50GB (for Professional) of storage amonst them. You will start with the default free VM and it is up to you whether you want to leave it at the default 3GB or delete it so that you can make a new one with a storage allocation that you prefer. To delete a VM, simply go the settings panel of the VM and click the Terminate button (as shown in the attached screen shot).
+
+To create a new VM, click the + icon in the VM list and you will be presented wit the option to create a new VM with a space allocation that is preferable to you (as shown below).
+
+Enjoy the new resources and thanks again for upgrading! If you have any addtional questions regarding upgrades and resources, please send us a support request and we will get back to you as soon as possible.
+</description>
+  </item>
+  
+  <item>
     <title>Getting started with Drupal 8 (Prerelease)</title>
     <link>//learn.koding.com/guides/getting-started-drupal8-beta</link>
     <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
@@ -3189,91 +3217,6 @@ chmod 0775 files
   </item>
   
   <item>
-    <title>Building C / C++ applications with biicode</title>
-    <link>//learn.koding.com/guides/getting-started-biicode</link>
-    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-biicode</guid>
-    <author>drodri</author>
-    <description>Building larger applications can be somewhat difficult and cumbersome to the newbie.
-As soon as your application start to have several files, you will need to define
-how to build them in Makefiles or using the CMake build system.
-We will be using in the following examples biicode, which is a dependency manager
-that allows to easily retrieve existing code and also manages to automatically generate
-build files for your project.
-You can install it running from your terminal:
-$ wget http://apt.biicode.com/install.sh &amp;amp;&amp;amp; chmod +x install.sh &amp;amp;&amp;amp; ./install.sh
-After it finish, you can run a helper command that install an updated version of CMake:
-$ bii setup:cpp
-Lets build an application that computes the SHA1 of a string. Usually you dont want to write
-yourself such algorithm, but rather use an existing implementation.
-The following commands will create a project and a &amp;quot;Hello world&amp;quot; file, which you can build and
-run:
-$ bii init cryptoproject
-$ cd cryptoproject
-$ bii new myuser/crypto --hello=cpp
-$ bii cpp:build
-$ ./bin/myuser_crypto_main
-Hello world!
-Now replace the contents of the &amp;quot;main.cpp&amp;quot; file inside the blocks/myuser/crypto folder with:
-#include &amp;quot;cryptopp/cryptopp/sha.h&amp;quot;
-#include &amp;quot;cryptopp/cryptopp/filters.h&amp;quot;
-#include &amp;quot;cryptopp/cryptopp/hex.h&amp;quot;
-#include &amp;lt;iostream&amp;gt;
-#include &amp;lt;string&amp;gt;
-
-int main() {
-    CryptoPP::SHA1 sha1;
-    std::string source = &amp;quot;Hello&amp;quot;;
-    std::string hash = &amp;quot;&amp;quot;;
-    CryptoPP::StringSource(source, true, new CryptoPP::HashFilter(sha1,
-                            new CryptoPP::HexEncoder(new CryptoPP::StringSink(hash))));
-    std::cout &amp;lt;&amp;lt; hash &amp;lt;&amp;lt; std::endl;
-}
-If you now try to build this example, it will fail. You can try to do so, and then check
-your dependencies:
-$ bii cpp:build
-$ bii deps
-The code depends on some external code, the Crypto++ library. This can be easily retrieved
-with the &amp;quot;find&amp;quot; command
-$ bii find
-Now you can build and run it:
-$ bii cpp:build
-$ ./bin/myuser_crypto_main
-F7FF9E8B7BB2E09B70935A5D785E0CC5D9D0ABF0
-For further examples, you can have a look to the biicode C/C++ documentation and the
-examples
-</description>
-  </item>
-  
-  <item>
-    <title>What happens upon upgrade?</title>
-    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
-    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
-    <author>Team Koding</author>
-    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
-Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
-
-Ability to mark your VM(s) as Always-On
-Add more storage to your VM(s)
-
-  Utilizing new resources when upgrading to the Hobbyist Plan Once you have upgraded to Hobbyist, you can mark your VM as an Always-On VM and increase its storage from 3GB to 10GB. To to this, head over to the settings panel for your VM and follow these easy steps:
-
-head over to VM settings (as shown in the image below)
-expand the &amp;quot;More&amp;quot; panel and then the &amp;quot;Advanced&amp;quot; panel
-You will see a new button under the Advanced panel labeled &amp;quot;Resize&amp;quot; (this button only appears for users who have upgraded to the Hobbyist plan and have not yet allocated the 10GB. Once you allocate it, the button will disappear)
-Click the button to initiate resize. Once done, your VM will show 10GB. Verify that using the command df -h /
-
-
-  Utilizing new resources when upgrading to the Developer and Professional Plans Under these plans, you can have a total of up to 3 (for Developer) and 5 (for Professional) VMs, mark any of them as Always-On and allocate 25GB (for Developer) / 50GB (for Professional) of storage amonst them. You will start with the default free VM and it is up to you whether you want to leave it at the default 3GB or delete it so that you can make a new one with a storage allocation that you prefer. To delete a VM, simply go the settings panel of the VM and click the Terminate button (as shown in the attached screen shot).
-
-To create a new VM, click the + icon in the VM list and you will be presented wit the option to create a new VM with a space allocation that is preferable to you (as shown below).
-
-Enjoy the new resources and thanks again for upgrading! If you have any addtional questions regarding upgrades and resources, please send us a support request and we will get back to you as soon as possible.
-</description>
-  </item>
-  
-  <item>
     <title>Getting Started with C and C++</title>
     <link>//learn.koding.com/guides/getting-started-c-cpp</link>
     <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
@@ -3331,6 +3274,63 @@ existing code easily.
   </item>
   
   <item>
+    <title>Building C / C++ applications with biicode</title>
+    <link>//learn.koding.com/guides/getting-started-biicode</link>
+    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-biicode</guid>
+    <author>drodri</author>
+    <description>Building larger applications can be somewhat difficult and cumbersome to the newbie.
+As soon as your application start to have several files, you will need to define
+how to build them in Makefiles or using the CMake build system.
+We will be using in the following examples biicode, which is a dependency manager
+that allows to easily retrieve existing code and also manages to automatically generate
+build files for your project.
+You can install it running from your terminal:
+$ wget http://apt.biicode.com/install.sh &amp;amp;&amp;amp; chmod +x install.sh &amp;amp;&amp;amp; ./install.sh
+After it finish, you can run a helper command that install an updated version of CMake:
+$ bii setup:cpp
+Lets build an application that computes the SHA1 of a string. Usually you dont want to write
+yourself such algorithm, but rather use an existing implementation.
+The following commands will create a project and a &amp;quot;Hello world&amp;quot; file, which you can build and
+run:
+$ bii init cryptoproject
+$ cd cryptoproject
+$ bii new myuser/crypto --hello=cpp
+$ bii cpp:build
+$ ./bin/myuser_crypto_main
+Hello world!
+Now replace the contents of the &amp;quot;main.cpp&amp;quot; file inside the blocks/myuser/crypto folder with:
+#include &amp;quot;cryptopp/cryptopp/sha.h&amp;quot;
+#include &amp;quot;cryptopp/cryptopp/filters.h&amp;quot;
+#include &amp;quot;cryptopp/cryptopp/hex.h&amp;quot;
+#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;string&amp;gt;
+
+int main() {
+    CryptoPP::SHA1 sha1;
+    std::string source = &amp;quot;Hello&amp;quot;;
+    std::string hash = &amp;quot;&amp;quot;;
+    CryptoPP::StringSource(source, true, new CryptoPP::HashFilter(sha1,
+                            new CryptoPP::HexEncoder(new CryptoPP::StringSink(hash))));
+    std::cout &amp;lt;&amp;lt; hash &amp;lt;&amp;lt; std::endl;
+}
+If you now try to build this example, it will fail. You can try to do so, and then check
+your dependencies:
+$ bii cpp:build
+$ bii deps
+The code depends on some external code, the Crypto++ library. This can be easily retrieved
+with the &amp;quot;find&amp;quot; command
+$ bii find
+Now you can build and run it:
+$ bii cpp:build
+$ ./bin/myuser_crypto_main
+F7FF9E8B7BB2E09B70935A5D785E0CC5D9D0ABF0
+For further examples, you can have a look to the biicode C/C++ documentation and the
+examples
+</description>
+  </item>
+  
+  <item>
     <title>Getting Started: Workspaces</title>
     <link>//learn.koding.com/guides/getting-started/workspaces</link>
     <pubDate>"2014-09-18T00:00:00.000Z"</pubDate>
@@ -3373,41 +3373,6 @@ links you desire, as the steps above use, but just be careful not to
 delete any of your files in the process.
  The default Workspace can't be removed as that is the default Web folder on your VM.
  </description>
-  </item>
-  
-  <item>
-    <title>Setting up FTP on Koding</title>
-    <link>//learn.koding.com/guides/setting-up-ftp-on-koding</link>
-    <pubDate>"2014-09-15T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-ftp-on-koding</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install FTP using just one command:
-kpm install ftp
-
-In this guide you'll go over how to get your FTP Client connected to your VM's FTP Server. You will be using FileZilla as the FTP Client, but any client should be able to connect to your FTP Server successfully.
-  What you will need In this tutorial you will need the following.
-
-A Koding account, and your Koding Username.
-The Address of the VM you'd like to connect to. Instructions can be found here.
-
-  Update your software sources Before getting started, make sure you have the latest sources locked down. Type in:
-sudo apt-get update
-and let the update process complete. It should not require any input.
-  Installing ProFTPd First off, you'll need to install ProFTPd. This can be done by pasting the following command into your Koding IDE's Terminal.
-sudo apt-get install proftpd
-During the install process you will be asked to choose to run your VPS as an inetd or standalone server. Choose the standalone option.
-  Setting up the FTP User After ProFTPd has been successfully installed, you need to set a FTP password for your user. To do this, paste the following command into your Terminal.
-sudo passwd KODING_USERNAME
-Make note to replace KODING_USERNAME with your actual Koding username.
-After hitting enter, you'll be prompted for the FTP password you wish to use. Not your Koding password.
-  Connecting to your FTP Server Finally, in your FTP Client of choice paste your VM Address into the hostname. If you're not sure what that is, instructions to find it can be found here.
-After the hostname, enter your Koding username, and FTP Password that you chose in the above commands. An example image from FileZilla can be seen below.
-
-  Additional Resources 
-FileZilla
-FileZilla Download
-
-</description>
   </item>
   
   <item>
@@ -3468,6 +3433,41 @@ parts of another key.
 and share the output with Koding users. An example of the above ssh
 command with the -vv flag is below.
 ssh -vv joshmurray@unkk05c3f84e.joshmurray.koding.io
+</description>
+  </item>
+  
+  <item>
+    <title>Setting up FTP on Koding</title>
+    <link>//learn.koding.com/guides/setting-up-ftp-on-koding</link>
+    <pubDate>"2014-09-15T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-ftp-on-koding</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install FTP using just one command:
+kpm install ftp
+
+In this guide you'll go over how to get your FTP Client connected to your VM's FTP Server. You will be using FileZilla as the FTP Client, but any client should be able to connect to your FTP Server successfully.
+  What you will need In this tutorial you will need the following.
+
+A Koding account, and your Koding Username.
+The Address of the VM you'd like to connect to. Instructions can be found here.
+
+  Update your software sources Before getting started, make sure you have the latest sources locked down. Type in:
+sudo apt-get update
+and let the update process complete. It should not require any input.
+  Installing ProFTPd First off, you'll need to install ProFTPd. This can be done by pasting the following command into your Koding IDE's Terminal.
+sudo apt-get install proftpd
+During the install process you will be asked to choose to run your VPS as an inetd or standalone server. Choose the standalone option.
+  Setting up the FTP User After ProFTPd has been successfully installed, you need to set a FTP password for your user. To do this, paste the following command into your Terminal.
+sudo passwd KODING_USERNAME
+Make note to replace KODING_USERNAME with your actual Koding username.
+After hitting enter, you'll be prompted for the FTP password you wish to use. Not your Koding password.
+  Connecting to your FTP Server Finally, in your FTP Client of choice paste your VM Address into the hostname. If you're not sure what that is, instructions to find it can be found here.
+After the hostname, enter your Koding username, and FTP Password that you chose in the above commands. An example image from FileZilla can be seen below.
+
+  Additional Resources 
+FileZilla
+FileZilla Download
+
 </description>
   </item>
   
@@ -5992,7 +5992,9 @@ the panel! To expand, click the logo. (see image below for an example).
   Collapsing/Closing the file tree Double click the dividing column line between the file tree and the IDE/Terminal and it will collapse
 the file tree panel! To expand, click the folder icon. (see image below for an example).
 
-</description>
+ The sidebar and filetree can only be collapsed when you are in the VM section of Koding.
+They cannot be collapsed when in Channels or Messages.
+ </description>
   </item>
   
   <item>
