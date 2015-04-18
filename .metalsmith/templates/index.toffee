@@ -20,7 +20,7 @@ printVideo = (filename) ->
     <a slug="" title=""
       rel="videos" class="youtube-mini fancybox.iframe"
       href="//www.youtube.com/v/#{video.videoId}?autoplay=1&rel=0&controls=0&showinfo=0&modestbranding=1">
-    <img src="http://img.youtube.com/vi/#{video.videoId}/hqdefault.jpg" />
+    <img src="//img.youtube.com/vi/#{video.videoId}/hqdefault.jpg" />
     <span class="youtube-play fa fa-play-circle"></span>
     </a>
     <span class="title">

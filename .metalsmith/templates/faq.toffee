@@ -5,13 +5,13 @@
 #{partial 'sidebar.toffee'}
 <div
   class="docs-content guide-content"
-  itemscope itemtype="http://schema.org/Question"
+  itemscope itemtype="//schema.org/Question"
   itemprop="mainContentOfPage"
 >
   <h1>#{title}</h1>
 
   <div
-    itemscope itemtype="http://schema.org/Answer"
+    itemscope itemtype="//schema.org/Answer"
     itemprop="acceptedAnswer"
   >
     #{print contents}
