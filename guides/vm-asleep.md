@@ -8,6 +8,7 @@ template: page.toffee
 ---
 
 ### Why does my VM appear as asleep when I visit it on a browser?
+
 There are two main reasons for this:
 1. The VM is actually off. :) If this is the case then all that needs
 to be done is that the owner of the VM needs to turn the VM on. Details
