@@ -21,7 +21,7 @@ completed. Global DNS propagation can take anywhere from 1 to 10 minutes
 from the time you turn on your VM.
 > type:tip
 > For paid accounts, IP addresses don't change upon reboot so DNS propagation
-> is not a problem for those type of accounts.
+> time is not a problem.
 
 If you have tried the above and are still having issues, please [send us a note](mailto:support@koding.com)
- with the details.
+ with the details and we'll be glad to help.
