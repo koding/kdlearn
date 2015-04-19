@@ -1,5 +1,5 @@
 ---
-title: Why is my VM asleep?
+title: Why is my Virtul Machine (VM) asleep?
 author: Team Koding
 date: 2015-04-17
 categories: [koding]
@@ -7,7 +7,7 @@ categories: [koding]
 template: page.toffee
 ---
 
-### Why does my VM appear as asleep when I visit it on a browser?
+### Why does my Virtul Machine (VM) appear as asleep when I visit it on a browser?
 
 There are two main reasons for this:
 1. The VM is actually off. :) If this is the case then all that needs
