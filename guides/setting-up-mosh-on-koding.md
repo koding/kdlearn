@@ -1,7 +1,7 @@
 ---
 title: Setting up MOSH on Koding.io
-author: tushar-mathur
-date: 2015-apr-19
+author: tusharmath@gmail.com
+date: 2015-04-19
 categories: [koding, mosh]
 template: page.toffee
 ---
