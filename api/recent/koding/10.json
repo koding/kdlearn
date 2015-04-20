@@ -1,6 +1,12 @@
 [
   {
-    "title": "Why is my VM asleep?",
+    "title": "Setting up MOSH on Koding.io",
+    "url": "https://learn.koding.com/guides/setting-up-mosh-on-koding/index.html",
+    "author": "Tushar Mathur",
+    "date": "2015-04-19T00:00:00.000Z"
+  },
+  {
+    "title": "Why is my Virtul Machine (VM) asleep?",
     "url": "https://learn.koding.com/guides/vm-asleep/index.html",
     "author": "Team Koding",
     "date": "2015-04-17T00:00:00.000Z"
@@ -12,14 +18,14 @@
     "date": "2015-04-03T00:00:00.000Z"
   },
   {
-    "title": "Koding IDE Introduction",
-    "url": "https://learn.koding.com/guides/ide-introduction/index.html",
+    "title": "Koding Terminal Introduction",
+    "url": "https://learn.koding.com/guides/terminal-introduction/index.html",
     "author": "Team Koding",
     "date": "2015-03-18T00:00:00.000Z"
   },
   {
-    "title": "Koding Terminal Introduction",
-    "url": "https://learn.koding.com/guides/terminal-introduction/index.html",
+    "title": "Koding IDE Introduction",
+    "url": "https://learn.koding.com/guides/ide-introduction/index.html",
     "author": "Team Koding",
     "date": "2015-03-18T00:00:00.000Z"
   },
@@ -30,26 +36,20 @@
     "date": "2015-03-04T00:00:00.000Z"
   },
   {
-    "title": "Hello World on Koding: Python",
-    "url": "https://learn.koding.com/guides/hello-world/python/index.html",
-    "author": "Team Koding",
-    "date": "2015-03-04T00:00:00.000Z"
-  },
-  {
     "title": "Hello World on Koding: Ruby",
     "url": "https://learn.koding.com/guides/hello-world/ruby/index.html",
     "author": "Team Koding",
     "date": "2015-03-04T00:00:00.000Z"
   },
   {
-    "title": "Hello World on Koding: C++",
-    "url": "https://learn.koding.com/guides/hello-world/c++/index.html",
+    "title": "Hello World on Koding: Python",
+    "url": "https://learn.koding.com/guides/hello-world/python/index.html",
     "author": "Team Koding",
-    "date": "2015-03-03T00:00:00.000Z"
+    "date": "2015-03-04T00:00:00.000Z"
   },
   {
-    "title": "Hello World on Koding: C",
-    "url": "https://learn.koding.com/guides/hello-world/c/index.html",
+    "title": "Hello World on Koding: Java",
+    "url": "https://learn.koding.com/guides/hello-world/java/index.html",
     "author": "Team Koding",
     "date": "2015-03-03T00:00:00.000Z"
   },

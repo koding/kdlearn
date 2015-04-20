@@ -2,6 +2,12 @@
 <urlset xmlns="//www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>//learn.koding.com/guides/setting-up-mosh-on-koding</loc>
+    <lastmod>2015-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
     <loc>//learn.koding.com/guides/vm-asleep</loc>
     <lastmod>2015-04-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -14,13 +20,13 @@
   </url>
   
   <url>
-    <loc>//learn.koding.com/guides/how-to-install-mediawiki</loc>
+    <loc>//learn.koding.com/guides/installing-pgcli</loc>
     <lastmod>2015-03-24</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>//learn.koding.com/guides/installing-pgcli</loc>
+    <loc>//learn.koding.com/guides/how-to-install-mediawiki</loc>
     <lastmod>2015-03-24</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -56,12 +62,6 @@
   </url>
   
   <url>
-    <loc>//learn.koding.com/guides/hello-world/ruby</loc>
-    <lastmod>2015-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
     <loc>//learn.koding.com/guides/hello-world/python</loc>
     <lastmod>2015-03-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -74,6 +74,24 @@
   </url>
   
   <url>
+    <loc>//learn.koding.com/guides/hello-world/ruby</loc>
+    <lastmod>2015-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>//learn.koding.com/guides/hello-world/java</loc>
+    <lastmod>2015-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>//learn.koding.com/guides/hello-world</loc>
+    <lastmod>2015-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
     <loc>//learn.koding.com/guides/hello-world/c</loc>
     <lastmod>2015-03-03</lastmod>
     <changefreq>monthly</changefreq>
@@ -81,12 +99,6 @@
   
   <url>
     <loc>//learn.koding.com/guides/hello-world/c++</loc>
-    <lastmod>2015-03-03</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>//learn.koding.com/guides/hello-world/java</loc>
     <lastmod>2015-03-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -104,25 +116,19 @@
   </url>
   
   <url>
-    <loc>//learn.koding.com/guides/hello-world</loc>
-    <lastmod>2015-03-03</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
     <loc>//learn.koding.com/guides/vnc-startup-guide</loc>
     <lastmod>2015-03-01</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>//learn.koding.com/guides/setting-symfony2-webserver</loc>
+    <loc>//learn.koding.com/guides/setting-tornado-webserver</loc>
     <lastmod>2015-02-26</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>//learn.koding.com/guides/setting-tornado-webserver</loc>
+    <loc>//learn.koding.com/guides/setting-symfony2-webserver</loc>
     <lastmod>2015-02-26</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -134,7 +140,7 @@
   </url>
   
   <url>
-    <loc>//learn.koding.com/guides/setting-meteorjs-webserver</loc>
+    <loc>//learn.koding.com/guides/setting-laravel-artisan-webserver</loc>
     <lastmod>2015-02-26</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -146,7 +152,7 @@
   </url>
   
   <url>
-    <loc>//learn.koding.com/guides/setting-laravel-artisan-webserver</loc>
+    <loc>//learn.koding.com/guides/setting-meteorjs-webserver</loc>
     <lastmod>2015-02-26</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -236,13 +242,13 @@
   </url>
   
   <url>
-    <loc>//learn.koding.com/guides/getting-started-jsp-maven</loc>
+    <loc>//learn.koding.com/guides/dropbox-for-file-sync</loc>
     <lastmod>2015-01-15</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
-    <loc>//learn.koding.com/guides/dropbox-for-file-sync</loc>
+    <loc>//learn.koding.com/guides/getting-started-jsp-maven</loc>
     <lastmod>2015-01-15</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -356,12 +362,6 @@
   </url>
   
   <url>
-    <loc>//learn.koding.com/guides/what-is-docker</loc>
-    <lastmod>2014-10-17</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
     <loc>//learn.koding.com/guides/getting-started/file-upload</loc>
     <lastmod>2014-10-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -369,6 +369,12 @@
   
   <url>
     <loc>//learn.koding.com/guides/install-mongodb</loc>
+    <lastmod>2014-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>//learn.koding.com/guides/what-is-docker</loc>
     <lastmod>2014-10-17</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -392,12 +398,6 @@
   </url>
   
   <url>
-    <loc>//learn.koding.com/guides/what-happens-upon-upgrade</loc>
-    <lastmod>2014-10-02</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
     <loc>//learn.koding.com/guides/getting-started-drupal8-beta</loc>
     <lastmod>2014-10-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -411,6 +411,12 @@
   
   <url>
     <loc>//learn.koding.com/guides/getting-started-biicode</loc>
+    <lastmod>2014-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>//learn.koding.com/guides/what-happens-upon-upgrade</loc>
     <lastmod>2014-10-02</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -705,97 +711,97 @@
   
   <url>
     <loc>//learn.koding.com/faq/what-is-koding</loc>
-    <lastmod>2015-04-18</lastmod>
+    <lastmod>2015-04-20</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>//learn.koding.com/faq/support</loc>
-    <lastmod>2015-04-18</lastmod>
+    <lastmod>2015-04-20</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>//learn.koding.com/faq/redeem-referrals</loc>
-    <lastmod>2015-04-18</lastmod>
+    <lastmod>2015-04-20</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>//learn.koding.com/faq/reset-password</loc>
-    <lastmod>2015-04-18</lastmod>
+    <lastmod>2015-04-20</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>//learn.koding.com/faq/vm-ip-vs-address</loc>
-    <lastmod>2015-04-18</lastmod>
+    <lastmod>2015-04-20</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>//learn.koding.com/faq/change-username</loc>
-    <lastmod>2015-04-18</lastmod>
+    <lastmod>2015-04-20</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>//learn.koding.com/faq/delete-account</loc>
-    <lastmod>2015-04-18</lastmod>
+    <lastmod>2015-04-20</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>//learn.koding.com/faq/sidebar-collapse</loc>
-    <lastmod>2015-04-18</lastmod>
+    <lastmod>2015-04-20</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>//learn.koding.com/faq/vm-reinit</loc>
-    <lastmod>2015-04-18</lastmod>
+    <lastmod>2015-04-20</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>//learn.koding.com/faq/sudo-password</loc>
-    <lastmod>2015-04-18</lastmod>
+    <lastmod>2015-04-20</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>//learn.koding.com/faq/vm-poweroff</loc>
-    <lastmod>2015-04-18</lastmod>
+    <lastmod>2015-04-20</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>//learn.koding.com/faq/posting-guidelines</loc>
-    <lastmod>2015-04-18</lastmod>
+    <lastmod>2015-04-20</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>//learn.koding.com/faq/open-ports</loc>
-    <lastmod>2015-04-18</lastmod>
+    <lastmod>2015-04-20</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>//learn.koding.com/faq/transfer-files</loc>
-    <lastmod>2015-04-18</lastmod>
+    <lastmod>2015-04-20</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>//learn.koding.com/faq/vm-hostname</loc>
-    <lastmod>2015-04-18</lastmod>
+    <lastmod>2015-04-20</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
   <url>
     <loc>//learn.koding.com/faq/mysql-socket-error-2002</loc>
-    <lastmod>2015-04-18</lastmod>
+    <lastmod>2015-04-20</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   
