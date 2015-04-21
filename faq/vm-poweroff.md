@@ -26,4 +26,4 @@ An unknown error occured, please open a new tab. Click here to dismiss this one.
 ```
 both of the above messages, even though they look like errors are normal because a manual reboot has been requested.
 
-We don't recommend using `sudo poweroff` or `sudo shutdown` to power down your VM as it will leave the associated sub-systems in an unknown state which may disrupt you from using your account. Use the settings panel to stop/turn off your VM.
+We don't recommend using `sudo poweroff` or `sudo shutdown` to power down your VM as it will leave the associated sub-systems in an unknown state which may disrupt you from using your account. Use the [VM settings modal](http://learn.koding.com/guides/understanding-vm-panel/) to stop/turn off your VM.
