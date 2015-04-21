@@ -21,12 +21,10 @@ Reinitialization will however preserve your VM settings and any domain names tha
 
 #### How do I reinit my VM?
 To reinit your VM, follow these easy steps:
-1. turn your VM to "on" state
-2. head over to the VM settings modal (as shown in the screen shot below)
-3. click on the "Advanced" tab
-4. click the "Reinitialize" button inside the Advanced section.
+1. head over to the [VM settings modal](http://learn.koding.com/guides/understanding-vm-panel/) (as shown in the screen shot below)
+2. turn your VM to "on" state (if it is off)
+3. then click on the "Advanced" tab
+4. click the "Reinitialize" button inside the Advanced section to begin the reinit process.
 
 Once you initiate a reinit, you will see appropriate messages on the screen as your VM rebuilds.
-
-
 ![VM Reinit](/faq/vm-reinit/reinit.png)
