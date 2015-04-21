@@ -114,7 +114,7 @@ if you encounter any screens that ask for overwriting existing files, please fol
 from the previous section. Once done, you should see something like this:
 ![update done](update-done.png)
 
-Now, let's reboot the VM. Open up the settings panel for your VM and toggle the on/off switch. Once 
+Now, let's reboot the VM. Open up the settings modal for your VM and toggle the on/off switch. Once 
 the VM turns off and you see the button to turn it on, go ahead and click it. This is necessary
 to ensure that the updated files are brought into use.
 

@@ -1,24 +1,24 @@
 ---
-title: Understanding the VM settings panel
+title: Understanding the VM settings modal
 author: Team Koding
 date: 2014-11-03
 categories: [understanding-vm, koding features, koding]
 template: page.toffee
 ---
 
-# Understanding the VM settings panel
+# Understanding the VM settings modal
 
-This guide will explain the basics of the VM settings panel.
+This guide will explain the basics of the VM settings modal.
 
 ![VM Panel 1](uvms2.png)
 
-In order to open the VM settings panel you need to hover over the VM name on the right side of Koding (in the sidebar at the top) and then click on the little three points icon on the right, as picture above.
+In order to open the VM settings modal you need to hover over the VM name on the right side of Koding (in the sidebar at the top) and then click on the little three points icon on the right, as picture above.
 
 ![VM Panel 2](uvms1.png)
 
 After you click on the icon mentioned above the VM modal should open, which should look like the one pictured above.
 
-The VM settings panel has three main sections: the Basic section, the More section and the Advanced section.
+The VM settings modal has three main sections: the Basic section, the More section and the Advanced section.
 
 ## Basic section
 
@@ -48,4 +48,4 @@ The advanced section includes settings that only advanced users should use. If y
 * Resize VM: If you just upgraded to a paid plan you can choose to assign the necessary space.
 * Terminate VM: If you're a paying customer you can remove your VM and create a new one if you so choose.
 
-If you encounter any issues or have any questions regarding the VM settings panel you can email us at [support@koding.com](mailto:support@koding.com) and we'll gladly help.
+If you encounter any issues or have any questions regarding the VM settings modal you can email us at [support@koding.com](mailto:support@koding.com) and we'll gladly help.
