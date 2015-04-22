@@ -3345,7 +3345,9 @@ examples
 Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
 
 Ability to mark your VM(s) as Always-On
-Add more storage to your VM(s)  Turn on &amp;quot;Always On&amp;quot; mode for your VM 
+Add more storage to your VM(s)
+
+  Turn on &amp;quot;Always On&amp;quot; mode for your VM 
 Go to the VM settings modal.
 On the &amp;quot;General&amp;quot; tab, find the switch for &amp;quot;Always On&amp;quot; and turn it on. Your VM will
 now not turn off even if you log out. This also means your public IP address will now be static.
