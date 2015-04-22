@@ -6,8 +6,7 @@ categories: [understanding-vm, koding features, koding]
 template: page.toffee
 ---
 
-# Understanding the VM settings modal
-
+## Understanding the VM settings modal
 This guide will explain the basics of the VM settings modal.
 
 ![VM Panel 1](uvms2.png)
@@ -16,13 +15,9 @@ In order to open the VM settings modal you need to hover over the VM name on the
 
 ![VM Panel 2](uvms1.png)
 
-After you click on the icon mentioned above the VM modal should open, which should look like the one pictured above.
+After you click on the icon mentioned above the VM modal should open, which should look like the one pictured above. The VM settings are mostly self explanatory but we will outline them here for clarity. The VM settings modal has three main sections: the Basic section, the More section and the Advanced section.
 
-The VM settings are mostly self explanatory but we will outline them here for clarity.
-
-The VM settings modal has three main sections: the Basic section, the More section and the Advanced section.
-
-## General Tab
+### General Tab
 The general tab houses the basic settings about your VM. These are:
 1. On/Off: This toggle will switch your VM's state between on/off. We recommend using this to turn off your VM as compared to doing a `sudo poweroff` on your VM.
 2. Keep VM always on: A paid feature, this allows you to keep your VM running all the time.
@@ -30,39 +25,24 @@ The general tab houses the basic settings about your VM. These are:
 4. Public IP: This is the public IP for your VM.
 > type:tip
 > For free accounts, the public IPs rotate every reboot.
-5. Assigned URL: This is the system assigned URL/name for your VM. It's long and ugly on  purpose (so that it's never duplicated).
+5. Assigned URL: This is the system assigned URL/name for your VM. It's long so that it's never duplicated.
 
+### Specs Tab
+This tab shows you the basic specifications of your VM.
 
+### Disk Usage Tab
+Here you can see how much disk space you have used.
 
+### Domains Tab
+Here you can create a [custom/short URL for your VM](http://learn.koding.com/faq/vm-hostname/) and/or [define subdomains](http://learn.koding.com/faq/vm-hostname/) and [custom domains for your VM](http://learn.koding.com/guides/domains/). These come in handy if you are running multiple [virtual hosts](http://learn.koding.com/guides/vhosts-and-subdomains/) on your VM.
 
+### VM Sharing
+[Shared VMs](http://learn.koding.com/guides/permanent-shared-vm/), another feature for our paid accounts, allows you to share your VM with other Koding members even if you are not online.
 
-
-## Basic section
-
-The basic section includes basic information about your VM and some basic functionality over it. Each line is explained below.
-
-* Assigned URL: This is the long assigned URL of your Koding VM.
-* Nickname: You can rename your VM and this will update the name that appears in the right sidebar.
-* On/Off toggle: The current status of the VM. You can also turn off your VM from here, though we don't recommend it.
-* Disk usage: How much space you have used of your VMs available space.
-* Public IP: Your VM's public IP. This will change every time you start up your VM. For users on the Free plan, this will change each time you start up your VM. If your VM is Always-On, it will only change when you restart your VM.
-* Specs: Specifications your VM has. This is based on your current plan.
-* Provider: Your VM provider. In the future you will be able to choose from multiple providers.
-* Guides: The most common and useful guides to get you started using your VM.
-
-## More section
-
-The more section includes some additional settings for your VM. Each setting has been explained below.
-
-* Keep VM always on toggle: If you are a paying customer than you can chose to keep your VM Always-On. This means that your VM will not be shut down automatically after 60 minutes.
-* Domains: You can enable a [short URL for your VM](http://learn.koding.com/faq/vm-hostname/) and/or [define subdomains](http://learn.koding.com/faq/vm-hostname/) and [custom domains for your VM](http://learn.koding.com/guides/domains/).
-
-## Advanced section
-
+### Advanced Tab
 The advanced section includes settings that only advanced users should use. If you are an unexperienced user then this section should be off limits.
 
-* Reinitialize VM: This button will set your VM back to its default state. This means that the VM will be re-imaged, as if you deleted the VM and created a new one. [This guide](/faq/vm-reinit/) explains the reinit function in more detail.
-* Resize VM: If you just upgraded to a paid plan you can choose to assign the necessary space.
-* Terminate VM: If you're a paying customer you can remove your VM and create a new one if you so choose.
+* Reinitialize VM: This button will set your VM back to its default state. This means that the VM will be re-imaged, as if you deleted the VM and created a new one. [This guide](https://learn.koding.com/faq/vm-reinit/) explains the reinit function in more detail.
+* Terminate VM: You can remove your VM and create a new one if you so choose. We recommend you reinit your VM in lieu of deleting and recreating it.
 
 If you encounter any issues or have any questions regarding the VM settings modal you can email us at [support@koding.com](mailto:support@koding.com) and we'll gladly help.
