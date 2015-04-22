@@ -10,7 +10,7 @@ template: page.toffee
 ### Why does my Virtul Machine (VM) appear as asleep when I visit it on a browser?
 
 There are two main reasons for this:
-1. The VM is actually off. :) If this is the case then all that needs
+1. The VM is actually off. If this is the case then all that needs
 to be done is that the owner of the VM needs to turn the VM on. Details
 on how to turn on your VM are available [here](http://learn.koding.com/guides/understanding-vm-panel/).
 > type:tip
