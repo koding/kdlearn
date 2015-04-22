@@ -6,23 +6,23 @@
   itemscope itemtype="//schema.org/WebPage"
 >
    <head>
-     <title>Understanding the VM settings panel | Koding University</title> 
+     <title>Understanding the VM settings modal | Koding University</title> 
 		<meta charset="utf-8">
     
       <meta name="keywords" content="understanding-vm,koding features,koding">
     
-		<meta name="description" content="This guide will explain the basics of the VM settings panel.">
+		<meta name="description" content="This guide will explain the basics of the VM settings modal.">
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
 
 		<!-- og meta tags -->
-     <meta property="og:title" content="Understanding the VM settings panel | Koding University"/> 
+     <meta property="og:title" content="Understanding the VM settings modal | Koding University"/> 
 		<meta property="og:type" content="website"/>
 		<meta property="og:url" content="https://learn.koding.com"/>
 		<meta property="og:image" content="https://learn.koding.com/img/logo_150.png"/>
     <!-- Don't have a secure url currently -->
 		<!--<meta property="og:image:secure_url" content="https://koding.com/a/images/logos/share_logo.png"/>-->
-		<meta property="og:description" content="This guide will explain the basics of the VM settings panel."/>
+		<meta property="og:description" content="This guide will explain the basics of the VM settings modal."/>
 		<meta property="og:image:type" content="image/png">
 		<meta property="og:image:width" content="130"/>
 		<meta property="og:image:height" content="100"/>
@@ -30,11 +30,11 @@
 		<!-- twitter cards -->
 		<meta name="twitter:site" content="@koding"/>
 		<meta name="twitter:url" content="https://koding.com"/>
-     <meta name="twitter:title" content="Understanding the VM settings panel | Koding University"/> 
+     <meta name="twitter:title" content="Understanding the VM settings modal | Koding University"/> 
 		<meta name="twitter:creator" content="@koding"/>
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:image" content="https://learn.koding.com/img/logo_150.png"/>
-		<meta name="twitter:description" content="This guide will explain the basics of the VM settings panel."\>
+		<meta name="twitter:description" content="This guide will explain the basics of the VM settings modal."\>
 		<meta name="twitter:domain" content="learn.koding.com">
 
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
@@ -46,11 +46,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?318" />
+    <link rel="stylesheet" href="/css/vendor.css?214" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?568" />
+    <link rel="stylesheet" href="/css/main.css?762" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?420" />
+    <link rel="stylesheet" href="/css/rwd.css?341" />
 	</head>
 	<body>
 
@@ -303,7 +303,7 @@
   itemscope itemtype="//schema.org/TechArticle"
   itemprop="mainContentOfPage"
 >
-  <h1 itemprop="headline">Understanding the VM settings panel</h1>
+  <h1 itemprop="headline">Understanding the VM settings modal</h1>
   <ul class="meta">
     <li class="author username">
        by <span rel="author">Team Koding</span>
@@ -315,35 +315,30 @@
   
 
   <div itemprop="articleBody">
-    <p itemprop="about">This guide will explain the basics of the VM settings panel.</p>
+    <h2 class="heading"> <a name="understanding-the-vm-settings-modal" class="anchor" href="#understanding-the-vm-settings-modal"></a> Understanding the VM settings modal </h2><p itemprop="about">This guide will explain the basics of the VM settings modal.</p>
 <p><img src="uvms2.png" alt="VM Panel 1"></p>
-<p>In order to open the VM settings panel you need to hover over the VM name on the right side of Koding (in the sidebar at the top) and then click on the little three points icon on the right, as picture above.</p>
+<p>In order to open the VM settings modal you need to hover over the VM name on the right side of Koding (in the sidebar at the top) and then click on the three points icon that appears on the right of the VM label. (as seen in the image above)</p>
 <p><img src="uvms1.png" alt="VM Panel 2"></p>
-<p>After you click on the icon mentioned above the VM modal should open, which should look like the one pictured above.</p>
-<p>The VM settings panel has three main sections: the Basic section, the More section and the Advanced section.</p>
-<h2 class="heading"> <a name="basic-section" class="anchor" href="#basic-section"></a> Basic section </h2><p>The basic section includes basic information about your VM and some basic functionality over it. Each line is explained below.</p>
+<p>After you click on the icon mentioned above the VM modal should open, which should look like the one pictured above. The VM settings are mostly self explanatory but we will outline them here for clarity. The VM settings modal has three main sections: the Basic section, the More section and the Advanced section.</p>
+<h3 class="heading"> <a name="general-tab" class="anchor" href="#general-tab"></a> General Tab </h3><p>The general tab houses the basic settings about your VM. These are:</p>
+<ol>
+<li>On/Off: This toggle will switch your VM&apos;s state between on/off. We recommend using this to turn off your VM as compared to doing a <code>sudo poweroff</code> on your VM.</li>
+<li>Keep VM always on: A paid feature, this allows you to keep your VM running all the time.</li>
+<li>Nickname: You can use this to give your VM a nice name that you can remember!</li>
+<li>Public IP: This is the public IP for your VM.<blockquote class="tip fa fa-info-circle"> <p>For free accounts, the public IPs rotate every reboot.</p>
+ </blockquote></li>
+<li>Assigned URL: This is the system assigned URL/name for your VM. It&apos;s long so that it&apos;s never duplicated.</li>
+</ol>
+<h3 class="heading"> <a name="specs-tab" class="anchor" href="#specs-tab"></a> Specs Tab </h3><p>This tab shows you the basic specifications of your VM.</p>
+<h3 class="heading"> <a name="disk-usage-tab" class="anchor" href="#disk-usage-tab"></a> Disk Usage Tab </h3><p>Here you can see how much disk space you have used.</p>
+<h3 class="heading"> <a name="domains-tab" class="anchor" href="#domains-tab"></a> Domains Tab </h3><p>Here you can create a <a href="http://learn.koding.com/faq/vm-hostname/">custom/short URL for your VM</a> and/or <a href="http://learn.koding.com/faq/vm-hostname/">define subdomains</a> and <a href="http://learn.koding.com/guides/domains/">custom domains for your VM</a>. These come in handy if you are running multiple <a href="http://learn.koding.com/guides/vhosts-and-subdomains/">virtual hosts</a> on your VM.</p>
+<h3 class="heading"> <a name="vm-sharing" class="anchor" href="#vm-sharing"></a> VM Sharing </h3><p><a href="http://learn.koding.com/guides/permanent-shared-vm/">Shared VMs</a>, another feature for our paid accounts, allows you to share your VM with other Koding members even if you are not online.</p>
+<h3 class="heading"> <a name="advanced-tab" class="anchor" href="#advanced-tab"></a> Advanced Tab </h3><p>The advanced section includes settings that only advanced users should use. If you are an unexperienced user then this section should be off limits.</p>
 <ul>
-<li>Assigned URL: This is the long assigned URL of your Koding VM.</li>
-<li>Nickname: You can rename your VM and this will update the name that appears in the right sidebar.</li>
-<li>On/Off toggle: The current status of the VM. You can also turn off your VM from here, though we don&apos;t recommend it.</li>
-<li>Disk usage: How much space you have used of your VMs available space.</li>
-<li>Public IP: Your VM&apos;s public IP. This will change every time you start up your VM. For users on the Free plan, this will change each time you start up your VM. If your VM is Always-On, it will only change when you restart your VM.</li>
-<li>Specs: Specifications your VM has. This is based on your current plan.</li>
-<li>Provider: Your VM provider. In the future you will be able to choose from multiple providers.</li>
-<li>Guides: The most common and useful guides to get you started using your VM.</li>
+<li>Reinitialize VM: This button will set your VM back to its default state. This means that the VM will be re-imaged, as if you deleted the VM and created a new one. <a href="https://learn.koding.com/faq/vm-reinit/">This guide</a> explains the reinit function in more detail.</li>
+<li>Terminate VM: You can remove your VM and create a new one if you so choose. We recommend you reinit your VM in lieu of deleting and recreating it.</li>
 </ul>
-<h2 class="heading"> <a name="more-section" class="anchor" href="#more-section"></a> More section </h2><p>The more section includes some additional settings for your VM. Each setting has been explained below.</p>
-<ul>
-<li>Keep VM always on toggle: If you are a paying customer than you can chose to keep your VM Always-On. This means that your VM will not be shut down automatically after 60 minutes.</li>
-<li>Domains: You can enable a <a href="http://learn.koding.com/faq/vm-hostname/">short URL for your VM</a> and/or <a href="http://learn.koding.com/faq/vm-hostname/">define subdomains</a> and <a href="http://learn.koding.com/guides/domains/">custom domains for your VM</a>.</li>
-</ul>
-<h2 class="heading"> <a name="advanced-section" class="anchor" href="#advanced-section"></a> Advanced section </h2><p>The advanced section includes settings that only advanced users should use. If you are an unexperienced user then this section should be off limits.</p>
-<ul>
-<li>Reinitialize VM: This button will set your VM back to its default state. This means that the VM will be re-imaged, as if you deleted the VM and created a new one. <a href="/faq/vm-reinit/">This guide</a> explains the reinit function in more detail.</li>
-<li>Resize VM: If you just upgraded to a paid plan you can choose to assign the necessary space.</li>
-<li>Terminate VM: If you&apos;re a paying customer you can remove your VM and create a new one if you so choose.</li>
-</ul>
-<p>If you encounter any issues or have any questions regarding the VM settings panel you can email us at <a href="mailto:support@koding.com">support@koding.com</a> and we&apos;ll gladly help.</p>
+<p>If you encounter any issues or have any questions regarding the VM settings modal you can email us at <a href="mailto:support@koding.com">support@koding.com</a> and we&apos;ll gladly help.</p>
 
   </div>
   

@@ -9,8 +9,7 @@
      <title>What is my VM Hostname/Address/Domain Name? | Koding University</title> 
 		<meta charset="utf-8">
     
-		<meta name="description" content="The system assigned name for your VM is available on top of the VM settings panel under the label: Assigned URL.
-This is not editable.">
+		<meta name="description" content="The system assigned name for your VM is available on VM settings modal under the label: Assigned URL.">
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
 
@@ -21,8 +20,7 @@ This is not editable.">
 		<meta property="og:image" content="https://learn.koding.com/img/logo_150.png"/>
     <!-- Don't have a secure url currently -->
 		<!--<meta property="og:image:secure_url" content="https://koding.com/a/images/logos/share_logo.png"/>-->
-		<meta property="og:description" content="The system assigned name for your VM is available on top of the VM settings panel under the label: Assigned URL.
-This is not editable."/>
+		<meta property="og:description" content="The system assigned name for your VM is available on VM settings modal under the label: Assigned URL."/>
 		<meta property="og:image:type" content="image/png">
 		<meta property="og:image:width" content="130"/>
 		<meta property="og:image:height" content="100"/>
@@ -34,8 +32,7 @@ This is not editable."/>
 		<meta name="twitter:creator" content="@koding"/>
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:image" content="https://learn.koding.com/img/logo_150.png"/>
-		<meta name="twitter:description" content="The system assigned name for your VM is available on top of the VM settings panel under the label: Assigned URL.
-This is not editable."\>
+		<meta name="twitter:description" content="The system assigned name for your VM is available on VM settings modal under the label: Assigned URL."\>
 		<meta name="twitter:domain" content="learn.koding.com">
 
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
@@ -47,11 +44,11 @@ This is not editable."\>
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?161" />
+    <link rel="stylesheet" href="/css/vendor.css?692" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?204" />
+    <link rel="stylesheet" href="/css/main.css?768" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?118" />
+    <link rel="stylesheet" href="/css/rwd.css?7" />
 	</head>
 	<body>
 
@@ -307,28 +304,27 @@ This is not editable."\>
     itemscope itemtype="//schema.org/Answer"
     itemprop="acceptedAnswer"
   >
-    <p>The system assigned name for your VM is available on top of the VM settings panel under the label: <em>Assigned URL</em>.
-This is not editable.</p>
-<p>We realize that most users will probably run into trouble trying to remember our creatively designed VM names 
+    <p>The system assigned name for your VM is available on VM settings modal under the label: <em>Assigned URL</em>.</p>
+<blockquote class="tip fa fa-info-circle"> <p>This is an assigned name and is not editable.</p>
+ </blockquote><p>We realize that most users will probably run into trouble trying to remember our creatively designed VM names 
 (sorry, we had to make sure they were unique) so Koding VMs can also very easily be assigned a username based 
 namespace (username.koding.io). This makes it easy to remember the domain name for your VM since it is your 
 username! (Note: You can still reach the VM by using the system assigned name as described above.)</p>
 <p>To assign your username based domain to a VM, follow these 2 easy steps:</p>
 <ol>
-<li>open the VM settings panel and click on &quot;More&quot; to reveal the domain settings (as
-shown in the image below)</li>
-<li>toggle the switch next to your personal namespace to enable it for this VM. (Note: If you have more than one VM, you will be able to reassign the same namespace on other VM settings panels but only one VM can have the namespace applied to it at any given time.)
+<li>open the <a href="http://learn.koding.com/guides/understanding-vm-panel/">VM settings modal</a> and click on the &quot;Domains&quot; tab to reveal the domain settings (as shown in the image below)</li>
+<li>toggle the switch next to your personal namespace to enable it for this VM. (Note: If you have more than one VM, you will be able to reassign the same namespace on other VM settings modals but only one VM can have the namespace applied to it at any given time.)
 <img src="/faq/vm-hostname/first.png" alt="Personal namespace"></li>
 </ol>
 <p>In addition to this, Koding also allows you to create sub-domains
 so that if you want to configure your apache/nginx web server to serve multiple 
 virtual hosts, it&apos;s easy to assign them all their own unique sub-domains. <a href="http://www.rackspace.com/knowledge_center/article/how-to-serve-multiple-domains-using-virtual-hosts">Read more about virtual hosts.</a></p>
-<p>To use this feature, head back to the VM settings panel and follow these 3 easy steps:</p>
+<p>To use this feature, head back to the VM settings modal and follow these 3 easy steps:</p>
 <ol>
-<li>click the (+) icon next to the &quot;Domains&quot; label to open up an input box where you can type in a new sub-domain. All you need to provide is the sub-domain, we will add the .username.koding.io part automatically.
+<li>click on the &quot;Domains&quot; tab in the VM settings modal</li>
+<li>click the &quot;Add new domain&quot; button to open up an input box where you can type in a new sub-domain. All you need to provide is the sub-domain, we will add the .username.koding.io part automatically.
 <img src="/faq/vm-hostname/second.png" alt="Add subdomain"></li>
-<li>once added, these sub-domains become available on the setting panels 
-of all your VMs for easy reassignment</li>
+<li>once added, these sub-domains become available on the setting modals of all your VMs for easy reassignment</li>
 <li>deleting a sub-domain is as easy as adding one!
 <img src="/faq/vm-hostname/third.png" alt="Remove subdomain"></li>
 </ol>

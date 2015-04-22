@@ -44,11 +44,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?777" />
+    <link rel="stylesheet" href="/css/vendor.css?774" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?880" />
+    <link rel="stylesheet" href="/css/main.css?867" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?718" />
+    <link rel="stylesheet" href="/css/rwd.css?585" />
 	</head>
 	<body>
 
@@ -513,7 +513,7 @@ IP changes, so this is what you usually want to use.</p>
         itemprop="acceptedAnswer"
       >
         <p>You do not have to contact Koding support if you wish to delete your account. Simply head over to <a href="https://koding.com/Account/Delete">Account Settings</a> from where you can easily initiate the deletion process.</p>
-<p>It would help us immensly if you can take the quick 3 question survey right after the deletion process ends. It will help us understand why we lost you and how we can improve.</p>
+<p>It would help us immensly if you can take the short survey presented on the account deletion screen we can understand why we lost you and how we can improve.</p>
 
       </div>
     </li>
@@ -570,13 +570,13 @@ to transfer the files.</p>
  </blockquote><p>Reinitialization will however preserve your VM settings and any domain names that you may have created.</p>
 <h4 class="heading"> <a name="how-do-i-reinit-my-vm-" class="anchor" href="#how-do-i-reinit-my-vm-"></a> How do I reinit my VM? </h4><p>To reinit your VM, follow these easy steps:</p>
 <ol>
-<li>turn your VM to &quot;on&quot; state</li>
-<li>head over to the VM settings panel (as shown in the screen shot below)</li>
-<li>expand the &quot;More&quot; and &quot;Advanced&quot; sections</li>
-<li>click the &quot;Reinitialize&quot; button inside the Advanced section.</li>
+<li>head over to the <a href="http://learn.koding.com/guides/understanding-vm-panel/">VM settings modal</a> (as shown in the screen shot below)</li>
+<li>turn your VM to &quot;on&quot; state (if it is off)</li>
+<li>then click on the &quot;Advanced&quot; tab</li>
+<li>click the &quot;Reinitialize&quot; button inside the Advanced section to begin the reinit process.</li>
 </ol>
-<p>Once you initiate a reinit, you will see appropriate messages on the screen as your VM rebuilds.</p>
-<p><img src="/faq/vm-reinit/reinit.png" alt="VM Reinit"></p>
+<p>Once you initiate a reinit, you will see appropriate messages on the screen as your VM rebuilds.
+<img src="/faq/vm-reinit/reinit.png" alt="VM Reinit"></p>
 
       </div>
     </li>
@@ -620,7 +620,7 @@ using the <code>sudo</code> command from that point on.</p>
         itemscope itemtype="//schema.org/Answer"
         itemprop="acceptedAnswer"
       >
-        <p>To turn off your VM, we recommend that you use the power on/off toggle in the <a href="http://learn.koding.com/guides/understanding-vm-panel/">VM settings panel</a>. This ensures that all internal API calls are triggered and all Koding services are aware that you have powered down your VM.</p>
+        <p>To turn off your VM, we recommend that you use the power on/off toggle in the <a href="http://learn.koding.com/guides/understanding-vm-panel/">VM settings modal</a>. This ensures that all internal API calls are triggered and all Koding services are aware that you have powered down your VM.</p>
 <blockquote class="tip fa fa-info-circle"> <p>VMs for our free accounts automatically turn off after 60 minutes of inactivity on our IDE or Terminal
 so there&apos;s no need to manually turn the VM off.</p>
  </blockquote><p>That being said, sometimes you may need to restart your VM and want to do it via the Terminal. In such cases, simple type the following command in Terminal:</p>
@@ -632,7 +632,7 @@ so there&apos;s no need to manually turn the VM off.</p>
 </code></pre><p>followed by</p>
 <pre><code>An unknown error occured, please <span class="hljs-built_in">open</span> <span class="hljs-operator">a</span> <span class="hljs-built_in">new</span> <span class="hljs-constant">tab</span>. Click here <span class="hljs-built_in">to</span> dismiss this <span class="hljs-constant">one</span>.
 </code></pre><p>both of the above messages, even though they look like errors are normal because a manual reboot has been requested.</p>
-<p>We don&apos;t recommend using <code>sudo poweroff</code> or <code>sudo shutdown</code> to power down your VM as it will leave the associated sub-systems in an unknown state which may disrupt you from using your account. Use the settings panel to stop/turn off your VM.</p>
+<p>We don&apos;t recommend using <code>sudo poweroff</code> or <code>sudo shutdown</code> to power down your VM as it will leave the associated sub-systems in an unknown state which may disrupt you from using your account. Use the <a href="http://learn.koding.com/guides/understanding-vm-panel/">VM settings modal</a> to stop/turn off your VM.</p>
 
       </div>
     </li>
@@ -741,28 +741,27 @@ off Apache, type in: <code>sudo service apache2 stop</code> in Terminal.</li>
         itemscope itemtype="//schema.org/Answer"
         itemprop="acceptedAnswer"
       >
-        <p>The system assigned name for your VM is available on top of the VM settings panel under the label: <em>Assigned URL</em>.
-This is not editable.</p>
-<p>We realize that most users will probably run into trouble trying to remember our creatively designed VM names 
+        <p>The system assigned name for your VM is available on VM settings modal under the label: <em>Assigned URL</em>.</p>
+<blockquote class="tip fa fa-info-circle"> <p>This is an assigned name and is not editable.</p>
+ </blockquote><p>We realize that most users will probably run into trouble trying to remember our creatively designed VM names 
 (sorry, we had to make sure they were unique) so Koding VMs can also very easily be assigned a username based 
 namespace (username.koding.io). This makes it easy to remember the domain name for your VM since it is your 
 username! (Note: You can still reach the VM by using the system assigned name as described above.)</p>
 <p>To assign your username based domain to a VM, follow these 2 easy steps:</p>
 <ol>
-<li>open the VM settings panel and click on &quot;More&quot; to reveal the domain settings (as
-shown in the image below)</li>
-<li>toggle the switch next to your personal namespace to enable it for this VM. (Note: If you have more than one VM, you will be able to reassign the same namespace on other VM settings panels but only one VM can have the namespace applied to it at any given time.)
+<li>open the <a href="http://learn.koding.com/guides/understanding-vm-panel/">VM settings modal</a> and click on the &quot;Domains&quot; tab to reveal the domain settings (as shown in the image below)</li>
+<li>toggle the switch next to your personal namespace to enable it for this VM. (Note: If you have more than one VM, you will be able to reassign the same namespace on other VM settings modals but only one VM can have the namespace applied to it at any given time.)
 <img src="/faq/vm-hostname/first.png" alt="Personal namespace"></li>
 </ol>
 <p>In addition to this, Koding also allows you to create sub-domains
 so that if you want to configure your apache/nginx web server to serve multiple 
 virtual hosts, it&apos;s easy to assign them all their own unique sub-domains. <a href="http://www.rackspace.com/knowledge_center/article/how-to-serve-multiple-domains-using-virtual-hosts">Read more about virtual hosts.</a></p>
-<p>To use this feature, head back to the VM settings panel and follow these 3 easy steps:</p>
+<p>To use this feature, head back to the VM settings modal and follow these 3 easy steps:</p>
 <ol>
-<li>click the (+) icon next to the &quot;Domains&quot; label to open up an input box where you can type in a new sub-domain. All you need to provide is the sub-domain, we will add the .username.koding.io part automatically.
+<li>click on the &quot;Domains&quot; tab in the VM settings modal</li>
+<li>click the &quot;Add new domain&quot; button to open up an input box where you can type in a new sub-domain. All you need to provide is the sub-domain, we will add the .username.koding.io part automatically.
 <img src="/faq/vm-hostname/second.png" alt="Add subdomain"></li>
-<li>once added, these sub-domains become available on the setting panels 
-of all your VMs for easy reassignment</li>
+<li>once added, these sub-domains become available on the setting modals of all your VMs for easy reassignment</li>
 <li>deleting a sub-domain is as easy as adding one!
 <img src="/faq/vm-hostname/third.png" alt="Remove subdomain"></li>
 </ol>
