@@ -13,6 +13,7 @@ You just upgraded your account, awesome (and thanks!) but what happens now?
 Based on the type of plan you selected on the [Pricing page][pricing] you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
 - Ability to mark your VM(s) as Always-On
 - Add more storage to your VM(s)
+
 ### Turn on "Always On" mode for your VM
 1. Go to the [VM settings modal](http://learn.koding.com/guides/understanding-vm-panel/).
 2. On the "General" tab, find the switch for "Always On" and turn it on. Your VM will
