@@ -41,7 +41,6 @@ Here you can create a [custom/short URL for your VM](http://learn.koding.com/faq
 
 ### Advanced Tab
 The advanced section includes settings that only advanced users should use. If you are an unexperienced user then this section should be off limits.
-
 * Reinitialize VM: This button will set your VM back to its default state. This means that the VM will be re-imaged, as if you deleted the VM and created a new one. [This guide](https://learn.koding.com/faq/vm-reinit/) explains the reinit function in more detail.
 * Terminate VM: You can remove your VM and create a new one if you so choose. We recommend you reinit your VM in lieu of deleting and recreating it.
 
