@@ -11,7 +11,7 @@ template: series.toffee
 
 # Workspaces
 
-In this guide we'll go over what [Koding][koding] Workspaces are, and how 
+In this guide we'll go over what Koding Workspaces are, and how 
 to manage them. Lets get started!
 
 ## What are they?
