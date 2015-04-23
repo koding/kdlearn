@@ -88,6 +88,6 @@ Bellow is a list of the current available packages that can be installed using t
 
 The above list will be updated periodically to include more packages, that you can use on your VM.
 
-KPM is fully extensible so if you want to contribute, you can fork the project on Github and add your own installers for the Koding community!
+KPM is fully extensible so if you want to contribute, you can [fork the project on Github](https://github.com/koding/kpm-scripts) and add your own installers for the Koding community!
 
 If we are missing any packages and frameworks that you would like KPM to be able to handle, please let us know via email at support@koding.com.
