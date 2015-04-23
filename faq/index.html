@@ -44,11 +44,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?495" />
+    <link rel="stylesheet" href="/css/vendor.css?81" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?684" />
+    <link rel="stylesheet" href="/css/main.css?691" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?464" />
+    <link rel="stylesheet" href="/css/rwd.css?420" />
 	</head>
 	<body>
 
@@ -249,6 +249,18 @@
     
       <li>
         <a
+          href="#vm-ip-vs-address"
+          class="title">Should I use my VM's IP or Address?</a>
+      </li>
+    
+      <li>
+        <a
+          href="#change-username"
+          class="title">Can I change my Koding username?</a>
+      </li>
+    
+      <li>
+        <a
           href="#delete-account"
           class="title">How can I delete my account?</a>
       </li>
@@ -267,20 +279,8 @@
     
       <li>
         <a
-          href="#change-username"
-          class="title">Can I change my Koding username?</a>
-      </li>
-    
-      <li>
-        <a
-          href="#vm-ip-vs-address"
-          class="title">Should I use my VM's IP or Address?</a>
-      </li>
-    
-      <li>
-        <a
-          href="#posting-guidelines"
-          class="title">Guidelines to keep in mind when sharing on Koding's Activity Feed.</a>
+          href="#sudo-password"
+          class="title">What is my sudo password?</a>
       </li>
     
       <li>
@@ -291,14 +291,8 @@
     
       <li>
         <a
-          href="#sudo-password"
-          class="title">What is my sudo password?</a>
-      </li>
-    
-      <li>
-        <a
-          href="#vm-hostname"
-          class="title">What is my VM Hostname/Address/Domain Name?</a>
+          href="#posting-guidelines"
+          class="title">Guidelines to keep in mind when sharing on Koding's Activity Feed.</a>
       </li>
     
       <li>
@@ -311,6 +305,12 @@
         <a
           href="#transfer-files"
           class="title">How do I transfer/copy files to and from my VM?</a>
+      </li>
+    
+      <li>
+        <a
+          href="#vm-hostname"
+          class="title">What is my VM Hostname/Address/Domain Name?</a>
       </li>
     
       <li>
@@ -454,6 +454,52 @@ Google+, etc. or you can use the new password to log in. Both will work.</p>
     </li>
   
     <li>
+      <a name="vm-ip-vs-address">
+      <h3
+        class="question"
+        itemscope itemtype="//schema.org/Question"
+      >
+        <a href="/faq/vm-ip-vs-address">Should I use my VM's IP or Address?</a>
+      </h3>
+      <div
+        class="answer"
+        itemscope itemtype="//schema.org/Answer"
+        itemprop="acceptedAnswer"
+      >
+        <p>Koding gives you access to your VMs IP, as well as an Address that 
+always points to that VM&apos;s IP, so which should you use, and why?</p>
+<p>While your VMs IP will operate perfectly fine, the IP is dynamic. In 
+other words, it will change. Because of this, Koding gives you a <a href="/faq/vm-address">VM
+Address</a>, which will <em>always</em> point to your VM, regardless of 
+IP changes, so this is what you usually want to use.</p>
+<blockquote class="tip fa fa-info-circle"> <p>IP addresses of &quot;Always On&quot; VMs don&apos;t change even after the VM reboots.</p>
+ </blockquote><p>If you have trouble finding your VM Address, <a href="/faq/vm-address">click here</a>.</p>
+
+      </div>
+    </li>
+  
+    <li>
+      <a name="change-username">
+      <h3
+        class="question"
+        itemscope itemtype="//schema.org/Question"
+      >
+        <a href="/faq/change-username">Can I change my Koding username?</a>
+      </h3>
+      <div
+        class="answer"
+        itemscope itemtype="//schema.org/Answer"
+        itemprop="acceptedAnswer"
+      >
+        <p>In short no. Sorry :(</p>
+<p>Why...? It&apos;s because when you first create your account we provision a lot of support services in the background for your account and all of these would need to get updated. This becomes problematic if you have made changes to your VM (even if you have created one file). If you really want to change your username, the only option is to delete your current account and make a new one with the desired username.</p>
+<p>But ... you can however , change your display name as seen associated with your the bulletin board posts. Just browse to <a href="https://koding.com/Account/Profile">https://koding.com/Account/Profile</a> where you may change &quot;Name&quot; and/or &quot;LastName&quot; as you would like them to appear to other koding users wherever you chat on koding. This quite niftily has the side-effect of changing your nick on all of you past postings instantaneously. Note that this feature does not in any way allow you to be anonymous. Anyone who clicks on your chat nick (whatever it may be at the time) will always see your canonical username in the URL of your profile.</p>
+<p>So to be clear , you may change your display name at any time but this does not affect your login username or VM URL. As stated above that is your system UID and can not be changed.</p>
+
+      </div>
+    </li>
+  
+    <li>
       <a name="delete-account">
       <h3
         class="question"
@@ -536,47 +582,57 @@ to transfer the files.</p>
     </li>
   
     <li>
-      <a name="change-username">
+      <a name="sudo-password">
       <h3
         class="question"
         itemscope itemtype="//schema.org/Question"
       >
-        <a href="/faq/change-username">Can I change my Koding username?</a>
+        <a href="/faq/sudo-password">What is my sudo password?</a>
       </h3>
       <div
         class="answer"
         itemscope itemtype="//schema.org/Answer"
         itemprop="acceptedAnswer"
       >
-        <p>In short no. Sorry :(</p>
-<p>Why...? It&apos;s because when you first create your account we provision a lot of support services in the background for your account and all of these would need to get updated. This becomes problematic if you have made changes to your VM (even if you have created one file). If you really want to change your username, the only option is to delete your current account and make a new one with the desired username.</p>
-<p>But ... you can however , change your display name as seen associated with your the bulletin board posts. Just browse to <a href="https://koding.com/Account/Profile">https://koding.com/Account/Profile</a> where you may change &quot;Name&quot; and/or &quot;LastName&quot; as you would like them to appear to other koding users wherever you chat on koding. This quite niftily has the side-effect of changing your nick on all of you past postings instantaneously. Note that this feature does not in any way allow you to be anonymous. Anyone who clicks on your chat nick (whatever it may be at the time) will always see your canonical username in the URL of your profile.</p>
-<p>So to be clear , you may change your display name at any time but this does not affect your login username or VM URL. As stated above that is your system UID and can not be changed.</p>
+        <p>By default, there is no <code>sudo</code> password on your Koding VM. It is blank/empty which means that if you want to use <code>sudo</code>, all you need to do is as follows:</p>
+<pre><code>sudo &lt;command you wish <span class="hljs-keyword">to</span> <span class="hljs-keyword">use</span>&gt;
+</code></pre><p>When you hit enter, the sudo level command you wish to run without a password prompt.</p>
+<p>If you wish to, you can add a sudo password yourself. To do this, change user to root by typing:</p>
+<pre><code><span class="hljs-title">sudo</span> su
+</code></pre><p>and then create a password for the root user by typing:</p>
+<pre><code>passwd
+</code></pre><p>You will be asked to type in the new password twice. Once done, the new password you picked is the password you will need to use when
+using the <code>sudo</code> command from that point on.</p>
 
       </div>
     </li>
   
     <li>
-      <a name="vm-ip-vs-address">
+      <a name="vm-poweroff">
       <h3
         class="question"
         itemscope itemtype="//schema.org/Question"
       >
-        <a href="/faq/vm-ip-vs-address">Should I use my VM's IP or Address?</a>
+        <a href="/faq/vm-poweroff">How do turn off my my Koding VM?</a>
       </h3>
       <div
         class="answer"
         itemscope itemtype="//schema.org/Answer"
         itemprop="acceptedAnswer"
       >
-        <p>Koding gives you access to your VMs IP, as well as an Address that 
-always points to that VM&apos;s IP, so which should you use, and why?</p>
-<p>While your VMs IP will operate perfectly fine, the IP is dynamic. In 
-other words, it will change. Because of this, Koding gives you a <a href="/faq/vm-address">VM
-Address</a>, which will <em>always</em> point to your VM, regardless of 
-IP changes, so this is what you usually want to use.</p>
-<blockquote class="tip fa fa-info-circle"> <p>IP addresses of &quot;Always On&quot; VMs don&apos;t change even after the VM reboots.</p>
- </blockquote><p>If you have trouble finding your VM Address, <a href="/faq/vm-address">click here</a>.</p>
+        <p>To turn off your VM, we recommend that you use the power on/off toggle in the <a href="http://learn.koding.com/guides/understanding-vm-panel/">VM settings modal</a>. This ensures that all internal API calls are triggered and all Koding services are aware that you have powered down your VM.</p>
+<blockquote class="tip fa fa-info-circle"> <p>VMs for our free accounts automatically turn off after 60 minutes of inactivity on our IDE or Terminal
+so there&apos;s no need to manually turn the VM off.</p>
+ </blockquote><p>That being said, sometimes you may need to restart your VM and want to do it via the Terminal. In such cases, simple type the following command in Terminal:</p>
+<pre><code><span class="hljs-title">sudo</span> reboot
+</code></pre><p>you will see the following msg on your Terminal while the reboot command is processed and your VM restarts</p>
+<pre><code>connecting<span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-built_in">.</span>
+</code></pre><p>followed by</p>
+<pre><code>Failed <span class="hljs-keyword">to</span> connect <span class="hljs-keyword">to</span> terminal, click here <span class="hljs-keyword">to</span> <span class="hljs-keyword">try</span> again.
+</code></pre><p>followed by</p>
+<pre><code>An unknown error occured, please <span class="hljs-built_in">open</span> <span class="hljs-operator">a</span> <span class="hljs-built_in">new</span> <span class="hljs-constant">tab</span>. Click here <span class="hljs-built_in">to</span> dismiss this <span class="hljs-constant">one</span>.
+</code></pre><p>both of the above messages, even though they look like errors are normal because a manual reboot has been requested.</p>
+<p>We don&apos;t recommend using <code>sudo poweroff</code> or <code>sudo shutdown</code> to power down your VM as it will leave the associated sub-systems in an unknown state which may disrupt you from using your account. Use the <a href="http://learn.koding.com/guides/understanding-vm-panel/">VM settings modal</a> to stop/turn off your VM.</p>
 
       </div>
     </li>
@@ -617,103 +673,6 @@ IP changes, so this is what you usually want to use.</p>
 <li>For executables: <a href="http://ideone.com/">IDEone</a></li>
 <li>For HTML, CSS and JS: <a href="http://jsfiddle.net/">JSFiddle</a></li>
 </ul>
-
-      </div>
-    </li>
-  
-    <li>
-      <a name="vm-poweroff">
-      <h3
-        class="question"
-        itemscope itemtype="//schema.org/Question"
-      >
-        <a href="/faq/vm-poweroff">How do turn off my my Koding VM?</a>
-      </h3>
-      <div
-        class="answer"
-        itemscope itemtype="//schema.org/Answer"
-        itemprop="acceptedAnswer"
-      >
-        <p>To turn off your VM, we recommend that you use the power on/off toggle in the <a href="http://learn.koding.com/guides/understanding-vm-panel/">VM settings modal</a>. This ensures that all internal API calls are triggered and all Koding services are aware that you have powered down your VM.</p>
-<blockquote class="tip fa fa-info-circle"> <p>VMs for our free accounts automatically turn off after 60 minutes of inactivity on our IDE or Terminal
-so there&apos;s no need to manually turn the VM off.</p>
- </blockquote><p>That being said, sometimes you may need to restart your VM and want to do it via the Terminal. In such cases, simple type the following command in Terminal:</p>
-<pre><code><span class="hljs-title">sudo</span> reboot
-</code></pre><p>you will see the following msg on your Terminal while the reboot command is processed and your VM restarts</p>
-<pre><code>connecting<span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-built_in">.</span>
-</code></pre><p>followed by</p>
-<pre><code>Failed <span class="hljs-keyword">to</span> connect <span class="hljs-keyword">to</span> terminal, click here <span class="hljs-keyword">to</span> <span class="hljs-keyword">try</span> again.
-</code></pre><p>followed by</p>
-<pre><code>An unknown error occured, please <span class="hljs-built_in">open</span> <span class="hljs-operator">a</span> <span class="hljs-built_in">new</span> <span class="hljs-constant">tab</span>. Click here <span class="hljs-built_in">to</span> dismiss this <span class="hljs-constant">one</span>.
-</code></pre><p>both of the above messages, even though they look like errors are normal because a manual reboot has been requested.</p>
-<p>We don&apos;t recommend using <code>sudo poweroff</code> or <code>sudo shutdown</code> to power down your VM as it will leave the associated sub-systems in an unknown state which may disrupt you from using your account. Use the <a href="http://learn.koding.com/guides/understanding-vm-panel/">VM settings modal</a> to stop/turn off your VM.</p>
-
-      </div>
-    </li>
-  
-    <li>
-      <a name="sudo-password">
-      <h3
-        class="question"
-        itemscope itemtype="//schema.org/Question"
-      >
-        <a href="/faq/sudo-password">What is my sudo password?</a>
-      </h3>
-      <div
-        class="answer"
-        itemscope itemtype="//schema.org/Answer"
-        itemprop="acceptedAnswer"
-      >
-        <p>By default, there is no <code>sudo</code> password on your Koding VM. It is blank/empty which means that if you want to use <code>sudo</code>, all you need to do is as follows:</p>
-<pre><code>sudo &lt;command you wish <span class="hljs-keyword">to</span> <span class="hljs-keyword">use</span>&gt;
-</code></pre><p>When you hit enter, the sudo level command you wish to run without a password prompt.</p>
-<p>If you wish to, you can add a sudo password yourself. To do this, change user to root by typing:</p>
-<pre><code><span class="hljs-title">sudo</span> su
-</code></pre><p>and then create a password for the root user by typing:</p>
-<pre><code>passwd
-</code></pre><p>You will be asked to type in the new password twice. Once done, the new password you picked is the password you will need to use when
-using the <code>sudo</code> command from that point on.</p>
-
-      </div>
-    </li>
-  
-    <li>
-      <a name="vm-hostname">
-      <h3
-        class="question"
-        itemscope itemtype="//schema.org/Question"
-      >
-        <a href="/faq/vm-hostname">What is my VM Hostname/Address/Domain Name?</a>
-      </h3>
-      <div
-        class="answer"
-        itemscope itemtype="//schema.org/Answer"
-        itemprop="acceptedAnswer"
-      >
-        <p>The system assigned name for your VM is available on VM settings modal under the label: <em>Assigned URL</em>.</p>
-<blockquote class="tip fa fa-info-circle"> <p>This is an assigned name and is not editable.</p>
- </blockquote><p>We realize that most users will probably run into trouble trying to remember our creatively designed VM names 
-(sorry, we had to make sure they were unique) so Koding VMs can also very easily be assigned a username based 
-namespace (username.koding.io). This makes it easy to remember the domain name for your VM since it is your 
-username! (Note: You can still reach the VM by using the system assigned name as described above.)</p>
-<p>To assign your username based domain to a VM, follow these 2 easy steps:</p>
-<ol>
-<li>open the <a href="http://learn.koding.com/guides/understanding-vm-panel/">VM settings modal</a> and click on the &quot;Domains&quot; tab to reveal the domain settings (as shown in the image below)</li>
-<li>toggle the switch next to your personal namespace to enable it for this VM. (Note: If you have more than one VM, you will be able to reassign the same namespace on other VM settings modals but only one VM can have the namespace applied to it at any given time.)
-<img src="/faq/vm-hostname/first.png" alt="Personal namespace"></li>
-</ol>
-<p>In addition to this, Koding also allows you to create sub-domains
-so that if you want to configure your apache/nginx web server to serve multiple 
-virtual hosts, it&apos;s easy to assign them all their own unique sub-domains. <a href="http://www.rackspace.com/knowledge_center/article/how-to-serve-multiple-domains-using-virtual-hosts">Read more about virtual hosts.</a></p>
-<p>To use this feature, head back to the VM settings modal and follow these 3 easy steps:</p>
-<ol>
-<li>click on the &quot;Domains&quot; tab in the VM settings modal</li>
-<li>click the &quot;Add new domain&quot; button to open up an input box where you can type in a new sub-domain. All you need to provide is the sub-domain, we will add the .username.koding.io part automatically.
-<img src="/faq/vm-hostname/second.png" alt="Add subdomain"></li>
-<li>once added, these sub-domains become available on the setting modals of all your VMs for easy reassignment</li>
-<li>deleting a sub-domain is as easy as adding one!
-<img src="/faq/vm-hostname/third.png" alt="Remove subdomain"></li>
-</ol>
 
       </div>
     </li>
@@ -765,6 +724,47 @@ off Apache, type in: <code>sudo service apache2 stop</code> in Terminal.</li>
 <p>The last step you need to do it to place the archive into the Web folder and then just access the a similar URL:</p>
 <pre><code><span class="hljs-string">http:</span><span class="hljs-comment">//KODING_USERNAME.koding.io/&lt;path/name of the archive&gt;</span>
 </code></pre><p>Find out more about your VM hostname <a href="http://learn.koding.com/faq/vm-hostname/">here</a>.</p>
+
+      </div>
+    </li>
+  
+    <li>
+      <a name="vm-hostname">
+      <h3
+        class="question"
+        itemscope itemtype="//schema.org/Question"
+      >
+        <a href="/faq/vm-hostname">What is my VM Hostname/Address/Domain Name?</a>
+      </h3>
+      <div
+        class="answer"
+        itemscope itemtype="//schema.org/Answer"
+        itemprop="acceptedAnswer"
+      >
+        <p>The system assigned name for your VM is available on VM settings modal under the label: <em>Assigned URL</em>.</p>
+<blockquote class="tip fa fa-info-circle"> <p>This is an assigned name and is not editable.</p>
+ </blockquote><p>We realize that most users will probably run into trouble trying to remember our creatively designed VM names 
+(sorry, we had to make sure they were unique) so Koding VMs can also very easily be assigned a username based 
+namespace (username.koding.io). This makes it easy to remember the domain name for your VM since it is your 
+username! (Note: You can still reach the VM by using the system assigned name as described above.)</p>
+<p>To assign your username based domain to a VM, follow these 2 easy steps:</p>
+<ol>
+<li>open the <a href="http://learn.koding.com/guides/understanding-vm-panel/">VM settings modal</a> and click on the &quot;Domains&quot; tab to reveal the domain settings (as shown in the image below)</li>
+<li>toggle the switch next to your personal namespace to enable it for this VM. (Note: If you have more than one VM, you will be able to reassign the same namespace on other VM settings modals but only one VM can have the namespace applied to it at any given time.)
+<img src="/faq/vm-hostname/first.png" alt="Personal namespace"></li>
+</ol>
+<p>In addition to this, Koding also allows you to create sub-domains
+so that if you want to configure your apache/nginx web server to serve multiple 
+virtual hosts, it&apos;s easy to assign them all their own unique sub-domains. <a href="http://www.rackspace.com/knowledge_center/article/how-to-serve-multiple-domains-using-virtual-hosts">Read more about virtual hosts.</a></p>
+<p>To use this feature, head back to the VM settings modal and follow these 3 easy steps:</p>
+<ol>
+<li>click on the &quot;Domains&quot; tab in the VM settings modal</li>
+<li>click the &quot;Add new domain&quot; button to open up an input box where you can type in a new sub-domain. All you need to provide is the sub-domain, we will add the .username.koding.io part automatically.
+<img src="/faq/vm-hostname/second.png" alt="Add subdomain"></li>
+<li>once added, these sub-domains become available on the setting modals of all your VMs for easy reassignment</li>
+<li>deleting a sub-domain is as easy as adding one!
+<img src="/faq/vm-hostname/third.png" alt="Remove subdomain"></li>
+</ol>
 
       </div>
     </li>

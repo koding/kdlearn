@@ -117,6 +117,33 @@ Click the VM settings for the shared VM and then select &amp;quot;Leave Shared V
   </item>
   
   <item>
+    <title>How to install pgcli</title>
+    <link>//learn.koding.com/guides/installing-pgcli</link>
+    <pubDate>"2015-03-24T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/installing-pgcli</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install pgcli using just one command:
+kpm install pgcli
+
+Pgcli is a command line interface for Postgres with auto-completion and syntax highlighting.
+  Getting started Before you can start the pgcli install process, you'll need to update all of the apt-get packages:
+sudo apt-get update
+After that make sure you have the Python package manager or pip installed.
+First check if pip is installed on the system.
+which pip
+If the above command returns an error, then you do not have pip installed on your VM. You can install it using this command.
+sudo apt-get install python-pip
+ Make sure you also have Python installed on your VM before you can install pip.
+   Installing Pgcli uses psycopg to talk to the postgres database. In order to install psycopg, you will need libpq and python-dev installed on your VM. Use the bellow command to achieve this.
+sudo apt-get install libpq-dev python-dev
+Now you can go ahead and install pgcli. You can use this command.
+sudo pip install pgcli
+And that's it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
     <title>How to install MediaWiki</title>
     <link>//learn.koding.com/guides/how-to-install-mediawiki</link>
     <pubDate>"2015-03-24T00:00:00.000Z"</pubDate>
@@ -186,33 +213,6 @@ Open it using nano:
 nano LocalSettings.php
 copy the contents from the file you just downloaded and then save the file.
 And that's it! If you navigate to your VM's hostname and add /mediawiki at the end you should see a working wiki.
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
-    <title>How to install pgcli</title>
-    <link>//learn.koding.com/guides/installing-pgcli</link>
-    <pubDate>"2015-03-24T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/installing-pgcli</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install pgcli using just one command:
-kpm install pgcli
-
-Pgcli is a command line interface for Postgres with auto-completion and syntax highlighting.
-  Getting started Before you can start the pgcli install process, you'll need to update all of the apt-get packages:
-sudo apt-get update
-After that make sure you have the Python package manager or pip installed.
-First check if pip is installed on the system.
-which pip
-If the above command returns an error, then you do not have pip installed on your VM. You can install it using this command.
-sudo apt-get install python-pip
- Make sure you also have Python installed on your VM before you can install pip.
-   Installing Pgcli uses psycopg to talk to the postgres database. In order to install psycopg, you will need libpq and python-dev installed on your VM. Use the bellow command to achieve this.
-sudo apt-get install libpq-dev python-dev
-Now you can go ahead and install pgcli. You can use this command.
-sudo pip install pgcli
-And that's it!
 If you encounter any issues or have any questions please drop an email here.
 </description>
   </item>
@@ -336,59 +336,6 @@ If you encounter any issues or have any questions please drop an email here
   </item>
   
   <item>
-    <title>Koding IDE Introduction</title>
-    <link>//learn.koding.com/guides/ide-introduction</link>
-    <pubDate>"2015-03-18T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/ide-introduction</guid>
-    <author>Team Koding</author>
-    <description>In this guide we'll go over the Koding Integrated Development Environment or IDE for short. We'll try to explain how it works, how to use it and in the end share some useful tips that you can use to be more productive.
-  Getting started To access your IDE, select your Virtual Machine on the left hand side as pictured bellow.
-
- If you have a Developer or Professional account then select the VM you want to start, from the list.
- Then click on the Turn it on button in the modal.
-
-After the VM has started, you'll see your Koding IDE.
- The IDE will remember what files / tabs you had opened last time and the FileTree will remember the folder location.
-   Usage The Koding IDE consists of two main parts: the FileTree, and the Editor.
-
-The IDE can be customized by clicking on the little cog icon and then modifying the settings based on your needs.
- You can also customize the Koding Terminal from here.
- 
-The FileTree, on the left, enables file navigation around your VM. You can drag files or folders from one location to another one and if you right click files and folders you'll yield shortcuts to various actions as exemplified in the bellow images.
-
-File actions
-
-
-
-Folder actions
-
-
-The Editor, that sits on the right of the FileTree, is the main driving force behing the Koding IDE. It allows you to edit a wide variaty of files types, such as .php, .rb, .html, .css just to name a few.
-By default the editor will be opened in a horizontal two pane view. Panes can be opened, split and merged at will. They can also be made full screen.
-You can open a new tab, in a pane, by clicking on the plus button and then chosing the type of tab you want to open, either a new Terminal tab, a new drawing board or a new file.
-
-
-If you choose to open a new file tab you'll have access to some actions on that tab. Clicking on the little arrow next to the tab name wil bring up a menu with multiple actions.
-
-Choosing the Terminal tab will open the Terminal to your Koding VM. We won't go into much detail about the Terminal in this guide. Head over to this guide for a more in depth explanation of the Terminal.
-The Drawing board tab is there to help you draft ideas / share them with others or when you want to doddle the next big thing.
-Everything has a keyboard shortcut as well. A shortcut reference, can be located by clicking the keyboard icon in the lower right.
-
-The Koding IDE can be used when you are in the collaboration mode. You can share your VM by click on the Share button in the bottom right corner of the IDE.
-
-This will share the VM with your teammate(s) or friend(s). Learn more about the collaboration feature here.
-  Tips 
-Use the Ctrl(Cmd) + Alt + M keyboard shortcut to merge all panes.
-Never worry about saving files again. Enable the autosave feature from the IDE settings.
-Double click on the sidebar and FileTree deviders to minimize them and make more room for the Editor.
-Ctrl(Cmd) + Enter(Return) keyboard shortcut will make everything fullscreen.
-
-The Koding IDE is a simple, yet powerful, editor for your browser based development.
-Explore it today and if you ever need help with the IDE you can just click on the bottom right corner question mark icon and the support modal will pop-up or email us at support@koding.com and we'll gladly help.
-</description>
-  </item>
-  
-  <item>
     <title>Koding Terminal Introduction</title>
     <link>//learn.koding.com/guides/terminal-introduction</link>
     <pubDate>"2015-03-18T00:00:00.000Z"</pubDate>
@@ -445,6 +392,59 @@ ifconfig - reports the systems network interfaces.
 
 The Koding Terminal is an essential component for development, right in your browser.
 Explore it today and if you ever need help with the Terminal you can just click on the bottom right corner question mark icon and the support modal will pop-up or email us at support@koding.com and we'll gladly help.
+</description>
+  </item>
+  
+  <item>
+    <title>Koding IDE Introduction</title>
+    <link>//learn.koding.com/guides/ide-introduction</link>
+    <pubDate>"2015-03-18T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/ide-introduction</guid>
+    <author>Team Koding</author>
+    <description>In this guide we'll go over the Koding Integrated Development Environment or IDE for short. We'll try to explain how it works, how to use it and in the end share some useful tips that you can use to be more productive.
+  Getting started To access your IDE, select your Virtual Machine on the left hand side as pictured bellow.
+
+ If you have a Developer or Professional account then select the VM you want to start, from the list.
+ Then click on the Turn it on button in the modal.
+
+After the VM has started, you'll see your Koding IDE.
+ The IDE will remember what files / tabs you had opened last time and the FileTree will remember the folder location.
+   Usage The Koding IDE consists of two main parts: the FileTree, and the Editor.
+
+The IDE can be customized by clicking on the little cog icon and then modifying the settings based on your needs.
+ You can also customize the Koding Terminal from here.
+ 
+The FileTree, on the left, enables file navigation around your VM. You can drag files or folders from one location to another one and if you right click files and folders you'll yield shortcuts to various actions as exemplified in the bellow images.
+
+File actions
+
+
+
+Folder actions
+
+
+The Editor, that sits on the right of the FileTree, is the main driving force behing the Koding IDE. It allows you to edit a wide variaty of files types, such as .php, .rb, .html, .css just to name a few.
+By default the editor will be opened in a horizontal two pane view. Panes can be opened, split and merged at will. They can also be made full screen.
+You can open a new tab, in a pane, by clicking on the plus button and then chosing the type of tab you want to open, either a new Terminal tab, a new drawing board or a new file.
+
+
+If you choose to open a new file tab you'll have access to some actions on that tab. Clicking on the little arrow next to the tab name wil bring up a menu with multiple actions.
+
+Choosing the Terminal tab will open the Terminal to your Koding VM. We won't go into much detail about the Terminal in this guide. Head over to this guide for a more in depth explanation of the Terminal.
+The Drawing board tab is there to help you draft ideas / share them with others or when you want to doddle the next big thing.
+Everything has a keyboard shortcut as well. A shortcut reference, can be located by clicking the keyboard icon in the lower right.
+
+The Koding IDE can be used when you are in the collaboration mode. You can share your VM by click on the Share button in the bottom right corner of the IDE.
+
+This will share the VM with your teammate(s) or friend(s). Learn more about the collaboration feature here.
+  Tips 
+Use the Ctrl(Cmd) + Alt + M keyboard shortcut to merge all panes.
+Never worry about saving files again. Enable the autosave feature from the IDE settings.
+Double click on the sidebar and FileTree deviders to minimize them and make more room for the Editor.
+Ctrl(Cmd) + Enter(Return) keyboard shortcut will make everything fullscreen.
+
+The Koding IDE is a simple, yet powerful, editor for your browser based development.
+Explore it today and if you ever need help with the IDE you can just click on the bottom right corner question mark icon and the support modal will pop-up or email us at support@koding.com and we'll gladly help.
 </description>
   </item>
   
@@ -520,6 +520,24 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
+    <title>Hello World on Koding: Python</title>
+    <link>//learn.koding.com/guides/hello-world/python</link>
+    <pubDate>"2015-03-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/python</guid>
+    <author>Team Koding</author>
+    <description>  Introduction Python is a widely used general-purpose, high-level programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java. The language provides constructs intended to enable clear programs on both a small and large scale.
+  Implementation The first thing you need to do is to create a file called helloworld.py in your Koding VM and paste the bellow snippet into it.
+print &amp;quot;Hello World!&amp;quot;
+To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
+python helloworld.py
+  Explanation print &amp;quot;Hello World!&amp;quot;
+Since Python emphasizes code readability, the above line is pretty self explanatory. It will print out something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
+And that's it!
+You just wrote and ran your first Hello World in Python.
+</description>
+  </item>
+  
+  <item>
     <title>Hello World on Koding: Go</title>
     <link>//learn.koding.com/guides/hello-world/go</link>
     <pubDate>"2015-03-04T00:00:00.000Z"</pubDate>
@@ -557,24 +575,6 @@ You just wrote and ran your first Hello World in Go.
   </item>
   
   <item>
-    <title>Hello World on Koding: Python</title>
-    <link>//learn.koding.com/guides/hello-world/python</link>
-    <pubDate>"2015-03-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/python</guid>
-    <author>Team Koding</author>
-    <description>  Introduction Python is a widely used general-purpose, high-level programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java. The language provides constructs intended to enable clear programs on both a small and large scale.
-  Implementation The first thing you need to do is to create a file called helloworld.py in your Koding VM and paste the bellow snippet into it.
-print &amp;quot;Hello World!&amp;quot;
-To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
-python helloworld.py
-  Explanation print &amp;quot;Hello World!&amp;quot;
-Since Python emphasizes code readability, the above line is pretty self explanatory. It will print out something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
-And that's it!
-You just wrote and ran your first Hello World in Python.
-</description>
-  </item>
-  
-  <item>
     <title>Hello World on Koding: Ruby</title>
     <link>//learn.koding.com/guides/hello-world/ruby</link>
     <pubDate>"2015-03-04T00:00:00.000Z"</pubDate>
@@ -593,6 +593,56 @@ puts 'Hello, world!'
 The above line is pretty self explanatory. It will put something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
 And that's it!
 You just wrote and ran your first Hello World in Ruby.
+</description>
+  </item>
+  
+  <item>
+    <title>Hello World on Koding: Java</title>
+    <link>//learn.koding.com/guides/hello-world/java</link>
+    <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/java</guid>
+    <author>Team Koding</author>
+    <description>  Introduction Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.
+  Implementation The first thing you need to do is to create a file called HelloWorld.java in your Koding VM and paste the bellow snippet into it.
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println(&amp;quot;Hello, World!&amp;quot;);
+    }
+}
+To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
+javac HelloWorld.java
+java HelloWorld
+  Explanation public class HelloWorld
+The first line defines a class called HelloWorld. In Java, every line of code that can actually run needs to be inside a class. This line declares a class named HelloWorld, which is public, that means that any other class can access it.
+public static void main(String[] args)
+The main method has to have this exact signature in order to be able to run your program.
+
+public - means that anyone can access it.
+static  - means that you can run this method without creating an instance of Main.
+void - means that this method doesn't return any value.
+main - is the name of the method.
+
+The arguments inside the method are the arguments that you will get when running the program with parameters. It's an array of strings.
+{}
+The curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
+group or function.
+System.out.println(&amp;quot;Hello, World!&amp;quot;);
+System is a pre-defined class that Java provides and it also holds some useful methods and variables. out is a static variable within System that represents the output of your program. println is a method of out that can be used to print a line.
+And that's it!
+You just wrote and ran your first Hello World in Java.
+If you'd like to continue dabbling in Java, we recommend taking a look at this tutorial written for Koding over at Andriodauthority.com
+</description>
+  </item>
+  
+  <item>
+    <title>Hello World on Koding</title>
+    <link>//learn.koding.com/guides/hello-world</link>
+    <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world</guid>
+    <author>Team Koding</author>
+    <description>In this Hello World series we'll go over some of the most popular programming languages and learn how to implement a simple Hello World script in each one of them.
+By the end of the series you should be familiar with the most popular languages and you'll be able to continue with the one you like best, on Koding of course!
+As a challenge after you're done with the entire series have a go at this quiz and test your knowledge.
 </description>
   </item>
   
@@ -661,44 +711,6 @@ You just wrote and ran your first Hello World in C++.
   </item>
   
   <item>
-    <title>Hello World on Koding: Java</title>
-    <link>//learn.koding.com/guides/hello-world/java</link>
-    <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/java</guid>
-    <author>Team Koding</author>
-    <description>  Introduction Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.
-  Implementation The first thing you need to do is to create a file called HelloWorld.java in your Koding VM and paste the bellow snippet into it.
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(&amp;quot;Hello, World!&amp;quot;);
-    }
-}
-To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
-javac HelloWorld.java
-java HelloWorld
-  Explanation public class HelloWorld
-The first line defines a class called HelloWorld. In Java, every line of code that can actually run needs to be inside a class. This line declares a class named HelloWorld, which is public, that means that any other class can access it.
-public static void main(String[] args)
-The main method has to have this exact signature in order to be able to run your program.
-
-public - means that anyone can access it.
-static  - means that you can run this method without creating an instance of Main.
-void - means that this method doesn't return any value.
-main - is the name of the method.
-
-The arguments inside the method are the arguments that you will get when running the program with parameters. It's an array of strings.
-{}
-The curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
-group or function.
-System.out.println(&amp;quot;Hello, World!&amp;quot;);
-System is a pre-defined class that Java provides and it also holds some useful methods and variables. out is a static variable within System that represents the output of your program. println is a method of out that can be used to print a line.
-And that's it!
-You just wrote and ran your first Hello World in Java.
-If you'd like to continue dabbling in Java, we recommend taking a look at this tutorial written for Koding over at Andriodauthority.com
-</description>
-  </item>
-  
-  <item>
     <title>Hello World on Koding: Perl</title>
     <link>//learn.koding.com/guides/hello-world/perl</link>
     <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
@@ -760,18 +772,6 @@ echo outputs one or more strings. echo is not actually a function (it is a langu
 The last part after the closing ?&amp;gt; tag if just basic HTML code.
 And that's it!
 You just wrote and ran your first Hello World in PHP.
-</description>
-  </item>
-  
-  <item>
-    <title>Hello World on Koding</title>
-    <link>//learn.koding.com/guides/hello-world</link>
-    <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world</guid>
-    <author>Team Koding</author>
-    <description>In this Hello World series we'll go over some of the most popular programming languages and learn how to implement a simple Hello World script in each one of them.
-By the end of the series you should be familiar with the most popular languages and you'll be able to continue with the one you like best, on Koding of course!
-As a challenge after you're done with the entire series have a go at this quiz and test your knowledge.
 </description>
   </item>
   
@@ -907,6 +907,45 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
+    <title>Setting up a Tornado webserver</title>
+    <link>//learn.koding.com/guides/setting-tornado-webserver</link>
+    <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-tornado-webserver</guid>
+    <author>Team Koding</author>
+    <description>  Getting started Before you can start the Tornado install process, you'll need to update all of the apt-get packages:
+sudo apt-get update
+Then make sure you have pip installed on your VM. You can install it using the Koding Package Manager (kpm) like so:
+kpm install pip
+  Installing You can install Tornado using the bellow command:
+pip install tornado
+  Usage To test if you can run a Tornado webserver correctly, create a goodbyetolocalhost.py file. Then insert the bellow code snippet:
+import tornado.ioloop
+import tornado.web
+
+class MainHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.write(&amp;quot;Hello, world&amp;quot;)
+
+application = tornado.web.Application([
+    (r&amp;quot;/&amp;quot;, MainHandler),
+])
+
+if __name__ == &amp;quot;__main__&amp;quot;:
+    application.listen(8888, '0.0.0.0')
+    tornado.ioloop.IOLoop.instance().start()
+You can run that script like so:
+python goodbyetolocalhost.py
+You will now be able to access the Tornado webserver by following a similar URL:
+http://KODING_USERNAME.koding.io:8888
+Find out more about your VM hostname here.
+If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:8888. You can check this, using the netstat command in another terminal window and the bellow command:
+sudo netstat -tnlp
+And that's it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
     <title>Setting up a Symfony2 webserver</title>
     <link>//learn.koding.com/guides/setting-symfony2-webserver</link>
     <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
@@ -932,6 +971,35 @@ You will now be able to access the Symfony2 webserver by following a similar URL
 http://KODING_USERNAME.koding.io:8080
 Find out more about your VM hostname here.
 If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:8080. You can check this, using the netstat command in another terminal window and the bellow command:
+sudo netstat -tnlp
+And that's it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>Setting up a Rails webserver</title>
+    <link>//learn.koding.com/guides/setting-rails-webserver</link>
+    <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-rails-webserver</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Rails using just one command:
+kpm install rails
+
+  Getting started Before you can start the Rails install process, you'll need to update all of the apt-get packages:
+sudo apt-get update
+Then make sure you have Ruby installed on your VM. You can install it by following this guide.
+  Installing You can install Rails using the bellow command:
+sudo gem install rails
+  Usage Creating a Rails project is really easy. It just takes one command and you're good to go:
+rails new goodbyetolocalhost
+cd goodbyetolocalhost
+You can run the Rails webserver like so:
+rails server
+You will now be able to access the Rails webserver by following a similar URL:
+http://KODING_USERNAME.koding.io:3000
+Find out more about your VM hostname here.
+Rails should listen to 0.0.0.0:3000 by default. If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:3000. You can check this, using the netstat command in another terminal window and the bellow command:
 sudo netstat -tnlp
 And that's it!
 If you encounter any issues or have any questions please drop an email here.
@@ -972,45 +1040,6 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Setting up a Tornado webserver</title>
-    <link>//learn.koding.com/guides/setting-tornado-webserver</link>
-    <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-tornado-webserver</guid>
-    <author>Team Koding</author>
-    <description>  Getting started Before you can start the Tornado install process, you'll need to update all of the apt-get packages:
-sudo apt-get update
-Then make sure you have pip installed on your VM. You can install it using the Koding Package Manager (kpm) like so:
-kpm install pip
-  Installing You can install Tornado using the bellow command:
-pip install tornado
-  Usage To test if you can run a Tornado webserver correctly, create a goodbyetolocalhost.py file. Then insert the bellow code snippet:
-import tornado.ioloop
-import tornado.web
-
-class MainHandler(tornado.web.RequestHandler):
-    def get(self):
-        self.write(&amp;quot;Hello, world&amp;quot;)
-
-application = tornado.web.Application([
-    (r&amp;quot;/&amp;quot;, MainHandler),
-])
-
-if __name__ == &amp;quot;__main__&amp;quot;:
-    application.listen(8888, '0.0.0.0')
-    tornado.ioloop.IOLoop.instance().start()
-You can run that script like so:
-python goodbyetolocalhost.py
-You will now be able to access the Tornado webserver by following a similar URL:
-http://KODING_USERNAME.koding.io:8888
-Find out more about your VM hostname here.
-If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:8888. You can check this, using the netstat command in another terminal window and the bellow command:
-sudo netstat -tnlp
-And that's it!
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
     <title>Setting up a Django webserver</title>
     <link>//learn.koding.com/guides/setting-django-webserver</link>
     <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
@@ -1034,35 +1063,6 @@ You will now be able to access the Django webserver by following a similar URL:
 http://KODING_USERNAME.koding.io:8000
 Find out more about your VM hostname here.
 If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:8000. You can check this, using the netstat command in another terminal window and the bellow command:
-sudo netstat -tnlp
-And that's it!
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
-    <title>Setting up a Rails webserver</title>
-    <link>//learn.koding.com/guides/setting-rails-webserver</link>
-    <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-rails-webserver</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Rails using just one command:
-kpm install rails
-
-  Getting started Before you can start the Rails install process, you'll need to update all of the apt-get packages:
-sudo apt-get update
-Then make sure you have Ruby installed on your VM. You can install it by following this guide.
-  Installing You can install Rails using the bellow command:
-sudo gem install rails
-  Usage Creating a Rails project is really easy. It just takes one command and you're good to go:
-rails new goodbyetolocalhost
-cd goodbyetolocalhost
-You can run the Rails webserver like so:
-rails server
-You will now be able to access the Rails webserver by following a similar URL:
-http://KODING_USERNAME.koding.io:3000
-Find out more about your VM hostname here.
-Rails should listen to 0.0.0.0:3000 by default. If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:3000. You can check this, using the netstat command in another terminal window and the bellow command:
 sudo netstat -tnlp
 And that's it!
 If you encounter any issues or have any questions please drop an email here.
@@ -1207,44 +1207,6 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Setup Cockpit on Koding</title>
-    <link>//learn.koding.com/guides/setting-up-cockpit</link>
-    <pubDate>"2015-02-18T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-cockpit</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Cockpit using just one command:
-kpm install cockpit
-
-  What is Cockpit? Cockpit was born out of the need of building a simple dynamic site. Cockpits goal is to be simple, but yet powerful and designed in that way that you can spend less time trying to squeeze your site into a theme or template.
-  Getting started Before you can start the Cockpit install process, you'll need to update all of the apt-get packages:
-sudo apt-get update
-Make sure you have the PHP SQLite package installed on your VM before you continue. You can install it using this command:
-sudo apt-get install php5-sqlite
-Last but not least restart Apache:
-sudo service apache2 restart
-  Step 1 Run the below commands, which will install Cockpit on your VM:
-Download the latest version:
-curl -Lo /tmp/cockpit-0.13.0.tar.gz https://github.com/aheinze/cockpit/archive/0.13.0.tar.gz
-Untar the archive and move it:
-tar -C /tmp -zxf /tmp/cockpit-0.13.0.tar.gz
-
-mv /tmp/cockpit-0.13.0 ~/Web/cockpit
-Set the proper permissions for the storage folder and its subfolders:
-cd Web
-chmod 777 -R cockpit/storage
-Clean up using the following command
-sudo rm /tmp/cockpit-0.13.0.tar.gz
-The set up has finished, you now need to complete the installation by heading over to a similar URL as this one and finish the installation:
-http://KODING_USERNAME.koding.io/cockpit/install
-Find out more about your VM hostname here.
-  Step 2 If everything was successful this is the first thing your should see:
-
-And that's it!
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
     <title>Getting Started with Ruby</title>
     <link>//learn.koding.com/guides/getting-started-ruby</link>
     <pubDate>"2015-02-18T00:00:00.000Z"</pubDate>
@@ -1381,6 +1343,44 @@ Now run it just like before, and visit it in your browser. Just like
 that, you have a working Sinatra web server!
 In a following tutorial we'll dig deeper into Sinatra, but for now check
 out the Official Documentation. And as always, Happy Koding!
+</description>
+  </item>
+  
+  <item>
+    <title>Setup Cockpit on Koding</title>
+    <link>//learn.koding.com/guides/setting-up-cockpit</link>
+    <pubDate>"2015-02-18T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-cockpit</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Cockpit using just one command:
+kpm install cockpit
+
+  What is Cockpit? Cockpit was born out of the need of building a simple dynamic site. Cockpits goal is to be simple, but yet powerful and designed in that way that you can spend less time trying to squeeze your site into a theme or template.
+  Getting started Before you can start the Cockpit install process, you'll need to update all of the apt-get packages:
+sudo apt-get update
+Make sure you have the PHP SQLite package installed on your VM before you continue. You can install it using this command:
+sudo apt-get install php5-sqlite
+Last but not least restart Apache:
+sudo service apache2 restart
+  Step 1 Run the below commands, which will install Cockpit on your VM:
+Download the latest version:
+curl -Lo /tmp/cockpit-0.13.0.tar.gz https://github.com/aheinze/cockpit/archive/0.13.0.tar.gz
+Untar the archive and move it:
+tar -C /tmp -zxf /tmp/cockpit-0.13.0.tar.gz
+
+mv /tmp/cockpit-0.13.0 ~/Web/cockpit
+Set the proper permissions for the storage folder and its subfolders:
+cd Web
+chmod 777 -R cockpit/storage
+Clean up using the following command
+sudo rm /tmp/cockpit-0.13.0.tar.gz
+The set up has finished, you now need to complete the installation by heading over to a similar URL as this one and finish the installation:
+http://KODING_USERNAME.koding.io/cockpit/install
+Find out more about your VM hostname here.
+  Step 2 If everything was successful this is the first thing your should see:
+
+And that's it!
+If you encounter any issues or have any questions please drop an email here.
 </description>
   </item>
   
@@ -1991,52 +1991,6 @@ Good luck with your further Java web development and happy coding!
   </item>
   
   <item>
-    <title>Using mySQL</title>
-    <link>//learn.koding.com/guides/using-mysql</link>
-    <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/using-mysql</guid>
-    <author>Alvin Wan</author>
-    <description>mySQL offers a popular implementation of the SQL language. This guide will get you started on using mySQL on Koding.
-First make sure you have mySQL installed. Have a look at this guide to learn how to install it.
-Are you using PostgreSQL? Have a look at this guide.
-  Starting mySQL Let's start the mySQL server using the following command:
-sudo service mysql start
-  Getting Started First, you'll need to login using th root user that was configured during the mySQL installation. Open your Terminal and type in the following:
-mysql -u root -p
-Enter your password, and hit enter. You're now logged in.
-  Creating a User You'll now create a new account for our code, with the username &amp;quot;bob&amp;quot; and password &amp;quot;pass&amp;quot;.
-create user 'bob'@'localhost' identified by 'pass';
-If you see an arrow
--&amp;gt;
-that means you forgot the end semicolon &amp;quot;;&amp;quot;. Enter that and hit enter.
-You can exit the server by using Ctrl+D and then login again as Bob:
-mysql -u bob -p;
-After entering the password, you'll be readmitted into the mySQL server. To continue with this guide, you'll need to be logged in as root.
-  Creating a Database Each mySQL server includes a variety of databases. The initial installation comes with several. You can view them by typing:
-show databases;
-You should see a short list of databases:
-+--------------------+
-| Database           |
-+--------------------+
-| information_schema |
-| mysql              |
-| performance_schema |
-+--------------------+
-3 rows in set (0.00 sec)
-Let's create your first database:
-create database test;
-  Linking Users and Databases You'll need to grant privileges to the user, so that &amp;quot;Bob&amp;quot; can access the database &amp;quot;test&amp;quot; and modify it accordingly.
-To grant &amp;quot;Bob&amp;quot; all privileges on all tables in database &amp;quot;test&amp;quot;:
-grant all on test.* to 'bob'@'localhost';
-  Using the Database Exit out of root by using Ctrl+D, and login as &amp;quot;Bob&amp;quot;. To connect to a database, prefix the database name with &amp;quot;use&amp;quot;.
-use test;
-Once here, you’ll be able to execute mySQL commands. 
-And that's it!
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
     <title>Installing LinuxBrew</title>
     <link>//learn.koding.com/guides/installing-linuxbrew</link>
     <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
@@ -2128,6 +2082,52 @@ When you hit &amp;quot;y&amp;quot; ufw will backup all existing rules before doi
   Help, I locked myself out of my VM If for some reason you enabled your firewall and did not take the steps needed to open up the ports needed for Koding to work, then
 your only recourse is to reinit your VM. That process is described in this guide. If you 
 encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>Using mySQL</title>
+    <link>//learn.koding.com/guides/using-mysql</link>
+    <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/using-mysql</guid>
+    <author>Alvin Wan</author>
+    <description>mySQL offers a popular implementation of the SQL language. This guide will get you started on using mySQL on Koding.
+First make sure you have mySQL installed. Have a look at this guide to learn how to install it.
+Are you using PostgreSQL? Have a look at this guide.
+  Starting mySQL Let's start the mySQL server using the following command:
+sudo service mysql start
+  Getting Started First, you'll need to login using th root user that was configured during the mySQL installation. Open your Terminal and type in the following:
+mysql -u root -p
+Enter your password, and hit enter. You're now logged in.
+  Creating a User You'll now create a new account for our code, with the username &amp;quot;bob&amp;quot; and password &amp;quot;pass&amp;quot;.
+create user 'bob'@'localhost' identified by 'pass';
+If you see an arrow
+-&amp;gt;
+that means you forgot the end semicolon &amp;quot;;&amp;quot;. Enter that and hit enter.
+You can exit the server by using Ctrl+D and then login again as Bob:
+mysql -u bob -p;
+After entering the password, you'll be readmitted into the mySQL server. To continue with this guide, you'll need to be logged in as root.
+  Creating a Database Each mySQL server includes a variety of databases. The initial installation comes with several. You can view them by typing:
+show databases;
+You should see a short list of databases:
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
++--------------------+
+3 rows in set (0.00 sec)
+Let's create your first database:
+create database test;
+  Linking Users and Databases You'll need to grant privileges to the user, so that &amp;quot;Bob&amp;quot; can access the database &amp;quot;test&amp;quot; and modify it accordingly.
+To grant &amp;quot;Bob&amp;quot; all privileges on all tables in database &amp;quot;test&amp;quot;:
+grant all on test.* to 'bob'@'localhost';
+  Using the Database Exit out of root by using Ctrl+D, and login as &amp;quot;Bob&amp;quot;. To connect to a database, prefix the database name with &amp;quot;use&amp;quot;.
+use test;
+Once here, you’ll be able to execute mySQL commands. 
+And that's it!
+If you encounter any issues or have any questions please drop an email here.
 </description>
   </item>
   
@@ -2884,6 +2884,43 @@ guide.
   </item>
   
   <item>
+    <title>Getting Started: File Uploads</title>
+    <link>//learn.koding.com/guides/getting-started/file-upload</link>
+    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/file-upload</guid>
+    <author>Team Koding</author>
+    <description>In this guide we'll take a look at uploading your files and projects to
+Koding, in multiple ways. Lets get started!
+  Uploading with Drag and Drop The simplest way, is simply by using Drag and Drop file upload! To do
+this, open your Koding IDE, locate your FileTree on the left hand
+side, and drag a file from your Desktop onto the FileTree. An example
+image is below.
+
+After you let go of the file, your file will be uploaded to your
+~/Uploads directory. If ~/Uploads does not exist, it will be automatically
+created.
+ Files uploaded this way are not automatically available for
+serving over your VMs web server as the ~/Uploads directory is not inside
+~/Web (the default web root for Koding VMs). If you wish to use any uploaded
+files in your web project, please move them to a directory under ~/Web.
+   Uploading with FTP FTP is another common way to upload files to your VM. Before uploading
+with FTP though, you'll need to set up an FTP Server on your VM.
+The FTP Guide will take you through both the installation, and
+connecting process, so check it out!
+  Uploading with SCP SCP is is a tool that will copy files from your local Unix filesystem
+to a remote filesystem over SSH connections. To use it, make sure you
+have SSH setup with your Koding VM beforehand. Instructions can be found
+here if needed.
+After that, use the following command to copy a local file to your VM.
+scp LOCAL_FILE USERNAME.koding.io:REMOTE_FILE
+Replace LOCAL_FILE with your local file location, USERNAME with your
+Koding Username, and REMOTE_FILE with your Remote File location. An
+example of this command can be seen below.
+scp ~/my_image.png joshmurray.koding.io:~/my_image.png
+</description>
+  </item>
+  
+  <item>
     <title>Installing MongoDB</title>
     <link>//learn.koding.com/guides/install-mongodb</link>
     <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
@@ -2965,43 +3002,6 @@ sudo apt-get install lxc-docker
 If you made it to this point you can run this command to check if Docker is indeed installed and works properly:
 sudo docker run -i -t ubuntu /bin/bash
 If you have any question or issues please email us at support@koding.com and we'll gladly help.
-</description>
-  </item>
-  
-  <item>
-    <title>Getting Started: File Uploads</title>
-    <link>//learn.koding.com/guides/getting-started/file-upload</link>
-    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/file-upload</guid>
-    <author>Team Koding</author>
-    <description>In this guide we'll take a look at uploading your files and projects to
-Koding, in multiple ways. Lets get started!
-  Uploading with Drag and Drop The simplest way, is simply by using Drag and Drop file upload! To do
-this, open your Koding IDE, locate your FileTree on the left hand
-side, and drag a file from your Desktop onto the FileTree. An example
-image is below.
-
-After you let go of the file, your file will be uploaded to your
-~/Uploads directory. If ~/Uploads does not exist, it will be automatically
-created.
- Files uploaded this way are not automatically available for
-serving over your VMs web server as the ~/Uploads directory is not inside
-~/Web (the default web root for Koding VMs). If you wish to use any uploaded
-files in your web project, please move them to a directory under ~/Web.
-   Uploading with FTP FTP is another common way to upload files to your VM. Before uploading
-with FTP though, you'll need to set up an FTP Server on your VM.
-The FTP Guide will take you through both the installation, and
-connecting process, so check it out!
-  Uploading with SCP SCP is is a tool that will copy files from your local Unix filesystem
-to a remote filesystem over SSH connections. To use it, make sure you
-have SSH setup with your Koding VM beforehand. Instructions can be found
-here if needed.
-After that, use the following command to copy a local file to your VM.
-scp LOCAL_FILE USERNAME.koding.io:REMOTE_FILE
-Replace LOCAL_FILE with your local file location, USERNAME with your
-Koding Username, and REMOTE_FILE with your Remote File location. An
-example of this command can be seen below.
-scp ~/my_image.png joshmurray.koding.io:~/my_image.png
 </description>
   </item>
   
@@ -3160,154 +3160,6 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Getting Started with C and C++</title>
-    <link>//learn.koding.com/guides/getting-started-c-cpp</link>
-    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-c-cpp</guid>
-    <author>drodri</author>
-    <description>In this guide we'll introducing C and C++ and how to build your first programs
-in Koding.
-C and C++ are the reference languages in many domains, from heavy computations,
-research, robotics, embedded systems, financing and banking...
-They are compiled languages, you write source code and a compiler translate it to
-native binaries, that typically can run only in the platform they were compiled to
-(Win, Linux, Mac). The process of converting source code to executable binaries,
-that involve compiling and linking is called the build process. This process can
-be specified by different means, e.g. using an IDE or Makefiles.
-  Running your first C program Lets create our first &amp;quot;Hello world&amp;quot; C application, and build it.
-Open up your Ace editor, and open up a new file by pressing the Plus Button on the
-tab list. If your file says Untitled.txt, you're good to go.
-Next, paste the following code into the file.
-#include &amp;lt;stdio.h&amp;gt;
-
-void main(){
-    printf(&amp;quot;Hello world\n&amp;quot;);
-}
-We haven't saved our file yet , so use Ctrl-S to save the file,
-and name it main.c (note the extension c, not cpp).
-Finally, open up the Koding Terminal
-and build and run your application.
-$ gcc -o hello main.c
-$ ./hello
-Hello world
-  Running your first C++ program Create another file, this time named &amp;quot;main.cpp&amp;quot; with the following code:
-#include &amp;lt;iostream&amp;gt;
-
-using namespace std;
-
-int main(){
-    cout &amp;lt;&amp;lt; &amp;quot;Hello World&amp;quot; &amp;lt;&amp;lt; endl;
-    return 0;
-}
-Now we will build it with the g++ compiler, and run it. Please note that
-even if they are similar, C++ is not an &amp;quot;extension&amp;quot; of C or C with classes but
-a very different language by itself.
-$ g++ -o hellopp main.cpp
-$ ./hellopp
-Hello world
-Building larger applications can be somewhat difficult and cumbersome to the newbie.
-As soon as your application start to have several files, you will need to define
-how to build them in Makefiles, but we would rather recommend using the CMake build system,
-which is much simpler and fully portable to Windows and Mac platforms, with support
-for many compilers, as Visual Studio, and IDEs as Eclipse.
-The Biicode platform automatically generate CMake files for you, based on
-your source code files. It also manage dependencies, so it can be used for reusing
-existing code easily.
-</description>
-  </item>
-  
-  <item>
-    <title>What happens upon upgrade?</title>
-    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
-    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
-    <author>Team Koding</author>
-    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
-Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
-
-Ability to mark your VM(s) as Always-On
-Add more storage to your VM(s)
-
-  Turn on &amp;quot;Always On&amp;quot; mode for your VM 
-Go to the VM settings modal.
-On the &amp;quot;General&amp;quot; tab, find the switch for &amp;quot;Always On&amp;quot; and turn it on. Your VM will
-now not turn off even if you log out. This also means your public IP address will now be static.
-
-
-  Adding more disk space 
-Head over to VM settings
-Click on the &amp;quot;Disk Usage&amp;quot; tab and click the &amp;quot;resize your VM&amp;quot; link  (as shown in the image below)
-
-This will open the resize modal from where you can resize your VM.
-
-  Adding more VMs (Only for Developer and Professional Plans) 
-Hover your mouse over the &amp;quot;Your VMs&amp;quot; label in the sidebar (as shown in the image below)
-
-The &amp;quot;+&amp;quot; icon will appear
-Click the icon to and you will be presented with the option to create a new VM. You can select the size and the region of the VM.
-
-
-</description>
-  </item>
-  
-  <item>
-    <title>Building C / C++ applications with biicode</title>
-    <link>//learn.koding.com/guides/getting-started-biicode</link>
-    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-biicode</guid>
-    <author>drodri</author>
-    <description>Building larger applications can be somewhat difficult and cumbersome to the newbie.
-As soon as your application start to have several files, you will need to define
-how to build them in Makefiles or using the CMake build system.
-We will be using in the following examples biicode, which is a dependency manager
-that allows to easily retrieve existing code and also manages to automatically generate
-build files for your project.
-You can install it running from your terminal:
-$ wget http://apt.biicode.com/install.sh &amp;amp;&amp;amp; chmod +x install.sh &amp;amp;&amp;amp; ./install.sh
-After it finish, you can run a helper command that install an updated version of CMake:
-$ bii setup:cpp
-Lets build an application that computes the SHA1 of a string. Usually you dont want to write
-yourself such algorithm, but rather use an existing implementation.
-The following commands will create a project and a &amp;quot;Hello world&amp;quot; file, which you can build and
-run:
-$ bii init cryptoproject
-$ cd cryptoproject
-$ bii new myuser/crypto --hello=cpp
-$ bii cpp:build
-$ ./bin/myuser_crypto_main
-Hello world!
-Now replace the contents of the &amp;quot;main.cpp&amp;quot; file inside the blocks/myuser/crypto folder with:
-#include &amp;quot;cryptopp/cryptopp/sha.h&amp;quot;
-#include &amp;quot;cryptopp/cryptopp/filters.h&amp;quot;
-#include &amp;quot;cryptopp/cryptopp/hex.h&amp;quot;
-#include &amp;lt;iostream&amp;gt;
-#include &amp;lt;string&amp;gt;
-
-int main() {
-    CryptoPP::SHA1 sha1;
-    std::string source = &amp;quot;Hello&amp;quot;;
-    std::string hash = &amp;quot;&amp;quot;;
-    CryptoPP::StringSource(source, true, new CryptoPP::HashFilter(sha1,
-                            new CryptoPP::HexEncoder(new CryptoPP::StringSink(hash))));
-    std::cout &amp;lt;&amp;lt; hash &amp;lt;&amp;lt; std::endl;
-}
-If you now try to build this example, it will fail. You can try to do so, and then check
-your dependencies:
-$ bii cpp:build
-$ bii deps
-The code depends on some external code, the Crypto++ library. This can be easily retrieved
-with the &amp;quot;find&amp;quot; command
-$ bii find
-Now you can build and run it:
-$ bii cpp:build
-$ ./bin/myuser_crypto_main
-F7FF9E8B7BB2E09B70935A5D785E0CC5D9D0ABF0
-For further examples, you can have a look to the biicode C/C++ documentation and the
-examples
-</description>
-  </item>
-  
-  <item>
     <title>Getting started with Drupal 8 (Prerelease)</title>
     <link>//learn.koding.com/guides/getting-started-drupal8-beta</link>
     <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
@@ -3370,6 +3222,154 @@ chmod 0775 files
   </item>
   
   <item>
+    <title>Getting Started with C and C++</title>
+    <link>//learn.koding.com/guides/getting-started-c-cpp</link>
+    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-c-cpp</guid>
+    <author>drodri</author>
+    <description>In this guide we'll introducing C and C++ and how to build your first programs
+in Koding.
+C and C++ are the reference languages in many domains, from heavy computations,
+research, robotics, embedded systems, financing and banking...
+They are compiled languages, you write source code and a compiler translate it to
+native binaries, that typically can run only in the platform they were compiled to
+(Win, Linux, Mac). The process of converting source code to executable binaries,
+that involve compiling and linking is called the build process. This process can
+be specified by different means, e.g. using an IDE or Makefiles.
+  Running your first C program Lets create our first &amp;quot;Hello world&amp;quot; C application, and build it.
+Open up your Ace editor, and open up a new file by pressing the Plus Button on the
+tab list. If your file says Untitled.txt, you're good to go.
+Next, paste the following code into the file.
+#include &amp;lt;stdio.h&amp;gt;
+
+void main(){
+    printf(&amp;quot;Hello world\n&amp;quot;);
+}
+We haven't saved our file yet , so use Ctrl-S to save the file,
+and name it main.c (note the extension c, not cpp).
+Finally, open up the Koding Terminal
+and build and run your application.
+$ gcc -o hello main.c
+$ ./hello
+Hello world
+  Running your first C++ program Create another file, this time named &amp;quot;main.cpp&amp;quot; with the following code:
+#include &amp;lt;iostream&amp;gt;
+
+using namespace std;
+
+int main(){
+    cout &amp;lt;&amp;lt; &amp;quot;Hello World&amp;quot; &amp;lt;&amp;lt; endl;
+    return 0;
+}
+Now we will build it with the g++ compiler, and run it. Please note that
+even if they are similar, C++ is not an &amp;quot;extension&amp;quot; of C or C with classes but
+a very different language by itself.
+$ g++ -o hellopp main.cpp
+$ ./hellopp
+Hello world
+Building larger applications can be somewhat difficult and cumbersome to the newbie.
+As soon as your application start to have several files, you will need to define
+how to build them in Makefiles, but we would rather recommend using the CMake build system,
+which is much simpler and fully portable to Windows and Mac platforms, with support
+for many compilers, as Visual Studio, and IDEs as Eclipse.
+The Biicode platform automatically generate CMake files for you, based on
+your source code files. It also manage dependencies, so it can be used for reusing
+existing code easily.
+</description>
+  </item>
+  
+  <item>
+    <title>Building C / C++ applications with biicode</title>
+    <link>//learn.koding.com/guides/getting-started-biicode</link>
+    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-biicode</guid>
+    <author>drodri</author>
+    <description>Building larger applications can be somewhat difficult and cumbersome to the newbie.
+As soon as your application start to have several files, you will need to define
+how to build them in Makefiles or using the CMake build system.
+We will be using in the following examples biicode, which is a dependency manager
+that allows to easily retrieve existing code and also manages to automatically generate
+build files for your project.
+You can install it running from your terminal:
+$ wget http://apt.biicode.com/install.sh &amp;amp;&amp;amp; chmod +x install.sh &amp;amp;&amp;amp; ./install.sh
+After it finish, you can run a helper command that install an updated version of CMake:
+$ bii setup:cpp
+Lets build an application that computes the SHA1 of a string. Usually you dont want to write
+yourself such algorithm, but rather use an existing implementation.
+The following commands will create a project and a &amp;quot;Hello world&amp;quot; file, which you can build and
+run:
+$ bii init cryptoproject
+$ cd cryptoproject
+$ bii new myuser/crypto --hello=cpp
+$ bii cpp:build
+$ ./bin/myuser_crypto_main
+Hello world!
+Now replace the contents of the &amp;quot;main.cpp&amp;quot; file inside the blocks/myuser/crypto folder with:
+#include &amp;quot;cryptopp/cryptopp/sha.h&amp;quot;
+#include &amp;quot;cryptopp/cryptopp/filters.h&amp;quot;
+#include &amp;quot;cryptopp/cryptopp/hex.h&amp;quot;
+#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;string&amp;gt;
+
+int main() {
+    CryptoPP::SHA1 sha1;
+    std::string source = &amp;quot;Hello&amp;quot;;
+    std::string hash = &amp;quot;&amp;quot;;
+    CryptoPP::StringSource(source, true, new CryptoPP::HashFilter(sha1,
+                            new CryptoPP::HexEncoder(new CryptoPP::StringSink(hash))));
+    std::cout &amp;lt;&amp;lt; hash &amp;lt;&amp;lt; std::endl;
+}
+If you now try to build this example, it will fail. You can try to do so, and then check
+your dependencies:
+$ bii cpp:build
+$ bii deps
+The code depends on some external code, the Crypto++ library. This can be easily retrieved
+with the &amp;quot;find&amp;quot; command
+$ bii find
+Now you can build and run it:
+$ bii cpp:build
+$ ./bin/myuser_crypto_main
+F7FF9E8B7BB2E09B70935A5D785E0CC5D9D0ABF0
+For further examples, you can have a look to the biicode C/C++ documentation and the
+examples
+</description>
+  </item>
+  
+  <item>
+    <title>What happens upon upgrade?</title>
+    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
+    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
+    <author>Team Koding</author>
+    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
+Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
+
+Ability to mark your VM(s) as Always-On
+Add more storage to your VM(s)
+
+  Turn on &amp;quot;Always On&amp;quot; mode for your VM 
+Go to the VM settings modal.
+On the &amp;quot;General&amp;quot; tab, find the switch for &amp;quot;Always On&amp;quot; and turn it on. Your VM will
+now not turn off even if you log out. This also means your public IP address will now be static.
+
+
+  Adding more disk space 
+Head over to VM settings
+Click on the &amp;quot;Disk Usage&amp;quot; tab and click the &amp;quot;resize your VM&amp;quot; link  (as shown in the image below)
+
+This will open the resize modal from where you can resize your VM.
+
+  Adding more VMs (Only for Developer and Professional Plans) 
+Hover your mouse over the &amp;quot;Your VMs&amp;quot; label in the sidebar (as shown in the image below)
+
+The &amp;quot;+&amp;quot; icon will appear
+Click the icon to and you will be presented with the option to create a new VM. You can select the size and the region of the VM.
+
+
+</description>
+  </item>
+  
+  <item>
     <title>Getting Started: Workspaces</title>
     <link>//learn.koding.com/guides/getting-started/workspaces</link>
     <pubDate>"2014-09-18T00:00:00.000Z"</pubDate>
@@ -3412,41 +3412,6 @@ links you desire, as the steps above use, but just be careful not to
 delete any of your files in the process.
  The default Workspace can't be removed as that is the default Web folder on your VM.
  </description>
-  </item>
-  
-  <item>
-    <title>Setting up FTP on Koding</title>
-    <link>//learn.koding.com/guides/setting-up-ftp-on-koding</link>
-    <pubDate>"2014-09-15T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-ftp-on-koding</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install FTP using just one command:
-kpm install ftp
-
-In this guide you'll go over how to get your FTP Client connected to your VM's FTP Server. You will be using FileZilla as the FTP Client, but any client should be able to connect to your FTP Server successfully.
-  What you will need In this tutorial you will need the following.
-
-A Koding account, and your Koding Username.
-The Address of the VM you'd like to connect to. Instructions can be found here.
-
-  Update your software sources Before getting started, make sure you have the latest sources locked down. Type in:
-sudo apt-get update
-and let the update process complete. It should not require any input.
-  Installing ProFTPd First off, you'll need to install ProFTPd. This can be done by pasting the following command into your Koding IDE's Terminal.
-sudo apt-get install proftpd
-During the install process you will be asked to choose to run your VPS as an inetd or standalone server. Choose the standalone option.
-  Setting up the FTP User After ProFTPd has been successfully installed, you need to set a FTP password for your user. To do this, paste the following command into your Terminal.
-sudo passwd KODING_USERNAME
-Make note to replace KODING_USERNAME with your actual Koding username.
-After hitting enter, you'll be prompted for the FTP password you wish to use. Not your Koding password.
-  Connecting to your FTP Server Finally, in your FTP Client of choice paste your VM Address into the hostname. If you're not sure what that is, instructions to find it can be found here.
-After the hostname, enter your Koding username, and FTP Password that you chose in the above commands. An example image from FileZilla can be seen below.
-
-  Additional Resources 
-FileZilla
-FileZilla Download
-
-</description>
   </item>
   
   <item>
@@ -3507,6 +3472,41 @@ parts of another key.
 and share the output with Koding users. An example of the above ssh
 command with the -vv flag is below.
 ssh -vv joshmurray@unkk05c3f84e.joshmurray.koding.io
+</description>
+  </item>
+  
+  <item>
+    <title>Setting up FTP on Koding</title>
+    <link>//learn.koding.com/guides/setting-up-ftp-on-koding</link>
+    <pubDate>"2014-09-15T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-ftp-on-koding</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install FTP using just one command:
+kpm install ftp
+
+In this guide you'll go over how to get your FTP Client connected to your VM's FTP Server. You will be using FileZilla as the FTP Client, but any client should be able to connect to your FTP Server successfully.
+  What you will need In this tutorial you will need the following.
+
+A Koding account, and your Koding Username.
+The Address of the VM you'd like to connect to. Instructions can be found here.
+
+  Update your software sources Before getting started, make sure you have the latest sources locked down. Type in:
+sudo apt-get update
+and let the update process complete. It should not require any input.
+  Installing ProFTPd First off, you'll need to install ProFTPd. This can be done by pasting the following command into your Koding IDE's Terminal.
+sudo apt-get install proftpd
+During the install process you will be asked to choose to run your VPS as an inetd or standalone server. Choose the standalone option.
+  Setting up the FTP User After ProFTPd has been successfully installed, you need to set a FTP password for your user. To do this, paste the following command into your Terminal.
+sudo passwd KODING_USERNAME
+Make note to replace KODING_USERNAME with your actual Koding username.
+After hitting enter, you'll be prompted for the FTP password you wish to use. Not your Koding password.
+  Connecting to your FTP Server Finally, in your FTP Client of choice paste your VM Address into the hostname. If you're not sure what that is, instructions to find it can be found here.
+After the hostname, enter your Koding username, and FTP Password that you chose in the above commands. An example image from FileZilla can be seen below.
+
+  Additional Resources 
+FileZilla
+FileZilla Download
+
 </description>
   </item>
   
@@ -3779,54 +3779,27 @@ This concludes the getting started with Python guide. Thanks for reading!
   </item>
   
   <item>
-    <title>Author a guide: Previewing</title>
-    <link>//learn.koding.com/contribute/previewing</link>
+    <title>Getting Started: Editing Your Profile</title>
+    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
     <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/contribute/previewing</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
     <author>Team Koding</author>
-    <description>While you shouldn't need to preview your guides, since Markdown is 
-designed to be human friendly in the source, if you insist you can 
-preview your guides as they are on Koding University. This guide will go 
-over that process. Note that this will require a bit of developer 
-know-how, so be prepared to get your hands dirty. Lets get started!
-  Requirements You will need a working NodeJS installation to compile the Koding 
-University source. If you do not, visit the NodeJS downloads 
-page and grab the installer.
-  Installation With a working NodeJS installation, we need to install the KU 
-dependencies, as well as a global installation of the GulpJS. This can be 
-done with the following code:
-npm install -g gulp
-cd .metalsmith
-npm install
-  Building With Gulp installed, simply run the following command, to compile the 
-entire project into HTML.
-(Ignore cd .metalsmtih if you're already in that directory)
-cd .metalsmith
-gulp
-The .metalsmith/build directory will contain all of the compiled html, 
-css, and any static resources (such as images/etc) from the markdown 
-directory.
-Compiling can take 1-2 minutes, so be patient.
-  Previewing If you want to preview the compiled site, open a new Koding Terminal tab 
-and run the following:
-(Ignore cd .metalsmtih if you're already in that directory)
-cd .metalsmith
-gulp preview
-This will run a small HTTP Server on Port 8000, ie: 
-http://hostname.you.koding.io:8000. Keep this tab open, and in  a 
-different Koding Terminal tab run your gulp command from above.Each time you compile the site, this will show your compiled site.
-  Compiling as you type To have your Markdown compiled as you write your documents, run the 
-following commands:
-(Ignore cd .metalsmtih if you're already in that directory)
-cd .metalsmith
-gulp watch
-This, in combination with the preview command above, will compile the 
-site each time you change the Markdown.
-Note that if you add images for your guide to use, you'll want to run the 
-full gulp command again.
-And that sums it up! You now know how to contribute to Koding University, 
-in multiple ways. Keep up the awesome work, and we look forward to your 
-contribution!
+    <description>Your Koding profile is your public information page on Koding. Currently
+it shows your Avatar, Name and Description, recent Koding activity, and
+in the near future Badges and additional social information. In this
+guide we'll go over the basic usage of your Koding profile.
+  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted
+below.
+
+Clicking on it will open your profile.
+  Avatar, Name and Description When viewing your profile for the first time, you'll see that your first
+name is set to your Koding username, and your last name and description
+are set to default values, as seen in the below image.
+
+These default values are only seen by you, and if you double click them,
+you can edit that field.
+If you have one, Koding will use your Gravatar by default, but if you head over to your account settings Koding also supports avatar uploads directly.
+
 </description>
   </item>
   
@@ -3851,6 +3824,41 @@ Make a pull request of your changes, against the KDLearn Repo
 
 If you need more in depth instructions than that, please continue with 
 this series below. Thanks!
+</description>
+  </item>
+  
+  <item>
+    <title>Install Rockmongo</title>
+    <link>//learn.koding.com/guides/install-rockmongo</link>
+    <pubDate>2015-01-2</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/install-rockmongo</guid>
+    <author>Thien</author>
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Rockmongo using just one command:
+kpm install rockmongo
+
+  What is Rockmongo Rockmongo is a MongoDB administration tool that can be used to manage servers, databases, collections, documents, indexes etc. It provides a very user-friendly way for reading, writing and creating documents. It is very similar to phpMyAdmin.
+  Step 1 The first thing you need to do is to open up your Koding Terminal and type in the following command:
+cd Web
+  Step 2. Next up, you need to download the Rockmongo version that you're planing on using. In this case, you are going to use the latest version:
+git clone --depth=1 https://github.com/iwind/rockmongo.git
+  Step 3 Open the config.php file and change the following things:
+
+Host - should be set to 0.0.0.0
+Port - choose a desired port
+Chose a username and password. Note that by default they are set to admin and admin.
+
+  Step 4 Now Mongodb will need the PHP driver to work. You need to install it by running this command:
+sudo pecl install mongo
+After that you will need to edit the file 20-mono.ini, that is located at this path /etc/php5/apache2/conf.d/, and you you will need to add this line at the very end:
+extension=mongo.so
+  Step 5 Restart the Apache server using the following command and you should see everything working.
+sudo service apache2 restart
+You will now be able to access Rockmongo by following a similar URL:
+http://YOUR_KODING_USERNAME.koding.io/rockmongo
+If everything is working properly, you should see the following screen in your browser:
+
+And that's it!
+If you encounter any issues or have any questions please drop an email here.
 </description>
   </item>
   
@@ -3932,41 +3940,6 @@ identical.
 You should note that with this method, you cannot add images to the 
 repository. For that to work, have a look at the next section which uses 
 Koding's Editor and Git to make changes to this Koding University.
-</description>
-  </item>
-  
-  <item>
-    <title>Install Rockmongo</title>
-    <link>//learn.koding.com/guides/install-rockmongo</link>
-    <pubDate>2015-01-2</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/install-rockmongo</guid>
-    <author>Thien</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Rockmongo using just one command:
-kpm install rockmongo
-
-  What is Rockmongo Rockmongo is a MongoDB administration tool that can be used to manage servers, databases, collections, documents, indexes etc. It provides a very user-friendly way for reading, writing and creating documents. It is very similar to phpMyAdmin.
-  Step 1 The first thing you need to do is to open up your Koding Terminal and type in the following command:
-cd Web
-  Step 2. Next up, you need to download the Rockmongo version that you're planing on using. In this case, you are going to use the latest version:
-git clone --depth=1 https://github.com/iwind/rockmongo.git
-  Step 3 Open the config.php file and change the following things:
-
-Host - should be set to 0.0.0.0
-Port - choose a desired port
-Chose a username and password. Note that by default they are set to admin and admin.
-
-  Step 4 Now Mongodb will need the PHP driver to work. You need to install it by running this command:
-sudo pecl install mongo
-After that you will need to edit the file 20-mono.ini, that is located at this path /etc/php5/apache2/conf.d/, and you you will need to add this line at the very end:
-extension=mongo.so
-  Step 5 Restart the Apache server using the following command and you should see everything working.
-sudo service apache2 restart
-You will now be able to access Rockmongo by following a similar URL:
-http://YOUR_KODING_USERNAME.koding.io/rockmongo
-If everything is working properly, you should see the following screen in your browser:
-
-And that's it!
-If you encounter any issues or have any questions please drop an email here.
 </description>
   </item>
   
@@ -4083,27 +4056,54 @@ your localhost with your MySQL Client!
   </item>
   
   <item>
-    <title>Getting Started: Editing Your Profile</title>
-    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
+    <title>Author a guide: Previewing</title>
+    <link>//learn.koding.com/contribute/previewing</link>
     <pubDate>"2014-08-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
+    <guid isPermaLink="true">//learn.koding.com/contribute/previewing</guid>
     <author>Team Koding</author>
-    <description>Your Koding profile is your public information page on Koding. Currently
-it shows your Avatar, Name and Description, recent Koding activity, and
-in the near future Badges and additional social information. In this
-guide we'll go over the basic usage of your Koding profile.
-  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted
-below.
-
-Clicking on it will open your profile.
-  Avatar, Name and Description When viewing your profile for the first time, you'll see that your first
-name is set to your Koding username, and your last name and description
-are set to default values, as seen in the below image.
-
-These default values are only seen by you, and if you double click them,
-you can edit that field.
-If you have one, Koding will use your Gravatar by default, but if you head over to your account settings Koding also supports avatar uploads directly.
-
+    <description>While you shouldn't need to preview your guides, since Markdown is 
+designed to be human friendly in the source, if you insist you can 
+preview your guides as they are on Koding University. This guide will go 
+over that process. Note that this will require a bit of developer 
+know-how, so be prepared to get your hands dirty. Lets get started!
+  Requirements You will need a working NodeJS installation to compile the Koding 
+University source. If you do not, visit the NodeJS downloads 
+page and grab the installer.
+  Installation With a working NodeJS installation, we need to install the KU 
+dependencies, as well as a global installation of the GulpJS. This can be 
+done with the following code:
+npm install -g gulp
+cd .metalsmith
+npm install
+  Building With Gulp installed, simply run the following command, to compile the 
+entire project into HTML.
+(Ignore cd .metalsmtih if you're already in that directory)
+cd .metalsmith
+gulp
+The .metalsmith/build directory will contain all of the compiled html, 
+css, and any static resources (such as images/etc) from the markdown 
+directory.
+Compiling can take 1-2 minutes, so be patient.
+  Previewing If you want to preview the compiled site, open a new Koding Terminal tab 
+and run the following:
+(Ignore cd .metalsmtih if you're already in that directory)
+cd .metalsmith
+gulp preview
+This will run a small HTTP Server on Port 8000, ie: 
+http://hostname.you.koding.io:8000. Keep this tab open, and in  a 
+different Koding Terminal tab run your gulp command from above.Each time you compile the site, this will show your compiled site.
+  Compiling as you type To have your Markdown compiled as you write your documents, run the 
+following commands:
+(Ignore cd .metalsmtih if you're already in that directory)
+cd .metalsmith
+gulp watch
+This, in combination with the preview command above, will compile the 
+site each time you change the Markdown.
+Note that if you add images for your guide to use, you'll want to run the 
+full gulp command again.
+And that sums it up! You now know how to contribute to Koding University, 
+in multiple ways. Keep up the awesome work, and we look forward to your 
+contribution!
 </description>
   </item>
   
@@ -4297,6 +4297,79 @@ routes, middleware, and finally templates. Thanks for reading!
   </item>
   
   <item>
+    <title>Ghost Blog Installation</title>
+    <link>//learn.koding.com/guides/ghost-installation</link>
+    <pubDate>"2014-08-01T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/ghost-installation</guid>
+    <author>Team Koding</author>
+    <description>In this article we will go over the installation process for the awesome
+new blogging software, Ghost. Installation is quick
+and easy, and just requires a few configuration edits, making this great
+for beginners. So, lets get started!
+  What is Ghost? Ghost is an awesome new blog software written with “Just Blogging” in
+mind. Think WordPress without the complexity, bringing blogging back to
+it’s roots, so to say. This is all well and good, but with any product
+that is so new there is always confusion on how to install, develop, and
+run it.
+So lets try and resolve some of that confusion. Lets go over the simple
+process of setting up Ghost on Koding so you can
+learn it, toy with it, develop with it, and create your Ghost blog to be
+exactly what you want.
+  Downloading Ghost We're going to use the Koding Terminal to download Ghost, so
+visit the [Ghost Download][download-page] and look for the download link.
+Copy the url.
+At the time of writing this guide, the download url is:
+https://ghost.org/zip/ghost-0.5.2.zip (This version is likely
+outdated, please visit the download page and get the most updated link.)
+Now, go to your Terminal and type in the following commands.
+mkdir ghost
+cd ghost
+wget [ghost-zip-url]
+Replace [ghost-zip-url] with the full URL of the zip file that you
+copied above.
+  Unzipping Ghost The download is in zip format, so we need to unzip it. Type in the
+following command.
+unzip [ghost-zip-name]
+  Installing Dependencies Next, we need to install the dependencies.
+npm install --production
+This step will take a minute or two.
+  Edit the config Next up, open up the Ace Editor and double click your ghost
+directory to expand it. Right click, and rename, the config.example.js
+file to config.js.
+On line 36, look for the following section:
+        server: {
+            // Host to be passed to node's `net.Server#listen()`
+            host: '127.0.0.1',
+            // Port to be passed to node's `net.Server#listen()`, for
+iisnode set this to `process.env.PORT`
+            port: '2368'
+        },
+
+Replace 127.0.0.1 with 0.0.0.0, and change the Port to whichever
+you'd like to use. Save the file with Ctrl-s.
+  Starting Ghost Go back to your Terminal and type in the following command to
+start your Ghost Blog.
+npm start
+ If you had previously closed your Terminal, you'll need to navigate into the ghost directory again, with cd ghost.
+   Visiting your Ghost Blog Now open up a new tab and visit your Ghost Blog on your Koding domain at
+the following address.
+http://hostname.username.koding.io:port
+Where username is your Koding username, and port is the port you
+chose above.
+If you navigate to the following address, you can signup as Admin to your
+Ghost installation.
+http://hostname.username.koding.io:port/ghost
+  Running Ghost on Port 80 If you'd like to run Ghost on the default Port 80, you'll have to Stop
+Apache, and start Ghost with sudo. Here are the commands to do this.
+sudo service apache2 stop
+sudo npm start
+This should be typed from the Ghost installation directory.
+And that's it! You should now have a Ghost installation up and running.
+Happy Blogging!
+</description>
+  </item>
+  
+  <item>
     <title>Getting Started with NodeJS</title>
     <link>//learn.koding.com/guides/getting-started-nodejs</link>
     <pubDate>"2014-08-01T00:00:00.000Z"</pubDate>
@@ -4426,79 +4499,6 @@ This sums up the Getting Started with NodeJS guide. You should now have a
 good understanding of what Node is, from a very basic perspective. As 
 always, don't forget to look at the API Documentation. Have 
 fun with Node!
-</description>
-  </item>
-  
-  <item>
-    <title>Ghost Blog Installation</title>
-    <link>//learn.koding.com/guides/ghost-installation</link>
-    <pubDate>"2014-08-01T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/ghost-installation</guid>
-    <author>Team Koding</author>
-    <description>In this article we will go over the installation process for the awesome
-new blogging software, Ghost. Installation is quick
-and easy, and just requires a few configuration edits, making this great
-for beginners. So, lets get started!
-  What is Ghost? Ghost is an awesome new blog software written with “Just Blogging” in
-mind. Think WordPress without the complexity, bringing blogging back to
-it’s roots, so to say. This is all well and good, but with any product
-that is so new there is always confusion on how to install, develop, and
-run it.
-So lets try and resolve some of that confusion. Lets go over the simple
-process of setting up Ghost on Koding so you can
-learn it, toy with it, develop with it, and create your Ghost blog to be
-exactly what you want.
-  Downloading Ghost We're going to use the Koding Terminal to download Ghost, so
-visit the [Ghost Download][download-page] and look for the download link.
-Copy the url.
-At the time of writing this guide, the download url is:
-https://ghost.org/zip/ghost-0.5.2.zip (This version is likely
-outdated, please visit the download page and get the most updated link.)
-Now, go to your Terminal and type in the following commands.
-mkdir ghost
-cd ghost
-wget [ghost-zip-url]
-Replace [ghost-zip-url] with the full URL of the zip file that you
-copied above.
-  Unzipping Ghost The download is in zip format, so we need to unzip it. Type in the
-following command.
-unzip [ghost-zip-name]
-  Installing Dependencies Next, we need to install the dependencies.
-npm install --production
-This step will take a minute or two.
-  Edit the config Next up, open up the Ace Editor and double click your ghost
-directory to expand it. Right click, and rename, the config.example.js
-file to config.js.
-On line 36, look for the following section:
-        server: {
-            // Host to be passed to node's `net.Server#listen()`
-            host: '127.0.0.1',
-            // Port to be passed to node's `net.Server#listen()`, for
-iisnode set this to `process.env.PORT`
-            port: '2368'
-        },
-
-Replace 127.0.0.1 with 0.0.0.0, and change the Port to whichever
-you'd like to use. Save the file with Ctrl-s.
-  Starting Ghost Go back to your Terminal and type in the following command to
-start your Ghost Blog.
-npm start
- If you had previously closed your Terminal, you'll need to navigate into the ghost directory again, with cd ghost.
-   Visiting your Ghost Blog Now open up a new tab and visit your Ghost Blog on your Koding domain at
-the following address.
-http://hostname.username.koding.io:port
-Where username is your Koding username, and port is the port you
-chose above.
-If you navigate to the following address, you can signup as Admin to your
-Ghost installation.
-http://hostname.username.koding.io:port/ghost
-  Running Ghost on Port 80 If you'd like to run Ghost on the default Port 80, you'll have to Stop
-Apache, and start Ghost with sudo. Here are the commands to do this.
-sudo service apache2 stop
-sudo npm start
-This should be typed from the Ghost installation directory.
-And that's it! You should now have a Ghost installation up and running.
-Happy Blogging!
 </description>
   </item>
   
@@ -5217,6 +5217,79 @@ installation of Koding University.
   </item>
   
   <item>
+    <title>Markdown Basics, for Koding</title>
+    <link>//learn.koding.com/guides/markdown</link>
+    <pubDate>"2014-05-30T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/markdown</guid>
+    <author>Team Koding</author>
+    <description>Markdown is a simple language whose syntax can be easily converted into HTML.Koding, like many other sites, use Markdown as a way for users to easily style 
+their text. In this guide, we'll go over the basics of Markdown and it's usage.
+  Official Documentation The official Markdown 
+documentation covers the 
+Markdown syntax quite well, and as such this guide will only briefly touch on 
+each major syntax structure. If any questions remain, please refer to the 
+official documentation.
+  Emphasis Emphasis can be achieved by wrapping the word you'd like to emphasise with a 
+single asterisk or underline. Example:
+Hello, *this is emphasised* and this isn't!
+
+  Strengthen To strengthen your text wrap it with double asterisks or underlines. Example:
+Hello, **this is strong** and this isn't!
+
+  Inline Code Typing code within a sentence is considered inline code. Inline code is 
+accomplished by wrapping the code with backticks \ For example:
+Foo `bar` baz
+
+  Code Blocks Codeblocks can be achieved by wrapping your code in triple backticks, but make 
+sure to include a newline after each tripple backtick. Example:
+Take a look at my awesome code:
+
+```coffee
+do -&amp;gt; console.log 'Weee' while true
+```
+
+Nifty eh?
+Note the coffee text right behind the first triple backtick. This signifies 
+the language of the code used in that code block, and Koding will add syntax 
+highlighting if you specify the language.
+  Headers # This is a Header 1
+
+## This is a Header 2
+
+The # foo syntax represents headers of varying levels. The number of hashes 
+represents the level of header, with a maximum of 6.
+  Links [Koding](https://koding.com)
+[Koding Terminal, from Koding](/Terminal)
+
+The [foo](bar) syntax will create a link. Links can be absolute or relative, 
+just like html links.
+  Unordered Lists Unordered lists can be by prepending your items with a hyphen. Example:
+- Item one
+- Item two
+- Item three
+
+Markdown will also embed lists and list content, if you add indentation.Example:
+- Item one
+- Item two
+  This is still within item two.
+  - This is a list item in item two.
+  - And another
+- Item three
+
+  Ordered Lists Ordered lists are identical to unordered lists in features, you just have to 
+prepend your list items with a number, instead of a hyphen. Example:
+1. Item one
+2. Item two
+3. Item three
+
+  Images You can easily include images in your markdown by using the following notation:
+![Alt text](full url to the image)
+![Alt text](full url to the image &amp;quot;Optional title&amp;quot;)
+
+</description>
+  </item>
+  
+  <item>
     <title>Getting Started: The UI</title>
     <link>//learn.koding.com/guides/getting-started/the-ui</link>
     <pubDate>"2014-05-30T00:00:00.000Z"</pubDate>
@@ -5312,79 +5385,6 @@ search for the channel you're interested in.
 
 Following channels is a great way to stay active in content that matters
 to you.
-</description>
-  </item>
-  
-  <item>
-    <title>Markdown Basics, for Koding</title>
-    <link>//learn.koding.com/guides/markdown</link>
-    <pubDate>"2014-05-30T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/markdown</guid>
-    <author>Team Koding</author>
-    <description>Markdown is a simple language whose syntax can be easily converted into HTML.Koding, like many other sites, use Markdown as a way for users to easily style 
-their text. In this guide, we'll go over the basics of Markdown and it's usage.
-  Official Documentation The official Markdown 
-documentation covers the 
-Markdown syntax quite well, and as such this guide will only briefly touch on 
-each major syntax structure. If any questions remain, please refer to the 
-official documentation.
-  Emphasis Emphasis can be achieved by wrapping the word you'd like to emphasise with a 
-single asterisk or underline. Example:
-Hello, *this is emphasised* and this isn't!
-
-  Strengthen To strengthen your text wrap it with double asterisks or underlines. Example:
-Hello, **this is strong** and this isn't!
-
-  Inline Code Typing code within a sentence is considered inline code. Inline code is 
-accomplished by wrapping the code with backticks \ For example:
-Foo `bar` baz
-
-  Code Blocks Codeblocks can be achieved by wrapping your code in triple backticks, but make 
-sure to include a newline after each tripple backtick. Example:
-Take a look at my awesome code:
-
-```coffee
-do -&amp;gt; console.log 'Weee' while true
-```
-
-Nifty eh?
-Note the coffee text right behind the first triple backtick. This signifies 
-the language of the code used in that code block, and Koding will add syntax 
-highlighting if you specify the language.
-  Headers # This is a Header 1
-
-## This is a Header 2
-
-The # foo syntax represents headers of varying levels. The number of hashes 
-represents the level of header, with a maximum of 6.
-  Links [Koding](https://koding.com)
-[Koding Terminal, from Koding](/Terminal)
-
-The [foo](bar) syntax will create a link. Links can be absolute or relative, 
-just like html links.
-  Unordered Lists Unordered lists can be by prepending your items with a hyphen. Example:
-- Item one
-- Item two
-- Item three
-
-Markdown will also embed lists and list content, if you add indentation.Example:
-- Item one
-- Item two
-  This is still within item two.
-  - This is a list item in item two.
-  - And another
-- Item three
-
-  Ordered Lists Ordered lists are identical to unordered lists in features, you just have to 
-prepend your list items with a number, instead of a hyphen. Example:
-1. Item one
-2. Item two
-3. Item three
-
-  Images You can easily include images in your markdown by using the following notation:
-![Alt text](full url to the image)
-![Alt text](full url to the image &amp;quot;Optional title&amp;quot;)
-
 </description>
   </item>
   
@@ -5629,6 +5629,32 @@ That is all. If you have any issues setting up WebDav you can drop an email at s
   </item>
   
   <item>
+    <title>PyroCMS Setup and Installation for Beginners</title>
+    <link>//learn.koding.com/guides/pyrocms-installation-for-beginners</link>
+    <pubDate>"2014-03-09T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/pyrocms-installation-for-beginners</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install PyroCMS using just one command:
+kpm install pyrocms
+
+This article will cover the basic steps on how to setup a blog using PyroCMS as the base.
+  What's PyroCMS? It's a really simple, flexible and community driven CMS built with the CodeIgniter PHP framework that has an on-growing community of developers and supporters around it.
+After you've finished with the tutorial you'll have a brand new website that runs PyroCMS.
+  Step-by-step PyroCMS   Step 1. Open up your Koding Terminal and type in the following command to get you started.
+cd Web
+  Step 2. Still in the terminal window download the source code like so:
+wget https://www.pyrocms.com/downloads/v2.2.5
+  Step 3. We rename the downloaded file, unzip it and rename the newly created folder.
+mv v2.2.5 v2.2.5.zip; unzip v2.2.5.zip; mv pyrocms-pyrocms-08759da pyrocms
+  Step 4. You will now be able to access the PyroCMS by following a similar URL:
+http://KODING_USERNAME.koding.io/pyrocms
+Find out more about your VM hostname here.
+And that's it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
     <title>AngularJS Step-by-Step Setup</title>
     <link>//learn.koding.com/guides/angularjs-step-by-step</link>
     <pubDate>"2014-03-09T00:00:00.000Z"</pubDate>
@@ -5673,32 +5699,6 @@ And that's it. Why not continue and experiment with AngularJS on
 Koding and see what more cool stuff you can 
 make. As always, more Quick Tips and beginner friendly guides coming 
 soon, so stay tuned!
-</description>
-  </item>
-  
-  <item>
-    <title>PyroCMS Setup and Installation for Beginners</title>
-    <link>//learn.koding.com/guides/pyrocms-installation-for-beginners</link>
-    <pubDate>"2014-03-09T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/pyrocms-installation-for-beginners</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install PyroCMS using just one command:
-kpm install pyrocms
-
-This article will cover the basic steps on how to setup a blog using PyroCMS as the base.
-  What's PyroCMS? It's a really simple, flexible and community driven CMS built with the CodeIgniter PHP framework that has an on-growing community of developers and supporters around it.
-After you've finished with the tutorial you'll have a brand new website that runs PyroCMS.
-  Step-by-step PyroCMS   Step 1. Open up your Koding Terminal and type in the following command to get you started.
-cd Web
-  Step 2. Still in the terminal window download the source code like so:
-wget https://www.pyrocms.com/downloads/v2.2.5
-  Step 3. We rename the downloaded file, unzip it and rename the newly created folder.
-mv v2.2.5 v2.2.5.zip; unzip v2.2.5.zip; mv pyrocms-pyrocms-08759da pyrocms
-  Step 4. You will now be able to access the PyroCMS by following a similar URL:
-http://KODING_USERNAME.koding.io/pyrocms
-Find out more about your VM hostname here.
-And that's it!
-If you encounter any issues or have any questions please drop an email here.
 </description>
   </item>
   
@@ -5977,6 +5977,36 @@ Google+, etc. or you can use the new password to log in. Both will work.
   </item>
   
   <item>
+    <title>Should I use my VM's IP or Address?</title>
+    <link>//learn.koding.com/faq/vm-ip-vs-address</link>
+    <pubDate></pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/vm-ip-vs-address</guid>
+    <author></author>
+    <description>Koding gives you access to your VMs IP, as well as an Address that 
+always points to that VM's IP, so which should you use, and why?
+While your VMs IP will operate perfectly fine, the IP is dynamic. In 
+other words, it will change. Because of this, Koding gives you a VM
+Address, which will always point to your VM, regardless of 
+IP changes, so this is what you usually want to use.
+ IP addresses of &amp;quot;Always On&amp;quot; VMs don't change even after the VM reboots.
+ If you have trouble finding your VM Address, click here.
+</description>
+  </item>
+  
+  <item>
+    <title>Can I change my Koding username?</title>
+    <link>//learn.koding.com/faq/change-username</link>
+    <pubDate></pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/change-username</guid>
+    <author></author>
+    <description>In short no. Sorry :(
+Why...? It's because when you first create your account we provision a lot of support services in the background for your account and all of these would need to get updated. This becomes problematic if you have made changes to your VM (even if you have created one file). If you really want to change your username, the only option is to delete your current account and make a new one with the desired username.
+But ... you can however , change your display name as seen associated with your the bulletin board posts. Just browse to https://koding.com/Account/Profile where you may change &amp;quot;Name&amp;quot; and/or &amp;quot;LastName&amp;quot; as you would like them to appear to other koding users wherever you chat on koding. This quite niftily has the side-effect of changing your nick on all of you past postings instantaneously. Note that this feature does not in any way allow you to be anonymous. Anyone who clicks on your chat nick (whatever it may be at the time) will always see your canonical username in the URL of your profile.
+So to be clear , you may change your display name at any time but this does not affect your login username or VM URL. As stated above that is your system UID and can not be changed.
+</description>
+  </item>
+  
+  <item>
     <title>How can I delete my account?</title>
     <link>//learn.koding.com/faq/delete-account</link>
     <pubDate></pubDate>
@@ -6035,32 +6065,42 @@ Once you initiate a reinit, you will see appropriate messages on the screen as y
   </item>
   
   <item>
-    <title>Can I change my Koding username?</title>
-    <link>//learn.koding.com/faq/change-username</link>
+    <title>What is my sudo password?</title>
+    <link>//learn.koding.com/faq/sudo-password</link>
     <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/change-username</guid>
+    <guid isPermaLink="true">//learn.koding.com/faq/sudo-password</guid>
     <author></author>
-    <description>In short no. Sorry :(
-Why...? It's because when you first create your account we provision a lot of support services in the background for your account and all of these would need to get updated. This becomes problematic if you have made changes to your VM (even if you have created one file). If you really want to change your username, the only option is to delete your current account and make a new one with the desired username.
-But ... you can however , change your display name as seen associated with your the bulletin board posts. Just browse to https://koding.com/Account/Profile where you may change &amp;quot;Name&amp;quot; and/or &amp;quot;LastName&amp;quot; as you would like them to appear to other koding users wherever you chat on koding. This quite niftily has the side-effect of changing your nick on all of you past postings instantaneously. Note that this feature does not in any way allow you to be anonymous. Anyone who clicks on your chat nick (whatever it may be at the time) will always see your canonical username in the URL of your profile.
-So to be clear , you may change your display name at any time but this does not affect your login username or VM URL. As stated above that is your system UID and can not be changed.
+    <description>By default, there is no sudo password on your Koding VM. It is blank/empty which means that if you want to use sudo, all you need to do is as follows:
+sudo &amp;lt;command you wish to use&amp;gt;
+When you hit enter, the sudo level command you wish to run without a password prompt.
+If you wish to, you can add a sudo password yourself. To do this, change user to root by typing:
+sudo su
+and then create a password for the root user by typing:
+passwd
+You will be asked to type in the new password twice. Once done, the new password you picked is the password you will need to use when
+using the sudo command from that point on.
 </description>
   </item>
   
   <item>
-    <title>Should I use my VM's IP or Address?</title>
-    <link>//learn.koding.com/faq/vm-ip-vs-address</link>
+    <title>How do turn off my my Koding VM?</title>
+    <link>//learn.koding.com/faq/vm-poweroff</link>
     <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/vm-ip-vs-address</guid>
+    <guid isPermaLink="true">//learn.koding.com/faq/vm-poweroff</guid>
     <author></author>
-    <description>Koding gives you access to your VMs IP, as well as an Address that 
-always points to that VM's IP, so which should you use, and why?
-While your VMs IP will operate perfectly fine, the IP is dynamic. In 
-other words, it will change. Because of this, Koding gives you a VM
-Address, which will always point to your VM, regardless of 
-IP changes, so this is what you usually want to use.
- IP addresses of &amp;quot;Always On&amp;quot; VMs don't change even after the VM reboots.
- If you have trouble finding your VM Address, click here.
+    <description>To turn off your VM, we recommend that you use the power on/off toggle in the VM settings modal. This ensures that all internal API calls are triggered and all Koding services are aware that you have powered down your VM.
+ VMs for our free accounts automatically turn off after 60 minutes of inactivity on our IDE or Terminal
+so there's no need to manually turn the VM off.
+ That being said, sometimes you may need to restart your VM and want to do it via the Terminal. In such cases, simple type the following command in Terminal:
+sudo reboot
+you will see the following msg on your Terminal while the reboot command is processed and your VM restarts
+connecting................
+followed by
+Failed to connect to terminal, click here to try again.
+followed by
+An unknown error occured, please open a new tab. Click here to dismiss this one.
+both of the above messages, even though they look like errors are normal because a manual reboot has been requested.
+We don't recommend using sudo poweroff or sudo shutdown to power down your VM as it will leave the associated sub-systems in an unknown state which may disrupt you from using your account. Use the VM settings modal to stop/turn off your VM.
 </description>
   </item>
   
@@ -6097,42 +6137,37 @@ For HTML, CSS and JS: JSFiddle
   </item>
   
   <item>
-    <title>How do turn off my my Koding VM?</title>
-    <link>//learn.koding.com/faq/vm-poweroff</link>
+    <title>What ports are open on my Koding VM?</title>
+    <link>//learn.koding.com/faq/open-ports</link>
     <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/vm-poweroff</guid>
+    <guid isPermaLink="true">//learn.koding.com/faq/open-ports</guid>
     <author></author>
-    <description>To turn off your VM, we recommend that you use the power on/off toggle in the VM settings modal. This ensures that all internal API calls are triggered and all Koding services are aware that you have powered down your VM.
- VMs for our free accounts automatically turn off after 60 minutes of inactivity on our IDE or Terminal
-so there's no need to manually turn the VM off.
- That being said, sometimes you may need to restart your VM and want to do it via the Terminal. In such cases, simple type the following command in Terminal:
-sudo reboot
-you will see the following msg on your Terminal while the reboot command is processed and your VM restarts
-connecting................
-followed by
-Failed to connect to terminal, click here to try again.
-followed by
-An unknown error occured, please open a new tab. Click here to dismiss this one.
-both of the above messages, even though they look like errors are normal because a manual reboot has been requested.
-We don't recommend using sudo poweroff or sudo shutdown to power down your VM as it will leave the associated sub-systems in an unknown state which may disrupt you from using your account. Use the VM settings modal to stop/turn off your VM.
+    <description>Most Unix ports are available on Koding VMs. We do not block any TCP traffic
+(inbound or outbound). See the following list for open ports, as well as ports in use by default.
+
+Ports 2 through 65,534 are open.
+Port 80 is taken by Apache, but this can be turned off to free up the port. To turn
+off Apache, type in: sudo service apache2 stop in Terminal.
+Ports 2 through 1,024 require sudo access.
+
 </description>
   </item>
   
   <item>
-    <title>What is my sudo password?</title>
-    <link>//learn.koding.com/faq/sudo-password</link>
+    <title>How do I transfer/copy files to and from my VM?</title>
+    <link>//learn.koding.com/faq/transfer-files</link>
     <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/sudo-password</guid>
+    <guid isPermaLink="true">//learn.koding.com/faq/transfer-files</guid>
     <author></author>
-    <description>By default, there is no sudo password on your Koding VM. It is blank/empty which means that if you want to use sudo, all you need to do is as follows:
-sudo &amp;lt;command you wish to use&amp;gt;
-When you hit enter, the sudo level command you wish to run without a password prompt.
-If you wish to, you can add a sudo password yourself. To do this, change user to root by typing:
-sudo su
-and then create a password for the root user by typing:
-passwd
-You will be asked to type in the new password twice. Once done, the new password you picked is the password you will need to use when
-using the sudo command from that point on.
+    <description>  I want to copy a few files Getting a few files to your Koding VM is simple and there are a variety of methods. We've put together a short video titled Importing your files in the Video's section of Koding University. Check that out for a simple drag-drop method to upload a few files.
+  I want to copy or download a large number of files To copy several files, we prepared a number of guides that can help you. Head over to our file transfer category and choose one of the methods that you think best suits your needs.
+  I want to download my files If you want an easier way to download your files follow this steps:
+Select multiple files in the IDE (you can use CTRL/CMD + left click) and then click on the little arrow.
+
+After that select the Compress option and the type of archive you want to create.
+The last step you need to do it to place the archive into the Web folder and then just access the a similar URL:
+http://KODING_USERNAME.koding.io/&amp;lt;path/name of the archive&amp;gt;
+Find out more about your VM hostname here.
 </description>
   </item>
   
@@ -6166,41 +6201,6 @@ once added, these sub-domains become available on the setting modals of all your
 deleting a sub-domain is as easy as adding one!
 
 
-</description>
-  </item>
-  
-  <item>
-    <title>What ports are open on my Koding VM?</title>
-    <link>//learn.koding.com/faq/open-ports</link>
-    <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/open-ports</guid>
-    <author></author>
-    <description>Most Unix ports are available on Koding VMs. We do not block any TCP traffic
-(inbound or outbound). See the following list for open ports, as well as ports in use by default.
-
-Ports 2 through 65,534 are open.
-Port 80 is taken by Apache, but this can be turned off to free up the port. To turn
-off Apache, type in: sudo service apache2 stop in Terminal.
-Ports 2 through 1,024 require sudo access.
-
-</description>
-  </item>
-  
-  <item>
-    <title>How do I transfer/copy files to and from my VM?</title>
-    <link>//learn.koding.com/faq/transfer-files</link>
-    <pubDate></pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/transfer-files</guid>
-    <author></author>
-    <description>  I want to copy a few files Getting a few files to your Koding VM is simple and there are a variety of methods. We've put together a short video titled Importing your files in the Video's section of Koding University. Check that out for a simple drag-drop method to upload a few files.
-  I want to copy or download a large number of files To copy several files, we prepared a number of guides that can help you. Head over to our file transfer category and choose one of the methods that you think best suits your needs.
-  I want to download my files If you want an easier way to download your files follow this steps:
-Select multiple files in the IDE (you can use CTRL/CMD + left click) and then click on the little arrow.
-
-After that select the Compress option and the type of archive you want to create.
-The last step you need to do it to place the archive into the Web folder and then just access the a similar URL:
-http://KODING_USERNAME.koding.io/&amp;lt;path/name of the archive&amp;gt;
-Find out more about your VM hostname here.
 </description>
   </item>
   
