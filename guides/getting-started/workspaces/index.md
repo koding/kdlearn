@@ -16,13 +16,17 @@ to manage them. Lets get started!
 
 ## What are they?
 
-Workspaces are a way to save the arrangement of your IDE. Open Files, 
+Think of a Workspace as a logical grouping of files that have a common
+theme. For example, all files that belong to a project can be placed
+inside a workspace. They are essentially folders.
+
+Workspaces are also a way to save the layout of your environment. Open Files, 
 Terminals, and File Explorer, Workspaces help you save not just what 
 you're working on but *how* you're working.
 
-Furthermore, in upcoming releases workspaces will have integration with 
+Furthermore, in upcoming releases, workspaces will have integration with 
 various services and developer tools, making them a quick way to get 
-started with a specific type of Project or Service.
+started with a specific type of project or service.
 
 ## How to use them?
 
