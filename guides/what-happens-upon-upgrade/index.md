@@ -1,7 +1,7 @@
 ---
 title: What happens upon upgrade?
 author: Team Koding
-date: 2014-10-02
+date: 2015-04-24
 categories: [koding features, koding]
 
 improvable: false
@@ -13,6 +13,7 @@ You just upgraded your account, awesome (and thanks!) but what happens now?
 Based on the type of plan you selected on the [Pricing page][pricing] you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
 - Ability to mark your VM(s) as Always-On
 - Add more storage to your VM(s)
+- Share our VM with other Koding users
 
 ### Turn on "Always On" mode for your VM
 1. Go to the [VM settings modal](http://learn.koding.com/guides/understanding-vm-panel/).
@@ -33,5 +34,7 @@ now not turn off even if you log out. This also means your public IP address wil
 3. Click the icon to and you will be presented with the option to create a new VM. You can select the size and the region of the VM.
 ![Developer Plan Image 2](dev-pro.png)
 
+### Share your VM with other Koding users
+Sharing your VM is very useful when you are doing "serial collaboration" which means one person takes over when the other is done. You can learn all about how to share your VMs through [this guide](http://learn.koding.com/guides/permanent-shared-vm/).
 
 [pricing]: https://koding.com/Pricing
