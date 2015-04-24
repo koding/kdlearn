@@ -44,11 +44,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?308" />
+    <link rel="stylesheet" href="/css/vendor.css?349" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?366" />
+    <link rel="stylesheet" href="/css/main.css?840" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?820" />
+    <link rel="stylesheet" href="/css/rwd.css?35" />
 	</head>
 	<body>
 
@@ -293,6 +293,12 @@
         <a
           href="#posting-guidelines"
           class="title">Guidelines to keep in mind when sharing on Koding's Activity Feed.</a>
+      </li>
+    
+      <li>
+        <a
+          href="#inactive-vms"
+          class="title">What is my VM Hostname/Address/Domain Name?</a>
       </li>
     
       <li>
@@ -673,6 +679,47 @@ so there&apos;s no need to manually turn the VM off.</p>
 <li>For executables: <a href="http://ideone.com/">IDEone</a></li>
 <li>For HTML, CSS and JS: <a href="http://jsfiddle.net/">JSFiddle</a></li>
 </ul>
+
+      </div>
+    </li>
+  
+    <li>
+      <a name="inactive-vms">
+      <h3
+        class="question"
+        itemscope itemtype="//schema.org/Question"
+      >
+        <a href="/faq/inactive-vms">What is my VM Hostname/Address/Domain Name?</a>
+      </h3>
+      <div
+        class="answer"
+        itemscope itemtype="//schema.org/Answer"
+        itemprop="acceptedAnswer"
+      >
+        <p>The system assigned name for your VM is available on VM settings modal under the label: <em>Assigned URL</em>.</p>
+<blockquote class="tip fa fa-info-circle"> <p>This is an assigned name and is not editable.</p>
+ </blockquote><p>We realize that most users will probably run into trouble trying to remember our creatively designed VM names 
+(sorry, we had to make sure they were unique) so Koding VMs can also very easily be assigned a username based 
+namespace (username.koding.io). This makes it easy to remember the domain name for your VM since it is your 
+username! (Note: You can still reach the VM by using the system assigned name as described above.)</p>
+<p>To assign your username based domain to a VM, follow these 2 easy steps:</p>
+<ol>
+<li>open the <a href="http://learn.koding.com/guides/understanding-vm-panel/">VM settings modal</a> and click on the &quot;Domains&quot; tab to reveal the domain settings (as shown in the image below)</li>
+<li>toggle the switch next to your personal namespace to enable it for this VM. (Note: If you have more than one VM, you will be able to reassign the same namespace on other VM settings modals but only one VM can have the namespace applied to it at any given time.)
+<img src="/faq/vm-hostname/first.png" alt="Personal namespace"></li>
+</ol>
+<p>In addition to this, Koding also allows you to create sub-domains
+so that if you want to configure your apache/nginx web server to serve multiple 
+virtual hosts, it&apos;s easy to assign them all their own unique sub-domains. <a href="http://www.rackspace.com/knowledge_center/article/how-to-serve-multiple-domains-using-virtual-hosts">Read more about virtual hosts.</a></p>
+<p>To use this feature, head back to the VM settings modal and follow these 3 easy steps:</p>
+<ol>
+<li>click on the &quot;Domains&quot; tab in the VM settings modal</li>
+<li>click the &quot;Add new domain&quot; button to open up an input box where you can type in a new sub-domain. All you need to provide is the sub-domain, we will add the .username.koding.io part automatically.
+<img src="/faq/vm-hostname/second.png" alt="Add subdomain"></li>
+<li>once added, these sub-domains become available on the setting modals of all your VMs for easy reassignment</li>
+<li>deleting a sub-domain is as easy as adding one!
+<img src="/faq/vm-hostname/third.png" alt="Remove subdomain"></li>
+</ol>
 
       </div>
     </li>
