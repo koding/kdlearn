@@ -33,6 +33,10 @@ To run the above file in your Koding VM, just open your Koding Terminal and type
 g++ -o hellopp helloworld.cpp
 ./hellopp
 ```
+> type:tip
+> If g++ is not installed on your VM, you can easily install it using these commands:
+> `sudo apt-get update`
+> `sudo apt-get install g++`
 
 ## Explanation
 
