@@ -1,7 +1,7 @@
 ---
 title: C++
 author: Team Koding
-date: 2015-03-03
+date: 2015-04-24
 categories: [first program, hello world, c++, koding]
 
 series: hello-world
@@ -35,8 +35,7 @@ g++ -o hellopp helloworld.cpp
 ```
 > type:tip
 > If g++ is not installed on your VM, you can easily install it using these commands:
-> `sudo apt-get update`
-> `sudo apt-get install g++`
+> `sudo apt-get update; sudo apt-get install g++`
 
 ## Explanation
 
