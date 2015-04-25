@@ -46,11 +46,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?123" />
+    <link rel="stylesheet" href="/css/vendor.css?705" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?773" />
+    <link rel="stylesheet" href="/css/main.css?505" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?525" />
+    <link rel="stylesheet" href="/css/rwd.css?763" />
 	</head>
 	<body>
 
@@ -328,7 +328,10 @@
 </code></pre><p>To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:</p>
 <pre><code>g++ -o hellopp helloworld<span class="hljs-class">.cpp</span>
 ./hellopp
-</code></pre><h2 class="heading"> <a name="explanation" class="anchor" href="#explanation"></a> Explanation </h2><pre><code><span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &lt;iostream&gt;</span>
+</code></pre><blockquote class="tip fa fa-info-circle"> <p>If g++ is not installed on your VM, you can easily install it using these commands:
+<code>sudo apt-get update</code>
+<code>sudo apt-get install g++</code></p>
+ </blockquote><h2 class="heading"> <a name="explanation" class="anchor" href="#explanation"></a> Explanation </h2><pre><code><span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &lt;iostream&gt;</span>
 </code></pre><p>Lines beginning with the hash sign <code>#</code> are commands read and interpreted by the preprocessor. They are lines interpreted before the compilation of the program itself begins. In this case, the command <code>#include &lt;iostream&gt;</code>, instructs the preprocessor to include a section of standard C++ code, known as header iostream, that allows to perform standard input and output operations, such as writing the output of this program (Hello World) on the screen.</p>
 <pre><code>int <span class="hljs-function"><span class="hljs-title">main</span><span class="hljs-params">()</span></span>
 </code></pre><p>The int is what is called the return value (in this case of the type integer). Every C++ program must have a <code>main()</code> function since this is the starting point.</p>

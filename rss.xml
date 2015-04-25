@@ -556,6 +556,43 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
+    <title>Hello World on Koding: Go</title>
+    <link>//learn.koding.com/guides/hello-world/go</link>
+    <pubDate>"2015-03-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/go</guid>
+    <author>Team Koding</author>
+    <description>  Introduction Go or golang is a statically-typed language with syntax loosely derived from C, that adds garbage collection, type safety, some dynamic-typing capabilities, additional built-in types such as variable-length arrays and key-value maps, and a large standard library.
+  Implementation The first thing you need to do is to create a file called helloworld.go in your Koding VM and paste the bellow snippet into it.
+package main
+
+import &amp;quot;fmt&amp;quot;
+
+func main() {
+    fmt.Println(&amp;quot;Hello World!&amp;quot;)
+}
+To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
+go run helloworld.go
+Or you can build the program into a binary. You can do this using the bellow command:
+go build helloworld.go
+And you can then execute the built binary directly.
+./hello-world
+  Explanation package main
+This is known as a “package declaration”. Every Go program must start with a package declaration. There are two types of Go programs: executables and libraries. Executable applications are the kinds of programs that you can run directly from the terminal.
+import &amp;quot;fmt&amp;quot;
+The import keyword is how you include code from other packages to use with you program. The fmt package (shorthand for format) implements formatting for input and output.
+func main()
+Functions are the building blocks of a Go program. They have inputs, outputs and a series of steps called statements which are executed in order. All functions start with the keyword func followed by the name of the function (main in this case), a list of zero or more “parameters” surrounded by parentheses, an optional return type and a “body” which is surrounded by curly braces.
+{}
+The two curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
+group or function.
+fmt.Println(&amp;quot;Hello World&amp;quot;)
+This statement is made of three pieces. First you access another function inside of the fmt package called Println (that's the fmt.Println piece, Println means Print Line). Then you create a new string that contains Hello World and call that function with the string as the first and only argument.
+And that's it!
+You just wrote and ran your first Hello World in Go.
+</description>
+  </item>
+  
+  <item>
     <title>Hello World on Koding: Ruby</title>
     <link>//learn.koding.com/guides/hello-world/ruby</link>
     <pubDate>"2015-03-04T00:00:00.000Z"</pubDate>
@@ -596,70 +633,71 @@ You just wrote and ran your first Hello World in Python.
   </item>
   
   <item>
-    <title>Hello World on Koding: Go</title>
-    <link>//learn.koding.com/guides/hello-world/go</link>
-    <pubDate>"2015-03-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/go</guid>
+    <title>Hello World on Koding: Perl</title>
+    <link>//learn.koding.com/guides/hello-world/perl</link>
+    <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/perl</guid>
     <author>Team Koding</author>
-    <description>  Introduction Go or golang is a statically-typed language with syntax loosely derived from C, that adds garbage collection, type safety, some dynamic-typing capabilities, additional built-in types such as variable-length arrays and key-value maps, and a large standard library.
-  Implementation The first thing you need to do is to create a file called helloworld.go in your Koding VM and paste the bellow snippet into it.
-package main
+    <description>  Introduction Perl is a family of high-level, general-purpose, interpreted, dynamic programming languages. The Perl languages borrow features from other programming languages including C, shell scripting (sh) etc. They provide powerful text processing facilities without the arbitrary data-length limits of many contemporary Unix commandline tools, facilitating easy manipulation of text files.
+  Implementation The first thing you need to do is to create a file called helloworld in your Koding VM and paste the bellow snippet into it.
+#!/usr/bin/perl
 
-import &amp;quot;fmt&amp;quot;
+use strict;
+use warnings;
 
-func main() {
-    fmt.Println(&amp;quot;Hello World!&amp;quot;)
-}
-To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
-go run helloworld.go
-Or you can build the program into a binary. You can do this using the bellow command:
-go build helloworld.go
-And you can then execute the built binary directly.
-./hello-world
-  Explanation package main
-This is known as a “package declaration”. Every Go program must start with a package declaration. There are two types of Go programs: executables and libraries. Executable applications are the kinds of programs that you can run directly from the terminal.
-import &amp;quot;fmt&amp;quot;
-The import keyword is how you include code from other packages to use with you program. The fmt package (shorthand for format) implements formatting for input and output.
-func main()
-Functions are the building blocks of a Go program. They have inputs, outputs and a series of steps called statements which are executed in order. All functions start with the keyword func followed by the name of the function (main in this case), a list of zero or more “parameters” surrounded by parentheses, an optional return type and a “body” which is surrounded by curly braces.
-{}
-The two curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
-group or function.
-fmt.Println(&amp;quot;Hello World&amp;quot;)
-This statement is made of three pieces. First you access another function inside of the fmt package called Println (that's the fmt.Println piece, Println means Print Line). Then you create a new string that contains Hello World and call that function with the string as the first and only argument.
+print &amp;quot;Hello, World!&amp;quot;;
+To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
+first ensure the file is given executable permissions:
+chmod u+x helloworld
+and then run this command
+perl helloworld
+  Explanation #!/usr/bin/perl
+Every Perl program should start with this as its very first line, although this may vary from system to system. This line tells the machine what to do with the file when it is executed.
+use strict;
+use warnings;
+These two statements turn on the 'strict' and 'warnings' pragmas. These are strongly encouraged for all Perl programs since they tell the Perl interpreter to check for programming errors like undeclared variables.
+print &amp;quot;Hello, World!&amp;quot;;
+The print function outputs some data. In the above case it prints out the string Hello world, and as always the statement ends with a semicolon.
 And that's it!
-You just wrote and ran your first Hello World in Go.
+You just wrote and ran your first Hello World in Perl.
 </description>
   </item>
   
   <item>
-    <title>Hello World on Koding: C++</title>
-    <link>//learn.koding.com/guides/hello-world/c++</link>
+    <title>Hello World on Koding: Java</title>
+    <link>//learn.koding.com/guides/hello-world/java</link>
     <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/c++</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/java</guid>
     <author>Team Koding</author>
-    <description>  Introduction C++ is a general-purpose programming language. It has imperative, object-oriented and generic programming features, while also providing the facilities for low-level memory manipulation.
-  Implementation The first thing you need to do is to create a file called helloworld.cpp in your Koding VM and paste the bellow snippet into it.
-#include &amp;lt;iostream&amp;gt;
-
-int main() {
-    std::cout &amp;lt;&amp;lt; &amp;quot;Hello World!&amp;quot;;
+    <description>  Introduction Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.
+  Implementation The first thing you need to do is to create a file called HelloWorld.java in your Koding VM and paste the bellow snippet into it.
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println(&amp;quot;Hello, World!&amp;quot;);
+    }
 }
 To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
-g++ -o hellopp helloworld.cpp
-./hellopp
-  Explanation #include &amp;lt;iostream&amp;gt;
-Lines beginning with the hash sign # are commands read and interpreted by the preprocessor. They are lines interpreted before the compilation of the program itself begins. In this case, the command #include &amp;lt;iostream&amp;gt;, instructs the preprocessor to include a section of standard C++ code, known as header iostream, that allows to perform standard input and output operations, such as writing the output of this program (Hello World) on the screen.
-int main()
-The int is what is called the return value (in this case of the type integer). Every C++ program must have a main() function since this is the starting point.
+javac HelloWorld.java
+java HelloWorld
+  Explanation public class HelloWorld
+The first line defines a class called HelloWorld. In Java, every line of code that can actually run needs to be inside a class. This line declares a class named HelloWorld, which is public, that means that any other class can access it.
+public static void main(String[] args)
+The main method has to have this exact signature in order to be able to run your program.
+
+public - means that anyone can access it.
+static  - means that you can run this method without creating an instance of Main.
+void - means that this method doesn't return any value.
+main - is the name of the method.
+
+The arguments inside the method are the arguments that you will get when running the program with parameters. It's an array of strings.
 {}
-The two curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
+The curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
 group or function.
-std::cout &amp;lt;&amp;lt; &amp;quot;Hello World!&amp;quot;;
-This line is a C++ statement. Statements are executed in the same order that they appear within a function's body.
-Your statement has three parts: first std::cout, which identifies the standard character output device; Second, the insertion operator &amp;lt;&amp;lt;, which indicates that what follows is inserted into std::cout. Finally, a sentence within quotes &amp;quot;Hello world!&amp;quot;, is the content inserted into the standard output. The semi-colon and the end shows that it is the end of the command.
+System.out.println(&amp;quot;Hello, World!&amp;quot;);
+System is a pre-defined class that Java provides and it also holds some useful methods and variables. out is a static variable within System that represents the output of your program. println is a method of out that can be used to print a line.
 And that's it!
-You just wrote and ran your first Hello World in C++.
+You just wrote and ran your first Hello World in Java.
+If you'd like to continue dabbling in Java, we recommend taking a look at this tutorial written for Koding over at Andriodauthority.com
 </description>
   </item>
   
@@ -709,33 +747,36 @@ You just wrote and ran your first Hello World in C.
   </item>
   
   <item>
-    <title>Hello World on Koding: Perl</title>
-    <link>//learn.koding.com/guides/hello-world/perl</link>
+    <title>Hello World on Koding: C++</title>
+    <link>//learn.koding.com/guides/hello-world/c++</link>
     <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/perl</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/c++</guid>
     <author>Team Koding</author>
-    <description>  Introduction Perl is a family of high-level, general-purpose, interpreted, dynamic programming languages. The Perl languages borrow features from other programming languages including C, shell scripting (sh) etc. They provide powerful text processing facilities without the arbitrary data-length limits of many contemporary Unix commandline tools, facilitating easy manipulation of text files.
-  Implementation The first thing you need to do is to create a file called helloworld in your Koding VM and paste the bellow snippet into it.
-#!/usr/bin/perl
+    <description>  Introduction C++ is a general-purpose programming language. It has imperative, object-oriented and generic programming features, while also providing the facilities for low-level memory manipulation.
+  Implementation The first thing you need to do is to create a file called helloworld.cpp in your Koding VM and paste the bellow snippet into it.
+#include &amp;lt;iostream&amp;gt;
 
-use strict;
-use warnings;
-
-print &amp;quot;Hello, World!&amp;quot;;
+int main() {
+    std::cout &amp;lt;&amp;lt; &amp;quot;Hello World!&amp;quot;;
+}
 To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
-first ensure the file is given executable permissions:
-chmod u+x helloworld
-and then run this command
-perl helloworld
-  Explanation #!/usr/bin/perl
-Every Perl program should start with this as its very first line, although this may vary from system to system. This line tells the machine what to do with the file when it is executed.
-use strict;
-use warnings;
-These two statements turn on the 'strict' and 'warnings' pragmas. These are strongly encouraged for all Perl programs since they tell the Perl interpreter to check for programming errors like undeclared variables.
-print &amp;quot;Hello, World!&amp;quot;;
-The print function outputs some data. In the above case it prints out the string Hello world, and as always the statement ends with a semicolon.
+g++ -o hellopp helloworld.cpp
+./hellopp
+ If g++ is not installed on your VM, you can easily install it using these commands:
+sudo apt-get update
+sudo apt-get install g++
+   Explanation #include &amp;lt;iostream&amp;gt;
+Lines beginning with the hash sign # are commands read and interpreted by the preprocessor. They are lines interpreted before the compilation of the program itself begins. In this case, the command #include &amp;lt;iostream&amp;gt;, instructs the preprocessor to include a section of standard C++ code, known as header iostream, that allows to perform standard input and output operations, such as writing the output of this program (Hello World) on the screen.
+int main()
+The int is what is called the return value (in this case of the type integer). Every C++ program must have a main() function since this is the starting point.
+{}
+The two curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
+group or function.
+std::cout &amp;lt;&amp;lt; &amp;quot;Hello World!&amp;quot;;
+This line is a C++ statement. Statements are executed in the same order that they appear within a function's body.
+Your statement has three parts: first std::cout, which identifies the standard character output device; Second, the insertion operator &amp;lt;&amp;lt;, which indicates that what follows is inserted into std::cout. Finally, a sentence within quotes &amp;quot;Hello world!&amp;quot;, is the content inserted into the standard output. The semi-colon and the end shows that it is the end of the command.
 And that's it!
-You just wrote and ran your first Hello World in Perl.
+You just wrote and ran your first Hello World in C++.
 </description>
   </item>
   
@@ -770,44 +811,6 @@ echo outputs one or more strings. echo is not actually a function (it is a langu
 The last part after the closing ?&amp;gt; tag if just basic HTML code.
 And that's it!
 You just wrote and ran your first Hello World in PHP.
-</description>
-  </item>
-  
-  <item>
-    <title>Hello World on Koding: Java</title>
-    <link>//learn.koding.com/guides/hello-world/java</link>
-    <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/java</guid>
-    <author>Team Koding</author>
-    <description>  Introduction Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.
-  Implementation The first thing you need to do is to create a file called HelloWorld.java in your Koding VM and paste the bellow snippet into it.
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(&amp;quot;Hello, World!&amp;quot;);
-    }
-}
-To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
-javac HelloWorld.java
-java HelloWorld
-  Explanation public class HelloWorld
-The first line defines a class called HelloWorld. In Java, every line of code that can actually run needs to be inside a class. This line declares a class named HelloWorld, which is public, that means that any other class can access it.
-public static void main(String[] args)
-The main method has to have this exact signature in order to be able to run your program.
-
-public - means that anyone can access it.
-static  - means that you can run this method without creating an instance of Main.
-void - means that this method doesn't return any value.
-main - is the name of the method.
-
-The arguments inside the method are the arguments that you will get when running the program with parameters. It's an array of strings.
-{}
-The curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
-group or function.
-System.out.println(&amp;quot;Hello, World!&amp;quot;);
-System is a pre-defined class that Java provides and it also holds some useful methods and variables. out is a static variable within System that represents the output of your program. println is a method of out that can be used to print a line.
-And that's it!
-You just wrote and ran your first Hello World in Java.
-If you'd like to continue dabbling in Java, we recommend taking a look at this tutorial written for Koding over at Andriodauthority.com
 </description>
   </item>
   
@@ -943,45 +946,6 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Setting up a Tornado webserver</title>
-    <link>//learn.koding.com/guides/setting-tornado-webserver</link>
-    <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-tornado-webserver</guid>
-    <author>Team Koding</author>
-    <description>  Getting started Before you can start the Tornado install process, you'll need to update all of the apt-get packages:
-sudo apt-get update
-Then make sure you have pip installed on your VM. You can install it using the Koding Package Manager (kpm) like so:
-kpm install pip
-  Installing You can install Tornado using the bellow command:
-pip install tornado
-  Usage To test if you can run a Tornado webserver correctly, create a goodbyetolocalhost.py file. Then insert the bellow code snippet:
-import tornado.ioloop
-import tornado.web
-
-class MainHandler(tornado.web.RequestHandler):
-    def get(self):
-        self.write(&amp;quot;Hello, world&amp;quot;)
-
-application = tornado.web.Application([
-    (r&amp;quot;/&amp;quot;, MainHandler),
-])
-
-if __name__ == &amp;quot;__main__&amp;quot;:
-    application.listen(8888, '0.0.0.0')
-    tornado.ioloop.IOLoop.instance().start()
-You can run that script like so:
-python goodbyetolocalhost.py
-You will now be able to access the Tornado webserver by following a similar URL:
-http://KODING_USERNAME.koding.io:8888
-Find out more about your VM hostname here.
-If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:8888. You can check this, using the netstat command in another terminal window and the bellow command:
-sudo netstat -tnlp
-And that's it!
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
     <title>Setting up a Rails webserver</title>
     <link>//learn.koding.com/guides/setting-rails-webserver</link>
     <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
@@ -1004,6 +968,66 @@ You will now be able to access the Rails webserver by following a similar URL:
 http://KODING_USERNAME.koding.io:3000
 Find out more about your VM hostname here.
 Rails should listen to 0.0.0.0:3000 by default. If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:3000. You can check this, using the netstat command in another terminal window and the bellow command:
+sudo netstat -tnlp
+And that's it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>Setting up a Django webserver</title>
+    <link>//learn.koding.com/guides/setting-django-webserver</link>
+    <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-django-webserver</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Django using just one command:
+kpm install django
+
+  Getting started Before you can start the Django install process, you'll need to update all of the apt-get packages:
+sudo apt-get update
+Then make sure you have pip installed on your VM. You can install it using the Koding Package Manager (kpm) like so:
+kpm install pip
+  Installing You can install Django using the bellow command:
+sudo pip install django
+  Usage After Django has finished installing you can start a new project like so:
+django-admin.py startproject goodbyelocalhost
+After that you can run the webserver without binding it to localhost using the bellow commands:
+cd goodbyelocalhost/
+python manage.py runserver 0.0.0.0:8000
+You will now be able to access the Django webserver by following a similar URL:
+http://KODING_USERNAME.koding.io:8000
+Find out more about your VM hostname here.
+If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:8000. You can check this, using the netstat command in another terminal window and the bellow command:
+sudo netstat -tnlp
+And that's it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>Setting up a MeteorJS webserver</title>
+    <link>//learn.koding.com/guides/setting-meteorjs-webserver</link>
+    <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-meteorjs-webserver</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install MeteorJS using just one command:
+kpm install meteor
+
+  Getting started Before you can start the MeteorJS install process, you'll need to update all of the apt-get packages:
+sudo apt-get update
+Then make sure you have curl installed on your VM. You can install it using the bellow command:
+sudo apt-get install curl
+  Installing You can install MeteorJS using the bellow command:
+curl https://install.meteor.com/ | sh
+  Usage Creating a new MeteorJS project is really easy. It just takes one command and you're good to go:
+meteor create goodbyelocalhost
+You can run that project like so:
+cd goodbyelocalhost
+meteor
+You will now be able to access the MeteorJS webserver by following a similar URL:
+http://KODING_USERNAME.koding.io:3000
+Find out more about your VM hostname here.
+MeteorJS should listen to 0.0.0.0:3000 by default. If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:3000. You can check this, using the netstat command in another terminal window and the bellow command:
 sudo netstat -tnlp
 And that's it!
 If you encounter any issues or have any questions please drop an email here.
@@ -1043,59 +1067,38 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Setting up a MeteorJS webserver</title>
-    <link>//learn.koding.com/guides/setting-meteorjs-webserver</link>
+    <title>Setting up a Tornado webserver</title>
+    <link>//learn.koding.com/guides/setting-tornado-webserver</link>
     <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-meteorjs-webserver</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-tornado-webserver</guid>
     <author>Team Koding</author>
-    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install MeteorJS using just one command:
-kpm install meteor
-
-  Getting started Before you can start the MeteorJS install process, you'll need to update all of the apt-get packages:
-sudo apt-get update
-Then make sure you have curl installed on your VM. You can install it using the bellow command:
-sudo apt-get install curl
-  Installing You can install MeteorJS using the bellow command:
-curl https://install.meteor.com/ | sh
-  Usage Creating a new MeteorJS project is really easy. It just takes one command and you're good to go:
-meteor create goodbyelocalhost
-You can run that project like so:
-cd goodbyelocalhost
-meteor
-You will now be able to access the MeteorJS webserver by following a similar URL:
-http://KODING_USERNAME.koding.io:3000
-Find out more about your VM hostname here.
-MeteorJS should listen to 0.0.0.0:3000 by default. If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:3000. You can check this, using the netstat command in another terminal window and the bellow command:
-sudo netstat -tnlp
-And that's it!
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
-    <title>Setting up a Django webserver</title>
-    <link>//learn.koding.com/guides/setting-django-webserver</link>
-    <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-django-webserver</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Django using just one command:
-kpm install django
-
-  Getting started Before you can start the Django install process, you'll need to update all of the apt-get packages:
+    <description>  Getting started Before you can start the Tornado install process, you'll need to update all of the apt-get packages:
 sudo apt-get update
 Then make sure you have pip installed on your VM. You can install it using the Koding Package Manager (kpm) like so:
 kpm install pip
-  Installing You can install Django using the bellow command:
-sudo pip install django
-  Usage After Django has finished installing you can start a new project like so:
-django-admin.py startproject goodbyelocalhost
-After that you can run the webserver without binding it to localhost using the bellow commands:
-cd goodbyelocalhost/
-python manage.py runserver 0.0.0.0:8000
-You will now be able to access the Django webserver by following a similar URL:
-http://KODING_USERNAME.koding.io:8000
+  Installing You can install Tornado using the bellow command:
+pip install tornado
+  Usage To test if you can run a Tornado webserver correctly, create a goodbyetolocalhost.py file. Then insert the bellow code snippet:
+import tornado.ioloop
+import tornado.web
+
+class MainHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.write(&amp;quot;Hello, world&amp;quot;)
+
+application = tornado.web.Application([
+    (r&amp;quot;/&amp;quot;, MainHandler),
+])
+
+if __name__ == &amp;quot;__main__&amp;quot;:
+    application.listen(8888, '0.0.0.0')
+    tornado.ioloop.IOLoop.instance().start()
+You can run that script like so:
+python goodbyetolocalhost.py
+You will now be able to access the Tornado webserver by following a similar URL:
+http://KODING_USERNAME.koding.io:8888
 Find out more about your VM hostname here.
-If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:8000. You can check this, using the netstat command in another terminal window and the bellow command:
+If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:8888. You can check this, using the netstat command in another terminal window and the bellow command:
 sudo netstat -tnlp
 And that's it!
 If you encounter any issues or have any questions please drop an email here.
@@ -1747,29 +1750,39 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>CouchDB installation for beginners</title>
-    <link>//learn.koding.com/guides/couchdb-installation-for-beginners</link>
+    <title>How to install Memcache</title>
+    <link>//learn.koding.com/guides/install-memcache</link>
     <pubDate>"2015-01-20T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/couchdb-installation-for-beginners</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/install-memcache</guid>
     <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install CouchDB using just one command:
-kpm install couchdb
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Memcache using just one command:
+kpm install memcached
 
-This guide will help install CouchDB on your Koding VM.
-  Getting started Before you can start the CouchDB install process, you'll need to update all of the apt-get packages:
+  Getting started Before you can start the Memcache install process, you'll need to update all of the apt-get packages:
 sudo apt-get update
-Make sure you have curl installed on your VM before you continue. You can install it using the following command:
-sudo apt-get install curl
-  Installing CouchDB can be installed by running the following command:
-sudo apt-get install couchdb
-By default CouchDB runs on port :5984. If you want to check CouchDB and see if it's running correctly you can issue this command:
-curl localhost:5984
-and it should output something like this:
-{&amp;quot;couchdb&amp;quot;:&amp;quot;Welcome&amp;quot;,&amp;quot;uuid&amp;quot;:&amp;quot;dfd16361e5321d4a90d01feedee6c0b1&amp;quot;,&amp;quot;version&amp;quot;:&amp;quot;1.5.0&amp;quot;,&amp;quot;vendor&amp;quot;:{&amp;quot;name&amp;quot;:&amp;quot;Ubuntu&amp;quot;,&amp;quot;version&amp;quot;:&amp;quot;14.04&amp;quot;}}
-  Usage If you want to create a new database you can use the PUT command:
-curl -X PUT localhost:5984/new_database
-The output should look like this:
-{&amp;quot;ok&amp;quot;:true}
+Make sure you have mySQL and PHP installed on your VM before you continue.
+  Step 1 To install Memcache you'll need to run the following command:
+sudo apt-get install php5-memcached memcached
+This will install the required package for PHP and also the Memcached package.
+  Step 2 You can now check if the packages have been installed correctly. Run the following commands from your Terminal:
+cd Web
+sudo nano info.php
+Copy the following lines into the file:
+&amp;lt;?php
+phpinfo();
+?&amp;gt;
+You'll now be able to check if Memcache has installed correctly by accessing a url similar to this one:
+http://KODING_USERNAME.koding.io/info.php
+Find out more about your VM hostname here.
+If you scroll down or search for the &amp;quot;memcached&amp;quot; section header, you should find something that looks like this:
+
+You can check whether the Memcache service is running by typing:
+ps aux | grep memcached
+And it should output something similar to this:
+memcache  6584  0.0  0.0 327448  3004 ?        Sl   14:07   0:00 /usr/bin/memcached -m 64 -p 11211 -u memcache -l 127.0.0.1
+demouser  6636  0.0  0.0  11744   904 pts/0    S+   14:29   0:00 grep --color=auto memcached
+You can query Memcache for stats by typing:
+echo &amp;quot;stats settings&amp;quot; | nc localhost 11211
 And that's it!
 If you encounter any issues or have any questions please drop an email here.
 </description>
@@ -1805,39 +1818,29 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>How to install Memcache</title>
-    <link>//learn.koding.com/guides/install-memcache</link>
+    <title>CouchDB installation for beginners</title>
+    <link>//learn.koding.com/guides/couchdb-installation-for-beginners</link>
     <pubDate>"2015-01-20T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/install-memcache</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/couchdb-installation-for-beginners</guid>
     <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Memcache using just one command:
-kpm install memcached
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install CouchDB using just one command:
+kpm install couchdb
 
-  Getting started Before you can start the Memcache install process, you'll need to update all of the apt-get packages:
+This guide will help install CouchDB on your Koding VM.
+  Getting started Before you can start the CouchDB install process, you'll need to update all of the apt-get packages:
 sudo apt-get update
-Make sure you have mySQL and PHP installed on your VM before you continue.
-  Step 1 To install Memcache you'll need to run the following command:
-sudo apt-get install php5-memcached memcached
-This will install the required package for PHP and also the Memcached package.
-  Step 2 You can now check if the packages have been installed correctly. Run the following commands from your Terminal:
-cd Web
-sudo nano info.php
-Copy the following lines into the file:
-&amp;lt;?php
-phpinfo();
-?&amp;gt;
-You'll now be able to check if Memcache has installed correctly by accessing a url similar to this one:
-http://KODING_USERNAME.koding.io/info.php
-Find out more about your VM hostname here.
-If you scroll down or search for the &amp;quot;memcached&amp;quot; section header, you should find something that looks like this:
-
-You can check whether the Memcache service is running by typing:
-ps aux | grep memcached
-And it should output something similar to this:
-memcache  6584  0.0  0.0 327448  3004 ?        Sl   14:07   0:00 /usr/bin/memcached -m 64 -p 11211 -u memcache -l 127.0.0.1
-demouser  6636  0.0  0.0  11744   904 pts/0    S+   14:29   0:00 grep --color=auto memcached
-You can query Memcache for stats by typing:
-echo &amp;quot;stats settings&amp;quot; | nc localhost 11211
+Make sure you have curl installed on your VM before you continue. You can install it using the following command:
+sudo apt-get install curl
+  Installing CouchDB can be installed by running the following command:
+sudo apt-get install couchdb
+By default CouchDB runs on port :5984. If you want to check CouchDB and see if it's running correctly you can issue this command:
+curl localhost:5984
+and it should output something like this:
+{&amp;quot;couchdb&amp;quot;:&amp;quot;Welcome&amp;quot;,&amp;quot;uuid&amp;quot;:&amp;quot;dfd16361e5321d4a90d01feedee6c0b1&amp;quot;,&amp;quot;version&amp;quot;:&amp;quot;1.5.0&amp;quot;,&amp;quot;vendor&amp;quot;:{&amp;quot;name&amp;quot;:&amp;quot;Ubuntu&amp;quot;,&amp;quot;version&amp;quot;:&amp;quot;14.04&amp;quot;}}
+  Usage If you want to create a new database you can use the PUT command:
+curl -X PUT localhost:5984/new_database
+The output should look like this:
+{&amp;quot;ok&amp;quot;:true}
 And that's it!
 If you encounter any issues or have any questions please drop an email here.
 </description>
@@ -2027,6 +2030,65 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
+    <title>Using mySQL</title>
+    <link>//learn.koding.com/guides/using-mysql</link>
+    <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/using-mysql</guid>
+    <author>Alvin Wan</author>
+    <description>mySQL offers a popular implementation of the SQL language. This guide will get you started on using mySQL on Koding.
+First make sure you have mySQL installed. Have a look at this guide to learn how to install it.
+Are you using PostgreSQL? Have a look at this guide.
+  Starting mySQL Let's start the mySQL server using the following command:
+sudo service mysql start
+  Getting Started First, you'll need to login using th root user that was configured during the mySQL installation. Open your Terminal and type in the following:
+mysql -u root -p
+Enter your password, and hit enter. You're now logged in.
+  Creating a User You'll now create a new account for our code, with the username &amp;quot;bob&amp;quot; and password &amp;quot;pass&amp;quot;.
+create user 'bob'@'localhost' identified by 'pass';
+If you see an arrow
+-&amp;gt;
+that means you forgot the end semicolon &amp;quot;;&amp;quot;. Enter that and hit enter.
+You can exit the server by using Ctrl+D and then login again as Bob:
+mysql -u bob -p;
+After entering the password, you'll be readmitted into the mySQL server. To continue with this guide, you'll need to be logged in as root.
+  Creating a Database Each mySQL server includes a variety of databases. The initial installation comes with several. You can view them by typing:
+show databases;
+You should see a short list of databases:
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
++--------------------+
+3 rows in set (0.00 sec)
+Let's create your first database:
+create database test;
+  Linking Users and Databases You'll need to grant privileges to the user, so that &amp;quot;Bob&amp;quot; can access the database &amp;quot;test&amp;quot; and modify it accordingly.
+To grant &amp;quot;Bob&amp;quot; all privileges on all tables in database &amp;quot;test&amp;quot;:
+grant all on test.* to 'bob'@'localhost';
+  Using the Database Exit out of root by using Ctrl+D, and login as &amp;quot;Bob&amp;quot;. To connect to a database, prefix the database name with &amp;quot;use&amp;quot;.
+use test;
+Once here, you’ll be able to execute mySQL commands. 
+And that's it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>Installing LinuxBrew</title>
+    <link>//learn.koding.com/guides/installing-linuxbrew</link>
+    <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/installing-linuxbrew</guid>
+    <author>Alvin Wan</author>
+    <description>There are a variety of package installers to help with what would otherwise be complex installations. Follow these instructions to install HomeBrew for Linux.
+  The One-Line Solution Input the following in your shell, as Koding already has Ruby pre-installed:
+ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)&amp;quot;
+From here, you'll be poised for yet more installations. See their website for more information.
+</description>
+  </item>
+  
+  <item>
     <title>Making your VM secure using Ubuntu UFW (Uncomplicated Firewall)</title>
     <link>//learn.koding.com/guides/enable-ufw</link>
     <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
@@ -2105,65 +2167,6 @@ When you hit &amp;quot;y&amp;quot; ufw will backup all existing rules before doi
   Help, I locked myself out of my VM If for some reason you enabled your firewall and did not take the steps needed to open up the ports needed for Koding to work, then
 your only recourse is to reinit your VM. That process is described in this guide. If you 
 encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
-    <title>Installing LinuxBrew</title>
-    <link>//learn.koding.com/guides/installing-linuxbrew</link>
-    <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/installing-linuxbrew</guid>
-    <author>Alvin Wan</author>
-    <description>There are a variety of package installers to help with what would otherwise be complex installations. Follow these instructions to install HomeBrew for Linux.
-  The One-Line Solution Input the following in your shell, as Koding already has Ruby pre-installed:
-ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)&amp;quot;
-From here, you'll be poised for yet more installations. See their website for more information.
-</description>
-  </item>
-  
-  <item>
-    <title>Using mySQL</title>
-    <link>//learn.koding.com/guides/using-mysql</link>
-    <pubDate>"2015-01-08T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/using-mysql</guid>
-    <author>Alvin Wan</author>
-    <description>mySQL offers a popular implementation of the SQL language. This guide will get you started on using mySQL on Koding.
-First make sure you have mySQL installed. Have a look at this guide to learn how to install it.
-Are you using PostgreSQL? Have a look at this guide.
-  Starting mySQL Let's start the mySQL server using the following command:
-sudo service mysql start
-  Getting Started First, you'll need to login using th root user that was configured during the mySQL installation. Open your Terminal and type in the following:
-mysql -u root -p
-Enter your password, and hit enter. You're now logged in.
-  Creating a User You'll now create a new account for our code, with the username &amp;quot;bob&amp;quot; and password &amp;quot;pass&amp;quot;.
-create user 'bob'@'localhost' identified by 'pass';
-If you see an arrow
--&amp;gt;
-that means you forgot the end semicolon &amp;quot;;&amp;quot;. Enter that and hit enter.
-You can exit the server by using Ctrl+D and then login again as Bob:
-mysql -u bob -p;
-After entering the password, you'll be readmitted into the mySQL server. To continue with this guide, you'll need to be logged in as root.
-  Creating a Database Each mySQL server includes a variety of databases. The initial installation comes with several. You can view them by typing:
-show databases;
-You should see a short list of databases:
-+--------------------+
-| Database           |
-+--------------------+
-| information_schema |
-| mysql              |
-| performance_schema |
-+--------------------+
-3 rows in set (0.00 sec)
-Let's create your first database:
-create database test;
-  Linking Users and Databases You'll need to grant privileges to the user, so that &amp;quot;Bob&amp;quot; can access the database &amp;quot;test&amp;quot; and modify it accordingly.
-To grant &amp;quot;Bob&amp;quot; all privileges on all tables in database &amp;quot;test&amp;quot;:
-grant all on test.* to 'bob'@'localhost';
-  Using the Database Exit out of root by using Ctrl+D, and login as &amp;quot;Bob&amp;quot;. To connect to a database, prefix the database name with &amp;quot;use&amp;quot;.
-use test;
-Once here, you’ll be able to execute mySQL commands. 
-And that's it!
-If you encounter any issues or have any questions please drop an email here.
 </description>
   </item>
   
@@ -2744,6 +2747,39 @@ If you encounter any issues or have any questions regarding Apache Cordova on Ko
   </item>
   
   <item>
+    <title>Understanding the VM settings modal</title>
+    <link>//learn.koding.com/guides/understanding-vm-panel</link>
+    <pubDate>"2014-11-03T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/understanding-vm-panel</guid>
+    <author>Team Koding</author>
+    <description>  Understanding the VM settings modal This guide will explain the basics of the VM settings modal.
+
+In order to open the VM settings modal you need to hover over the VM name on the right side of Koding (in the sidebar at the top) and then click on the three points icon that appears on the right of the VM label. (as seen in the image above)
+
+After you click on the icon mentioned above the VM modal should open, which should look like the one pictured above. The VM settings are mostly self explanatory but we will outline them here for clarity. The VM settings modal has three main sections: the Basic section, the More section and the Advanced section.
+  General Tab The general tab houses the basic settings about your VM. These are:
+
+On/Off: This toggle will switch your VM's state between on/off. We recommend using this to turn off your VM as compared to doing a sudo poweroff on your VM.
+Keep VM always on: A paid feature, this allows you to keep your VM running all the time.
+Nickname: You can use this to give your VM a nice name that you can remember!
+Public IP: This is the public IP for your VM. For free accounts, the public IPs rotate every reboot.
+ 
+Assigned URL: This is the system assigned URL/name for your VM. It's long so that it's never duplicated.
+
+  Specs Tab This tab shows you the basic specifications of your VM.
+  Disk Usage Tab Here you can see how much disk space you have used.
+  Domains Tab Here you can create a custom/short URL for your VM and/or define subdomains and custom domains for your VM. These come in handy if you are running multiple virtual hosts on your VM.
+  VM Sharing Shared VMs, another feature for our paid accounts, allows you to share your VM with other Koding members even if you are not online.
+  Advanced Tab The advanced section includes settings that only advanced users should use. If you are an unexperienced user then this section should be off limits.
+
+Reinitialize VM: This button will set your VM back to its default state. This means that the VM will be re-imaged, as if you deleted the VM and created a new one. This guide explains the reinit function in more detail.
+Terminate VM: You can remove your VM and create a new one if you so choose. We recommend you reinit your VM in lieu of deleting and recreating it.
+
+If you encounter any issues or have any questions regarding the VM settings modal you can email us at support@koding.com and we'll gladly help.
+</description>
+  </item>
+  
+  <item>
     <title>Koding Subdomains and VHosts</title>
     <link>//learn.koding.com/guides/vhosts-and-subdomains</link>
     <pubDate>"2014-11-03T00:00:00.000Z"</pubDate>
@@ -2835,39 +2871,6 @@ Section here.
   </item>
   
   <item>
-    <title>Understanding the VM settings modal</title>
-    <link>//learn.koding.com/guides/understanding-vm-panel</link>
-    <pubDate>"2014-11-03T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/understanding-vm-panel</guid>
-    <author>Team Koding</author>
-    <description>  Understanding the VM settings modal This guide will explain the basics of the VM settings modal.
-
-In order to open the VM settings modal you need to hover over the VM name on the right side of Koding (in the sidebar at the top) and then click on the three points icon that appears on the right of the VM label. (as seen in the image above)
-
-After you click on the icon mentioned above the VM modal should open, which should look like the one pictured above. The VM settings are mostly self explanatory but we will outline them here for clarity. The VM settings modal has three main sections: the Basic section, the More section and the Advanced section.
-  General Tab The general tab houses the basic settings about your VM. These are:
-
-On/Off: This toggle will switch your VM's state between on/off. We recommend using this to turn off your VM as compared to doing a sudo poweroff on your VM.
-Keep VM always on: A paid feature, this allows you to keep your VM running all the time.
-Nickname: You can use this to give your VM a nice name that you can remember!
-Public IP: This is the public IP for your VM. For free accounts, the public IPs rotate every reboot.
- 
-Assigned URL: This is the system assigned URL/name for your VM. It's long so that it's never duplicated.
-
-  Specs Tab This tab shows you the basic specifications of your VM.
-  Disk Usage Tab Here you can see how much disk space you have used.
-  Domains Tab Here you can create a custom/short URL for your VM and/or define subdomains and custom domains for your VM. These come in handy if you are running multiple virtual hosts on your VM.
-  VM Sharing Shared VMs, another feature for our paid accounts, allows you to share your VM with other Koding members even if you are not online.
-  Advanced Tab The advanced section includes settings that only advanced users should use. If you are an unexperienced user then this section should be off limits.
-
-Reinitialize VM: This button will set your VM back to its default state. This means that the VM will be re-imaged, as if you deleted the VM and created a new one. This guide explains the reinit function in more detail.
-Terminate VM: You can remove your VM and create a new one if you so choose. We recommend you reinit your VM in lieu of deleting and recreating it.
-
-If you encounter any issues or have any questions regarding the VM settings modal you can email us at support@koding.com and we'll gladly help.
-</description>
-  </item>
-  
-  <item>
     <title>Changing your IDE and Terminal themes</title>
     <link>//learn.koding.com/guides/change-theme</link>
     <pubDate>"2014-10-28T00:00:00.000Z"</pubDate>
@@ -2917,61 +2920,6 @@ guide.
     <guid isPermaLink="true">//learn.koding.com/guides/chat-introduction</guid>
     <author>Team Koding</author>
     <description></description>
-  </item>
-  
-  <item>
-    <title>A guide to Docker</title>
-    <link>//learn.koding.com/guides/what-is-docker</link>
-    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/what-is-docker</guid>
-    <author>Team Koding</author>
-    <description>Docker is a platform that helps developers build apps in whatever language they feel comfortable using and using any toolchain they want. Using Docker developers can build, ship and run distributed applications because it enables them to quickly put together an app by eliminating the stress between development, QA and production environments.
-A developer that uses Docker can run his / hers app anywhere without the fear of it not performing as it should.
-Apps that are built using Docker are completely portable and can run anywhere.
-  Docker apps Anyone can get started with Docker by checking out one of the 13,000+ apps that are available in the Docker Hub. You can get started working on WordPress or a new nodejs project in just a few seconds without the hassle of having to install any other dependencies (other then Docker of course) on your Koding VM.
-  Benefits The difference between a virtualized application and the Docker Engine container is that the first one includes not only the app and the necessary binaries and libraries but it contains the guest OS as well. The later runs as an separate process on the OS and thus it has the resources separation and allocation of a VM but is much more portable.
-  Installing Docker on Koding Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Docker using just one command:
-kpm install docker
-
-The version of Ubuntu that is installed on each Koding VM comes with a docker.io package and it should install Docker 0.9.1. 
-We can install Docker on our Koding VM using the following commands:
-
-We update the package list
-
-sudo apt-get update
-
-Install Docker
-
-sudo apt-get install docker.io
-
-We create a link 
-
-sudo ln -sf /usr/bin/docker.io /usr/local/bin/docker
-
-We need to edit the docker file in order to continue
-
-sudo sed -i '$acomplete -F _docker docker' /etc/bash_completion.d/docker.io
-
-And we now execute that file
-
-source /etc/bash_completion.d/docker.io
-
-After that we need to add the Docker repo key to the local keychain
-
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9
-
-The last step is to add the Docker repo to the apt sources list, update and install the lxc-docker package. You can do that using the following commands
-
-sudo sh -c &amp;quot;echo deb https://get.docker.com/ubuntu docker main\
-&amp;gt; /etc/apt/sources.list.d/docker.list&amp;quot;
-sudo apt-get update
-sudo apt-get install lxc-docker
- You can use the below command, that uses curl, for an easier installation process:
- curl -sSL https://get.docker.com/ubuntu/ | sudo sh
-If you made it to this point you can run this command to check if Docker is indeed installed and works properly:
-sudo docker run -i -t ubuntu /bin/bash
-If you have any question or issues please email us at support@koding.com and we'll gladly help.
-</description>
   </item>
   
   <item>
@@ -3038,6 +2986,61 @@ Replace LOCAL_FILE with your local file location, USERNAME with your
 Koding Username, and REMOTE_FILE with your Remote File location. An
 example of this command can be seen below.
 scp ~/my_image.png joshmurray.koding.io:~/my_image.png
+</description>
+  </item>
+  
+  <item>
+    <title>A guide to Docker</title>
+    <link>//learn.koding.com/guides/what-is-docker</link>
+    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/what-is-docker</guid>
+    <author>Team Koding</author>
+    <description>Docker is a platform that helps developers build apps in whatever language they feel comfortable using and using any toolchain they want. Using Docker developers can build, ship and run distributed applications because it enables them to quickly put together an app by eliminating the stress between development, QA and production environments.
+A developer that uses Docker can run his / hers app anywhere without the fear of it not performing as it should.
+Apps that are built using Docker are completely portable and can run anywhere.
+  Docker apps Anyone can get started with Docker by checking out one of the 13,000+ apps that are available in the Docker Hub. You can get started working on WordPress or a new nodejs project in just a few seconds without the hassle of having to install any other dependencies (other then Docker of course) on your Koding VM.
+  Benefits The difference between a virtualized application and the Docker Engine container is that the first one includes not only the app and the necessary binaries and libraries but it contains the guest OS as well. The later runs as an separate process on the OS and thus it has the resources separation and allocation of a VM but is much more portable.
+  Installing Docker on Koding Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Docker using just one command:
+kpm install docker
+
+The version of Ubuntu that is installed on each Koding VM comes with a docker.io package and it should install Docker 0.9.1. 
+We can install Docker on our Koding VM using the following commands:
+
+We update the package list
+
+sudo apt-get update
+
+Install Docker
+
+sudo apt-get install docker.io
+
+We create a link 
+
+sudo ln -sf /usr/bin/docker.io /usr/local/bin/docker
+
+We need to edit the docker file in order to continue
+
+sudo sed -i '$acomplete -F _docker docker' /etc/bash_completion.d/docker.io
+
+And we now execute that file
+
+source /etc/bash_completion.d/docker.io
+
+After that we need to add the Docker repo key to the local keychain
+
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9
+
+The last step is to add the Docker repo to the apt sources list, update and install the lxc-docker package. You can do that using the following commands
+
+sudo sh -c &amp;quot;echo deb https://get.docker.com/ubuntu docker main\
+&amp;gt; /etc/apt/sources.list.d/docker.list&amp;quot;
+sudo apt-get update
+sudo apt-get install lxc-docker
+ You can use the below command, that uses curl, for an easier installation process:
+ curl -sSL https://get.docker.com/ubuntu/ | sudo sh
+If you made it to this point you can run this command to check if Docker is indeed installed and works properly:
+sudo docker run -i -t ubuntu /bin/bash
+If you have any question or issues please email us at support@koding.com and we'll gladly help.
 </description>
   </item>
   
@@ -3196,63 +3199,6 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Building C / C++ applications with biicode</title>
-    <link>//learn.koding.com/guides/getting-started-biicode</link>
-    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-biicode</guid>
-    <author>drodri</author>
-    <description>Building larger applications can be somewhat difficult and cumbersome to the newbie.
-As soon as your application start to have several files, you will need to define
-how to build them in Makefiles or using the CMake build system.
-We will be using in the following examples biicode, which is a dependency manager
-that allows to easily retrieve existing code and also manages to automatically generate
-build files for your project.
-You can install it running from your terminal:
-$ wget http://apt.biicode.com/install.sh &amp;amp;&amp;amp; chmod +x install.sh &amp;amp;&amp;amp; ./install.sh
-After it finish, you can run a helper command that install an updated version of CMake:
-$ bii setup:cpp
-Lets build an application that computes the SHA1 of a string. Usually you dont want to write
-yourself such algorithm, but rather use an existing implementation.
-The following commands will create a project and a &amp;quot;Hello world&amp;quot; file, which you can build and
-run:
-$ bii init cryptoproject
-$ cd cryptoproject
-$ bii new myuser/crypto --hello=cpp
-$ bii cpp:build
-$ ./bin/myuser_crypto_main
-Hello world!
-Now replace the contents of the &amp;quot;main.cpp&amp;quot; file inside the blocks/myuser/crypto folder with:
-#include &amp;quot;cryptopp/cryptopp/sha.h&amp;quot;
-#include &amp;quot;cryptopp/cryptopp/filters.h&amp;quot;
-#include &amp;quot;cryptopp/cryptopp/hex.h&amp;quot;
-#include &amp;lt;iostream&amp;gt;
-#include &amp;lt;string&amp;gt;
-
-int main() {
-    CryptoPP::SHA1 sha1;
-    std::string source = &amp;quot;Hello&amp;quot;;
-    std::string hash = &amp;quot;&amp;quot;;
-    CryptoPP::StringSource(source, true, new CryptoPP::HashFilter(sha1,
-                            new CryptoPP::HexEncoder(new CryptoPP::StringSink(hash))));
-    std::cout &amp;lt;&amp;lt; hash &amp;lt;&amp;lt; std::endl;
-}
-If you now try to build this example, it will fail. You can try to do so, and then check
-your dependencies:
-$ bii cpp:build
-$ bii deps
-The code depends on some external code, the Crypto++ library. This can be easily retrieved
-with the &amp;quot;find&amp;quot; command
-$ bii find
-Now you can build and run it:
-$ bii cpp:build
-$ ./bin/myuser_crypto_main
-F7FF9E8B7BB2E09B70935A5D785E0CC5D9D0ABF0
-For further examples, you can have a look to the biicode C/C++ documentation and the
-examples
-</description>
-  </item>
-  
-  <item>
     <title>Getting started with Drupal 8 (Prerelease)</title>
     <link>//learn.koding.com/guides/getting-started-drupal8-beta</link>
     <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
@@ -3368,6 +3314,63 @@ for many compilers, as Visual Studio, and IDEs as Eclipse.
 The Biicode platform automatically generate CMake files for you, based on
 your source code files. It also manage dependencies, so it can be used for reusing
 existing code easily.
+</description>
+  </item>
+  
+  <item>
+    <title>Building C / C++ applications with biicode</title>
+    <link>//learn.koding.com/guides/getting-started-biicode</link>
+    <pubDate>"2014-10-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-biicode</guid>
+    <author>drodri</author>
+    <description>Building larger applications can be somewhat difficult and cumbersome to the newbie.
+As soon as your application start to have several files, you will need to define
+how to build them in Makefiles or using the CMake build system.
+We will be using in the following examples biicode, which is a dependency manager
+that allows to easily retrieve existing code and also manages to automatically generate
+build files for your project.
+You can install it running from your terminal:
+$ wget http://apt.biicode.com/install.sh &amp;amp;&amp;amp; chmod +x install.sh &amp;amp;&amp;amp; ./install.sh
+After it finish, you can run a helper command that install an updated version of CMake:
+$ bii setup:cpp
+Lets build an application that computes the SHA1 of a string. Usually you dont want to write
+yourself such algorithm, but rather use an existing implementation.
+The following commands will create a project and a &amp;quot;Hello world&amp;quot; file, which you can build and
+run:
+$ bii init cryptoproject
+$ cd cryptoproject
+$ bii new myuser/crypto --hello=cpp
+$ bii cpp:build
+$ ./bin/myuser_crypto_main
+Hello world!
+Now replace the contents of the &amp;quot;main.cpp&amp;quot; file inside the blocks/myuser/crypto folder with:
+#include &amp;quot;cryptopp/cryptopp/sha.h&amp;quot;
+#include &amp;quot;cryptopp/cryptopp/filters.h&amp;quot;
+#include &amp;quot;cryptopp/cryptopp/hex.h&amp;quot;
+#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;string&amp;gt;
+
+int main() {
+    CryptoPP::SHA1 sha1;
+    std::string source = &amp;quot;Hello&amp;quot;;
+    std::string hash = &amp;quot;&amp;quot;;
+    CryptoPP::StringSource(source, true, new CryptoPP::HashFilter(sha1,
+                            new CryptoPP::HexEncoder(new CryptoPP::StringSink(hash))));
+    std::cout &amp;lt;&amp;lt; hash &amp;lt;&amp;lt; std::endl;
+}
+If you now try to build this example, it will fail. You can try to do so, and then check
+your dependencies:
+$ bii cpp:build
+$ bii deps
+The code depends on some external code, the Crypto++ library. This can be easily retrieved
+with the &amp;quot;find&amp;quot; command
+$ bii find
+Now you can build and run it:
+$ bii cpp:build
+$ ./bin/myuser_crypto_main
+F7FF9E8B7BB2E09B70935A5D785E0CC5D9D0ABF0
+For further examples, you can have a look to the biicode C/C++ documentation and the
+examples
 </description>
   </item>
   
