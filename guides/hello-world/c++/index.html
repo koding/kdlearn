@@ -46,11 +46,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?705" />
+    <link rel="stylesheet" href="/css/vendor.css?310" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?505" />
+    <link rel="stylesheet" href="/css/main.css?744" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?763" />
+    <link rel="stylesheet" href="/css/rwd.css?351" />
 	</head>
 	<body>
 
@@ -255,12 +255,16 @@
   </li>
 
   
-  <li class="">
+  <li class="zactive">
     <h5>Latest Guides</h5>
     <ul>
     
       <li class="">
         <a href="/guides/what-happens-upon-upgrade">What happens upon upgrade?</a>
+      </li>
+    
+      <li class="zactive">
+        <a href="/guides/hello-world/c++">Hello World on Koding: C++</a>
       </li>
     
       <li class="">
@@ -287,10 +291,6 @@
         <a href="/guides/how-to-install-joomla">How to install Joomla</a>
       </li>
     
-      <li class="">
-        <a href="/guides/apache-tomcat-on-koding">Apache Tomcat on Koding</a>
-      </li>
-    
     </ul>
   </li>
 
@@ -311,7 +311,7 @@
     <li class="author username">
        by <span rel="author">Team Koding</span>
     </li>
-    <li class="updated">Updated 2 months ago</li>
+    <li class="updated">Updated a day ago</li>
   </ul>
   
 
@@ -329,8 +329,7 @@
 <pre><code>g++ -o hellopp helloworld<span class="hljs-class">.cpp</span>
 ./hellopp
 </code></pre><blockquote class="tip fa fa-info-circle"> <p>If g++ is not installed on your VM, you can easily install it using these commands:
-<code>sudo apt-get update</code>
-<code>sudo apt-get install g++</code></p>
+<code>sudo apt-get update; sudo apt-get install g++</code></p>
  </blockquote><h2 class="heading"> <a name="explanation" class="anchor" href="#explanation"></a> Explanation </h2><pre><code><span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &lt;iostream&gt;</span>
 </code></pre><p>Lines beginning with the hash sign <code>#</code> are commands read and interpreted by the preprocessor. They are lines interpreted before the compilation of the program itself begins. In this case, the command <code>#include &lt;iostream&gt;</code>, instructs the preprocessor to include a section of standard C++ code, known as header iostream, that allows to perform standard input and output operations, such as writing the output of this program (Hello World) on the screen.</p>
 <pre><code>int <span class="hljs-function"><span class="hljs-title">main</span><span class="hljs-params">()</span></span>
