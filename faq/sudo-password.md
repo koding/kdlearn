@@ -1,9 +1,16 @@
 ---
-title: What is my sudo password?
+title: What is my sudo/root password?
 importance: 5
 ---
 
-By default, there is no `sudo` password on your Koding VM. It is blank/empty which means that if you want to use `sudo`, all you need to do is as follows:
+To switch to the `root` user on your VM, simply type in:
+```
+sudo su
+```
+
+By default, there is no `sudo` password on your Koding VM. It is blank/empty.
+
+So, if you want to use run a command as the root user, all you need to do is as follows:
 
 ```
 sudo <command you wish to use>
