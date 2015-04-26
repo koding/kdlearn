@@ -6147,35 +6147,29 @@ For HTML, CSS and JS: JSFiddle
   </item>
   
   <item>
-    <title>What is my VM Hostname/Address/Domain Name?</title>
+    <title>Are inactive accounts cleaned up?</title>
     <link>//learn.koding.com/faq/inactive-vms</link>
     <pubDate></pubDate>
     <guid isPermaLink="true">//learn.koding.com/faq/inactive-vms</guid>
     <author></author>
-    <description>The system assigned name for your VM is available on VM settings modal under the label: Assigned URL.
- This is an assigned name and is not editable.
- We realize that most users will probably run into trouble trying to remember our creatively designed VM names 
-(sorry, we had to make sure they were unique) so Koding VMs can also very easily be assigned a username based 
-namespace (username.koding.io). This makes it easy to remember the domain name for your VM since it is your 
-username! (Note: You can still reach the VM by using the system assigned name as described above.)
-To assign your username based domain to a VM, follow these 2 easy steps:
+    <description>  How does Koding ensure that the platform is scalable and performant for all users? We perodically clean up VMs of inactive accounts to ensure that the dormat resources
+allocated to these accounts are not a burden for the system. This ensures a &amp;quot;speedy&amp;quot;
+Koding for everyone who uses it regularly.
+ Inactive VMs are cleaned up but the account is not itself deleted. Paid account VMs
+are not a part of the cleanup process even if they are unused.
+   The cleanup process 
+If a user has not logged into their account in over 21 days, we send them an email notification
+requesting that they confirm their active status by simply logging back into their account.
+However, if by the 27th day the user is still dormant/inactive, another email is sent but this
+time with the notice that the inactive VM will be deleted (along with all the data inside it).
+On day 30, the dormat VM is deleted permanently.
 
-open the VM settings modal and click on the &amp;quot;Domains&amp;quot; tab to reveal the domain settings (as shown in the image below)
-toggle the switch next to your personal namespace to enable it for this VM. (Note: If you have more than one VM, you will be able to reassign the same namespace on other VM settings modals but only one VM can have the namespace applied to it at any given time.)
-
-
-In addition to this, Koding also allows you to create sub-domains
-so that if you want to configure your apache/nginx web server to serve multiple 
-virtual hosts, it's easy to assign them all their own unique sub-domains. Read more about virtual hosts.
-To use this feature, head back to the VM settings modal and follow these 3 easy steps:
-
-click on the &amp;quot;Domains&amp;quot; tab in the VM settings modal
-click the &amp;quot;Add new domain&amp;quot; button to open up an input box where you can type in a new sub-domain. All you need to provide is the sub-domain, we will add the .username.koding.io part automatically.
-
-once added, these sub-domains become available on the setting modals of all your VMs for easy reassignment
-deleting a sub-domain is as easy as adding one!
-
-
+This type of cleanup is necessary because with hunderds of thousands of accounts,
+we want to ensure that our regular users get the full benefit of the resources of the platform.
+ Even though the VM is terminated, we still keep a record of any referral space you may
+have accumulated when you were an active user so if you return at any point in the future,
+you can reclaim the referral space.
+ Maintaining your account is simple, just log back in!
 </description>
   </item>
   
