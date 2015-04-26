@@ -6,21 +6,21 @@
   itemscope itemtype="//schema.org/WebPage"
 >
    <head>
-     <title>What is my sudo password? | Koding University</title> 
+     <title>What is my sudo/root password? | Koding University</title> 
 		<meta charset="utf-8">
     
-		<meta name="description" content="By default, there is no sudo password on your Koding VM. It is blank/empty which means that if you want to use sudo, all you need to do is as follows:">
+		<meta name="description" content="To switch to the root user on your VM, simply type in:">
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
 
 		<!-- og meta tags -->
-     <meta property="og:title" content="What is my sudo password? | Koding University"/> 
+     <meta property="og:title" content="What is my sudo/root password? | Koding University"/> 
 		<meta property="og:type" content="website"/>
 		<meta property="og:url" content="https://learn.koding.com"/>
 		<meta property="og:image" content="https://learn.koding.com/img/logo_150.png"/>
     <!-- Don't have a secure url currently -->
 		<!--<meta property="og:image:secure_url" content="https://koding.com/a/images/logos/share_logo.png"/>-->
-		<meta property="og:description" content="By default, there is no sudo password on your Koding VM. It is blank/empty which means that if you want to use sudo, all you need to do is as follows:"/>
+		<meta property="og:description" content="To switch to the root user on your VM, simply type in:"/>
 		<meta property="og:image:type" content="image/png">
 		<meta property="og:image:width" content="130"/>
 		<meta property="og:image:height" content="100"/>
@@ -28,11 +28,11 @@
 		<!-- twitter cards -->
 		<meta name="twitter:site" content="@koding"/>
 		<meta name="twitter:url" content="https://koding.com"/>
-     <meta name="twitter:title" content="What is my sudo password? | Koding University"/> 
+     <meta name="twitter:title" content="What is my sudo/root password? | Koding University"/> 
 		<meta name="twitter:creator" content="@koding"/>
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:image" content="https://learn.koding.com/img/logo_150.png"/>
-		<meta name="twitter:description" content="By default, there is no sudo password on your Koding VM. It is blank/empty which means that if you want to use sudo, all you need to do is as follows:"\>
+		<meta name="twitter:description" content="To switch to the root user on your VM, simply type in:"\>
 		<meta name="twitter:domain" content="learn.koding.com">
 
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
@@ -44,11 +44,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?911" />
+    <link rel="stylesheet" href="/css/vendor.css?883" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?674" />
+    <link rel="stylesheet" href="/css/main.css?31" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?891" />
+    <link rel="stylesheet" href="/css/rwd.css?25" />
 	</head>
 	<body>
 
@@ -298,13 +298,16 @@
   itemscope itemtype="//schema.org/Question"
   itemprop="mainContentOfPage"
 >
-  <h1>What is my sudo password?</h1>
+  <h1>What is my sudo/root password?</h1>
 
   <div
     itemscope itemtype="//schema.org/Answer"
     itemprop="acceptedAnswer"
   >
-    <p>By default, there is no <code>sudo</code> password on your Koding VM. It is blank/empty which means that if you want to use <code>sudo</code>, all you need to do is as follows:</p>
+    <p>To switch to the <code>root</code> user on your VM, simply type in:</p>
+<pre><code><span class="hljs-title">sudo</span> su
+</code></pre><p>By default, there is no <code>sudo</code> password on your Koding VM. It is blank/empty.</p>
+<p>So, if you want to use run a command as the root user, all you need to do is as follows:</p>
 <pre><code>sudo &lt;command you wish <span class="hljs-keyword">to</span> <span class="hljs-keyword">use</span>&gt;
 </code></pre><p>When you hit enter, the sudo level command you wish to run without a password prompt.</p>
 <p>If you wish to, you can add a sudo password yourself. To do this, change user to root by typing:</p>

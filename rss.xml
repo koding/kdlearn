@@ -6072,12 +6072,15 @@ Once you initiate a reinit, you will see appropriate messages on the screen as y
   </item>
   
   <item>
-    <title>What is my sudo password?</title>
+    <title>What is my sudo/root password?</title>
     <link>//learn.koding.com/faq/sudo-password</link>
     <pubDate></pubDate>
     <guid isPermaLink="true">//learn.koding.com/faq/sudo-password</guid>
     <author></author>
-    <description>By default, there is no sudo password on your Koding VM. It is blank/empty which means that if you want to use sudo, all you need to do is as follows:
+    <description>To switch to the root user on your VM, simply type in:
+sudo su
+By default, there is no sudo password on your Koding VM. It is blank/empty.
+So, if you want to use run a command as the root user, all you need to do is as follows:
 sudo &amp;lt;command you wish to use&amp;gt;
 When you hit enter, the sudo level command you wish to run without a password prompt.
 If you wish to, you can add a sudo password yourself. To do this, change user to root by typing:

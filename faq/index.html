@@ -44,11 +44,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?386" />
+    <link rel="stylesheet" href="/css/vendor.css?986" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?717" />
+    <link rel="stylesheet" href="/css/main.css?679" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?537" />
+    <link rel="stylesheet" href="/css/rwd.css?940" />
 	</head>
 	<body>
 
@@ -280,7 +280,7 @@
       <li>
         <a
           href="#sudo-password"
-          class="title">What is my sudo password?</a>
+          class="title">What is my sudo/root password?</a>
       </li>
     
       <li>
@@ -593,14 +593,17 @@ to transfer the files.</p>
         class="question"
         itemscope itemtype="//schema.org/Question"
       >
-        <a href="/faq/sudo-password">What is my sudo password?</a>
+        <a href="/faq/sudo-password">What is my sudo/root password?</a>
       </h3>
       <div
         class="answer"
         itemscope itemtype="//schema.org/Answer"
         itemprop="acceptedAnswer"
       >
-        <p>By default, there is no <code>sudo</code> password on your Koding VM. It is blank/empty which means that if you want to use <code>sudo</code>, all you need to do is as follows:</p>
+        <p>To switch to the <code>root</code> user on your VM, simply type in:</p>
+<pre><code><span class="hljs-title">sudo</span> su
+</code></pre><p>By default, there is no <code>sudo</code> password on your Koding VM. It is blank/empty.</p>
+<p>So, if you want to use run a command as the root user, all you need to do is as follows:</p>
 <pre><code>sudo &lt;command you wish <span class="hljs-keyword">to</span> <span class="hljs-keyword">use</span>&gt;
 </code></pre><p>When you hit enter, the sudo level command you wish to run without a password prompt.</p>
 <p>If you wish to, you can add a sudo password yourself. To do this, change user to root by typing:</p>
