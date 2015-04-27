@@ -1,5 +1,5 @@
 ---
-title: Using FileZilla to connect to your Koding VM.
+title: Using FileZilla to connect to your Koding VM
 author: Team Koding
 date: 2015-04-26
 categories: [developer tools, file sync, ftp, file transfer]
