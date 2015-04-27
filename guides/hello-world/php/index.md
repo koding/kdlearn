@@ -37,6 +37,8 @@ To run the above file in your Koding VM, follow a similar URL in your browser:
 ```
 http://KODING_USERNAME.koding.io/helloworld.php
 ```
+> type:tip
+> Replace KODING_USERNAME above with your koding username. (It's not obvious to everyone)
 
 Find out more about your VM hostname [here](http://learn.koding.com/faq/vm-hostname/).
 
