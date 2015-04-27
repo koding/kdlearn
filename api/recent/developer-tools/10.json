@@ -1,5 +1,11 @@
 [
   {
+    "title": "Using FileZilla to connect to your Koding VM.",
+    "url": "https://learn.koding.com/guides/ftp-with-filezilla/index.html",
+    "author": "Team Koding",
+    "date": "2015-04-26T00:00:00.000Z"
+  },
+  {
     "title": "VNC Startup Guide",
     "url": "https://learn.koding.com/guides/vnc-startup-guide/index.html",
     "author": "Kaitlyn Schmidt",
@@ -52,11 +58,5 @@
     "url": "https://learn.koding.com/guides/linux-dash/index.html",
     "author": "Team Koding",
     "date": "2014-08-15T00:00:00.000Z"
-  },
-  {
-    "title": "What is Bitbucket?",
-    "url": "https://learn.koding.com/guides/using-bitbucket-on-koding/index.html",
-    "author": "Team Koding",
-    "date": "2014-07-16T00:00:00.000Z"
   }
 ]
