@@ -67,6 +67,7 @@ After the hostname, enter your Koding username, and FTP Password that you chose 
 
 - [FileZilla](https://filezilla-project.org/)
 - [FileZilla Download](https://filezilla-project.org/download.php?type=client)
+- [Connecting to your Koding VM using FileZilla](/guides/ftp-with-filezilla/)
 
 
 [filezilla]: https://filezilla-project.org/
