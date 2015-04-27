@@ -18,6 +18,53 @@
   <language>en</language>
   
   <item>
+    <title>Using FileZilla to connect to your Koding VM.</title>
+    <link>//learn.koding.com/guides/ftp-with-filezilla</link>
+    <pubDate>"2015-04-26T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/ftp-with-filezilla</guid>
+    <author>Team Koding</author>
+    <description>FileZilla is a popular FTP client and is widely used
+on Windows OS. It's extremely easy to use FileZilla to connect to your VM. This guide
+will cover two methods of connecting:
+
+Using general connection settings
+Using a secure connection
+
+ Before continuing, please ensure that FTP is set up and running on your VM. If you 
+have not yet set up FTP, follow the instructions on this guide to set it up before
+proceeding.
+   Setting up a generic connection to your Koding VM using FileZilla. As the images below show, its very easy to connect to your Koding VM using the standard
+username and password that you created while setting up FTP on your VM.
+
+
+  Setting up a secure FTP connection to your FTP To have FileZilla connect with your VM using secure (SFTP), you will need to add your
+private key(s) to the FileZilla application. You will also need to add your public key
+to the authorized_keys file on your VM. If you have not yet set up the
+authorized_keys file in your .ssh directory of your VM, then please read this guide before continuing.
+ Without setting up the above mentioned file, you will get
+connection errors when connecting over SFTP.
+ With your public key added to the authorized_keys file, you can now set up
+FileZilla with your private key and easily connect to your VM.
+Within the FileZilla preferences, find the SFTP section and add your private key as
+shown in the image below.
+
+Once the file is accepted by FileZilla, you can go back to the host setup and change the settings
+to connect using SFTP (as shown in the image below).
+
+If you get the error below while trying to connect, please check your public and private keys. 
+SSH key setup is very tempramental and even an extra space or line break can render the keys useless
+which in turn will cause connection problems.
+Status: Connecting to your_koding_username.koding.io...
+Response: fzSftp started, protocol_version=2
+Command: keyfile &amp;quot;path_to_your_key_file&amp;quot;
+Command: open &amp;quot;xxxxxxx@your_koding_username.koding.io&amp;quot; 22
+Command: Trust new Hostkey: Once
+Error: Disconnected: No supported authentication methods available (server sent: publickey)
+Error: Could not connect to server
+</description>
+  </item>
+  
+  <item>
     <title>What happens upon upgrade?</title>
     <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
     <pubDate>"2015-04-24T00:00:00.000Z"</pubDate>
@@ -405,6 +452,59 @@ If you encounter any issues or have any questions please drop an email here
   </item>
   
   <item>
+    <title>Koding IDE Introduction</title>
+    <link>//learn.koding.com/guides/ide-introduction</link>
+    <pubDate>"2015-03-18T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/ide-introduction</guid>
+    <author>Team Koding</author>
+    <description>In this guide we'll go over the Koding Integrated Development Environment or IDE for short. We'll try to explain how it works, how to use it and in the end share some useful tips that you can use to be more productive.
+  Getting started To access your IDE, select your Virtual Machine on the left hand side as pictured bellow.
+
+ If you have a Developer or Professional account then select the VM you want to start, from the list.
+ Then click on the Turn it on button in the modal.
+
+After the VM has started, you'll see your Koding IDE.
+ The IDE will remember what files / tabs you had opened last time and the FileTree will remember the folder location.
+   Usage The Koding IDE consists of two main parts: the FileTree, and the Editor.
+
+The IDE can be customized by clicking on the little cog icon and then modifying the settings based on your needs.
+ You can also customize the Koding Terminal from here.
+ 
+The FileTree, on the left, enables file navigation around your VM. You can drag files or folders from one location to another one and if you right click files and folders you'll yield shortcuts to various actions as exemplified in the bellow images.
+
+File actions
+
+
+
+Folder actions
+
+
+The Editor, that sits on the right of the FileTree, is the main driving force behing the Koding IDE. It allows you to edit a wide variaty of files types, such as .php, .rb, .html, .css just to name a few.
+By default the editor will be opened in a horizontal two pane view. Panes can be opened, split and merged at will. They can also be made full screen.
+You can open a new tab, in a pane, by clicking on the plus button and then chosing the type of tab you want to open, either a new Terminal tab, a new drawing board or a new file.
+
+
+If you choose to open a new file tab you'll have access to some actions on that tab. Clicking on the little arrow next to the tab name wil bring up a menu with multiple actions.
+
+Choosing the Terminal tab will open the Terminal to your Koding VM. We won't go into much detail about the Terminal in this guide. Head over to this guide for a more in depth explanation of the Terminal.
+The Drawing board tab is there to help you draft ideas / share them with others or when you want to doddle the next big thing.
+Everything has a keyboard shortcut as well. A shortcut reference, can be located by clicking the keyboard icon in the lower right.
+
+The Koding IDE can be used when you are in the collaboration mode. You can share your VM by click on the Share button in the bottom right corner of the IDE.
+
+This will share the VM with your teammate(s) or friend(s). Learn more about the collaboration feature here.
+  Tips 
+Use the Ctrl(Cmd) + Alt + M keyboard shortcut to merge all panes.
+Never worry about saving files again. Enable the autosave feature from the IDE settings.
+Double click on the sidebar and FileTree deviders to minimize them and make more room for the Editor.
+Ctrl(Cmd) + Enter(Return) keyboard shortcut will make everything fullscreen.
+
+The Koding IDE is a simple, yet powerful, editor for your browser based development.
+Explore it today and if you ever need help with the IDE you can just click on the bottom right corner question mark icon and the support modal will pop-up or email us at support@koding.com and we'll gladly help.
+</description>
+  </item>
+  
+  <item>
     <title>Koding Terminal Introduction</title>
     <link>//learn.koding.com/guides/terminal-introduction</link>
     <pubDate>"2015-03-18T00:00:00.000Z"</pubDate>
@@ -461,59 +561,6 @@ ifconfig - reports the systems network interfaces.
 
 The Koding Terminal is an essential component for development, right in your browser.
 Explore it today and if you ever need help with the Terminal you can just click on the bottom right corner question mark icon and the support modal will pop-up or email us at support@koding.com and we'll gladly help.
-</description>
-  </item>
-  
-  <item>
-    <title>Koding IDE Introduction</title>
-    <link>//learn.koding.com/guides/ide-introduction</link>
-    <pubDate>"2015-03-18T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/ide-introduction</guid>
-    <author>Team Koding</author>
-    <description>In this guide we'll go over the Koding Integrated Development Environment or IDE for short. We'll try to explain how it works, how to use it and in the end share some useful tips that you can use to be more productive.
-  Getting started To access your IDE, select your Virtual Machine on the left hand side as pictured bellow.
-
- If you have a Developer or Professional account then select the VM you want to start, from the list.
- Then click on the Turn it on button in the modal.
-
-After the VM has started, you'll see your Koding IDE.
- The IDE will remember what files / tabs you had opened last time and the FileTree will remember the folder location.
-   Usage The Koding IDE consists of two main parts: the FileTree, and the Editor.
-
-The IDE can be customized by clicking on the little cog icon and then modifying the settings based on your needs.
- You can also customize the Koding Terminal from here.
- 
-The FileTree, on the left, enables file navigation around your VM. You can drag files or folders from one location to another one and if you right click files and folders you'll yield shortcuts to various actions as exemplified in the bellow images.
-
-File actions
-
-
-
-Folder actions
-
-
-The Editor, that sits on the right of the FileTree, is the main driving force behing the Koding IDE. It allows you to edit a wide variaty of files types, such as .php, .rb, .html, .css just to name a few.
-By default the editor will be opened in a horizontal two pane view. Panes can be opened, split and merged at will. They can also be made full screen.
-You can open a new tab, in a pane, by clicking on the plus button and then chosing the type of tab you want to open, either a new Terminal tab, a new drawing board or a new file.
-
-
-If you choose to open a new file tab you'll have access to some actions on that tab. Clicking on the little arrow next to the tab name wil bring up a menu with multiple actions.
-
-Choosing the Terminal tab will open the Terminal to your Koding VM. We won't go into much detail about the Terminal in this guide. Head over to this guide for a more in depth explanation of the Terminal.
-The Drawing board tab is there to help you draft ideas / share them with others or when you want to doddle the next big thing.
-Everything has a keyboard shortcut as well. A shortcut reference, can be located by clicking the keyboard icon in the lower right.
-
-The Koding IDE can be used when you are in the collaboration mode. You can share your VM by click on the Share button in the bottom right corner of the IDE.
-
-This will share the VM with your teammate(s) or friend(s). Learn more about the collaboration feature here.
-  Tips 
-Use the Ctrl(Cmd) + Alt + M keyboard shortcut to merge all panes.
-Never worry about saving files again. Enable the autosave feature from the IDE settings.
-Double click on the sidebar and FileTree deviders to minimize them and make more room for the Editor.
-Ctrl(Cmd) + Enter(Return) keyboard shortcut will make everything fullscreen.
-
-The Koding IDE is a simple, yet powerful, editor for your browser based development.
-Explore it today and if you ever need help with the IDE you can just click on the bottom right corner question mark icon and the support modal will pop-up or email us at support@koding.com and we'll gladly help.
 </description>
   </item>
   
@@ -589,28 +636,6 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Hello World on Koding: Ruby</title>
-    <link>//learn.koding.com/guides/hello-world/ruby</link>
-    <pubDate>"2015-03-04T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/ruby</guid>
-    <author>Team Koding</author>
-    <description>  Introduction Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, and Lisp. It supports multiple programming paradigms, including functional, object-oriented, and imperative. It also has a dynamic type system and automatic memory management.
-  Implementation The first thing you need to do is to create a file called helloworld.rb in your Koding VM and paste the bellow snippet into it.
-#!/usr/bin/ruby
-
-puts 'Hello, world!'
-To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
-ruby helloworld.rb
-  Explanation #!/usr/bin/ruby
-The shebang line is read by the program loader to determine what program to use to run the script. This line cannot be preceded by any blank lines or any leading spaces.
-puts 'Hello, world!'
-The above line is pretty self explanatory. It will put something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
-And that's it!
-You just wrote and ran your first Hello World in Ruby.
-</description>
-  </item>
-  
-  <item>
     <title>Hello World on Koding: Go</title>
     <link>//learn.koding.com/guides/hello-world/go</link>
     <pubDate>"2015-03-04T00:00:00.000Z"</pubDate>
@@ -666,6 +691,40 @@ You just wrote and ran your first Hello World in Python.
   </item>
   
   <item>
+    <title>Hello World on Koding: Ruby</title>
+    <link>//learn.koding.com/guides/hello-world/ruby</link>
+    <pubDate>"2015-03-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/ruby</guid>
+    <author>Team Koding</author>
+    <description>  Introduction Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, and Lisp. It supports multiple programming paradigms, including functional, object-oriented, and imperative. It also has a dynamic type system and automatic memory management.
+  Implementation The first thing you need to do is to create a file called helloworld.rb in your Koding VM and paste the bellow snippet into it.
+#!/usr/bin/ruby
+
+puts 'Hello, world!'
+To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
+ruby helloworld.rb
+  Explanation #!/usr/bin/ruby
+The shebang line is read by the program loader to determine what program to use to run the script. This line cannot be preceded by any blank lines or any leading spaces.
+puts 'Hello, world!'
+The above line is pretty self explanatory. It will put something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
+And that's it!
+You just wrote and ran your first Hello World in Ruby.
+</description>
+  </item>
+  
+  <item>
+    <title>Hello World on Koding</title>
+    <link>//learn.koding.com/guides/hello-world</link>
+    <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world</guid>
+    <author>Team Koding</author>
+    <description>In this Hello World series we'll go over some of the most popular programming languages and learn how to implement a simple Hello World script in each one of them.
+By the end of the series you should be familiar with the most popular languages and you'll be able to continue with the one you like best, on Koding of course!
+As a challenge after you're done with the entire series have a go at this quiz and test your knowledge.
+</description>
+  </item>
+  
+  <item>
     <title>Hello World on Koding: C</title>
     <link>//learn.koding.com/guides/hello-world/c</link>
     <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
@@ -699,14 +758,40 @@ You just wrote and ran your first Hello World in C.
   </item>
   
   <item>
-    <title>Hello World on Koding</title>
-    <link>//learn.koding.com/guides/hello-world</link>
+    <title>Hello World on Koding: Java</title>
+    <link>//learn.koding.com/guides/hello-world/java</link>
     <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/java</guid>
     <author>Team Koding</author>
-    <description>In this Hello World series we'll go over some of the most popular programming languages and learn how to implement a simple Hello World script in each one of them.
-By the end of the series you should be familiar with the most popular languages and you'll be able to continue with the one you like best, on Koding of course!
-As a challenge after you're done with the entire series have a go at this quiz and test your knowledge.
+    <description>  Introduction Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.
+  Implementation The first thing you need to do is to create a file called HelloWorld.java in your Koding VM and paste the bellow snippet into it.
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println(&amp;quot;Hello, World!&amp;quot;);
+    }
+}
+To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
+javac HelloWorld.java
+java HelloWorld
+  Explanation public class HelloWorld
+The first line defines a class called HelloWorld. In Java, every line of code that can actually run needs to be inside a class. This line declares a class named HelloWorld, which is public, that means that any other class can access it.
+public static void main(String[] args)
+The main method has to have this exact signature in order to be able to run your program.
+
+public - means that anyone can access it.
+static  - means that you can run this method without creating an instance of Main.
+void - means that this method doesn't return any value.
+main - is the name of the method.
+
+The arguments inside the method are the arguments that you will get when running the program with parameters. It's an array of strings.
+{}
+The curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
+group or function.
+System.out.println(&amp;quot;Hello, World!&amp;quot;);
+System is a pre-defined class that Java provides and it also holds some useful methods and variables. out is a static variable within System that represents the output of your program. println is a method of out that can be used to print a line.
+And that's it!
+You just wrote and ran your first Hello World in Java.
+If you'd like to continue dabbling in Java, we recommend taking a look at this tutorial written for Koding over at Andriodauthority.com
 </description>
   </item>
   
@@ -772,44 +857,6 @@ echo outputs one or more strings. echo is not actually a function (it is a langu
 The last part after the closing ?&amp;gt; tag if just basic HTML code.
 And that's it!
 You just wrote and ran your first Hello World in PHP.
-</description>
-  </item>
-  
-  <item>
-    <title>Hello World on Koding: Java</title>
-    <link>//learn.koding.com/guides/hello-world/java</link>
-    <pubDate>"2015-03-03T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/java</guid>
-    <author>Team Koding</author>
-    <description>  Introduction Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.
-  Implementation The first thing you need to do is to create a file called HelloWorld.java in your Koding VM and paste the bellow snippet into it.
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(&amp;quot;Hello, World!&amp;quot;);
-    }
-}
-To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
-javac HelloWorld.java
-java HelloWorld
-  Explanation public class HelloWorld
-The first line defines a class called HelloWorld. In Java, every line of code that can actually run needs to be inside a class. This line declares a class named HelloWorld, which is public, that means that any other class can access it.
-public static void main(String[] args)
-The main method has to have this exact signature in order to be able to run your program.
-
-public - means that anyone can access it.
-static  - means that you can run this method without creating an instance of Main.
-void - means that this method doesn't return any value.
-main - is the name of the method.
-
-The arguments inside the method are the arguments that you will get when running the program with parameters. It's an array of strings.
-{}
-The curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
-group or function.
-System.out.println(&amp;quot;Hello, World!&amp;quot;);
-System is a pre-defined class that Java provides and it also holds some useful methods and variables. out is a static variable within System that represents the output of your program. println is a method of out that can be used to print a line.
-And that's it!
-You just wrote and ran your first Hello World in Java.
-If you'd like to continue dabbling in Java, we recommend taking a look at this tutorial written for Koding over at Andriodauthority.com
 </description>
   </item>
   
@@ -984,6 +1031,39 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
+    <title>Setting up a Laravel webserver with Artisan</title>
+    <link>//learn.koding.com/guides/setting-laravel-artisan-webserver</link>
+    <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-laravel-artisan-webserver</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Laravel using just one command:
+kpm install laravel
+
+  Getting started Before you can start the Laravel install process, you'll need to update all of the apt-get packages:
+sudo apt-get update
+Then make sure you have curl installed on your VM. You can install it using the bellow command:
+sudo apt-get install curl
+  Installing You can install Laravel using the bellow command:
+sudo curl -o /usr/local/bin/laravel 'http://laravel.com/laravel.phar'
+After that process is over you need to set execute permission on the Laravel executable.
+sudo chmod +x /usr/local/bin/laravel
+  Usage You can now create a new Laravel project.
+laravel new goodbyelocalhost
+After that you should navigate into the newly created directory:
+cd goodbyelocalhost
+and you should have the ability to start the webserver using the bellow command:
+php artisan serve --host=0.0.0.0 --port=8080
+You will now be able to access the Laravel webserver by following a similar URL:
+http://KODING_USERNAME.koding.io:8080
+Find out more about your VM hostname here.
+If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:8080. You can check this, using the netstat command in another terminal window and the bellow command:
+sudo netstat -tnlp
+And that's it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
     <title>Setting up a Rails webserver</title>
     <link>//learn.koding.com/guides/setting-rails-webserver</link>
     <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
@@ -1006,6 +1086,36 @@ You will now be able to access the Rails webserver by following a similar URL:
 http://KODING_USERNAME.koding.io:3000
 Find out more about your VM hostname here.
 Rails should listen to 0.0.0.0:3000 by default. If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:3000. You can check this, using the netstat command in another terminal window and the bellow command:
+sudo netstat -tnlp
+And that's it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>Setting up a MeteorJS webserver</title>
+    <link>//learn.koding.com/guides/setting-meteorjs-webserver</link>
+    <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-meteorjs-webserver</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install MeteorJS using just one command:
+kpm install meteor
+
+  Getting started Before you can start the MeteorJS install process, you'll need to update all of the apt-get packages:
+sudo apt-get update
+Then make sure you have curl installed on your VM. You can install it using the bellow command:
+sudo apt-get install curl
+  Installing You can install MeteorJS using the bellow command:
+curl https://install.meteor.com/ | sh
+  Usage Creating a new MeteorJS project is really easy. It just takes one command and you're good to go:
+meteor create goodbyelocalhost
+You can run that project like so:
+cd goodbyelocalhost
+meteor
+You will now be able to access the MeteorJS webserver by following a similar URL:
+http://KODING_USERNAME.koding.io:3000
+Find out more about your VM hostname here.
+MeteorJS should listen to 0.0.0.0:3000 by default. If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:3000. You can check this, using the netstat command in another terminal window and the bellow command:
 sudo netstat -tnlp
 And that's it!
 If you encounter any issues or have any questions please drop an email here.
@@ -1045,36 +1155,6 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>Setting up a MeteorJS webserver</title>
-    <link>//learn.koding.com/guides/setting-meteorjs-webserver</link>
-    <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-meteorjs-webserver</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install MeteorJS using just one command:
-kpm install meteor
-
-  Getting started Before you can start the MeteorJS install process, you'll need to update all of the apt-get packages:
-sudo apt-get update
-Then make sure you have curl installed on your VM. You can install it using the bellow command:
-sudo apt-get install curl
-  Installing You can install MeteorJS using the bellow command:
-curl https://install.meteor.com/ | sh
-  Usage Creating a new MeteorJS project is really easy. It just takes one command and you're good to go:
-meteor create goodbyelocalhost
-You can run that project like so:
-cd goodbyelocalhost
-meteor
-You will now be able to access the MeteorJS webserver by following a similar URL:
-http://KODING_USERNAME.koding.io:3000
-Find out more about your VM hostname here.
-MeteorJS should listen to 0.0.0.0:3000 by default. If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:3000. You can check this, using the netstat command in another terminal window and the bellow command:
-sudo netstat -tnlp
-And that's it!
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
     <title>Setting up a Django webserver</title>
     <link>//learn.koding.com/guides/setting-django-webserver</link>
     <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
@@ -1098,39 +1178,6 @@ You will now be able to access the Django webserver by following a similar URL:
 http://KODING_USERNAME.koding.io:8000
 Find out more about your VM hostname here.
 If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:8000. You can check this, using the netstat command in another terminal window and the bellow command:
-sudo netstat -tnlp
-And that's it!
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
-    <title>Setting up a Laravel webserver with Artisan</title>
-    <link>//learn.koding.com/guides/setting-laravel-artisan-webserver</link>
-    <pubDate>"2015-02-26T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-laravel-artisan-webserver</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Laravel using just one command:
-kpm install laravel
-
-  Getting started Before you can start the Laravel install process, you'll need to update all of the apt-get packages:
-sudo apt-get update
-Then make sure you have curl installed on your VM. You can install it using the bellow command:
-sudo apt-get install curl
-  Installing You can install Laravel using the bellow command:
-sudo curl -o /usr/local/bin/laravel 'http://laravel.com/laravel.phar'
-After that process is over you need to set execute permission on the Laravel executable.
-sudo chmod +x /usr/local/bin/laravel
-  Usage You can now create a new Laravel project.
-laravel new goodbyelocalhost
-After that you should navigate into the newly created directory:
-cd goodbyelocalhost
-and you should have the ability to start the webserver using the bellow command:
-php artisan serve --host=0.0.0.0 --port=8080
-You will now be able to access the Laravel webserver by following a similar URL:
-http://KODING_USERNAME.koding.io:8080
-Find out more about your VM hostname here.
-If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:8080. You can check this, using the netstat command in another terminal window and the bellow command:
 sudo netstat -tnlp
 And that's it!
 If you encounter any issues or have any questions please drop an email here.
@@ -1701,6 +1748,74 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
+    <title>CouchDB installation for beginners</title>
+    <link>//learn.koding.com/guides/couchdb-installation-for-beginners</link>
+    <pubDate>"2015-01-20T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/couchdb-installation-for-beginners</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install CouchDB using just one command:
+kpm install couchdb
+
+This guide will help install CouchDB on your Koding VM.
+  Getting started Before you can start the CouchDB install process, you'll need to update all of the apt-get packages:
+sudo apt-get update
+Make sure you have curl installed on your VM before you continue. You can install it using the following command:
+sudo apt-get install curl
+  Installing CouchDB can be installed by running the following command:
+sudo apt-get install couchdb
+By default CouchDB runs on port :5984. If you want to check CouchDB and see if it's running correctly you can issue this command:
+curl localhost:5984
+and it should output something like this:
+{&amp;quot;couchdb&amp;quot;:&amp;quot;Welcome&amp;quot;,&amp;quot;uuid&amp;quot;:&amp;quot;dfd16361e5321d4a90d01feedee6c0b1&amp;quot;,&amp;quot;version&amp;quot;:&amp;quot;1.5.0&amp;quot;,&amp;quot;vendor&amp;quot;:{&amp;quot;name&amp;quot;:&amp;quot;Ubuntu&amp;quot;,&amp;quot;version&amp;quot;:&amp;quot;14.04&amp;quot;}}
+  Usage If you want to create a new database you can use the PUT command:
+curl -X PUT localhost:5984/new_database
+The output should look like this:
+{&amp;quot;ok&amp;quot;:true}
+And that's it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>How to install Memcache</title>
+    <link>//learn.koding.com/guides/install-memcache</link>
+    <pubDate>"2015-01-20T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/install-memcache</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Memcache using just one command:
+kpm install memcached
+
+  Getting started Before you can start the Memcache install process, you'll need to update all of the apt-get packages:
+sudo apt-get update
+Make sure you have mySQL and PHP installed on your VM before you continue.
+  Step 1 To install Memcache you'll need to run the following command:
+sudo apt-get install php5-memcached memcached
+This will install the required package for PHP and also the Memcached package.
+  Step 2 You can now check if the packages have been installed correctly. Run the following commands from your Terminal:
+cd Web
+sudo nano info.php
+Copy the following lines into the file:
+&amp;lt;?php
+phpinfo();
+?&amp;gt;
+You'll now be able to check if Memcache has installed correctly by accessing a url similar to this one:
+http://KODING_USERNAME.koding.io/info.php
+Find out more about your VM hostname here.
+If you scroll down or search for the &amp;quot;memcached&amp;quot; section header, you should find something that looks like this:
+
+You can check whether the Memcache service is running by typing:
+ps aux | grep memcached
+And it should output something similar to this:
+memcache  6584  0.0  0.0 327448  3004 ?        Sl   14:07   0:00 /usr/bin/memcached -m 64 -p 11211 -u memcache -l 127.0.0.1
+demouser  6636  0.0  0.0  11744   904 pts/0    S+   14:29   0:00 grep --color=auto memcached
+You can query Memcache for stats by typing:
+echo &amp;quot;stats settings&amp;quot; | nc localhost 11211
+And that's it!
+If you encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
     <title>How to install Redis</title>
     <link>//learn.koding.com/guides/install-redis</link>
     <pubDate>"2015-01-20T00:00:00.000Z"</pubDate>
@@ -1749,35 +1864,6 @@ If you encounter any issues or have any questions please drop an email here.
   </item>
   
   <item>
-    <title>CouchDB installation for beginners</title>
-    <link>//learn.koding.com/guides/couchdb-installation-for-beginners</link>
-    <pubDate>"2015-01-20T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/couchdb-installation-for-beginners</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install CouchDB using just one command:
-kpm install couchdb
-
-This guide will help install CouchDB on your Koding VM.
-  Getting started Before you can start the CouchDB install process, you'll need to update all of the apt-get packages:
-sudo apt-get update
-Make sure you have curl installed on your VM before you continue. You can install it using the following command:
-sudo apt-get install curl
-  Installing CouchDB can be installed by running the following command:
-sudo apt-get install couchdb
-By default CouchDB runs on port :5984. If you want to check CouchDB and see if it's running correctly you can issue this command:
-curl localhost:5984
-and it should output something like this:
-{&amp;quot;couchdb&amp;quot;:&amp;quot;Welcome&amp;quot;,&amp;quot;uuid&amp;quot;:&amp;quot;dfd16361e5321d4a90d01feedee6c0b1&amp;quot;,&amp;quot;version&amp;quot;:&amp;quot;1.5.0&amp;quot;,&amp;quot;vendor&amp;quot;:{&amp;quot;name&amp;quot;:&amp;quot;Ubuntu&amp;quot;,&amp;quot;version&amp;quot;:&amp;quot;14.04&amp;quot;}}
-  Usage If you want to create a new database you can use the PUT command:
-curl -X PUT localhost:5984/new_database
-The output should look like this:
-{&amp;quot;ok&amp;quot;:true}
-And that's it!
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
     <title>How to install GruntJS</title>
     <link>//learn.koding.com/guides/installing-gruntjs</link>
     <pubDate>"2015-01-20T00:00:00.000Z"</pubDate>
@@ -1801,45 +1887,6 @@ Generate an empty package file:
 echo &amp;quot;{}&amp;quot; &amp;gt; package.json
 Finally, install GruntJS into that project using the following command:
 npm install grunt --save-dev
-And that's it!
-If you encounter any issues or have any questions please drop an email here.
-</description>
-  </item>
-  
-  <item>
-    <title>How to install Memcache</title>
-    <link>//learn.koding.com/guides/install-memcache</link>
-    <pubDate>"2015-01-20T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/install-memcache</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Memcache using just one command:
-kpm install memcached
-
-  Getting started Before you can start the Memcache install process, you'll need to update all of the apt-get packages:
-sudo apt-get update
-Make sure you have mySQL and PHP installed on your VM before you continue.
-  Step 1 To install Memcache you'll need to run the following command:
-sudo apt-get install php5-memcached memcached
-This will install the required package for PHP and also the Memcached package.
-  Step 2 You can now check if the packages have been installed correctly. Run the following commands from your Terminal:
-cd Web
-sudo nano info.php
-Copy the following lines into the file:
-&amp;lt;?php
-phpinfo();
-?&amp;gt;
-You'll now be able to check if Memcache has installed correctly by accessing a url similar to this one:
-http://KODING_USERNAME.koding.io/info.php
-Find out more about your VM hostname here.
-If you scroll down or search for the &amp;quot;memcached&amp;quot; section header, you should find something that looks like this:
-
-You can check whether the Memcache service is running by typing:
-ps aux | grep memcached
-And it should output something similar to this:
-memcache  6584  0.0  0.0 327448  3004 ?        Sl   14:07   0:00 /usr/bin/memcached -m 64 -p 11211 -u memcache -l 127.0.0.1
-demouser  6636  0.0  0.0  11744   904 pts/0    S+   14:29   0:00 grep --color=auto memcached
-You can query Memcache for stats by typing:
-echo &amp;quot;stats settings&amp;quot; | nc localhost 11211
 And that's it!
 If you encounter any issues or have any questions please drop an email here.
 </description>
@@ -2746,6 +2793,39 @@ If you encounter any issues or have any questions regarding Apache Cordova on Ko
   </item>
   
   <item>
+    <title>Understanding the VM settings modal</title>
+    <link>//learn.koding.com/guides/understanding-vm-panel</link>
+    <pubDate>"2014-11-03T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/understanding-vm-panel</guid>
+    <author>Team Koding</author>
+    <description>  Understanding the VM settings modal This guide will explain the basics of the VM settings modal.
+
+In order to open the VM settings modal you need to hover over the VM name on the right side of Koding (in the sidebar at the top) and then click on the three points icon that appears on the right of the VM label. (as seen in the image above)
+
+After you click on the icon mentioned above the VM modal should open, which should look like the one pictured above. The VM settings are mostly self explanatory but we will outline them here for clarity. The VM settings modal has three main sections: the Basic section, the More section and the Advanced section.
+  General Tab The general tab houses the basic settings about your VM. These are:
+
+On/Off: This toggle will switch your VM's state between on/off. We recommend using this to turn off your VM as compared to doing a sudo poweroff on your VM.
+Keep VM always on: A paid feature, this allows you to keep your VM running all the time.
+Nickname: You can use this to give your VM a nice name that you can remember!
+Public IP: This is the public IP for your VM. For free accounts, the public IPs rotate every reboot.
+ 
+Assigned URL: This is the system assigned URL/name for your VM. It's long so that it's never duplicated.
+
+  Specs Tab This tab shows you the basic specifications of your VM.
+  Disk Usage Tab Here you can see how much disk space you have used.
+  Domains Tab Here you can create a custom/short URL for your VM and/or define subdomains and custom domains for your VM. These come in handy if you are running multiple virtual hosts on your VM.
+  VM Sharing Shared VMs, another feature for our paid accounts, allows you to share your VM with other Koding members even if you are not online.
+  Advanced Tab The advanced section includes settings that only advanced users should use. If you are an unexperienced user then this section should be off limits.
+
+Reinitialize VM: This button will set your VM back to its default state. This means that the VM will be re-imaged, as if you deleted the VM and created a new one. This guide explains the reinit function in more detail.
+Terminate VM: You can remove your VM and create a new one if you so choose. We recommend you reinit your VM in lieu of deleting and recreating it.
+
+If you encounter any issues or have any questions regarding the VM settings modal you can email us at support@koding.com and we'll gladly help.
+</description>
+  </item>
+  
+  <item>
     <title>Koding Subdomains and VHosts</title>
     <link>//learn.koding.com/guides/vhosts-and-subdomains</link>
     <pubDate>"2014-11-03T00:00:00.000Z"</pubDate>
@@ -2837,39 +2917,6 @@ Section here.
   </item>
   
   <item>
-    <title>Understanding the VM settings modal</title>
-    <link>//learn.koding.com/guides/understanding-vm-panel</link>
-    <pubDate>"2014-11-03T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/understanding-vm-panel</guid>
-    <author>Team Koding</author>
-    <description>  Understanding the VM settings modal This guide will explain the basics of the VM settings modal.
-
-In order to open the VM settings modal you need to hover over the VM name on the right side of Koding (in the sidebar at the top) and then click on the three points icon that appears on the right of the VM label. (as seen in the image above)
-
-After you click on the icon mentioned above the VM modal should open, which should look like the one pictured above. The VM settings are mostly self explanatory but we will outline them here for clarity. The VM settings modal has three main sections: the Basic section, the More section and the Advanced section.
-  General Tab The general tab houses the basic settings about your VM. These are:
-
-On/Off: This toggle will switch your VM's state between on/off. We recommend using this to turn off your VM as compared to doing a sudo poweroff on your VM.
-Keep VM always on: A paid feature, this allows you to keep your VM running all the time.
-Nickname: You can use this to give your VM a nice name that you can remember!
-Public IP: This is the public IP for your VM. For free accounts, the public IPs rotate every reboot.
- 
-Assigned URL: This is the system assigned URL/name for your VM. It's long so that it's never duplicated.
-
-  Specs Tab This tab shows you the basic specifications of your VM.
-  Disk Usage Tab Here you can see how much disk space you have used.
-  Domains Tab Here you can create a custom/short URL for your VM and/or define subdomains and custom domains for your VM. These come in handy if you are running multiple virtual hosts on your VM.
-  VM Sharing Shared VMs, another feature for our paid accounts, allows you to share your VM with other Koding members even if you are not online.
-  Advanced Tab The advanced section includes settings that only advanced users should use. If you are an unexperienced user then this section should be off limits.
-
-Reinitialize VM: This button will set your VM back to its default state. This means that the VM will be re-imaged, as if you deleted the VM and created a new one. This guide explains the reinit function in more detail.
-Terminate VM: You can remove your VM and create a new one if you so choose. We recommend you reinit your VM in lieu of deleting and recreating it.
-
-If you encounter any issues or have any questions regarding the VM settings modal you can email us at support@koding.com and we'll gladly help.
-</description>
-  </item>
-  
-  <item>
     <title>Changing your IDE and Terminal themes</title>
     <link>//learn.koding.com/guides/change-theme</link>
     <pubDate>"2014-10-28T00:00:00.000Z"</pubDate>
@@ -2919,6 +2966,43 @@ guide.
     <guid isPermaLink="true">//learn.koding.com/guides/chat-introduction</guid>
     <author>Team Koding</author>
     <description></description>
+  </item>
+  
+  <item>
+    <title>Getting Started: File Uploads</title>
+    <link>//learn.koding.com/guides/getting-started/file-upload</link>
+    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/file-upload</guid>
+    <author>Team Koding</author>
+    <description>In this guide we'll take a look at uploading your files and projects to
+Koding, in multiple ways. Lets get started!
+  Uploading with Drag and Drop The simplest way, is simply by using Drag and Drop file upload! To do
+this, open your Koding IDE, locate your FileTree on the left hand
+side, and drag a file from your Desktop onto the FileTree. An example
+image is below.
+
+After you let go of the file, your file will be uploaded to your
+~/Uploads directory. If ~/Uploads does not exist, it will be automatically
+created.
+ Files uploaded this way are not automatically available for
+serving over your VMs web server as the ~/Uploads directory is not inside
+~/Web (the default web root for Koding VMs). If you wish to use any uploaded
+files in your web project, please move them to a directory under ~/Web.
+   Uploading with FTP FTP is another common way to upload files to your VM. Before uploading
+with FTP though, you'll need to set up an FTP Server on your VM.
+The FTP Guide will take you through both the installation, and
+connecting process, so check it out!
+  Uploading with SCP SCP is is a tool that will copy files from your local Unix filesystem
+to a remote filesystem over SSH connections. To use it, make sure you
+have SSH setup with your Koding VM beforehand. Instructions can be found
+here if needed.
+After that, use the following command to copy a local file to your VM.
+scp LOCAL_FILE USERNAME.koding.io:REMOTE_FILE
+Replace LOCAL_FILE with your local file location, USERNAME with your
+Koding Username, and REMOTE_FILE with your Remote File location. An
+example of this command can be seen below.
+scp ~/my_image.png joshmurray.koding.io:~/my_image.png
+</description>
   </item>
   
   <item>
@@ -3003,43 +3087,6 @@ smallfiles=true
 Now use ctrl-x to save the file. After you've saved the file, simply 
 restart Mongodb with the following command:
 sudo service mongodb restart
-</description>
-  </item>
-  
-  <item>
-    <title>Getting Started: File Uploads</title>
-    <link>//learn.koding.com/guides/getting-started/file-upload</link>
-    <pubDate>"2014-10-17T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/file-upload</guid>
-    <author>Team Koding</author>
-    <description>In this guide we'll take a look at uploading your files and projects to
-Koding, in multiple ways. Lets get started!
-  Uploading with Drag and Drop The simplest way, is simply by using Drag and Drop file upload! To do
-this, open your Koding IDE, locate your FileTree on the left hand
-side, and drag a file from your Desktop onto the FileTree. An example
-image is below.
-
-After you let go of the file, your file will be uploaded to your
-~/Uploads directory. If ~/Uploads does not exist, it will be automatically
-created.
- Files uploaded this way are not automatically available for
-serving over your VMs web server as the ~/Uploads directory is not inside
-~/Web (the default web root for Koding VMs). If you wish to use any uploaded
-files in your web project, please move them to a directory under ~/Web.
-   Uploading with FTP FTP is another common way to upload files to your VM. Before uploading
-with FTP though, you'll need to set up an FTP Server on your VM.
-The FTP Guide will take you through both the installation, and
-connecting process, so check it out!
-  Uploading with SCP SCP is is a tool that will copy files from your local Unix filesystem
-to a remote filesystem over SSH connections. To use it, make sure you
-have SSH setup with your Koding VM beforehand. Instructions can be found
-here if needed.
-After that, use the following command to copy a local file to your VM.
-scp LOCAL_FILE USERNAME.koding.io:REMOTE_FILE
-Replace LOCAL_FILE with your local file location, USERNAME with your
-Koding Username, and REMOTE_FILE with your Remote File location. An
-example of this command can be seen below.
-scp ~/my_image.png joshmurray.koding.io:~/my_image.png
 </description>
   </item>
   
@@ -3513,6 +3560,7 @@ After the hostname, enter your Koding username, and FTP Password that you chose 
   Additional Resources 
 FileZilla
 FileZilla Download
+Connecting to your Koding VM using FileZilla
 
 </description>
   </item>

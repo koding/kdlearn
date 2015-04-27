@@ -1,5 +1,11 @@
 [
   {
+    "title": "Using FileZilla to connect to your Koding VM.",
+    "url": "https://learn.koding.com/guides/ftp-with-filezilla/index.html",
+    "author": "Team Koding",
+    "date": "2015-04-26T00:00:00.000Z"
+  },
+  {
     "title": "Setting up FTP with vsftpd",
     "url": "https://learn.koding.com/guides/setting-up-ftp-with-vsftpd/index.html",
     "author": "Team Koding",
