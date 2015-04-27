@@ -2,7 +2,7 @@
 title: Using FileZilla to connect to your Koding VM.
 author: Team Koding
 date: 2015-04-26
-categories: [common questions, ftp, file transfer]
+categories: [developer tools, file sync, ftp, file transfer]
 ---
 
 [FileZilla](https://filezilla-project.org/) is a popular FTP client and is widely used
