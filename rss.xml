@@ -172,12 +172,12 @@ That&amp;apos;s it, you are done.
   </item>
   
   <item>
-    <title>Why is my Virtul Machine (VM) asleep?</title>
+    <title>Why is my Virtual Machine (VM) asleep?</title>
     <link>//learn.koding.com/guides/vm-asleep</link>
     <pubDate>"2015-04-17T00:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/vm-asleep</guid>
     <author>Team Koding</author>
-    <description>  Why does my Virtul Machine (VM) appear as asleep when I visit it on a browser? There are two main reasons for this:
+    <description>  Why does my Virtual Machine (VM) appear as asleep when I visit it on a browser? There are two main reasons for this:
 
 The VM is actually off. If this is the case then all that needs
 to be done is that the owner of the VM needs to turn the VM on. Details
