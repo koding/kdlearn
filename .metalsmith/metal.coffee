@@ -17,6 +17,7 @@ permalinks   = require 'metalsmith-permalinks'
 templates    = require 'metalsmith-templates'
 aboutSchema  = require './plugins/about-schema'
 authors      = require './plugins/authors'
+autoDate     = require './plugins/autodate'
 defaultMeta  = require './plugins/defaultmeta'
 descMeta     = require './plugins/descriptionMeta'
 paginate     = require './plugins/paginate'
@@ -142,6 +143,7 @@ module.exports = build = (callback=->) ->
       highlight: (code, lang) ->
         lang = [lang] if lang?
         highlightjs.highlightAuto(code, lang).value
+    .use autoDate()
     .use excerpts()
     .use titleify()
     .use moment()
