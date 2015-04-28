@@ -30,6 +30,7 @@ To have FileZilla connect with your VM using secure (SFTP), you will need to add
 private key(s) to the FileZilla application. You will also need to add your public key
 to the `authorized_keys` file on your VM. If you have not yet set up the
 `authorized_keys` file in your `.ssh` directory of your VM, then please [read this guide](http://learn.koding.com/guides/ssh-into-your-vm/#adding-to-your-authorized-keys) before continuing.
+
 > type:alert
 > Without setting up the above mentioned file, you will get
 > connection errors when connecting over SFTP.
