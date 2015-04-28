@@ -11,7 +11,7 @@ template: series.toffee
 
 # Workspaces
 
-In this guide we'll go over what Koding Workspaces are, and how 
+In this guide we'll go over what Koding Workspaces are, and how
 to manage them. Lets get started!
 
 ## What are they?
@@ -20,42 +20,42 @@ Think of a Workspace as a logical grouping of files that have a common
 theme. For example, all files that belong to a project can be placed
 inside a workspace. They are essentially folders.
 
-Workspaces are also a way to save the layout of your environment. Open Files, 
-Terminals, and File Explorer, Workspaces help you save not just what 
+Workspaces are also a way to save the layout of your environment. Open Files,
+Terminals, and File Explorer, Workspaces help you save not just what
 you're working on but *how* you're working.
 
-Furthermore, in upcoming releases, workspaces will have integration with 
-various services and developer tools, making them a quick way to get 
+Furthermore, in upcoming releases, workspaces will have integration with
+various services and developer tools, making them a quick way to get
 started with a specific type of project or service.
 
 ## How to use them?
 
 ![Workspaces](workspaces.png)
 
-Workspaces, highlighted in the above image, can be opened simply by 
-clicking on them. Creating new workspaces is as simple as using the Plus 
+Workspaces, highlighted in the above image, can be opened simply by
+clicking on them. Creating new workspaces is as simple as using the Plus
 button, in the upper right of the highlighted area.
 
 Or you can simply right click on a folder from the FileTree and create a Workspace from there. Like in the image below.
 
 ![Workspaces1](workspaces1.png)
 
-With the workspace open, simply use the [IDE][ide] as you want. Open 
-files, Terminals, Browsers, and Drawing Boards will be remembered between 
+With the workspace open, simply use the [IDE][ide] as you want. Open
+files, Terminals, Browsers, and Drawing Boards will be remembered between
 programming sessions.
 
 ## Workspaces on the File System
 
-With each user created Workspace, a directory is created inside the 
+With each user created Workspace, a directory is created inside the
 `~/Workspaces` directory.
 
-You can open this directory in your Terminal or clone your projects 
+You can open this directory in your Terminal or clone your projects
 directly into it as you like.
 
 ## Linking Workspaces to Existing Directories
 
-Workspace folders are just normal folders on the file system. As such, we 
-can use Unix symbolic links to folders to achieve what we want. As an 
+Workspace folders are just normal folders on the file system. As such, we
+can use Unix symbolic links to folders to achieve what we want. As an
 example, lets create a Workspace linked to our Web directory.
 
 Open up a Terminal, and type in the following commands.
@@ -65,19 +65,19 @@ mkdir -p ~/Workspaces
 ln -s ~/Web ~/Workspaces/Web
 ```
 
-Now, with the Koding UI, create a new workspace named `Web`. That's it!  
-Now when you click on the workspace, the FileTree will automatically open 
+Now, with the Koding UI, create a new workspace named `Web`. That's it!
+Now when you click on the workspace, the FileTree will automatically open
 to the Web folder's contents.
 
-It should be noted that we created our link **before** we created the 
-Workspace. If the workspace already existed, the link would not be set 
+It should be noted that we created our link **before** we created the
+Workspace. If the workspace already existed, the link would not be set
 correctly.
 
-You can freely remove the Workspace file system and replace them with any 
-links you desire, as the steps above use, but just be careful not to 
+You can freely remove the Workspace file system and replace them with any
+links you desire, as the steps above use, but just be careful not to
 delete any of your files in the process.
 
-> type:error
+> type:alert
 > The default Workspace can't be removed as that is the default Web folder on your VM.
 
 

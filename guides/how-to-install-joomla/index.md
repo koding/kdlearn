@@ -119,7 +119,7 @@ sudo touch configuration.php
 sudo chmod 777 configuration.php
 ```
 
-> type:warning
+> type:alert
 > After the installation is complete, we'll need to change the permissions back to 755.
 
 ## Step 3 - Finalizing the Joomla install

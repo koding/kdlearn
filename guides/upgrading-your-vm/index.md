@@ -16,7 +16,7 @@ We will walk through the following steps:
 
 So depending on your need, you can do 1) or 2) or both.
 
-> type:warning
+> type:alert
 > Even though we have tested upgrading the VM, some updates may render your VM inaccessible so please proceed only if you know what you are doing. If you run into problems, you can always re-init your VM or send us a request via [support@koding.com](mailto:support@koding.com).
 
 
@@ -58,7 +58,7 @@ To update your package list, type the following command in Terminal:
 ```
 sudo apt-get update
 ```
-> type:warning
+> type:alert
 > No software has been updated at this time, just the list of available packages has been updated.
 
 ### Upgrading existing packages
@@ -94,13 +94,13 @@ If all went well, you will end up on a screen that looks like this and the curso
 prompt again:
 ![Finish](finish.png)
 
-Congratulations! You have just finished upgrading your existing packages to their latest official 
+Congratulations! You have just finished upgrading your existing packages to their latest official
 released levels. This will also include officially released security patches for all existing
 software packages.
 
 If you just wanted to update the  , you can stop now. If you also wish to update your Ubuntu distribution,
  then you can continue to the next section.
- 
+
 ### Upgrading your Ubuntu Distribution
 This command will install new packages that have been released for Ubuntu. As before, please make
 sure that you have re-checked the available disk space before proceeding.
@@ -114,7 +114,7 @@ if you encounter any screens that ask for overwriting existing files, please fol
 from the previous section. Once done, you should see something like this:
 ![update done](update-done.png)
 
-Now, let's reboot the VM. Open up the settings modal for your VM and toggle the on/off switch. Once 
+Now, let's reboot the VM. Open up the settings modal for your VM and toggle the on/off switch. Once
 the VM turns off and you see the button to turn it on, go ahead and click it. This is necessary
 to ensure that the updated files are brought into use.
 
@@ -130,6 +130,6 @@ note that the kernel version has updated. You've just updated your VM to the lat
 kernel!
 
 ### If something goes wrong
-Your Koding VM can easily be reinitialized to our official version (the version you got when you 
+Your Koding VM can easily be reinitialized to our official version (the version you got when you
 made a new Koding account) so if all these updates leave you with an unusable VM, try [reinitializing
 your VM back to its original state](http://learn.koding.com/faq/vm-reinit/).

@@ -11,8 +11,8 @@ will cover two methods of connecting:
 1. Using general connection settings
 2. Using a secure connection
 
-> type:error
-> Before continuing, please ensure that FTP is set up and running on your VM. If you 
+> type:alert
+> Before continuing, please ensure that FTP is set up and running on your VM. If you
 > have not yet set up FTP, follow the instructions on this [guide](http://learn.koding.com/guides/setting-up-ftp-on-koding/) to set it up before
 > proceeding.
 
@@ -30,7 +30,7 @@ To have FileZilla connect with your VM using secure (SFTP), you will need to add
 private key(s) to the FileZilla application. You will also need to add your public key
 to the `authorized_keys` file on your VM. If you have not yet set up the
 `authorized_keys` file in your `.ssh` directory of your VM, then please [read this guide](http://learn.koding.com/guides/ssh-into-your-vm/#adding-to-your-authorized-keys) before continuing.
-> type:error
+> type:alert
 > Without setting up the above mentioned file, you will get
 > connection errors when connecting over SFTP.
 
@@ -48,7 +48,7 @@ to connect using SFTP (as shown in the image below).
 ![pic 4](filezilla4.png)
 
 ### Connection errors and how to fix them
-If you get the error below while trying to connect, please check your public and private keys. 
+If you get the error below while trying to connect, please check your public and private keys.
 SSH key setup is very tempramental and even an extra space or line break can render the keys useless
 which in turn will cause connection problems.
 ```

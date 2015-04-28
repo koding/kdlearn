@@ -16,7 +16,7 @@ real-time and sharing the IDE and Terminal.
 > Paid accounts can initiate the share however, the recipient can be a free account or a paid account.
 
 that as a paid plan owner, you can share your VM with another paid or free plan account.
-> 
+>
 
 ### What's the benefit?
 There are several use cases where this makes sense. For example:

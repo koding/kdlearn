@@ -7,7 +7,7 @@ template: page.toffee
 ---
 
 # Securing your VM using the built-in (and pre-installed) Ubuntu UFW
-> type:error
+> type:alert
 > You should follow the steps in this guide to its entirety otherwise if you enable the firewall and don't finish
 adding key services like ssh, you may be locked out of your VM. Please proceed with caution.
 
@@ -16,7 +16,7 @@ available when it comes to enabling a firewall on Ubuntu (the operating system t
 to try any/all of those. For the purposes of this guide, we will focus on the ufw firewall software that is already
 installed by default on all Koding VMs.
 
-UFW stands for "Uncomplicated Firewall" and is essentially a wrapper around the more complicated iptables firewall. It 
+UFW stands for "Uncomplicated Firewall" and is essentially a wrapper around the more complicated iptables firewall. It
 was built to provide an easy interface that is more usable for most users as compared to the more complicated interface that
 comes with iptables.
 
@@ -56,7 +56,7 @@ if we don't add some specific rules quickly, you may get locked out of your own 
 
 ## Adding rules to ensure that your Koding VM works just fine even with ufw enabled.
 Since you are using Koding via a browser, there are services running on your VM that the Koding application
-needs to talk to. When you enable the firewall, you essentially are cutting off access to these services so 
+needs to talk to. When you enable the firewall, you essentially are cutting off access to these services so
 it is VERY IMPORTANT that you enable the services below as soon as you turn on the firewall.
 
 Type in this command to enable ssh access through the firewall
@@ -74,7 +74,7 @@ and then add a rule for a specific port that Koding requires
 ```
 sudo ufw allow 56789/tcp
 ```
-> type:error
+> type:alert
 > If you do not open up the ports mentioned above, then you will be locked out of your VM and will need to send us a support request to have it fixed.
 
 ## Allowing access to specific standard services.
@@ -117,7 +117,7 @@ sudo ufw status numbered
 You may see something like:
 ```
 Status: active
- 
+
      To                         Action      From
      --                         ------      ----
 [ 1] 22                         ALLOW IN    Anywhere
@@ -126,7 +126,7 @@ Status: active
 [ 4] 22 (v6)                    ALLOW IN    Anywhere (v6)
 [ 5] 80 (v6)                    ALLOW IN    Anywhere (v6)
 [ 6] 56789/tcp (v6)             ALLOW IN    Anywhere (v6)
- 
+
 ```
 Now, simply use the number next to the rule you wish to delete and replace it in the command below:
 ```
@@ -142,9 +142,9 @@ you will get a confirmation:
 ```
 Resetting all rules to installed defaults. Proceed with operation (y|n)? y
 ```
-When you hit "y" ufw will backup all existing rules before doing the reset. Resetting the rules will also disable your firewall. 
+When you hit "y" ufw will backup all existing rules before doing the reset. Resetting the rules will also disable your firewall.
 
 ## Help, I locked myself out of my VM
 If for some reason you enabled your firewall and did not take the steps needed to open up the ports needed for Koding to work, then
-your only recourse is to reinit your VM. That process is described in [this guide](http://learn.koding.com/faq/vm-reinit/). If you 
+your only recourse is to reinit your VM. That process is described in [this guide](http://learn.koding.com/faq/vm-reinit/). If you
 encounter any issues or have any questions please drop an email [here](mailto:support@koding.com).

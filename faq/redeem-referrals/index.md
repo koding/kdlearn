@@ -5,10 +5,10 @@ importance: 2
 
 ### Earning free referral space
 You can earn up to 500MB per referral on Koding. Earning referrals is as easy as
-inviting your friends, colleagues, classmates, students, etc. to join Koding! 
+inviting your friends, colleagues, classmates, students, etc. to join Koding!
 
 To get started, head over to [Account Settings](https://koding.com/Account/Referral) and
-grab your personalized referral link (see location details in the graphic below). 
+grab your personalized referral link (see location details in the graphic below).
 You can then use the easy to use social media share buttons to distribute your personal
 referral link or send/share the link directly via your preferred distribution method.
 
@@ -31,10 +31,10 @@ If you have earned extra stroage space on your Koding account as a result of ref
 or other offers we've made available to our users, then reclaiming that earned space
 is now easier than ever.
 
-> type:warning
+> type:alert
 > Before we proceed, please note that referral space can only be claimed in increments of
 > whole number GBs. That means if you have referred one person and earned 500MB (0.5GB) then
-> you will need to wait until another person signs up using your referral link so that you get to a 
+> you will need to wait until another person signs up using your referral link so that you get to a
 > whole number (1GB) of earned space which can then be redeemed by following the process
 > outlined below.
 
@@ -43,10 +43,10 @@ next to the disk size indicator (as shown in the image below).
 
 ![disk size indicator](/faq/redeem-referrals/resizedisk.png)
 
-Once you click the plus sign, you will be shown a modal that will allow you to resize 
+Once you click the plus sign, you will be shown a modal that will allow you to resize
 your existing disk and add all or some of your earned storage.
 
 ![disk resize](/faq/redeem-referrals/resizeaction.png)
 
-> type:error
+> type:alert
 > If you feel there's an error in your reported earned storage space, please [send us a note](mailto:support@koding.com).

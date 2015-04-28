@@ -40,7 +40,7 @@ If the above command returns an error, then you do not have pip installed on you
 sudo apt-get install python-pip
 ```
 
-> type:warning
+> type:alert
 > Make sure you also have Python installed on your VM before you can install pip.
 
 ## Installing

@@ -55,7 +55,7 @@ open the `~/.ssh/authorized_keys` file.
 
 Once the key has been pasted in, save the file.
 
-> type:warning
+> type:alert
 > Make sure that the key you have pasted is one long line and that there are not line breaks anywhere. If there are line breaks in the file, your ssh connection will fail.
 
 ## Connecting with SSH
@@ -78,7 +78,7 @@ ssh joshmurray@unkk05c3f84e.joshmurray.koding.io
 ## Deleting a key
 If you no longer wish to authorize an existing key from connecting to your
 VM, simply delete that key from your `authorized_keys` file. This can be
-easily achieved by opening up the `~/.ssh/authorized_keys` file in your 
+easily achieved by opening up the `~/.ssh/authorized_keys` file in your
 favorite editor (e.g. nano or vi) and deleting the one line that contains
 the key for which you wish to remove access.
 

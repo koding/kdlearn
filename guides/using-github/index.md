@@ -12,7 +12,7 @@ This guide will cover the basics on how to get started with Github on you Koding
 
 ## What is Ungit?
 
-[Ungit](https://github.com/FredrikNoren/ungit) is a web based interface for Github made by [Fredrik Noren](https://github.com/FredrikNoren) that runs on any platform. It has a clean and intuitive UI that makes it easy to understand git. It runs on any platform that node.js & git supports and it works well with GitHub. 
+[Ungit](https://github.com/FredrikNoren/ungit) is a web based interface for Github made by [Fredrik Noren](https://github.com/FredrikNoren) that runs on any platform. It has a clean and intuitive UI that makes it easy to understand git. It runs on any platform that node.js & git supports and it works well with GitHub.
 
 ## Getting started
 
@@ -20,7 +20,7 @@ Before we begin please make sure you have the Koding Package Manager (KPM) insta
 
 ## Setup
 
-> type:success
+> type:tip
 > `git` is installed by default with every Koding VM. So you will be able to get started right away.
 
 Before you can get started with Github on your Koding VM you need to first setup the environment to be able to work properly with Github.
@@ -72,7 +72,7 @@ Copy that link and open it in a separate browser window. You should see somethin
 
 In the top area of the screen, in the input box you will be able to input the path to a local existing repository on your Koding VM or start with a fresh empty one.
 
-> type:warning
+> type:alert
 > Please note that the input field has autocomplete
 
 Start with a basic path like this one. Just make sure that folder exists before you input the path. If that folder doesn’t exist then you will be able to create it using this interface.
@@ -82,7 +82,7 @@ Start with a basic path like this one. Just make sure that folder exists before 
 ```
 
 After that hit **Enter || Return**
- 
+
 You should see something like this:
 
 ![Using Github 2](ungit2.png)
@@ -125,11 +125,11 @@ Now you can clone any desired repository in this folder using this form:
 
 ![Using Githug 6](ungit6.png)
 
-Just copy the repository URL from Github, in the input field and then hit Clone repository. 
+Just copy the repository URL from Github, in the input field and then hit Clone repository.
 
 Wait for the cloning process to finish and now you should see all the commit history and you are now able to work on that repository, perform commits, push changes, using the Koding IDE.
 
-> type:warning
+> type:alert
 > Whenever you turn on Koding VM you will have to run the `ungit` command to get this interface started.
 
 If you encounter any issues or have any questions please drop an email [here](mailto:support@koding.com).

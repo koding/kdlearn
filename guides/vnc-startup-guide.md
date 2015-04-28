@@ -11,7 +11,7 @@ template: page.toffee
 
 or How to Develop and Run Client GUI Applications with Koding and noVNC
 
-The Koding environment and tool base is a great way to code within the cloud.  No longer are we tied down to software running on our individual computers.  Coding, testing, and running web based applications within Koding is a snap as other tutorials will attest to, but what if you are trying to use Koding to develop a traditional client based GUI application?  How can we code and test those types of applications in the cloud?  Is it even possible? The answer of course, is YES!  We can develop our applications in Koding AND test them in the cloud, all from the comfort our our browser.  
+The Koding environment and tool base is a great way to code within the cloud.  No longer are we tied down to software running on our individual computers.  Coding, testing, and running web based applications within Koding is a snap as other tutorials will attest to, but what if you are trying to use Koding to develop a traditional client based GUI application?  How can we code and test those types of applications in the cloud?  Is it even possible? The answer of course, is YES!  We can develop our applications in Koding AND test them in the cloud, all from the comfort our our browser.
 
 In the following tutorial I will demonstrate how to set up your Koding VM to allow you to test and run a client GUI application.  In the end we are going to accomplish the following goals:
 
@@ -32,7 +32,7 @@ Within the terminal type the following command:
 sudo apt-get install python-tk
 ```
 
-> type:warning
+> type:alert
 > The terminal will ask you for your password before it installs Tkinter.  Be ready to type in your password.
 
 This process downloads and installs Tkinter into your VM.
@@ -88,7 +88,7 @@ Type the following into your terminal
 sudo apt-get install tightvncserver
 ```
 
-> type:warning
+> type:alert
 > The terminal will ask you for your password before it installs TightVNC.  Be ready to type in your password.
 
 This process downloads and installs TightVNC into your VM.
@@ -125,7 +125,7 @@ git clone git://github.com/kanaka/noVNC
 
 This will create a new folder in your home directory called noVNC.  Everything you need to run noVNC is contained in here.
 
-Next we need to ensure our settings for noVNC are correct.  
+Next we need to ensure our settings for noVNC are correct.
 
 In either the built in Koding Editor or your [Koding Terminal](https://koding.com/Develop/Terminal) , open up your xstartup file.
 
@@ -202,7 +202,7 @@ Using your [Koding Terminal](https://koding.com/Develop/Terminal), type the foll
 
 ## Connect to your VNC Server
 
-Connecting to your VNC Server from the cloud is fairly easy with noVNC.  
+Connecting to your VNC Server from the cloud is fairly easy with noVNC.
 
 Within your browser navigate to
 
@@ -236,9 +236,9 @@ You are now connected to your Koding VM within a VNC connection! You should see 
 
 ## Test Our Sample GUI Application
 
-Connect to your VNC Server via the above instructions.  
+Connect to your VNC Server via the above instructions.
 
-Use the terminal shown in noVNC for the following steps.  
+Use the terminal shown in noVNC for the following steps.
 
 **DO NOT RUN THESE STEPS IN THE KODING TERMINAL!**
 

@@ -12,7 +12,7 @@ This guide will cover the basics on how to get Apache Cordova installed on your 
 
 Before you begin please check that you have the following things installed on your Koding VM. For each requirement run each command to make sure that you have that requirement installed on your VM.
 
-> type:success
+> type:tip
 > Note: By default all Koding VMs come preinstalled with the below requirements.
 
 * [NodeJS](/getting-started-nodejs/)
@@ -63,7 +63,7 @@ To create your first Apache Cordova app project you can use the following comman
 cordova create FOLDER ID NAME
 ```
 
-**FOLDER** represents the folder where the source or the project will be stored (the folder should not be created beforehand). 
+**FOLDER** represents the folder where the source or the project will be stored (the folder should not be created beforehand).
 **ID** is the reverse domain-style identifier
 **NAME** is the application's title.
 

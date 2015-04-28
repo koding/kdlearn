@@ -16,7 +16,7 @@ To access a Koding Terminal, select your Virtual Machine on the left hand side a
 
 ![Terminal 1](term1.png)
 
-> type:warning
+> type:alert
 > If you have a Developer or Professional account then select the VM you want to start, from the list.
 
 Then click on the `Turn it on` button in the modal.
@@ -28,7 +28,7 @@ After the VM has started, you'll see your Koding IDE.
 > type:tip
 > The IDE will remember what files / tabs you had opened last time and the FileTree will remember the folder location.
 
-By default after your VM is started, you will see a Terminal prompt in the lower right portion of your Integrated Development Environment (IDE). 
+By default after your VM is started, you will see a Terminal prompt in the lower right portion of your Integrated Development Environment (IDE).
 
 ## Usage
 

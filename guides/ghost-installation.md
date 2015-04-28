@@ -95,7 +95,7 @@ start your Ghost Blog.
 npm start
 ```
 
-> type:success
+> type:tip
 > If you had previously closed your Terminal, you'll need to navigate into the ghost directory again, with `cd ghost`.
 
 ## Visiting your Ghost Blog

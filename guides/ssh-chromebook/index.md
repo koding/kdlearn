@@ -7,7 +7,7 @@ categories: [koding features, ssh]
 
 In this guide, we will cover how to set up ssh on your Chromebook. There are
 two ways you can use SSH on a Chromebook. You can either install [Google's SSH
-Chrome extention](https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo) 
+Chrome extention](https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo)
 or use the native SSH client that is built into the Chrome OS. For the purposes
 of this guide, we will use the native SSH client method as it does not
 require the installation of any new software.
@@ -24,11 +24,11 @@ build of Chrome OS or that your device manufacturer has opted to remove crosh fr
 their customd build of the Chrome OS.
 
 ### Step 2: Generate the required ssh private and public keys on your VM
-> type:success
+> type:tip
 > If you already have a private and public key generated, you can
 skip the section below
 
-Open up Terminal on your Koding VM and type in the following command: 
+Open up Terminal on your Koding VM and type in the following command:
 ```
 ssh-keygen
 ```
@@ -36,10 +36,10 @@ You will be presented with a few choices, accept all defaults until
 you end up with something like this:
 ```
 Generating public/private rsa key pair.
-Enter file in which to save the key (/home/your_username/.ssh/id_rsa): 
+Enter file in which to save the key (/home/your_username/.ssh/id_rsa):
 Created directory '/home/your_username/.ssh'.
-Enter passphrase (empty for no passphrase): 
-Enter same passphrase again: 
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
 Your identification has been saved in /home/your_username/.ssh/id_rsa.
 Your public key has been saved in /home/your_username/.ssh/id_rsa.pub.
 The key fingerprint is:
@@ -77,7 +77,7 @@ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 To achieve this, we will first copy over the private key to
 our Web folder so that we can download it over the browser.
 
-> type:warning
+> type:alert
 > After downloading the private key you should immediately
 delete if from your Web folder. This is not the most secure way
 of copying over your file but is the easiest. If you prefer, you

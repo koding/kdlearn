@@ -18,7 +18,7 @@ Also make sure you have an active Dropbox account (free or paid).
 
 Run the following command, in your Koding Terminal, to install the necessary dependency:
 
-> type:warning
+> type:alert
 > If you already have Dropbox installed via KPM then you need to run `kpm uninstall dropbox` and then the below command to get the latest version.
 
 ```

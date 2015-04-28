@@ -16,7 +16,7 @@ To access your IDE, select your Virtual Machine on the left hand side as picture
 
 ![IDE 1](ide1.png)
 
-> type:warning
+> type:alert
 > If you have a Developer or Professional account then select the VM you want to start, from the list.
 
 Then click on the `Turn it on` button in the modal.

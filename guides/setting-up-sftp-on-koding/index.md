@@ -29,7 +29,7 @@ and let the update process complete. It should not require any input.
 
 First off, you'll need to install `openssh-server`. This can be done by pasting the following command into your [Koding IDE][ide]'s Terminal.
 
-> type:success
+> type:tip
 > The `openssh-server` package comes preinstalled on all Koding VMs.
 
 ```
@@ -117,7 +117,7 @@ Finally, in your SFTP Client of choice paste your VM Address into the hostname. 
 
 After the hostname, enter your Koding username, and SFTP password that you chose in the above commands. An example image from FileZilla can be seen below.
 
-> type:warning
+> type:alert
 > The default port for a SFTP connection is 22. Make sure to specify this when you input the connection details.
 
 ![FileZilla SFTP Settings](ftpsettings.png)

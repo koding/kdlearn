@@ -6,7 +6,7 @@ categories: [collaboration, koding]
 
 improvable: false
 ---
-> type:warning
+> type:alert
 > This guide is not complete as the Collaboration feature is still under development. If you run into any
   issues while using it, please [let us know](mailto:support@koding.com).
 
@@ -16,7 +16,7 @@ team, students, peers or friends. When you enable Collaboration, you are effecti
 virtual machine (VM) with those whom you invite into the sharing session. The session remains active
 until you hit "End Session". Every person you share a session with requires a Koding account (free or paid).
 
-> type:error
+> type:alert
 > Since the user(s) with whom you share your session have access to all the files on your VM, make sure that you are sharing with people that you know.
 
 ![Collaboration 1](otheruser.png)

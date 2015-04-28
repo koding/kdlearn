@@ -32,7 +32,7 @@ kpm install docker
 
 ***
 
-The version of Ubuntu that is installed on each Koding VM comes with a `docker.io` package and it should install Docker 0.9.1. 
+The version of Ubuntu that is installed on each Koding VM comes with a `docker.io` package and it should install Docker 0.9.1.
 We can install Docker on our Koding VM using the following commands:
 
 * We update the package list
@@ -47,7 +47,7 @@ sudo apt-get update
 sudo apt-get install docker.io
 ```
 
-* We create a link 
+* We create a link
 
 ```
 sudo ln -sf /usr/bin/docker.io /usr/local/bin/docker
@@ -80,7 +80,7 @@ sudo apt-get update
 sudo apt-get install lxc-docker
 ```
 
-> type:success
+> type:tip
 > You can use the below command, that uses curl, for an easier installation process:
 
 ```

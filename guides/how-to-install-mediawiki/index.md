@@ -121,7 +121,7 @@ You should see the initial setup page. It should look like this:
 
 Press the **setup the wiki first** button and now you'll just need to follow the instructions on screen and finish the install.
 
-At the very last step of the install process you'll need to download a file and place it's contents in your MediaWiki folder. 
+At the very last step of the install process you'll need to download a file and place it's contents in your MediaWiki folder.
 
 Download the file, open it with your local editor and copy it's contents to a newly created file in your MediaWiki folder. You can use the following commands to achieve this:
 
