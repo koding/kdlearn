@@ -12,7 +12,7 @@
       <meta name="keywords" content="understanding vm,ssh,windows">
     
 		<meta name="description" content="Connecting to your VM with SSH will allow you to use another Terminal, outside
-of Koding, to interact with your Koding VM. This is also required if you're interested in using SSH Tunneling. If you're connecting from a Mac or Linux, have a look here.">
+of Koding, to interact with your Koding VM. This is also required if you&amp;#39;re interested in using SSH Tunneling. If you&amp;#39;re connecting from a Mac or Linux, have a look here.">
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
 
@@ -24,7 +24,7 @@ of Koding, to interact with your Koding VM. This is also required if you're inte
     <!-- Don't have a secure url currently -->
 		<!--<meta property="og:image:secure_url" content="https://koding.com/a/images/logos/share_logo.png"/>-->
 		<meta property="og:description" content="Connecting to your VM with SSH will allow you to use another Terminal, outside
-of Koding, to interact with your Koding VM. This is also required if you're interested in using SSH Tunneling. If you're connecting from a Mac or Linux, have a look here."/>
+of Koding, to interact with your Koding VM. This is also required if you&amp;#39;re interested in using SSH Tunneling. If you&amp;#39;re connecting from a Mac or Linux, have a look here."/>
 		<meta property="og:image:type" content="image/png">
 		<meta property="og:image:width" content="130"/>
 		<meta property="og:image:height" content="100"/>
@@ -37,7 +37,7 @@ of Koding, to interact with your Koding VM. This is also required if you're inte
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:image" content="https://learn.koding.com/img/logo_150.png"/>
 		<meta name="twitter:description" content="Connecting to your VM with SSH will allow you to use another Terminal, outside
-of Koding, to interact with your Koding VM. This is also required if you're interested in using SSH Tunneling. If you're connecting from a Mac or Linux, have a look here."\>
+of Koding, to interact with your Koding VM. This is also required if you&amp;#39;re interested in using SSH Tunneling. If you&amp;#39;re connecting from a Mac or Linux, have a look here."\>
 		<meta name="twitter:domain" content="learn.koding.com">
 
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
@@ -49,11 +49,11 @@ of Koding, to interact with your Koding VM. This is also required if you're inte
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?766" />
+    <link rel="stylesheet" href="/css/vendor.css?752" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?522" />
+    <link rel="stylesheet" href="/css/main.css?916" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?106" />
+    <link rel="stylesheet" href="/css/rwd.css?295" />
 	</head>
 	<body>
 
@@ -321,7 +321,7 @@ of Koding, to interact with your Koding VM. This is also required if you're inte
     <p itemprop="about">Connecting to your VM with SSH will allow you to use another Terminal, outside
 of Koding, to interact with your Koding VM. This is also required if you&apos;re interested in using <a href="/guides/ssh-tunneling">SSH Tunneling</a>. If you&apos;re connecting from a Mac or Linux, have a look <a href="/guides/ssh-into-your-vm">here</a>.</p>
 <p>We are going to be connecting using PuTTY, and we are going to use the terminology &quot;local&quot; to represent the machine that you&apos;re connecting to Koding with.</p>
-<blockquote class="warning fa fa-exclamation-circle"> <p>Note that PuTTY can be troublesome. You may want to consider <a href="https://www.cygwin.com/">Cygwin</a>
+<blockquote class="alert fa fa-exclamation-circle"> <p><span class="label">alert</span>Note that PuTTY can be troublesome. You may want to consider <a href="https://www.cygwin.com/">Cygwin</a>
 to easily connect with the <a href="/guides/ssh-into-your-vm">Unix instructions</a>.</p>
  </blockquote><h2 class="heading"> <a name="requirements" class="anchor" href="#requirements"></a> Requirements </h2><ul>
 <li>Your <a href="/faq/vm-hostname/">Koding</a> VM address</li>
@@ -330,7 +330,7 @@ to easily connect with the <a href="/guides/ssh-into-your-vm">Unix instructions<
 <a href="http://katsande.com/using-puttygen-to-generate-ssh-private-public-keys">this</a> tutorial.</li>
 </ul>
 <h2 class="heading"> <a name="connecting-with-putty" class="anchor" href="#connecting-with-putty"></a> Connecting with PuTTY </h2><p>For this connection method, you will need the <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/">PuTTY SSH client suite</a> <code>putty.exe</code>, <code>plink.exe</code>, and <code>pageant.exe</code>.</p>
-<blockquote class="warning fa fa-exclamation-circle"> <p>PuTTY has proven difficult to support due to the UI and ease of checking/configuring PuTTY incorrectly. With that said, we highly recommend using <a href="https://www.cygwin.com/">Cygwin</a>, since it offers a real and normal Unix SSH Config.</p>
+<blockquote class="alert fa fa-exclamation-circle"> <p><span class="label">alert</span>PuTTY has proven difficult to support due to the UI and ease of checking/configuring PuTTY incorrectly. With that said, we highly recommend using <a href="https://www.cygwin.com/">Cygwin</a>, since it offers a real and normal Unix SSH Config.</p>
  </blockquote><ul>
 <li>Copy the text contents of your PuTTY public key. If you are not sure what or where it is, please refer to the <strong>Requirements</strong> section of this guide.</li>
 <li>As in Step #2 of the Linux guide above, paste the entirety of your public key into the <em>SSH Keys</em> section of your Koding account settings.</li>

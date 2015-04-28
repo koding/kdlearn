@@ -46,11 +46,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?842" />
+    <link rel="stylesheet" href="/css/vendor.css?188" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?864" />
+    <link rel="stylesheet" href="/css/main.css?977" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?295" />
+    <link rel="stylesheet" href="/css/rwd.css?554" />
 	</head>
 	<body>
 
@@ -326,7 +326,7 @@
 <pre><code><span class="hljs-built_in">which</span> pip
 </code></pre><p>If the above command returns an error, then you do not have pip installed on your VM. You can install it using this command.</p>
 <pre><code>sudo apt-<span class="hljs-built_in">get</span> install <span class="hljs-keyword">python</span>-pip
-</code></pre><blockquote class="warning fa fa-exclamation-circle"> <p>Make sure you also have Python installed on your VM before you can install pip.</p>
+</code></pre><blockquote class="alert fa fa-exclamation-circle"> <p><span class="label">alert</span>Make sure you also have Python installed on your VM before you can install pip.</p>
  </blockquote><h2 class="heading"> <a name="installing" class="anchor" href="#installing"></a> Installing </h2><p>Pgcli uses <code>psycopg</code> to talk to the postgres database. In order to install <code>psycopg</code>, you will need <code>libpq</code> and <code>python-dev</code> installed on your VM. Use the bellow command to achieve this.</p>
 <pre><code>sudo apt-<span class="hljs-built_in">get</span> install libpq-<span class="hljs-built_in">dev</span> python-<span class="hljs-built_in">dev</span>
 </code></pre><p>Now you can go ahead and install pgcli. You can use this command.</p>

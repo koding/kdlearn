@@ -46,11 +46,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?884" />
+    <link rel="stylesheet" href="/css/vendor.css?553" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?806" />
+    <link rel="stylesheet" href="/css/main.css?848" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?758" />
+    <link rel="stylesheet" href="/css/rwd.css?495" />
 	</head>
 	<body>
 
@@ -319,21 +319,21 @@
 <pre><code>kpm <span class="hljs-keyword">install</span> mongodb
 </code></pre><hr>
 <p>In this short guide we&apos;ll explain how to install MongoDB, and modify
-it&apos;s configuration to run in a small storage environment. Lets get 
+it&apos;s configuration to run in a small storage environment. Lets get
 started!</p>
-<h2 class="heading"> <a name="installation" class="anchor" href="#installation"></a> Installation </h2><p>Installation is easy, and can be done with <code>apt-get</code>, as seen in the 
+<h2 class="heading"> <a name="installation" class="anchor" href="#installation"></a> Installation </h2><p>Installation is easy, and can be done with <code>apt-get</code>, as seen in the
 following command.</p>
 <pre><code>sudo apt-<span class="hljs-keyword">get</span> install mongodb
 </code></pre><p>That&apos;s it! You can start Mongo with the following command:</p>
 <pre><code>sudo <span class="hljs-keyword">service</span> mongodb <span class="hljs-literal">start</span>
-</code></pre><blockquote class="success fa fa-check-circle"> <p>If you&apos;re running Mongo on a Free Koding VM, read the section below regarding enabling small files...</p>
- </blockquote><h2 class="heading"> <a name="configuring-for-limited-storage" class="anchor" href="#configuring-for-limited-storage"></a> Configuring for Limited Storage </h2><p>If you&apos;re running Mongo on a Free VM, you&apos;ll need to configure it to use 
+</code></pre><blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>If you&apos;re running Mongo on a Free Koding VM, read the section below regarding enabling small files...</p>
+ </blockquote><h2 class="heading"> <a name="configuring-for-limited-storage" class="anchor" href="#configuring-for-limited-storage"></a> Configuring for Limited Storage </h2><p>If you&apos;re running Mongo on a Free VM, you&apos;ll need to configure it to use
 small files. To do that, open up the <code>/etc/mongodb.conf</code> file with the
 following command:</p>
 <pre><code>sudo nano <span class="hljs-regexp">/etc/m</span>ongodb.conf
 </code></pre><p>With that file open, navigate to the bottom and add the following line:</p>
 <pre><code><span class="hljs-setting">smallfiles=<span class="hljs-value"><span class="hljs-keyword">true</span></span></span>
-</code></pre><p>Now use <code>ctrl-x</code> to save the file. After you&apos;ve saved the file, simply 
+</code></pre><p>Now use <code>ctrl-x</code> to save the file. After you&apos;ve saved the file, simply
 restart Mongodb with the following command:</p>
 <pre><code>sudo <span class="hljs-keyword">service</span> mongodb <span class="hljs-literal">restart</span>
 </code></pre>

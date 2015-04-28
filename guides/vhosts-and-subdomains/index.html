@@ -11,7 +11,7 @@
     
       <meta name="keywords" content="koding features,koding,apache">
     
-		<meta name="description" content="In this guide we'll go over setting up a Koding subdomain to point to a 
+		<meta name="description" content="In this guide we&amp;#39;ll go over setting up a Koding subdomain to point to a
 directory of your choice.">
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
@@ -23,7 +23,7 @@ directory of your choice.">
 		<meta property="og:image" content="https://learn.koding.com/img/logo_150.png"/>
     <!-- Don't have a secure url currently -->
 		<!--<meta property="og:image:secure_url" content="https://koding.com/a/images/logos/share_logo.png"/>-->
-		<meta property="og:description" content="In this guide we'll go over setting up a Koding subdomain to point to a 
+		<meta property="og:description" content="In this guide we&amp;#39;ll go over setting up a Koding subdomain to point to a
 directory of your choice."/>
 		<meta property="og:image:type" content="image/png">
 		<meta property="og:image:width" content="130"/>
@@ -36,7 +36,7 @@ directory of your choice."/>
 		<meta name="twitter:creator" content="@koding"/>
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:image" content="https://learn.koding.com/img/logo_150.png"/>
-		<meta name="twitter:description" content="In this guide we'll go over setting up a Koding subdomain to point to a 
+		<meta name="twitter:description" content="In this guide we&amp;#39;ll go over setting up a Koding subdomain to point to a
 directory of your choice."\>
 		<meta name="twitter:domain" content="learn.koding.com">
 
@@ -49,11 +49,11 @@ directory of your choice."\>
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?228" />
+    <link rel="stylesheet" href="/css/vendor.css?990" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?223" />
+    <link rel="stylesheet" href="/css/main.css?319" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?830" />
+    <link rel="stylesheet" href="/css/rwd.css?66" />
 	</head>
 	<body>
 
@@ -318,21 +318,21 @@ directory of your choice."\>
   
 
   <div itemprop="articleBody">
-    <p itemprop="about">In this guide we&apos;ll go over setting up a Koding subdomain to point to a 
+    <p itemprop="about">In this guide we&apos;ll go over setting up a Koding subdomain to point to a
 directory of your choice.</p>
-<h2 class="heading"> <a name="creating-subdomains" class="anchor" href="#creating-subdomains"></a> Creating Subdomains </h2><p>To create a subdomain, refer to the <a href="/faq/vm-hostname/">Subdomain Section 
+<h2 class="heading"> <a name="creating-subdomains" class="anchor" href="#creating-subdomains"></a> Creating Subdomains </h2><p>To create a subdomain, refer to the <a href="/faq/vm-hostname/">Subdomain Section
 here</a></p>
 <h2 class="heading"> <a name="creating-a-virtual-host" class="anchor" href="#creating-a-virtual-host"></a> Creating a Virtual Host </h2><p>First, run the following command, where <code>mysubdomain</code> is the name of your subdomain.</p>
 <pre><code class="text">sudo touch /etc/apache2/sites-available/mysubdomain.conf
 </code></pre>
-<p>Next, open the above file with <code>nano</code>, <code>vim</code>, or whatever command line 
-editor you prefer. We&apos;re using a command line editor, because files 
-located in <code>/etc/apache2/sites-available</code> are owned by <code>root</code>, and 
+<p>Next, open the above file with <code>nano</code>, <code>vim</code>, or whatever command line
+editor you prefer. We&apos;re using a command line editor, because files
+located in <code>/etc/apache2/sites-available</code> are owned by <code>root</code>, and
 require sudo.</p>
 <p>If you used nano, your command should look like this:</p>
 <pre><code class="text">sudo nano /etc/apache2/sites-available/mysubdomain.conf
 </code></pre>
-<p>Now that you have the file open with your preferred editor, paste in the 
+<p>Now that you have the file open with your preferred editor, paste in the
 following code:</p>
 <pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Virtualhost</span> *<span class="hljs-attribute">:80</span>&gt;</span>
   ServerName mysubdomain.username.koding.io
@@ -341,12 +341,12 @@ following code:</p>
 </code></pre>
 <p>There are a two things you&apos;re going to have to change here, so lets go over them.</p>
 <ul>
-<li><p><strong>ServerName</strong>: The value of <code>ServerName</code> should be your full subdomain 
+<li><p><strong>ServerName</strong>: The value of <code>ServerName</code> should be your full subdomain
 url, without the http.</p>
 </li>
-<li><p><strong>DocumentRoot</strong>: This is the folder location that you want the 
-subdomain to direct to. Remember that <code>/var/www</code> equals <code>~/Web</code>, so in 
-the given example, <code>/var/www/myDirectory</code> equals <code>~/Web/myDirectory</code>.  </p>
+<li><p><strong>DocumentRoot</strong>: This is the folder location that you want the
+subdomain to direct to. Remember that <code>/var/www</code> equals <code>~/Web</code>, so in
+the given example, <code>/var/www/myDirectory</code> equals <code>~/Web/myDirectory</code>.</p>
 </li>
 </ul>
 <pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Virtualhost</span> *<span class="hljs-attribute">:80</span>&gt;</span>
@@ -354,25 +354,25 @@ the given example, <code>/var/www/myDirectory</code> equals <code>~/Web/myDirect
   DocumentRoot /var/www/helloworld
 <span class="hljs-tag">&lt;/<span class="hljs-title">Virtualhost</span>&gt;</span>
 </code></pre>
-<blockquote class="warning fa fa-exclamation-circle"> <p>The DocumentRoot has to be an absolute path. Relative directories such as <code>/var/www/../foo</code> and <code>~/MyDirectory</code> will not work.  If you would like to supply an directory <em>outside</em> of <code>~/Web</code>, use your full home path, eg: <code>/home/joshmurray/myNotWebDirectory</code></p>
- </blockquote><h2 class="heading"> <a name="enable-the-subdomain" class="anchor" href="#enable-the-subdomain"></a> Enable the Subdomain </h2><p>Lastly, we need to add our &quot;site&quot; and reload apache. Run the following 
+<blockquote class="alert fa fa-exclamation-circle"> <p><span class="label">alert</span>The DocumentRoot has to be an absolute path. Relative directories such as <code>/var/www/../foo</code> and <code>~/MyDirectory</code> will not work.  If you would like to supply an directory <em>outside</em> of <code>~/Web</code>, use your full home path, eg: <code>/home/joshmurray/myNotWebDirectory</code></p>
+ </blockquote><h2 class="heading"> <a name="enable-the-subdomain" class="anchor" href="#enable-the-subdomain"></a> Enable the Subdomain </h2><p>Lastly, we need to add our &quot;site&quot; and reload apache. Run the following
 two commands, replacing <code>mysubdomain</code> with the name of your subdomain.</p>
 <pre><code class="text">sudo a2ensite mysubdomain
 sudo service apache2 reload
 </code></pre>
-<h2 class="heading"> <a name="confirming" class="anchor" href="#confirming"></a> Confirming </h2><p>To confirm you did all the steps completely, connect to 
-<code>http://mysubdomain.username.koding.io</code> and you should see whatever you 
-have in your directory of choice. </p>
-<h2 class="heading"> <a name="troubleshooting" class="anchor" href="#troubleshooting"></a> Troubleshooting </h2><h3 class="heading"> <a name="apache-404" class="anchor" href="#apache-404"></a> Apache 404 </h3><p>If you see a plain white page saying <strong>&quot;Not Found&quot;</strong> with mentions of 
-Apache and Ubuntu, then Apache is correctly loading a directory, but the 
-directory is empty. Confirm that your <code>DocumentRoot</code> is a correct, and an 
+<h2 class="heading"> <a name="confirming" class="anchor" href="#confirming"></a> Confirming </h2><p>To confirm you did all the steps completely, connect to
+<code>http://mysubdomain.username.koding.io</code> and you should see whatever you
+have in your directory of choice.</p>
+<h2 class="heading"> <a name="troubleshooting" class="anchor" href="#troubleshooting"></a> Troubleshooting </h2><h3 class="heading"> <a name="apache-404" class="anchor" href="#apache-404"></a> Apache 404 </h3><p>If you see a plain white page saying <strong>&quot;Not Found&quot;</strong> with mentions of
+Apache and Ubuntu, then Apache is correctly loading a directory, but the
+directory is empty. Confirm that your <code>DocumentRoot</code> is a correct, and an
 <strong>absolute</strong> directory.</p>
-<h3 class="heading"> <a name="forbidden" class="anchor" href="#forbidden"></a> Forbidden </h3><p>By default, Apache is configured to not allow access to directories 
-outside of <code>/var/www</code>. So, if you link to an absolute directory outside 
-of <code>/var/www</code>, such as <code>/home/joshmurray/hello</code>, you may see a message 
+<h3 class="heading"> <a name="forbidden" class="anchor" href="#forbidden"></a> Forbidden </h3><p>By default, Apache is configured to not allow access to directories
+outside of <code>/var/www</code>. So, if you link to an absolute directory outside
+of <code>/var/www</code>, such as <code>/home/joshmurray/hello</code>, you may see a message
 similar to the following.</p>
 <pre><code>You <span class="hljs-built_in">do</span> <span class="hljs-operator">not</span> have permission <span class="hljs-built_in">to</span> access / <span class="hljs-command"><span class="hljs-keyword">on</span> <span class="hljs-title">this</span> <span class="hljs-title">server</span>.</span>
-</code></pre><p>To resolve this, you can use the <code>&lt;Directory&gt;</code> directive inside of your 
+</code></pre><p>To resolve this, you can use the <code>&lt;Directory&gt;</code> directive inside of your
 <code>VirtualHost</code> directive from above. Example:</p>
 <pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Virtualhost</span> *<span class="hljs-attribute">:80</span>&gt;</span>
   ServerName hello.joshmurray.koding.io
@@ -387,18 +387,18 @@ similar to the following.</p>
 <p>Afterwards, don&apos;t forget to reload Apache, with the following command.</p>
 <pre><code class="text">sudo service apache2 reload
 </code></pre>
-<p><strong>Important</strong>: It is recommended that you review the <a href="http://httpd.apache.org/docs/current/mod/core.html#directory">Directory directive 
-documentation</a>, 
-as there are security implications to allowing directory access, that you 
+<p><strong>Important</strong>: It is recommended that you review the <a href="http://httpd.apache.org/docs/current/mod/core.html#directory">Directory directive
+documentation</a>,
+as there are security implications to allowing directory access, that you
 should understand.</p>
-<h3 class="heading"> <a name="i-don-39-t-have-a-subdomain" class="anchor" href="#i-don-39-t-have-a-subdomain"></a> I don&apos;t have a Subdomain </h3><p>If you do not already have a Subdomain, you need to create one with the 
-same name that you used in your <a href="#creating-a-virtual-host">Virtual Host 
+<h3 class="heading"> <a name="i-don-39-t-have-a-subdomain" class="anchor" href="#i-don-39-t-have-a-subdomain"></a> I don&apos;t have a Subdomain </h3><p>If you do not already have a Subdomain, you need to create one with the
+same name that you used in your <a href="#creating-a-virtual-host">Virtual Host
 configuration</a>.</p>
-<p>To do this, from Koding navigate to your IDE window and go to your VM 
-Settings. This will appear as little circle next to your VM Name in the 
-left sidebar of Koding. From the settings menu, Click &quot;More&quot;, and add any 
+<p>To do this, from Koding navigate to your IDE window and go to your VM
+Settings. This will appear as little circle next to your VM Name in the
+left sidebar of Koding. From the settings menu, Click &quot;More&quot;, and add any
 subdomains that you need.</p>
-<p>For a more indepth explanation of this process, refer to the <a href="/faq/vm-hostname/">Subdomain 
+<p>For a more indepth explanation of this process, refer to the <a href="/faq/vm-hostname/">Subdomain
 Section here</a>.</p>
 
   </div>

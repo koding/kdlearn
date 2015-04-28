@@ -46,11 +46,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?888" />
+    <link rel="stylesheet" href="/css/vendor.css?100" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?9" />
+    <link rel="stylesheet" href="/css/main.css?786" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?399" />
+    <link rel="stylesheet" href="/css/rwd.css?320" />
 	</head>
 	<body>
 
@@ -323,7 +323,7 @@
 <h2 class="heading"> <a name="installing-docker-on-koding" class="anchor" href="#installing-docker-on-koding"></a> Installing Docker on Koding </h2><p>Before you continue reading this section why not try a more easy way, using the <a href="http://learn.koding.com/guides/getting-started-kpm/">Koding Package Manager (kpm)</a> and install Docker using just one command:</p>
 <pre><code>kpm <span class="hljs-keyword">install</span> docker
 </code></pre><hr>
-<p>The version of Ubuntu that is installed on each Koding VM comes with a <code>docker.io</code> package and it should install Docker 0.9.1. 
+<p>The version of Ubuntu that is installed on each Koding VM comes with a <code>docker.io</code> package and it should install Docker 0.9.1.
 We can install Docker on our Koding VM using the following commands:</p>
 <ul>
 <li>We update the package list</li>
@@ -334,7 +334,7 @@ We can install Docker on our Koding VM using the following commands:</p>
 </ul>
 <pre><code>sudo apt-<span class="hljs-keyword">get</span> install docker.io
 </code></pre><ul>
-<li>We create a link </li>
+<li>We create a link</li>
 </ul>
 <pre><code>sudo ln -sf <span class="hljs-regexp">/usr/</span>bin<span class="hljs-regexp">/docker.io /u</span>sr<span class="hljs-regexp">/local/</span>bin<span class="hljs-regexp">/docker</span>
 </code></pre><ul>
@@ -356,7 +356,7 @@ We can install Docker on our Koding VM using the following commands:</p>
 </span>&gt; /etc/apt/sources.<span class="hljs-keyword">list</span>.<span class="hljs-keyword">d</span>/docker.<span class="hljs-keyword">list</span><span class="hljs-string">&quot;
 </span>sudo apt-<span class="hljs-built_in">get</span> <span class="hljs-keyword">update</span>
 sudo apt-<span class="hljs-built_in">get</span> install lxc-docker
-</code></pre><blockquote class="success fa fa-check-circle"> <p>You can use the below command, that uses curl, for an easier installation process:</p>
+</code></pre><blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>You can use the below command, that uses curl, for an easier installation process:</p>
  </blockquote><pre><code>curl -sSL http<span class="hljs-variable">s:</span>//<span class="hljs-built_in">get</span>.docker.<span class="hljs-keyword">com</span>/ubuntu/ | sudo <span class="hljs-keyword">sh</span>
 </code></pre><p>If you made it to this point you can run this command to check if Docker is indeed installed and works properly:</p>
 <pre><code>sudo docker run -<span class="hljs-tag">i</span> -t ubuntu /bin/bash

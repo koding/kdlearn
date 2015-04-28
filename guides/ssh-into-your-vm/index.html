@@ -12,7 +12,7 @@
       <meta name="keywords" content="understanding vm,ssh,unix">
     
 		<meta name="description" content="Connecting to your VM with SSH will allow you to use another Terminal,
-outside of Koding, to interact with your Koding VM. If you're using
+outside of Koding, to interact with your Koding VM. If you&amp;#39;re using
 Cygwin, these instructions will work fine for you.">
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
@@ -25,7 +25,7 @@ Cygwin, these instructions will work fine for you.">
     <!-- Don't have a secure url currently -->
 		<!--<meta property="og:image:secure_url" content="https://koding.com/a/images/logos/share_logo.png"/>-->
 		<meta property="og:description" content="Connecting to your VM with SSH will allow you to use another Terminal,
-outside of Koding, to interact with your Koding VM. If you're using
+outside of Koding, to interact with your Koding VM. If you&amp;#39;re using
 Cygwin, these instructions will work fine for you."/>
 		<meta property="og:image:type" content="image/png">
 		<meta property="og:image:width" content="130"/>
@@ -39,7 +39,7 @@ Cygwin, these instructions will work fine for you."/>
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:image" content="https://learn.koding.com/img/logo_150.png"/>
 		<meta name="twitter:description" content="Connecting to your VM with SSH will allow you to use another Terminal,
-outside of Koding, to interact with your Koding VM. If you're using
+outside of Koding, to interact with your Koding VM. If you&amp;#39;re using
 Cygwin, these instructions will work fine for you."\>
 		<meta name="twitter:domain" content="learn.koding.com">
 
@@ -52,11 +52,11 @@ Cygwin, these instructions will work fine for you."\>
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?232" />
+    <link rel="stylesheet" href="/css/vendor.css?946" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?49" />
+    <link rel="stylesheet" href="/css/main.css?860" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?408" />
+    <link rel="stylesheet" href="/css/rwd.css?487" />
 	</head>
 	<body>
 
@@ -352,7 +352,7 @@ in your public key. To open the file you can use a Terminal editor such
 as Nano or Vim, or simply use the File Explorer on the left hand side to
 open the <code>~/.ssh/authorized_keys</code> file.</p>
 <p>Once the key has been pasted in, save the file.</p>
-<blockquote class="warning fa fa-exclamation-circle"> <p>Make sure that the key you have pasted is one long line and that there are not line breaks anywhere. If there are line breaks in the file, your ssh connection will fail.</p>
+<blockquote class="alert fa fa-exclamation-circle"> <p><span class="label">alert</span>Make sure that the key you have pasted is one long line and that there are not line breaks anywhere. If there are line breaks in the file, your ssh connection will fail.</p>
  </blockquote><h2 class="heading"> <a name="connecting-with-ssh" class="anchor" href="#connecting-with-ssh"></a> Connecting with SSH </h2><p>Lastly, open up your local Terminal client and ssh to your VM Address as
 shown below. If you do not know your VM Address, instructions to find it
 can be <a href="/faq/vm-address">found here</a>.</p>
@@ -362,10 +362,10 @@ Address</a>. As an example, here is a filled our ssh command.</p>
 <pre><code>ssh joshmurray@unkk05c3f84e<span class="hljs-class">.joshmurray</span><span class="hljs-class">.koding</span><span class="hljs-class">.io</span>
 </code></pre><h2 class="heading"> <a name="deleting-a-key" class="anchor" href="#deleting-a-key"></a> Deleting a key </h2><p>If you no longer wish to authorize an existing key from connecting to your
 VM, simply delete that key from your <code>authorized_keys</code> file. This can be
-easily achieved by opening up the <code>~/.ssh/authorized_keys</code> file in your 
+easily achieved by opening up the <code>~/.ssh/authorized_keys</code> file in your
 favorite editor (e.g. nano or vi) and deleting the one line that contains
 the key for which you wish to remove access.</p>
-<blockquote class="tip fa fa-info-circle"> <p>Even though a key may span across multiple lines in your editor, it&apos;s
+<blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>Even though a key may span across multiple lines in your editor, it&apos;s
 usually just one long line. Make sure you delete the entire line and
 not leave any parts behind. Also, be careful not to accidentally delete
 parts of another key.</p>

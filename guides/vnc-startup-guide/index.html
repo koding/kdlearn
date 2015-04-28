@@ -46,11 +46,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?235" />
+    <link rel="stylesheet" href="/css/vendor.css?616" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?724" />
+    <link rel="stylesheet" href="/css/main.css?659" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?679" />
+    <link rel="stylesheet" href="/css/rwd.css?361" />
 	</head>
 	<body>
 
@@ -319,7 +319,7 @@
 
   <div itemprop="articleBody">
     <p itemprop="about">or How to Develop and Run Client GUI Applications with Koding and noVNC</p>
-<p>The Koding environment and tool base is a great way to code within the cloud.  No longer are we tied down to software running on our individual computers.  Coding, testing, and running web based applications within Koding is a snap as other tutorials will attest to, but what if you are trying to use Koding to develop a traditional client based GUI application?  How can we code and test those types of applications in the cloud?  Is it even possible? The answer of course, is YES!  We can develop our applications in Koding AND test them in the cloud, all from the comfort our our browser.  </p>
+<p>The Koding environment and tool base is a great way to code within the cloud.  No longer are we tied down to software running on our individual computers.  Coding, testing, and running web based applications within Koding is a snap as other tutorials will attest to, but what if you are trying to use Koding to develop a traditional client based GUI application?  How can we code and test those types of applications in the cloud?  Is it even possible? The answer of course, is YES!  We can develop our applications in Koding AND test them in the cloud, all from the comfort our our browser.</p>
 <p>In the following tutorial I will demonstrate how to set up your Koding VM to allow you to test and run a client GUI application.  In the end we are going to accomplish the following goals:</p>
 <ol>
 <li>Install Tkinter for Python.</li>
@@ -332,7 +332,7 @@
 <h2 class="heading"> <a name="install-tkinter-for-python" class="anchor" href="#install-tkinter-for-python"></a> Install Tkinter for Python </h2><p>Go to your <a href="https://koding.com/Develop/Terminal">Koding Terminal</a></p>
 <p>Within the terminal type the following command:</p>
 <pre><code>sudo apt-<span class="hljs-built_in">get</span> install <span class="hljs-keyword">python</span>-tk
-</code></pre><blockquote class="warning fa fa-exclamation-circle"> <p>The terminal will ask you for your password before it installs Tkinter.  Be ready to type in your password.</p>
+</code></pre><blockquote class="alert fa fa-exclamation-circle"> <p><span class="label">alert</span>The terminal will ask you for your password before it installs Tkinter.  Be ready to type in your password.</p>
  </blockquote><p>This process downloads and installs Tkinter into your VM.</p>
 <h2 class="heading"> <a name="write-a-simple-python-gui-application" class="anchor" href="#write-a-simple-python-gui-application"></a> Write a Simple Python GUI Application </h2><p>Using your favorite Koding text editor, the built in Koding Editor or VI, create a new file called &quot;test.py&quot; in your &quot;Documents&quot; folder. Our example will use VI.</p>
 <p>Go to your <a href="https://koding.com/Develop/Terminal">Koding Terminal</a>.</p>
@@ -352,7 +352,7 @@ Tkinter._test();</span>
 <p>Go to your <a href="https://koding.com/Develop/Terminal">Koding Terminal</a></p>
 <p>Type the following into your terminal</p>
 <pre><code>sudo apt-<span class="hljs-keyword">get</span> install tightvncserver
-</code></pre><blockquote class="warning fa fa-exclamation-circle"> <p>The terminal will ask you for your password before it installs TightVNC.  Be ready to type in your password.</p>
+</code></pre><blockquote class="alert fa fa-exclamation-circle"> <p><span class="label">alert</span>The terminal will ask you for your password before it installs TightVNC.  Be ready to type in your password.</p>
  </blockquote><p>This process downloads and installs TightVNC into your VM.</p>
 <p>To start your TightVNC server type the following command into your terminal.</p>
 <pre><code><span class="hljs-tag">vncserver</span> <span class="hljs-pseudo">:1</span>
@@ -365,7 +365,7 @@ Tkinter._test();</span>
 </code></pre><p>From your terminal type the following.</p>
 <pre><code>git clone <span class="hljs-string">git:</span><span class="hljs-comment">//github.com/kanaka/noVNC</span>
 </code></pre><p>This will create a new folder in your home directory called noVNC.  Everything you need to run noVNC is contained in here.</p>
-<p>Next we need to ensure our settings for noVNC are correct.  </p>
+<p>Next we need to ensure our settings for noVNC are correct.</p>
 <p>In either the built in Koding Editor or your <a href="https://koding.com/Develop/Terminal">Koding Terminal</a> , open up your xstartup file.</p>
 <pre><code>more <span class="hljs-regexp">/home/Y</span>OUR_USER_NAME<span class="hljs-regexp">/.vnc/</span>xstartup
 </code></pre><p>Your xstartup should look like the following:</p>
@@ -416,7 +416,7 @@ proxy_pid=&quot;</span><span class="hljs-string">&quot;</span>
 <p>If your launch.sh file does not look like this, use your editor (Vim or the built in Koding Editor) to modify and save the file to make it look like the example above.</p>
 <p>Using your <a href="https://koding.com/Develop/Terminal">Koding Terminal</a>, type the following to start WebSockify from the noVNC folder:</p>
 <pre><code><span class="hljs-regexp">/home/Y</span>OUR_USER_NAME<span class="hljs-regexp">/noVNC/u</span>tils<span class="hljs-regexp">/launch.sh</span>
-</code></pre><h2 class="heading"> <a name="connect-to-your-vnc-server" class="anchor" href="#connect-to-your-vnc-server"></a> Connect to your VNC Server </h2><p>Connecting to your VNC Server from the cloud is fairly easy with noVNC.  </p>
+</code></pre><h2 class="heading"> <a name="connect-to-your-vnc-server" class="anchor" href="#connect-to-your-vnc-server"></a> Connect to your VNC Server </h2><p>Connecting to your VNC Server from the cloud is fairly easy with noVNC.</p>
 <p>Within your browser navigate to</p>
 <pre><code><span class="hljs-string">http:</span><span class="hljs-comment">//YOUR_ASSIGNED_URL:8787/vnc.html?host=YOUR_ASSIGNED_URL&amp;port=8787</span>
 </code></pre><p>YOUR_ASSIGNED_URL can be found by looking up the <a href="http://learn.koding.com/faq/vm-hostname/">URL for your VM</a>.  It should be of the form 12_OR_SO_CHARACTERS.YOUR_USER_NAME.koding.io</p>
@@ -431,8 +431,8 @@ proxy_pid=&quot;</span><span class="hljs-string">&quot;</span>
 <p>Hit the &quot;Connect&quot; button.</p>
 <p>You are now connected to your Koding VM within a VNC connection! You should see a terminal on your screen that you can use to control your VM.</p>
 <p><img src="http://i.imgur.com/tTxlmK0.png" alt="Successfully Connected"></p>
-<h2 class="heading"> <a name="test-our-sample-gui-application" class="anchor" href="#test-our-sample-gui-application"></a> Test Our Sample GUI Application </h2><p>Connect to your VNC Server via the above instructions.  </p>
-<p>Use the terminal shown in noVNC for the following steps.  </p>
+<h2 class="heading"> <a name="test-our-sample-gui-application" class="anchor" href="#test-our-sample-gui-application"></a> Test Our Sample GUI Application </h2><p>Connect to your VNC Server via the above instructions.</p>
+<p>Use the terminal shown in noVNC for the following steps.</p>
 <p><strong>DO NOT RUN THESE STEPS IN THE KODING TERMINAL!</strong></p>
 <p>At the command line within noVNC, type the following command:</p>
 <pre><code>python <span class="hljs-regexp">/home/Y</span>OUR_USER_NAME<span class="hljs-regexp">/Documemnts/</span>test.py

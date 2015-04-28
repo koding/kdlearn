@@ -46,11 +46,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?335" />
+    <link rel="stylesheet" href="/css/vendor.css?489" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?535" />
+    <link rel="stylesheet" href="/css/main.css?240" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?337" />
+    <link rel="stylesheet" href="/css/rwd.css?239" />
 	</head>
 	<body>
 
@@ -323,11 +323,11 @@
 </code></pre><hr>
 <p>In this guide we&apos;ll take a look on how to deploy Java Web Applications on <a href="http://tomcat.apache.org/">Apache Tomcat</a> Server running on your <a href="https://koding.com">Koding</a> Virtual Machine.</p>
 <p>Since you are here we assume that you already know what Web Applications are and why do you need <a href="http://tomcat.apache.org/">Apache Tomcat</a> to run those applications.</p>
-<blockquote class="warning fa fa-exclamation-circle"> <p>Tomcat doesn&apos;t come preinstalled with your VM, so you need do download, install and configure Tomcat manually. </p>
+<blockquote class="alert fa fa-exclamation-circle"> <p><span class="label">alert</span>Tomcat doesn&apos;t come preinstalled with your VM, so you need do download, install and configure Tomcat manually.</p>
  </blockquote><p>Follow the steps below to get started:</p>
 <p>Head over to your VM <a href="https://koding.com/Terminal">Terminal</a>, and download Apache Tomcat 7.0 using the <code>wget</code> command.</p>
 <pre><code>wget <span class="hljs-symbol">http:</span>/<span class="hljs-regexp">/apache.mirrors.hoobly.com/tomcat</span><span class="hljs-regexp">/tomcat-7/v</span>7.<span class="hljs-number">0</span>.<span class="hljs-number">55</span>/bin/apache-tomcat-<span class="hljs-number">7.0</span>.<span class="hljs-number">55</span>.tar.gz
-</code></pre><p>If the above link doesn&apos;t work, make sure you get the link from Tomcat&apos;s official download page. </p>
+</code></pre><p>If the above link doesn&apos;t work, make sure you get the link from Tomcat&apos;s official download page.</p>
 <p>Extract the downloaded file by typing:</p>
 <pre><code>tar -xvzf apache-tomcat-7<span class="hljs-keyword">*</span>
 </code></pre><p>Rename the directory for easy access in future.</p>
@@ -336,7 +336,7 @@
 <pre><code>nano apache<span class="hljs-regexp">/conf/</span>tomcat-users.xml
 </code></pre><p>Add this line just above <code>&lt;/tomcat-users&gt;</code></p>
 <pre><code>&lt;user <span class="hljs-variable">name=</span><span class="hljs-string">&quot;CHOOSE A USERNAME&quot;</span> <span class="hljs-variable">password=</span><span class="hljs-string">&quot;INSERT A PASSWORD HERE&quot;</span> <span class="hljs-variable">roles=</span><span class="hljs-string">&quot;admin-gui,manager-gui&quot;</span> /&gt;
-</code></pre><blockquote class="warning fa fa-exclamation-circle"> <p>Make sure you replace the <code>CHOOSE A USERNAME</code> and <code>INSERT A PASSWORD HERE</code> with a desired username and password.</p>
+</code></pre><blockquote class="alert fa fa-exclamation-circle"> <p><span class="label">alert</span>Make sure you replace the <code>CHOOSE A USERNAME</code> and <code>INSERT A PASSWORD HERE</code> with a desired username and password.</p>
  </blockquote><p>Since you already have the Apache server running on your VM on port 80, you must specify another running port for Apache Tomcat. So we will edit the server.xml file now. Use the command below to open it using <code>nano</code>.</p>
 <pre><code>nano apache/conf/<span class="hljs-keyword">server</span>.xml
 </code></pre><p>Find this line</p>

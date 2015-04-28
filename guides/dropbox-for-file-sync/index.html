@@ -11,7 +11,7 @@
     
       <meta name="keywords" content="developer tools,koding,dropbox,file sync,file transfer">
     
-		<meta name="description" content="In this guide we'll walk you through how to set up Dropbox right on your Koding VM for a seamless sync experience between your local system and your Koding VM. Dropbox has built a best-in-class file sync and storage service.">
+		<meta name="description" content="In this guide we&amp;#39;ll walk you through how to set up Dropbox right on your Koding VM for a seamless sync experience between your local system and your Koding VM. Dropbox has built a best-in-class file sync and storage service.">
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
 
@@ -22,7 +22,7 @@
 		<meta property="og:image" content="https://learn.koding.com/img/logo_150.png"/>
     <!-- Don't have a secure url currently -->
 		<!--<meta property="og:image:secure_url" content="https://koding.com/a/images/logos/share_logo.png"/>-->
-		<meta property="og:description" content="In this guide we'll walk you through how to set up Dropbox right on your Koding VM for a seamless sync experience between your local system and your Koding VM. Dropbox has built a best-in-class file sync and storage service."/>
+		<meta property="og:description" content="In this guide we&amp;#39;ll walk you through how to set up Dropbox right on your Koding VM for a seamless sync experience between your local system and your Koding VM. Dropbox has built a best-in-class file sync and storage service."/>
 		<meta property="og:image:type" content="image/png">
 		<meta property="og:image:width" content="130"/>
 		<meta property="og:image:height" content="100"/>
@@ -34,7 +34,7 @@
 		<meta name="twitter:creator" content="@koding"/>
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:image" content="https://learn.koding.com/img/logo_150.png"/>
-		<meta name="twitter:description" content="In this guide we'll walk you through how to set up Dropbox right on your Koding VM for a seamless sync experience between your local system and your Koding VM. Dropbox has built a best-in-class file sync and storage service."\>
+		<meta name="twitter:description" content="In this guide we&amp;#39;ll walk you through how to set up Dropbox right on your Koding VM for a seamless sync experience between your local system and your Koding VM. Dropbox has built a best-in-class file sync and storage service."\>
 		<meta name="twitter:domain" content="learn.koding.com">
 
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
@@ -46,11 +46,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?271" />
+    <link rel="stylesheet" href="/css/vendor.css?70" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?10" />
+    <link rel="stylesheet" href="/css/main.css?846" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?295" />
+    <link rel="stylesheet" href="/css/rwd.css?993" />
 	</head>
 	<body>
 
@@ -319,7 +319,7 @@
 <h2 class="heading"> <a name="getting-started" class="anchor" href="#getting-started"></a> Getting started </h2><p>Before we begin please make sure you have the Koding Package Manager (KPM) installed on your VM. Follow <a href="http://learn.koding.com/kpm">this guide</a> to understand what KPM is and how to install it so you will be able to continue with this guide.</p>
 <p>Also make sure you have an active Dropbox account (free or paid).</p>
 <h2 class="heading"> <a name="setup" class="anchor" href="#setup"></a> Setup </h2><p>Run the following command, in your Koding Terminal, to install the necessary dependency:</p>
-<blockquote class="warning fa fa-exclamation-circle"> <p>If you already have Dropbox installed via KPM then you need to run <code>kpm uninstall dropbox</code> and then the below command to get the latest version.</p>
+<blockquote class="alert fa fa-exclamation-circle"> <p><span class="label">alert</span>If you already have Dropbox installed via KPM then you need to run <code>kpm uninstall dropbox</code> and then the below command to get the latest version.</p>
  </blockquote><pre><code>kpm <span class="hljs-keyword">install</span> dropbox
 </code></pre><p>This will install the Dropbox daemon on your Koding VM, that will make the file sync possible.</p>
 <p>After the install has finished you&apos;ll need to configure the daemon with your Dropbox account. In order to that you&apos;ll need to type this command:</p>
@@ -331,7 +331,7 @@
 <p>That&apos;s it! You should see a message in your Terminal similar to this one:</p>
 <pre><code>This computer <span class="hljs-keyword">is</span> <span class="hljs-built_in">now</span> linked <span class="hljs-keyword">to</span> Dropbox. Welcome YOUR_DROPBOX_NAME
 </code></pre><p>The Dropbox deamon will sync files into the <code>~/Dropbox</code> folder. At this point, the Dropbox deamon is syncing all the files from your Dropbox account to your Koding VM. If you have a lot of files on your Dropbox account, this can quickly eat up the space on your VM so we recommend you configure &quot;Selective Sync&quot; as described below. To immediately stop the Dropbox deamon and cancel the download that is in progress, hit <code>Ctrl-c</code>.</p>
-<blockquote class="tip fa fa-info-circle"> <p>Whenever you turn on Koding VM you will have to run the <code>dropbox start</code> command to get dropbox started.</p>
+<blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>Whenever you turn on Koding VM you will have to run the <code>dropbox start</code> command to get dropbox started.</p>
  </blockquote><h1 class="heading"> <a name="using-the-dropbox-selective-sync-feature" class="anchor" href="#using-the-dropbox-selective-sync-feature"></a> Using the Dropbox selective sync feature </h1><p>Selective sync allows you to specify which files from your Dropbox folder you would like to sync between your Koding VM and your Dropbox account.</p>
 <p>To set up selective sync, follow these easy steps:</p>
 <ol>

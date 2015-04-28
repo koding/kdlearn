@@ -12,8 +12,8 @@
       <meta name="keywords" content="koding features,ssh">
     
 		<meta name="description" content="In this guide, we will cover how to set up ssh on your Chromebook. There are
-two ways you can use SSH on a Chromebook. You can either install Google's SSH
-Chrome extention 
+two ways you can use SSH on a Chromebook. You can either install Google&amp;#39;s SSH
+Chrome extention
 or use the native SSH client that is built into the Chrome OS. For the purposes
 of this guide, we will use the native SSH client method as it does not
 require the installation of any new software.">
@@ -28,8 +28,8 @@ require the installation of any new software.">
     <!-- Don't have a secure url currently -->
 		<!--<meta property="og:image:secure_url" content="https://koding.com/a/images/logos/share_logo.png"/>-->
 		<meta property="og:description" content="In this guide, we will cover how to set up ssh on your Chromebook. There are
-two ways you can use SSH on a Chromebook. You can either install Google's SSH
-Chrome extention 
+two ways you can use SSH on a Chromebook. You can either install Google&amp;#39;s SSH
+Chrome extention
 or use the native SSH client that is built into the Chrome OS. For the purposes
 of this guide, we will use the native SSH client method as it does not
 require the installation of any new software."/>
@@ -45,8 +45,8 @@ require the installation of any new software."/>
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:image" content="https://learn.koding.com/img/logo_150.png"/>
 		<meta name="twitter:description" content="In this guide, we will cover how to set up ssh on your Chromebook. There are
-two ways you can use SSH on a Chromebook. You can either install Google's SSH
-Chrome extention 
+two ways you can use SSH on a Chromebook. You can either install Google&amp;#39;s SSH
+Chrome extention
 or use the native SSH client that is built into the Chrome OS. For the purposes
 of this guide, we will use the native SSH client method as it does not
 require the installation of any new software."\>
@@ -61,11 +61,11 @@ require the installation of any new software."\>
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?639" />
+    <link rel="stylesheet" href="/css/vendor.css?288" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?875" />
+    <link rel="stylesheet" href="/css/main.css?858" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?756" />
+    <link rel="stylesheet" href="/css/rwd.css?828" />
 	</head>
 	<body>
 
@@ -332,7 +332,7 @@ require the installation of any new software."\>
   <div itemprop="articleBody">
     <p itemprop="about">In this guide, we will cover how to set up ssh on your Chromebook. There are
 two ways you can use SSH on a Chromebook. You can either install <a href="https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo">Google&apos;s SSH
-Chrome extention</a> 
+Chrome extention</a>
 or use the native SSH client that is built into the Chrome OS. For the purposes
 of this guide, we will use the native SSH client method as it does not
 require the installation of any new software.</p>
@@ -344,17 +344,17 @@ and you should be greeted with a screen similar to the one below.
 <p>If you do not get the above screen, chances are high that you either have an older
 build of Chrome OS or that your device manufacturer has opted to remove crosh from
 their customd build of the Chrome OS.</p>
-<h3 class="heading"> <a name="step-2-generate-the-required-ssh-private-and-public-keys-on-your-vm" class="anchor" href="#step-2-generate-the-required-ssh-private-and-public-keys-on-your-vm"></a> Step 2: Generate the required ssh private and public keys on your VM </h3><blockquote class="success fa fa-check-circle"> <p>If you already have a private and public key generated, you can
+<h3 class="heading"> <a name="step-2-generate-the-required-ssh-private-and-public-keys-on-your-vm" class="anchor" href="#step-2-generate-the-required-ssh-private-and-public-keys-on-your-vm"></a> Step 2: Generate the required ssh private and public keys on your VM </h3><blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>If you already have a private and public key generated, you can
 skip the section below</p>
- </blockquote><p>Open up Terminal on your Koding VM and type in the following command: </p>
+ </blockquote><p>Open up Terminal on your Koding VM and type in the following command:</p>
 <pre><code>ssh-keygen
 </code></pre><p>You will be presented with a few choices, accept all defaults until
 you end up with something like this:</p>
 <pre><code>Generating <span class="hljs-keyword">public</span>/<span class="hljs-keyword">private</span> rsa <span class="hljs-keyword">key</span> pair.
-Enter file <span class="hljs-keyword">in</span> which <span class="hljs-keyword">to</span> save the <span class="hljs-keyword">key</span> (/home/your_username/.ssh/id_rsa): 
+Enter file <span class="hljs-keyword">in</span> which <span class="hljs-keyword">to</span> save the <span class="hljs-keyword">key</span> (/home/your_username/.ssh/id_rsa):
 Created directory <span class="hljs-comment">&apos;/home/your_username/.ssh&apos;.</span>
-Enter passphrase (empty <span class="hljs-keyword">for</span> no passphrase): 
-Enter same passphrase again: 
+Enter passphrase (empty <span class="hljs-keyword">for</span> no passphrase):
+Enter same passphrase again:
 Your identification has been saved <span class="hljs-keyword">in</span> /home/your_username/.ssh/id_rsa.
 Your <span class="hljs-keyword">public</span> <span class="hljs-keyword">key</span> has been saved <span class="hljs-keyword">in</span> /home/your_username/.ssh/id_rsa.pub.
 The <span class="hljs-keyword">key</span> fingerprint <span class="hljs-keyword">is</span>:
@@ -379,7 +379,7 @@ over the private keys, which is the next step).</p>
 <pre><code>cat ~<span class="hljs-regexp">/.ssh/id</span>_rsa.pub <span class="hljs-prompt">&gt;&gt; </span>~<span class="hljs-regexp">/.ssh/authorized</span>_keys
 </code></pre><h3 class="heading"> <a name="step-4-moving-the-generated-private-key-to-your-chromebook" class="anchor" href="#step-4-moving-the-generated-private-key-to-your-chromebook"></a> Step 4: Moving the generated private key to your Chromebook </h3><p>To achieve this, we will first copy over the private key to
 our Web folder so that we can download it over the browser.</p>
-<blockquote class="warning fa fa-exclamation-circle"> <p>After downloading the private key you should immediately
+<blockquote class="alert fa fa-exclamation-circle"> <p><span class="label">alert</span>After downloading the private key you should immediately
 delete if from your Web folder. This is not the most secure way
 of copying over your file but is the easiest. If you prefer, you
 can also upload the file to your Google Drive account and then

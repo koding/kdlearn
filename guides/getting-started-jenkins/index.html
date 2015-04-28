@@ -46,11 +46,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?493" />
+    <link rel="stylesheet" href="/css/vendor.css?217" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?158" />
+    <link rel="stylesheet" href="/css/main.css?437" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?506" />
+    <link rel="stylesheet" href="/css/rwd.css?899" />
 	</head>
 	<body>
 
@@ -320,7 +320,7 @@
 </code></pre><hr>
 <p>This guide will cover the basics on how to install and configure Jenkins on your Koding VM. Just follow the steps and you should have Jenkins running in no time.</p>
 <h2 class="heading"> <a name="installing-jenkins" class="anchor" href="#installing-jenkins"></a> Installing Jenkins </h2><p>The first thing you need to do before you install Jenkins is to make sure you add the key and source list to apt. Using the following commands you will be able to do just that.</p>
-<blockquote class="warning fa fa-exclamation-circle"> <p>You should be logged in as root to continue with the following steps.</p>
+<blockquote class="alert fa fa-exclamation-circle"> <p><span class="label">alert</span>You should be logged in as root to continue with the following steps.</p>
  </blockquote><p>First add the key:</p>
 <pre><code>wget -q -O - http://pkg.jenkins-ci<span class="hljs-preprocessor">.org</span>/debian/jenkins-ci<span class="hljs-preprocessor">.org</span>.key | apt-key <span class="hljs-keyword">add</span> -
 </code></pre><p>Create the sources list:</p>
@@ -329,7 +329,7 @@
 <pre><code>apt-<span class="hljs-built_in">get</span> <span class="hljs-keyword">update</span>
 </code></pre><p>You can now install Jenkins using the following command:</p>
 <pre><code>apt-<span class="hljs-keyword">get</span> install jenkins
-</code></pre><blockquote class="warning fa fa-exclamation-circle"> <p>Please note that Jenkins has a lot of dependencies, so it might take some time to install them all.</p>
+</code></pre><blockquote class="alert fa fa-exclamation-circle"> <p><span class="label">alert</span>Please note that Jenkins has a lot of dependencies, so it might take some time to install them all.</p>
  </blockquote><h2 class="heading"> <a name="configuring-jenkins" class="anchor" href="#configuring-jenkins"></a> Configuring Jenkins </h2><p>Jenkins should now be running properly. Head over to your VMs assigned URL (If you don&apos;t know what&apos;s your VM URL follow <a href="/faq/vm-hostname">this guide</a> to find out) and append <code>:8080</code> to it. That is where Jenkins currently resides.</p>
 <p><img src="jenkins1.png" alt="Jenkins"></p>
 <p>The above image shows the default screen when you first open Jenkins.</p>

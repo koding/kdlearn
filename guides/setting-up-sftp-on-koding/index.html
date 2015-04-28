@@ -11,7 +11,7 @@
     
       <meta name="keywords" content="common questions,sftp,ftp,file transfer">
     
-		<meta name="description" content="In this guide you'll go over how to get your SFTP Client connected to your VM's SFTP Server. You will be using FileZilla as the SFTP Client, but any client should be able to connect to your SFTP Server successfully.">
+		<meta name="description" content="In this guide you&amp;#39;ll go over how to get your SFTP Client connected to your VM&amp;#39;s SFTP Server. You will be using FileZilla as the SFTP Client, but any client should be able to connect to your SFTP Server successfully.">
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
 
@@ -22,7 +22,7 @@
 		<meta property="og:image" content="https://learn.koding.com/img/logo_150.png"/>
     <!-- Don't have a secure url currently -->
 		<!--<meta property="og:image:secure_url" content="https://koding.com/a/images/logos/share_logo.png"/>-->
-		<meta property="og:description" content="In this guide you'll go over how to get your SFTP Client connected to your VM's SFTP Server. You will be using FileZilla as the SFTP Client, but any client should be able to connect to your SFTP Server successfully."/>
+		<meta property="og:description" content="In this guide you&amp;#39;ll go over how to get your SFTP Client connected to your VM&amp;#39;s SFTP Server. You will be using FileZilla as the SFTP Client, but any client should be able to connect to your SFTP Server successfully."/>
 		<meta property="og:image:type" content="image/png">
 		<meta property="og:image:width" content="130"/>
 		<meta property="og:image:height" content="100"/>
@@ -34,7 +34,7 @@
 		<meta name="twitter:creator" content="@koding"/>
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:image" content="https://learn.koding.com/img/logo_150.png"/>
-		<meta name="twitter:description" content="In this guide you'll go over how to get your SFTP Client connected to your VM's SFTP Server. You will be using FileZilla as the SFTP Client, but any client should be able to connect to your SFTP Server successfully."\>
+		<meta name="twitter:description" content="In this guide you&amp;#39;ll go over how to get your SFTP Client connected to your VM&amp;#39;s SFTP Server. You will be using FileZilla as the SFTP Client, but any client should be able to connect to your SFTP Server successfully."\>
 		<meta name="twitter:domain" content="learn.koding.com">
 
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
@@ -46,11 +46,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?898" />
+    <link rel="stylesheet" href="/css/vendor.css?297" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?631" />
+    <link rel="stylesheet" href="/css/main.css?982" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?312" />
+    <link rel="stylesheet" href="/css/rwd.css?101" />
 	</head>
 	<body>
 
@@ -325,7 +325,7 @@
 <pre><code>sudo apt-<span class="hljs-built_in">get</span> <span class="hljs-keyword">update</span>
 </code></pre><p>and let the update process complete. It should not require any input.</p>
 <h2 class="heading"> <a name="installing" class="anchor" href="#installing"></a> Installing </h2><p>First off, you&apos;ll need to install <code>openssh-server</code>. This can be done by pasting the following command into your <a href="https://koding.com/IDE">Koding IDE</a>&apos;s Terminal.</p>
-<blockquote class="success fa fa-check-circle"> <p>The <code>openssh-server</code> package comes preinstalled on all Koding VMs.</p>
+<blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>The <code>openssh-server</code> package comes preinstalled on all Koding VMs.</p>
  </blockquote><pre><code>sudo apt-get <span class="hljs-operator"><span class="hljs-keyword">install</span> openssh-<span class="hljs-keyword">server</span></span>
 </code></pre><h2 class="heading"> <a name="configure" class="anchor" href="#configure"></a> Configure </h2><p>After the install process has finished you&apos;ll need to configure the SFTP server. Start by editing the following file <code>/etc/ssh/sshd_config</code> like so:</p>
 <pre><code>sudo nano <span class="hljs-regexp">/etc/</span>ssh<span class="hljs-regexp">/sshd_config</span>
@@ -360,7 +360,7 @@ touch ~/.ssh/authorized_keys
 <p>After hitting enter, you&apos;ll be prompted for the <strong>SFTP</strong> password you wish to use. <em>Not</em> your Koding password.</p>
 <h2 class="heading"> <a name="connecting-to-your-sftp-server" class="anchor" href="#connecting-to-your-sftp-server"></a> Connecting to your SFTP Server </h2><p>Finally, in your SFTP Client of choice paste your VM Address into the hostname. If you&apos;re not sure what that is, instructions to find it can be <a href="/faq/vm-address">found here</a>.</p>
 <p>After the hostname, enter your Koding username, and SFTP password that you chose in the above commands. An example image from FileZilla can be seen below.</p>
-<blockquote class="warning fa fa-exclamation-circle"> <p>The default port for a SFTP connection is 22. Make sure to specify this when you input the connection details.</p>
+<blockquote class="alert fa fa-exclamation-circle"> <p><span class="label">alert</span>The default port for a SFTP connection is 22. Make sure to specify this when you input the connection details.</p>
  </blockquote><p><img src="ftpsettings.png" alt="FileZilla SFTP Settings"></p>
 <h2 class="heading"> <a name="additional-resources" class="anchor" href="#additional-resources"></a> Additional Resources </h2><ul>
 <li><a href="https://filezilla-project.org/">FileZilla</a></li>

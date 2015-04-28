@@ -11,7 +11,7 @@
     
       <meta name="keywords" content="understanding vm,koding">
     
-		<meta name="description" content="You should follow the steps in this guide to its entirety otherwise if you enable the firewall and don't finish
+		<meta name="description" content="alertYou should follow the steps in this guide to its entirety otherwise if you enable the firewall and don&amp;#39;t finish
 adding key services like ssh, you may be locked out of your VM. Please proceed with caution.">
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
@@ -23,7 +23,7 @@ adding key services like ssh, you may be locked out of your VM. Please proceed w
 		<meta property="og:image" content="https://learn.koding.com/img/logo_150.png"/>
     <!-- Don't have a secure url currently -->
 		<!--<meta property="og:image:secure_url" content="https://koding.com/a/images/logos/share_logo.png"/>-->
-		<meta property="og:description" content="You should follow the steps in this guide to its entirety otherwise if you enable the firewall and don't finish
+		<meta property="og:description" content="alertYou should follow the steps in this guide to its entirety otherwise if you enable the firewall and don&amp;#39;t finish
 adding key services like ssh, you may be locked out of your VM. Please proceed with caution."/>
 		<meta property="og:image:type" content="image/png">
 		<meta property="og:image:width" content="130"/>
@@ -36,7 +36,7 @@ adding key services like ssh, you may be locked out of your VM. Please proceed w
 		<meta name="twitter:creator" content="@koding"/>
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:image" content="https://learn.koding.com/img/logo_150.png"/>
-		<meta name="twitter:description" content="You should follow the steps in this guide to its entirety otherwise if you enable the firewall and don't finish
+		<meta name="twitter:description" content="alertYou should follow the steps in this guide to its entirety otherwise if you enable the firewall and don&amp;#39;t finish
 adding key services like ssh, you may be locked out of your VM. Please proceed with caution."\>
 		<meta name="twitter:domain" content="learn.koding.com">
 
@@ -49,11 +49,11 @@ adding key services like ssh, you may be locked out of your VM. Please proceed w
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?711" />
+    <link rel="stylesheet" href="/css/vendor.css?594" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?464" />
+    <link rel="stylesheet" href="/css/main.css?39" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?949" />
+    <link rel="stylesheet" href="/css/rwd.css?630" />
 	</head>
 	<body>
 
@@ -318,13 +318,13 @@ adding key services like ssh, you may be locked out of your VM. Please proceed w
   
 
   <div itemprop="articleBody">
-    <blockquote class="error fa fa-exclamation-triangle"> <p itemprop="about">You should follow the steps in this guide to its entirety otherwise if you enable the firewall and don&apos;t finish
+    <blockquote class="alert fa fa-exclamation-circle"> <p itemprop="about"><span class="label">alert</span>You should follow the steps in this guide to its entirety otherwise if you enable the firewall and don&apos;t finish
 adding key services like ssh, you may be locked out of your VM. Please proceed with caution.</p>
  </blockquote><p>From time to time, a need may arise when you need to secure your Koding VM from prying eyes. There are several solutions
 available when it comes to enabling a firewall on Ubuntu (the operating system that runs on a Koding VM) and you are free
 to try any/all of those. For the purposes of this guide, we will focus on the ufw firewall software that is already
 installed by default on all Koding VMs.</p>
-<p>UFW stands for &quot;Uncomplicated Firewall&quot; and is essentially a wrapper around the more complicated iptables firewall. It 
+<p>UFW stands for &quot;Uncomplicated Firewall&quot; and is essentially a wrapper around the more complicated iptables firewall. It
 was built to provide an easy interface that is more usable for most users as compared to the more complicated interface that
 comes with iptables.</p>
 <h2 class="heading"> <a name="checking-the-state-of-ufw-on-your-vm" class="anchor" href="#checking-the-state-of-ufw-on-your-vm"></a> Checking the state of ufw on your VM </h2><p>ufw should be pre-installed on your VM and you can easily check that by typing the following command in Terminal:</p>
@@ -345,7 +345,7 @@ New <span class="hljs-keyword">profile</span><span class="hljs-variable">s:</spa
 </code></pre><p>Please follow the steps in the next section immediately as by default every incoming connection is denied and
 if we don&apos;t add some specific rules quickly, you may get locked out of your own VM... yikes!</p>
 <h2 class="heading"> <a name="adding-rules-to-ensure-that-your-koding-vm-works-just-fine-even-with-ufw-enabled-" class="anchor" href="#adding-rules-to-ensure-that-your-koding-vm-works-just-fine-even-with-ufw-enabled-"></a> Adding rules to ensure that your Koding VM works just fine even with ufw enabled. </h2><p>Since you are using Koding via a browser, there are services running on your VM that the Koding application
-needs to talk to. When you enable the firewall, you essentially are cutting off access to these services so 
+needs to talk to. When you enable the firewall, you essentially are cutting off access to these services so
 it is VERY IMPORTANT that you enable the services below as soon as you turn on the firewall.</p>
 <p>Type in this command to enable ssh access through the firewall</p>
 <pre><code><span class="hljs-title">sudo</span> ufw allow ssh
@@ -353,7 +353,7 @@ it is VERY IMPORTANT that you enable the services below as soon as you turn on t
 <pre><code>sudo ufw allow <span class="hljs-keyword">http</span>
 </code></pre><p>and then add a rule for a specific port that Koding requires</p>
 <pre><code><span class="hljs-title">sudo</span> ufw allow <span class="hljs-number">56789</span>/tcp
-</code></pre><blockquote class="error fa fa-exclamation-triangle"> <p>If you do not open up the ports mentioned above, then you will be locked out of your VM and will need to send us a support request to have it fixed.</p>
+</code></pre><blockquote class="alert fa fa-exclamation-circle"> <p><span class="label">alert</span>If you do not open up the ports mentioned above, then you will be locked out of your VM and will need to send us a support request to have it fixed.</p>
  </blockquote><h2 class="heading"> <a name="allowing-access-to-specific-standard-services-" class="anchor" href="#allowing-access-to-specific-standard-services-"></a> Allowing access to specific standard services. </h2><p>ufw already knows what to do for standard services like ftp, http, ssh, telnet, etc. so if you want to enable
 any of these services, simply type in:</p>
 <pre><code>sudo ufw <span class="hljs-built_in">enable</span> ftp
@@ -387,9 +387,9 @@ tcp with udp if you wish to allow access to both tcp and udp ports within that r
 <pre><code><span class="hljs-title">sudo</span> ufw reset
 </code></pre><p>you will get a confirmation:</p>
 <pre><code>Resetting <span class="hljs-literal">all</span> rules <span class="hljs-keyword">to</span> installed defaults<span class="hljs-built_in">. </span>Proceed <span class="hljs-keyword">with</span> operation (y<span class="hljs-subst">|</span>n)<span class="hljs-subst">?</span> y
-</code></pre><p>When you hit &quot;y&quot; ufw will backup all existing rules before doing the reset. Resetting the rules will also disable your firewall. </p>
+</code></pre><p>When you hit &quot;y&quot; ufw will backup all existing rules before doing the reset. Resetting the rules will also disable your firewall.</p>
 <h2 class="heading"> <a name="help-i-locked-myself-out-of-my-vm" class="anchor" href="#help-i-locked-myself-out-of-my-vm"></a> Help, I locked myself out of my VM </h2><p>If for some reason you enabled your firewall and did not take the steps needed to open up the ports needed for Koding to work, then
-your only recourse is to reinit your VM. That process is described in <a href="http://learn.koding.com/faq/vm-reinit/">this guide</a>. If you 
+your only recourse is to reinit your VM. That process is described in <a href="http://learn.koding.com/faq/vm-reinit/">this guide</a>. If you
 encounter any issues or have any questions please drop an email <a href="mailto:support@koding.com">here</a>.</p>
 
   </div>

@@ -11,9 +11,9 @@
     
       <meta name="keywords" content="frameworks platforms,nodejs,javascript">
     
-		<meta name="description" content="In this guide we will go over basic usage of the NodeJS web framework, 
-ExpressJS. If you are not familiar with NodeJS, please review the 
-Getting Started with NodeJS guide. Lets get 
+		<meta name="description" content="In this guide we will go over basic usage of the NodeJS web framework,
+ExpressJS. If you are not familiar with NodeJS, please review the
+Getting Started with NodeJS guide. Lets get
 started!">
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
@@ -25,9 +25,9 @@ started!">
 		<meta property="og:image" content="https://learn.koding.com/img/logo_150.png"/>
     <!-- Don't have a secure url currently -->
 		<!--<meta property="og:image:secure_url" content="https://koding.com/a/images/logos/share_logo.png"/>-->
-		<meta property="og:description" content="In this guide we will go over basic usage of the NodeJS web framework, 
-ExpressJS. If you are not familiar with NodeJS, please review the 
-Getting Started with NodeJS guide. Lets get 
+		<meta property="og:description" content="In this guide we will go over basic usage of the NodeJS web framework,
+ExpressJS. If you are not familiar with NodeJS, please review the
+Getting Started with NodeJS guide. Lets get
 started!"/>
 		<meta property="og:image:type" content="image/png">
 		<meta property="og:image:width" content="130"/>
@@ -40,9 +40,9 @@ started!"/>
 		<meta name="twitter:creator" content="@koding"/>
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:image" content="https://learn.koding.com/img/logo_150.png"/>
-		<meta name="twitter:description" content="In this guide we will go over basic usage of the NodeJS web framework, 
-ExpressJS. If you are not familiar with NodeJS, please review the 
-Getting Started with NodeJS guide. Lets get 
+		<meta name="twitter:description" content="In this guide we will go over basic usage of the NodeJS web framework,
+ExpressJS. If you are not familiar with NodeJS, please review the
+Getting Started with NodeJS guide. Lets get
 started!"\>
 		<meta name="twitter:domain" content="learn.koding.com">
 
@@ -55,11 +55,11 @@ started!"\>
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?89" />
+    <link rel="stylesheet" href="/css/vendor.css?302" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?341" />
+    <link rel="stylesheet" href="/css/main.css?362" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?415" />
+    <link rel="stylesheet" href="/css/rwd.css?83" />
 	</head>
 	<body>
 
@@ -324,22 +324,22 @@ started!"\>
   
 
   <div itemprop="articleBody">
-    <p itemprop="about">In this guide we will go over basic usage of the NodeJS web framework, 
-ExpressJS. If you are not familiar with NodeJS, please review the 
-<a href="getting-started-nodejs">Getting Started with NodeJS</a> guide. Lets get 
+    <p itemprop="about">In this guide we will go over basic usage of the NodeJS web framework,
+ExpressJS. If you are not familiar with NodeJS, please review the
+<a href="getting-started-nodejs">Getting Started with NodeJS</a> guide. Lets get
 started!</p>
-<h2 class="heading"> <a name="installing" class="anchor" href="#installing"></a> Installing </h2><p>First, make a directory to follow along with this tutorial, and work from 
-in that directory. Next, we&apos;re going to install Express with the 
+<h2 class="heading"> <a name="installing" class="anchor" href="#installing"></a> Installing </h2><p>First, make a directory to follow along with this tutorial, and work from
+in that directory. Next, we&apos;re going to install Express with the
 following command.</p>
 <pre><code>npm <span class="hljs-keyword">install</span> express
-</code></pre><p>If you already have a <code>package.json</code> file for your project, you can add 
-the <code>--save</code> flag and Express will be added as a project dependency. In 
+</code></pre><p>If you already have a <code>package.json</code> file for your project, you can add
+the <code>--save</code> flag and Express will be added as a project dependency. In
 this example we&apos;re going to ignore dependencies for simplicity.</p>
-<p>You&apos;ll notice a new directory is created named <code>node_modules</code>. This is 
-where the local installations of your packages are stored. When you 
-import them, such as with <code>require(&apos;express&apos;)</code>, they are loaded from this 
+<p>You&apos;ll notice a new directory is created named <code>node_modules</code>. This is
+where the local installations of your packages are stored. When you
+import them, such as with <code>require(&apos;express&apos;)</code>, they are loaded from this
 directory.</p>
-<h2 class="heading"> <a name="hello-world-and-routes" class="anchor" href="#hello-world-and-routes"></a> Hello World and Routes </h2><p>Copy the following code into a file named <code>app.js</code>. Remember that at 
+<h2 class="heading"> <a name="hello-world-and-routes" class="anchor" href="#hello-world-and-routes"></a> Hello World and Routes </h2><p>Copy the following code into a file named <code>app.js</code>. Remember that at
 anytime you can run your server with <code>node app.js</code>.</p>
 <pre><code class="javascript"><span class="hljs-keyword">var</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express&apos;</span>);
 <span class="hljs-keyword">var</span> app     = express();
@@ -363,25 +363,25 @@ app.get(<span class="hljs-string">&apos;/:name&apos;</span>, <span class="hljs-f
   res.send(<span class="hljs-string">&apos;Hello &apos;</span>+ req.params.name);
 });
 </code></pre>
-<p>The <code>app.get()</code> method takes a Route <em>(string or regex)</em> to listen to 
-requests on. If a user visits <code>http://hostname.username.koding.io/</code>, they 
+<p>The <code>app.get()</code> method takes a Route <em>(string or regex)</em> to listen to
+requests on. If a user visits <code>http://hostname.username.koding.io/</code>, they
 are greeted with <code>Hello World, From /</code>.</p>
-<p>If someone visits <code>http://hostname.username.koding.io/john</code>, they are 
-greeted with <code>Hello john</code>. <code>:name</code> is a URL <em>parameter</em>, which is sort of 
-like a wildcard for that section of the URL. Respond to the request with 
-the parameter by using the name of the parameter on the <code>req.params</code> 
+<p>If someone visits <code>http://hostname.username.koding.io/john</code>, they are
+greeted with <code>Hello john</code>. <code>:name</code> is a URL <em>parameter</em>, which is sort of
+like a wildcard for that section of the URL. Respond to the request with
+the parameter by using the name of the parameter on the <code>req.params</code>
 object.</p>
 <pre><code class="javascript"><span class="hljs-keyword">var</span> server = app.listen(<span class="hljs-number">3000</span>, <span class="hljs-string">&apos;0.0.0.0&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Listening on port %d&apos;</span>, server.address().port);
 });
 </code></pre>
 <p>This final call simply starts the web server on <code>0.0.0.0:3000</code>.</p>
-<h2 class="heading"> <a name="middleware" class="anchor" href="#middleware"></a> Middleware </h2><p>We saw how to run a simple server, with a couple routes, now lets add a 
+<h2 class="heading"> <a name="middleware" class="anchor" href="#middleware"></a> Middleware </h2><p>We saw how to run a simple server, with a couple routes, now lets add a
 bit of middleware.</p>
-<p>Middleware is a concept of a function which is called in the <em>middle</em> of 
-the request cycle. It&apos;s useful for rejecting non-authorized users to many 
+<p>Middleware is a concept of a function which is called in the <em>middle</em> of
+the request cycle. It&apos;s useful for rejecting non-authorized users to many
 routes, logging, or just about anything. Middleware is pretty awesome.</p>
-<p>Lets add our own middleware to simply log all requests to the console, 
+<p>Lets add our own middleware to simply log all requests to the console,
 and another to log all <code>/:name</code> requests from above.</p>
 <pre><code class="javascript">app.use(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(req, res, next)</span> </span>{
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;[&apos;</span>+ <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>() +<span class="hljs-string">&apos;] &apos;</span>, req.path);
@@ -393,21 +393,22 @@ and another to log all <code>/:name</code> requests from above.</p>
   next();
 }
 </code></pre>
-<p>We&apos;ve defined two middleware functions above. Our logging function is 
-first, and we immediately pass it to <code>app.use()</code>. Every request that this 
-express application receives will first go through this logging function.<br>The logging function just logs the date time, and the path of the 
-request. Note the <code>next()</code> callback, that tells Express that this 
+<p>We&apos;ve defined two middleware functions above. Our logging function is
+first, and we immediately pass it to <code>app.use()</code>. Every request that this
+express application receives will first go through this logging function.
+The logging function just logs the date time, and the path of the
+request. Note the <code>next()</code> callback, that tells Express that this
 middleware is done, and the next one can be called.</p>
-<p>Our second middleware, <code>logName</code>, is not being used yet. Why? Well, we 
-only want to use this for our <code>/:name</code> route, because it&apos;s supposed to 
-log names. How can we achieve this though? Lets take a look at our 
+<p>Our second middleware, <code>logName</code>, is not being used yet. Why? Well, we
+only want to use this for our <code>/:name</code> route, because it&apos;s supposed to
+log names. How can we achieve this though? Lets take a look at our
 <code>/:name</code> route, with the middleware added.</p>
 <pre><code class="javascript">app.get(<span class="hljs-string">&apos;/:name&apos;</span>, logName, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(req, res)</span></span>{
   res.send(<span class="hljs-string">&apos;Hello &apos;</span>+ req.params.name);
 });
 </code></pre>
-<p>By adding this middleware to our route, every request to <code>/:name</code> will 
-first pass through our <code>logName</code> function, and then the final anonymous 
+<p>By adding this middleware to our route, every request to <code>/:name</code> will
+first pass through our <code>logName</code> function, and then the final anonymous
 function to handle the full response.</p>
 <p>Lets look at the full code at this state.</p>
 <pre><code class="javascript"><span class="hljs-keyword">var</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express&apos;</span>);
@@ -434,17 +435,17 @@ app.get(<span class="hljs-string">&apos;/:name&apos;</span>, logName, <span clas
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Listening on port %d&apos;</span>, server.address().port);
 });
 </code></pre>
-<blockquote class="warning fa fa-exclamation-circle"> <p>It&apos;s important to remember that order of execution matters! If we define a piece of middleware <em>after</em> a route, requests to that route will not run through that middleware. In the above example, the very first thing we do is declare our <code>app.use()</code> middleware, and in the <code>/:name</code> middleware we use the <code>logName</code> function <em>before</em> our handler.</p>
- </blockquote><h2 class="heading"> <a name="adding-templates" class="anchor" href="#adding-templates"></a> Adding Templates </h2><p>Now we&apos;re getting a hang of routes and middleware, lets complete the step 
-and add in a template. Add the following code to the top of your <code>app.js</code> 
+<blockquote class="alert fa fa-exclamation-circle"> <p><span class="label">alert</span>It&apos;s important to remember that order of execution matters! If we define a piece of middleware <em>after</em> a route, requests to that route will not run through that middleware. In the above example, the very first thing we do is declare our <code>app.use()</code> middleware, and in the <code>/:name</code> middleware we use the <code>logName</code> function <em>before</em> our handler.</p>
+ </blockquote><h2 class="heading"> <a name="adding-templates" class="anchor" href="#adding-templates"></a> Adding Templates </h2><p>Now we&apos;re getting a hang of routes and middleware, lets complete the step
+and add in a template. Add the following code to the top of your <code>app.js</code>
 file.</p>
 <pre><code class="javascript">app.set(<span class="hljs-string">&apos;view engine&apos;</span>, <span class="hljs-string">&apos;jade&apos;</span>);
 app.set(<span class="hljs-string">&apos;views&apos;</span>, __dirname + <span class="hljs-string">&apos;/views&apos;</span>);
 </code></pre>
-<p><code>app.set()</code> is used to configure this app instance. In this case, we set 
-a couple templating settings of Express, to use the Jade templating 
+<p><code>app.set()</code> is used to configure this app instance. In this case, we set
+a couple templating settings of Express, to use the Jade templating
 language from the <code>./views</code> directory.</p>
-<p>Next, create a directory named <code>views</code>, and add the following code to a 
+<p>Next, create a directory named <code>views</code>, and add the following code to a
 file named <code>index.jade</code></p>
 <pre><code class="jade">doctype
 html
@@ -453,18 +454,18 @@ html
   body
     h1 Hello #{name}
 </code></pre>
-<p>We won&apos;t go over the Jade language here, but in short <code>#{name}</code> is a 
-variable which is being passed to this template when we render it. If 
-you&apos;re paying attention, you&apos;ll notice that we have yet to actually 
-render a template in our requests. Lets add the above template to our 
+<p>We won&apos;t go over the Jade language here, but in short <code>#{name}</code> is a
+variable which is being passed to this template when we render it. If
+you&apos;re paying attention, you&apos;ll notice that we have yet to actually
+render a template in our requests. Lets add the above template to our
 <code>/:name</code> handler!</p>
 <pre><code class="javascript">app.get(<span class="hljs-string">&apos;/:name&apos;</span>, logName, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(req, res)</span></span>{
   res.render(<span class="hljs-string">&apos;index&apos;</span>, {name: req.params.name});
 });
 </code></pre>
-<p>In our <code>/:name</code> handler, we&apos;ve replaced the <code>res.send()</code> call with 
-<code>res.render()</code>. This loads our <code>index.jade</code> template and renders it, with 
-the object we&apos;re passing in as data. The <code>name</code> property of that object 
+<p>In our <code>/:name</code> handler, we&apos;ve replaced the <code>res.send()</code> call with
+<code>res.render()</code>. This loads our <code>index.jade</code> template and renders it, with
+the object we&apos;re passing in as data. The <code>name</code> property of that object
 is accessible from the jade template!</p>
 <h2 class="heading"> <a name="the-final-product" class="anchor" href="#the-final-product"></a> The final product </h2><p>Lets take one final look at all of this <code>app.js</code> code together.</p>
 <pre><code class="javascript"><span class="hljs-keyword">var</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express&apos;</span>);
@@ -502,7 +503,7 @@ app.get(<span class="hljs-string">&apos;/:name&apos;</span>, logName, <span clas
 <p>Run the above code with <code>node app.js</code>, and visit</p>
 <pre><code><span class="hljs-string">http:</span><span class="hljs-comment">//hostname.username.koding.io/Josh</span>
 </code></pre><p>And you&apos;ll see an html page, rendered from your awesome new Express app!</p>
-<p>And that&apos;s it! We&apos;ve gone through what express is, how to set it up, 
+<p>And that&apos;s it! We&apos;ve gone through what express is, how to set it up,
 routes, middleware, and finally templates. Thanks for reading!</p>
 
   </div>

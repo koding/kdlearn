@@ -46,11 +46,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?734" />
+    <link rel="stylesheet" href="/css/vendor.css?247" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?497" />
+    <link rel="stylesheet" href="/css/main.css?197" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?191" />
+    <link rel="stylesheet" href="/css/rwd.css?797" />
 	</head>
 	<body>
 
@@ -366,13 +366,13 @@ exit
 </code></pre><p>Unzip the downloaded file:</p>
 <pre><code>unzip Joomla_3.4.0-Stable-Full_Package.<span class="hljs-keyword">zip</span> -<span class="hljs-keyword">d</span> joomla
 </code></pre><p>All of the Joomla install files will now be extracted into a older named <code>joomla</code>.</p>
-<blockquote class="tip fa fa-info-circle"> <p>You can rename this folder afterwords anyway you like.</p>
+<blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>You can rename this folder afterwords anyway you like.</p>
  </blockquote><p>After the unzip has finished and the Joomla files are in the web directory, we need to modify some permissions to give access to the Joomla installer.</p>
 <p>First we need to create a Joomla configuration file and make it temporarily world-writeable:</p>
 <pre><code>cd joomla
 sudo touch configuration<span class="hljs-class">.php</span>
 sudo chmod <span class="hljs-number">777</span> configuration.php
-</code></pre><blockquote class="warning fa fa-exclamation-circle"> <p>After the installation is complete, we&apos;ll need to change the permissions back to 755.</p>
+</code></pre><blockquote class="alert fa fa-exclamation-circle"> <p><span class="label">alert</span>After the installation is complete, we&apos;ll need to change the permissions back to 755.</p>
  </blockquote><h2 class="heading"> <a name="step-3-finalizing-the-joomla-install" class="anchor" href="#step-3-finalizing-the-joomla-install"></a> Step 3 - Finalizing the Joomla install </h2><p>Open up a new browser tab and navigate to your VM&apos;s hostname and add <strong>/joomla</strong> at the end. If you don&apos;t know what you VM hostname is, follow <a href="http://learn.koding.com/faq/vm-hostname/">this guide</a> to find out.</p>
 <p>You should see the initial configuration page. It should look like this:</p>
 <p><img src="jm1.png" alt="Joomla 1"></p>

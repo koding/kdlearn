@@ -46,11 +46,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?702" />
+    <link rel="stylesheet" href="/css/vendor.css?242" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?324" />
+    <link rel="stylesheet" href="/css/main.css?961" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?153" />
+    <link rel="stylesheet" href="/css/rwd.css?638" />
 	</head>
 	<body>
 
@@ -355,7 +355,7 @@
 <pre><code><span class="hljs-operator"><span class="hljs-keyword">FLUSH</span> <span class="hljs-keyword">PRIVILEGES</span>;</span>
 
 exit
-</code></pre><blockquote class="tip fa fa-info-circle"> <p>Keep the database user and password somewhere safe because you&apos;ll need them later on in the install process.</p>
+</code></pre><blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>Keep the database user and password somewhere safe because you&apos;ll need them later on in the install process.</p>
  </blockquote><p>Restart the Apache and mySQL server to make sure everything is working properly:</p>
 <pre><code>sudo <span class="hljs-keyword">service</span> apache2 <span class="hljs-literal">restart</span>
 sudo <span class="hljs-keyword">service</span> mysql <span class="hljs-literal">restart</span>
@@ -366,12 +366,12 @@ wget <span class="hljs-symbol">http:</span>/<span class="hljs-regexp">/releases.
 <pre><code>tar zxvf mediawiki-<span class="hljs-number">1.24</span>.<span class="hljs-number">1</span><span class="hljs-class">.tar</span><span class="hljs-class">.gz</span>
 </code></pre><p>Rename the folder:</p>
 <pre><code><span class="hljs-title">mv</span> mediawiki-<span class="hljs-number">1</span>.<span class="hljs-number">24</span>.<span class="hljs-number">1</span> mediawiki
-</code></pre><blockquote class="tip fa fa-info-circle"> <p>You can rename this folder afterwords anyway you like.</p>
+</code></pre><blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>You can rename this folder afterwords anyway you like.</p>
  </blockquote><h2 class="heading"> <a name="finalizing-the-mediawiki-install" class="anchor" href="#finalizing-the-mediawiki-install"></a> Finalizing the MediaWiki install </h2><p>Open up a new browser tab and navigate to your VM&apos;s hostname and add <strong>/mediawiki</strong> at the end. If you don&apos;t know what you VM hostname is, follow <a href="http://learn.koding.com/faq/vm-hostname/">this guide</a> to find out.</p>
 <p>You should see the initial setup page. It should look like this:</p>
 <p><img src="mw1.png" alt="MediaWiki 1"></p>
 <p>Press the <strong>setup the wiki first</strong> button and now you&apos;ll just need to follow the instructions on screen and finish the install.</p>
-<p>At the very last step of the install process you&apos;ll need to download a file and place it&apos;s contents in your MediaWiki folder. </p>
+<p>At the very last step of the install process you&apos;ll need to download a file and place it&apos;s contents in your MediaWiki folder.</p>
 <p>Download the file, open it with your local editor and copy it&apos;s contents to a newly created file in your MediaWiki folder. You can use the following commands to achieve this:</p>
 <p>Create the file on your VM:</p>
 <pre><code><span class="hljs-title">touch</span> LocalSettings.php

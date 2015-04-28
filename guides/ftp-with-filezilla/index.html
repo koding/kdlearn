@@ -12,7 +12,7 @@
       <meta name="keywords" content="developer tools,file sync,ftp,file transfer">
     
 		<meta name="description" content="FileZilla is a popular FTP client and is widely used
-on Windows OS. It's extremely easy to use FileZilla to connect to your VM. This guide
+on Windows OS. It&amp;#39;s extremely easy to use FileZilla to connect to your VM. This guide
 will cover two methods of connecting:">
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
@@ -25,7 +25,7 @@ will cover two methods of connecting:">
     <!-- Don't have a secure url currently -->
 		<!--<meta property="og:image:secure_url" content="https://koding.com/a/images/logos/share_logo.png"/>-->
 		<meta property="og:description" content="FileZilla is a popular FTP client and is widely used
-on Windows OS. It's extremely easy to use FileZilla to connect to your VM. This guide
+on Windows OS. It&amp;#39;s extremely easy to use FileZilla to connect to your VM. This guide
 will cover two methods of connecting:"/>
 		<meta property="og:image:type" content="image/png">
 		<meta property="og:image:width" content="130"/>
@@ -39,7 +39,7 @@ will cover two methods of connecting:"/>
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:image" content="https://learn.koding.com/img/logo_150.png"/>
 		<meta name="twitter:description" content="FileZilla is a popular FTP client and is widely used
-on Windows OS. It's extremely easy to use FileZilla to connect to your VM. This guide
+on Windows OS. It&amp;#39;s extremely easy to use FileZilla to connect to your VM. This guide
 will cover two methods of connecting:"\>
 		<meta name="twitter:domain" content="learn.koding.com">
 
@@ -52,11 +52,11 @@ will cover two methods of connecting:"\>
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?839" />
+    <link rel="stylesheet" href="/css/vendor.css?212" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?513" />
+    <link rel="stylesheet" href="/css/main.css?872" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?207" />
+    <link rel="stylesheet" href="/css/rwd.css?776" />
 	</head>
 	<body>
 
@@ -314,7 +314,7 @@ will cover two methods of connecting:"\>
     <li class="author username">
        by <span rel="author">Team Koding</span>
     </li>
-    <li class="updated">Updated 2 days ago</li>
+    <li class="updated">Updated 3 days ago</li>
   </ul>
 
 
@@ -328,7 +328,7 @@ will cover two methods of connecting:</p>
 <li>Using general connection settings</li>
 <li>Using a secure connection</li>
 </ol>
-<blockquote class="error fa fa-exclamation-triangle"> <p>Before continuing, please ensure that FTP is set up and running on your VM. If you 
+<blockquote class="alert fa fa-exclamation-circle"> <p><span class="label">alert</span>Before continuing, please ensure that FTP is set up and running on your VM. If you
 have not yet set up FTP, follow the instructions on this <a href="http://learn.koding.com/guides/setting-up-ftp-on-koding/">guide</a> to set it up before
 proceeding.</p>
  </blockquote><h3 class="heading"> <a name="setting-up-a-generic-connection-to-your-koding-vm-using-filezilla-" class="anchor" href="#setting-up-a-generic-connection-to-your-koding-vm-using-filezilla-"></a> Setting up a generic connection to your Koding VM using FileZilla. </h3><p>As the images below show, its very easy to connect to your Koding VM using the standard
@@ -339,7 +339,7 @@ username and password that you created while setting up FTP on your VM.</p>
 private key(s) to the FileZilla application. You will also need to add your public key
 to the <code>authorized_keys</code> file on your VM. If you have not yet set up the
 <code>authorized_keys</code> file in your <code>.ssh</code> directory of your VM, then please <a href="http://learn.koding.com/guides/ssh-into-your-vm/#adding-to-your-authorized-keys">read this guide</a> before continuing.</p>
-<blockquote class="error fa fa-exclamation-triangle"> <p>Without setting up the above mentioned file, you will get
+<blockquote class="alert fa fa-exclamation-circle"> <p><span class="label">alert</span>Without setting up the above mentioned file, you will get
 connection errors when connecting over SFTP.</p>
  </blockquote><p>With your public key added to the <code>authorized_keys</code> file, you can now set up
 FileZilla with your <strong>private key</strong> and easily connect to your VM.</p>
@@ -349,7 +349,7 @@ shown in the image below.</p>
 <p>Once the file is accepted by FileZilla, you can go back to the host setup and change the settings
 to connect using SFTP (as shown in the image below).</p>
 <p><img src="filezilla4.png" alt="pic 4"></p>
-<h3 class="heading"> <a name="connection-errors-and-how-to-fix-them" class="anchor" href="#connection-errors-and-how-to-fix-them"></a> Connection errors and how to fix them </h3><p>If you get the error below while trying to connect, please check your public and private keys. 
+<h3 class="heading"> <a name="connection-errors-and-how-to-fix-them" class="anchor" href="#connection-errors-and-how-to-fix-them"></a> Connection errors and how to fix them </h3><p>If you get the error below while trying to connect, please check your public and private keys.
 SSH key setup is very tempramental and even an extra space or line break can render the keys useless
 which in turn will cause connection problems.</p>
 <pre><code><span class="hljs-attribute">Status</span>: <span class="hljs-string">Connecting to your_koding_username.koding.io...</span>

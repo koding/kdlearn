@@ -46,11 +46,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?677" />
+    <link rel="stylesheet" href="/css/vendor.css?308" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?288" />
+    <link rel="stylesheet" href="/css/main.css?621" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?538" />
+    <link rel="stylesheet" href="/css/rwd.css?853" />
 	</head>
 	<body>
 
@@ -316,9 +316,9 @@
 
   <div itemprop="articleBody">
     <p itemprop="about">This guide will cover the basics on how to get started with Github on you Koding VM using Ungit.</p>
-<h2 class="heading"> <a name="what-is-ungit-" class="anchor" href="#what-is-ungit-"></a> What is Ungit? </h2><p><a href="https://github.com/FredrikNoren/ungit">Ungit</a> is a web based interface for Github made by <a href="https://github.com/FredrikNoren">Fredrik Noren</a> that runs on any platform. It has a clean and intuitive UI that makes it easy to understand git. It runs on any platform that node.js &amp; git supports and it works well with GitHub. </p>
+<h2 class="heading"> <a name="what-is-ungit-" class="anchor" href="#what-is-ungit-"></a> What is Ungit? </h2><p><a href="https://github.com/FredrikNoren/ungit">Ungit</a> is a web based interface for Github made by <a href="https://github.com/FredrikNoren">Fredrik Noren</a> that runs on any platform. It has a clean and intuitive UI that makes it easy to understand git. It runs on any platform that node.js &amp; git supports and it works well with GitHub.</p>
 <h2 class="heading"> <a name="getting-started" class="anchor" href="#getting-started"></a> Getting started </h2><p>Before we begin please make sure you have the Koding Package Manager (KPM) installed on your VM. Follow <a href="http://learn.koding.com/kpm">this guide</a> to understand what KPM is and how to install it so you will be able to continue with this guide.</p>
-<h2 class="heading"> <a name="setup" class="anchor" href="#setup"></a> Setup </h2><blockquote class="success fa fa-check-circle"> <p><code>git</code> is installed by default with every Koding VM. So you will be able to get started right away.</p>
+<h2 class="heading"> <a name="setup" class="anchor" href="#setup"></a> Setup </h2><blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span><code>git</code> is installed by default with every Koding VM. So you will be able to get started right away.</p>
  </blockquote><p>Before you can get started with Github on your Koding VM you need to first setup the environment to be able to work properly with Github.</p>
 <p>You&apos;ll need to generate an SSH key that will be used to authenticate with Github. You can use the following command to generate one:</p>
 <pre><code>ssh-keygen -t rsa -<span class="hljs-keyword">C</span> <span class="hljs-string">&quot;your_email@example.com&quot;</span>
@@ -340,7 +340,7 @@ RRrOgQwre<span class="hljs-number">6</span>OAkgMvyV<span class="hljs-number">2</
 </code></pre><p>Copy that link and open it in a separate browser window. You should see something like this:</p>
 <p><img src="ungit1.png" alt="Using Githug 1"></p>
 <h2 class="heading"> <a name="basic-interaction" class="anchor" href="#basic-interaction"></a> Basic interaction </h2><p>In the top area of the screen, in the input box you will be able to input the path to a local existing repository on your Koding VM or start with a fresh empty one.</p>
-<blockquote class="warning fa fa-exclamation-circle"> <p>Please note that the input field has autocomplete</p>
+<blockquote class="alert fa fa-exclamation-circle"> <p><span class="label">alert</span>Please note that the input field has autocomplete</p>
  </blockquote><p>Start with a basic path like this one. Just make sure that folder exists before you input the path. If that folder doesn&#x2019;t exist then you will be able to create it using this interface.</p>
 <pre><code><span class="hljs-regexp">/home/y</span>our_koding_username<span class="hljs-regexp">/Web/</span>demo
 </code></pre><p>After that hit <strong>Enter || Return</strong></p>
@@ -364,9 +364,9 @@ RRrOgQwre<span class="hljs-number">6</span>OAkgMvyV<span class="hljs-number">2</
 <pre><code><span class="hljs-regexp">/home/y</span>our_koding_username<span class="hljs-regexp">/Web</span>
 </code></pre><p>Now you can clone any desired repository in this folder using this form:</p>
 <p><img src="ungit6.png" alt="Using Githug 6"></p>
-<p>Just copy the repository URL from Github, in the input field and then hit Clone repository. </p>
+<p>Just copy the repository URL from Github, in the input field and then hit Clone repository.</p>
 <p>Wait for the cloning process to finish and now you should see all the commit history and you are now able to work on that repository, perform commits, push changes, using the Koding IDE.</p>
-<blockquote class="warning fa fa-exclamation-circle"> <p>Whenever you turn on Koding VM you will have to run the <code>ungit</code> command to get this interface started.</p>
+<blockquote class="alert fa fa-exclamation-circle"> <p><span class="label">alert</span>Whenever you turn on Koding VM you will have to run the <code>ungit</code> command to get this interface started.</p>
  </blockquote><p>If you encounter any issues or have any questions please drop an email <a href="mailto:support@koding.com">here</a>.</p>
 
   </div>

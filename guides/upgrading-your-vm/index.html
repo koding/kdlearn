@@ -46,11 +46,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?347" />
+    <link rel="stylesheet" href="/css/vendor.css?946" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?194" />
+    <link rel="stylesheet" href="/css/main.css?510" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?224" />
+    <link rel="stylesheet" href="/css/rwd.css?32" />
 	</head>
 	<body>
 
@@ -322,7 +322,7 @@
 <li>Updating the distribution/OS (install newly released packages)</li>
 </ol>
 <p>So depending on your need, you can do 1) or 2) or both.</p>
-<blockquote class="warning fa fa-exclamation-circle"> <p>Even though we have tested upgrading the VM, some updates may render your VM inaccessible so please proceed only if you know what you are doing. If you run into problems, you can always re-init your VM or send us a request via <a href="mailto:support@koding.com">support@koding.com</a>.</p>
+<blockquote class="alert fa fa-exclamation-circle"> <p><span class="label">alert</span>Even though we have tested upgrading the VM, some updates may render your VM inaccessible so please proceed only if you know what you are doing. If you run into problems, you can always re-init your VM or send us a request via <a href="mailto:support@koding.com">support@koding.com</a>.</p>
  </blockquote><h3 class="heading"> <a name="a-few-prep-commands" class="anchor" href="#a-few-prep-commands"></a> A few prep commands </h3><p>To get started, log into your Koding account and check what version of the OS and Kernel that
 you currently have by typing the following command in Terminal:</p>
 <pre><code><span class="hljs-title">uname</span> -rv
@@ -347,7 +347,7 @@ space for all the updates. To get available disk space, type this command in Ter
 performed are against the latest levels available on the Ubuntu update servers.</p>
 <p>To update your package list, type the following command in Terminal:</p>
 <pre><code>sudo apt-<span class="hljs-built_in">get</span> <span class="hljs-keyword">update</span>
-</code></pre><blockquote class="warning fa fa-exclamation-circle"> <p>No software has been updated at this time, just the list of available packages has been updated.</p>
+</code></pre><blockquote class="alert fa fa-exclamation-circle"> <p><span class="label">alert</span>No software has been updated at this time, just the list of available packages has been updated.</p>
  </blockquote><h3 class="heading"> <a name="upgrading-existing-packages" class="anchor" href="#upgrading-existing-packages"></a> Upgrading existing packages </h3><p>These series of commands will update all <em>existing</em> packages. These will NOT install new packages.</p>
 <p>To update all currently installed packages  to their latest levels, issue the following command in
 Terminal:</p>
@@ -372,7 +372,7 @@ to &quot;ok&quot; and then press enter to continue.</p>
 <p>If all went well, you will end up on a screen that looks like this and the cursor is at the command
 prompt again:
 <img src="finish.png" alt="Finish"></p>
-<p>Congratulations! You have just finished upgrading your existing packages to their latest official 
+<p>Congratulations! You have just finished upgrading your existing packages to their latest official
 released levels. This will also include officially released security patches for all existing
 software packages.</p>
 <p>If you just wanted to update the  , you can stop now. If you also wish to update your Ubuntu distribution,
@@ -385,7 +385,7 @@ sure that you have re-checked the available disk space before proceeding.</p>
 if you encounter any screens that ask for overwriting existing files, please follow the recommendations
 from the previous section. Once done, you should see something like this:
 <img src="update-done.png" alt="update done"></p>
-<p>Now, let&apos;s reboot the VM. Open up the settings modal for your VM and toggle the on/off switch. Once 
+<p>Now, let&apos;s reboot the VM. Open up the settings modal for your VM and toggle the on/off switch. Once
 the VM turns off and you see the button to turn it on, go ahead and click it. This is necessary
 to ensure that the updated files are brought into use.</p>
 <p>Now if you type in the following command in Terminal:</p>
@@ -394,7 +394,7 @@ to ensure that the updated files are brought into use.</p>
 <pre><code>3<span class="hljs-class">.13</span><span class="hljs-class">.0-43-generic</span> <span class="hljs-id">#72-Ubuntu</span> <span class="hljs-tag">SMP</span> <span class="hljs-tag">Mon</span> <span class="hljs-tag">Dec</span> 8 19<span class="hljs-pseudo">:35</span><span class="hljs-pseudo">:06</span> <span class="hljs-tag">UTC</span> 2014
 </code></pre><p>note that the kernel version has updated. You&apos;ve just updated your VM to the latest Linux
 kernel!</p>
-<h3 class="heading"> <a name="if-something-goes-wrong" class="anchor" href="#if-something-goes-wrong"></a> If something goes wrong </h3><p>Your Koding VM can easily be reinitialized to our official version (the version you got when you 
+<h3 class="heading"> <a name="if-something-goes-wrong" class="anchor" href="#if-something-goes-wrong"></a> If something goes wrong </h3><p>Your Koding VM can easily be reinitialized to our official version (the version you got when you
 made a new Koding account) so if all these updates leave you with an unusable VM, try <a href="http://learn.koding.com/faq/vm-reinit/">reinitializing
 your VM back to its original state</a>.</p>
 
