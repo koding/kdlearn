@@ -70,10 +70,8 @@ markedRenderer.heading = (text, level) ->
 # ensure a new paragraph.
 markedRenderer.blockquote = (quote) ->
   quoteTypes =
-    "success": "success fa fa-check-circle"
-    "warning": "warning fa fa-exclamation-circle"
-    "error": "error fa fa-exclamation-triangle"
-    "tip": "tip fa fa-info-circle"
+    "tip": "tip fa fa-check-circle"
+    "alert": "alert fa fa-exclamation-circle"
 
   # Blocks is the final list of blockquotes that we're going to return
   blocks = []
@@ -96,7 +94,7 @@ markedRenderer.blockquote = (quote) ->
         block = block[quoteType.length+1...]
         # Add back the <p> that we stole, but ignore the type, since
         # we don't want that in the final quote for matches
-        block = "<p>" + block
+        block = "<p><span class='label'>" + quoteType + "</span>" + block
     # If there was no match for any quoteType, then add back the
     # <p>type: that we stole
     # Note that the zero index (0) wasn't actually split on the type,
