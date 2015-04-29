@@ -1,38 +1,38 @@
 [
   {
+    "title": "TogetherJS Setup and Usage for Beginners",
+    "url": "https://learn.koding.com/guides/togetherjs-setup-for-beginners/index.html",
+    "author": "Team Koding",
+    "date": "2015-04-29T00:00:00.000Z"
+  },
+  {
     "title": "Installing Apache Cordova",
     "url": "https://learn.koding.com/guides/installing-apache-cordova/index.html",
     "author": "Team Koding",
-    "date": "2014-11-04T00:00:00.000Z"
-  },
-  {
-    "title": "Getting Started with ExpressJS",
-    "url": "https://learn.koding.com/guides/getting-started-expressjs/index.html",
-    "author": "Team Koding",
-    "date": "2014-08-02T00:00:00.000Z"
+    "date": "2015-04-29T00:00:00.000Z"
   },
   {
     "title": "Getting Started with NodeJS",
     "url": "https://learn.koding.com/guides/getting-started-nodejs/index.html",
     "author": "Team Koding",
-    "date": "2014-08-01T00:00:00.000Z"
+    "date": "2015-04-29T00:00:00.000Z"
   },
   {
-    "title": "AngularJS Step-by-Step Setup",
-    "url": "https://learn.koding.com/guides/angularjs-step-by-step/index.html",
+    "title": "Getting Started with ExpressJS",
+    "url": "https://learn.koding.com/guides/getting-started-expressjs/index.html",
     "author": "Team Koding",
-    "date": "2014-03-09T00:00:00.000Z"
-  },
-  {
-    "title": "TogetherJS Setup and Usage for Beginners",
-    "url": "https://learn.koding.com/guides/togetherjs-setup-for-beginners/index.html",
-    "author": "Team Koding",
-    "date": "2014-03-05T00:00:00.000Z"
+    "date": "2015-04-29T00:00:00.000Z"
   },
   {
     "title": "EmberJS: A Starting Kit for Beginners",
     "url": "https://learn.koding.com/guides/emberjs-starting-kit/index.html",
     "author": "Team Koding",
-    "date": "2014-03-02T00:00:00.000Z"
+    "date": "2015-04-29T00:00:00.000Z"
+  },
+  {
+    "title": "AngularJS Step-by-Step Setup",
+    "url": "https://learn.koding.com/guides/angularjs-step-by-step/index.html",
+    "author": "Team Koding",
+    "date": "2015-04-29T00:00:00.000Z"
   }
 ]

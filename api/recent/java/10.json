@@ -1,26 +1,26 @@
 [
   {
-    "title": "Apache Tomcat on Koding",
-    "url": "https://learn.koding.com/guides/apache-tomcat-on-koding/index.html",
-    "author": "Vinay Jain",
-    "date": "2015-03-19T00:00:00.000Z"
-  },
-  {
     "title": "Hello World on Koding: Java",
     "url": "https://learn.koding.com/guides/hello-world/java/index.html",
     "author": "Team Koding",
-    "date": "2015-03-03T00:00:00.000Z"
-  },
-  {
-    "title": "Cassandra installation for beginners",
-    "url": "https://learn.koding.com/guides/cassandra-installation-beginners/index.html",
-    "author": "Team Koding",
-    "date": "2015-02-10T00:00:00.000Z"
+    "date": "2015-04-29T00:00:00.000Z"
   },
   {
     "title": "Getting Started with JSP and Maven",
     "url": "https://learn.koding.com/guides/getting-started-jsp-maven/index.html",
     "author": "Gregory Mihalik",
-    "date": "2015-01-15T00:00:00.000Z"
+    "date": "2015-04-29T00:00:00.000Z"
+  },
+  {
+    "title": "Cassandra installation for beginners",
+    "url": "https://learn.koding.com/guides/cassandra-installation-beginners/index.html",
+    "author": "Team Koding",
+    "date": "2015-04-29T00:00:00.000Z"
+  },
+  {
+    "title": "Apache Tomcat on Koding",
+    "url": "https://learn.koding.com/guides/apache-tomcat-on-koding/index.html",
+    "author": "Vinay Jain",
+    "date": "2015-04-29T00:00:00.000Z"
   }
 ]

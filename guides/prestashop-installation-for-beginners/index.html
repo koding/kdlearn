@@ -46,11 +46,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?777" />
+    <link rel="stylesheet" href="/css/vendor.css?686" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?856" />
+    <link rel="stylesheet" href="/css/main.css?109" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?10" />
+    <link rel="stylesheet" href="/css/rwd.css?312" />
 	</head>
 	<body>
 
@@ -259,11 +259,27 @@
     <ul>
     
       <li class="">
-        <a href="/guides/ftp-with-filezilla">Using FileZilla to connect to your Koding VM</a>
+        <a href="/guides/using-tmux-on-koding">Using Tmux on Koding</a>
       </li>
     
       <li class="">
-        <a href="/guides/what-happens-upon-upgrade">What happens upon upgrade?</a>
+        <a href="/guides/hello-world/python">Hello World on Koding: Python</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/hello-world/php">Hello World on Koding: PHP</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/hello-world/perl">Hello World on Koding: Perl</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/hello-world/java">Hello World on Koding: Java</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/hello-world/go">Hello World on Koding: Go</a>
       </li>
     
       <li class="">
@@ -271,23 +287,7 @@
       </li>
     
       <li class="">
-        <a href="/guides/setting-up-mosh-on-koding">Setting up MOSH on Koding.io</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/vm-asleep">Why is my Virtual Machine (VM) asleep?</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/permanent-shared-vm">How to share your VM with someone?</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/how-to-install-mediawiki">How to install MediaWiki</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/installing-pgcli">How to install pgcli</a>
+        <a href="/guides/hello-world/c">Hello World on Koding: C</a>
       </li>
     
     </ul>
@@ -308,7 +308,7 @@
     <li class="author username">
        by <span rel="author">Team Koding</span>
     </li>
-    <li class="updated">Updated a year ago</li>
+    <li class="updated">Updated 4 hours ago</li>
   </ul>
 
 
@@ -323,8 +323,8 @@
 <p>There are a lot of e-commerce solutions, but a there is one that stands out, PrestaShop. You may have heard of it, because it&apos;s all over the news. It&apos;s one of the most reliable and flexible Open-source e-commerce software out there and with a team of 70 developers and with a community that has more than 500.000 members, it sure is a platform worth developing for.</p>
 <p>Luckily you can do that on <a href="https://koding.com">Koding</a> with ease. So how do you setup a PrestaShop shop on <a href="https://koding.com">Koding</a>? You just follow the next few simple steps and you&apos;re good to go.</p>
 <h2 class="heading"> <a name="setting-up-prestashop" class="anchor" href="#setting-up-prestashop"></a> Setting up PrestaShop </h2><h3 class="heading"> <a name="step-1-" class="anchor" href="#step-1-"></a> Step 1. </h3><p>Open up a Terminal window in <a href="https://koding.com">Koding</a> and type the following commands to get you started. We navigate to our Web folder and then we try to get the latest version of PrestaShop available on their website. In this case PrestaShop 1.6.0.13</p>
-<pre><code><span class="hljs-title">cd</span> Web;
-<span class="hljs-title">wget</span> <span class="hljs-url">http://www.prestashop.com/download/prestashop_1.6.0.13.zip</span>;
+<pre><code><span class="hljs-tag">cd</span> <span class="hljs-tag">Web</span>;
+<span class="hljs-tag">wget</span> <span class="hljs-rule"><span class="hljs-attribute">http</span>:<span class="hljs-value">//www.prestashop.com/download/prestashop_1.<span class="hljs-number">6.0</span>.<span class="hljs-number">13</span>.zip</span></span>;
 </code></pre><h3 class="heading"> <a name="step-2-" class="anchor" href="#step-2-"></a> Step 2. </h3><p>We unzip the file.</p>
 <pre><code><span class="hljs-title">unzip</span> prestashop_1.<span class="hljs-number">6</span>.<span class="hljs-number">0</span>.<span class="hljs-number">13</span>.zip
 </code></pre><h3 class="heading"> <a name="step-3-" class="anchor" href="#step-3-"></a> Step 3. </h3><p>We can now head over to the setup page and begin the installation

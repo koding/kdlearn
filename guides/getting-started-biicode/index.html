@@ -52,11 +52,11 @@ how to build them in Makefiles or using the CMake build system."\>
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?330" />
+    <link rel="stylesheet" href="/css/vendor.css?169" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?531" />
+    <link rel="stylesheet" href="/css/main.css?823" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?903" />
+    <link rel="stylesheet" href="/css/rwd.css?34" />
 	</head>
 	<body>
 
@@ -265,11 +265,27 @@ how to build them in Makefiles or using the CMake build system."\>
     <ul>
     
       <li class="">
-        <a href="/guides/ftp-with-filezilla">Using FileZilla to connect to your Koding VM</a>
+        <a href="/guides/using-tmux-on-koding">Using Tmux on Koding</a>
       </li>
     
       <li class="">
-        <a href="/guides/what-happens-upon-upgrade">What happens upon upgrade?</a>
+        <a href="/guides/hello-world/python">Hello World on Koding: Python</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/hello-world/php">Hello World on Koding: PHP</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/hello-world/perl">Hello World on Koding: Perl</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/hello-world/java">Hello World on Koding: Java</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/hello-world/go">Hello World on Koding: Go</a>
       </li>
     
       <li class="">
@@ -277,23 +293,7 @@ how to build them in Makefiles or using the CMake build system."\>
       </li>
     
       <li class="">
-        <a href="/guides/setting-up-mosh-on-koding">Setting up MOSH on Koding.io</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/vm-asleep">Why is my Virtual Machine (VM) asleep?</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/permanent-shared-vm">How to share your VM with someone?</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/how-to-install-mediawiki">How to install MediaWiki</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/installing-pgcli">How to install pgcli</a>
+        <a href="/guides/hello-world/c">Hello World on Koding: C</a>
       </li>
     
     </ul>
@@ -317,7 +317,7 @@ how to build them in Makefiles or using the CMake build system."\>
             href="https://koding.com/drodri"
           >drodri</a> 
     </li>
-    <li class="updated">Updated 7 months ago</li>
+    <li class="updated">Updated 4 hours ago</li>
   </ul>
 
 
@@ -333,7 +333,7 @@ build files for your project.</p>
 <p>You can install it running from your <a href="https://koding.com/Terminal">terminal</a>:</p>
 <pre><code>$ wget http://apt.biicode.com/<span class="hljs-keyword">install</span>.sh &amp;&amp; chmod +x <span class="hljs-keyword">install</span>.sh &amp;&amp; ./<span class="hljs-keyword">install</span>.sh
 </code></pre><p>After it finish, you can run a helper command that install an updated version of CMake:</p>
-<pre><code>$ <span class="hljs-tag">bii</span> <span class="hljs-tag">setup</span><span class="hljs-pseudo">:cpp</span>
+<pre><code>$ <span class="hljs-tag">bii</span> <span class="hljs-rule"><span class="hljs-attribute">setup</span>:<span class="hljs-value">cpp</span></span>
 </code></pre><p>Lets build an application that computes the SHA1 of a string. Usually you dont want to write
 yourself such algorithm, but rather use an existing implementation.</p>
 <p>The following commands will create a project and a &quot;Hello world&quot; file, which you can build and
@@ -353,11 +353,11 @@ run:</p>
 
 <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
     CryptoPP::SHA1 sha1;
-    std::<span class="hljs-built_in">string</span> source = <span class="hljs-string">&quot;Hello&quot;</span>;
-    std::<span class="hljs-built_in">string</span> hash = <span class="hljs-string">&quot;&quot;</span>;
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> source = <span class="hljs-string">&quot;Hello&quot;</span>;
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> hash = <span class="hljs-string">&quot;&quot;</span>;
     CryptoPP::StringSource(source, <span class="hljs-keyword">true</span>, <span class="hljs-keyword">new</span> CryptoPP::HashFilter(sha1,
                             <span class="hljs-keyword">new</span> CryptoPP::HexEncoder(<span class="hljs-keyword">new</span> CryptoPP::StringSink(hash))));
-    std::<span class="hljs-built_in">cout</span> &lt;&lt; hash &lt;&lt; std::endl;
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">cout</span> &lt;&lt; hash &lt;&lt; <span class="hljs-built_in">std</span>::endl;
 }
 </code></pre><p>If you now try to build this example, it will fail. You can try to do so, and then check
 your dependencies:</p>
