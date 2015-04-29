@@ -11,8 +11,9 @@ VM even if you are not using your Koding.com account. This is very different fro
 real-time and sharing the IDE and Terminal.
 
 > type:tip
-> This feature is only available for accounts with a paid plan (hobbyist, developer or pro level).
-> Paid accounts can initiate the share however, the recipient can be a free account or a paid account.
+> This feature is only available for accounts with a paid plan (hobbyist, developer or professional).
+> Even though a paid account is required to start the sharing, a free account can receive a shared
+> VM.
 
 that as a paid plan owner, you can share your VM with another paid or free plan account.
 >
