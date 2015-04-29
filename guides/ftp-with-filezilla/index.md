@@ -16,7 +16,6 @@ will cover two methods of connecting:
 > proceeding.
 
 ### Setting up a generic connection to your Koding VM using FileZilla.
-
 As the images below show, its very easy to connect to your Koding VM using the standard
 username and password that you created while setting up FTP on your VM.
 
