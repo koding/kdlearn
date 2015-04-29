@@ -1,7 +1,6 @@
 ---
 title: How to change your command shell
 author: Team Koding
-date: 2014-11-19
 categories: [understanding vm, koding, shell]
 ---
 

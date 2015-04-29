@@ -1,7 +1,6 @@
 ---
 title: Using Tmux on Koding
 author: Team Koding
-date: 2014-05-13
 categories: [developer tools, koding, tmux]
 ---
 

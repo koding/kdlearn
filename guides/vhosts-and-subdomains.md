@@ -1,7 +1,6 @@
 ---
 title: Koding Subdomains and VHosts
 author: Team Koding
-date: 2014-11-03
 categories: [koding features, koding, apache]
 ---
 

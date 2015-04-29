@@ -1,7 +1,6 @@
 ---
 title: How to install GruntJS
 author: Team Koding
-date: 2015-01-20
 categories: [frameworks platforms, gruntjs]
 template: page.toffee
 ---

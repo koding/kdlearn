@@ -1,6 +1,5 @@
 ---
 author: Team Koding
-date: 2015-02-18
 description: Setup Cockpit on Koding
 categories: [developer tools, Cockpit]
 template: page.toffee

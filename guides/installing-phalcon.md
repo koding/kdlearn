@@ -2,7 +2,6 @@
 title: Installing Phalcon on Koding
 author: Jay
 username: aaaqqq
-date: 2014-06-27
 categories: [frameworks platforms, php]
 ---
 

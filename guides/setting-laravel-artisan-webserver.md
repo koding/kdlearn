@@ -1,7 +1,6 @@
 ---
 title: Setting up a Laravel webserver with Artisan
 author: Team Koding
-date: 2015-02-26
 categories: [frameworks platforms, laravel, artisan,php]
 template: page.toffee
 ---

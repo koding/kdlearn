@@ -1,7 +1,6 @@
 ---
 title: Python
 author: Team Koding
-date: 2015-03-04
 categories: [first program, hello world, python, koding]
 
 series: hello-world

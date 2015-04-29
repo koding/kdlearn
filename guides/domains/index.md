@@ -1,6 +1,5 @@
 ---
 author: Team Koding
-date: 2014-09-02
 categories: [understanding vm, koding, domain]
 ---
 

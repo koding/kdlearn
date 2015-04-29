@@ -1,7 +1,6 @@
 ---
 title: A guide to Docker
 author: Team Koding
-date: 2014-10-17
 categories: [frameworks platforms, docker]
 template: page.toffee
 ---

@@ -1,7 +1,6 @@
 ---
 author: Gregory Mihalik
 username: gmihalik
-date: 2015-01-15
 description: 'Getting Started with JSP and Maven'
 categories: [frameworks platforms, Java]
 ---
@@ -93,7 +92,6 @@ on the tomcat web-server.
 In this file you will see basic HTML markup with the message "Hello World!". 
 You can change this message and refresh your webpage in your browser and see the changes you made.
 
-Now lets add some JSP to this file. A simple example is to add the date:
 ```
 <html>
     <body>

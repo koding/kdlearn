@@ -1,7 +1,6 @@
 ---
 title: "EmberJS: A Starting Kit for Beginners"
 author: Team Koding
-date: 2014-03-02
 categories: [frameworks platforms, emberjs, javascript]
 
 template: page.toffee

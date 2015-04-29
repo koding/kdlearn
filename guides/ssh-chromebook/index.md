@@ -1,7 +1,6 @@
 ---
 title: Using SSH on a Chromebook to connect to your Koding VM
 author: Team Koding
-date: 2014-12-26
 categories: [koding features, ssh]
 ---
 

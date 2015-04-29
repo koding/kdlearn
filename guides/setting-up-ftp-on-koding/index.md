@@ -1,7 +1,6 @@
 ---
 title: Setting up FTP on Koding
 author: Team Koding
-date: 2014-09-15
 categories: [common questions, ftp, file transfer]
 ---
 

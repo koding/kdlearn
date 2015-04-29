@@ -1,6 +1,5 @@
 ---
 author: Team Koding
-date: 2014-08-9
 categories: [understanding vm, ssh]
 ---
 

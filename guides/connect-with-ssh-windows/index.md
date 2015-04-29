@@ -1,7 +1,6 @@
 ---
 title: Connect with SSH from Windows
 author: Team Koding
-date: 2015-03-11
 categories: [understanding vm, ssh, windows]
 template: page.toffee
 ---

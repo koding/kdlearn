@@ -1,6 +1,5 @@
 ---
 author: Team Koding
-date: 2014-07-30
 categories: [databases, koding, mysql]
 ---
 

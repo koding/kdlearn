@@ -1,6 +1,5 @@
 ---
 author: Team Koding
-date: 2014-05-30
 categories: [koding features, koding]
 
 hideSidebar: true

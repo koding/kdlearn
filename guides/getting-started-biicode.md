@@ -1,7 +1,6 @@
 ---
 author: drodri
 username: drodri
-date: 2014-10-02
 categories: [first program, C/C++]
 ---
 

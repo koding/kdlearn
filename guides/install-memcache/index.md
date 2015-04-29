@@ -1,7 +1,6 @@
 ---
 title: How to install Memcache
 author: Team Koding
-date: 2015-01-20
 categories: [databases, memcache, php, apache]
 template: page.toffee
 ---

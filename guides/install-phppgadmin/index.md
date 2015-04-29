@@ -1,7 +1,6 @@
 ---
 title: Install phpPgAdmin
 author: Team Koding
-date: 2015-01-19
 categories: [developer tools, phpPgAdmin, postgresql]
 template: page.toffee
 ---

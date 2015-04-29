@@ -2,7 +2,6 @@
 title: Installing the MEAN.io stack on Koding
 author: P1xt
 username: P1xt
-date: 2015-01-06
 categories: [frameworks platforms, node, angular, express, mongodb]
 ---
 

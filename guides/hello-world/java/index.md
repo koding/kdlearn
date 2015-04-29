@@ -1,7 +1,6 @@
 ---
 title: Java
 author: Team Koding
-date: 2015-03-03
 categories: [first program, hello world, java, koding]
 
 series: hello-world

@@ -1,7 +1,6 @@
 ---
 title: Setting up FTP with vsftpd
 author: Team Koding
-date: 2015-02-05
 categories: [developer tools, ftp, file transfer]
 ---
 

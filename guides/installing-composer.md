@@ -1,7 +1,6 @@
 ---
 title: How to install Composer
 author: Team Koding
-date: 2015-01-27
 categories: [frameworks platforms, composer, php]
 template: page.toffee
 ---

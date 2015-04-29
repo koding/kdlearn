@@ -1,7 +1,6 @@
 ---
 title: Installing PHP
 author: Team Koding
-date: 2014-08-06
 categories: [frameworks platforms, koding, php]
 
 template: page.toffee

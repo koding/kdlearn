@@ -2,7 +2,6 @@
 title: Webmin for Koding
 author: Mike Spick
 username: syntackz
-date: 2014-06-24
 categories: [developer tools, webmin]
 ---
 

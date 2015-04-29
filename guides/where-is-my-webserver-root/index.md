@@ -1,6 +1,5 @@
 ---
 author: Team Koding
-date: 2014-07-09
 categories: [common questions, apache, domain, koding]
 ---
 

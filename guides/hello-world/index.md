@@ -1,7 +1,6 @@
 ---
 title: Hello World on Koding
 author: Team Koding
-date: 2015-03-03
 categories: [first program, hello world, koding]
 
 series: hello-world

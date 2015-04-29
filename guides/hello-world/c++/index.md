@@ -1,7 +1,6 @@
 ---
 title: C++
 author: Team Koding
-date: 2015-04-24
 categories: [first program, hello world, c++, koding]
 
 series: hello-world

@@ -1,7 +1,6 @@
 ---
 title: Why is my Virtual Machine (VM) asleep?
 author: Team Koding
-date: 2015-04-17
 categories: [koding]
 
 template: page.toffee

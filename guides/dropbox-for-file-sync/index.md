@@ -1,6 +1,5 @@
 ---
 author: Team Koding
-date: 2015-01-15
 categories: [developer tools, koding, dropbox, file sync, file transfer]
 ---
 

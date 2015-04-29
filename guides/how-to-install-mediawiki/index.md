@@ -1,7 +1,6 @@
 ---
 title: How to install MediaWiki
 author: Team Koding
-date: 2015-03-24
 categories: [php,mediawiki]
 template: page.toffee
 ---

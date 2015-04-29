@@ -1,7 +1,6 @@
 ---
 title: How to install pgcli
 author: Team Koding
-date: 2015-03-24
 categories: [python]
 template: page.toffee
 ---

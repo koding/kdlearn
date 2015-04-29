@@ -1,7 +1,6 @@
 ---
 title: Cassandra installation for beginners
 author: Team Koding
-date: 2015-02-10
 categories: [frameworks platforms, cassandra,java,apache]
 template: page.toffee
 ---

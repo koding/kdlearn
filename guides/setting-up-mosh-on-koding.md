@@ -2,7 +2,6 @@
 title: Setting up MOSH on Koding.io
 author: Tushar Mathur
 username: tusharmathur
-date: 2015-04-19
 categories: [koding, mosh]
 template: page.toffee
 ---

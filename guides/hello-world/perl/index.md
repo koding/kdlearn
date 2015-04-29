@@ -1,7 +1,6 @@
 ---
 title: Perl
 author: Team Koding
-date: 2015-03-03
 categories: [first program, hello world, perl, koding]
 
 series: hello-world

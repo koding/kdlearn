@@ -1,7 +1,6 @@
 ---
 title: What happens upon upgrade?
 author: Team Koding
-date: 2015-04-24
 categories: [koding features, koding]
 
 improvable: false

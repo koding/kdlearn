@@ -1,6 +1,5 @@
 ---
 author: Team Koding
-date: 2015-02-18
 categories: [first program, ruby]
 ---
 

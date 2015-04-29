@@ -1,7 +1,6 @@
 ---
 title: How to install Joomla
 author: Team Koding
-date: 2015-03-20
 categories: [cms, joomla, php]
 template: page.toffee
 ---

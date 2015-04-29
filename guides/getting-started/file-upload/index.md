@@ -1,6 +1,5 @@
 ---
 author: Team Koding
-date: 2014-10-17
 categories: [koding features, koding, file transfer]
 
 hideSidebar: true

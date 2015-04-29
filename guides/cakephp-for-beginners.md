@@ -1,7 +1,6 @@
 ---
 title: CakePHP Installation for Beginners
 author: Team Koding
-date: 2014-04-01
 template: page.toffee
 categories: [frameworks platforms, php, cakephp]
 ---

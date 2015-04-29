@@ -1,7 +1,6 @@
 ---
 title: Using mySQL
 author: Alvin Wan
-date: 2015-01-08
 categories: [databases, koding, mysql]
 template: page.toffee
 ---

@@ -1,7 +1,6 @@
 ---
 title: Koding IDE Introduction
 author: Team Koding
-date: 2015-03-18
 categories: [koding features, koding]
 videoId: VdFt7N4Y2IA
 ---

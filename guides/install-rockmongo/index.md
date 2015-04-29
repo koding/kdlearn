@@ -1,7 +1,6 @@
 ---
 title: Install Rockmongo
 author: Thien
-date: 2015-01-2
 categories: [databases, rockmongo, mongo]
 ---
 

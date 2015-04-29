@@ -1,7 +1,6 @@
 ---
 title: Understanding the VM settings modal
 author: Team Koding
-date: 2014-11-03
 categories: [understanding-vm, koding features, koding]
 template: page.toffee
 ---

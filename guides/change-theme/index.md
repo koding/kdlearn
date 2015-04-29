@@ -1,6 +1,5 @@
 ---
 author: Team Koding
-date: 2014-10-28
 categories: [koding features, koding]
 ---
 

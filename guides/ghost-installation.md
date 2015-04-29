@@ -1,6 +1,5 @@
 ---
 author: Team Koding
-date: 2014-08-01
 categories: [cms, ghost, nodejs]
 ---
 

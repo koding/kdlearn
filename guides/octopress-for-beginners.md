@@ -1,7 +1,6 @@
 ---
 title: Octopress Installation for Beginners
 author: Team Koding
-date: 2014-04-13
 categories: [frameworks platforms, octopress, markdown]
 template: page.toffee
 ---

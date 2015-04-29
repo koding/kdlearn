@@ -1,7 +1,6 @@
 ---
 title: Setting up a MeteorJS webserver
 author: Team Koding
-date: 2015-02-26
 categories: [frameworks platforms, meteorjs]
 template: page.toffee
 ---

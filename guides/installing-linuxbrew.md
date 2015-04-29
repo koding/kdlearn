@@ -1,7 +1,6 @@
 ---
 title: Installing LinuxBrew
 author: Alvin Wan
-date: 2015-01-08
 categories: [frameworks platforms, brew]
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Getting Started
 author: Team Koding
-date: 2014-02-07
 categories: [common questions, koding]
 
 series: getting-started

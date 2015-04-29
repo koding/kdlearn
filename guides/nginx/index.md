@@ -1,6 +1,5 @@
 ---
 author: Team Koding
-date: 2014-07-31
 categories: [frameworks platforms, nginx]
 ---
 

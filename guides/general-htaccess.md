@@ -1,7 +1,6 @@
 ---
 title: General .htaccess
 author: Team Koding
-date: 2014-02-02
 categories: [understanding vm, apache]
 
 template: page.toffee

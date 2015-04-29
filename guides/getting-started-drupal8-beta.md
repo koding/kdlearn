@@ -1,7 +1,6 @@
 ---
 author: Nik LePage
 username: NikLP
-date: 2014-10-02
 categories: [cms, drupal]
 ---
 

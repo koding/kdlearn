@@ -1,7 +1,6 @@
 ---
 author: William
 username: willwac
-date: 2014-12-20
 description: 'Koding with Sublime Text'
 categories: [common questions, Sublime Text]
 ---
