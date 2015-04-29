@@ -73,7 +73,7 @@ And at the very bottom of the file you need to include the following line.
 Include /etc/phpmyadmin/apache.conf
 ```
 
-Save the file.
+Save the file by pressing `ctrl+o`
 
 One more thing that you need to do before you can see everything working is to enable the **mcrypt** extension. You can do that using the following command.
 
