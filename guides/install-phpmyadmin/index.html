@@ -46,11 +46,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?645" />
+    <link rel="stylesheet" href="/css/vendor.css?272" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?882" />
+    <link rel="stylesheet" href="/css/main.css?901" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?561" />
+    <link rel="stylesheet" href="/css/rwd.css?633" />
 	</head>
 	<body>
 
@@ -340,7 +340,7 @@
 <pre><code>sudo nano <span class="hljs-regexp">/etc/</span>apache2<span class="hljs-regexp">/apache2.conf</span>
 </code></pre><p>And at the very bottom of the file you need to include the following line.</p>
 <pre><code><span class="hljs-keyword">Include</span> <span class="hljs-regexp">/etc/</span>phpmyadmin<span class="hljs-regexp">/apache.conf</span>
-</code></pre><p>Save the file.</p>
+</code></pre><p>Save the file by pressing <code>ctrl+o</code></p>
 <p>One more thing that you need to do before you can see everything working is to enable the <strong>mcrypt</strong> extension. You can do that using the following command.</p>
 <pre><code><span class="hljs-title">sudo</span> php5enmod mcrypt
 </code></pre><h2 class="heading"> <a name="step-4" class="anchor" href="#step-4"></a> Step 4 </h2><p>Restart the Apache server using the following command and you should see everything working.</p>

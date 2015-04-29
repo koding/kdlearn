@@ -1865,7 +1865,7 @@ Last step is to confirm that password.
 sudo nano /etc/apache2/apache2.conf
 And at the very bottom of the file you need to include the following line.
 Include /etc/phpmyadmin/apache.conf
-Save the file.
+Save the file by pressing ctrl+o
 One more thing that you need to do before you can see everything working is to enable the mcrypt extension. You can do that using the following command.
 sudo php5enmod mcrypt
   Step 4 Restart the Apache server using the following command and you should see everything working.
