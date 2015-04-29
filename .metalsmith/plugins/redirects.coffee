@@ -24,8 +24,9 @@ module.exports = (opts={}) ->
       if not rSource? then return done()
       rDestination = redirects[rSource]
 
+      output = if rSource[0] is '/' then rSource[1..] else rSource
       pageOpts =
-        output: rSource
+        output: output
         metadata:
           template: opts.template
           source: rSource

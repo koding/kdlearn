@@ -134,7 +134,7 @@ addApiFiles = (files, metalsmith, opts={}, callback) ->
 
   # Now add our plain count apis
   for count, json of api
-    newFile files, "/api/popular/#{count}.json",
+    newFile files, "api/popular/#{count}.json",
       #JSON.stringify json
       # Temporarily pretty formatted
       JSON.stringify json, null, 2
@@ -153,7 +153,7 @@ addApiFiles = (files, metalsmith, opts={}, callback) ->
   # Now add the tag api to the files object
   for tagName, tApi of api
     for count, json of tApi
-      newFile files, "/api/popular/#{tagName}/#{count}.json",
+      newFile files, "api/popular/#{tagName}/#{count}.json",
         #JSON.stringify json
         # Temporarily pretty formatted
         JSON.stringify json, null, 2

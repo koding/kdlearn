@@ -65,7 +65,7 @@ module.exports = (opts={}) ->
 
     # Now add our plain count apis
     for count, json of api
-      newFile files, "/api/recent/#{count}.json",
+      newFile files, "api/recent/#{count}.json",
         #JSON.stringify json
         # Temporarily pretty formatted
         JSON.stringify json, null, 2
@@ -85,7 +85,7 @@ module.exports = (opts={}) ->
     # Now add the tag api to the files object
     for tagName, tApi of api
       for count, json of tApi
-        newFile files, "/api/recent/#{tagName}/#{count}.json",
+        newFile files, "api/recent/#{tagName}/#{count}.json",
           #JSON.stringify json
           # Temporarily pretty formatted
           JSON.stringify json, null, 2
