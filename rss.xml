@@ -18,60 +18,9 @@
   <language>en</language>
   
   <item>
-    <title>Hello World on Koding: C-Sharp (C#)</title>
-    <link>//learn.koding.com/guides/hello-world/c-sharp</link>
-    <pubDate>"2015-04-30T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/c-sharp</guid>
-    <author>Team Koding</author>
-    <description>  Introduction To run C# code on a Linux environment, you will need to use Mono. Mono is an open source implementation of Microsoft's .NET Framework based on the ECMA standards for C# and the Common Language Runtime. Mono is sponsored by Xamarin. Mono allows developers to build cross-platform applications with improved developer productivity. Find out more about Mono. 
-  Installing Mono The following instructions will install Mono and MonoDevelop on your Koding VM.
- alertBefore proceeding, make sure that you have at least 150MB free on your VM. You can check the 
-amount of free space you have by using the command: df -h. If you need to free up space, follow
-this guide.
- To install Mono, type this command in your Terminal:
-sudo apt-get install monodevelop mono-utils nunit -console -y
-The installation process will take a few minutes. Once it is done, you can verify that the Mono compiler was 
-successfully installed by using the following command:
-mcs --version
-the output should look something like:
-Mono C# compiler version 3.2.8.0
- tipthe version number above may be different in your case, that's quite ok.
-   Writing your first program in C Open up a new tab in the Koding IDE and type in the following code block:
-// &amp;quot;Hello World!&amp;quot; program in C#
-
-using System;
-
-namespace HelloWorld
-{
-    public class Hello
-    {
-        public static void Main ()
-        {
-            Console.WriteLine (&amp;quot;Hello World!&amp;quot;);
-        }
-    }
-}
-Save the file as hello.cs by using the &amp;quot;Save As..&amp;quot; option from the drop down menu available on the tab of this file
-in the IDE.
-Now to compile this program so that you can run it, type the following command in Terminal:
-mcs hello.cs
- tipmake sure you are in the same directory as the saved file when you execute the command above
-otherwise you may get a &amp;quot;file not found&amp;quot; error.
- The compiler will do its thing and create a new file called hello.exe which you can then run by typing
-this command in Terminal:
-mono hello.exe
-You should see the following output in the Terminal:
-Hello World!
-Congratulations, you have written your first C# program! 
-Now that Mono is installed and available on your VM, you can find plenty of C# tutorials on the Internet and try them out on your Koding VM. Remember one thing, since there is no graphical environment on your Koding VM, you should only write or practice C# programs that are NOT graphical. In other words, stick to writing C# applications that are command line only
-for now.
-</description>
-  </item>
-  
-  <item>
     <title>Koding Subdomains and VHosts</title>
     <link>//learn.koding.com/guides/vhosts-and-subdomains</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/vhosts-and-subdomains</guid>
     <author>Team Koding</author>
     <description>In this guide we'll go over setting up a Koding subdomain to point to a
@@ -160,9 +109,27 @@ Section here.
   </item>
   
   <item>
+    <title>Hello World on Koding: Python</title>
+    <link>//learn.koding.com/guides/hello-world/python</link>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/python</guid>
+    <author>Team Koding</author>
+    <description>  Introduction Python is a widely used general-purpose, high-level programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java. The language provides constructs intended to enable clear programs on both a small and large scale.
+  Implementation The first thing you need to do is to create a file called helloworld.py in your Koding VM and paste the bellow snippet into it.
+print &amp;quot;Hello World!&amp;quot;
+To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
+python helloworld.py
+  Explanation print &amp;quot;Hello World!&amp;quot;
+Since Python emphasizes code readability, the above line is pretty self explanatory. It will print out something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
+And that's it!
+You just wrote and ran your first Hello World in Python.
+</description>
+  </item>
+  
+  <item>
     <title>Hello World on Koding: PHP</title>
     <link>//learn.koding.com/guides/hello-world/php</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/hello-world/php</guid>
     <author>Team Koding</author>
     <description>  Introduction PHP is a server-side scripting language designed for web development but also used as a general-purpose programming language. PHP code can be simply mixed with HTML code, or it can be used in combination with various templating engines and web frameworks.
@@ -197,7 +164,7 @@ You just wrote and ran your first Hello World in PHP.
   <item>
     <title>Hello World on Koding: Perl</title>
     <link>//learn.koding.com/guides/hello-world/perl</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/hello-world/perl</guid>
     <author>Team Koding</author>
     <description>  Introduction Perl is a family of high-level, general-purpose, interpreted, dynamic programming languages. The Perl languages borrow features from other programming languages including C, shell scripting (sh) etc. They provide powerful text processing facilities without the arbitrary data-length limits of many contemporary Unix commandline tools, facilitating easy manipulation of text files.
@@ -228,7 +195,7 @@ You just wrote and ran your first Hello World in Perl.
   <item>
     <title>Hello World on Koding: Java</title>
     <link>//learn.koding.com/guides/hello-world/java</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/hello-world/java</guid>
     <author>Team Koding</author>
     <description>  Introduction Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.
@@ -266,7 +233,7 @@ If you'd like to continue dabbling in Java, we recommend taking a look at this t
   <item>
     <title>Hello World on Koding: Go</title>
     <link>//learn.koding.com/guides/hello-world/go</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/hello-world/go</guid>
     <author>Team Koding</author>
     <description>  Introduction Go or golang is a statically-typed language with syntax loosely derived from C, that adds garbage collection, type safety, some dynamic-typing capabilities, additional built-in types such as variable-length arrays and key-value maps, and a large standard library.
@@ -301,27 +268,60 @@ You just wrote and ran your first Hello World in Go.
   </item>
   
   <item>
-    <title>Hello World on Koding: Python</title>
-    <link>//learn.koding.com/guides/hello-world/python</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/python</guid>
+    <title>Hello World on Koding: C-Sharp (C#)</title>
+    <link>//learn.koding.com/guides/hello-world/c-sharp</link>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/c-sharp</guid>
     <author>Team Koding</author>
-    <description>  Introduction Python is a widely used general-purpose, high-level programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java. The language provides constructs intended to enable clear programs on both a small and large scale.
-  Implementation The first thing you need to do is to create a file called helloworld.py in your Koding VM and paste the bellow snippet into it.
-print &amp;quot;Hello World!&amp;quot;
-To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
-python helloworld.py
-  Explanation print &amp;quot;Hello World!&amp;quot;
-Since Python emphasizes code readability, the above line is pretty self explanatory. It will print out something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
-And that's it!
-You just wrote and ran your first Hello World in Python.
+    <description>  Introduction To run C# code on a Linux environment, you will need to use Mono. Mono is an open source implementation of Microsoft's .NET Framework based on the ECMA standards for C# and the Common Language Runtime. Mono is sponsored by Xamarin. Mono allows developers to build cross-platform applications with improved developer productivity. Find out more about Mono. 
+  Installing Mono The following instructions will install Mono and MonoDevelop on your Koding VM.
+ alertBefore proceeding, make sure that you have at least 150MB free on your VM. You can check the 
+amount of free space you have by using the command: df -h. If you need to free up space, follow
+this guide.
+ To install Mono, type this command in your Terminal:
+sudo apt-get install monodevelop mono-utils nunit -console -y
+The installation process will take a few minutes. Once it is done, you can verify that the Mono compiler was 
+successfully installed by using the following command:
+mcs --version
+the output should look something like:
+Mono C# compiler version 3.2.8.0
+ tipthe version number above may be different in your case, that's quite ok.
+   Writing your first program in C Open up a new tab in the Koding IDE and type in the following code block:
+// &amp;quot;Hello World!&amp;quot; program in C#
+
+using System;
+
+namespace HelloWorld
+{
+    public class Hello
+    {
+        public static void Main ()
+        {
+            Console.WriteLine (&amp;quot;Hello World!&amp;quot;);
+        }
+    }
+}
+Save the file as hello.cs by using the &amp;quot;Save As..&amp;quot; option from the drop down menu available on the tab of this file
+in the IDE.
+Now to compile this program so that you can run it, type the following command in Terminal:
+mcs hello.cs
+ tipmake sure you are in the same directory as the saved file when you execute the command above
+otherwise you may get a &amp;quot;file not found&amp;quot; error.
+ The compiler will do its thing and create a new file called hello.exe which you can then run by typing
+this command in Terminal:
+mono hello.exe
+You should see the following output in the Terminal:
+Hello World!
+Congratulations, you have written your first C# program! 
+Now that Mono is installed and available on your VM, you can find plenty of C# tutorials on the Internet and try them out on your Koding VM. Remember one thing, since there is no graphical environment on your Koding VM, you should only write or practice C# programs that are NOT graphical. In other words, stick to writing C# applications that are command line only
+for now.
 </description>
   </item>
   
   <item>
     <title>Hello World on Koding: C++</title>
     <link>//learn.koding.com/guides/hello-world/c++</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/hello-world/c++</guid>
     <author>Team Koding</author>
     <description>  Introduction C++ is a general-purpose programming language. It has imperative, object-oriented and generic programming features, while also providing the facilities for low-level memory manipulation.
@@ -354,7 +354,7 @@ You just wrote and ran your first Hello World in C++.
   <item>
     <title>Hello World on Koding: C</title>
     <link>//learn.koding.com/guides/hello-world/c</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/hello-world/c</guid>
     <author>Team Koding</author>
     <description>  Introduction C is a general-purpose, imperative computer programming language. As a language it supports structured programming, lexical variable scope and recursion, also having a static type system that prevents unintended operations is a major advantage.
@@ -387,7 +387,7 @@ You just wrote and ran your first Hello World in C.
   <item>
     <title>Hello World on Koding</title>
     <link>//learn.koding.com/guides/hello-world</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/hello-world</guid>
     <author>Team Koding</author>
     <description>In this Hello World series we'll go over some of the most popular programming languages and learn how to implement a simple Hello World script in each one of them.
@@ -399,7 +399,7 @@ As a challenge after you're done with the entire series have a go at this quiz a
   <item>
     <title>Getting Started: Workspaces</title>
     <link>//learn.koding.com/guides/getting-started/workspaces</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/getting-started/workspaces</guid>
     <author>Team Koding</author>
     <description>In this guide we'll go over what Koding Workspaces are, and how
@@ -448,7 +448,7 @@ delete any of your files in the process.
   <item>
     <title>Getting Started: The UI</title>
     <link>//learn.koding.com/guides/getting-started/the-ui</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/getting-started/the-ui</guid>
     <author>Team Koding</author>
     <description>In this guide we'll take a look at Koding's UI. We'll examine 
@@ -501,7 +501,7 @@ account to various services.
   <item>
     <title>Getting Started: File Uploads</title>
     <link>//learn.koding.com/guides/getting-started/file-upload</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/getting-started/file-upload</guid>
     <author>Team Koding</author>
     <description>In this guide we'll take a look at uploading your files and projects to
@@ -538,7 +538,7 @@ scp ~/my_image.png joshmurray.koding.io:~/my_image.png
   <item>
     <title>Getting Started: Editing Your Profile</title>
     <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
     <author>Team Koding</author>
     <description>Your Koding profile is your public information page on Koding. Currently
@@ -563,7 +563,7 @@ If you have one, Koding will use your Gravatar by default, but if you head over 
   <item>
     <title>Getting Started: The Activity Feed</title>
     <link>//learn.koding.com/guides/getting-started/activity-feed</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/getting-started/activity-feed</guid>
     <author>Team Koding</author>
     <description>The Activity Feed is the central location for discussion on Koding. A
@@ -609,7 +609,7 @@ to you.
   <item>
     <title>Getting Started</title>
     <link>//learn.koding.com/guides/getting-started</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/getting-started</guid>
     <author>Team Koding</author>
     <description>In this Getting Started series, lets go over some basic usage of Koding. We'll 
@@ -621,7 +621,7 @@ where everything is located in Koding.
   <item>
     <title>Where is my Web Server Root?</title>
     <link>//learn.koding.com/guides/where-is-my-webserver-root</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/where-is-my-webserver-root</guid>
     <author>Team Koding</author>
     <description>Koding VMs come with Apache preconfigured and serve a sample site to get you 
@@ -657,7 +657,7 @@ from the Web to develop and share your web applications. Happy Koding!
   <item>
     <title>A guide to Docker</title>
     <link>//learn.koding.com/guides/what-is-docker</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/what-is-docker</guid>
     <author>Team Koding</author>
     <description>Docker is a platform that helps developers build apps in whatever language they feel comfortable using and using any toolchain they want. Using Docker developers can build, ship and run distributed applications because it enables them to quickly put together an app by eliminating the stress between development, QA and production environments.
@@ -712,7 +712,7 @@ If you have any question or issues please email us at support@koding.com and we'
   <item>
     <title>What happens upon upgrade?</title>
     <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
     <author>Team Koding</author>
     <description>You just upgraded your account, awesome (and thanks!) but what happens now?
@@ -748,7 +748,7 @@ Click the icon to and you will be presented with the option to create a new VM. 
   <item>
     <title>What happened to 127.0.0.1?</title>
     <link>//learn.koding.com/guides/what-happened-to-127-0-0-1</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/what-happened-to-127-0-0-1</guid>
     <author>Team Koding</author>
     <description>Users who are new to Koding development are often confused about why they are 
@@ -801,7 +801,7 @@ certainly be different than what was used in this example.
   <item>
     <title>Webmin for Koding</title>
     <link>//learn.koding.com/guides/webmin-for-koding</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/webmin-for-koding</guid>
     <author>Mike Spick</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Webmin using just one command:
@@ -844,7 +844,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>Using Github with Koding</title>
     <link>//learn.koding.com/guides/using-github</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/using-github</guid>
     <author>Team Koding</author>
     <description>This guide will cover the basics on how to get started with Github on you Koding VM using Ungit.
@@ -906,7 +906,7 @@ Wait for the cloning process to finish and now you should see all the commit his
   <item>
     <title>What is Bitbucket?</title>
     <link>//learn.koding.com/guides/using-bitbucket-on-koding</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/using-bitbucket-on-koding</guid>
     <author>Team Koding</author>
     <description>Bitbucket provides Git and Mercurial hosting for teams.
@@ -944,7 +944,7 @@ As you can see, the codemirror folder exists. Thank you and have a wonderful Kod
   <item>
     <title>Updating the OS (and other packages) your VM</title>
     <link>//learn.koding.com/guides/upgrading-your-vm</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/upgrading-your-vm</guid>
     <author>Team Koding</author>
     <description>This guide will walk you through the process of upgrading the OS, Kernel and core packages on your Koding VM.
@@ -1035,7 +1035,7 @@ your VM back to its original state.
   <item>
     <title>Understanding the VM settings modal</title>
     <link>//learn.koding.com/guides/understanding-vm-panel</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/understanding-vm-panel</guid>
     <author>Team Koding</author>
     <description>  Understanding the VM settings modal This guide will explain the basics of the VM settings modal.
@@ -1068,7 +1068,7 @@ If you encounter any issues or have any questions regarding the VM settings moda
   <item>
     <title>Koding Terminal Introduction</title>
     <link>//learn.koding.com/guides/terminal-introduction</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/terminal-introduction</guid>
     <author>Team Koding</author>
     <description>In this guide we'll go over the Koding Terminal. We'll try to explain how it works, how to use it and in end share some useful tips that you can use to be more productive.
@@ -1128,7 +1128,7 @@ Explore it today and if you ever need help with the Terminal you can just click 
   <item>
     <title>Connect with SSH, from Unix</title>
     <link>//learn.koding.com/guides/ssh-into-your-vm</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/ssh-into-your-vm</guid>
     <author>Team Koding</author>
     <description>Connecting to your VM with SSH will allow you to use another Terminal,
@@ -1189,7 +1189,7 @@ ssh -vv joshmurray@unkk05c3f84e.joshmurray.koding.io
   <item>
     <title>Using SSH on a Chromebook to connect to your Koding VM</title>
     <link>//learn.koding.com/guides/ssh-chromebook</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/ssh-chromebook</guid>
     <author>Team Koding</author>
     <description>In this guide, we will cover how to set up ssh on your Chromebook. There are
@@ -1276,7 +1276,7 @@ Once you press enter, you should be dropped into your Koding VM!
   <item>
     <title>Setting up WebDav on Koding</title>
     <link>//learn.koding.com/guides/setting-up-webdav-on-koding</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/setting-up-webdav-on-koding</guid>
     <author>Team Koding</author>
     <description>This tutorial will cover the basics on how to set up WebDav on Koding and then connect to it using a Mac, Windows or Ubuntu machine. We already know how to set up FTP and SSH, but what about WebDav? Just follow the steps below.
@@ -1346,7 +1346,7 @@ That is all. If you have any issues setting up WebDav you can drop an email at s
   <item>
     <title>Setting up SFTP on Koding</title>
     <link>//learn.koding.com/guides/setting-up-sftp-on-koding</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/setting-up-sftp-on-koding</guid>
     <author>Team Koding</author>
     <description>In this guide you'll go over how to get your SFTP Client connected to your VM's SFTP Server. You will be using FileZilla as the SFTP Client, but any client should be able to connect to your SFTP Server successfully.
@@ -1406,7 +1406,7 @@ FileZilla Download
   <item>
     <title>Setting up FTP with vsftpd</title>
     <link>//learn.koding.com/guides/setting-up-ftp-with-vsftpd</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/setting-up-ftp-with-vsftpd</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install vsftpd using just one command:
@@ -1457,7 +1457,7 @@ FileZilla Download
   <item>
     <title>Setting up FTP on Koding</title>
     <link>//learn.koding.com/guides/setting-up-ftp-on-koding</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/setting-up-ftp-on-koding</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install FTP using just one command:
@@ -1493,7 +1493,7 @@ Connecting to your Koding VM using FileZilla
   <item>
     <title>Setup Cockpit on Koding</title>
     <link>//learn.koding.com/guides/setting-up-cockpit</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/setting-up-cockpit</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Cockpit using just one command:
@@ -1531,7 +1531,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>How to share your VM with someone?</title>
     <link>//learn.koding.com/guides/permanent-shared-vm</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/permanent-shared-vm</guid>
     <author>Team Koding</author>
     <description>  What does &amp;quot;Shared VM&amp;quot; mean? The &amp;quot;Share VM&amp;quot; feature allows you to give another Koding user full access to your
@@ -1569,7 +1569,7 @@ Click the VM settings for the shared VM and then select &amp;quot;Leave Shared V
   <item>
     <title>Installing Nginx</title>
     <link>//learn.koding.com/guides/nginx</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/nginx</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Nginx using just one command:
@@ -1629,7 +1629,7 @@ Web files. Enjoy!
   <item>
     <title>Installing Linux Dash</title>
     <link>//learn.koding.com/guides/linux-dash</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/linux-dash</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Linux Dash using just one command:
@@ -1665,7 +1665,7 @@ That's all there is to it! Enjoy!
   <item>
     <title>Koding with Sublime Text</title>
     <link>//learn.koding.com/guides/koding-with-sublime-text</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/koding-with-sublime-text</guid>
     <author>William</author>
     <description>This guide will show you how to connect your Koding VM with Sublime Text via SFTP.
@@ -1725,7 +1725,7 @@ And there you have it, a folder synced with your Koding VM.
   <item>
     <title>Install WordPress</title>
     <link>//learn.koding.com/guides/installing-wordpress</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/installing-wordpress</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install WordPress using just one command:
@@ -1826,7 +1826,7 @@ If you encounter any issues or have any questions regarding WordPress on Koding 
   <item>
     <title>Installing MySQL</title>
     <link>//learn.koding.com/guides/installing-mysql</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/installing-mysql</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way using the Koding Package Manager (kpm) and install mySQL using just one command:
@@ -1864,7 +1864,7 @@ That's it!
   <item>
     <title>Install Rockmongo</title>
     <link>//learn.koding.com/guides/install-rockmongo</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/install-rockmongo</guid>
     <author>Thien</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Rockmongo using just one command:
@@ -1899,7 +1899,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>Install phpPgAdmin</title>
     <link>//learn.koding.com/guides/install-phppgadmin</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/install-phppgadmin</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install phpPgAdmin using just one command:
@@ -1963,7 +1963,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>Install phpMyAdmin</title>
     <link>//learn.koding.com/guides/install-phpmyadmin</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/install-phpmyadmin</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install phpMyAdmin using just one command:
@@ -2007,7 +2007,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>How to install Memcache</title>
     <link>//learn.koding.com/guides/install-memcache</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/install-memcache</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Memcache using just one command:
@@ -2046,7 +2046,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>Koding IDE Introduction</title>
     <link>//learn.koding.com/guides/ide-introduction</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/ide-introduction</guid>
     <author>Team Koding</author>
     <description>In this guide we'll go over the Koding Integrated Development Environment or IDE for short. We'll try to explain how it works, how to use it and in the end share some useful tips that you can use to be more productive.
@@ -2099,7 +2099,7 @@ Explore it today and if you ever need help with the IDE you can just click on th
   <item>
     <title>How to install MediaWiki</title>
     <link>//learn.koding.com/guides/how-to-install-mediawiki</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/how-to-install-mediawiki</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install MediaWiki using just one command:
@@ -2173,7 +2173,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>How to install Joomla</title>
     <link>//learn.koding.com/guides/how-to-install-joomla</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/how-to-install-joomla</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Joomla using just one command:
@@ -2249,7 +2249,7 @@ If you encounter any issues or have any questions regarding Joomla on Koding you
   <item>
     <title>Getting started with Jenkins</title>
     <link>//learn.koding.com/guides/getting-started-jenkins</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/getting-started-jenkins</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Jenkins using just one command:
@@ -2290,7 +2290,7 @@ If you have any question or issues please email us at support@koding.com and we'
   <item>
     <title>Using FileZilla to connect to your Koding VM</title>
     <link>//learn.koding.com/guides/ftp-with-filezilla</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/ftp-with-filezilla</guid>
     <author>Team Koding</author>
     <description>FileZilla is a popular FTP client and is widely used
@@ -2337,7 +2337,7 @@ Error: Could not connect to server
   <item>
     <title>Making your VM secure using Ubuntu UFW (Uncomplicated Firewall)</title>
     <link>//learn.koding.com/guides/enable-ufw</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/enable-ufw</guid>
     <author>Team Koding</author>
     <description> alertYou should follow the steps in this guide to its entirety otherwise if you enable the firewall and don't finish
@@ -2419,7 +2419,7 @@ encounter any issues or have any questions please drop an email here.
   <item>
     <title>Drupal Setup and Installation for Beginners</title>
     <link>//learn.koding.com/guides/drupal-setup-installation-beginners</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/drupal-setup-installation-beginners</guid>
     <author>Thien</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Drupal using just one command:
@@ -2533,7 +2533,7 @@ This has been a beginner guide from Koding. As always, more Quick Tips and begin
   <item>
     <title>Using Dropbox with Koding</title>
     <link>//learn.koding.com/guides/dropbox-for-file-sync</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/dropbox-for-file-sync</guid>
     <author>Team Koding</author>
     <description>In this guide we'll walk you through how to set up Dropbox right on your Koding VM for a seamless sync experience between your local system and your Koding VM. Dropbox has built a best-in-class file sync and storage service.
@@ -2567,7 +2567,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>Custom Domains with your Koding VM</title>
     <link>//learn.koding.com/guides/domains</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/domains</guid>
     <author>Team Koding</author>
     <description>Koding VMs support custom domains as long as your domain provider
@@ -2607,7 +2607,7 @@ Page.
   <item>
     <title>Connect with SSH from Windows</title>
     <link>//learn.koding.com/guides/connect-with-ssh-windows</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/connect-with-ssh-windows</guid>
     <author>Team Koding</author>
     <description>Connecting to your VM with SSH will allow you to use another Terminal, outside
@@ -2678,7 +2678,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>How can I do real-time collaboration on Koding?</title>
     <link>//learn.koding.com/guides/collaboration</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/collaboration</guid>
     <author>Team Koding</author>
     <description> alertThis guide is not complete as the Collaboration feature is still under development. If you run into any
@@ -2729,7 +2729,7 @@ to reconnect otherwise at the end of a minute, all sessions are auto-terminated.
   <item>
     <title>Changing your IDE and Terminal themes</title>
     <link>//learn.koding.com/guides/change-theme</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/change-theme</guid>
     <author>Team Koding</author>
     <description>Changing your IDE and Terminal theme is very easy. Not everyone likes the default colors
@@ -2745,7 +2745,7 @@ Enjoy your new theme!
   <item>
     <title>What is Koding?</title>
     <link>//learn.koding.com/guides/what-is-koding</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/what-is-koding</guid>
     <author>Team Koding</author>
     <description>Koding is an online cloud-based development environment with the goal of 
@@ -2804,7 +2804,7 @@ include an Always-On VM. Just be aware of the design goals.
   <item>
     <title>VNC Startup Guide</title>
     <link>//learn.koding.com/guides/vnc-startup-guide</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/vnc-startup-guide</guid>
     <author>Kaitlyn Schmidt</author>
     <description>or How to Develop and Run Client GUI Applications with Koding and noVNC
@@ -2935,7 +2935,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>Koding Virtual Machines Introduction</title>
     <link>//learn.koding.com/guides/vm-introduction</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/vm-introduction</guid>
     <author>Team Koding</author>
     <description></description>
@@ -2944,7 +2944,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>Why is my Virtual Machine (VM) asleep?</title>
     <link>//learn.koding.com/guides/vm-asleep</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/vm-asleep</guid>
     <author>Team Koding</author>
     <description>  Why does my Virtual Machine (VM) appear as asleep when I visit it on a browser? There are two main reasons for this:
@@ -2969,7 +2969,7 @@ If you have tried the above and are still having issues, please send us a note
   <item>
     <title>Hello World on Koding: Ruby</title>
     <link>//learn.koding.com/guides/hello-world/ruby</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/hello-world/ruby</guid>
     <author>Team Koding</author>
     <description>  Introduction Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, and Lisp. It supports multiple programming paradigms, including functional, object-oriented, and imperative. It also has a dynamic type system and automatic memory management.
@@ -2991,7 +2991,7 @@ You just wrote and ran your first Hello World in Ruby.
   <item>
     <title>Using Tmux on Koding</title>
     <link>//learn.koding.com/guides/using-tmux-on-koding</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/using-tmux-on-koding</guid>
     <author>Team Koding</author>
     <description>In this Tmux FAQ we will address an issue people have had with Tmux on Koding. It's easy to deal with, but not an obvious workaround.
@@ -3007,7 +3007,7 @@ Where C-a is Control key. This sets it to Control-a, a popular alternative for T
   <item>
     <title>Using mySQL</title>
     <link>//learn.koding.com/guides/using-mysql</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/using-mysql</guid>
     <author>Alvin Wan</author>
     <description>mySQL offers a popular implementation of the SQL language. This guide will get you started on using mySQL on Koding.
@@ -3053,7 +3053,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>Updating Node.js on your VM</title>
     <link>//learn.koding.com/guides/updating-nodejs-on-your-vm</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/updating-nodejs-on-your-vm</guid>
     <author>Darryl Dias</author>
     <description>Your Koding VM is powered by Ubuntu 14.04; by default your Koding VM comes pre-installed with Node 0.10.26, the current stable version of Node.js available in the official Ubuntu repository. We can update to the latest stable version of Node.js available for Ubuntu 14.04 by adding the official Node.js PPA to our local sources list and running a dist-upgrade to switch to the latest stable version.
@@ -3083,7 +3083,7 @@ Now you have the latest stable version of Node.js installed on your VM.
   <item>
     <title>Understanding file permissions</title>
     <link>//learn.koding.com/guides/understanding-file-permissions</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/understanding-file-permissions</guid>
     <author>Team Koding</author>
     <description>Linux-based systems, Ubuntu beeing one of them, have a simple system for managing individual file permissions, The Unix concepts for file ownership and permissions are the main driving force behind Linux and it's security at the file system level.
@@ -3190,7 +3190,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>TogetherJS Setup and Usage for Beginners</title>
     <link>//learn.koding.com/guides/togetherjs-setup-for-beginners</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/togetherjs-setup-for-beginners</guid>
     <author>Team Koding</author>
     <description>In this article we will go over beginner steps for TogetherJS.
@@ -3203,7 +3203,7 @@ And just like that, we have a static page with text chat, voice chat, and mouse 
   <item>
     <title>Sync files using Google Drive</title>
     <link>//learn.koding.com/guides/sync-files-google-drive</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/sync-files-google-drive</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and start synchronizing your files using Google Drive with just one command:
@@ -3233,7 +3233,7 @@ man cron
   <item>
     <title>How to setup an SSH Tunnel in Unix</title>
     <link>//learn.koding.com/guides/ssh-tunneling</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/ssh-tunneling</guid>
     <author>Team Koding</author>
     <description>In this guide we'll go over what SSH Tunneling is, what it's used for, 
@@ -3274,7 +3274,7 @@ your localhost with your MySQL Client!
   <item>
     <title>Setting up MOSH on Koding.io</title>
     <link>//learn.koding.com/guides/setting-up-mosh-on-koding</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/setting-up-mosh-on-koding</guid>
     <author>Tushar Mathur</author>
     <description>Using a remote server for development is so much cooler for obvious reasons. Using MOSH on top of it naturally makes the experience much better.
@@ -3312,7 +3312,7 @@ That's it, you are done.
   <item>
     <title>Setting up a Tornado webserver</title>
     <link>//learn.koding.com/guides/setting-tornado-webserver</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/setting-tornado-webserver</guid>
     <author>Team Koding</author>
     <description>  Getting started Before you can start the Tornado install process, you'll need to update all of the apt-get packages:
@@ -3351,7 +3351,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>Setting up a Symfony2 webserver</title>
     <link>//learn.koding.com/guides/setting-symfony2-webserver</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/setting-symfony2-webserver</guid>
     <author>Team Koding</author>
     <description>  Getting started Before you can start the Symfony2 install process, you'll need to update all of the apt-get packages:
@@ -3383,7 +3383,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>Setting up a Rails webserver</title>
     <link>//learn.koding.com/guides/setting-rails-webserver</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/setting-rails-webserver</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Rails using just one command:
@@ -3412,7 +3412,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>Setting up a MeteorJS webserver</title>
     <link>//learn.koding.com/guides/setting-meteorjs-webserver</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/setting-meteorjs-webserver</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install MeteorJS using just one command:
@@ -3442,7 +3442,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>Setting up a Laravel webserver with Artisan</title>
     <link>//learn.koding.com/guides/setting-laravel-artisan-webserver</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/setting-laravel-artisan-webserver</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Laravel using just one command:
@@ -3475,7 +3475,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>Setting up a Django webserver</title>
     <link>//learn.koding.com/guides/setting-django-webserver</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/setting-django-webserver</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Django using just one command:
@@ -3505,7 +3505,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>PyroCMS Setup and Installation for Beginners</title>
     <link>//learn.koding.com/guides/pyrocms-installation-for-beginners</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/pyrocms-installation-for-beginners</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install PyroCMS using just one command:
@@ -3531,7 +3531,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>PrestaShop Installation for Beginners</title>
     <link>//learn.koding.com/guides/prestashop-installation-for-beginners</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/prestashop-installation-for-beginners</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Prestashop using just one command:
@@ -3558,7 +3558,7 @@ And that's it, three simple steps to set up your e-commerce solution. As always,
   <item>
     <title>Using PostgreSQL</title>
     <link>//learn.koding.com/guides/postgresql-on-koding</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/postgresql-on-koding</guid>
     <author>Federico Ponzi</author>
     <description>PostgreSQL is an open source relational database management system that 
@@ -3615,7 +3615,7 @@ Have fun!
   <item>
     <title>Octopress Installation for Beginners</title>
     <link>//learn.koding.com/guides/octopress-for-beginners</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/octopress-for-beginners</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Octopress using just one command:
@@ -3648,7 +3648,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>Markdown Basics, for Koding</title>
     <link>//learn.koding.com/guides/markdown</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/markdown</guid>
     <author>Team Koding</author>
     <description>Markdown is a simple language whose syntax can be easily converted into HTML.Koding, like many other sites, use Markdown as a way for users to easily style 
@@ -3721,7 +3721,7 @@ prepend your list items with a number, instead of a hyphen. Example:
   <item>
     <title>Installing PostgreSQL</title>
     <link>//learn.koding.com/guides/installing-postgresql</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/installing-postgresql</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install PostgreSQL using just one command:
@@ -3748,7 +3748,7 @@ guide.
   <item>
     <title>Installing PHP</title>
     <link>//learn.koding.com/guides/installing-php</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/installing-php</guid>
     <author>Team Koding</author>
     <description>To install the latest version of PHP, use these commands in the Terminal:
@@ -3764,7 +3764,7 @@ That is all!
   <item>
     <title>Installing Phalcon on Koding</title>
     <link>//learn.koding.com/guides/installing-phalcon</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/installing-phalcon</guid>
     <author>Jay</author>
     <description>This article will cover the process of installing and setting up Phalcon in your Koding environment.
@@ -3806,7 +3806,7 @@ If you can see this section, it means that Phalcon has been installed on your ma
   <item>
     <title>How to install pgcli</title>
     <link>//learn.koding.com/guides/installing-pgcli</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/installing-pgcli</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install pgcli using just one command:
@@ -3833,7 +3833,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>Installing the MEAN.io stack on Koding</title>
     <link>//learn.koding.com/guides/installing-mean-io</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/installing-mean-io</guid>
     <author>P1xt</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install MEAN or MEAN.io stack using just one command:
@@ -3876,7 +3876,7 @@ Where YOURID is replaced with your actual koding id.
   <item>
     <title>Installing LinuxBrew</title>
     <link>//learn.koding.com/guides/installing-linuxbrew</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/installing-linuxbrew</guid>
     <author>Alvin Wan</author>
     <description>There are a variety of package installers to help with what would otherwise be complex installations. Follow these instructions to install HomeBrew for Linux.
@@ -3889,7 +3889,7 @@ From here, you'll be poised for yet more installations. See their website for mo
   <item>
     <title>How to install GruntJS</title>
     <link>//learn.koding.com/guides/installing-gruntjs</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/installing-gruntjs</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install GruntJS using just one command:
@@ -3918,7 +3918,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>How to install Composer</title>
     <link>//learn.koding.com/guides/installing-composer</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/installing-composer</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Composer using just one command:
@@ -3952,7 +3952,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>Installing Apache Cordova</title>
     <link>//learn.koding.com/guides/installing-apache-cordova</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/installing-apache-cordova</guid>
     <author>Team Koding</author>
     <description>This guide will cover the basics on how to get Apache Cordova installed on your Koding VM.
@@ -4002,7 +4002,7 @@ If you encounter any issues or have any questions regarding Apache Cordova on Ko
   <item>
     <title>How to install Redis</title>
     <link>//learn.koding.com/guides/install-redis</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/install-redis</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Redis using just one command:
@@ -4050,7 +4050,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>Installing MongoDB</title>
     <link>//learn.koding.com/guides/install-mongodb</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/install-mongodb</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install MongoDB using just one command:
@@ -4080,7 +4080,7 @@ sudo service mongodb restart
   <item>
     <title>Getting started with Git</title>
     <link>//learn.koding.com/guides/git</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/git</guid>
     <author>Team Koding</author>
     <description>Git has become an integral part of the modern software development cycle. As per Wikipedia, Git
@@ -4092,7 +4092,7 @@ Several tutorials exist on the Internet that teach you the basics of Git. A simp
   <item>
     <title>Ghost Blog Installation</title>
     <link>//learn.koding.com/guides/ghost-installation</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/ghost-installation</guid>
     <author>Team Koding</author>
     <description>In this article we will go over the installation process for the awesome
@@ -4165,7 +4165,7 @@ Happy Blogging!
   <item>
     <title>Getting Started with Ruby</title>
     <link>//learn.koding.com/guides/getting-started-ruby</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/getting-started-ruby</guid>
     <author>Team Koding</author>
     <description>In this guide we'll explain what Ruby is, and how to write a simple web
@@ -4305,7 +4305,7 @@ out the Official Documentation. And as always, Happy Koding!
   <item>
     <title>Getting Started with Python</title>
     <link>//learn.koding.com/guides/getting-started-python</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/getting-started-python</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide make sure you have PIP installed. You can use the Koding Package Manager (kpm) and install PIP using just one command:
@@ -4481,7 +4481,7 @@ This concludes the getting started with Python guide. Thanks for reading!
   <item>
     <title>Getting Started with NodeJS</title>
     <link>//learn.koding.com/guides/getting-started-nodejs</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/getting-started-nodejs</guid>
     <author>Team Koding</author>
     <description>In this guide we'll go over explaining what NodeJS is, what it can do, 
@@ -4614,7 +4614,7 @@ fun with Node!
   <item>
     <title>Getting started with the Koding Package Manager</title>
     <link>//learn.koding.com/guides/getting-started-kpm</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/getting-started-kpm</guid>
     <author>Team Koding</author>
     <description>Koding Package Manager (kpm) is a command line tool that we have set up to make it easy for you to install (and soon remove) your favorite packages like WordPress, Mongodb, Laravel, etc. KPM takes care of measuring disk space requirements, analyzing dependencies and installing all required packages to bring you a running system. It's the easiest way to get up and running with your favorite technology or package. KPM also replaces the older generation KDApps (most of which were installers).
@@ -4683,7 +4683,7 @@ If we are missing any packages and frameworks that you would like KPM to be able
   <item>
     <title>Getting Started with JSP and Maven</title>
     <link>//learn.koding.com/guides/getting-started-jsp-maven</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/getting-started-jsp-maven</guid>
     <author>Gregory Mihalik</author>
     <description>In this guide we'll take a look on how to set up and deploy a JavaServer Pages (JSP) website using Maven and Tomcat on your Koding VM. 
@@ -4767,7 +4767,7 @@ Good luck with your further Java web development and happy coding!
   <item>
     <title>Getting Started with ExpressJS</title>
     <link>//learn.koding.com/guides/getting-started-expressjs</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/getting-started-expressjs</guid>
     <author>Team Koding</author>
     <description>In this guide we will go over basic usage of the NodeJS web framework,
@@ -4957,7 +4957,7 @@ routes, middleware, and finally templates. Thanks for reading!
   <item>
     <title>Getting started with Drupal 8 (Prerelease)</title>
     <link>//learn.koding.com/guides/getting-started-drupal8-beta</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/getting-started-drupal8-beta</guid>
     <author>Nik LePage</author>
     <description>A quick rundown of how to setup a development environment for checking out the new Drupal 8 releases.
@@ -5019,7 +5019,7 @@ chmod 0775 files
   <item>
     <title>Getting Started with C and C++</title>
     <link>//learn.koding.com/guides/getting-started-c-cpp</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/getting-started-c-cpp</guid>
     <author>drodri</author>
     <description>In this guide we'll introducing C and C++ and how to build your first programs
@@ -5076,7 +5076,7 @@ existing code easily.
   <item>
     <title>Building C / C++ applications with biicode</title>
     <link>//learn.koding.com/guides/getting-started-biicode</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/getting-started-biicode</guid>
     <author>drodri</author>
     <description>Building larger applications can be somewhat difficult and cumbersome to the newbie.
@@ -5133,7 +5133,7 @@ examples
   <item>
     <title>General .htaccess</title>
     <link>//learn.koding.com/guides/general-htaccess</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/general-htaccess</guid>
     <author>Team Koding</author>
     <description>Htaccess is a pretty well understood and standard feature among web hosts. Koding's .htaccess is no different than any other, so the plethora of tutorials and information out there will work perfectly fine on Koding.
@@ -5164,7 +5164,7 @@ http://my.name.is.username.koding.io. Yay!
   <item>
     <title>How to free up space on a Koding VM</title>
     <link>//learn.koding.com/guides/freeing-up-space</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/freeing-up-space</guid>
     <author>Team Koding</author>
     <description>This tutorial will cover some basic steps and advanced that will help you clear space on your VM by deleting software packages that you don't need or use.
@@ -5196,7 +5196,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>Enable PHP mail() function</title>
     <link>//learn.koding.com/guides/enable-php-mail-function</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/enable-php-mail-function</guid>
     <author>Team Koding</author>
     <description>This short guide will cover how to enable the mail() function in PHP.
@@ -5212,7 +5212,7 @@ That's it! You can now use the mail() function in your PHP app.
   <item>
     <title>EmberJS: A Starting Kit for Beginners</title>
     <link>//learn.koding.com/guides/emberjs-starting-kit</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/emberjs-starting-kit</guid>
     <author>Team Koding</author>
     <description>Ambitious applications are the future. The way we interact with a web application will impact our productivity. That's why in this short tutorial we are going to cover some of the basics of EmberJS.
@@ -5251,7 +5251,7 @@ from Koding coming soon, so stay tuned!
   <item>
     <title>Elixir on Koding</title>
     <link>//learn.koding.com/guides/elixir-on-koding</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/elixir-on-koding</guid>
     <author>Antoine Proulx</author>
     <description>This tutorial will show you how to install Elixir on your Koding VM and then how to update it when a new version is available.
@@ -5321,7 +5321,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>Elasticsearch install for beginners</title>
     <link>//learn.koding.com/guides/elasticsearch-install-for-beginners</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/elasticsearch-install-for-beginners</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Elasticsearch using just one command:
@@ -5371,7 +5371,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>CouchDB installation for beginners</title>
     <link>//learn.koding.com/guides/couchdb-installation-for-beginners</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/couchdb-installation-for-beginners</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install CouchDB using just one command:
@@ -5400,7 +5400,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>Codeigniter Installation for Beginners</title>
     <link>//learn.koding.com/guides/codeigniter-for-beginners</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/codeigniter-for-beginners</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Codeigniter using just one command:
@@ -5428,7 +5428,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>Koding Chat Introduction</title>
     <link>//learn.koding.com/guides/chat-introduction</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/chat-introduction</guid>
     <author>Team Koding</author>
     <description></description>
@@ -5437,7 +5437,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>How to change your command shell</title>
     <link>//learn.koding.com/guides/change-shell</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/change-shell</guid>
     <author>Team Koding</author>
     <description>Koding VMs, by default, come with bash as the default command shell. There are several alternatives
@@ -5459,7 +5459,7 @@ That's it. Next time you open a new Terminal, it should be running the new comma
   <item>
     <title>Cassandra installation for beginners</title>
     <link>//learn.koding.com/guides/cassandra-installation-beginners</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/cassandra-installation-beginners</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Cassandra using just one command:
@@ -5510,7 +5510,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>CakePHP Installation for Beginners</title>
     <link>//learn.koding.com/guides/cakephp-for-beginners</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/cakephp-for-beginners</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install CakePHP using just one command:
@@ -5547,7 +5547,7 @@ If you encounter any issues or have any questions please drop an email here.
   <item>
     <title>Apache Tomcat on Koding</title>
     <link>//learn.koding.com/guides/apache-tomcat-on-koding</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/apache-tomcat-on-koding</guid>
     <author>Vinay Jain</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Tomcat using just one command:
@@ -5589,7 +5589,7 @@ If you encounter any issues or have any questions please drop an email here
   <item>
     <title>AngularJS Step-by-Step Setup</title>
     <link>//learn.koding.com/guides/angularjs-step-by-step</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-30T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/angularjs-step-by-step</guid>
     <author>Team Koding</author>
     <description>This article is all about AngularJS and how to get you started with it on 
@@ -5997,7 +5997,7 @@ installation of Koding University.
   <item>
     <title>What is Koding?</title>
     <link>//learn.koding.com/faq/what-is-koding</link>
-    <pubDate>"2015-04-28T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-02-06T08:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/faq/what-is-koding</guid>
     <author></author>
     <description>Koding is a robust and feature rich cloud-based development environment complete with free VMs, an attractive IDE and sudo level terminal access. Your ideal software development playground!
@@ -6010,7 +6010,7 @@ Signing up is easy and free! Leave your localhost behind and step into the futur
   <item>
     <title>How do I ask for support?</title>
     <link>//learn.koding.com/faq/support</link>
-    <pubDate>"2015-04-28T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-02-06T08:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/faq/support</guid>
     <author></author>
     <description>If your question is not answered on Koding University, feel free to send us a support request.
@@ -6026,7 +6026,7 @@ Requests for new guides can be sent here
   <item>
     <title>How can I earn &amp; claim additional storage space through referrals?</title>
     <link>//learn.koding.com/faq/redeem-referrals</link>
-    <pubDate>"2015-04-28T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-28T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/faq/redeem-referrals</guid>
     <author></author>
     <description>  Earning free referral space You can earn up to 500MB per referral on Koding. Earning referrals is as easy as
@@ -6065,7 +6065,7 @@ your existing disk and add all or some of your earned storage.
   <item>
     <title>How do I reset my password?</title>
     <link>//learn.koding.com/faq/reset-password</link>
-    <pubDate>"2015-04-28T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-28T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/faq/reset-password</guid>
     <author></author>
     <description>  How do I reset the password for my Koding account? To reset your password, head over to Account Settings. The password change
@@ -6089,7 +6089,7 @@ Google+, etc. or you can use the new password to log in. Both will work.
   <item>
     <title>Should I use my VM's IP or Address?</title>
     <link>//learn.koding.com/faq/vm-ip-vs-address</link>
-    <pubDate>"2015-04-28T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-28T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/faq/vm-ip-vs-address</guid>
     <author></author>
     <description>Koding gives you access to your VMs IP, as well as an Address that
@@ -6106,7 +6106,7 @@ IP changes, so this is what you usually want to use.
   <item>
     <title>Can I change my Koding username?</title>
     <link>//learn.koding.com/faq/change-username</link>
-    <pubDate>"2015-04-28T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-27T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/faq/change-username</guid>
     <author></author>
     <description>In short no. Sorry :(
@@ -6119,7 +6119,7 @@ So to be clear , you may change your display name at any time but this does not 
   <item>
     <title>How can I delete my account?</title>
     <link>//learn.koding.com/faq/delete-account</link>
-    <pubDate>"2015-04-28T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-28T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/faq/delete-account</guid>
     <author></author>
     <description>You do not have to contact Koding support if you wish to delete your account. Simply head over to Account Settings from where you can easily initiate the deletion process.
@@ -6130,7 +6130,7 @@ It would help us immensly if you can take the short survey presented on the acco
   <item>
     <title>How can I close the VM panel/sidebar to get more screen space?</title>
     <link>//learn.koding.com/faq/sidebar-collapse</link>
-    <pubDate>"2015-04-28T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-28T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/faq/sidebar-collapse</guid>
     <author></author>
     <description>Our computer screens come in all shapes and sizes and if you don't have a high res screen,
@@ -6149,7 +6149,7 @@ They cannot be collapsed when in Channels or Messages.
   <item>
     <title>How can I reset my VM back to its original state?</title>
     <link>//learn.koding.com/faq/vm-reinit</link>
-    <pubDate>"2015-04-28T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-28T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/faq/vm-reinit</guid>
     <author></author>
     <description>Sometimes, after you're installed a slew of software and things have started to conflict,
@@ -6177,7 +6177,7 @@ Once you initiate a reinit, you will see appropriate messages on the screen as y
   <item>
     <title>What is my sudo/root password?</title>
     <link>//learn.koding.com/faq/sudo-password</link>
-    <pubDate>"2015-04-28T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-28T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/faq/sudo-password</guid>
     <author></author>
     <description>To switch to the root user on your VM, simply type in:
@@ -6198,7 +6198,7 @@ using the sudo command from that point on.
   <item>
     <title>How do turn off my my Koding VM?</title>
     <link>//learn.koding.com/faq/vm-poweroff</link>
-    <pubDate>"2015-04-28T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-28T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/faq/vm-poweroff</guid>
     <author></author>
     <description>To turn off your VM, we recommend that you use the power on/off toggle in the VM settings modal. This ensures that all internal API calls are triggered and all Koding services are aware that you have powered down your VM.
@@ -6220,7 +6220,7 @@ We don't recommend using sudo poweroff or sudo shutdown to power down your VM as
   <item>
     <title>Guidelines to keep in mind when sharing on Koding's Activity Feed.</title>
     <link>//learn.koding.com/faq/posting-guidelines</link>
-    <pubDate>"2015-04-28T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-28T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/faq/posting-guidelines</guid>
     <author></author>
     <description>  A few basic rules: 
@@ -6252,7 +6252,7 @@ For HTML, CSS and JS: JSFiddle
   <item>
     <title>Are inactive accounts cleaned up?</title>
     <link>//learn.koding.com/faq/inactive-vms</link>
-    <pubDate>"2015-04-28T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-28T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/faq/inactive-vms</guid>
     <author></author>
     <description>  How does Koding ensure that the platform is scalable and performant for all users? We perodically clean up VMs of inactive accounts to ensure that the dormat resources
@@ -6279,7 +6279,7 @@ you can reclaim the referral space.
   <item>
     <title>What ports are open on my Koding VM?</title>
     <link>//learn.koding.com/faq/open-ports</link>
-    <pubDate>"2015-04-28T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-03-04T08:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/faq/open-ports</guid>
     <author></author>
     <description>Most Unix ports are available on Koding VMs. We do not block any TCP traffic
@@ -6296,7 +6296,7 @@ Ports 2 through 1,024 require sudo access.
   <item>
     <title>How do I transfer/copy files to and from my VM?</title>
     <link>//learn.koding.com/faq/transfer-files</link>
-    <pubDate>"2015-04-28T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-03-11T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/faq/transfer-files</guid>
     <author></author>
     <description>  I want to copy a few files Getting a few files to your Koding VM is simple and there are a variety of methods. We've put together a short video titled Importing your files in the Video's section of Koding University. Check that out for a simple drag-drop method to upload a few files.
@@ -6314,7 +6314,7 @@ Find out more about your VM hostname here.
   <item>
     <title>What is my VM Hostname/Address/Domain Name?</title>
     <link>//learn.koding.com/faq/vm-hostname</link>
-    <pubDate>"2015-04-28T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-04-28T07:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/faq/vm-hostname</guid>
     <author></author>
     <description>The system assigned name for your VM is available on VM settings modal under the label: Assigned URL.
@@ -6347,7 +6347,7 @@ deleting a sub-domain is as easy as adding one!
   <item>
     <title>MySQL Socket Error 2002</title>
     <link>//learn.koding.com/faq/mysql-socket-error-2002</link>
-    <pubDate>"2015-04-28T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-03-04T08:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/faq/mysql-socket-error-2002</guid>
     <author></author>
     <description>If you try to use MySQL and receive an error that looks similar to the
