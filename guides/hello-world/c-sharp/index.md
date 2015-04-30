@@ -1,7 +1,7 @@
 ---
 title: C-Sharp (C#)
 author: Team Koding
-categories: [first program, hello world, C#, koding]
+categories: [first program, hello world, C-Sharp, koding]
 
 series: hello-world
 series-index: 9
