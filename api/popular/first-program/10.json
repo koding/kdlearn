@@ -12,8 +12,8 @@
     "date": "2015-04-29T00:00:00.000Z"
   },
   {
-    "title": "Hello World on Koding: PHP",
-    "url": "http://learn.koding.com/guides/hello-world/php/index.html",
+    "title": "Hello World on Koding: C++",
+    "url": "http://learn.koding.com/guides/hello-world/c++/index.html",
     "author": "Team Koding",
     "date": "2015-04-29T00:00:00.000Z"
   },
@@ -36,6 +36,12 @@
     "date": "2015-04-29T00:00:00.000Z"
   },
   {
+    "title": "Hello World on Koding: C-Sharp (C#)",
+    "url": "http://learn.koding.com/guides/hello-world/c-sharp/index.html",
+    "author": "Team Koding",
+    "date": "2015-04-30T00:00:00.000Z"
+  },
+  {
     "title": "Hello World on Koding: Python",
     "url": "http://learn.koding.com/guides/hello-world/python/index.html",
     "author": "Team Koding",
@@ -50,12 +56,6 @@
   {
     "title": "Hello World on Koding",
     "url": "http://learn.koding.com/guides/hello-world/index.html",
-    "author": "Team Koding",
-    "date": "2015-04-29T00:00:00.000Z"
-  },
-  {
-    "title": "Getting Started with Ruby",
-    "url": "http://learn.koding.com/guides/getting-started-ruby/index.html",
     "author": "Team Koding",
     "date": "2015-04-29T00:00:00.000Z"
   }

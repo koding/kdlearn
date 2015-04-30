@@ -18,36 +18,144 @@
   <language>en</language>
   
   <item>
-    <title>Using Tmux on Koding</title>
-    <link>//learn.koding.com/guides/using-tmux-on-koding</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/using-tmux-on-koding</guid>
+    <title>Hello World on Koding: C-Sharp (C#)</title>
+    <link>//learn.koding.com/guides/hello-world/c-sharp</link>
+    <pubDate>"2015-04-30T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/c-sharp</guid>
     <author>Team Koding</author>
-    <description>In this Tmux FAQ we will address an issue people have had with Tmux on Koding. It's easy to deal with, but not an obvious workaround.
-  Odd Behavior When you first try and install and run tmux on Koding, it seems to load properly, but many commands just don't seem to work. Some, like C-b c (used to create a new window) even force close the Terminal. What is going on?
-Well, Koding uses GNU Screen to help reconnect your Terminal sessions after connection issues. Koding's preconfigured Screen is set to use C-b as it's own prefix key. So when you run and use Tmux, and attempt to use C-b commands, you are actually sending commands to Screen. This explains the general odd behavior, as things like C-b c in Screen mean &amp;quot;close&amp;quot;, so you unintentionally logout of screen and close your Terminal.
-  The Solution The solution is quite simple, rebind your Tmux Prefix key. This can be done by creating a ~/.tmux.conf file and placing the following command into it:
-set-option -g prefix C-a
-Where C-a is Control key. This sets it to Control-a, a popular alternative for Tmux users (and the traditional Screen PREFIX). You can of course bind it to whatever you want. Once you have your PREFIX rebound, killall tmux instances and reopen, and it will run just like you expect.. just remember to use Control-a as your PREFIX :)
-  But i love C-b! Unfortunately, this is the way it has to be for now. A guru developer over at Koding did mention that they would like to make their version of screen not use any keybinds, so that it does not block your input at all. So, think of this alternate bind as a short-term workaround, until this &amp;quot;issue&amp;quot; is resolved.
+    <description>  Introduction To run C# code on a Linux environment, you will need to use Mono. Mono is an open source implementation of Microsoft's .NET Framework based on the ECMA standards for C# and the Common Language Runtime. Mono is sponsored by Xamarin. Mono allows developers to build cross-platform applications with improved developer productivity. Find out more about Mono. 
+  Installing Mono The following instructions will install Mono and MonoDevelop on your Koding VM.
+ alertBefore proceeding, make sure that you have at least 150MB free on your VM. You can check the 
+amount of free space you have by using the command: df -h. If you need to free up space, follow
+this guide.
+ To install Mono, type this command in your Terminal:
+sudo apt-get install monodevelop mono-utils nunit -console -y
+The installation process will take a few minutes. Once it is done, you can verify that the Mono compiler was 
+successfully installed by using the following command:
+mcs --version
+the output should look something like:
+Mono C# compiler version 3.2.8.0
+ tipthe version number above may be different in your case, that's quite ok.
+   Writing your first program in C Open up a new tab in the Koding IDE and type in the following code block:
+// &amp;quot;Hello World!&amp;quot; program in C#
+
+using System;
+
+namespace HelloWorld
+{
+    public class Hello
+    {
+        public static void Main ()
+        {
+            Console.WriteLine (&amp;quot;Hello World!&amp;quot;);
+        }
+    }
+}
+Save the file as hello.cs by using the &amp;quot;Save As..&amp;quot; option from the drop down menu available on the tab of this file
+in the IDE.
+Now to compile this program so that you can run it, type the following command in Terminal:
+mcs hello.cs
+ tipmake sure you are in the same directory as the saved file when you execute the command above
+otherwise you may get a &amp;quot;file not found&amp;quot; error.
+ The compiler will do its thing and create a new file called hello.exe which you can then run by typing
+this command in Terminal:
+mono hello.exe
+You should see the following output in the Terminal:
+Hello World!
+Congratulations, you have written your first C# program! 
+Now that Mono is installed and available on your VM, you can find plenty of C# tutorials on the Internet and try them out on your Koding VM. Remember one thing, since there is no graphical environment on your Koding VM, you should only write or practice C# programs that are NOT graphical. In other words, stick to writing C# applications that are command line only
+for now.
 </description>
   </item>
   
   <item>
-    <title>Hello World on Koding: Python</title>
-    <link>//learn.koding.com/guides/hello-world/python</link>
+    <title>Koding Subdomains and VHosts</title>
+    <link>//learn.koding.com/guides/vhosts-and-subdomains</link>
     <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/python</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/vhosts-and-subdomains</guid>
     <author>Team Koding</author>
-    <description>  Introduction Python is a widely used general-purpose, high-level programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java. The language provides constructs intended to enable clear programs on both a small and large scale.
-  Implementation The first thing you need to do is to create a file called helloworld.py in your Koding VM and paste the bellow snippet into it.
-print &amp;quot;Hello World!&amp;quot;
-To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
-python helloworld.py
-  Explanation print &amp;quot;Hello World!&amp;quot;
-Since Python emphasizes code readability, the above line is pretty self explanatory. It will print out something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
-And that's it!
-You just wrote and ran your first Hello World in Python.
+    <description>In this guide we'll go over setting up a Koding subdomain to point to a
+directory of your choice.
+  Creating Subdomains To create a subdomain, refer to the Subdomain Section
+here
+  Creating a Virtual Host First, run the following command, where mysubdomain is the name of your subdomain.
+sudo touch /etc/apache2/sites-available/mysubdomain.conf
+
+Next, open the above file with nano, vim, or whatever command line
+editor you prefer. We're using a command line editor, because files
+located in /etc/apache2/sites-available are owned by root, and
+require sudo.
+If you used nano, your command should look like this:
+sudo nano /etc/apache2/sites-available/mysubdomain.conf
+
+Now that you have the file open with your preferred editor, paste in the
+following code:
+&amp;lt;Virtualhost *:80&amp;gt;
+  ServerName mysubdomain.username.koding.io
+  DocumentRoot /var/www/myDirectory
+&amp;lt;/Virtualhost&amp;gt;
+
+There are a two things you're going to have to change here, so lets go over them.
+
+ServerName: The value of ServerName should be your full subdomain
+url, without the http.
+
+DocumentRoot: This is the folder location that you want the
+subdomain to direct to. Remember that /var/www equals ~/Web, so in
+the given example, /var/www/myDirectory equals ~/Web/myDirectory.
+
+
+&amp;lt;Virtualhost *:80&amp;gt;
+  ServerName hello.joshmurray.koding.io
+  DocumentRoot /var/www/helloworld
+&amp;lt;/Virtualhost&amp;gt;
+
+ alertThe DocumentRoot has to be an absolute path. Relative directories such as /var/www/../foo and ~/MyDirectory will not work.  If you would like to supply an directory outside of ~/Web, use your full home path, eg: /home/joshmurray/myNotWebDirectory
+   Enable the Subdomain Lastly, we need to add our &amp;quot;site&amp;quot; and reload apache. Run the following
+two commands, replacing mysubdomain with the name of your subdomain.
+sudo a2ensite mysubdomain
+sudo service apache2 reload
+
+  Confirming To confirm you did all the steps completely, connect to
+http://mysubdomain.username.koding.io and you should see whatever you
+have in your directory of choice.
+  Troubleshooting   Apache 404 If you see a plain white page saying &amp;quot;Not Found&amp;quot; with mentions of
+Apache and Ubuntu, then Apache is correctly loading a directory, but the
+directory is empty. Confirm that your DocumentRoot is a correct, and an
+absolute directory.
+  Forbidden By default, Apache is configured to not allow access to directories
+outside of /var/www. So, if you link to an absolute directory outside
+of /var/www, such as /home/joshmurray/hello, you may see a message
+similar to the following.
+You do not have permission to access / on this server.
+To resolve this, you can use the &amp;lt;Directory&amp;gt; directive inside of your
+VirtualHost directive from above. Example:
+&amp;lt;Virtualhost *:80&amp;gt;
+  ServerName hello.joshmurray.koding.io
+  DocumentRoot /home/joshmurray/hello
+  &amp;lt;Directory /home/joshmurray/hello/&amp;gt;
+    Options Indexes FollowSymLinks
+    AllowOverride None
+    Require all granted
+  &amp;lt;/Directory&amp;gt;
+&amp;lt;/Virtualhost&amp;gt;
+
+Afterwards, don't forget to reload Apache, with the following command.
+sudo service apache2 reload
+
+Important: It is recommended that you review the Directory directive
+documentation,
+as there are security implications to allowing directory access, that you
+should understand.
+  I don't have a Subdomain If you do not already have a Subdomain, you need to create one with the
+same name that you used in your Virtual Host
+configuration.
+To do this, from Koding navigate to your IDE window and go to your VM
+Settings. This will appear as little circle next to your VM Name in the
+left sidebar of Koding. From the settings menu, Click &amp;quot;More&amp;quot;, and add any
+subdomains that you need.
+For a more indepth explanation of this process, refer to the Subdomain
+Section here.
 </description>
   </item>
   
@@ -189,6 +297,24 @@ fmt.Println(&amp;quot;Hello World&amp;quot;)
 This statement is made of three pieces. First you access another function inside of the fmt package called Println (that's the fmt.Println piece, Println means Print Line). Then you create a new string that contains Hello World and call that function with the string as the first and only argument.
 And that's it!
 You just wrote and ran your first Hello World in Go.
+</description>
+  </item>
+  
+  <item>
+    <title>Hello World on Koding: Python</title>
+    <link>//learn.koding.com/guides/hello-world/python</link>
+    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/python</guid>
+    <author>Team Koding</author>
+    <description>  Introduction Python is a widely used general-purpose, high-level programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java. The language provides constructs intended to enable clear programs on both a small and large scale.
+  Implementation The first thing you need to do is to create a file called helloworld.py in your Koding VM and paste the bellow snippet into it.
+print &amp;quot;Hello World!&amp;quot;
+To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
+python helloworld.py
+  Explanation print &amp;quot;Hello World!&amp;quot;
+Since Python emphasizes code readability, the above line is pretty self explanatory. It will print out something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
+And that's it!
+You just wrote and ran your first Hello World in Python.
 </description>
   </item>
   
@@ -2841,97 +2967,6 @@ If you have tried the above and are still having issues, please send us a note
   </item>
   
   <item>
-    <title>Koding Subdomains and VHosts</title>
-    <link>//learn.koding.com/guides/vhosts-and-subdomains</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/vhosts-and-subdomains</guid>
-    <author>Team Koding</author>
-    <description>In this guide we'll go over setting up a Koding subdomain to point to a
-directory of your choice.
-  Creating Subdomains To create a subdomain, refer to the Subdomain Section
-here
-  Creating a Virtual Host First, run the following command, where mysubdomain is the name of your subdomain.
-sudo touch /etc/apache2/sites-available/mysubdomain.conf
-
-Next, open the above file with nano, vim, or whatever command line
-editor you prefer. We're using a command line editor, because files
-located in /etc/apache2/sites-available are owned by root, and
-require sudo.
-If you used nano, your command should look like this:
-sudo nano /etc/apache2/sites-available/mysubdomain.conf
-
-Now that you have the file open with your preferred editor, paste in the
-following code:
-&amp;lt;Virtualhost *:80&amp;gt;
-  ServerName mysubdomain.username.koding.io
-  DocumentRoot /var/www/myDirectory
-&amp;lt;/Virtualhost&amp;gt;
-
-There are a two things you're going to have to change here, so lets go over them.
-
-ServerName: The value of ServerName should be your full subdomain
-url, without the http.
-
-DocumentRoot: This is the folder location that you want the
-subdomain to direct to. Remember that /var/www equals ~/Web, so in
-the given example, /var/www/myDirectory equals ~/Web/myDirectory.
-
-
-&amp;lt;Virtualhost *:80&amp;gt;
-  ServerName hello.joshmurray.koding.io
-  DocumentRoot /var/www/helloworld
-&amp;lt;/Virtualhost&amp;gt;
-
- alertThe DocumentRoot has to be an absolute path. Relative directories such as /var/www/../foo and ~/MyDirectory will not work.  If you would like to supply an directory outside of ~/Web, use your full home path, eg: /home/joshmurray/myNotWebDirectory
-   Enable the Subdomain Lastly, we need to add our &amp;quot;site&amp;quot; and reload apache. Run the following
-two commands, replacing mysubdomain with the name of your subdomain.
-sudo a2ensite mysubdomain
-sudo service apache2 reload
-
-  Confirming To confirm you did all the steps completely, connect to
-http://mysubdomain.username.koding.io and you should see whatever you
-have in your directory of choice.
-  Troubleshooting   Apache 404 If you see a plain white page saying &amp;quot;Not Found&amp;quot; with mentions of
-Apache and Ubuntu, then Apache is correctly loading a directory, but the
-directory is empty. Confirm that your DocumentRoot is a correct, and an
-absolute directory.
-  Forbidden By default, Apache is configured to not allow access to directories
-outside of /var/www. So, if you link to an absolute directory outside
-of /var/www, such as /home/joshmurray/hello, you may see a message
-similar to the following.
-You do not have permission to access / on this server.
-To resolve this, you can use the &amp;lt;Directory&amp;gt; directive inside of your
-VirtualHost directive from above. Example:
-&amp;lt;Virtualhost *:80&amp;gt;
-  ServerName hello.joshmurray.koding.io
-  DocumentRoot /home/joshmurray/hello
-  &amp;lt;Directory /home/joshmurray/hello/&amp;gt;
-    Options Indexes FollowSymLinks
-    AllowOverride None
-    Require all granted
-  &amp;lt;/Directory&amp;gt;
-&amp;lt;/Virtualhost&amp;gt;
-
-Afterwards, don't forget to reload Apache, with the following command.
-sudo service apache2 reload
-
-Important: It is recommended that you review the Directory directive
-documentation,
-as there are security implications to allowing directory access, that you
-should understand.
-  I don't have a Subdomain If you do not already have a Subdomain, you need to create one with the
-same name that you used in your Virtual Host
-configuration.
-To do this, from Koding navigate to your IDE window and go to your VM
-Settings. This will appear as little circle next to your VM Name in the
-left sidebar of Koding. From the settings menu, Click &amp;quot;More&amp;quot;, and add any
-subdomains that you need.
-For a more indepth explanation of this process, refer to the Subdomain
-Section here.
-</description>
-  </item>
-  
-  <item>
     <title>Hello World on Koding: Ruby</title>
     <link>//learn.koding.com/guides/hello-world/ruby</link>
     <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
@@ -2950,6 +2985,22 @@ puts 'Hello, world!'
 The above line is pretty self explanatory. It will put something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
 And that's it!
 You just wrote and ran your first Hello World in Ruby.
+</description>
+  </item>
+  
+  <item>
+    <title>Using Tmux on Koding</title>
+    <link>//learn.koding.com/guides/using-tmux-on-koding</link>
+    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/using-tmux-on-koding</guid>
+    <author>Team Koding</author>
+    <description>In this Tmux FAQ we will address an issue people have had with Tmux on Koding. It's easy to deal with, but not an obvious workaround.
+  Odd Behavior When you first try and install and run tmux on Koding, it seems to load properly, but many commands just don't seem to work. Some, like C-b c (used to create a new window) even force close the Terminal. What is going on?
+Well, Koding uses GNU Screen to help reconnect your Terminal sessions after connection issues. Koding's preconfigured Screen is set to use C-b as it's own prefix key. So when you run and use Tmux, and attempt to use C-b commands, you are actually sending commands to Screen. This explains the general odd behavior, as things like C-b c in Screen mean &amp;quot;close&amp;quot;, so you unintentionally logout of screen and close your Terminal.
+  The Solution The solution is quite simple, rebind your Tmux Prefix key. This can be done by creating a ~/.tmux.conf file and placing the following command into it:
+set-option -g prefix C-a
+Where C-a is Control key. This sets it to Control-a, a popular alternative for Tmux users (and the traditional Screen PREFIX). You can of course bind it to whatever you want. Once you have your PREFIX rebound, killall tmux instances and reopen, and it will run just like you expect.. just remember to use Control-a as your PREFIX :)
+  But i love C-b! Unfortunately, this is the way it has to be for now. A guru developer over at Koding did mention that they would like to make their version of screen not use any keybinds, so that it does not block your input at all. So, think of this alternate bind as a short-term workaround, until this &amp;quot;issue&amp;quot; is resolved.
 </description>
   </item>
   

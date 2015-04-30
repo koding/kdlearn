@@ -2,13 +2,13 @@
 <urlset xmlns="//www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-        <loc>https://learn.koding.com/guides/using-tmux-on-koding</loc>
-        <lastmod>2015-04-29</lastmod>
+        <loc>https://learn.koding.com/guides/hello-world/c-sharp</loc>
+        <lastmod>2015-04-30</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
-        <loc>https://learn.koding.com/guides/hello-world/python</loc>
+        <loc>https://learn.koding.com/guides/vhosts-and-subdomains</loc>
         <lastmod>2015-04-29</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -33,6 +33,12 @@
   
   <url>
         <loc>https://learn.koding.com/guides/hello-world/go</loc>
+        <lastmod>2015-04-29</lastmod>
+        <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+        <loc>https://learn.koding.com/guides/hello-world/python</loc>
         <lastmod>2015-04-29</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -350,13 +356,13 @@
   </url>
   
   <url>
-        <loc>https://learn.koding.com/guides/vhosts-and-subdomains</loc>
+        <loc>https://learn.koding.com/guides/hello-world/ruby</loc>
         <lastmod>2015-04-29</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
-        <loc>https://learn.koding.com/guides/hello-world/ruby</loc>
+        <loc>https://learn.koding.com/guides/using-tmux-on-koding</loc>
         <lastmod>2015-04-29</lastmod>
         <changefreq>monthly</changefreq>
   </url>
