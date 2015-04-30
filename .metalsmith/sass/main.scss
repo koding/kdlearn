@@ -74,7 +74,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Open Sans', 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial;
-  font-size: $normal_font;
+    font-size: $normal_font;
 	text-rendering: optimizelegibility;
 	line-height: 2;
 	color: $grey;
@@ -1681,6 +1681,7 @@ pre {
   border-radius: 3px;
   background-color: $light-grey;
   overflow: scroll;
+  line-height: 1.5;
 }
 pre code {
   padding: 0;
