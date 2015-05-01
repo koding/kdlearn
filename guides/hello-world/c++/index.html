@@ -45,11 +45,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?705" />
+    <link rel="stylesheet" href="/css/vendor.css?90" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?715" />
+    <link rel="stylesheet" href="/css/main.css?506" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?776" />
+    <link rel="stylesheet" href="/css/rwd.css?176" />
 	</head>
 	<body>
 
@@ -267,14 +267,6 @@
       </li>
     
       <li class="">
-        <a href="/guides/install-phpmyadmin">Install phpMyAdmin</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/permanent-shared-vm">How to share your VM with someone?</a>
-      </li>
-    
-      <li class="">
         <a href="/guides/hello-world/c-sharp">Hello World on Koding: C-Sharp (C#)</a>
       </li>
     
@@ -283,7 +275,15 @@
       </li>
     
       <li class="">
+        <a href="/guides/hello-world/java">Hello World on Koding: Java</a>
+      </li>
+    
+      <li class="">
         <a href="/guides/hello-world/go">Hello World on Koding: Go</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/hello-world/perl">Hello World on Koding: Perl</a>
       </li>
     
       <li class="zactive">
@@ -322,7 +322,7 @@
 <pre><code><span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &lt;iostream&gt;</span>
 
 <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
-    std::<span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;Hello World!&quot;</span>;
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;Hello World!&quot;</span>;
 }
 </code></pre><p>To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:</p>
 <pre><code>g++ -o hellopp helloworld<span class="hljs-class">.cpp</span>
@@ -336,7 +336,7 @@
 <pre><code><span class="hljs-collection">{}</span>
 </code></pre><p>The two curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
 group or function.</p>
-<pre><code>std::<span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;Hello World!&quot;</span>;
+<pre><code><span class="hljs-built_in">std</span>::<span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;Hello World!&quot;</span>;
 </code></pre><p>This line is a C++ statement. Statements are executed in the same order that they appear within a function&apos;s body.</p>
 <p>Your statement has three parts: first <code>std::cout</code>, which identifies the standard character output device; Second, the insertion operator <code>&lt;&lt;</code>, which indicates that what follows is inserted into <code>std::cout</code>. Finally, a sentence within quotes <code>&quot;Hello world!&quot;</code>, is the content inserted into the standard output. The semi-colon and the end shows that it is the end of the command.</p>
 <p>And that&apos;s it!</p>

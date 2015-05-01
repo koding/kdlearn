@@ -12,7 +12,7 @@
       <meta name="keywords" content="understanding vm,ssh,windows">
     
 		<meta name="description" content="Connecting to your VM with SSH will allow you to use another Terminal, outside
-of Koding, to interact with your Koding VM. This is also required if you&amp;#39;re interested in using SSH Tunneling. If you&amp;#39;re connecting from a Mac or Linux, have a look here.">
+of Koding, to interact with your Koding VM. This is also required if you're interested in using SSH Tunneling. If you're connecting from a Mac or Linux, have a look here.">
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
 
@@ -23,7 +23,7 @@ of Koding, to interact with your Koding VM. This is also required if you&amp;#39
 		<meta property="og:image" content="https://learn.koding.com/img/logo_150.png"/>
 		<meta property="og:image:secure_url" content="https://koding.com/a/images/logos/share_logo.png"/>
 		<meta property="og:description" content="Connecting to your VM with SSH will allow you to use another Terminal, outside
-of Koding, to interact with your Koding VM. This is also required if you&amp;#39;re interested in using SSH Tunneling. If you&amp;#39;re connecting from a Mac or Linux, have a look here."/>
+of Koding, to interact with your Koding VM. This is also required if you're interested in using SSH Tunneling. If you're connecting from a Mac or Linux, have a look here."/>
 		<meta property="og:image:type" content="image/png">
 		<meta property="og:image:width" content="130"/>
 		<meta property="og:image:height" content="100"/>
@@ -36,7 +36,7 @@ of Koding, to interact with your Koding VM. This is also required if you&amp;#39
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:image" content="https://learn.koding.com/img/logo_150.png"/>
 		<meta name="twitter:description" content="Connecting to your VM with SSH will allow you to use another Terminal, outside
-of Koding, to interact with your Koding VM. This is also required if you&amp;#39;re interested in using SSH Tunneling. If you&amp;#39;re connecting from a Mac or Linux, have a look here."\>
+of Koding, to interact with your Koding VM. This is also required if you're interested in using SSH Tunneling. If you're connecting from a Mac or Linux, have a look here."\>
 		<meta name="twitter:domain" content="learn.koding.com">
 
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
@@ -48,11 +48,11 @@ of Koding, to interact with your Koding VM. This is also required if you&amp;#39
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?318" />
+    <link rel="stylesheet" href="/css/vendor.css?534" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?692" />
+    <link rel="stylesheet" href="/css/main.css?933" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?424" />
+    <link rel="stylesheet" href="/css/rwd.css?255" />
 	</head>
 	<body>
 
@@ -269,14 +269,6 @@ of Koding, to interact with your Koding VM. This is also required if you&amp;#39
       </li>
     
       <li class="">
-        <a href="/guides/install-phpmyadmin">Install phpMyAdmin</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/permanent-shared-vm">How to share your VM with someone?</a>
-      </li>
-    
-      <li class="">
         <a href="/guides/hello-world/c-sharp">Hello World on Koding: C-Sharp (C#)</a>
       </li>
     
@@ -285,7 +277,15 @@ of Koding, to interact with your Koding VM. This is also required if you&amp;#39
       </li>
     
       <li class="">
+        <a href="/guides/hello-world/java">Hello World on Koding: Java</a>
+      </li>
+    
+      <li class="">
         <a href="/guides/hello-world/go">Hello World on Koding: Go</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/hello-world/perl">Hello World on Koding: Perl</a>
       </li>
     
       <li class="">
@@ -341,7 +341,7 @@ same VM address as above: <code>&lt;username&gt;.koding.io</code></li>
 <li>In the <em>Category</em> menu on the left, select <em>Data</em> under <em>Connection</em>. Enter your Koding username in the <em>Auto-login username</em> box.</li>
 <li>Select <em>Proxy</em> under <em>Connection</em>, and change the <em>Proxy type</em> to <em>Local</em>. Enter the following line (modified for your system) in the <em>Telnet command, or local proxy command</em> box:</li>
 </ul>
-<pre><code>C:\your\path\to\plink<span class="hljs-class">.exe</span> &lt;username&gt;@&lt;username&gt;<span class="hljs-class">.koding</span><span class="hljs-class">.io</span> -nc %host:%port
+<pre><code>C:\your\path\<span class="hljs-keyword">to</span>\plink.exe <span class="hljs-variable">&lt;username&gt;</span>@<span class="hljs-variable">&lt;username&gt;</span>.koding.io -nc %host:%<span class="hljs-keyword">port</span>
 </code></pre><p><img src="puttyproxy.png" alt="PuTTY proxy"></p>
 <ul>
 <li>Go back up to the <em>&quot;Session&quot;</em> settings and save this PuTTY configuration
@@ -373,9 +373,9 @@ to your PuTTYGen private key.</p>
 <p>Next, Plink needs to know the explicit location of your key. So go back to
 <em>&quot;Proxy&quot;</em> under <em>&quot;Connection&quot;</em> and look for the <em>&quot;Telnet command, or local
 proxy command&quot;</em> box.  Currently, it should look like this:</p>
-<pre><code>C:\your\path\to\plink<span class="hljs-class">.exe</span> &lt;username&gt;@&lt;username&gt;<span class="hljs-class">.koding</span><span class="hljs-class">.io</span> -nc %host:%port
+<pre><code>C:\your\path\<span class="hljs-keyword">to</span>\plink.exe <span class="hljs-variable">&lt;username&gt;</span>@<span class="hljs-variable">&lt;username&gt;</span>.koding.io -nc %host:%<span class="hljs-keyword">port</span>
 </code></pre><p>Modify it, by adding your private key location. So, it will look like this:</p>
-<pre><code>C:\your\path\to\plink<span class="hljs-class">.exe</span> -<span class="hljs-tag">i</span> c:\path\to\private\key<span class="hljs-class">.ppk</span> &lt;username&gt;@&lt;username&gt;<span class="hljs-class">.koding</span><span class="hljs-class">.io</span> -nc %host:%port
+<pre><code>C:<span class="hljs-command">\your</span><span class="hljs-command">\path</span><span class="hljs-command">\to</span><span class="hljs-command">\plink</span>.exe -i c:<span class="hljs-command">\path</span><span class="hljs-command">\to</span><span class="hljs-command">\private</span><span class="hljs-command">\key</span>.ppk &lt;username&gt;@&lt;username&gt;.koding.io -nc <span class="hljs-comment">%host:%port</span>
 </code></pre><h2 class="heading"> <a name="important-note" class="anchor" href="#important-note"></a> Important note </h2><p>If you&apos;re having trouble SSH-ing into your VM, after pasting your SSH key in the box located in your Koding account settings, make sure there are <strong>NO SPACES</strong> in the key other than the one after <code>ssh-rsa</code> and one before your email address.</p>
 <p>And that&apos;s it!</p>
 <p>If you encounter any issues or have any questions please drop an email <a href="mailto:support@koding.com">here</a>.</p>

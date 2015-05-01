@@ -14,20 +14,8 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/install-phpmyadmin</loc>
-        <lastmod>2015-05-01</lastmod>
-        <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-        <loc>http://learn.koding.com/guides/permanent-shared-vm</loc>
-        <lastmod>2015-05-01</lastmod>
-        <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
         <loc>http://learn.koding.com/guides/hello-world/c-sharp</loc>
-        <lastmod>2015-05-01</lastmod>
+        <lastmod>2015-04-30</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
@@ -38,7 +26,19 @@
   </url>
   
   <url>
+        <loc>http://learn.koding.com/guides/hello-world/java</loc>
+        <lastmod>2015-04-29</lastmod>
+        <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
         <loc>http://learn.koding.com/guides/hello-world/go</loc>
+        <lastmod>2015-04-29</lastmod>
+        <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+        <loc>http://learn.koding.com/guides/hello-world/perl</loc>
         <lastmod>2015-04-29</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -200,7 +200,7 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/hello-world/java</loc>
+        <loc>http://learn.koding.com/guides/permanent-shared-vm</loc>
         <lastmod>2015-04-29</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -248,7 +248,7 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/hello-world/perl</loc>
+        <loc>http://learn.koding.com/guides/install-phpmyadmin</loc>
         <lastmod>2015-04-29</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -729,13 +729,13 @@
   
   <url>
         <loc>http://learn.koding.com/faq/what-is-koding</loc>
-        <lastmod>2015-04-06</lastmod>
+        <lastmod>2015-04-28</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
         <loc>http://learn.koding.com/faq/support</loc>
-        <lastmod>2015-04-06</lastmod>
+        <lastmod>2015-04-28</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
@@ -759,19 +759,19 @@
   
   <url>
         <loc>http://learn.koding.com/faq/change-username</loc>
-        <lastmod>2015-04-14</lastmod>
+        <lastmod>2015-04-28</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
         <loc>http://learn.koding.com/faq/delete-account</loc>
-        <lastmod>2015-04-23</lastmod>
+        <lastmod>2015-04-28</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
         <loc>http://learn.koding.com/faq/sidebar-collapse</loc>
-        <lastmod>2015-04-20</lastmod>
+        <lastmod>2015-04-28</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
@@ -789,13 +789,13 @@
   
   <url>
         <loc>http://learn.koding.com/faq/vm-poweroff</loc>
-        <lastmod>2015-04-23</lastmod>
+        <lastmod>2015-04-28</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
         <loc>http://learn.koding.com/faq/posting-guidelines</loc>
-        <lastmod>2015-04-17</lastmod>
+        <lastmod>2015-04-28</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
@@ -807,13 +807,13 @@
   
   <url>
         <loc>http://learn.koding.com/faq/open-ports</loc>
-        <lastmod>2015-04-06</lastmod>
+        <lastmod>2015-04-28</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
         <loc>http://learn.koding.com/faq/transfer-files</loc>
-        <lastmod>2015-04-06</lastmod>
+        <lastmod>2015-04-28</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
@@ -825,7 +825,7 @@
   
   <url>
         <loc>http://learn.koding.com/faq/mysql-socket-error-2002</loc>
-        <lastmod>2015-04-06</lastmod>
+        <lastmod>2015-04-28</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   

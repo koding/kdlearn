@@ -6,14 +6,8 @@
     "date": "2015-05-01T00:00:00.000Z"
   },
   {
-    "title": "Install phpMyAdmin",
-    "url": "https://learn.koding.com/guides/install-phpmyadmin/index.html",
-    "author": "Team Koding",
-    "date": "2015-05-01T00:00:00.000Z"
-  },
-  {
-    "title": "How to share your VM with someone?",
-    "url": "https://learn.koding.com/guides/permanent-shared-vm/index.html",
+    "title": "Using FileZilla to connect to your Koding VM",
+    "url": "https://learn.koding.com/guides/ftp-with-filezilla/index.html",
     "author": "Team Koding",
     "date": "2015-05-01T00:00:00.000Z"
   },
@@ -21,13 +15,7 @@
     "title": "Hello World on Koding: C-Sharp (C#)",
     "url": "https://learn.koding.com/guides/hello-world/c-sharp/index.html",
     "author": "Team Koding",
-    "date": "2015-05-01T00:00:00.000Z"
-  },
-  {
-    "title": "Using FileZilla to connect to your Koding VM",
-    "url": "https://learn.koding.com/guides/ftp-with-filezilla/index.html",
-    "author": "Team Koding",
-    "date": "2015-05-01T00:00:00.000Z"
+    "date": "2015-04-30T00:00:00.000Z"
   },
   {
     "title": "Using Tmux on Koding",
@@ -36,8 +24,20 @@
     "date": "2015-04-29T00:00:00.000Z"
   },
   {
+    "title": "Hello World on Koding: Java",
+    "url": "https://learn.koding.com/guides/hello-world/java/index.html",
+    "author": "Team Koding",
+    "date": "2015-04-29T00:00:00.000Z"
+  },
+  {
     "title": "Hello World on Koding: Go",
     "url": "https://learn.koding.com/guides/hello-world/go/index.html",
+    "author": "Team Koding",
+    "date": "2015-04-29T00:00:00.000Z"
+  },
+  {
+    "title": "Hello World on Koding: Perl",
+    "url": "https://learn.koding.com/guides/hello-world/perl/index.html",
     "author": "Team Koding",
     "date": "2015-04-29T00:00:00.000Z"
   },

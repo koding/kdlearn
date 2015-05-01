@@ -11,7 +11,7 @@
     
       <meta name="keywords" content="frameworks platforms,jekyll">
     
-		<meta name="description" content="This tutorial will guide you through the installation of Jekyll.">
+		<meta name="description" content="This tutorial will guide you through the installation of Jekyll on a Koding VM.">
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
 
@@ -21,7 +21,7 @@
 		<meta property="og:url" content="https://learn.koding.com"/>
 		<meta property="og:image" content="https://learn.koding.com/img/logo_150.png"/>
 		<meta property="og:image:secure_url" content="https://koding.com/a/images/logos/share_logo.png"/>
-		<meta property="og:description" content="This tutorial will guide you through the installation of Jekyll."/>
+		<meta property="og:description" content="This tutorial will guide you through the installation of Jekyll on a Koding VM."/>
 		<meta property="og:image:type" content="image/png">
 		<meta property="og:image:width" content="130"/>
 		<meta property="og:image:height" content="100"/>
@@ -33,7 +33,7 @@
 		<meta name="twitter:creator" content="@koding"/>
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:image" content="https://learn.koding.com/img/logo_150.png"/>
-		<meta name="twitter:description" content="This tutorial will guide you through the installation of Jekyll."\>
+		<meta name="twitter:description" content="This tutorial will guide you through the installation of Jekyll on a Koding VM."\>
 		<meta name="twitter:domain" content="learn.koding.com">
 
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
@@ -45,11 +45,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?187" />
+    <link rel="stylesheet" href="/css/vendor.css?982" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?884" />
+    <link rel="stylesheet" href="/css/main.css?112" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?184" />
+    <link rel="stylesheet" href="/css/rwd.css?674" />
 	</head>
 	<body>
 
@@ -266,14 +266,6 @@
       </li>
     
       <li class="">
-        <a href="/guides/install-phpmyadmin">Install phpMyAdmin</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/permanent-shared-vm">How to share your VM with someone?</a>
-      </li>
-    
-      <li class="">
         <a href="/guides/hello-world/c-sharp">Hello World on Koding: C-Sharp (C#)</a>
       </li>
     
@@ -282,7 +274,15 @@
       </li>
     
       <li class="">
+        <a href="/guides/hello-world/java">Hello World on Koding: Java</a>
+      </li>
+    
+      <li class="">
         <a href="/guides/hello-world/go">Hello World on Koding: Go</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/hello-world/perl">Hello World on Koding: Perl</a>
       </li>
     
       <li class="">
@@ -307,14 +307,14 @@
     <li class="author username">
        by <span rel="author">dehli</span>
     </li>
-    <li class="updated">Updated 20 hours ago</li>
+    <li class="updated">Updated 21 hours ago</li>
   </ul>
 
 
   
 
   <div itemprop="articleBody">
-    <p itemprop="about">This tutorial will guide you through the installation of Jekyll.</p>
+    <p itemprop="about">This tutorial will guide you through the installation of Jekyll on a Koding VM.</p>
 <h2 class="heading"> <a name="install-rvm" class="anchor" href="#install-rvm"></a> Install RVM </h2><p>Use the two commands below to install rvm on your virtual machine (for more information visit <a href="https://rvm.io/rvm/install">here</a>):</p>
 <pre><code>gpg --keyserver <span class="hljs-string">hkp:</span><span class="hljs-comment">//keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3</span>
 
@@ -323,17 +323,17 @@
 <pre><code><span class="hljs-keyword">source</span> .rvm<span class="hljs-regexp">/scripts/</span>rvm
 </code></pre><h2 class="heading"> <a name="install-jekyll" class="anchor" href="#install-jekyll"></a> Install Jekyll </h2><p>Use this command to install Jekyll:</p>
 <pre><code>gem <span class="hljs-keyword">install</span> jekyll
-</code></pre><h2 class="heading"> <a name="create-a-jekyll-site" class="anchor" href="#create-a-jekyll-site"></a> Create a Jekyll site </h2><p><em>This step can be skipped if you&apos;ve already created a Jekyll site.</em></p>
-<p>Execute the following command, where <code>JekyllSite</code> is the destination folder of your website:</p>
+</code></pre><h2 class="heading"> <a name="create-a-jekyll-site" class="anchor" href="#create-a-jekyll-site"></a> Create a Jekyll site </h2><blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span> The next step can be skipped if you&apos;ve already created a Jekyll site.</p>
+ </blockquote><p>Execute the following command, where <code>JekyllSite</code> is the destination folder of your website:</p>
 <pre><code>jekyll <span class="hljs-keyword">new</span> JekyllSite
 </code></pre><h2 class="heading"> <a name="run-the-server" class="anchor" href="#run-the-server"></a> Run the server </h2><p>Set the current directory to the website&apos;s directory (for this tutorial it&apos;s JekyllSite):</p>
 <pre><code><span class="hljs-built_in">cd</span> JekyllSite
 </code></pre><p>Execute the following command:</p>
 <pre><code><span class="hljs-title">jekyll</span> serve --host <span class="hljs-number">0.0.0.0</span>
-</code></pre><p><em>For more details on the host argument, visit <a href="http://learn.koding.com/guides/what-happened-to-127-0-0-1/">here</a>.</em></p>
-<h2 class="heading"> <a name="view-the-website" class="anchor" href="#view-the-website"></a> View the website </h2><p>Navigate to <a href="http://username.koding.io:4000">http://username.koding.io:4000</a>.</p>
-<p><em>Make sure to replace username.</em></p>
-
+</code></pre><blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>For more details on your hostname, read <a href="http://learn.koding.com/guides/what-happened-to-127-0-0-1/">this</a>.*</p>
+ </blockquote><h2 class="heading"> <a name="view-the-website" class="anchor" href="#view-the-website"></a> View the website </h2><p>Navigate to <a href="http://username.koding.io:4000">http://username.koding.io:4000</a>.</p>
+<blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>Make sure to replace <code>username</code> above with your Koding username.</p>
+ </blockquote>
   </div>
   
   <div class="guide-footer">
