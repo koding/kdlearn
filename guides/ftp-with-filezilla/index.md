@@ -48,7 +48,7 @@ to connect using SFTP (as shown in the image below).
 
 ### Connection errors and how to fix them
 If you get the error below while trying to connect, please check your public and private keys.
-SSH key setup is very tempramental and even an extra space or line break can render the keys useless
+SSH key setup is very temperamental and even an extra space or line break can render the keys useless
 which in turn will cause connection problems.
 ```
 Status: Connecting to your_koding_username.koding.io...
