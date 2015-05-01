@@ -52,6 +52,6 @@ jekyll serve --host 0.0.0.0
 
 ## View the website
 
-Navigate to [http://username.koding.io:4000](http://username.koding.io:4000).
+Navigate to [http://username.koding.io:4000](http://username.koding.io:4000)
 > type:tip
 > Make sure to replace `username` above with your Koding username.
