@@ -40,7 +40,7 @@ cd JekyllSite
 Execute the following command:
 jekyll serve --host 0.0.0.0
  tipFor more details on your hostname, read this.*
-   View the website Navigate to http://username.koding.io:4000.
+   View the website Navigate to http://username.koding.io:4000
  tipMake sure to replace username above with your Koding username.
  </description>
   </item>
