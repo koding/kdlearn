@@ -6,15 +6,15 @@
     "date": "2015-05-01T00:00:00.000Z"
   },
   {
-    "title": "Install phpPgAdmin",
-    "url": "https://learn.koding.com/guides/install-phppgadmin/index.html",
+    "title": "Install phpMyAdmin",
+    "url": "https://learn.koding.com/guides/install-phpmyadmin/index.html",
     "author": "Team Koding",
-    "date": "2015-04-29T00:00:00.000Z"
+    "date": "2015-05-01T00:00:00.000Z"
   },
   {
-    "title": "What is Bitbucket?",
-    "url": "https://learn.koding.com/guides/using-bitbucket-on-koding/index.html",
-    "author": "Team Koding",
+    "title": "Webmin for Koding",
+    "url": "https://learn.koding.com/guides/webmin-for-koding/index.html",
+    "author": "Mike Spick",
     "date": "2015-04-29T00:00:00.000Z"
   },
   {
@@ -42,9 +42,9 @@
     "date": "2015-04-29T00:00:00.000Z"
   },
   {
-    "title": "Webmin for Koding",
-    "url": "https://learn.koding.com/guides/webmin-for-koding/index.html",
-    "author": "Mike Spick",
+    "title": "Install phpPgAdmin",
+    "url": "https://learn.koding.com/guides/install-phppgadmin/index.html",
+    "author": "Team Koding",
     "date": "2015-04-29T00:00:00.000Z"
   },
   {

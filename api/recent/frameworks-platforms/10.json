@@ -1,14 +1,14 @@
 [
   {
-    "title": "Apache Tomcat on Koding",
-    "url": "https://learn.koding.com/guides/apache-tomcat-on-koding/index.html",
-    "author": "Vinay Jain",
-    "date": "2015-04-29T00:00:00.000Z"
+    "title": "Installing Jekyll on Koding",
+    "url": "https://learn.koding.com/guides/installing-jekyll/index.html",
+    "author": "dehli",
+    "date": "2015-05-01T00:00:00.000Z"
   },
   {
-    "title": "A guide to Docker",
-    "url": "https://learn.koding.com/guides/what-is-docker/index.html",
-    "author": "Team Koding",
+    "title": "Installing the MEAN.io stack on Koding",
+    "url": "https://learn.koding.com/guides/installing-mean-io/index.html",
+    "author": "P1xt",
     "date": "2015-04-29T00:00:00.000Z"
   },
   {
