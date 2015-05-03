@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+        <loc>http://learn.koding.com/guides/emmet</loc>
+        <lastmod>2015-05-03</lastmod>
+        <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+        <loc>http://learn.koding.com/guides/getting-started/the-ui</loc>
+        <lastmod>2015-05-03</lastmod>
+        <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
         <loc>http://learn.koding.com/guides/installing-jekyll</loc>
         <lastmod>2015-05-01</lastmod>
         <changefreq>monthly</changefreq>
@@ -20,25 +32,13 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/using-tmux-on-koding</loc>
-        <lastmod>2015-04-29</lastmod>
-        <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-        <loc>http://learn.koding.com/guides/hello-world/java</loc>
+        <loc>http://learn.koding.com/guides/vhosts-and-subdomains</loc>
         <lastmod>2015-04-29</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
         <loc>http://learn.koding.com/guides/hello-world/go</loc>
-        <lastmod>2015-04-29</lastmod>
-        <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-        <loc>http://learn.koding.com/guides/hello-world/perl</loc>
         <lastmod>2015-04-29</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -68,7 +68,7 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/getting-started/the-ui</loc>
+        <loc>http://learn.koding.com/guides/hello-world/java</loc>
         <lastmod>2015-04-29</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -284,13 +284,19 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/hello-world/php</loc>
+        <loc>http://learn.koding.com/guides/hello-world/perl</loc>
         <lastmod>2015-04-29</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
         <loc>http://learn.koding.com/guides/enable-ufw</loc>
+        <lastmod>2015-04-29</lastmod>
+        <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+        <loc>http://learn.koding.com/guides/hello-world/php</loc>
         <lastmod>2015-04-29</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -356,13 +362,13 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/vhosts-and-subdomains</loc>
+        <loc>http://learn.koding.com/guides/hello-world/ruby</loc>
         <lastmod>2015-04-29</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/hello-world/ruby</loc>
+        <loc>http://learn.koding.com/guides/using-tmux-on-koding</loc>
         <lastmod>2015-04-29</lastmod>
         <changefreq>monthly</changefreq>
   </url>

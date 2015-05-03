@@ -1,5 +1,17 @@
 [
   {
+    "title": "Emmet support on the Koding IDE/Editor.",
+    "url": "https://learn.koding.com/guides/emmet/index.html",
+    "author": "Team Koding",
+    "date": "2015-05-03T00:00:00.000Z"
+  },
+  {
+    "title": "Getting Started: The UI",
+    "url": "https://learn.koding.com/guides/getting-started/the-ui/index.html",
+    "author": "Team Koding",
+    "date": "2015-05-03T00:00:00.000Z"
+  },
+  {
     "title": "Installing Jekyll on Koding",
     "url": "https://learn.koding.com/guides/installing-jekyll/index.html",
     "author": "dehli",
@@ -18,26 +30,14 @@
     "date": "2015-04-30T00:00:00.000Z"
   },
   {
-    "title": "Using Tmux on Koding",
-    "url": "https://learn.koding.com/guides/using-tmux-on-koding/index.html",
-    "author": "Team Koding",
-    "date": "2015-04-29T00:00:00.000Z"
-  },
-  {
-    "title": "Hello World on Koding: Java",
-    "url": "https://learn.koding.com/guides/hello-world/java/index.html",
+    "title": "Koding Subdomains and VHosts",
+    "url": "https://learn.koding.com/guides/vhosts-and-subdomains/index.html",
     "author": "Team Koding",
     "date": "2015-04-29T00:00:00.000Z"
   },
   {
     "title": "Hello World on Koding: Go",
     "url": "https://learn.koding.com/guides/hello-world/go/index.html",
-    "author": "Team Koding",
-    "date": "2015-04-29T00:00:00.000Z"
-  },
-  {
-    "title": "Hello World on Koding: Perl",
-    "url": "https://learn.koding.com/guides/hello-world/perl/index.html",
     "author": "Team Koding",
     "date": "2015-04-29T00:00:00.000Z"
   },

@@ -18,6 +18,101 @@
   <language>en</language>
   
   <item>
+    <title>Emmet support on the Koding IDE/Editor.</title>
+    <link>//learn.koding.com/guides/emmet</link>
+    <pubDate>"2015-05-03T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/emmet</guid>
+    <author>Team Koding</author>
+    <description>  What is Emmet? Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve HTML &amp;amp; CSS workflow.
+Using Emmet, you can type CSS-like expression that dynamically expand to produce valid HTML/CSS syntax thereby
+saving you tons of typing time.
+  How do I use Emmet? Follow these steps to get a quick taste of Emmet:
+
+Make sure Emmet support is turned on in the Editor/IDE settings
+Open up a new file in the Koding Editor/IDE
+Save the file as a .html file by pressing Cmd+s or Ctrl+s
+In the first line of the file, type in:html&amp;gt;head&amp;gt;title&amp;gt;body
+and hit the tab key. Your abbreviated emmet syntax should automatically expand into:&amp;lt;head&amp;gt;
+ &amp;lt;body&amp;gt;
+     &amp;lt;head&amp;gt;
+         &amp;lt;title&amp;gt;
+         &amp;lt;/title&amp;gt;
+     &amp;lt;/head&amp;gt;
+ &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+
+...that was easy!
+
+You can also do crazy things like:
+ul#nav&amp;gt;li.item$*4&amp;gt;a{Item $}
+which then expands into:
+&amp;lt;ul id=&amp;quot;nav&amp;quot;&amp;gt;
+    &amp;lt;li class=&amp;quot;item1&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;&amp;quot;&amp;gt;Item 1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;li class=&amp;quot;item2&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;&amp;quot;&amp;gt;Item 2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;li class=&amp;quot;item3&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;&amp;quot;&amp;gt;Item 3&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;li class=&amp;quot;item4&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;&amp;quot;&amp;gt;Item 4&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+
+As you can see, once you master the emmet syntax, your productivity is vastly improved.
+ tipA full list of Emmet shortcuts is available here and
+the full documentation is available here.
+ </description>
+  </item>
+  
+  <item>
+    <title>Getting Started: The UI</title>
+    <link>//learn.koding.com/guides/getting-started/the-ui</link>
+    <pubDate>"2015-05-03T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/the-ui</guid>
+    <author>Team Koding</author>
+    <description>In this guide we'll take a look at Koding's UI. We'll examine 
+the major sections, and briefly explain some of the features. In future 
+guides of this series we'll explain tihese parts in more detail. Lets get 
+started!
+  The Full UI 
+This is the Koding UI of a logged in user, with the Koding IDE 
+open. On the left side we have our VMs, Channels, Chats, and Account. To 
+the right we have the Koding IDE. Lets look at each piece, and where they 
+lead us.
+  VMs, Workspaces and IDE VMs, Workspaces, and the Koding IDE can be found on the left hand 
+side, under VMS, as seen in the image below.
+
+Clicking on a VM Name, such as koding-vm-0 in the above image, will 
+open up the Koding IDE for that specific VM.
+The button to the immediate right of the VM Name is the VM Settings. Here 
+you can find useful information, such as your VM Address and VM Specs.
+Finally, below the VM Name are your Workspaces for that specific VM.Clicking on a Workspace will open all of the previous editors and 
+Terminals that you had open on it, and opening new Workspaces provides 
+shortcuts for varying tasks. We'll get into the specifics in the 
+Workspaces guide.
+  Channels and Activity Below VMs, are your Channels. To follow a channel, click on a Grey check 
+mark. Green check marks indicate a channel that you are following.
+
+A channel is a stream of user submitted content for a certain hash tag, 
+such as #golang. When you 
+click on a hash tag in the Activity Feed, it opens a channel for that 
+tag, as seen below.
+
+Activity Feed posts support Markdown, including Markdown Code 
+Blocks.
+  Chat Below Channels are your Chats. These are private conversations between 
+you and any number of users you invite.
+
+To open a new chat, click on the Plus button to the right of the Chat 
+icon. Clicking on a already started chat, will open it as seen below.
+
+Your chats will work much in the same way as the Activity Feed. You can 
+invite more users by clicking the Plus next to user icons, or delete the 
+conversation from the Chat Dropdown in the upper right.
+  Account Settings Your Account Settings can be located from the bottom of the navigation 
+panel.
+
+Here you'll be able to modify your Name, Password, and link your Koding 
+account to various services.
+</description>
+  </item>
+  
+  <item>
     <title>Installing Jekyll on Koding</title>
     <link>//learn.koding.com/guides/installing-jekyll</link>
     <pubDate>"2015-05-01T00:00:00.000Z"</pubDate>
@@ -144,56 +239,93 @@ for now.
   </item>
   
   <item>
-    <title>Using Tmux on Koding</title>
-    <link>//learn.koding.com/guides/using-tmux-on-koding</link>
+    <title>Koding Subdomains and VHosts</title>
+    <link>//learn.koding.com/guides/vhosts-and-subdomains</link>
     <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/using-tmux-on-koding</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/vhosts-and-subdomains</guid>
     <author>Team Koding</author>
-    <description>In this Tmux FAQ we will address an issue people have had with Tmux on Koding. It's easy to deal with, but not an obvious workaround.
-  Odd Behavior When you first try and install and run tmux on Koding, it seems to load properly, but many commands just don't seem to work. Some, like C-b c (used to create a new window) even force close the Terminal. What is going on?
-Well, Koding uses GNU Screen to help reconnect your Terminal sessions after connection issues. Koding's preconfigured Screen is set to use C-b as it's own prefix key. So when you run and use Tmux, and attempt to use C-b commands, you are actually sending commands to Screen. This explains the general odd behavior, as things like C-b c in Screen mean &amp;quot;close&amp;quot;, so you unintentionally logout of screen and close your Terminal.
-  The Solution The solution is quite simple, rebind your Tmux Prefix key. This can be done by creating a ~/.tmux.conf file and placing the following command into it:
-set-option -g prefix C-a
-Where C-a is Control key. This sets it to Control-a, a popular alternative for Tmux users (and the traditional Screen PREFIX). You can of course bind it to whatever you want. Once you have your PREFIX rebound, killall tmux instances and reopen, and it will run just like you expect.. just remember to use Control-a as your PREFIX :)
-  But i love C-b! Unfortunately, this is the way it has to be for now. A guru developer over at Koding did mention that they would like to make their version of screen not use any keybinds, so that it does not block your input at all. So, think of this alternate bind as a short-term workaround, until this &amp;quot;issue&amp;quot; is resolved.
-</description>
-  </item>
-  
-  <item>
-    <title>Hello World on Koding: Java</title>
-    <link>//learn.koding.com/guides/hello-world/java</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/java</guid>
-    <author>Team Koding</author>
-    <description>  Introduction Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.
-  Implementation The first thing you need to do is to create a file called HelloWorld.java in your Koding VM and paste the bellow snippet into it.
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(&amp;quot;Hello, World!&amp;quot;);
-    }
-}
-To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
-javac HelloWorld.java
-java HelloWorld
-  Explanation public class HelloWorld
-The first line defines a class called HelloWorld. In Java, every line of code that can actually run needs to be inside a class. This line declares a class named HelloWorld, which is public, that means that any other class can access it.
-public static void main(String[] args)
-The main method has to have this exact signature in order to be able to run your program.
+    <description>In this guide we'll go over setting up a Koding subdomain to point to a
+directory of your choice.
+  Creating Subdomains To create a subdomain, refer to the Subdomain Section
+here
+  Creating a Virtual Host First, run the following command, where mysubdomain is the name of your subdomain.
+sudo touch /etc/apache2/sites-available/mysubdomain.conf
 
-public - means that anyone can access it.
-static  - means that you can run this method without creating an instance of Main.
-void - means that this method doesn't return any value.
-main - is the name of the method.
+Next, open the above file with nano, vim, or whatever command line
+editor you prefer. We're using a command line editor, because files
+located in /etc/apache2/sites-available are owned by root, and
+require sudo.
+If you used nano, your command should look like this:
+sudo nano /etc/apache2/sites-available/mysubdomain.conf
 
-The arguments inside the method are the arguments that you will get when running the program with parameters. It's an array of strings.
-{}
-The curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
-group or function.
-System.out.println(&amp;quot;Hello, World!&amp;quot;);
-System is a pre-defined class that Java provides and it also holds some useful methods and variables. out is a static variable within System that represents the output of your program. println is a method of out that can be used to print a line.
-And that's it!
-You just wrote and ran your first Hello World in Java.
-If you'd like to continue dabbling in Java, we recommend taking a look at this tutorial written for Koding over at Andriodauthority.com
+Now that you have the file open with your preferred editor, paste in the
+following code:
+&amp;lt;Virtualhost *:80&amp;gt;
+  ServerName mysubdomain.username.koding.io
+  DocumentRoot /var/www/myDirectory
+&amp;lt;/Virtualhost&amp;gt;
+
+There are a two things you're going to have to change here, so lets go over them.
+
+ServerName: The value of ServerName should be your full subdomain
+url, without the http.
+
+DocumentRoot: This is the folder location that you want the
+subdomain to direct to. Remember that /var/www equals ~/Web, so in
+the given example, /var/www/myDirectory equals ~/Web/myDirectory.
+
+
+&amp;lt;Virtualhost *:80&amp;gt;
+  ServerName hello.joshmurray.koding.io
+  DocumentRoot /var/www/helloworld
+&amp;lt;/Virtualhost&amp;gt;
+
+ alertThe DocumentRoot has to be an absolute path. Relative directories such as /var/www/../foo and ~/MyDirectory will not work.  If you would like to supply an directory outside of ~/Web, use your full home path, eg: /home/joshmurray/myNotWebDirectory
+   Enable the Subdomain Lastly, we need to add our &amp;quot;site&amp;quot; and reload apache. Run the following
+two commands, replacing mysubdomain with the name of your subdomain.
+sudo a2ensite mysubdomain
+sudo service apache2 reload
+
+  Confirming To confirm you did all the steps completely, connect to
+http://mysubdomain.username.koding.io and you should see whatever you
+have in your directory of choice.
+  Troubleshooting   Apache 404 If you see a plain white page saying &amp;quot;Not Found&amp;quot; with mentions of
+Apache and Ubuntu, then Apache is correctly loading a directory, but the
+directory is empty. Confirm that your DocumentRoot is a correct, and an
+absolute directory.
+  Forbidden By default, Apache is configured to not allow access to directories
+outside of /var/www. So, if you link to an absolute directory outside
+of /var/www, such as /home/joshmurray/hello, you may see a message
+similar to the following.
+You do not have permission to access / on this server.
+To resolve this, you can use the &amp;lt;Directory&amp;gt; directive inside of your
+VirtualHost directive from above. Example:
+&amp;lt;Virtualhost *:80&amp;gt;
+  ServerName hello.joshmurray.koding.io
+  DocumentRoot /home/joshmurray/hello
+  &amp;lt;Directory /home/joshmurray/hello/&amp;gt;
+    Options Indexes FollowSymLinks
+    AllowOverride None
+    Require all granted
+  &amp;lt;/Directory&amp;gt;
+&amp;lt;/Virtualhost&amp;gt;
+
+Afterwards, don't forget to reload Apache, with the following command.
+sudo service apache2 reload
+
+Important: It is recommended that you review the Directory directive
+documentation,
+as there are security implications to allowing directory access, that you
+should understand.
+  I don't have a Subdomain If you do not already have a Subdomain, you need to create one with the
+same name that you used in your Virtual Host
+configuration.
+To do this, from Koding navigate to your IDE window and go to your VM
+Settings. This will appear as little circle next to your VM Name in the
+left sidebar of Koding. From the settings menu, Click &amp;quot;More&amp;quot;, and add any
+subdomains that you need.
+For a more indepth explanation of this process, refer to the Subdomain
+Section here.
 </description>
   </item>
   
@@ -231,37 +363,6 @@ fmt.Println(&amp;quot;Hello World&amp;quot;)
 This statement is made of three pieces. First you access another function inside of the fmt package called Println (that's the fmt.Println piece, Println means Print Line). Then you create a new string that contains Hello World and call that function with the string as the first and only argument.
 And that's it!
 You just wrote and ran your first Hello World in Go.
-</description>
-  </item>
-  
-  <item>
-    <title>Hello World on Koding: Perl</title>
-    <link>//learn.koding.com/guides/hello-world/perl</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/perl</guid>
-    <author>Team Koding</author>
-    <description>  Introduction Perl is a family of high-level, general-purpose, interpreted, dynamic programming languages. The Perl languages borrow features from other programming languages including C, shell scripting (sh) etc. They provide powerful text processing facilities without the arbitrary data-length limits of many contemporary Unix commandline tools, facilitating easy manipulation of text files.
-  Implementation The first thing you need to do is to create a file called helloworld in your Koding VM and paste the bellow snippet into it.
-#!/usr/bin/perl
-
-use strict;
-use warnings;
-
-print &amp;quot;Hello, World!&amp;quot;;
-To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
-first ensure the file is given executable permissions:
-chmod u+x helloworld
-and then run this command
-perl helloworld
-  Explanation #!/usr/bin/perl
-Every Perl program should start with this as its very first line, although this may vary from system to system. This line tells the machine what to do with the file when it is executed.
-use strict;
-use warnings;
-These two statements turn on the 'strict' and 'warnings' pragmas. These are strongly encouraged for all Perl programs since they tell the Perl interpreter to check for programming errors like undeclared variables.
-print &amp;quot;Hello, World!&amp;quot;;
-The print function outputs some data. In the above case it prints out the string Hello world, and as always the statement ends with a semicolon.
-And that's it!
-You just wrote and ran your first Hello World in Perl.
 </description>
   </item>
   
@@ -393,55 +494,40 @@ delete any of your files in the process.
   </item>
   
   <item>
-    <title>Getting Started: The UI</title>
-    <link>//learn.koding.com/guides/getting-started/the-ui</link>
+    <title>Hello World on Koding: Java</title>
+    <link>//learn.koding.com/guides/hello-world/java</link>
     <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/the-ui</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/java</guid>
     <author>Team Koding</author>
-    <description>In this guide we'll take a look at Koding's UI. We'll examine 
-the major sections, and briefly explain some of the features. In future 
-guides of this series we'll explain these parts in more detail. Lets get 
-started!
-  The Full UI 
-This is the Koding UI of a logged in user, with the Koding IDE 
-open. On the left side we have our VMs, Channels, Chats, and Account. To 
-the right we have the Koding IDE. Lets look at each piece, and where they 
-lead us.
-  VMs, Workspaces and IDE VMs, Workspaces, and the Koding IDE can be found on the left hand 
-side, under VMS, as seen in the image below.
+    <description>  Introduction Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.
+  Implementation The first thing you need to do is to create a file called HelloWorld.java in your Koding VM and paste the bellow snippet into it.
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println(&amp;quot;Hello, World!&amp;quot;);
+    }
+}
+To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
+javac HelloWorld.java
+java HelloWorld
+  Explanation public class HelloWorld
+The first line defines a class called HelloWorld. In Java, every line of code that can actually run needs to be inside a class. This line declares a class named HelloWorld, which is public, that means that any other class can access it.
+public static void main(String[] args)
+The main method has to have this exact signature in order to be able to run your program.
 
-Clicking on a VM Name, such as koding-vm-0 in the above image, will 
-open up the Koding IDE for that specific VM.
-The button to the immediate right of the VM Name is the VM Settings. Here 
-you can find useful information, such as your VM Address and VM Specs.
-Finally, below the VM Name are your Workspaces for that specific VM.Clicking on a Workspace will open all of the previous editors and 
-Terminals that you had open on it, and opening new Workspaces provides 
-shortcuts for varying tasks. We'll get into the specifics in the 
-Workspaces guide.
-  Channels and Activity Below VMs, are your Channels. To follow a channel, click on a Grey check 
-mark. Green check marks indicate a channel that you are following.
+public - means that anyone can access it.
+static  - means that you can run this method without creating an instance of Main.
+void - means that this method doesn't return any value.
+main - is the name of the method.
 
-A channel is a stream of user submitted content for a certain hash tag, 
-such as #golang. When you 
-click on a hash tag in the Activity Feed, it opens a channel for that 
-tag, as seen below.
-
-Activity Feed posts support Markdown, including Markdown Code 
-Blocks.
-  Chat Below Channels are your Chats. These are private conversations between 
-you and any number of users you invite.
-
-To open a new chat, click on the Plus button to the right of the Chat 
-icon. Clicking on a already started chat, will open it as seen below.
-
-Your chats will work much in the same way as the Activity Feed. You can 
-invite more users by clicking the Plus next to user icons, or delete the 
-conversation from the Chat Dropdown in the upper right.
-  Account Settings Your Account Settings can be located from the bottom of the navigation 
-panel.
-
-Here you'll be able to modify your Name, Password, and link your Koding 
-account to various services.
+The arguments inside the method are the arguments that you will get when running the program with parameters. It's an array of strings.
+{}
+The curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
+group or function.
+System.out.println(&amp;quot;Hello, World!&amp;quot;);
+System is a pre-defined class that Java provides and it also holds some useful methods and variables. out is a static variable within System that represents the output of your program. println is a method of out that can be used to print a line.
+And that's it!
+You just wrote and ran your first Hello World in Java.
+If you'd like to continue dabbling in Java, we recommend taking a look at this tutorial written for Koding over at Andriodauthority.com
 </description>
   </item>
   
@@ -2235,37 +2321,33 @@ If you have any question or issues please email us at support@koding.com and we'
   </item>
   
   <item>
-    <title>Hello World on Koding: PHP</title>
-    <link>//learn.koding.com/guides/hello-world/php</link>
+    <title>Hello World on Koding: Perl</title>
+    <link>//learn.koding.com/guides/hello-world/perl</link>
     <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/php</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/perl</guid>
     <author>Team Koding</author>
-    <description>  Introduction PHP is a server-side scripting language designed for web development but also used as a general-purpose programming language. PHP code can be simply mixed with HTML code, or it can be used in combination with various templating engines and web frameworks.
-  Implementation The first thing you need to do is to create a file called helloworld.php, place it in your Web folder and paste the bellow snippet into it.
-&amp;lt;html&amp;gt;
-    &amp;lt;head&amp;gt;
-    &amp;lt;title&amp;gt;Hello World&amp;lt;/title&amp;gt;
-    &amp;lt;/head&amp;gt;
-    &amp;lt;body&amp;gt;
-        &amp;lt;?php
-            echo &amp;quot;Hello World&amp;quot;;
-        ?&amp;gt;
-    &amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-To run the above file in your Koding VM, follow a similar URL in your browser:
-http://KODING_USERNAME.koding.io/helloworld.php
- tipReplace KODING_USERNAME above with your koding username. (It's not obvious to everyone).
-Find out more about your VM hostname.
-   Explanation The first part until the initial &amp;lt;?php tag is just basic HTML code.
-&amp;lt;?php
+    <description>  Introduction Perl is a family of high-level, general-purpose, interpreted, dynamic programming languages. The Perl languages borrow features from other programming languages including C, shell scripting (sh) etc. They provide powerful text processing facilities without the arbitrary data-length limits of many contemporary Unix commandline tools, facilitating easy manipulation of text files.
+  Implementation The first thing you need to do is to create a file called helloworld in your Koding VM and paste the bellow snippet into it.
+#!/usr/bin/perl
 
-?&amp;gt;
-You need to tell the server when the PHP will start and end. In PHP you use the tags &amp;lt;?php and ?&amp;gt; to mark the start and end for the PHP code that the server must execute.
-echo &amp;quot;Hello World&amp;quot;;
-echo outputs one or more strings. echo is not actually a function (it is a language construct). echo does not behave like a function, so it cannot always be used in the context of a function.
-The last part after the closing ?&amp;gt; tag if just basic HTML code.
+use strict;
+use warnings;
+
+print &amp;quot;Hello, World!&amp;quot;;
+To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
+first ensure the file is given executable permissions:
+chmod u+x helloworld
+and then run this command
+perl helloworld
+  Explanation #!/usr/bin/perl
+Every Perl program should start with this as its very first line, although this may vary from system to system. This line tells the machine what to do with the file when it is executed.
+use strict;
+use warnings;
+These two statements turn on the 'strict' and 'warnings' pragmas. These are strongly encouraged for all Perl programs since they tell the Perl interpreter to check for programming errors like undeclared variables.
+print &amp;quot;Hello, World!&amp;quot;;
+The print function outputs some data. In the above case it prints out the string Hello world, and as always the statement ends with a semicolon.
 And that's it!
-You just wrote and ran your first Hello World in PHP.
+You just wrote and ran your first Hello World in Perl.
 </description>
   </item>
   
@@ -2348,6 +2430,41 @@ When you hit &amp;quot;y&amp;quot; ufw will backup all existing rules before doi
   Help, I locked myself out of my VM If for some reason you enabled your firewall and did not take the steps needed to open up the ports needed for Koding to work, then
 your only recourse is to reinit your VM. That process is described in this guide. If you
 encounter any issues or have any questions please drop an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>Hello World on Koding: PHP</title>
+    <link>//learn.koding.com/guides/hello-world/php</link>
+    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/php</guid>
+    <author>Team Koding</author>
+    <description>  Introduction PHP is a server-side scripting language designed for web development but also used as a general-purpose programming language. PHP code can be simply mixed with HTML code, or it can be used in combination with various templating engines and web frameworks.
+  Implementation The first thing you need to do is to create a file called helloworld.php, place it in your Web folder and paste the bellow snippet into it.
+&amp;lt;html&amp;gt;
+    &amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;Hello World&amp;lt;/title&amp;gt;
+    &amp;lt;/head&amp;gt;
+    &amp;lt;body&amp;gt;
+        &amp;lt;?php
+            echo &amp;quot;Hello World&amp;quot;;
+        ?&amp;gt;
+    &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+To run the above file in your Koding VM, follow a similar URL in your browser:
+http://KODING_USERNAME.koding.io/helloworld.php
+ tipReplace KODING_USERNAME above with your koding username. (It's not obvious to everyone).
+Find out more about your VM hostname.
+   Explanation The first part until the initial &amp;lt;?php tag is just basic HTML code.
+&amp;lt;?php
+
+?&amp;gt;
+You need to tell the server when the PHP will start and end. In PHP you use the tags &amp;lt;?php and ?&amp;gt; to mark the start and end for the PHP code that the server must execute.
+echo &amp;quot;Hello World&amp;quot;;
+echo outputs one or more strings. echo is not actually a function (it is a language construct). echo does not behave like a function, so it cannot always be used in the context of a function.
+The last part after the closing ?&amp;gt; tag if just basic HTML code.
+And that's it!
+You just wrote and ran your first Hello World in PHP.
 </description>
   </item>
   
@@ -2902,97 +3019,6 @@ If you have tried the above and are still having issues, please send us a note
   </item>
   
   <item>
-    <title>Koding Subdomains and VHosts</title>
-    <link>//learn.koding.com/guides/vhosts-and-subdomains</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/vhosts-and-subdomains</guid>
-    <author>Team Koding</author>
-    <description>In this guide we'll go over setting up a Koding subdomain to point to a
-directory of your choice.
-  Creating Subdomains To create a subdomain, refer to the Subdomain Section
-here
-  Creating a Virtual Host First, run the following command, where mysubdomain is the name of your subdomain.
-sudo touch /etc/apache2/sites-available/mysubdomain.conf
-
-Next, open the above file with nano, vim, or whatever command line
-editor you prefer. We're using a command line editor, because files
-located in /etc/apache2/sites-available are owned by root, and
-require sudo.
-If you used nano, your command should look like this:
-sudo nano /etc/apache2/sites-available/mysubdomain.conf
-
-Now that you have the file open with your preferred editor, paste in the
-following code:
-&amp;lt;Virtualhost *:80&amp;gt;
-  ServerName mysubdomain.username.koding.io
-  DocumentRoot /var/www/myDirectory
-&amp;lt;/Virtualhost&amp;gt;
-
-There are a two things you're going to have to change here, so lets go over them.
-
-ServerName: The value of ServerName should be your full subdomain
-url, without the http.
-
-DocumentRoot: This is the folder location that you want the
-subdomain to direct to. Remember that /var/www equals ~/Web, so in
-the given example, /var/www/myDirectory equals ~/Web/myDirectory.
-
-
-&amp;lt;Virtualhost *:80&amp;gt;
-  ServerName hello.joshmurray.koding.io
-  DocumentRoot /var/www/helloworld
-&amp;lt;/Virtualhost&amp;gt;
-
- alertThe DocumentRoot has to be an absolute path. Relative directories such as /var/www/../foo and ~/MyDirectory will not work.  If you would like to supply an directory outside of ~/Web, use your full home path, eg: /home/joshmurray/myNotWebDirectory
-   Enable the Subdomain Lastly, we need to add our &amp;quot;site&amp;quot; and reload apache. Run the following
-two commands, replacing mysubdomain with the name of your subdomain.
-sudo a2ensite mysubdomain
-sudo service apache2 reload
-
-  Confirming To confirm you did all the steps completely, connect to
-http://mysubdomain.username.koding.io and you should see whatever you
-have in your directory of choice.
-  Troubleshooting   Apache 404 If you see a plain white page saying &amp;quot;Not Found&amp;quot; with mentions of
-Apache and Ubuntu, then Apache is correctly loading a directory, but the
-directory is empty. Confirm that your DocumentRoot is a correct, and an
-absolute directory.
-  Forbidden By default, Apache is configured to not allow access to directories
-outside of /var/www. So, if you link to an absolute directory outside
-of /var/www, such as /home/joshmurray/hello, you may see a message
-similar to the following.
-You do not have permission to access / on this server.
-To resolve this, you can use the &amp;lt;Directory&amp;gt; directive inside of your
-VirtualHost directive from above. Example:
-&amp;lt;Virtualhost *:80&amp;gt;
-  ServerName hello.joshmurray.koding.io
-  DocumentRoot /home/joshmurray/hello
-  &amp;lt;Directory /home/joshmurray/hello/&amp;gt;
-    Options Indexes FollowSymLinks
-    AllowOverride None
-    Require all granted
-  &amp;lt;/Directory&amp;gt;
-&amp;lt;/Virtualhost&amp;gt;
-
-Afterwards, don't forget to reload Apache, with the following command.
-sudo service apache2 reload
-
-Important: It is recommended that you review the Directory directive
-documentation,
-as there are security implications to allowing directory access, that you
-should understand.
-  I don't have a Subdomain If you do not already have a Subdomain, you need to create one with the
-same name that you used in your Virtual Host
-configuration.
-To do this, from Koding navigate to your IDE window and go to your VM
-Settings. This will appear as little circle next to your VM Name in the
-left sidebar of Koding. From the settings menu, Click &amp;quot;More&amp;quot;, and add any
-subdomains that you need.
-For a more indepth explanation of this process, refer to the Subdomain
-Section here.
-</description>
-  </item>
-  
-  <item>
     <title>Hello World on Koding: Ruby</title>
     <link>//learn.koding.com/guides/hello-world/ruby</link>
     <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
@@ -3011,6 +3037,22 @@ puts 'Hello, world!'
 The above line is pretty self explanatory. It will put something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
 And that's it!
 You just wrote and ran your first Hello World in Ruby.
+</description>
+  </item>
+  
+  <item>
+    <title>Using Tmux on Koding</title>
+    <link>//learn.koding.com/guides/using-tmux-on-koding</link>
+    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/using-tmux-on-koding</guid>
+    <author>Team Koding</author>
+    <description>In this Tmux FAQ we will address an issue people have had with Tmux on Koding. It's easy to deal with, but not an obvious workaround.
+  Odd Behavior When you first try and install and run tmux on Koding, it seems to load properly, but many commands just don't seem to work. Some, like C-b c (used to create a new window) even force close the Terminal. What is going on?
+Well, Koding uses GNU Screen to help reconnect your Terminal sessions after connection issues. Koding's preconfigured Screen is set to use C-b as it's own prefix key. So when you run and use Tmux, and attempt to use C-b commands, you are actually sending commands to Screen. This explains the general odd behavior, as things like C-b c in Screen mean &amp;quot;close&amp;quot;, so you unintentionally logout of screen and close your Terminal.
+  The Solution The solution is quite simple, rebind your Tmux Prefix key. This can be done by creating a ~/.tmux.conf file and placing the following command into it:
+set-option -g prefix C-a
+Where C-a is Control key. This sets it to Control-a, a popular alternative for Tmux users (and the traditional Screen PREFIX). You can of course bind it to whatever you want. Once you have your PREFIX rebound, killall tmux instances and reopen, and it will run just like you expect.. just remember to use Control-a as your PREFIX :)
+  But i love C-b! Unfortunately, this is the way it has to be for now. A guru developer over at Koding did mention that they would like to make their version of screen not use any keybinds, so that it does not block your input at all. So, think of this alternate bind as a short-term workaround, until this &amp;quot;issue&amp;quot; is resolved.
 </description>
   </item>
   
