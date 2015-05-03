@@ -1,5 +1,5 @@
 ---
-title: Emmet support on the Koding IDE/Editor.
+title: Emmet support in the Koding IDE/Editor
 author: Team Koding
 categories: [koding features, IDE, koding]
 template: page.toffee
