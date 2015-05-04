@@ -1,21 +1,27 @@
 [
   {
+    "title": "Building C / C++ applications with biicode",
+    "url": "https://learn.koding.com/guides/getting-started-biicode/index.html",
+    "author": "drodri",
+    "date": "2015-05-04T00:00:00.000Z"
+  },
+  {
     "title": "Emmet support in the Koding IDE/Editor",
     "url": "https://learn.koding.com/guides/emmet/index.html",
     "author": "Team Koding",
-    "date": "2015-05-03T00:00:00.000Z"
+    "date": "2015-05-04T00:00:00.000Z"
   },
   {
     "title": "Getting Started: The UI",
     "url": "https://learn.koding.com/guides/getting-started/the-ui/index.html",
     "author": "Team Koding",
-    "date": "2015-05-03T00:00:00.000Z"
+    "date": "2015-05-04T00:00:00.000Z"
   },
   {
     "title": "Installing Jekyll on Koding",
     "url": "https://learn.koding.com/guides/installing-jekyll/index.html",
     "author": "dehli",
-    "date": "2015-05-01T00:00:00.000Z"
+    "date": "2015-05-04T00:00:00.000Z"
   },
   {
     "title": "Using FileZilla to connect to your Koding VM",
@@ -24,32 +30,26 @@
     "date": "2015-05-01T00:00:00.000Z"
   },
   {
+    "title": "Install phpMyAdmin",
+    "url": "https://learn.koding.com/guides/install-phpmyadmin/index.html",
+    "author": "Team Koding",
+    "date": "2015-05-01T00:00:00.000Z"
+  },
+  {
     "title": "Hello World on Koding: C-Sharp (C#)",
     "url": "https://learn.koding.com/guides/hello-world/c-sharp/index.html",
     "author": "Team Koding",
-    "date": "2015-04-30T00:00:00.000Z"
+    "date": "2015-05-01T00:00:00.000Z"
+  },
+  {
+    "title": "How to share your VM with someone?",
+    "url": "https://learn.koding.com/guides/permanent-shared-vm/index.html",
+    "author": "Team Koding",
+    "date": "2015-05-01T00:00:00.000Z"
   },
   {
     "title": "Koding Subdomains and VHosts",
     "url": "https://learn.koding.com/guides/vhosts-and-subdomains/index.html",
-    "author": "Team Koding",
-    "date": "2015-04-29T00:00:00.000Z"
-  },
-  {
-    "title": "Hello World on Koding: Go",
-    "url": "https://learn.koding.com/guides/hello-world/go/index.html",
-    "author": "Team Koding",
-    "date": "2015-04-29T00:00:00.000Z"
-  },
-  {
-    "title": "Hello World on Koding: C++",
-    "url": "https://learn.koding.com/guides/hello-world/c++/index.html",
-    "author": "Team Koding",
-    "date": "2015-04-29T00:00:00.000Z"
-  },
-  {
-    "title": "Hello World on Koding: C",
-    "url": "https://learn.koding.com/guides/hello-world/c/index.html",
     "author": "Team Koding",
     "date": "2015-04-29T00:00:00.000Z"
   },

@@ -45,11 +45,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?686" />
+    <link rel="stylesheet" href="/css/vendor.css?718" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?386" />
+    <link rel="stylesheet" href="/css/main.css?109" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?646" />
+    <link rel="stylesheet" href="/css/rwd.css?900" />
 	</head>
 	<body>
 
@@ -258,6 +258,14 @@
     <ul>
     
       <li class="">
+        <a href="/guides/getting-started-biicode">Building C / C++ applications with biicode</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/installing-jekyll">Installing Jekyll on Koding</a>
+      </li>
+    
+      <li class="">
         <a href="/guides/emmet">Emmet support in the Koding IDE/Editor</a>
       </li>
     
@@ -266,11 +274,11 @@
       </li>
     
       <li class="">
-        <a href="/guides/installing-jekyll">Installing Jekyll on Koding</a>
+        <a href="/guides/ftp-with-filezilla">Using FileZilla to connect to your Koding VM</a>
       </li>
     
       <li class="">
-        <a href="/guides/ftp-with-filezilla">Using FileZilla to connect to your Koding VM</a>
+        <a href="/guides/install-phpmyadmin">Install phpMyAdmin</a>
       </li>
     
       <li class="">
@@ -278,15 +286,7 @@
       </li>
     
       <li class="">
-        <a href="/guides/vhosts-and-subdomains">Koding Subdomains and VHosts</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/hello-world/go">Hello World on Koding: Go</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/hello-world/c++">Hello World on Koding: C++</a>
+        <a href="/guides/permanent-shared-vm">How to share your VM with someone?</a>
       </li>
     
     </ul>
@@ -328,9 +328,9 @@
 <p>Download the latest version:</p>
 <pre><code>curl -Lo /tmp/cockpit-<span class="hljs-number">0.13</span>.<span class="hljs-number">0</span><span class="hljs-class">.tar</span><span class="hljs-class">.gz</span> https:<span class="hljs-comment">//github.com/aheinze/cockpit/archive/0.13.0.tar.gz</span>
 </code></pre><p>Untar the archive and move it:</p>
-<pre><code>tar -C <span class="hljs-regexp">/tmp -zxf /</span>tmp/cockpit-<span class="hljs-number">0.13</span>.0.tar.gz
+<pre><code>tar -C <span class="hljs-regexp">/tmp -zxf /</span>tmp/cockpit-<span class="hljs-number">0.13</span><span class="hljs-number">.0</span>.tar.gz
 
-mv <span class="hljs-regexp">/tmp/</span>cockpit-<span class="hljs-number">0.13</span>.0 <span class="hljs-regexp">~/Web/</span>cockpit
+mv <span class="hljs-regexp">/tmp/</span>cockpit-<span class="hljs-number">0.13</span><span class="hljs-number">.0</span> <span class="hljs-regexp">~/Web/</span>cockpit
 </code></pre><p>Set the proper permissions for the storage folder and its subfolders:</p>
 <pre><code><span class="hljs-built_in">cd</span> Web
 chmod <span class="hljs-number">777</span> -R cockpit/storage

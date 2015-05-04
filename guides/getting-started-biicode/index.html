@@ -51,11 +51,11 @@ how to build them in Makefiles or using the CMake build system."\>
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?208" />
+    <link rel="stylesheet" href="/css/vendor.css?155" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?997" />
+    <link rel="stylesheet" href="/css/main.css?52" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?932" />
+    <link rel="stylesheet" href="/css/rwd.css?618" />
 	</head>
 	<body>
 
@@ -259,9 +259,17 @@ how to build them in Makefiles or using the CMake build system."\>
   </li>
 
   
-  <li class="">
+  <li class="zactive">
     <h5>Latest Guides</h5>
     <ul>
+    
+      <li class="zactive">
+        <a href="/guides/getting-started-biicode">Building C / C++ applications with biicode</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/installing-jekyll">Installing Jekyll on Koding</a>
+      </li>
     
       <li class="">
         <a href="/guides/emmet">Emmet support in the Koding IDE/Editor</a>
@@ -272,11 +280,11 @@ how to build them in Makefiles or using the CMake build system."\>
       </li>
     
       <li class="">
-        <a href="/guides/installing-jekyll">Installing Jekyll on Koding</a>
+        <a href="/guides/ftp-with-filezilla">Using FileZilla to connect to your Koding VM</a>
       </li>
     
       <li class="">
-        <a href="/guides/ftp-with-filezilla">Using FileZilla to connect to your Koding VM</a>
+        <a href="/guides/install-phpmyadmin">Install phpMyAdmin</a>
       </li>
     
       <li class="">
@@ -284,15 +292,7 @@ how to build them in Makefiles or using the CMake build system."\>
       </li>
     
       <li class="">
-        <a href="/guides/vhosts-and-subdomains">Koding Subdomains and VHosts</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/hello-world/go">Hello World on Koding: Go</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/hello-world/c++">Hello World on Koding: C++</a>
+        <a href="/guides/permanent-shared-vm">How to share your VM with someone?</a>
       </li>
     
     </ul>
@@ -316,7 +316,7 @@ how to build them in Makefiles or using the CMake build system."\>
             href="https://koding.com/drodri"
           >drodri</a> 
     </li>
-    <li class="updated">Updated 5 days ago</li>
+    <li class="updated">Updated 11 hours ago</li>
   </ul>
 
 
@@ -329,21 +329,17 @@ how to build them in Makefiles or using the <a href="http://www.cmake.org/">CMak
 <p>We will be using in the following examples <a href="https://www.biicode.com/">biicode</a>, which is a dependency manager
 that allows to easily retrieve existing code and also manages to automatically generate
 build files for your project.</p>
-<p>You can install it running from your <a href="https://koding.com/Terminal">terminal</a>:</p>
+<h2 class="heading"> <a name="install-biicode" class="anchor" href="#install-biicode"></a> Install biicode </h2><p>You can install it running from your <a href="https://koding.com/Terminal">terminal</a>:</p>
 <pre><code>$ wget http://apt.biicode.com/<span class="hljs-keyword">install</span>.sh &amp;&amp; chmod +x <span class="hljs-keyword">install</span>.sh &amp;&amp; ./<span class="hljs-keyword">install</span>.sh
-</code></pre><p>After it finish, you can run a helper command that install an updated version of CMake:</p>
-<pre><code>$ <span class="hljs-tag">bii</span> <span class="hljs-rule"><span class="hljs-attribute">setup</span>:<span class="hljs-value">cpp</span></span>
-</code></pre><p>Lets build an application that computes the SHA1 of a string. Usually you dont want to write
+</code></pre><p>After it finishes, you can run a helper command that install an updated version of CMake:</p>
+<pre><code>$ <span class="hljs-tag">bii</span> <span class="hljs-tag">setup</span><span class="hljs-pseudo">:cpp</span>
+</code></pre><h2 class="heading"> <a name="build-you-application" class="anchor" href="#build-you-application"></a> Build you application </h2><p>Lets build an application that computes the SHA1 of a string. Usually you don&apos;t want to write
 yourself such algorithm, but rather use an existing implementation.</p>
-<p>The following commands will create a project and a &quot;Hello world&quot; file, which you can build and
-run:</p>
-<pre><code><span class="hljs-variable">$ </span>bii init cryptoproject
-<span class="hljs-variable">$ </span>cd cryptoproject
-<span class="hljs-variable">$ </span>bii new myuser/crypto --hello=cpp
-<span class="hljs-variable">$ </span>bii <span class="hljs-symbol">cpp:</span>build
-<span class="hljs-variable">$ </span>./bin/myuser_crypto_main
-<span class="hljs-constant">Hello </span>world!
-</code></pre><p>Now replace the contents of the &quot;main.cpp&quot; file inside the blocks/myuser/crypto folder with:</p>
+<h3 class="heading"> <a name="create-a-project" class="anchor" href="#create-a-project"></a> Create a project </h3><p>Create a simple project:</p>
+<pre><code><span class="hljs-variable">$ </span>bii init mycppcrypto -<span class="hljs-constant">L</span>
+<span class="hljs-variable">$ </span>cd my_cpp_project
+</code></pre><p>Now you are inside a new block called &quot;mycppcrypto&quot;. Let&apos;s place some code in!</p>
+<p>Create a new <em>main.cpp</em> file and place the code below:</p>
 <pre><code><span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &quot;cryptopp/cryptopp/sha.h&quot;</span>
 <span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &quot;cryptopp/cryptopp/filters.h&quot;</span>
 <span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &quot;cryptopp/cryptopp/hex.h&quot;</span>
@@ -352,25 +348,40 @@ run:</p>
 
 <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
     CryptoPP::SHA1 sha1;
-    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> source = <span class="hljs-string">&quot;Hello&quot;</span>;
-    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> hash = <span class="hljs-string">&quot;&quot;</span>;
+    std::<span class="hljs-built_in">string</span> source = <span class="hljs-string">&quot;Hello&quot;</span>;
+    std::<span class="hljs-built_in">string</span> hash = <span class="hljs-string">&quot;&quot;</span>;
     CryptoPP::StringSource(source, <span class="hljs-keyword">true</span>, <span class="hljs-keyword">new</span> CryptoPP::HashFilter(sha1,
                             <span class="hljs-keyword">new</span> CryptoPP::HexEncoder(<span class="hljs-keyword">new</span> CryptoPP::StringSink(hash))));
-    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">cout</span> &lt;&lt; hash &lt;&lt; <span class="hljs-built_in">std</span>::endl;
+    std::<span class="hljs-built_in">cout</span> &lt;&lt; hash &lt;&lt; std::endl;
 }
-</code></pre><p>If you now try to build this example, it will fail. You can try to do so, and then check
-your dependencies:</p>
-<pre><code><span class="hljs-variable">$ </span>bii <span class="hljs-symbol">cpp:</span>build
-<span class="hljs-variable">$ </span>bii deps
-</code></pre><p>The code depends on some external code, the Crypto++ library. This can be easily retrieved
-with the &quot;find&quot; command</p>
-<pre><code>$ bii <span class="hljs-built_in">find</span>
-</code></pre><p>Now you can build and run it:</p>
-<pre><code><span class="hljs-variable">$ </span>bii <span class="hljs-symbol">cpp:</span>build
+</code></pre><h3 class="heading"> <a name="manage-your-dependencies" class="anchor" href="#manage-your-dependencies"></a> Manage your dependencies </h3><p>If you now try to build this example, it will fail. You can try to do so, and then check
+your dependencies with <strong>bii deps</strong>:</p>
+<pre><code>$ bii build
+$ <span class="hljs-keyword">...</span> <span class="hljs-comment">#ERROR</span>
+$ bii deps
+  user/mycppcrypto depends on:
+       system:
+          iostream
+          string
+       unresolved:
+          cryptopp/cryptopp/filters.h
+          cryptopp/cryptopp/hex.h
+          cryptopp/cryptopp/sha.h
+</code></pre><p>The code depends on some external code, the Crypto++ library. With <strong>bii find</strong> command biicode will easily retrieve dependencies:</p>
+<pre><code>$ bii find
+<span class="hljs-keyword">...</span>
+INFO: All dependencies resolved
+Find resolved new dependencies:
+        cryptopp/cryptopp: <span class="hljs-number">8</span>
+INFO: Saving files from: cryptopp/cryptopp
+</code></pre><h3 class="heading"> <a name="build-the-project" class="anchor" href="#build-the-project"></a> Build the project </h3><p>Now you can build and run it:</p>
+<pre><code><span class="hljs-variable">$ </span>bii build
 <span class="hljs-variable">$ </span>./bin/myuser_crypto_main
 <span class="hljs-constant">F7FF9E8B7BB2E09B70935A5D785E0CC5D9D0ABF0</span>
-</code></pre><p>For further examples, you can have a look to the <a href="http://docs.biicode.com/c++.html">biicode C/C++ documentation</a> and the
-<a href="http://docs.biicode.com/c++/examples.html">examples</a></p>
+</code></pre><p>That is the encryption code for the &quot;hello&quot; string!</p>
+<p>For further examples, you can have a look to the <a href="http://docs.biicode.com/c++.html">biicode C/C++ documentation</a> and the
+<a href="http://docs.biicode.com/c++/examples.html">examples</a>.</p>
+<p>Got any doubts using biicode in your projects? Do not hesitate to <a href="http://web.biicode.com/contact-us/">contact us</a> or visit our <a href="http://forum.biicode.com/">forum</a>. We&apos;re available at <a href="http://stackoverflow.com/questions/tagged/biicode">Stackoverflow tag</a> too.</p>
 
   </div>
   

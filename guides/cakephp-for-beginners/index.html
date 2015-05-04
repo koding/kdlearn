@@ -45,11 +45,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?312" />
+    <link rel="stylesheet" href="/css/vendor.css?460" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?491" />
+    <link rel="stylesheet" href="/css/main.css?797" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?410" />
+    <link rel="stylesheet" href="/css/rwd.css?742" />
 	</head>
 	<body>
 
@@ -258,6 +258,14 @@
     <ul>
     
       <li class="">
+        <a href="/guides/getting-started-biicode">Building C / C++ applications with biicode</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/installing-jekyll">Installing Jekyll on Koding</a>
+      </li>
+    
+      <li class="">
         <a href="/guides/emmet">Emmet support in the Koding IDE/Editor</a>
       </li>
     
@@ -266,11 +274,11 @@
       </li>
     
       <li class="">
-        <a href="/guides/installing-jekyll">Installing Jekyll on Koding</a>
+        <a href="/guides/ftp-with-filezilla">Using FileZilla to connect to your Koding VM</a>
       </li>
     
       <li class="">
-        <a href="/guides/ftp-with-filezilla">Using FileZilla to connect to your Koding VM</a>
+        <a href="/guides/install-phpmyadmin">Install phpMyAdmin</a>
       </li>
     
       <li class="">
@@ -278,15 +286,7 @@
       </li>
     
       <li class="">
-        <a href="/guides/vhosts-and-subdomains">Koding Subdomains and VHosts</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/hello-world/go">Hello World on Koding: Go</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/hello-world/c++">Hello World on Koding: C++</a>
+        <a href="/guides/permanent-shared-vm">How to share your VM with someone?</a>
       </li>
     
     </ul>
@@ -333,10 +333,10 @@ wget -O cake.<span class="hljs-keyword">zip</span>
 <p>Open up <code>app/Config/core.php</code> and look for the following two lines. </p>
 <p>Edit the <code>DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi</code> and <code>76859309657453542496749683645</code> strings to have randomized content for your deploy. Just remember that the second string is numbers only.  </p>
 <pre><code><span class="hljs-comment">/** * A random string used in security hashing methods. */</span> 
-<span class="hljs-rule"><span class="hljs-attribute">Configure</span>:<span class="hljs-value">:<span class="hljs-function">write</span>(<span class="hljs-string">&apos;Security.salt&apos;</span>, <span class="hljs-string">&apos;DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi&apos;</span>)</span></span>;
+<span class="hljs-attribute">Configure</span>::<span class="hljs-function">write</span>(<span class="hljs-string">&apos;Security.salt&apos;</span>, <span class="hljs-string">&apos;DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi&apos;</span>);
 
 <span class="hljs-comment">/** * A random numeric string (digits only) used to encrypt/decrypt strings. */</span> 
-<span class="hljs-rule"><span class="hljs-attribute">Configure</span>:<span class="hljs-value">:<span class="hljs-function">write</span>(<span class="hljs-string">&apos;Security.cipherSeed&apos;</span>, <span class="hljs-string">&apos;76859309657453542496749683645&apos;</span>)</span></span>;
+<span class="hljs-attribute">Configure</span>::<span class="hljs-function">write</span>(<span class="hljs-string">&apos;Security.cipherSeed&apos;</span>, <span class="hljs-string">&apos;76859309657453542496749683645&apos;</span>);
 </code></pre><p>You will now be able to access CakePHP by following a similar URL:</p>
 <pre><code><span class="hljs-string">http:</span><span class="hljs-comment">//KODING_USERNAME.koding.io/cake</span>
 </code></pre><p>Find out more about your VM hostname <a href="http://learn.koding.com/faq/vm-hostname/">here</a>.</p>
