@@ -45,11 +45,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?437" />
+    <link rel="stylesheet" href="/css/vendor.css?920" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?68" />
+    <link rel="stylesheet" href="/css/main.css?463" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?861" />
+    <link rel="stylesheet" href="/css/rwd.css?506" />
 	</head>
 	<body>
 
@@ -254,7 +254,7 @@
   </li>
 
   
-  <li class="">
+  <li class="zactive">
     <h5>Latest Guides</h5>
     <ul>
     
@@ -262,8 +262,8 @@
         <a href="/guides/getting-started-biicode">Building C / C++ applications with biicode</a>
       </li>
     
-      <li class="">
-        <a href="/guides/installing-jekyll">Installing Jekyll on Koding</a>
+      <li class="zactive">
+        <a href="/guides/hello-world/c">Hello World on Koding: C</a>
       </li>
     
       <li class="">
@@ -275,11 +275,11 @@
       </li>
     
       <li class="">
-        <a href="/guides/ftp-with-filezilla">Using FileZilla to connect to your Koding VM</a>
+        <a href="/guides/installing-jekyll">Installing Jekyll on Koding</a>
       </li>
     
       <li class="">
-        <a href="/guides/install-phpmyadmin">Install phpMyAdmin</a>
+        <a href="/guides/ftp-with-filezilla">Using FileZilla to connect to your Koding VM</a>
       </li>
     
       <li class="">
@@ -287,7 +287,7 @@
       </li>
     
       <li class="">
-        <a href="/guides/permanent-shared-vm">How to share your VM with someone?</a>
+        <a href="/guides/vhosts-and-subdomains">Koding Subdomains and VHosts</a>
       </li>
     
     </ul>
@@ -310,7 +310,7 @@
     <li class="author username">
        by <span rel="author">Team Koding</span>
     </li>
-    <li class="updated">Updated 5 days ago</li>
+    <li class="updated">Updated 16 hours ago</li>
   </ul>
   
 
@@ -318,11 +318,11 @@
 
   <div itemprop="articleBody">
     <h2 class="heading"> <a name="introduction" class="anchor" href="#introduction"></a> Introduction </h2><p itemprop="about">C is a general-purpose, imperative computer programming language. As a language it supports structured programming, lexical variable scope and recursion, also having a static type system that prevents unintended operations is a major advantage.</p>
-<h2 class="heading"> <a name="implementation" class="anchor" href="#implementation"></a> Implementation </h2><p>The first thing you need to do is to create a file called <code>helloworld.c</code> in your Koding VM and paste the bellow snippet into it.</p>
+<h2 class="heading"> <a name="implementation" class="anchor" href="#implementation"></a> Implementation </h2><p>The first thing you need to do is to create a file called <code>helloworld.c</code> in your Koding VM and paste the below snippet into it.</p>
 <pre><code><span class="hljs-preprocessor">#<span class="hljs-keyword">include</span>&lt;stdio.h&gt;</span>
 
 <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
-    <span class="hljs-built_in">printf</span>(&#x201C;Hello World&#x201D;);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Hello World&quot;</span>);
     <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
 }
 </code></pre><p>To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:</p>
@@ -335,7 +335,7 @@
 <pre><code><span class="hljs-collection">{}</span>
 </code></pre><p>The two curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
 group or function.</p>
-<pre><code><span class="hljs-built_in">printf</span>(&#x201C;Hello World&#x201D;);
+<pre><code><span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Hello World&quot;</span>);
 </code></pre><p>The <code>printf</code> is used for printing things on the screen, in this case the words: <strong>Hello World</strong>. As you can see the data that is to be printed is put inside round brackets. The words Hello World are inside inverted commas, because they are what is called a string (a single letter is called a character and a series of characters is called a string). Strings must always be put between inverted commas. After the last round bracket there must be a semi-colon. The semi-colon shows that it is the end of the command.</p>
 <pre><code><span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
 </code></pre><p>When you wrote the first line <code>int main()</code>,  you declared that main must return an integer <code>int main()</code>. With <code>return 0;</code> you can return the value null to the operating system. When you return with a zero you tell the operating system that there were no errors while running the program.</p>
