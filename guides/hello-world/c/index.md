@@ -16,13 +16,13 @@ C is a general-purpose, imperative computer programming language. As a language 
 
 ## Implementation
 
-The first thing you need to do is to create a file called `helloworld.c` in your Koding VM and paste the bellow snippet into it.
+The first thing you need to do is to create a file called `helloworld.c` in your Koding VM and paste the below snippet into it.
 
 ```
 #include<stdio.h>
 
 int main() {
-    printf(“Hello World”);
+    printf("Hello World");
     return 0;
 }
 ```
@@ -56,7 +56,7 @@ The two curly brackets, one in the beginning and one at the end, are used to gro
 group or function.
 
 ```
-printf(“Hello World”);
+printf("Hello World");
 ```
 
 The `printf` is used for printing things on the screen, in this case the words: __Hello World__. As you can see the data that is to be printed is put inside round brackets. The words Hello World are inside inverted commas, because they are what is called a string (a single letter is called a character and a series of characters is called a string). Strings must always be put between inverted commas. After the last round bracket there must be a semi-colon. The semi-colon shows that it is the end of the command.
