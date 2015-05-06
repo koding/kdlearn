@@ -101,4 +101,4 @@ After the connection is established we enter our username and password and we're
     Connection to `http://<hostname>.<username>.koding.io/webdav1`
 closed.
 
-That is all. If you have any issues setting up WebDav you can drop an email at [support@koding.com](mailto:support@koding.com)
+That is all. If you have any issues setting up WebDav you can drop us an email at [support@koding.com](mailto:support@koding.com)

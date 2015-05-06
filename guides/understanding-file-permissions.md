@@ -102,4 +102,4 @@ chown demo:www-data demo1
 
 You should now be able to understand how ownership and permissions work in Linux.
 
-If you encounter any issues or have any questions please drop an email [here](mailto:support@koding.com).
+If you encounter any issues or have any questions please drop us an email [here](mailto:support@koding.com).

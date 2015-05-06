@@ -76,4 +76,4 @@ If everything is working properly, you should see the following screen in your b
 
 And that's it!
 
-If you encounter any issues or have any questions please drop an email [here](mailto:support@koding.com).
+If you encounter any issues or have any questions please drop us an email [here](mailto:support@koding.com).

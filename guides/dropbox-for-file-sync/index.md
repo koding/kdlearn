@@ -63,4 +63,4 @@ To set up selective sync, follow these easy steps:
 ```
 Simply substitute the `/path/to/` above to the actual path to the Dropbox script you downloaded.
 
-If you encounter any issues or have any questions please drop an email [here](mailto:support@koding.com).
+If you encounter any issues or have any questions please drop us an email [here](mailto:support@koding.com).

@@ -75,4 +75,4 @@ find / -size +50000  -exec ls -lahg {} \;
 
 That should give you plenty to consider for deletion and once you are done deleting, hopefully you can recover storage space on your VM.
 
-If you encounter any issues or have any questions please drop an email [here](mailto:support@koding.com).
+If you encounter any issues or have any questions please drop us an email [here](mailto:support@koding.com).

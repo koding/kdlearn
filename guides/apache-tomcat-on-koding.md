@@ -94,4 +94,4 @@ Deploy the `.war` file of your Java app to Apache Tomcat and run it.
 
 And that's it.
 
-If you encounter any issues or have any questions please drop an email [here](mailto:support@koding.com)
+If you encounter any issues or have any questions please drop us an email [here](mailto:support@koding.com)

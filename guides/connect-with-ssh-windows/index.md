@@ -105,7 +105,7 @@ If you're having trouble SSH-ing into your VM, after pasting your SSH key in the
 
 And that's it!
 
-If you encounter any issues or have any questions please drop an email [here](mailto:support@koding.com).
+If you encounter any issues or have any questions please drop us an email [here](mailto:support@koding.com).
 
 [koding]: https://koding.com
 [putty suite]: http://www.chiark.greenend.org.uk/~sgtatham/putty/

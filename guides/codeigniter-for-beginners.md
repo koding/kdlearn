@@ -60,4 +60,4 @@ Koding comes with Apache by default, so Codeigniter _just works_.
 
 As you can see, setting up CodeIgniter is a pretty simple process.
 
-If you encounter any issues or have any questions please drop an email [here](mailto:support@koding.com).
+If you encounter any issues or have any questions please drop us an email [here](mailto:support@koding.com).

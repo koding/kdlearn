@@ -140,4 +140,4 @@ copy the contents from the file you just downloaded and then save the file.
 
 And that's it! If you navigate to your VM's hostname and add **/mediawiki** at the end you should see a working wiki.
 
-If you encounter any issues or have any questions please drop an email [here](mailto:support@koding.com).
+If you encounter any issues or have any questions please drop us an email [here](mailto:support@koding.com).

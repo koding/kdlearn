@@ -146,4 +146,4 @@ When you hit "y" ufw will backup all existing rules before doing the reset. Rese
 ## Help, I locked myself out of my VM
 If for some reason you enabled your firewall and did not take the steps needed to open up the ports needed for Koding to work, then
 your only recourse is to reinit your VM. That process is described in [this guide](http://learn.koding.com/faq/vm-reinit/). If you
-encounter any issues or have any questions please drop an email [here](mailto:support@koding.com).
+encounter any issues or have any questions please drop us an email [here](mailto:support@koding.com).

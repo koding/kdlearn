@@ -86,4 +86,4 @@ If everything was successful this is the first thing your should see:
 
 And that's it!
 
-If you encounter any issues or have any questions please drop an email [here](mailto:support@koding.com).
+If you encounter any issues or have any questions please drop us an email [here](mailto:support@koding.com).

@@ -64,4 +64,4 @@ Find out more about your VM hostname [here](http://learn.koding.com/faq/vm-hostn
 
 And that's it!
 
-If you encounter any issues or have any questions please drop an email [here](mailto:support@koding.com).
+If you encounter any issues or have any questions please drop us an email [here](mailto:support@koding.com).

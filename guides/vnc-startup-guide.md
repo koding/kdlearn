@@ -255,7 +255,7 @@ This will start up our sample GUI application. You should see a pop up with two 
 
 Congratulations!  If you've made it this far, you should have a successful setup.  Running other GUI programs that you develop is a easy as calling them from the command line in noVNC.
 
-If you encounter any issues or have any questions please drop an email [here](mailto:support@koding.com).
+If you encounter any issues or have any questions please drop us an email [here](mailto:support@koding.com).
 
 [1]: http://i.imgur.com/O8Duk7k.png
 [2]: http://i.imgur.com/55OmVP9.png

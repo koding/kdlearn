@@ -131,4 +131,4 @@ Wait for the cloning process to finish and now you should see all the commit his
 > type:alert
 > Whenever you turn on Koding VM you will have to run the `ungit` command to get this interface started.
 
-If you encounter any issues or have any questions please drop an email [here](mailto:support@koding.com).
+If you encounter any issues or have any questions please drop us an email [here](mailto:support@koding.com).
