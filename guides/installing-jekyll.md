@@ -8,39 +8,32 @@ template: page.toffee
 # Installing & Setting Up Jekyll
 This tutorial will guide you through the installation of Jekyll on a Koding VM.
 
-## Install RVM
-Use the two commands below to install rvm on your virtual machine (for more information visit [here](https://rvm.io/rvm/install)):
+## Install Ruby2
+Use the command below to install Ruby2 on your virtual machine:
 ```
-gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-
-\curl -sSL https://get.rvm.io | bash -s stable --ruby
-```
-
-Then run the rvm script:
-```
-source .rvm/scripts/rvm
+kpm install ruby2
 ```
 
 ## Install Jekyll
 
 Use this command to install Jekyll:
 ```
-gem install jekyll
+sudo gem install jekyll
 ```
 
 ## Create a Jekyll site
 > type:tip
 >  The next step can be skipped if you've already created a Jekyll site.
 
-Execute the following command, where `JekyllSite` is the destination folder of your website:
+Execute the following command, where `~/JekyllSite` is the destination folder of your website:
 ```
-jekyll new JekyllSite
+jekyll new ~/JekyllSite
 ```
 ## Run the server
 
-Set the current directory to the website's directory (for this tutorial it's JekyllSite):
+Set the current directory to the website's directory (for this tutorial it's ~/JekyllSite):
 ```
-cd JekyllSite
+cd ~/JekyllSite
 ```
 
 Execute the following command:
