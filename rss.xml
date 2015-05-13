@@ -18,6 +18,53 @@
   <language>en</language>
   
   <item>
+    <title>What is a VM Snapshot?</title>
+    <link>//learn.koding.com/guides/vm-snapshot</link>
+    <pubDate>"2015-05-13T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/vm-snapshot</guid>
+    <author>Team Koding</author>
+    <description>Koding's Snapshot feature gives you the ability to save a point-in-time image of your virtual machine. When you make a snapshot,
+the system will make a copy of the VM so that you can use it:
+
+as a restorable backup
+as a starting point for new VMs that you can create.
+
+  How can I make a snapshot? To create a snapshot, follow these easy steps:
+
+Head over to VM Settings modal, click on 
+the &amp;quot;Snapshots&amp;quot; tab as shown below and then click the &amp;quot;Add New Snapshot&amp;quot; button.
+
+
+Give your new snapshot a name and then click on &amp;quot;Add Snapshot&amp;quot;.
+
+
+The snapshot will begin to build. 
+ tipIt can take anywhere between 2 to 5 minutes (depending on the size of your VM) to create the snapshot.
+ 
+Once it is done creating, the snapshot will be listed and you can take additional actions on it (as shown
+in the image below).
+
+
+
+  How do I delete a snapshot? To delete a snapshot, hover over the name of the snapshot with your mouse to reveal the snapshot
+action button and from the available option, select the delete option.
+  How many snapshots can I create? The snapshot feature is only available to users with a paid plan. If you have a paid plan, the
+snapshot limits are as follows:
+
+Hobbyist plan: 1 snapshot
+Developer plan: 3 snapshots
+Professional plan: 5 snapshots
+
+ tipFree accounts cannot create snapshots (for now).
+   How do I use a snapshot to create a new VM? You can use a snapshot as the creation point for a new VM. This is helpful if you have done the work
+to install the relevant software that you use and have a snapshot that is ready to be used.
+To create a new VM using a snapshot, simply add a new VM (if your plan allows) and use an existing
+snapshot as the starting point (as shown in the image below).
+
+</description>
+  </item>
+  
+  <item>
     <title>Koding Subdomains and VHosts</title>
     <link>//learn.koding.com/guides/vhosts-and-subdomains</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
@@ -105,24 +152,6 @@ left sidebar of Koding. From the settings menu, Click &amp;quot;More&amp;quot;, 
 subdomains that you need.
 For a more indepth explanation of this process, refer to the Subdomain
 Section here.
-</description>
-  </item>
-  
-  <item>
-    <title>Hello World on Koding: Python</title>
-    <link>//learn.koding.com/guides/hello-world/python</link>
-    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/python</guid>
-    <author>Team Koding</author>
-    <description>  Introduction Python is a widely used general-purpose, high-level programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java. The language provides constructs intended to enable clear programs on both a small and large scale.
-  Implementation The first thing you need to do is to create a file called helloworld.py in your Koding VM and paste the bellow snippet into it.
-print &amp;quot;Hello World!&amp;quot;
-To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
-python helloworld.py
-  Explanation print &amp;quot;Hello World!&amp;quot;
-Since Python emphasizes code readability, the above line is pretty self explanatory. It will print out something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
-And that's it!
-You just wrote and ran your first Hello World in Python.
 </description>
   </item>
   
@@ -799,53 +828,6 @@ certainly be different than what was used in this example.
   </item>
   
   <item>
-    <title>What is a VM Snapshot?</title>
-    <link>//learn.koding.com/guides/vm-snapshot</link>
-    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/vm-snapshot</guid>
-    <author>Team Koding</author>
-    <description>Koding's Snapshot feature gives you the ability to save a point-in-time image of your virtual machine. When you make a snapshot,
-the system will make a copy of the VM so that you can use it:
-
-as a restorable backup
-as a starting point for new VMs that you can create.
-
-  How can I make a snapshot? To create a snapshot, follow these easy steps:
-
-Head over to VM Settings modal, click on 
-the &amp;quot;Snapshots&amp;quot; tab as shown below and then click the &amp;quot;Add New Snapshot&amp;quot; button.
-
-
-Give your new snapshot a name and then click on &amp;quot;Add Snapshot&amp;quot;.
-
-
-The snapshot will begin to build. 
- tipIt can take anywhere between 2 to 5 minutes (depending on the size of your VM) to create the snapshot.
- 
-Once it is done creating, the snapshot will be listed and you can take additional actions on it (as shown
-in the image below).
-
-
-
-  How do I delete a snapshot? To delete a snapshot, hover over the name of the snapshot with your mouse to reveal the snapshot
-action button and from the available option, select the delete option.
-  How many snapshots can I create? The snapshot feature is only available to users with a paid plan. If you have a paid plan, the
-snapshot limits are as follows:
-
-Hobbyist plan: 1 snapshot
-Developer plan: 3 snapshots
-Professional plan: 5 snapshots
-
- tipFree accounts cannot create snapshots (for now).
-   How do I use a snapshot to create a new VM? You can use a snapshot as the creation point for a new VM. This is helpful if you have done the work
-to install the relevant software that you use and have a snapshot that is ready to be used.
-To create a new VM using a snapshot, simply add a new VM (if your plan allows) and use an existing
-snapshot as the starting point (as shown in the image below).
-
-</description>
-  </item>
-  
-  <item>
     <title>Webmin for Koding</title>
     <link>//learn.koding.com/guides/webmin-for-koding</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
@@ -885,6 +867,24 @@ In order to apply the changes we have made to the configuration, we will need to
 sudo service webmin restart
 And that's it!
 If you encounter any issues or have any questions please drop us an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>Hello World on Koding: Python</title>
+    <link>//learn.koding.com/guides/hello-world/python</link>
+    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/python</guid>
+    <author>Team Koding</author>
+    <description>  Introduction Python is a widely used general-purpose, high-level programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java. The language provides constructs intended to enable clear programs on both a small and large scale.
+  Implementation The first thing you need to do is to create a file called helloworld.py in your Koding VM and paste the bellow snippet into it.
+print &amp;quot;Hello World!&amp;quot;
+To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
+python helloworld.py
+  Explanation print &amp;quot;Hello World!&amp;quot;
+Since Python emphasizes code readability, the above line is pretty self explanatory. It will print out something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
+And that's it!
+You just wrote and ran your first Hello World in Python.
 </description>
   </item>
   

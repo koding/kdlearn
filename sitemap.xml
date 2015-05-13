@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-        <loc>http://learn.koding.com/guides/vhosts-and-subdomains</loc>
-        <lastmod>2015-05-06</lastmod>
+        <loc>http://learn.koding.com/guides/vm-snapshot</loc>
+        <lastmod>2015-05-13</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/hello-world/python</loc>
+        <loc>http://learn.koding.com/guides/vhosts-and-subdomains</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -122,13 +122,13 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/vm-snapshot</loc>
+        <loc>http://learn.koding.com/guides/webmin-for-koding</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/webmin-for-koding</loc>
+        <loc>http://learn.koding.com/guides/hello-world/python</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
