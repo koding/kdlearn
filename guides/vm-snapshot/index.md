@@ -1,10 +1,11 @@
 ---
-title: What is a VM Snapshot?
+title: Understanding Snapshots
 author: Team Koding
 categories: [koding features, koding]
 template: page.toffee
 ---
 
+### What are Snapshots?
 Koding's Snapshot feature gives you the ability to save a __point-in-time__ image of your virtual machine. When you make a snapshot,
 the system will make a copy of the VM so that you can use it:
 1. as a restorable backup
