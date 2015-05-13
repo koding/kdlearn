@@ -49,3 +49,5 @@ To create a new VM using a snapshot, simply add a new VM (if your plan allows) a
 snapshot as the starting point (as shown in the image below).
 
 ![snapshot-6](snapshots-6.png)
+
+
