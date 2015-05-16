@@ -764,13 +764,13 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/faq/vm-ip-vs-address</loc>
+        <loc>http://learn.koding.com/faq/change-username</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
-        <loc>http://learn.koding.com/faq/change-username</loc>
+        <loc>http://learn.koding.com/faq/vm-reinit</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -788,7 +788,7 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/faq/vm-reinit</loc>
+        <loc>http://learn.koding.com/faq/vm-ip-vs-address</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -832,6 +832,12 @@
   <url>
         <loc>http://learn.koding.com/faq/vm-hostname</loc>
         <lastmod>2015-05-06</lastmod>
+        <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+        <loc>http://learn.koding.com/faq/vm-network</loc>
+        <lastmod>2015-05-16</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   

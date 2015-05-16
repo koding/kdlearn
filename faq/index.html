@@ -43,11 +43,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?500" />
+    <link rel="stylesheet" href="/css/vendor.css?267" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?939" />
+    <link rel="stylesheet" href="/css/main.css?158" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?903" />
+    <link rel="stylesheet" href="/css/rwd.css?365" />
 	</head>
 	<body>
 
@@ -248,14 +248,14 @@
     
       <li>
         <a
-          href="#vm-ip-vs-address"
-          class="title">Should I use my VM's IP or Address?</a>
+          href="#change-username"
+          class="title">Can I change my Koding username?</a>
       </li>
     
       <li>
         <a
-          href="#change-username"
-          class="title">Can I change my Koding username?</a>
+          href="#vm-reinit"
+          class="title">How can I reset my VM back to its original state?</a>
       </li>
     
       <li>
@@ -272,8 +272,8 @@
     
       <li>
         <a
-          href="#vm-reinit"
-          class="title">How can I reset my VM back to its original state?</a>
+          href="#vm-ip-vs-address"
+          class="title">Should I use my VM's IP or Address?</a>
       </li>
     
       <li>
@@ -316,6 +316,12 @@
         <a
           href="#vm-hostname"
           class="title">What is my VM Hostname/Address/Domain Name?</a>
+      </li>
+    
+      <li>
+        <a
+          href="#vm-network"
+          class="title">How can I monitor network traffic/usage?</a>
       </li>
     
       <li>
@@ -459,31 +465,6 @@ Google+, etc. or you can use the new password to log in. Both will work.</p>
     </li>
   
     <li>
-      <a name="vm-ip-vs-address">
-      <h3
-        class="question"
-        itemscope itemtype="//schema.org/Question"
-      >
-        <a href="/faq/vm-ip-vs-address">Should I use my VM's IP or Address?</a>
-      </h3>
-      <div
-        class="answer"
-        itemscope itemtype="//schema.org/Answer"
-        itemprop="acceptedAnswer"
-      >
-        <p>Koding gives you access to your VMs IP, as well as an Address that
-always points to that VM&apos;s IP, so which should you use, and why?</p>
-<p>While your VMs IP will operate perfectly fine, the IP is dynamic. In
-other words, it will change. Because of this, Koding gives you a <a href="/faq/vm-address">VM
-Address</a>, which will <em>always</em> point to your VM, regardless of
-IP changes, so this is what you usually want to use.</p>
-<blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>IP addresses of &quot;Always On&quot; VMs don&apos;t change even after the VM reboots.</p>
- </blockquote><p>If you have trouble finding your VM Address, <a href="/faq/vm-address">click here</a>.</p>
-
-      </div>
-    </li>
-  
-    <li>
       <a name="change-username">
       <h3
         class="question"
@@ -500,6 +481,42 @@ IP changes, so this is what you usually want to use.</p>
 <p>Why...? It&apos;s because when you first create your account we provision a lot of support services in the background for your account and all of these would need to get updated. This becomes problematic if you have made changes to your VM (even if you have created one file). If you really want to change your username, the only option is to delete your current account and make a new one with the desired username.</p>
 <p>But ... you can however , change your display name as seen associated with your the bulletin board posts. Just browse to <a href="https://koding.com/Account/Profile">https://koding.com/Account/Profile</a> where you may change &quot;Name&quot; and/or &quot;LastName&quot; as you would like them to appear to other koding users wherever you chat on koding. This quite niftily has the side-effect of changing your nick on all of you past postings instantaneously. Note that this feature does not in any way allow you to be anonymous. Anyone who clicks on your chat nick (whatever it may be at the time) will always see your canonical username in the URL of your profile.</p>
 <p>So to be clear , you may change your display name at any time but this does not affect your login username or VM URL. As stated above that is your system UID and can not be changed.</p>
+
+      </div>
+    </li>
+  
+    <li>
+      <a name="vm-reinit">
+      <h3
+        class="question"
+        itemscope itemtype="//schema.org/Question"
+      >
+        <a href="/faq/vm-reinit">How can I reset my VM back to its original state?</a>
+      </h3>
+      <div
+        class="answer"
+        itemscope itemtype="//schema.org/Answer"
+        itemprop="acceptedAnswer"
+      >
+        <p>Sometimes, after you&apos;re installed a slew of software and things have started to conflict,
+there&apos;s a need to send your VM back to its original state. To achieve that, Koding offers
+an easy reinitialization function which you can use at any time you like.</p>
+<h4 class="heading"> <a name="what-does-reinitialization-do-" class="anchor" href="#what-does-reinitialization-do-"></a> What does reinitialization do? </h4><p>When you reinit your VM, the system will delete everything on your VM and create a new one from
+scratch.</p>
+<blockquote class="alert fa fa-exclamation-circle"> <p><span class="label">alert</span><strong>NOTE: You will lose all existing data (unless you back it up somewhere) on the VM
+that you are reinitializing. This is an irreversible process so please proceed with caution.</strong> To backup
+your data, we recommend you <a href="http://learn.koding.com/guides/setting-up-ftp-on-koding/">use FTP</a>
+to transfer the files.</p>
+ </blockquote><p>Reinitialization will however preserve your VM settings and any domain names that you may have created.</p>
+<h4 class="heading"> <a name="how-do-i-reinit-my-vm-" class="anchor" href="#how-do-i-reinit-my-vm-"></a> How do I reinit my VM? </h4><p>To reinit your VM, follow these easy steps:</p>
+<ol>
+<li>head over to the <a href="http://learn.koding.com/guides/understanding-vm-panel/">VM settings modal</a> (as shown in the screen shot below)</li>
+<li>turn your VM to &quot;on&quot; state (if it is off)</li>
+<li>then click on the &quot;Advanced&quot; tab</li>
+<li>click the &quot;Reinitialize&quot; button inside the Advanced section to begin the reinit process.</li>
+</ol>
+<p>Once you initiate a reinit, you will see appropriate messages on the screen as your VM rebuilds.
+<img src="/faq/vm-reinit/reinit.png" alt="VM Reinit"></p>
 
       </div>
     </li>
@@ -551,37 +568,26 @@ They cannot be collapsed when in Channels or Messages.</p>
     </li>
   
     <li>
-      <a name="vm-reinit">
+      <a name="vm-ip-vs-address">
       <h3
         class="question"
         itemscope itemtype="//schema.org/Question"
       >
-        <a href="/faq/vm-reinit">How can I reset my VM back to its original state?</a>
+        <a href="/faq/vm-ip-vs-address">Should I use my VM's IP or Address?</a>
       </h3>
       <div
         class="answer"
         itemscope itemtype="//schema.org/Answer"
         itemprop="acceptedAnswer"
       >
-        <p>Sometimes, after you&apos;re installed a slew of software and things have started to conflict,
-there&apos;s a need to send your VM back to its original state. To achieve that, Koding offers
-an easy reinitialization function which you can use at any time you like.</p>
-<h4 class="heading"> <a name="what-does-reinitialization-do-" class="anchor" href="#what-does-reinitialization-do-"></a> What does reinitialization do? </h4><p>When you reinit your VM, the system will delete everything on your VM and create a new one from
-scratch.</p>
-<blockquote class="alert fa fa-exclamation-circle"> <p><span class="label">alert</span><strong>NOTE: You will lose all existing data (unless you back it up somewhere) on the VM
-that you are reinitializing. This is an irreversible process so please proceed with caution.</strong> To backup
-your data, we recommend you <a href="http://learn.koding.com/guides/setting-up-ftp-on-koding/">use FTP</a>
-to transfer the files.</p>
- </blockquote><p>Reinitialization will however preserve your VM settings and any domain names that you may have created.</p>
-<h4 class="heading"> <a name="how-do-i-reinit-my-vm-" class="anchor" href="#how-do-i-reinit-my-vm-"></a> How do I reinit my VM? </h4><p>To reinit your VM, follow these easy steps:</p>
-<ol>
-<li>head over to the <a href="http://learn.koding.com/guides/understanding-vm-panel/">VM settings modal</a> (as shown in the screen shot below)</li>
-<li>turn your VM to &quot;on&quot; state (if it is off)</li>
-<li>then click on the &quot;Advanced&quot; tab</li>
-<li>click the &quot;Reinitialize&quot; button inside the Advanced section to begin the reinit process.</li>
-</ol>
-<p>Once you initiate a reinit, you will see appropriate messages on the screen as your VM rebuilds.
-<img src="/faq/vm-reinit/reinit.png" alt="VM Reinit"></p>
+        <p>Koding gives you access to your VMs IP, as well as an Address that
+always points to that VM&apos;s IP, so which should you use, and why?</p>
+<p>While your VMs IP will operate perfectly fine, the IP is dynamic. In
+other words, it will change. Because of this, Koding gives you a <a href="/faq/vm-address">VM
+Address</a>, which will <em>always</em> point to your VM, regardless of
+IP changes, so this is what you usually want to use.</p>
+<blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>IP addresses of &quot;Always On&quot; VMs don&apos;t change even after the VM reboots.</p>
+ </blockquote><p>If you have trouble finding your VM Address, <a href="/faq/vm-address">click here</a>.</p>
 
       </div>
     </li>
@@ -807,6 +813,48 @@ virtual hosts, it&apos;s easy to assign them all their own unique sub-domains. <
 <li>once added, these sub-domains become available on the setting modals of all your VMs for easy reassignment</li>
 <li>deleting a sub-domain is as easy as adding one!
 <img src="/faq/vm-hostname/third.png" alt="Remove subdomain"></li>
+</ol>
+
+      </div>
+    </li>
+  
+    <li>
+      <a name="vm-network">
+      <h3
+        class="question"
+        itemscope itemtype="//schema.org/Question"
+      >
+        <a href="/faq/vm-network">How can I monitor network traffic/usage?</a>
+      </h3>
+      <div
+        class="answer"
+        itemscope itemtype="//schema.org/Answer"
+        itemprop="acceptedAnswer"
+      >
+        <p>There are a variety of tools for Ubuntu that you can install on your VM in order to monitor traffic and network usage. Listed below are three of our favorites.</p>
+<blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>Before installing any of the tools mentioned below, make sure you update your
+repositories by using the command: <code>sudo apt-get update</code></p>
+ </blockquote><ol>
+<li><strong>nload</strong>: This tool allows users you to monitor the incoming and outgoing traffic separately. It also draws out an ascii graph to indicate the same, the scale of which can be adjusted. Easy and simple to use, and does not support many options. So if you just need to take a quick look at the total bandwidth usage without details of individual processes, then nload will be handy.
+To install, type the following command in Terminal:<pre><code>sudo apt-<span class="hljs-keyword">get</span> install nload -y
+</code></pre>and then to run, type:<pre><code>nload
+</code></pre></li>
+<li><strong>iftop</strong>: This tool measures the data flowing through individual socket connections, and it works in a manner that is different from Nload. Iftop uses the pcap library to capture the packets moving in and out of the network adapter, and then sums up the size and count to find the total bandwidth under use. Although iftop reports the bandwidth used by individual connections, it cannot report the process name/id involved in the particular socket connection. But being based on the pcap library, iftop is able to filter the traffic and report bandwidth usage over selected host connections as specified by the filter.
+To install, type the following command in Terminal:<pre><code>sudo apt-<span class="hljs-keyword">get</span> install nload -y
+</code></pre>and then to run, type:<pre><code><span class="hljs-title">sudo</span> iftop -n
+</code></pre></li>
+<li><strong>iptraf</strong>: This is an interactive and colorful IP Lan monitor. It shows individual connections and the amount of data flowing between the hosts.
+To install, type the following command in Terminal:<pre><code>sudo apt-<span class="hljs-keyword">get</span> install iptraf iptraf-ng -y
+</code></pre>and then to run, type:<pre><code><span class="hljs-title">sudo</span> iptraf
+</code></pre></li>
+<li><strong>nethogs</strong>: This is a small &apos;net top&apos; tool that shows the bandwidth used by individual processes and sorts the list putting the most intensive processes on top. In the event of a sudden bandwidth spike, quickly open nethogs and find the process responsible. Nethogs reports the PID, user and the path of the program.
+To install, type the following command in Terminal:<pre><code>sudo apt-<span class="hljs-keyword">get</span> install nethogs -y
+</code></pre>and then to run, type:<pre><code><span class="hljs-title">sudo</span> nethogs
+</code></pre></li>
+<li><strong>vnstat</strong>: This utility is bit different from most of the other tools. It actually runs a background service/daemon and keeps recording the size of data transfer all the time. Next it can be used to generate a report of the history of network usage. Vnstat is more like a tool to get historic reports of how much bandwidth is used everyday or over the past month. It is not strictly a tool for monitoring the network in real time.
+To install, type the following command in Terminal:<pre><code>sudo apt-<span class="hljs-keyword">get</span> install vnstat -y
+</code></pre>and then to run, type:<pre><code>sudo <span class="hljs-keyword">service</span> <span class="hljs-literal">start</span> vnstat
+</code></pre>Running vnstat without any options would simply show the total amount of data transfer that took place since the date the daemon is running. To monitor the bandwidth usage in realtime, use the <code>-l</code> option (live mode). It would then show the total bandwidth used by incoming and outgoing data, but in a very precise manner without any internal details about host connections or processes.  </li>
 </ol>
 
       </div>
