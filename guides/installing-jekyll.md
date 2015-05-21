@@ -6,6 +6,15 @@ template: page.toffee
 ---
 
 # Installing & Setting Up Jekyll
+
+Before you continue reading this guide why not try a more easy way using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install Jekyll using just one command:
+
+```
+kpm install jekyll
+```
+
+***
+
 This tutorial will guide you through the installation of Jekyll on a Koding VM.
 
 ## Install RVM
