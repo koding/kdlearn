@@ -5,7 +5,7 @@ categories: [collaboration, koding]
 
 improvable: false
 ---
-> type:alert
+> type:tip
 > This guide is not complete as the Collaboration feature is still under development. If you run into any
   issues while using it, please [let us know](mailto:support@koding.com).
 
