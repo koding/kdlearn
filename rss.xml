@@ -83,6 +83,57 @@ man cron
   </item>
   
   <item>
+    <title>How can I do real-time collaboration on Koding?</title>
+    <link>//learn.koding.com/guides/collaboration</link>
+    <pubDate>"2015-05-21T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/collaboration</guid>
+    <author>Team Koding</author>
+    <description> tipThis guide is not complete as the Collaboration feature is still under development. If you run into any
+  issues while using it, please let us know.
+   What is Collaboration? Koding Collaboration allows you to easily and effectively collaborate and share resources with your
+team, students, peers or friends. When you enable Collaboration, you are effectively sharing your
+virtual machine (VM) with those whom you invite into the sharing session. The session remains active
+until you hit &amp;quot;End Session&amp;quot;. Every person you share a session with requires a Koding account (free or paid).
+ alertSince the user(s) with whom you share your session have access to all the files on your VM, make sure that you are sharing with people that you know.
+ 
+  What can I share? When you collaborate with someone, you can give them full access to your VM. This means that an invited
+user can view/edit files and directories on your VM.
+Besides file sharing, you can also share your IDE, Terminal and your Drawing board. When you start a
+sharing session, the contents of your entire workspace are shared. This includes any existing open IDE
+or Terminal tabs or any new one's that you open during the sharing session.
+During an active Collaboration session, anything typed by any user in the sharing session is automatically
+reflected on the screens of the other users in the same session. If you have ever worked on a shared
+Google doc with realtime editing, this should feel very natural in comparison to that experience.
+  What can I use Collaboration for? Collaboration is great for things like:
+
+Collaborative programming
+Interviews
+Teaching
+Bug hunting/fixing
+Doing client work (with the client)
+
+Since Koding Collaboration allows you to share your Terminal as well, it's great for those times when
+you are stuck with that shell script and need someone to take a peek. Koding Collaboration also
+allows you to share a white-board for all those times when a picture is just needed.
+  What does &amp;quot;Watch&amp;quot; mode mean? Watch mode, the default mode, shares your workspace and everyone in that session gets a replica of your
+workspace on their screen. So if you open file tabs, new Terminals tabs and even switch tabs, other
+sessions participants see it all and their screens also update in real time with these actions.
+When a session participant chooses to &amp;quot;unwatch&amp;quot; your session, it means they are free to do what they
+want on their end of the collaborative session without having to be distracted by the host changing
+files or opening new tabs. This is very useful when you want to work on a few different files and
+the users in the session can open files independently on the VM shared by the host yet not distract
+each other. This is a bit confusing at first but then you'll wonder how else would Collaboration
+ever happen!
+  What does &amp;quot;Kick&amp;quot; do? This is available to the host if they want to remove someone from a shared session without ending
+the session.
+
+  Do sessions &amp;quot;auto-close&amp;quot;? Generally, we recommend that you exit/close your sessions yourself. However, there are situations when
+you cannot close/end your session (e.g. browser crash). In such cases, you have up to one (1) minute
+to reconnect otherwise at the end of a minute, all sessions are auto-terminated.
+</description>
+  </item>
+  
+  <item>
     <title>Understanding Snapshots</title>
     <link>//learn.koding.com/guides/vm-snapshot</link>
     <pubDate>"2015-05-13T00:00:00.000Z"</pubDate>
@@ -217,44 +268,6 @@ left sidebar of Koding. From the settings menu, Click &amp;quot;More&amp;quot;, 
 subdomains that you need.
 For a more indepth explanation of this process, refer to the Subdomain
 Section here.
-</description>
-  </item>
-  
-  <item>
-    <title>Hello World on Koding: Java</title>
-    <link>//learn.koding.com/guides/hello-world/java</link>
-    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/java</guid>
-    <author>Team Koding</author>
-    <description>  Introduction Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.
-  Implementation The first thing you need to do is to create a file called HelloWorld.java in your Koding VM and paste the bellow snippet into it.
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(&amp;quot;Hello, World!&amp;quot;);
-    }
-}
-To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
-javac HelloWorld.java
-java HelloWorld
-  Explanation public class HelloWorld
-The first line defines a class called HelloWorld. In Java, every line of code that can actually run needs to be inside a class. This line declares a class named HelloWorld, which is public, that means that any other class can access it.
-public static void main(String[] args)
-The main method has to have this exact signature in order to be able to run your program.
-
-public - means that anyone can access it.
-static  - means that you can run this method without creating an instance of Main.
-void - means that this method doesn't return any value.
-main - is the name of the method.
-
-The arguments inside the method are the arguments that you will get when running the program with parameters. It's an array of strings.
-{}
-The curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
-group or function.
-System.out.println(&amp;quot;Hello, World!&amp;quot;);
-System is a pre-defined class that Java provides and it also holds some useful methods and variables. out is a static variable within System that represents the output of your program. println is a method of out that can be used to print a line.
-And that's it!
-You just wrote and ran your first Hello World in Java.
-If you'd like to continue dabbling in Java, we recommend taking a look at this tutorial written for Koding over at Andriodauthority.com
 </description>
   </item>
   
@@ -870,33 +883,40 @@ If you encounter any issues or have any questions please drop us an email here.
   </item>
   
   <item>
-    <title>Hello World on Koding: Perl</title>
-    <link>//learn.koding.com/guides/hello-world/perl</link>
+    <title>Hello World on Koding: Java</title>
+    <link>//learn.koding.com/guides/hello-world/java</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/perl</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/java</guid>
     <author>Team Koding</author>
-    <description>  Introduction Perl is a family of high-level, general-purpose, interpreted, dynamic programming languages. The Perl languages borrow features from other programming languages including C, shell scripting (sh) etc. They provide powerful text processing facilities without the arbitrary data-length limits of many contemporary Unix commandline tools, facilitating easy manipulation of text files.
-  Implementation The first thing you need to do is to create a file called helloworld in your Koding VM and paste the bellow snippet into it.
-#!/usr/bin/perl
-
-use strict;
-use warnings;
-
-print &amp;quot;Hello, World!&amp;quot;;
+    <description>  Introduction Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.
+  Implementation The first thing you need to do is to create a file called HelloWorld.java in your Koding VM and paste the bellow snippet into it.
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println(&amp;quot;Hello, World!&amp;quot;);
+    }
+}
 To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
-first ensure the file is given executable permissions:
-chmod u+x helloworld
-and then run this command
-perl helloworld
-  Explanation #!/usr/bin/perl
-Every Perl program should start with this as its very first line, although this may vary from system to system. This line tells the machine what to do with the file when it is executed.
-use strict;
-use warnings;
-These two statements turn on the 'strict' and 'warnings' pragmas. These are strongly encouraged for all Perl programs since they tell the Perl interpreter to check for programming errors like undeclared variables.
-print &amp;quot;Hello, World!&amp;quot;;
-The print function outputs some data. In the above case it prints out the string Hello world, and as always the statement ends with a semicolon.
+javac HelloWorld.java
+java HelloWorld
+  Explanation public class HelloWorld
+The first line defines a class called HelloWorld. In Java, every line of code that can actually run needs to be inside a class. This line declares a class named HelloWorld, which is public, that means that any other class can access it.
+public static void main(String[] args)
+The main method has to have this exact signature in order to be able to run your program.
+
+public - means that anyone can access it.
+static  - means that you can run this method without creating an instance of Main.
+void - means that this method doesn't return any value.
+main - is the name of the method.
+
+The arguments inside the method are the arguments that you will get when running the program with parameters. It's an array of strings.
+{}
+The curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
+group or function.
+System.out.println(&amp;quot;Hello, World!&amp;quot;);
+System is a pre-defined class that Java provides and it also holds some useful methods and variables. out is a static variable within System that represents the output of your program. println is a method of out that can be used to print a line.
 And that's it!
-You just wrote and ran your first Hello World in Perl.
+You just wrote and ran your first Hello World in Java.
+If you'd like to continue dabbling in Java, we recommend taking a look at this tutorial written for Koding over at Andriodauthority.com
 </description>
   </item>
   
@@ -2777,53 +2797,33 @@ If you encounter any issues or have any questions please drop us an email here.
   </item>
   
   <item>
-    <title>How can I do real-time collaboration on Koding?</title>
-    <link>//learn.koding.com/guides/collaboration</link>
+    <title>Hello World on Koding: Perl</title>
+    <link>//learn.koding.com/guides/hello-world/perl</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/collaboration</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/perl</guid>
     <author>Team Koding</author>
-    <description> alertThis guide is not complete as the Collaboration feature is still under development. If you run into any
-  issues while using it, please let us know.
-   What is Collaboration? Koding Collaboration allows you to easily and effectively collaborate and share resources with your
-team, students, peers or friends. When you enable Collaboration, you are effectively sharing your
-virtual machine (VM) with those whom you invite into the sharing session. The session remains active
-until you hit &amp;quot;End Session&amp;quot;. Every person you share a session with requires a Koding account (free or paid).
- alertSince the user(s) with whom you share your session have access to all the files on your VM, make sure that you are sharing with people that you know.
- 
-  What can I share? When you collaborate with someone, you can give them full access to your VM. This means that an invited
-user can view/edit files and directories on your VM.
-Besides file sharing, you can also share your IDE, Terminal and your Drawing board. When you start a
-sharing session, the contents of your entire workspace are shared. This includes any existing open IDE
-or Terminal tabs or any new one's that you open during the sharing session.
-During an active Collaboration session, anything typed by any user in the sharing session is automatically
-reflected on the screens of the other users in the same session. If you have ever worked on a shared
-Google doc with realtime editing, this should feel very natural in comparison to that experience.
-  What can I use Collaboration for? Collaboration is great for things like:
+    <description>  Introduction Perl is a family of high-level, general-purpose, interpreted, dynamic programming languages. The Perl languages borrow features from other programming languages including C, shell scripting (sh) etc. They provide powerful text processing facilities without the arbitrary data-length limits of many contemporary Unix commandline tools, facilitating easy manipulation of text files.
+  Implementation The first thing you need to do is to create a file called helloworld in your Koding VM and paste the bellow snippet into it.
+#!/usr/bin/perl
 
-Collaborative programming
-Interviews
-Teaching
-Bug hunting/fixing
-Doing client work (with the client)
+use strict;
+use warnings;
 
-Since Koding Collaboration allows you to share your Terminal as well, it's great for those times when
-you are stuck with that shell script and need someone to take a peek. Koding Collaboration also
-allows you to share a white-board for all those times when a picture is just needed.
-  What does &amp;quot;Watch&amp;quot; mode mean? Watch mode, the default mode, shares your workspace and everyone in that session gets a replica of your
-workspace on their screen. So if you open file tabs, new Terminals tabs and even switch tabs, other
-sessions participants see it all and their screens also update in real time with these actions.
-When a session participant chooses to &amp;quot;unwatch&amp;quot; your session, it means they are free to do what they
-want on their end of the collaborative session without having to be distracted by the host changing
-files or opening new tabs. This is very useful when you want to work on a few different files and
-the users in the session can open files independently on the VM shared by the host yet not distract
-each other. This is a bit confusing at first but then you'll wonder how else would Collaboration
-ever happen!
-  What does &amp;quot;Kick&amp;quot; do? This is available to the host if they want to remove someone from a shared session without ending
-the session.
-
-  Do sessions &amp;quot;auto-close&amp;quot;? Generally, we recommend that you exit/close your sessions yourself. However, there are situations when
-you cannot close/end your session (e.g. browser crash). In such cases, you have up to one (1) minute
-to reconnect otherwise at the end of a minute, all sessions are auto-terminated.
+print &amp;quot;Hello, World!&amp;quot;;
+To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
+first ensure the file is given executable permissions:
+chmod u+x helloworld
+and then run this command
+perl helloworld
+  Explanation #!/usr/bin/perl
+Every Perl program should start with this as its very first line, although this may vary from system to system. This line tells the machine what to do with the file when it is executed.
+use strict;
+use warnings;
+These two statements turn on the 'strict' and 'warnings' pragmas. These are strongly encouraged for all Perl programs since they tell the Perl interpreter to check for programming errors like undeclared variables.
+print &amp;quot;Hello, World!&amp;quot;;
+The print function outputs some data. In the above case it prints out the string Hello world, and as always the statement ends with a semicolon.
+And that's it!
+You just wrote and ran your first Hello World in Perl.
 </description>
   </item>
   
