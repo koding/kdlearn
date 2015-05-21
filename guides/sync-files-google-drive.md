@@ -5,6 +5,11 @@ categories: [common questions, koding, file sync, google drive, file transfer]
 
 template: page.toffee
 ---
+> type:alert
+> Due to Google recently deprecating the API on which grive depended, we do not
+> recommend you install grive to connect to Google Drive as the author of grive
+> has not yet updated the software to work with the new version of the Google
+> Docs API. We will update this msg once we have a better solution.
 
 # Sync files using Google Drive
 
