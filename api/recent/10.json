@@ -6,57 +6,57 @@
     "date": "2015-05-21T00:00:00.000Z"
   },
   {
-    "title": "Using Github with Koding",
-    "url": "https://learn.koding.com/guides/using-github/index.html",
+    "title": "Sync files using Google Drive",
+    "url": "https://learn.koding.com/guides/sync-files-google-drive/index.html",
     "author": "Team Koding",
-    "date": "2015-05-19T00:00:00.000Z"
+    "date": "2015-05-21T00:00:00.000Z"
   },
   {
-    "title": "Cassandra installation for beginners",
-    "url": "https://learn.koding.com/guides/cassandra-installation-beginners/index.html",
+    "title": "Understanding Snapshots",
+    "url": "https://learn.koding.com/guides/vm-snapshot/index.html",
     "author": "Team Koding",
-    "date": "2015-05-19T00:00:00.000Z"
+    "date": "2015-05-13T00:00:00.000Z"
   },
   {
-    "title": "Codeigniter Installation for Beginners",
-    "url": "https://learn.koding.com/guides/codeigniter-for-beginners/index.html",
+    "title": "Koding Subdomains and VHosts",
+    "url": "https://learn.koding.com/guides/vhosts-and-subdomains/index.html",
     "author": "Team Koding",
-    "date": "2015-05-19T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
-    "title": "CouchDB installation for beginners",
-    "url": "https://learn.koding.com/guides/couchdb-installation-for-beginners/index.html",
+    "title": "Hello World on Koding: Java",
+    "url": "https://learn.koding.com/guides/hello-world/java/index.html",
     "author": "Team Koding",
-    "date": "2015-05-19T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
-    "title": "Using Dropbox with Koding",
-    "url": "https://learn.koding.com/guides/dropbox-for-file-sync/index.html",
+    "title": "Hello World on Koding: Go",
+    "url": "https://learn.koding.com/guides/hello-world/go/index.html",
     "author": "Team Koding",
-    "date": "2015-05-19T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
-    "title": "Elasticsearch install for beginners",
-    "url": "https://learn.koding.com/guides/elasticsearch-install-for-beginners/index.html",
+    "title": "Hello World on Koding: C-Sharp (C#)",
+    "url": "https://learn.koding.com/guides/hello-world/c-sharp/index.html",
     "author": "Team Koding",
-    "date": "2015-05-19T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
-    "title": "Install phpPgAdmin",
-    "url": "https://learn.koding.com/guides/install-phppgadmin/index.html",
+    "title": "Hello World on Koding: C++",
+    "url": "https://learn.koding.com/guides/hello-world/c++/index.html",
     "author": "Team Koding",
-    "date": "2015-05-19T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
-    "title": "Elixir on Koding",
-    "url": "https://learn.koding.com/guides/elixir-on-koding/index.html",
-    "author": "Antoine Proulx",
-    "date": "2015-05-19T00:00:00.000Z"
+    "title": "Hello World on Koding: C",
+    "url": "https://learn.koding.com/guides/hello-world/c/index.html",
+    "author": "Team Koding",
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
-    "title": "How to free up space on a Koding VM",
-    "url": "https://learn.koding.com/guides/freeing-up-space/index.html",
+    "title": "Hello World on Koding",
+    "url": "https://learn.koding.com/guides/hello-world/index.html",
     "author": "Team Koding",
-    "date": "2015-05-19T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   }
 ]

@@ -6,57 +6,57 @@
     "date": "2015-05-21T00:00:00.000Z"
   },
   {
-    "title": "CakePHP Installation for Beginners",
-    "url": "https://learn.koding.com/guides/cakephp-for-beginners/index.html",
-    "author": "Team Koding",
-    "date": "2015-05-19T00:00:00.000Z"
+    "title": "Installing the MEAN.io stack on Koding",
+    "url": "https://learn.koding.com/guides/installing-mean-io/index.html",
+    "author": "P1xt",
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
-    "title": "Codeigniter Installation for Beginners",
-    "url": "https://learn.koding.com/guides/codeigniter-for-beginners/index.html",
+    "title": "Getting started with Jenkins",
+    "url": "https://learn.koding.com/guides/getting-started-jenkins/index.html",
     "author": "Team Koding",
-    "date": "2015-05-19T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
+  },
+  {
+    "title": "TogetherJS Setup and Usage for Beginners",
+    "url": "https://learn.koding.com/guides/togetherjs-setup-for-beginners/index.html",
+    "author": "Team Koding",
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
     "title": "Setting up a Tornado webserver",
     "url": "https://learn.koding.com/guides/setting-tornado-webserver/index.html",
     "author": "Team Koding",
-    "date": "2015-05-19T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
     "title": "Setting up a Symfony2 webserver",
     "url": "https://learn.koding.com/guides/setting-symfony2-webserver/index.html",
     "author": "Team Koding",
-    "date": "2015-05-19T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
     "title": "Setting up a Rails webserver",
     "url": "https://learn.koding.com/guides/setting-rails-webserver/index.html",
     "author": "Team Koding",
-    "date": "2015-05-19T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
-    "title": "Apache Tomcat on Koding",
-    "url": "https://learn.koding.com/guides/apache-tomcat-on-koding/index.html",
-    "author": "Vinay Jain",
-    "date": "2015-05-19T00:00:00.000Z"
-  },
-  {
-    "title": "Cassandra installation for beginners",
-    "url": "https://learn.koding.com/guides/cassandra-installation-beginners/index.html",
+    "title": "Setting up a MeteorJS webserver",
+    "url": "https://learn.koding.com/guides/setting-meteorjs-webserver/index.html",
     "author": "Team Koding",
-    "date": "2015-05-19T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
+  },
+  {
+    "title": "Setting up a Laravel webserver with Artisan",
+    "url": "https://learn.koding.com/guides/setting-laravel-artisan-webserver/index.html",
+    "author": "Team Koding",
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
     "title": "Setting up a Django webserver",
     "url": "https://learn.koding.com/guides/setting-django-webserver/index.html",
     "author": "Team Koding",
-    "date": "2015-05-19T00:00:00.000Z"
-  },
-  {
-    "title": "Elixir on Koding",
-    "url": "https://learn.koding.com/guides/elixir-on-koding/index.html",
-    "author": "Antoine Proulx",
-    "date": "2015-05-19T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   }
 ]
