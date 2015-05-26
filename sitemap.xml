@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+        <loc>http://learn.koding.com/guides/collaboration</loc>
+        <lastmod>2015-05-26</lastmod>
+        <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
         <loc>http://learn.koding.com/guides/installing-jekyll</loc>
         <lastmod>2015-05-21</lastmod>
         <changefreq>monthly</changefreq>
@@ -9,12 +15,6 @@
   
   <url>
         <loc>http://learn.koding.com/guides/sync-files-google-drive</loc>
-        <lastmod>2015-05-21</lastmod>
-        <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-        <loc>http://learn.koding.com/guides/collaboration</loc>
         <lastmod>2015-05-21</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -80,13 +80,13 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/getting-started/editing-your-profile</loc>
+        <loc>http://learn.koding.com/guides/getting-started/activity-feed</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/getting-started/activity-feed</loc>
+        <loc>http://learn.koding.com/guides/getting-started/editing-your-profile</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
