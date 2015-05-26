@@ -5,10 +5,6 @@ categories: [collaboration, koding]
 
 improvable: false
 ---
-> type:tip
-> This guide is not complete as the Collaboration feature is still under development. If you run into any
-  issues while using it, please [let us know](mailto:support@koding.com).
-
 ### What is Collaboration?
 Koding Collaboration allows you to easily and effectively collaborate and share resources with your
 team, students, peers or friends. When you enable Collaboration, you are effectively sharing your
@@ -66,3 +62,32 @@ the session.
 Generally, we recommend that you exit/close your sessions yourself. However, there are situations when
 you cannot close/end your session (e.g. browser crash). In such cases, you have up to one (1) minute
 to reconnect otherwise at the end of a minute, all sessions are auto-terminated.
+
+### Video collaboration
+> type:tip
+> Video collaboration will not work on Safari because Safari does not
+> support WebRTC which is a requirement for this feature to work.
+
+### What is video collaboration?
+Video collaboration on Koding will allow you to interact live with your friend and colleagues. The
+feature uses the camera and mic from your device to send and receive live audio/video with the 
+users you are collaborating with. If you have ever used Skype or Facetime, then you already know
+exactly how this works!
+
+### How do I start a video collaboration session?
+As a host, when you start a collaboration session, you can add video to it by clicking the camera
+icon as shown in the image below. 
+
+> type:tip
+> Only the host can add video to the collaboration session.
+
+![video collaboration 1](video-collab-1.png)
+
+### What controls do I have during a video collaboration session?
+If you are in the video session, you have the following handy controls:
+1. Mute yourself: clicking this allows you to stop sending audio from you to the other participants in the session. This is handy when you are having a conversation that does not need to be heard by your session participants.
+2. Stop video: clicking this allows you to stop sending your video (audio still works) to the other participants in the session. Handy when you've had a bad hair day :)
+3. Mute session: clicking this will mute the other participants so that you will not hear them anymore. Handy when you have someone stop by your desk and you need to turn down the conversation from the collaboration session.
+4. Leave video: clicking this will end **your** video session but you will **not** be dropping the collaboration session, just the video portion will end. This is handy when you are in a long collaboration session where you don't need to continue to hear/see the session participants but still need to be involved in the session activities.
+
+![video collaboration 2](video-collab-2.png)
