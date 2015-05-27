@@ -1,32 +1,38 @@
 [
   {
+    "title": "Installing Ionic Framework",
+    "url": "https://learn.koding.com/guides/installing-ionic-framework/index.html",
+    "author": "sergiu",
+    "date": "2015-05-27T00:00:00.000Z"
+  },
+  {
     "title": "Updating Node.js on your VM",
     "url": "https://learn.koding.com/guides/updating-nodejs-on-your-vm/index.html",
     "author": "Darryl Dias",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-04-29T00:00:00.000Z"
   },
   {
     "title": "Installing Apache Cordova",
     "url": "https://learn.koding.com/guides/installing-apache-cordova/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-04-29T00:00:00.000Z"
   },
   {
     "title": "Ghost Blog Installation",
     "url": "https://learn.koding.com/guides/ghost-installation/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-04-29T00:00:00.000Z"
   },
   {
     "title": "Getting Started with NodeJS",
     "url": "https://learn.koding.com/guides/getting-started-nodejs/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-04-29T00:00:00.000Z"
   },
   {
     "title": "Getting Started with ExpressJS",
     "url": "https://learn.koding.com/guides/getting-started-expressjs/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-04-29T00:00:00.000Z"
   }
 ]

@@ -1,15 +1,27 @@
 [
   {
+    "title": "How can I do real-time collaboration on Koding?",
+    "url": "https://learn.koding.com/guides/collaboration/index.html",
+    "author": "Team Koding",
+    "date": "2015-05-27T00:00:00.000Z"
+  },
+  {
+    "title": "Sync files using Google Drive",
+    "url": "https://learn.koding.com/guides/sync-files-google-drive/index.html",
+    "author": "Team Koding",
+    "date": "2015-05-27T00:00:00.000Z"
+  },
+  {
     "title": "How to free up space on a Koding VM",
     "url": "https://learn.koding.com/guides/freeing-up-space/index.html",
     "author": "Team Koding",
     "date": "2015-05-27T00:00:00.000Z"
   },
   {
-    "title": "How can I do real-time collaboration on Koding?",
-    "url": "https://learn.koding.com/guides/collaboration/index.html",
-    "author": "Team Koding",
-    "date": "2015-05-26T00:00:00.000Z"
+    "title": "Installing Ionic Framework",
+    "url": "https://learn.koding.com/guides/installing-ionic-framework/index.html",
+    "author": "sergiu",
+    "date": "2015-05-27T00:00:00.000Z"
   },
   {
     "title": "Installing Jekyll on Koding",
@@ -18,45 +30,33 @@
     "date": "2015-05-21T00:00:00.000Z"
   },
   {
-    "title": "Sync files using Google Drive",
-    "url": "https://learn.koding.com/guides/sync-files-google-drive/index.html",
+    "title": "Setting up a MeteorJS webserver",
+    "url": "https://learn.koding.com/guides/setting-meteorjs-webserver/index.html",
     "author": "Team Koding",
-    "date": "2015-05-21T00:00:00.000Z"
+    "date": "2015-05-19T00:00:00.000Z"
   },
   {
-    "title": "Understanding Snapshots",
-    "url": "https://learn.koding.com/guides/vm-snapshot/index.html",
+    "title": "Elasticsearch install for beginners",
+    "url": "https://learn.koding.com/guides/elasticsearch-install-for-beginners/index.html",
     "author": "Team Koding",
-    "date": "2015-05-13T00:00:00.000Z"
+    "date": "2015-05-19T00:00:00.000Z"
   },
   {
-    "title": "Koding Subdomains and VHosts",
-    "url": "https://learn.koding.com/guides/vhosts-and-subdomains/index.html",
+    "title": "Connect with SSH from Windows",
+    "url": "https://learn.koding.com/guides/connect-with-ssh-windows/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-05-19T00:00:00.000Z"
   },
   {
-    "title": "Hello World on Koding: C-Sharp (C#)",
-    "url": "https://learn.koding.com/guides/hello-world/c-sharp/index.html",
-    "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "title": "Elixir on Koding",
+    "url": "https://learn.koding.com/guides/elixir-on-koding/index.html",
+    "author": "Antoine Proulx",
+    "date": "2015-05-19T00:00:00.000Z"
   },
   {
-    "title": "Hello World on Koding: C++",
-    "url": "https://learn.koding.com/guides/hello-world/c++/index.html",
+    "title": "CouchDB installation for beginners",
+    "url": "https://learn.koding.com/guides/couchdb-installation-for-beginners/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
-  },
-  {
-    "title": "Hello World on Koding: C",
-    "url": "https://learn.koding.com/guides/hello-world/c/index.html",
-    "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
-  },
-  {
-    "title": "Hello World on Koding",
-    "url": "https://learn.koding.com/guides/hello-world/index.html",
-    "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-05-19T00:00:00.000Z"
   }
 ]

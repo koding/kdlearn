@@ -1,38 +1,44 @@
 [
   {
+    "title": "Installing Ionic Framework",
+    "url": "https://learn.koding.com/guides/installing-ionic-framework/index.html",
+    "author": "sergiu",
+    "date": "2015-05-27T00:00:00.000Z"
+  },
+  {
     "title": "TogetherJS Setup and Usage for Beginners",
     "url": "https://learn.koding.com/guides/togetherjs-setup-for-beginners/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-04-29T00:00:00.000Z"
   },
   {
     "title": "Installing Apache Cordova",
     "url": "https://learn.koding.com/guides/installing-apache-cordova/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-04-29T00:00:00.000Z"
   },
   {
     "title": "Getting Started with NodeJS",
     "url": "https://learn.koding.com/guides/getting-started-nodejs/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-04-29T00:00:00.000Z"
   },
   {
     "title": "Getting Started with ExpressJS",
     "url": "https://learn.koding.com/guides/getting-started-expressjs/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-04-29T00:00:00.000Z"
   },
   {
     "title": "EmberJS: A Starting Kit for Beginners",
     "url": "https://learn.koding.com/guides/emberjs-starting-kit/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-04-29T00:00:00.000Z"
   },
   {
     "title": "AngularJS Step-by-Step Setup",
     "url": "https://learn.koding.com/guides/angularjs-step-by-step/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-04-29T00:00:00.000Z"
   }
 ]
