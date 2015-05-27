@@ -18,6 +18,40 @@
   <language>en</language>
   
   <item>
+    <title>How to free up space on a Koding VM</title>
+    <link>//learn.koding.com/guides/freeing-up-space</link>
+    <pubDate>"2015-05-27T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/freeing-up-space</guid>
+    <author>Team Koding</author>
+    <description> tipYou can get more space by referring your friends and colleagues to Koding! For every
+new referral, you get an extra 500MB. More details here.
+ This tutorial will cover some basic steps and advanced that will help you clear space on your VM by deleting software packages that you don't need or use.
+  Basics Use the command below to delete downloaded packages (.deb) already installed and that you no longer need:
+sudo apt-get clean
+Use this command to remove all stored archives in your cache for packages that can not be downloaded anymore (since the packages are no longer in the repository or they have a new version in the repo).
+sudo apt-get autoclean
+Some apps leave behind remnant files even after you uninstall them. This command will clean up those orphaned files.
+sudo apt-get autoremove
+  Advanced Check for the the top 10 biggest subfolders in the current folder using this command:
+du -sk * | sort -nr | head -10
+You can also check to see if you have old kernels that require deletion:
+ls -lh /boot
+Use the bellow command to get a list of all installed packages, sorted by size. If you see something big and you're not using it uninstall it.
+dpkg-query -W --showformat='${Installed-Size} ${Package}\n' | sort -nr | less
+You can clean unused language files with translations using the localepurge tool:
+sudo apt-get install localepurge
+Check for unused content here /var/tmp/ using this command:
+du -sh /var/tmp/
+If you wan to search for big files the bellow commands will help you do that:
+find / -type f -size +1024k
+or
+find / -size +50000  -exec ls -lahg {} \;
+That should give you plenty to consider for deletion and once you are done deleting, hopefully you can recover storage space on your VM.
+If you encounter any issues or have any questions please drop us an email here.
+</description>
+  </item>
+  
+  <item>
     <title>How can I do real-time collaboration on Koding?</title>
     <link>//learn.koding.com/guides/collaboration</link>
     <pubDate>"2015-05-26T00:00:00.000Z"</pubDate>
@@ -284,43 +318,6 @@ left sidebar of Koding. From the settings menu, Click &amp;quot;More&amp;quot;, 
 subdomains that you need.
 For a more indepth explanation of this process, refer to the Subdomain
 Section here.
-</description>
-  </item>
-  
-  <item>
-    <title>Hello World on Koding: Go</title>
-    <link>//learn.koding.com/guides/hello-world/go</link>
-    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/go</guid>
-    <author>Team Koding</author>
-    <description>  Introduction Go or golang is a statically-typed language with syntax loosely derived from C, that adds garbage collection, type safety, some dynamic-typing capabilities, additional built-in types such as variable-length arrays and key-value maps, and a large standard library.
-  Implementation The first thing you need to do is to create a file called helloworld.go in your Koding VM and paste the bellow snippet into it.
-package main
-
-import &amp;quot;fmt&amp;quot;
-
-func main() {
-    fmt.Println(&amp;quot;Hello World!&amp;quot;)
-}
-To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
-go run helloworld.go
-Or you can build the program into a binary. You can do this using the bellow command:
-go build helloworld.go
-And you can then execute the built binary directly.
-./hello-world
-  Explanation package main
-This is known as a “package declaration”. Every Go program must start with a package declaration. There are two types of Go programs: executables and libraries. Executable applications are the kinds of programs that you can run directly from the terminal.
-import &amp;quot;fmt&amp;quot;
-The import keyword is how you include code from other packages to use with you program. The fmt package (shorthand for format) implements formatting for input and output.
-func main()
-Functions are the building blocks of a Go program. They have inputs, outputs and a series of steps called statements which are executed in order. All functions start with the keyword func followed by the name of the function (main in this case), a list of zero or more “parameters” surrounded by parentheses, an optional return type and a “body” which is surrounded by curly braces.
-{}
-The two curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
-group or function.
-fmt.Println(&amp;quot;Hello World&amp;quot;)
-This statement is made of three pieces. First you access another function inside of the fmt package called Println (that's the fmt.Println piece, Println means Print Line). Then you create a new string that contains Hello World and call that function with the string as the first and only argument.
-And that's it!
-You just wrote and ran your first Hello World in Go.
 </description>
   </item>
   
@@ -593,6 +590,31 @@ scp ~/my_image.png joshmurray.koding.io:~/my_image.png
   </item>
   
   <item>
+    <title>Getting Started: Editing Your Profile</title>
+    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
+    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
+    <author>Team Koding</author>
+    <description>Your Koding profile is your public information page on Koding. Currently
+it shows your Avatar, Name and Description, recent Koding activity, and
+in the near future Badges and additional social information. In this
+guide we'll go over the basic usage of your Koding profile.
+  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted
+below.
+
+Clicking on it will open your profile.
+  Avatar, Name and Description When viewing your profile for the first time, you'll see that your first
+name is set to your Koding username, and your last name and description
+are set to default values, as seen in the below image.
+
+These default values are only seen by you, and if you double click them,
+you can edit that field.
+If you have one, Koding will use your Gravatar by default, but if you head over to your account settings Koding also supports avatar uploads directly.
+
+</description>
+  </item>
+  
+  <item>
     <title>Getting Started: The Activity Feed</title>
     <link>//learn.koding.com/guides/getting-started/activity-feed</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
@@ -635,31 +657,6 @@ search for the channel you're interested in.
 
 Following channels is a great way to stay active in content that matters
 to you.
-</description>
-  </item>
-  
-  <item>
-    <title>Getting Started: Editing Your Profile</title>
-    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
-    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
-    <author>Team Koding</author>
-    <description>Your Koding profile is your public information page on Koding. Currently
-it shows your Avatar, Name and Description, recent Koding activity, and
-in the near future Badges and additional social information. In this
-guide we'll go over the basic usage of your Koding profile.
-  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted
-below.
-
-Clicking on it will open your profile.
-  Avatar, Name and Description When viewing your profile for the first time, you'll see that your first
-name is set to your Koding username, and your last name and description
-are set to default values, as seen in the below image.
-
-These default values are only seen by you, and if you double click them,
-you can edit that field.
-If you have one, Koding will use your Gravatar by default, but if you head over to your account settings Koding also supports avatar uploads directly.
-
 </description>
   </item>
   
@@ -899,40 +896,39 @@ If you encounter any issues or have any questions please drop us an email here.
   </item>
   
   <item>
-    <title>Hello World on Koding: Java</title>
-    <link>//learn.koding.com/guides/hello-world/java</link>
+    <title>Hello World on Koding: Go</title>
+    <link>//learn.koding.com/guides/hello-world/go</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/java</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/go</guid>
     <author>Team Koding</author>
-    <description>  Introduction Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.
-  Implementation The first thing you need to do is to create a file called HelloWorld.java in your Koding VM and paste the bellow snippet into it.
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(&amp;quot;Hello, World!&amp;quot;);
-    }
+    <description>  Introduction Go or golang is a statically-typed language with syntax loosely derived from C, that adds garbage collection, type safety, some dynamic-typing capabilities, additional built-in types such as variable-length arrays and key-value maps, and a large standard library.
+  Implementation The first thing you need to do is to create a file called helloworld.go in your Koding VM and paste the bellow snippet into it.
+package main
+
+import &amp;quot;fmt&amp;quot;
+
+func main() {
+    fmt.Println(&amp;quot;Hello World!&amp;quot;)
 }
-To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
-javac HelloWorld.java
-java HelloWorld
-  Explanation public class HelloWorld
-The first line defines a class called HelloWorld. In Java, every line of code that can actually run needs to be inside a class. This line declares a class named HelloWorld, which is public, that means that any other class can access it.
-public static void main(String[] args)
-The main method has to have this exact signature in order to be able to run your program.
-
-public - means that anyone can access it.
-static  - means that you can run this method without creating an instance of Main.
-void - means that this method doesn't return any value.
-main - is the name of the method.
-
-The arguments inside the method are the arguments that you will get when running the program with parameters. It's an array of strings.
+To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
+go run helloworld.go
+Or you can build the program into a binary. You can do this using the bellow command:
+go build helloworld.go
+And you can then execute the built binary directly.
+./hello-world
+  Explanation package main
+This is known as a “package declaration”. Every Go program must start with a package declaration. There are two types of Go programs: executables and libraries. Executable applications are the kinds of programs that you can run directly from the terminal.
+import &amp;quot;fmt&amp;quot;
+The import keyword is how you include code from other packages to use with you program. The fmt package (shorthand for format) implements formatting for input and output.
+func main()
+Functions are the building blocks of a Go program. They have inputs, outputs and a series of steps called statements which are executed in order. All functions start with the keyword func followed by the name of the function (main in this case), a list of zero or more “parameters” surrounded by parentheses, an optional return type and a “body” which is surrounded by curly braces.
 {}
-The curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
+The two curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
 group or function.
-System.out.println(&amp;quot;Hello, World!&amp;quot;);
-System is a pre-defined class that Java provides and it also holds some useful methods and variables. out is a static variable within System that represents the output of your program. println is a method of out that can be used to print a line.
+fmt.Println(&amp;quot;Hello World&amp;quot;)
+This statement is made of three pieces. First you access another function inside of the fmt package called Println (that's the fmt.Println piece, Println means Print Line). Then you create a new string that contains Hello World and call that function with the string as the first and only argument.
 And that's it!
-You just wrote and ran your first Hello World in Java.
-If you'd like to continue dabbling in Java, we recommend taking a look at this tutorial written for Koding over at Andriodauthority.com
+You just wrote and ran your first Hello World in Go.
 </description>
   </item>
   
@@ -2813,33 +2809,40 @@ If you encounter any issues or have any questions please drop us an email here.
   </item>
   
   <item>
-    <title>Hello World on Koding: Perl</title>
-    <link>//learn.koding.com/guides/hello-world/perl</link>
+    <title>Hello World on Koding: Java</title>
+    <link>//learn.koding.com/guides/hello-world/java</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/perl</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/java</guid>
     <author>Team Koding</author>
-    <description>  Introduction Perl is a family of high-level, general-purpose, interpreted, dynamic programming languages. The Perl languages borrow features from other programming languages including C, shell scripting (sh) etc. They provide powerful text processing facilities without the arbitrary data-length limits of many contemporary Unix commandline tools, facilitating easy manipulation of text files.
-  Implementation The first thing you need to do is to create a file called helloworld in your Koding VM and paste the bellow snippet into it.
-#!/usr/bin/perl
-
-use strict;
-use warnings;
-
-print &amp;quot;Hello, World!&amp;quot;;
+    <description>  Introduction Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.
+  Implementation The first thing you need to do is to create a file called HelloWorld.java in your Koding VM and paste the bellow snippet into it.
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println(&amp;quot;Hello, World!&amp;quot;);
+    }
+}
 To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
-first ensure the file is given executable permissions:
-chmod u+x helloworld
-and then run this command
-perl helloworld
-  Explanation #!/usr/bin/perl
-Every Perl program should start with this as its very first line, although this may vary from system to system. This line tells the machine what to do with the file when it is executed.
-use strict;
-use warnings;
-These two statements turn on the 'strict' and 'warnings' pragmas. These are strongly encouraged for all Perl programs since they tell the Perl interpreter to check for programming errors like undeclared variables.
-print &amp;quot;Hello, World!&amp;quot;;
-The print function outputs some data. In the above case it prints out the string Hello world, and as always the statement ends with a semicolon.
+javac HelloWorld.java
+java HelloWorld
+  Explanation public class HelloWorld
+The first line defines a class called HelloWorld. In Java, every line of code that can actually run needs to be inside a class. This line declares a class named HelloWorld, which is public, that means that any other class can access it.
+public static void main(String[] args)
+The main method has to have this exact signature in order to be able to run your program.
+
+public - means that anyone can access it.
+static  - means that you can run this method without creating an instance of Main.
+void - means that this method doesn't return any value.
+main - is the name of the method.
+
+The arguments inside the method are the arguments that you will get when running the program with parameters. It's an array of strings.
+{}
+The curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
+group or function.
+System.out.println(&amp;quot;Hello, World!&amp;quot;);
+System is a pre-defined class that Java provides and it also holds some useful methods and variables. out is a static variable within System that represents the output of your program. println is a method of out that can be used to print a line.
 And that's it!
-You just wrote and ran your first Hello World in Perl.
+You just wrote and ran your first Hello World in Java.
+If you'd like to continue dabbling in Java, we recommend taking a look at this tutorial written for Koding over at Andriodauthority.com
 </description>
   </item>
   
@@ -3318,37 +3321,33 @@ And just like that, we have a static page with text chat, voice chat, and mouse 
   </item>
   
   <item>
-    <title>Hello World on Koding: PHP</title>
-    <link>//learn.koding.com/guides/hello-world/php</link>
+    <title>Hello World on Koding: Perl</title>
+    <link>//learn.koding.com/guides/hello-world/perl</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/php</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/perl</guid>
     <author>Team Koding</author>
-    <description>  Introduction PHP is a server-side scripting language designed for web development but also used as a general-purpose programming language. PHP code can be simply mixed with HTML code, or it can be used in combination with various templating engines and web frameworks.
-  Implementation The first thing you need to do is to create a file called helloworld.php, place it in your Web folder and paste the bellow snippet into it.
-&amp;lt;html&amp;gt;
-    &amp;lt;head&amp;gt;
-    &amp;lt;title&amp;gt;Hello World&amp;lt;/title&amp;gt;
-    &amp;lt;/head&amp;gt;
-    &amp;lt;body&amp;gt;
-        &amp;lt;?php
-            echo &amp;quot;Hello World&amp;quot;;
-        ?&amp;gt;
-    &amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-To run the above file in your Koding VM, follow a similar URL in your browser:
-http://KODING_USERNAME.koding.io/helloworld.php
- tipReplace KODING_USERNAME above with your koding username. (It's not obvious to everyone).
-Find out more about your VM hostname.
-   Explanation The first part until the initial &amp;lt;?php tag is just basic HTML code.
-&amp;lt;?php
+    <description>  Introduction Perl is a family of high-level, general-purpose, interpreted, dynamic programming languages. The Perl languages borrow features from other programming languages including C, shell scripting (sh) etc. They provide powerful text processing facilities without the arbitrary data-length limits of many contemporary Unix commandline tools, facilitating easy manipulation of text files.
+  Implementation The first thing you need to do is to create a file called helloworld in your Koding VM and paste the bellow snippet into it.
+#!/usr/bin/perl
 
-?&amp;gt;
-You need to tell the server when the PHP will start and end. In PHP you use the tags &amp;lt;?php and ?&amp;gt; to mark the start and end for the PHP code that the server must execute.
-echo &amp;quot;Hello World&amp;quot;;
-echo outputs one or more strings. echo is not actually a function (it is a language construct). echo does not behave like a function, so it cannot always be used in the context of a function.
-The last part after the closing ?&amp;gt; tag if just basic HTML code.
+use strict;
+use warnings;
+
+print &amp;quot;Hello, World!&amp;quot;;
+To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
+first ensure the file is given executable permissions:
+chmod u+x helloworld
+and then run this command
+perl helloworld
+  Explanation #!/usr/bin/perl
+Every Perl program should start with this as its very first line, although this may vary from system to system. This line tells the machine what to do with the file when it is executed.
+use strict;
+use warnings;
+These two statements turn on the 'strict' and 'warnings' pragmas. These are strongly encouraged for all Perl programs since they tell the Perl interpreter to check for programming errors like undeclared variables.
+print &amp;quot;Hello, World!&amp;quot;;
+The print function outputs some data. In the above case it prints out the string Hello world, and as always the statement ends with a semicolon.
 And that's it!
-You just wrote and ran your first Hello World in PHP.
+You just wrote and ran your first Hello World in Perl.
 </description>
   </item>
   
@@ -4009,20 +4008,37 @@ From here, you'll be poised for yet more installations. See their website for mo
   </item>
   
   <item>
-    <title>Hello World on Koding: Python</title>
-    <link>//learn.koding.com/guides/hello-world/python</link>
+    <title>Hello World on Koding: PHP</title>
+    <link>//learn.koding.com/guides/hello-world/php</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/python</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/php</guid>
     <author>Team Koding</author>
-    <description>  Introduction Python is a widely used general-purpose, high-level programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java. The language provides constructs intended to enable clear programs on both a small and large scale.
-  Implementation The first thing you need to do is to create a file called helloworld.py in your Koding VM and paste the bellow snippet into it.
-print &amp;quot;Hello World!&amp;quot;
-To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
-python helloworld.py
-  Explanation print &amp;quot;Hello World!&amp;quot;
-Since Python emphasizes code readability, the above line is pretty self explanatory. It will print out something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
+    <description>  Introduction PHP is a server-side scripting language designed for web development but also used as a general-purpose programming language. PHP code can be simply mixed with HTML code, or it can be used in combination with various templating engines and web frameworks.
+  Implementation The first thing you need to do is to create a file called helloworld.php, place it in your Web folder and paste the bellow snippet into it.
+&amp;lt;html&amp;gt;
+    &amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;Hello World&amp;lt;/title&amp;gt;
+    &amp;lt;/head&amp;gt;
+    &amp;lt;body&amp;gt;
+        &amp;lt;?php
+            echo &amp;quot;Hello World&amp;quot;;
+        ?&amp;gt;
+    &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+To run the above file in your Koding VM, follow a similar URL in your browser:
+http://KODING_USERNAME.koding.io/helloworld.php
+ tipReplace KODING_USERNAME above with your koding username. (It's not obvious to everyone).
+Find out more about your VM hostname.
+   Explanation The first part until the initial &amp;lt;?php tag is just basic HTML code.
+&amp;lt;?php
+
+?&amp;gt;
+You need to tell the server when the PHP will start and end. In PHP you use the tags &amp;lt;?php and ?&amp;gt; to mark the start and end for the PHP code that the server must execute.
+echo &amp;quot;Hello World&amp;quot;;
+echo outputs one or more strings. echo is not actually a function (it is a language construct). echo does not behave like a function, so it cannot always be used in the context of a function.
+The last part after the closing ?&amp;gt; tag if just basic HTML code.
 And that's it!
-You just wrote and ran your first Hello World in Python.
+You just wrote and ran your first Hello World in PHP.
 </description>
   </item>
   
@@ -5313,34 +5329,20 @@ http://my.name.is.username.koding.io. Yay!
   </item>
   
   <item>
-    <title>How to free up space on a Koding VM</title>
-    <link>//learn.koding.com/guides/freeing-up-space</link>
+    <title>Hello World on Koding: Python</title>
+    <link>//learn.koding.com/guides/hello-world/python</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/freeing-up-space</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/python</guid>
     <author>Team Koding</author>
-    <description>This tutorial will cover some basic steps and advanced that will help you clear space on your VM by deleting software packages that you don't need or use.
-  Basics Use the command below to delete downloaded packages (.deb) already installed and that you no longer need:
-sudo apt-get clean
-Use this command to remove all stored archives in your cache for packages that can not be downloaded anymore (since the packages are no longer in the repository or they have a new version in the repo).
-sudo apt-get autoclean
-Some apps leave behind remnant files even after you uninstall them. This command will clean up those orphaned files.
-sudo apt-get autoremove
-  Advanced Check for the the top 10 biggest subfolders in the current folder using this command:
-du -sk * | sort -nr | head -10
-You can also check to see if you have old kernels that require deletion:
-ls -lh /boot
-Use the bellow command to get a list of all installed packages, sorted by size. If you see something big and you're not using it uninstall it.
-dpkg-query -W --showformat='${Installed-Size} ${Package}\n' | sort -nr | less
-You can clean unused language files with translations using the localepurge tool:
-sudo apt-get install localepurge
-Check for unused content here /var/tmp/ using this command:
-du -sh /var/tmp/
-If you wan to search for big files the bellow commands will help you do that:
-find / -type f -size +1024k
-or
-find / -size +50000  -exec ls -lahg {} \;
-That should give you plenty to consider for deletion and once you are done deleting, hopefully you can recover storage space on your VM.
-If you encounter any issues or have any questions please drop us an email here.
+    <description>  Introduction Python is a widely used general-purpose, high-level programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java. The language provides constructs intended to enable clear programs on both a small and large scale.
+  Implementation The first thing you need to do is to create a file called helloworld.py in your Koding VM and paste the bellow snippet into it.
+print &amp;quot;Hello World!&amp;quot;
+To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
+python helloworld.py
+  Explanation print &amp;quot;Hello World!&amp;quot;
+Since Python emphasizes code readability, the above line is pretty self explanatory. It will print out something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
+And that's it!
+You just wrote and ran your first Hello World in Python.
 </description>
   </item>
   
