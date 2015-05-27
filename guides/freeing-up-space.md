@@ -5,6 +5,10 @@ categories: [common questions, koding]
 template: page.toffee
 ---
 
+> type:tip
+> You can get more space by referring your friends and colleagues to Koding! For every
+> new referral, you get an extra 500MB. More details [here](http://learn.koding.com/faq/redeem-referrals/).
+
 # How to free up space on a Koding VM
 
 This tutorial will cover some basic steps and advanced that will help you clear space on your VM by deleting software packages that you don't need or use.
