@@ -14,6 +14,12 @@
   </url>
   
   <url>
+        <loc>http://learn.koding.com/guides/what-happens-upon-upgrade</loc>
+        <lastmod>2015-05-29</lastmod>
+        <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
         <loc>http://learn.koding.com/guides/freeing-up-space</loc>
         <lastmod>2015-05-27</lastmod>
         <changefreq>monthly</changefreq>
@@ -50,12 +56,6 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/hello-world/c</loc>
-        <lastmod>2015-05-06</lastmod>
-        <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
         <loc>http://learn.koding.com/guides/hello-world</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
@@ -80,13 +80,13 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/getting-started/activity-feed</loc>
+        <loc>http://learn.koding.com/guides/getting-started/editing-your-profile</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/getting-started/editing-your-profile</loc>
+        <loc>http://learn.koding.com/guides/getting-started/activity-feed</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -110,7 +110,7 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/what-happens-upon-upgrade</loc>
+        <loc>http://learn.koding.com/guides/hello-world/c</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>

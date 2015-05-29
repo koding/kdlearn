@@ -155,6 +155,45 @@ And there you have it, a folder synced with your Koding VM.
   </item>
   
   <item>
+    <title>What happens upon upgrade?</title>
+    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
+    <pubDate>"2015-05-29T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
+    <author>Team Koding</author>
+    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
+Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
+
+Ability to mark your VM(s) as Always-On
+Add more storage to your VM(s)
+Share our VM with other Koding users
+Create snapshots of your VM
+
+  Turn on &amp;quot;Always On&amp;quot; mode for your VM 
+Go to the VM settings modal.
+On the &amp;quot;General&amp;quot; tab, find the switch for &amp;quot;Always On&amp;quot; and turn it on. Your VM will
+now not turn off even if you log out. This also means your public IP address will now be static.
+
+
+  Adding more disk space 
+Head over to VM settings
+Click on the &amp;quot;Disk Usage&amp;quot; tab and click the &amp;quot;resize your VM&amp;quot; link  (as shown in the image below)
+
+This will open the resize modal from where you can resize your VM.
+
+  Adding more VMs (Only for Developer and Professional Plans) 
+Hover your mouse over the &amp;quot;Your VMs&amp;quot; label in the sidebar (as shown in the image below)
+
+The &amp;quot;+&amp;quot; icon will appear
+Click the icon to and you will be presented with the option to create a new VM. You can select the size and the region of the VM.
+
+
+  Share your VM with other Koding users Sharing your VM is very useful when you are doing &amp;quot;serial collaboration&amp;quot; which means one person takes over when the other is done. You can learn all about how to share your VMs through this guide.
+  Create Snapshots of your VM Snapshots are very handy when you want to save the state of your VM as a backup or as a starting point
+for a new VM. We have a full guide on this feature that will help you understand all the features.
+</description>
+  </item>
+  
+  <item>
     <title>How to free up space on a Koding VM</title>
     <link>//learn.koding.com/guides/freeing-up-space</link>
     <pubDate>"2015-05-27T00:00:00.000Z"</pubDate>
@@ -459,39 +498,6 @@ Section here.
   </item>
   
   <item>
-    <title>Hello World on Koding: C</title>
-    <link>//learn.koding.com/guides/hello-world/c</link>
-    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/c</guid>
-    <author>Team Koding</author>
-    <description>  Introduction C is a general-purpose, imperative computer programming language. As a language it supports structured programming, lexical variable scope and recursion, also having a static type system that prevents unintended operations is a major advantage.
-  Implementation The first thing you need to do is to create a file called helloworld.c in your Koding VM and paste the below snippet into it.
-#include&amp;lt;stdio.h&amp;gt;
-
-int main() {
-    printf(&amp;quot;Hello World&amp;quot;);
-    return 0;
-}
-To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
-gcc -o hello helloworld.c
-./hello
-  Explanation #include&amp;lt;stdio.h&amp;gt;
-This line will include a file called stdio.h that represents the standard Input/Output header file. This file allow you to use certain commands for input or output which you can use in you program.
-int main()
-The int is what is called the return value (in this case of the type integer). Every C program must have a main() function since this is the starting point.
-{}
-The two curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
-group or function.
-printf(&amp;quot;Hello World&amp;quot;);
-The printf is used for printing things on the screen, in this case the words: Hello World. As you can see the data that is to be printed is put inside round brackets. The words Hello World are inside inverted commas, because they are what is called a string (a single letter is called a character and a series of characters is called a string). Strings must always be put between inverted commas. After the last round bracket there must be a semi-colon. The semi-colon shows that it is the end of the command.
-return 0;
-When you wrote the first line int main(),  you declared that main must return an integer int main(). With return 0; you can return the value null to the operating system. When you return with a zero you tell the operating system that there were no errors while running the program.
-And that's it!
-You just wrote and ran your first Hello World in C.
-</description>
-  </item>
-  
-  <item>
     <title>Hello World on Koding</title>
     <link>//learn.koding.com/guides/hello-world</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
@@ -643,6 +649,31 @@ scp ~/my_image.png joshmurray.koding.io:~/my_image.png
   </item>
   
   <item>
+    <title>Getting Started: Editing Your Profile</title>
+    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
+    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
+    <author>Team Koding</author>
+    <description>Your Koding profile is your public information page on Koding. Currently
+it shows your Avatar, Name and Description, recent Koding activity, and
+in the near future Badges and additional social information. In this
+guide we'll go over the basic usage of your Koding profile.
+  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted
+below.
+
+Clicking on it will open your profile.
+  Avatar, Name and Description When viewing your profile for the first time, you'll see that your first
+name is set to your Koding username, and your last name and description
+are set to default values, as seen in the below image.
+
+These default values are only seen by you, and if you double click them,
+you can edit that field.
+If you have one, Koding will use your Gravatar by default, but if you head over to your account settings Koding also supports avatar uploads directly.
+
+</description>
+  </item>
+  
+  <item>
     <title>Getting Started: The Activity Feed</title>
     <link>//learn.koding.com/guides/getting-started/activity-feed</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
@@ -685,31 +716,6 @@ search for the channel you're interested in.
 
 Following channels is a great way to stay active in content that matters
 to you.
-</description>
-  </item>
-  
-  <item>
-    <title>Getting Started: Editing Your Profile</title>
-    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
-    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
-    <author>Team Koding</author>
-    <description>Your Koding profile is your public information page on Koding. Currently
-it shows your Avatar, Name and Description, recent Koding activity, and
-in the near future Badges and additional social information. In this
-guide we'll go over the basic usage of your Koding profile.
-  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted
-below.
-
-Clicking on it will open your profile.
-  Avatar, Name and Description When viewing your profile for the first time, you'll see that your first
-name is set to your Koding username, and your last name and description
-are set to default values, as seen in the below image.
-
-These default values are only seen by you, and if you double click them,
-you can edit that field.
-If you have one, Koding will use your Gravatar by default, but if you head over to your account settings Koding also supports avatar uploads directly.
-
 </description>
   </item>
   
@@ -817,38 +823,35 @@ If you have any question or issues please email us at support@koding.com and we'
   </item>
   
   <item>
-    <title>What happens upon upgrade?</title>
-    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
+    <title>Hello World on Koding: C</title>
+    <link>//learn.koding.com/guides/hello-world/c</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/c</guid>
     <author>Team Koding</author>
-    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
-Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
+    <description>  Introduction C is a general-purpose, imperative computer programming language. As a language it supports structured programming, lexical variable scope and recursion, also having a static type system that prevents unintended operations is a major advantage.
+  Implementation The first thing you need to do is to create a file called helloworld.c in your Koding VM and paste the below snippet into it.
+#include&amp;lt;stdio.h&amp;gt;
 
-Ability to mark your VM(s) as Always-On
-Add more storage to your VM(s)
-Share our VM with other Koding users
-
-  Turn on &amp;quot;Always On&amp;quot; mode for your VM 
-Go to the VM settings modal.
-On the &amp;quot;General&amp;quot; tab, find the switch for &amp;quot;Always On&amp;quot; and turn it on. Your VM will
-now not turn off even if you log out. This also means your public IP address will now be static.
-
-
-  Adding more disk space 
-Head over to VM settings
-Click on the &amp;quot;Disk Usage&amp;quot; tab and click the &amp;quot;resize your VM&amp;quot; link  (as shown in the image below)
-
-This will open the resize modal from where you can resize your VM.
-
-  Adding more VMs (Only for Developer and Professional Plans) 
-Hover your mouse over the &amp;quot;Your VMs&amp;quot; label in the sidebar (as shown in the image below)
-
-The &amp;quot;+&amp;quot; icon will appear
-Click the icon to and you will be presented with the option to create a new VM. You can select the size and the region of the VM.
-
-
-  Share your VM with other Koding users Sharing your VM is very useful when you are doing &amp;quot;serial collaboration&amp;quot; which means one person takes over when the other is done. You can learn all about how to share your VMs through this guide.
+int main() {
+    printf(&amp;quot;Hello World&amp;quot;);
+    return 0;
+}
+To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
+gcc -o hello helloworld.c
+./hello
+  Explanation #include&amp;lt;stdio.h&amp;gt;
+This line will include a file called stdio.h that represents the standard Input/Output header file. This file allow you to use certain commands for input or output which you can use in you program.
+int main()
+The int is what is called the return value (in this case of the type integer). Every C program must have a main() function since this is the starting point.
+{}
+The two curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
+group or function.
+printf(&amp;quot;Hello World&amp;quot;);
+The printf is used for printing things on the screen, in this case the words: Hello World. As you can see the data that is to be printed is put inside round brackets. The words Hello World are inside inverted commas, because they are what is called a string (a single letter is called a character and a series of characters is called a string). Strings must always be put between inverted commas. After the last round bracket there must be a semi-colon. The semi-colon shows that it is the end of the command.
+return 0;
+When you wrote the first line int main(),  you declared that main must return an integer int main(). With return 0; you can return the value null to the operating system. When you return with a zero you tell the operating system that there were no errors while running the program.
+And that's it!
+You just wrote and ran your first Hello World in C.
 </description>
   </item>
   
