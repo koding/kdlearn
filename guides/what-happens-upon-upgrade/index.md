@@ -13,6 +13,7 @@ Based on the type of plan you selected on the [Pricing page][pricing] you now ha
 - Ability to mark your VM(s) as Always-On
 - Add more storage to your VM(s)
 - Share our VM with other Koding users
+- Create snapshots of your VM
 
 ### Turn on "Always On" mode for your VM
 1. Go to the [VM settings modal](http://learn.koding.com/guides/understanding-vm-panel/).
@@ -35,5 +36,9 @@ now not turn off even if you log out. This also means your public IP address wil
 
 ### Share your VM with other Koding users
 Sharing your VM is very useful when you are doing "serial collaboration" which means one person takes over when the other is done. You can learn all about how to share your VMs through [this guide](http://learn.koding.com/guides/permanent-shared-vm/).
+
+### Create Snapshots of your VM
+Snapshots are very handy when you want to save the state of your VM as a backup or as a starting point
+for a new VM. We have a [full guide](http://learn.koding.com/guides/vm-snapshot/) on this feature that will help you understand all the features.
 
 [pricing]: https://koding.com/Pricing
