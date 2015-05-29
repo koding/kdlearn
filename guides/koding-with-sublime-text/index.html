@@ -45,11 +45,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?416" />
+    <link rel="stylesheet" href="/css/vendor.css?152" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?294" />
+    <link rel="stylesheet" href="/css/main.css?996" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?981" />
+    <link rel="stylesheet" href="/css/rwd.css?47" />
 	</head>
 	<body>
 
@@ -253,20 +253,16 @@
   </li>
 
   
-  <li class="">
+  <li class="zactive">
     <h5>Latest Guides</h5>
     <ul>
     
       <li class="">
-        <a href="/guides/collaboration">How can I do real-time collaboration on Koding?</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/sync-files-google-drive">Sync files using Google Drive</a>
-      </li>
-    
-      <li class="">
         <a href="/guides/installing-ionic-framework">Installing Ionic Framework</a>
+      </li>
+    
+      <li class="zactive">
+        <a href="/guides/koding-with-sublime-text">Koding with Sublime Text</a>
       </li>
     
       <li class="">
@@ -274,19 +270,23 @@
       </li>
     
       <li class="">
+        <a href="/guides/collaboration">How can I do real-time collaboration on Koding?</a>
+      </li>
+    
+      <li class="">
         <a href="/guides/installing-jekyll">Installing Jekyll on Koding</a>
       </li>
     
       <li class="">
-        <a href="/guides/pyrocms-installation-for-beginners">PyroCMS Setup and Installation for Beginners</a>
+        <a href="/guides/sync-files-google-drive">Sync files using Google Drive</a>
       </li>
     
       <li class="">
-        <a href="/guides/how-to-install-mediawiki">How to install MediaWiki</a>
+        <a href="/guides/vm-snapshot">Understanding Snapshots</a>
       </li>
     
       <li class="">
-        <a href="/guides/elasticsearch-install-for-beginners">Elasticsearch install for beginners</a>
+        <a href="/guides/vhosts-and-subdomains">Koding Subdomains and VHosts</a>
       </li>
     
     </ul>
@@ -305,69 +305,101 @@
   <h1 itemprop="headline">Koding with Sublime Text</h1>
   <ul class="meta">
     <li class="author username">
-       by <a
-            rel="author"
-            href="https://koding.com/willwac"
-          >William</a> 
+       by <span rel="author">koding</span>
     </li>
-    <li class="updated">Updated a month ago</li>
+    <li class="updated">Updated 6 hours ago</li>
   </ul>
 
 
   
 
   <div itemprop="articleBody">
-    <p itemprop="about">This guide will show you how to connect your Koding VM with Sublime Text via SFTP.</p>
-<h2 class="heading"> <a name="what-you-will-need" class="anchor" href="#what-you-will-need"></a> What you will need </h2><ul>
-<li>Set up FTP on your <a href="https://koding.com">Koding</a> account: <a href="http://learn.koding.com/guides/setting-up-ftp-on-koding">http://learn.koding.com/guides/setting-up-ftp-on-koding</a></li>
-<li>Your <a href="https://koding.com">Koding</a> username</li>
-<li>Your <a href="https://koding.com">Koding</a> VM Hostname</li>
-<li><a href="https://www.sublimetext.com/">Sublime Text</a> 2 or 3</li>
+    <p itemprop="about">This guide will show you how to connect your Koding VM with Sublime Text (v2 or v3) via SFTP.</p>
+<h2 class="heading"> <a name="what-you-will-need-" class="anchor" href="#what-you-will-need-"></a> What you will need: </h2><ul>
+<li><a href="http://learn.koding.com/guides/setting-up-ftp-on-koding">Set up FTP</a> on your Koding VM </li>
+<li>Your Koding username</li>
+<li>Your Koding VM user&apos;s password</li>
+<li>Your <a href="http://learn.koding.com/faq/vm-hostname/">VM Hostname</a></li>
+<li><a href="https://www.sublimetext.com/">Sublime Text</a> v2.x or v3.x</li>
 </ul>
-<h2 class="heading"> <a name="getting-down-to-business" class="anchor" href="#getting-down-to-business"></a> Getting Down to Business </h2><ol>
-<li><p>Download <a href="https://sublime.wbond.net/installation#st2">Package Control</a> and use the Package Control: Install Package command from the command palette. The command palette is opened via ctrl+shift+p on Windows and Linux, and cmd+shift+p on OS X.</p>
-<p><img src="st1.png" alt="alt tag"></p>
+<h2 class="heading"> <a name="getting-started" class="anchor" href="#getting-started"></a> Getting started </h2><ol>
+<li><p>Download <a href="https://sublime.wbond.net/installation#st2">Package Control</a> and use the <code>Package Control: Install Package</code> command from the command palette. The command palette is opened via <code>ctrl+shift+p</code> on Windows and Linux, and <code>cmd+shift+p</code> on OS X.
+<img src="st1.png" alt="alt tag"></p>
 </li>
-<li><p>Once you run the Package Control: Install Package command, a list of packages will appear. Type in SFTP and hit enter. Using Package Control ensures Sublime SFTP will stay up to date automatically.</p>
-<p><img src="st2.png" alt="alt tag"></p>
+<li><p>Once you run the Package Control: Install Package command, a list of packages will appear. Type in <code>SFTP</code> and hit enter. Using Package Control ensures Sublime SFTP will stay up to date automatically.
+<img src="st2.png" alt="alt tag"></p>
 </li>
-<li><p>Open the folder that you want to sync with your VM using Sublime Text</p>
-<p><img src="st4.png" alt="alt tag"></p>
+<li><p>Open the folder that you want to sync with your VM using Sublime Text
+<img src="st4.png" alt="alt tag"></p>
 </li>
-<li><p>Right click the folder in the sidebar and select <code>SFTP/FTP</code> -&gt; <code>Map to Remote</code></p>
-<p><img src="st5.png" alt="alt tag"></p>
+<li><p>Right click the folder in the sidebar and select <code>SFTP/FTP</code> -&gt; <code>Map to Remote</code>
+<img src="st5.png" alt="alt tag"></p>
 </li>
-<li><p>You should now see <code>sftp-config.json</code> opened.</p>
-<p><img src="st6.png" alt="alt tag"></p>
+<li><p>You should now see a file by the name of <code>sftp-config.json</code> open up in the editor
+<img src="st6.png" alt="alt tag"></p>
 </li>
-<li><p>Configure your <code>sftp-config.json</code> file and save it.</p>
-<pre><code><span class="hljs-comment">// sftp, ftp or ftps</span>
- <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;ftp&quot;</span>,
-<span class="hljs-string">&quot;host&quot;</span>: <span class="hljs-string">&quot;&lt;hostname&gt;.&lt;username&gt;.koding.io&quot;</span>,
-<span class="hljs-string">&quot;user&quot;</span>: <span class="hljs-string">&quot;&lt;username&gt;&quot;</span>,
-<span class="hljs-string">&quot;password&quot;</span>: <span class="hljs-string">&quot;&lt;koding_password&gt;&quot;</span>,
-//<span class="hljs-string">&quot;port&quot;</span>: <span class="hljs-string">&quot;22&quot;</span>,
+<li><p>Configure your <code>sftp-config.json</code> file as described below and save it.</p>
+<pre><code>{
+ // The tab key will cycle through the settings when first created
+ // Visit http://wbond.net/sublime_packages/sftp/settings for <span class="hljs-operator"><span class="hljs-keyword">help</span>
 
-<span class="hljs-string">&quot;remote_path&quot;</span>: <span class="hljs-string">&quot;/home/&lt;username&gt;/&quot;</span>,
-</code></pre><p><img src="st7.png" alt="alt tag"></p>
-<p>Modify the other configurations if you wish. I personally find the option to <code>upload_on_save</code> very handy.</p>
-<p><img src="st8.png" alt="alt tag"></p>
+ // sftp, ftp <span class="hljs-keyword">or</span> ftps &lt;&lt;&lt;&lt; this <span class="hljs-keyword">is</span> very important. <span class="hljs-keyword">only</span> <span class="hljs-keyword">use</span> <span class="hljs-string">&apos;ftp&apos;</span>
+ <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;ftp&quot;</span>,
+
+ // <span class="hljs-keyword">select</span> the options below that suit your needs
+ <span class="hljs-string">&quot;save_before_upload&quot;</span>: <span class="hljs-literal">true</span>,
+ <span class="hljs-string">&quot;upload_on_save&quot;</span>: <span class="hljs-literal">false</span>,
+ <span class="hljs-string">&quot;sync_down_on_open&quot;</span>: <span class="hljs-literal">false</span>,
+ <span class="hljs-string">&quot;sync_skip_deletes&quot;</span>: <span class="hljs-literal">false</span>,
+ <span class="hljs-string">&quot;sync_same_age&quot;</span>: <span class="hljs-literal">true</span>,
+ <span class="hljs-string">&quot;confirm_downloads&quot;</span>: <span class="hljs-literal">false</span>,
+ <span class="hljs-string">&quot;confirm_sync&quot;</span>: <span class="hljs-literal">true</span>,
+ <span class="hljs-string">&quot;confirm_overwrite_newer&quot;</span>: <span class="hljs-literal">false</span>,
+
+ // vm <span class="hljs-keyword">connection</span> config
+ // make sure that your personal <span class="hljs-keyword">domain</span> <span class="hljs-keyword">is</span> active. see http://learn.koding.com/faq/vm-hostname/
+ <span class="hljs-string">&quot;host&quot;</span>: <span class="hljs-string">&quot;&lt;your koding username&gt;.koding.io&quot;</span>,
+ <span class="hljs-string">&quot;user&quot;</span>: <span class="hljs-string">&quot;&lt;your koding username&gt;&quot;</span>,
+ // this <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> your koding <span class="hljs-keyword">password</span>
+ <span class="hljs-string">&quot;password&quot;</span>: <span class="hljs-string">&quot;&lt;your vm user&apos;s password&gt;&quot;</span>,
+ //<span class="hljs-string">&quot;port&quot;</span>: <span class="hljs-string">&quot;22&quot;</span>,
+
+ <span class="hljs-string">&quot;remote_path&quot;</span>: <span class="hljs-string">&quot;/home/&lt;your koding username&gt;&quot;</span>,
+ <span class="hljs-string">&quot;ignore_regexes&quot;</span>: [
+     <span class="hljs-string">&quot;\\.sublime-(project|workspace)&quot;</span>, <span class="hljs-string">&quot;sftp-config(-alt\\d?)?\\.json&quot;</span>,
+     <span class="hljs-string">&quot;sftp-settings\\.json&quot;</span>, <span class="hljs-string">&quot;/venv/&quot;</span>, <span class="hljs-string">&quot;\\.svn/&quot;</span>, <span class="hljs-string">&quot;\\.hg/&quot;</span>, <span class="hljs-string">&quot;\\.git/&quot;</span>,
+     <span class="hljs-string">&quot;\\.bzr&quot;</span>, <span class="hljs-string">&quot;_darcs&quot;</span>, <span class="hljs-string">&quot;CVS&quot;</span>, <span class="hljs-string">&quot;\\.DS_Store&quot;</span>, <span class="hljs-string">&quot;Thumbs\\.db&quot;</span>, <span class="hljs-string">&quot;desktop\\.ini&quot;</span>
+ ],
+ //<span class="hljs-string">&quot;file_permissions&quot;</span>: <span class="hljs-string">&quot;664&quot;</span>,
+ //<span class="hljs-string">&quot;dir_permissions&quot;</span>: <span class="hljs-string">&quot;775&quot;</span>,
+
+ //<span class="hljs-string">&quot;extra_list_connections&quot;</span>: <span class="hljs-number">0</span>,
+
+ <span class="hljs-string">&quot;connect_timeout&quot;</span>: <span class="hljs-number">30</span>,
+ <span class="hljs-string">&quot;keepalive&quot;</span>: <span class="hljs-number">120</span>,
+ <span class="hljs-string">&quot;ftp_passive_mode&quot;</span>: <span class="hljs-literal">true</span>,
+ //<span class="hljs-string">&quot;ftp_obey_passive_host&quot;</span>: <span class="hljs-literal">false</span>,
+ //<span class="hljs-string">&quot;ssh_key_file&quot;</span>: <span class="hljs-string">&quot;~/.ssh/id_rsa&quot;</span>,
+ //<span class="hljs-string">&quot;sftp_flags&quot;</span>: [<span class="hljs-string">&quot;-F&quot;</span>, <span class="hljs-string">&quot;/path/to/ssh_config&quot;</span>],
+
+ //<span class="hljs-string">&quot;preserve_modification_times&quot;</span>: <span class="hljs-literal">false</span>,
+ //<span class="hljs-string">&quot;remote_time_offset_in_hours&quot;</span>: <span class="hljs-number">0</span>,
+ //<span class="hljs-string">&quot;remote_encoding&quot;</span>: <span class="hljs-string">&quot;utf-8&quot;</span>,
+ //<span class="hljs-string">&quot;remote_locale&quot;</span>: <span class="hljs-string">&quot;C&quot;</span>,
+ //<span class="hljs-string">&quot;allow_config_upload&quot;</span>: <span class="hljs-literal">false</span>,
+}</span>
+</code></pre></li>
+<li><p>Right click the folder, select <code>SFTP/FTP</code>. You will now see many more options than before.
+<img src="st9.png" alt="alt tag"></p>
 </li>
-<li><p>Right click the folder, select <code>SFTP/FTP</code>. You will now see many more options than before.</p>
-<p><img src="st9.png" alt="alt tag"></p>
+<li><p>(<strong>IMPORTANT</strong>) Chose whether you want to <code>Sync Local -&gt; Remote</code> or <code>Sync Remote -&gt; Local</code>. Be very careful about which you choose. <code>Sync Local -&gt; Remote</code> overwrites what you have in your remote directory that you specified in you <code>sftp-config.json</code> file with what you have in your local directory.  <code>Sync Remote -&gt; Local</code> overwrites what you have in your local directory with what you have in your remote directory that you specified in you <code>sftp-config.json</code> file.
+<img src="st10.png" alt="alt tag"></p>
 </li>
-<li><p>(<strong>IMPORTANT</strong>) Chose whether you want to <code>Sync Local -&gt; Remote</code> or <code>Sync Remote -&gt; Local</code>. Be very careful about which you choose.</p>
-<p><code>Sync Local -&gt; Remote</code> overwrites what you have in your remote directory that you specified in you <code>sftp-config.json</code> file with what you have in your local directory.</p>
-<p><code>Sync Remote -&gt; Local</code> overwrites what you have in your local directory with what you have in your remote directory that you specified in you <code>sftp-config.json</code> file.</p>
-<p><img src="st10.png" alt="alt tag"></p>
-</li>
-<li><p>(<strong>IMPORTANT</strong>) Check what is about to be performed in the box below before confirming your actions!</p>
-<p><img src="st11.png" alt="alt tag"></p>
-</li>
-<li><p>And there you have it, a folder synced with your Koding VM.</p>
-<p><img src="st12.png" alt="alt tag"></p>
+<li><p>(<strong>IMPORTANT</strong>) Check what is about to be performed in the box below before confirming your actions!
+<img src="st11.png" alt="alt tag"></p>
 </li>
 </ol>
+<p>And there you have it, a folder synced with your Koding VM.</p>
 
   </div>
   
