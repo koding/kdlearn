@@ -51,7 +51,7 @@ This guide will show you how to connect your Koding VM with Sublime Text (v2 or 
     "confirm_overwrite_newer": false,
     
     // vm connection config
-    // make sure that your personal domain is [active](http://learn.koding.com/faq/vm-hostname/)
+    // make sure that your personal domain is active. see http://learn.koding.com/faq/vm-hostname/
     "host": "<your koding username>.koding.io",
     "user": "<your koding username>",
     // this is not your koding password
@@ -83,13 +83,11 @@ This guide will show you how to connect your Koding VM with Sublime Text (v2 or 
     //"allow_config_upload": false,
 }
 ```
+
 7. Right click the folder, select `SFTP/FTP`. You will now see many more options than before.
 ![alt tag](st9.png)
 
-8. (**IMPORTANT**) Chose whether you want to `Sync Local -> Remote` or `Sync Remote -> Local`. Be very careful about which you choose.
-`Sync Local -> Remote` overwrites what you have in your remote directory that you specified in you `sftp-config.json` file with what you have in your local directory.
-
-`Sync Remote -> Local` overwrites what you have in your local directory with what you have in your remote directory that you specified in you `sftp-config.json` file.
+8. (**IMPORTANT**) Chose whether you want to `Sync Local -> Remote` or `Sync Remote -> Local`. Be very careful about which you choose. `Sync Local -> Remote` overwrites what you have in your remote directory that you specified in you `sftp-config.json` file with what you have in your local directory.  `Sync Remote -> Local` overwrites what you have in your local directory with what you have in your remote directory that you specified in you `sftp-config.json` file.
 ![alt tag](st10.png)
 
 9. (**IMPORTANT**) Check what is about to be performed in the box below before confirming your actions!
