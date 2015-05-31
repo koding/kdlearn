@@ -4,7 +4,7 @@ importance: 5
 ---
 
 ### How does Koding ensure that the platform is scalable and performant for all users?
-We perodically clean up VMs of inactive accounts to ensure that the dormat resources
+We perodically clean up VMs of inactive accounts to ensure that the dormant resources
 allocated to these accounts are not a burden for the system. This ensures a "speedy"
 Koding for everyone who uses it regularly.
 
@@ -17,7 +17,7 @@ Koding for everyone who uses it regularly.
 requesting that they confirm their active status by simply logging back into their account.
 2. However, if by the 27th day the user is still dormant/inactive, another email is sent but this
 time with the notice that the inactive VM will be deleted (along with all the data inside it).
-3. On day 30, the dormat VM is deleted permanently.
+3. On day 30, the dormant VM is deleted permanently.
 
 This type of cleanup is necessary because with hunderds of thousands of accounts,
 we want to ensure that our regular users get the full benefit of the resources of the platform.
