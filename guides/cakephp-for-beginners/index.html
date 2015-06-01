@@ -45,11 +45,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?270" />
+    <link rel="stylesheet" href="/css/vendor.css?498" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?470" />
+    <link rel="stylesheet" href="/css/main.css?438" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?761" />
+    <link rel="stylesheet" href="/css/rwd.css?605" />
 	</head>
 	<body>
 
@@ -258,11 +258,27 @@
     <ul>
     
       <li class="">
-        <a href="/guides/installing-ionic-framework">Installing Ionic Framework</a>
+        <a href="/guides/hello-world/go">Hello World on Koding: Go</a>
       </li>
     
       <li class="">
-        <a href="/guides/koding-with-sublime-text">Koding with Sublime Text</a>
+        <a href="/guides/hello-world/python">Hello World on Koding: Python</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/hello-world/php">Hello World on Koding: PHP</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/hello-world/perl">Hello World on Koding: Perl</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/hello-world/pascal">Hello World on Koding: Pascal</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/hello-world/java">Hello World on Koding: Java</a>
       </li>
     
       <li class="">
@@ -270,23 +286,7 @@
       </li>
     
       <li class="">
-        <a href="/guides/freeing-up-space">How to free up space on a Koding VM</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/collaboration">How can I do real-time collaboration on Koding?</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/installing-jekyll">Installing Jekyll on Koding</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/sync-files-google-drive">Sync files using Google Drive</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/vm-snapshot">Understanding Snapshots</a>
+        <a href="/guides/hello-world/c-sharp">Hello World on Koding: C-Sharp (C#)</a>
       </li>
     
     </ul>
@@ -307,7 +307,7 @@
     <li class="author username">
        by <span rel="author">Team Koding</span>
     </li>
-    <li class="updated">Updated 24 days ago</li>
+    <li class="updated">Updated 14 days ago</li>
   </ul>
 
 
@@ -333,10 +333,10 @@ wget -O cake.<span class="hljs-keyword">zip</span>
 <p>Open up <code>app/Config/core.php</code> and look for the following two lines. </p>
 <p>Edit the <code>DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi</code> and <code>76859309657453542496749683645</code> strings to have randomized content for your deploy. Just remember that the second string is numbers only.  </p>
 <pre><code><span class="hljs-comment">/** * A random string used in security hashing methods. */</span> 
-<span class="hljs-rule"><span class="hljs-attribute">Configure</span>:<span class="hljs-value">:<span class="hljs-function">write</span>(<span class="hljs-string">&apos;Security.salt&apos;</span>, <span class="hljs-string">&apos;DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi&apos;</span>)</span></span>;
+<span class="hljs-attribute">Configure</span>::<span class="hljs-function">write</span>(<span class="hljs-string">&apos;Security.salt&apos;</span>, <span class="hljs-string">&apos;DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi&apos;</span>);
 
 <span class="hljs-comment">/** * A random numeric string (digits only) used to encrypt/decrypt strings. */</span> 
-<span class="hljs-rule"><span class="hljs-attribute">Configure</span>:<span class="hljs-value">:<span class="hljs-function">write</span>(<span class="hljs-string">&apos;Security.cipherSeed&apos;</span>, <span class="hljs-string">&apos;76859309657453542496749683645&apos;</span>)</span></span>;
+<span class="hljs-attribute">Configure</span>::<span class="hljs-function">write</span>(<span class="hljs-string">&apos;Security.cipherSeed&apos;</span>, <span class="hljs-string">&apos;76859309657453542496749683645&apos;</span>);
 </code></pre><p>You will now be able to access CakePHP by following a similar URL:</p>
 <pre><code><span class="hljs-string">http:</span><span class="hljs-comment">//KODING_USERNAME.koding.io/cake</span>
 </code></pre><p>Find out more about your VM hostname <a href="http://learn.koding.com/faq/vm-hostname/">here</a>.</p>
