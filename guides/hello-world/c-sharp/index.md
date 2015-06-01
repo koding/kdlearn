@@ -4,7 +4,7 @@ author: Team Koding
 categories: [first program, hello world, C-Sharp, koding]
 
 series: hello-world
-series-index: 9
+series-index: 3
 template: series.toffee
 ---
 

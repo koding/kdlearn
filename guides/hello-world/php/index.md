@@ -4,7 +4,7 @@ author: Team Koding
 categories: [first program, hello world, php, koding]
 
 series: hello-world
-series-index: 6
+series-index: 8
 template: series.toffee
 ---
 
