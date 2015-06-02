@@ -22,11 +22,11 @@ Now, open your Koding Terminal and type the following commands:
 $ sudo apt-get update
 $ sudo apt-get install fpc
 ```
-Let it run and just answer Yes (Y) every time it asks for your confirmation. If all go fine, Free Pascal should have already been installed on your VM. To make sure, continue with this command:
+Let it run and just answer Yes (Y) every time it asks for your confirmation. If all goes fine, Free Pascal should now be installed on your VM. To make sure, continue with this command:
 ```bash
 $ fpc
 ```
-It is supposedly show Free Pascal's commands and arguments list. If it is then Free Pascal is installed on your VM successfully. Congratulations!
+It is supposedly show Free Pascal's commands and arguments list. If it does then Free Pascal is installed on your VM successfully. Congratulations!
 
 Next, you need to create a file named `helloworld.pas` in your home folder and paste the below snippet into it.
 ```
