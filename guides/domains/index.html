@@ -11,7 +11,7 @@
     
       <meta name="keywords" content="understanding vm,koding,domain">
     
-		<meta name="description" content="Koding VMs support custom domains as long as your domain provider
+		<meta name="description" content="Koding VMs support custom domains (for free!) as long as your domain provider
 supports one of the following record types.">
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
@@ -22,7 +22,7 @@ supports one of the following record types.">
 		<meta property="og:url" content="https://learn.koding.com"/>
 		<meta property="og:image" content="https://learn.koding.com/img/logo_150.png"/>
 		<meta property="og:image:secure_url" content="https://koding.com/a/images/logos/share_logo.png"/>
-		<meta property="og:description" content="Koding VMs support custom domains as long as your domain provider
+		<meta property="og:description" content="Koding VMs support custom domains (for free!) as long as your domain provider
 supports one of the following record types."/>
 		<meta property="og:image:type" content="image/png">
 		<meta property="og:image:width" content="130"/>
@@ -35,7 +35,7 @@ supports one of the following record types."/>
 		<meta name="twitter:creator" content="@koding"/>
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:image" content="https://learn.koding.com/img/logo_150.png"/>
-		<meta name="twitter:description" content="Koding VMs support custom domains as long as your domain provider
+		<meta name="twitter:description" content="Koding VMs support custom domains (for free!) as long as your domain provider
 supports one of the following record types."\>
 		<meta name="twitter:domain" content="learn.koding.com">
 
@@ -48,11 +48,11 @@ supports one of the following record types."\>
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?13" />
+    <link rel="stylesheet" href="/css/vendor.css?545" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?424" />
+    <link rel="stylesheet" href="/css/main.css?465" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?753" />
+    <link rel="stylesheet" href="/css/rwd.css?563" />
 	</head>
 	<body>
 
@@ -261,7 +261,7 @@ supports one of the following record types."\>
     <ul>
     
       <li class="">
-        <a href="/guides/hello-world/go">Hello World on Koding: Go</a>
+        <a href="/guides/hello-world/ruby">Hello World on Koding: Ruby</a>
       </li>
     
       <li class="">
@@ -285,7 +285,7 @@ supports one of the following record types."\>
       </li>
     
       <li class="">
-        <a href="/guides/what-happens-upon-upgrade">What happens upon upgrade?</a>
+        <a href="/guides/hello-world/go">Hello World on Koding: Go</a>
       </li>
     
       <li class="">
@@ -310,44 +310,47 @@ supports one of the following record types."\>
     <li class="author username">
        by <span rel="author">Team Koding</span>
     </li>
-    <li class="updated">Updated a month ago</li>
+    <li class="updated">Updated 21 hours ago</li>
   </ul>
 
 
   
 
   <div itemprop="articleBody">
-    <p itemprop="about">Koding VMs support custom domains as long as your domain provider
+    <p itemprop="about">Koding VMs support custom domains (for free!) as long as your domain provider
 supports one of the following record types.</p>
 <ul>
 <li>CNAME Record</li>
 <li>A Record</li>
 </ul>
-<h2 class="heading"> <a name="find-your-vm-address" class="anchor" href="#find-your-vm-address"></a> Find your VM Address </h2><p>First, you&apos;ll need to find and copy your <a href="/faq/vm-hostname">VM Address</a>. To
-find this, please refer to <a href="/faq/vm-hostname">this guide</a> - But it will look
+<blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>These record types are the most common and should be supported by 100% of the 
+domain providers out there.</p>
+ </blockquote><h2 class="heading"> <a name="find-your-vm-address" class="anchor" href="#find-your-vm-address"></a> Find your VM Address </h2><p>First, you&apos;ll need to find and copy your <a href="/faq/vm-hostname">VM Address</a>. To
+find this, please refer to <a href="/faq/vm-hostname">this guide</a> - it will look
 something like the address below:</p>
 <pre><code>ulkk3a3a4bb3<span class="hljs-class">.joshmurray</span><span class="hljs-class">.koding</span><span class="hljs-class">.io</span>
 </code></pre><h2 class="heading"> <a name="create-your-domain-record" class="anchor" href="#create-your-domain-record"></a> Create Your Domain Record </h2><p>Next, you&apos;ll need to create and configure either a <strong>CNAME</strong> Record, or
 an <strong>A Record</strong> with your domain provider.</p>
-<p>To configure either of these record types, refer to your providers guides
-and create the record type which you prefer.</p>
-<p>Once you have created it, paste in the VM Address from above to the
-Record Value. This will point your Domain to the Address that the host
-resolves to.</p>
+<p>To configure either of these record types, refer to your provider&apos;s guides
+and create the record of the type that you prefer.</p>
+<blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>You can use either type. There&apos;s no difference from our end.</p>
+ </blockquote><p>Once you have created the record on your domain registrar&apos;s panel, 
+paste in the VM Address from above to the <code>Record Value</code>. This will 
+point your Domain to the Address that the host resolves to.</p>
 <h2 class="heading"> <a name="the-waiting-game" class="anchor" href="#the-waiting-game"></a> The Waiting Game </h2><p>If the record you are creating is new, it should resolve very quickly. If
-however, it is an older record you must wait for the cache to expire.
+however, it is an older record you must wait for the global cache to expire.
 This may take anywhere from 5 minutes to 24 hours.</p>
 <p>If it has not been resolved after a day, ensure that you used the proper
 VM Address <em>(as shown above)</em>. If it is correct, try contacting your
 Domain Provider and ensure that they are able to use Addresses rather
 than IPs in their record values.</p>
-<h2 class="heading"> <a name="can-i-use-my-vms-ip-" class="anchor" href="#can-i-use-my-vms-ip-"></a> Can I use my VMs IP? </h2><p>For technical reasons, free VMs have rotating IPs. After your VM goes
+<h2 class="heading"> <a name="can-i-use-my-vms-ip-" class="anchor" href="#can-i-use-my-vms-ip-"></a> Can I use my VMs IP? </h2><p>Our free VMs have rotating IPs which means that after your VM goes
 offline, it is not guaranteed to boot up with the same IP. This means
 that you <strong>should not</strong> use your VMs IP as the record value if you&apos;re
 <strong>not</strong> using an Always-On VM.</p>
-<p>If however your VM is Always-On, an IP should work, as long as your VM is
-not shutdown. For more information on Always-On VMs, see the <a href="https://koding.com/Pricing">Pricing
-Page</a>.</p>
+<p>If you have a paid Koding account and your VM is marked as <code>Always-On</code>, 
+an IP should work, as long as your VM is not shutdown. For more information 
+on Always-On VMs, see the <a href="https://koding.com/Pricing">Pricing Page</a>.</p>
 
   </div>
   
