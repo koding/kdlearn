@@ -339,7 +339,7 @@ If you have a paid Koding account and your VM is marked as Always-On,
 an IP should work, as long as your VM is not shutdown. For more information 
 on Always-On VMs, see the Pricing Page.
 Once you are done pointing your domain to your VM, you can experiment with
-pointing multiple domains to the same VM using as described in this guide.a
+pointing multiple domains to the same VM using as described in this guide.
 </description>
   </item>
   
