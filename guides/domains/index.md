@@ -58,7 +58,7 @@ an IP should work, as long as your VM is not shutdown. For more information
 on Always-On VMs, see the [Pricing Page][pricing].
 
 Once you are done pointing your domain to your VM, you can experiment with
-pointing multiple domains to the same VM using as described in [this guide](http://learn.koding.com/guides/vhosts-and-subdomains/).a
+pointing multiple domains to the same VM using as described in [this guide](http://learn.koding.com/guides/vhosts-and-subdomains/).
 
 [vm hostname]: /faq/vm-hostname
 [pricing]: https://koding.com/Pricing
