@@ -45,7 +45,7 @@ cd goodbyetolocalhost
 You can run the Rails webserver like so:
 
 ```
-rails server
+rails server -b 0.0.0.0
 ```
 
 You will now be able to access the Rails webserver by following a similar URL:
