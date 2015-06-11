@@ -6,7 +6,7 @@ importance: 4
 Sometimes one editor or terminal screen is not enough, so just like you can on any code editor and terminal app on your computer, you can also split the editor and terminal areas on Koding to gain more virtual windows.
 
 The image below shows the first method you can use to split panes. The drop-down menu provides the split options.
-![split-1](split-1.png)
+![split-1](/faq/split-panes/split-1.png)
 
 The second (and more fun) method of splitting panes is to use our visual pane splitter as shown in
 the animated gif below.
