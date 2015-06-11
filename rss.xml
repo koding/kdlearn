@@ -18,6 +18,35 @@
   <language>en</language>
   
   <item>
+    <title>Setting up a Rails webserver</title>
+    <link>//learn.koding.com/guides/setting-rails-webserver</link>
+    <pubDate>"2015-06-11T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-rails-webserver</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Rails using just one command:
+kpm install rails
+
+  Getting started Before you can start the Rails install process, you'll need to update all of the apt-get packages:
+sudo apt-get update
+Then make sure you have Ruby installed on your VM. You can install it by following this guide.
+  Installing You can install Rails using the bellow command:
+sudo gem install rails
+  Usage Creating a Rails project is really easy. It just takes one command and you're good to go:
+rails new goodbyetolocalhost
+cd goodbyetolocalhost
+You can run the Rails webserver like so:
+rails server -b 0.0.0.0
+You will now be able to access the Rails webserver by following a similar URL:
+http://KODING_USERNAME.koding.io:3000
+Find out more about your VM hostname here.
+Rails should listen to 0.0.0.0:3000 by default. If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:3000. You can check this, using the netstat command in another terminal window and the bellow command:
+sudo netstat -tnlp
+And that's it!
+If you encounter any issues or have any questions please drop us an email here.
+</description>
+  </item>
+  
+  <item>
     <title>Koding IDE Introduction</title>
     <link>//learn.koding.com/guides/ide-introduction</link>
     <pubDate>"2015-06-11T00:00:00.000Z"</pubDate>
@@ -67,46 +96,6 @@ Ctrl(Cmd) + Enter(Return) keyboard shortcut will make everything fullscreen.
 
 The Koding IDE is a simple, yet powerful, editor for your browser based development.
 Explore it today and if you ever need help with the IDE you can just click on the bottom right corner question mark icon and the support modal will pop-up or email us at support@koding.com and we'll gladly help.
-</description>
-  </item>
-  
-  <item>
-    <title>Hello World on Koding: Ruby</title>
-    <link>//learn.koding.com/guides/hello-world/ruby</link>
-    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/ruby</guid>
-    <author>Team Koding</author>
-    <description>  Introduction Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, and Lisp. It supports multiple programming paradigms, including functional, object-oriented, and imperative. It also has a dynamic type system and automatic memory management.
-  Implementation The first thing you need to do is to create a file called helloworld.rb in your Koding VM and paste the bellow snippet into it.
-#!/usr/bin/ruby
-
-puts 'Hello, world!'
-To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
-ruby helloworld.rb
-  Explanation #!/usr/bin/ruby
-The shebang line is read by the program loader to determine what program to use to run the script. This line cannot be preceded by any blank lines or any leading spaces.
-puts 'Hello, world!'
-The above line is pretty self explanatory. It will put something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
-And that's it!
-You just wrote and ran your first Hello World in Ruby.
-</description>
-  </item>
-  
-  <item>
-    <title>Hello World on Koding: Python</title>
-    <link>//learn.koding.com/guides/hello-world/python</link>
-    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/python</guid>
-    <author>Team Koding</author>
-    <description>  Introduction Python is a widely used general-purpose, high-level programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java. The language provides constructs intended to enable clear programs on both a small and large scale.
-  Implementation The first thing you need to do is to create a file called helloworld.py in your Koding VM and paste the bellow snippet into it.
-print &amp;quot;Hello World!&amp;quot;
-To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
-python helloworld.py
-  Explanation print &amp;quot;Hello World!&amp;quot;
-Since Python emphasizes code readability, the above line is pretty self explanatory. It will print out something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
-And that's it!
-You just wrote and ran your first Hello World in Python.
 </description>
   </item>
   
@@ -226,40 +215,47 @@ If you encounter any issues or have any questions please drop an email here
   </item>
   
   <item>
-    <title>Hello World on Koding: Java</title>
-    <link>//learn.koding.com/guides/hello-world/java</link>
+    <title>Custom Domains with your Koding VM</title>
+    <link>//learn.koding.com/guides/domains</link>
     <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/java</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/domains</guid>
     <author>Team Koding</author>
-    <description>  Introduction Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.
-  Implementation The first thing you need to do is to create a file called HelloWorld.java in your Koding VM and paste the bellow snippet into it.
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(&amp;quot;Hello, World!&amp;quot;);
-    }
-}
-To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
-javac HelloWorld.java
-java HelloWorld
-  Explanation public class HelloWorld
-The first line defines a class called HelloWorld. In Java, every line of code that can actually run needs to be inside a class. This line declares a class named HelloWorld, which is public, that means that any other class can access it.
-public static void main(String[] args)
-The main method has to have this exact signature in order to be able to run your program.
+    <description>Koding VMs support custom domains (for free!) as long as your domain provider
+supports one of the following record types.
 
-public - means that anyone can access it.
-static  - means that you can run this method without creating an instance of Main.
-void - means that this method doesn't return any value.
-main - is the name of the method.
+CNAME Record
+A Record
 
-The arguments inside the method are the arguments that you will get when running the program with parameters. It's an array of strings.
-{}
-The curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
-group or function.
-System.out.println(&amp;quot;Hello, World!&amp;quot;);
-System is a pre-defined class that Java provides and it also holds some useful methods and variables. out is a static variable within System that represents the output of your program. println is a method of out that can be used to print a line.
-And that's it!
-You just wrote and ran your first Hello World in Java.
-If you'd like to continue dabbling in Java, we recommend taking a look at this tutorial written for Koding over at Andriodauthority.com
+ tipThese record types are the most common and should be supported by 100% of the 
+domain providers out there.
+   Find your VM Address First, you'll need to find and copy your VM Address. To
+find this, please refer to this guide - it will look
+something like the address below:
+ulkk3a3a4bb3.joshmurray.koding.io
+  Create Your Domain Record Next, you'll need to create and configure either a CNAME Record, or
+an A Record with your domain provider.
+To configure either of these record types, refer to your provider's guides
+and create the record of the type that you prefer.
+ tipYou can use either type. There's no difference from our end.
+ Once you have created the record on your domain registrar's panel, 
+paste in the VM Address from above to the Record Value. This will 
+point your Domain to the Address that the host resolves to.
+  The Waiting Game If the record you are creating is new, it should resolve very quickly. If
+however, it is an older record you must wait for the global cache to expire.
+This may take anywhere from 5 minutes to 24 hours.
+If it has not been resolved after a day, ensure that you used the proper
+VM Address (as shown above). If it is correct, try contacting your
+Domain Provider and ensure that they are able to use Addresses rather
+than IPs in their record values.
+  Can I use my VMs IP? Our free VMs have rotating IPs which means that after your VM goes
+offline, it is not guaranteed to boot up with the same IP. This means
+that you should not use your VMs IP as the record value if you're
+not using an Always-On VM.
+If you have a paid Koding account and your VM is marked as Always-On, 
+an IP should work, as long as your VM is not shutdown. For more information 
+on Always-On VMs, see the Pricing Page.
+Once you are done pointing your domain to your VM, you can experiment with
+pointing multiple domains to the same VM using as described in this guide.
 </description>
   </item>
   
@@ -352,89 +348,80 @@ for now.
   </item>
   
   <item>
-    <title>Custom Domains with your Koding VM</title>
-    <link>//learn.koding.com/guides/domains</link>
+    <title>Hello World on Koding: Python</title>
+    <link>//learn.koding.com/guides/hello-world/python</link>
     <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/domains</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/python</guid>
     <author>Team Koding</author>
-    <description>Koding VMs support custom domains (for free!) as long as your domain provider
-supports one of the following record types.
-
-CNAME Record
-A Record
-
- tipThese record types are the most common and should be supported by 100% of the 
-domain providers out there.
-   Find your VM Address First, you'll need to find and copy your VM Address. To
-find this, please refer to this guide - it will look
-something like the address below:
-ulkk3a3a4bb3.joshmurray.koding.io
-  Create Your Domain Record Next, you'll need to create and configure either a CNAME Record, or
-an A Record with your domain provider.
-To configure either of these record types, refer to your provider's guides
-and create the record of the type that you prefer.
- tipYou can use either type. There's no difference from our end.
- Once you have created the record on your domain registrar's panel, 
-paste in the VM Address from above to the Record Value. This will 
-point your Domain to the Address that the host resolves to.
-  The Waiting Game If the record you are creating is new, it should resolve very quickly. If
-however, it is an older record you must wait for the global cache to expire.
-This may take anywhere from 5 minutes to 24 hours.
-If it has not been resolved after a day, ensure that you used the proper
-VM Address (as shown above). If it is correct, try contacting your
-Domain Provider and ensure that they are able to use Addresses rather
-than IPs in their record values.
-  Can I use my VMs IP? Our free VMs have rotating IPs which means that after your VM goes
-offline, it is not guaranteed to boot up with the same IP. This means
-that you should not use your VMs IP as the record value if you're
-not using an Always-On VM.
-If you have a paid Koding account and your VM is marked as Always-On, 
-an IP should work, as long as your VM is not shutdown. For more information 
-on Always-On VMs, see the Pricing Page.
-Once you are done pointing your domain to your VM, you can experiment with
-pointing multiple domains to the same VM using as described in this guide.
+    <description>  Introduction Python is a widely used general-purpose, high-level programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java. The language provides constructs intended to enable clear programs on both a small and large scale.
+  Implementation The first thing you need to do is to create a file called helloworld.py in your Koding VM and paste the bellow snippet into it.
+print &amp;quot;Hello World!&amp;quot;
+To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
+python helloworld.py
+  Explanation print &amp;quot;Hello World!&amp;quot;
+Since Python emphasizes code readability, the above line is pretty self explanatory. It will print out something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
+And that's it!
+You just wrote and ran your first Hello World in Python.
 </description>
   </item>
   
   <item>
-    <title>Installing Ionic Framework</title>
-    <link>//learn.koding.com/guides/installing-ionic-framework</link>
-    <pubDate>"2015-05-29T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/installing-ionic-framework</guid>
-    <author>sergiu</author>
-    <description>This guild will explain how to install Ionic Framework  and how to run the application in your browser.
-To install Ionic Framework you must update your packages and have nodejs and npm installed on your Koding VM:
+    <title>Hello World on Koding: Ruby</title>
+    <link>//learn.koding.com/guides/hello-world/ruby</link>
+    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/ruby</guid>
+    <author>Team Koding</author>
+    <description>  Introduction Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, and Lisp. It supports multiple programming paradigms, including functional, object-oriented, and imperative. It also has a dynamic type system and automatic memory management.
+  Implementation The first thing you need to do is to create a file called helloworld.rb in your Koding VM and paste the bellow snippet into it.
+#!/usr/bin/ruby
 
-Update packages
+puts 'Hello, world!'
+To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
+ruby helloworld.rb
+  Explanation #!/usr/bin/ruby
+The shebang line is read by the program loader to determine what program to use to run the script. This line cannot be preceded by any blank lines or any leading spaces.
+puts 'Hello, world!'
+The above line is pretty self explanatory. It will put something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
+And that's it!
+You just wrote and ran your first Hello World in Ruby.
+</description>
+  </item>
+  
+  <item>
+    <title>Hello World on Koding: Java</title>
+    <link>//learn.koding.com/guides/hello-world/java</link>
+    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/java</guid>
+    <author>Team Koding</author>
+    <description>  Introduction Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.
+  Implementation The first thing you need to do is to create a file called HelloWorld.java in your Koding VM and paste the bellow snippet into it.
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println(&amp;quot;Hello, World!&amp;quot;);
+    }
+}
+To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
+javac HelloWorld.java
+java HelloWorld
+  Explanation public class HelloWorld
+The first line defines a class called HelloWorld. In Java, every line of code that can actually run needs to be inside a class. This line declares a class named HelloWorld, which is public, that means that any other class can access it.
+public static void main(String[] args)
+The main method has to have this exact signature in order to be able to run your program.
 
-sudo apt-get update
+public - means that anyone can access it.
+static  - means that you can run this method without creating an instance of Main.
+void - means that this method doesn't return any value.
+main - is the name of the method.
 
-Install nodejs
-
-sudo apt-get install nodejs
-
-Install npm
-
-sudo apt-get install npm
- tipFollow this guide and this guide to learn more on how to get started with nodejs and npm on your Koding VM.
-   Step 1 - Install Ionic Framework After installing npm you will be able to install Ionic Framwork on your Koding VM. Write the following command in your terminal:
-sudo npm install -g cordova ionic
- tipCheckout this guide for more info regarding Apache Cordova on your Koding VM.
-   Step 2 - Navigate to Applications directory Navigate to your application directory, where you will create the ionic app. To do this, write in terminal:
-cd Applications
-  Step 3 - Create your Ionic application Now you can create your application using the following command:
-sudo ionic start myApp
-  Step 4 - Navigate to the myApp directory To be able to run you application, first you'll need to navigate to your application directory:
-cd myApp
-  Step 5 - Set address On this step you can specify what address your browser will connect to:
-ionic address
-  Step 6 - Start a local development server Now you can start a local development server to test your Ionic application. To do this, write in your terminal:
-ionic serve --all
-  Step 7 - Access your running dev server url: Finally you can access your dev server url:
-http://KODING_USERNAME.koding.io:8100
-Find out more about your VM hostname here.
-And that's it.
-If you encounter any issues or have any questions please drop an email here
+The arguments inside the method are the arguments that you will get when running the program with parameters. It's an array of strings.
+{}
+The curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
+group or function.
+System.out.println(&amp;quot;Hello, World!&amp;quot;);
+System is a pre-defined class that Java provides and it also holds some useful methods and variables. out is a static variable within System that represents the output of your program. println is a method of out that can be used to print a line.
+And that's it!
+You just wrote and ran your first Hello World in Java.
+If you'd like to continue dabbling in Java, we recommend taking a look at this tutorial written for Koding over at Andriodauthority.com
 </description>
   </item>
   
@@ -569,6 +556,48 @@ Right click the folder, select SFTP/FTP. You will now see many more options than
 
 
 And there you have it, a folder synced with your Koding VM.
+</description>
+  </item>
+  
+  <item>
+    <title>Installing Ionic Framework</title>
+    <link>//learn.koding.com/guides/installing-ionic-framework</link>
+    <pubDate>"2015-05-29T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/installing-ionic-framework</guid>
+    <author>sergiu</author>
+    <description>This guild will explain how to install Ionic Framework  and how to run the application in your browser.
+To install Ionic Framework you must update your packages and have nodejs and npm installed on your Koding VM:
+
+Update packages
+
+sudo apt-get update
+
+Install nodejs
+
+sudo apt-get install nodejs
+
+Install npm
+
+sudo apt-get install npm
+ tipFollow this guide and this guide to learn more on how to get started with nodejs and npm on your Koding VM.
+   Step 1 - Install Ionic Framework After installing npm you will be able to install Ionic Framwork on your Koding VM. Write the following command in your terminal:
+sudo npm install -g cordova ionic
+ tipCheckout this guide for more info regarding Apache Cordova on your Koding VM.
+   Step 2 - Navigate to Applications directory Navigate to your application directory, where you will create the ionic app. To do this, write in terminal:
+cd Applications
+  Step 3 - Create your Ionic application Now you can create your application using the following command:
+sudo ionic start myApp
+  Step 4 - Navigate to the myApp directory To be able to run you application, first you'll need to navigate to your application directory:
+cd myApp
+  Step 5 - Set address On this step you can specify what address your browser will connect to:
+ionic address
+  Step 6 - Start a local development server Now you can start a local development server to test your Ionic application. To do this, write in your terminal:
+ionic serve --all
+  Step 7 - Access your running dev server url: Finally you can access your dev server url:
+http://KODING_USERNAME.koding.io:8100
+Find out more about your VM hostname here.
+And that's it.
+If you encounter any issues or have any questions please drop an email here
 </description>
   </item>
   
@@ -841,42 +870,6 @@ If you have any question or issues please email us at support@koding.com and we'
   </item>
   
   <item>
-    <title>Where is my Web Server Root?</title>
-    <link>//learn.koding.com/guides/where-is-my-webserver-root</link>
-    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/where-is-my-webserver-root</guid>
-    <author>Team Koding</author>
-    <description>Koding VMs come with Apache preconfigured and serve a sample site to get you 
-started. The files for this site are found in what is typically called your 
-Web Server Root. This is the directory that Apache is serving up files from, 
-and it is located within your Home directory, under the Web directory. The 
-full path being:
-/home/username/Web
-Replace username with your username.
-You can modify the contents of this directory with the Koding 
-Terminal, or the Ace Editor. In this example, we'll use Ace 
-to browse the files with the FileTree.
-First, open up Ace. In the left hand side you'll see a FileTree, with a 
-directory called Web. Double click the Web folder to expand it. Your FileTree 
-should look something like this:
-
-Those files are a series of example pages, and they're being served by Apache 
-on your Koding Domain. You can view this site by visiting your Koding Domain, 
-at:
-http://hostname.username.koding.io
-Where username is your Koding username. You should see something like this:
-
-You'll notice that the PHP, Python, Perl, and Ruby links are actually files 
-being generated from that language. As an example, the python.py file is 
-being served up by Apache, with the aid of Apache's mod_python module. This 
-serves to illustrate that this is a real Apache server, and you can use it 
-just like you expect.
-You should now understand where your Web Server Root is, and how to access it 
-from the Web to develop and share your web applications. Happy Koding!
-</description>
-  </item>
-  
-  <item>
     <title>What happened to 127.0.0.1?</title>
     <link>//learn.koding.com/guides/what-happened-to-127-0-0-1</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
@@ -973,14 +966,38 @@ If you encounter any issues or have any questions please drop us an email here.
   </item>
   
   <item>
-    <title>Getting Started</title>
-    <link>//learn.koding.com/guides/getting-started</link>
+    <title>Where is my Web Server Root?</title>
+    <link>//learn.koding.com/guides/where-is-my-webserver-root</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/where-is-my-webserver-root</guid>
     <author>Team Koding</author>
-    <description>In this Getting Started series, lets go over some basic usage of Koding. We'll 
-go over each section, and by the end you should have a basic understanding how 
-where everything is located in Koding. 
+    <description>Koding VMs come with Apache preconfigured and serve a sample site to get you 
+started. The files for this site are found in what is typically called your 
+Web Server Root. This is the directory that Apache is serving up files from, 
+and it is located within your Home directory, under the Web directory. The 
+full path being:
+/home/username/Web
+Replace username with your username.
+You can modify the contents of this directory with the Koding 
+Terminal, or the Ace Editor. In this example, we'll use Ace 
+to browse the files with the FileTree.
+First, open up Ace. In the left hand side you'll see a FileTree, with a 
+directory called Web. Double click the Web folder to expand it. Your FileTree 
+should look something like this:
+
+Those files are a series of example pages, and they're being served by Apache 
+on your Koding Domain. You can view this site by visiting your Koding Domain, 
+at:
+http://hostname.username.koding.io
+Where username is your Koding username. You should see something like this:
+
+You'll notice that the PHP, Python, Perl, and Ruby links are actually files 
+being generated from that language. As an example, the python.py file is 
+being served up by Apache, with the aid of Apache's mod_python module. This 
+serves to illustrate that this is a real Apache server, and you can use it 
+just like you expect.
+You should now understand where your Web Server Root is, and how to access it 
+from the Web to develop and share your web applications. Happy Koding!
 </description>
   </item>
   
@@ -1806,48 +1823,14 @@ That's all there is to it! Enjoy!
   </item>
   
   <item>
-    <title>Getting Started: The Activity Feed</title>
-    <link>//learn.koding.com/guides/getting-started/activity-feed</link>
+    <title>Getting Started</title>
+    <link>//learn.koding.com/guides/getting-started</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/activity-feed</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started</guid>
     <author>Team Koding</author>
-    <description>The Activity Feed is the central location for discussion on Koding. A
-public message board, with markdown support, previewing, hashtag topics
-and more, it's a central component to Koding's Social experience.
-
-  Posting and Formatting To post to the activity feed, find the input box in the top of the page.
-
-Simply type something in, and press the green submit button. Just plain text
-can get a bit boring though, so Koding supports full
-Markdown, as seen below:
-
- tipMake sure to familiarize yourself with our posting guidelines.
-   Previewing To preview your post, simply press the little eye on the right side of
-the input box. Your Markdown will be rendered and highlighted
-appropriately.
-
-  Tagging Tagging your content is important. With tags, your content can be
-categorized, which makes it easier to search and more likely to be seen
-by people who follow those channels.
-
-Here you can see the previous Markdown example, tagged with the
-#markdown tag.
-  Searching On the #public channel there is a search field next to
-Most Liked / Most Recent, as seen below.
-
-Searching the activity feed will search for the contents of a post, as
-well as the tags.
-  Channels Channels are how you view a steam of posts with a certain Tag. When you
-click on a tag, it opens a channel for that tag. Clicking on the Grey
-checkmark next to the channel name, will subscribe you to that channel,
-and keep it open anytime you visit Koding.
-
-To browse channels that you might be interested in, you can click the
-Plus button next to &amp;quot;Channel&amp;quot; in the sidebar (as seen below), and
-search for the channel you're interested in.
-
-Following channels is a great way to stay active in content that matters
-to you.
+    <description>In this Getting Started series, lets go over some basic usage of Koding. We'll 
+go over each section, and by the end you should have a basic understanding how 
+where everything is located in Koding. 
 </description>
   </item>
   
@@ -2173,27 +2156,48 @@ If you encounter any issues or have any questions please drop us an email here.
   </item>
   
   <item>
-    <title>Getting Started: Editing Your Profile</title>
-    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
+    <title>Getting Started: The Activity Feed</title>
+    <link>//learn.koding.com/guides/getting-started/activity-feed</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/activity-feed</guid>
     <author>Team Koding</author>
-    <description>Your Koding profile is your public information page on Koding. Currently
-it shows your Avatar, Name and Description, recent Koding activity, and
-in the near future Badges and additional social information. In this
-guide we'll go over the basic usage of your Koding profile.
-  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted
-below.
+    <description>The Activity Feed is the central location for discussion on Koding. A
+public message board, with markdown support, previewing, hashtag topics
+and more, it's a central component to Koding's Social experience.
 
-Clicking on it will open your profile.
-  Avatar, Name and Description When viewing your profile for the first time, you'll see that your first
-name is set to your Koding username, and your last name and description
-are set to default values, as seen in the below image.
+  Posting and Formatting To post to the activity feed, find the input box in the top of the page.
 
-These default values are only seen by you, and if you double click them,
-you can edit that field.
-If you have one, Koding will use your Gravatar by default, but if you head over to your account settings Koding also supports avatar uploads directly.
+Simply type something in, and press the green submit button. Just plain text
+can get a bit boring though, so Koding supports full
+Markdown, as seen below:
 
+ tipMake sure to familiarize yourself with our posting guidelines.
+   Previewing To preview your post, simply press the little eye on the right side of
+the input box. Your Markdown will be rendered and highlighted
+appropriately.
+
+  Tagging Tagging your content is important. With tags, your content can be
+categorized, which makes it easier to search and more likely to be seen
+by people who follow those channels.
+
+Here you can see the previous Markdown example, tagged with the
+#markdown tag.
+  Searching On the #public channel there is a search field next to
+Most Liked / Most Recent, as seen below.
+
+Searching the activity feed will search for the contents of a post, as
+well as the tags.
+  Channels Channels are how you view a steam of posts with a certain Tag. When you
+click on a tag, it opens a channel for that tag. Clicking on the Grey
+checkmark next to the channel name, will subscribe you to that channel,
+and keep it open anytime you visit Koding.
+
+To browse channels that you might be interested in, you can click the
+Plus button next to &amp;quot;Channel&amp;quot; in the sidebar (as seen below), and
+search for the channel you're interested in.
+
+Following channels is a great way to stay active in content that matters
+to you.
 </description>
   </item>
   
@@ -2708,39 +2712,27 @@ If you encounter any issues or have any questions please drop us an email here.
   </item>
   
   <item>
-    <title>Getting Started: File Uploads</title>
-    <link>//learn.koding.com/guides/getting-started/file-upload</link>
+    <title>Getting Started: Editing Your Profile</title>
+    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/file-upload</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
     <author>Team Koding</author>
-    <description>In this guide we'll take a look at uploading your files and projects to
-Koding, in multiple ways. Lets get started!
-  Uploading with Drag and Drop The simplest way, is simply by using Drag and Drop file upload! To do
-this, open your Koding IDE, locate your FileTree on the left hand
-side, and drag a file from your Desktop onto the FileTree. An example
-image is below.
+    <description>Your Koding profile is your public information page on Koding. Currently
+it shows your Avatar, Name and Description, recent Koding activity, and
+in the near future Badges and additional social information. In this
+guide we'll go over the basic usage of your Koding profile.
+  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted
+below.
 
-After you let go of the file, your file will be uploaded to your
-~/Uploads directory. If ~/Uploads does not exist, it will be automatically
-created.
- tipFiles uploaded this way are not automatically available for
-serving over your VMs web server as the ~/Uploads directory is not inside
-~/Web (the default web root for Koding VMs). If you wish to use any uploaded
-files in your web project, please move them to a directory under ~/Web.
-   Uploading with FTP FTP is another common way to upload files to your VM. Before uploading
-with FTP though, you'll need to set up an FTP Server on your VM.
-The FTP Guide will take you through both the installation, and
-connecting process, so check it out!
-  Uploading with SCP SCP is is a tool that will copy files from your local Unix filesystem
-to a remote filesystem over SSH connections. To use it, make sure you
-have SSH setup with your Koding VM beforehand. Instructions can be found
-here if needed.
-After that, use the following command to copy a local file to your VM.
-scp LOCAL_FILE USERNAME.koding.io:REMOTE_FILE
-Replace LOCAL_FILE with your local file location, USERNAME with your
-Koding Username, and REMOTE_FILE with your Remote File location. An
-example of this command can be seen below.
-scp ~/my_image.png joshmurray.koding.io:~/my_image.png
+Clicking on it will open your profile.
+  Avatar, Name and Description When viewing your profile for the first time, you'll see that your first
+name is set to your Koding username, and your last name and description
+are set to default values, as seen in the below image.
+
+These default values are only seen by you, and if you double click them,
+you can edit that field.
+If you have one, Koding will use your Gravatar by default, but if you head over to your account settings Koding also supports avatar uploads directly.
+
 </description>
   </item>
   
@@ -2816,55 +2808,39 @@ If you encounter any issues or have any questions please drop us an email here.
   </item>
   
   <item>
-    <title>Getting Started: The UI</title>
-    <link>//learn.koding.com/guides/getting-started/the-ui</link>
+    <title>Getting Started: File Uploads</title>
+    <link>//learn.koding.com/guides/getting-started/file-upload</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/the-ui</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/file-upload</guid>
     <author>Team Koding</author>
-    <description>In this guide we'll take a look at Koding's UI. We'll examine 
-the major sections, and briefly explain some of the features. In future 
-guides of this series we'll explain tihese parts in more detail. Lets get 
-started!
-  The Full UI 
-This is the Koding UI of a logged in user, with the Koding IDE 
-open. On the left side we have our VMs, Channels, Chats, and Account. To 
-the right we have the Koding IDE. Lets look at each piece, and where they 
-lead us.
-  VMs, Workspaces and IDE VMs, Workspaces, and the Koding IDE can be found on the left hand 
-side, under VMS, as seen in the image below.
+    <description>In this guide we'll take a look at uploading your files and projects to
+Koding, in multiple ways. Lets get started!
+  Uploading with Drag and Drop The simplest way, is simply by using Drag and Drop file upload! To do
+this, open your Koding IDE, locate your FileTree on the left hand
+side, and drag a file from your Desktop onto the FileTree. An example
+image is below.
 
-Clicking on a VM Name, such as koding-vm-0 in the above image, will 
-open up the Koding IDE for that specific VM.
-The button to the immediate right of the VM Name is the VM Settings. Here 
-you can find useful information, such as your VM Address and VM Specs.
-Finally, below the VM Name are your Workspaces for that specific VM.Clicking on a Workspace will open all of the previous editors and 
-Terminals that you had open on it, and opening new Workspaces provides 
-shortcuts for varying tasks. We'll get into the specifics in the 
-Workspaces guide.
-  Channels and Activity Below VMs, are your Channels. To follow a channel, click on a Grey check 
-mark. Green check marks indicate a channel that you are following.
-
-A channel is a stream of user submitted content for a certain hash tag, 
-such as #golang. When you 
-click on a hash tag in the Activity Feed, it opens a channel for that 
-tag, as seen below.
-
-Activity Feed posts support Markdown, including Markdown Code 
-Blocks.
-  Chat Below Channels are your Chats. These are private conversations between 
-you and any number of users you invite.
-
-To open a new chat, click on the Plus button to the right of the Chat 
-icon. Clicking on a already started chat, will open it as seen below.
-
-Your chats will work much in the same way as the Activity Feed. You can 
-invite more users by clicking the Plus next to user icons, or delete the 
-conversation from the Chat Dropdown in the upper right.
-  Account Settings Your Account Settings can be located from the bottom of the navigation 
-panel.
-
-Here you'll be able to modify your Name, Password, and link your Koding 
-account to various services.
+After you let go of the file, your file will be uploaded to your
+~/Uploads directory. If ~/Uploads does not exist, it will be automatically
+created.
+ tipFiles uploaded this way are not automatically available for
+serving over your VMs web server as the ~/Uploads directory is not inside
+~/Web (the default web root for Koding VMs). If you wish to use any uploaded
+files in your web project, please move them to a directory under ~/Web.
+   Uploading with FTP FTP is another common way to upload files to your VM. Before uploading
+with FTP though, you'll need to set up an FTP Server on your VM.
+The FTP Guide will take you through both the installation, and
+connecting process, so check it out!
+  Uploading with SCP SCP is is a tool that will copy files from your local Unix filesystem
+to a remote filesystem over SSH connections. To use it, make sure you
+have SSH setup with your Koding VM beforehand. Instructions can be found
+here if needed.
+After that, use the following command to copy a local file to your VM.
+scp LOCAL_FILE USERNAME.koding.io:REMOTE_FILE
+Replace LOCAL_FILE with your local file location, USERNAME with your
+Koding Username, and REMOTE_FILE with your Remote File location. An
+example of this command can be seen below.
+scp ~/my_image.png joshmurray.koding.io:~/my_image.png
 </description>
   </item>
   
@@ -3412,52 +3388,56 @@ And just like that, we have a static page with text chat, voice chat, and mouse 
   </item>
   
   <item>
-    <title>Getting Started: Workspaces</title>
-    <link>//learn.koding.com/guides/getting-started/workspaces</link>
+    <title>Getting Started: The UI</title>
+    <link>//learn.koding.com/guides/getting-started/the-ui</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/workspaces</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/the-ui</guid>
     <author>Team Koding</author>
-    <description>In this guide we'll go over what Koding Workspaces are, and how
-to manage them. Lets get started!
-  What are they? Think of a Workspace as a logical grouping of files that have a common
-theme. For example, all files that belong to a project can be placed
-inside a workspace. They are essentially folders.
-Workspaces are also a way to save the layout of your environment. Open Files,
-Terminals, and File Explorer, Workspaces help you save not just what
-you're working on but how you're working.
-Furthermore, in upcoming releases, workspaces will have integration with
-various services and developer tools, making them a quick way to get
-started with a specific type of project or service.
-  How to use them? 
-Workspaces, highlighted in the above image, can be opened simply by
-clicking on them. Creating new workspaces is as simple as using the Plus
-button, in the upper right of the highlighted area.
-Or you can simply right click on a folder from the FileTree and create a Workspace from there. Like in the image below.
+    <description>In this guide we'll take a look at Koding's UI. We'll examine 
+the major sections, and briefly explain some of the features. In future 
+guides of this series we'll explain tihese parts in more detail. Lets get 
+started!
+  The Full UI 
+This is the Koding UI of a logged in user, with the Koding IDE 
+open. On the left side we have our VMs, Channels, Chats, and Account. To 
+the right we have the Koding IDE. Lets look at each piece, and where they 
+lead us.
+  VMs, Workspaces and IDE VMs, Workspaces, and the Koding IDE can be found on the left hand 
+side, under VMS, as seen in the image below.
 
-With the workspace open, simply use the IDE as you want. Open
-files, Terminals, Browsers, and Drawing Boards will be remembered between
-programming sessions.
-  Workspaces on the File System With each user created Workspace, a directory is created inside the
-~/Workspaces directory.
-You can open this directory in your Terminal or clone your projects
-directly into it as you like.
-  Linking Workspaces to Existing Directories Workspace folders are just normal folders on the file system. As such, we
-can use Unix symbolic links to folders to achieve what we want. As an
-example, lets create a Workspace linked to our Web directory.
-Open up a Terminal, and type in the following commands.
-mkdir -p ~/Workspaces
-ln -s ~/Web ~/Workspaces/Web
-Now, with the Koding UI, create a new workspace named Web. That's it!
-Now when you click on the workspace, the FileTree will automatically open
-to the Web folder's contents.
-It should be noted that we created our link before we created the
-Workspace. If the workspace already existed, the link would not be set
-correctly.
-You can freely remove the Workspace file system and replace them with any
-links you desire, as the steps above use, but just be careful not to
-delete any of your files in the process.
- alertThe default Workspace can't be removed as that is the default Web folder on your VM.
- </description>
+Clicking on a VM Name, such as koding-vm-0 in the above image, will 
+open up the Koding IDE for that specific VM.
+The button to the immediate right of the VM Name is the VM Settings. Here 
+you can find useful information, such as your VM Address and VM Specs.
+Finally, below the VM Name are your Workspaces for that specific VM.Clicking on a Workspace will open all of the previous editors and 
+Terminals that you had open on it, and opening new Workspaces provides 
+shortcuts for varying tasks. We'll get into the specifics in the 
+Workspaces guide.
+  Channels and Activity Below VMs, are your Channels. To follow a channel, click on a Grey check 
+mark. Green check marks indicate a channel that you are following.
+
+A channel is a stream of user submitted content for a certain hash tag, 
+such as #golang. When you 
+click on a hash tag in the Activity Feed, it opens a channel for that 
+tag, as seen below.
+
+Activity Feed posts support Markdown, including Markdown Code 
+Blocks.
+  Chat Below Channels are your Chats. These are private conversations between 
+you and any number of users you invite.
+
+To open a new chat, click on the Plus button to the right of the Chat 
+icon. Clicking on a already started chat, will open it as seen below.
+
+Your chats will work much in the same way as the Activity Feed. You can 
+invite more users by clicking the Plus next to user icons, or delete the 
+conversation from the Chat Dropdown in the upper right.
+  Account Settings Your Account Settings can be located from the bottom of the navigation 
+panel.
+
+Here you'll be able to modify your Name, Password, and link your Koding 
+account to various services.
+</description>
   </item>
   
   <item>
@@ -3611,32 +3591,52 @@ If you encounter any issues or have any questions please drop us an email here.
   </item>
   
   <item>
-    <title>Setting up a Rails webserver</title>
-    <link>//learn.koding.com/guides/setting-rails-webserver</link>
+    <title>Getting Started: Workspaces</title>
+    <link>//learn.koding.com/guides/getting-started/workspaces</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-rails-webserver</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/workspaces</guid>
     <author>Team Koding</author>
-    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Rails using just one command:
-kpm install rails
+    <description>In this guide we'll go over what Koding Workspaces are, and how
+to manage them. Lets get started!
+  What are they? Think of a Workspace as a logical grouping of files that have a common
+theme. For example, all files that belong to a project can be placed
+inside a workspace. They are essentially folders.
+Workspaces are also a way to save the layout of your environment. Open Files,
+Terminals, and File Explorer, Workspaces help you save not just what
+you're working on but how you're working.
+Furthermore, in upcoming releases, workspaces will have integration with
+various services and developer tools, making them a quick way to get
+started with a specific type of project or service.
+  How to use them? 
+Workspaces, highlighted in the above image, can be opened simply by
+clicking on them. Creating new workspaces is as simple as using the Plus
+button, in the upper right of the highlighted area.
+Or you can simply right click on a folder from the FileTree and create a Workspace from there. Like in the image below.
 
-  Getting started Before you can start the Rails install process, you'll need to update all of the apt-get packages:
-sudo apt-get update
-Then make sure you have Ruby installed on your VM. You can install it by following this guide.
-  Installing You can install Rails using the bellow command:
-sudo gem install rails
-  Usage Creating a Rails project is really easy. It just takes one command and you're good to go:
-rails new goodbyetolocalhost
-cd goodbyetolocalhost
-You can run the Rails webserver like so:
-rails server
-You will now be able to access the Rails webserver by following a similar URL:
-http://KODING_USERNAME.koding.io:3000
-Find out more about your VM hostname here.
-Rails should listen to 0.0.0.0:3000 by default. If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:3000. You can check this, using the netstat command in another terminal window and the bellow command:
-sudo netstat -tnlp
-And that's it!
-If you encounter any issues or have any questions please drop us an email here.
-</description>
+With the workspace open, simply use the IDE as you want. Open
+files, Terminals, Browsers, and Drawing Boards will be remembered between
+programming sessions.
+  Workspaces on the File System With each user created Workspace, a directory is created inside the
+~/Workspaces directory.
+You can open this directory in your Terminal or clone your projects
+directly into it as you like.
+  Linking Workspaces to Existing Directories Workspace folders are just normal folders on the file system. As such, we
+can use Unix symbolic links to folders to achieve what we want. As an
+example, lets create a Workspace linked to our Web directory.
+Open up a Terminal, and type in the following commands.
+mkdir -p ~/Workspaces
+ln -s ~/Web ~/Workspaces/Web
+Now, with the Koding UI, create a new workspace named Web. That's it!
+Now when you click on the workspace, the FileTree will automatically open
+to the Web folder's contents.
+It should be noted that we created our link before we created the
+Workspace. If the workspace already existed, the link would not be set
+correctly.
+You can freely remove the Workspace file system and replace them with any
+links you desire, as the steps above use, but just be careful not to
+delete any of your files in the process.
+ alertThe default Workspace can't be removed as that is the default Web folder on your VM.
+ </description>
   </item>
   
   <item>

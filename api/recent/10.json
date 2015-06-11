@@ -1,21 +1,15 @@
 [
   {
-    "title": "Koding IDE Introduction",
-    "url": "https://learn.koding.com/guides/ide-introduction/index.html",
+    "title": "Setting up a Rails webserver",
+    "url": "https://learn.koding.com/guides/setting-rails-webserver/index.html",
     "author": "Team Koding",
     "date": "2015-06-11T00:00:00.000Z"
   },
   {
-    "title": "Hello World on Koding: Ruby",
-    "url": "https://learn.koding.com/guides/hello-world/ruby/index.html",
+    "title": "Koding IDE Introduction",
+    "url": "https://learn.koding.com/guides/ide-introduction/index.html",
     "author": "Team Koding",
-    "date": "2015-06-06T00:00:00.000Z"
-  },
-  {
-    "title": "Hello World on Koding: PHP",
-    "url": "https://learn.koding.com/guides/hello-world/php/index.html",
-    "author": "Team Koding",
-    "date": "2015-06-06T00:00:00.000Z"
+    "date": "2015-06-11T00:00:00.000Z"
   },
   {
     "title": "Hello World on Koding: Perl",
@@ -24,14 +18,14 @@
     "date": "2015-06-06T00:00:00.000Z"
   },
   {
-    "title": "Hello World on Koding: Pascal",
-    "url": "https://learn.koding.com/guides/hello-world/pascal/index.html",
-    "author": "Bee Jay",
+    "title": "Hello World on Koding: Java",
+    "url": "https://learn.koding.com/guides/hello-world/java/index.html",
+    "author": "Team Koding",
     "date": "2015-06-06T00:00:00.000Z"
   },
   {
-    "title": "Hello World on Koding: Java",
-    "url": "https://learn.koding.com/guides/hello-world/java/index.html",
+    "title": "Custom Domains with your Koding VM",
+    "url": "https://learn.koding.com/guides/domains/index.html",
     "author": "Team Koding",
     "date": "2015-06-06T00:00:00.000Z"
   },
@@ -48,14 +42,20 @@
     "date": "2015-06-06T00:00:00.000Z"
   },
   {
-    "title": "Custom Domains with your Koding VM",
-    "url": "https://learn.koding.com/guides/domains/index.html",
+    "title": "Hello World on Koding: Python",
+    "url": "https://learn.koding.com/guides/hello-world/python/index.html",
     "author": "Team Koding",
     "date": "2015-06-06T00:00:00.000Z"
   },
   {
-    "title": "Hello World on Koding: Python",
-    "url": "https://learn.koding.com/guides/hello-world/python/index.html",
+    "title": "Hello World on Koding: Ruby",
+    "url": "https://learn.koding.com/guides/hello-world/ruby/index.html",
+    "author": "Team Koding",
+    "date": "2015-06-06T00:00:00.000Z"
+  },
+  {
+    "title": "Hello World on Koding: PHP",
+    "url": "https://learn.koding.com/guides/hello-world/php/index.html",
     "author": "Team Koding",
     "date": "2015-06-06T00:00:00.000Z"
   }
