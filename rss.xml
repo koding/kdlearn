@@ -18,6 +18,59 @@
   <language>en</language>
   
   <item>
+    <title>Koding IDE Introduction</title>
+    <link>//learn.koding.com/guides/ide-introduction</link>
+    <pubDate>"2015-06-11T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/ide-introduction</guid>
+    <author>Team Koding</author>
+    <description>In this guide we'll go over the Koding Integrated Development Environment or IDE for short. We'll try to explain how it works, how to use it and in the end share some useful tips that you can use to be more productive.
+  Getting started To access your IDE, select your Virtual Machine on the left hand side as pictured bellow.
+
+ alertIf you have a Developer or Professional account then select the VM you want to start, from the list.
+ Then click on the Turn it on button in the modal.
+
+After the VM has started, you'll see your Koding IDE.
+ tipThe IDE will remember what files / tabs you had opened last time and the FileTree will remember the folder location.
+   Usage The Koding IDE consists of two main parts: the FileTree, and the Editor.
+
+The IDE can be customized by clicking on the little cog icon and then modifying the settings based on your needs.
+ tipYou can also customize the Koding Terminal from here.
+ 
+The FileTree, on the left, enables file navigation around your VM. You can drag files or folders from one location to another one and if you right click files and folders you'll yield shortcuts to various actions as exemplified in the bellow images.
+
+File actions
+
+
+
+Folder actions
+
+
+The Editor, that sits on the right of the FileTree, is the main driving force behing the Koding IDE. It allows you to edit a wide variaty of files types, such as .php, .rb, .html, .css just to name a few.
+By default the editor will be opened in a horizontal two pane view. Panes can be opened, split and merged at will. They can also be made full screen. You can learn more about these operations in this guide.
+You can open a new tab, in a pane, by clicking on the plus button and then chosing the type of tab you want to open, either a new Terminal tab, a new drawing board or a new file.
+
+
+If you choose to open a new file tab you'll have access to some actions on that tab. Clicking on the little arrow next to the tab name wil bring up a menu with multiple actions.
+
+Choosing the Terminal tab will open the Terminal to your Koding VM. We won't go into much detail about the Terminal in this guide. Head over to this guide for a more in depth explanation of the Terminal.
+The Drawing board tab is there to help you draft ideas / share them with others or when you want to doddle the next big thing.
+Everything has a keyboard shortcut as well. A shortcut reference, can be located by clicking the keyboard icon in the lower right.
+
+The Koding IDE can be used when you are in the collaboration mode. You can share your VM by click on the Share button in the bottom right corner of the IDE.
+
+This will share the VM with your teammate(s) or friend(s). Learn more about the collaboration feature here.
+  Tips 
+Use the Ctrl(Cmd) + Alt + M keyboard shortcut to merge all panes.
+Never worry about saving files again. Enable the autosave feature from the IDE settings.
+Double click on the sidebar and FileTree deviders to minimize them and make more room for the Editor.
+Ctrl(Cmd) + Enter(Return) keyboard shortcut will make everything fullscreen.
+
+The Koding IDE is a simple, yet powerful, editor for your browser based development.
+Explore it today and if you ever need help with the IDE you can just click on the bottom right corner question mark icon and the support modal will pop-up or email us at support@koding.com and we'll gladly help.
+</description>
+  </item>
+  
+  <item>
     <title>Hello World on Koding: Ruby</title>
     <link>//learn.koding.com/guides/hello-world/ruby</link>
     <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
@@ -386,6 +439,45 @@ If you encounter any issues or have any questions please drop an email here
   </item>
   
   <item>
+    <title>What happens upon upgrade?</title>
+    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
+    <pubDate>"2015-05-29T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
+    <author>Team Koding</author>
+    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
+Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
+
+Ability to mark your VM(s) as Always-On
+Add more storage to your VM(s)
+Share our VM with other Koding users
+Create snapshots of your VM
+
+  Turn on &amp;quot;Always On&amp;quot; mode for your VM 
+Go to the VM settings modal.
+On the &amp;quot;General&amp;quot; tab, find the switch for &amp;quot;Always On&amp;quot; and turn it on. Your VM will
+now not turn off even if you log out. This also means your public IP address will now be static.
+
+
+  Adding more disk space 
+Head over to VM settings
+Click on the &amp;quot;Disk Usage&amp;quot; tab and click the &amp;quot;resize your VM&amp;quot; link  (as shown in the image below)
+
+This will open the resize modal from where you can resize your VM.
+
+  Adding more VMs (Only for Developer and Professional Plans) 
+Hover your mouse over the &amp;quot;Your VMs&amp;quot; label in the sidebar (as shown in the image below)
+
+The &amp;quot;+&amp;quot; icon will appear
+Click the icon to and you will be presented with the option to create a new VM. You can select the size and the region of the VM.
+
+
+  Share your VM with other Koding users Sharing your VM is very useful when you are doing &amp;quot;serial collaboration&amp;quot; which means one person takes over when the other is done. You can learn all about how to share your VMs through this guide.
+  Create Snapshots of your VM Snapshots are very handy when you want to save the state of your VM as a backup or as a starting point
+for a new VM. We have a full guide on this feature that will help you understand all the features.
+</description>
+  </item>
+  
+  <item>
     <title>Koding with Sublime Text</title>
     <link>//learn.koding.com/guides/koding-with-sublime-text</link>
     <pubDate>"2015-05-29T00:00:00.000Z"</pubDate>
@@ -477,45 +569,6 @@ Right click the folder, select SFTP/FTP. You will now see many more options than
 
 
 And there you have it, a folder synced with your Koding VM.
-</description>
-  </item>
-  
-  <item>
-    <title>What happens upon upgrade?</title>
-    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
-    <pubDate>"2015-05-29T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
-    <author>Team Koding</author>
-    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
-Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
-
-Ability to mark your VM(s) as Always-On
-Add more storage to your VM(s)
-Share our VM with other Koding users
-Create snapshots of your VM
-
-  Turn on &amp;quot;Always On&amp;quot; mode for your VM 
-Go to the VM settings modal.
-On the &amp;quot;General&amp;quot; tab, find the switch for &amp;quot;Always On&amp;quot; and turn it on. Your VM will
-now not turn off even if you log out. This also means your public IP address will now be static.
-
-
-  Adding more disk space 
-Head over to VM settings
-Click on the &amp;quot;Disk Usage&amp;quot; tab and click the &amp;quot;resize your VM&amp;quot; link  (as shown in the image below)
-
-This will open the resize modal from where you can resize your VM.
-
-  Adding more VMs (Only for Developer and Professional Plans) 
-Hover your mouse over the &amp;quot;Your VMs&amp;quot; label in the sidebar (as shown in the image below)
-
-The &amp;quot;+&amp;quot; icon will appear
-Click the icon to and you will be presented with the option to create a new VM. You can select the size and the region of the VM.
-
-
-  Share your VM with other Koding users Sharing your VM is very useful when you are doing &amp;quot;serial collaboration&amp;quot; which means one person takes over when the other is done. You can learn all about how to share your VMs through this guide.
-  Create Snapshots of your VM Snapshots are very handy when you want to save the state of your VM as a backup or as a starting point
-for a new VM. We have a full guide on this feature that will help you understand all the features.
 </description>
   </item>
   
@@ -733,42 +786,6 @@ snapshot as the starting point (as shown in the image below).
   </item>
   
   <item>
-    <title>Where is my Web Server Root?</title>
-    <link>//learn.koding.com/guides/where-is-my-webserver-root</link>
-    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/where-is-my-webserver-root</guid>
-    <author>Team Koding</author>
-    <description>Koding VMs come with Apache preconfigured and serve a sample site to get you 
-started. The files for this site are found in what is typically called your 
-Web Server Root. This is the directory that Apache is serving up files from, 
-and it is located within your Home directory, under the Web directory. The 
-full path being:
-/home/username/Web
-Replace username with your username.
-You can modify the contents of this directory with the Koding 
-Terminal, or the Ace Editor. In this example, we'll use Ace 
-to browse the files with the FileTree.
-First, open up Ace. In the left hand side you'll see a FileTree, with a 
-directory called Web. Double click the Web folder to expand it. Your FileTree 
-should look something like this:
-
-Those files are a series of example pages, and they're being served by Apache 
-on your Koding Domain. You can view this site by visiting your Koding Domain, 
-at:
-http://hostname.username.koding.io
-Where username is your Koding username. You should see something like this:
-
-You'll notice that the PHP, Python, Perl, and Ruby links are actually files 
-being generated from that language. As an example, the python.py file is 
-being served up by Apache, with the aid of Apache's mod_python module. This 
-serves to illustrate that this is a real Apache server, and you can use it 
-just like you expect.
-You should now understand where your Web Server Root is, and how to access it 
-from the Web to develop and share your web applications. Happy Koding!
-</description>
-  </item>
-  
-  <item>
     <title>A guide to Docker</title>
     <link>//learn.koding.com/guides/what-is-docker</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
@@ -824,14 +841,38 @@ If you have any question or issues please email us at support@koding.com and we'
   </item>
   
   <item>
-    <title>Getting Started</title>
-    <link>//learn.koding.com/guides/getting-started</link>
+    <title>Where is my Web Server Root?</title>
+    <link>//learn.koding.com/guides/where-is-my-webserver-root</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/where-is-my-webserver-root</guid>
     <author>Team Koding</author>
-    <description>In this Getting Started series, lets go over some basic usage of Koding. We'll 
-go over each section, and by the end you should have a basic understanding how 
-where everything is located in Koding. 
+    <description>Koding VMs come with Apache preconfigured and serve a sample site to get you 
+started. The files for this site are found in what is typically called your 
+Web Server Root. This is the directory that Apache is serving up files from, 
+and it is located within your Home directory, under the Web directory. The 
+full path being:
+/home/username/Web
+Replace username with your username.
+You can modify the contents of this directory with the Koding 
+Terminal, or the Ace Editor. In this example, we'll use Ace 
+to browse the files with the FileTree.
+First, open up Ace. In the left hand side you'll see a FileTree, with a 
+directory called Web. Double click the Web folder to expand it. Your FileTree 
+should look something like this:
+
+Those files are a series of example pages, and they're being served by Apache 
+on your Koding Domain. You can view this site by visiting your Koding Domain, 
+at:
+http://hostname.username.koding.io
+Where username is your Koding username. You should see something like this:
+
+You'll notice that the PHP, Python, Perl, and Ruby links are actually files 
+being generated from that language. As an example, the python.py file is 
+being served up by Apache, with the aid of Apache's mod_python module. This 
+serves to illustrate that this is a real Apache server, and you can use it 
+just like you expect.
+You should now understand where your Web Server Root is, and how to access it 
+from the Web to develop and share your web applications. Happy Koding!
 </description>
   </item>
   
@@ -932,48 +973,14 @@ If you encounter any issues or have any questions please drop us an email here.
   </item>
   
   <item>
-    <title>Getting Started: The Activity Feed</title>
-    <link>//learn.koding.com/guides/getting-started/activity-feed</link>
+    <title>Getting Started</title>
+    <link>//learn.koding.com/guides/getting-started</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/activity-feed</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started</guid>
     <author>Team Koding</author>
-    <description>The Activity Feed is the central location for discussion on Koding. A
-public message board, with markdown support, previewing, hashtag topics
-and more, it's a central component to Koding's Social experience.
-
-  Posting and Formatting To post to the activity feed, find the input box in the top of the page.
-
-Simply type something in, and press the green submit button. Just plain text
-can get a bit boring though, so Koding supports full
-Markdown, as seen below:
-
- tipMake sure to familiarize yourself with our posting guidelines.
-   Previewing To preview your post, simply press the little eye on the right side of
-the input box. Your Markdown will be rendered and highlighted
-appropriately.
-
-  Tagging Tagging your content is important. With tags, your content can be
-categorized, which makes it easier to search and more likely to be seen
-by people who follow those channels.
-
-Here you can see the previous Markdown example, tagged with the
-#markdown tag.
-  Searching On the #public channel there is a search field next to
-Most Liked / Most Recent, as seen below.
-
-Searching the activity feed will search for the contents of a post, as
-well as the tags.
-  Channels Channels are how you view a steam of posts with a certain Tag. When you
-click on a tag, it opens a channel for that tag. Clicking on the Grey
-checkmark next to the channel name, will subscribe you to that channel,
-and keep it open anytime you visit Koding.
-
-To browse channels that you might be interested in, you can click the
-Plus button next to &amp;quot;Channel&amp;quot; in the sidebar (as seen below), and
-search for the channel you're interested in.
-
-Following channels is a great way to stay active in content that matters
-to you.
+    <description>In this Getting Started series, lets go over some basic usage of Koding. We'll 
+go over each section, and by the end you should have a basic understanding how 
+where everything is located in Koding. 
 </description>
   </item>
   
@@ -1799,27 +1806,48 @@ That's all there is to it! Enjoy!
   </item>
   
   <item>
-    <title>Getting Started: Editing Your Profile</title>
-    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
+    <title>Getting Started: The Activity Feed</title>
+    <link>//learn.koding.com/guides/getting-started/activity-feed</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/activity-feed</guid>
     <author>Team Koding</author>
-    <description>Your Koding profile is your public information page on Koding. Currently
-it shows your Avatar, Name and Description, recent Koding activity, and
-in the near future Badges and additional social information. In this
-guide we'll go over the basic usage of your Koding profile.
-  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted
-below.
+    <description>The Activity Feed is the central location for discussion on Koding. A
+public message board, with markdown support, previewing, hashtag topics
+and more, it's a central component to Koding's Social experience.
 
-Clicking on it will open your profile.
-  Avatar, Name and Description When viewing your profile for the first time, you'll see that your first
-name is set to your Koding username, and your last name and description
-are set to default values, as seen in the below image.
+  Posting and Formatting To post to the activity feed, find the input box in the top of the page.
 
-These default values are only seen by you, and if you double click them,
-you can edit that field.
-If you have one, Koding will use your Gravatar by default, but if you head over to your account settings Koding also supports avatar uploads directly.
+Simply type something in, and press the green submit button. Just plain text
+can get a bit boring though, so Koding supports full
+Markdown, as seen below:
 
+ tipMake sure to familiarize yourself with our posting guidelines.
+   Previewing To preview your post, simply press the little eye on the right side of
+the input box. Your Markdown will be rendered and highlighted
+appropriately.
+
+  Tagging Tagging your content is important. With tags, your content can be
+categorized, which makes it easier to search and more likely to be seen
+by people who follow those channels.
+
+Here you can see the previous Markdown example, tagged with the
+#markdown tag.
+  Searching On the #public channel there is a search field next to
+Most Liked / Most Recent, as seen below.
+
+Searching the activity feed will search for the contents of a post, as
+well as the tags.
+  Channels Channels are how you view a steam of posts with a certain Tag. When you
+click on a tag, it opens a channel for that tag. Clicking on the Grey
+checkmark next to the channel name, will subscribe you to that channel,
+and keep it open anytime you visit Koding.
+
+To browse channels that you might be interested in, you can click the
+Plus button next to &amp;quot;Channel&amp;quot; in the sidebar (as seen below), and
+search for the channel you're interested in.
+
+Following channels is a great way to stay active in content that matters
+to you.
 </description>
   </item>
   
@@ -2145,55 +2173,27 @@ If you encounter any issues or have any questions please drop us an email here.
   </item>
   
   <item>
-    <title>Koding IDE Introduction</title>
-    <link>//learn.koding.com/guides/ide-introduction</link>
+    <title>Getting Started: Editing Your Profile</title>
+    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/ide-introduction</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
     <author>Team Koding</author>
-    <description>In this guide we'll go over the Koding Integrated Development Environment or IDE for short. We'll try to explain how it works, how to use it and in the end share some useful tips that you can use to be more productive.
-  Getting started To access your IDE, select your Virtual Machine on the left hand side as pictured bellow.
+    <description>Your Koding profile is your public information page on Koding. Currently
+it shows your Avatar, Name and Description, recent Koding activity, and
+in the near future Badges and additional social information. In this
+guide we'll go over the basic usage of your Koding profile.
+  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted
+below.
 
- alertIf you have a Developer or Professional account then select the VM you want to start, from the list.
- Then click on the Turn it on button in the modal.
+Clicking on it will open your profile.
+  Avatar, Name and Description When viewing your profile for the first time, you'll see that your first
+name is set to your Koding username, and your last name and description
+are set to default values, as seen in the below image.
 
-After the VM has started, you'll see your Koding IDE.
- tipThe IDE will remember what files / tabs you had opened last time and the FileTree will remember the folder location.
-   Usage The Koding IDE consists of two main parts: the FileTree, and the Editor.
+These default values are only seen by you, and if you double click them,
+you can edit that field.
+If you have one, Koding will use your Gravatar by default, but if you head over to your account settings Koding also supports avatar uploads directly.
 
-The IDE can be customized by clicking on the little cog icon and then modifying the settings based on your needs.
- tipYou can also customize the Koding Terminal from here.
- 
-The FileTree, on the left, enables file navigation around your VM. You can drag files or folders from one location to another one and if you right click files and folders you'll yield shortcuts to various actions as exemplified in the bellow images.
-
-File actions
-
-
-
-Folder actions
-
-
-The Editor, that sits on the right of the FileTree, is the main driving force behing the Koding IDE. It allows you to edit a wide variaty of files types, such as .php, .rb, .html, .css just to name a few.
-By default the editor will be opened in a horizontal two pane view. Panes can be opened, split and merged at will. They can also be made full screen.
-You can open a new tab, in a pane, by clicking on the plus button and then chosing the type of tab you want to open, either a new Terminal tab, a new drawing board or a new file.
-
-
-If you choose to open a new file tab you'll have access to some actions on that tab. Clicking on the little arrow next to the tab name wil bring up a menu with multiple actions.
-
-Choosing the Terminal tab will open the Terminal to your Koding VM. We won't go into much detail about the Terminal in this guide. Head over to this guide for a more in depth explanation of the Terminal.
-The Drawing board tab is there to help you draft ideas / share them with others or when you want to doddle the next big thing.
-Everything has a keyboard shortcut as well. A shortcut reference, can be located by clicking the keyboard icon in the lower right.
-
-The Koding IDE can be used when you are in the collaboration mode. You can share your VM by click on the Share button in the bottom right corner of the IDE.
-
-This will share the VM with your teammate(s) or friend(s). Learn more about the collaboration feature here.
-  Tips 
-Use the Ctrl(Cmd) + Alt + M keyboard shortcut to merge all panes.
-Never worry about saving files again. Enable the autosave feature from the IDE settings.
-Double click on the sidebar and FileTree deviders to minimize them and make more room for the Editor.
-Ctrl(Cmd) + Enter(Return) keyboard shortcut will make everything fullscreen.
-
-The Koding IDE is a simple, yet powerful, editor for your browser based development.
-Explore it today and if you ever need help with the IDE you can just click on the bottom right corner question mark icon and the support modal will pop-up or email us at support@koding.com and we'll gladly help.
 </description>
   </item>
   
@@ -6350,6 +6350,31 @@ your existing disk and add all or some of your earned storage.
   </item>
   
   <item>
+    <title>Is there a Terminal command to open files in Editor?</title>
+    <link>//learn.koding.com/faq/kdopen</link>
+    <pubDate>"2015-06-11T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/kdopen</guid>
+    <author></author>
+    <description>The kdopen command does just that! 
+First you need to install kdopen using our kpm package manager. Type the following command in Terminal to set up the required components for kdopen:
+kpm install kdbin
+ tipIf kpm itself is not installed, you can install it using the command 
+curl -sSL learn.koding.com/kpm.sh | sh
+ Once kdbin is installed, you can now type the following command in Terminal
+to open a file in the Koding Editor:
+kdopen &amp;lt;filename&amp;gt;
+kdopen supports wildcards so if you type:
+kdopen *.html
+and it will open each file with the extension .html (in the current directory) in its own tab on the Editor.
+If you are opening a file that does not exist, kdopen will create the file first
+and then open it up. The file will be created in the current directory.
+
+
+
+</description>
+  </item>
+  
+  <item>
     <title>How do I reset my password?</title>
     <link>//learn.koding.com/faq/reset-password</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
@@ -6387,6 +6412,25 @@ So to be clear , you may change your display name at any time but this does not 
   </item>
   
   <item>
+    <title>How can I close the VM panel/sidebar to get more screen space?</title>
+    <link>//learn.koding.com/faq/sidebar-collapse</link>
+    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/sidebar-collapse</guid>
+    <author></author>
+    <description>Our computer screens come in all shapes and sizes and if you don't have a high res screen,
+then the amount of space occupied by the VM panel/sidebar and the file tree can be a bit
+too much. Did you know that both the VM panel/sidebar and file tree can be collapsed?
+  Collapsing/Closing the VM Panel/Sidebar Double click the dividing column line between the VM panel and file tree and it will collapse
+the panel! To expand, click the logo. (see image below for an example).
+  Collapsing/Closing the file tree Double click the dividing column line between the file tree and the IDE/Terminal and it will collapse
+the file tree panel! To expand, click the folder icon. (see image below for an example).
+
+ tipThe sidebar and filetree can only be collapsed when you are in the VM section of Koding.
+They cannot be collapsed when in Channels or Messages.
+ </description>
+  </item>
+  
+  <item>
     <title>How can I reset my VM back to its original state?</title>
     <link>//learn.koding.com/faq/vm-reinit</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
@@ -6415,36 +6459,6 @@ Once you initiate a reinit, you will see appropriate messages on the screen as y
   </item>
   
   <item>
-    <title>How can I delete my account?</title>
-    <link>//learn.koding.com/faq/delete-account</link>
-    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/delete-account</guid>
-    <author></author>
-    <description>You do not have to contact Koding support if you wish to delete your account. Simply head over to Account Settings from where you can easily initiate the deletion process.
-It would help us immensly if you can take the short survey presented on the account deletion screen we can understand why we lost you and how we can improve.
-</description>
-  </item>
-  
-  <item>
-    <title>How can I close the VM panel/sidebar to get more screen space?</title>
-    <link>//learn.koding.com/faq/sidebar-collapse</link>
-    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/sidebar-collapse</guid>
-    <author></author>
-    <description>Our computer screens come in all shapes and sizes and if you don't have a high res screen,
-then the amount of space occupied by the VM panel/sidebar and the file tree can be a bit
-too much. Did you know that both the VM panel/sidebar and file tree can be collapsed?
-  Collapsing/Closing the VM Panel/Sidebar Double click the dividing column line between the VM panel and file tree and it will collapse
-the panel! To expand, click the logo. (see image below for an example).
-  Collapsing/Closing the file tree Double click the dividing column line between the file tree and the IDE/Terminal and it will collapse
-the file tree panel! To expand, click the folder icon. (see image below for an example).
-
- tipThe sidebar and filetree can only be collapsed when you are in the VM section of Koding.
-They cannot be collapsed when in Channels or Messages.
- </description>
-  </item>
-  
-  <item>
     <title>Should I use my VM's IP or Address?</title>
     <link>//learn.koding.com/faq/vm-ip-vs-address</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
@@ -6458,6 +6472,98 @@ Address, which will always point to your VM, regardless of
 IP changes, so this is what you usually want to use.
  tipIP addresses of &amp;quot;Always On&amp;quot; VMs don't change even after the VM reboots.
  If you have trouble finding your VM Address, click here.
+</description>
+  </item>
+  
+  <item>
+    <title>How can I split the editor and terminal area?</title>
+    <link>//learn.koding.com/faq/split-panes</link>
+    <pubDate>"2015-06-11T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/split-panes</guid>
+    <author></author>
+    <description>Sometimes one editor or terminal screen is not enough, so just like you can on any code editor and terminal app on your computer, you can also split the editor and terminal areas on Koding to gain more virtual windows.
+The image below shows the first method you can use to split panes. The drop-down menu provides the split options.
+
+The second (and more fun) method of splitting panes is to use our visual pane splitter as shown in
+the animated gif below.
+Simply move your mouse to the center of a pane (horizontal or vertical center) and you will see a animated/visual split bar appear showing you a preview of the split. click to make it permanent!
+
+
+
+
+Have a crazy split screen setup, share it with us on Twitter! :)
+</description>
+  </item>
+  
+  <item>
+    <title>How can I delete my account?</title>
+    <link>//learn.koding.com/faq/delete-account</link>
+    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/delete-account</guid>
+    <author></author>
+    <description>You do not have to contact Koding support if you wish to delete your account. Simply head over to Account Settings from where you can easily initiate the deletion process.
+It would help us immensly if you can take the short survey presented on the account deletion screen we can understand why we lost you and how we can improve.
+</description>
+  </item>
+  
+  <item>
+    <title>How can I monitor network traffic/usage?</title>
+    <link>//learn.koding.com/faq/vm-network</link>
+    <pubDate>"2015-05-16T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/vm-network</guid>
+    <author></author>
+    <description>There are a variety of tools for Ubuntu that you can install on your VM in order to monitor traffic and network usage. Listed below are three of our favorites.
+ tipBefore installing any of the tools mentioned below, make sure you update your
+repositories by using the command: sudo apt-get update
+ 
+nload: This tool allows users you to monitor the incoming and outgoing traffic separately. It also draws out an ascii graph to indicate the same, the scale of which can be adjusted. Easy and simple to use, and does not support many options. So if you just need to take a quick look at the total bandwidth usage without details of individual processes, then nload will be handy.
+To install, type the following command in Terminal:sudo apt-get install nload -y
+and then to run, type:nload
+
+iftop: This tool measures the data flowing through individual socket connections, and it works in a manner that is different from Nload. Iftop uses the pcap library to capture the packets moving in and out of the network adapter, and then sums up the size and count to find the total bandwidth under use. Although iftop reports the bandwidth used by individual connections, it cannot report the process name/id involved in the particular socket connection. But being based on the pcap library, iftop is able to filter the traffic and report bandwidth usage over selected host connections as specified by the filter.
+To install, type the following command in Terminal:sudo apt-get install nload -y
+and then to run, type:sudo iftop -n
+
+iptraf: This is an interactive and colorful IP Lan monitor. It shows individual connections and the amount of data flowing between the hosts.
+To install, type the following command in Terminal:sudo apt-get install iptraf iptraf-ng -y
+and then to run, type:sudo iptraf
+
+nethogs: This is a small 'net top' tool that shows the bandwidth used by individual processes and sorts the list putting the most intensive processes on top. In the event of a sudden bandwidth spike, quickly open nethogs and find the process responsible. Nethogs reports the PID, user and the path of the program.
+To install, type the following command in Terminal:sudo apt-get install nethogs -y
+and then to run, type:sudo nethogs
+
+vnstat: This utility is bit different from most of the other tools. It actually runs a background service/daemon and keeps recording the size of data transfer all the time. Next it can be used to generate a report of the history of network usage. Vnstat is more like a tool to get historic reports of how much bandwidth is used everyday or over the past month. It is not strictly a tool for monitoring the network in real time.
+To install, type the following command in Terminal:sudo apt-get install vnstat -y
+and then to run, type:sudo service start vnstat
+Running vnstat without any options would simply show the total amount of data transfer that took place since the date the daemon is running. To monitor the bandwidth usage in realtime, use the -l option (live mode). It would then show the total bandwidth used by incoming and outgoing data, but in a very precise manner without any internal details about host connections or processes.  
+
+</description>
+  </item>
+  
+  <item>
+    <title>Are inactive accounts cleaned up?</title>
+    <link>//learn.koding.com/faq/inactive-vms</link>
+    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/inactive-vms</guid>
+    <author></author>
+    <description>  How does Koding ensure that the platform is scalable and performant for all users? We perodically clean up VMs of inactive accounts to ensure that the dormant resources
+allocated to these accounts are not a burden for the system. This ensures a &amp;quot;speedy&amp;quot;
+Koding for everyone who uses it regularly.
+ tipInactive VMs are cleaned up but the account is not itself deleted. Paid account VMs
+are not a part of the cleanup process even if they are unused.
+   The cleanup process 
+If a user has not logged into their account in over 21 days, we send them an email notification
+requesting that they confirm their active status by simply logging back into their account.
+However, if by the 27th day the user is still dormant/inactive, another email is sent but this
+time with the notice that the inactive VM will be deleted (along with all the data inside it).
+On day 30, the dormant VM is deleted permanently.
+
+This type of cleanup is necessary because with hunderds of thousands of accounts,
+we want to ensure that our regular users get the full benefit of the resources of the platform.
+ tipEven though the VM is terminated, we still keep a record of any referral space you may
+have accumulated when you were an active user so if you return at any point in the future,
+you can reclaim the referral space.
+ Maintaining your account is simple, just log back in!
 </description>
   </item>
   
@@ -6479,28 +6585,6 @@ and then create a password for the root user by typing:
 passwd
 You will be asked to type in the new password twice. Once done, the new password you picked is the password you will need to use when
 using the sudo command from that point on.
-</description>
-  </item>
-  
-  <item>
-    <title>How do turn off my my Koding VM?</title>
-    <link>//learn.koding.com/faq/vm-poweroff</link>
-    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/vm-poweroff</guid>
-    <author></author>
-    <description>To turn off your VM, we recommend that you use the power on/off toggle in the VM settings modal. This ensures that all internal API calls are triggered and all Koding services are aware that you have powered down your VM.
- tipVMs for our free accounts automatically turn off after 60 minutes of inactivity on our IDE or Terminal
-so there's no need to manually turn the VM off.
- That being said, sometimes you may need to restart your VM and want to do it via the Terminal. In such cases, simple type the following command in Terminal:
-sudo reboot
-you will see the following msg on your Terminal while the reboot command is processed and your VM restarts
-connecting................
-followed by
-Failed to connect to terminal, click here to try again.
-followed by
-An unknown error occured, please open a new tab. Click here to dismiss this one.
-both of the above messages, even though they look like errors are normal because a manual reboot has been requested.
-We don't recommend using sudo poweroff or sudo shutdown to power down your VM as it will leave the associated sub-systems in an unknown state which may disrupt you from using your account. Use the VM settings modal to stop/turn off your VM.
 </description>
   </item>
   
@@ -6533,33 +6617,6 @@ For posting code: Gist
 For executables: IDEone
 For HTML, CSS and JS: JSFiddle
 
-</description>
-  </item>
-  
-  <item>
-    <title>Are inactive accounts cleaned up?</title>
-    <link>//learn.koding.com/faq/inactive-vms</link>
-    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/inactive-vms</guid>
-    <author></author>
-    <description>  How does Koding ensure that the platform is scalable and performant for all users? We perodically clean up VMs of inactive accounts to ensure that the dormant resources
-allocated to these accounts are not a burden for the system. This ensures a &amp;quot;speedy&amp;quot;
-Koding for everyone who uses it regularly.
- tipInactive VMs are cleaned up but the account is not itself deleted. Paid account VMs
-are not a part of the cleanup process even if they are unused.
-   The cleanup process 
-If a user has not logged into their account in over 21 days, we send them an email notification
-requesting that they confirm their active status by simply logging back into their account.
-However, if by the 27th day the user is still dormant/inactive, another email is sent but this
-time with the notice that the inactive VM will be deleted (along with all the data inside it).
-On day 30, the dormant VM is deleted permanently.
-
-This type of cleanup is necessary because with hunderds of thousands of accounts,
-we want to ensure that our regular users get the full benefit of the resources of the platform.
- tipEven though the VM is terminated, we still keep a record of any referral space you may
-have accumulated when you were an active user so if you return at any point in the future,
-you can reclaim the referral space.
- Maintaining your account is simple, just log back in!
 </description>
   </item>
   
@@ -6632,36 +6689,24 @@ deleting a sub-domain is as easy as adding one!
   </item>
   
   <item>
-    <title>How can I monitor network traffic/usage?</title>
-    <link>//learn.koding.com/faq/vm-network</link>
-    <pubDate>"2015-05-16T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/vm-network</guid>
+    <title>How do turn off my my Koding VM?</title>
+    <link>//learn.koding.com/faq/vm-poweroff</link>
+    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/vm-poweroff</guid>
     <author></author>
-    <description>There are a variety of tools for Ubuntu that you can install on your VM in order to monitor traffic and network usage. Listed below are three of our favorites.
- tipBefore installing any of the tools mentioned below, make sure you update your
-repositories by using the command: sudo apt-get update
- 
-nload: This tool allows users you to monitor the incoming and outgoing traffic separately. It also draws out an ascii graph to indicate the same, the scale of which can be adjusted. Easy and simple to use, and does not support many options. So if you just need to take a quick look at the total bandwidth usage without details of individual processes, then nload will be handy.
-To install, type the following command in Terminal:sudo apt-get install nload -y
-and then to run, type:nload
-
-iftop: This tool measures the data flowing through individual socket connections, and it works in a manner that is different from Nload. Iftop uses the pcap library to capture the packets moving in and out of the network adapter, and then sums up the size and count to find the total bandwidth under use. Although iftop reports the bandwidth used by individual connections, it cannot report the process name/id involved in the particular socket connection. But being based on the pcap library, iftop is able to filter the traffic and report bandwidth usage over selected host connections as specified by the filter.
-To install, type the following command in Terminal:sudo apt-get install nload -y
-and then to run, type:sudo iftop -n
-
-iptraf: This is an interactive and colorful IP Lan monitor. It shows individual connections and the amount of data flowing between the hosts.
-To install, type the following command in Terminal:sudo apt-get install iptraf iptraf-ng -y
-and then to run, type:sudo iptraf
-
-nethogs: This is a small 'net top' tool that shows the bandwidth used by individual processes and sorts the list putting the most intensive processes on top. In the event of a sudden bandwidth spike, quickly open nethogs and find the process responsible. Nethogs reports the PID, user and the path of the program.
-To install, type the following command in Terminal:sudo apt-get install nethogs -y
-and then to run, type:sudo nethogs
-
-vnstat: This utility is bit different from most of the other tools. It actually runs a background service/daemon and keeps recording the size of data transfer all the time. Next it can be used to generate a report of the history of network usage. Vnstat is more like a tool to get historic reports of how much bandwidth is used everyday or over the past month. It is not strictly a tool for monitoring the network in real time.
-To install, type the following command in Terminal:sudo apt-get install vnstat -y
-and then to run, type:sudo service start vnstat
-Running vnstat without any options would simply show the total amount of data transfer that took place since the date the daemon is running. To monitor the bandwidth usage in realtime, use the -l option (live mode). It would then show the total bandwidth used by incoming and outgoing data, but in a very precise manner without any internal details about host connections or processes.  
-
+    <description>To turn off your VM, we recommend that you use the power on/off toggle in the VM settings modal. This ensures that all internal API calls are triggered and all Koding services are aware that you have powered down your VM.
+ tipVMs for our free accounts automatically turn off after 60 minutes of inactivity on our IDE or Terminal
+so there's no need to manually turn the VM off.
+ That being said, sometimes you may need to restart your VM and want to do it via the Terminal. In such cases, simple type the following command in Terminal:
+sudo reboot
+you will see the following msg on your Terminal while the reboot command is processed and your VM restarts
+connecting................
+followed by
+Failed to connect to terminal, click here to try again.
+followed by
+An unknown error occured, please open a new tab. Click here to dismiss this one.
+both of the above messages, even though they look like errors are normal because a manual reboot has been requested.
+We don't recommend using sudo poweroff or sudo shutdown to power down your VM as it will leave the associated sub-systems in an unknown state which may disrupt you from using your account. Use the VM settings modal to stop/turn off your VM.
 </description>
   </item>
   

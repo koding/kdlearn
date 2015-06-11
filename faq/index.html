@@ -43,11 +43,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?106" />
+    <link rel="stylesheet" href="/css/vendor.css?293" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?566" />
+    <link rel="stylesheet" href="/css/main.css?762" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?377" />
+    <link rel="stylesheet" href="/css/rwd.css?256" />
 	</head>
 	<body>
 
@@ -242,6 +242,12 @@
     
       <li>
         <a
+          href="#kdopen"
+          class="title">Is there a Terminal command to open files in Editor?</a>
+      </li>
+    
+      <li>
+        <a
           href="#reset-password"
           class="title">How do I reset my password?</a>
       </li>
@@ -254,20 +260,14 @@
     
       <li>
         <a
-          href="#vm-reinit"
-          class="title">How can I reset my VM back to its original state?</a>
-      </li>
-    
-      <li>
-        <a
-          href="#delete-account"
-          class="title">How can I delete my account?</a>
-      </li>
-    
-      <li>
-        <a
           href="#sidebar-collapse"
           class="title">How can I close the VM panel/sidebar to get more screen space?</a>
+      </li>
+    
+      <li>
+        <a
+          href="#vm-reinit"
+          class="title">How can I reset my VM back to its original state?</a>
       </li>
     
       <li>
@@ -278,26 +278,38 @@
     
       <li>
         <a
-          href="#sudo-password"
-          class="title">What is my sudo/root password?</a>
+          href="#split-panes"
+          class="title">How can I split the editor and terminal area?</a>
       </li>
     
       <li>
         <a
-          href="#vm-poweroff"
-          class="title">How do turn off my my Koding VM?</a>
+          href="#delete-account"
+          class="title">How can I delete my account?</a>
       </li>
     
       <li>
         <a
-          href="#posting-guidelines"
-          class="title">Guidelines to keep in mind when sharing on Koding's Activity Feed.</a>
+          href="#vm-network"
+          class="title">How can I monitor network traffic/usage?</a>
       </li>
     
       <li>
         <a
           href="#inactive-vms"
           class="title">Are inactive accounts cleaned up?</a>
+      </li>
+    
+      <li>
+        <a
+          href="#sudo-password"
+          class="title">What is my sudo/root password?</a>
+      </li>
+    
+      <li>
+        <a
+          href="#posting-guidelines"
+          class="title">Guidelines to keep in mind when sharing on Koding's Activity Feed.</a>
       </li>
     
       <li>
@@ -320,8 +332,8 @@
     
       <li>
         <a
-          href="#vm-network"
-          class="title">How can I monitor network traffic/usage?</a>
+          href="#vm-poweroff"
+          class="title">How do turn off my my Koding VM?</a>
       </li>
     
       <li>
@@ -433,6 +445,39 @@ your existing disk and add all or some of your earned storage.</p>
     </li>
   
     <li>
+      <a name="kdopen">
+      <h3
+        class="question"
+        itemscope itemtype="//schema.org/Question"
+      >
+        <a href="/faq/kdopen">Is there a Terminal command to open files in Editor?</a>
+      </h3>
+      <div
+        class="answer"
+        itemscope itemtype="//schema.org/Answer"
+        itemprop="acceptedAnswer"
+      >
+        <p>The <code>kdopen</code> command does just that! </p>
+<p>First you need to install <code>kdopen</code> using our <code>kpm</code> <a href="http://learn.koding.com/guides/getting-started-kpm/">package manager</a>. Type the following command in Terminal to set up the required components for <code>kdopen</code>:</p>
+<pre><code>kpm <span class="hljs-keyword">install</span> kdbin
+</code></pre><blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>If kpm itself is not installed, you can install it using the command 
+<code>curl -sSL learn.koding.com/kpm.sh | sh</code></p>
+ </blockquote><p>Once <code>kdbin</code> is installed, you can now type the following command in Terminal
+to open a file in the Koding Editor:</p>
+<pre><code>kdopen <span class="hljs-tag">&lt;<span class="hljs-title">filename</span>&gt;</span>
+</code></pre><p><code>kdopen</code> supports wildcards so if you type:</p>
+<pre><code><span class="hljs-title">kdopen</span> <span class="hljs-regexp">*.html</span>
+</code></pre><p>and it will open each file with the extension .html (in the current directory) in its own tab on the Editor.</p>
+<p>If you are opening a file that does not exist, <code>kdopen</code> will create the file first
+and then open it up. The file will be created in the current directory.</p>
+<center>
+<iframe width="650" height="445" src="https://www.youtube.com/embed/sns_0UZhxi8" frameborder="0" allowfullscreen></iframe>
+</center>
+
+      </div>
+    </li>
+  
+    <li>
       <a name="reset-password">
       <h3
         class="question"
@@ -486,6 +531,33 @@ Google+, etc. or you can use the new password to log in. Both will work.</p>
     </li>
   
     <li>
+      <a name="sidebar-collapse">
+      <h3
+        class="question"
+        itemscope itemtype="//schema.org/Question"
+      >
+        <a href="/faq/sidebar-collapse">How can I close the VM panel/sidebar to get more screen space?</a>
+      </h3>
+      <div
+        class="answer"
+        itemscope itemtype="//schema.org/Answer"
+        itemprop="acceptedAnswer"
+      >
+        <p>Our computer screens come in all shapes and sizes and if you don&apos;t have a high res screen,
+then the amount of space occupied by the VM panel/sidebar and the file tree can be a bit
+too much. Did you know that both the VM panel/sidebar and file tree can be collapsed?</p>
+<h4 class="heading"> <a name="collapsing-closing-the-vm-panel-sidebar" class="anchor" href="#collapsing-closing-the-vm-panel-sidebar"></a> Collapsing/Closing the VM Panel/Sidebar </h4><p><strong>Double click</strong> the dividing column line between the VM panel and file tree and it will collapse
+the panel! To expand, click the logo. (see image below for an example).</p>
+<h4 class="heading"> <a name="collapsing-closing-the-file-tree" class="anchor" href="#collapsing-closing-the-file-tree"></a> Collapsing/Closing the file tree </h4><p><strong>Double click</strong> the dividing column line between the file tree and the IDE/Terminal and it will collapse
+the file tree panel! To expand, click the folder icon. (see image below for an example).</p>
+<p><img src="/faq/sidebar-collapse/sidebar.gif" alt="Sidebar Collapse"></p>
+<blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>The sidebar and filetree can only be collapsed when you are in the VM section of Koding.
+They cannot be collapsed when in Channels or Messages.</p>
+ </blockquote>
+      </div>
+    </li>
+  
+    <li>
       <a name="vm-reinit">
       <h3
         class="question"
@@ -522,52 +594,6 @@ to transfer the files.</p>
     </li>
   
     <li>
-      <a name="delete-account">
-      <h3
-        class="question"
-        itemscope itemtype="//schema.org/Question"
-      >
-        <a href="/faq/delete-account">How can I delete my account?</a>
-      </h3>
-      <div
-        class="answer"
-        itemscope itemtype="//schema.org/Answer"
-        itemprop="acceptedAnswer"
-      >
-        <p>You do not have to contact Koding support if you wish to delete your account. Simply head over to <a href="https://koding.com/Account/Delete">Account Settings</a> from where you can easily initiate the deletion process.</p>
-<p>It would help us immensly if you can take the short survey presented on the account deletion screen we can understand why we lost you and how we can improve.</p>
-
-      </div>
-    </li>
-  
-    <li>
-      <a name="sidebar-collapse">
-      <h3
-        class="question"
-        itemscope itemtype="//schema.org/Question"
-      >
-        <a href="/faq/sidebar-collapse">How can I close the VM panel/sidebar to get more screen space?</a>
-      </h3>
-      <div
-        class="answer"
-        itemscope itemtype="//schema.org/Answer"
-        itemprop="acceptedAnswer"
-      >
-        <p>Our computer screens come in all shapes and sizes and if you don&apos;t have a high res screen,
-then the amount of space occupied by the VM panel/sidebar and the file tree can be a bit
-too much. Did you know that both the VM panel/sidebar and file tree can be collapsed?</p>
-<h4 class="heading"> <a name="collapsing-closing-the-vm-panel-sidebar" class="anchor" href="#collapsing-closing-the-vm-panel-sidebar"></a> Collapsing/Closing the VM Panel/Sidebar </h4><p><strong>Double click</strong> the dividing column line between the VM panel and file tree and it will collapse
-the panel! To expand, click the logo. (see image below for an example).</p>
-<h4 class="heading"> <a name="collapsing-closing-the-file-tree" class="anchor" href="#collapsing-closing-the-file-tree"></a> Collapsing/Closing the file tree </h4><p><strong>Double click</strong> the dividing column line between the file tree and the IDE/Terminal and it will collapse
-the file tree panel! To expand, click the folder icon. (see image below for an example).</p>
-<p><img src="/faq/sidebar-collapse/sidebar.gif" alt="Sidebar Collapse"></p>
-<blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>The sidebar and filetree can only be collapsed when you are in the VM section of Koding.
-They cannot be collapsed when in Channels or Messages.</p>
- </blockquote>
-      </div>
-    </li>
-  
-    <li>
       <a name="vm-ip-vs-address">
       <h3
         class="question"
@@ -588,6 +614,130 @@ Address</a>, which will <em>always</em> point to your VM, regardless of
 IP changes, so this is what you usually want to use.</p>
 <blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>IP addresses of &quot;Always On&quot; VMs don&apos;t change even after the VM reboots.</p>
  </blockquote><p>If you have trouble finding your VM Address, <a href="/faq/vm-address">click here</a>.</p>
+
+      </div>
+    </li>
+  
+    <li>
+      <a name="split-panes">
+      <h3
+        class="question"
+        itemscope itemtype="//schema.org/Question"
+      >
+        <a href="/faq/split-panes">How can I split the editor and terminal area?</a>
+      </h3>
+      <div
+        class="answer"
+        itemscope itemtype="//schema.org/Answer"
+        itemprop="acceptedAnswer"
+      >
+        <p>Sometimes one editor or terminal screen is not enough, so just like you can on any code editor and terminal app on your computer, you can also split the editor and terminal areas on Koding to gain more virtual windows.</p>
+<p>The image below shows the first method you can use to split panes. The drop-down menu provides the split options.
+<img src="split-1.png" alt="split-1"></p>
+<p>The second (and more fun) method of splitting panes is to use our visual pane splitter as shown in
+the animated gif below.</p>
+<p>Simply move your mouse to the center of a pane (horizontal or vertical center) and you will see a animated/visual split bar appear showing you a preview of the split. click to make it permanent!</p>
+<center>
+<iframe width="650" height="445" src="https://www.youtube.com/embed/9vuhUpKcj-A" frameborder="0" allowfullscreen></iframe>
+</center>
+
+<p>Have a crazy split screen setup, share it with us on <a href="https://twitter.com/home?status=hey%20%40koding,%20here&apos;s%20the%20super-awesome%20split%20screen%20setup%20on%20my%20%23koding%20account.">Twitter</a>! :)</p>
+
+      </div>
+    </li>
+  
+    <li>
+      <a name="delete-account">
+      <h3
+        class="question"
+        itemscope itemtype="//schema.org/Question"
+      >
+        <a href="/faq/delete-account">How can I delete my account?</a>
+      </h3>
+      <div
+        class="answer"
+        itemscope itemtype="//schema.org/Answer"
+        itemprop="acceptedAnswer"
+      >
+        <p>You do not have to contact Koding support if you wish to delete your account. Simply head over to <a href="https://koding.com/Account/Delete">Account Settings</a> from where you can easily initiate the deletion process.</p>
+<p>It would help us immensly if you can take the short survey presented on the account deletion screen we can understand why we lost you and how we can improve.</p>
+
+      </div>
+    </li>
+  
+    <li>
+      <a name="vm-network">
+      <h3
+        class="question"
+        itemscope itemtype="//schema.org/Question"
+      >
+        <a href="/faq/vm-network">How can I monitor network traffic/usage?</a>
+      </h3>
+      <div
+        class="answer"
+        itemscope itemtype="//schema.org/Answer"
+        itemprop="acceptedAnswer"
+      >
+        <p>There are a variety of tools for Ubuntu that you can install on your VM in order to monitor traffic and network usage. Listed below are three of our favorites.</p>
+<blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>Before installing any of the tools mentioned below, make sure you update your
+repositories by using the command: <code>sudo apt-get update</code></p>
+ </blockquote><ol>
+<li><strong>nload</strong>: This tool allows users you to monitor the incoming and outgoing traffic separately. It also draws out an ascii graph to indicate the same, the scale of which can be adjusted. Easy and simple to use, and does not support many options. So if you just need to take a quick look at the total bandwidth usage without details of individual processes, then nload will be handy.
+To install, type the following command in Terminal:<pre><code>sudo apt-<span class="hljs-keyword">get</span> install nload -y
+</code></pre>and then to run, type:<pre><code>nload
+</code></pre></li>
+<li><strong>iftop</strong>: This tool measures the data flowing through individual socket connections, and it works in a manner that is different from Nload. Iftop uses the pcap library to capture the packets moving in and out of the network adapter, and then sums up the size and count to find the total bandwidth under use. Although iftop reports the bandwidth used by individual connections, it cannot report the process name/id involved in the particular socket connection. But being based on the pcap library, iftop is able to filter the traffic and report bandwidth usage over selected host connections as specified by the filter.
+To install, type the following command in Terminal:<pre><code>sudo apt-<span class="hljs-keyword">get</span> install nload -y
+</code></pre>and then to run, type:<pre><code><span class="hljs-title">sudo</span> iftop -n
+</code></pre></li>
+<li><strong>iptraf</strong>: This is an interactive and colorful IP Lan monitor. It shows individual connections and the amount of data flowing between the hosts.
+To install, type the following command in Terminal:<pre><code>sudo apt-<span class="hljs-keyword">get</span> install iptraf iptraf-ng -y
+</code></pre>and then to run, type:<pre><code><span class="hljs-title">sudo</span> iptraf
+</code></pre></li>
+<li><strong>nethogs</strong>: This is a small &apos;net top&apos; tool that shows the bandwidth used by individual processes and sorts the list putting the most intensive processes on top. In the event of a sudden bandwidth spike, quickly open nethogs and find the process responsible. Nethogs reports the PID, user and the path of the program.
+To install, type the following command in Terminal:<pre><code>sudo apt-<span class="hljs-keyword">get</span> install nethogs -y
+</code></pre>and then to run, type:<pre><code><span class="hljs-title">sudo</span> nethogs
+</code></pre></li>
+<li><strong>vnstat</strong>: This utility is bit different from most of the other tools. It actually runs a background service/daemon and keeps recording the size of data transfer all the time. Next it can be used to generate a report of the history of network usage. Vnstat is more like a tool to get historic reports of how much bandwidth is used everyday or over the past month. It is not strictly a tool for monitoring the network in real time.
+To install, type the following command in Terminal:<pre><code>sudo apt-<span class="hljs-keyword">get</span> install vnstat -y
+</code></pre>and then to run, type:<pre><code>sudo <span class="hljs-keyword">service</span> <span class="hljs-literal">start</span> vnstat
+</code></pre>Running vnstat without any options would simply show the total amount of data transfer that took place since the date the daemon is running. To monitor the bandwidth usage in realtime, use the <code>-l</code> option (live mode). It would then show the total bandwidth used by incoming and outgoing data, but in a very precise manner without any internal details about host connections or processes.  </li>
+</ol>
+
+      </div>
+    </li>
+  
+    <li>
+      <a name="inactive-vms">
+      <h3
+        class="question"
+        itemscope itemtype="//schema.org/Question"
+      >
+        <a href="/faq/inactive-vms">Are inactive accounts cleaned up?</a>
+      </h3>
+      <div
+        class="answer"
+        itemscope itemtype="//schema.org/Answer"
+        itemprop="acceptedAnswer"
+      >
+        <h3 class="heading"> <a name="how-does-koding-ensure-that-the-platform-is-scalable-and-performant-for-all-users-" class="anchor" href="#how-does-koding-ensure-that-the-platform-is-scalable-and-performant-for-all-users-"></a> How does Koding ensure that the platform is scalable and performant for all users? </h3><p>We perodically clean up VMs of inactive accounts to ensure that the dormant resources
+allocated to these accounts are not a burden for the system. This ensures a &quot;speedy&quot;
+Koding for everyone who uses it regularly.</p>
+<blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>Inactive VMs are cleaned up but the account is not itself deleted. Paid account VMs
+are not a part of the cleanup process even if they are unused.</p>
+ </blockquote><h3 class="heading"> <a name="the-cleanup-process" class="anchor" href="#the-cleanup-process"></a> The cleanup process </h3><ol>
+<li>If a user has not logged into their account in over 21 days, we send them an email notification
+requesting that they confirm their active status by simply logging back into their account.</li>
+<li>However, if by the 27th day the user is still dormant/inactive, another email is sent but this
+time with the notice that the inactive VM will be deleted (along with all the data inside it).</li>
+<li>On day 30, the dormant VM is deleted permanently.</li>
+</ol>
+<p>This type of cleanup is necessary because with hunderds of thousands of accounts,
+we want to ensure that our regular users get the full benefit of the resources of the platform.</p>
+<blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>Even though the VM is terminated, we still keep a record of any referral space you may
+have accumulated when you were an active user so if you return at any point in the future,
+you can reclaim the referral space.</p>
+ </blockquote><p>Maintaining your account is simple, just log back in!</p>
 
       </div>
     </li>
@@ -617,36 +767,6 @@ IP changes, so this is what you usually want to use.</p>
 <pre><code>passwd
 </code></pre><p>You will be asked to type in the new password twice. Once done, the new password you picked is the password you will need to use when
 using the <code>sudo</code> command from that point on.</p>
-
-      </div>
-    </li>
-  
-    <li>
-      <a name="vm-poweroff">
-      <h3
-        class="question"
-        itemscope itemtype="//schema.org/Question"
-      >
-        <a href="/faq/vm-poweroff">How do turn off my my Koding VM?</a>
-      </h3>
-      <div
-        class="answer"
-        itemscope itemtype="//schema.org/Answer"
-        itemprop="acceptedAnswer"
-      >
-        <p>To turn off your VM, we recommend that you use the power on/off toggle in the <a href="http://learn.koding.com/guides/understanding-vm-panel/">VM settings modal</a>. This ensures that all internal API calls are triggered and all Koding services are aware that you have powered down your VM.</p>
-<blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>VMs for our free accounts automatically turn off after 60 minutes of inactivity on our IDE or Terminal
-so there&apos;s no need to manually turn the VM off.</p>
- </blockquote><p>That being said, sometimes you may need to restart your VM and want to do it via the Terminal. In such cases, simple type the following command in Terminal:</p>
-<pre><code><span class="hljs-title">sudo</span> reboot
-</code></pre><p>you will see the following msg on your Terminal while the reboot command is processed and your VM restarts</p>
-<pre><code>connecting<span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-built_in">.</span>
-</code></pre><p>followed by</p>
-<pre><code>Failed <span class="hljs-keyword">to</span> connect <span class="hljs-keyword">to</span> terminal, click here <span class="hljs-keyword">to</span> <span class="hljs-keyword">try</span> again.
-</code></pre><p>followed by</p>
-<pre><code>An unknown error occured, please <span class="hljs-built_in">open</span> <span class="hljs-operator">a</span> <span class="hljs-built_in">new</span> <span class="hljs-constant">tab</span>. Click here <span class="hljs-built_in">to</span> dismiss this <span class="hljs-constant">one</span>.
-</code></pre><p>both of the above messages, even though they look like errors are normal because a manual reboot has been requested.</p>
-<p>We don&apos;t recommend using <code>sudo poweroff</code> or <code>sudo shutdown</code> to power down your VM as it will leave the associated sub-systems in an unknown state which may disrupt you from using your account. Use the <a href="http://learn.koding.com/guides/understanding-vm-panel/">VM settings modal</a> to stop/turn off your VM.</p>
 
       </div>
     </li>
@@ -687,41 +807,6 @@ so there&apos;s no need to manually turn the VM off.</p>
 <li>For executables: <a href="http://ideone.com/">IDEone</a></li>
 <li>For HTML, CSS and JS: <a href="http://jsfiddle.net/">JSFiddle</a></li>
 </ul>
-
-      </div>
-    </li>
-  
-    <li>
-      <a name="inactive-vms">
-      <h3
-        class="question"
-        itemscope itemtype="//schema.org/Question"
-      >
-        <a href="/faq/inactive-vms">Are inactive accounts cleaned up?</a>
-      </h3>
-      <div
-        class="answer"
-        itemscope itemtype="//schema.org/Answer"
-        itemprop="acceptedAnswer"
-      >
-        <h3 class="heading"> <a name="how-does-koding-ensure-that-the-platform-is-scalable-and-performant-for-all-users-" class="anchor" href="#how-does-koding-ensure-that-the-platform-is-scalable-and-performant-for-all-users-"></a> How does Koding ensure that the platform is scalable and performant for all users? </h3><p>We perodically clean up VMs of inactive accounts to ensure that the dormant resources
-allocated to these accounts are not a burden for the system. This ensures a &quot;speedy&quot;
-Koding for everyone who uses it regularly.</p>
-<blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>Inactive VMs are cleaned up but the account is not itself deleted. Paid account VMs
-are not a part of the cleanup process even if they are unused.</p>
- </blockquote><h3 class="heading"> <a name="the-cleanup-process" class="anchor" href="#the-cleanup-process"></a> The cleanup process </h3><ol>
-<li>If a user has not logged into their account in over 21 days, we send them an email notification
-requesting that they confirm their active status by simply logging back into their account.</li>
-<li>However, if by the 27th day the user is still dormant/inactive, another email is sent but this
-time with the notice that the inactive VM will be deleted (along with all the data inside it).</li>
-<li>On day 30, the dormant VM is deleted permanently.</li>
-</ol>
-<p>This type of cleanup is necessary because with hunderds of thousands of accounts,
-we want to ensure that our regular users get the full benefit of the resources of the platform.</p>
-<blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>Even though the VM is terminated, we still keep a record of any referral space you may
-have accumulated when you were an active user so if you return at any point in the future,
-you can reclaim the referral space.</p>
- </blockquote><p>Maintaining your account is simple, just log back in!</p>
 
       </div>
     </li>
@@ -819,43 +904,31 @@ virtual hosts, it&apos;s easy to assign them all their own unique sub-domains. <
     </li>
   
     <li>
-      <a name="vm-network">
+      <a name="vm-poweroff">
       <h3
         class="question"
         itemscope itemtype="//schema.org/Question"
       >
-        <a href="/faq/vm-network">How can I monitor network traffic/usage?</a>
+        <a href="/faq/vm-poweroff">How do turn off my my Koding VM?</a>
       </h3>
       <div
         class="answer"
         itemscope itemtype="//schema.org/Answer"
         itemprop="acceptedAnswer"
       >
-        <p>There are a variety of tools for Ubuntu that you can install on your VM in order to monitor traffic and network usage. Listed below are three of our favorites.</p>
-<blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>Before installing any of the tools mentioned below, make sure you update your
-repositories by using the command: <code>sudo apt-get update</code></p>
- </blockquote><ol>
-<li><strong>nload</strong>: This tool allows users you to monitor the incoming and outgoing traffic separately. It also draws out an ascii graph to indicate the same, the scale of which can be adjusted. Easy and simple to use, and does not support many options. So if you just need to take a quick look at the total bandwidth usage without details of individual processes, then nload will be handy.
-To install, type the following command in Terminal:<pre><code>sudo apt-<span class="hljs-keyword">get</span> install nload -y
-</code></pre>and then to run, type:<pre><code>nload
-</code></pre></li>
-<li><strong>iftop</strong>: This tool measures the data flowing through individual socket connections, and it works in a manner that is different from Nload. Iftop uses the pcap library to capture the packets moving in and out of the network adapter, and then sums up the size and count to find the total bandwidth under use. Although iftop reports the bandwidth used by individual connections, it cannot report the process name/id involved in the particular socket connection. But being based on the pcap library, iftop is able to filter the traffic and report bandwidth usage over selected host connections as specified by the filter.
-To install, type the following command in Terminal:<pre><code>sudo apt-<span class="hljs-keyword">get</span> install nload -y
-</code></pre>and then to run, type:<pre><code><span class="hljs-title">sudo</span> iftop -n
-</code></pre></li>
-<li><strong>iptraf</strong>: This is an interactive and colorful IP Lan monitor. It shows individual connections and the amount of data flowing between the hosts.
-To install, type the following command in Terminal:<pre><code>sudo apt-<span class="hljs-keyword">get</span> install iptraf iptraf-ng -y
-</code></pre>and then to run, type:<pre><code><span class="hljs-title">sudo</span> iptraf
-</code></pre></li>
-<li><strong>nethogs</strong>: This is a small &apos;net top&apos; tool that shows the bandwidth used by individual processes and sorts the list putting the most intensive processes on top. In the event of a sudden bandwidth spike, quickly open nethogs and find the process responsible. Nethogs reports the PID, user and the path of the program.
-To install, type the following command in Terminal:<pre><code>sudo apt-<span class="hljs-keyword">get</span> install nethogs -y
-</code></pre>and then to run, type:<pre><code><span class="hljs-title">sudo</span> nethogs
-</code></pre></li>
-<li><strong>vnstat</strong>: This utility is bit different from most of the other tools. It actually runs a background service/daemon and keeps recording the size of data transfer all the time. Next it can be used to generate a report of the history of network usage. Vnstat is more like a tool to get historic reports of how much bandwidth is used everyday or over the past month. It is not strictly a tool for monitoring the network in real time.
-To install, type the following command in Terminal:<pre><code>sudo apt-<span class="hljs-keyword">get</span> install vnstat -y
-</code></pre>and then to run, type:<pre><code>sudo <span class="hljs-keyword">service</span> <span class="hljs-literal">start</span> vnstat
-</code></pre>Running vnstat without any options would simply show the total amount of data transfer that took place since the date the daemon is running. To monitor the bandwidth usage in realtime, use the <code>-l</code> option (live mode). It would then show the total bandwidth used by incoming and outgoing data, but in a very precise manner without any internal details about host connections or processes.  </li>
-</ol>
+        <p>To turn off your VM, we recommend that you use the power on/off toggle in the <a href="http://learn.koding.com/guides/understanding-vm-panel/">VM settings modal</a>. This ensures that all internal API calls are triggered and all Koding services are aware that you have powered down your VM.</p>
+<blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>VMs for our free accounts automatically turn off after 60 minutes of inactivity on our IDE or Terminal
+so there&apos;s no need to manually turn the VM off.</p>
+ </blockquote><p>That being said, sometimes you may need to restart your VM and want to do it via the Terminal. In such cases, simple type the following command in Terminal:</p>
+<pre><code><span class="hljs-title">sudo</span> reboot
+</code></pre><p>you will see the following msg on your Terminal while the reboot command is processed and your VM restarts</p>
+<pre><code>connecting<span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-attribute">...</span><span class="hljs-built_in">.</span>
+</code></pre><p>followed by</p>
+<pre><code>Failed <span class="hljs-keyword">to</span> connect <span class="hljs-keyword">to</span> terminal, click here <span class="hljs-keyword">to</span> <span class="hljs-keyword">try</span> again.
+</code></pre><p>followed by</p>
+<pre><code>An unknown error occured, please <span class="hljs-built_in">open</span> <span class="hljs-operator">a</span> <span class="hljs-built_in">new</span> <span class="hljs-constant">tab</span>. Click here <span class="hljs-built_in">to</span> dismiss this <span class="hljs-constant">one</span>.
+</code></pre><p>both of the above messages, even though they look like errors are normal because a manual reboot has been requested.</p>
+<p>We don&apos;t recommend using <code>sudo poweroff</code> or <code>sudo shutdown</code> to power down your VM as it will leave the associated sub-systems in an unknown state which may disrupt you from using your account. Use the <a href="http://learn.koding.com/guides/understanding-vm-panel/">VM settings modal</a> to stop/turn off your VM.</p>
 
       </div>
     </li>
