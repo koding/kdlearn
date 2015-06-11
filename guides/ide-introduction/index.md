@@ -52,7 +52,7 @@ The FileTree, on the left, enables file navigation around your VM. You can drag 
 
 The Editor, that sits on the right of the FileTree, is the main driving force behing the Koding IDE. It allows you to edit a wide variaty of files types, such as .php, .rb, .html, .css just to name a few.
 
-By default the editor will be opened in a horizontal two pane view. Panes can be opened, split and merged at will. They can also be made full screen.
+By default the editor will be opened in a horizontal two pane view. Panes can be opened, split and merged at will. They can also be made full screen. You can learn more about these operations in [this guide](/faq/split-panes/).
 
 You can open a new tab, in a pane, by clicking on the plus button and then chosing the type of tab you want to open, either a new Terminal tab, a new drawing board or a new file.
 
