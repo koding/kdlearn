@@ -23,7 +23,7 @@ kdopen <filename>
 ```
 kdopen *.html
 ```
-and it will open each file with the extension .html (in the current directory) in its own tab on the Editor.
+it will open each file with the extension .html (in the current directory) in its own tab on the Editor.
 
 If you are opening a file that does not exist, `kdopen` will create the file first
 and then open it up. The file will be created in the current directory.
