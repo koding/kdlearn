@@ -29,13 +29,13 @@ Next, you'll need to create and configure either a **CNAME** Record, or
 an **A Record** with your domain provider.
 
 To configure either of these record types, refer to your provider's guides
-and create the record of the type that you prefer.
+and create the record of the type that you prefer. Once you have created the record 
+on your domain registrar's panel, paste in the VM Address from above to the `Record Value` of
+your domain providers DNS panel. This will point your Domain to the Address that the host resolves to.
 > type:tip
 > You can use either type. There's no difference from our end.
 
-Once you have created the record on your domain registrar's panel, 
-paste in the VM Address from above to the `Record Value`. This will 
-point your Domain to the Address that the host resolves to.
+
 
 ## The Waiting Game
 If the record you are creating is new, it should resolve very quickly. If
