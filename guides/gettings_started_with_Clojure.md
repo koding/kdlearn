@@ -50,7 +50,6 @@ java -cp /home/your_user_name/clojure-1.6.0/clojure-1.6.0.jar clojure.main
 ```
 
 Then use the following command to make it executable.
-
 ```sh
 chmod +x ~/bin/cloj.sh
 ```
