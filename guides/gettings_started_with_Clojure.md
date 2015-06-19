@@ -61,6 +61,13 @@ To access the Clojure shell, you can type `$ cloj.sh` command anywhere from the 
 `Lein` is the build tool for Clojure. It creates the project structure and builds your 
 Clojure application. The following steps may be used to install Lein.
 
+- First download the `lein` application using the following command in your ~/bin directory.
+
+```sh
+curl -O -L -J https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
+```
+- Make it executable using the command `chmod +x ~/bin/lein`
+- Run the `lein` program from [Terminal][terminal]. It'll download itself.
 
 [koding]: https://koding.com
 [ace]: https://koding.com/Ace
