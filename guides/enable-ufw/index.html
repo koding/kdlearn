@@ -11,7 +11,7 @@
     
       <meta name="keywords" content="understanding vm,koding">
     
-		<meta name="description" content="alertYou should follow the steps in this guide to its entirety otherwise if you enable the firewall and don't finish
+		<meta name="description" content="alertYou should follow the steps in this guide to its entirety otherwise if you enable the firewall and don&amp;#39;t finish
 adding key services like ssh, you may be locked out of your VM. Please proceed with caution.">
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
@@ -22,7 +22,7 @@ adding key services like ssh, you may be locked out of your VM. Please proceed w
 		<meta property="og:url" content="https://learn.koding.com"/>
 		<meta property="og:image" content="https://learn.koding.com/img/logo_150.png"/>
 		<meta property="og:image:secure_url" content="https://koding.com/a/images/logos/share_logo.png"/>
-		<meta property="og:description" content="alertYou should follow the steps in this guide to its entirety otherwise if you enable the firewall and don't finish
+		<meta property="og:description" content="alertYou should follow the steps in this guide to its entirety otherwise if you enable the firewall and don&amp;#39;t finish
 adding key services like ssh, you may be locked out of your VM. Please proceed with caution."/>
 		<meta property="og:image:type" content="image/png">
 		<meta property="og:image:width" content="130"/>
@@ -35,7 +35,7 @@ adding key services like ssh, you may be locked out of your VM. Please proceed w
 		<meta name="twitter:creator" content="@koding"/>
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:image" content="https://learn.koding.com/img/logo_150.png"/>
-		<meta name="twitter:description" content="alertYou should follow the steps in this guide to its entirety otherwise if you enable the firewall and don't finish
+		<meta name="twitter:description" content="alertYou should follow the steps in this guide to its entirety otherwise if you enable the firewall and don&amp;#39;t finish
 adding key services like ssh, you may be locked out of your VM. Please proceed with caution."\>
 		<meta name="twitter:domain" content="learn.koding.com">
 
@@ -48,11 +48,11 @@ adding key services like ssh, you may be locked out of your VM. Please proceed w
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?18" />
+    <link rel="stylesheet" href="/css/vendor.css?442" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?229" />
+    <link rel="stylesheet" href="/css/main.css?384" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?724" />
+    <link rel="stylesheet" href="/css/rwd.css?352" />
 	</head>
 	<body>
 
@@ -261,6 +261,14 @@ adding key services like ssh, you may be locked out of your VM. Please proceed w
     <ul>
     
       <li class="">
+        <a href="/guides/domains">Custom Domains with your Koding VM</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/installing-ionic-framework">Installing Ionic Framework</a>
+      </li>
+    
+      <li class="">
         <a href="/guides/setting-rails-webserver">Setting up a Rails webserver</a>
       </li>
     
@@ -269,19 +277,11 @@ adding key services like ssh, you may be locked out of your VM. Please proceed w
       </li>
     
       <li class="">
-        <a href="/guides/hello-world/php">Hello World on Koding: PHP</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/hello-world/perl">Hello World on Koding: Perl</a>
-      </li>
-    
-      <li class="">
         <a href="/guides/hello-world/pascal">Hello World on Koding: Pascal</a>
       </li>
     
       <li class="">
-        <a href="/guides/domains">Custom Domains with your Koding VM</a>
+        <a href="/guides/hello-world/java">Hello World on Koding: Java</a>
       </li>
     
       <li class="">
@@ -327,13 +327,13 @@ installed by default on all Koding VMs.</p>
 was built to provide an easy interface that is more usable for most users as compared to the more complicated interface that
 comes with iptables.</p>
 <h2 class="heading"> <a name="checking-the-state-of-ufw-on-your-vm" class="anchor" href="#checking-the-state-of-ufw-on-your-vm"></a> Checking the state of ufw on your VM </h2><p>ufw should be pre-installed on your VM and you can easily check that by typing the following command in Terminal:</p>
-<pre><code>sudo ufw <span class="hljs-keyword">status</span>
+<pre><code><span class="hljs-title">sudo</span> ufw status
 </code></pre><p>you should see the following result (in most cases):</p>
 <pre><code><span class="hljs-attribute">Status</span>: <span class="hljs-string">inactive</span>
 </code></pre><p>If for some reason, ufw is not installed on your VM, you can easily install it by using the following command:</p>
 <pre><code>sudo apt-<span class="hljs-keyword">get</span> install ufw
 </code></pre><p>To view a list of the current active rules, use the following command:</p>
-<pre><code>sudo ufw <span class="hljs-keyword">status</span> verbose
+<pre><code><span class="hljs-title">sudo</span> ufw status verbose
 </code></pre><p>you may see something like:</p>
 <pre><code>Statu<span class="hljs-variable">s:</span> active
 Loggin<span class="hljs-variable">g:</span> <span class="hljs-keyword">on</span> (low)
@@ -365,10 +365,10 @@ tcp with udp if you wish to allow access to both tcp and udp ports within that r
 <h2 class="heading"> <a name="adding-a-specific-ip-address" class="anchor" href="#adding-a-specific-ip-address"></a> Adding a specific IP address </h2><p>As you saw, you can add rules for specific ports and so similarly, you can also add rules for specific IP addresses.</p>
 <pre><code><span class="hljs-title">sudo</span> ufw allow from <span class="hljs-number">192.168.0.0</span>
 </code></pre><p>you can also combine ports and IP addresses to create specific rules:</p>
-<pre><code>sudo ufw allow <span class="hljs-keyword">from</span> <span class="hljs-number">192.168</span>.<span class="hljs-number">0.101</span> <span class="hljs-keyword">proto</span> tcp <span class="hljs-keyword">to</span> <span class="hljs-literal">any</span> <span class="hljs-keyword">port</span> <span class="hljs-number">22</span>
+<pre><code>sudo ufw allow <span class="hljs-built_in">from</span> <span class="hljs-number">192.168</span><span class="hljs-number">.0</span><span class="hljs-number">.101</span> proto tcp <span class="hljs-built_in">to</span> <span class="hljs-keyword">any</span> port <span class="hljs-number">22</span>
 </code></pre><p>Syntax to create deny rule is similar with allow rule. You only need to change parameter from allow to deny.</p>
 <h2 class="heading"> <a name="deleting-a-rule" class="anchor" href="#deleting-a-rule"></a> Deleting a rule </h2><p>First, get a numbered list of all rules:</p>
-<pre><code>sudo ufw <span class="hljs-keyword">status</span> numbered
+<pre><code><span class="hljs-title">sudo</span> ufw status numbered
 </code></pre><p>You may see something like:</p>
 <pre><code><span class="hljs-attribute">Status</span>: <span class="hljs-string">active</span>
 
