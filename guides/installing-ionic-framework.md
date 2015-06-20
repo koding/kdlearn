@@ -1,6 +1,7 @@
 ---
 title: Installing Ionic Framework
-author: sergiu
+author: Sergiu Butnarasu
+username: sergiu
 categories: [frameworks platforms, apache, nodejs, javascript]
 template: page.toffee
 ---
