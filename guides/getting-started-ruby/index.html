@@ -11,7 +11,7 @@
     
       <meta name="keywords" content="first program,ruby">
     
-		<meta name="description" content="In this guide we&amp;#39;ll explain what Ruby is, and how to write a simple web
+		<meta name="description" content="In this guide we'll explain what Ruby is, and how to write a simple web
 server using the built in Socket library. So, lets get started!">
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
@@ -22,7 +22,7 @@ server using the built in Socket library. So, lets get started!">
 		<meta property="og:url" content="https://learn.koding.com"/>
 		<meta property="og:image" content="https://learn.koding.com/img/logo_150.png"/>
 		<meta property="og:image:secure_url" content="https://koding.com/a/images/logos/share_logo.png"/>
-		<meta property="og:description" content="In this guide we&amp;#39;ll explain what Ruby is, and how to write a simple web
+		<meta property="og:description" content="In this guide we'll explain what Ruby is, and how to write a simple web
 server using the built in Socket library. So, lets get started!"/>
 		<meta property="og:image:type" content="image/png">
 		<meta property="og:image:width" content="130"/>
@@ -35,7 +35,7 @@ server using the built in Socket library. So, lets get started!"/>
 		<meta name="twitter:creator" content="@koding"/>
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:image" content="https://learn.koding.com/img/logo_150.png"/>
-		<meta name="twitter:description" content="In this guide we&amp;#39;ll explain what Ruby is, and how to write a simple web
+		<meta name="twitter:description" content="In this guide we'll explain what Ruby is, and how to write a simple web
 server using the built in Socket library. So, lets get started!"\>
 		<meta name="twitter:domain" content="learn.koding.com">
 
@@ -48,11 +48,11 @@ server using the built in Socket library. So, lets get started!"\>
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?893" />
+    <link rel="stylesheet" href="/css/vendor.css?847" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?517" />
+    <link rel="stylesheet" href="/css/main.css?181" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?137" />
+    <link rel="stylesheet" href="/css/rwd.css?666" />
 	</head>
 	<body>
 
@@ -256,20 +256,24 @@ server using the built in Socket library. So, lets get started!"\>
   </li>
 
   
-  <li class="">
+  <li class="zactive">
     <h5>Latest Guides</h5>
     <ul>
+    
+      <li class="">
+        <a href="/guides/installing-ionic-framework">Installing Ionic Framework</a>
+      </li>
+    
+      <li class="zactive">
+        <a href="/guides/getting-started-ruby">Getting Started with Ruby</a>
+      </li>
     
       <li class="">
         <a href="/guides/domains">Custom Domains with your Koding VM</a>
       </li>
     
       <li class="">
-        <a href="/guides/installing-ionic-framework">Installing Ionic Framework</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/setting-rails-webserver">Setting up a Rails webserver</a>
+        <a href="/guides/2-factor-auth">Enabling 2-factor authentication on your Koding account</a>
       </li>
     
       <li class="">
@@ -277,11 +281,7 @@ server using the built in Socket library. So, lets get started!"\>
       </li>
     
       <li class="">
-        <a href="/guides/hello-world/pascal">Hello World on Koding: Pascal</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/hello-world/java">Hello World on Koding: Java</a>
+        <a href="/guides/setting-rails-webserver">Setting up a Rails webserver</a>
       </li>
     
       <li class="">
@@ -310,7 +310,7 @@ server using the built in Socket library. So, lets get started!"\>
     <li class="author username">
        by <span rel="author">Team Koding</span>
     </li>
-    <li class="updated">Updated 2 months ago</li>
+    <li class="updated">Updated 21 hours ago</li>
   </ul>
 
 
@@ -323,8 +323,9 @@ server using the built in Socket library. So, lets get started!</p>
 focuses on readability programmer enjoyment over raw performance. Koding
 VMs come pre-installed with Ruby and RubyGem, making it super easy to get
 started. Lets see what it looks like to run some Ruby code!</p>
-<h2 class="heading"> <a name="installing-ruby" class="anchor" href="#installing-ruby"></a> Installing Ruby </h2><p>You can install Ruby rather easily, using the bellow command:</p>
-<pre><code>curl -<span class="hljs-variable">sSL</span> <span class="hljs-keyword">https</span>://<span class="hljs-built_in">get</span>.rvm.io | bash -s stable <span class="hljs-comment">--rails</span>
+<h2 class="heading"> <a name="installing-ruby" class="anchor" href="#installing-ruby"></a> Installing Ruby </h2><p>You can install Ruby rather easily, using the following commands:</p>
+<pre><code>gpg --keyserver <span class="hljs-string">hkp:</span><span class="hljs-comment">//keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3</span>
+curl -sSL <span class="hljs-string">https:</span><span class="hljs-comment">//get.rvm.io | bash -s stable --rails</span>
 </code></pre><p>During the installation you will prompted to input your root password.</p>
 <p>The above command will install the latest stable Rails version, which will pull in the associated Ruby.</p>
 <p>After the very long installation process, all you need to do is source the rvm scripts using the following command:</p>

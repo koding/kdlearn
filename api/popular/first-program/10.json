@@ -3,60 +3,60 @@
     "title": "Getting Started with Python",
     "url": "http://learn.koding.com/guides/getting-started-python/index.html",
     "author": "Team Koding",
-    "date": "2015-04-29T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
     "title": "Getting Started with C and C++",
     "url": "http://learn.koding.com/guides/getting-started-c-cpp/index.html",
     "author": "drodri",
-    "date": "2015-04-29T00:00:00.000Z"
-  },
-  {
-    "title": "Hello World on Koding: PHP",
-    "url": "http://learn.koding.com/guides/hello-world/php/index.html",
-    "author": "Team Koding",
-    "date": "2015-06-01T00:00:00.000Z"
-  },
-  {
-    "title": "Hello World on Koding: Perl",
-    "url": "http://learn.koding.com/guides/hello-world/perl/index.html",
-    "author": "Team Koding",
-    "date": "2015-06-01T00:00:00.000Z"
-  },
-  {
-    "title": "Hello World on Koding: Pascal",
-    "url": "http://learn.koding.com/guides/hello-world/pascal/index.html",
-    "author": "Bee Jay",
-    "date": "2015-06-01T00:00:00.000Z"
-  },
-  {
-    "title": "Hello World on Koding: Java",
-    "url": "http://learn.koding.com/guides/hello-world/java/index.html",
-    "author": "Team Koding",
-    "date": "2015-06-01T00:00:00.000Z"
-  },
-  {
-    "title": "Hello World on Koding: Go",
-    "url": "http://learn.koding.com/guides/hello-world/go/index.html",
-    "author": "Team Koding",
-    "date": "2015-06-01T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
     "title": "Hello World on Koding: Python",
     "url": "http://learn.koding.com/guides/hello-world/python/index.html",
     "author": "Team Koding",
-    "date": "2015-06-01T00:00:00.000Z"
+    "date": "2015-06-06T00:00:00.000Z"
   },
   {
-    "title": "Hello World on Koding: C",
-    "url": "http://learn.koding.com/guides/hello-world/c/index.html",
+    "title": "Hello World on Koding: Perl",
+    "url": "http://learn.koding.com/guides/hello-world/perl/index.html",
     "author": "Team Koding",
-    "date": "2015-05-11T00:00:00.000Z"
+    "date": "2015-06-06T00:00:00.000Z"
   },
   {
-    "title": "Building C / C++ applications with biicode",
-    "url": "http://learn.koding.com/guides/getting-started-biicode/index.html",
-    "author": "drodri",
-    "date": "2015-05-04T00:00:00.000Z"
+    "title": "Hello World on Koding: Pascal",
+    "url": "http://learn.koding.com/guides/hello-world/pascal/index.html",
+    "author": "Bee Jay",
+    "date": "2015-06-06T00:00:00.000Z"
+  },
+  {
+    "title": "Hello World on Koding: Java",
+    "url": "http://learn.koding.com/guides/hello-world/java/index.html",
+    "author": "Team Koding",
+    "date": "2015-06-06T00:00:00.000Z"
+  },
+  {
+    "title": "Hello World on Koding: Go",
+    "url": "http://learn.koding.com/guides/hello-world/go/index.html",
+    "author": "Team Koding",
+    "date": "2015-06-06T00:00:00.000Z"
+  },
+  {
+    "title": "Hello World on Koding: C-Sharp (C#)",
+    "url": "http://learn.koding.com/guides/hello-world/c-sharp/index.html",
+    "author": "Team Koding",
+    "date": "2015-06-06T00:00:00.000Z"
+  },
+  {
+    "title": "Hello World on Koding: Ruby",
+    "url": "http://learn.koding.com/guides/hello-world/ruby/index.html",
+    "author": "Team Koding",
+    "date": "2015-06-06T00:00:00.000Z"
+  },
+  {
+    "title": "Getting Started with Ruby",
+    "url": "http://learn.koding.com/guides/getting-started-ruby/index.html",
+    "author": "Team Koding",
+    "date": "2015-06-22T00:00:00.000Z"
   }
 ]

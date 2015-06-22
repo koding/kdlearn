@@ -3,60 +3,60 @@
     "title": "Getting started with the Koding Package Manager",
     "url": "http://learn.koding.com/guides/getting-started-kpm/index.html",
     "author": "Team Koding",
-    "date": "2015-04-29T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
     "title": "Getting Started: File Uploads",
     "url": "http://learn.koding.com/guides/getting-started/file-upload/index.html",
     "author": "Team Koding",
-    "date": "2015-04-29T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
     "title": "Getting Started: Workspaces",
     "url": "http://learn.koding.com/guides/getting-started/workspaces/index.html",
     "author": "Team Koding",
-    "date": "2015-04-29T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
     "title": "Getting Started: The UI",
     "url": "http://learn.koding.com/guides/getting-started/the-ui/index.html",
     "author": "Team Koding",
-    "date": "2015-05-04T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
+  },
+  {
+    "title": "Enabling 2-factor authentication on your Koding account",
+    "url": "http://learn.koding.com/guides/2-factor-auth/index.html",
+    "author": "Team Koding",
+    "date": "2015-06-20T00:00:00.000Z"
   },
   {
     "title": "Getting Started: The Activity Feed",
     "url": "http://learn.koding.com/guides/getting-started/activity-feed/index.html",
     "author": "Team Koding",
-    "date": "2015-04-29T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
-    "title": "How to share your VM with someone?",
-    "url": "http://learn.koding.com/guides/permanent-shared-vm/index.html",
+    "title": "Getting Started: Editing Your Profile",
+    "url": "http://learn.koding.com/guides/getting-started/editing-your-profile/index.html",
     "author": "Team Koding",
-    "date": "2015-05-01T00:00:00.000Z"
-  },
-  {
-    "title": "Understanding Snapshots",
-    "url": "http://learn.koding.com/guides/vm-snapshot/index.html",
-    "author": "Team Koding",
-    "date": "2015-05-19T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
     "title": "Understanding the VM settings modal",
     "url": "http://learn.koding.com/guides/understanding-vm-panel/index.html",
     "author": "Team Koding",
-    "date": "2015-04-29T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
     "title": "Koding Terminal Introduction",
     "url": "http://learn.koding.com/guides/terminal-introduction/index.html",
     "author": "Team Koding",
-    "date": "2015-04-29T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
-    "title": "Koding IDE Introduction",
-    "url": "http://learn.koding.com/guides/ide-introduction/index.html",
+    "title": "Using SSH on a Chromebook to connect to your Koding VM",
+    "url": "http://learn.koding.com/guides/ssh-chromebook/index.html",
     "author": "Team Koding",
-    "date": "2015-06-20T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   }
 ]
