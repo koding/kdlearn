@@ -18,6 +18,44 @@
   <language>en</language>
   
   <item>
+    <title>Enabling 2-factor authentication on your Koding account</title>
+    <link>//learn.koding.com/guides/2-factor-auth</link>
+    <pubDate>"2015-06-23T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/2-factor-auth</guid>
+    <author>Team Koding</author>
+    <description>2-factor authentication (2FA) gives your Koding account an added layer of security and protection. Once enabled,
+you will be required to provide a verification code along with your password each time you sign in to Koding.
+
+2FA is increasingly become a required standard and many of the leading companies in the world now support 2FA.
+  How do I enable 2FA on my Koding account? To enable 2FA, you will first need to install an app that generates authentication tokens on your phone. We recommend either the Google Authenticator app or Authy.
+
+Download Authy for iPhone
+Download Authy for Android
+Download Google Authenticator for iPhone
+Download Google Authenticator for Android
+
+Once you have installed the app, follow these steps to enable 2FA on your Koding account.
+ tipThe instructions below are for the Google Authenticator app. Other apps like Authy have a similar workflow.
+If you get stuck somewhere in the setup, you can always send us an email
+ 
+Log in to your Koding account
+Go to the 2FA section in Account Settings
+Open up the Google Authenticator app on your phone and click the + icon (as shown in the image below)
+Select &amp;quot;Scan Barcode&amp;quot;
+Scan the code shown in the Account Settings
+The Google Authenticator app will add your Koding account to the list and generate a code
+Enter the code into Account Settings to verify and activate 2FA
+
+
+  How do I diable 2FA on my Koding account? To disable 2FA, follow these simple steps:
+
+visit the 2FA tab in Account Settings
+enter your Koding password and click the &amp;quot;Disable&amp;quot; button
+
+</description>
+  </item>
+  
+  <item>
     <title>Installing Ionic Framework</title>
     <link>//learn.koding.com/guides/installing-ionic-framework</link>
     <pubDate>"2015-06-22T00:00:00.000Z"</pubDate>
@@ -241,40 +279,6 @@ an IP should work, as long as your VM is not shutdown. For more information
 on Always-On VMs, see the Pricing Page.
 Once you are done pointing your domain to your VM, you can experiment with
 pointing multiple domains to the same VM using as described in this guide.
-</description>
-  </item>
-  
-  <item>
-    <title>Enabling 2-factor authentication on your Koding account</title>
-    <link>//learn.koding.com/guides/2-factor-auth</link>
-    <pubDate>"2015-06-20T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/2-factor-auth</guid>
-    <author>Team Koding</author>
-    <description>2-factor authentication (2FA) gives your Koding account an added layer of security and protection. Once enabled,
-you will be required to provide a verification code along with your password each time you sign in to Koding.
-
-2FA is increasingly become a required standard and many of the leading companies in the world now support 2FA.
-  How do I enable 2FA on my Koding account? To enable 2FA, you will first need to install the Google Authenticator app on your mobile device.
-
-Download for iPhone
-Download for Android
-
-Once you have installed the app, follow these steps to enable 2FA on your Koding account.
-
-Log in to your Koding account
-Go to the 2FA section in Account Settings
-Open up the Google Authenticator app on your phone and click the + icon (as shown in the image below)
-Select &amp;quot;Scan Barcode&amp;quot;
-Scan the code shown in the Account Settings
-The Google Authenticator app will add your Koding account to the list and generate a code
-Enter the code into Account Settings to verify and activate 2FA
-
-
-  How do I diable 2FA on my Koding account? To disable 2FA, follow these simple steps:
-
-visit the 2FA tab in Account Settings
-enter your Koding password and click the &amp;quot;Disable&amp;quot; button
-
 </description>
   </item>
   

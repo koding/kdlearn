@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+        <loc>http://learn.koding.com/guides/2-factor-auth</loc>
+        <lastmod>2015-06-23</lastmod>
+        <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
         <loc>http://learn.koding.com/guides/installing-ionic-framework</loc>
         <lastmod>2015-06-22</lastmod>
         <changefreq>monthly</changefreq>
@@ -15,12 +21,6 @@
   
   <url>
         <loc>http://learn.koding.com/guides/domains</loc>
-        <lastmod>2015-06-20</lastmod>
-        <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-        <loc>http://learn.koding.com/guides/2-factor-auth</loc>
         <lastmod>2015-06-20</lastmod>
         <changefreq>monthly</changefreq>
   </url>
