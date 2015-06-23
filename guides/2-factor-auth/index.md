@@ -15,8 +15,8 @@ you will be required to provide a verification code along with your password eac
 To enable 2FA, you will first need to install an app that generates authentication tokens on your phone. We recommend either the Google Authenticator app or Authy.
 1. [Download Authy for iPhone](https://itunes.apple.com/en/app/authy/id494168017?mt=8)
 2. [Download Authy for Android](https://play.google.com/store/apps/details?id=com.authy.authy&hl=en)
-2. [Download Google Authenticator for iPhone](https://itunes.apple.com/us/app/google-authenticator/id388497605?mt=8)
-2. [Download Google Authenticator for Android](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2)
+3. [Download Google Authenticator for iPhone](https://itunes.apple.com/us/app/google-authenticator/id388497605?mt=8)
+4. [Download Google Authenticator for Android](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2)
 
 Once you have installed the app, follow these steps to enable 2FA on your Koding account.
 > type:tip
