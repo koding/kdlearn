@@ -38,7 +38,7 @@ is now easier than ever.
 > whole number (1GB) of earned space which can then be redeemed by following the process
 > outlined below.
 
-To add earned space to your VM, head over to VM settings and click the plus sign located
+To add earned space to your VM, head over to [VM settings](http://learn.koding.com/guides/understanding-vm-panel/) and click the plus sign located
 next to the disk size indicator (as shown in the image below).
 
 ![disk size indicator](/faq/redeem-referrals/resizedisk.png)
