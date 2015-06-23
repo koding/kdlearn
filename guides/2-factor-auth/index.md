@@ -12,11 +12,17 @@ you will be required to provide a verification code along with your password eac
 2FA is increasingly become a required standard and many of the leading companies in the world [now support](https://twofactorauth.org/) 2FA.
 
 ### How do I enable 2FA on my Koding account?
-To enable 2FA, you will first need to install the Google Authenticator app on your mobile device.
-1. [Download for iPhone](https://itunes.apple.com/us/app/google-authenticator/id388497605?mt=8)
-2. [Download for Android](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2)
+To enable 2FA, you will first need to install an app that generates authentication tokens on your phone. We recommend either the Google Authenticator app or Authy.
+1. [Download Authy for iPhone](https://itunes.apple.com/en/app/authy/id494168017?mt=8)
+2. [Download Authy for Android](https://play.google.com/store/apps/details?id=com.authy.authy&hl=en)
+2. [Download Google Authenticator for iPhone](https://itunes.apple.com/us/app/google-authenticator/id388497605?mt=8)
+2. [Download Google Authenticator for Android](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2)
 
 Once you have installed the app, follow these steps to enable 2FA on your Koding account.
+> type:tip
+> The instructions below are for the Google Authenticator app. Other apps like Authy have a similar workflow.
+> If you get stuck somewhere in the setup, you can always [send us an email](support@koding.com)
+
 1. Log in to your Koding account
 2. Go to the 2FA section in [Account Settings](https://koding.com/Account/TwoFactorAuth)
 3. Open up the Google Authenticator app on your phone and click the + icon (as shown in the image below)
