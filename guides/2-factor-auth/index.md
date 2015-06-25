@@ -21,7 +21,7 @@ To enable 2FA, you will first need to install an app that generates authenticati
 Once you have installed the app, follow these steps to enable 2FA on your Koding account.
 > type:tip
 > The instructions below are for the Google Authenticator app. Other apps like Authy have a similar workflow.
-> If you get stuck somewhere in the setup, you can always [send us an email](support@koding.com)
+> If you get stuck somewhere in the setup, you can always [send us an email](support@koding.com).
 
 1. Log in to your Koding account
 2. Go to the 2FA section in [Account Settings](https://koding.com/Account/TwoFactorAuth)
