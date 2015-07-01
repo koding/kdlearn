@@ -49,7 +49,7 @@ Now that we've creating our little Node server, lets open up our
 node hello.js 127.0.0.1
 ```
 
-Next, lets visit out domain at the following address, making sure to replace 
+Next, lets visit our domain at the following address, making sure to replace 
 `username` with your Koding username.
 
 ```
