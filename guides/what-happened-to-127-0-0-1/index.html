@@ -51,11 +51,11 @@ guide will explain this common issue, and how to work around it."\>
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?402" />
+    <link rel="stylesheet" href="/css/vendor.css?228" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?870" />
+    <link rel="stylesheet" href="/css/main.css?37" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?606" />
+    <link rel="stylesheet" href="/css/rwd.css?270" />
 	</head>
 	<body>
 
@@ -259,9 +259,13 @@ guide will explain this common issue, and how to work around it."\>
   </li>
 
   
-  <li class="">
+  <li class="zactive">
     <h5>Latest Guides</h5>
     <ul>
+    
+      <li class="zactive">
+        <a href="/guides/what-happened-to-127-0-0-1">What happened to 127.0.0.1?</a>
+      </li>
     
       <li class="">
         <a href="/guides/2-factor-auth">Enabling 2-factor authentication on your Koding account</a>
@@ -288,10 +292,6 @@ guide will explain this common issue, and how to work around it."\>
       </li>
     
       <li class="">
-        <a href="/guides/hello-world/go">Hello World on Koding: Go</a>
-      </li>
-    
-      <li class="">
         <a href="/guides/hello-world/c-sharp">Hello World on Koding: C-Sharp (C#)</a>
       </li>
     
@@ -313,7 +313,7 @@ guide will explain this common issue, and how to work around it."\>
     <li class="author username">
        by <span rel="author">Team Koding</span>
     </li>
-    <li class="updated">Updated 2 months ago</li>
+    <li class="updated">Updated 5 hours ago</li>
   </ul>
 
 
@@ -331,8 +331,8 @@ Many development applications will default the IP to <code>127.0.0.1</code>, the
 accessing your web server <em>locally</em>. When you use a Koding VM, you typically 
 access it from the Koding Domain, which means that you&apos;re accessing your 
 web application <em>externally</em>. Meaning that connecting to 
-<code>hostname.username.koding.io:3000</code> will <em>not</em> respond with a web server 
-running on <code>127.0.0.1:3000</code>.</p>
+<code>hostname.username.koding.io:3001</code> will <em>not</em> respond with a web server 
+running on <code>127.0.0.1:3001</code>.</p>
 <p>To solve this issue, we turn to our friendly <code>0.0.0.0</code> IP. Unlike <code>127.0.0.1</code>, 
 this IP will accept connections from any source. Localhost, or external.</p>
 <h2 class="heading"> <a name="an-example" class="anchor" href="#an-example"></a> An example </h2><p>To help illustrate the above explanation, lets run a little NodeJS server and 
@@ -340,15 +340,15 @@ use <code>curl</code> and our browser to request it from multiple locations. If 
 to follow along, copy the following code into a file named <code>hello.js</code>.</p>
 <pre><code class="javascript"><span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;http&apos;</span>).createServer(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(req, res)</span> </span>{
   res.end(<span class="hljs-string">&apos;Hello!\n&apos;</span>);
-}).listen(<span class="hljs-number">3000</span>, process.argv[<span class="hljs-number">2</span>]);
-<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Sending greetings on &apos;</span>, process.argv[<span class="hljs-number">2</span>] + <span class="hljs-string">&apos;:3000&apos;</span>);
+}).listen(<span class="hljs-number">3001</span>, process.argv[<span class="hljs-number">2</span>]);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Sending greetings on &apos;</span>, process.argv[<span class="hljs-number">2</span>] + <span class="hljs-string">&apos;:3001&apos;</span>);
 </code></pre>
 <p>Now that we&apos;ve creating our little Node server, lets open up our 
 <a href="https://koding.com/Terminal">Terminal</a> and run it with the following.</p>
 <pre><code><span class="hljs-title">node</span> hello.js <span class="hljs-number">127.0.0.1</span>
-</code></pre><p>Next, lets visit out domain at the following address, making sure to replace 
+</code></pre><p>Next, lets visit our domain at the following address, making sure to replace 
 <code>username</code> with your Koding username.</p>
-<pre><code><span class="hljs-string">http:</span><span class="hljs-comment">//hostname.username.koding.io:3000</span>
+<pre><code><span class="hljs-string">http:</span><span class="hljs-comment">//hostname.username.koding.io:3001</span>
 </code></pre><p>As you can see from the following two images, our web server is not responding 
 on our domain but it <strong>is</strong> responding with <code>curl localhost</code>.</p>
 <p><img src="127-browser.png" alt="127 with Browser"></p>

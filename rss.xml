@@ -18,6 +18,59 @@
   <language>en</language>
   
   <item>
+    <title>What happened to 127.0.0.1?</title>
+    <link>//learn.koding.com/guides/what-happened-to-127-0-0-1</link>
+    <pubDate>"2015-07-02T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/what-happened-to-127-0-0-1</guid>
+    <author>Team Koding</author>
+    <description>Users who are new to Koding development are often confused about why they are 
+not seeing their NodeJS, Python, Ruby or etc Apps on their Koding Domain. This 
+guide will explain this common issue, and how to work around it.
+  0.0.0.0, your new 127.0.0.1 In short, use 0.0.0.0 for your Web Server IP instead of 127.0.0.1 on 
+Koding. Lets dig a little deeper though, and explain what this means, and why.
+  Why should i use 0.0.0.0? When you run web server applications they need an IP and Port to listen on.
+Many development applications will default the IP to 127.0.0.1, the 
+machine's localhost. This works fine on your Laptop, because you are 
+accessing your web server locally. When you use a Koding VM, you typically 
+access it from the Koding Domain, which means that you're accessing your 
+web application externally. Meaning that connecting to 
+hostname.username.koding.io:3001 will not respond with a web server 
+running on 127.0.0.1:3001.
+To solve this issue, we turn to our friendly 0.0.0.0 IP. Unlike 127.0.0.1, 
+this IP will accept connections from any source. Localhost, or external.
+  An example To help illustrate the above explanation, lets run a little NodeJS server and 
+use curl and our browser to request it from multiple locations. If you want 
+to follow along, copy the following code into a file named hello.js.
+require('http').createServer(function(req, res) {
+  res.end('Hello!\n');
+}).listen(3001, process.argv[2]);
+console.log('Sending greetings on ', process.argv[2] + ':3001');
+
+Now that we've creating our little Node server, lets open up our 
+Terminal and run it with the following.
+node hello.js 127.0.0.1
+Next, lets visit our domain at the following address, making sure to replace 
+username with your Koding username.
+http://hostname.username.koding.io:3001
+As you can see from the following two images, our web server is not responding 
+on our domain but it is responding with curl localhost.
+
+
+As we previous discussed, we need to bind our NodeJS server to the 0.0.0.0 
+address. Lets run our web server again with the proper address.
+node hello.js 0.0.0.0
+And open it up in our browser just like before.
+
+Success!
+Remember that the way in which you choose the IP of your Web Server can differ 
+greatly between web frameworks. In this above example, we wrote our own web 
+server, which accepts a single argument (the bind ip).
+Look at the documentation for your web framework of choice, as it will almost 
+certainly be different than what was used in this example.
+</description>
+  </item>
+  
+  <item>
     <title>Enabling 2-factor authentication on your Koding account</title>
     <link>//learn.koding.com/guides/2-factor-auth</link>
     <pubDate>"2015-06-25T00:00:00.000Z"</pubDate>
@@ -365,43 +418,6 @@ If you encounter any issues or have any questions please drop us an email here.
   </item>
   
   <item>
-    <title>Hello World on Koding: Go</title>
-    <link>//learn.koding.com/guides/hello-world/go</link>
-    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/go</guid>
-    <author>Team Koding</author>
-    <description>  Introduction Go or golang is a statically-typed language with syntax loosely derived from C, that adds garbage collection, type safety, some dynamic-typing capabilities, additional built-in types such as variable-length arrays and key-value maps, and a large standard library.
-  Implementation The first thing you need to do is to create a file called helloworld.go in your Koding VM and paste the bellow snippet into it.
-package main
-
-import &amp;quot;fmt&amp;quot;
-
-func main() {
-    fmt.Println(&amp;quot;Hello World!&amp;quot;)
-}
-To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
-go run helloworld.go
-Or you can build the program into a binary. You can do this using the bellow command:
-go build helloworld.go
-And you can then execute the built binary directly.
-./hello-world
-  Explanation package main
-This is known as a “package declaration”. Every Go program must start with a package declaration. There are two types of Go programs: executables and libraries. Executable applications are the kinds of programs that you can run directly from the terminal.
-import &amp;quot;fmt&amp;quot;
-The import keyword is how you include code from other packages to use with you program. The fmt package (shorthand for format) implements formatting for input and output.
-func main()
-Functions are the building blocks of a Go program. They have inputs, outputs and a series of steps called statements which are executed in order. All functions start with the keyword func followed by the name of the function (main in this case), a list of zero or more “parameters” surrounded by parentheses, an optional return type and a “body” which is surrounded by curly braces.
-{}
-The two curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
-group or function.
-fmt.Println(&amp;quot;Hello World&amp;quot;)
-This statement is made of three pieces. First you access another function inside of the fmt package called Println (that's the fmt.Println piece, Println means Print Line). Then you create a new string that contains Hello World and call that function with the string as the first and only argument.
-And that's it!
-You just wrote and ran your first Hello World in Go.
-</description>
-  </item>
-  
-  <item>
     <title>Hello World on Koding: C-Sharp (C#)</title>
     <link>//learn.koding.com/guides/hello-world/c-sharp</link>
     <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
@@ -453,33 +469,61 @@ for now.
   </item>
   
   <item>
-    <title>Hello World on Koding: Perl</title>
-    <link>//learn.koding.com/guides/hello-world/perl</link>
+    <title>Hello World on Koding: Ruby</title>
+    <link>//learn.koding.com/guides/hello-world/ruby</link>
     <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/perl</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/ruby</guid>
     <author>Team Koding</author>
-    <description>  Introduction Perl is a family of high-level, general-purpose, interpreted, dynamic programming languages. The Perl languages borrow features from other programming languages including C, shell scripting (sh) etc. They provide powerful text processing facilities without the arbitrary data-length limits of many contemporary Unix commandline tools, facilitating easy manipulation of text files.
-  Implementation The first thing you need to do is to create a file called helloworld in your Koding VM and paste the bellow snippet into it.
-#!/usr/bin/perl
+    <description>  Introduction Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, and Lisp. It supports multiple programming paradigms, including functional, object-oriented, and imperative. It also has a dynamic type system and automatic memory management.
+  Implementation The first thing you need to do is to create a file called helloworld.rb in your Koding VM and paste the bellow snippet into it.
+#!/usr/bin/ruby
 
-use strict;
-use warnings;
-
-print &amp;quot;Hello, World!&amp;quot;;
-To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
-first ensure the file is given executable permissions:
-chmod u+x helloworld
-and then run this command
-perl helloworld
-  Explanation #!/usr/bin/perl
-Every Perl program should start with this as its very first line, although this may vary from system to system. This line tells the machine what to do with the file when it is executed.
-use strict;
-use warnings;
-These two statements turn on the 'strict' and 'warnings' pragmas. These are strongly encouraged for all Perl programs since they tell the Perl interpreter to check for programming errors like undeclared variables.
-print &amp;quot;Hello, World!&amp;quot;;
-The print function outputs some data. In the above case it prints out the string Hello world, and as always the statement ends with a semicolon.
+puts 'Hello, world!'
+To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
+ruby helloworld.rb
+  Explanation #!/usr/bin/ruby
+The shebang line is read by the program loader to determine what program to use to run the script. This line cannot be preceded by any blank lines or any leading spaces.
+puts 'Hello, world!'
+The above line is pretty self explanatory. It will put something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
 And that's it!
-You just wrote and ran your first Hello World in Perl.
+You just wrote and ran your first Hello World in Ruby.
+</description>
+  </item>
+  
+  <item>
+    <title>Hello World on Koding: Go</title>
+    <link>//learn.koding.com/guides/hello-world/go</link>
+    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/go</guid>
+    <author>Team Koding</author>
+    <description>  Introduction Go or golang is a statically-typed language with syntax loosely derived from C, that adds garbage collection, type safety, some dynamic-typing capabilities, additional built-in types such as variable-length arrays and key-value maps, and a large standard library.
+  Implementation The first thing you need to do is to create a file called helloworld.go in your Koding VM and paste the bellow snippet into it.
+package main
+
+import &amp;quot;fmt&amp;quot;
+
+func main() {
+    fmt.Println(&amp;quot;Hello World!&amp;quot;)
+}
+To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
+go run helloworld.go
+Or you can build the program into a binary. You can do this using the bellow command:
+go build helloworld.go
+And you can then execute the built binary directly.
+./hello-world
+  Explanation package main
+This is known as a “package declaration”. Every Go program must start with a package declaration. There are two types of Go programs: executables and libraries. Executable applications are the kinds of programs that you can run directly from the terminal.
+import &amp;quot;fmt&amp;quot;
+The import keyword is how you include code from other packages to use with you program. The fmt package (shorthand for format) implements formatting for input and output.
+func main()
+Functions are the building blocks of a Go program. They have inputs, outputs and a series of steps called statements which are executed in order. All functions start with the keyword func followed by the name of the function (main in this case), a list of zero or more “parameters” surrounded by parentheses, an optional return type and a “body” which is surrounded by curly braces.
+{}
+The two curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
+group or function.
+fmt.Println(&amp;quot;Hello World&amp;quot;)
+This statement is made of three pieces. First you access another function inside of the fmt package called Println (that's the fmt.Println piece, Println means Print Line). Then you create a new string that contains Hello World and call that function with the string as the first and only argument.
+And that's it!
+You just wrote and ran your first Hello World in Go.
 </description>
   </item>
   
@@ -518,28 +562,6 @@ System is a pre-defined class that Java provides and it also holds some useful m
 And that's it!
 You just wrote and ran your first Hello World in Java.
 If you'd like to continue dabbling in Java, we recommend taking a look at this tutorial written for Koding over at Andriodauthority.com
-</description>
-  </item>
-  
-  <item>
-    <title>Hello World on Koding: Ruby</title>
-    <link>//learn.koding.com/guides/hello-world/ruby</link>
-    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/ruby</guid>
-    <author>Team Koding</author>
-    <description>  Introduction Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, and Lisp. It supports multiple programming paradigms, including functional, object-oriented, and imperative. It also has a dynamic type system and automatic memory management.
-  Implementation The first thing you need to do is to create a file called helloworld.rb in your Koding VM and paste the bellow snippet into it.
-#!/usr/bin/ruby
-
-puts 'Hello, world!'
-To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
-ruby helloworld.rb
-  Explanation #!/usr/bin/ruby
-The shebang line is read by the program loader to determine what program to use to run the script. This line cannot be preceded by any blank lines or any leading spaces.
-puts 'Hello, world!'
-The above line is pretty self explanatory. It will put something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
-And that's it!
-You just wrote and ran your first Hello World in Ruby.
 </description>
   </item>
   
@@ -646,41 +668,33 @@ You just wrote and ran your first Hello World in Python.
   </item>
   
   <item>
-    <title>What happens upon upgrade?</title>
-    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
-    <pubDate>"2015-05-29T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
+    <title>Hello World on Koding: Perl</title>
+    <link>//learn.koding.com/guides/hello-world/perl</link>
+    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/perl</guid>
     <author>Team Koding</author>
-    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
-Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
+    <description>  Introduction Perl is a family of high-level, general-purpose, interpreted, dynamic programming languages. The Perl languages borrow features from other programming languages including C, shell scripting (sh) etc. They provide powerful text processing facilities without the arbitrary data-length limits of many contemporary Unix commandline tools, facilitating easy manipulation of text files.
+  Implementation The first thing you need to do is to create a file called helloworld in your Koding VM and paste the bellow snippet into it.
+#!/usr/bin/perl
 
-Ability to mark your VM(s) as Always-On
-Add more storage to your VM(s)
-Share our VM with other Koding users
-Create snapshots of your VM
+use strict;
+use warnings;
 
-  Turn on &amp;quot;Always On&amp;quot; mode for your VM 
-Go to the VM settings modal.
-On the &amp;quot;General&amp;quot; tab, find the switch for &amp;quot;Always On&amp;quot; and turn it on. Your VM will
-now not turn off even if you log out. This also means your public IP address will now be static.
-
-
-  Adding more disk space 
-Head over to VM settings
-Click on the &amp;quot;Disk Usage&amp;quot; tab and click the &amp;quot;resize your VM&amp;quot; link  (as shown in the image below)
-
-This will open the resize modal from where you can resize your VM.
-
-  Adding more VMs (Only for Developer and Professional Plans) 
-Hover your mouse over the &amp;quot;Your VMs&amp;quot; label in the sidebar (as shown in the image below)
-
-The &amp;quot;+&amp;quot; icon will appear
-Click the icon to and you will be presented with the option to create a new VM. You can select the size and the region of the VM.
-
-
-  Share your VM with other Koding users Sharing your VM is very useful when you are doing &amp;quot;serial collaboration&amp;quot; which means one person takes over when the other is done. You can learn all about how to share your VMs through this guide.
-  Create Snapshots of your VM Snapshots are very handy when you want to save the state of your VM as a backup or as a starting point
-for a new VM. We have a full guide on this feature that will help you understand all the features.
+print &amp;quot;Hello, World!&amp;quot;;
+To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
+first ensure the file is given executable permissions:
+chmod u+x helloworld
+and then run this command
+perl helloworld
+  Explanation #!/usr/bin/perl
+Every Perl program should start with this as its very first line, although this may vary from system to system. This line tells the machine what to do with the file when it is executed.
+use strict;
+use warnings;
+These two statements turn on the 'strict' and 'warnings' pragmas. These are strongly encouraged for all Perl programs since they tell the Perl interpreter to check for programming errors like undeclared variables.
+print &amp;quot;Hello, World!&amp;quot;;
+The print function outputs some data. In the above case it prints out the string Hello world, and as always the statement ends with a semicolon.
+And that's it!
+You just wrote and ran your first Hello World in Perl.
 </description>
   </item>
   
@@ -776,6 +790,45 @@ Right click the folder, select SFTP/FTP. You will now see many more options than
 
 
 And there you have it, a folder synced with your Koding VM.
+</description>
+  </item>
+  
+  <item>
+    <title>What happens upon upgrade?</title>
+    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
+    <pubDate>"2015-05-29T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
+    <author>Team Koding</author>
+    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
+Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
+
+Ability to mark your VM(s) as Always-On
+Add more storage to your VM(s)
+Share our VM with other Koding users
+Create snapshots of your VM
+
+  Turn on &amp;quot;Always On&amp;quot; mode for your VM 
+Go to the VM settings modal.
+On the &amp;quot;General&amp;quot; tab, find the switch for &amp;quot;Always On&amp;quot; and turn it on. Your VM will
+now not turn off even if you log out. This also means your public IP address will now be static.
+
+
+  Adding more disk space 
+Head over to VM settings
+Click on the &amp;quot;Disk Usage&amp;quot; tab and click the &amp;quot;resize your VM&amp;quot; link  (as shown in the image below)
+
+This will open the resize modal from where you can resize your VM.
+
+  Adding more VMs (Only for Developer and Professional Plans) 
+Hover your mouse over the &amp;quot;Your VMs&amp;quot; label in the sidebar (as shown in the image below)
+
+The &amp;quot;+&amp;quot; icon will appear
+Click the icon to and you will be presented with the option to create a new VM. You can select the size and the region of the VM.
+
+
+  Share your VM with other Koding users Sharing your VM is very useful when you are doing &amp;quot;serial collaboration&amp;quot; which means one person takes over when the other is done. You can learn all about how to share your VMs through this guide.
+  Create Snapshots of your VM Snapshots are very handy when you want to save the state of your VM as a backup or as a starting point
+for a new VM. We have a full guide on this feature that will help you understand all the features.
 </description>
   </item>
   
@@ -1032,59 +1085,6 @@ In order to apply the changes we have made to the configuration, we will need to
 sudo service webmin restart
 And that's it!
 If you encounter any issues or have any questions please drop us an email here.
-</description>
-  </item>
-  
-  <item>
-    <title>What happened to 127.0.0.1?</title>
-    <link>//learn.koding.com/guides/what-happened-to-127-0-0-1</link>
-    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/what-happened-to-127-0-0-1</guid>
-    <author>Team Koding</author>
-    <description>Users who are new to Koding development are often confused about why they are 
-not seeing their NodeJS, Python, Ruby or etc Apps on their Koding Domain. This 
-guide will explain this common issue, and how to work around it.
-  0.0.0.0, your new 127.0.0.1 In short, use 0.0.0.0 for your Web Server IP instead of 127.0.0.1 on 
-Koding. Lets dig a little deeper though, and explain what this means, and why.
-  Why should i use 0.0.0.0? When you run web server applications they need an IP and Port to listen on.
-Many development applications will default the IP to 127.0.0.1, the 
-machine's localhost. This works fine on your Laptop, because you are 
-accessing your web server locally. When you use a Koding VM, you typically 
-access it from the Koding Domain, which means that you're accessing your 
-web application externally. Meaning that connecting to 
-hostname.username.koding.io:3000 will not respond with a web server 
-running on 127.0.0.1:3000.
-To solve this issue, we turn to our friendly 0.0.0.0 IP. Unlike 127.0.0.1, 
-this IP will accept connections from any source. Localhost, or external.
-  An example To help illustrate the above explanation, lets run a little NodeJS server and 
-use curl and our browser to request it from multiple locations. If you want 
-to follow along, copy the following code into a file named hello.js.
-require('http').createServer(function(req, res) {
-  res.end('Hello!\n');
-}).listen(3000, process.argv[2]);
-console.log('Sending greetings on ', process.argv[2] + ':3000');
-
-Now that we've creating our little Node server, lets open up our 
-Terminal and run it with the following.
-node hello.js 127.0.0.1
-Next, lets visit out domain at the following address, making sure to replace 
-username with your Koding username.
-http://hostname.username.koding.io:3000
-As you can see from the following two images, our web server is not responding 
-on our domain but it is responding with curl localhost.
-
-
-As we previous discussed, we need to bind our NodeJS server to the 0.0.0.0 
-address. Lets run our web server again with the proper address.
-node hello.js 0.0.0.0
-And open it up in our browser just like before.
-
-Success!
-Remember that the way in which you choose the IP of your Web Server can differ 
-greatly between web frameworks. In this above example, we wrote our own web 
-server, which accepts a single argument (the bind ip).
-Look at the documentation for your web framework of choice, as it will almost 
-certainly be different than what was used in this example.
 </description>
   </item>
   

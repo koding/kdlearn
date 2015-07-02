@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+        <loc>http://learn.koding.com/guides/what-happened-to-127-0-0-1</loc>
+        <lastmod>2015-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
         <loc>http://learn.koding.com/guides/2-factor-auth</loc>
         <lastmod>2015-06-25</lastmod>
         <changefreq>monthly</changefreq>
@@ -38,31 +44,25 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/hello-world/go</loc>
-        <lastmod>2015-06-06</lastmod>
-        <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
         <loc>http://learn.koding.com/guides/hello-world/c-sharp</loc>
         <lastmod>2015-06-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/hello-world/perl</loc>
+        <loc>http://learn.koding.com/guides/hello-world/ruby</loc>
+        <lastmod>2015-06-06</lastmod>
+        <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+        <loc>http://learn.koding.com/guides/hello-world/go</loc>
         <lastmod>2015-06-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
         <loc>http://learn.koding.com/guides/hello-world/java</loc>
-        <lastmod>2015-06-06</lastmod>
-        <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-        <loc>http://learn.koding.com/guides/hello-world/ruby</loc>
         <lastmod>2015-06-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -86,13 +86,19 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/what-happens-upon-upgrade</loc>
-        <lastmod>2015-05-29</lastmod>
+        <loc>http://learn.koding.com/guides/hello-world/perl</loc>
+        <lastmod>2015-06-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
         <loc>http://learn.koding.com/guides/koding-with-sublime-text</loc>
+        <lastmod>2015-05-29</lastmod>
+        <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+        <loc>http://learn.koding.com/guides/what-happens-upon-upgrade</loc>
         <lastmod>2015-05-29</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -129,12 +135,6 @@
   
   <url>
         <loc>http://learn.koding.com/guides/webmin-for-koding</loc>
-        <lastmod>2015-05-06</lastmod>
-        <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-        <loc>http://learn.koding.com/guides/what-happened-to-127-0-0-1</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
