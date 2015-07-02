@@ -45,11 +45,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?746" />
+    <link rel="stylesheet" href="/css/vendor.css?690" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?678" />
+    <link rel="stylesheet" href="/css/main.css?957" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?720" />
+    <link rel="stylesheet" href="/css/rwd.css?829" />
 	</head>
 	<body>
 
@@ -259,7 +259,7 @@
     <ul>
     
       <li class="">
-        <a href="/guides/what-happened-to-127-0-0-1">What happened to 127.0.0.1?</a>
+        <a href="/guides/getting-started-ruby">Getting Started with Ruby</a>
       </li>
     
       <li class="">
@@ -267,11 +267,7 @@
       </li>
     
       <li class="">
-        <a href="/guides/installing-ionic-framework">Installing Ionic Framework</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/getting-started-ruby">Getting Started with Ruby</a>
+        <a href="/guides/what-happened-to-127-0-0-1">What happened to 127.0.0.1?</a>
       </li>
     
       <li class="">
@@ -279,7 +275,7 @@
       </li>
     
       <li class="">
-        <a href="/guides/ide-introduction">Koding IDE Introduction</a>
+        <a href="/guides/installing-ionic-framework">Installing Ionic Framework</a>
       </li>
     
       <li class="">
@@ -287,7 +283,11 @@
       </li>
     
       <li class="">
-        <a href="/guides/hello-world/c-sharp">Hello World on Koding: C-Sharp (C#)</a>
+        <a href="/guides/ide-introduction">Koding IDE Introduction</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/hello-world/pascal">Hello World on Koding: Pascal</a>
       </li>
     
     </ul>
@@ -322,7 +322,7 @@
 <pre><code><span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &lt;iostream&gt;</span>
 
 <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
-    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;Hello World!&quot;</span>;
+    std::<span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;Hello World!&quot;</span>;
 }
 </code></pre><p>To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:</p>
 <pre><code>g++ -o hellopp helloworld<span class="hljs-class">.cpp</span>
@@ -336,7 +336,7 @@
 <pre><code><span class="hljs-collection">{}</span>
 </code></pre><p>The two curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
 group or function.</p>
-<pre><code><span class="hljs-built_in">std</span>::<span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;Hello World!&quot;</span>;
+<pre><code>std::<span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;Hello World!&quot;</span>;
 </code></pre><p>This line is a C++ statement. Statements are executed in the same order that they appear within a function&apos;s body.</p>
 <p>Your statement has three parts: first <code>std::cout</code>, which identifies the standard character output device; Second, the insertion operator <code>&lt;&lt;</code>, which indicates that what follows is inserted into <code>std::cout</code>. Finally, a sentence within quotes <code>&quot;Hello world!&quot;</code>, is the content inserted into the standard output. The semi-colon and the end shows that it is the end of the command.</p>
 <p>And that&apos;s it!</p>
