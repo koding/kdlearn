@@ -23,8 +23,8 @@ Many development applications will default the IP to `127.0.0.1`, the
 accessing your web server *locally*. When you use a Koding VM, you typically 
 access it from the Koding Domain, which means that you're accessing your 
 web application *externally*. Meaning that connecting to 
-`hostname.username.koding.io:3000` will *not* respond with a web server 
-running on `127.0.0.1:3000`.
+`hostname.username.koding.io:3001` will *not* respond with a web server 
+running on `127.0.0.1:3001`.
 
 To solve this issue, we turn to our friendly `0.0.0.0` IP. Unlike `127.0.0.1`, 
 this IP will accept connections from any source. Localhost, or external.
@@ -38,8 +38,8 @@ to follow along, copy the following code into a file named `hello.js`.
 ```javascript
 require('http').createServer(function(req, res) {
   res.end('Hello!\n');
-}).listen(3000, process.argv[2]);
-console.log('Sending greetings on ', process.argv[2] + ':3000');
+}).listen(3001, process.argv[2]);
+console.log('Sending greetings on ', process.argv[2] + ':3001');
 ```
 
 Now that we've creating our little Node server, lets open up our 
@@ -53,7 +53,7 @@ Next, lets visit our domain at the following address, making sure to replace
 `username` with your Koding username.
 
 ```
-http://hostname.username.koding.io:3000
+http://hostname.username.koding.io:3001
 ```
 
 As you can see from the following two images, our web server is not responding 
