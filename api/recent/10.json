@@ -1,15 +1,9 @@
 [
   {
-    "title": "Getting Started with Ruby",
-    "url": "https://learn.koding.com/guides/getting-started-ruby/index.html",
+    "title": "What is Koding?",
+    "url": "https://learn.koding.com/guides/what-is-koding/index.html",
     "author": "Team Koding",
-    "date": "2015-07-02T00:00:00.000Z"
-  },
-  {
-    "title": "Enabling 2-factor authentication on your Koding account",
-    "url": "https://learn.koding.com/guides/2-factor-auth/index.html",
-    "author": "Team Koding",
-    "date": "2015-07-02T00:00:00.000Z"
+    "date": "2015-07-06T00:00:00.000Z"
   },
   {
     "title": "What happened to 127.0.0.1?",
@@ -18,16 +12,22 @@
     "date": "2015-07-02T00:00:00.000Z"
   },
   {
+    "title": "Enabling 2-factor authentication on your Koding account",
+    "url": "https://learn.koding.com/guides/2-factor-auth/index.html",
+    "author": "Team Koding",
+    "date": "2015-06-25T00:00:00.000Z"
+  },
+  {
+    "title": "Getting Started with Ruby",
+    "url": "https://learn.koding.com/guides/getting-started-ruby/index.html",
+    "author": "Team Koding",
+    "date": "2015-06-22T00:00:00.000Z"
+  },
+  {
     "title": "Installing Ionic Framework",
     "url": "https://learn.koding.com/guides/installing-ionic-framework/index.html",
     "author": "Sergiu Butnarasu",
-    "date": "2015-06-20T00:00:00.000Z"
-  },
-  {
-    "title": "Setting up a Rails webserver",
-    "url": "https://learn.koding.com/guides/setting-rails-webserver/index.html",
-    "author": "Team Koding",
-    "date": "2015-06-20T00:00:00.000Z"
+    "date": "2015-06-22T00:00:00.000Z"
   },
   {
     "title": "Custom Domains with your Koding VM",
@@ -36,27 +36,27 @@
     "date": "2015-06-20T00:00:00.000Z"
   },
   {
+    "title": "Setting up a Rails webserver",
+    "url": "https://learn.koding.com/guides/setting-rails-webserver/index.html",
+    "author": "Team Koding",
+    "date": "2015-06-11T00:00:00.000Z"
+  },
+  {
     "title": "Koding IDE Introduction",
     "url": "https://learn.koding.com/guides/ide-introduction/index.html",
     "author": "Team Koding",
-    "date": "2015-06-20T00:00:00.000Z"
+    "date": "2015-06-11T00:00:00.000Z"
   },
   {
-    "title": "What happens upon upgrade?",
-    "url": "https://learn.koding.com/guides/what-happens-upon-upgrade/index.html",
+    "title": "Hello World on Koding: C-Sharp (C#)",
+    "url": "https://learn.koding.com/guides/hello-world/c-sharp/index.html",
     "author": "Team Koding",
-    "date": "2015-06-01T00:00:00.000Z"
+    "date": "2015-06-06T00:00:00.000Z"
   },
   {
-    "title": "Hello World on Koding: Perl",
-    "url": "https://learn.koding.com/guides/hello-world/perl/index.html",
+    "title": "Hello World on Koding: Go",
+    "url": "https://learn.koding.com/guides/hello-world/go/index.html",
     "author": "Team Koding",
-    "date": "2015-06-01T00:00:00.000Z"
-  },
-  {
-    "title": "Hello World on Koding: Ruby",
-    "url": "https://learn.koding.com/guides/hello-world/ruby/index.html",
-    "author": "Team Koding",
-    "date": "2015-06-01T00:00:00.000Z"
+    "date": "2015-06-06T00:00:00.000Z"
   }
 ]
