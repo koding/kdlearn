@@ -71,6 +71,6 @@ of that, what about load balancing and CDNs? Doing it all yourself can be hard.
 
 Well, Koding gives you that raw machine. It's not trying to make production 
 hosting for you, but rather it's giving you a completely open and powerful 
-environment to _make stuff_! So by all means _make_ your Wordpress blog on 
+environment to _make stuff_! So by all means _make_ your WordPress blog on 
 Koding, and if you really want to host it on Koding, upgrade your plan to 
 include an Always-On VM. Just be aware of the design goals.
