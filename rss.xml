@@ -6589,7 +6589,7 @@ Running vnstat without any options would simply show the total amount of data tr
   <item>
     <title>Are inactive accounts cleaned up?</title>
     <link>//learn.koding.com/faq/inactive-vms</link>
-    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-07-10T00:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/faq/inactive-vms</guid>
     <author></author>
     <description>  How does Koding ensure that the platform is scalable and performant for all users? We perodically clean up VMs of inactive accounts to ensure that the dormant resources
@@ -6600,7 +6600,7 @@ are not a part of the cleanup process even if they are unused.
    The cleanup process 
 If a user has not logged into their account in over 21 days, we send them an email notification
 requesting that they confirm their active status by simply logging back into their account.
-However, if by the 27th day the user is still dormant/inactive, another email is sent but this
+However, if by the 25th day the user is still dormant/inactive, another email is sent but this
 time with the notice that the inactive VM will be deleted (along with all the data inside it).
 On day 30, the dormant VM is deleted permanently.
 
