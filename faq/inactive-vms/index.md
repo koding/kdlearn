@@ -15,7 +15,7 @@ Koding for everyone who uses it regularly.
 ### The cleanup process
 1. If a user has not logged into their account in over 21 days, we send them an email notification
 requesting that they confirm their active status by simply logging back into their account.
-2. However, if by the 27th day the user is still dormant/inactive, another email is sent but this
+2. However, if by the 25th day the user is still dormant/inactive, another email is sent but this
 time with the notice that the inactive VM will be deleted (along with all the data inside it).
 3. On day 30, the dormant VM is deleted permanently.
 
@@ -27,4 +27,4 @@ we want to ensure that our regular users get the full benefit of the resources o
 > have accumulated when you were an active user so if you return at any point in the future,
 > you can reclaim the referral space.
 
-Maintaining your account is simple, just log back in!
+Maintaining your account is simple, just [log back in](https://koding.com)!
