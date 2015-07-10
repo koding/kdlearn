@@ -6452,13 +6452,21 @@ So to be clear , you may change your display name at any time but this does not 
   <item>
     <title>How can I close the VM panel/sidebar to get more screen space?</title>
     <link>//learn.koding.com/faq/sidebar-collapse</link>
-    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-07-10T00:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/faq/sidebar-collapse</guid>
     <author></author>
     <description>Our computer screens come in all shapes and sizes and if you don't have a high res screen,
 then the amount of space occupied by the VM panel/sidebar and the file tree can be a bit
 too much. Did you know that both the VM panel/sidebar and file tree can be collapsed?
-  Collapsing/Closing the VM Panel/Sidebar Double click the dividing column line between the VM panel and file tree and it will collapse
+There are two ways you can collapse the sidebar and filetree.
+
+Using collapse icons
+Double click the panel dividers
+
+  Using collapse icons Both the sidebar and the file tree have handy icons that will cause the respective panels to
+collapse. The animation below shows how.
+
+  Double clicking the panel dividers   Collapsing/Closing the VM Panel/Sidebar Double click the dividing column line between the VM panel and file tree and it will collapse
 the panel! To expand, click the logo. (see image below for an example).
   Collapsing/Closing the file tree Double click the dividing column line between the file tree and the IDE/Terminal and it will collapse
 the file tree panel! To expand, click the folder icon. (see image below for an example).
