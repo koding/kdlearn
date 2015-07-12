@@ -9,7 +9,7 @@
     "title": "Getting Started: File Uploads",
     "url": "http://learn.koding.com/guides/getting-started/file-upload/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-07-12T00:00:00.000Z"
   },
   {
     "title": "Getting Started: Workspaces",
@@ -24,22 +24,22 @@
     "date": "2015-05-06T00:00:00.000Z"
   },
   {
+    "title": "Getting Started: The Activity Feed",
+    "url": "http://learn.koding.com/guides/getting-started/activity-feed/index.html",
+    "author": "Team Koding",
+    "date": "2015-05-06T00:00:00.000Z"
+  },
+  {
     "title": "Understanding Snapshots",
     "url": "http://learn.koding.com/guides/vm-snapshot/index.html",
     "author": "Team Koding",
     "date": "2015-05-13T00:00:00.000Z"
   },
   {
-    "title": "What is Koding?",
-    "url": "http://learn.koding.com/guides/what-is-koding/index.html",
+    "title": "Enabling 2-factor authentication on your Koding account",
+    "url": "http://learn.koding.com/guides/2-factor-auth/index.html",
     "author": "Team Koding",
-    "date": "2015-07-06T00:00:00.000Z"
-  },
-  {
-    "title": "Getting Started: The Activity Feed",
-    "url": "http://learn.koding.com/guides/getting-started/activity-feed/index.html",
-    "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-06-25T00:00:00.000Z"
   },
   {
     "title": "Understanding the VM settings modal",

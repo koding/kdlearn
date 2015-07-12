@@ -18,6 +18,46 @@
   <language>en</language>
   
   <item>
+    <title>Getting Started: File Uploads</title>
+    <link>//learn.koding.com/guides/getting-started/file-upload</link>
+    <pubDate>"2015-07-12T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/file-upload</guid>
+    <author>Team Koding</author>
+    <description>In this guide we'll take a look at uploading your files and projects to
+Koding, in multiple ways. Lets get started!
+  Uploading with Drag and Drop The simplest way, is simply by using Drag and Drop file upload! To do
+this, open your Koding IDE, locate your FileTree on the left hand
+side, and drag a file from your Desktop onto the FileTree. An example
+image is below.
+
+ tipYou can only upload files up to 100MB at one time. A file over 100MB will not be 
+allowed for upload via this method. If yo have larger files, you should use the 
+FTP upload method described below.
+ After you let go of the file, your file will be uploaded to your
+~/Uploads directory. If ~/Uploads does not exist, it will be automatically
+created.
+ tipFiles uploaded this way are not automatically available for
+serving over your VMs web server as the ~/Uploads directory is not inside
+~/Web (the default web root for Koding VMs). If you wish to use any uploaded
+files in your web project, please move them to a directory under ~/Web.
+   Uploading with FTP FTP is another common way to upload files to your VM. Before uploading
+with FTP though, you'll need to set up an FTP Server on your VM.
+The FTP Guide will take you through both the installation, and
+connecting process, so check it out!
+  Uploading with SCP SCP is is a tool that will copy files from your local Unix filesystem
+to a remote filesystem over SSH connections. To use it, make sure you
+have SSH setup with your Koding VM beforehand. Instructions can be found
+here if needed.
+After that, use the following command to copy a local file to your VM.
+scp LOCAL_FILE USERNAME.koding.io:REMOTE_FILE
+Replace LOCAL_FILE with your local file location, USERNAME with your
+Koding Username, and REMOTE_FILE with your Remote File location. An
+example of this command can be seen below.
+scp ~/my_image.png joshmurray.koding.io:~/my_image.png
+</description>
+  </item>
+  
+  <item>
     <title>What is Koding?</title>
     <link>//learn.koding.com/guides/what-is-koding</link>
     <pubDate>"2015-07-06T00:00:00.000Z"</pubDate>
@@ -168,6 +208,48 @@ enter your Koding password and click the &amp;quot;Disable&amp;quot; button
   </item>
   
   <item>
+    <title>Installing Ionic Framework</title>
+    <link>//learn.koding.com/guides/installing-ionic-framework</link>
+    <pubDate>"2015-06-22T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/installing-ionic-framework</guid>
+    <author>Sergiu Butnarasu</author>
+    <description>This guild will explain how to install Ionic Framework  and how to run the application in your browser.
+To install Ionic Framework you must update your packages and have nodejs and npm installed on your Koding VM:
+
+Update packages
+
+sudo apt-get update
+
+Install nodejs
+
+sudo apt-get install nodejs
+
+Install npm
+
+sudo apt-get install npm
+ tipFollow this guide and this guide to learn more on how to get started with nodejs and npm on your Koding VM.
+   Step 1 - Install Ionic Framework After installing npm you will be able to install Ionic Framwork on your Koding VM. Write the following command in your terminal:
+sudo npm install -g cordova ionic
+ tipCheckout this guide for more info regarding Apache Cordova on your Koding VM.
+   Step 2 - Navigate to Applications directory Navigate to your application directory, where you will create the ionic app. To do this, write in terminal:
+cd Applications
+  Step 3 - Create your Ionic application Now you can create your application using the following command:
+sudo ionic start myApp
+  Step 4 - Navigate to the myApp directory To be able to run you application, first you'll need to navigate to your application directory:
+cd myApp
+  Step 5 - Set address On this step you can specify what address your browser will connect to:
+ionic address
+  Step 6 - Start a local development server Now you can start a local development server to test your Ionic application. To do this, write in your terminal:
+ionic serve --all
+  Step 7 - Access your running dev server url: Finally you can access your dev server url:
+http://KODING_USERNAME.koding.io:8100
+Find out more about your VM hostname here.
+And that's it.
+If you encounter any issues or have any questions please drop an email here
+</description>
+  </item>
+  
+  <item>
     <title>Getting Started with Ruby</title>
     <link>//learn.koding.com/guides/getting-started-ruby</link>
     <pubDate>"2015-06-22T00:00:00.000Z"</pubDate>
@@ -309,48 +391,6 @@ out the Official Documentation. And as always, Happy Koding!
   </item>
   
   <item>
-    <title>Installing Ionic Framework</title>
-    <link>//learn.koding.com/guides/installing-ionic-framework</link>
-    <pubDate>"2015-06-22T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/installing-ionic-framework</guid>
-    <author>Sergiu Butnarasu</author>
-    <description>This guild will explain how to install Ionic Framework  and how to run the application in your browser.
-To install Ionic Framework you must update your packages and have nodejs and npm installed on your Koding VM:
-
-Update packages
-
-sudo apt-get update
-
-Install nodejs
-
-sudo apt-get install nodejs
-
-Install npm
-
-sudo apt-get install npm
- tipFollow this guide and this guide to learn more on how to get started with nodejs and npm on your Koding VM.
-   Step 1 - Install Ionic Framework After installing npm you will be able to install Ionic Framwork on your Koding VM. Write the following command in your terminal:
-sudo npm install -g cordova ionic
- tipCheckout this guide for more info regarding Apache Cordova on your Koding VM.
-   Step 2 - Navigate to Applications directory Navigate to your application directory, where you will create the ionic app. To do this, write in terminal:
-cd Applications
-  Step 3 - Create your Ionic application Now you can create your application using the following command:
-sudo ionic start myApp
-  Step 4 - Navigate to the myApp directory To be able to run you application, first you'll need to navigate to your application directory:
-cd myApp
-  Step 5 - Set address On this step you can specify what address your browser will connect to:
-ionic address
-  Step 6 - Start a local development server Now you can start a local development server to test your Ionic application. To do this, write in your terminal:
-ionic serve --all
-  Step 7 - Access your running dev server url: Finally you can access your dev server url:
-http://KODING_USERNAME.koding.io:8100
-Find out more about your VM hostname here.
-And that's it.
-If you encounter any issues or have any questions please drop an email here
-</description>
-  </item>
-  
-  <item>
     <title>Custom Domains with your Koding VM</title>
     <link>//learn.koding.com/guides/domains</link>
     <pubDate>"2015-06-20T00:00:00.000Z"</pubDate>
@@ -391,35 +431,6 @@ an IP should work, as long as your VM is not shutdown. For more information
 on Always-On VMs, see the Pricing Page.
 Once you are done pointing your domain to your VM, you can experiment with
 pointing multiple domains to the same VM using as described in this guide.
-</description>
-  </item>
-  
-  <item>
-    <title>Setting up a Rails webserver</title>
-    <link>//learn.koding.com/guides/setting-rails-webserver</link>
-    <pubDate>"2015-06-11T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-rails-webserver</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Rails using just one command:
-kpm install rails
-
-  Getting started Before you can start the Rails install process, you'll need to update all of the apt-get packages:
-sudo apt-get update
-Then make sure you have Ruby installed on your VM. You can install it by following this guide.
-  Installing You can install Rails using the bellow command:
-sudo gem install rails
-  Usage Creating a Rails project is really easy. It just takes one command and you're good to go:
-rails new goodbyetolocalhost
-cd goodbyetolocalhost
-You can run the Rails webserver like so:
-rails server -b 0.0.0.0
-You will now be able to access the Rails webserver by following a similar URL:
-http://KODING_USERNAME.koding.io:3000
-Find out more about your VM hostname here.
-Rails should listen to 0.0.0.0:3000 by default. If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:3000. You can check this, using the netstat command in another terminal window and the bellow command:
-sudo netstat -tnlp
-And that's it!
-If you encounter any issues or have any questions please drop us an email here.
 </description>
   </item>
   
@@ -477,24 +488,31 @@ Explore it today and if you ever need help with the IDE you can just click on th
   </item>
   
   <item>
-    <title>Hello World on Koding: Ruby</title>
-    <link>//learn.koding.com/guides/hello-world/ruby</link>
-    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/ruby</guid>
+    <title>Setting up a Rails webserver</title>
+    <link>//learn.koding.com/guides/setting-rails-webserver</link>
+    <pubDate>"2015-06-11T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-rails-webserver</guid>
     <author>Team Koding</author>
-    <description>  Introduction Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, and Lisp. It supports multiple programming paradigms, including functional, object-oriented, and imperative. It also has a dynamic type system and automatic memory management.
-  Implementation The first thing you need to do is to create a file called helloworld.rb in your Koding VM and paste the bellow snippet into it.
-#!/usr/bin/ruby
+    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Rails using just one command:
+kpm install rails
 
-puts 'Hello, world!'
-To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
-ruby helloworld.rb
-  Explanation #!/usr/bin/ruby
-The shebang line is read by the program loader to determine what program to use to run the script. This line cannot be preceded by any blank lines or any leading spaces.
-puts 'Hello, world!'
-The above line is pretty self explanatory. It will put something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
+  Getting started Before you can start the Rails install process, you'll need to update all of the apt-get packages:
+sudo apt-get update
+Then make sure you have Ruby installed on your VM. You can install it by following this guide.
+  Installing You can install Rails using the bellow command:
+sudo gem install rails
+  Usage Creating a Rails project is really easy. It just takes one command and you're good to go:
+rails new goodbyetolocalhost
+cd goodbyetolocalhost
+You can run the Rails webserver like so:
+rails server -b 0.0.0.0
+You will now be able to access the Rails webserver by following a similar URL:
+http://KODING_USERNAME.koding.io:3000
+Find out more about your VM hostname here.
+Rails should listen to 0.0.0.0:3000 by default. If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:3000. You can check this, using the netstat command in another terminal window and the bellow command:
+sudo netstat -tnlp
 And that's it!
-You just wrote and ran your first Hello World in Ruby.
+If you encounter any issues or have any questions please drop us an email here.
 </description>
   </item>
   
@@ -583,24 +601,6 @@ fmt.Println(&amp;quot;Hello World&amp;quot;)
 This statement is made of three pieces. First you access another function inside of the fmt package called Println (that's the fmt.Println piece, Println means Print Line). Then you create a new string that contains Hello World and call that function with the string as the first and only argument.
 And that's it!
 You just wrote and ran your first Hello World in Go.
-</description>
-  </item>
-  
-  <item>
-    <title>Hello World on Koding: Python</title>
-    <link>//learn.koding.com/guides/hello-world/python</link>
-    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/python</guid>
-    <author>Team Koding</author>
-    <description>  Introduction Python is a widely used general-purpose, high-level programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java. The language provides constructs intended to enable clear programs on both a small and large scale.
-  Implementation The first thing you need to do is to create a file called helloworld.py in your Koding VM and paste the bellow snippet into it.
-print &amp;quot;Hello World!&amp;quot;
-To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
-python helloworld.py
-  Explanation print &amp;quot;Hello World!&amp;quot;
-Since Python emphasizes code readability, the above line is pretty self explanatory. It will print out something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
-And that's it!
-You just wrote and ran your first Hello World in Python.
 </description>
   </item>
   
@@ -758,6 +758,85 @@ You just wrote and ran your first Hello World in PHP.
   </item>
   
   <item>
+    <title>Hello World on Koding: Python</title>
+    <link>//learn.koding.com/guides/hello-world/python</link>
+    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/python</guid>
+    <author>Team Koding</author>
+    <description>  Introduction Python is a widely used general-purpose, high-level programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java. The language provides constructs intended to enable clear programs on both a small and large scale.
+  Implementation The first thing you need to do is to create a file called helloworld.py in your Koding VM and paste the bellow snippet into it.
+print &amp;quot;Hello World!&amp;quot;
+To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
+python helloworld.py
+  Explanation print &amp;quot;Hello World!&amp;quot;
+Since Python emphasizes code readability, the above line is pretty self explanatory. It will print out something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
+And that's it!
+You just wrote and ran your first Hello World in Python.
+</description>
+  </item>
+  
+  <item>
+    <title>Hello World on Koding: Ruby</title>
+    <link>//learn.koding.com/guides/hello-world/ruby</link>
+    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/ruby</guid>
+    <author>Team Koding</author>
+    <description>  Introduction Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, and Lisp. It supports multiple programming paradigms, including functional, object-oriented, and imperative. It also has a dynamic type system and automatic memory management.
+  Implementation The first thing you need to do is to create a file called helloworld.rb in your Koding VM and paste the bellow snippet into it.
+#!/usr/bin/ruby
+
+puts 'Hello, world!'
+To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
+ruby helloworld.rb
+  Explanation #!/usr/bin/ruby
+The shebang line is read by the program loader to determine what program to use to run the script. This line cannot be preceded by any blank lines or any leading spaces.
+puts 'Hello, world!'
+The above line is pretty self explanatory. It will put something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
+And that's it!
+You just wrote and ran your first Hello World in Ruby.
+</description>
+  </item>
+  
+  <item>
+    <title>What happens upon upgrade?</title>
+    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
+    <pubDate>"2015-05-29T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
+    <author>Team Koding</author>
+    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
+Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
+
+Ability to mark your VM(s) as Always-On
+Add more storage to your VM(s)
+Share our VM with other Koding users
+Create snapshots of your VM
+
+  Turn on &amp;quot;Always On&amp;quot; mode for your VM 
+Go to the VM settings modal.
+On the &amp;quot;General&amp;quot; tab, find the switch for &amp;quot;Always On&amp;quot; and turn it on. Your VM will
+now not turn off even if you log out. This also means your public IP address will now be static.
+
+
+  Adding more disk space 
+Head over to VM settings
+Click on the &amp;quot;Disk Usage&amp;quot; tab and click the &amp;quot;resize your VM&amp;quot; link  (as shown in the image below)
+
+This will open the resize modal from where you can resize your VM.
+
+  Adding more VMs (Only for Developer and Professional Plans) 
+Hover your mouse over the &amp;quot;Your VMs&amp;quot; label in the sidebar (as shown in the image below)
+
+The &amp;quot;+&amp;quot; icon will appear
+Click the icon to and you will be presented with the option to create a new VM. You can select the size and the region of the VM.
+
+
+  Share your VM with other Koding users Sharing your VM is very useful when you are doing &amp;quot;serial collaboration&amp;quot; which means one person takes over when the other is done. You can learn all about how to share your VMs through this guide.
+  Create Snapshots of your VM Snapshots are very handy when you want to save the state of your VM as a backup or as a starting point
+for a new VM. We have a full guide on this feature that will help you understand all the features.
+</description>
+  </item>
+  
+  <item>
     <title>Koding with Sublime Text</title>
     <link>//learn.koding.com/guides/koding-with-sublime-text</link>
     <pubDate>"2015-05-29T00:00:00.000Z"</pubDate>
@@ -849,45 +928,6 @@ Right click the folder, select SFTP/FTP. You will now see many more options than
 
 
 And there you have it, a folder synced with your Koding VM.
-</description>
-  </item>
-  
-  <item>
-    <title>What happens upon upgrade?</title>
-    <link>//learn.koding.com/guides/what-happens-upon-upgrade</link>
-    <pubDate>"2015-05-29T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/what-happens-upon-upgrade</guid>
-    <author>Team Koding</author>
-    <description>You just upgraded your account, awesome (and thanks!) but what happens now?
-Based on the type of plan you selected on the Pricing page you now have access to more resources as compared to your free Koding account. These resources fall into the following categories:
-
-Ability to mark your VM(s) as Always-On
-Add more storage to your VM(s)
-Share our VM with other Koding users
-Create snapshots of your VM
-
-  Turn on &amp;quot;Always On&amp;quot; mode for your VM 
-Go to the VM settings modal.
-On the &amp;quot;General&amp;quot; tab, find the switch for &amp;quot;Always On&amp;quot; and turn it on. Your VM will
-now not turn off even if you log out. This also means your public IP address will now be static.
-
-
-  Adding more disk space 
-Head over to VM settings
-Click on the &amp;quot;Disk Usage&amp;quot; tab and click the &amp;quot;resize your VM&amp;quot; link  (as shown in the image below)
-
-This will open the resize modal from where you can resize your VM.
-
-  Adding more VMs (Only for Developer and Professional Plans) 
-Hover your mouse over the &amp;quot;Your VMs&amp;quot; label in the sidebar (as shown in the image below)
-
-The &amp;quot;+&amp;quot; icon will appear
-Click the icon to and you will be presented with the option to create a new VM. You can select the size and the region of the VM.
-
-
-  Share your VM with other Koding users Sharing your VM is very useful when you are doing &amp;quot;serial collaboration&amp;quot; which means one person takes over when the other is done. You can learn all about how to share your VMs through this guide.
-  Create Snapshots of your VM Snapshots are very handy when you want to save the state of your VM as a backup or as a starting point
-for a new VM. We have a full guide on this feature that will help you understand all the features.
 </description>
   </item>
   
@@ -1101,68 +1141,6 @@ to install the relevant software that you use and have a snapshot that is ready 
 To create a new VM using a snapshot, simply add a new VM (if your plan allows) and use an existing
 snapshot as the starting point (as shown in the image below).
 
-</description>
-  </item>
-  
-  <item>
-    <title>Using Github with Koding</title>
-    <link>//learn.koding.com/guides/using-github</link>
-    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/using-github</guid>
-    <author>Team Koding</author>
-    <description>This guide will cover the basics on how to get started with Github on you Koding VM using Ungit.
-  What is Ungit? Ungit is a web based interface for Github made by Fredrik Noren that runs on any platform. It has a clean and intuitive UI that makes it easy to understand git. It runs on any platform that node.js &amp;amp; git supports and it works well with GitHub.
-  Getting started Before we begin please make sure you have the Koding Package Manager (KPM) installed on your VM. Follow this guide to understand what KPM is and how to install it so you will be able to continue with this guide.
-  Setup  tipgit is installed by default with every Koding VM. So you will be able to get started right away.
- Before you can get started with Github on your Koding VM you need to first setup the environment to be able to work properly with Github.
-You'll need to generate an SSH key that will be used to authenticate with Github. You can use the following command to generate one:
-ssh-keygen -t rsa -C &amp;quot;your_email@example.com&amp;quot;
-After that you'll need to copy your Public Key, usually found in ~/.ssh/id_rsa.pub, and copy it in its entirety. Note the .pub in the filename. This is the public key, and it is very important that you copy this one. It will look something like this.
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyhKankDE4DRM86JqZ3JPdWDeqg+Tbzlql
-TLfOKTeokhRoMgy5WoMY/ZWUVES3d2vSHHwW3cwWlELmVdc3Ow57boZv3fOsPhybYHVRTClX
-Yr1ncSxyTvjvCfvV5q22aIxHPWQ353543ssda87sa+85XEa4VnveJsEzxBZl4oJ4GB0AGa48
-+UdIqutrgZu7D7JCK+Yl228X+3bJf3ddlqDaKaVXPivvvYqImK6ZwFsxh2lNO4E8IOd3OSK9
-zv6i+io8PxWmwP0tLFokxulAI8Td1sOPBE9s9bdJ5c2T/GfGjKF+aNKsd33TsYEjjc/plMZm
-RRrOgQwre6OAkgMvyV2X your_email@example.com
-Head over to this page on Github and add the SSH key, that you just generated.
-After that run the following command, in your Koding Terminal, to install the necessary dependency:
-kpm install ungit
-This will install a visually friendly interface for Github, where you will be able to interact with Github and your Koding VM. Think of it as a bridge between Koding and Github.
-After the installation process has finished you will need to start the Github interface using the following command:
-ungit
-When the process has finished you should see a link outputted in the Terminal similar to this one:
-your_koding_username.koding.io:8448
-Copy that link and open it in a separate browser window. You should see something like this:
-
-  Basic interaction In the top area of the screen, in the input box you will be able to input the path to a local existing repository on your Koding VM or start with a fresh empty one.
- alertPlease note that the input field has autocomplete
- Start with a basic path like this one. Just make sure that folder exists before you input the path. If that folder doesn’t exist then you will be able to create it using this interface.
-/home/your_koding_username/Web/demo
-After that hit Enter || Return
-You should see something like this:
-
-Now, you can either transform that folder into a git repository or clone a repository in a subfolder in that folder.
-Let’s transform this folder into a git repository. After transformation is complete just hit the little + sign at the top next to path, in order to see repository on the main view of the interface.
-Before we continue, please make sure you have a Github repository ready in your Github account. Now you have to link that repository to your local Koding one using the Add new remote modal.
-
-Copy the URL from your Github repository in this modal window and hit Submit.
-Now head over to the Koding IDE and start adding code to your newly created repository. After you finished with your changes, you should already see you changes in the Ungit interface, just ready to be committed to your Github repository.
-After you have named your commit, hit the commit button.
-Now you can push your changes to the desired branch in your Github repository. Click on the name of the branch and then on the Push button.
-
-You will be required to input your Github username and password before you can push your changes.
-
-Input them, so you can continue with pushing your changes. After that you should see a successful commit of your changes.
-Cloning an existing repository is a really straightforward process.
-In order to clone a repository we need to have a location where we want to store our cloned repository.
-Following the first step from above, in the input field at the top of Ungit select your desired path. For eg.
-/home/your_koding_username/Web
-Now you can clone any desired repository in this folder using this form:
-
-Just copy the repository URL from Github, in the input field and then hit Clone repository.
-Wait for the cloning process to finish and now you should see all the commit history and you are now able to work on that repository, perform commits, push changes, using the Koding IDE.
- alertWhenever you turn on Koding VM you will have to run the ungit command to get this interface started.
- If you encounter any issues or have any questions please drop us an email here.
 </description>
   </item>
   
@@ -1926,45 +1904,64 @@ That's all there is to it! Enjoy!
   </item>
   
   <item>
-    <title>Webmin for Koding</title>
-    <link>//learn.koding.com/guides/webmin-for-koding</link>
+    <title>Using Github with Koding</title>
+    <link>//learn.koding.com/guides/using-github</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/webmin-for-koding</guid>
-    <author>Mike Spick</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Webmin using just one command:
-kpm install webmin
+    <guid isPermaLink="true">//learn.koding.com/guides/using-github</guid>
+    <author>Team Koding</author>
+    <description>This guide will cover the basics on how to get started with Github on you Koding VM using Ungit.
+  What is Ungit? Ungit is a web based interface for Github made by Fredrik Noren that runs on any platform. It has a clean and intuitive UI that makes it easy to understand git. It runs on any platform that node.js &amp;amp; git supports and it works well with GitHub.
+  Getting started Before we begin please make sure you have the Koding Package Manager (KPM) installed on your VM. Follow this guide to understand what KPM is and how to install it so you will be able to continue with this guide.
+  Setup  tipgit is installed by default with every Koding VM. So you will be able to get started right away.
+ Before you can get started with Github on your Koding VM you need to first setup the environment to be able to work properly with Github.
+You'll need to generate an SSH key that will be used to authenticate with Github. You can use the following command to generate one:
+ssh-keygen -t rsa -C &amp;quot;your_email@example.com&amp;quot;
+After that you'll need to copy your Public Key, usually found in ~/.ssh/id_rsa.pub, and copy it in its entirety. Note the .pub in the filename. This is the public key, and it is very important that you copy this one. It will look something like this.
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyhKankDE4DRM86JqZ3JPdWDeqg+Tbzlql
+TLfOKTeokhRoMgy5WoMY/ZWUVES3d2vSHHwW3cwWlELmVdc3Ow57boZv3fOsPhybYHVRTClX
+Yr1ncSxyTvjvCfvV5q22aIxHPWQ353543ssda87sa+85XEa4VnveJsEzxBZl4oJ4GB0AGa48
++UdIqutrgZu7D7JCK+Yl228X+3bJf3ddlqDaKaVXPivvvYqImK6ZwFsxh2lNO4E8IOd3OSK9
+zv6i+io8PxWmwP0tLFokxulAI8Td1sOPBE9s9bdJ5c2T/GfGjKF+aNKsd33TsYEjjc/plMZm
+RRrOgQwre6OAkgMvyV2X your_email@example.com
+Head over to this page on Github and add the SSH key, that you just generated.
+After that run the following command, in your Koding Terminal, to install the necessary dependency:
+kpm install ungit
+This will install a visually friendly interface for Github, where you will be able to interact with Github and your Koding VM. Think of it as a bridge between Koding and Github.
+After the installation process has finished you will need to start the Github interface using the following command:
+ungit
+When the process has finished you should see a link outputted in the Terminal similar to this one:
+your_koding_username.koding.io:8448
+Copy that link and open it in a separate browser window. You should see something like this:
 
-  The Details This guide will cover the installation of Webmin on your Koding VM.
-Webmin is a web-based adminstration tool for Unix based operating systems.
-This tool will allow you to modify and control applications like Apache, and view/modify your MySQL DBs. Webmin also allows you to modify other system tools
-from the web like users, passwords, iptables, log file rotations and more!
-If you'd like to read more about Webmin, you can check out their website here.
-  Downloading and installing Webmin Alright, first thing's first, we want to add the webmin team's repo to our apt sources. Run the following command to open apt's source list for editing.
-sudo vi /etc/apt/sources.list
-Press i to enter the vi input mode to edit the list. Add the following to the bottom of the file.
-deb http://download.webmin.com/download/repository sarge contrib
-It should look like below when you are done.
+  Basic interaction In the top area of the screen, in the input box you will be able to input the path to a local existing repository on your Koding VM or start with a fresh empty one.
+ alertPlease note that the input field has autocomplete
+ Start with a basic path like this one. Just make sure that folder exists before you input the path. If that folder doesn’t exist then you will be able to create it using this interface.
+/home/your_koding_username/Web/demo
+After that hit Enter || Return
+You should see something like this:
 
-After adding this line press ESC to exit input mode. Then type :wq to write(save) and quit the file.
-Now that apt has the source, lets run the following command to download and install the key needed for Webmin.
-wget -q http://www.webmin.com/jcameron-key.asc -O- | sudo apt-key add -
-We can now update apt, and install Webmin. You can use the following commands.
-sudo apt-get update
+Now, you can either transform that folder into a git repository or clone a repository in a subfolder in that folder.
+Let’s transform this folder into a git repository. After transformation is complete just hit the little + sign at the top next to path, in order to see repository on the main view of the interface.
+Before we continue, please make sure you have a Github repository ready in your Github account. Now you have to link that repository to your local Koding one using the Add new remote modal.
 
-sudo apt-get install webmin
-You will be prompted if you want to continue, press Y to accept.
-Once the install is complete, you will see the following as the final output:
+Copy the URL from your Github repository in this modal window and hit Submit.
+Now head over to the Koding IDE and start adding code to your newly created repository. After you finished with your changes, you should already see you changes in the Ungit interface, just ready to be committed to your Github repository.
+After you have named your commit, hit the commit button.
+Now you can push your changes to the desired branch in your Github repository. Click on the name of the branch and then on the Push button.
 
-Make note of the url given here as you will need it to access Webmin once it is setup.
-  Configuration Congratulations! Webmin is now installed on your Koding VM. We only have a few things left to do before it is useable. We need to change the SSL setting in the miniserv config file from 1 to 0. Enter the following command to open the config file for editing.
-sudo vim /etc/webmin/miniserv.conf
-Once the file is open press i to enter input mode. Use the arrow keys to navigate to the line SSL=1 change this line to read SSL=0. Again, hit ESC and type :wq to write(save) and quit the file.
-The file should look like below before editing.
+You will be required to input your Github username and password before you can push your changes.
 
-In order to apply the changes we have made to the configuration, we will need to restart the webmin service. To do that enter the following command.
-sudo service webmin restart
-And that's it!
-If you encounter any issues or have any questions please drop us an email here.
+Input them, so you can continue with pushing your changes. After that you should see a successful commit of your changes.
+Cloning an existing repository is a really straightforward process.
+In order to clone a repository we need to have a location where we want to store our cloned repository.
+Following the first step from above, in the input field at the top of Ungit select your desired path. For eg.
+/home/your_koding_username/Web
+Now you can clone any desired repository in this folder using this form:
+
+Just copy the repository URL from Github, in the input field and then hit Clone repository.
+Wait for the cloning process to finish and now you should see all the commit history and you are now able to work on that repository, perform commits, push changes, using the Koding IDE.
+ alertWhenever you turn on Koding VM you will have to run the ungit command to get this interface started.
+ If you encounter any issues or have any questions please drop us an email here.
 </description>
   </item>
   
@@ -2290,57 +2287,45 @@ If you encounter any issues or have any questions please drop us an email here.
   </item>
   
   <item>
-    <title>A guide to Docker</title>
-    <link>//learn.koding.com/guides/what-is-docker</link>
+    <title>Webmin for Koding</title>
+    <link>//learn.koding.com/guides/webmin-for-koding</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/what-is-docker</guid>
-    <author>Team Koding</author>
-    <description>Docker is a platform that helps developers build apps in whatever language they feel comfortable using and using any toolchain they want. Using Docker developers can build, ship and run distributed applications because it enables them to quickly put together an app by eliminating the stress between development, QA and production environments.
-A developer that uses Docker can run his / hers app anywhere without the fear of it not performing as it should.
-Apps that are built using Docker are completely portable and can run anywhere.
-  Docker apps Anyone can get started with Docker by checking out one of the 13,000+ apps that are available in the Docker Hub. You can get started working on WordPress or a new nodejs project in just a few seconds without the hassle of having to install any other dependencies (other then Docker of course) on your Koding VM.
-  Benefits The difference between a virtualized application and the Docker Engine container is that the first one includes not only the app and the necessary binaries and libraries but it contains the guest OS as well. The later runs as an separate process on the OS and thus it has the resources separation and allocation of a VM but is much more portable.
-  Installing Docker on Koding Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Docker using just one command:
-kpm install docker
+    <guid isPermaLink="true">//learn.koding.com/guides/webmin-for-koding</guid>
+    <author>Mike Spick</author>
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Webmin using just one command:
+kpm install webmin
 
-The version of Ubuntu that is installed on each Koding VM comes with a docker.io package and it should install Docker 0.9.1.
-We can install Docker on our Koding VM using the following commands:
+  The Details This guide will cover the installation of Webmin on your Koding VM.
+Webmin is a web-based adminstration tool for Unix based operating systems.
+This tool will allow you to modify and control applications like Apache, and view/modify your MySQL DBs. Webmin also allows you to modify other system tools
+from the web like users, passwords, iptables, log file rotations and more!
+If you'd like to read more about Webmin, you can check out their website here.
+  Downloading and installing Webmin Alright, first thing's first, we want to add the webmin team's repo to our apt sources. Run the following command to open apt's source list for editing.
+sudo vi /etc/apt/sources.list
+Press i to enter the vi input mode to edit the list. Add the following to the bottom of the file.
+deb http://download.webmin.com/download/repository sarge contrib
+It should look like below when you are done.
 
-We update the package list
-
+After adding this line press ESC to exit input mode. Then type :wq to write(save) and quit the file.
+Now that apt has the source, lets run the following command to download and install the key needed for Webmin.
+wget -q http://www.webmin.com/jcameron-key.asc -O- | sudo apt-key add -
+We can now update apt, and install Webmin. You can use the following commands.
 sudo apt-get update
 
-Install Docker
+sudo apt-get install webmin
+You will be prompted if you want to continue, press Y to accept.
+Once the install is complete, you will see the following as the final output:
 
-sudo apt-get install docker.io
+Make note of the url given here as you will need it to access Webmin once it is setup.
+  Configuration Congratulations! Webmin is now installed on your Koding VM. We only have a few things left to do before it is useable. We need to change the SSL setting in the miniserv config file from 1 to 0. Enter the following command to open the config file for editing.
+sudo vim /etc/webmin/miniserv.conf
+Once the file is open press i to enter input mode. Use the arrow keys to navigate to the line SSL=1 change this line to read SSL=0. Again, hit ESC and type :wq to write(save) and quit the file.
+The file should look like below before editing.
 
-We create a link
-
-sudo ln -sf /usr/bin/docker.io /usr/local/bin/docker
-
-We need to edit the docker file in order to continue
-
-sudo sed -i '$acomplete -F _docker docker' /etc/bash_completion.d/docker.io
-
-And we now execute that file
-
-source /etc/bash_completion.d/docker.io
-
-After that we need to add the Docker repo key to the local keychain
-
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9
-
-The last step is to add the Docker repo to the apt sources list, update and install the lxc-docker package. You can do that using the following commands
-
-sudo sh -c &amp;quot;echo deb https://get.docker.com/ubuntu docker main\
-&amp;gt; /etc/apt/sources.list.d/docker.list&amp;quot;
-sudo apt-get update
-sudo apt-get install lxc-docker
- tipYou can use the below command, that uses curl, for an easier installation process:
- curl -sSL https://get.docker.com/ubuntu/ | sudo sh
-If you made it to this point you can run this command to check if Docker is indeed installed and works properly:
-sudo docker run -i -t ubuntu /bin/bash
-If you have any question or issues please email us at support@koding.com and we'll gladly help.
+In order to apply the changes we have made to the configuration, we will need to restart the webmin service. To do that enter the following command.
+sudo service webmin restart
+And that's it!
+If you encounter any issues or have any questions please drop us an email here.
 </description>
   </item>
   
@@ -2855,38 +2840,57 @@ If you encounter any issues or have any questions please drop us an email here.
   </item>
   
   <item>
-    <title>Where is my Web Server Root?</title>
-    <link>//learn.koding.com/guides/where-is-my-webserver-root</link>
+    <title>A guide to Docker</title>
+    <link>//learn.koding.com/guides/what-is-docker</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/where-is-my-webserver-root</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/what-is-docker</guid>
     <author>Team Koding</author>
-    <description>Koding VMs come with Apache preconfigured and serve a sample site to get you 
-started. The files for this site are found in what is typically called your 
-Web Server Root. This is the directory that Apache is serving up files from, 
-and it is located within your Home directory, under the Web directory. The 
-full path being:
-/home/username/Web
-Replace username with your username.
-You can modify the contents of this directory with the Koding 
-Terminal, or the Ace Editor. In this example, we'll use Ace 
-to browse the files with the FileTree.
-First, open up Ace. In the left hand side you'll see a FileTree, with a 
-directory called Web. Double click the Web folder to expand it. Your FileTree 
-should look something like this:
+    <description>Docker is a platform that helps developers build apps in whatever language they feel comfortable using and using any toolchain they want. Using Docker developers can build, ship and run distributed applications because it enables them to quickly put together an app by eliminating the stress between development, QA and production environments.
+A developer that uses Docker can run his / hers app anywhere without the fear of it not performing as it should.
+Apps that are built using Docker are completely portable and can run anywhere.
+  Docker apps Anyone can get started with Docker by checking out one of the 13,000+ apps that are available in the Docker Hub. You can get started working on WordPress or a new nodejs project in just a few seconds without the hassle of having to install any other dependencies (other then Docker of course) on your Koding VM.
+  Benefits The difference between a virtualized application and the Docker Engine container is that the first one includes not only the app and the necessary binaries and libraries but it contains the guest OS as well. The later runs as an separate process on the OS and thus it has the resources separation and allocation of a VM but is much more portable.
+  Installing Docker on Koding Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Docker using just one command:
+kpm install docker
 
-Those files are a series of example pages, and they're being served by Apache 
-on your Koding Domain. You can view this site by visiting your Koding Domain, 
-at:
-http://hostname.username.koding.io
-Where username is your Koding username. You should see something like this:
+The version of Ubuntu that is installed on each Koding VM comes with a docker.io package and it should install Docker 0.9.1.
+We can install Docker on our Koding VM using the following commands:
 
-You'll notice that the PHP, Python, Perl, and Ruby links are actually files 
-being generated from that language. As an example, the python.py file is 
-being served up by Apache, with the aid of Apache's mod_python module. This 
-serves to illustrate that this is a real Apache server, and you can use it 
-just like you expect.
-You should now understand where your Web Server Root is, and how to access it 
-from the Web to develop and share your web applications. Happy Koding!
+We update the package list
+
+sudo apt-get update
+
+Install Docker
+
+sudo apt-get install docker.io
+
+We create a link
+
+sudo ln -sf /usr/bin/docker.io /usr/local/bin/docker
+
+We need to edit the docker file in order to continue
+
+sudo sed -i '$acomplete -F _docker docker' /etc/bash_completion.d/docker.io
+
+And we now execute that file
+
+source /etc/bash_completion.d/docker.io
+
+After that we need to add the Docker repo key to the local keychain
+
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9
+
+The last step is to add the Docker repo to the apt sources list, update and install the lxc-docker package. You can do that using the following commands
+
+sudo sh -c &amp;quot;echo deb https://get.docker.com/ubuntu docker main\
+&amp;gt; /etc/apt/sources.list.d/docker.list&amp;quot;
+sudo apt-get update
+sudo apt-get install lxc-docker
+ tipYou can use the below command, that uses curl, for an easier installation process:
+ curl -sSL https://get.docker.com/ubuntu/ | sudo sh
+If you made it to this point you can run this command to check if Docker is indeed installed and works properly:
+sudo docker run -i -t ubuntu /bin/bash
+If you have any question or issues please email us at support@koding.com and we'll gladly help.
 </description>
   </item>
   
@@ -2962,14 +2966,38 @@ If you encounter any issues or have any questions please drop us an email here.
   </item>
   
   <item>
-    <title>Getting Started</title>
-    <link>//learn.koding.com/guides/getting-started</link>
+    <title>Where is my Web Server Root?</title>
+    <link>//learn.koding.com/guides/where-is-my-webserver-root</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/where-is-my-webserver-root</guid>
     <author>Team Koding</author>
-    <description>In this Getting Started series, lets go over some basic usage of Koding. We'll 
-go over each section, and by the end you should have a basic understanding how 
-where everything is located in Koding. 
+    <description>Koding VMs come with Apache preconfigured and serve a sample site to get you 
+started. The files for this site are found in what is typically called your 
+Web Server Root. This is the directory that Apache is serving up files from, 
+and it is located within your Home directory, under the Web directory. The 
+full path being:
+/home/username/Web
+Replace username with your username.
+You can modify the contents of this directory with the Koding 
+Terminal, or the Ace Editor. In this example, we'll use Ace 
+to browse the files with the FileTree.
+First, open up Ace. In the left hand side you'll see a FileTree, with a 
+directory called Web. Double click the Web folder to expand it. Your FileTree 
+should look something like this:
+
+Those files are a series of example pages, and they're being served by Apache 
+on your Koding Domain. You can view this site by visiting your Koding Domain, 
+at:
+http://hostname.username.koding.io
+Where username is your Koding username. You should see something like this:
+
+You'll notice that the PHP, Python, Perl, and Ruby links are actually files 
+being generated from that language. As an example, the python.py file is 
+being served up by Apache, with the aid of Apache's mod_python module. This 
+serves to illustrate that this is a real Apache server, and you can use it 
+just like you expect.
+You should now understand where your Web Server Root is, and how to access it 
+from the Web to develop and share your web applications. Happy Koding!
 </description>
   </item>
   
@@ -2986,6 +3014,18 @@ and select the IDE and Terminal theme that suits you best. As you select a new t
 theme color scheme and font should reflect in the editor and Terminal in real time.
 Enjoy your new theme!
 
+</description>
+  </item>
+  
+  <item>
+    <title>Getting Started</title>
+    <link>//learn.koding.com/guides/getting-started</link>
+    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started</guid>
+    <author>Team Koding</author>
+    <description>In this Getting Started series, lets go over some basic usage of Koding. We'll 
+go over each section, and by the end you should have a basic understanding how 
+where everything is located in Koding. 
 </description>
   </item>
   
@@ -3032,31 +3072,6 @@ search for the channel you're interested in.
 
 Following channels is a great way to stay active in content that matters
 to you.
-</description>
-  </item>
-  
-  <item>
-    <title>Getting Started: Editing Your Profile</title>
-    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
-    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
-    <author>Team Koding</author>
-    <description>Your Koding profile is your public information page on Koding. Currently
-it shows your Avatar, Name and Description, recent Koding activity, and
-in the near future Badges and additional social information. In this
-guide we'll go over the basic usage of your Koding profile.
-  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted
-below.
-
-Clicking on it will open your profile.
-  Avatar, Name and Description When viewing your profile for the first time, you'll see that your first
-name is set to your Koding username, and your last name and description
-are set to default values, as seen in the below image.
-
-These default values are only seen by you, and if you double click them,
-you can edit that field.
-If you have one, Koding will use your Gravatar by default, but if you head over to your account settings Koding also supports avatar uploads directly.
-
 </description>
   </item>
   
@@ -3529,39 +3544,27 @@ And just like that, we have a static page with text chat, voice chat, and mouse 
   </item>
   
   <item>
-    <title>Getting Started: File Uploads</title>
-    <link>//learn.koding.com/guides/getting-started/file-upload</link>
+    <title>Getting Started: Editing Your Profile</title>
+    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/file-upload</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
     <author>Team Koding</author>
-    <description>In this guide we'll take a look at uploading your files and projects to
-Koding, in multiple ways. Lets get started!
-  Uploading with Drag and Drop The simplest way, is simply by using Drag and Drop file upload! To do
-this, open your Koding IDE, locate your FileTree on the left hand
-side, and drag a file from your Desktop onto the FileTree. An example
-image is below.
+    <description>Your Koding profile is your public information page on Koding. Currently
+it shows your Avatar, Name and Description, recent Koding activity, and
+in the near future Badges and additional social information. In this
+guide we'll go over the basic usage of your Koding profile.
+  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted
+below.
 
-After you let go of the file, your file will be uploaded to your
-~/Uploads directory. If ~/Uploads does not exist, it will be automatically
-created.
- tipFiles uploaded this way are not automatically available for
-serving over your VMs web server as the ~/Uploads directory is not inside
-~/Web (the default web root for Koding VMs). If you wish to use any uploaded
-files in your web project, please move them to a directory under ~/Web.
-   Uploading with FTP FTP is another common way to upload files to your VM. Before uploading
-with FTP though, you'll need to set up an FTP Server on your VM.
-The FTP Guide will take you through both the installation, and
-connecting process, so check it out!
-  Uploading with SCP SCP is is a tool that will copy files from your local Unix filesystem
-to a remote filesystem over SSH connections. To use it, make sure you
-have SSH setup with your Koding VM beforehand. Instructions can be found
-here if needed.
-After that, use the following command to copy a local file to your VM.
-scp LOCAL_FILE USERNAME.koding.io:REMOTE_FILE
-Replace LOCAL_FILE with your local file location, USERNAME with your
-Koding Username, and REMOTE_FILE with your Remote File location. An
-example of this command can be seen below.
-scp ~/my_image.png joshmurray.koding.io:~/my_image.png
+Clicking on it will open your profile.
+  Avatar, Name and Description When viewing your profile for the first time, you'll see that your first
+name is set to your Koding username, and your last name and description
+are set to default values, as seen in the below image.
+
+These default values are only seen by you, and if you double click them,
+you can edit that field.
+If you have one, Koding will use your Gravatar by default, but if you head over to your account settings Koding also supports avatar uploads directly.
+
 </description>
   </item>
   
