@@ -21,11 +21,12 @@ this, open your [Koding IDE][ide], locate your FileTree on the left hand
 side, and drag a file from your Desktop onto the FileTree. An example
 image is below.
 
-![Drag and Drop Upload](drag-n-drop.png)
 > type:tip
 > You can only upload files up to 100MB at one time. A file over 100MB will not be 
 > allowed for upload via this method. If yo have larger files, you should use the 
 > FTP upload method described below.
+
+![Drag and Drop Upload](drag-n-drop.png)
 
 After you let go of the file, your file will be uploaded to your
 `~/Uploads` directory. If `~/Uploads` does not exist, it will be automatically
