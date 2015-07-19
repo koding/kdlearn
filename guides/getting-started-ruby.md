@@ -76,7 +76,7 @@ require 'socket'
 server = TCPServer.new '0.0.0.0', 3000
 
 loop do
-  socket  = server.accept
+  socket = server.accept
   request = socket.gets
   puts request
 
@@ -106,7 +106,7 @@ going to implement an HTTP response ourselves. Getting our hands dirty!
 
 ```ruby
 loop do
-  socket  = server.accept
+  socket = server.accept
   puts socket.gets
 ```
 
@@ -184,7 +184,7 @@ To use Sinatra, we need to install it. Run the following command to
 install Sinatra with RubyGems.
 
 ```
-sudo gem install sinatra
+gem install sinatra
 ```
 
 RubyGems is Ruby's answer to Dependency Management. Similar to NPM and
