@@ -18,6 +18,147 @@
   <language>en</language>
   
   <item>
+    <title>Getting Started with Ruby</title>
+    <link>//learn.koding.com/guides/getting-started-ruby</link>
+    <pubDate>"2015-07-19T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-ruby</guid>
+    <author>Team Koding</author>
+    <description>In this guide we'll explain what Ruby is, and how to write a simple web
+server using the built in Socket library. So, lets get started!
+  What is Ruby Ruby is a popular, general purpose, high level programing language. It
+focuses on readability programmer enjoyment over raw performance. Koding
+VMs come pre-installed with Ruby and RubyGem, making it super easy to get
+started. Lets see what it looks like to run some Ruby code!
+  Installing Ruby You can install Ruby rather easily, using the following commands:
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+curl -sSL https://get.rvm.io | bash -s stable --rails
+During the installation you will prompted to input your root password.
+The above command will install the latest stable Rails version, which will pull in the associated Ruby.
+After the very long installation process, all you need to do is source the rvm scripts using the following command:
+source ~/.rvm/scripts/rvm
+You should now have a full Ruby on Rails environment configured and you should be ready for the next steps.
+  Running your first Ruby script Open up your Ace Editor and create a new file named hello.rb.
+Paste in the following code into that file.
+puts &amp;quot;Hello from Ruby!&amp;quot;
+
+The puts name is a function which takes a string and prints it to the
+Standard Output (STDOUT) of the process. Lets try running this file and
+see the output, but first save the file with Ctrl-s. Now, open up
+your Terminal and type in the following command.
+ruby hello.rb
+You should see output similar to this:
+joshmurray: ~ $ ruby hello.rb
+Hello from Ruby!
+joshmurray: ~ $
+Neat! Now that we know how to run some code, lets look at a real example
+of some Ruby code.
+  Your first Ruby web server Just like before, create a new file named web.rb, and paste in the
+following code.
+require 'socket'
+
+server = TCPServer.new '0.0.0.0', 3000
+
+loop do
+  socket = server.accept
+  request = socket.gets
+  puts request
+
+  response = &amp;quot;Hello World!\n&amp;quot;
+  socket.print &amp;quot;HTTP/1.1 200 OK\r\n&amp;quot; +
+               &amp;quot;Content-Type: text/plain\r\n&amp;quot; +
+               &amp;quot;Content-Length: #{response.bytesize}\r\n&amp;quot; +
+               &amp;quot;Connection: close\r\n&amp;quot;
+  socket.print &amp;quot;\r\n&amp;quot;
+
+  socket.print response
+  socket.close
+end
+
+That looks a bit complicated, so lets break it down piece by piece.
+require 'socket'
+server = TCPServer.new '0.0.0.0', 3000
+
+First, we use require to import the socket module. TCPServer comes
+from this module, and we use it to create a new Socket server on
+0.0.0.0:3000. This is a plain socket server, meaning that we're
+going to implement an HTTP response ourselves. Getting our hands dirty!
+loop do
+  socket = server.accept
+  puts socket.gets
+
+Next up, loop do creates a never ending loop. Each iteration of the
+loop executes until server.accept. This blocks, waiting for connections
+from our TCP Server.
+When your browser connects to the TCP Server, the socket servers returns
+a connection object named socket. From that object, we use gets to
+read a line from the incoming data Stream.
+The incoming stream is what your browser sent to the TCP Server as part
+of it's request. So with socket.gets you're simply reading what your
+browser sent. We then take that, and use puts to print it to the STDOUT
+just like in our Hello example above. Note that we're just printing to
+STDOUT to help us understand when requests are incoming, it is not
+required.
+  response = &amp;quot;Hello World!\n&amp;quot;
+  socket.print &amp;quot;HTTP/1.1 200 OK\r\n&amp;quot; +
+               &amp;quot;Content-Type: text/plain\r\n&amp;quot; +
+               &amp;quot;Content-Length: #{response.bytesize}\r\n&amp;quot; +
+               &amp;quot;Connection: close\r\n&amp;quot;
+  socket.print &amp;quot;\r\n&amp;quot;
+
+Next up, we start building our response. We start by writing &amp;quot;Hello
+World!\n&amp;quot; to the variable response. We then print a series of strings
+to the socket.
+This section can get a little confusing, because it involves returning
+HTTP Headers to the requesting browser. We won't go into detail of this
+here, but just understand that this is part of the HTTP Spec, that we're
+manually implementing.
+As part of these headers, we print the Content-Length, which is the
+number of bytes in our response string. After all the headers are done,
+we follow up by adding one more new line, to separate the headers from
+the content we want to print. Again, as part of the HTTP Spec.
+  socket.print response
+  socket.close
+end
+
+Finally, we use that same socket.print method to print our response
+variable. After that's done, we close the socket.
+But does this work? Open up your Terminal just like before,
+and run it with the following command.
+ruby web.rb
+Once that's running, open up your browser and connect to the following
+address, replacing username with your Koding Username.
+http://hostname.username.koding.io
+Congratulations, you're running a Ruby Web server, with a hand made HTTP
+implementation!
+  Installing dependencies with RubyGems This is great and all, but it's quite the complex way to run a simple web
+server. Lets make this a lot easier with the popular web framework,
+Sinatra.
+To use Sinatra, we need to install it. Run the following command to
+install Sinatra with RubyGems.
+gem install sinatra
+RubyGems is Ruby's answer to Dependency Management. Similar to NPM and
+PIP, the above command will install Sinatra and all dependencies of that
+library.
+Next up, open your web.rb file again, and replace the entire contents
+with the following code.
+require 'rubygems' # This is required because the http://rubygems.org resource is not included automatically for sinatra to boot
+require 'sinatra'
+
+set :bind, '0.0.0.0'
+set :port, 3000
+
+get '/' do
+  &amp;quot;Hello World, from Sinatra!&amp;quot;
+end
+
+Now run it just like before, and visit it in your browser. Just like
+that, you have a working Sinatra web server!
+In a following tutorial we'll dig deeper into Sinatra, but for now check
+out the Official Documentation. And as always, Happy Koding!
+</description>
+  </item>
+  
+  <item>
     <title>Getting Started: File Uploads</title>
     <link>//learn.koding.com/guides/getting-started/file-upload</link>
     <pubDate>"2015-07-12T00:00:00.000Z"</pubDate>
@@ -246,147 +387,6 @@ http://KODING_USERNAME.koding.io:8100
 Find out more about your VM hostname here.
 And that's it.
 If you encounter any issues or have any questions please drop an email here
-</description>
-  </item>
-  
-  <item>
-    <title>Getting Started with Ruby</title>
-    <link>//learn.koding.com/guides/getting-started-ruby</link>
-    <pubDate>"2015-06-22T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-ruby</guid>
-    <author>Team Koding</author>
-    <description>In this guide we'll explain what Ruby is, and how to write a simple web
-server using the built in Socket library. So, lets get started!
-  What is Ruby Ruby is a popular, general purpose, high level programing language. It
-focuses on readability programmer enjoyment over raw performance. Koding
-VMs come pre-installed with Ruby and RubyGem, making it super easy to get
-started. Lets see what it looks like to run some Ruby code!
-  Installing Ruby You can install Ruby rather easily, using the following commands:
-gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-curl -sSL https://get.rvm.io | bash -s stable --rails
-During the installation you will prompted to input your root password.
-The above command will install the latest stable Rails version, which will pull in the associated Ruby.
-After the very long installation process, all you need to do is source the rvm scripts using the following command:
-source ~/.rvm/scripts/rvm
-You should now have a full Ruby on Rails environment configured and you should be ready for the next steps.
-  Running your first Ruby script Open up your Ace Editor and create a new file named hello.rb.
-Paste in the following code into that file.
-puts &amp;quot;Hello from Ruby!&amp;quot;
-
-The puts name is a function which takes a string and prints it to the
-Standard Output (STDOUT) of the process. Lets try running this file and
-see the output, but first save the file with Ctrl-s. Now, open up
-your Terminal and type in the following command.
-ruby hello.rb
-You should see output similar to this:
-joshmurray: ~ $ ruby hello.rb
-Hello from Ruby!
-joshmurray: ~ $
-Neat! Now that we know how to run some code, lets look at a real example
-of some Ruby code.
-  Your first Ruby web server Just like before, create a new file named web.rb, and paste in the
-following code.
-require 'socket'
-
-server = TCPServer.new '0.0.0.0', 3000
-
-loop do
-  socket  = server.accept
-  request = socket.gets
-  puts request
-
-  response = &amp;quot;Hello World!\n&amp;quot;
-  socket.print &amp;quot;HTTP/1.1 200 OK\r\n&amp;quot; +
-               &amp;quot;Content-Type: text/plain\r\n&amp;quot; +
-               &amp;quot;Content-Length: #{response.bytesize}\r\n&amp;quot; +
-               &amp;quot;Connection: close\r\n&amp;quot;
-  socket.print &amp;quot;\r\n&amp;quot;
-
-  socket.print response
-  socket.close
-end
-
-That looks a bit complicated, so lets break it down piece by piece.
-require 'socket'
-server = TCPServer.new '0.0.0.0', 3000
-
-First, we use require to import the socket module. TCPServer comes
-from this module, and we use it to create a new Socket server on
-0.0.0.0:3000. This is a plain socket server, meaning that we're
-going to implement an HTTP response ourselves. Getting our hands dirty!
-loop do
-  socket  = server.accept
-  puts socket.gets
-
-Next up, loop do creates a never ending loop. Each iteration of the
-loop executes until server.accept. This blocks, waiting for connections
-from our TCP Server.
-When your browser connects to the TCP Server, the socket servers returns
-a connection object named socket. From that object, we use gets to
-read a line from the incoming data Stream.
-The incoming stream is what your browser sent to the TCP Server as part
-of it's request. So with socket.gets you're simply reading what your
-browser sent. We then take that, and use puts to print it to the STDOUT
-just like in our Hello example above. Note that we're just printing to
-STDOUT to help us understand when requests are incoming, it is not
-required.
-  response = &amp;quot;Hello World!\n&amp;quot;
-  socket.print &amp;quot;HTTP/1.1 200 OK\r\n&amp;quot; +
-               &amp;quot;Content-Type: text/plain\r\n&amp;quot; +
-               &amp;quot;Content-Length: #{response.bytesize}\r\n&amp;quot; +
-               &amp;quot;Connection: close\r\n&amp;quot;
-  socket.print &amp;quot;\r\n&amp;quot;
-
-Next up, we start building our response. We start by writing &amp;quot;Hello
-World!\n&amp;quot; to the variable response. We then print a series of strings
-to the socket.
-This section can get a little confusing, because it involves returning
-HTTP Headers to the requesting browser. We won't go into detail of this
-here, but just understand that this is part of the HTTP Spec, that we're
-manually implementing.
-As part of these headers, we print the Content-Length, which is the
-number of bytes in our response string. After all the headers are done,
-we follow up by adding one more new line, to separate the headers from
-the content we want to print. Again, as part of the HTTP Spec.
-  socket.print response
-  socket.close
-end
-
-Finally, we use that same socket.print method to print our response
-variable. After that's done, we close the socket.
-But does this work? Open up your Terminal just like before,
-and run it with the following command.
-ruby web.rb
-Once that's running, open up your browser and connect to the following
-address, replacing username with your Koding Username.
-http://hostname.username.koding.io
-Congratulations, you're running a Ruby Web server, with a hand made HTTP
-implementation!
-  Installing dependencies with RubyGems This is great and all, but it's quite the complex way to run a simple web
-server. Lets make this a lot easier with the popular web framework,
-Sinatra.
-To use Sinatra, we need to install it. Run the following command to
-install Sinatra with RubyGems.
-sudo gem install sinatra
-RubyGems is Ruby's answer to Dependency Management. Similar to NPM and
-PIP, the above command will install Sinatra and all dependencies of that
-library.
-Next up, open your web.rb file again, and replace the entire contents
-with the following code.
-require 'rubygems' # This is required because the http://rubygems.org resource is not included automatically for sinatra to boot
-require 'sinatra'
-
-set :bind, '0.0.0.0'
-set :port, 3000
-
-get '/' do
-  &amp;quot;Hello World, from Sinatra!&amp;quot;
-end
-
-Now run it just like before, and visit it in your browser. Just like
-that, you have a working Sinatra web server!
-In a following tutorial we'll dig deeper into Sinatra, but for now check
-out the Official Documentation. And as always, Happy Koding!
 </description>
   </item>
   
@@ -3030,48 +3030,27 @@ where everything is located in Koding.
   </item>
   
   <item>
-    <title>Getting Started: The Activity Feed</title>
-    <link>//learn.koding.com/guides/getting-started/activity-feed</link>
+    <title>Getting Started: Editing Your Profile</title>
+    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/activity-feed</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
     <author>Team Koding</author>
-    <description>The Activity Feed is the central location for discussion on Koding. A
-public message board, with markdown support, previewing, hashtag topics
-and more, it's a central component to Koding's Social experience.
+    <description>Your Koding profile is your public information page on Koding. Currently
+it shows your Avatar, Name and Description, recent Koding activity, and
+in the near future Badges and additional social information. In this
+guide we'll go over the basic usage of your Koding profile.
+  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted
+below.
 
-  Posting and Formatting To post to the activity feed, find the input box in the top of the page.
+Clicking on it will open your profile.
+  Avatar, Name and Description When viewing your profile for the first time, you'll see that your first
+name is set to your Koding username, and your last name and description
+are set to default values, as seen in the below image.
 
-Simply type something in, and press the green submit button. Just plain text
-can get a bit boring though, so Koding supports full
-Markdown, as seen below:
+These default values are only seen by you, and if you double click them,
+you can edit that field.
+If you have one, Koding will use your Gravatar by default, but if you head over to your account settings Koding also supports avatar uploads directly.
 
- tipMake sure to familiarize yourself with our posting guidelines.
-   Previewing To preview your post, simply press the little eye on the right side of
-the input box. Your Markdown will be rendered and highlighted
-appropriately.
-
-  Tagging Tagging your content is important. With tags, your content can be
-categorized, which makes it easier to search and more likely to be seen
-by people who follow those channels.
-
-Here you can see the previous Markdown example, tagged with the
-#markdown tag.
-  Searching On the #public channel there is a search field next to
-Most Liked / Most Recent, as seen below.
-
-Searching the activity feed will search for the contents of a post, as
-well as the tags.
-  Channels Channels are how you view a steam of posts with a certain Tag. When you
-click on a tag, it opens a channel for that tag. Clicking on the Grey
-checkmark next to the channel name, will subscribe you to that channel,
-and keep it open anytime you visit Koding.
-
-To browse channels that you might be interested in, you can click the
-Plus button next to &amp;quot;Channel&amp;quot; in the sidebar (as seen below), and
-search for the channel you're interested in.
-
-Following channels is a great way to stay active in content that matters
-to you.
 </description>
   </item>
   
@@ -3544,27 +3523,48 @@ And just like that, we have a static page with text chat, voice chat, and mouse 
   </item>
   
   <item>
-    <title>Getting Started: Editing Your Profile</title>
-    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
+    <title>Getting Started: The Activity Feed</title>
+    <link>//learn.koding.com/guides/getting-started/activity-feed</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/activity-feed</guid>
     <author>Team Koding</author>
-    <description>Your Koding profile is your public information page on Koding. Currently
-it shows your Avatar, Name and Description, recent Koding activity, and
-in the near future Badges and additional social information. In this
-guide we'll go over the basic usage of your Koding profile.
-  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted
-below.
+    <description>The Activity Feed is the central location for discussion on Koding. A
+public message board, with markdown support, previewing, hashtag topics
+and more, it's a central component to Koding's Social experience.
 
-Clicking on it will open your profile.
-  Avatar, Name and Description When viewing your profile for the first time, you'll see that your first
-name is set to your Koding username, and your last name and description
-are set to default values, as seen in the below image.
+  Posting and Formatting To post to the activity feed, find the input box in the top of the page.
 
-These default values are only seen by you, and if you double click them,
-you can edit that field.
-If you have one, Koding will use your Gravatar by default, but if you head over to your account settings Koding also supports avatar uploads directly.
+Simply type something in, and press the green submit button. Just plain text
+can get a bit boring though, so Koding supports full
+Markdown, as seen below:
 
+ tipMake sure to familiarize yourself with our posting guidelines.
+   Previewing To preview your post, simply press the little eye on the right side of
+the input box. Your Markdown will be rendered and highlighted
+appropriately.
+
+  Tagging Tagging your content is important. With tags, your content can be
+categorized, which makes it easier to search and more likely to be seen
+by people who follow those channels.
+
+Here you can see the previous Markdown example, tagged with the
+#markdown tag.
+  Searching On the #public channel there is a search field next to
+Most Liked / Most Recent, as seen below.
+
+Searching the activity feed will search for the contents of a post, as
+well as the tags.
+  Channels Channels are how you view a steam of posts with a certain Tag. When you
+click on a tag, it opens a channel for that tag. Clicking on the Grey
+checkmark next to the channel name, will subscribe you to that channel,
+and keep it open anytime you visit Koding.
+
+To browse channels that you might be interested in, you can click the
+Plus button next to &amp;quot;Channel&amp;quot; in the sidebar (as seen below), and
+search for the channel you're interested in.
+
+Following channels is a great way to stay active in content that matters
+to you.
 </description>
   </item>
   

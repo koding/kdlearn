@@ -48,11 +48,11 @@ server using the built in Socket library. So, lets get started!"\>
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?28" />
+    <link rel="stylesheet" href="/css/vendor.css?743" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?10" />
+    <link rel="stylesheet" href="/css/main.css?338" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?659" />
+    <link rel="stylesheet" href="/css/rwd.css?994" />
 	</head>
 	<body>
 
@@ -260,6 +260,10 @@ server using the built in Socket library. So, lets get started!"\>
     <h5>Latest Guides</h5>
     <ul>
     
+      <li class="zactive">
+        <a href="/guides/getting-started-ruby">Getting Started with Ruby</a>
+      </li>
+    
       <li class="">
         <a href="/guides/getting-started/file-upload">Getting Started: File Uploads</a>
       </li>
@@ -278,10 +282,6 @@ server using the built in Socket library. So, lets get started!"\>
     
       <li class="">
         <a href="/guides/installing-ionic-framework">Installing Ionic Framework</a>
-      </li>
-    
-      <li class="zactive">
-        <a href="/guides/getting-started-ruby">Getting Started with Ruby</a>
       </li>
     
       <li class="">
@@ -310,7 +310,7 @@ server using the built in Socket library. So, lets get started!"\>
     <li class="author username">
        by <span rel="author">Team Koding</span>
     </li>
-    <li class="updated">Updated 21 days ago</li>
+    <li class="updated">Updated 18 hours ago</li>
   </ul>
 
 
@@ -353,7 +353,7 @@ following code.</p>
 server = <span class="hljs-constant">TCPServer</span>.new <span class="hljs-string">&apos;0.0.0.0&apos;</span>, <span class="hljs-number">3000</span>
 
 loop <span class="hljs-keyword">do</span>
-  socket  = server.accept
+  socket = server.accept
   request = socket.gets
   puts request
 
@@ -377,7 +377,7 @@ from this module, and we use it to create a new Socket server on
 <code>0.0.0.0:3000</code>. This is a <strong>plain</strong> socket server, meaning that we&apos;re
 going to implement an HTTP response ourselves. Getting our hands dirty!</p>
 <pre><code class="ruby">loop <span class="hljs-keyword">do</span>
-  socket  = server.accept
+  socket = server.accept
   puts socket.gets
 </code></pre>
 <p>Next up, <code>loop do</code> creates a never ending loop. Each iteration of the
@@ -429,7 +429,7 @@ server. Lets make this a lot easier with the popular web framework,
 <a href="http://www.sinatrarb.com">Sinatra</a>.</p>
 <p>To use Sinatra, we need to install it. Run the following command to
 install Sinatra with RubyGems.</p>
-<pre><code>sudo gem <span class="hljs-keyword">install</span> sinatra
+<pre><code>gem <span class="hljs-keyword">install</span> sinatra
 </code></pre><p>RubyGems is Ruby&apos;s answer to Dependency Management. Similar to NPM and
 PIP, the above command will install Sinatra and all dependencies of that
 library.</p>
