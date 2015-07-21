@@ -14,7 +14,7 @@ There are two ways you can collapse the sidebar and filetree.
 ### Using collapse icons
 Both the sidebar and the file tree have handy icons that will cause the respective panels to
 collapse. The animation below shows how.
-![sidebar-2](sidebar2.gif)
+![sidebar-2](/faq/sidebar-collapse/sidebar2.gif)
 
 ### Double clicking the panel dividers
 #### Collapsing/Closing the VM Panel/Sidebar

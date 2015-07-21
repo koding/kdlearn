@@ -12,7 +12,7 @@ grab your personalized referral link (see location details in the graphic below)
 You can then use the easy to use social media share buttons to distribute your personal
 referral link or send/share the link directly via your preferred distribution method.
 
-![referrals](referral.png)
+![referrals](/faq/redeem-referrals/referral.png)
 
 Each **new** user who signs up and verifies a Koding account earns you 500MB in extra
 storage space! Your friend also gets an extra 500MB. It's a win-win!
