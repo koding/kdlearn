@@ -6,6 +6,12 @@
     "date": "2015-04-29T00:00:00.000Z"
   },
   {
+    "title": "Where is my Web Server Root?",
+    "url": "http://learn.koding.com/guides/where-is-my-webserver-root/index.html",
+    "author": "Team Koding",
+    "date": "2015-07-25T00:00:00.000Z"
+  },
+  {
     "title": "What happened to 127.0.0.1?",
     "url": "http://learn.koding.com/guides/what-happened-to-127-0-0-1/index.html",
     "author": "Team Koding",
@@ -38,12 +44,6 @@
   {
     "title": "Getting Started",
     "url": "http://learn.koding.com/guides/getting-started/index.html",
-    "author": "Team Koding",
-    "date": "2015-04-29T00:00:00.000Z"
-  },
-  {
-    "title": "Where is my Web Server Root?",
-    "url": "http://learn.koding.com/guides/where-is-my-webserver-root/index.html",
     "author": "Team Koding",
     "date": "2015-04-29T00:00:00.000Z"
   },
