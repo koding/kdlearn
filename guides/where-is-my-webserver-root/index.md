@@ -9,7 +9,7 @@ categories: [common questions, apache, domain, koding]
 Koding VMs come with Apache preconfigured and serve a sample site to get you 
 started. The files for this site are found in what is typically called your 
 *Web Server Root*. This is the directory that Apache is serving up files from, 
-and it is located within your Home directory, under the `Web` directory. The 
+and it is located within your home directory, under the `Web` directory. The 
 full path being:
 
 ```
@@ -17,6 +17,9 @@ full path being:
 ```
 
 Replace `username` with your username.
+
+**Note:** You will find that the Apache web server root is actually `/var/www`
+which is then linked to `/home/username/Web`
 
 You can modify the contents of this directory with the [Koding 
 Terminal][terminal], or the [Ace Editor][ace]. In this example, we'll use Ace 
