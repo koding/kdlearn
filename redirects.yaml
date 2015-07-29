@@ -72,3 +72,5 @@
 /guides/setting-framework-webserver#symfony2: /guides/setting-symfony2-webserver
 /terminal: /guides/terminal-introduction
 /ide: /guides/ide-introduction
+/connect_your_machine: /guides/connect-your-machine
+/connect-your-vm/: /guides/connect-your-machine
