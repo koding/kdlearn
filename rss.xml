@@ -3090,27 +3090,48 @@ where everything is located in Koding.
   </item>
   
   <item>
-    <title>Getting Started: Editing Your Profile</title>
-    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
+    <title>Getting Started: The Activity Feed</title>
+    <link>//learn.koding.com/guides/getting-started/activity-feed</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/activity-feed</guid>
     <author>Team Koding</author>
-    <description>Your Koding profile is your public information page on Koding. Currently
-it shows your Avatar, Name and Description, recent Koding activity, and
-in the near future Badges and additional social information. In this
-guide we'll go over the basic usage of your Koding profile.
-  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted
-below.
+    <description>The Activity Feed is the central location for discussion on Koding. A
+public message board, with markdown support, previewing, hashtag topics
+and more, it's a central component to Koding's Social experience.
 
-Clicking on it will open your profile.
-  Avatar, Name and Description When viewing your profile for the first time, you'll see that your first
-name is set to your Koding username, and your last name and description
-are set to default values, as seen in the below image.
+  Posting and Formatting To post to the activity feed, find the input box in the top of the page.
 
-These default values are only seen by you, and if you double click them,
-you can edit that field.
-If you have one, Koding will use your Gravatar by default, but if you head over to your account settings Koding also supports avatar uploads directly.
+Simply type something in, and press the green submit button. Just plain text
+can get a bit boring though, so Koding supports full
+Markdown, as seen below:
 
+ tipMake sure to familiarize yourself with our posting guidelines.
+   Previewing To preview your post, simply press the little eye on the right side of
+the input box. Your Markdown will be rendered and highlighted
+appropriately.
+
+  Tagging Tagging your content is important. With tags, your content can be
+categorized, which makes it easier to search and more likely to be seen
+by people who follow those channels.
+
+Here you can see the previous Markdown example, tagged with the
+#markdown tag.
+  Searching On the #public channel there is a search field next to
+Most Liked / Most Recent, as seen below.
+
+Searching the activity feed will search for the contents of a post, as
+well as the tags.
+  Channels Channels are how you view a steam of posts with a certain Tag. When you
+click on a tag, it opens a channel for that tag. Clicking on the Grey
+checkmark next to the channel name, will subscribe you to that channel,
+and keep it open anytime you visit Koding.
+
+To browse channels that you might be interested in, you can click the
+Plus button next to &amp;quot;Channel&amp;quot; in the sidebar (as seen below), and
+search for the channel you're interested in.
+
+Following channels is a great way to stay active in content that matters
+to you.
 </description>
   </item>
   
@@ -3583,48 +3604,27 @@ And just like that, we have a static page with text chat, voice chat, and mouse 
   </item>
   
   <item>
-    <title>Getting Started: The Activity Feed</title>
-    <link>//learn.koding.com/guides/getting-started/activity-feed</link>
+    <title>Getting Started: Editing Your Profile</title>
+    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/activity-feed</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
     <author>Team Koding</author>
-    <description>The Activity Feed is the central location for discussion on Koding. A
-public message board, with markdown support, previewing, hashtag topics
-and more, it's a central component to Koding's Social experience.
+    <description>Your Koding profile is your public information page on Koding. Currently
+it shows your Avatar, Name and Description, recent Koding activity, and
+in the near future Badges and additional social information. In this
+guide we'll go over the basic usage of your Koding profile.
+  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted
+below.
 
-  Posting and Formatting To post to the activity feed, find the input box in the top of the page.
+Clicking on it will open your profile.
+  Avatar, Name and Description When viewing your profile for the first time, you'll see that your first
+name is set to your Koding username, and your last name and description
+are set to default values, as seen in the below image.
 
-Simply type something in, and press the green submit button. Just plain text
-can get a bit boring though, so Koding supports full
-Markdown, as seen below:
+These default values are only seen by you, and if you double click them,
+you can edit that field.
+If you have one, Koding will use your Gravatar by default, but if you head over to your account settings Koding also supports avatar uploads directly.
 
- tipMake sure to familiarize yourself with our posting guidelines.
-   Previewing To preview your post, simply press the little eye on the right side of
-the input box. Your Markdown will be rendered and highlighted
-appropriately.
-
-  Tagging Tagging your content is important. With tags, your content can be
-categorized, which makes it easier to search and more likely to be seen
-by people who follow those channels.
-
-Here you can see the previous Markdown example, tagged with the
-#markdown tag.
-  Searching On the #public channel there is a search field next to
-Most Liked / Most Recent, as seen below.
-
-Searching the activity feed will search for the contents of a post, as
-well as the tags.
-  Channels Channels are how you view a steam of posts with a certain Tag. When you
-click on a tag, it opens a channel for that tag. Clicking on the Grey
-checkmark next to the channel name, will subscribe you to that channel,
-and keep it open anytime you visit Koding.
-
-To browse channels that you might be interested in, you can click the
-Plus button next to &amp;quot;Channel&amp;quot; in the sidebar (as seen below), and
-search for the channel you're interested in.
-
-Following channels is a great way to stay active in content that matters
-to you.
 </description>
   </item>
   
