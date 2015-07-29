@@ -1,27 +1,33 @@
 [
   {
+    "title": "Connect your own machine to Koding",
+    "url": "https://learn.koding.com/guides/connect-your-machine/index.html",
+    "author": "Team Koding",
+    "date": "2015-07-29T00:00:00.000Z"
+  },
+  {
     "title": "Where is my Web Server Root?",
     "url": "https://learn.koding.com/guides/where-is-my-webserver-root/index.html",
     "author": "Team Koding",
-    "date": "2015-07-25T00:00:00.000Z"
-  },
-  {
-    "title": "What is Koding?",
-    "url": "https://learn.koding.com/guides/what-is-koding/index.html",
-    "author": "Team Koding",
-    "date": "2015-07-21T00:00:00.000Z"
-  },
-  {
-    "title": "Getting Started: File Uploads",
-    "url": "https://learn.koding.com/guides/getting-started/file-upload/index.html",
-    "author": "Team Koding",
-    "date": "2015-07-21T00:00:00.000Z"
+    "date": "2015-07-27T00:00:00.000Z"
   },
   {
     "title": "Getting Started with Ruby",
     "url": "https://learn.koding.com/guides/getting-started-ruby/index.html",
     "author": "Team Koding",
-    "date": "2015-07-21T00:00:00.000Z"
+    "date": "2015-07-19T00:00:00.000Z"
+  },
+  {
+    "title": "Getting Started: File Uploads",
+    "url": "https://learn.koding.com/guides/getting-started/file-upload/index.html",
+    "author": "Team Koding",
+    "date": "2015-07-12T00:00:00.000Z"
+  },
+  {
+    "title": "What is Koding?",
+    "url": "https://learn.koding.com/guides/what-is-koding/index.html",
+    "author": "Team Koding",
+    "date": "2015-07-06T00:00:00.000Z"
   },
   {
     "title": "What happened to 127.0.0.1?",
@@ -33,11 +39,17 @@
     "title": "Enabling 2-factor authentication on your Koding account",
     "url": "https://learn.koding.com/guides/2-factor-auth/index.html",
     "author": "Team Koding",
-    "date": "2015-07-02T00:00:00.000Z"
+    "date": "2015-06-25T00:00:00.000Z"
   },
   {
-    "title": "Setting up a Rails webserver",
-    "url": "https://learn.koding.com/guides/setting-rails-webserver/index.html",
+    "title": "Installing Ionic Framework",
+    "url": "https://learn.koding.com/guides/installing-ionic-framework/index.html",
+    "author": "Sergiu Butnarasu",
+    "date": "2015-06-22T00:00:00.000Z"
+  },
+  {
+    "title": "Custom Domains with your Koding VM",
+    "url": "https://learn.koding.com/guides/domains/index.html",
     "author": "Team Koding",
     "date": "2015-06-20T00:00:00.000Z"
   },
@@ -45,18 +57,6 @@
     "title": "Koding IDE Introduction",
     "url": "https://learn.koding.com/guides/ide-introduction/index.html",
     "author": "Team Koding",
-    "date": "2015-06-20T00:00:00.000Z"
-  },
-  {
-    "title": "Installing Ionic Framework",
-    "url": "https://learn.koding.com/guides/installing-ionic-framework/index.html",
-    "author": "Sergiu Butnarasu",
-    "date": "2015-06-20T00:00:00.000Z"
-  },
-  {
-    "title": "Custom Domains with your Koding VM",
-    "url": "https://learn.koding.com/guides/domains/index.html",
-    "author": "Team Koding",
-    "date": "2015-06-20T00:00:00.000Z"
+    "date": "2015-06-11T00:00:00.000Z"
   }
 ]
