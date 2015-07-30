@@ -8,6 +8,12 @@
   </url>
   
   <url>
+        <loc>http://learn.koding.com/guides/collaboration</loc>
+        <lastmod>2015-07-30</lastmod>
+        <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
         <loc>http://learn.koding.com/guides/where-is-my-webserver-root</loc>
         <lastmod>2015-07-27</lastmod>
         <changefreq>monthly</changefreq>
@@ -56,20 +62,14 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/ide-introduction</loc>
-        <lastmod>2015-06-11</lastmod>
-        <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
         <loc>http://learn.koding.com/guides/setting-rails-webserver</loc>
         <lastmod>2015-06-11</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/hello-world/python</loc>
-        <lastmod>2015-06-06</lastmod>
+        <loc>http://learn.koding.com/guides/ide-introduction</loc>
+        <lastmod>2015-06-11</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
@@ -80,13 +80,19 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/hello-world/c-sharp</loc>
+        <loc>http://learn.koding.com/guides/hello-world/php</loc>
         <lastmod>2015-06-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/hello-world/php</loc>
+        <loc>http://learn.koding.com/guides/hello-world/ruby</loc>
+        <lastmod>2015-06-06</lastmod>
+        <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+        <loc>http://learn.koding.com/guides/hello-world/c-sharp</loc>
         <lastmod>2015-06-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -110,7 +116,7 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/hello-world/ruby</loc>
+        <loc>http://learn.koding.com/guides/hello-world/python</loc>
         <lastmod>2015-06-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -130,12 +136,6 @@
   <url>
         <loc>http://learn.koding.com/guides/freeing-up-space</loc>
         <lastmod>2015-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-        <loc>http://learn.koding.com/guides/collaboration</loc>
-        <lastmod>2015-05-26</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
@@ -362,7 +362,7 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/getting-started/activity-feed</loc>
+        <loc>http://learn.koding.com/guides/getting-started/editing-your-profile</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -422,7 +422,7 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/getting-started/editing-your-profile</loc>
+        <loc>http://learn.koding.com/guides/getting-started/activity-feed</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>

@@ -54,11 +54,11 @@ until you hit &amp;quot;End Session&amp;quot;. Every person you share a session 
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?462" />
+    <link rel="stylesheet" href="/css/vendor.css?372" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?934" />
+    <link rel="stylesheet" href="/css/main.css?698" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?171" />
+    <link rel="stylesheet" href="/css/rwd.css?307" />
 	</head>
 	<body>
 
@@ -262,12 +262,16 @@ until you hit &amp;quot;End Session&amp;quot;. Every person you share a session 
   </li>
 
   
-  <li class="">
+  <li class="zactive">
     <h5>Latest Guides</h5>
     <ul>
     
       <li class="">
         <a href="/guides/connect-your-machine">Connect your own machine to Koding</a>
+      </li>
+    
+      <li class="zactive">
+        <a href="/guides/collaboration">How can I do real-time collaboration on Koding?</a>
       </li>
     
       <li class="">
@@ -294,10 +298,6 @@ until you hit &amp;quot;End Session&amp;quot;. Every person you share a session 
         <a href="/guides/2-factor-auth">Enabling 2-factor authentication on your Koding account</a>
       </li>
     
-      <li class="">
-        <a href="/guides/installing-ionic-framework">Installing Ionic Framework</a>
-      </li>
-    
     </ul>
   </li>
 
@@ -316,7 +316,7 @@ until you hit &amp;quot;End Session&amp;quot;. Every person you share a session 
     <li class="author username">
        by <span rel="author">Team Koding</span>
     </li>
-    <li class="updated">Updated 2 months ago</li>
+    <li class="updated">Updated 17 hours ago</li>
   </ul>
 
 
@@ -348,15 +348,26 @@ Google doc with realtime editing, this should feel very natural in comparison to
 <p>Since Koding Collaboration allows you to share your Terminal as well, it&apos;s great for those times when
 you are stuck with that shell script and need someone to take a peek. Koding Collaboration also
 allows you to share a white-board for all those times when a picture is just needed.</p>
-<h3 class="heading"> <a name="what-does-quot-watch-quot-mode-mean-" class="anchor" href="#what-does-quot-watch-quot-mode-mean-"></a> What does &quot;Watch&quot; mode mean? </h3><p>Watch mode, the default mode, shares your workspace and everyone in that session gets a replica of your
+<h3 class="heading"> <a name="options-for-the-host-when-starting-a-collaboration-session-" class="anchor" href="#options-for-the-host-when-starting-a-collaboration-session-"></a> Options for the host when starting a collaboration session. </h3><p>When starting a session, the host of the session has the following options available to them:</p>
+<ol>
+<li><a name="watch_mode"></a><strong>What does &quot;Watch&quot; mode mean?</strong> Watch mode, the default mode, 
+shares your workspace and everyone in that session gets a replica of your
 workspace on their screen. So if you open file tabs, new Terminals tabs and even switch tabs, other
-sessions participants see it all and their screens also update in real time with these actions.</p>
-<p>When a session participant chooses to &quot;unwatch&quot; your session, it means they are free to do what they
+sessions participants see it all and their screens also update in real time with these actions.  When a session participant chooses to &quot;unwatch&quot; your session, it means they are free to do what they
 want on their end of the collaborative session without having to be distracted by the host changing
 files or opening new tabs. This is very useful when you want to work on a few different files and
 the users in the session can open files independently on the VM shared by the host yet not distract
 each other. This is a bit confusing at first but then you&apos;ll wonder how else would Collaboration
-ever happen!</p>
+ever happen!</li>
+<li><a name="read_only"></a><strong>Read-only session</strong>
+If this option is enabled then none of the guests can make any changes to your files either
+through the editor or the Terminal. The session is essentially &quot;read-only&quot; for them. This is a great
+option for teachers to use cause you don&apos;t want your student&apos;s doing <code>rm -rf</code> on your VM! :)</li>
+<li><a name="mute_host"></a><strong>Participants/Guests can mute the host</strong>
+In some situations, a host may want to allow guests to mute them, this option provides that
+functionality. This is handy when there is no real &quot;host&quot; and someone starts a session for the
+group/team but everyone needs equal level of controls over the session.</li>
+</ol>
 <h3 class="heading"> <a name="what-does-quot-kick-quot-do-" class="anchor" href="#what-does-quot-kick-quot-do-"></a> What does &quot;Kick&quot; do? </h3><p>This is available to the host if they want to remove someone from a shared session without ending
 the session.</p>
 <p><img src="watch-kick.png" alt="Collaboration 1"></p>
