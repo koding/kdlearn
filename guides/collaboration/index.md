@@ -40,17 +40,25 @@ Since Koding Collaboration allows you to share your Terminal as well, it's great
 you are stuck with that shell script and need someone to take a peek. Koding Collaboration also
 allows you to share a white-board for all those times when a picture is just needed.
 
-### What does "Watch" mode mean?
-Watch mode, the default mode, shares your workspace and everyone in that session gets a replica of your
+### Options for the host when starting a collaboration session.
+When starting a session, the host of the session has the following options available to them:
+1. <a name="watch_mode"></a>**What does "Watch" mode mean?** Watch mode, the default mode, 
+shares your workspace and everyone in that session gets a replica of your
 workspace on their screen. So if you open file tabs, new Terminals tabs and even switch tabs, other
-sessions participants see it all and their screens also update in real time with these actions.
-
-When a session participant chooses to "unwatch" your session, it means they are free to do what they
+sessions participants see it all and their screens also update in real time with these actions.  When a session participant chooses to "unwatch" your session, it means they are free to do what they
 want on their end of the collaborative session without having to be distracted by the host changing
 files or opening new tabs. This is very useful when you want to work on a few different files and
 the users in the session can open files independently on the VM shared by the host yet not distract
 each other. This is a bit confusing at first but then you'll wonder how else would Collaboration
 ever happen!
+2. <a name="read_only"></a>**Read-only session**
+If this option is enabled then none of the guests can make any changes to your files either
+through the editor or the Terminal. The session is essentially "read-only" for them. This is a great
+option for teachers to use cause you don't want your student's doing `rm -rf` on your VM! :)
+3. <a name="mute_host"></a>**Participants/Guests can mute the host**
+In some situations, a host may want to allow guests to mute them, this option provides that
+functionality. This is handy when there is no real "host" and someone starts a session for the
+group/team but everyone needs equal level of controls over the session.
 
 ### What does "Kick" do?
 This is available to the host if they want to remove someone from a shared session without ending
