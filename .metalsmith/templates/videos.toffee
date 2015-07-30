@@ -43,6 +43,7 @@ printVideo = (filename, rel="videos") ->
   {# printVideo 'guides/ide-introduction/index.html', 'koding' #}
   {# printVideo 'guides/terminal-introduction/index.html', 'koding' #}
   {# printVideo 'guides/chat-introduction/index.html', 'koding' #}
+  {# printVideo videoId: 'JU9MyMsX5XM', title: 'Add Your Own Machine To Koding', 'koding' #}
   </ul>
 </div>
 
