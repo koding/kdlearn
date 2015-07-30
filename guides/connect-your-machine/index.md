@@ -17,6 +17,12 @@ Presently, the following are the requirements for any machine that can be connec
 2. the machine must be running Ubuntu Linux 13 or above
 3. you must have root/sudo access on the system
 
+In addition to these machine related requirements, you must also ensure that you have the following
+ports open (in case you are running a firewall):
+1. 80/tcp
+2. 22/tcp
+3. 56789/tcp
+
 ### How does Koding make this happen?
 The steps are outlined below but in a nutshell, what happens is that you download our "Koding Service Connector"
 to your machine and this service acts like a "bridge" between your machine and your Koding account.
