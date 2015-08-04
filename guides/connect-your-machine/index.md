@@ -14,7 +14,7 @@ you can open a Terminal and any file on that machine directly from your Koding a
 ### What types of machines can I connect to my Koding account?
 Presently, the following are the requirements for any machine that can be connected to Koding:
 1. the machine needs to have a public IP address
-2. the machine must be running Ubuntu Linux 13 or above
+2. the machine must be running Ubuntu Linux 13.x or 14.x (support for 15.x is coming)
 3. you must have root/sudo access on the system
 
 In addition to these machine related requirements, you must also ensure that you have the following
