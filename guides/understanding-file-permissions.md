@@ -7,7 +7,7 @@ template: page.toffee
 
 # Understanding file permissions
 
-Linux-based systems, Ubuntu beeing one of them, have a simple system for managing individual file permissions, The Unix concepts for file ownership and permissions are the main driving force behind Linux and it's security at the file system level.
+Linux-based systems, Ubuntu being one of them, have a simple system for managing individual file permissions, The Unix concepts for file ownership and permissions are the main driving force behind Linux and it's security at the file system level.
 
 This guide will cover the basics of file permissions and how you can modify them.
 
