@@ -145,7 +145,7 @@ Return in the Drupal root directory if needed (~/Web in this example).
 cd ~/Web
 ```
 
-Make your own copy of the settings files, to be writed by the Drupal installer (single site install).
+Make your own copy of the settings files, to be written by the Drupal installer (single site install).
 
 ```
 	cd sites/default
@@ -154,7 +154,7 @@ Make your own copy of the settings files, to be writed by the Drupal installer (
 	sudo chmod a+w services.yml settings.php
 ```
 
-Create the files directory and make it writeable. If you see this error  ```Writable (public download method)```, you need to run following code in the command line, on the Drupal directory (~/Web by default).
+Create the files directory and make it writable. If you see this error  ```Writable (public download method)```, you need to run following code in the command line, on the Drupal directory (~/Web by default).
 
 ```
 	mkdir files
