@@ -76,7 +76,7 @@ Let's see some useful commands of the psql tool.
 First of all: you can get some **help** just typing `\?` in your psql command line.
 To exit from the appearing screen, just press the `q` button.
 
-To **load and execute SQL statemens from file**, you can use this syntax:
+To **load and execute SQL statements from file**, you can use this syntax:
 
     \i my/file/path.sql
 
