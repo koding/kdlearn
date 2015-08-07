@@ -13,7 +13,7 @@ template: series.toffee
 
 In this guide we'll take a look at [Koding][koding]'s UI. We'll examine 
 the major sections, and briefly explain some of the features. In future 
-guides of this series we'll explain tihese parts in more detail. Lets get 
+guides of this series we'll explain these parts in more detail. Lets get 
 started!
 
 ## The Full UI
