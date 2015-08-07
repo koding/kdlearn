@@ -45,11 +45,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?57" />
+    <link rel="stylesheet" href="/css/vendor.css?547" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?599" />
+    <link rel="stylesheet" href="/css/main.css?804" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?320" />
+    <link rel="stylesheet" href="/css/rwd.css?875" />
 	</head>
 	<body>
 
@@ -258,11 +258,15 @@
     <ul>
     
       <li class="">
+        <a href="/guides/collaboration">How can I do real-time collaboration on Koding?</a>
+      </li>
+    
+      <li class="">
         <a href="/guides/connect-your-machine">Connect your own machine to Koding</a>
       </li>
     
       <li class="">
-        <a href="/guides/collaboration">How can I do real-time collaboration on Koding?</a>
+        <a href="/guides/2-factor-auth">Enabling 2-factor authentication on your Koding account</a>
       </li>
     
       <li class="">
@@ -270,11 +274,11 @@
       </li>
     
       <li class="">
-        <a href="/guides/getting-started-ruby">Getting Started with Ruby</a>
+        <a href="/guides/getting-started/file-upload">Getting Started: File Uploads</a>
       </li>
     
       <li class="">
-        <a href="/guides/getting-started/file-upload">Getting Started: File Uploads</a>
+        <a href="/guides/getting-started-ruby">Getting Started with Ruby</a>
       </li>
     
       <li class="">
@@ -283,10 +287,6 @@
     
       <li class="">
         <a href="/guides/what-happened-to-127-0-0-1">What happened to 127.0.0.1?</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/2-factor-auth">Enabling 2-factor authentication on your Koding account</a>
       </li>
     
     </ul>
@@ -325,11 +325,11 @@
 </code></pre><h2 class="heading"> <a name="installing" class="anchor" href="#installing"></a> Installing </h2><p>CouchDB can be installed by running the following command:</p>
 <pre><code>sudo apt-<span class="hljs-keyword">get</span> install couchdb
 </code></pre><p>By default CouchDB runs on port :5984. If you want to check CouchDB and see if it&apos;s running correctly you can issue this command:</p>
-<pre><code><span class="hljs-tag">curl</span> <span class="hljs-rule"><span class="hljs-attribute">localhost</span>:<span class="hljs-value"><span class="hljs-number">5984</span></span></span>
+<pre><code><span class="hljs-tag">curl</span> <span class="hljs-tag">localhost</span><span class="hljs-pseudo">:5984</span>
 </code></pre><p>and it should output something like this:</p>
 <pre><code>{&quot;<span class="hljs-attribute">couchdb</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;Welcome&quot;</span></span>,&quot;<span class="hljs-attribute">uuid</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;dfd16361e5321d4a90d01feedee6c0b1&quot;</span></span>,&quot;<span class="hljs-attribute">version</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;1.5.0&quot;</span></span>,&quot;<span class="hljs-attribute">vendor</span>&quot;:<span class="hljs-value">{&quot;<span class="hljs-attribute">name</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;Ubuntu&quot;</span></span>,&quot;<span class="hljs-attribute">version</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;14.04&quot;</span></span>}</span>}
 </code></pre><h2 class="heading"> <a name="usage" class="anchor" href="#usage"></a> Usage </h2><p>If you want to create a new database you can use the PUT command:</p>
-<pre><code><span class="hljs-tag">curl</span> <span class="hljs-tag">-X</span> <span class="hljs-tag">PUT</span> <span class="hljs-rule"><span class="hljs-attribute">localhost</span>:<span class="hljs-value"><span class="hljs-number">5984</span>/new_database</span></span>
+<pre><code>curl -X PUT <span class="hljs-string">localhost:</span><span class="hljs-number">5984</span>/new_database
 </code></pre><p>The output should look like this:</p>
 <pre><code>{&quot;<span class="hljs-attribute">ok</span>&quot;:<span class="hljs-value"><span class="hljs-literal">true</span></span>}
 </code></pre><p>And that&apos;s it!</p>
