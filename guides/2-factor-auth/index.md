@@ -35,7 +35,7 @@ Once you have installed the app, follow these steps to enable 2FA on your Koding
 
 
 
-### How do I diable 2FA on my Koding account?
+### How do I disable 2FA on my Koding account?
 To disable 2FA, follow these simple steps:
 1. visit the 2FA tab in [Account Settings](https://koding.com/Account/TwoFactorAuth)
 2. enter your Koding password and click the "Disable" button
