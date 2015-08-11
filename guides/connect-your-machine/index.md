@@ -20,8 +20,7 @@ Presently, the following are the requirements for any machine that can be connec
 In addition to these machine related requirements, you must also ensure that you have the following
 ports open (in case you are running a firewall):
 1. 80/tcp
-2. 22/tcp
-3. 56789/tcp
+2. 56789/tcp
 
 ### How does Koding make this happen?
 The steps are outlined below but in a nutshell, what happens is that you download our "Koding Service Connector"
