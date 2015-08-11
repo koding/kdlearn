@@ -45,11 +45,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?940" />
+    <link rel="stylesheet" href="/css/vendor.css?145" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?576" />
+    <link rel="stylesheet" href="/css/main.css?59" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?395" />
+    <link rel="stylesheet" href="/css/rwd.css?83" />
 	</head>
 	<body>
 
@@ -258,7 +258,15 @@
     <ul>
     
       <li class="">
-        <a href="/guides/collaboration">How can I do real-time collaboration on Koding?</a>
+        <a href="/guides/2-factor-auth">Enabling 2-factor authentication on your Koding account</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/drupal-setup-installation-beginners">Drupal Setup and Installation for Beginners</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/postgresql-on-koding">Using PostgreSQL</a>
       </li>
     
       <li class="">
@@ -266,27 +274,19 @@
       </li>
     
       <li class="">
-        <a href="/guides/2-factor-auth">Enabling 2-factor authentication on your Koding account</a>
+        <a href="/guides/getting-started/the-ui">Getting Started: The UI</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/understanding-file-permissions">Understanding file permissions</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/collaboration">How can I do real-time collaboration on Koding?</a>
       </li>
     
       <li class="">
         <a href="/guides/where-is-my-webserver-root">Where is my Web Server Root?</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/getting-started/file-upload">Getting Started: File Uploads</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/getting-started-ruby">Getting Started with Ruby</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/what-is-koding">What is Koding?</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/what-happened-to-127-0-0-1">What happened to 127.0.0.1?</a>
       </li>
     
     </ul>
@@ -333,10 +333,10 @@ wget -O cake.<span class="hljs-keyword">zip</span>
 <p>Open up <code>app/Config/core.php</code> and look for the following two lines. </p>
 <p>Edit the <code>DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi</code> and <code>76859309657453542496749683645</code> strings to have randomized content for your deploy. Just remember that the second string is numbers only.  </p>
 <pre><code><span class="hljs-comment">/** * A random string used in security hashing methods. */</span> 
-<span class="hljs-attribute">Configure</span>::<span class="hljs-function">write</span>(<span class="hljs-string">&apos;Security.salt&apos;</span>, <span class="hljs-string">&apos;DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi&apos;</span>);
+<span class="hljs-rule"><span class="hljs-attribute">Configure</span>:<span class="hljs-value">:<span class="hljs-function">write</span>(<span class="hljs-string">&apos;Security.salt&apos;</span>, <span class="hljs-string">&apos;DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi&apos;</span>)</span></span>;
 
 <span class="hljs-comment">/** * A random numeric string (digits only) used to encrypt/decrypt strings. */</span> 
-<span class="hljs-attribute">Configure</span>::<span class="hljs-function">write</span>(<span class="hljs-string">&apos;Security.cipherSeed&apos;</span>, <span class="hljs-string">&apos;76859309657453542496749683645&apos;</span>);
+<span class="hljs-rule"><span class="hljs-attribute">Configure</span>:<span class="hljs-value">:<span class="hljs-function">write</span>(<span class="hljs-string">&apos;Security.cipherSeed&apos;</span>, <span class="hljs-string">&apos;76859309657453542496749683645&apos;</span>)</span></span>;
 </code></pre><p>You will now be able to access CakePHP by following a similar URL:</p>
 <pre><code><span class="hljs-string">http:</span><span class="hljs-comment">//KODING_USERNAME.koding.io/cake</span>
 </code></pre><p>Find out more about your VM hostname <a href="http://learn.koding.com/faq/vm-hostname/">here</a>.</p>
