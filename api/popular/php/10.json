@@ -3,60 +3,60 @@
     "title": "Install WordPress",
     "url": "http://learn.koding.com/guides/installing-wordpress/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-04-29T00:00:00.000Z"
   },
   {
     "title": "PyroCMS Setup and Installation for Beginners",
     "url": "http://learn.koding.com/guides/pyrocms-installation-for-beginners/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-05-19T00:00:00.000Z"
   },
   {
     "title": "How to install Memcache",
     "url": "http://learn.koding.com/guides/install-memcache/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-05-19T00:00:00.000Z"
   },
   {
     "title": "How to install MediaWiki",
     "url": "http://learn.koding.com/guides/how-to-install-mediawiki/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-05-19T00:00:00.000Z"
   },
   {
-    "title": "How to install Joomla",
-    "url": "http://learn.koding.com/guides/how-to-install-joomla/index.html",
+    "title": "CakePHP Installation for Beginners",
+    "url": "http://learn.koding.com/guides/cakephp-for-beginners/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-05-19T00:00:00.000Z"
   },
   {
-    "title": "Drupal Setup and Installation for Beginners",
-    "url": "http://learn.koding.com/guides/drupal-setup-installation-beginners/index.html",
-    "author": "Thien",
-    "date": "2015-08-11T00:00:00.000Z"
+    "title": "How to install Composer",
+    "url": "http://learn.koding.com/guides/installing-composer/index.html",
+    "author": "Team Koding",
+    "date": "2015-05-19T00:00:00.000Z"
   },
   {
     "title": "Setting up a Symfony2 webserver",
     "url": "http://learn.koding.com/guides/setting-symfony2-webserver/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-05-19T00:00:00.000Z"
   },
   {
     "title": "Codeigniter Installation for Beginners",
     "url": "http://learn.koding.com/guides/codeigniter-for-beginners/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-05-19T00:00:00.000Z"
   },
   {
     "title": "Hello World on Koding: PHP",
     "url": "http://learn.koding.com/guides/hello-world/php/index.html",
     "author": "Team Koding",
-    "date": "2015-06-06T00:00:00.000Z"
+    "date": "2015-06-01T00:00:00.000Z"
   },
   {
-    "title": "PrestaShop Installation for Beginners",
-    "url": "http://learn.koding.com/guides/prestashop-installation-for-beginners/index.html",
+    "title": "Setting up a Laravel webserver with Artisan",
+    "url": "http://learn.koding.com/guides/setting-laravel-artisan-webserver/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-05-19T00:00:00.000Z"
   }
 ]

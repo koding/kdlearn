@@ -11,8 +11,8 @@
     
       <meta name="keywords" content="frameworks platforms,nodejs,javascript">
     
-		<meta name="description" content="In this guide we'll go over explaining what NodeJS is, what it can do, 
-and how to write your first NodeJS web server on Koding. We'll be 
+		<meta name="description" content="In this guide we&amp;#39;ll go over explaining what NodeJS is, what it can do, 
+and how to write your first NodeJS web server on Koding. We&amp;#39;ll be 
 approaching everything from a beginners perspective. So, lets get 
 started!">
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -24,8 +24,8 @@ started!">
 		<meta property="og:url" content="https://learn.koding.com"/>
 		<meta property="og:image" content="https://learn.koding.com/img/logo_150.png"/>
 		<meta property="og:image:secure_url" content="https://koding.com/a/images/logos/share_logo.png"/>
-		<meta property="og:description" content="In this guide we'll go over explaining what NodeJS is, what it can do, 
-and how to write your first NodeJS web server on Koding. We'll be 
+		<meta property="og:description" content="In this guide we&amp;#39;ll go over explaining what NodeJS is, what it can do, 
+and how to write your first NodeJS web server on Koding. We&amp;#39;ll be 
 approaching everything from a beginners perspective. So, lets get 
 started!"/>
 		<meta property="og:image:type" content="image/png">
@@ -39,8 +39,8 @@ started!"/>
 		<meta name="twitter:creator" content="@koding"/>
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:image" content="https://learn.koding.com/img/logo_150.png"/>
-		<meta name="twitter:description" content="In this guide we'll go over explaining what NodeJS is, what it can do, 
-and how to write your first NodeJS web server on Koding. We'll be 
+		<meta name="twitter:description" content="In this guide we&amp;#39;ll go over explaining what NodeJS is, what it can do, 
+and how to write your first NodeJS web server on Koding. We&amp;#39;ll be 
 approaching everything from a beginners perspective. So, lets get 
 started!"\>
 		<meta name="twitter:domain" content="learn.koding.com">
@@ -54,11 +54,11 @@ started!"\>
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?617" />
+    <link rel="stylesheet" href="/css/vendor.css?393" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?824" />
+    <link rel="stylesheet" href="/css/main.css?645" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?910" />
+    <link rel="stylesheet" href="/css/rwd.css?888" />
 	</head>
 	<body>
 
@@ -262,24 +262,16 @@ started!"\>
   </li>
 
   
-  <li class="">
+  <li class="zactive">
     <h5>Latest Guides</h5>
     <ul>
     
       <li class="">
-        <a href="/guides/2-factor-auth">Enabling 2-factor authentication on your Koding account</a>
+        <a href="/guides/understanding-file-permissions">Understanding file permissions</a>
       </li>
     
-      <li class="">
-        <a href="/guides/drupal-setup-installation-beginners">Drupal Setup and Installation for Beginners</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/postgresql-on-koding">Using PostgreSQL</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/connect-your-machine">Connect your own machine to Koding</a>
+      <li class="zactive">
+        <a href="/guides/getting-started-nodejs">Getting Started with NodeJS</a>
       </li>
     
       <li class="">
@@ -287,15 +279,23 @@ started!"\>
       </li>
     
       <li class="">
-        <a href="/guides/understanding-file-permissions">Understanding file permissions</a>
+        <a href="/guides/connect-your-machine">Connect your own machine to Koding</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/postgresql-on-koding">Using PostgreSQL</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/drupal-setup-installation-beginners">Drupal Setup and Installation for Beginners</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/2-factor-auth">Enabling 2-factor authentication on your Koding account</a>
       </li>
     
       <li class="">
         <a href="/guides/collaboration">How can I do real-time collaboration on Koding?</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/where-is-my-webserver-root">Where is my Web Server Root?</a>
       </li>
     
     </ul>
@@ -316,7 +316,7 @@ started!"\>
     <li class="author username">
        by <span rel="author">Team Koding</span>
     </li>
-    <li class="updated">Updated 3 months ago</li>
+    <li class="updated">Updated 20 hours ago</li>
   </ul>
 
 
@@ -333,25 +333,27 @@ access to the Document Object Model <em>(DOM)</em> and HTML5 APIs, it has access
 to a Node specific API which gives you access to the file system, and raw 
 networking.</p>
 <p>JavaScript run in Node is very similar to Python or Ruby. You have a 
-command <code>node</code>, which runs some JavaScript code. This code uses the Node 
+command <code>nodejs</code>, which runs some JavaScript code. This code uses the Node 
 API to modify the file system, or send/receive network packets. It&apos;s 
 rather low level by itself, but like all major languages people have 
 built frameworks ontop of the raw API to make it easier to create 
 applications.</p>
-<h2 class="heading"> <a name="installing-nodejs-and-npm" class="anchor" href="#installing-nodejs-and-npm"></a> Installing NodeJS and NPM </h2><p>By default every Koding VM comes preinstalled with NodeJS and NPM, but in case you somehow removed it you can use the following commands to get it back.</p>
-<p>To install it use the following command:</p>
+<blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>Because of a conflict with another package, the <code>node</code> package from the Ubuntu repositories is called <code>nodejs</code> instead of <code>node</code>. The available command will be <code>nodejs</code>.</p>
+ </blockquote><h2 class="heading"> <a name="installing-nodejs-and-npm" class="anchor" href="#installing-nodejs-and-npm"></a> Installing NodeJS and NPM </h2><p>By default every Koding VM comes preinstalled with NodeJS and NPM, but in case you somehow removed it you can use the following commands to get it back.</p>
+<p>Before you start with the install process, make sure you run this command to update the packages list:</p>
+<pre><code>sudo apt-<span class="hljs-built_in">get</span> <span class="hljs-keyword">update</span>
+</code></pre><p>To install NodeJS use the following command:</p>
 <pre><code>sudo apt-<span class="hljs-keyword">get</span> install nodejs
-</code></pre><p>If the above should fail you can install NodeJS through a PPA repository like so:</p>
-<pre><code>sudo apt-get install python-software-properties  
-sudo<span class="hljs-instruction"> add-apt-repository </span>ppa:chris-lea/node.js  
-sudo apt-get update  
-sudo apt-get install nodejs
 </code></pre><p>You can check the NodeJS version and if it installed correctly, after the installation process has finished, using the following command:</p>
 <pre><code><span class="hljs-title">nodejs</span> -v
 </code></pre><p>You will also need the Node Packaged Modules or NPM. To install NPM, simply run the following command:</p>
 <pre><code>sudo apt-<span class="hljs-keyword">get</span> install npm
 </code></pre><p>To make sure NPM has installed successfully, run:</p>
 <pre><code><span class="hljs-built_in">npm</span> -v
+</code></pre><p>If the above should fail you can install NodeJS through a PPA repository like so:</p>
+<pre><code>curl -sL http<span class="hljs-variable">s:</span>//<span class="hljs-keyword">deb</span>.nodesource.<span class="hljs-keyword">com</span>/setup | sudo bash -
+sudo apt-<span class="hljs-built_in">get</span> install nodejs  
+sudo apt-<span class="hljs-built_in">get</span> install build-essential
 </code></pre><h2 class="heading"> <a name="running-your-first-node-script" class="anchor" href="#running-your-first-node-script"></a> Running your first Node Script </h2><p>Lets setup a single print line script, and call it. Open up your <a href="https://koding.com/Ace">Ace 
 editor</a>, and open up a new file by pressing the Plus Button on the 
 tab list. If your file says <code>Untitled.txt</code>, you&apos;re good to go.</p>
@@ -369,9 +371,9 @@ below.</p>
 haven&apos;t saved our file yet though, so use <strong>Ctrl-S</strong> to save the file, 
 and name it <code>hello.js</code>. Finally, open up the <a href="https://koding.com/Terminal">Koding Terminal</a> 
 and run this file with the following code.</p>
-<pre><code><span class="hljs-title">node</span> hello.js
+<pre><code><span class="hljs-title">nodejs</span> hello.js
 </code></pre><p>You should see output similar to this:</p>
-<pre><code><span class="hljs-label">joshmurray:</span> ~ $ node hello.js
+<pre><code><span class="hljs-label">joshmurray:</span> ~ $ nodejs hello.js
 Hello from NodeJS!
 <span class="hljs-label">joshmurray:</span> ~ $
 </code></pre><p>Not surprisingly, it printed our <code>console.log()</code> output! Next up, lets 
@@ -432,7 +434,7 @@ an IP to listen on. When called, it starts the server we defined above.<br>Meani
 machine)</em>, <code>0.0.0.0:3000</code> calls our above function, which we then end 
 with <code>Hello from NodeJS!</code>.</p>
 <p>Lets try this out now, and run it. Just like before, with the file saved 
-type <code>node web.js</code> <em>(remember, we named this one <code>web.js</code>)</em>. Once it&apos;s 
+type <code>nodejs web.js</code> <em>(remember, we named this one <code>web.js</code>)</em>. Once it&apos;s 
 running, open up your browser and go to</p>
 <pre><code><span class="hljs-string">http:</span><span class="hljs-comment">//hostname.username.koding.io:3000</span>
 </code></pre><p>Where <code>username</code> is your Koding Username.</p>
@@ -441,7 +443,7 @@ with the <code>Hello from NodeJS!</code> string. If you then go back to the
 Terminal, you&apos;ll see that the server logged a visit. If you refresh your 
 web page a few times, you can watch your web server respond to each 
 request!</p>
-<pre><code>NodeJS web server <span class="hljs-property">running</span> <span class="hljs-function_start"><span class="hljs-keyword">on</span></span> <span class="hljs-number">0.0</span>.0.0:<span class="hljs-number">3000</span>
+<pre><code>NodeJS web server <span class="hljs-property">running</span> <span class="hljs-function_start"><span class="hljs-keyword">on</span></span> <span class="hljs-number">0.0</span><span class="hljs-number">.0</span><span class="hljs-number">.0</span>:<span class="hljs-number">3000</span>
 Someone visited our web server!
 </code></pre><p>This sums up the Getting Started with NodeJS guide. You should now have a 
 good understanding of what Node is, from a very basic perspective. As 
