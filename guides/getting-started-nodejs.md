@@ -21,29 +21,29 @@ to a Node specific API which gives you access to the file system, and raw
 networking.
 
 JavaScript run in Node is very similar to Python or Ruby. You have a 
-command `node`, which runs some JavaScript code. This code uses the Node 
+command `nodejs`, which runs some JavaScript code. This code uses the Node 
 API to modify the file system, or send/receive network packets. It's 
 rather low level by itself, but like all major languages people have 
 built frameworks ontop of the raw API to make it easier to create 
 applications.
 
+> type:tip
+> Because of a conflict with another package, the `node` package from the Ubuntu repositories is called `nodejs` instead of `node`. The available command will be `nodejs`.
+
 ## Installing NodeJS and NPM
 
 By default every Koding VM comes preinstalled with NodeJS and NPM, but in case you somehow removed it you can use the following commands to get it back.
 
-To install it use the following command:
+Before you start with the install process, make sure you run this command to update the packages list:
+
+```
+sudo apt-get update
+```
+
+To install NodeJS use the following command:
 
 ```
 sudo apt-get install nodejs
-```
-
-If the above should fail you can install NodeJS through a PPA repository like so:
-
-```
-sudo apt-get install python-software-properties  
-sudo add-apt-repository ppa:chris-lea/node.js  
-sudo apt-get update  
-sudo apt-get install nodejs  
 ```
 
 You can check the NodeJS version and if it installed correctly, after the installation process has finished, using the following command:
@@ -62,6 +62,14 @@ To make sure NPM has installed successfully, run:
 
 ```
 npm -v
+```
+
+If the above should fail you can install NodeJS through a PPA repository like so:
+
+```
+curl -sL https://deb.nodesource.com/setup | sudo bash -
+sudo apt-get install nodejs  
+sudo apt-get install build-essential
 ```
 
 ## Running your first Node Script
@@ -91,13 +99,13 @@ and name it `hello.js`. Finally, open up the [Koding Terminal][terminal]
 and run this file with the following code.
 
 ```
-node hello.js
+nodejs hello.js
 ```
 
 You should see output similar to this:
 
 ```
-joshmurray: ~ $ node hello.js
+joshmurray: ~ $ nodejs hello.js
 Hello from NodeJS!
 joshmurray: ~ $
 ```
@@ -185,7 +193,7 @@ machine)*, `0.0.0.0:3000` calls our above function, which we then end
 with `Hello from NodeJS!`.
 
 Lets try this out now, and run it. Just like before, with the file saved 
-type `node web.js` *(remember, we named this one `web.js`)*. Once it's 
+type `nodejs web.js` *(remember, we named this one `web.js`)*. Once it's 
 running, open up your browser and go to
 
 ```
