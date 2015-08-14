@@ -27,7 +27,7 @@ rather low level by itself, but like all major languages people have
 built frameworks ontop of the raw API to make it easier to create 
 applications.
 
-> type:tip
+> type:alert
 > Because of a conflict with another package, the `node` package from the Ubuntu repositories is called `nodejs` instead of `node`. The available command will be `nodejs`.
 
 ## Installing NodeJS and NPM
