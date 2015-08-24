@@ -11,7 +11,8 @@
     
       <meta name="keywords" content="understanding vm,koding">
     
-		<meta name="description" content="This guide will walk you through the process of upgrading the OS, Kernel and core packages on your Koding VM.">
+		<meta name="description" content="alertDO NOT update the OS to Ubuntu 15.xx, it will completely hose your VM and you will
+need to reinit">
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
 
@@ -21,7 +22,8 @@
 		<meta property="og:url" content="https://learn.koding.com"/>
 		<meta property="og:image" content="https://learn.koding.com/img/logo_150.png"/>
 		<meta property="og:image:secure_url" content="https://koding.com/a/images/logos/share_logo.png"/>
-		<meta property="og:description" content="This guide will walk you through the process of upgrading the OS, Kernel and core packages on your Koding VM."/>
+		<meta property="og:description" content="alertDO NOT update the OS to Ubuntu 15.xx, it will completely hose your VM and you will
+need to reinit"/>
 		<meta property="og:image:type" content="image/png">
 		<meta property="og:image:width" content="130"/>
 		<meta property="og:image:height" content="100"/>
@@ -33,7 +35,8 @@
 		<meta name="twitter:creator" content="@koding"/>
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:image" content="https://learn.koding.com/img/logo_150.png"/>
-		<meta name="twitter:description" content="This guide will walk you through the process of upgrading the OS, Kernel and core packages on your Koding VM."\>
+		<meta name="twitter:description" content="alertDO NOT update the OS to Ubuntu 15.xx, it will completely hose your VM and you will
+need to reinit"\>
 		<meta name="twitter:domain" content="learn.koding.com">
 
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
@@ -45,11 +48,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?642" />
+    <link rel="stylesheet" href="/css/vendor.css?677" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?31" />
+    <link rel="stylesheet" href="/css/main.css?521" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?226" />
+    <link rel="stylesheet" href="/css/rwd.css?185" />
 	</head>
 	<body>
 
@@ -253,12 +256,12 @@
   </li>
 
   
-  <li class="">
+  <li class="zactive">
     <h5>Latest Guides</h5>
     <ul>
     
-      <li class="">
-        <a href="/guides/understanding-file-permissions">Understanding file permissions</a>
+      <li class="zactive">
+        <a href="/guides/upgrading-your-vm">Updating the OS (and other packages) your VM</a>
       </li>
     
       <li class="">
@@ -266,7 +269,7 @@
       </li>
     
       <li class="">
-        <a href="/guides/getting-started/the-ui">Getting Started: The UI</a>
+        <a href="/guides/understanding-file-permissions">Understanding file permissions</a>
       </li>
     
       <li class="">
@@ -286,7 +289,7 @@
       </li>
     
       <li class="">
-        <a href="/guides/collaboration">How can I do real-time collaboration on Koding?</a>
+        <a href="/guides/getting-started/the-ui">Getting Started: The UI</a>
       </li>
     
     </ul>
@@ -307,14 +310,16 @@
     <li class="author username">
        by <span rel="author">Team Koding</span>
     </li>
-    <li class="updated">Updated 4 months ago</li>
+    <li class="updated">Updated 5 hours ago</li>
   </ul>
 
 
   
 
   <div itemprop="articleBody">
-    <p itemprop="about">This guide will walk you through the process of upgrading the OS, Kernel and core packages on your Koding VM.</p>
+    <blockquote class="alert fa fa-exclamation-circle"> <p itemprop="about"><span class="label">alert</span>DO NOT update the OS to Ubuntu 15.xx, it will completely hose your VM and you will
+need to <a href="http://learn.koding.com/faq/vm-reinit/">reinit</a></p>
+ </blockquote><p>This guide will walk you through the process of upgrading the OS, Kernel and core packages on your Koding VM.</p>
 <p>We will walk through the following steps:</p>
 <ol>
 <li>Updating the packages (strictly update the current packages)</li>

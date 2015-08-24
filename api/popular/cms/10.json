@@ -3,36 +3,36 @@
     "title": "Install WordPress",
     "url": "http://learn.koding.com/guides/installing-wordpress/index.html",
     "author": "Team Koding",
-    "date": "2015-04-29T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
     "title": "Drupal Setup and Installation for Beginners",
     "url": "http://learn.koding.com/guides/drupal-setup-installation-beginners/index.html",
     "author": "Thien",
-    "date": "2015-08-14T00:00:00.000Z"
-  },
-  {
-    "title": "PyroCMS Setup and Installation for Beginners",
-    "url": "http://learn.koding.com/guides/pyrocms-installation-for-beginners/index.html",
-    "author": "Team Koding",
-    "date": "2015-05-19T00:00:00.000Z"
+    "date": "2015-08-11T00:00:00.000Z"
   },
   {
     "title": "How to install Joomla",
     "url": "http://learn.koding.com/guides/how-to-install-joomla/index.html",
     "author": "Team Koding",
-    "date": "2015-04-29T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
+  },
+  {
+    "title": "PyroCMS Setup and Installation for Beginners",
+    "url": "http://learn.koding.com/guides/pyrocms-installation-for-beginners/index.html",
+    "author": "Team Koding",
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
     "title": "Ghost Blog Installation",
     "url": "http://learn.koding.com/guides/ghost-installation/index.html",
     "author": "Team Koding",
-    "date": "2015-04-29T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
     "title": "Getting started with Drupal 8 (Prerelease)",
     "url": "http://learn.koding.com/guides/getting-started-drupal8-beta/index.html",
     "author": "Nik LePage",
-    "date": "2015-04-29T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   }
 ]
