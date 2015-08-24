@@ -6,6 +6,9 @@ template: page.toffee
 ---
 
 # Updating the OS on your Koding VM
+> type:alert
+> DO NOT update the OS to Ubuntu 15.xx, it will completely hose your VM and you will
+> need to [reinit](http://learn.koding.com/faq/vm-reinit/)
 
 This guide will walk you through the process of upgrading the OS, Kernel and core packages on your Koding VM.
 
