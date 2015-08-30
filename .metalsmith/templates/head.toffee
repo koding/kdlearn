@@ -67,5 +67,7 @@
     <link rel="stylesheet" href="/css/main.css?#{Math.floor(Math.random()*1000)}" />
     <!-- RWD CSS -->
     <link rel="stylesheet" href="/css/rwd.css?#{Math.floor(Math.random()*1000)}" />
+    <!-- Google WebMaster Tools Auth for PD team -->
+    <meta name="google-site-verification" content="xit6W5qyYuPGq49UXRRZNm_HW5bUxyPS0hqJRDP-2tg" />
 	</head>
 	<body>
