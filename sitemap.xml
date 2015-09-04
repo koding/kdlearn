@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+        <loc>http://learn.koding.com/guides/connect-with-ssh-windows</loc>
+        <lastmod>2015-09-04</lastmod>
+        <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
         <loc>http://learn.koding.com/guides/upgrading-your-vm</loc>
         <lastmod>2015-08-24</lastmod>
         <changefreq>monthly</changefreq>
@@ -14,7 +20,7 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/understanding-file-permissions</loc>
+        <loc>http://learn.koding.com/guides/2-factor-auth</loc>
         <lastmod>2015-08-11</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -26,25 +32,25 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/postgresql-on-koding</loc>
-        <lastmod>2015-08-11</lastmod>
-        <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
         <loc>http://learn.koding.com/guides/drupal-setup-installation-beginners</loc>
         <lastmod>2015-08-11</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/2-factor-auth</loc>
+        <loc>http://learn.koding.com/guides/postgresql-on-koding</loc>
         <lastmod>2015-08-11</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
         <loc>http://learn.koding.com/guides/getting-started/the-ui</loc>
+        <lastmod>2015-08-11</lastmod>
+        <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+        <loc>http://learn.koding.com/guides/understanding-file-permissions</loc>
         <lastmod>2015-08-11</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -98,13 +104,13 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/setting-rails-webserver</loc>
+        <loc>http://learn.koding.com/guides/ide-introduction</loc>
         <lastmod>2015-06-11</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/ide-introduction</loc>
+        <loc>http://learn.koding.com/guides/setting-rails-webserver</loc>
         <lastmod>2015-06-11</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -194,12 +200,6 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/setting-up-ftp-with-vsftpd</loc>
-        <lastmod>2015-05-06</lastmod>
-        <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
         <loc>http://learn.koding.com/guides/setting-up-ftp-on-koding</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
@@ -230,7 +230,7 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/setting-up-sftp-on-koding</loc>
+        <loc>http://learn.koding.com/guides/setting-up-ftp-with-vsftpd</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -272,7 +272,7 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/setting-up-webdav-on-koding</loc>
+        <loc>http://learn.koding.com/guides/setting-up-sftp-on-koding</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -314,13 +314,19 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/ssh-chromebook</loc>
+        <loc>http://learn.koding.com/guides/setting-up-webdav-on-koding</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
         <loc>http://learn.koding.com/guides/dropbox-for-file-sync</loc>
+        <lastmod>2015-05-06</lastmod>
+        <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+        <loc>http://learn.koding.com/guides/ssh-chromebook</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -333,12 +339,6 @@
   
   <url>
         <loc>http://learn.koding.com/guides/terminal-introduction</loc>
-        <lastmod>2015-05-06</lastmod>
-        <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-        <loc>http://learn.koding.com/guides/connect-with-ssh-windows</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -488,7 +488,7 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/getting-started/activity-feed</loc>
+        <loc>http://learn.koding.com/guides/getting-started/editing-your-profile</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -542,7 +542,7 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/getting-started/editing-your-profile</loc>
+        <loc>http://learn.koding.com/guides/getting-started/activity-feed</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>

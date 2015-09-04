@@ -6,14 +6,14 @@
     "date": "2015-05-06T00:00:00.000Z"
   },
   {
-    "title": "Using SSH on a Chromebook to connect to your Koding VM",
-    "url": "http://learn.koding.com/guides/ssh-chromebook/index.html",
-    "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
-  },
-  {
     "title": "Connect with SSH from Windows",
     "url": "http://learn.koding.com/guides/connect-with-ssh-windows/index.html",
+    "author": "Team Koding",
+    "date": "2015-09-04T00:00:00.000Z"
+  },
+  {
+    "title": "Using SSH on a Chromebook to connect to your Koding VM",
+    "url": "http://learn.koding.com/guides/ssh-chromebook/index.html",
     "author": "Team Koding",
     "date": "2015-05-06T00:00:00.000Z"
   },

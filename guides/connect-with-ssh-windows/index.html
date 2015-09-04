@@ -48,11 +48,11 @@ of Koding, to interact with your Koding VM. This is also required if you're inte
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?345" />
+    <link rel="stylesheet" href="/css/vendor.css?758" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?707" />
+    <link rel="stylesheet" href="/css/main.css?667" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?119" />
+    <link rel="stylesheet" href="/css/rwd.css?622" />
     <!-- Google WebMaster Tools Auth for PD team -->
     <meta name="google-site-verification" content="xit6W5qyYuPGq49UXRRZNm_HW5bUxyPS0hqJRDP-2tg" />
 	</head>
@@ -258,9 +258,13 @@ of Koding, to interact with your Koding VM. This is also required if you're inte
   </li>
 
   
-  <li class="">
+  <li class="zactive">
     <h5>Latest Guides</h5>
     <ul>
+    
+      <li class="zactive">
+        <a href="/guides/connect-with-ssh-windows">Connect with SSH from Windows</a>
+      </li>
     
       <li class="">
         <a href="/guides/upgrading-your-vm">Updating the OS (and other packages) your VM</a>
@@ -271,7 +275,7 @@ of Koding, to interact with your Koding VM. This is also required if you're inte
       </li>
     
       <li class="">
-        <a href="/guides/understanding-file-permissions">Understanding file permissions</a>
+        <a href="/guides/2-factor-auth">Enabling 2-factor authentication on your Koding account</a>
       </li>
     
       <li class="">
@@ -279,15 +283,11 @@ of Koding, to interact with your Koding VM. This is also required if you're inte
       </li>
     
       <li class="">
-        <a href="/guides/postgresql-on-koding">Using PostgreSQL</a>
-      </li>
-    
-      <li class="">
         <a href="/guides/drupal-setup-installation-beginners">Drupal Setup and Installation for Beginners</a>
       </li>
     
       <li class="">
-        <a href="/guides/2-factor-auth">Enabling 2-factor authentication on your Koding account</a>
+        <a href="/guides/postgresql-on-koding">Using PostgreSQL</a>
       </li>
     
       <li class="">
@@ -312,7 +312,7 @@ of Koding, to interact with your Koding VM. This is also required if you're inte
     <li class="author username">
        by <span rel="author">Team Koding</span>
     </li>
-    <li class="updated">Updated 4 months ago</li>
+    <li class="updated">Updated 18 hours ago</li>
   </ul>
 
 
@@ -328,7 +328,7 @@ to easily connect with the <a href="/guides/ssh-into-your-vm">Unix instructions<
 <li>Your <a href="/faq/vm-hostname/">Koding</a> VM address</li>
 <li><a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/">PuTTY</a></li>
 <li>A PuTTY Auth Key. If you need to generate one, please refer to
-<a href="http://katsande.com/using-puttygen-to-generate-ssh-private-public-keys">this</a> tutorial.</li>
+<a href="http://sshcontrol.com/help/puttygen_keys">this</a> tutorial.</li>
 </ul>
 <h2 class="heading"> <a name="connecting-with-putty" class="anchor" href="#connecting-with-putty"></a> Connecting with PuTTY </h2><p>For this connection method, you will need the <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/">PuTTY SSH client suite</a> <code>putty.exe</code>, <code>plink.exe</code>, and <code>pageant.exe</code>.</p>
 <blockquote class="alert fa fa-exclamation-circle"> <p><span class="label">alert</span>PuTTY has proven difficult to support due to the UI and ease of checking/configuring PuTTY incorrectly. With that said, we highly recommend using <a href="https://www.cygwin.com/">Cygwin</a>, since it offers a real and normal Unix SSH Config.</p>

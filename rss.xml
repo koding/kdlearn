@@ -18,6 +18,77 @@
   <language>en</language>
   
   <item>
+    <title>Connect with SSH from Windows</title>
+    <link>//learn.koding.com/guides/connect-with-ssh-windows</link>
+    <pubDate>"2015-09-04T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/connect-with-ssh-windows</guid>
+    <author>Team Koding</author>
+    <description>Connecting to your VM with SSH will allow you to use another Terminal, outside
+of Koding, to interact with your Koding VM. This is also required if you're interested in using SSH Tunneling. If you're connecting from a Mac or Linux, have a look here.
+We are going to be connecting using PuTTY, and we are going to use the terminology &amp;quot;local&amp;quot; to represent the machine that you're connecting to Koding with.
+ alertNote that PuTTY can be troublesome. You may want to consider Cygwin
+to easily connect with the Unix instructions.
+   Requirements 
+Your Koding VM address
+PuTTY
+A PuTTY Auth Key. If you need to generate one, please refer to
+this tutorial.
+
+  Connecting with PuTTY For this connection method, you will need the PuTTY SSH client suite putty.exe, plink.exe, and pageant.exe.
+ alertPuTTY has proven difficult to support due to the UI and ease of checking/configuring PuTTY incorrectly. With that said, we highly recommend using Cygwin, since it offers a real and normal Unix SSH Config.
+ 
+Copy the text contents of your PuTTY public key. If you are not sure what or where it is, please refer to the Requirements section of this guide.
+As in Step #2 of the Linux guide above, paste the entirety of your public key into the SSH Keys section of your Koding account settings.
+Start up putty.exe and set the Host Name (or IP address) to the
+same VM address as above: &amp;lt;username&amp;gt;.koding.io
+
+
+
+In the Category menu on the left, select Data under Connection. Enter your Koding username in the Auto-login username box.
+Select Proxy under Connection, and change the Proxy type to Local. Enter the following line (modified for your system) in the Telnet command, or local proxy command box:
+
+C:\your\path\to\plink.exe &amp;lt;username&amp;gt;@&amp;lt;username&amp;gt;.koding.io -nc %host:%port
+
+
+Go back up to the &amp;quot;Session&amp;quot; settings and save this PuTTY configuration
+to a new session by typing a name into the &amp;quot;Saved Sessions&amp;quot; box, and
+clicking on &amp;quot;Save&amp;quot;.
+In Step 7, we will cover setting up your Auth. This can be done two ways,
+and we will cover both. You only need to do one method! Pageant has been
+working for everyone, where as PuTTY-Auth has been a bit problematic but is
+shorter. Choose whichever you like, but if you have issues, try Pagaent Auth
+below.
+You’re done! You can now connect to Koding via PuTTY. To connect with
+Pageant, you can right click the Pageant Icon, and under “Saved Sessions” click
+on your Saved Session. This will automatically open up PuTTY and start
+connecting.To connect from PuTTY itself, open PuTTY and select your Saved
+Session from the list, then click Open.An example of a successful Koding
+Connection is below.
+
+
+  Pageant Auth Open pageant.exe. It will launch into your Taskbar.
+
+Right click the Pageant icon in the taskbar, and select &amp;quot;View Keys&amp;quot;. From there, click the &amp;quot;Add Key&amp;quot; button. Navigate to your PuTTYGen private key and click &amp;quot;Open&amp;quot;. You should now have a key listed in your Pageant Key List. An example image is below.
+
+If your key has been added to the Pageant Key List, close the window.
+  PuTTY Auth Reopen PuTTY and select your Session, then click Load. Next, under the
+Connection menu, open up the SSH menu and select Auth. Enable the Allow
+agent forwarding checkbox. Under Private key file for authentication, browse
+to your PuTTYGen private key.
+
+Next, Plink needs to know the explicit location of your key. So go back to
+&amp;quot;Proxy&amp;quot; under &amp;quot;Connection&amp;quot; and look for the &amp;quot;Telnet command, or local
+proxy command&amp;quot; box.  Currently, it should look like this:
+C:\your\path\to\plink.exe &amp;lt;username&amp;gt;@&amp;lt;username&amp;gt;.koding.io -nc %host:%port
+Modify it, by adding your private key location. So, it will look like this:
+C:\your\path\to\plink.exe -i c:\path\to\private\key.ppk &amp;lt;username&amp;gt;@&amp;lt;username&amp;gt;.koding.io -nc %host:%port
+  Important note If you're having trouble SSH-ing into your VM, after pasting your SSH key in the box located in your Koding account settings, make sure there are NO SPACES in the key other than the one after ssh-rsa and one before your email address.
+And that's it!
+If you encounter any issues or have any questions please drop us an email here.
+</description>
+  </item>
+  
+  <item>
     <title>Updating the OS (and other packages) your VM</title>
     <link>//learn.koding.com/guides/upgrading-your-vm</link>
     <pubDate>"2015-08-24T00:00:00.000Z"</pubDate>
@@ -246,109 +317,40 @@ fun with Node!
   </item>
   
   <item>
-    <title>Understanding file permissions</title>
-    <link>//learn.koding.com/guides/understanding-file-permissions</link>
+    <title>Enabling 2-factor authentication on your Koding account</title>
+    <link>//learn.koding.com/guides/2-factor-auth</link>
     <pubDate>"2015-08-11T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/understanding-file-permissions</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/2-factor-auth</guid>
     <author>Team Koding</author>
-    <description>Linux-based systems, Ubuntu being one of them, have a simple system for managing individual file permissions, The Unix concepts for file ownership and permissions are the main driving force behind Linux and it's security at the file system level.
-This guide will cover the basics of file permissions and how you can modify them.
-  Users and groups Because Linux is a multi-user system we have two main types of users: system users and regular users. By default system users are used when the system requires running non-interactive and or background processes. On the other hand the regular users are used for everything else.
-A Linux-based system also has a superuser or root user that has absolute power over the system including modifying file ownership and permissions.
-Linux-based systems also have groups. A group is a collection of 0 or more users. Each user belongs by default to a group but can also be a part of multiple groups.
-  Ownership and permissions Each file, in a Linux-based system, belongs to a single user and a single group and has certain access permissions. You as a user can view the permissions of a file, using this command:
-ls -l &amp;lt;the name of your file or all files in a directory&amp;gt;
-Bellow is an example of what the command ls -l /Web outputs when you run it in your Koding VM Terminal.
+    <description>2-factor authentication (2FA) gives your Koding account an added layer of security and protection. Once enabled,
+you will be required to provide a verification code along with your password each time you sign in to Koding.
+
+2FA is increasingly become a required standard and many of the leading companies in the world now support 2FA.
+  How do I enable 2FA on my Koding account? To enable 2FA, you will first need to install an app that generates authentication tokens on your phone. We recommend either the Google Authenticator app or Authy.
+
+Download Authy for iPhone
+Download Authy for Android
+Download Google Authenticator for iPhone
+Download Google Authenticator for Android
+
+Once you have installed the app, follow these steps to enable 2FA on your Koding account.
+ tipThe instructions below are for the Google Authenticator app. Other apps like Authy have a similar workflow.
+If you get stuck somewhere in the setup, you can always send us an email.
+ 
+Log in to your Koding account
+Go to the 2FA section in Account Settings
+Open up the Google Authenticator app on your phone and click the + icon (as shown in the image below)
+Select &amp;quot;Scan Barcode&amp;quot;
+Scan the code shown in the Account Settings
+The Google Authenticator app will add your Koding account to the list and generate a code
+Enter the code into Account Settings to verify and activate 2FA
 
 
+  How do I disable 2FA on my Koding account? To disable 2FA, follow these simple steps:
 
-Mode
-Owner
-Group
-File size
-Last modified
-Filename
+visit the 2FA tab in Account Settings
+enter your Koding password and click the &amp;quot;Disable&amp;quot; button
 
-
-
-
--rw-r--r-- 1
-jakemurray
-jakemurray
-1252
-Feb 18 20:04
-index.html
-
-
-drwxr-xr-x 1
-jakemurray
-www-data
-1414
-Feb 18 20:04
-perl
-
-
--rw-r--r-- 1
-jakemurray
-jakemurray
-1247
-Feb 18 20:04
-php.php
-
-
--rwxr-xr-x 1
-root
-jakemurray
-1431
-Feb 18 20:04
-python.py
-
-
--rwxr-xr-x 1
-jakemurray
-jakemurray
-1574
-Feb 18 20:04
-ruby.rb
-
-
-
-Looking at the Mode column you notice some letters. What do they mean?
-The first letter in the Mode column represents the type of file. In Linux, there are two basic types of files: normal and special.
-Linux-based systems permissions allow 3 things to be done to a file: read, write and execute.
-
-r (read) - a user can view the contents of the file.
-w (write) - a user can change the contents of the file.
-x (execute) - a user can execute or run the file if it is a program or script.
-
-Every file can have defined 3 sets of people for whom you can specify permissions.
-
-owner - a single user who owns the file. (usually the person who created the file)
-group - every file belongs to a single group.
-other - everyone else who is not in the group or the owner.
-
-  Changing file permissions To change permissions on a file or directory you can use the chmod command.
-chmod [permissions] [path]
-The chmod command has permission arguments that are made up of 3 components.
-
-Who are you changing the permission for? - owner, group or other
-Are you granting or revoking the permission - indicated with either a plus ( + ) or a minus ( - )
-Which permission are you setting? - read ( r ), write ( w ) or execute ( x ).
-
-Here is a quick example:
-Grant execute permissions for the demo.html file for the entire group the file belongs to.
-chmod g+x demo.html
-You can also set permission on files or folders using the octal notation. By using this method, each permissions category (owner, group, and other) is represented by a number between 0 and 7.
-Here is a quick example of usage of the octal notation:
-chmod 751 demo.html
-If you want to change the owner and group of a file or folder you can use the chown command.
-The basic syntax for using chown to change owners and groups is:
-chown [options] new_owner:new_group &amp;lt;name of file or folder&amp;gt;
-For example, the following command would transfer the ownership and change the group of a file named demo1 to a new owner named demo and the www-data group:
-chown demo:www-data demo1
- tipNote: The same principles also apply to folders
- You should now be able to understand how ownership and permissions work in Linux.
-If you encounter any issues or have any questions please drop us an email here.
 </description>
   </item>
   
@@ -413,63 +415,6 @@ still be running and all files will be available on it.
  If you wish to completely uninstall the Koding Connector Service from your machine, simply run this 
 command on the machine that you had connected:
 sudo dpkg -P klient
-</description>
-  </item>
-  
-  <item>
-    <title>Using PostgreSQL</title>
-    <link>//learn.koding.com/guides/postgresql-on-koding</link>
-    <pubDate>"2015-08-11T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/postgresql-on-koding</guid>
-    <author>Federico Ponzi</author>
-    <description>PostgreSQL is an open source relational database management system that 
-provides an implementation of the SQL query language. In this guide, 
-we'll go over using PostgreSQL on your Koding VM. Lets get started!
-  Starting PostgreSQL Before we gets started, start your PostgreSQL server with the following 
-command.
-sudo service postgresql start
-If you see an error like the following message, you may need to go 
-through the Installing PostgreSQL.
-psql: could not connect to server: No such file or directory
-Is the server running locally and accepting
-connections on Unix domain socket &amp;quot;/var/run/postgresql/.s.PGSQL.5432&amp;quot;?
-  Getting Started To getting started with postgreSQL, open your Terminal, and type:
-username$ sudo su - postgres
-Now you are logged into your vm with the postgres user. Then connect to template1 database using the postgresql's psql client:
-postgres ~$  psql template1
-postgres ~$  template1=#
-Note the # symbol, declaring that you are logged to the database as a Super User. Now for enchaned security change your default postgres's password:
-template1=# \password
-Enter new password:
-Enter it again:
-Nice, we are near the end: now create a new user with createdb permission with same username of your vm. So if your username is koding02, your prompt should be like:
-koding02 ~$
-Create a new user using the CREATE USER command like this:
-template1=# CREATE USER username
-template1-# WITH PASSWORD 'password' createdb;
-CREATE ROLE
-template1=#
-You are done configurating PostgreSQL! Now disconnect from the database using \q, and quit from postgres user using ctrl+d.
-Now you can create a new database using the command:
-createdb myFreshNewDb
-And delete it using the deletedb tool:
-deletedb myFreshNewDb
-Once you have created a database, you can connect to it using the psql client like we did before:
-psql myFreshNewDb
-myFresNewDb=&amp;gt;
-  Using Psql client Let's see some useful commands of the psql tool. 
-First of all: you can get some help just typing \? in your psql command line.
-To exit from the appearing screen, just press the q button.
-To load and execute SQL statements from file, you can use this syntax:
-\i my/file/path.sql
-Writing long lines of SQL code in the command line can be really hard to debug. Use the \i to run from file or use:
-\e
-To edit the input buffer with an editor. If you usually don't use editor from command line use nano - it's the simplest.
-To check what relations your database contains, use
-\d
-If you want more information about a particular relation, use
-\d myfancytable
-Have fun!
 </description>
   </item>
   
@@ -588,40 +533,59 @@ This has been a beginner guide from Koding. As always, more Quick Tips and begin
   </item>
   
   <item>
-    <title>Enabling 2-factor authentication on your Koding account</title>
-    <link>//learn.koding.com/guides/2-factor-auth</link>
+    <title>Using PostgreSQL</title>
+    <link>//learn.koding.com/guides/postgresql-on-koding</link>
     <pubDate>"2015-08-11T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/2-factor-auth</guid>
-    <author>Team Koding</author>
-    <description>2-factor authentication (2FA) gives your Koding account an added layer of security and protection. Once enabled,
-you will be required to provide a verification code along with your password each time you sign in to Koding.
-
-2FA is increasingly become a required standard and many of the leading companies in the world now support 2FA.
-  How do I enable 2FA on my Koding account? To enable 2FA, you will first need to install an app that generates authentication tokens on your phone. We recommend either the Google Authenticator app or Authy.
-
-Download Authy for iPhone
-Download Authy for Android
-Download Google Authenticator for iPhone
-Download Google Authenticator for Android
-
-Once you have installed the app, follow these steps to enable 2FA on your Koding account.
- tipThe instructions below are for the Google Authenticator app. Other apps like Authy have a similar workflow.
-If you get stuck somewhere in the setup, you can always send us an email.
- 
-Log in to your Koding account
-Go to the 2FA section in Account Settings
-Open up the Google Authenticator app on your phone and click the + icon (as shown in the image below)
-Select &amp;quot;Scan Barcode&amp;quot;
-Scan the code shown in the Account Settings
-The Google Authenticator app will add your Koding account to the list and generate a code
-Enter the code into Account Settings to verify and activate 2FA
-
-
-  How do I disable 2FA on my Koding account? To disable 2FA, follow these simple steps:
-
-visit the 2FA tab in Account Settings
-enter your Koding password and click the &amp;quot;Disable&amp;quot; button
-
+    <guid isPermaLink="true">//learn.koding.com/guides/postgresql-on-koding</guid>
+    <author>Federico Ponzi</author>
+    <description>PostgreSQL is an open source relational database management system that 
+provides an implementation of the SQL query language. In this guide, 
+we'll go over using PostgreSQL on your Koding VM. Lets get started!
+  Starting PostgreSQL Before we gets started, start your PostgreSQL server with the following 
+command.
+sudo service postgresql start
+If you see an error like the following message, you may need to go 
+through the Installing PostgreSQL.
+psql: could not connect to server: No such file or directory
+Is the server running locally and accepting
+connections on Unix domain socket &amp;quot;/var/run/postgresql/.s.PGSQL.5432&amp;quot;?
+  Getting Started To getting started with postgreSQL, open your Terminal, and type:
+username$ sudo su - postgres
+Now you are logged into your vm with the postgres user. Then connect to template1 database using the postgresql's psql client:
+postgres ~$  psql template1
+postgres ~$  template1=#
+Note the # symbol, declaring that you are logged to the database as a Super User. Now for enchaned security change your default postgres's password:
+template1=# \password
+Enter new password:
+Enter it again:
+Nice, we are near the end: now create a new user with createdb permission with same username of your vm. So if your username is koding02, your prompt should be like:
+koding02 ~$
+Create a new user using the CREATE USER command like this:
+template1=# CREATE USER username
+template1-# WITH PASSWORD 'password' createdb;
+CREATE ROLE
+template1=#
+You are done configurating PostgreSQL! Now disconnect from the database using \q, and quit from postgres user using ctrl+d.
+Now you can create a new database using the command:
+createdb myFreshNewDb
+And delete it using the deletedb tool:
+deletedb myFreshNewDb
+Once you have created a database, you can connect to it using the psql client like we did before:
+psql myFreshNewDb
+myFresNewDb=&amp;gt;
+  Using Psql client Let's see some useful commands of the psql tool. 
+First of all: you can get some help just typing \? in your psql command line.
+To exit from the appearing screen, just press the q button.
+To load and execute SQL statements from file, you can use this syntax:
+\i my/file/path.sql
+Writing long lines of SQL code in the command line can be really hard to debug. Use the \i to run from file or use:
+\e
+To edit the input buffer with an editor. If you usually don't use editor from command line use nano - it's the simplest.
+To check what relations your database contains, use
+\d
+If you want more information about a particular relation, use
+\d myfancytable
+Have fun!
 </description>
   </item>
   
@@ -675,6 +639,113 @@ panel.
 
 Here you'll be able to modify your Name, Password, and link your Koding 
 account to various services.
+</description>
+  </item>
+  
+  <item>
+    <title>Understanding file permissions</title>
+    <link>//learn.koding.com/guides/understanding-file-permissions</link>
+    <pubDate>"2015-08-11T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/understanding-file-permissions</guid>
+    <author>Team Koding</author>
+    <description>Linux-based systems, Ubuntu being one of them, have a simple system for managing individual file permissions, The Unix concepts for file ownership and permissions are the main driving force behind Linux and it's security at the file system level.
+This guide will cover the basics of file permissions and how you can modify them.
+  Users and groups Because Linux is a multi-user system we have two main types of users: system users and regular users. By default system users are used when the system requires running non-interactive and or background processes. On the other hand the regular users are used for everything else.
+A Linux-based system also has a superuser or root user that has absolute power over the system including modifying file ownership and permissions.
+Linux-based systems also have groups. A group is a collection of 0 or more users. Each user belongs by default to a group but can also be a part of multiple groups.
+  Ownership and permissions Each file, in a Linux-based system, belongs to a single user and a single group and has certain access permissions. You as a user can view the permissions of a file, using this command:
+ls -l &amp;lt;the name of your file or all files in a directory&amp;gt;
+Bellow is an example of what the command ls -l /Web outputs when you run it in your Koding VM Terminal.
+
+
+
+Mode
+Owner
+Group
+File size
+Last modified
+Filename
+
+
+
+
+-rw-r--r-- 1
+jakemurray
+jakemurray
+1252
+Feb 18 20:04
+index.html
+
+
+drwxr-xr-x 1
+jakemurray
+www-data
+1414
+Feb 18 20:04
+perl
+
+
+-rw-r--r-- 1
+jakemurray
+jakemurray
+1247
+Feb 18 20:04
+php.php
+
+
+-rwxr-xr-x 1
+root
+jakemurray
+1431
+Feb 18 20:04
+python.py
+
+
+-rwxr-xr-x 1
+jakemurray
+jakemurray
+1574
+Feb 18 20:04
+ruby.rb
+
+
+
+Looking at the Mode column you notice some letters. What do they mean?
+The first letter in the Mode column represents the type of file. In Linux, there are two basic types of files: normal and special.
+Linux-based systems permissions allow 3 things to be done to a file: read, write and execute.
+
+r (read) - a user can view the contents of the file.
+w (write) - a user can change the contents of the file.
+x (execute) - a user can execute or run the file if it is a program or script.
+
+Every file can have defined 3 sets of people for whom you can specify permissions.
+
+owner - a single user who owns the file. (usually the person who created the file)
+group - every file belongs to a single group.
+other - everyone else who is not in the group or the owner.
+
+  Changing file permissions To change permissions on a file or directory you can use the chmod command.
+chmod [permissions] [path]
+The chmod command has permission arguments that are made up of 3 components.
+
+Who are you changing the permission for? - owner, group or other
+Are you granting or revoking the permission - indicated with either a plus ( + ) or a minus ( - )
+Which permission are you setting? - read ( r ), write ( w ) or execute ( x ).
+
+Here is a quick example:
+Grant execute permissions for the demo.html file for the entire group the file belongs to.
+chmod g+x demo.html
+You can also set permission on files or folders using the octal notation. By using this method, each permissions category (owner, group, and other) is represented by a number between 0 and 7.
+Here is a quick example of usage of the octal notation:
+chmod 751 demo.html
+If you want to change the owner and group of a file or folder you can use the chown command.
+The basic syntax for using chown to change owners and groups is:
+chown [options] new_owner:new_group &amp;lt;name of file or folder&amp;gt;
+For example, the following command would transfer the ownership and change the group of a file named demo1 to a new owner named demo and the www-data group:
+chown demo:www-data demo1
+ tipNote: The same principles also apply to folders
+ You should now be able to understand how ownership and permissions work in Linux.
+If you encounter any issues or have any questions please drop us an email here.
 </description>
   </item>
   
@@ -1174,35 +1245,6 @@ pointing multiple domains to the same VM using as described in this guide.
   </item>
   
   <item>
-    <title>Setting up a Rails webserver</title>
-    <link>//learn.koding.com/guides/setting-rails-webserver</link>
-    <pubDate>"2015-06-11T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-rails-webserver</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Rails using just one command:
-kpm install rails
-
-  Getting started Before you can start the Rails install process, you'll need to update all of the apt-get packages:
-sudo apt-get update
-Then make sure you have Ruby installed on your VM. You can install it by following this guide.
-  Installing You can install Rails using the bellow command:
-sudo gem install rails
-  Usage Creating a Rails project is really easy. It just takes one command and you're good to go:
-rails new goodbyetolocalhost
-cd goodbyetolocalhost
-You can run the Rails webserver like so:
-rails server -b 0.0.0.0
-You will now be able to access the Rails webserver by following a similar URL:
-http://KODING_USERNAME.koding.io:3000
-Find out more about your VM hostname here.
-Rails should listen to 0.0.0.0:3000 by default. If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:3000. You can check this, using the netstat command in another terminal window and the bellow command:
-sudo netstat -tnlp
-And that's it!
-If you encounter any issues or have any questions please drop us an email here.
-</description>
-  </item>
-  
-  <item>
     <title>Koding IDE Introduction</title>
     <link>//learn.koding.com/guides/ide-introduction</link>
     <pubDate>"2015-06-11T00:00:00.000Z"</pubDate>
@@ -1252,6 +1294,35 @@ Ctrl(Cmd) + Enter(Return) keyboard shortcut will make everything fullscreen.
 
 The Koding IDE is a simple, yet powerful, editor for your browser based development.
 Explore it today and if you ever need help with the IDE you can just click on the bottom right corner question mark icon and the support modal will pop-up or email us at support@koding.com and we'll gladly help.
+</description>
+  </item>
+  
+  <item>
+    <title>Setting up a Rails webserver</title>
+    <link>//learn.koding.com/guides/setting-rails-webserver</link>
+    <pubDate>"2015-06-11T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-rails-webserver</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this section why not try a more easy way, using the Koding Package Manager (kpm) and install Rails using just one command:
+kpm install rails
+
+  Getting started Before you can start the Rails install process, you'll need to update all of the apt-get packages:
+sudo apt-get update
+Then make sure you have Ruby installed on your VM. You can install it by following this guide.
+  Installing You can install Rails using the bellow command:
+sudo gem install rails
+  Usage Creating a Rails project is really easy. It just takes one command and you're good to go:
+rails new goodbyetolocalhost
+cd goodbyetolocalhost
+You can run the Rails webserver like so:
+rails server -b 0.0.0.0
+You will now be able to access the Rails webserver by following a similar URL:
+http://KODING_USERNAME.koding.io:3000
+Find out more about your VM hostname here.
+Rails should listen to 0.0.0.0:3000 by default. If you can't reach your project via the browser you have to make sure it listens to 0.0.0.0:3000. You can check this, using the netstat command in another terminal window and the bellow command:
+sudo netstat -tnlp
+And that's it!
+If you encounter any issues or have any questions please drop us an email here.
 </description>
   </item>
   
@@ -1817,57 +1888,6 @@ snapshot as the starting point (as shown in the image below).
   </item>
   
   <item>
-    <title>Setting up FTP with vsftpd</title>
-    <link>//learn.koding.com/guides/setting-up-ftp-with-vsftpd</link>
-    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-ftp-with-vsftpd</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install vsftpd using just one command:
-kpm install vsftpd
-
-In this guide you'll go over how to get your FTP Client connected to your VM's FTP Server using vsftpd. You will be using FileZilla as the FTP Client, but any client should be able to connect to your FTP Server successfully.
-  What you will need In this tutorial you will need the following.
-
-A Koding account, and your Koding Username.
-The Address of the VM you'd like to connect to. Instructions can be found here.
-
-  Update your software sources Before getting started, make sure you have the latest sources locked down. Type in:
-sudo apt-get update
-and let the update process complete. It should not require any input.
-  Installing vsftpd First off, you'll need to install vsftpd. This can be done by pasting the following command into your Koding IDE's Terminal.
-sudo apt-get install vsftpd
-  Configure vsftpd After the installation is complete open /etc/vsftpd.conf file using this command:
-sudo nano /etc/vsftpd.conf
-and make changes as follows.
-Uncomment the lines below:
-write_enable=YES
-local_umask=022
-Uncomment the following line to prevent access to the other folders outside the Home directory.
-chroot_local_user=YES
-and add the following line at the end.
-allow_writeable_chroot=YES
-Add the following lines to enable passive mode.
-pasv_enable=Yes
-pasv_min_port=40000
-pasv_max_port=40100
-In order for these changes to take effect restart the vsftpd service using the below command.
-sudo service vsftpd restart
-  Setting up the FTP User After vsftpd has been successfully installed, you need to set a FTP password for your user. To do
-this, paste the following command into your Terminal.
-sudo passwd KODING_USERNAME
-Make note to replace KODING_USERNAME with your actual Koding username.
-After hitting enter, you'll be prompted for the FTP password you wish to use. Not your Koding password.
-  Connecting to your FTP Server Finally, in your FTP Client of choice paste your VM Address into the hostname. If you're not sure what that is, instructions to find it can be found here.
-After the hostname, enter your Koding username, and FTP Password that you chose in the above commands. An example image from FileZilla can be seen below.
-
-  Additional Resources 
-FileZilla
-FileZilla Download
-
-</description>
-  </item>
-  
-  <item>
     <title>Setting up FTP on Koding</title>
     <link>//learn.koding.com/guides/setting-up-ftp-on-koding</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
@@ -2076,12 +2096,15 @@ That's all there is to it! Enjoy!
   </item>
   
   <item>
-    <title>Setting up SFTP on Koding</title>
-    <link>//learn.koding.com/guides/setting-up-sftp-on-koding</link>
+    <title>Setting up FTP with vsftpd</title>
+    <link>//learn.koding.com/guides/setting-up-ftp-with-vsftpd</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-sftp-on-koding</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-ftp-with-vsftpd</guid>
     <author>Team Koding</author>
-    <description>In this guide you'll go over how to get your SFTP Client connected to your VM's SFTP Server. You will be using FileZilla as the SFTP Client, but any client should be able to connect to your SFTP Server successfully.
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install vsftpd using just one command:
+kpm install vsftpd
+
+In this guide you'll go over how to get your FTP Client connected to your VM's FTP Server using vsftpd. You will be using FileZilla as the FTP Client, but any client should be able to connect to your FTP Server successfully.
   What you will need In this tutorial you will need the following.
 
 A Koding account, and your Koding Username.
@@ -2090,44 +2113,32 @@ The Address of the VM you'd like to connect to. Instructions can be found here.
   Update your software sources Before getting started, make sure you have the latest sources locked down. Type in:
 sudo apt-get update
 and let the update process complete. It should not require any input.
-  Installing First off, you'll need to install openssh-server. This can be done by pasting the following command into your Koding IDE's Terminal.
- tipThe openssh-server package comes preinstalled on all Koding VMs.
- sudo apt-get install openssh-server
-  Configure After the install process has finished you'll need to configure the SFTP server. Start by editing the following file /etc/ssh/sshd_config like so:
-sudo nano /etc/ssh/sshd_config
-Find the below line:
-Subsystem sftp /usr/lib/openssh/sftp-server
-and replace it with:
-Subsystem sftp internal-sftp
-Match group root
-ChrootDirectory %h
-X11Forwarding no
-AllowTcpForwarding no
-ForceCommand internal-sftp
-finally comment the below line:
-#UsePAM yes
-After you have performed this steps you'll need to restart the service using this command:
-sudo service ssh restart
-  Copy your Public Key Now you need to allow access via ssh. So the first thing you need to do is to, copy your Public Key, usually found in ~/.ssh/id_rsa.pub, and copy it in its entirety. Note the .pub in the filename. This is the public key, and it is very important that you copy this one. It will look something like this.
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyhKankDE4DRM86JqZ3JPdWDeqg+Tbzlql
-TLfOKTeokhRoMgy5WoMY/ZWUVES3d2vSHHwW3cwWlELmVdc3Ow57boZv3fOsPhybYHVRTClX
-Yr1ncSxyTvjvCfvV5q22aIxHPWQ353543ssda87sa+85XEa4VnveJsEzxBZl4oJ4GB0AGa48
-+UdIqutrgZu7D7JCK+Yl228X+3bJf3ddlqDaKaVXPivvvYqImK6ZwFsxh2lNO4E8IOd3OSK9
-zv6i+io8PxWmwP0tLFokxulAI8Td1sOPBE9s9bdJ5c2T/GfGjKF+aNKsd33TsYEjjc/plMZm
-RRrOgQwre6OAkgMvyV2X foo@bar.baz
-  Adding to your Authorized Keys Next, we need to create a file called authorized_keys on your Koding VM, and paste the previously copied key into it. Run the following commands in your Koding Terminal.
-mkdir -p ~/.ssh
-touch ~/.ssh/authorized_keys
-Now, open up the authorized_keys file that you just created, and paste in your public key. To open the file you can use a Terminal editor such as Nano or Vim, or simply use the File Explorer on the left hand side to open the ~/.ssh/authorized_keys file.
-Once the key has been pasted in, save the file.
-  Setting up the SFTP user After the configure process has been completed, You need to set a SFTP password for your user. To do this, paste the following command into your Terminal.
+  Installing vsftpd First off, you'll need to install vsftpd. This can be done by pasting the following command into your Koding IDE's Terminal.
+sudo apt-get install vsftpd
+  Configure vsftpd After the installation is complete open /etc/vsftpd.conf file using this command:
+sudo nano /etc/vsftpd.conf
+and make changes as follows.
+Uncomment the lines below:
+write_enable=YES
+local_umask=022
+Uncomment the following line to prevent access to the other folders outside the Home directory.
+chroot_local_user=YES
+and add the following line at the end.
+allow_writeable_chroot=YES
+Add the following lines to enable passive mode.
+pasv_enable=Yes
+pasv_min_port=40000
+pasv_max_port=40100
+In order for these changes to take effect restart the vsftpd service using the below command.
+sudo service vsftpd restart
+  Setting up the FTP User After vsftpd has been successfully installed, you need to set a FTP password for your user. To do
+this, paste the following command into your Terminal.
 sudo passwd KODING_USERNAME
-Make sure to replace KODING_USERNAME with your actual Koding username.
-After hitting enter, you'll be prompted for the SFTP password you wish to use. Not your Koding password.
-  Connecting to your SFTP Server Finally, in your SFTP Client of choice paste your VM Address into the hostname. If you're not sure what that is, instructions to find it can be found here.
-After the hostname, enter your Koding username, and SFTP password that you chose in the above commands. An example image from FileZilla can be seen below.
- alertThe default port for a SFTP connection is 22. Make sure to specify this when you input the connection details.
- 
+Make note to replace KODING_USERNAME with your actual Koding username.
+After hitting enter, you'll be prompted for the FTP password you wish to use. Not your Koding password.
+  Connecting to your FTP Server Finally, in your FTP Client of choice paste your VM Address into the hostname. If you're not sure what that is, instructions to find it can be found here.
+After the hostname, enter your Koding username, and FTP Password that you chose in the above commands. An example image from FileZilla can be seen below.
+
   Additional Resources 
 FileZilla
 FileZilla Download
@@ -2457,72 +2468,62 @@ If you encounter any issues or have any questions please drop us an email here.
   </item>
   
   <item>
-    <title>Setting up WebDav on Koding</title>
-    <link>//learn.koding.com/guides/setting-up-webdav-on-koding</link>
+    <title>Setting up SFTP on Koding</title>
+    <link>//learn.koding.com/guides/setting-up-sftp-on-koding</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-webdav-on-koding</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-sftp-on-koding</guid>
     <author>Team Koding</author>
-    <description>This tutorial will cover the basics on how to set up WebDav on Koding and then connect to it using a Mac, Windows or Ubuntu machine. We already know how to set up FTP and SSH, but what about WebDav? Just follow the steps below.
-  Steps The first step is to open up the Terminal app and type the following commands.
-sudo a2enmod dav
-sudo a2enmod dav_fs
-sudo nano /etc/apache2/sites-enabled/000-default
-When the file opens from the last command, we just paste in this configuration and save it.
-Alias /webdav1 /var/www/WebDAV1
-&amp;lt;Directory /var/www/WebDAV1/&amp;gt;
- Options Indexes MultiViews
- AllowOverride None
- Order allow,deny
- allow from all
- &amp;lt;/Directory&amp;gt;
-&amp;lt;Location /webdav1&amp;gt;
- DAV On
- AuthType Basic
- AuthName &amp;quot;webdav1&amp;quot;
- AuthUserFile /etc/apache2/webdav.password
- Require valid-user
-&amp;lt;/Location&amp;gt;
-The third step is to create the folder that will be used to store the files. You can do this by entering these commands:
-cd ~/Web
-mkdir WebDAV1
-chown -R www-data.www-data WebDAV1
-The last step is to set up a password, of your choosing, and after that to restart the Apache server. You can do this by entering the commands below, where is your Koding username.
-sudo htpasswd -c /etc/apache2/webdav.password &amp;lt;USERNAME&amp;gt;
-sudo service apache2 reload
-Just remember to restart the Apache server so that all the settings that
-we made so far are remembered, and you're good to go. Now, what about
-connecting to it? Sure. It's super simple stuff. We can check if our
-WebDAV works by heading over to
-http://..koding.io/webdav1 and then when the box
-pops up we just enter our username and the password we set up earlier.For local connection you can follow these steps.
-  On Mac OS The Apple support website offers the quickest solution to our problem. Just follow the guide located here.
-  On Windows OS On a Windows machine we need NetDrive. You can download it by clicking this
-link. After we install
-and open it, we need to add a New Site.  The
-settings are as followed:
+    <description>In this guide you'll go over how to get your SFTP Client connected to your VM's SFTP Server. You will be using FileZilla as the SFTP Client, but any client should be able to connect to your SFTP Server successfully.
+  What you will need In this tutorial you will need the following.
 
-Site Name: Koding
-Site IP or URL: http://..koding.io/webdav1
-Server Type: WebDav
-Drive: 
-Account: 
-Password: 
-We then hit connect and it should work.
+A Koding account, and your Koding Username.
+The Address of the VM you'd like to connect to. Instructions can be found here.
 
-  On Ubuntu On Ubuntu we can quickly test and use our newly created WebDav by using just the command line. First we need to install cadaver. Cadaver is a command line WebDav client.
-sudo apt-get install cadaver
-After that we connect to our WebDav like this
-cadaver http://&amp;lt;hostname&amp;gt;.&amp;lt;username&amp;gt;.koding.io/webdav1/
-After the connection is established we enter our username and password and we're good to go.
-cadaver http://&amp;lt;hostname&amp;gt;.&amp;lt;username&amp;gt;.koding.io/webdav1
-Authentication required for test on server
-`http://&amp;lt;hostname&amp;gt;.&amp;lt;username&amp;gt;.koding.io/webdav1`:
-Username: &amp;lt;username&amp;gt;
-Password: *******
-dav:/webdav1/&amp;gt; quit
-Connection to `http://&amp;lt;hostname&amp;gt;.&amp;lt;username&amp;gt;.koding.io/webdav1`
-closed.
-That is all. If you have any issues setting up WebDav you can drop us an email at support@koding.com
+  Update your software sources Before getting started, make sure you have the latest sources locked down. Type in:
+sudo apt-get update
+and let the update process complete. It should not require any input.
+  Installing First off, you'll need to install openssh-server. This can be done by pasting the following command into your Koding IDE's Terminal.
+ tipThe openssh-server package comes preinstalled on all Koding VMs.
+ sudo apt-get install openssh-server
+  Configure After the install process has finished you'll need to configure the SFTP server. Start by editing the following file /etc/ssh/sshd_config like so:
+sudo nano /etc/ssh/sshd_config
+Find the below line:
+Subsystem sftp /usr/lib/openssh/sftp-server
+and replace it with:
+Subsystem sftp internal-sftp
+Match group root
+ChrootDirectory %h
+X11Forwarding no
+AllowTcpForwarding no
+ForceCommand internal-sftp
+finally comment the below line:
+#UsePAM yes
+After you have performed this steps you'll need to restart the service using this command:
+sudo service ssh restart
+  Copy your Public Key Now you need to allow access via ssh. So the first thing you need to do is to, copy your Public Key, usually found in ~/.ssh/id_rsa.pub, and copy it in its entirety. Note the .pub in the filename. This is the public key, and it is very important that you copy this one. It will look something like this.
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyhKankDE4DRM86JqZ3JPdWDeqg+Tbzlql
+TLfOKTeokhRoMgy5WoMY/ZWUVES3d2vSHHwW3cwWlELmVdc3Ow57boZv3fOsPhybYHVRTClX
+Yr1ncSxyTvjvCfvV5q22aIxHPWQ353543ssda87sa+85XEa4VnveJsEzxBZl4oJ4GB0AGa48
++UdIqutrgZu7D7JCK+Yl228X+3bJf3ddlqDaKaVXPivvvYqImK6ZwFsxh2lNO4E8IOd3OSK9
+zv6i+io8PxWmwP0tLFokxulAI8Td1sOPBE9s9bdJ5c2T/GfGjKF+aNKsd33TsYEjjc/plMZm
+RRrOgQwre6OAkgMvyV2X foo@bar.baz
+  Adding to your Authorized Keys Next, we need to create a file called authorized_keys on your Koding VM, and paste the previously copied key into it. Run the following commands in your Koding Terminal.
+mkdir -p ~/.ssh
+touch ~/.ssh/authorized_keys
+Now, open up the authorized_keys file that you just created, and paste in your public key. To open the file you can use a Terminal editor such as Nano or Vim, or simply use the File Explorer on the left hand side to open the ~/.ssh/authorized_keys file.
+Once the key has been pasted in, save the file.
+  Setting up the SFTP user After the configure process has been completed, You need to set a SFTP password for your user. To do this, paste the following command into your Terminal.
+sudo passwd KODING_USERNAME
+Make sure to replace KODING_USERNAME with your actual Koding username.
+After hitting enter, you'll be prompted for the SFTP password you wish to use. Not your Koding password.
+  Connecting to your SFTP Server Finally, in your SFTP Client of choice paste your VM Address into the hostname. If you're not sure what that is, instructions to find it can be found here.
+After the hostname, enter your Koding username, and SFTP password that you chose in the above commands. An example image from FileZilla can be seen below.
+ alertThe default port for a SFTP connection is 22. Make sure to specify this when you input the connection details.
+ 
+  Additional Resources 
+FileZilla
+FileZilla Download
+
 </description>
   </item>
   
@@ -2889,6 +2890,110 @@ the full documentation is available here.
   </item>
   
   <item>
+    <title>Setting up WebDav on Koding</title>
+    <link>//learn.koding.com/guides/setting-up-webdav-on-koding</link>
+    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-webdav-on-koding</guid>
+    <author>Team Koding</author>
+    <description>This tutorial will cover the basics on how to set up WebDav on Koding and then connect to it using a Mac, Windows or Ubuntu machine. We already know how to set up FTP and SSH, but what about WebDav? Just follow the steps below.
+  Steps The first step is to open up the Terminal app and type the following commands.
+sudo a2enmod dav
+sudo a2enmod dav_fs
+sudo nano /etc/apache2/sites-enabled/000-default
+When the file opens from the last command, we just paste in this configuration and save it.
+Alias /webdav1 /var/www/WebDAV1
+&amp;lt;Directory /var/www/WebDAV1/&amp;gt;
+ Options Indexes MultiViews
+ AllowOverride None
+ Order allow,deny
+ allow from all
+ &amp;lt;/Directory&amp;gt;
+&amp;lt;Location /webdav1&amp;gt;
+ DAV On
+ AuthType Basic
+ AuthName &amp;quot;webdav1&amp;quot;
+ AuthUserFile /etc/apache2/webdav.password
+ Require valid-user
+&amp;lt;/Location&amp;gt;
+The third step is to create the folder that will be used to store the files. You can do this by entering these commands:
+cd ~/Web
+mkdir WebDAV1
+chown -R www-data.www-data WebDAV1
+The last step is to set up a password, of your choosing, and after that to restart the Apache server. You can do this by entering the commands below, where is your Koding username.
+sudo htpasswd -c /etc/apache2/webdav.password &amp;lt;USERNAME&amp;gt;
+sudo service apache2 reload
+Just remember to restart the Apache server so that all the settings that
+we made so far are remembered, and you're good to go. Now, what about
+connecting to it? Sure. It's super simple stuff. We can check if our
+WebDAV works by heading over to
+http://..koding.io/webdav1 and then when the box
+pops up we just enter our username and the password we set up earlier.For local connection you can follow these steps.
+  On Mac OS The Apple support website offers the quickest solution to our problem. Just follow the guide located here.
+  On Windows OS On a Windows machine we need NetDrive. You can download it by clicking this
+link. After we install
+and open it, we need to add a New Site.  The
+settings are as followed:
+
+Site Name: Koding
+Site IP or URL: http://..koding.io/webdav1
+Server Type: WebDav
+Drive: 
+Account: 
+Password: 
+We then hit connect and it should work.
+
+  On Ubuntu On Ubuntu we can quickly test and use our newly created WebDav by using just the command line. First we need to install cadaver. Cadaver is a command line WebDav client.
+sudo apt-get install cadaver
+After that we connect to our WebDav like this
+cadaver http://&amp;lt;hostname&amp;gt;.&amp;lt;username&amp;gt;.koding.io/webdav1/
+After the connection is established we enter our username and password and we're good to go.
+cadaver http://&amp;lt;hostname&amp;gt;.&amp;lt;username&amp;gt;.koding.io/webdav1
+Authentication required for test on server
+`http://&amp;lt;hostname&amp;gt;.&amp;lt;username&amp;gt;.koding.io/webdav1`:
+Username: &amp;lt;username&amp;gt;
+Password: *******
+dav:/webdav1/&amp;gt; quit
+Connection to `http://&amp;lt;hostname&amp;gt;.&amp;lt;username&amp;gt;.koding.io/webdav1`
+closed.
+That is all. If you have any issues setting up WebDav you can drop us an email at support@koding.com
+</description>
+  </item>
+  
+  <item>
+    <title>Using Dropbox with Koding</title>
+    <link>//learn.koding.com/guides/dropbox-for-file-sync</link>
+    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/dropbox-for-file-sync</guid>
+    <author>Team Koding</author>
+    <description>In this guide we'll walk you through how to set up Dropbox right on your Koding VM for a seamless sync experience between your local system and your Koding VM. Dropbox has built a best-in-class file sync and storage service.
+  Getting started Before we begin please make sure you have the Koding Package Manager (KPM) installed on your VM. Follow this guide to understand what KPM is and how to install it so you will be able to continue with this guide.
+Also make sure you have an active Dropbox account (free or paid).
+  Setup Run the following command, in your Koding Terminal, to install the necessary dependency:
+ alertIf you already have Dropbox installed via KPM then you need to run kpm uninstall dropbox and then the below command to get the latest version.
+ kpm install dropbox
+This will install the Dropbox daemon on your Koding VM, that will make the file sync possible.
+After the install has finished you'll need to configure the daemon with your Dropbox account. In order to that you'll need to type this command:
+dropboxd
+Next you'll see a message similar to this one:
+Please visit https://www.dropbox.com/cli_link_nonce?nonce=A_VERY_LONG_NUMBER to link this device.
+Copy the link and past it in a new tab.
+Sign in to your Dropbox account.
+That's it! You should see a message in your Terminal similar to this one:
+This computer is now linked to Dropbox. Welcome YOUR_DROPBOX_NAME
+The Dropbox deamon will sync files into the ~/Dropbox folder. At this point, the Dropbox deamon is syncing all the files from your Dropbox account to your Koding VM. If you have a lot of files on your Dropbox account, this can quickly eat up the space on your VM so we recommend you configure &amp;quot;Selective Sync&amp;quot; as described below. To immediately stop the Dropbox deamon and cancel the download that is in progress, hit Ctrl-c.
+ tipWhenever you turn on Koding VM you will have to run the dropbox start command to get dropbox started.
+   Using the Dropbox selective sync feature Selective sync allows you to specify which files from your Dropbox folder you would like to sync between your Koding VM and your Dropbox account.
+To set up selective sync, follow these easy steps:
+
+Download the Dropbox command line instructions script that Dropbox has created for this purpose.
+Now all you need to do is add the folder that you wish to omit to the &amp;quot;do not sync&amp;quot; list. You can do that as follows:/path/to/dropbox.py exclude add ~/Dropbox/path/to/folder/
+Simply substitute the /path/to/ above to the actual path to the Dropbox script you downloaded.
+
+If you encounter any issues or have any questions please drop us an email here.
+</description>
+  </item>
+  
+  <item>
     <title>Using SSH on a Chromebook to connect to your Koding VM</title>
     <link>//learn.koding.com/guides/ssh-chromebook</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
@@ -2972,40 +3077,6 @@ key = id_rsa
 
 Once you press enter, you should be dropped into your Koding VM!
 
-</description>
-  </item>
-  
-  <item>
-    <title>Using Dropbox with Koding</title>
-    <link>//learn.koding.com/guides/dropbox-for-file-sync</link>
-    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/dropbox-for-file-sync</guid>
-    <author>Team Koding</author>
-    <description>In this guide we'll walk you through how to set up Dropbox right on your Koding VM for a seamless sync experience between your local system and your Koding VM. Dropbox has built a best-in-class file sync and storage service.
-  Getting started Before we begin please make sure you have the Koding Package Manager (KPM) installed on your VM. Follow this guide to understand what KPM is and how to install it so you will be able to continue with this guide.
-Also make sure you have an active Dropbox account (free or paid).
-  Setup Run the following command, in your Koding Terminal, to install the necessary dependency:
- alertIf you already have Dropbox installed via KPM then you need to run kpm uninstall dropbox and then the below command to get the latest version.
- kpm install dropbox
-This will install the Dropbox daemon on your Koding VM, that will make the file sync possible.
-After the install has finished you'll need to configure the daemon with your Dropbox account. In order to that you'll need to type this command:
-dropboxd
-Next you'll see a message similar to this one:
-Please visit https://www.dropbox.com/cli_link_nonce?nonce=A_VERY_LONG_NUMBER to link this device.
-Copy the link and past it in a new tab.
-Sign in to your Dropbox account.
-That's it! You should see a message in your Terminal similar to this one:
-This computer is now linked to Dropbox. Welcome YOUR_DROPBOX_NAME
-The Dropbox deamon will sync files into the ~/Dropbox folder. At this point, the Dropbox deamon is syncing all the files from your Dropbox account to your Koding VM. If you have a lot of files on your Dropbox account, this can quickly eat up the space on your VM so we recommend you configure &amp;quot;Selective Sync&amp;quot; as described below. To immediately stop the Dropbox deamon and cancel the download that is in progress, hit Ctrl-c.
- tipWhenever you turn on Koding VM you will have to run the dropbox start command to get dropbox started.
-   Using the Dropbox selective sync feature Selective sync allows you to specify which files from your Dropbox folder you would like to sync between your Koding VM and your Dropbox account.
-To set up selective sync, follow these easy steps:
-
-Download the Dropbox command line instructions script that Dropbox has created for this purpose.
-Now all you need to do is add the folder that you wish to omit to the &amp;quot;do not sync&amp;quot; list. You can do that as follows:/path/to/dropbox.py exclude add ~/Dropbox/path/to/folder/
-Simply substitute the /path/to/ above to the actual path to the Dropbox script you downloaded.
-
-If you encounter any issues or have any questions please drop us an email here.
 </description>
   </item>
   
@@ -3127,77 +3198,6 @@ ifconfig - reports the systems network interfaces.
 
 The Koding Terminal is an essential component for development, right in your browser.
 Explore it today and if you ever need help with the Terminal you can just click on the bottom right corner question mark icon and the support modal will pop-up or email us at support@koding.com and we'll gladly help.
-</description>
-  </item>
-  
-  <item>
-    <title>Connect with SSH from Windows</title>
-    <link>//learn.koding.com/guides/connect-with-ssh-windows</link>
-    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/connect-with-ssh-windows</guid>
-    <author>Team Koding</author>
-    <description>Connecting to your VM with SSH will allow you to use another Terminal, outside
-of Koding, to interact with your Koding VM. This is also required if you're interested in using SSH Tunneling. If you're connecting from a Mac or Linux, have a look here.
-We are going to be connecting using PuTTY, and we are going to use the terminology &amp;quot;local&amp;quot; to represent the machine that you're connecting to Koding with.
- alertNote that PuTTY can be troublesome. You may want to consider Cygwin
-to easily connect with the Unix instructions.
-   Requirements 
-Your Koding VM address
-PuTTY
-A PuTTY Auth Key. If you need to generate one, please refer to
-this tutorial.
-
-  Connecting with PuTTY For this connection method, you will need the PuTTY SSH client suite putty.exe, plink.exe, and pageant.exe.
- alertPuTTY has proven difficult to support due to the UI and ease of checking/configuring PuTTY incorrectly. With that said, we highly recommend using Cygwin, since it offers a real and normal Unix SSH Config.
- 
-Copy the text contents of your PuTTY public key. If you are not sure what or where it is, please refer to the Requirements section of this guide.
-As in Step #2 of the Linux guide above, paste the entirety of your public key into the SSH Keys section of your Koding account settings.
-Start up putty.exe and set the Host Name (or IP address) to the
-same VM address as above: &amp;lt;username&amp;gt;.koding.io
-
-
-
-In the Category menu on the left, select Data under Connection. Enter your Koding username in the Auto-login username box.
-Select Proxy under Connection, and change the Proxy type to Local. Enter the following line (modified for your system) in the Telnet command, or local proxy command box:
-
-C:\your\path\to\plink.exe &amp;lt;username&amp;gt;@&amp;lt;username&amp;gt;.koding.io -nc %host:%port
-
-
-Go back up to the &amp;quot;Session&amp;quot; settings and save this PuTTY configuration
-to a new session by typing a name into the &amp;quot;Saved Sessions&amp;quot; box, and
-clicking on &amp;quot;Save&amp;quot;.
-In Step 7, we will cover setting up your Auth. This can be done two ways,
-and we will cover both. You only need to do one method! Pageant has been
-working for everyone, where as PuTTY-Auth has been a bit problematic but is
-shorter. Choose whichever you like, but if you have issues, try Pagaent Auth
-below.
-You’re done! You can now connect to Koding via PuTTY. To connect with
-Pageant, you can right click the Pageant Icon, and under “Saved Sessions” click
-on your Saved Session. This will automatically open up PuTTY and start
-connecting.To connect from PuTTY itself, open PuTTY and select your Saved
-Session from the list, then click Open.An example of a successful Koding
-Connection is below.
-
-
-  Pageant Auth Open pageant.exe. It will launch into your Taskbar.
-
-Right click the Pageant icon in the taskbar, and select &amp;quot;View Keys&amp;quot;. From there, click the &amp;quot;Add Key&amp;quot; button. Navigate to your PuTTYGen private key and click &amp;quot;Open&amp;quot;. You should now have a key listed in your Pageant Key List. An example image is below.
-
-If your key has been added to the Pageant Key List, close the window.
-  PuTTY Auth Reopen PuTTY and select your Session, then click Load. Next, under the
-Connection menu, open up the SSH menu and select Auth. Enable the Allow
-agent forwarding checkbox. Under Private key file for authentication, browse
-to your PuTTYGen private key.
-
-Next, Plink needs to know the explicit location of your key. So go back to
-&amp;quot;Proxy&amp;quot; under &amp;quot;Connection&amp;quot; and look for the &amp;quot;Telnet command, or local
-proxy command&amp;quot; box.  Currently, it should look like this:
-C:\your\path\to\plink.exe &amp;lt;username&amp;gt;@&amp;lt;username&amp;gt;.koding.io -nc %host:%port
-Modify it, by adding your private key location. So, it will look like this:
-C:\your\path\to\plink.exe -i c:\path\to\private\key.ppk &amp;lt;username&amp;gt;@&amp;lt;username&amp;gt;.koding.io -nc %host:%port
-  Important note If you're having trouble SSH-ing into your VM, after pasting your SSH key in the box located in your Koding account settings, make sure there are NO SPACES in the key other than the one after ssh-rsa and one before your email address.
-And that's it!
-If you encounter any issues or have any questions please drop us an email here.
 </description>
   </item>
   
@@ -4118,48 +4118,27 @@ And that's it, three simple steps to set up your e-commerce solution. As always,
   </item>
   
   <item>
-    <title>Getting Started: The Activity Feed</title>
-    <link>//learn.koding.com/guides/getting-started/activity-feed</link>
+    <title>Getting Started: Editing Your Profile</title>
+    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/activity-feed</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
     <author>Team Koding</author>
-    <description>The Activity Feed is the central location for discussion on Koding. A
-public message board, with markdown support, previewing, hashtag topics
-and more, it's a central component to Koding's Social experience.
+    <description>Your Koding profile is your public information page on Koding. Currently
+it shows your Avatar, Name and Description, recent Koding activity, and
+in the near future Badges and additional social information. In this
+guide we'll go over the basic usage of your Koding profile.
+  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted
+below.
 
-  Posting and Formatting To post to the activity feed, find the input box in the top of the page.
+Clicking on it will open your profile.
+  Avatar, Name and Description When viewing your profile for the first time, you'll see that your first
+name is set to your Koding username, and your last name and description
+are set to default values, as seen in the below image.
 
-Simply type something in, and press the green submit button. Just plain text
-can get a bit boring though, so Koding supports full
-Markdown, as seen below:
+These default values are only seen by you, and if you double click them,
+you can edit that field.
+If you have one, Koding will use your Gravatar by default, but if you head over to your account settings Koding also supports avatar uploads directly.
 
- tipMake sure to familiarize yourself with our posting guidelines.
-   Previewing To preview your post, simply press the little eye on the right side of
-the input box. Your Markdown will be rendered and highlighted
-appropriately.
-
-  Tagging Tagging your content is important. With tags, your content can be
-categorized, which makes it easier to search and more likely to be seen
-by people who follow those channels.
-
-Here you can see the previous Markdown example, tagged with the
-#markdown tag.
-  Searching On the #public channel there is a search field next to
-Most Liked / Most Recent, as seen below.
-
-Searching the activity feed will search for the contents of a post, as
-well as the tags.
-  Channels Channels are how you view a steam of posts with a certain Tag. When you
-click on a tag, it opens a channel for that tag. Clicking on the Grey
-checkmark next to the channel name, will subscribe you to that channel,
-and keep it open anytime you visit Koding.
-
-To browse channels that you might be interested in, you can click the
-Plus button next to &amp;quot;Channel&amp;quot; in the sidebar (as seen below), and
-search for the channel you're interested in.
-
-Following channels is a great way to stay active in content that matters
-to you.
 </description>
   </item>
   
@@ -4438,27 +4417,48 @@ From here, you'll be poised for yet more installations. See their website for mo
   </item>
   
   <item>
-    <title>Getting Started: Editing Your Profile</title>
-    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
+    <title>Getting Started: The Activity Feed</title>
+    <link>//learn.koding.com/guides/getting-started/activity-feed</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/activity-feed</guid>
     <author>Team Koding</author>
-    <description>Your Koding profile is your public information page on Koding. Currently
-it shows your Avatar, Name and Description, recent Koding activity, and
-in the near future Badges and additional social information. In this
-guide we'll go over the basic usage of your Koding profile.
-  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted
-below.
+    <description>The Activity Feed is the central location for discussion on Koding. A
+public message board, with markdown support, previewing, hashtag topics
+and more, it's a central component to Koding's Social experience.
 
-Clicking on it will open your profile.
-  Avatar, Name and Description When viewing your profile for the first time, you'll see that your first
-name is set to your Koding username, and your last name and description
-are set to default values, as seen in the below image.
+  Posting and Formatting To post to the activity feed, find the input box in the top of the page.
 
-These default values are only seen by you, and if you double click them,
-you can edit that field.
-If you have one, Koding will use your Gravatar by default, but if you head over to your account settings Koding also supports avatar uploads directly.
+Simply type something in, and press the green submit button. Just plain text
+can get a bit boring though, so Koding supports full
+Markdown, as seen below:
 
+ tipMake sure to familiarize yourself with our posting guidelines.
+   Previewing To preview your post, simply press the little eye on the right side of
+the input box. Your Markdown will be rendered and highlighted
+appropriately.
+
+  Tagging Tagging your content is important. With tags, your content can be
+categorized, which makes it easier to search and more likely to be seen
+by people who follow those channels.
+
+Here you can see the previous Markdown example, tagged with the
+#markdown tag.
+  Searching On the #public channel there is a search field next to
+Most Liked / Most Recent, as seen below.
+
+Searching the activity feed will search for the contents of a post, as
+well as the tags.
+  Channels Channels are how you view a steam of posts with a certain Tag. When you
+click on a tag, it opens a channel for that tag. Clicking on the Grey
+checkmark next to the channel name, will subscribe you to that channel,
+and keep it open anytime you visit Koding.
+
+To browse channels that you might be interested in, you can click the
+Plus button next to &amp;quot;Channel&amp;quot; in the sidebar (as seen below), and
+search for the channel you're interested in.
+
+Following channels is a great way to stay active in content that matters
+to you.
 </description>
   </item>
   
