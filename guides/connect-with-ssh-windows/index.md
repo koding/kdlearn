@@ -110,7 +110,7 @@ If you encounter any issues or have any questions please drop us an email [here]
 [koding]: https://koding.com
 [putty suite]: http://www.chiark.greenend.org.uk/~sgtatham/putty/
 [puttygen]: http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
-[puttygen tutorial]: http://katsande.com/using-puttygen-to-generate-ssh-private-public-keys
+[puttygen tutorial]: http://sshcontrol.com/help/puttygen_keys
 [connect-unix]: /guides/ssh-into-your-vm
 [cygwin]: https://www.cygwin.com/
 [tunneling]: /guides/ssh-tunneling
