@@ -407,13 +407,16 @@ h1#logo {
             margin-left: 15px;
         }
     }
+    .hiring {
+        left: 220px;
+    }
 }
 #logo {
   span.img {
     display: inline-block;
-    background-image: url(../img/logo.header.svg);
-    background-size: 195px;
-    background-position: -14px;
+    background-image: url(../img/logo.header.png);
+    background-size: 185px;
+    background-position: 0;
     background-repeat: no-repeat;
     width: 185px;
     height: 23px;
@@ -424,6 +427,33 @@ h1#logo {
   a, a:hover {
     text-decoration: none;
   }
+}
+.hiring {
+    background-color: #F7E747 !important;
+    border-radius: 3px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 36px;
+    left: 205px;
+    &:before {
+        content: '';
+        top: 6px;
+        left: -5px;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 8px 8px 8px 0;
+        border-color: transparent #f7e847 transparent transparent;
+    }
+    a {
+        color: #535353 !important;
+        font-size: 12px;
+        padding: 0 10px;
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }
 nav {
     background: $dark-grey;
