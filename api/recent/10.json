@@ -1,62 +1,62 @@
 [
   {
-    "title": "Connect with SSH from Windows",
-    "url": "https://learn.koding.com/guides/connect-with-ssh-windows/index.html",
-    "author": "Team Koding",
-    "date": "2015-09-04T00:00:00.000Z"
-  },
-  {
     "title": "Updating the OS (and other packages) your VM",
     "url": "https://learn.koding.com/guides/upgrading-your-vm/index.html",
     "author": "Team Koding",
-    "date": "2015-08-24T00:00:00.000Z"
+    "date": "2015-09-08T00:00:00.000Z"
   },
   {
-    "title": "Getting Started with NodeJS",
-    "url": "https://learn.koding.com/guides/getting-started-nodejs/index.html",
+    "title": "Connect with SSH from Windows",
+    "url": "https://learn.koding.com/guides/connect-with-ssh-windows/index.html",
     "author": "Team Koding",
-    "date": "2015-08-15T00:00:00.000Z"
-  },
-  {
-    "title": "Enabling 2-factor authentication on your Koding account",
-    "url": "https://learn.koding.com/guides/2-factor-auth/index.html",
-    "author": "Team Koding",
-    "date": "2015-08-11T00:00:00.000Z"
-  },
-  {
-    "title": "Using PostgreSQL",
-    "url": "https://learn.koding.com/guides/postgresql-on-koding/index.html",
-    "author": "Federico Ponzi",
-    "date": "2015-08-11T00:00:00.000Z"
-  },
-  {
-    "title": "Getting Started: The UI",
-    "url": "https://learn.koding.com/guides/getting-started/the-ui/index.html",
-    "author": "Team Koding",
-    "date": "2015-08-11T00:00:00.000Z"
-  },
-  {
-    "title": "Understanding file permissions",
-    "url": "https://learn.koding.com/guides/understanding-file-permissions/index.html",
-    "author": "Team Koding",
-    "date": "2015-08-11T00:00:00.000Z"
-  },
-  {
-    "title": "Connect your own machine to Koding",
-    "url": "https://learn.koding.com/guides/connect-your-machine/index.html",
-    "author": "Team Koding",
-    "date": "2015-08-11T00:00:00.000Z"
+    "date": "2015-09-08T00:00:00.000Z"
   },
   {
     "title": "Drupal Setup and Installation for Beginners",
     "url": "https://learn.koding.com/guides/drupal-setup-installation-beginners/index.html",
     "author": "Thien",
-    "date": "2015-08-11T00:00:00.000Z"
+    "date": "2015-08-14T00:00:00.000Z"
+  },
+  {
+    "title": "Understanding file permissions",
+    "url": "https://learn.koding.com/guides/understanding-file-permissions/index.html",
+    "author": "Team Koding",
+    "date": "2015-08-14T00:00:00.000Z"
+  },
+  {
+    "title": "Getting Started: The UI",
+    "url": "https://learn.koding.com/guides/getting-started/the-ui/index.html",
+    "author": "Team Koding",
+    "date": "2015-08-14T00:00:00.000Z"
+  },
+  {
+    "title": "Getting Started with NodeJS",
+    "url": "https://learn.koding.com/guides/getting-started-nodejs/index.html",
+    "author": "Team Koding",
+    "date": "2015-08-14T00:00:00.000Z"
+  },
+  {
+    "title": "Connect your own machine to Koding",
+    "url": "https://learn.koding.com/guides/connect-your-machine/index.html",
+    "author": "Team Koding",
+    "date": "2015-08-14T00:00:00.000Z"
+  },
+  {
+    "title": "Using PostgreSQL",
+    "url": "https://learn.koding.com/guides/postgresql-on-koding/index.html",
+    "author": "Federico Ponzi",
+    "date": "2015-08-14T00:00:00.000Z"
+  },
+  {
+    "title": "Enabling 2-factor authentication on your Koding account",
+    "url": "https://learn.koding.com/guides/2-factor-auth/index.html",
+    "author": "Team Koding",
+    "date": "2015-08-07T00:00:00.000Z"
   },
   {
     "title": "How can I do real-time collaboration on Koding?",
     "url": "https://learn.koding.com/guides/collaboration/index.html",
     "author": "Team Koding",
-    "date": "2015-07-30T00:00:00.000Z"
+    "date": "2015-08-07T00:00:00.000Z"
   }
 ]

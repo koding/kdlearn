@@ -11,7 +11,7 @@
     
       <meta name="keywords" content="">
     
-		<meta name="description" content="In this guide we'll go over contributing by using Git directly in your 
+		<meta name="description" content="In this guide we&amp;#39;ll go over contributing by using Git directly in your 
 Terminal, and editing our documents on Koding. While we will go over 
 every step, general Git and Terminal knowledge will be very helpful, and 
 are recommended. So, lets get started!">
@@ -24,7 +24,7 @@ are recommended. So, lets get started!">
 		<meta property="og:url" content="https://learn.koding.com"/>
 		<meta property="og:image" content="https://learn.koding.com/img/logo_150.png"/>
 		<meta property="og:image:secure_url" content="https://koding.com/a/images/logos/share_logo.png"/>
-		<meta property="og:description" content="In this guide we'll go over contributing by using Git directly in your 
+		<meta property="og:description" content="In this guide we&amp;#39;ll go over contributing by using Git directly in your 
 Terminal, and editing our documents on Koding. While we will go over 
 every step, general Git and Terminal knowledge will be very helpful, and 
 are recommended. So, lets get started!"/>
@@ -39,7 +39,7 @@ are recommended. So, lets get started!"/>
 		<meta name="twitter:creator" content="@koding"/>
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:image" content="https://learn.koding.com/img/logo_150.png"/>
-		<meta name="twitter:description" content="In this guide we'll go over contributing by using Git directly in your 
+		<meta name="twitter:description" content="In this guide we&amp;#39;ll go over contributing by using Git directly in your 
 Terminal, and editing our documents on Koding. While we will go over 
 every step, general Git and Terminal knowledge will be very helpful, and 
 are recommended. So, lets get started!"\>
@@ -54,11 +54,11 @@ are recommended. So, lets get started!"\>
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?93" />
+    <link rel="stylesheet" href="/css/vendor.css?58" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?542" />
+    <link rel="stylesheet" href="/css/main.css?505" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?805" />
+    <link rel="stylesheet" href="/css/rwd.css?140" />
     <!-- Google WebMaster Tools Auth for PD team -->
     <meta name="google-site-verification" content="xit6W5qyYuPGq49UXRRZNm_HW5bUxyPS0hqJRDP-2tg" />
 	</head>
@@ -72,6 +72,7 @@ are recommended. So, lets get started!"\>
       <span class="img"></span>
     </a>
   </h1>
+  <div class="hiring"><a href="http://jobs.lever.co/koding">We're Hiring!</a></div>
   <div class="topSearchButton">
     <span class="searchIcon fa fa-search"></span>
   </div>
@@ -270,19 +271,11 @@ are recommended. So, lets get started!"\>
     <ul>
     
       <li class="">
-        <a href="/guides/connect-with-ssh-windows">Connect with SSH from Windows</a>
-      </li>
-    
-      <li class="">
         <a href="/guides/upgrading-your-vm">Updating the OS (and other packages) your VM</a>
       </li>
     
       <li class="">
-        <a href="/guides/getting-started-nodejs">Getting Started with NodeJS</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/2-factor-auth">Enabling 2-factor authentication on your Koding account</a>
+        <a href="/guides/connect-with-ssh-windows">Connect with SSH from Windows</a>
       </li>
     
       <li class="">
@@ -294,11 +287,19 @@ are recommended. So, lets get started!"\>
       </li>
     
       <li class="">
+        <a href="/guides/understanding-file-permissions">Understanding file permissions</a>
+      </li>
+    
+      <li class="">
         <a href="/guides/postgresql-on-koding">Using PostgreSQL</a>
       </li>
     
       <li class="">
         <a href="/guides/getting-started/the-ui">Getting Started: The UI</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/getting-started-nodejs">Getting Started with NodeJS</a>
       </li>
     
     </ul>
@@ -421,7 +422,7 @@ the files you changed.</p>
 <pre><code>git <span class="hljs-keyword">add</span> guides/myguide.md
 </code></pre><p>To commit your changes, run the following command. Replacing <code>I added an 
 awesome guide</code> with a message that clearly describes your changes.</p>
-<pre><code>git commit -m <span class="hljs-comment">&quot;I added an awesome guide&quot;</span>
+<pre><code><span class="hljs-title">git</span> commit -m <span class="hljs-string">&quot;I added an awesome guide&quot;</span>
 </code></pre><p>You can also ommit the whole <code>-m &quot;message&quot;</code> flag and use an editor such 
 as Nano or Vim to make your changes. But the above is simpler for this 
 guide.</p>
