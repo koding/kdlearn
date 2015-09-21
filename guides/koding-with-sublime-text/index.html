@@ -45,11 +45,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?900" />
+    <link rel="stylesheet" href="/css/vendor.css?833" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?429" />
+    <link rel="stylesheet" href="/css/main.css?342" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?844" />
+    <link rel="stylesheet" href="/css/rwd.css?331" />
     <!-- Google WebMaster Tools Auth for PD team -->
     <meta name="google-site-verification" content="xit6W5qyYuPGq49UXRRZNm_HW5bUxyPS0hqJRDP-2tg" />
 	</head>
@@ -261,7 +261,7 @@
     <ul>
     
       <li class="">
-        <a href="/guides/upgrading-your-vm">Updating the OS (and other packages) your VM</a>
+        <a href="/guides/preview">How can I preview the code that I write on my Koding VM?</a>
       </li>
     
       <li class="">
@@ -269,15 +269,15 @@
       </li>
     
       <li class="">
+        <a href="/guides/upgrading-your-vm">Updating the OS (and other packages) your VM</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/getting-started-nodejs">Getting Started with NodeJS</a>
+      </li>
+    
+      <li class="">
         <a href="/guides/connect-your-machine">Connect your own machine to Koding</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/drupal-setup-installation-beginners">Drupal Setup and Installation for Beginners</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/understanding-file-permissions">Understanding file permissions</a>
       </li>
     
       <li class="">
@@ -285,11 +285,11 @@
       </li>
     
       <li class="">
-        <a href="/guides/getting-started/the-ui">Getting Started: The UI</a>
+        <a href="/guides/drupal-setup-installation-beginners">Drupal Setup and Installation for Beginners</a>
       </li>
     
       <li class="">
-        <a href="/guides/getting-started-nodejs">Getting Started with NodeJS</a>
+        <a href="/guides/2-factor-auth">Enabling 2-factor authentication on your Koding account</a>
       </li>
     
     </ul>
@@ -310,7 +310,7 @@
     <li class="author username">
        by <span rel="author">koding</span>
     </li>
-    <li class="updated">Updated 3 months ago</li>
+    <li class="updated">Updated 4 months ago</li>
   </ul>
 
 
@@ -343,13 +343,13 @@
 </li>
 <li><p>Configure your <code>sftp-config.json</code> file as described below and save it.</p>
 <pre><code>{
- // <span class="hljs-type">The</span> tab key will cycle through the settings <span class="hljs-keyword">when</span> first created
- // <span class="hljs-type">Visit</span> http://wbond.net/sublime_packages/sftp/settings <span class="hljs-keyword">for</span> help
+ // The tab key will cycle through the settings when first created
+ // Visit http://wbond.net/sublime_packages/sftp/settings for <span class="hljs-operator"><span class="hljs-keyword">help</span>
 
- // sftp, ftp <span class="hljs-keyword">or</span> ftps &lt;&lt;&lt;&lt; this <span class="hljs-keyword">is</span> very important. only use &apos;ftp&apos;
+ // sftp, ftp <span class="hljs-keyword">or</span> ftps &lt;&lt;&lt;&lt; this <span class="hljs-keyword">is</span> very important. <span class="hljs-keyword">only</span> <span class="hljs-keyword">use</span> <span class="hljs-string">&apos;ftp&apos;</span>
  <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;ftp&quot;</span>,
 
- // select the options below that suit your needs
+ // <span class="hljs-keyword">select</span> the options below that suit your needs
  <span class="hljs-string">&quot;save_before_upload&quot;</span>: <span class="hljs-literal">true</span>,
  <span class="hljs-string">&quot;upload_on_save&quot;</span>: <span class="hljs-literal">false</span>,
  <span class="hljs-string">&quot;sync_down_on_open&quot;</span>: <span class="hljs-literal">false</span>,
@@ -359,11 +359,11 @@
  <span class="hljs-string">&quot;confirm_sync&quot;</span>: <span class="hljs-literal">true</span>,
  <span class="hljs-string">&quot;confirm_overwrite_newer&quot;</span>: <span class="hljs-literal">false</span>,
 
- // vm connection config
- // make sure that your personal domain <span class="hljs-keyword">is</span> active. see http://learn.koding.com/faq/vm-hostname/
+ // vm <span class="hljs-keyword">connection</span> config
+ // make sure that your personal <span class="hljs-keyword">domain</span> <span class="hljs-keyword">is</span> active. see http://learn.koding.com/faq/vm-hostname/
  <span class="hljs-string">&quot;host&quot;</span>: <span class="hljs-string">&quot;&lt;your koding username&gt;.koding.io&quot;</span>,
  <span class="hljs-string">&quot;user&quot;</span>: <span class="hljs-string">&quot;&lt;your koding username&gt;&quot;</span>,
- // this <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> your koding password
+ // this <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> your koding <span class="hljs-keyword">password</span>
  <span class="hljs-string">&quot;password&quot;</span>: <span class="hljs-string">&quot;&lt;your vm user&apos;s password&gt;&quot;</span>,
  //<span class="hljs-string">&quot;port&quot;</span>: <span class="hljs-string">&quot;22&quot;</span>,
 
@@ -390,7 +390,7 @@
  //<span class="hljs-string">&quot;remote_encoding&quot;</span>: <span class="hljs-string">&quot;utf-8&quot;</span>,
  //<span class="hljs-string">&quot;remote_locale&quot;</span>: <span class="hljs-string">&quot;C&quot;</span>,
  //<span class="hljs-string">&quot;allow_config_upload&quot;</span>: <span class="hljs-literal">false</span>,
-}
+}</span>
 </code></pre></li>
 <li><p>Right click the folder, select <code>SFTP/FTP</code>. You will now see many more options than before.
 <img src="st9.png" alt="alt tag"></p>

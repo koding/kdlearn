@@ -45,11 +45,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?870" />
+    <link rel="stylesheet" href="/css/vendor.css?897" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?847" />
+    <link rel="stylesheet" href="/css/main.css?636" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?905" />
+    <link rel="stylesheet" href="/css/rwd.css?77" />
     <!-- Google WebMaster Tools Auth for PD team -->
     <meta name="google-site-verification" content="xit6W5qyYuPGq49UXRRZNm_HW5bUxyPS0hqJRDP-2tg" />
 	</head>
@@ -261,7 +261,7 @@
     <ul>
     
       <li class="">
-        <a href="/guides/upgrading-your-vm">Updating the OS (and other packages) your VM</a>
+        <a href="/guides/preview">How can I preview the code that I write on my Koding VM?</a>
       </li>
     
       <li class="">
@@ -269,15 +269,15 @@
       </li>
     
       <li class="">
+        <a href="/guides/upgrading-your-vm">Updating the OS (and other packages) your VM</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/getting-started-nodejs">Getting Started with NodeJS</a>
+      </li>
+    
+      <li class="">
         <a href="/guides/connect-your-machine">Connect your own machine to Koding</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/drupal-setup-installation-beginners">Drupal Setup and Installation for Beginners</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/understanding-file-permissions">Understanding file permissions</a>
       </li>
     
       <li class="">
@@ -285,11 +285,11 @@
       </li>
     
       <li class="">
-        <a href="/guides/getting-started/the-ui">Getting Started: The UI</a>
+        <a href="/guides/drupal-setup-installation-beginners">Drupal Setup and Installation for Beginners</a>
       </li>
     
       <li class="">
-        <a href="/guides/getting-started-nodejs">Getting Started with NodeJS</a>
+        <a href="/guides/2-factor-auth">Enabling 2-factor authentication on your Koding account</a>
       </li>
     
     </ul>
@@ -310,7 +310,7 @@
     <li class="author username">
        by <span rel="author">Team Koding</span>
     </li>
-    <li class="updated">Updated 4 months ago</li>
+    <li class="updated">Updated 5 months ago</li>
   </ul>
 
 
@@ -331,9 +331,9 @@
 <p>Download the latest version:</p>
 <pre><code>curl -Lo /tmp/cockpit-<span class="hljs-number">0.13</span>.<span class="hljs-number">0</span><span class="hljs-class">.tar</span><span class="hljs-class">.gz</span> https:<span class="hljs-comment">//github.com/aheinze/cockpit/archive/0.13.0.tar.gz</span>
 </code></pre><p>Untar the archive and move it:</p>
-<pre><code>tar -C <span class="hljs-regexp">/tmp -zxf /</span>tmp/cockpit-<span class="hljs-number">0.13</span><span class="hljs-number">.0</span>.tar.gz
+<pre><code>tar -C <span class="hljs-regexp">/tmp -zxf /</span>tmp/cockpit-<span class="hljs-number">0.13</span>.0.tar.gz
 
-mv <span class="hljs-regexp">/tmp/</span>cockpit-<span class="hljs-number">0.13</span><span class="hljs-number">.0</span> <span class="hljs-regexp">~/Web/</span>cockpit
+mv <span class="hljs-regexp">/tmp/</span>cockpit-<span class="hljs-number">0.13</span>.0 <span class="hljs-regexp">~/Web/</span>cockpit
 </code></pre><p>Set the proper permissions for the storage folder and its subfolders:</p>
 <pre><code><span class="hljs-built_in">cd</span> Web
 chmod <span class="hljs-number">777</span> -R cockpit/storage
