@@ -6656,7 +6656,7 @@ It would help us immensly if you can take the short survey presented on the acco
   <item>
     <title>How can I monitor network traffic/usage?</title>
     <link>//learn.koding.com/faq/vm-network</link>
-    <pubDate>"2015-05-16T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-09-23T00:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/faq/vm-network</guid>
     <author></author>
     <description>There are a variety of tools for Ubuntu that you can install on your VM in order to monitor traffic and network usage. Listed below are three of our favorites.
@@ -6668,7 +6668,7 @@ To install, type the following command in Terminal:sudo apt-get install nload -y
 and then to run, type:nload
 
 iftop: This tool measures the data flowing through individual socket connections, and it works in a manner that is different from Nload. Iftop uses the pcap library to capture the packets moving in and out of the network adapter, and then sums up the size and count to find the total bandwidth under use. Although iftop reports the bandwidth used by individual connections, it cannot report the process name/id involved in the particular socket connection. But being based on the pcap library, iftop is able to filter the traffic and report bandwidth usage over selected host connections as specified by the filter.
-To install, type the following command in Terminal:sudo apt-get install nload -y
+To install, type the following command in Terminal:sudo apt-get install iftop -y
 and then to run, type:sudo iftop -n
 
 iptraf: This is an interactive and colorful IP Lan monitor. It shows individual connections and the amount of data flowing between the hosts.
