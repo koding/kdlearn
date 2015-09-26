@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+        <loc>http://learn.koding.com/guides/what-happened-to-127-0-0-1</loc>
+        <lastmod>2015-09-26</lastmod>
+        <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
         <loc>http://learn.koding.com/guides/preview</loc>
         <lastmod>2015-09-21</lastmod>
         <changefreq>monthly</changefreq>
@@ -26,7 +32,19 @@
   </url>
   
   <url>
+        <loc>http://learn.koding.com/guides/understanding-file-permissions</loc>
+        <lastmod>2015-08-11</lastmod>
+        <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
         <loc>http://learn.koding.com/guides/connect-your-machine</loc>
+        <lastmod>2015-08-11</lastmod>
+        <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+        <loc>http://learn.koding.com/guides/2-factor-auth</loc>
         <lastmod>2015-08-11</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -39,18 +57,6 @@
   
   <url>
         <loc>http://learn.koding.com/guides/drupal-setup-installation-beginners</loc>
-        <lastmod>2015-08-11</lastmod>
-        <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-        <loc>http://learn.koding.com/guides/2-factor-auth</loc>
-        <lastmod>2015-08-11</lastmod>
-        <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-        <loc>http://learn.koding.com/guides/understanding-file-permissions</loc>
         <lastmod>2015-08-11</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -88,12 +94,6 @@
   <url>
         <loc>http://learn.koding.com/guides/what-is-koding</loc>
         <lastmod>2015-07-06</lastmod>
-        <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-        <loc>http://learn.koding.com/guides/what-happened-to-127-0-0-1</loc>
-        <lastmod>2015-07-02</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
@@ -494,7 +494,7 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/getting-started/activity-feed</loc>
+        <loc>http://learn.koding.com/guides/getting-started/editing-your-profile</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -548,7 +548,7 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/getting-started/editing-your-profile</loc>
+        <loc>http://learn.koding.com/guides/getting-started/activity-feed</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
