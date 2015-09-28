@@ -20,7 +20,7 @@ nload
 2. **iftop**: This tool measures the data flowing through individual socket connections, and it works in a manner that is different from Nload. Iftop uses the pcap library to capture the packets moving in and out of the network adapter, and then sums up the size and count to find the total bandwidth under use. Although iftop reports the bandwidth used by individual connections, it cannot report the process name/id involved in the particular socket connection. But being based on the pcap library, iftop is able to filter the traffic and report bandwidth usage over selected host connections as specified by the filter.
 To install, type the following command in Terminal:
 ```
-sudo apt-get install nload -y
+sudo apt-get install iftop -y
 ```
 and then to run, type:
 ```

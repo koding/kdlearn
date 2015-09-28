@@ -50,7 +50,8 @@ node hello.js 127.0.0.1
 ```
 
 Next, lets visit our domain at the following address, making sure to replace 
-`username` with your Koding username.
+`username` with your Koding username. To find out what is your VM's hostname,
+you can refer to [this guide](http://learn.koding.com/faq/vm-hostname/).
 
 ```
 http://hostname.username.koding.io:3001
