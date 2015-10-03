@@ -45,11 +45,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?104" />
+    <link rel="stylesheet" href="/css/vendor.css?125" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?714" />
+    <link rel="stylesheet" href="/css/main.css?215" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?35" />
+    <link rel="stylesheet" href="/css/rwd.css?400" />
     <!-- Google WebMaster Tools Auth for PD team -->
     <meta name="google-site-verification" content="xit6W5qyYuPGq49UXRRZNm_HW5bUxyPS0hqJRDP-2tg" />
 	</head>
@@ -256,9 +256,13 @@
   </li>
 
   
-  <li class="">
+  <li class="zactive">
     <h5>Latest Guides</h5>
     <ul>
+    
+      <li class="zactive">
+        <a href="/guides/setting-up-ftp-on-koding">Setting up FTP on Koding</a>
+      </li>
     
       <li class="">
         <a href="/guides/what-happened-to-127-0-0-1">What happened to 127.0.0.1?</a>
@@ -281,15 +285,11 @@
       </li>
     
       <li class="">
+        <a href="/guides/postgresql-on-koding">Using PostgreSQL</a>
+      </li>
+    
+      <li class="">
         <a href="/guides/understanding-file-permissions">Understanding file permissions</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/connect-your-machine">Connect your own machine to Koding</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/2-factor-auth">Enabling 2-factor authentication on your Koding account</a>
       </li>
     
     </ul>
@@ -310,7 +310,7 @@
     <li class="author username">
        by <span rel="author">Team Koding</span>
     </li>
-    <li class="updated">Updated 5 months ago</li>
+    <li class="updated">Updated 18 hours ago</li>
   </ul>
 
 
@@ -332,7 +332,10 @@
 <h2 class="heading"> <a name="installing-proftpd" class="anchor" href="#installing-proftpd"></a> Installing ProFTPd </h2><p>First off, you&apos;ll need to install ProFTPd. This can be done by pasting the following command into your <a href="https://koding.com/IDE">Koding IDE</a>&apos;s Terminal.</p>
 <pre><code>sudo apt-<span class="hljs-keyword">get</span> install proftpd
 </code></pre><p>During the install process you will be asked to choose to run your VPS as an inetd or standalone server. Choose the <strong>standalone</strong> option.</p>
-<h2 class="heading"> <a name="setting-up-the-ftp-user" class="anchor" href="#setting-up-the-ftp-user"></a> Setting up the FTP User </h2><p>After ProFTPd has been successfully installed, you need to set a FTP password for your user. To do this, paste the following command into your Terminal.</p>
+<p>After installation, the server should run automatically but just in case it does not, type in
+the following command to start the server:</p>
+<pre><code>sudo <span class="hljs-keyword">service</span> proftpd <span class="hljs-literal">start</span>
+</code></pre><h2 class="heading"> <a name="setting-up-the-ftp-user" class="anchor" href="#setting-up-the-ftp-user"></a> Setting up the FTP User </h2><p>After ProFTPd has been successfully installed, you need to set a FTP password for your user. To do this, paste the following command into your Terminal.</p>
 <pre><code><span class="hljs-title">sudo</span> passwd KODING_USERNAME
 </code></pre><p>Make note to replace <code>KODING_USERNAME</code> with your actual Koding username.</p>
 <p>After hitting enter, you&apos;ll be prompted for the <strong>FTP</strong> password you wish to use. <em>Not</em> your Koding password.</p>

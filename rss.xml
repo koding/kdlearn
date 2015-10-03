@@ -18,6 +18,45 @@
   <language>en</language>
   
   <item>
+    <title>Setting up FTP on Koding</title>
+    <link>//learn.koding.com/guides/setting-up-ftp-on-koding</link>
+    <pubDate>"2015-10-03T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-ftp-on-koding</guid>
+    <author>Team Koding</author>
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install FTP using just one command:
+kpm install ftp
+
+In this guide you'll go over how to get your FTP Client connected to your VM's FTP Server. You will be using FileZilla as the FTP Client, but any client should be able to connect to your FTP Server successfully.
+  What you will need In this tutorial you will need the following.
+
+A Koding account, and your Koding Username.
+The Address of the VM you'd like to connect to. Instructions can be found here.
+
+  Update your software sources Before getting started, make sure you have the latest sources locked down. Type in:
+sudo apt-get update
+and let the update process complete. It should not require any input.
+  Installing ProFTPd First off, you'll need to install ProFTPd. This can be done by pasting the following command into your Koding IDE's Terminal.
+sudo apt-get install proftpd
+During the install process you will be asked to choose to run your VPS as an inetd or standalone server. Choose the standalone option.
+After installation, the server should run automatically but just in case it does not, type in
+the following command to start the server:
+sudo service proftpd start
+  Setting up the FTP User After ProFTPd has been successfully installed, you need to set a FTP password for your user. To do this, paste the following command into your Terminal.
+sudo passwd KODING_USERNAME
+Make note to replace KODING_USERNAME with your actual Koding username.
+After hitting enter, you'll be prompted for the FTP password you wish to use. Not your Koding password.
+  Connecting to your FTP Server Finally, in your FTP Client of choice paste your VM Address into the hostname. If you're not sure what that is, instructions to find it can be found here.
+After the hostname, enter your Koding username, and FTP Password that you chose in the above commands. An example image from FileZilla can be seen below.
+
+  Additional Resources 
+FileZilla
+FileZilla Download
+Connecting to your Koding VM using FileZilla
+
+</description>
+  </item>
+  
+  <item>
     <title>What happened to 127.0.0.1?</title>
     <link>//learn.koding.com/guides/what-happened-to-127-0-0-1</link>
     <pubDate>"2015-09-26T00:00:00.000Z"</pubDate>
@@ -388,6 +427,63 @@ fun with Node!
   </item>
   
   <item>
+    <title>Using PostgreSQL</title>
+    <link>//learn.koding.com/guides/postgresql-on-koding</link>
+    <pubDate>"2015-08-11T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/postgresql-on-koding</guid>
+    <author>Federico Ponzi</author>
+    <description>PostgreSQL is an open source relational database management system that 
+provides an implementation of the SQL query language. In this guide, 
+we'll go over using PostgreSQL on your Koding VM. Lets get started!
+  Starting PostgreSQL Before we gets started, start your PostgreSQL server with the following 
+command.
+sudo service postgresql start
+If you see an error like the following message, you may need to go 
+through the Installing PostgreSQL.
+psql: could not connect to server: No such file or directory
+Is the server running locally and accepting
+connections on Unix domain socket &amp;quot;/var/run/postgresql/.s.PGSQL.5432&amp;quot;?
+  Getting Started To getting started with postgreSQL, open your Terminal, and type:
+username$ sudo su - postgres
+Now you are logged into your vm with the postgres user. Then connect to template1 database using the postgresql's psql client:
+postgres ~$  psql template1
+postgres ~$  template1=#
+Note the # symbol, declaring that you are logged to the database as a Super User. Now for enchaned security change your default postgres's password:
+template1=# \password
+Enter new password:
+Enter it again:
+Nice, we are near the end: now create a new user with createdb permission with same username of your vm. So if your username is koding02, your prompt should be like:
+koding02 ~$
+Create a new user using the CREATE USER command like this:
+template1=# CREATE USER username
+template1-# WITH PASSWORD 'password' createdb;
+CREATE ROLE
+template1=#
+You are done configurating PostgreSQL! Now disconnect from the database using \q, and quit from postgres user using ctrl+d.
+Now you can create a new database using the command:
+createdb myFreshNewDb
+And delete it using the deletedb tool:
+deletedb myFreshNewDb
+Once you have created a database, you can connect to it using the psql client like we did before:
+psql myFreshNewDb
+myFresNewDb=&amp;gt;
+  Using Psql client Let's see some useful commands of the psql tool. 
+First of all: you can get some help just typing \? in your psql command line.
+To exit from the appearing screen, just press the q button.
+To load and execute SQL statements from file, you can use this syntax:
+\i my/file/path.sql
+Writing long lines of SQL code in the command line can be really hard to debug. Use the \i to run from file or use:
+\e
+To edit the input buffer with an editor. If you usually don't use editor from command line use nano - it's the simplest.
+To check what relations your database contains, use
+\d
+If you want more information about a particular relation, use
+\d myfancytable
+Have fun!
+</description>
+  </item>
+  
+  <item>
     <title>Understanding file permissions</title>
     <link>//learn.koding.com/guides/understanding-file-permissions</link>
     <pubDate>"2015-08-11T00:00:00.000Z"</pubDate>
@@ -495,6 +591,59 @@ If you encounter any issues or have any questions please drop us an email here.
   </item>
   
   <item>
+    <title>Getting Started: The UI</title>
+    <link>//learn.koding.com/guides/getting-started/the-ui</link>
+    <pubDate>"2015-08-11T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/the-ui</guid>
+    <author>Team Koding</author>
+    <description>In this guide we'll take a look at Koding's UI. We'll examine 
+the major sections, and briefly explain some of the features. In future 
+guides of this series we'll explain these parts in more detail. Lets get 
+started!
+  The Full UI 
+This is the Koding UI of a logged in user, with the Koding IDE 
+open. On the left side we have our VMs, Channels, Chats, and Account. To 
+the right we have the Koding IDE. Lets look at each piece, and where they 
+lead us.
+  VMs, Workspaces and IDE VMs, Workspaces, and the Koding IDE can be found on the left hand 
+side, under VMS, as seen in the image below.
+
+Clicking on a VM Name, such as koding-vm-0 in the above image, will 
+open up the Koding IDE for that specific VM.
+The button to the immediate right of the VM Name is the VM Settings. Here 
+you can find useful information, such as your VM Address and VM Specs.
+Finally, below the VM Name are your Workspaces for that specific VM.Clicking on a Workspace will open all of the previous editors and 
+Terminals that you had open on it, and opening new Workspaces provides 
+shortcuts for varying tasks. We'll get into the specifics in the 
+Workspaces guide.
+  Channels and Activity Below VMs, are your Channels. To follow a channel, click on a Grey check 
+mark. Green check marks indicate a channel that you are following.
+
+A channel is a stream of user submitted content for a certain hash tag, 
+such as #golang. When you 
+click on a hash tag in the Activity Feed, it opens a channel for that 
+tag, as seen below.
+
+Activity Feed posts support Markdown, including Markdown Code 
+Blocks.
+  Chat Below Channels are your Chats. These are private conversations between 
+you and any number of users you invite.
+
+To open a new chat, click on the Plus button to the right of the Chat 
+icon. Clicking on a already started chat, will open it as seen below.
+
+Your chats will work much in the same way as the Activity Feed. You can 
+invite more users by clicking the Plus next to user icons, or delete the 
+conversation from the Chat Dropdown in the upper right.
+  Account Settings Your Account Settings can be located from the bottom of the navigation 
+panel.
+
+Here you'll be able to modify your Name, Password, and link your Koding 
+account to various services.
+</description>
+  </item>
+  
+  <item>
     <title>Connect your own machine to Koding</title>
     <link>//learn.koding.com/guides/connect-your-machine</link>
     <pubDate>"2015-08-11T00:00:00.000Z"</pubDate>
@@ -555,101 +704,6 @@ still be running and all files will be available on it.
  If you wish to completely uninstall the Koding Connector Service from your machine, simply run this 
 command on the machine that you had connected:
 sudo dpkg -P klient
-</description>
-  </item>
-  
-  <item>
-    <title>Enabling 2-factor authentication on your Koding account</title>
-    <link>//learn.koding.com/guides/2-factor-auth</link>
-    <pubDate>"2015-08-11T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/2-factor-auth</guid>
-    <author>Team Koding</author>
-    <description>2-factor authentication (2FA) gives your Koding account an added layer of security and protection. Once enabled,
-you will be required to provide a verification code along with your password each time you sign in to Koding.
-
-2FA is increasingly become a required standard and many of the leading companies in the world now support 2FA.
-  How do I enable 2FA on my Koding account? To enable 2FA, you will first need to install an app that generates authentication tokens on your phone. We recommend either the Google Authenticator app or Authy.
-
-Download Authy for iPhone
-Download Authy for Android
-Download Google Authenticator for iPhone
-Download Google Authenticator for Android
-
-Once you have installed the app, follow these steps to enable 2FA on your Koding account.
- tipThe instructions below are for the Google Authenticator app. Other apps like Authy have a similar workflow.
-If you get stuck somewhere in the setup, you can always send us an email.
- 
-Log in to your Koding account
-Go to the 2FA section in Account Settings
-Open up the Google Authenticator app on your phone and click the + icon (as shown in the image below)
-Select &amp;quot;Scan Barcode&amp;quot;
-Scan the code shown in the Account Settings
-The Google Authenticator app will add your Koding account to the list and generate a code
-Enter the code into Account Settings to verify and activate 2FA
-
-
-  How do I disable 2FA on my Koding account? To disable 2FA, follow these simple steps:
-
-visit the 2FA tab in Account Settings
-enter your Koding password and click the &amp;quot;Disable&amp;quot; button
-
-</description>
-  </item>
-  
-  <item>
-    <title>Using PostgreSQL</title>
-    <link>//learn.koding.com/guides/postgresql-on-koding</link>
-    <pubDate>"2015-08-11T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/postgresql-on-koding</guid>
-    <author>Federico Ponzi</author>
-    <description>PostgreSQL is an open source relational database management system that 
-provides an implementation of the SQL query language. In this guide, 
-we'll go over using PostgreSQL on your Koding VM. Lets get started!
-  Starting PostgreSQL Before we gets started, start your PostgreSQL server with the following 
-command.
-sudo service postgresql start
-If you see an error like the following message, you may need to go 
-through the Installing PostgreSQL.
-psql: could not connect to server: No such file or directory
-Is the server running locally and accepting
-connections on Unix domain socket &amp;quot;/var/run/postgresql/.s.PGSQL.5432&amp;quot;?
-  Getting Started To getting started with postgreSQL, open your Terminal, and type:
-username$ sudo su - postgres
-Now you are logged into your vm with the postgres user. Then connect to template1 database using the postgresql's psql client:
-postgres ~$  psql template1
-postgres ~$  template1=#
-Note the # symbol, declaring that you are logged to the database as a Super User. Now for enchaned security change your default postgres's password:
-template1=# \password
-Enter new password:
-Enter it again:
-Nice, we are near the end: now create a new user with createdb permission with same username of your vm. So if your username is koding02, your prompt should be like:
-koding02 ~$
-Create a new user using the CREATE USER command like this:
-template1=# CREATE USER username
-template1-# WITH PASSWORD 'password' createdb;
-CREATE ROLE
-template1=#
-You are done configurating PostgreSQL! Now disconnect from the database using \q, and quit from postgres user using ctrl+d.
-Now you can create a new database using the command:
-createdb myFreshNewDb
-And delete it using the deletedb tool:
-deletedb myFreshNewDb
-Once you have created a database, you can connect to it using the psql client like we did before:
-psql myFreshNewDb
-myFresNewDb=&amp;gt;
-  Using Psql client Let's see some useful commands of the psql tool. 
-First of all: you can get some help just typing \? in your psql command line.
-To exit from the appearing screen, just press the q button.
-To load and execute SQL statements from file, you can use this syntax:
-\i my/file/path.sql
-Writing long lines of SQL code in the command line can be really hard to debug. Use the \i to run from file or use:
-\e
-To edit the input buffer with an editor. If you usually don't use editor from command line use nano - it's the simplest.
-To check what relations your database contains, use
-\d
-If you want more information about a particular relation, use
-\d myfancytable
-Have fun!
 </description>
   </item>
   
@@ -768,55 +822,40 @@ This has been a beginner guide from Koding. As always, more Quick Tips and begin
   </item>
   
   <item>
-    <title>Getting Started: The UI</title>
-    <link>//learn.koding.com/guides/getting-started/the-ui</link>
+    <title>Enabling 2-factor authentication on your Koding account</title>
+    <link>//learn.koding.com/guides/2-factor-auth</link>
     <pubDate>"2015-08-11T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/the-ui</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/2-factor-auth</guid>
     <author>Team Koding</author>
-    <description>In this guide we'll take a look at Koding's UI. We'll examine 
-the major sections, and briefly explain some of the features. In future 
-guides of this series we'll explain these parts in more detail. Lets get 
-started!
-  The Full UI 
-This is the Koding UI of a logged in user, with the Koding IDE 
-open. On the left side we have our VMs, Channels, Chats, and Account. To 
-the right we have the Koding IDE. Lets look at each piece, and where they 
-lead us.
-  VMs, Workspaces and IDE VMs, Workspaces, and the Koding IDE can be found on the left hand 
-side, under VMS, as seen in the image below.
+    <description>2-factor authentication (2FA) gives your Koding account an added layer of security and protection. Once enabled,
+you will be required to provide a verification code along with your password each time you sign in to Koding.
 
-Clicking on a VM Name, such as koding-vm-0 in the above image, will 
-open up the Koding IDE for that specific VM.
-The button to the immediate right of the VM Name is the VM Settings. Here 
-you can find useful information, such as your VM Address and VM Specs.
-Finally, below the VM Name are your Workspaces for that specific VM.Clicking on a Workspace will open all of the previous editors and 
-Terminals that you had open on it, and opening new Workspaces provides 
-shortcuts for varying tasks. We'll get into the specifics in the 
-Workspaces guide.
-  Channels and Activity Below VMs, are your Channels. To follow a channel, click on a Grey check 
-mark. Green check marks indicate a channel that you are following.
+2FA is increasingly become a required standard and many of the leading companies in the world now support 2FA.
+  How do I enable 2FA on my Koding account? To enable 2FA, you will first need to install an app that generates authentication tokens on your phone. We recommend either the Google Authenticator app or Authy.
 
-A channel is a stream of user submitted content for a certain hash tag, 
-such as #golang. When you 
-click on a hash tag in the Activity Feed, it opens a channel for that 
-tag, as seen below.
+Download Authy for iPhone
+Download Authy for Android
+Download Google Authenticator for iPhone
+Download Google Authenticator for Android
 
-Activity Feed posts support Markdown, including Markdown Code 
-Blocks.
-  Chat Below Channels are your Chats. These are private conversations between 
-you and any number of users you invite.
+Once you have installed the app, follow these steps to enable 2FA on your Koding account.
+ tipThe instructions below are for the Google Authenticator app. Other apps like Authy have a similar workflow.
+If you get stuck somewhere in the setup, you can always send us an email.
+ 
+Log in to your Koding account
+Go to the 2FA section in Account Settings
+Open up the Google Authenticator app on your phone and click the + icon (as shown in the image below)
+Select &amp;quot;Scan Barcode&amp;quot;
+Scan the code shown in the Account Settings
+The Google Authenticator app will add your Koding account to the list and generate a code
+Enter the code into Account Settings to verify and activate 2FA
 
-To open a new chat, click on the Plus button to the right of the Chat 
-icon. Clicking on a already started chat, will open it as seen below.
 
-Your chats will work much in the same way as the Activity Feed. You can 
-invite more users by clicking the Plus next to user icons, or delete the 
-conversation from the Chat Dropdown in the upper right.
-  Account Settings Your Account Settings can be located from the bottom of the navigation 
-panel.
+  How do I disable 2FA on my Koding account? To disable 2FA, follow these simple steps:
 
-Here you'll be able to modify your Name, Password, and link your Koding 
-account to various services.
+visit the 2FA tab in Account Settings
+enter your Koding password and click the &amp;quot;Disable&amp;quot; button
+
 </description>
   </item>
   
@@ -1345,6 +1384,72 @@ Explore it today and if you ever need help with the IDE you can just click on th
   </item>
   
   <item>
+    <title>Hello World on Koding: Perl</title>
+    <link>//learn.koding.com/guides/hello-world/perl</link>
+    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/perl</guid>
+    <author>Team Koding</author>
+    <description>  Introduction Perl is a family of high-level, general-purpose, interpreted, dynamic programming languages. The Perl languages borrow features from other programming languages including C, shell scripting (sh) etc. They provide powerful text processing facilities without the arbitrary data-length limits of many contemporary Unix commandline tools, facilitating easy manipulation of text files.
+  Implementation The first thing you need to do is to create a file called helloworld in your Koding VM and paste the bellow snippet into it.
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+print &amp;quot;Hello, World!&amp;quot;;
+To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
+first ensure the file is given executable permissions:
+chmod u+x helloworld
+and then run this command
+perl helloworld
+  Explanation #!/usr/bin/perl
+Every Perl program should start with this as its very first line, although this may vary from system to system. This line tells the machine what to do with the file when it is executed.
+use strict;
+use warnings;
+These two statements turn on the 'strict' and 'warnings' pragmas. These are strongly encouraged for all Perl programs since they tell the Perl interpreter to check for programming errors like undeclared variables.
+print &amp;quot;Hello, World!&amp;quot;;
+The print function outputs some data. In the above case it prints out the string Hello world, and as always the statement ends with a semicolon.
+And that's it!
+You just wrote and ran your first Hello World in Perl.
+</description>
+  </item>
+  
+  <item>
+    <title>Hello World on Koding: PHP</title>
+    <link>//learn.koding.com/guides/hello-world/php</link>
+    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/php</guid>
+    <author>Team Koding</author>
+    <description>  Introduction PHP is a server-side scripting language designed for web development but also used as a general-purpose programming language. PHP code can be simply mixed with HTML code, or it can be used in combination with various templating engines and web frameworks.
+  Implementation The first thing you need to do is to create a file called helloworld.php, place it in your Web folder and paste the bellow snippet into it.
+&amp;lt;html&amp;gt;
+    &amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;Hello World&amp;lt;/title&amp;gt;
+    &amp;lt;/head&amp;gt;
+    &amp;lt;body&amp;gt;
+        &amp;lt;?php
+            echo &amp;quot;Hello World&amp;quot;;
+        ?&amp;gt;
+    &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+To run the above file in your Koding VM, follow a similar URL in your browser:
+http://KODING_USERNAME.koding.io/helloworld.php
+ tipReplace KODING_USERNAME above with your koding username. (It's not obvious to everyone).
+Find out more about your VM hostname.
+   Explanation The first part until the initial &amp;lt;?php tag is just basic HTML code.
+&amp;lt;?php
+
+?&amp;gt;
+You need to tell the server when the PHP will start and end. In PHP you use the tags &amp;lt;?php and ?&amp;gt; to mark the start and end for the PHP code that the server must execute.
+echo &amp;quot;Hello World&amp;quot;;
+echo outputs one or more strings. echo is not actually a function (it is a language construct). echo does not behave like a function, so it cannot always be used in the context of a function.
+The last part after the closing ?&amp;gt; tag if just basic HTML code.
+And that's it!
+You just wrote and ran your first Hello World in PHP.
+</description>
+  </item>
+  
+  <item>
     <title>Hello World on Koding: C-Sharp (C#)</title>
     <link>//learn.koding.com/guides/hello-world/c-sharp</link>
     <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
@@ -1392,6 +1497,83 @@ Hello World!
 Congratulations, you have written your first C# program! 
 Now that Mono is installed and available on your VM, you can find plenty of C# tutorials on the Internet and try them out on your Koding VM. Remember one thing, since there is no graphical environment on your Koding VM, you should only write or practice C# programs that are NOT graphical. In other words, stick to writing C# applications that are command line only
 for now.
+</description>
+  </item>
+  
+  <item>
+    <title>Hello World on Koding: Ruby</title>
+    <link>//learn.koding.com/guides/hello-world/ruby</link>
+    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/ruby</guid>
+    <author>Team Koding</author>
+    <description>  Introduction Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, and Lisp. It supports multiple programming paradigms, including functional, object-oriented, and imperative. It also has a dynamic type system and automatic memory management.
+  Implementation The first thing you need to do is to create a file called helloworld.rb in your Koding VM and paste the bellow snippet into it.
+#!/usr/bin/ruby
+
+puts 'Hello, world!'
+To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
+ruby helloworld.rb
+  Explanation #!/usr/bin/ruby
+The shebang line is read by the program loader to determine what program to use to run the script. This line cannot be preceded by any blank lines or any leading spaces.
+puts 'Hello, world!'
+The above line is pretty self explanatory. It will put something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
+And that's it!
+You just wrote and ran your first Hello World in Ruby.
+</description>
+  </item>
+  
+  <item>
+    <title>Hello World on Koding: Python</title>
+    <link>//learn.koding.com/guides/hello-world/python</link>
+    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/python</guid>
+    <author>Team Koding</author>
+    <description>  Introduction Python is a widely used general-purpose, high-level programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java. The language provides constructs intended to enable clear programs on both a small and large scale.
+  Implementation The first thing you need to do is to create a file called helloworld.py in your Koding VM and paste the bellow snippet into it.
+print &amp;quot;Hello World!&amp;quot;
+To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
+python helloworld.py
+  Explanation print &amp;quot;Hello World!&amp;quot;
+Since Python emphasizes code readability, the above line is pretty self explanatory. It will print out something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
+And that's it!
+You just wrote and ran your first Hello World in Python.
+</description>
+  </item>
+  
+  <item>
+    <title>Hello World on Koding: Go</title>
+    <link>//learn.koding.com/guides/hello-world/go</link>
+    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/go</guid>
+    <author>Team Koding</author>
+    <description>  Introduction Go or golang is a statically-typed language with syntax loosely derived from C, that adds garbage collection, type safety, some dynamic-typing capabilities, additional built-in types such as variable-length arrays and key-value maps, and a large standard library.
+  Implementation The first thing you need to do is to create a file called helloworld.go in your Koding VM and paste the bellow snippet into it.
+package main
+
+import &amp;quot;fmt&amp;quot;
+
+func main() {
+    fmt.Println(&amp;quot;Hello World!&amp;quot;)
+}
+To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
+go run helloworld.go
+Or you can build the program into a binary. You can do this using the bellow command:
+go build helloworld.go
+And you can then execute the built binary directly.
+./hello-world
+  Explanation package main
+This is known as a “package declaration”. Every Go program must start with a package declaration. There are two types of Go programs: executables and libraries. Executable applications are the kinds of programs that you can run directly from the terminal.
+import &amp;quot;fmt&amp;quot;
+The import keyword is how you include code from other packages to use with you program. The fmt package (shorthand for format) implements formatting for input and output.
+func main()
+Functions are the building blocks of a Go program. They have inputs, outputs and a series of steps called statements which are executed in order. All functions start with the keyword func followed by the name of the function (main in this case), a list of zero or more “parameters” surrounded by parentheses, an optional return type and a “body” which is surrounded by curly braces.
+{}
+The two curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
+group or function.
+fmt.Println(&amp;quot;Hello World&amp;quot;)
+This statement is made of three pieces. First you access another function inside of the fmt package called Println (that's the fmt.Println piece, Println means Print Line). Then you create a new string that contains Hello World and call that function with the string as the first and only argument.
+And that's it!
+You just wrote and ran your first Hello World in Go.
 </description>
   </item>
   
@@ -1479,149 +1661,6 @@ Your first Pascal CGI is running and accessible from the internet. Congratulatio
 Free Pascal has pretty rich libraries, frameworks, and tools for almost any kind of programming needs, from console, database, mobile, games, multimedia, etc
 And that's it.
 If you encounter any issues or have any questions please drop an email here
-</description>
-  </item>
-  
-  <item>
-    <title>Hello World on Koding: Perl</title>
-    <link>//learn.koding.com/guides/hello-world/perl</link>
-    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/perl</guid>
-    <author>Team Koding</author>
-    <description>  Introduction Perl is a family of high-level, general-purpose, interpreted, dynamic programming languages. The Perl languages borrow features from other programming languages including C, shell scripting (sh) etc. They provide powerful text processing facilities without the arbitrary data-length limits of many contemporary Unix commandline tools, facilitating easy manipulation of text files.
-  Implementation The first thing you need to do is to create a file called helloworld in your Koding VM and paste the bellow snippet into it.
-#!/usr/bin/perl
-
-use strict;
-use warnings;
-
-print &amp;quot;Hello, World!&amp;quot;;
-To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:
-first ensure the file is given executable permissions:
-chmod u+x helloworld
-and then run this command
-perl helloworld
-  Explanation #!/usr/bin/perl
-Every Perl program should start with this as its very first line, although this may vary from system to system. This line tells the machine what to do with the file when it is executed.
-use strict;
-use warnings;
-These two statements turn on the 'strict' and 'warnings' pragmas. These are strongly encouraged for all Perl programs since they tell the Perl interpreter to check for programming errors like undeclared variables.
-print &amp;quot;Hello, World!&amp;quot;;
-The print function outputs some data. In the above case it prints out the string Hello world, and as always the statement ends with a semicolon.
-And that's it!
-You just wrote and ran your first Hello World in Perl.
-</description>
-  </item>
-  
-  <item>
-    <title>Hello World on Koding: PHP</title>
-    <link>//learn.koding.com/guides/hello-world/php</link>
-    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/php</guid>
-    <author>Team Koding</author>
-    <description>  Introduction PHP is a server-side scripting language designed for web development but also used as a general-purpose programming language. PHP code can be simply mixed with HTML code, or it can be used in combination with various templating engines and web frameworks.
-  Implementation The first thing you need to do is to create a file called helloworld.php, place it in your Web folder and paste the bellow snippet into it.
-&amp;lt;html&amp;gt;
-    &amp;lt;head&amp;gt;
-    &amp;lt;title&amp;gt;Hello World&amp;lt;/title&amp;gt;
-    &amp;lt;/head&amp;gt;
-    &amp;lt;body&amp;gt;
-        &amp;lt;?php
-            echo &amp;quot;Hello World&amp;quot;;
-        ?&amp;gt;
-    &amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-To run the above file in your Koding VM, follow a similar URL in your browser:
-http://KODING_USERNAME.koding.io/helloworld.php
- tipReplace KODING_USERNAME above with your koding username. (It's not obvious to everyone).
-Find out more about your VM hostname.
-   Explanation The first part until the initial &amp;lt;?php tag is just basic HTML code.
-&amp;lt;?php
-
-?&amp;gt;
-You need to tell the server when the PHP will start and end. In PHP you use the tags &amp;lt;?php and ?&amp;gt; to mark the start and end for the PHP code that the server must execute.
-echo &amp;quot;Hello World&amp;quot;;
-echo outputs one or more strings. echo is not actually a function (it is a language construct). echo does not behave like a function, so it cannot always be used in the context of a function.
-The last part after the closing ?&amp;gt; tag if just basic HTML code.
-And that's it!
-You just wrote and ran your first Hello World in PHP.
-</description>
-  </item>
-  
-  <item>
-    <title>Hello World on Koding: Ruby</title>
-    <link>//learn.koding.com/guides/hello-world/ruby</link>
-    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/ruby</guid>
-    <author>Team Koding</author>
-    <description>  Introduction Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, and Lisp. It supports multiple programming paradigms, including functional, object-oriented, and imperative. It also has a dynamic type system and automatic memory management.
-  Implementation The first thing you need to do is to create a file called helloworld.rb in your Koding VM and paste the bellow snippet into it.
-#!/usr/bin/ruby
-
-puts 'Hello, world!'
-To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
-ruby helloworld.rb
-  Explanation #!/usr/bin/ruby
-The shebang line is read by the program loader to determine what program to use to run the script. This line cannot be preceded by any blank lines or any leading spaces.
-puts 'Hello, world!'
-The above line is pretty self explanatory. It will put something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
-And that's it!
-You just wrote and ran your first Hello World in Ruby.
-</description>
-  </item>
-  
-  <item>
-    <title>Hello World on Koding: Python</title>
-    <link>//learn.koding.com/guides/hello-world/python</link>
-    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/python</guid>
-    <author>Team Koding</author>
-    <description>  Introduction Python is a widely used general-purpose, high-level programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java. The language provides constructs intended to enable clear programs on both a small and large scale.
-  Implementation The first thing you need to do is to create a file called helloworld.py in your Koding VM and paste the bellow snippet into it.
-print &amp;quot;Hello World!&amp;quot;
-To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
-python helloworld.py
-  Explanation print &amp;quot;Hello World!&amp;quot;
-Since Python emphasizes code readability, the above line is pretty self explanatory. It will print out something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
-And that's it!
-You just wrote and ran your first Hello World in Python.
-</description>
-  </item>
-  
-  <item>
-    <title>Hello World on Koding: Go</title>
-    <link>//learn.koding.com/guides/hello-world/go</link>
-    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/go</guid>
-    <author>Team Koding</author>
-    <description>  Introduction Go or golang is a statically-typed language with syntax loosely derived from C, that adds garbage collection, type safety, some dynamic-typing capabilities, additional built-in types such as variable-length arrays and key-value maps, and a large standard library.
-  Implementation The first thing you need to do is to create a file called helloworld.go in your Koding VM and paste the bellow snippet into it.
-package main
-
-import &amp;quot;fmt&amp;quot;
-
-func main() {
-    fmt.Println(&amp;quot;Hello World!&amp;quot;)
-}
-To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
-go run helloworld.go
-Or you can build the program into a binary. You can do this using the bellow command:
-go build helloworld.go
-And you can then execute the built binary directly.
-./hello-world
-  Explanation package main
-This is known as a “package declaration”. Every Go program must start with a package declaration. There are two types of Go programs: executables and libraries. Executable applications are the kinds of programs that you can run directly from the terminal.
-import &amp;quot;fmt&amp;quot;
-The import keyword is how you include code from other packages to use with you program. The fmt package (shorthand for format) implements formatting for input and output.
-func main()
-Functions are the building blocks of a Go program. They have inputs, outputs and a series of steps called statements which are executed in order. All functions start with the keyword func followed by the name of the function (main in this case), a list of zero or more “parameters” surrounded by parentheses, an optional return type and a “body” which is surrounded by curly braces.
-{}
-The two curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
-group or function.
-fmt.Println(&amp;quot;Hello World&amp;quot;)
-This statement is made of three pieces. First you access another function inside of the fmt package called Println (that's the fmt.Println piece, Println means Print Line). Then you create a new string that contains Hello World and call that function with the string as the first and only argument.
-And that's it!
-You just wrote and ran your first Hello World in Go.
 </description>
   </item>
   
@@ -1794,37 +1833,6 @@ If you encounter any issues or have any questions please drop us an email here.
   </item>
   
   <item>
-    <title>Installing Jekyll on Koding</title>
-    <link>//learn.koding.com/guides/installing-jekyll</link>
-    <pubDate>"2015-05-21T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/installing-jekyll</guid>
-    <author>dehli</author>
-    <description>Before you continue reading this guide why not try a more easy way using the Koding Package Manager (kpm) and install Jekyll using just one command:
-kpm install jekyll
-
-This tutorial will guide you through the installation of Jekyll on a Koding VM.
-  Install RVM Use the two commands below to install rvm on your virtual machine (for more information visit here):
-gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-
-\curl -sSL https://get.rvm.io | bash -s stable --ruby
-Then run the rvm script:
-source .rvm/scripts/rvm
-  Install Jekyll Use this command to install Jekyll:
-gem install jekyll
-  Create a Jekyll site  tip The next step can be skipped if you've already created a Jekyll site.
- Execute the following command, where JekyllSite is the destination folder of your website:
-jekyll new JekyllSite
-  Run the server Set the current directory to the website's directory (for this tutorial it's JekyllSite):
-cd JekyllSite
-Execute the following command:
-jekyll serve --host 0.0.0.0
- tipFor more details on your hostname, read this.*
-   View the website Navigate to http://username.koding.io:4000
- tipMake sure to replace username above with your Koding username.
- </description>
-  </item>
-  
-  <item>
     <title>Sync files using Google Drive</title>
     <link>//learn.koding.com/guides/sync-files-google-drive</link>
     <pubDate>"2015-05-21T00:00:00.000Z"</pubDate>
@@ -1856,6 +1864,37 @@ Note 1: The app does not run in the background automatically continuously doing 
 man cron
  Note 2: As per the author of grive, the application will not download any files that are the traditional Google Docs (Spreadsheet, Documents,Presentations, etc.). The app will only automatically upload/download any non-native Google Doc formats which include code files, text files, images, etc.
 </description>
+  </item>
+  
+  <item>
+    <title>Installing Jekyll on Koding</title>
+    <link>//learn.koding.com/guides/installing-jekyll</link>
+    <pubDate>"2015-05-21T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/installing-jekyll</guid>
+    <author>dehli</author>
+    <description>Before you continue reading this guide why not try a more easy way using the Koding Package Manager (kpm) and install Jekyll using just one command:
+kpm install jekyll
+
+This tutorial will guide you through the installation of Jekyll on a Koding VM.
+  Install RVM Use the two commands below to install rvm on your virtual machine (for more information visit here):
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+
+\curl -sSL https://get.rvm.io | bash -s stable --ruby
+Then run the rvm script:
+source .rvm/scripts/rvm
+  Install Jekyll Use this command to install Jekyll:
+gem install jekyll
+  Create a Jekyll site  tip The next step can be skipped if you've already created a Jekyll site.
+ Execute the following command, where JekyllSite is the destination folder of your website:
+jekyll new JekyllSite
+  Run the server Set the current directory to the website's directory (for this tutorial it's JekyllSite):
+cd JekyllSite
+Execute the following command:
+jekyll serve --host 0.0.0.0
+ tipFor more details on your hostname, read this.*
+   View the website Navigate to http://username.koding.io:4000
+ tipMake sure to replace username above with your Koding username.
+ </description>
   </item>
   
   <item>
@@ -1940,42 +1979,6 @@ Find out more about your VM hostname here.
 
 And that's it!
 If you encounter any issues or have any questions please drop us an email here.
-</description>
-  </item>
-  
-  <item>
-    <title>Setting up FTP on Koding</title>
-    <link>//learn.koding.com/guides/setting-up-ftp-on-koding</link>
-    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-ftp-on-koding</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install FTP using just one command:
-kpm install ftp
-
-In this guide you'll go over how to get your FTP Client connected to your VM's FTP Server. You will be using FileZilla as the FTP Client, but any client should be able to connect to your FTP Server successfully.
-  What you will need In this tutorial you will need the following.
-
-A Koding account, and your Koding Username.
-The Address of the VM you'd like to connect to. Instructions can be found here.
-
-  Update your software sources Before getting started, make sure you have the latest sources locked down. Type in:
-sudo apt-get update
-and let the update process complete. It should not require any input.
-  Installing ProFTPd First off, you'll need to install ProFTPd. This can be done by pasting the following command into your Koding IDE's Terminal.
-sudo apt-get install proftpd
-During the install process you will be asked to choose to run your VPS as an inetd or standalone server. Choose the standalone option.
-  Setting up the FTP User After ProFTPd has been successfully installed, you need to set a FTP password for your user. To do this, paste the following command into your Terminal.
-sudo passwd KODING_USERNAME
-Make note to replace KODING_USERNAME with your actual Koding username.
-After hitting enter, you'll be prompted for the FTP password you wish to use. Not your Koding password.
-  Connecting to your FTP Server Finally, in your FTP Client of choice paste your VM Address into the hostname. If you're not sure what that is, instructions to find it can be found here.
-After the hostname, enter your Koding username, and FTP Password that you chose in the above commands. An example image from FileZilla can be seen below.
-
-  Additional Resources 
-FileZilla
-FileZilla Download
-Connecting to your Koding VM using FileZilla
-
 </description>
   </item>
   
@@ -4136,27 +4139,48 @@ And that's it, three simple steps to set up your e-commerce solution. As always,
   </item>
   
   <item>
-    <title>Getting Started: Editing Your Profile</title>
-    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
+    <title>Getting Started: The Activity Feed</title>
+    <link>//learn.koding.com/guides/getting-started/activity-feed</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/activity-feed</guid>
     <author>Team Koding</author>
-    <description>Your Koding profile is your public information page on Koding. Currently
-it shows your Avatar, Name and Description, recent Koding activity, and
-in the near future Badges and additional social information. In this
-guide we'll go over the basic usage of your Koding profile.
-  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted
-below.
+    <description>The Activity Feed is the central location for discussion on Koding. A
+public message board, with markdown support, previewing, hashtag topics
+and more, it's a central component to Koding's Social experience.
 
-Clicking on it will open your profile.
-  Avatar, Name and Description When viewing your profile for the first time, you'll see that your first
-name is set to your Koding username, and your last name and description
-are set to default values, as seen in the below image.
+  Posting and Formatting To post to the activity feed, find the input box in the top of the page.
 
-These default values are only seen by you, and if you double click them,
-you can edit that field.
-If you have one, Koding will use your Gravatar by default, but if you head over to your account settings Koding also supports avatar uploads directly.
+Simply type something in, and press the green submit button. Just plain text
+can get a bit boring though, so Koding supports full
+Markdown, as seen below:
 
+ tipMake sure to familiarize yourself with our posting guidelines.
+   Previewing To preview your post, simply press the little eye on the right side of
+the input box. Your Markdown will be rendered and highlighted
+appropriately.
+
+  Tagging Tagging your content is important. With tags, your content can be
+categorized, which makes it easier to search and more likely to be seen
+by people who follow those channels.
+
+Here you can see the previous Markdown example, tagged with the
+#markdown tag.
+  Searching On the #public channel there is a search field next to
+Most Liked / Most Recent, as seen below.
+
+Searching the activity feed will search for the contents of a post, as
+well as the tags.
+  Channels Channels are how you view a steam of posts with a certain Tag. When you
+click on a tag, it opens a channel for that tag. Clicking on the Grey
+checkmark next to the channel name, will subscribe you to that channel,
+and keep it open anytime you visit Koding.
+
+To browse channels that you might be interested in, you can click the
+Plus button next to &amp;quot;Channel&amp;quot; in the sidebar (as seen below), and
+search for the channel you're interested in.
+
+Following channels is a great way to stay active in content that matters
+to you.
 </description>
   </item>
   
@@ -4435,48 +4459,27 @@ From here, you'll be poised for yet more installations. See their website for mo
   </item>
   
   <item>
-    <title>Getting Started: The Activity Feed</title>
-    <link>//learn.koding.com/guides/getting-started/activity-feed</link>
+    <title>Getting Started: Editing Your Profile</title>
+    <link>//learn.koding.com/guides/getting-started/editing-your-profile</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/activity-feed</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/editing-your-profile</guid>
     <author>Team Koding</author>
-    <description>The Activity Feed is the central location for discussion on Koding. A
-public message board, with markdown support, previewing, hashtag topics
-and more, it's a central component to Koding's Social experience.
+    <description>Your Koding profile is your public information page on Koding. Currently
+it shows your Avatar, Name and Description, recent Koding activity, and
+in the near future Badges and additional social information. In this
+guide we'll go over the basic usage of your Koding profile.
+  Getting to your Profile To find your profile, look in the lower left of Koding, as highlighted
+below.
 
-  Posting and Formatting To post to the activity feed, find the input box in the top of the page.
+Clicking on it will open your profile.
+  Avatar, Name and Description When viewing your profile for the first time, you'll see that your first
+name is set to your Koding username, and your last name and description
+are set to default values, as seen in the below image.
 
-Simply type something in, and press the green submit button. Just plain text
-can get a bit boring though, so Koding supports full
-Markdown, as seen below:
+These default values are only seen by you, and if you double click them,
+you can edit that field.
+If you have one, Koding will use your Gravatar by default, but if you head over to your account settings Koding also supports avatar uploads directly.
 
- tipMake sure to familiarize yourself with our posting guidelines.
-   Previewing To preview your post, simply press the little eye on the right side of
-the input box. Your Markdown will be rendered and highlighted
-appropriately.
-
-  Tagging Tagging your content is important. With tags, your content can be
-categorized, which makes it easier to search and more likely to be seen
-by people who follow those channels.
-
-Here you can see the previous Markdown example, tagged with the
-#markdown tag.
-  Searching On the #public channel there is a search field next to
-Most Liked / Most Recent, as seen below.
-
-Searching the activity feed will search for the contents of a post, as
-well as the tags.
-  Channels Channels are how you view a steam of posts with a certain Tag. When you
-click on a tag, it opens a channel for that tag. Clicking on the Grey
-checkmark next to the channel name, will subscribe you to that channel,
-and keep it open anytime you visit Koding.
-
-To browse channels that you might be interested in, you can click the
-Plus button next to &amp;quot;Channel&amp;quot; in the sidebar (as seen below), and
-search for the channel you're interested in.
-
-Following channels is a great way to stay active in content that matters
-to you.
 </description>
   </item>
   
