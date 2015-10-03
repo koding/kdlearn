@@ -42,6 +42,12 @@ sudo apt-get install proftpd
 
 During the install process you will be asked to choose to run your VPS as an inetd or standalone server. Choose the **standalone** option.
 
+After installation, the server should run automatically but just in case it does not, type in
+the following command to start the server:
+```
+sudo service proftpd start
+```
+
 ## Setting up the FTP User
 
 After ProFTPd has been successfully installed, you need to set a FTP password for your user. To do this, paste the following command into your Terminal.
