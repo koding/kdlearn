@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+        <loc>http://learn.koding.com/guides/updating-nodejs-on-your-vm</loc>
+        <lastmod>2015-10-10</lastmod>
+        <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
         <loc>http://learn.koding.com/guides/setting-up-ftp-on-koding</loc>
         <lastmod>2015-10-03</lastmod>
         <changefreq>monthly</changefreq>
@@ -38,25 +44,25 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/postgresql-on-koding</loc>
-        <lastmod>2015-08-11</lastmod>
-        <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-        <loc>http://learn.koding.com/guides/understanding-file-permissions</loc>
-        <lastmod>2015-08-11</lastmod>
-        <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
         <loc>http://learn.koding.com/guides/getting-started/the-ui</loc>
         <lastmod>2015-08-11</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
+        <loc>http://learn.koding.com/guides/postgresql-on-koding</loc>
+        <lastmod>2015-08-11</lastmod>
+        <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
         <loc>http://learn.koding.com/guides/connect-your-machine</loc>
+        <lastmod>2015-08-11</lastmod>
+        <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+        <loc>http://learn.koding.com/guides/understanding-file-permissions</loc>
         <lastmod>2015-08-11</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -134,25 +140,25 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/hello-world/php</loc>
-        <lastmod>2015-06-06</lastmod>
-        <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-        <loc>http://learn.koding.com/guides/hello-world/c-sharp</loc>
-        <lastmod>2015-06-06</lastmod>
-        <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
         <loc>http://learn.koding.com/guides/hello-world/ruby</loc>
         <lastmod>2015-06-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
+        <loc>http://learn.koding.com/guides/hello-world/php</loc>
+        <lastmod>2015-06-06</lastmod>
+        <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
         <loc>http://learn.koding.com/guides/hello-world/python</loc>
+        <lastmod>2015-06-06</lastmod>
+        <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+        <loc>http://learn.koding.com/guides/hello-world/c-sharp</loc>
         <lastmod>2015-06-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -212,12 +218,6 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/setting-up-cockpit</loc>
-        <lastmod>2015-05-06</lastmod>
-        <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
         <loc>http://learn.koding.com/guides/permanent-shared-vm</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
@@ -236,7 +236,7 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/setting-up-ftp-with-vsftpd</loc>
+        <loc>http://learn.koding.com/guides/setting-up-cockpit</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -278,7 +278,7 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/setting-up-sftp-on-koding</loc>
+        <loc>http://learn.koding.com/guides/setting-up-ftp-with-vsftpd</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -320,13 +320,19 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/setting-up-webdav-on-koding</loc>
+        <loc>http://learn.koding.com/guides/setting-up-sftp-on-koding</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
         <loc>http://learn.koding.com/guides/dropbox-for-file-sync</loc>
+        <lastmod>2015-05-06</lastmod>
+        <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+        <loc>http://learn.koding.com/guides/setting-up-webdav-on-koding</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -350,25 +356,19 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/understanding-vm-panel</loc>
-        <lastmod>2015-05-06</lastmod>
-        <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
         <loc>http://learn.koding.com/guides/change-theme</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/using-bitbucket-on-koding</loc>
+        <loc>http://learn.koding.com/guides/understanding-vm-panel</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/using-github</loc>
+        <loc>http://learn.koding.com/guides/using-bitbucket-on-koding</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -410,7 +410,7 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/updating-nodejs-on-your-vm</loc>
+        <loc>http://learn.koding.com/guides/using-github</loc>
         <lastmod>2015-05-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>

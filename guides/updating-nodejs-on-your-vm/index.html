@@ -45,11 +45,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?608" />
+    <link rel="stylesheet" href="/css/vendor.css?227" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?922" />
+    <link rel="stylesheet" href="/css/main.css?299" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?710" />
+    <link rel="stylesheet" href="/css/rwd.css?88" />
     <!-- Google WebMaster Tools Auth for PD team -->
     <meta name="google-site-verification" content="xit6W5qyYuPGq49UXRRZNm_HW5bUxyPS0hqJRDP-2tg" />
 	</head>
@@ -256,9 +256,13 @@
   </li>
 
   
-  <li class="">
+  <li class="zactive">
     <h5>Latest Guides</h5>
     <ul>
+    
+      <li class="zactive">
+        <a href="/guides/updating-nodejs-on-your-vm">Updating Node.js on your VM</a>
+      </li>
     
       <li class="">
         <a href="/guides/setting-up-ftp-on-koding">Setting up FTP on Koding</a>
@@ -285,11 +289,7 @@
       </li>
     
       <li class="">
-        <a href="/guides/postgresql-on-koding">Using PostgreSQL</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/understanding-file-permissions">Understanding file permissions</a>
+        <a href="/guides/getting-started/the-ui">Getting Started: The UI</a>
       </li>
     
     </ul>
@@ -313,7 +313,7 @@
             href="https://koding.com/darryldias"
           >Darryl Dias</a> 
     </li>
-    <li class="updated">Updated 5 months ago</li>
+    <li class="updated">Updated 18 hours ago</li>
   </ul>
 
 
@@ -321,12 +321,13 @@
 
   <div itemprop="articleBody">
     <p itemprop="about">Your Koding VM is powered by Ubuntu 14.04; by default your Koding VM comes pre-installed with Node 0.10.26, the current stable version of Node.js available in the official Ubuntu repository. We can update to the latest stable version of Node.js available for Ubuntu 14.04 by adding the official Node.js PPA to our local sources list and running a dist-upgrade to switch to the latest stable version.</p>
-<p>The Official PPA is updated regularly and is maintained by <a href="https://chrislea.com/">Chris Lea</a></p>
+<p>Node.js is available from the NodeSource Debian and Ubuntu binary distributions repository (formerly Chris Lea&apos;s Launchpad PPA)</p>
 <h2 class="heading"> <a name="instructions" class="anchor" href="#instructions"></a> Instructions </h2><p>Adding the official Node.js PPA</p>
-<pre><code class="bash">sudo add-apt-repository ppa:chris-lea/node.js
+<pre><code class="bash">curl --silent --location https://deb.nodesource.com/setup_4.x | sudo bash -
 </code></pre>
 <p>Updating the local package database and sources list.</p>
 <pre><code class="bash">sudo apt-get update
+sudo apt-get install nodejs
 </code></pre>
 <p>Updating to the latest stable build of Node.js available for Ubuntu 14.04. This will update all the packages that need to update and will also update your Node.js package.</p>
 <pre><code class="bash">sudo apt-get dist-upgrade

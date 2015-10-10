@@ -18,6 +18,37 @@
   <language>en</language>
   
   <item>
+    <title>Updating Node.js on your VM</title>
+    <link>//learn.koding.com/guides/updating-nodejs-on-your-vm</link>
+    <pubDate>"2015-10-10T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/updating-nodejs-on-your-vm</guid>
+    <author>Darryl Dias</author>
+    <description>Your Koding VM is powered by Ubuntu 14.04; by default your Koding VM comes pre-installed with Node 0.10.26, the current stable version of Node.js available in the official Ubuntu repository. We can update to the latest stable version of Node.js available for Ubuntu 14.04 by adding the official Node.js PPA to our local sources list and running a dist-upgrade to switch to the latest stable version.
+Node.js is available from the NodeSource Debian and Ubuntu binary distributions repository (formerly Chris Lea's Launchpad PPA)
+  Instructions Adding the official Node.js PPA
+curl --silent --location https://deb.nodesource.com/setup_4.x | sudo bash -
+
+Updating the local package database and sources list.
+sudo apt-get update
+sudo apt-get install nodejs
+
+Updating to the latest stable build of Node.js available for Ubuntu 14.04. This will update all the packages that need to update and will also update your Node.js package.
+sudo apt-get dist-upgrade
+
+If you had deleted Node.js from your VM, you can install it by entering the command below. The PPA installs NPM as a part of nodejs and does not require you to install NPM seperately.
+sudo apt-get install nodejs
+
+Check the version of Node.js after installing. 
+node --version
+
+The example output should look like.
+v0.10.33
+
+Now you have the latest stable version of Node.js installed on your VM.
+</description>
+  </item>
+  
+  <item>
     <title>Setting up FTP on Koding</title>
     <link>//learn.koding.com/guides/setting-up-ftp-on-koding</link>
     <pubDate>"2015-10-03T00:00:00.000Z"</pubDate>
@@ -427,6 +458,59 @@ fun with Node!
   </item>
   
   <item>
+    <title>Getting Started: The UI</title>
+    <link>//learn.koding.com/guides/getting-started/the-ui</link>
+    <pubDate>"2015-08-11T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/the-ui</guid>
+    <author>Team Koding</author>
+    <description>In this guide we'll take a look at Koding's UI. We'll examine 
+the major sections, and briefly explain some of the features. In future 
+guides of this series we'll explain these parts in more detail. Lets get 
+started!
+  The Full UI 
+This is the Koding UI of a logged in user, with the Koding IDE 
+open. On the left side we have our VMs, Channels, Chats, and Account. To 
+the right we have the Koding IDE. Lets look at each piece, and where they 
+lead us.
+  VMs, Workspaces and IDE VMs, Workspaces, and the Koding IDE can be found on the left hand 
+side, under VMS, as seen in the image below.
+
+Clicking on a VM Name, such as koding-vm-0 in the above image, will 
+open up the Koding IDE for that specific VM.
+The button to the immediate right of the VM Name is the VM Settings. Here 
+you can find useful information, such as your VM Address and VM Specs.
+Finally, below the VM Name are your Workspaces for that specific VM.Clicking on a Workspace will open all of the previous editors and 
+Terminals that you had open on it, and opening new Workspaces provides 
+shortcuts for varying tasks. We'll get into the specifics in the 
+Workspaces guide.
+  Channels and Activity Below VMs, are your Channels. To follow a channel, click on a Grey check 
+mark. Green check marks indicate a channel that you are following.
+
+A channel is a stream of user submitted content for a certain hash tag, 
+such as #golang. When you 
+click on a hash tag in the Activity Feed, it opens a channel for that 
+tag, as seen below.
+
+Activity Feed posts support Markdown, including Markdown Code 
+Blocks.
+  Chat Below Channels are your Chats. These are private conversations between 
+you and any number of users you invite.
+
+To open a new chat, click on the Plus button to the right of the Chat 
+icon. Clicking on a already started chat, will open it as seen below.
+
+Your chats will work much in the same way as the Activity Feed. You can 
+invite more users by clicking the Plus next to user icons, or delete the 
+conversation from the Chat Dropdown in the upper right.
+  Account Settings Your Account Settings can be located from the bottom of the navigation 
+panel.
+
+Here you'll be able to modify your Name, Password, and link your Koding 
+account to various services.
+</description>
+  </item>
+  
+  <item>
     <title>Using PostgreSQL</title>
     <link>//learn.koding.com/guides/postgresql-on-koding</link>
     <pubDate>"2015-08-11T00:00:00.000Z"</pubDate>
@@ -480,6 +564,70 @@ To check what relations your database contains, use
 If you want more information about a particular relation, use
 \d myfancytable
 Have fun!
+</description>
+  </item>
+  
+  <item>
+    <title>Connect your own machine to Koding</title>
+    <link>//learn.koding.com/guides/connect-your-machine</link>
+    <pubDate>"2015-08-11T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/connect-your-machine</guid>
+    <author>Team Koding</author>
+    <description>  What does &amp;quot;connect your own machine&amp;quot; mean? This feature allows you to connect your own machine (physical or virtual) to your Koding account so that it will
+show up in the sidebar just like a regular Koding VM. This means that once your machine is connected to Koding,
+you can open a Terminal and any file on that machine directly from your Koding account! You can even start
+collaboration sessions!
+  What types of machines can I connect to my Koding account? Presently, the following are the requirements for any machine that can be connected to Koding:
+
+the machine needs to have a public IP address
+the machine must be running Ubuntu Linux 13.x or 14.x (support for 15.x is coming)
+you must have root/sudo access on the system
+
+In addition to these machine related requirements, you must also ensure that you have the following
+ports open (in case you are running a firewall):
+
+80/tcp
+56789/tcp
+
+  How does Koding make this happen? The steps are outlined below but in a nutshell, what happens is that you download our &amp;quot;Koding Service Connector&amp;quot;
+to your machine and this service acts like a &amp;quot;bridge&amp;quot; between your machine and your Koding account.
+  How can I connect my own machine to Koding? Connecting your machine to Koding is easy, just follow these steps but first make sure that the requirements
+stated above are met:
+
+Bring up the VMs list dialogue box as shown in the screen shot.
+
+
+Click &amp;quot;Add Your Own VM&amp;quot;
+
+
+In the dialogue box that appears, copy the install script and run it on your machine
+
+ tipLeave the dialogue box open while you run the install script on your machine. This is a 
+requirement since we are &amp;quot;listening&amp;quot; for a connection from your machine. Also, make sure
+you have root access to run the install script otherwise it will fail.
+ 
+The install script will download the necessary software, configure it and install it on your
+machine.
+
+
+Once the install script is done running on your machine, within a few seconds your machine
+should show up in the sidebar.
+
+
+
+  Are there any limits to how many machines I can connect? Our free accounts are restricted to one external machine and paid accounts don't have any limits to the number
+of machines/VMs they can connect to their Koding account.
+  Video overview  
+ 
+ 
+
+  How can I disconnect a machine that I have connected to my Koding account? To disconnect a machine, simply go over to machine/VM settings and then click the advanced tab. On that tab you will see
+the disconnect button. Click the button to disconnect the machine from your Koding account.
+ tipNote: Disconnecting will just break the connection between Koding and your machine. Your machine will
+still be running and all files will be available on it. 
+ If you wish to completely uninstall the Koding Connector Service from your machine, simply run this 
+command on the machine that you had connected:
+sudo dpkg -P klient
 </description>
   </item>
   
@@ -587,123 +735,6 @@ chown demo:www-data demo1
  tipNote: The same principles also apply to folders
  You should now be able to understand how ownership and permissions work in Linux.
 If you encounter any issues or have any questions please drop us an email here.
-</description>
-  </item>
-  
-  <item>
-    <title>Getting Started: The UI</title>
-    <link>//learn.koding.com/guides/getting-started/the-ui</link>
-    <pubDate>"2015-08-11T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/the-ui</guid>
-    <author>Team Koding</author>
-    <description>In this guide we'll take a look at Koding's UI. We'll examine 
-the major sections, and briefly explain some of the features. In future 
-guides of this series we'll explain these parts in more detail. Lets get 
-started!
-  The Full UI 
-This is the Koding UI of a logged in user, with the Koding IDE 
-open. On the left side we have our VMs, Channels, Chats, and Account. To 
-the right we have the Koding IDE. Lets look at each piece, and where they 
-lead us.
-  VMs, Workspaces and IDE VMs, Workspaces, and the Koding IDE can be found on the left hand 
-side, under VMS, as seen in the image below.
-
-Clicking on a VM Name, such as koding-vm-0 in the above image, will 
-open up the Koding IDE for that specific VM.
-The button to the immediate right of the VM Name is the VM Settings. Here 
-you can find useful information, such as your VM Address and VM Specs.
-Finally, below the VM Name are your Workspaces for that specific VM.Clicking on a Workspace will open all of the previous editors and 
-Terminals that you had open on it, and opening new Workspaces provides 
-shortcuts for varying tasks. We'll get into the specifics in the 
-Workspaces guide.
-  Channels and Activity Below VMs, are your Channels. To follow a channel, click on a Grey check 
-mark. Green check marks indicate a channel that you are following.
-
-A channel is a stream of user submitted content for a certain hash tag, 
-such as #golang. When you 
-click on a hash tag in the Activity Feed, it opens a channel for that 
-tag, as seen below.
-
-Activity Feed posts support Markdown, including Markdown Code 
-Blocks.
-  Chat Below Channels are your Chats. These are private conversations between 
-you and any number of users you invite.
-
-To open a new chat, click on the Plus button to the right of the Chat 
-icon. Clicking on a already started chat, will open it as seen below.
-
-Your chats will work much in the same way as the Activity Feed. You can 
-invite more users by clicking the Plus next to user icons, or delete the 
-conversation from the Chat Dropdown in the upper right.
-  Account Settings Your Account Settings can be located from the bottom of the navigation 
-panel.
-
-Here you'll be able to modify your Name, Password, and link your Koding 
-account to various services.
-</description>
-  </item>
-  
-  <item>
-    <title>Connect your own machine to Koding</title>
-    <link>//learn.koding.com/guides/connect-your-machine</link>
-    <pubDate>"2015-08-11T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/connect-your-machine</guid>
-    <author>Team Koding</author>
-    <description>  What does &amp;quot;connect your own machine&amp;quot; mean? This feature allows you to connect your own machine (physical or virtual) to your Koding account so that it will
-show up in the sidebar just like a regular Koding VM. This means that once your machine is connected to Koding,
-you can open a Terminal and any file on that machine directly from your Koding account! You can even start
-collaboration sessions!
-  What types of machines can I connect to my Koding account? Presently, the following are the requirements for any machine that can be connected to Koding:
-
-the machine needs to have a public IP address
-the machine must be running Ubuntu Linux 13.x or 14.x (support for 15.x is coming)
-you must have root/sudo access on the system
-
-In addition to these machine related requirements, you must also ensure that you have the following
-ports open (in case you are running a firewall):
-
-80/tcp
-56789/tcp
-
-  How does Koding make this happen? The steps are outlined below but in a nutshell, what happens is that you download our &amp;quot;Koding Service Connector&amp;quot;
-to your machine and this service acts like a &amp;quot;bridge&amp;quot; between your machine and your Koding account.
-  How can I connect my own machine to Koding? Connecting your machine to Koding is easy, just follow these steps but first make sure that the requirements
-stated above are met:
-
-Bring up the VMs list dialogue box as shown in the screen shot.
-
-
-Click &amp;quot;Add Your Own VM&amp;quot;
-
-
-In the dialogue box that appears, copy the install script and run it on your machine
-
- tipLeave the dialogue box open while you run the install script on your machine. This is a 
-requirement since we are &amp;quot;listening&amp;quot; for a connection from your machine. Also, make sure
-you have root access to run the install script otherwise it will fail.
- 
-The install script will download the necessary software, configure it and install it on your
-machine.
-
-
-Once the install script is done running on your machine, within a few seconds your machine
-should show up in the sidebar.
-
-
-
-  Are there any limits to how many machines I can connect? Our free accounts are restricted to one external machine and paid accounts don't have any limits to the number
-of machines/VMs they can connect to their Koding account.
-  Video overview  
- 
- 
-
-  How can I disconnect a machine that I have connected to my Koding account? To disconnect a machine, simply go over to machine/VM settings and then click the advanced tab. On that tab you will see
-the disconnect button. Click the button to disconnect the machine from your Koding account.
- tipNote: Disconnecting will just break the connection between Koding and your machine. Your machine will
-still be running and all files will be available on it. 
- If you wish to completely uninstall the Koding Connector Service from your machine, simply run this 
-command on the machine that you had connected:
-sudo dpkg -P klient
 </description>
   </item>
   
@@ -1415,6 +1446,28 @@ You just wrote and ran your first Hello World in Perl.
   </item>
   
   <item>
+    <title>Hello World on Koding: Ruby</title>
+    <link>//learn.koding.com/guides/hello-world/ruby</link>
+    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/ruby</guid>
+    <author>Team Koding</author>
+    <description>  Introduction Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, and Lisp. It supports multiple programming paradigms, including functional, object-oriented, and imperative. It also has a dynamic type system and automatic memory management.
+  Implementation The first thing you need to do is to create a file called helloworld.rb in your Koding VM and paste the bellow snippet into it.
+#!/usr/bin/ruby
+
+puts 'Hello, world!'
+To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
+ruby helloworld.rb
+  Explanation #!/usr/bin/ruby
+The shebang line is read by the program loader to determine what program to use to run the script. This line cannot be preceded by any blank lines or any leading spaces.
+puts 'Hello, world!'
+The above line is pretty self explanatory. It will put something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
+And that's it!
+You just wrote and ran your first Hello World in Ruby.
+</description>
+  </item>
+  
+  <item>
     <title>Hello World on Koding: PHP</title>
     <link>//learn.koding.com/guides/hello-world/php</link>
     <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
@@ -1446,6 +1499,24 @@ echo outputs one or more strings. echo is not actually a function (it is a langu
 The last part after the closing ?&amp;gt; tag if just basic HTML code.
 And that's it!
 You just wrote and ran your first Hello World in PHP.
+</description>
+  </item>
+  
+  <item>
+    <title>Hello World on Koding: Python</title>
+    <link>//learn.koding.com/guides/hello-world/python</link>
+    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/python</guid>
+    <author>Team Koding</author>
+    <description>  Introduction Python is a widely used general-purpose, high-level programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java. The language provides constructs intended to enable clear programs on both a small and large scale.
+  Implementation The first thing you need to do is to create a file called helloworld.py in your Koding VM and paste the bellow snippet into it.
+print &amp;quot;Hello World!&amp;quot;
+To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
+python helloworld.py
+  Explanation print &amp;quot;Hello World!&amp;quot;
+Since Python emphasizes code readability, the above line is pretty self explanatory. It will print out something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
+And that's it!
+You just wrote and ran your first Hello World in Python.
 </description>
   </item>
   
@@ -1497,46 +1568,6 @@ Hello World!
 Congratulations, you have written your first C# program! 
 Now that Mono is installed and available on your VM, you can find plenty of C# tutorials on the Internet and try them out on your Koding VM. Remember one thing, since there is no graphical environment on your Koding VM, you should only write or practice C# programs that are NOT graphical. In other words, stick to writing C# applications that are command line only
 for now.
-</description>
-  </item>
-  
-  <item>
-    <title>Hello World on Koding: Ruby</title>
-    <link>//learn.koding.com/guides/hello-world/ruby</link>
-    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/ruby</guid>
-    <author>Team Koding</author>
-    <description>  Introduction Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, and Lisp. It supports multiple programming paradigms, including functional, object-oriented, and imperative. It also has a dynamic type system and automatic memory management.
-  Implementation The first thing you need to do is to create a file called helloworld.rb in your Koding VM and paste the bellow snippet into it.
-#!/usr/bin/ruby
-
-puts 'Hello, world!'
-To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
-ruby helloworld.rb
-  Explanation #!/usr/bin/ruby
-The shebang line is read by the program loader to determine what program to use to run the script. This line cannot be preceded by any blank lines or any leading spaces.
-puts 'Hello, world!'
-The above line is pretty self explanatory. It will put something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
-And that's it!
-You just wrote and ran your first Hello World in Ruby.
-</description>
-  </item>
-  
-  <item>
-    <title>Hello World on Koding: Python</title>
-    <link>//learn.koding.com/guides/hello-world/python</link>
-    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/python</guid>
-    <author>Team Koding</author>
-    <description>  Introduction Python is a widely used general-purpose, high-level programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java. The language provides constructs intended to enable clear programs on both a small and large scale.
-  Implementation The first thing you need to do is to create a file called helloworld.py in your Koding VM and paste the bellow snippet into it.
-print &amp;quot;Hello World!&amp;quot;
-To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
-python helloworld.py
-  Explanation print &amp;quot;Hello World!&amp;quot;
-Since Python emphasizes code readability, the above line is pretty self explanatory. It will print out something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
-And that's it!
-You just wrote and ran your first Hello World in Python.
 </description>
   </item>
   
@@ -1945,44 +1976,6 @@ snapshot as the starting point (as shown in the image below).
   </item>
   
   <item>
-    <title>Setup Cockpit on Koding</title>
-    <link>//learn.koding.com/guides/setting-up-cockpit</link>
-    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-cockpit</guid>
-    <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Cockpit using just one command:
-kpm install cockpit
-
-  What is Cockpit? Cockpit was born out of the need of building a simple dynamic site. Cockpits goal is to be simple, but yet powerful and designed in that way that you can spend less time trying to squeeze your site into a theme or template.
-  Getting started Before you can start the Cockpit install process, you'll need to update all of the apt-get packages:
-sudo apt-get update
-Make sure you have the PHP SQLite package installed on your VM before you continue. You can install it using this command:
-sudo apt-get install php5-sqlite
-Last but not least restart Apache:
-sudo service apache2 restart
-  Step 1 Run the below commands, which will install Cockpit on your VM:
-Download the latest version:
-curl -Lo /tmp/cockpit-0.13.0.tar.gz https://github.com/aheinze/cockpit/archive/0.13.0.tar.gz
-Untar the archive and move it:
-tar -C /tmp -zxf /tmp/cockpit-0.13.0.tar.gz
-
-mv /tmp/cockpit-0.13.0 ~/Web/cockpit
-Set the proper permissions for the storage folder and its subfolders:
-cd Web
-chmod 777 -R cockpit/storage
-Clean up using the following command
-sudo rm /tmp/cockpit-0.13.0.tar.gz
-The set up has finished, you now need to complete the installation by heading over to a similar URL as this one and finish the installation:
-http://KODING_USERNAME.koding.io/cockpit/install
-Find out more about your VM hostname here.
-  Step 2 If everything was successful this is the first thing your should see:
-
-And that's it!
-If you encounter any issues or have any questions please drop us an email here.
-</description>
-  </item>
-  
-  <item>
     <title>How to share your VM with someone?</title>
     <link>//learn.koding.com/guides/permanent-shared-vm</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
@@ -2117,53 +2110,40 @@ That's all there is to it! Enjoy!
   </item>
   
   <item>
-    <title>Setting up FTP with vsftpd</title>
-    <link>//learn.koding.com/guides/setting-up-ftp-with-vsftpd</link>
+    <title>Setup Cockpit on Koding</title>
+    <link>//learn.koding.com/guides/setting-up-cockpit</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-ftp-with-vsftpd</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-cockpit</guid>
     <author>Team Koding</author>
-    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install vsftpd using just one command:
-kpm install vsftpd
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install Cockpit using just one command:
+kpm install cockpit
 
-In this guide you'll go over how to get your FTP Client connected to your VM's FTP Server using vsftpd. You will be using FileZilla as the FTP Client, but any client should be able to connect to your FTP Server successfully.
-  What you will need In this tutorial you will need the following.
-
-A Koding account, and your Koding Username.
-The Address of the VM you'd like to connect to. Instructions can be found here.
-
-  Update your software sources Before getting started, make sure you have the latest sources locked down. Type in:
+  What is Cockpit? Cockpit was born out of the need of building a simple dynamic site. Cockpits goal is to be simple, but yet powerful and designed in that way that you can spend less time trying to squeeze your site into a theme or template.
+  Getting started Before you can start the Cockpit install process, you'll need to update all of the apt-get packages:
 sudo apt-get update
-and let the update process complete. It should not require any input.
-  Installing vsftpd First off, you'll need to install vsftpd. This can be done by pasting the following command into your Koding IDE's Terminal.
-sudo apt-get install vsftpd
-  Configure vsftpd After the installation is complete open /etc/vsftpd.conf file using this command:
-sudo nano /etc/vsftpd.conf
-and make changes as follows.
-Uncomment the lines below:
-write_enable=YES
-local_umask=022
-Uncomment the following line to prevent access to the other folders outside the Home directory.
-chroot_local_user=YES
-and add the following line at the end.
-allow_writeable_chroot=YES
-Add the following lines to enable passive mode.
-pasv_enable=Yes
-pasv_min_port=40000
-pasv_max_port=40100
-In order for these changes to take effect restart the vsftpd service using the below command.
-sudo service vsftpd restart
-  Setting up the FTP User After vsftpd has been successfully installed, you need to set a FTP password for your user. To do
-this, paste the following command into your Terminal.
-sudo passwd KODING_USERNAME
-Make note to replace KODING_USERNAME with your actual Koding username.
-After hitting enter, you'll be prompted for the FTP password you wish to use. Not your Koding password.
-  Connecting to your FTP Server Finally, in your FTP Client of choice paste your VM Address into the hostname. If you're not sure what that is, instructions to find it can be found here.
-After the hostname, enter your Koding username, and FTP Password that you chose in the above commands. An example image from FileZilla can be seen below.
+Make sure you have the PHP SQLite package installed on your VM before you continue. You can install it using this command:
+sudo apt-get install php5-sqlite
+Last but not least restart Apache:
+sudo service apache2 restart
+  Step 1 Run the below commands, which will install Cockpit on your VM:
+Download the latest version:
+curl -Lo /tmp/cockpit-0.13.0.tar.gz https://github.com/aheinze/cockpit/archive/0.13.0.tar.gz
+Untar the archive and move it:
+tar -C /tmp -zxf /tmp/cockpit-0.13.0.tar.gz
 
-  Additional Resources 
-FileZilla
-FileZilla Download
+mv /tmp/cockpit-0.13.0 ~/Web/cockpit
+Set the proper permissions for the storage folder and its subfolders:
+cd Web
+chmod 777 -R cockpit/storage
+Clean up using the following command
+sudo rm /tmp/cockpit-0.13.0.tar.gz
+The set up has finished, you now need to complete the installation by heading over to a similar URL as this one and finish the installation:
+http://KODING_USERNAME.koding.io/cockpit/install
+Find out more about your VM hostname here.
+  Step 2 If everything was successful this is the first thing your should see:
 
+And that's it!
+If you encounter any issues or have any questions please drop us an email here.
 </description>
   </item>
   
@@ -2489,12 +2469,15 @@ If you encounter any issues or have any questions please drop us an email here.
   </item>
   
   <item>
-    <title>Setting up SFTP on Koding</title>
-    <link>//learn.koding.com/guides/setting-up-sftp-on-koding</link>
+    <title>Setting up FTP with vsftpd</title>
+    <link>//learn.koding.com/guides/setting-up-ftp-with-vsftpd</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-sftp-on-koding</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-ftp-with-vsftpd</guid>
     <author>Team Koding</author>
-    <description>In this guide you'll go over how to get your SFTP Client connected to your VM's SFTP Server. You will be using FileZilla as the SFTP Client, but any client should be able to connect to your SFTP Server successfully.
+    <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install vsftpd using just one command:
+kpm install vsftpd
+
+In this guide you'll go over how to get your FTP Client connected to your VM's FTP Server using vsftpd. You will be using FileZilla as the FTP Client, but any client should be able to connect to your FTP Server successfully.
   What you will need In this tutorial you will need the following.
 
 A Koding account, and your Koding Username.
@@ -2503,44 +2486,32 @@ The Address of the VM you'd like to connect to. Instructions can be found here.
   Update your software sources Before getting started, make sure you have the latest sources locked down. Type in:
 sudo apt-get update
 and let the update process complete. It should not require any input.
-  Installing First off, you'll need to install openssh-server. This can be done by pasting the following command into your Koding IDE's Terminal.
- tipThe openssh-server package comes preinstalled on all Koding VMs.
- sudo apt-get install openssh-server
-  Configure After the install process has finished you'll need to configure the SFTP server. Start by editing the following file /etc/ssh/sshd_config like so:
-sudo nano /etc/ssh/sshd_config
-Find the below line:
-Subsystem sftp /usr/lib/openssh/sftp-server
-and replace it with:
-Subsystem sftp internal-sftp
-Match group root
-ChrootDirectory %h
-X11Forwarding no
-AllowTcpForwarding no
-ForceCommand internal-sftp
-finally comment the below line:
-#UsePAM yes
-After you have performed this steps you'll need to restart the service using this command:
-sudo service ssh restart
-  Copy your Public Key Now you need to allow access via ssh. So the first thing you need to do is to, copy your Public Key, usually found in ~/.ssh/id_rsa.pub, and copy it in its entirety. Note the .pub in the filename. This is the public key, and it is very important that you copy this one. It will look something like this.
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyhKankDE4DRM86JqZ3JPdWDeqg+Tbzlql
-TLfOKTeokhRoMgy5WoMY/ZWUVES3d2vSHHwW3cwWlELmVdc3Ow57boZv3fOsPhybYHVRTClX
-Yr1ncSxyTvjvCfvV5q22aIxHPWQ353543ssda87sa+85XEa4VnveJsEzxBZl4oJ4GB0AGa48
-+UdIqutrgZu7D7JCK+Yl228X+3bJf3ddlqDaKaVXPivvvYqImK6ZwFsxh2lNO4E8IOd3OSK9
-zv6i+io8PxWmwP0tLFokxulAI8Td1sOPBE9s9bdJ5c2T/GfGjKF+aNKsd33TsYEjjc/plMZm
-RRrOgQwre6OAkgMvyV2X foo@bar.baz
-  Adding to your Authorized Keys Next, we need to create a file called authorized_keys on your Koding VM, and paste the previously copied key into it. Run the following commands in your Koding Terminal.
-mkdir -p ~/.ssh
-touch ~/.ssh/authorized_keys
-Now, open up the authorized_keys file that you just created, and paste in your public key. To open the file you can use a Terminal editor such as Nano or Vim, or simply use the File Explorer on the left hand side to open the ~/.ssh/authorized_keys file.
-Once the key has been pasted in, save the file.
-  Setting up the SFTP user After the configure process has been completed, You need to set a SFTP password for your user. To do this, paste the following command into your Terminal.
+  Installing vsftpd First off, you'll need to install vsftpd. This can be done by pasting the following command into your Koding IDE's Terminal.
+sudo apt-get install vsftpd
+  Configure vsftpd After the installation is complete open /etc/vsftpd.conf file using this command:
+sudo nano /etc/vsftpd.conf
+and make changes as follows.
+Uncomment the lines below:
+write_enable=YES
+local_umask=022
+Uncomment the following line to prevent access to the other folders outside the Home directory.
+chroot_local_user=YES
+and add the following line at the end.
+allow_writeable_chroot=YES
+Add the following lines to enable passive mode.
+pasv_enable=Yes
+pasv_min_port=40000
+pasv_max_port=40100
+In order for these changes to take effect restart the vsftpd service using the below command.
+sudo service vsftpd restart
+  Setting up the FTP User After vsftpd has been successfully installed, you need to set a FTP password for your user. To do
+this, paste the following command into your Terminal.
 sudo passwd KODING_USERNAME
-Make sure to replace KODING_USERNAME with your actual Koding username.
-After hitting enter, you'll be prompted for the SFTP password you wish to use. Not your Koding password.
-  Connecting to your SFTP Server Finally, in your SFTP Client of choice paste your VM Address into the hostname. If you're not sure what that is, instructions to find it can be found here.
-After the hostname, enter your Koding username, and SFTP password that you chose in the above commands. An example image from FileZilla can be seen below.
- alertThe default port for a SFTP connection is 22. Make sure to specify this when you input the connection details.
- 
+Make note to replace KODING_USERNAME with your actual Koding username.
+After hitting enter, you'll be prompted for the FTP password you wish to use. Not your Koding password.
+  Connecting to your FTP Server Finally, in your FTP Client of choice paste your VM Address into the hostname. If you're not sure what that is, instructions to find it can be found here.
+After the hostname, enter your Koding username, and FTP Password that you chose in the above commands. An example image from FileZilla can be seen below.
+
   Additional Resources 
 FileZilla
 FileZilla Download
@@ -2911,6 +2882,100 @@ the full documentation is available here.
   </item>
   
   <item>
+    <title>Setting up SFTP on Koding</title>
+    <link>//learn.koding.com/guides/setting-up-sftp-on-koding</link>
+    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-sftp-on-koding</guid>
+    <author>Team Koding</author>
+    <description>In this guide you'll go over how to get your SFTP Client connected to your VM's SFTP Server. You will be using FileZilla as the SFTP Client, but any client should be able to connect to your SFTP Server successfully.
+  What you will need In this tutorial you will need the following.
+
+A Koding account, and your Koding Username.
+The Address of the VM you'd like to connect to. Instructions can be found here.
+
+  Update your software sources Before getting started, make sure you have the latest sources locked down. Type in:
+sudo apt-get update
+and let the update process complete. It should not require any input.
+  Installing First off, you'll need to install openssh-server. This can be done by pasting the following command into your Koding IDE's Terminal.
+ tipThe openssh-server package comes preinstalled on all Koding VMs.
+ sudo apt-get install openssh-server
+  Configure After the install process has finished you'll need to configure the SFTP server. Start by editing the following file /etc/ssh/sshd_config like so:
+sudo nano /etc/ssh/sshd_config
+Find the below line:
+Subsystem sftp /usr/lib/openssh/sftp-server
+and replace it with:
+Subsystem sftp internal-sftp
+Match group root
+ChrootDirectory %h
+X11Forwarding no
+AllowTcpForwarding no
+ForceCommand internal-sftp
+finally comment the below line:
+#UsePAM yes
+After you have performed this steps you'll need to restart the service using this command:
+sudo service ssh restart
+  Copy your Public Key Now you need to allow access via ssh. So the first thing you need to do is to, copy your Public Key, usually found in ~/.ssh/id_rsa.pub, and copy it in its entirety. Note the .pub in the filename. This is the public key, and it is very important that you copy this one. It will look something like this.
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyhKankDE4DRM86JqZ3JPdWDeqg+Tbzlql
+TLfOKTeokhRoMgy5WoMY/ZWUVES3d2vSHHwW3cwWlELmVdc3Ow57boZv3fOsPhybYHVRTClX
+Yr1ncSxyTvjvCfvV5q22aIxHPWQ353543ssda87sa+85XEa4VnveJsEzxBZl4oJ4GB0AGa48
++UdIqutrgZu7D7JCK+Yl228X+3bJf3ddlqDaKaVXPivvvYqImK6ZwFsxh2lNO4E8IOd3OSK9
+zv6i+io8PxWmwP0tLFokxulAI8Td1sOPBE9s9bdJ5c2T/GfGjKF+aNKsd33TsYEjjc/plMZm
+RRrOgQwre6OAkgMvyV2X foo@bar.baz
+  Adding to your Authorized Keys Next, we need to create a file called authorized_keys on your Koding VM, and paste the previously copied key into it. Run the following commands in your Koding Terminal.
+mkdir -p ~/.ssh
+touch ~/.ssh/authorized_keys
+Now, open up the authorized_keys file that you just created, and paste in your public key. To open the file you can use a Terminal editor such as Nano or Vim, or simply use the File Explorer on the left hand side to open the ~/.ssh/authorized_keys file.
+Once the key has been pasted in, save the file.
+  Setting up the SFTP user After the configure process has been completed, You need to set a SFTP password for your user. To do this, paste the following command into your Terminal.
+sudo passwd KODING_USERNAME
+Make sure to replace KODING_USERNAME with your actual Koding username.
+After hitting enter, you'll be prompted for the SFTP password you wish to use. Not your Koding password.
+  Connecting to your SFTP Server Finally, in your SFTP Client of choice paste your VM Address into the hostname. If you're not sure what that is, instructions to find it can be found here.
+After the hostname, enter your Koding username, and SFTP password that you chose in the above commands. An example image from FileZilla can be seen below.
+ alertThe default port for a SFTP connection is 22. Make sure to specify this when you input the connection details.
+ 
+  Additional Resources 
+FileZilla
+FileZilla Download
+
+</description>
+  </item>
+  
+  <item>
+    <title>Using Dropbox with Koding</title>
+    <link>//learn.koding.com/guides/dropbox-for-file-sync</link>
+    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/dropbox-for-file-sync</guid>
+    <author>Team Koding</author>
+    <description>In this guide we'll walk you through how to set up Dropbox right on your Koding VM for a seamless sync experience between your local system and your Koding VM. Dropbox has built a best-in-class file sync and storage service.
+  Getting started Before we begin please make sure you have the Koding Package Manager (KPM) installed on your VM. Follow this guide to understand what KPM is and how to install it so you will be able to continue with this guide.
+Also make sure you have an active Dropbox account (free or paid).
+  Setup Run the following command, in your Koding Terminal, to install the necessary dependency:
+ alertIf you already have Dropbox installed via KPM then you need to run kpm uninstall dropbox and then the below command to get the latest version.
+ kpm install dropbox
+This will install the Dropbox daemon on your Koding VM, that will make the file sync possible.
+After the install has finished you'll need to configure the daemon with your Dropbox account. In order to that you'll need to type this command:
+dropboxd
+Next you'll see a message similar to this one:
+Please visit https://www.dropbox.com/cli_link_nonce?nonce=A_VERY_LONG_NUMBER to link this device.
+Copy the link and past it in a new tab.
+Sign in to your Dropbox account.
+That's it! You should see a message in your Terminal similar to this one:
+This computer is now linked to Dropbox. Welcome YOUR_DROPBOX_NAME
+The Dropbox deamon will sync files into the ~/Dropbox folder. At this point, the Dropbox deamon is syncing all the files from your Dropbox account to your Koding VM. If you have a lot of files on your Dropbox account, this can quickly eat up the space on your VM so we recommend you configure &amp;quot;Selective Sync&amp;quot; as described below. To immediately stop the Dropbox deamon and cancel the download that is in progress, hit Ctrl-c.
+ tipWhenever you turn on Koding VM you will have to run the dropbox start command to get dropbox started.
+   Using the Dropbox selective sync feature Selective sync allows you to specify which files from your Dropbox folder you would like to sync between your Koding VM and your Dropbox account.
+To set up selective sync, follow these easy steps:
+
+Download the Dropbox command line instructions script that Dropbox has created for this purpose.
+Now all you need to do is add the folder that you wish to omit to the &amp;quot;do not sync&amp;quot; list. You can do that as follows:/path/to/dropbox.py exclude add ~/Dropbox/path/to/folder/
+Simply substitute the /path/to/ above to the actual path to the Dropbox script you downloaded.
+
+If you encounter any issues or have any questions please drop us an email here.
+</description>
+  </item>
+  
+  <item>
     <title>Setting up WebDav on Koding</title>
     <link>//learn.koding.com/guides/setting-up-webdav-on-koding</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
@@ -2977,40 +3042,6 @@ dav:/webdav1/&amp;gt; quit
 Connection to `http://&amp;lt;hostname&amp;gt;.&amp;lt;username&amp;gt;.koding.io/webdav1`
 closed.
 That is all. If you have any issues setting up WebDav you can drop us an email at support@koding.com
-</description>
-  </item>
-  
-  <item>
-    <title>Using Dropbox with Koding</title>
-    <link>//learn.koding.com/guides/dropbox-for-file-sync</link>
-    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/dropbox-for-file-sync</guid>
-    <author>Team Koding</author>
-    <description>In this guide we'll walk you through how to set up Dropbox right on your Koding VM for a seamless sync experience between your local system and your Koding VM. Dropbox has built a best-in-class file sync and storage service.
-  Getting started Before we begin please make sure you have the Koding Package Manager (KPM) installed on your VM. Follow this guide to understand what KPM is and how to install it so you will be able to continue with this guide.
-Also make sure you have an active Dropbox account (free or paid).
-  Setup Run the following command, in your Koding Terminal, to install the necessary dependency:
- alertIf you already have Dropbox installed via KPM then you need to run kpm uninstall dropbox and then the below command to get the latest version.
- kpm install dropbox
-This will install the Dropbox daemon on your Koding VM, that will make the file sync possible.
-After the install has finished you'll need to configure the daemon with your Dropbox account. In order to that you'll need to type this command:
-dropboxd
-Next you'll see a message similar to this one:
-Please visit https://www.dropbox.com/cli_link_nonce?nonce=A_VERY_LONG_NUMBER to link this device.
-Copy the link and past it in a new tab.
-Sign in to your Dropbox account.
-That's it! You should see a message in your Terminal similar to this one:
-This computer is now linked to Dropbox. Welcome YOUR_DROPBOX_NAME
-The Dropbox deamon will sync files into the ~/Dropbox folder. At this point, the Dropbox deamon is syncing all the files from your Dropbox account to your Koding VM. If you have a lot of files on your Dropbox account, this can quickly eat up the space on your VM so we recommend you configure &amp;quot;Selective Sync&amp;quot; as described below. To immediately stop the Dropbox deamon and cancel the download that is in progress, hit Ctrl-c.
- tipWhenever you turn on Koding VM you will have to run the dropbox start command to get dropbox started.
-   Using the Dropbox selective sync feature Selective sync allows you to specify which files from your Dropbox folder you would like to sync between your Koding VM and your Dropbox account.
-To set up selective sync, follow these easy steps:
-
-Download the Dropbox command line instructions script that Dropbox has created for this purpose.
-Now all you need to do is add the folder that you wish to omit to the &amp;quot;do not sync&amp;quot; list. You can do that as follows:/path/to/dropbox.py exclude add ~/Dropbox/path/to/folder/
-Simply substitute the /path/to/ above to the actual path to the Dropbox script you downloaded.
-
-If you encounter any issues or have any questions please drop us an email here.
 </description>
   </item>
   
@@ -3223,6 +3254,22 @@ Explore it today and if you ever need help with the Terminal you can just click 
   </item>
   
   <item>
+    <title>Changing your IDE and Terminal themes</title>
+    <link>//learn.koding.com/guides/change-theme</link>
+    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/change-theme</guid>
+    <author>Team Koding</author>
+    <description>Changing your IDE and Terminal theme is very easy. Not everyone likes the default colors
+and fonts so we've put together a slew of choices for you to pick from.
+To get started, simply head over to your IDE settings panel (as shown in the image below)
+and select the IDE and Terminal theme that suits you best. As you select a new theme, the
+theme color scheme and font should reflect in the editor and Terminal in real time.
+Enjoy your new theme!
+
+</description>
+  </item>
+  
+  <item>
     <title>Understanding the VM settings modal</title>
     <link>//learn.koding.com/guides/understanding-vm-panel</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
@@ -3252,22 +3299,6 @@ Reinitialize VM: This button will set your VM back to its default state. This me
 Terminate VM: You can remove your VM and create a new one if you so choose. We recommend you reinit your VM in lieu of deleting and recreating it.
 
 If you encounter any issues or have any questions regarding the VM settings modal you can email us at support@koding.com and we'll gladly help.
-</description>
-  </item>
-  
-  <item>
-    <title>Changing your IDE and Terminal themes</title>
-    <link>//learn.koding.com/guides/change-theme</link>
-    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/change-theme</guid>
-    <author>Team Koding</author>
-    <description>Changing your IDE and Terminal theme is very easy. Not everyone likes the default colors
-and fonts so we've put together a slew of choices for you to pick from.
-To get started, simply head over to your IDE settings panel (as shown in the image below)
-and select the IDE and Terminal theme that suits you best. As you select a new theme, the
-theme color scheme and font should reflect in the editor and Terminal in real time.
-Enjoy your new theme!
-
 </description>
   </item>
   
@@ -3306,68 +3337,6 @@ To do this, get the directory listing and check to see if your intended folder e
 $ ls
 Applications  codemirror  Documents  Uploads  Web
 As you can see, the codemirror folder exists. Thank you and have a wonderful Koding day!
-</description>
-  </item>
-  
-  <item>
-    <title>Using Github with Koding</title>
-    <link>//learn.koding.com/guides/using-github</link>
-    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/using-github</guid>
-    <author>Team Koding</author>
-    <description>This guide will cover the basics on how to get started with Github on you Koding VM using Ungit.
-  What is Ungit? Ungit is a web based interface for Github made by Fredrik Noren that runs on any platform. It has a clean and intuitive UI that makes it easy to understand git. It runs on any platform that node.js &amp;amp; git supports and it works well with GitHub.
-  Getting started Before we begin please make sure you have the Koding Package Manager (KPM) installed on your VM. Follow this guide to understand what KPM is and how to install it so you will be able to continue with this guide.
-  Setup  tipgit is installed by default with every Koding VM. So you will be able to get started right away.
- Before you can get started with Github on your Koding VM you need to first setup the environment to be able to work properly with Github.
-You'll need to generate an SSH key that will be used to authenticate with Github. You can use the following command to generate one:
-ssh-keygen -t rsa -C &amp;quot;your_email@example.com&amp;quot;
-After that you'll need to copy your Public Key, usually found in ~/.ssh/id_rsa.pub, and copy it in its entirety. Note the .pub in the filename. This is the public key, and it is very important that you copy this one. It will look something like this.
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyhKankDE4DRM86JqZ3JPdWDeqg+Tbzlql
-TLfOKTeokhRoMgy5WoMY/ZWUVES3d2vSHHwW3cwWlELmVdc3Ow57boZv3fOsPhybYHVRTClX
-Yr1ncSxyTvjvCfvV5q22aIxHPWQ353543ssda87sa+85XEa4VnveJsEzxBZl4oJ4GB0AGa48
-+UdIqutrgZu7D7JCK+Yl228X+3bJf3ddlqDaKaVXPivvvYqImK6ZwFsxh2lNO4E8IOd3OSK9
-zv6i+io8PxWmwP0tLFokxulAI8Td1sOPBE9s9bdJ5c2T/GfGjKF+aNKsd33TsYEjjc/plMZm
-RRrOgQwre6OAkgMvyV2X your_email@example.com
-Head over to this page on Github and add the SSH key, that you just generated.
-After that run the following command, in your Koding Terminal, to install the necessary dependency:
-kpm install ungit
-This will install a visually friendly interface for Github, where you will be able to interact with Github and your Koding VM. Think of it as a bridge between Koding and Github.
-After the installation process has finished you will need to start the Github interface using the following command:
-ungit
-When the process has finished you should see a link outputted in the Terminal similar to this one:
-your_koding_username.koding.io:8448
-Copy that link and open it in a separate browser window. You should see something like this:
-
-  Basic interaction In the top area of the screen, in the input box you will be able to input the path to a local existing repository on your Koding VM or start with a fresh empty one.
- alertPlease note that the input field has autocomplete
- Start with a basic path like this one. Just make sure that folder exists before you input the path. If that folder doesn’t exist then you will be able to create it using this interface.
-/home/your_koding_username/Web/demo
-After that hit Enter || Return
-You should see something like this:
-
-Now, you can either transform that folder into a git repository or clone a repository in a subfolder in that folder.
-Let’s transform this folder into a git repository. After transformation is complete just hit the little + sign at the top next to path, in order to see repository on the main view of the interface.
-Before we continue, please make sure you have a Github repository ready in your Github account. Now you have to link that repository to your local Koding one using the Add new remote modal.
-
-Copy the URL from your Github repository in this modal window and hit Submit.
-Now head over to the Koding IDE and start adding code to your newly created repository. After you finished with your changes, you should already see you changes in the Ungit interface, just ready to be committed to your Github repository.
-After you have named your commit, hit the commit button.
-Now you can push your changes to the desired branch in your Github repository. Click on the name of the branch and then on the Push button.
-
-You will be required to input your Github username and password before you can push your changes.
-
-Input them, so you can continue with pushing your changes. After that you should see a successful commit of your changes.
-Cloning an existing repository is a really straightforward process.
-In order to clone a repository we need to have a location where we want to store our cloned repository.
-Following the first step from above, in the input field at the top of Ungit select your desired path. For eg.
-/home/your_koding_username/Web
-Now you can clone any desired repository in this folder using this form:
-
-Just copy the repository URL from Github, in the input field and then hit Clone repository.
-Wait for the cloning process to finish and now you should see all the commit history and you are now able to work on that repository, perform commits, push changes, using the Koding IDE.
- alertWhenever you turn on Koding VM you will have to run the ungit command to get this interface started.
- If you encounter any issues or have any questions please drop us an email here.
 </description>
   </item>
   
@@ -3690,32 +3659,64 @@ If you encounter any issues or have any questions please drop us an email here.
   </item>
   
   <item>
-    <title>Updating Node.js on your VM</title>
-    <link>//learn.koding.com/guides/updating-nodejs-on-your-vm</link>
+    <title>Using Github with Koding</title>
+    <link>//learn.koding.com/guides/using-github</link>
     <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/updating-nodejs-on-your-vm</guid>
-    <author>Darryl Dias</author>
-    <description>Your Koding VM is powered by Ubuntu 14.04; by default your Koding VM comes pre-installed with Node 0.10.26, the current stable version of Node.js available in the official Ubuntu repository. We can update to the latest stable version of Node.js available for Ubuntu 14.04 by adding the official Node.js PPA to our local sources list and running a dist-upgrade to switch to the latest stable version.
-The Official PPA is updated regularly and is maintained by Chris Lea
-  Instructions Adding the official Node.js PPA
-sudo add-apt-repository ppa:chris-lea/node.js
+    <guid isPermaLink="true">//learn.koding.com/guides/using-github</guid>
+    <author>Team Koding</author>
+    <description>This guide will cover the basics on how to get started with Github on you Koding VM using Ungit.
+  What is Ungit? Ungit is a web based interface for Github made by Fredrik Noren that runs on any platform. It has a clean and intuitive UI that makes it easy to understand git. It runs on any platform that node.js &amp;amp; git supports and it works well with GitHub.
+  Getting started Before we begin please make sure you have the Koding Package Manager (KPM) installed on your VM. Follow this guide to understand what KPM is and how to install it so you will be able to continue with this guide.
+  Setup  tipgit is installed by default with every Koding VM. So you will be able to get started right away.
+ Before you can get started with Github on your Koding VM you need to first setup the environment to be able to work properly with Github.
+You'll need to generate an SSH key that will be used to authenticate with Github. You can use the following command to generate one:
+ssh-keygen -t rsa -C &amp;quot;your_email@example.com&amp;quot;
+After that you'll need to copy your Public Key, usually found in ~/.ssh/id_rsa.pub, and copy it in its entirety. Note the .pub in the filename. This is the public key, and it is very important that you copy this one. It will look something like this.
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyhKankDE4DRM86JqZ3JPdWDeqg+Tbzlql
+TLfOKTeokhRoMgy5WoMY/ZWUVES3d2vSHHwW3cwWlELmVdc3Ow57boZv3fOsPhybYHVRTClX
+Yr1ncSxyTvjvCfvV5q22aIxHPWQ353543ssda87sa+85XEa4VnveJsEzxBZl4oJ4GB0AGa48
++UdIqutrgZu7D7JCK+Yl228X+3bJf3ddlqDaKaVXPivvvYqImK6ZwFsxh2lNO4E8IOd3OSK9
+zv6i+io8PxWmwP0tLFokxulAI8Td1sOPBE9s9bdJ5c2T/GfGjKF+aNKsd33TsYEjjc/plMZm
+RRrOgQwre6OAkgMvyV2X your_email@example.com
+Head over to this page on Github and add the SSH key, that you just generated.
+After that run the following command, in your Koding Terminal, to install the necessary dependency:
+kpm install ungit
+This will install a visually friendly interface for Github, where you will be able to interact with Github and your Koding VM. Think of it as a bridge between Koding and Github.
+After the installation process has finished you will need to start the Github interface using the following command:
+ungit
+When the process has finished you should see a link outputted in the Terminal similar to this one:
+your_koding_username.koding.io:8448
+Copy that link and open it in a separate browser window. You should see something like this:
 
-Updating the local package database and sources list.
-sudo apt-get update
+  Basic interaction In the top area of the screen, in the input box you will be able to input the path to a local existing repository on your Koding VM or start with a fresh empty one.
+ alertPlease note that the input field has autocomplete
+ Start with a basic path like this one. Just make sure that folder exists before you input the path. If that folder doesn’t exist then you will be able to create it using this interface.
+/home/your_koding_username/Web/demo
+After that hit Enter || Return
+You should see something like this:
 
-Updating to the latest stable build of Node.js available for Ubuntu 14.04. This will update all the packages that need to update and will also update your Node.js package.
-sudo apt-get dist-upgrade
+Now, you can either transform that folder into a git repository or clone a repository in a subfolder in that folder.
+Let’s transform this folder into a git repository. After transformation is complete just hit the little + sign at the top next to path, in order to see repository on the main view of the interface.
+Before we continue, please make sure you have a Github repository ready in your Github account. Now you have to link that repository to your local Koding one using the Add new remote modal.
 
-If you had deleted Node.js from your VM, you can install it by entering the command below. The PPA installs NPM as a part of nodejs and does not require you to install NPM seperately.
-sudo apt-get install nodejs
+Copy the URL from your Github repository in this modal window and hit Submit.
+Now head over to the Koding IDE and start adding code to your newly created repository. After you finished with your changes, you should already see you changes in the Ungit interface, just ready to be committed to your Github repository.
+After you have named your commit, hit the commit button.
+Now you can push your changes to the desired branch in your Github repository. Click on the name of the branch and then on the Push button.
 
-Check the version of Node.js after installing. 
-node --version
+You will be required to input your Github username and password before you can push your changes.
 
-The example output should look like.
-v0.10.33
+Input them, so you can continue with pushing your changes. After that you should see a successful commit of your changes.
+Cloning an existing repository is a really straightforward process.
+In order to clone a repository we need to have a location where we want to store our cloned repository.
+Following the first step from above, in the input field at the top of Ungit select your desired path. For eg.
+/home/your_koding_username/Web
+Now you can clone any desired repository in this folder using this form:
 
-Now you have the latest stable version of Node.js installed on your VM.
+Just copy the repository URL from Github, in the input field and then hit Clone repository.
+Wait for the cloning process to finish and now you should see all the commit history and you are now able to work on that repository, perform commits, push changes, using the Koding IDE.
+ alertWhenever you turn on Koding VM you will have to run the ungit command to get this interface started.
+ If you encounter any issues or have any questions please drop us an email here.
 </description>
   </item>
   
