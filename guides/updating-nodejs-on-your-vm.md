@@ -11,20 +11,21 @@ template: page.toffee
 
 Your Koding VM is powered by Ubuntu 14.04; by default your Koding VM comes pre-installed with Node 0.10.26, the current stable version of Node.js available in the official Ubuntu repository. We can update to the latest stable version of Node.js available for Ubuntu 14.04 by adding the official Node.js PPA to our local sources list and running a dist-upgrade to switch to the latest stable version.
 
-The Official PPA is updated regularly and is maintained by [Chris Lea](https://chrislea.com/)
+Node.js is available from the NodeSource Debian and Ubuntu binary distributions repository (formerly Chris Lea's Launchpad PPA)
 
 ## Instructions
 
 Adding the official Node.js PPA
 
 ```bash
-sudo add-apt-repository ppa:chris-lea/node.js
+curl --silent --location https://deb.nodesource.com/setup_4.x | sudo bash -
 ```
 
 Updating the local package database and sources list.
 
 ```bash
 sudo apt-get update
+sudo apt-get install nodejs
 ```
 
 Updating to the latest stable build of Node.js available for Ubuntu 14.04. This will update all the packages that need to update and will also update your Node.js package.
