@@ -12,8 +12,8 @@
     "date": "2015-05-06T00:00:00.000Z"
   },
   {
-    "title": "What is Bitbucket?",
-    "url": "http://learn.koding.com/guides/using-bitbucket-on-koding/index.html",
+    "title": "Getting started with Git",
+    "url": "http://learn.koding.com/guides/git/index.html",
     "author": "Team Koding",
     "date": "2015-05-06T00:00:00.000Z"
   },
@@ -30,26 +30,14 @@
     "date": "2015-05-06T00:00:00.000Z"
   },
   {
-    "title": "Installing Linux Dash",
-    "url": "http://learn.koding.com/guides/linux-dash/index.html",
-    "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
-  },
-  {
-    "title": "Getting started with Git",
-    "url": "http://learn.koding.com/guides/git/index.html",
-    "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
-  },
-  {
     "title": "Using Github with Koding",
     "url": "http://learn.koding.com/guides/using-github/index.html",
     "author": "Team Koding",
     "date": "2015-05-06T00:00:00.000Z"
   },
   {
-    "title": "Using FileZilla to connect to your Koding VM",
-    "url": "http://learn.koding.com/guides/ftp-with-filezilla/index.html",
+    "title": "Installing Linux Dash",
+    "url": "http://learn.koding.com/guides/linux-dash/index.html",
     "author": "Team Koding",
     "date": "2015-05-06T00:00:00.000Z"
   },
@@ -57,6 +45,18 @@
     "title": "Webmin for Koding",
     "url": "http://learn.koding.com/guides/webmin-for-koding/index.html",
     "author": "Mike Spick",
+    "date": "2015-05-06T00:00:00.000Z"
+  },
+  {
+    "title": "How to mount a remote FTP server as a local directory?",
+    "url": "http://learn.koding.com/guides/mount-ftp-fs/index.html",
+    "author": "Team Koding",
+    "date": "2015-10-13T00:00:00.000Z"
+  },
+  {
+    "title": "Using FileZilla to connect to your Koding VM",
+    "url": "http://learn.koding.com/guides/ftp-with-filezilla/index.html",
+    "author": "Team Koding",
     "date": "2015-05-06T00:00:00.000Z"
   }
 ]

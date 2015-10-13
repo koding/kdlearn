@@ -18,6 +18,45 @@
   <language>en</language>
   
   <item>
+    <title>How to mount a remote FTP server as a local directory?</title>
+    <link>//learn.koding.com/guides/mount-ftp-fs</link>
+    <pubDate>"2015-10-13T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/mount-ftp-fs</guid>
+    <author>Team Koding</author>
+    <description>Many times you have your code and other relevant files on another server
+and need to keep them there but still want to work on them. The easiest
+way to achieve this is to mount the remote system as a local directory
+on your Koding VM so that you can work on the files as if they were on
+your Koding VM.
+This guide walks you through the process of installing the required 
+software on your Koding VM. We will use an application called curlftpfs.
+You will also need:
+
+IP address/domain name of the remote ftp server
+ftp username and password for the remote server
+
+  Installing the required application To install curlftpfs on your Koding VM, use the following command in Terminal:
+sudo apt-get update
+sudo apt-get install curlftpfs
+  Configuring your VM Once installation is done, you will need to select a local folder on your VM
+that will be the &amp;quot;mount point&amp;quot; for the remote server. As an exmaple, we will
+create a new folder called remote-ftp in the VM's /mnt directory. If you already know
+which folder you wan to use, you can skip these steps:
+sudo mkdir /mnt/remote-ftp
+  Making the connection To initiate a connection, use the following command:
+sudo curlftpfs ftp.yourserver.com /mnt/remote-ftp -o user=ftp-username:ftp-password,allow_other
+Note: the allow_other option above will allow the non-root user on your VM to also access
+the files available via this mount method.
+ alertDo not add space after the comma or the allow_other argument will not be recognized.
+ That should do it. Now if you navigate to the /mnt/remote-ftp directory and pull up a file
+list, the list of files should be from the remote server.
+ tipEven if the files in /mnt/remote-ftp are &amp;quot;owned&amp;quot; by the root user, any other user should
+still be able to operate on the files because we used the allow_other option when we set
+up the connection.
+ </description>
+  </item>
+  
+  <item>
     <title>Updating Node.js on your VM</title>
     <link>//learn.koding.com/guides/updating-nodejs-on-your-vm</link>
     <pubDate>"2015-10-10T00:00:00.000Z"</pubDate>
@@ -458,180 +497,6 @@ fun with Node!
   </item>
   
   <item>
-    <title>Getting Started: The UI</title>
-    <link>//learn.koding.com/guides/getting-started/the-ui</link>
-    <pubDate>"2015-08-11T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/the-ui</guid>
-    <author>Team Koding</author>
-    <description>In this guide we'll take a look at Koding's UI. We'll examine 
-the major sections, and briefly explain some of the features. In future 
-guides of this series we'll explain these parts in more detail. Lets get 
-started!
-  The Full UI 
-This is the Koding UI of a logged in user, with the Koding IDE 
-open. On the left side we have our VMs, Channels, Chats, and Account. To 
-the right we have the Koding IDE. Lets look at each piece, and where they 
-lead us.
-  VMs, Workspaces and IDE VMs, Workspaces, and the Koding IDE can be found on the left hand 
-side, under VMS, as seen in the image below.
-
-Clicking on a VM Name, such as koding-vm-0 in the above image, will 
-open up the Koding IDE for that specific VM.
-The button to the immediate right of the VM Name is the VM Settings. Here 
-you can find useful information, such as your VM Address and VM Specs.
-Finally, below the VM Name are your Workspaces for that specific VM.Clicking on a Workspace will open all of the previous editors and 
-Terminals that you had open on it, and opening new Workspaces provides 
-shortcuts for varying tasks. We'll get into the specifics in the 
-Workspaces guide.
-  Channels and Activity Below VMs, are your Channels. To follow a channel, click on a Grey check 
-mark. Green check marks indicate a channel that you are following.
-
-A channel is a stream of user submitted content for a certain hash tag, 
-such as #golang. When you 
-click on a hash tag in the Activity Feed, it opens a channel for that 
-tag, as seen below.
-
-Activity Feed posts support Markdown, including Markdown Code 
-Blocks.
-  Chat Below Channels are your Chats. These are private conversations between 
-you and any number of users you invite.
-
-To open a new chat, click on the Plus button to the right of the Chat 
-icon. Clicking on a already started chat, will open it as seen below.
-
-Your chats will work much in the same way as the Activity Feed. You can 
-invite more users by clicking the Plus next to user icons, or delete the 
-conversation from the Chat Dropdown in the upper right.
-  Account Settings Your Account Settings can be located from the bottom of the navigation 
-panel.
-
-Here you'll be able to modify your Name, Password, and link your Koding 
-account to various services.
-</description>
-  </item>
-  
-  <item>
-    <title>Using PostgreSQL</title>
-    <link>//learn.koding.com/guides/postgresql-on-koding</link>
-    <pubDate>"2015-08-11T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/postgresql-on-koding</guid>
-    <author>Federico Ponzi</author>
-    <description>PostgreSQL is an open source relational database management system that 
-provides an implementation of the SQL query language. In this guide, 
-we'll go over using PostgreSQL on your Koding VM. Lets get started!
-  Starting PostgreSQL Before we gets started, start your PostgreSQL server with the following 
-command.
-sudo service postgresql start
-If you see an error like the following message, you may need to go 
-through the Installing PostgreSQL.
-psql: could not connect to server: No such file or directory
-Is the server running locally and accepting
-connections on Unix domain socket &amp;quot;/var/run/postgresql/.s.PGSQL.5432&amp;quot;?
-  Getting Started To getting started with postgreSQL, open your Terminal, and type:
-username$ sudo su - postgres
-Now you are logged into your vm with the postgres user. Then connect to template1 database using the postgresql's psql client:
-postgres ~$  psql template1
-postgres ~$  template1=#
-Note the # symbol, declaring that you are logged to the database as a Super User. Now for enchaned security change your default postgres's password:
-template1=# \password
-Enter new password:
-Enter it again:
-Nice, we are near the end: now create a new user with createdb permission with same username of your vm. So if your username is koding02, your prompt should be like:
-koding02 ~$
-Create a new user using the CREATE USER command like this:
-template1=# CREATE USER username
-template1-# WITH PASSWORD 'password' createdb;
-CREATE ROLE
-template1=#
-You are done configurating PostgreSQL! Now disconnect from the database using \q, and quit from postgres user using ctrl+d.
-Now you can create a new database using the command:
-createdb myFreshNewDb
-And delete it using the deletedb tool:
-deletedb myFreshNewDb
-Once you have created a database, you can connect to it using the psql client like we did before:
-psql myFreshNewDb
-myFresNewDb=&amp;gt;
-  Using Psql client Let's see some useful commands of the psql tool. 
-First of all: you can get some help just typing \? in your psql command line.
-To exit from the appearing screen, just press the q button.
-To load and execute SQL statements from file, you can use this syntax:
-\i my/file/path.sql
-Writing long lines of SQL code in the command line can be really hard to debug. Use the \i to run from file or use:
-\e
-To edit the input buffer with an editor. If you usually don't use editor from command line use nano - it's the simplest.
-To check what relations your database contains, use
-\d
-If you want more information about a particular relation, use
-\d myfancytable
-Have fun!
-</description>
-  </item>
-  
-  <item>
-    <title>Connect your own machine to Koding</title>
-    <link>//learn.koding.com/guides/connect-your-machine</link>
-    <pubDate>"2015-08-11T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/connect-your-machine</guid>
-    <author>Team Koding</author>
-    <description>  What does &amp;quot;connect your own machine&amp;quot; mean? This feature allows you to connect your own machine (physical or virtual) to your Koding account so that it will
-show up in the sidebar just like a regular Koding VM. This means that once your machine is connected to Koding,
-you can open a Terminal and any file on that machine directly from your Koding account! You can even start
-collaboration sessions!
-  What types of machines can I connect to my Koding account? Presently, the following are the requirements for any machine that can be connected to Koding:
-
-the machine needs to have a public IP address
-the machine must be running Ubuntu Linux 13.x or 14.x (support for 15.x is coming)
-you must have root/sudo access on the system
-
-In addition to these machine related requirements, you must also ensure that you have the following
-ports open (in case you are running a firewall):
-
-80/tcp
-56789/tcp
-
-  How does Koding make this happen? The steps are outlined below but in a nutshell, what happens is that you download our &amp;quot;Koding Service Connector&amp;quot;
-to your machine and this service acts like a &amp;quot;bridge&amp;quot; between your machine and your Koding account.
-  How can I connect my own machine to Koding? Connecting your machine to Koding is easy, just follow these steps but first make sure that the requirements
-stated above are met:
-
-Bring up the VMs list dialogue box as shown in the screen shot.
-
-
-Click &amp;quot;Add Your Own VM&amp;quot;
-
-
-In the dialogue box that appears, copy the install script and run it on your machine
-
- tipLeave the dialogue box open while you run the install script on your machine. This is a 
-requirement since we are &amp;quot;listening&amp;quot; for a connection from your machine. Also, make sure
-you have root access to run the install script otherwise it will fail.
- 
-The install script will download the necessary software, configure it and install it on your
-machine.
-
-
-Once the install script is done running on your machine, within a few seconds your machine
-should show up in the sidebar.
-
-
-
-  Are there any limits to how many machines I can connect? Our free accounts are restricted to one external machine and paid accounts don't have any limits to the number
-of machines/VMs they can connect to their Koding account.
-  Video overview  
- 
- 
-
-  How can I disconnect a machine that I have connected to my Koding account? To disconnect a machine, simply go over to machine/VM settings and then click the advanced tab. On that tab you will see
-the disconnect button. Click the button to disconnect the machine from your Koding account.
- tipNote: Disconnecting will just break the connection between Koding and your machine. Your machine will
-still be running and all files will be available on it. 
- If you wish to completely uninstall the Koding Connector Service from your machine, simply run this 
-command on the machine that you had connected:
-sudo dpkg -P klient
-</description>
-  </item>
-  
-  <item>
     <title>Understanding file permissions</title>
     <link>//learn.koding.com/guides/understanding-file-permissions</link>
     <pubDate>"2015-08-11T00:00:00.000Z"</pubDate>
@@ -735,6 +600,108 @@ chown demo:www-data demo1
  tipNote: The same principles also apply to folders
  You should now be able to understand how ownership and permissions work in Linux.
 If you encounter any issues or have any questions please drop us an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>Enabling 2-factor authentication on your Koding account</title>
+    <link>//learn.koding.com/guides/2-factor-auth</link>
+    <pubDate>"2015-08-11T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/2-factor-auth</guid>
+    <author>Team Koding</author>
+    <description>2-factor authentication (2FA) gives your Koding account an added layer of security and protection. Once enabled,
+you will be required to provide a verification code along with your password each time you sign in to Koding.
+
+2FA is increasingly become a required standard and many of the leading companies in the world now support 2FA.
+  How do I enable 2FA on my Koding account? To enable 2FA, you will first need to install an app that generates authentication tokens on your phone. We recommend either the Google Authenticator app or Authy.
+
+Download Authy for iPhone
+Download Authy for Android
+Download Google Authenticator for iPhone
+Download Google Authenticator for Android
+
+Once you have installed the app, follow these steps to enable 2FA on your Koding account.
+ tipThe instructions below are for the Google Authenticator app. Other apps like Authy have a similar workflow.
+If you get stuck somewhere in the setup, you can always send us an email.
+ 
+Log in to your Koding account
+Go to the 2FA section in Account Settings
+Open up the Google Authenticator app on your phone and click the + icon (as shown in the image below)
+Select &amp;quot;Scan Barcode&amp;quot;
+Scan the code shown in the Account Settings
+The Google Authenticator app will add your Koding account to the list and generate a code
+Enter the code into Account Settings to verify and activate 2FA
+
+
+  How do I disable 2FA on my Koding account? To disable 2FA, follow these simple steps:
+
+visit the 2FA tab in Account Settings
+enter your Koding password and click the &amp;quot;Disable&amp;quot; button
+
+</description>
+  </item>
+  
+  <item>
+    <title>Connect your own machine to Koding</title>
+    <link>//learn.koding.com/guides/connect-your-machine</link>
+    <pubDate>"2015-08-11T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/connect-your-machine</guid>
+    <author>Team Koding</author>
+    <description>  What does &amp;quot;connect your own machine&amp;quot; mean? This feature allows you to connect your own machine (physical or virtual) to your Koding account so that it will
+show up in the sidebar just like a regular Koding VM. This means that once your machine is connected to Koding,
+you can open a Terminal and any file on that machine directly from your Koding account! You can even start
+collaboration sessions!
+  What types of machines can I connect to my Koding account? Presently, the following are the requirements for any machine that can be connected to Koding:
+
+the machine needs to have a public IP address
+the machine must be running Ubuntu Linux 13.x or 14.x (support for 15.x is coming)
+you must have root/sudo access on the system
+
+In addition to these machine related requirements, you must also ensure that you have the following
+ports open (in case you are running a firewall):
+
+80/tcp
+56789/tcp
+
+  How does Koding make this happen? The steps are outlined below but in a nutshell, what happens is that you download our &amp;quot;Koding Service Connector&amp;quot;
+to your machine and this service acts like a &amp;quot;bridge&amp;quot; between your machine and your Koding account.
+  How can I connect my own machine to Koding? Connecting your machine to Koding is easy, just follow these steps but first make sure that the requirements
+stated above are met:
+
+Bring up the VMs list dialogue box as shown in the screen shot.
+
+
+Click &amp;quot;Add Your Own VM&amp;quot;
+
+
+In the dialogue box that appears, copy the install script and run it on your machine
+
+ tipLeave the dialogue box open while you run the install script on your machine. This is a 
+requirement since we are &amp;quot;listening&amp;quot; for a connection from your machine. Also, make sure
+you have root access to run the install script otherwise it will fail.
+ 
+The install script will download the necessary software, configure it and install it on your
+machine.
+
+
+Once the install script is done running on your machine, within a few seconds your machine
+should show up in the sidebar.
+
+
+
+  Are there any limits to how many machines I can connect? Our free accounts are restricted to one external machine and paid accounts don't have any limits to the number
+of machines/VMs they can connect to their Koding account.
+  Video overview  
+ 
+ 
+
+  How can I disconnect a machine that I have connected to my Koding account? To disconnect a machine, simply go over to machine/VM settings and then click the advanced tab. On that tab you will see
+the disconnect button. Click the button to disconnect the machine from your Koding account.
+ tipNote: Disconnecting will just break the connection between Koding and your machine. Your machine will
+still be running and all files will be available on it. 
+ If you wish to completely uninstall the Koding Connector Service from your machine, simply run this 
+command on the machine that you had connected:
+sudo dpkg -P klient
 </description>
   </item>
   
@@ -853,40 +820,112 @@ This has been a beginner guide from Koding. As always, more Quick Tips and begin
   </item>
   
   <item>
-    <title>Enabling 2-factor authentication on your Koding account</title>
-    <link>//learn.koding.com/guides/2-factor-auth</link>
+    <title>Using PostgreSQL</title>
+    <link>//learn.koding.com/guides/postgresql-on-koding</link>
     <pubDate>"2015-08-11T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/2-factor-auth</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/postgresql-on-koding</guid>
+    <author>Federico Ponzi</author>
+    <description>PostgreSQL is an open source relational database management system that 
+provides an implementation of the SQL query language. In this guide, 
+we'll go over using PostgreSQL on your Koding VM. Lets get started!
+  Starting PostgreSQL Before we gets started, start your PostgreSQL server with the following 
+command.
+sudo service postgresql start
+If you see an error like the following message, you may need to go 
+through the Installing PostgreSQL.
+psql: could not connect to server: No such file or directory
+Is the server running locally and accepting
+connections on Unix domain socket &amp;quot;/var/run/postgresql/.s.PGSQL.5432&amp;quot;?
+  Getting Started To getting started with postgreSQL, open your Terminal, and type:
+username$ sudo su - postgres
+Now you are logged into your vm with the postgres user. Then connect to template1 database using the postgresql's psql client:
+postgres ~$  psql template1
+postgres ~$  template1=#
+Note the # symbol, declaring that you are logged to the database as a Super User. Now for enchaned security change your default postgres's password:
+template1=# \password
+Enter new password:
+Enter it again:
+Nice, we are near the end: now create a new user with createdb permission with same username of your vm. So if your username is koding02, your prompt should be like:
+koding02 ~$
+Create a new user using the CREATE USER command like this:
+template1=# CREATE USER username
+template1-# WITH PASSWORD 'password' createdb;
+CREATE ROLE
+template1=#
+You are done configurating PostgreSQL! Now disconnect from the database using \q, and quit from postgres user using ctrl+d.
+Now you can create a new database using the command:
+createdb myFreshNewDb
+And delete it using the deletedb tool:
+deletedb myFreshNewDb
+Once you have created a database, you can connect to it using the psql client like we did before:
+psql myFreshNewDb
+myFresNewDb=&amp;gt;
+  Using Psql client Let's see some useful commands of the psql tool. 
+First of all: you can get some help just typing \? in your psql command line.
+To exit from the appearing screen, just press the q button.
+To load and execute SQL statements from file, you can use this syntax:
+\i my/file/path.sql
+Writing long lines of SQL code in the command line can be really hard to debug. Use the \i to run from file or use:
+\e
+To edit the input buffer with an editor. If you usually don't use editor from command line use nano - it's the simplest.
+To check what relations your database contains, use
+\d
+If you want more information about a particular relation, use
+\d myfancytable
+Have fun!
+</description>
+  </item>
+  
+  <item>
+    <title>Getting Started: The UI</title>
+    <link>//learn.koding.com/guides/getting-started/the-ui</link>
+    <pubDate>"2015-08-11T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started/the-ui</guid>
     <author>Team Koding</author>
-    <description>2-factor authentication (2FA) gives your Koding account an added layer of security and protection. Once enabled,
-you will be required to provide a verification code along with your password each time you sign in to Koding.
+    <description>In this guide we'll take a look at Koding's UI. We'll examine 
+the major sections, and briefly explain some of the features. In future 
+guides of this series we'll explain these parts in more detail. Lets get 
+started!
+  The Full UI 
+This is the Koding UI of a logged in user, with the Koding IDE 
+open. On the left side we have our VMs, Channels, Chats, and Account. To 
+the right we have the Koding IDE. Lets look at each piece, and where they 
+lead us.
+  VMs, Workspaces and IDE VMs, Workspaces, and the Koding IDE can be found on the left hand 
+side, under VMS, as seen in the image below.
 
-2FA is increasingly become a required standard and many of the leading companies in the world now support 2FA.
-  How do I enable 2FA on my Koding account? To enable 2FA, you will first need to install an app that generates authentication tokens on your phone. We recommend either the Google Authenticator app or Authy.
+Clicking on a VM Name, such as koding-vm-0 in the above image, will 
+open up the Koding IDE for that specific VM.
+The button to the immediate right of the VM Name is the VM Settings. Here 
+you can find useful information, such as your VM Address and VM Specs.
+Finally, below the VM Name are your Workspaces for that specific VM.Clicking on a Workspace will open all of the previous editors and 
+Terminals that you had open on it, and opening new Workspaces provides 
+shortcuts for varying tasks. We'll get into the specifics in the 
+Workspaces guide.
+  Channels and Activity Below VMs, are your Channels. To follow a channel, click on a Grey check 
+mark. Green check marks indicate a channel that you are following.
 
-Download Authy for iPhone
-Download Authy for Android
-Download Google Authenticator for iPhone
-Download Google Authenticator for Android
+A channel is a stream of user submitted content for a certain hash tag, 
+such as #golang. When you 
+click on a hash tag in the Activity Feed, it opens a channel for that 
+tag, as seen below.
 
-Once you have installed the app, follow these steps to enable 2FA on your Koding account.
- tipThe instructions below are for the Google Authenticator app. Other apps like Authy have a similar workflow.
-If you get stuck somewhere in the setup, you can always send us an email.
- 
-Log in to your Koding account
-Go to the 2FA section in Account Settings
-Open up the Google Authenticator app on your phone and click the + icon (as shown in the image below)
-Select &amp;quot;Scan Barcode&amp;quot;
-Scan the code shown in the Account Settings
-The Google Authenticator app will add your Koding account to the list and generate a code
-Enter the code into Account Settings to verify and activate 2FA
+Activity Feed posts support Markdown, including Markdown Code 
+Blocks.
+  Chat Below Channels are your Chats. These are private conversations between 
+you and any number of users you invite.
 
+To open a new chat, click on the Plus button to the right of the Chat 
+icon. Clicking on a already started chat, will open it as seen below.
 
-  How do I disable 2FA on my Koding account? To disable 2FA, follow these simple steps:
+Your chats will work much in the same way as the Activity Feed. You can 
+invite more users by clicking the Plus next to user icons, or delete the 
+conversation from the Chat Dropdown in the upper right.
+  Account Settings Your Account Settings can be located from the bottom of the navigation 
+panel.
 
-visit the 2FA tab in Account Settings
-enter your Koding password and click the &amp;quot;Disable&amp;quot; button
-
+Here you'll be able to modify your Name, Password, and link your Koding 
+account to various services.
 </description>
   </item>
   
@@ -1446,28 +1485,6 @@ You just wrote and ran your first Hello World in Perl.
   </item>
   
   <item>
-    <title>Hello World on Koding: Ruby</title>
-    <link>//learn.koding.com/guides/hello-world/ruby</link>
-    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/ruby</guid>
-    <author>Team Koding</author>
-    <description>  Introduction Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, and Lisp. It supports multiple programming paradigms, including functional, object-oriented, and imperative. It also has a dynamic type system and automatic memory management.
-  Implementation The first thing you need to do is to create a file called helloworld.rb in your Koding VM and paste the bellow snippet into it.
-#!/usr/bin/ruby
-
-puts 'Hello, world!'
-To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
-ruby helloworld.rb
-  Explanation #!/usr/bin/ruby
-The shebang line is read by the program loader to determine what program to use to run the script. This line cannot be preceded by any blank lines or any leading spaces.
-puts 'Hello, world!'
-The above line is pretty self explanatory. It will put something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
-And that's it!
-You just wrote and ran your first Hello World in Ruby.
-</description>
-  </item>
-  
-  <item>
     <title>Hello World on Koding: PHP</title>
     <link>//learn.koding.com/guides/hello-world/php</link>
     <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
@@ -1517,6 +1534,28 @@ python helloworld.py
 Since Python emphasizes code readability, the above line is pretty self explanatory. It will print out something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
 And that's it!
 You just wrote and ran your first Hello World in Python.
+</description>
+  </item>
+  
+  <item>
+    <title>Hello World on Koding: Ruby</title>
+    <link>//learn.koding.com/guides/hello-world/ruby</link>
+    <pubDate>"2015-06-06T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/hello-world/ruby</guid>
+    <author>Team Koding</author>
+    <description>  Introduction Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, and Lisp. It supports multiple programming paradigms, including functional, object-oriented, and imperative. It also has a dynamic type system and automatic memory management.
+  Implementation The first thing you need to do is to create a file called helloworld.rb in your Koding VM and paste the bellow snippet into it.
+#!/usr/bin/ruby
+
+puts 'Hello, world!'
+To run the above file in your Koding VM, just open your Koding Terminal and type the following command:
+ruby helloworld.rb
+  Explanation #!/usr/bin/ruby
+The shebang line is read by the program loader to determine what program to use to run the script. This line cannot be preceded by any blank lines or any leading spaces.
+puts 'Hello, world!'
+The above line is pretty self explanatory. It will put something (in the above case, a &amp;quot;Hello World!&amp;quot; string) on the screen.
+And that's it!
+You just wrote and ran your first Hello World in Ruby.
 </description>
   </item>
   
@@ -1864,6 +1903,37 @@ If you encounter any issues or have any questions please drop us an email here.
   </item>
   
   <item>
+    <title>Installing Jekyll on Koding</title>
+    <link>//learn.koding.com/guides/installing-jekyll</link>
+    <pubDate>"2015-05-21T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/installing-jekyll</guid>
+    <author>dehli</author>
+    <description>Before you continue reading this guide why not try a more easy way using the Koding Package Manager (kpm) and install Jekyll using just one command:
+kpm install jekyll
+
+This tutorial will guide you through the installation of Jekyll on a Koding VM.
+  Install RVM Use the two commands below to install rvm on your virtual machine (for more information visit here):
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+
+\curl -sSL https://get.rvm.io | bash -s stable --ruby
+Then run the rvm script:
+source .rvm/scripts/rvm
+  Install Jekyll Use this command to install Jekyll:
+gem install jekyll
+  Create a Jekyll site  tip The next step can be skipped if you've already created a Jekyll site.
+ Execute the following command, where JekyllSite is the destination folder of your website:
+jekyll new JekyllSite
+  Run the server Set the current directory to the website's directory (for this tutorial it's JekyllSite):
+cd JekyllSite
+Execute the following command:
+jekyll serve --host 0.0.0.0
+ tipFor more details on your hostname, read this.*
+   View the website Navigate to http://username.koding.io:4000
+ tipMake sure to replace username above with your Koding username.
+ </description>
+  </item>
+  
+  <item>
     <title>Sync files using Google Drive</title>
     <link>//learn.koding.com/guides/sync-files-google-drive</link>
     <pubDate>"2015-05-21T00:00:00.000Z"</pubDate>
@@ -1895,37 +1965,6 @@ Note 1: The app does not run in the background automatically continuously doing 
 man cron
  Note 2: As per the author of grive, the application will not download any files that are the traditional Google Docs (Spreadsheet, Documents,Presentations, etc.). The app will only automatically upload/download any non-native Google Doc formats which include code files, text files, images, etc.
 </description>
-  </item>
-  
-  <item>
-    <title>Installing Jekyll on Koding</title>
-    <link>//learn.koding.com/guides/installing-jekyll</link>
-    <pubDate>"2015-05-21T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/installing-jekyll</guid>
-    <author>dehli</author>
-    <description>Before you continue reading this guide why not try a more easy way using the Koding Package Manager (kpm) and install Jekyll using just one command:
-kpm install jekyll
-
-This tutorial will guide you through the installation of Jekyll on a Koding VM.
-  Install RVM Use the two commands below to install rvm on your virtual machine (for more information visit here):
-gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-
-\curl -sSL https://get.rvm.io | bash -s stable --ruby
-Then run the rvm script:
-source .rvm/scripts/rvm
-  Install Jekyll Use this command to install Jekyll:
-gem install jekyll
-  Create a Jekyll site  tip The next step can be skipped if you've already created a Jekyll site.
- Execute the following command, where JekyllSite is the destination folder of your website:
-jekyll new JekyllSite
-  Run the server Set the current directory to the website's directory (for this tutorial it's JekyllSite):
-cd JekyllSite
-Execute the following command:
-jekyll serve --host 0.0.0.0
- tipFor more details on your hostname, read this.*
-   View the website Navigate to http://username.koding.io:4000
- tipMake sure to replace username above with your Koding username.
- </description>
   </item>
   
   <item>
@@ -1971,44 +2010,6 @@ Professional plan: 5 snapshots
 to install the relevant software that you use and have a snapshot that is ready to be used.
 To create a new VM using a snapshot, simply add a new VM (if your plan allows) and use an existing
 snapshot as the starting point (as shown in the image below).
-
-</description>
-  </item>
-  
-  <item>
-    <title>How to share your VM with someone?</title>
-    <link>//learn.koding.com/guides/permanent-shared-vm</link>
-    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/permanent-shared-vm</guid>
-    <author>Team Koding</author>
-    <description>  What does &amp;quot;Shared VM&amp;quot; mean? The &amp;quot;Share VM&amp;quot; feature allows you to give another Koding user full access to your
-VM even if you are not using your Koding.com account. This is very different from
-Collaboration on Koding where you are working with someone in
-real-time and sharing the IDE and Terminal.
- tipThis feature is only available for accounts with a paid plan (hobbyist, developer or professional).
-Even though a paid account is required to start the sharing, a free account can receive a shared
-VM.
- that as a paid plan owner, you can share your VM with another paid or free plan account.
-&amp;gt;
-  What's the benefit? There are several use cases where this makes sense. For example:
-
-Multiple people are working on a project. They don't need to collaborate real-time but still need to access the same VM independently.
-A &amp;quot;master&amp;quot; VM has been set up by the team lead that needs to be accessed by many team members (share code, docs, etc.).
-Team member B needs to take over from team member A because a team is doing &amp;quot;follow the sun&amp;quot; development practice.
-You are stuck somewhere, cannot be online but need someone else to look at your work.
-Can you think of more? If yes, let us know!
-
-  How do I share my VM? 
-Head over to VM settings and locate the &amp;quot;Share VM&amp;quot; feature.
-Click the &amp;quot;+&amp;quot; sign to add the username of a Koding user with whom you wish to share your VM. 
-The user with whom the VM has been shared will now see an accept/reject notice. 
-Once they accept, the shared VM will appear in the sidebar as a new avaialble resource. 
-
-  How can I stop sharing my VM? 
-Go into VM settings and remove the user with whom you no longer wish to share your VM. 
-
-  How do I leave a shared VM? 
-Click the VM settings for the shared VM and then select &amp;quot;Leave Shared VM&amp;quot; to remove the VM from your Sidebar.
 
 </description>
   </item>
@@ -2070,6 +2071,44 @@ sudo service nginx restart
 If you visit your domain again you'll see the same ~/Web files that you are 
 familiar with. You now have an Nginx server up and running, and serving your 
 Web files. Enjoy!
+</description>
+  </item>
+  
+  <item>
+    <title>How to share your VM with someone?</title>
+    <link>//learn.koding.com/guides/permanent-shared-vm</link>
+    <pubDate>"2015-05-06T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/permanent-shared-vm</guid>
+    <author>Team Koding</author>
+    <description>  What does &amp;quot;Shared VM&amp;quot; mean? The &amp;quot;Share VM&amp;quot; feature allows you to give another Koding user full access to your
+VM even if you are not using your Koding.com account. This is very different from
+Collaboration on Koding where you are working with someone in
+real-time and sharing the IDE and Terminal.
+ tipThis feature is only available for accounts with a paid plan (hobbyist, developer or professional).
+Even though a paid account is required to start the sharing, a free account can receive a shared
+VM.
+ that as a paid plan owner, you can share your VM with another paid or free plan account.
+&amp;gt;
+  What's the benefit? There are several use cases where this makes sense. For example:
+
+Multiple people are working on a project. They don't need to collaborate real-time but still need to access the same VM independently.
+A &amp;quot;master&amp;quot; VM has been set up by the team lead that needs to be accessed by many team members (share code, docs, etc.).
+Team member B needs to take over from team member A because a team is doing &amp;quot;follow the sun&amp;quot; development practice.
+You are stuck somewhere, cannot be online but need someone else to look at your work.
+Can you think of more? If yes, let us know!
+
+  How do I share my VM? 
+Head over to VM settings and locate the &amp;quot;Share VM&amp;quot; feature.
+Click the &amp;quot;+&amp;quot; sign to add the username of a Koding user with whom you wish to share your VM. 
+The user with whom the VM has been shared will now see an accept/reject notice. 
+Once they accept, the shared VM will appear in the sidebar as a new avaialble resource. 
+
+  How can I stop sharing my VM? 
+Go into VM settings and remove the user with whom you no longer wish to share your VM. 
+
+  How do I leave a shared VM? 
+Click the VM settings for the shared VM and then select &amp;quot;Leave Shared VM&amp;quot; to remove the VM from your Sidebar.
+
 </description>
   </item>
   
