@@ -45,11 +45,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?347" />
+    <link rel="stylesheet" href="/css/vendor.css?869" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?560" />
+    <link rel="stylesheet" href="/css/main.css?551" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?791" />
+    <link rel="stylesheet" href="/css/rwd.css?878" />
     <!-- Google WebMaster Tools Auth for PD team -->
     <meta name="google-site-verification" content="xit6W5qyYuPGq49UXRRZNm_HW5bUxyPS0hqJRDP-2tg" />
 	</head>
@@ -256,24 +256,28 @@
   </li>
 
   
-  <li class="">
+  <li class="zactive">
     <h5>Latest Guides</h5>
     <ul>
-    
-      <li class="">
-        <a href="/guides/mount-ftp-fs">How to mount a remote FTP server as a local directory?</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/updating-nodejs-on-your-vm">Updating Node.js on your VM</a>
-      </li>
     
       <li class="">
         <a href="/guides/setting-up-ftp-on-koding">Setting up FTP on Koding</a>
       </li>
     
       <li class="">
+        <a href="/guides/mount-ftp-fs">How to mount a remote FTP server as a local directory?</a>
+      </li>
+    
+      <li class="zactive">
+        <a href="/guides/install-phpmyadmin">Install phpMyAdmin</a>
+      </li>
+    
+      <li class="">
         <a href="/guides/what-happened-to-127-0-0-1">What happened to 127.0.0.1?</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/updating-nodejs-on-your-vm">Updating Node.js on your VM</a>
       </li>
     
       <li class="">
@@ -286,10 +290,6 @@
     
       <li class="">
         <a href="/guides/upgrading-your-vm">Updating the OS (and other packages) your VM</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/getting-started-nodejs">Getting Started with NodeJS</a>
       </li>
     
     </ul>
@@ -310,7 +310,7 @@
     <li class="author username">
        by <span rel="author">Team Koding</span>
     </li>
-    <li class="updated">Updated 5 months ago</li>
+    <li class="updated">Updated a day ago</li>
   </ul>
 
 
@@ -320,13 +320,13 @@
     <p itemprop="about">Before you continue reading this guide why not try a more easy way, using the <a href="http://learn.koding.com/guides/getting-started-kpm/">Koding Package Manager (kpm)</a> and install phpMyAdmin using just one command:</p>
 <pre><code>kpm <span class="hljs-keyword">install</span> phpmyadmin
 </code></pre><hr>
-<p>This guide will walk you through the steps you need to take in order to get <strong>phpMyAdmin</strong> installed on your Koding VM.</p>
+<p>This guide will walk you through the steps you need to take in order to get <strong>phpMyAdmin</strong> installed on your Koding VM and also it will answer any questions you might have regarding it operating properly.</p>
 <p>Just follow the steps and you should get phpMyAdmin installed in no time.</p>
-<h2 class="heading"> <a name="step-1" class="anchor" href="#step-1"></a> Step 1 </h2><p>The first thing that you need to do is to update our package list. You can do that using the following command.</p>
+<h2 class="heading"> <a name="step-1" class="anchor" href="#step-1"></a> Step 1 </h2><p>The first thing that you need to do is to update your package list. You can do that using the following command.</p>
 <pre><code>sudo apt-<span class="hljs-built_in">get</span> <span class="hljs-keyword">update</span>
-</code></pre><p>After that you can go ahead and install phpmyadmin using the following command:</p>
-<pre><code>sudo apt-<span class="hljs-keyword">get</span> install phpmyadmin
-</code></pre><h2 class="heading"> <a name="step-2" class="anchor" href="#step-2"></a> Step 2 </h2><p>During the installation process you will be prompted to ansyour some questions in order to configure the installation properly.</p>
+</code></pre><p>After that you can go ahead and install phpMyAdmin using the following command:</p>
+<pre><code>sudo apt-<span class="hljs-keyword">get</span> install phpMyAdmin
+</code></pre><h2 class="heading"> <a name="step-2" class="anchor" href="#step-2"></a> Step 2 </h2><p>During the installation process you will be prompted to answer some questions in order to configure the installation properly.</p>
 <p>When asked to choose the server, you need to select <strong>apache2</strong>.</p>
 <p><img src="pma1.png" alt="pma1"></p>
 <p>For the next question select <strong>Ok</strong>.</p>
@@ -342,7 +342,7 @@
 <pre><code>sudo nano <span class="hljs-regexp">/etc/</span>apache2<span class="hljs-regexp">/apache2.conf</span>
 </code></pre><p>And at the very bottom of the file you need to include the following line.</p>
 <pre><code><span class="hljs-keyword">Include</span> <span class="hljs-regexp">/etc/</span>phpmyadmin<span class="hljs-regexp">/apache.conf</span>
-</code></pre><p>Save the file by pressing <code>ctrl+o</code></p>
+</code></pre><p>Save the file by pressing <code>ctrl+o</code>.</p>
 <p>One more thing that you need to do before you can see everything working is to enable the <strong>mcrypt</strong> extension. You can do that using the following command.</p>
 <pre><code><span class="hljs-title">sudo</span> php5enmod mcrypt
 </code></pre><h2 class="heading"> <a name="step-4" class="anchor" href="#step-4"></a> Step 4 </h2><p>Restart the Apache server using the following command and you should see everything working.</p>
@@ -350,7 +350,23 @@
 </code></pre><p>You will now be able to access phpmyadmin by following a similar URL:</p>
 <pre><code><span class="hljs-string">http:</span><span class="hljs-comment">//KODING_USERNAME.koding.io/phpmyadmin</span>
 </code></pre><p>Find out more about your VM hostname <a href="http://learn.koding.com/faq/vm-hostname/">here</a>.</p>
-<p>And that&apos;s it.</p>
+<h2 class="heading"> <a name="can-39-t-login-to-phpmyadmin-" class="anchor" href="#can-39-t-login-to-phpmyadmin-"></a> Can&apos;t login to phpMyAdmin? </h2><p>You might encounter this issue at some point. When this happens, there are multiple causes: either the mySQL server is not working properly, you forgot your credentials or something happened to phpMyAdmin.</p>
+<p>In order to fix the first case you can follow <a href="http://learn.koding.com/faq/mysql-socket-error-2002/">this guide</a>.</p>
+<p>If you forgot your credentials you can follow these steps:</p>
+<p>You can change the mySQL root password by killing the process:</p>
+<pre><code>kill `<span class="hljs-keyword">cat</span> /<span class="hljs-keyword">var</span>/<span class="hljs-keyword">run</span>/mysqld/mysqld.pid`
+</code></pre><p>Create a text file containing the following statement on a single line. Replace the password with the password that you want to use.</p>
+<pre><code><span class="hljs-operator"><span class="hljs-keyword">SET</span> <span class="hljs-keyword">PASSWORD</span> <span class="hljs-keyword">FOR</span> <span class="hljs-string">&apos;root&apos;</span>@<span class="hljs-string">&apos;localhost&apos;</span> = <span class="hljs-keyword">PASSWORD</span>(<span class="hljs-string">&apos;MyNewPass&apos;</span>);</span>
+</code></pre><p>Save the file. This example names the file <code>/home/me/mysql-init</code>. The file contains the password, so do not save it where it can be read by other users. If you are not logged in as mysql (the user the server runs as), make sure that the file has permissions that permit mysql to read it.</p>
+<p>Start the MySQL server with the special --init-file option:</p>
+<pre><code>mysqld_safe --init-<span class="hljs-keyword">file</span>=<span class="hljs-regexp">/home/m</span>e<span class="hljs-regexp">/mysql-init &amp;</span>
+</code></pre><p>The server executes the contents of the file named by the --init-file option at startup, changing the &apos;root&apos;@&apos;localhost&apos; account password.</p>
+<p>After the server has started successfully, delete <code>/home/me/mysql-init</code>.</p>
+<p>phpMyAdmin should use the password you set above.</p>
+<p>Make sure you set the new password into phpMyAdmin&apos;s <code>config.inc.php</code> too, by updating this line:</p>
+<pre><code>$cfg[<span class="hljs-link_label">&apos;Servers&apos;</span>][<span class="hljs-link_reference">$i</span>][<span class="hljs-link_label">&apos;password&apos;</span>] = &apos;yourpassword&apos;;
+</code></pre><blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>You can find the phpMyAdmin config file here <code>/etc/phpmyadmin/config.inc.php</code>.</p>
+ </blockquote><p>And that&apos;s it.</p>
 <p>If you encounter any issues or have any questions please drop us an email <a href="mailto:support@koding.com">here</a>.</p>
 
   </div>

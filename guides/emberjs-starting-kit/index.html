@@ -11,7 +11,7 @@
     
       <meta name="keywords" content="frameworks platforms,emberjs,javascript">
     
-		<meta name="description" content="Ambitious applications are the future. The way we interact with a web application will impact our productivity. That's why in this short tutorial we are going to cover some of the basics of EmberJS.">
+		<meta name="description" content="Ambitious applications are the future. The way we interact with a web application will impact our productivity. That&amp;#39;s why in this short tutorial we are going to cover some of the basics of EmberJS.">
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
 
@@ -21,7 +21,7 @@
 		<meta property="og:url" content="https://learn.koding.com"/>
 		<meta property="og:image" content="https://learn.koding.com/img/logo_150.png"/>
 		<meta property="og:image:secure_url" content="https://koding.com/a/images/logos/share_logo.png"/>
-		<meta property="og:description" content="Ambitious applications are the future. The way we interact with a web application will impact our productivity. That's why in this short tutorial we are going to cover some of the basics of EmberJS."/>
+		<meta property="og:description" content="Ambitious applications are the future. The way we interact with a web application will impact our productivity. That&amp;#39;s why in this short tutorial we are going to cover some of the basics of EmberJS."/>
 		<meta property="og:image:type" content="image/png">
 		<meta property="og:image:width" content="130"/>
 		<meta property="og:image:height" content="100"/>
@@ -33,7 +33,7 @@
 		<meta name="twitter:creator" content="@koding"/>
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:image" content="https://learn.koding.com/img/logo_150.png"/>
-		<meta name="twitter:description" content="Ambitious applications are the future. The way we interact with a web application will impact our productivity. That's why in this short tutorial we are going to cover some of the basics of EmberJS."\>
+		<meta name="twitter:description" content="Ambitious applications are the future. The way we interact with a web application will impact our productivity. That&amp;#39;s why in this short tutorial we are going to cover some of the basics of EmberJS."\>
 		<meta name="twitter:domain" content="learn.koding.com">
 
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
@@ -45,11 +45,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?136" />
+    <link rel="stylesheet" href="/css/vendor.css?464" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?799" />
+    <link rel="stylesheet" href="/css/main.css?46" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?451" />
+    <link rel="stylesheet" href="/css/rwd.css?265" />
     <!-- Google WebMaster Tools Auth for PD team -->
     <meta name="google-site-verification" content="xit6W5qyYuPGq49UXRRZNm_HW5bUxyPS0hqJRDP-2tg" />
 	</head>
@@ -261,19 +261,23 @@
     <ul>
     
       <li class="">
-        <a href="/guides/mount-ftp-fs">How to mount a remote FTP server as a local directory?</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/updating-nodejs-on-your-vm">Updating Node.js on your VM</a>
-      </li>
-    
-      <li class="">
         <a href="/guides/setting-up-ftp-on-koding">Setting up FTP on Koding</a>
       </li>
     
       <li class="">
+        <a href="/guides/mount-ftp-fs">How to mount a remote FTP server as a local directory?</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/install-phpmyadmin">Install phpMyAdmin</a>
+      </li>
+    
+      <li class="">
         <a href="/guides/what-happened-to-127-0-0-1">What happened to 127.0.0.1?</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/updating-nodejs-on-your-vm">Updating Node.js on your VM</a>
       </li>
     
       <li class="">
@@ -286,10 +290,6 @@
     
       <li class="">
         <a href="/guides/upgrading-your-vm">Updating the OS (and other packages) your VM</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/getting-started-nodejs">Getting Started with NodeJS</a>
       </li>
     
     </ul>
@@ -323,16 +323,16 @@
 <h3 class="heading"> <a name="step-2-" class="anchor" href="#step-2-"></a> Step 2. </h3><p>We copy and paste the following code into are newly created file.</p>
 <pre><code><span class="xml"><span class="hljs-doctype">&lt;!doctype html&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">utf-8</span> /&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Ember Koding 
 Demo<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text/x-handlebars&quot;</span> 
-<span class="hljs-attribute">data-template-name</span>=<span class="hljs-value">&quot;index&quot;</span>&gt;</span><span class="pf"> <span class="hljs-variable">&lt;h2&gt;</span>Ember.js <span class="hljs-keyword">on</span> Koding<span class="hljs-variable">&lt;/h2&gt;</span> <span class="hljs-variable">&lt;ul&gt;</span> </span></span><span class="hljs-expression">{{<span class="hljs-begin-block">#<span class="hljs-keyword">each</span> item </span>
-<span class="hljs-variable"><span class="hljs-keyword">in</span></span> <span class="hljs-variable">model</span>}}</span><span class="xml"><span class="apache"> <span class="hljs-tag">&lt;li&gt;</span></span></span><span class="hljs-expression">{{<span class="hljs-variable">item</span>}}</span><span class="xml"><span class="apache"><span class="hljs-tag">&lt;/li&gt;</span> </span></span><span class="hljs-expression">{{<span class="hljs-end-block">/<span class="hljs-keyword">each</span></span>}}</span><span class="xml"><span class="apache"> <span class="hljs-tag">&lt;/ul&gt;</span> </span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-title">script</span> 
-<span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span> 
+<span class="hljs-attribute">data-template-name</span>=<span class="hljs-value">&quot;index&quot;</span>&gt;</span><span class="javascript"> &lt;h2&gt;Ember.js on Koding&lt;<span class="hljs-regexp">/h2&gt; &lt;ul&gt; </span></span></span><span class="hljs-expression">{{<span class="hljs-begin-block">#<span class="hljs-keyword">each</span> item </span>
+<span class="hljs-variable"><span class="hljs-keyword">in</span></span> <span class="hljs-variable">model</span>}}</span><span class="xml"><span class="javascript"> &lt;li&gt;</span></span><span class="hljs-expression">{{<span class="hljs-variable">item</span>}}</span><span class="xml"><span class="javascript">&lt;<span class="hljs-regexp">/li&gt; </span></span></span><span class="hljs-expression">{{<span class="hljs-end-block">/<span class="hljs-keyword">each</span></span>}}</span><span class="xml"><span class="javascript"> &lt;<span class="hljs-regexp">/ul&gt; </span></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-title">script</span> 
+<span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js&quot;</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span> 
 <span class="hljs-tag">&lt;<span class="hljs-title">script</span> 
-<span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.1.2/handlebars.min.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span> 
+<span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.1.2/handlebars.min.js&quot;</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span> 
 <span class="hljs-tag">&lt;<span class="hljs-title">script</span> 
-<span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;//cdnjs.cloudflare.com/ajax/libs/ember.js/1.1.2/ember.min.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span> 
-<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="actionscript"> App = Ember.Application.create({}); App.IndexRoute = 
+<span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;//cdnjs.cloudflare.com/ajax/libs/ember.js/1.1.2/ember.min.js&quot;</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span> 
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript"> App = Ember.Application.create({}); App.IndexRoute = 
 Ember.Route.extend({ setupController: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(controller)</span> </span>{ 
-controller.<span class="hljs-keyword">set</span>(<span class="hljs-string">&apos;content&apos;</span>, [<span class="hljs-string">&apos;cyan&apos;</span>, <span class="hljs-string">&apos;magenta&apos;</span>, <span class="hljs-string">&apos;penguin&apos;</span>, <span class="hljs-string">&apos;pie&apos;</span>]); } }); 
+controller.set(<span class="hljs-string">&apos;content&apos;</span>, [<span class="hljs-string">&apos;cyan&apos;</span>, <span class="hljs-string">&apos;magenta&apos;</span>, <span class="hljs-string">&apos;penguin&apos;</span>, <span class="hljs-string">&apos;pie&apos;</span>]); } }); 
 </span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span></span>
 </code></pre><p> Ok now that we saved the file and opened up the preview and saw that 
 everything worked as it should let&apos;s explain a bit what is actually 

@@ -3,25 +3,25 @@
     "title": "Updating Node.js on your VM",
     "url": "https://learn.koding.com/guides/updating-nodejs-on-your-vm/index.html",
     "author": "Darryl Dias",
-    "date": "2015-10-10T00:00:00.000Z"
-  },
-  {
-    "title": "Connect with SSH from Windows",
-    "url": "https://learn.koding.com/guides/connect-with-ssh-windows/index.html",
-    "author": "Team Koding",
-    "date": "2015-09-04T00:00:00.000Z"
+    "date": "2015-10-13T00:00:00.000Z"
   },
   {
     "title": "Updating the OS (and other packages) your VM",
     "url": "https://learn.koding.com/guides/upgrading-your-vm/index.html",
     "author": "Team Koding",
-    "date": "2015-08-24T00:00:00.000Z"
+    "date": "2015-09-08T00:00:00.000Z"
+  },
+  {
+    "title": "Connect with SSH from Windows",
+    "url": "https://learn.koding.com/guides/connect-with-ssh-windows/index.html",
+    "author": "Team Koding",
+    "date": "2015-09-08T00:00:00.000Z"
   },
   {
     "title": "Understanding file permissions",
     "url": "https://learn.koding.com/guides/understanding-file-permissions/index.html",
     "author": "Team Koding",
-    "date": "2015-08-11T00:00:00.000Z"
+    "date": "2015-08-14T00:00:00.000Z"
   },
   {
     "title": "Custom Domains with your Koding VM",
@@ -30,33 +30,33 @@
     "date": "2015-06-20T00:00:00.000Z"
   },
   {
-    "title": "Connect with SSH, from Unix",
-    "url": "https://learn.koding.com/guides/ssh-into-your-vm/index.html",
+    "title": "Making your VM secure using Ubuntu UFW (Uncomplicated Firewall)",
+    "url": "https://learn.koding.com/guides/enable-ufw/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-05-11T00:00:00.000Z"
   },
   {
     "title": "How to change your command shell",
     "url": "https://learn.koding.com/guides/change-shell/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-04-29T00:00:00.000Z"
   },
   {
     "title": "Enable PHP mail() function",
     "url": "https://learn.koding.com/guides/enable-php-mail-function/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-04-29T00:00:00.000Z"
   },
   {
     "title": "Understanding the VM settings modal",
     "url": "https://learn.koding.com/guides/understanding-vm-panel/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-04-29T00:00:00.000Z"
   },
   {
     "title": "How to setup an SSH Tunnel in Unix",
     "url": "https://learn.koding.com/guides/ssh-tunneling/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-04-29T00:00:00.000Z"
   }
 ]
