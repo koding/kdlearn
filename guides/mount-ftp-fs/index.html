@@ -11,8 +11,8 @@
     
       <meta name="keywords" content="developer tools,file sync,ftp,file transfer">
     
-		<meta name="description" content="Many times you have your code and other relevant files on another server
-and need to keep them there but still want to work on them. The easiest
+		<meta name="description" content="In some cases, you may have your code and other relevant files on another server
+and need to keep them remote but still want to work on them. The easiest
 way to achieve this is to mount the remote system as a local directory
 on your Koding VM so that you can work on the files as if they were on
 your Koding VM.">
@@ -25,8 +25,8 @@ your Koding VM.">
 		<meta property="og:url" content="https://learn.koding.com"/>
 		<meta property="og:image" content="https://learn.koding.com/img/logo_150.png"/>
 		<meta property="og:image:secure_url" content="https://koding.com/a/images/logos/share_logo.png"/>
-		<meta property="og:description" content="Many times you have your code and other relevant files on another server
-and need to keep them there but still want to work on them. The easiest
+		<meta property="og:description" content="In some cases, you may have your code and other relevant files on another server
+and need to keep them remote but still want to work on them. The easiest
 way to achieve this is to mount the remote system as a local directory
 on your Koding VM so that you can work on the files as if they were on
 your Koding VM."/>
@@ -41,8 +41,8 @@ your Koding VM."/>
 		<meta name="twitter:creator" content="@koding"/>
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:image" content="https://learn.koding.com/img/logo_150.png"/>
-		<meta name="twitter:description" content="Many times you have your code and other relevant files on another server
-and need to keep them there but still want to work on them. The easiest
+		<meta name="twitter:description" content="In some cases, you may have your code and other relevant files on another server
+and need to keep them remote but still want to work on them. The easiest
 way to achieve this is to mount the remote system as a local directory
 on your Koding VM so that you can work on the files as if they were on
 your Koding VM."\>
@@ -57,11 +57,11 @@ your Koding VM."\>
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?921" />
+    <link rel="stylesheet" href="/css/vendor.css?227" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?129" />
+    <link rel="stylesheet" href="/css/main.css?944" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?96" />
+    <link rel="stylesheet" href="/css/rwd.css?528" />
     <!-- Google WebMaster Tools Auth for PD team -->
     <meta name="google-site-verification" content="xit6W5qyYuPGq49UXRRZNm_HW5bUxyPS0hqJRDP-2tg" />
 	</head>
@@ -272,10 +272,6 @@ your Koding VM."\>
     <h5>Latest Guides</h5>
     <ul>
     
-      <li class="">
-        <a href="/guides/setting-up-ftp-on-koding">Setting up FTP on Koding</a>
-      </li>
-    
       <li class="zactive">
         <a href="/guides/mount-ftp-fs">How to mount a remote FTP server as a local directory?</a>
       </li>
@@ -285,11 +281,15 @@ your Koding VM."\>
       </li>
     
       <li class="">
-        <a href="/guides/what-happened-to-127-0-0-1">What happened to 127.0.0.1?</a>
+        <a href="/guides/updating-nodejs-on-your-vm">Updating Node.js on your VM</a>
       </li>
     
       <li class="">
-        <a href="/guides/updating-nodejs-on-your-vm">Updating Node.js on your VM</a>
+        <a href="/guides/setting-up-ftp-on-koding">Setting up FTP on Koding</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/what-happened-to-127-0-0-1">What happened to 127.0.0.1?</a>
       </li>
     
       <li class="">
@@ -329,8 +329,8 @@ your Koding VM."\>
   
 
   <div itemprop="articleBody">
-    <p itemprop="about">Many times you have your code and other relevant files on another server
-and need to keep them there but still want to work on them. The easiest
+    <p itemprop="about">In some cases, you may have your code and other relevant files on another server
+and need to keep them remote but still want to work on them. The easiest
 way to achieve this is to mount the remote system as a local directory
 on your Koding VM so that you can work on the files as if they were on
 your Koding VM.</p>
@@ -359,7 +359,9 @@ list, the list of files should be from the remote server.</p>
 <blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>Even if the files in <code>/mnt/remote-ftp</code> are &quot;owned&quot; by the <code>root</code> user, any other user should
 still be able to operate on the files because we used the <code>allow_other</code> option when we set
 up the connection.</p>
- </blockquote>
+ </blockquote><h3 class="heading"> <a name="disconnecting" class="anchor" href="#disconnecting"></a> Disconnecting </h3><p>To disconnect (unmount) the remote mount, use the following command:</p>
+<pre><code>sudo fusermount -u <span class="hljs-regexp">/mnt/</span>remote-ftp
+</code></pre>
   </div>
 
   <div class="guide-footer">

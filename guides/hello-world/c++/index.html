@@ -45,11 +45,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?471" />
+    <link rel="stylesheet" href="/css/vendor.css?104" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?925" />
+    <link rel="stylesheet" href="/css/main.css?428" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?836" />
+    <link rel="stylesheet" href="/css/rwd.css?850" />
     <!-- Google WebMaster Tools Auth for PD team -->
     <meta name="google-site-verification" content="xit6W5qyYuPGq49UXRRZNm_HW5bUxyPS0hqJRDP-2tg" />
 	</head>
@@ -262,10 +262,6 @@
     <ul>
     
       <li class="">
-        <a href="/guides/setting-up-ftp-on-koding">Setting up FTP on Koding</a>
-      </li>
-    
-      <li class="">
         <a href="/guides/mount-ftp-fs">How to mount a remote FTP server as a local directory?</a>
       </li>
     
@@ -274,11 +270,15 @@
       </li>
     
       <li class="">
-        <a href="/guides/what-happened-to-127-0-0-1">What happened to 127.0.0.1?</a>
+        <a href="/guides/updating-nodejs-on-your-vm">Updating Node.js on your VM</a>
       </li>
     
       <li class="">
-        <a href="/guides/updating-nodejs-on-your-vm">Updating Node.js on your VM</a>
+        <a href="/guides/setting-up-ftp-on-koding">Setting up FTP on Koding</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/what-happened-to-127-0-0-1">What happened to 127.0.0.1?</a>
       </li>
     
       <li class="">
@@ -325,7 +325,7 @@
 <pre><code><span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &lt;iostream&gt;</span>
 
 <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
-    std::<span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;Hello World!&quot;</span>;
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;Hello World!&quot;</span>;
 }
 </code></pre><p>To run the above file in your Koding VM, just open your Koding Terminal and type the following commands:</p>
 <pre><code>g++ -o hellopp helloworld<span class="hljs-class">.cpp</span>
@@ -339,7 +339,7 @@
 <pre><code><span class="hljs-collection">{}</span>
 </code></pre><p>The two curly brackets, one in the beginning and one at the end, are used to group all commands together, they are used to mark the beginning and end of a
 group or function.</p>
-<pre><code>std::<span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;Hello World!&quot;</span>;
+<pre><code><span class="hljs-built_in">std</span>::<span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;Hello World!&quot;</span>;
 </code></pre><p>This line is a C++ statement. Statements are executed in the same order that they appear within a function&apos;s body.</p>
 <p>Your statement has three parts: first <code>std::cout</code>, which identifies the standard character output device; Second, the insertion operator <code>&lt;&lt;</code>, which indicates that what follows is inserted into <code>std::cout</code>. Finally, a sentence within quotes <code>&quot;Hello world!&quot;</code>, is the content inserted into the standard output. The semi-colon and the end shows that it is the end of the command.</p>
 <p>And that&apos;s it!</p>
