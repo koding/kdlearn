@@ -5,8 +5,8 @@ categories: [developer tools, file sync, ftp, file transfer]
 template: page.toffee
 ---
 
-Many times you have your code and other relevant files on another server
-and need to keep them there but still want to work on them. The easiest
+In some cases, you may have your code and other relevant files on another server
+and need to keep them remote but still want to work on them. The easiest
 way to achieve this is to mount the remote system as a local directory
 on your Koding VM so that you can work on the files as if they were on
 your Koding VM.
@@ -54,3 +54,10 @@ list, the list of files should be from the remote server.
 > Even if the files in `/mnt/remote-ftp` are "owned" by the `root` user, any other user should
 > still be able to operate on the files because we used the `allow_other` option when we set
 > up the connection.
+
+### Disconnecting
+To disconnect (unmount) the remote mount, use the following command:
+```
+sudo fusermount -u /mnt/remote-ftp
+```
+
