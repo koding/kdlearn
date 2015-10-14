@@ -18,9 +18,9 @@
   <language>en</language>
   
   <item>
-    <title>How to mount a remote FTP server as a local directory?</title>
+    <title>How to mount a remote FTP server as a local directory on your Koding VM?</title>
     <link>//learn.koding.com/guides/mount-ftp-fs</link>
-    <pubDate>"2015-10-13T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-10-14T00:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/mount-ftp-fs</guid>
     <author>Team Koding</author>
     <description>In some cases, you may have your code and other relevant files on another server

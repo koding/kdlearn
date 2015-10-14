@@ -12,9 +12,9 @@
     "date": "2015-05-06T00:00:00.000Z"
   },
   {
-    "title": "Webmin for Koding",
-    "url": "http://learn.koding.com/guides/webmin-for-koding/index.html",
-    "author": "Mike Spick",
+    "title": "Getting started with Git",
+    "url": "http://learn.koding.com/guides/git/index.html",
+    "author": "Team Koding",
     "date": "2015-05-06T00:00:00.000Z"
   },
   {
@@ -42,10 +42,10 @@
     "date": "2015-05-06T00:00:00.000Z"
   },
   {
-    "title": "How to mount a remote FTP server as a local directory?",
+    "title": "How to mount a remote FTP server as a local directory on your Koding VM?",
     "url": "http://learn.koding.com/guides/mount-ftp-fs/index.html",
     "author": "Team Koding",
-    "date": "2015-10-13T00:00:00.000Z"
+    "date": "2015-10-14T00:00:00.000Z"
   },
   {
     "title": "Using Github with Koding",
