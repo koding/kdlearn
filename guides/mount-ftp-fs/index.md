@@ -1,5 +1,5 @@
 ---
-title: How to mount a remote FTP server as a local directory?
+title: How to mount a remote FTP server as a local directory on your Koding VM?
 author: Team Koding
 categories: [developer tools, file sync, ftp, file transfer]
 template: page.toffee
