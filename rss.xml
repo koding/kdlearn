@@ -20,7 +20,7 @@
   <item>
     <title>How to mount a remote FTP server as a local directory on your Koding VM?</title>
     <link>//learn.koding.com/guides/mount-ftp-fs</link>
-    <pubDate>"2015-10-14T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-10-15T00:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/mount-ftp-fs</guid>
     <author>Team Koding</author>
     <description>In some cases, you may have your code and other relevant files on another server
@@ -61,7 +61,7 @@ sudo fusermount -u /mnt/remote-ftp
   <item>
     <title>Install phpMyAdmin</title>
     <link>//learn.koding.com/guides/install-phpmyadmin</link>
-    <pubDate>"2015-10-13T00:00:00.000Z"</pubDate>
+    <pubDate>"2015-10-15T00:00:00.000Z"</pubDate>
     <guid isPermaLink="true">//learn.koding.com/guides/install-phpmyadmin</guid>
     <author>Team Koding</author>
     <description>Before you continue reading this guide why not try a more easy way, using the Koding Package Manager (kpm) and install phpMyAdmin using just one command:
