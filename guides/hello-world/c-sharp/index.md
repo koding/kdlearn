@@ -23,7 +23,7 @@ The following instructions will install Mono and MonoDevelop on your Koding VM.
 
 To install Mono, type this command in your Terminal:
 ```
-sudo apt-get install monodevelop mono-utils nunit -console -y
+sudo apt-get install monodevelop mono-utils nunit-console -y
 ```
 The installation process will take a few minutes. Once it is done, you can verify that the Mono compiler was 
 successfully installed by using the following command:
