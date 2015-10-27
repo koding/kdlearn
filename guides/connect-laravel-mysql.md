@@ -1,5 +1,3 @@
-Contribution guidelines: http://learn.koding.com/contribute/
-
 Connecting Laravel 5.1 to a MySQL Database
 
 Make sure that you have mysql and phpmyadmin installed (see Koding guides for these here and here)
