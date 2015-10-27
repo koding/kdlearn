@@ -31,13 +31,13 @@ The Laravel `.env` file contains a number of configurations that Laravel uses to
 
 In order to connect your Laravel app to MySQL, find the database section of the `.env` file (the fields will all have the prefix `DB`), enter the location of the database server (the Koding default for this should be `localhost`), the name of the database that you created, and the username and password associated with the user that your just created.
   
-For example, if my database server is localhost, my user is named 'John' with a password of "LaravelRocks!", and my database is named "My_Laravel_Database", then the DB section of my .env file should look like this:
+For example, if my database server is localhost, my user is named 'Jim' with a password of "LaravelRocks!", and my database is named "My_Laravel_Database", then the DB section of my .env file should look like this:
 
 `DB_HOST=localhost`
 
 `DB_DATABASE=My_Laravel_Database`
 
-`DB_USERNAME=John`
+`DB_USERNAME=Jim`
 
 `DB_PASSWORD=LaravelRocks!`
   
