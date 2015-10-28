@@ -1,6 +1,8 @@
 ---
 title: Connecting Laravel to a MySQL Database
 author: Kyle Barney
+username: kylebarney
+date: 2015-10-27
 categories: [laravel, mysql, php]
 ---
 
