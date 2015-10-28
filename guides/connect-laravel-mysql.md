@@ -1,3 +1,12 @@
+---
+title: Connecting Laravel to a MySQL Database
+author: Kyle Barney
+username: kylebarney
+date: 2015-10-27
+description: 'An Introductory Guide to Connecting Your Laravel App to a MySQL database on the Koding platform.'
+categories: [laravel, mysql, php]
+---
+
 #Connecting Laravel 5.1 to a MySQL Database
 
 ##Step 1: Create a MySQL Database and User
@@ -25,6 +34,14 @@ Now click on the "Users" button from the top main toolbar. Under the list of cur
 
 ##Step Two: Connect Laravel to the MySQL Database
 
+*Prerequisite*: Before your Laravel app can connect to the database you must start up the web server. Navigate to your app's main directory and run the following command:
+
+`php artisan serve --host=0.0.0.0 --port=8080`
+
+Your app should now be visible at: `http://KODING_USERNAME.koding.io:8080`
+
+---
+
 In this step you will need to edit the `.env` file included in your Laravel install. It should be located in the main directory by default - not within any subfolders. (Make sure that you have a `.env` file and not just a `.env.example` file. If you are missing the `.env` file, make a copy of the `.env.example` file and rename it as `.env`.)
 
 The Laravel `.env` file contains a number of configurations that Laravel uses to run your app. The database connection configurations are part of that set.
@@ -33,13 +50,15 @@ In order to connect your Laravel app to MySQL, find the database section of the 
   
 For example, if my database server is localhost, my user is named 'Jim' with a password of "LaravelRocks!", and my database is named "My_Laravel_Database", then the DB section of my .env file should look like this:
 
-`DB_HOST=localhost`
+```
+DB_HOST=localhost
 
-`DB_DATABASE=My_Laravel_Database`
+DB_DATABASE=My_Laravel_Database
 
-`DB_USERNAME=Jim`
+DB_USERNAME=Jim
 
-`DB_PASSWORD=LaravelRocks!`
+DB_PASSWORD=LaravelRocks!
+```
   
 The settings in your .env file need to **exactly** match the server name, user information, and database name set up in PHPMyAdmin, otherwise your connection will fail.
 
