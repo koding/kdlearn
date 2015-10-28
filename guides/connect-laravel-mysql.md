@@ -3,6 +3,7 @@ title: Connecting Laravel to a MySQL Database
 author: Kyle Barney
 username: kylebarney
 date: 2015-10-27
+description: 'An Introductory Guide to Connecting Your Laravel App to a MySQL database on the Koding platform.'
 categories: [laravel, mysql, php]
 ---
 
