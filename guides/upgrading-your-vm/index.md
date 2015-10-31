@@ -66,10 +66,10 @@ sudo apt-get update
 ### Upgrading existing packages
 These series of commands will update all _existing_ packages. These will NOT install new packages.
 
-To update all currently installed packages  to their latest levels, issue the following command in
-Terminal:
+To update all currently installed packages and the packages that they depend on, to their latest levels, 
+issue the following command in the Terminal:
 ```
-sudo apt-get upgrade
+sudo apt-get dist-upgrade
 ```
 The system will analyze which packages on your VM need an update and will give you an estimate
 of the space needed. Make sure that the number shown here is less than the number you saw earlier
@@ -96,25 +96,9 @@ If all went well, you will end up on a screen that looks like this and the curso
 prompt again:
 ![Finish](finish.png)
 
-Congratulations! You have just finished upgrading your existing packages to their latest official
-released levels. This will also include officially released security patches for all existing
-software packages.
-
-If you just wanted to update the  , you can stop now. If you also wish to update your Ubuntu distribution,
- then you can continue to the next section.
-
-### Upgrading your Ubuntu Distribution
-This command will install new packages that have been released for Ubuntu. As before, please make
-sure that you have re-checked the available disk space before proceeding.
-
-Type in the following command to begin the update process:
-```
-sudo apt-get dist-upgrade
-```
-The command will pull in new versions of the Linux Kernel (if any are available). Just like before,
-if you encounter any screens that ask for overwriting existing files, please follow the recommendations
-from the previous section. Once done, you should see something like this:
-![update done](update-done.png)
+Congratulations! You have just finished upgrading your existing packages and the packages that they 
+depend upon, to their latest official released levels. This will also include officially released 
+security patches for all existing software packages.
 
 Now, let's reboot the VM. Open up the settings modal for your VM and toggle the on/off switch. Once
 the VM turns off and you see the button to turn it on, go ahead and click it. This is necessary
@@ -130,6 +114,13 @@ you should see output as the following:
 ```
 note that the kernel version has updated. You've just updated your VM to the latest Linux
 kernel!
+
+One last thing, to help clean up your system it's always good to clean up.  If a new kernel was installed 
+you can remove the old one, and if some packages are no longer used they can be removed as well.  To do this
+type in the following command in Terminal:
+```
+sudo apt-get autoclean
+```
 
 ### If something goes wrong
 Your Koding VM can easily be reinitialized to our official version (the version you got when you
