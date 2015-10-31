@@ -12,6 +12,12 @@
     "date": "2015-10-15T00:00:00.000Z"
   },
   {
+    "title": "Connecting Laravel to a MySQL Database",
+    "url": "http://learn.koding.com/guides/connect-laravel-mysql/index.html",
+    "author": "Kyle Barney",
+    "date": "2015-10-27T00:00:00.000Z"
+  },
+  {
     "title": "Using mySQL",
     "url": "http://learn.koding.com/guides/using-mysql/index.html",
     "author": "Alvin Wan",

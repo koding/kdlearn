@@ -1,5 +1,11 @@
 [
   {
+    "title": "Connecting Laravel to a MySQL Database",
+    "url": "https://learn.koding.com/guides/connect-laravel-mysql/index.html",
+    "author": "Kyle Barney",
+    "date": "2015-10-27T00:00:00.000Z"
+  },
+  {
     "title": "Setting up a Laravel webserver with Artisan",
     "url": "https://learn.koding.com/guides/setting-laravel-artisan-webserver/index.html",
     "author": "Team Koding",

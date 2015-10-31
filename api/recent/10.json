@@ -1,13 +1,31 @@
 [
   {
-    "title": "How to mount a remote FTP server as a local directory on your Koding VM?",
-    "url": "https://learn.koding.com/guides/mount-ftp-fs/index.html",
+    "title": "How to install Composer",
+    "url": "https://learn.koding.com/guides/installing-composer/index.html",
     "author": "Team Koding",
-    "date": "2015-10-15T00:00:00.000Z"
+    "date": "2015-10-31T00:00:00.000Z"
+  },
+  {
+    "title": "Hello World on Koding: C-Sharp (C#)",
+    "url": "https://learn.koding.com/guides/hello-world/c-sharp/index.html",
+    "author": "Team Koding",
+    "date": "2015-10-31T00:00:00.000Z"
+  },
+  {
+    "title": "Connecting Laravel to a MySQL Database",
+    "url": "https://learn.koding.com/guides/connect-laravel-mysql/index.html",
+    "author": "Kyle Barney",
+    "date": "2015-10-27T00:00:00.000Z"
   },
   {
     "title": "Install phpMyAdmin",
     "url": "https://learn.koding.com/guides/install-phpmyadmin/index.html",
+    "author": "Team Koding",
+    "date": "2015-10-15T00:00:00.000Z"
+  },
+  {
+    "title": "How to mount a remote FTP server as a local directory on your Koding VM?",
+    "url": "https://learn.koding.com/guides/mount-ftp-fs/index.html",
     "author": "Team Koding",
     "date": "2015-10-15T00:00:00.000Z"
   },
@@ -40,23 +58,5 @@
     "url": "https://learn.koding.com/guides/connect-with-ssh-windows/index.html",
     "author": "Team Koding",
     "date": "2015-09-04T00:00:00.000Z"
-  },
-  {
-    "title": "Updating the OS (and other packages) your VM",
-    "url": "https://learn.koding.com/guides/upgrading-your-vm/index.html",
-    "author": "Team Koding",
-    "date": "2015-08-24T00:00:00.000Z"
-  },
-  {
-    "title": "Getting Started with NodeJS",
-    "url": "https://learn.koding.com/guides/getting-started-nodejs/index.html",
-    "author": "Team Koding",
-    "date": "2015-08-15T00:00:00.000Z"
-  },
-  {
-    "title": "Using PostgreSQL",
-    "url": "https://learn.koding.com/guides/postgresql-on-koding/index.html",
-    "author": "Federico Ponzi",
-    "date": "2015-08-11T00:00:00.000Z"
   }
 ]

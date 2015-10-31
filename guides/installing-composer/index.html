@@ -45,11 +45,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?198" />
+    <link rel="stylesheet" href="/css/vendor.css?240" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?727" />
+    <link rel="stylesheet" href="/css/main.css?991" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?318" />
+    <link rel="stylesheet" href="/css/rwd.css?639" />
     <!-- Google WebMaster Tools Auth for PD team -->
     <meta name="google-site-verification" content="xit6W5qyYuPGq49UXRRZNm_HW5bUxyPS0hqJRDP-2tg" />
 	</head>
@@ -256,16 +256,28 @@
   </li>
 
   
-  <li class="">
+  <li class="zactive">
     <h5>Latest Guides</h5>
     <ul>
     
+      <li class="zactive">
+        <a href="/guides/installing-composer">How to install Composer</a>
+      </li>
+    
       <li class="">
-        <a href="/guides/mount-ftp-fs">How to mount a remote FTP server as a local directory on your Koding VM?</a>
+        <a href="/guides/hello-world/c-sharp">Hello World on Koding: C-Sharp (C#)</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/connect-laravel-mysql">Connecting Laravel to a MySQL Database</a>
       </li>
     
       <li class="">
         <a href="/guides/install-phpmyadmin">Install phpMyAdmin</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/mount-ftp-fs">How to mount a remote FTP server as a local directory on your Koding VM?</a>
       </li>
     
       <li class="">
@@ -278,18 +290,6 @@
     
       <li class="">
         <a href="/guides/what-happened-to-127-0-0-1">What happened to 127.0.0.1?</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/preview">How can I preview the code that I write on my Koding VM?</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/connect-with-ssh-windows">Connect with SSH from Windows</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/upgrading-your-vm">Updating the OS (and other packages) your VM</a>
       </li>
     
     </ul>
@@ -310,7 +310,7 @@
     <li class="author username">
        by <span rel="author">Team Koding</span>
     </li>
-    <li class="updated">Updated 5 months ago</li>
+    <li class="updated">Updated an hour ago</li>
   </ul>
 
 
@@ -324,7 +324,7 @@
 <pre><code>sudo apt-<span class="hljs-built_in">get</span> <span class="hljs-keyword">update</span>
 </code></pre><p>Make sure you have <a href="http://learn.koding.com/guides/installing-php">PHP</a> and the <code>php5-curl</code> package installed on your VM before you continue. You can install the later using the following command:</p>
 <pre><code>sudo apt-<span class="hljs-keyword">get</span> install php5-curl
-</code></pre><h2 class="heading"> <a name="installing" class="anchor" href="#installing"></a> Installing </h2><p>To get Composer working for a new project you&apos;ll need to run the following commands:</p>
+</code></pre><h2 class="heading"> <a name="installing-composer-for-a-project" class="anchor" href="#installing-composer-for-a-project"></a> Installing Composer for a Project </h2><p>To get Composer working for a new project you&apos;ll need to run the following commands:</p>
 <pre><code><span class="hljs-built_in">cd</span> Web
 <span class="hljs-built_in">mkdir</span> your_project
 <span class="hljs-built_in">cd</span> your_project
@@ -340,7 +340,17 @@ Use <span class="hljs-string">it:</span> php composer.phar
 <pre><code><span class="hljs-comment">curl</span> <span class="hljs-literal">-</span><span class="hljs-comment">sS</span> <span class="hljs-comment">https://getcomposer</span><span class="hljs-string">.</span><span class="hljs-comment">org/installer</span> <span class="hljs-comment">|</span> <span class="hljs-comment">php</span> <span class="hljs-literal">-</span><span class="hljs-literal">-</span> <span class="hljs-literal">-</span><span class="hljs-literal">-</span><span class="hljs-comment">install</span><span class="hljs-literal">-</span><span class="hljs-comment">dir=/var/www/another_folder</span>
 </code></pre><p>If you want to check if Composer is working properly, you can use the following command that will bring up a list of available commands:</p>
 <pre><code><span class="hljs-title">php</span> composer.phar
-</code></pre><p>And that&apos;s it!</p>
+</code></pre><h2 class="heading"> <a name="installing-composer-globally" class="anchor" href="#installing-composer-globally"></a> Installing Composer Globally </h2><p>If you use PHP and Composer frequently, instead of installing Composer for each project, you can install it globally to use it in any directory of your Koding machine. </p>
+<blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>If you install Composer using <a href="http://learn.koding.com/guides/getting-started-kpm/">kpm</a>, it is installed globally.</p>
+ </blockquote><p>Composer is installed globally when the executable file is located in one of the folders where Linux looks for programs, i.e. the folders included in the PATH environment variable.
+For instance, it is installed globally if you put the composer file into the <code>/usr/local/bin</code> folder.</p>
+<p>First, you must download the Composer into a folder in your Koding machine.</p>
+<pre><code>curl -sS <span class="hljs-string">https:</span><span class="hljs-comment">//getcomposer.org/installer | php</span>
+</code></pre><p>And then move the Composer file into the <code>/usr/local/bin</code> folder.</p>
+<pre><code>sudo mv composer.phar <span class="hljs-regexp">/usr/</span>local<span class="hljs-regexp">/bin/</span>composer
+</code></pre><p>After copying the file, you can run the Composer in any folder using the following command:</p>
+<pre><code>composer
+</code></pre><h2 class="heading"> <a name="further-information" class="anchor" href="#further-information"></a> Further Information </h2><p>Composer is a dependency manager for PHP projects. It allows you to find, download and configure components in your development projects. More information can be found in the <a href="https://getcomposer.org/">Composer website</a> and the <a href="https://packagist.org/">Packagist component directory</a>.</p>
 <p>If you encounter any issues or have any questions please drop us an email <a href="mailto:support@koding.com">here</a>.</p>
 
   </div>

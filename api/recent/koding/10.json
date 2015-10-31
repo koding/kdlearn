@@ -1,5 +1,11 @@
 [
   {
+    "title": "Hello World on Koding: C-Sharp (C#)",
+    "url": "https://learn.koding.com/guides/hello-world/c-sharp/index.html",
+    "author": "Team Koding",
+    "date": "2015-10-31T00:00:00.000Z"
+  },
+  {
     "title": "What happened to 127.0.0.1?",
     "url": "https://learn.koding.com/guides/what-happened-to-127-0-0-1/index.html",
     "author": "Team Koding",
@@ -12,12 +18,6 @@
     "date": "2015-08-24T00:00:00.000Z"
   },
   {
-    "title": "Getting Started: The UI",
-    "url": "https://learn.koding.com/guides/getting-started/the-ui/index.html",
-    "author": "Team Koding",
-    "date": "2015-08-11T00:00:00.000Z"
-  },
-  {
     "title": "Connect your own machine to Koding",
     "url": "https://learn.koding.com/guides/connect-your-machine/index.html",
     "author": "Team Koding",
@@ -26,6 +26,12 @@
   {
     "title": "Understanding file permissions",
     "url": "https://learn.koding.com/guides/understanding-file-permissions/index.html",
+    "author": "Team Koding",
+    "date": "2015-08-11T00:00:00.000Z"
+  },
+  {
+    "title": "Getting Started: The UI",
+    "url": "https://learn.koding.com/guides/getting-started/the-ui/index.html",
     "author": "Team Koding",
     "date": "2015-08-11T00:00:00.000Z"
   },
@@ -52,11 +58,5 @@
     "url": "https://learn.koding.com/guides/what-is-koding/index.html",
     "author": "Team Koding",
     "date": "2015-07-06T00:00:00.000Z"
-  },
-  {
-    "title": "Custom Domains with your Koding VM",
-    "url": "https://learn.koding.com/guides/domains/index.html",
-    "author": "Team Koding",
-    "date": "2015-06-20T00:00:00.000Z"
   }
 ]
