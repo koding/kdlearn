@@ -20,7 +20,7 @@ This guide shows you how to install the Oracle JDK in your Koding Machine.
 
 ## Installing Oracle JDK 7 using KPM
 
-Koding offers a simple way to install the Oracle JDK by using the Koding Package Manager.
+Koding offers a simple way to install the Oracle JDK by using the [Koding Package Manager](http://learn.koding.com/guides/getting-started-kpm/).
 
 To install the Oracle JDK you can use the following command:
 
