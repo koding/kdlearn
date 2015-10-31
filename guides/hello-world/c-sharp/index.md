@@ -37,7 +37,7 @@ Mono C# compiler version 3.2.8.0
 > type:tip
 > the version number above may be different in your case, that's quite ok.
 
-## Writing your first program in C#
+###Writing your first program in C#
 Open up a new tab in the Koding IDE and type in the following code block:
 
 ```
