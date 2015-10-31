@@ -29,7 +29,7 @@ Make sure you have [PHP](http://learn.koding.com/guides/installing-php) and the 
 sudo apt-get install php5-curl
 ```
 
-## Installing
+## Installing Composer for a Project
 
 To get Composer working for a new project you'll need to run the following commands:
 
@@ -67,6 +67,36 @@ If you want to check if Composer is working properly, you can use the following 
 php composer.phar
 ```
 
-And that's it!
+## Installing Composer Globally
+
+If you use PHP and Composer frequently, instead of installing Composer for each project, you can install it globally to use it in any directory of your Koding machine. 
+
+> type:tip
+> If you install Composer using [kpm](http://learn.koding.com/guides/getting-started-kpm/), it is installed globally.
+
+Composer is installed globally when the executable file is located in one of the folders where Linux looks for programs, i.e. the folders included in the PATH environment variable.
+For instance, it is installed globally if you put the composer file into the `/usr/local/bin` folder.
+
+First, you must download the Composer into a folder in your Koding machine.
+
+```
+curl -sS https://getcomposer.org/installer | php
+```
+
+And then move the Composer file into the `/usr/local/bin` folder.
+
+```
+sudo mv composer.phar /usr/local/bin/composer
+```
+
+After copying the file, you can run the Composer in any folder using the following command:
+
+```
+composer
+```
+
+## Further Information
+
+Composer is a dependency manager for PHP projects. It allows you to find, download and configure components in your development projects. More information can be found in the [Composer website](https://getcomposer.org/) and the [Packagist component directory](https://packagist.org/).
 
 If you encounter any issues or have any questions please drop us an email [here](mailto:support@koding.com).
