@@ -1,11 +1,5 @@
 [
   {
-    "title": "AngularJS Step-by-Step Setup",
-    "url": "http://learn.koding.com/guides/angularjs-step-by-step/index.html",
-    "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
-  },
-  {
     "title": "Getting Started with NodeJS",
     "url": "http://learn.koding.com/guides/getting-started-nodejs/index.html",
     "author": "Team Koding",
@@ -18,10 +12,22 @@
     "date": "2015-05-06T00:00:00.000Z"
   },
   {
-    "title": "Apache Tomcat on Koding",
-    "url": "http://learn.koding.com/guides/apache-tomcat-on-koding/index.html",
-    "author": "Vinay Jain",
+    "title": "CakePHP Installation for Beginners",
+    "url": "http://learn.koding.com/guides/cakephp-for-beginners/index.html",
+    "author": "Team Koding",
     "date": "2015-05-06T00:00:00.000Z"
+  },
+  {
+    "title": "Installing Ionic Framework",
+    "url": "http://learn.koding.com/guides/installing-ionic-framework/index.html",
+    "author": "Sergiu Butnarasu",
+    "date": "2015-06-22T00:00:00.000Z"
+  },
+  {
+    "title": "Setting up a Rails webserver",
+    "url": "http://learn.koding.com/guides/setting-rails-webserver/index.html",
+    "author": "Team Koding",
+    "date": "2015-06-11T00:00:00.000Z"
   },
   {
     "title": "Installing Jekyll on Koding",
@@ -32,12 +38,6 @@
   {
     "title": "A guide to Docker",
     "url": "http://learn.koding.com/guides/what-is-docker/index.html",
-    "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
-  },
-  {
-    "title": "Setting up a Symfony2 webserver",
-    "url": "http://learn.koding.com/guides/setting-symfony2-webserver/index.html",
     "author": "Team Koding",
     "date": "2015-05-06T00:00:00.000Z"
   },
