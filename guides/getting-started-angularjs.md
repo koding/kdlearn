@@ -11,8 +11,8 @@ template: page.toffee
 ## Introduction
 
 [AngularJS](http://angularjs.org/) is a Javascript framework that extends HTML to create interactive applications.
-Instead of additional Javascript code to manipulate the HTML elements to obtain data and update the user interface,
-AngularJS provides extended HTML tags, known as directives, that developers can bind to Javascript variables and data structures.
+In contrast to other frameworks, AngularJS does not require additional code to manipulate the HTML elements to obtain data and update the user interface.
+It provides extended HTML tags, known as directives, that developers can bind to Javascript variables and data structures.
 
 This tutorial presents how to create and preview an AngularJS application on [Koding](https://koding.com).
 
@@ -42,10 +42,10 @@ For instance, if all the HTML document includes elements that must be processed 
 </html>
 ```
 
-Inside the element with the `ng-app` attribute, the HTML tags become dynamic elements that can be binded to Javascript variables and data structures. 
+Inside the element with the `ng-app` attribute, the HTML tags become dynamic elements that can be bounded to Javascript variables and data structures. 
 These variables, known as the model, will be updated automatically when the user interacts with the HTML elements.
 For instance, it is possible to define a text box that updates automatically a variable using the `ng-model` attribute. 
-The following HTML code defines a text box binded to a variable named `yourName`:
+The following HTML code defines a text box with a binding to a variable named `yourName`:
 
 ```html
 <input type="text"
@@ -62,7 +62,7 @@ For instance, the following expression presents to the user the value in `yourNa
 
 Each time the user enters data into the text box, the variable `yourName` in the model is updated.
 In addition, each time the variable `yourName` in the model is modified, the user interface is updated automatically.
-This behaviour is known as double-binding: the view is binded to the model, and the model is binded to the view.
+This behaviour is known as double-binding: the view is bounded to the model, and the model is bounded to the view.
 
 
 ## Implementing the application in Koding
@@ -113,7 +113,7 @@ For instance, the code for a simple AngularJS application is the following:
 ```
 
 You can now save the file and check out the result. 
-To preview the app, you can use the "Preview" option in the drop down menu of each editor tab. 
+To [preview the app](http://learn.koding.com/categories/previewing/), you can use the "Preview" option in the drop down menu of each editor tab. 
 In addition, you can use the `Ctrl(Cmd) + Alt + P` keyboard shortcut.
 This will open a new browser tab and show you a preview of the application.
 
