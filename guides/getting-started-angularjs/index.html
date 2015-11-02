@@ -12,8 +12,8 @@
       <meta name="keywords" content="frameworks platforms,angularjs,javascript">
     
 		<meta name="description" content="AngularJS is a Javascript framework that extends HTML to create interactive applications.
-Instead of additional Javascript code to manipulate the HTML elements to obtain data and update the user interface,
-AngularJS provides extended HTML tags, known as directives, that developers can bind to Javascript variables and data structures.">
+In contrast to other frameworks, AngularJS does not require additional code to manipulate the HTML elements to obtain data and update the user interface.
+It provides extended HTML tags, known as directives, that developers can bind to Javascript variables and data structures.">
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
 
@@ -24,8 +24,8 @@ AngularJS provides extended HTML tags, known as directives, that developers can 
 		<meta property="og:image" content="https://learn.koding.com/img/logo_150.png"/>
 		<meta property="og:image:secure_url" content="https://koding.com/a/images/logos/share_logo.png"/>
 		<meta property="og:description" content="AngularJS is a Javascript framework that extends HTML to create interactive applications.
-Instead of additional Javascript code to manipulate the HTML elements to obtain data and update the user interface,
-AngularJS provides extended HTML tags, known as directives, that developers can bind to Javascript variables and data structures."/>
+In contrast to other frameworks, AngularJS does not require additional code to manipulate the HTML elements to obtain data and update the user interface.
+It provides extended HTML tags, known as directives, that developers can bind to Javascript variables and data structures."/>
 		<meta property="og:image:type" content="image/png">
 		<meta property="og:image:width" content="130"/>
 		<meta property="og:image:height" content="100"/>
@@ -38,8 +38,8 @@ AngularJS provides extended HTML tags, known as directives, that developers can 
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:image" content="https://learn.koding.com/img/logo_150.png"/>
 		<meta name="twitter:description" content="AngularJS is a Javascript framework that extends HTML to create interactive applications.
-Instead of additional Javascript code to manipulate the HTML elements to obtain data and update the user interface,
-AngularJS provides extended HTML tags, known as directives, that developers can bind to Javascript variables and data structures."\>
+In contrast to other frameworks, AngularJS does not require additional code to manipulate the HTML elements to obtain data and update the user interface.
+It provides extended HTML tags, known as directives, that developers can bind to Javascript variables and data structures."\>
 		<meta name="twitter:domain" content="learn.koding.com">
 
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
@@ -51,11 +51,11 @@ AngularJS provides extended HTML tags, known as directives, that developers can 
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?570" />
+    <link rel="stylesheet" href="/css/vendor.css?326" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?209" />
+    <link rel="stylesheet" href="/css/main.css?265" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?925" />
+    <link rel="stylesheet" href="/css/rwd.css?960" />
     <!-- Google WebMaster Tools Auth for PD team -->
     <meta name="google-site-verification" content="xit6W5qyYuPGq49UXRRZNm_HW5bUxyPS0hqJRDP-2tg" />
 	</head>
@@ -279,7 +279,11 @@ AngularJS provides extended HTML tags, known as directives, that developers can 
       </li>
     
       <li class="">
-        <a href="/guides/connect-laravel-mysql">Connecting Laravel to a MySQL Database</a>
+        <a href="/guides/installing-wildfly">How to install Wildfly</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/upgrading-your-vm">Updating the OS (and other packages) your VM</a>
       </li>
     
       <li class="">
@@ -287,15 +291,11 @@ AngularJS provides extended HTML tags, known as directives, that developers can 
       </li>
     
       <li class="">
-        <a href="/guides/install-phpmyadmin">Install phpMyAdmin</a>
+        <a href="/guides/installing-oracle-jdk">How to install Oracle JDK</a>
       </li>
     
       <li class="">
-        <a href="/guides/updating-nodejs-on-your-vm">Updating Node.js on your VM</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/setting-up-ftp-on-koding">Setting up FTP on Koding</a>
+        <a href="/guides/connect-laravel-mysql">Connecting Laravel to a MySQL Database</a>
       </li>
     
     </ul>
@@ -316,7 +316,7 @@ AngularJS provides extended HTML tags, known as directives, that developers can 
     <li class="author username">
        by <span rel="author">Team Koding</span>
     </li>
-    <li class="updated">Updated 5 hours ago</li>
+    <li class="updated">Updated 9 hours ago</li>
   </ul>
 
 
@@ -324,15 +324,15 @@ AngularJS provides extended HTML tags, known as directives, that developers can 
 
   <div itemprop="articleBody">
     <h2 class="heading"> <a name="introduction" class="anchor" href="#introduction"></a> Introduction </h2><p itemprop="about"><a href="http://angularjs.org/">AngularJS</a> is a Javascript framework that extends HTML to create interactive applications.
-Instead of additional Javascript code to manipulate the HTML elements to obtain data and update the user interface,
-AngularJS provides extended HTML tags, known as directives, that developers can bind to Javascript variables and data structures.</p>
+In contrast to other frameworks, AngularJS does not require additional code to manipulate the HTML elements to obtain data and update the user interface.
+It provides extended HTML tags, known as directives, that developers can bind to Javascript variables and data structures.</p>
 <p>This tutorial presents how to create and preview an AngularJS application on <a href="https://koding.com">Koding</a>.</p>
 <h2 class="heading"> <a name="a-first-application-in-angularjs" class="anchor" href="#a-first-application-in-angularjs"></a> A first application in AngularJS </h2><p>AngularJS is a Javascript Framework. 
 To use it, it is necessary to reference the corresponding script in the HTML document.
 You can reference a local copy of the AngularJS script in your machine or a remote copy located in some CDN server in the internet.
 For instance, instead of using a local copy of AngularJS, you can reference the library in the Google APIs CDN using the following HTML code:</p>
 <pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> 
-  <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js&quot;</span>&gt;</span><span class="undefined">
+  <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js&quot;</span>&gt;</span><span class="javascript">
 </span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
 </code></pre>
 <p>Once referenced the AngularJS script, it is necessary to indicate which part of the HTML document must be processed by the framework.
@@ -345,10 +345,10 @@ For instance, if all the HTML document includes elements that must be processed 
 
 <span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
 </code></pre>
-<p>Inside the element with the <code>ng-app</code> attribute, the HTML tags become dynamic elements that can be binded to Javascript variables and data structures. 
+<p>Inside the element with the <code>ng-app</code> attribute, the HTML tags become dynamic elements that can be bounded to Javascript variables and data structures. 
 These variables, known as the model, will be updated automatically when the user interacts with the HTML elements.
 For instance, it is possible to define a text box that updates automatically a variable using the <code>ng-model</code> attribute. 
-The following HTML code defines a text box binded to a variable named <code>yourName</code>:</p>
+The following HTML code defines a text box with a binding to a variable named <code>yourName</code>:</p>
 <pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span>
   <span class="hljs-attribute">ng-model</span>=<span class="hljs-value">&quot;yourName&quot;</span>
   <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&quot;Enter a name here&quot;</span>&gt;</span>
@@ -359,7 +359,7 @@ For instance, the following expression presents to the user the value in <code>y
 </code></pre>
 <p>Each time the user enters data into the text box, the variable <code>yourName</code> in the model is updated.
 In addition, each time the variable <code>yourName</code> in the model is modified, the user interface is updated automatically.
-This behaviour is known as double-binding: the view is binded to the model, and the model is binded to the view.</p>
+This behaviour is known as double-binding: the view is bounded to the model, and the model is bounded to the view.</p>
 <h2 class="heading"> <a name="implementing-the-application-in-koding" class="anchor" href="#implementing-the-application-in-koding"></a> Implementing the application in Koding </h2><p>Using the concepts explained above, it is possible to create a simple application where the user can enter some data and the user interface is updated accordingly.</p>
 <p>To create the application and use the preview options in Koding, it is necessary to create the project under the <code>Web</code> folder.
 You can create the project folder using the following commands:</p>
@@ -376,7 +376,7 @@ For instance, the code for a simple AngularJS application is the following: </p>
 <span class="hljs-tag">&lt;<span class="hljs-title">html</span> <span class="hljs-attribute">ng-app</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">script</span> 
-    <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js&quot;</span>&gt;</span><span class="undefined">
+    <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js&quot;</span>&gt;</span><span class="javascript">
   </span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
@@ -392,7 +392,7 @@ For instance, the code for a simple AngularJS application is the following: </p>
 <span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
 </code></pre>
 <p>You can now save the file and check out the result. 
-To preview the app, you can use the &quot;Preview&quot; option in the drop down menu of each editor tab. 
+To <a href="http://learn.koding.com/categories/previewing/">preview the app</a>, you can use the &quot;Preview&quot; option in the drop down menu of each editor tab. 
 In addition, you can use the <code>Ctrl(Cmd) + Alt + P</code> keyboard shortcut.
 This will open a new browser tab and show you a preview of the application.</p>
 <h2 class="heading"> <a name="further-information" class="anchor" href="#further-information"></a> Further information </h2><p>AngularJS is a framework aimed to create large applications. 

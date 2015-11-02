@@ -3,19 +3,43 @@
     "title": "How to install Composer",
     "url": "https://learn.koding.com/guides/installing-composer/index.html",
     "author": "Team Koding",
-    "date": "2015-10-31T00:00:00.000Z"
+    "date": "2015-11-02T00:00:00.000Z"
   },
   {
     "title": "Getting Started with AngularJS",
     "url": "https://learn.koding.com/guides/getting-started-angularjs/index.html",
     "author": "Team Koding",
-    "date": "2015-10-31T00:00:00.000Z"
+    "date": "2015-11-02T00:00:00.000Z"
+  },
+  {
+    "title": "How to install Wildfly",
+    "url": "https://learn.koding.com/guides/installing-wildfly/index.html",
+    "author": "Team Koding",
+    "date": "2015-11-02T00:00:00.000Z"
+  },
+  {
+    "title": "Updating the OS (and other packages) your VM",
+    "url": "https://learn.koding.com/guides/upgrading-your-vm/index.html",
+    "author": "Team Koding",
+    "date": "2015-11-02T00:00:00.000Z"
+  },
+  {
+    "title": "How to mount a remote FTP server as a local directory on your Koding VM?",
+    "url": "https://learn.koding.com/guides/mount-ftp-fs/index.html",
+    "author": "Team Koding",
+    "date": "2015-11-02T00:00:00.000Z"
+  },
+  {
+    "title": "How to install Oracle JDK",
+    "url": "https://learn.koding.com/guides/installing-oracle-jdk/index.html",
+    "author": "Team Koding",
+    "date": "2015-11-02T00:00:00.000Z"
   },
   {
     "title": "Hello World on Koding: C-Sharp (C#)",
     "url": "https://learn.koding.com/guides/hello-world/c-sharp/index.html",
     "author": "Team Koding",
-    "date": "2015-10-31T00:00:00.000Z"
+    "date": "2015-11-02T00:00:00.000Z"
   },
   {
     "title": "Connecting Laravel to a MySQL Database",
@@ -24,39 +48,15 @@
     "date": "2015-10-27T00:00:00.000Z"
   },
   {
-    "title": "How to mount a remote FTP server as a local directory on your Koding VM?",
-    "url": "https://learn.koding.com/guides/mount-ftp-fs/index.html",
-    "author": "Team Koding",
-    "date": "2015-10-15T00:00:00.000Z"
-  },
-  {
-    "title": "Install phpMyAdmin",
-    "url": "https://learn.koding.com/guides/install-phpmyadmin/index.html",
-    "author": "Team Koding",
-    "date": "2015-10-15T00:00:00.000Z"
-  },
-  {
-    "title": "Updating Node.js on your VM",
-    "url": "https://learn.koding.com/guides/updating-nodejs-on-your-vm/index.html",
-    "author": "Darryl Dias",
-    "date": "2015-10-10T00:00:00.000Z"
-  },
-  {
     "title": "Setting up FTP on Koding",
     "url": "https://learn.koding.com/guides/setting-up-ftp-on-koding/index.html",
     "author": "Team Koding",
-    "date": "2015-10-03T00:00:00.000Z"
+    "date": "2015-10-13T00:00:00.000Z"
   },
   {
     "title": "What happened to 127.0.0.1?",
     "url": "https://learn.koding.com/guides/what-happened-to-127-0-0-1/index.html",
     "author": "Team Koding",
-    "date": "2015-09-26T00:00:00.000Z"
-  },
-  {
-    "title": "How can I preview the code that I write on my Koding VM?",
-    "url": "https://learn.koding.com/guides/preview/index.html",
-    "author": "Team Koding",
-    "date": "2015-09-21T00:00:00.000Z"
+    "date": "2015-10-13T00:00:00.000Z"
   }
 ]

@@ -1,26 +1,38 @@
 [
   {
+    "title": "How to install Wildfly",
+    "url": "https://learn.koding.com/guides/installing-wildfly/index.html",
+    "author": "Team Koding",
+    "date": "2015-11-02T00:00:00.000Z"
+  },
+  {
+    "title": "How to install Oracle JDK",
+    "url": "https://learn.koding.com/guides/installing-oracle-jdk/index.html",
+    "author": "Team Koding",
+    "date": "2015-11-02T00:00:00.000Z"
+  },
+  {
     "title": "Hello World on Koding: Java",
     "url": "https://learn.koding.com/guides/hello-world/java/index.html",
     "author": "Team Koding",
-    "date": "2015-06-06T00:00:00.000Z"
-  },
-  {
-    "title": "Getting Started with JSP and Maven",
-    "url": "https://learn.koding.com/guides/getting-started-jsp-maven/index.html",
-    "author": "Gregory Mihalik",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-06-01T00:00:00.000Z"
   },
   {
     "title": "Cassandra installation for beginners",
     "url": "https://learn.koding.com/guides/cassandra-installation-beginners/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-05-19T00:00:00.000Z"
   },
   {
     "title": "Apache Tomcat on Koding",
     "url": "https://learn.koding.com/guides/apache-tomcat-on-koding/index.html",
     "author": "Vinay Jain",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-05-19T00:00:00.000Z"
+  },
+  {
+    "title": "Getting Started with JSP and Maven",
+    "url": "https://learn.koding.com/guides/getting-started-jsp-maven/index.html",
+    "author": "Gregory Mihalik",
+    "date": "2015-04-29T00:00:00.000Z"
   }
 ]

@@ -48,11 +48,11 @@ need to reinit"\>
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?208" />
+    <link rel="stylesheet" href="/css/vendor.css?895" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?933" />
+    <link rel="stylesheet" href="/css/main.css?207" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?617" />
+    <link rel="stylesheet" href="/css/rwd.css?61" />
     <!-- Google WebMaster Tools Auth for PD team -->
     <meta name="google-site-verification" content="xit6W5qyYuPGq49UXRRZNm_HW5bUxyPS0hqJRDP-2tg" />
 	</head>
@@ -259,7 +259,7 @@ need to reinit"\>
   </li>
 
   
-  <li class="">
+  <li class="zactive">
     <h5>Latest Guides</h5>
     <ul>
     
@@ -276,7 +276,11 @@ need to reinit"\>
       </li>
     
       <li class="">
-        <a href="/guides/connect-laravel-mysql">Connecting Laravel to a MySQL Database</a>
+        <a href="/guides/installing-wildfly">How to install Wildfly</a>
+      </li>
+    
+      <li class="zactive">
+        <a href="/guides/upgrading-your-vm">Updating the OS (and other packages) your VM</a>
       </li>
     
       <li class="">
@@ -284,15 +288,11 @@ need to reinit"\>
       </li>
     
       <li class="">
-        <a href="/guides/install-phpmyadmin">Install phpMyAdmin</a>
+        <a href="/guides/installing-oracle-jdk">How to install Oracle JDK</a>
       </li>
     
       <li class="">
-        <a href="/guides/updating-nodejs-on-your-vm">Updating Node.js on your VM</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/setting-up-ftp-on-koding">Setting up FTP on Koding</a>
+        <a href="/guides/connect-laravel-mysql">Connecting Laravel to a MySQL Database</a>
       </li>
     
     </ul>
@@ -313,7 +313,7 @@ need to reinit"\>
     <li class="author username">
        by <span rel="author">Team Koding</span>
     </li>
-    <li class="updated">Updated 2 months ago</li>
+    <li class="updated">Updated 9 hours ago</li>
   </ul>
 
 
@@ -356,9 +356,9 @@ performed are against the latest levels available on the Ubuntu update servers.<
 <pre><code>sudo apt-<span class="hljs-built_in">get</span> <span class="hljs-keyword">update</span>
 </code></pre><blockquote class="alert fa fa-exclamation-circle"> <p><span class="label">alert</span>No software has been updated at this time, just the list of available packages has been updated.</p>
  </blockquote><h3 class="heading"> <a name="upgrading-existing-packages" class="anchor" href="#upgrading-existing-packages"></a> Upgrading existing packages </h3><p>These series of commands will update all <em>existing</em> packages. These will NOT install new packages.</p>
-<p>To update all currently installed packages  to their latest levels, issue the following command in
-Terminal:</p>
-<pre><code>sudo apt-<span class="hljs-keyword">get</span> upgrade
+<p>To update all currently installed packages and the packages that they depend on, to their latest levels, 
+issue the following command in the Terminal:</p>
+<pre><code>sudo apt-<span class="hljs-built_in">get</span> <span class="hljs-built_in">dist</span>-upgrade
 </code></pre><p>The system will analyze which packages on your VM need an update and will give you an estimate
 of the space needed. Make sure that the number shown here is less than the number you saw earlier
 when you checked for available disk space. To be sure, add an extra 100MB to the number <code>apt-get</code>
@@ -379,19 +379,9 @@ to &quot;ok&quot; and then press enter to continue.</p>
 <p>If all went well, you will end up on a screen that looks like this and the cursor is at the command
 prompt again:
 <img src="finish.png" alt="Finish"></p>
-<p>Congratulations! You have just finished upgrading your existing packages to their latest official
-released levels. This will also include officially released security patches for all existing
-software packages.</p>
-<p>If you just wanted to update the  , you can stop now. If you also wish to update your Ubuntu distribution,
- then you can continue to the next section.</p>
-<h3 class="heading"> <a name="upgrading-your-ubuntu-distribution" class="anchor" href="#upgrading-your-ubuntu-distribution"></a> Upgrading your Ubuntu Distribution </h3><p>This command will install new packages that have been released for Ubuntu. As before, please make
-sure that you have re-checked the available disk space before proceeding.</p>
-<p>Type in the following command to begin the update process:</p>
-<pre><code>sudo apt-<span class="hljs-built_in">get</span> <span class="hljs-built_in">dist</span>-upgrade
-</code></pre><p>The command will pull in new versions of the Linux Kernel (if any are available). Just like before,
-if you encounter any screens that ask for overwriting existing files, please follow the recommendations
-from the previous section. Once done, you should see something like this:
-<img src="update-done.png" alt="update done"></p>
+<p>Congratulations! You have just finished upgrading your existing packages and the packages that they 
+depend upon, to their latest official released levels. This will also include officially released 
+security patches for all existing software packages.</p>
 <p>Now, let&apos;s reboot the VM. Open up the settings modal for your VM and toggle the on/off switch. Once
 the VM turns off and you see the button to turn it on, go ahead and click it. This is necessary
 to ensure that the updated files are brought into use.</p>
@@ -401,7 +391,11 @@ to ensure that the updated files are brought into use.</p>
 <pre><code>3<span class="hljs-class">.13</span><span class="hljs-class">.0-43-generic</span> <span class="hljs-id">#72-Ubuntu</span> <span class="hljs-tag">SMP</span> <span class="hljs-tag">Mon</span> <span class="hljs-tag">Dec</span> 8 19<span class="hljs-pseudo">:35</span><span class="hljs-pseudo">:06</span> <span class="hljs-tag">UTC</span> 2014
 </code></pre><p>note that the kernel version has updated. You&apos;ve just updated your VM to the latest Linux
 kernel!</p>
-<h3 class="heading"> <a name="if-something-goes-wrong" class="anchor" href="#if-something-goes-wrong"></a> If something goes wrong </h3><p>Your Koding VM can easily be reinitialized to our official version (the version you got when you
+<p>One last thing, to help clean up your system it&apos;s always good to clean up.  If a new kernel was installed 
+you can remove the old one, and if some packages are no longer used they can be removed as well.  To do this
+type in the following command in Terminal:</p>
+<pre><code>sudo apt-<span class="hljs-keyword">get</span> autoclean
+</code></pre><h3 class="heading"> <a name="if-something-goes-wrong" class="anchor" href="#if-something-goes-wrong"></a> If something goes wrong </h3><p>Your Koding VM can easily be reinitialized to our official version (the version you got when you
 made a new Koding account) so if all these updates leave you with an unusable VM, try <a href="http://learn.koding.com/faq/vm-reinit/">reinitializing
 your VM back to its original state</a>.</p>
 
