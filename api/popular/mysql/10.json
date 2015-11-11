@@ -3,13 +3,13 @@
     "title": "Installing MySQL",
     "url": "http://learn.koding.com/guides/installing-mysql/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-04-29T00:00:00.000Z"
   },
   {
     "title": "Install phpMyAdmin",
     "url": "http://learn.koding.com/guides/install-phpmyadmin/index.html",
     "author": "Team Koding",
-    "date": "2015-10-15T00:00:00.000Z"
+    "date": "2015-10-13T00:00:00.000Z"
   },
   {
     "title": "Connecting Laravel to a MySQL Database",
@@ -21,6 +21,6 @@
     "title": "Using mySQL",
     "url": "http://learn.koding.com/guides/using-mysql/index.html",
     "author": "Alvin Wan",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-05-19T00:00:00.000Z"
   }
 ]
