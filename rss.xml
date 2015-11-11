@@ -19,20 +19,20 @@
   
   <item>
     <title>Getting Started with Clojure</title>
-    <link>//learn.koding.com/guides/gettings_started_with_Clojure</link>
+    <link>//learn.koding.com/guides/getting-started-clojure</link>
     <pubDate>"2015-11-11T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/gettings_started_with_Clojure</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/getting-started-clojure</guid>
     <author>Jajati K. Sahoo</author>
     <description>In this guide we&amp;apos;ll introduce Clojure and how to write your first program
 in Koding.
-Clojure is a functional programming language that features a concise syntax, 
-elegant concurrency support. The best feature of this language is it&amp;apos;s ability 
+Clojure is a functional programming language that features a concise syntax,
+elegant concurrency support. The best feature of this language is it&amp;apos;s ability
 to compile into Java byte code and running it on the standard JVM.
-  Setting up Clojure Clojure is written in Java and is available in the form of a Jar file. To use 
-the Clojure interpreter, one must download it from the maven repository below. 
+  Setting up Clojure Clojure is written in Java and is available in the form of a Jar file. To use
+the Clojure interpreter, one must download it from the maven repository below.
 The below command will download Clojure in the current directory.
 $ curl -O -J -L http://repo1.maven.org/maven2/org/clojure/clojure/1.6.0/clojure-1.6.0.zip
-If the link doesn&amp;apos;t work, please take the latest Maven repository from 
+If the link doesn&amp;apos;t work, please take the latest Maven repository from
 Clojure website.
   The Clojure Shell or the REPL To enter the Clojure shell or REPL, execute the following command from the Terminal.
 To be able execute the following you must have a valid JRE in your VM.
@@ -42,7 +42,7 @@ user=&amp;gt; (+ 10 10)
 20
 
   Creating a shortcut for Clojure. If you wish to create a shortcut to the Clojure shell, you can create a small script and put it
-in the ~/bin directory. You could name the script cloj.sh and put the following content 
+in the ~/bin directory. You could name the script cloj.sh and put the following content
 there.
 #!/bin/bash
 
@@ -52,7 +52,7 @@ Then use the following command to make it executable.
 chmod +x ~/bin/cloj.sh
 
 To access the Clojure shell, you can type $ cloj.sh command anywhere from the Terminal.
-  Install Lein Lein is the build tool for Clojure. It creates the project structure and builds your 
+  Install Lein Lein is the build tool for Clojure. It creates the project structure and builds your
 Clojure application. The following steps may be used to install Lein.
 
 First download the lein application using the following command in your ~/bin directory.
@@ -940,6 +940,234 @@ This has been a beginner guide from Koding. As always, more Quick Tips and begin
   </item>
   
   <item>
+    <title>Understanding file permissions</title>
+    <link>//learn.koding.com/guides/understanding-file-permissions</link>
+    <pubDate>"2015-08-14T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/understanding-file-permissions</guid>
+    <author>Team Koding</author>
+    <description>Linux-based systems, Ubuntu being one of them, have a simple system for managing individual file permissions, The Unix concepts for file ownership and permissions are the main driving force behind Linux and it&amp;apos;s security at the file system level.
+This guide will cover the basics of file permissions and how you can modify them.
+  Users and groups Because Linux is a multi-user system we have two main types of users: system users and regular users. By default system users are used when the system requires running non-interactive and or background processes. On the other hand the regular users are used for everything else.
+A Linux-based system also has a superuser or root user that has absolute power over the system including modifying file ownership and permissions.
+Linux-based systems also have groups. A group is a collection of 0 or more users. Each user belongs by default to a group but can also be a part of multiple groups.
+  Ownership and permissions Each file, in a Linux-based system, belongs to a single user and a single group and has certain access permissions. You as a user can view the permissions of a file, using this command:
+ls -l &amp;lt;the name of your file or all files in a directory&amp;gt;
+Bellow is an example of what the command ls -l /Web outputs when you run it in your Koding VM Terminal.
+
+
+
+Mode
+Owner
+Group
+File size
+Last modified
+Filename
+
+
+
+
+-rw-r--r-- 1
+jakemurray
+jakemurray
+1252
+Feb 18 20:04
+index.html
+
+
+drwxr-xr-x 1
+jakemurray
+www-data
+1414
+Feb 18 20:04
+perl
+
+
+-rw-r--r-- 1
+jakemurray
+jakemurray
+1247
+Feb 18 20:04
+php.php
+
+
+-rwxr-xr-x 1
+root
+jakemurray
+1431
+Feb 18 20:04
+python.py
+
+
+-rwxr-xr-x 1
+jakemurray
+jakemurray
+1574
+Feb 18 20:04
+ruby.rb
+
+
+
+Looking at the Mode column you notice some letters. What do they mean?
+The first letter in the Mode column represents the type of file. In Linux, there are two basic types of files: normal and special.
+Linux-based systems permissions allow 3 things to be done to a file: read, write and execute.
+
+r (read) - a user can view the contents of the file.
+w (write) - a user can change the contents of the file.
+x (execute) - a user can execute or run the file if it is a program or script.
+
+Every file can have defined 3 sets of people for whom you can specify permissions.
+
+owner - a single user who owns the file. (usually the person who created the file)
+group - every file belongs to a single group.
+other - everyone else who is not in the group or the owner.
+
+  Changing file permissions To change permissions on a file or directory you can use the chmod command.
+chmod [permissions] [path]
+The chmod command has permission arguments that are made up of 3 components.
+
+Who are you changing the permission for? - owner, group or other
+Are you granting or revoking the permission - indicated with either a plus ( + ) or a minus ( - )
+Which permission are you setting? - read ( r ), write ( w ) or execute ( x ).
+
+Here is a quick example:
+Grant execute permissions for the demo.html file for the entire group the file belongs to.
+chmod g+x demo.html
+You can also set permission on files or folders using the octal notation. By using this method, each permissions category (owner, group, and other) is represented by a number between 0 and 7.
+Here is a quick example of usage of the octal notation:
+chmod 751 demo.html
+If you want to change the owner and group of a file or folder you can use the chown command.
+The basic syntax for using chown to change owners and groups is:
+chown [options] new_owner:new_group &amp;lt;name of file or folder&amp;gt;
+For example, the following command would transfer the ownership and change the group of a file named demo1 to a new owner named demo and the www-data group:
+chown demo:www-data demo1
+ tipNote: The same principles also apply to folders
+ You should now be able to understand how ownership and permissions work in Linux.
+If you encounter any issues or have any questions please drop us an email here.
+</description>
+  </item>
+  
+  <item>
+    <title>Using PostgreSQL</title>
+    <link>//learn.koding.com/guides/postgresql-on-koding</link>
+    <pubDate>"2015-08-14T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/postgresql-on-koding</guid>
+    <author>Federico Ponzi</author>
+    <description>PostgreSQL is an open source relational database management system that 
+provides an implementation of the SQL query language. In this guide, 
+we&amp;apos;ll go over using PostgreSQL on your Koding VM. Lets get started!
+  Starting PostgreSQL Before we gets started, start your PostgreSQL server with the following 
+command.
+sudo service postgresql start
+If you see an error like the following message, you may need to go 
+through the Installing PostgreSQL.
+psql: could not connect to server: No such file or directory
+Is the server running locally and accepting
+connections on Unix domain socket &amp;quot;/var/run/postgresql/.s.PGSQL.5432&amp;quot;?
+  Getting Started To getting started with postgreSQL, open your Terminal, and type:
+username$ sudo su - postgres
+Now you are logged into your vm with the postgres user. Then connect to template1 database using the postgresql&amp;apos;s psql client:
+postgres ~$  psql template1
+postgres ~$  template1=#
+Note the # symbol, declaring that you are logged to the database as a Super User. Now for enchaned security change your default postgres&amp;apos;s password:
+template1=# \password
+Enter new password:
+Enter it again:
+Nice, we are near the end: now create a new user with createdb permission with same username of your vm. So if your username is koding02, your prompt should be like:
+koding02 ~$
+Create a new user using the CREATE USER command like this:
+template1=# CREATE USER username
+template1-# WITH PASSWORD &amp;apos;password&amp;apos; createdb;
+CREATE ROLE
+template1=#
+You are done configurating PostgreSQL! Now disconnect from the database using \q, and quit from postgres user using ctrl+d.
+Now you can create a new database using the command:
+createdb myFreshNewDb
+And delete it using the deletedb tool:
+deletedb myFreshNewDb
+Once you have created a database, you can connect to it using the psql client like we did before:
+psql myFreshNewDb
+myFresNewDb=&amp;gt;
+  Using Psql client Let&amp;apos;s see some useful commands of the psql tool. 
+First of all: you can get some help just typing \? in your psql command line.
+To exit from the appearing screen, just press the q button.
+To load and execute SQL statements from file, you can use this syntax:
+\i my/file/path.sql
+Writing long lines of SQL code in the command line can be really hard to debug. Use the \i to run from file or use:
+\e
+To edit the input buffer with an editor. If you usually don&amp;apos;t use editor from command line use nano - it&amp;apos;s the simplest.
+To check what relations your database contains, use
+\d
+If you want more information about a particular relation, use
+\d myfancytable
+Have fun!
+</description>
+  </item>
+  
+  <item>
+    <title>Connect your own machine to Koding</title>
+    <link>//learn.koding.com/guides/connect-your-machine</link>
+    <pubDate>"2015-08-14T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/connect-your-machine</guid>
+    <author>Team Koding</author>
+    <description>  What does &amp;quot;connect your own machine&amp;quot; mean? This feature allows you to connect your own machine (physical or virtual) to your Koding account so that it will
+show up in the sidebar just like a regular Koding VM. This means that once your machine is connected to Koding,
+you can open a Terminal and any file on that machine directly from your Koding account! You can even start
+collaboration sessions!
+  What types of machines can I connect to my Koding account? Presently, the following are the requirements for any machine that can be connected to Koding:
+
+the machine needs to have a public IP address
+the machine must be running Ubuntu Linux 13.x or 14.x (support for 15.x is coming)
+you must have root/sudo access on the system
+
+In addition to these machine related requirements, you must also ensure that you have the following
+ports open (in case you are running a firewall):
+
+80/tcp
+56789/tcp
+
+  How does Koding make this happen? The steps are outlined below but in a nutshell, what happens is that you download our &amp;quot;Koding Service Connector&amp;quot;
+to your machine and this service acts like a &amp;quot;bridge&amp;quot; between your machine and your Koding account.
+  How can I connect my own machine to Koding? Connecting your machine to Koding is easy, just follow these steps but first make sure that the requirements
+stated above are met:
+
+Bring up the VMs list dialogue box as shown in the screen shot.
+
+
+Click &amp;quot;Add Your Own VM&amp;quot;
+
+
+In the dialogue box that appears, copy the install script and run it on your machine
+
+ tipLeave the dialogue box open while you run the install script on your machine. This is a 
+requirement since we are &amp;quot;listening&amp;quot; for a connection from your machine. Also, make sure
+you have root access to run the install script otherwise it will fail.
+ 
+The install script will download the necessary software, configure it and install it on your
+machine.
+
+
+Once the install script is done running on your machine, within a few seconds your machine
+should show up in the sidebar.
+
+
+
+  Are there any limits to how many machines I can connect? Our free accounts are restricted to one external machine and paid accounts don&amp;apos;t have any limits to the number
+of machines/VMs they can connect to their Koding account.
+  Video overview  
+ 
+ 
+
+  How can I disconnect a machine that I have connected to my Koding account? To disconnect a machine, simply go over to machine/VM settings and then click the advanced tab. On that tab you will see
+the disconnect button. Click the button to disconnect the machine from your Koding account.
+ tipNote: Disconnecting will just break the connection between Koding and your machine. Your machine will
+still be running and all files will be available on it. 
+ If you wish to completely uninstall the Koding Connector Service from your machine, simply run this 
+command on the machine that you had connected:
+sudo dpkg -P klient
+</description>
+  </item>
+  
+  <item>
     <title>Getting Started with NodeJS</title>
     <link>//learn.koding.com/guides/getting-started-nodejs</link>
     <pubDate>"2015-08-14T00:00:00.000Z"</pubDate>
@@ -1071,234 +1299,6 @@ This sums up the Getting Started with NodeJS guide. You should now have a
 good understanding of what Node is, from a very basic perspective. As 
 always, don&amp;apos;t forget to look at the API Documentation. Have 
 fun with Node!
-</description>
-  </item>
-  
-  <item>
-    <title>Understanding file permissions</title>
-    <link>//learn.koding.com/guides/understanding-file-permissions</link>
-    <pubDate>"2015-08-14T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/understanding-file-permissions</guid>
-    <author>Team Koding</author>
-    <description>Linux-based systems, Ubuntu being one of them, have a simple system for managing individual file permissions, The Unix concepts for file ownership and permissions are the main driving force behind Linux and it&amp;apos;s security at the file system level.
-This guide will cover the basics of file permissions and how you can modify them.
-  Users and groups Because Linux is a multi-user system we have two main types of users: system users and regular users. By default system users are used when the system requires running non-interactive and or background processes. On the other hand the regular users are used for everything else.
-A Linux-based system also has a superuser or root user that has absolute power over the system including modifying file ownership and permissions.
-Linux-based systems also have groups. A group is a collection of 0 or more users. Each user belongs by default to a group but can also be a part of multiple groups.
-  Ownership and permissions Each file, in a Linux-based system, belongs to a single user and a single group and has certain access permissions. You as a user can view the permissions of a file, using this command:
-ls -l &amp;lt;the name of your file or all files in a directory&amp;gt;
-Bellow is an example of what the command ls -l /Web outputs when you run it in your Koding VM Terminal.
-
-
-
-Mode
-Owner
-Group
-File size
-Last modified
-Filename
-
-
-
-
--rw-r--r-- 1
-jakemurray
-jakemurray
-1252
-Feb 18 20:04
-index.html
-
-
-drwxr-xr-x 1
-jakemurray
-www-data
-1414
-Feb 18 20:04
-perl
-
-
--rw-r--r-- 1
-jakemurray
-jakemurray
-1247
-Feb 18 20:04
-php.php
-
-
--rwxr-xr-x 1
-root
-jakemurray
-1431
-Feb 18 20:04
-python.py
-
-
--rwxr-xr-x 1
-jakemurray
-jakemurray
-1574
-Feb 18 20:04
-ruby.rb
-
-
-
-Looking at the Mode column you notice some letters. What do they mean?
-The first letter in the Mode column represents the type of file. In Linux, there are two basic types of files: normal and special.
-Linux-based systems permissions allow 3 things to be done to a file: read, write and execute.
-
-r (read) - a user can view the contents of the file.
-w (write) - a user can change the contents of the file.
-x (execute) - a user can execute or run the file if it is a program or script.
-
-Every file can have defined 3 sets of people for whom you can specify permissions.
-
-owner - a single user who owns the file. (usually the person who created the file)
-group - every file belongs to a single group.
-other - everyone else who is not in the group or the owner.
-
-  Changing file permissions To change permissions on a file or directory you can use the chmod command.
-chmod [permissions] [path]
-The chmod command has permission arguments that are made up of 3 components.
-
-Who are you changing the permission for? - owner, group or other
-Are you granting or revoking the permission - indicated with either a plus ( + ) or a minus ( - )
-Which permission are you setting? - read ( r ), write ( w ) or execute ( x ).
-
-Here is a quick example:
-Grant execute permissions for the demo.html file for the entire group the file belongs to.
-chmod g+x demo.html
-You can also set permission on files or folders using the octal notation. By using this method, each permissions category (owner, group, and other) is represented by a number between 0 and 7.
-Here is a quick example of usage of the octal notation:
-chmod 751 demo.html
-If you want to change the owner and group of a file or folder you can use the chown command.
-The basic syntax for using chown to change owners and groups is:
-chown [options] new_owner:new_group &amp;lt;name of file or folder&amp;gt;
-For example, the following command would transfer the ownership and change the group of a file named demo1 to a new owner named demo and the www-data group:
-chown demo:www-data demo1
- tipNote: The same principles also apply to folders
- You should now be able to understand how ownership and permissions work in Linux.
-If you encounter any issues or have any questions please drop us an email here.
-</description>
-  </item>
-  
-  <item>
-    <title>Connect your own machine to Koding</title>
-    <link>//learn.koding.com/guides/connect-your-machine</link>
-    <pubDate>"2015-08-14T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/connect-your-machine</guid>
-    <author>Team Koding</author>
-    <description>  What does &amp;quot;connect your own machine&amp;quot; mean? This feature allows you to connect your own machine (physical or virtual) to your Koding account so that it will
-show up in the sidebar just like a regular Koding VM. This means that once your machine is connected to Koding,
-you can open a Terminal and any file on that machine directly from your Koding account! You can even start
-collaboration sessions!
-  What types of machines can I connect to my Koding account? Presently, the following are the requirements for any machine that can be connected to Koding:
-
-the machine needs to have a public IP address
-the machine must be running Ubuntu Linux 13.x or 14.x (support for 15.x is coming)
-you must have root/sudo access on the system
-
-In addition to these machine related requirements, you must also ensure that you have the following
-ports open (in case you are running a firewall):
-
-80/tcp
-56789/tcp
-
-  How does Koding make this happen? The steps are outlined below but in a nutshell, what happens is that you download our &amp;quot;Koding Service Connector&amp;quot;
-to your machine and this service acts like a &amp;quot;bridge&amp;quot; between your machine and your Koding account.
-  How can I connect my own machine to Koding? Connecting your machine to Koding is easy, just follow these steps but first make sure that the requirements
-stated above are met:
-
-Bring up the VMs list dialogue box as shown in the screen shot.
-
-
-Click &amp;quot;Add Your Own VM&amp;quot;
-
-
-In the dialogue box that appears, copy the install script and run it on your machine
-
- tipLeave the dialogue box open while you run the install script on your machine. This is a 
-requirement since we are &amp;quot;listening&amp;quot; for a connection from your machine. Also, make sure
-you have root access to run the install script otherwise it will fail.
- 
-The install script will download the necessary software, configure it and install it on your
-machine.
-
-
-Once the install script is done running on your machine, within a few seconds your machine
-should show up in the sidebar.
-
-
-
-  Are there any limits to how many machines I can connect? Our free accounts are restricted to one external machine and paid accounts don&amp;apos;t have any limits to the number
-of machines/VMs they can connect to their Koding account.
-  Video overview  
- 
- 
-
-  How can I disconnect a machine that I have connected to my Koding account? To disconnect a machine, simply go over to machine/VM settings and then click the advanced tab. On that tab you will see
-the disconnect button. Click the button to disconnect the machine from your Koding account.
- tipNote: Disconnecting will just break the connection between Koding and your machine. Your machine will
-still be running and all files will be available on it. 
- If you wish to completely uninstall the Koding Connector Service from your machine, simply run this 
-command on the machine that you had connected:
-sudo dpkg -P klient
-</description>
-  </item>
-  
-  <item>
-    <title>Using PostgreSQL</title>
-    <link>//learn.koding.com/guides/postgresql-on-koding</link>
-    <pubDate>"2015-08-14T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/postgresql-on-koding</guid>
-    <author>Federico Ponzi</author>
-    <description>PostgreSQL is an open source relational database management system that 
-provides an implementation of the SQL query language. In this guide, 
-we&amp;apos;ll go over using PostgreSQL on your Koding VM. Lets get started!
-  Starting PostgreSQL Before we gets started, start your PostgreSQL server with the following 
-command.
-sudo service postgresql start
-If you see an error like the following message, you may need to go 
-through the Installing PostgreSQL.
-psql: could not connect to server: No such file or directory
-Is the server running locally and accepting
-connections on Unix domain socket &amp;quot;/var/run/postgresql/.s.PGSQL.5432&amp;quot;?
-  Getting Started To getting started with postgreSQL, open your Terminal, and type:
-username$ sudo su - postgres
-Now you are logged into your vm with the postgres user. Then connect to template1 database using the postgresql&amp;apos;s psql client:
-postgres ~$  psql template1
-postgres ~$  template1=#
-Note the # symbol, declaring that you are logged to the database as a Super User. Now for enchaned security change your default postgres&amp;apos;s password:
-template1=# \password
-Enter new password:
-Enter it again:
-Nice, we are near the end: now create a new user with createdb permission with same username of your vm. So if your username is koding02, your prompt should be like:
-koding02 ~$
-Create a new user using the CREATE USER command like this:
-template1=# CREATE USER username
-template1-# WITH PASSWORD &amp;apos;password&amp;apos; createdb;
-CREATE ROLE
-template1=#
-You are done configurating PostgreSQL! Now disconnect from the database using \q, and quit from postgres user using ctrl+d.
-Now you can create a new database using the command:
-createdb myFreshNewDb
-And delete it using the deletedb tool:
-deletedb myFreshNewDb
-Once you have created a database, you can connect to it using the psql client like we did before:
-psql myFreshNewDb
-myFresNewDb=&amp;gt;
-  Using Psql client Let&amp;apos;s see some useful commands of the psql tool. 
-First of all: you can get some help just typing \? in your psql command line.
-To exit from the appearing screen, just press the q button.
-To load and execute SQL statements from file, you can use this syntax:
-\i my/file/path.sql
-Writing long lines of SQL code in the command line can be really hard to debug. Use the \i to run from file or use:
-\e
-To edit the input buffer with an editor. If you usually don&amp;apos;t use editor from command line use nano - it&amp;apos;s the simplest.
-To check what relations your database contains, use
-\d
-If you want more information about a particular relation, use
-\d myfancytable
-Have fun!
 </description>
   </item>
   
@@ -1510,6 +1510,65 @@ from the Web to develop and share your web applications. Happy Koding!
   </item>
   
   <item>
+    <title>What is Koding?</title>
+    <link>//learn.koding.com/guides/what-is-koding</link>
+    <pubDate>"2015-07-21T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/what-is-koding</guid>
+    <author>Team Koding</author>
+    <description>Koding is an online cloud-based development environment with the goal of 
+simplifying worldwide development and providing free computation and 
+development to everyone. It does this by offering Free VMs for development 
+to anyone. The Koding VMs provide you with a real Ubuntu OS, with a real 
+Terminal, and allow you to work on real code. It can be any language, be 
+it Python, PHP, C++, C, or anything else, it doesn&amp;apos;t matter. Even better, 
+the VMs are hosted on the cloud, so they&amp;apos;re accessible from just about anywhere 
+in the world.
+  Is Koding a Production Host? Koding is first and foremost a Development Environment, and not a Production 
+Host. All features have been tailored with this in mind and evidence of this is 
+reflected in all of the features you see implemented. Lets highlight some of 
+these items.
+  VMs Shutdown After Logout Approximately 60 minutes after you log out, your Free VMs will shut down. Why? 
+Koding&amp;apos;s development focus is not centered around hosting your blog/site. 
+Koding is here to enable you and to help you make great things. Attempting to 
+be yet another host in a sea of perfectly capable production hosts won&amp;apos;t help 
+achieve that goal.
+Another benefit of this system, is that it helps avoid security concerns that 
+collectively harm us all. There are plenty of users out there who have used 
+Koding to host dangerous applications. Phishing, scamming, spamming, all of it. 
+This directly harms all of us, by giving Koding a bad name, wasting resources, 
+and hindering a service that we are trying to be productive with. It&amp;apos;s no 
+surprise that restrictions need to be put in place to inhibit this behavior, 
+for the benefit of everyone.
+However, if you upgrade your plan, you will have at least one Always-On VM. The 
+number of Always-On VMs you have depends on which plan you upgrade to. More 
+information about these plans can be found here. 
+You can upgrade your plan from the Pricing page. 
+Always-On VMs will never shut down automatically.
+  CPU Bursts vs Sustained Koding wants to help you get work done, and get work done fast. Things like 
+compilers have a lot to compute, but in short sporadic bursts. 
+Koding&amp;apos;s CPU allocation has been tailored with this in mind. It wants you to 
+compute what you need, as soon as possible. It is not designed for a long 
+running process that expects heavy and consistent usage, such as a 
+Minecraft server.
+  Raw Ubuntu OS These days a lot of hosting platforms are heavily optimized for their specific 
+niche(s). They streamline the process of hosting your language or application 
+style of choice, which gives you added stability and performance gains. 
+Examples of this are the plethora of Apache-PHP hosts, Nodejitsu, Google App 
+Engine, Heroku, AppFog, and a nearly limitless amount of others.
+Why is this? Well, production hosting is hard, and there are obvious benefits 
+to letting someone else do it. The idea of uploading your php site to a 
+standard php host is easy. The idea of buying a dedicated server, setting up 
+Apache, firewalls, updates, etc, just seems a bit crazy in comparison. On top 
+of that, what about load balancing and CDNs? Doing it all yourself can be hard.
+Well, Koding gives you that raw machine. It&amp;apos;s not trying to make production 
+hosting for you, but rather it&amp;apos;s giving you a completely open and powerful 
+environment to make stuff! So by all means make your WordPress blog on 
+Koding, and if you really want to host it on Koding, upgrade your plan to 
+include an Always-On VM. Just be aware of the design goals.
+</description>
+  </item>
+  
+  <item>
     <title>Getting Started with Ruby</title>
     <link>//learn.koding.com/guides/getting-started-ruby</link>
     <pubDate>"2015-07-21T00:00:00.000Z"</pubDate>
@@ -1647,65 +1706,6 @@ Now run it just like before, and visit it in your browser. Just like
 that, you have a working Sinatra web server!
 In a following tutorial we&amp;apos;ll dig deeper into Sinatra, but for now check
 out the Official Documentation. And as always, Happy Koding!
-</description>
-  </item>
-  
-  <item>
-    <title>What is Koding?</title>
-    <link>//learn.koding.com/guides/what-is-koding</link>
-    <pubDate>"2015-07-21T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/what-is-koding</guid>
-    <author>Team Koding</author>
-    <description>Koding is an online cloud-based development environment with the goal of 
-simplifying worldwide development and providing free computation and 
-development to everyone. It does this by offering Free VMs for development 
-to anyone. The Koding VMs provide you with a real Ubuntu OS, with a real 
-Terminal, and allow you to work on real code. It can be any language, be 
-it Python, PHP, C++, C, or anything else, it doesn&amp;apos;t matter. Even better, 
-the VMs are hosted on the cloud, so they&amp;apos;re accessible from just about anywhere 
-in the world.
-  Is Koding a Production Host? Koding is first and foremost a Development Environment, and not a Production 
-Host. All features have been tailored with this in mind and evidence of this is 
-reflected in all of the features you see implemented. Lets highlight some of 
-these items.
-  VMs Shutdown After Logout Approximately 60 minutes after you log out, your Free VMs will shut down. Why? 
-Koding&amp;apos;s development focus is not centered around hosting your blog/site. 
-Koding is here to enable you and to help you make great things. Attempting to 
-be yet another host in a sea of perfectly capable production hosts won&amp;apos;t help 
-achieve that goal.
-Another benefit of this system, is that it helps avoid security concerns that 
-collectively harm us all. There are plenty of users out there who have used 
-Koding to host dangerous applications. Phishing, scamming, spamming, all of it. 
-This directly harms all of us, by giving Koding a bad name, wasting resources, 
-and hindering a service that we are trying to be productive with. It&amp;apos;s no 
-surprise that restrictions need to be put in place to inhibit this behavior, 
-for the benefit of everyone.
-However, if you upgrade your plan, you will have at least one Always-On VM. The 
-number of Always-On VMs you have depends on which plan you upgrade to. More 
-information about these plans can be found here. 
-You can upgrade your plan from the Pricing page. 
-Always-On VMs will never shut down automatically.
-  CPU Bursts vs Sustained Koding wants to help you get work done, and get work done fast. Things like 
-compilers have a lot to compute, but in short sporadic bursts. 
-Koding&amp;apos;s CPU allocation has been tailored with this in mind. It wants you to 
-compute what you need, as soon as possible. It is not designed for a long 
-running process that expects heavy and consistent usage, such as a 
-Minecraft server.
-  Raw Ubuntu OS These days a lot of hosting platforms are heavily optimized for their specific 
-niche(s). They streamline the process of hosting your language or application 
-style of choice, which gives you added stability and performance gains. 
-Examples of this are the plethora of Apache-PHP hosts, Nodejitsu, Google App 
-Engine, Heroku, AppFog, and a nearly limitless amount of others.
-Why is this? Well, production hosting is hard, and there are obvious benefits 
-to letting someone else do it. The idea of uploading your php site to a 
-standard php host is easy. The idea of buying a dedicated server, setting up 
-Apache, firewalls, updates, etc, just seems a bit crazy in comparison. On top 
-of that, what about load balancing and CDNs? Doing it all yourself can be hard.
-Well, Koding gives you that raw machine. It&amp;apos;s not trying to make production 
-hosting for you, but rather it&amp;apos;s giving you a completely open and powerful 
-environment to make stuff! So by all means make your WordPress blog on 
-Koding, and if you really want to host it on Koding, upgrade your plan to 
-include an Always-On VM. Just be aware of the design goals.
 </description>
   </item>
   
@@ -5066,66 +5066,6 @@ FileZilla Download
   </item>
   
   <item>
-    <title>Setting up SFTP on Koding</title>
-    <link>//learn.koding.com/guides/setting-up-sftp-on-koding</link>
-    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-sftp-on-koding</guid>
-    <author>Team Koding</author>
-    <description>In this guide you&amp;apos;ll go over how to get your SFTP Client connected to your VM&amp;apos;s SFTP Server. You will be using FileZilla as the SFTP Client, but any client should be able to connect to your SFTP Server successfully.
-  What you will need In this tutorial you will need the following.
-
-A Koding account, and your Koding Username.
-The Address of the VM you&amp;apos;d like to connect to. Instructions can be found here.
-
-  Update your software sources Before getting started, make sure you have the latest sources locked down. Type in:
-sudo apt-get update
-and let the update process complete. It should not require any input.
-  Installing First off, you&amp;apos;ll need to install openssh-server. This can be done by pasting the following command into your Koding IDE&amp;apos;s Terminal.
- tipThe openssh-server package comes preinstalled on all Koding VMs.
- sudo apt-get install openssh-server
-  Configure After the install process has finished you&amp;apos;ll need to configure the SFTP server. Start by editing the following file /etc/ssh/sshd_config like so:
-sudo nano /etc/ssh/sshd_config
-Find the below line:
-Subsystem sftp /usr/lib/openssh/sftp-server
-and replace it with:
-Subsystem sftp internal-sftp
-Match group root
-ChrootDirectory %h
-X11Forwarding no
-AllowTcpForwarding no
-ForceCommand internal-sftp
-finally comment the below line:
-#UsePAM yes
-After you have performed this steps you&amp;apos;ll need to restart the service using this command:
-sudo service ssh restart
-  Copy your Public Key Now you need to allow access via ssh. So the first thing you need to do is to, copy your Public Key, usually found in ~/.ssh/id_rsa.pub, and copy it in its entirety. Note the .pub in the filename. This is the public key, and it is very important that you copy this one. It will look something like this.
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyhKankDE4DRM86JqZ3JPdWDeqg+Tbzlql
-TLfOKTeokhRoMgy5WoMY/ZWUVES3d2vSHHwW3cwWlELmVdc3Ow57boZv3fOsPhybYHVRTClX
-Yr1ncSxyTvjvCfvV5q22aIxHPWQ353543ssda87sa+85XEa4VnveJsEzxBZl4oJ4GB0AGa48
-+UdIqutrgZu7D7JCK+Yl228X+3bJf3ddlqDaKaVXPivvvYqImK6ZwFsxh2lNO4E8IOd3OSK9
-zv6i+io8PxWmwP0tLFokxulAI8Td1sOPBE9s9bdJ5c2T/GfGjKF+aNKsd33TsYEjjc/plMZm
-RRrOgQwre6OAkgMvyV2X foo@bar.baz
-  Adding to your Authorized Keys Next, we need to create a file called authorized_keys on your Koding VM, and paste the previously copied key into it. Run the following commands in your Koding Terminal.
-mkdir -p ~/.ssh
-touch ~/.ssh/authorized_keys
-Now, open up the authorized_keys file that you just created, and paste in your public key. To open the file you can use a Terminal editor such as Nano or Vim, or simply use the File Explorer on the left hand side to open the ~/.ssh/authorized_keys file.
-Once the key has been pasted in, save the file.
-  Setting up the SFTP user After the configure process has been completed, You need to set a SFTP password for your user. To do this, paste the following command into your Terminal.
-sudo passwd KODING_USERNAME
-Make sure to replace KODING_USERNAME with your actual Koding username.
-After hitting enter, you&amp;apos;ll be prompted for the SFTP password you wish to use. Not your Koding password.
-  Connecting to your SFTP Server Finally, in your SFTP Client of choice paste your VM Address into the hostname. If you&amp;apos;re not sure what that is, instructions to find it can be found here.
-After the hostname, enter your Koding username, and SFTP password that you chose in the above commands. An example image from FileZilla can be seen below.
- alertThe default port for a SFTP connection is 22. Make sure to specify this when you input the connection details.
- 
-  Additional Resources 
-FileZilla
-FileZilla Download
-
-</description>
-  </item>
-  
-  <item>
     <title>Getting Started with Python</title>
     <link>//learn.koding.com/guides/getting-started-python</link>
     <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
@@ -5302,88 +5242,61 @@ This concludes the getting started with Python guide. Thanks for reading!
   </item>
   
   <item>
-    <title>Using SSH on a Chromebook to connect to your Koding VM</title>
-    <link>//learn.koding.com/guides/ssh-chromebook</link>
+    <title>Setting up SFTP on Koding</title>
+    <link>//learn.koding.com/guides/setting-up-sftp-on-koding</link>
     <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/guides/ssh-chromebook</guid>
+    <guid isPermaLink="true">//learn.koding.com/guides/setting-up-sftp-on-koding</guid>
     <author>Team Koding</author>
-    <description>In this guide, we will cover how to set up ssh on your Chromebook. There are
-two ways you can use SSH on a Chromebook. You can either install Google&amp;apos;s SSH
-Chrome extention
-or use the native SSH client that is built into the Chrome OS. For the purposes
-of this guide, we will use the native SSH client method as it does not
-require the installation of any new software.
-  Step 1: Verify you have crosh installed Before beginning, make sure that you have a newer build of Chrome OS (build 32 or above)
-and that your particular build supports the built in crosh shell which contains
-the SSH client that we will use. To check, press ctrl-alt-T on your keyboard
-and you should be greeted with a screen similar to the one below.
+    <description>In this guide you&amp;apos;ll go over how to get your SFTP Client connected to your VM&amp;apos;s SFTP Server. You will be using FileZilla as the SFTP Client, but any client should be able to connect to your SFTP Server successfully.
+  What you will need In this tutorial you will need the following.
 
-If you do not get the above screen, chances are high that you either have an older
-build of Chrome OS or that your device manufacturer has opted to remove crosh from
-their customd build of the Chrome OS.
-  Step 2: Generate the required ssh private and public keys on your VM  tipIf you already have a private and public key generated, you can
-skip the section below
- Open up Terminal on your Koding VM and type in the following command:
-ssh-keygen
-You will be presented with a few choices, accept all defaults until
-you end up with something like this:
-Generating public/private rsa key pair.
-Enter file in which to save the key (/home/your_username/.ssh/id_rsa):
-Created directory &amp;apos;/home/your_username/.ssh&amp;apos;.
-Enter passphrase (empty for no passphrase):
-Enter same passphrase again:
-Your identification has been saved in /home/your_username/.ssh/id_rsa.
-Your public key has been saved in /home/your_username/.ssh/id_rsa.pub.
-The key fingerprint is:
-7a:36:29:6d:9d:5c:45:5a:8b:53:c0:1a:61:29:3f:ce your_username@your_username
-The key&amp;apos;s randomart image is:
-+--[ RSA 2048]----+
-|          o+..+  |
-|        ..o .* . |
-|         o o+ o  |
-|          +  o   |
-|        So ..    |
-|       o +Eo     |
-|      o B +      |
-|       = .       |
-|                 |
-+-----------------+
-  Step 3: Copy the generated public key to authotized_keys file on your VM Doing this allows your Chromebook to be recognized as a valid host (once we copy
-over the private keys, which is the next step).
-Create an authorized_keys file (if it does not exist)
+A Koding account, and your Koding Username.
+The Address of the VM you&amp;apos;d like to connect to. Instructions can be found here.
+
+  Update your software sources Before getting started, make sure you have the latest sources locked down. Type in:
+sudo apt-get update
+and let the update process complete. It should not require any input.
+  Installing First off, you&amp;apos;ll need to install openssh-server. This can be done by pasting the following command into your Koding IDE&amp;apos;s Terminal.
+ tipThe openssh-server package comes preinstalled on all Koding VMs.
+ sudo apt-get install openssh-server
+  Configure After the install process has finished you&amp;apos;ll need to configure the SFTP server. Start by editing the following file /etc/ssh/sshd_config like so:
+sudo nano /etc/ssh/sshd_config
+Find the below line:
+Subsystem sftp /usr/lib/openssh/sftp-server
+and replace it with:
+Subsystem sftp internal-sftp
+Match group root
+ChrootDirectory %h
+X11Forwarding no
+AllowTcpForwarding no
+ForceCommand internal-sftp
+finally comment the below line:
+#UsePAM yes
+After you have performed this steps you&amp;apos;ll need to restart the service using this command:
+sudo service ssh restart
+  Copy your Public Key Now you need to allow access via ssh. So the first thing you need to do is to, copy your Public Key, usually found in ~/.ssh/id_rsa.pub, and copy it in its entirety. Note the .pub in the filename. This is the public key, and it is very important that you copy this one. It will look something like this.
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyhKankDE4DRM86JqZ3JPdWDeqg+Tbzlql
+TLfOKTeokhRoMgy5WoMY/ZWUVES3d2vSHHwW3cwWlELmVdc3Ow57boZv3fOsPhybYHVRTClX
+Yr1ncSxyTvjvCfvV5q22aIxHPWQ353543ssda87sa+85XEa4VnveJsEzxBZl4oJ4GB0AGa48
++UdIqutrgZu7D7JCK+Yl228X+3bJf3ddlqDaKaVXPivvvYqImK6ZwFsxh2lNO4E8IOd3OSK9
+zv6i+io8PxWmwP0tLFokxulAI8Td1sOPBE9s9bdJ5c2T/GfGjKF+aNKsd33TsYEjjc/plMZm
+RRrOgQwre6OAkgMvyV2X foo@bar.baz
+  Adding to your Authorized Keys Next, we need to create a file called authorized_keys on your Koding VM, and paste the previously copied key into it. Run the following commands in your Koding Terminal.
+mkdir -p ~/.ssh
 touch ~/.ssh/authorized_keys
-Copy the public key into it.
-cat ~/.ssh/id_rsa.pub &amp;gt;&amp;gt; ~/.ssh/authorized_keys
-  Step 4: Moving the generated private key to your Chromebook To achieve this, we will first copy over the private key to
-our Web folder so that we can download it over the browser.
- alertAfter downloading the private key you should immediately
-delete if from your Web folder. This is not the most secure way
-of copying over your file but is the easiest. If you prefer, you
-can also upload the file to your Google Drive account and then
-download it your Chromebook.
- Copy the private key to your Web folder:
-cp ~/.ssh/id_rsa ~/Web/.
-chmod 655 ~/Web/id_rsa
-Now hop over to your Chromebook and type in the Web URL of your VM to
-download this file. The Web URL of your VM usually is:
-yourusername.koding.io/id_rsa
-
-Make sure you have the file without the .txt extension. You can check/rename
-the file by using the Files app on your Chromebook (as seen in the screenshot
-below).
-
-As soon as the file is downloaded on your Chromebook, delete it from
-the Web folder of your VM
-rm ~/Web/id_rsa
-At this point, you now have the generated private key on your Chromebook
-and are ready to connect.
-Press ctrl-alt-T to bring up crosh and then on the crosh shell, type ssh
-Use the following commands to set up ssh:
-host = your_koding_username.koding.io
-user = your_koding_username
-key = id_rsa
-
-Once you press enter, you should be dropped into your Koding VM!
+Now, open up the authorized_keys file that you just created, and paste in your public key. To open the file you can use a Terminal editor such as Nano or Vim, or simply use the File Explorer on the left hand side to open the ~/.ssh/authorized_keys file.
+Once the key has been pasted in, save the file.
+  Setting up the SFTP user After the configure process has been completed, You need to set a SFTP password for your user. To do this, paste the following command into your Terminal.
+sudo passwd KODING_USERNAME
+Make sure to replace KODING_USERNAME with your actual Koding username.
+After hitting enter, you&amp;apos;ll be prompted for the SFTP password you wish to use. Not your Koding password.
+  Connecting to your SFTP Server Finally, in your SFTP Client of choice paste your VM Address into the hostname. If you&amp;apos;re not sure what that is, instructions to find it can be found here.
+After the hostname, enter your Koding username, and SFTP password that you chose in the above commands. An example image from FileZilla can be seen below.
+ alertThe default port for a SFTP connection is 22. Make sure to specify this when you input the connection details.
+ 
+  Additional Resources 
+FileZilla
+FileZilla Download
 
 </description>
   </item>
@@ -5790,6 +5703,93 @@ sudo chown myuser:www-data files # NB this is server/user specific!
 chmod 0775 files
  alertYou need to change these permissions back to something more sane afterwards&amp;#x2026; 0644 and 0775 seem to be ok, but I&amp;#x2019;m open to abuse on the matter.)
  And you&amp;#x2019;re off! To open your VM in a browser, click the ellipsis next to your VM name (probably koding-vm-0) and then the VM name to open the site in a new tab, and follow the usual Drupal installer instructions! NB If you&amp;apos;re a developer, you might want to check out Webchick&amp;apos;s setup video from Drupalcon AMS: http://www.youtube.com/watch?v=wKdU2Q1NIZQ
+</description>
+  </item>
+  
+  <item>
+    <title>Using SSH on a Chromebook to connect to your Koding VM</title>
+    <link>//learn.koding.com/guides/ssh-chromebook</link>
+    <pubDate>"2015-04-29T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/guides/ssh-chromebook</guid>
+    <author>Team Koding</author>
+    <description>In this guide, we will cover how to set up ssh on your Chromebook. There are
+two ways you can use SSH on a Chromebook. You can either install Google&amp;apos;s SSH
+Chrome extention
+or use the native SSH client that is built into the Chrome OS. For the purposes
+of this guide, we will use the native SSH client method as it does not
+require the installation of any new software.
+  Step 1: Verify you have crosh installed Before beginning, make sure that you have a newer build of Chrome OS (build 32 or above)
+and that your particular build supports the built in crosh shell which contains
+the SSH client that we will use. To check, press ctrl-alt-T on your keyboard
+and you should be greeted with a screen similar to the one below.
+
+If you do not get the above screen, chances are high that you either have an older
+build of Chrome OS or that your device manufacturer has opted to remove crosh from
+their customd build of the Chrome OS.
+  Step 2: Generate the required ssh private and public keys on your VM  tipIf you already have a private and public key generated, you can
+skip the section below
+ Open up Terminal on your Koding VM and type in the following command:
+ssh-keygen
+You will be presented with a few choices, accept all defaults until
+you end up with something like this:
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/your_username/.ssh/id_rsa):
+Created directory &amp;apos;/home/your_username/.ssh&amp;apos;.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/your_username/.ssh/id_rsa.
+Your public key has been saved in /home/your_username/.ssh/id_rsa.pub.
+The key fingerprint is:
+7a:36:29:6d:9d:5c:45:5a:8b:53:c0:1a:61:29:3f:ce your_username@your_username
+The key&amp;apos;s randomart image is:
++--[ RSA 2048]----+
+|          o+..+  |
+|        ..o .* . |
+|         o o+ o  |
+|          +  o   |
+|        So ..    |
+|       o +Eo     |
+|      o B +      |
+|       = .       |
+|                 |
++-----------------+
+  Step 3: Copy the generated public key to authotized_keys file on your VM Doing this allows your Chromebook to be recognized as a valid host (once we copy
+over the private keys, which is the next step).
+Create an authorized_keys file (if it does not exist)
+touch ~/.ssh/authorized_keys
+Copy the public key into it.
+cat ~/.ssh/id_rsa.pub &amp;gt;&amp;gt; ~/.ssh/authorized_keys
+  Step 4: Moving the generated private key to your Chromebook To achieve this, we will first copy over the private key to
+our Web folder so that we can download it over the browser.
+ alertAfter downloading the private key you should immediately
+delete if from your Web folder. This is not the most secure way
+of copying over your file but is the easiest. If you prefer, you
+can also upload the file to your Google Drive account and then
+download it your Chromebook.
+ Copy the private key to your Web folder:
+cp ~/.ssh/id_rsa ~/Web/.
+chmod 655 ~/Web/id_rsa
+Now hop over to your Chromebook and type in the Web URL of your VM to
+download this file. The Web URL of your VM usually is:
+yourusername.koding.io/id_rsa
+
+Make sure you have the file without the .txt extension. You can check/rename
+the file by using the Files app on your Chromebook (as seen in the screenshot
+below).
+
+As soon as the file is downloaded on your Chromebook, delete it from
+the Web folder of your VM
+rm ~/Web/id_rsa
+At this point, you now have the generated private key on your Chromebook
+and are ready to connect.
+Press ctrl-alt-T to bring up crosh and then on the crosh shell, type ssh
+Use the following commands to set up ssh:
+host = your_koding_username.koding.io
+user = your_koding_username
+key = id_rsa
+
+Once you press enter, you should be dropped into your Koding VM!
+
 </description>
   </item>
   
@@ -6882,6 +6882,33 @@ So to be clear , you may change your display name at any time but this does not 
   </item>
   
   <item>
+    <title>How can I close the VM panel/sidebar to get more screen space?</title>
+    <link>//learn.koding.com/faq/sidebar-collapse</link>
+    <pubDate>"2015-07-21T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/sidebar-collapse</guid>
+    <author></author>
+    <description>Our computer screens come in all shapes and sizes and if you don&amp;apos;t have a high res screen,
+then the amount of space occupied by the VM panel/sidebar and the file tree can be a bit
+too much. Did you know that both the VM panel/sidebar and file tree can be collapsed?
+There are two ways you can collapse the sidebar and filetree.
+
+Using collapse icons
+Double click the panel dividers
+
+  Using collapse icons Both the sidebar and the file tree have handy icons that will cause the respective panels to
+collapse. The animation below shows how.
+
+  Double clicking the panel dividers   Collapsing/Closing the VM Panel/Sidebar Double click the dividing column line between the VM panel and file tree and it will collapse
+the panel! To expand, click the logo. (see image below for an example).
+  Collapsing/Closing the file tree Double click the dividing column line between the file tree and the IDE/Terminal and it will collapse
+the file tree panel! To expand, click the folder icon. (see image below for an example).
+
+ tipThe sidebar and filetree can only be collapsed when you are in the VM section of Koding.
+They cannot be collapsed when in Channels or Messages.
+ </description>
+  </item>
+  
+  <item>
     <title>How can I reset my VM back to its original state?</title>
     <link>//learn.koding.com/faq/vm-reinit</link>
     <pubDate>"2015-04-28T00:00:00.000Z"</pubDate>
@@ -6910,26 +6937,6 @@ Once you initiate a reinit, you will see appropriate messages on the screen as y
   </item>
   
   <item>
-    <title>How can I split the editor and terminal area?</title>
-    <link>//learn.koding.com/faq/split-panes</link>
-    <pubDate>"2015-06-20T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/split-panes</guid>
-    <author></author>
-    <description>Sometimes one editor or terminal screen is not enough, so just like you can on any code editor and terminal app on your computer, you can also split the editor and terminal areas on Koding to gain more virtual windows.
-The image below shows the first method you can use to split panes. The drop-down menu provides the split options.
-
-The second (and more fun) method of splitting panes is to use our visual pane splitter as shown in
-the animated gif below.
-Simply move your mouse to the center of a pane (horizontal or vertical center) and you will see a animated/visual split bar appear showing you a preview of the split. click to make it permanent!
-
-
-
-
-Have a crazy split screen setup, share it with us on Twitter! :)
-</description>
-  </item>
-  
-  <item>
     <title>Should I use my VM's IP or Address?</title>
     <link>//learn.koding.com/faq/vm-ip-vs-address</link>
     <pubDate>"2015-04-28T00:00:00.000Z"</pubDate>
@@ -6947,30 +6954,23 @@ IP changes, so this is what you usually want to use.
   </item>
   
   <item>
-    <title>How can I close the VM panel/sidebar to get more screen space?</title>
-    <link>//learn.koding.com/faq/sidebar-collapse</link>
-    <pubDate>"2015-07-21T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/sidebar-collapse</guid>
+    <title>How can I split the editor and terminal area?</title>
+    <link>//learn.koding.com/faq/split-panes</link>
+    <pubDate>"2015-06-20T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/split-panes</guid>
     <author></author>
-    <description>Our computer screens come in all shapes and sizes and if you don&amp;apos;t have a high res screen,
-then the amount of space occupied by the VM panel/sidebar and the file tree can be a bit
-too much. Did you know that both the VM panel/sidebar and file tree can be collapsed?
-There are two ways you can collapse the sidebar and filetree.
+    <description>Sometimes one editor or terminal screen is not enough, so just like you can on any code editor and terminal app on your computer, you can also split the editor and terminal areas on Koding to gain more virtual windows.
+The image below shows the first method you can use to split panes. The drop-down menu provides the split options.
 
-Using collapse icons
-Double click the panel dividers
+The second (and more fun) method of splitting panes is to use our visual pane splitter as shown in
+the animated gif below.
+Simply move your mouse to the center of a pane (horizontal or vertical center) and you will see a animated/visual split bar appear showing you a preview of the split. click to make it permanent!
 
-  Using collapse icons Both the sidebar and the file tree have handy icons that will cause the respective panels to
-collapse. The animation below shows how.
 
-  Double clicking the panel dividers   Collapsing/Closing the VM Panel/Sidebar Double click the dividing column line between the VM panel and file tree and it will collapse
-the panel! To expand, click the logo. (see image below for an example).
-  Collapsing/Closing the file tree Double click the dividing column line between the file tree and the IDE/Terminal and it will collapse
-the file tree panel! To expand, click the folder icon. (see image below for an example).
 
- tipThe sidebar and filetree can only be collapsed when you are in the VM section of Koding.
-They cannot be collapsed when in Channels or Messages.
- </description>
+
+Have a crazy split screen setup, share it with us on Twitter! :)
+</description>
   </item>
   
   <item>
@@ -7099,6 +7099,23 @@ For HTML, CSS and JS: JSFiddle
   </item>
   
   <item>
+    <title>What ports are open on my Koding VM?</title>
+    <link>//learn.koding.com/faq/open-ports</link>
+    <pubDate>"2015-04-06T00:00:00.000Z"</pubDate>
+    <guid isPermaLink="true">//learn.koding.com/faq/open-ports</guid>
+    <author></author>
+    <description>Most Unix ports are available on Koding VMs. We do not block any TCP traffic
+(inbound or outbound). See the following list for open ports, as well as ports in use by default.
+
+Ports 2 through 65,534 are open.
+Port 80 is taken by Apache, but this can be turned off to free up the port. To turn
+off Apache, type in: sudo service apache2 stop in Terminal.
+Ports 2 through 1,024 require sudo access.
+
+</description>
+  </item>
+  
+  <item>
     <title>How do I transfer/copy files to and from my VM?</title>
     <link>//learn.koding.com/faq/transfer-files</link>
     <pubDate>"2015-04-06T00:00:00.000Z"</pubDate>
@@ -7145,23 +7162,6 @@ click the &amp;quot;Add new domain&amp;quot; button to open up an input box wher
 once added, these sub-domains become available on the setting modals of all your VMs for easy reassignment
 deleting a sub-domain is as easy as adding one!
 
-
-</description>
-  </item>
-  
-  <item>
-    <title>What ports are open on my Koding VM?</title>
-    <link>//learn.koding.com/faq/open-ports</link>
-    <pubDate>"2015-04-06T00:00:00.000Z"</pubDate>
-    <guid isPermaLink="true">//learn.koding.com/faq/open-ports</guid>
-    <author></author>
-    <description>Most Unix ports are available on Koding VMs. We do not block any TCP traffic
-(inbound or outbound). See the following list for open ports, as well as ports in use by default.
-
-Ports 2 through 65,534 are open.
-Port 80 is taken by Apache, but this can be turned off to free up the port. To turn
-off Apache, type in: sudo service apache2 stop in Terminal.
-Ports 2 through 1,024 require sudo access.
 
 </description>
   </item>

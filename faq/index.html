@@ -43,11 +43,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?408" />
+    <link rel="stylesheet" href="/css/vendor.css?234" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?527" />
+    <link rel="stylesheet" href="/css/main.css?351" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?632" />
+    <link rel="stylesheet" href="/css/rwd.css?501" />
     <!-- Google WebMaster Tools Auth for PD team -->
     <meta name="google-site-verification" content="xit6W5qyYuPGq49UXRRZNm_HW5bUxyPS0hqJRDP-2tg" />
 	</head>
@@ -263,14 +263,14 @@
     
       <li>
         <a
-          href="#vm-reinit"
-          class="title">How can I reset my VM back to its original state?</a>
+          href="#sidebar-collapse"
+          class="title">How can I close the VM panel/sidebar to get more screen space?</a>
       </li>
     
       <li>
         <a
-          href="#split-panes"
-          class="title">How can I split the editor and terminal area?</a>
+          href="#vm-reinit"
+          class="title">How can I reset my VM back to its original state?</a>
       </li>
     
       <li>
@@ -281,8 +281,8 @@
     
       <li>
         <a
-          href="#sidebar-collapse"
-          class="title">How can I close the VM panel/sidebar to get more screen space?</a>
+          href="#split-panes"
+          class="title">How can I split the editor and terminal area?</a>
       </li>
     
       <li>
@@ -317,6 +317,12 @@
     
       <li>
         <a
+          href="#open-ports"
+          class="title">What ports are open on my Koding VM?</a>
+      </li>
+    
+      <li>
+        <a
           href="#transfer-files"
           class="title">How do I transfer/copy files to and from my VM?</a>
       </li>
@@ -325,12 +331,6 @@
         <a
           href="#vm-hostname"
           class="title">What is my VM Hostname/Address/Domain Name?</a>
-      </li>
-    
-      <li>
-        <a
-          href="#open-ports"
-          class="title">What ports are open on my Koding VM?</a>
       </li>
     
       <li>
@@ -534,6 +534,41 @@ Google+, etc. or you can use the new password to log in. Both will work.</p>
     </li>
   
     <li>
+      <a name="sidebar-collapse">
+      <h3
+        class="question"
+        itemscope itemtype="//schema.org/Question"
+      >
+        <a href="/faq/sidebar-collapse">How can I close the VM panel/sidebar to get more screen space?</a>
+      </h3>
+      <div
+        class="answer"
+        itemscope itemtype="//schema.org/Answer"
+        itemprop="acceptedAnswer"
+      >
+        <p>Our computer screens come in all shapes and sizes and if you don&apos;t have a high res screen,
+then the amount of space occupied by the VM panel/sidebar and the file tree can be a bit
+too much. Did you know that both the VM panel/sidebar and file tree can be collapsed?</p>
+<p>There are two ways you can collapse the sidebar and filetree.</p>
+<ol>
+<li>Using collapse icons</li>
+<li>Double click the panel dividers</li>
+</ol>
+<h3 class="heading"> <a name="using-collapse-icons" class="anchor" href="#using-collapse-icons"></a> Using collapse icons </h3><p>Both the sidebar and the file tree have handy icons that will cause the respective panels to
+collapse. The animation below shows how.
+<img src="/faq/sidebar-collapse/sidebar2.gif" alt="sidebar-2"></p>
+<h3 class="heading"> <a name="double-clicking-the-panel-dividers" class="anchor" href="#double-clicking-the-panel-dividers"></a> Double clicking the panel dividers </h3><h4 class="heading"> <a name="collapsing-closing-the-vm-panel-sidebar" class="anchor" href="#collapsing-closing-the-vm-panel-sidebar"></a> Collapsing/Closing the VM Panel/Sidebar </h4><p><strong>Double click</strong> the dividing column line between the VM panel and file tree and it will collapse
+the panel! To expand, click the logo. (see image below for an example).</p>
+<h4 class="heading"> <a name="collapsing-closing-the-file-tree" class="anchor" href="#collapsing-closing-the-file-tree"></a> Collapsing/Closing the file tree </h4><p><strong>Double click</strong> the dividing column line between the file tree and the IDE/Terminal and it will collapse
+the file tree panel! To expand, click the folder icon. (see image below for an example).</p>
+<p><img src="/faq/sidebar-collapse/sidebar.gif" alt="Sidebar Collapse"></p>
+<blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>The sidebar and filetree can only be collapsed when you are in the VM section of Koding.
+They cannot be collapsed when in Channels or Messages.</p>
+ </blockquote>
+      </div>
+    </li>
+  
+    <li>
       <a name="vm-reinit">
       <h3
         class="question"
@@ -570,34 +605,6 @@ to transfer the files.</p>
     </li>
   
     <li>
-      <a name="split-panes">
-      <h3
-        class="question"
-        itemscope itemtype="//schema.org/Question"
-      >
-        <a href="/faq/split-panes">How can I split the editor and terminal area?</a>
-      </h3>
-      <div
-        class="answer"
-        itemscope itemtype="//schema.org/Answer"
-        itemprop="acceptedAnswer"
-      >
-        <p>Sometimes one editor or terminal screen is not enough, so just like you can on any code editor and terminal app on your computer, you can also split the editor and terminal areas on Koding to gain more virtual windows.</p>
-<p>The image below shows the first method you can use to split panes. The drop-down menu provides the split options.
-<img src="/faq/split-panes/split-1.png" alt="split-1"></p>
-<p>The second (and more fun) method of splitting panes is to use our visual pane splitter as shown in
-the animated gif below.</p>
-<p>Simply move your mouse to the center of a pane (horizontal or vertical center) and you will see a animated/visual split bar appear showing you a preview of the split. click to make it permanent!</p>
-<center>
-<iframe width="650" height="445" src="https://www.youtube.com/embed/9vuhUpKcj-A" frameborder="0" allowfullscreen></iframe>
-</center>
-
-<p>Have a crazy split screen setup, share it with us on <a href="https://twitter.com/home?status=hey%20%40koding,%20here&apos;s%20the%20super-awesome%20split%20screen%20setup%20on%20my%20%23koding%20account.">Twitter</a>! :)</p>
-
-      </div>
-    </li>
-  
-    <li>
       <a name="vm-ip-vs-address">
       <h3
         class="question"
@@ -623,37 +630,30 @@ IP changes, so this is what you usually want to use.</p>
     </li>
   
     <li>
-      <a name="sidebar-collapse">
+      <a name="split-panes">
       <h3
         class="question"
         itemscope itemtype="//schema.org/Question"
       >
-        <a href="/faq/sidebar-collapse">How can I close the VM panel/sidebar to get more screen space?</a>
+        <a href="/faq/split-panes">How can I split the editor and terminal area?</a>
       </h3>
       <div
         class="answer"
         itemscope itemtype="//schema.org/Answer"
         itemprop="acceptedAnswer"
       >
-        <p>Our computer screens come in all shapes and sizes and if you don&apos;t have a high res screen,
-then the amount of space occupied by the VM panel/sidebar and the file tree can be a bit
-too much. Did you know that both the VM panel/sidebar and file tree can be collapsed?</p>
-<p>There are two ways you can collapse the sidebar and filetree.</p>
-<ol>
-<li>Using collapse icons</li>
-<li>Double click the panel dividers</li>
-</ol>
-<h3 class="heading"> <a name="using-collapse-icons" class="anchor" href="#using-collapse-icons"></a> Using collapse icons </h3><p>Both the sidebar and the file tree have handy icons that will cause the respective panels to
-collapse. The animation below shows how.
-<img src="/faq/sidebar-collapse/sidebar2.gif" alt="sidebar-2"></p>
-<h3 class="heading"> <a name="double-clicking-the-panel-dividers" class="anchor" href="#double-clicking-the-panel-dividers"></a> Double clicking the panel dividers </h3><h4 class="heading"> <a name="collapsing-closing-the-vm-panel-sidebar" class="anchor" href="#collapsing-closing-the-vm-panel-sidebar"></a> Collapsing/Closing the VM Panel/Sidebar </h4><p><strong>Double click</strong> the dividing column line between the VM panel and file tree and it will collapse
-the panel! To expand, click the logo. (see image below for an example).</p>
-<h4 class="heading"> <a name="collapsing-closing-the-file-tree" class="anchor" href="#collapsing-closing-the-file-tree"></a> Collapsing/Closing the file tree </h4><p><strong>Double click</strong> the dividing column line between the file tree and the IDE/Terminal and it will collapse
-the file tree panel! To expand, click the folder icon. (see image below for an example).</p>
-<p><img src="/faq/sidebar-collapse/sidebar.gif" alt="Sidebar Collapse"></p>
-<blockquote class="tip fa fa-check-circle"> <p><span class="label">tip</span>The sidebar and filetree can only be collapsed when you are in the VM section of Koding.
-They cannot be collapsed when in Channels or Messages.</p>
- </blockquote>
+        <p>Sometimes one editor or terminal screen is not enough, so just like you can on any code editor and terminal app on your computer, you can also split the editor and terminal areas on Koding to gain more virtual windows.</p>
+<p>The image below shows the first method you can use to split panes. The drop-down menu provides the split options.
+<img src="/faq/split-panes/split-1.png" alt="split-1"></p>
+<p>The second (and more fun) method of splitting panes is to use our visual pane splitter as shown in
+the animated gif below.</p>
+<p>Simply move your mouse to the center of a pane (horizontal or vertical center) and you will see a animated/visual split bar appear showing you a preview of the split. click to make it permanent!</p>
+<center>
+<iframe width="650" height="445" src="https://www.youtube.com/embed/9vuhUpKcj-A" frameborder="0" allowfullscreen></iframe>
+</center>
+
+<p>Have a crazy split screen setup, share it with us on <a href="https://twitter.com/home?status=hey%20%40koding,%20here&apos;s%20the%20super-awesome%20split%20screen%20setup%20on%20my%20%23koding%20account.">Twitter</a>! :)</p>
+
       </div>
     </li>
   
@@ -823,6 +823,31 @@ using the <code>sudo</code> command from that point on.</p>
     </li>
   
     <li>
+      <a name="open-ports">
+      <h3
+        class="question"
+        itemscope itemtype="//schema.org/Question"
+      >
+        <a href="/faq/open-ports">What ports are open on my Koding VM?</a>
+      </h3>
+      <div
+        class="answer"
+        itemscope itemtype="//schema.org/Answer"
+        itemprop="acceptedAnswer"
+      >
+        <p>Most Unix ports are available on Koding VMs. We do not block any TCP traffic
+(inbound or outbound). See the following list for open ports, as well as ports in use by default.</p>
+<ul>
+<li>Ports <strong>2</strong> through <strong>65,534</strong> are open.</li>
+<li>Port <strong>80</strong> is taken by Apache, but this can be turned off to free up the port. To turn
+off Apache, type in: <code>sudo service apache2 stop</code> in Terminal.</li>
+<li>Ports <strong>2</strong> through <strong>1,024</strong> require <code>sudo</code> access.</li>
+</ul>
+
+      </div>
+    </li>
+  
+    <li>
       <a name="transfer-files">
       <h3
         class="question"
@@ -885,31 +910,6 @@ virtual hosts, it&apos;s easy to assign them all their own unique sub-domains. <
 <li>deleting a sub-domain is as easy as adding one!
 <img src="/faq/vm-hostname/third.png" alt="Remove subdomain"></li>
 </ol>
-
-      </div>
-    </li>
-  
-    <li>
-      <a name="open-ports">
-      <h3
-        class="question"
-        itemscope itemtype="//schema.org/Question"
-      >
-        <a href="/faq/open-ports">What ports are open on my Koding VM?</a>
-      </h3>
-      <div
-        class="answer"
-        itemscope itemtype="//schema.org/Answer"
-        itemprop="acceptedAnswer"
-      >
-        <p>Most Unix ports are available on Koding VMs. We do not block any TCP traffic
-(inbound or outbound). See the following list for open ports, as well as ports in use by default.</p>
-<ul>
-<li>Ports <strong>2</strong> through <strong>65,534</strong> are open.</li>
-<li>Port <strong>80</strong> is taken by Apache, but this can be turned off to free up the port. To turn
-off Apache, type in: <code>sudo service apache2 stop</code> in Terminal.</li>
-<li>Ports <strong>2</strong> through <strong>1,024</strong> require <code>sudo</code> access.</li>
-</ul>
 
       </div>
     </li>

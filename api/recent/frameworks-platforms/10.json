@@ -1,5 +1,17 @@
 [
   {
+    "title": "Getting Started with Clojure",
+    "url": "https://learn.koding.com/guides/getting-started-clojure/index.html",
+    "author": "Jajati K. Sahoo",
+    "date": "2015-11-11T00:00:00.000Z"
+  },
+  {
+    "title": "How to install Composer",
+    "url": "https://learn.koding.com/guides/installing-composer/index.html",
+    "author": "Team Koding",
+    "date": "2015-11-02T00:00:00.000Z"
+  },
+  {
     "title": "How to install Oracle JDK",
     "url": "https://learn.koding.com/guides/installing-oracle-jdk/index.html",
     "author": "Team Koding",
@@ -18,27 +30,21 @@
     "date": "2015-11-02T00:00:00.000Z"
   },
   {
-    "title": "How to install Composer",
-    "url": "https://learn.koding.com/guides/installing-composer/index.html",
-    "author": "Team Koding",
-    "date": "2015-11-02T00:00:00.000Z"
-  },
-  {
     "title": "Getting Started with NodeJS",
     "url": "https://learn.koding.com/guides/getting-started-nodejs/index.html",
     "author": "Team Koding",
     "date": "2015-08-14T00:00:00.000Z"
   },
   {
-    "title": "Installing Ionic Framework",
-    "url": "https://learn.koding.com/guides/installing-ionic-framework/index.html",
-    "author": "Sergiu Butnarasu",
-    "date": "2015-06-20T00:00:00.000Z"
-  },
-  {
     "title": "Setting up a Rails webserver",
     "url": "https://learn.koding.com/guides/setting-rails-webserver/index.html",
     "author": "Team Koding",
+    "date": "2015-06-20T00:00:00.000Z"
+  },
+  {
+    "title": "Installing Ionic Framework",
+    "url": "https://learn.koding.com/guides/installing-ionic-framework/index.html",
+    "author": "Sergiu Butnarasu",
     "date": "2015-06-20T00:00:00.000Z"
   },
   {
@@ -48,14 +54,8 @@
     "date": "2015-05-21T00:00:00.000Z"
   },
   {
-    "title": "Setting up a Laravel webserver with Artisan",
-    "url": "https://learn.koding.com/guides/setting-laravel-artisan-webserver/index.html",
-    "author": "Team Koding",
-    "date": "2015-05-19T00:00:00.000Z"
-  },
-  {
-    "title": "Setting up a MeteorJS webserver",
-    "url": "https://learn.koding.com/guides/setting-meteorjs-webserver/index.html",
+    "title": "Setting up a Django webserver",
+    "url": "https://learn.koding.com/guides/setting-django-webserver/index.html",
     "author": "Team Koding",
     "date": "2015-05-19T00:00:00.000Z"
   }

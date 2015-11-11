@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-        <loc>http://learn.koding.com/guides/gettings_started_with_Clojure</loc>
+        <loc>http://learn.koding.com/guides/getting-started-clojure</loc>
         <lastmod>2015-11-11</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -98,13 +98,13 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/getting-started-nodejs</loc>
+        <loc>http://learn.koding.com/guides/understanding-file-permissions</loc>
         <lastmod>2015-08-14</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/understanding-file-permissions</loc>
+        <loc>http://learn.koding.com/guides/postgresql-on-koding</loc>
         <lastmod>2015-08-14</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -116,7 +116,7 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/postgresql-on-koding</loc>
+        <loc>http://learn.koding.com/guides/getting-started-nodejs</loc>
         <lastmod>2015-08-14</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -146,13 +146,13 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/getting-started-ruby</loc>
+        <loc>http://learn.koding.com/guides/what-is-koding</loc>
         <lastmod>2015-07-21</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/what-is-koding</loc>
+        <loc>http://learn.koding.com/guides/getting-started-ruby</loc>
         <lastmod>2015-07-21</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -626,19 +626,13 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/setting-up-sftp-on-koding</loc>
-        <lastmod>2015-04-29</lastmod>
-        <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
         <loc>http://learn.koding.com/guides/getting-started-python</loc>
         <lastmod>2015-04-29</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
-        <loc>http://learn.koding.com/guides/ssh-chromebook</loc>
+        <loc>http://learn.koding.com/guides/setting-up-sftp-on-koding</loc>
         <lastmod>2015-04-29</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -663,6 +657,12 @@
   
   <url>
         <loc>http://learn.koding.com/guides/getting-started-drupal8-beta</loc>
+        <lastmod>2015-04-29</lastmod>
+        <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+        <loc>http://learn.koding.com/guides/ssh-chromebook</loc>
         <lastmod>2015-04-29</lastmod>
         <changefreq>monthly</changefreq>
   </url>
@@ -836,14 +836,14 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/faq/vm-reinit</loc>
-        <lastmod>2015-04-28</lastmod>
+        <loc>http://learn.koding.com/faq/sidebar-collapse</loc>
+        <lastmod>2015-07-21</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
   <url>
-        <loc>http://learn.koding.com/faq/split-panes</loc>
-        <lastmod>2015-06-20</lastmod>
+        <loc>http://learn.koding.com/faq/vm-reinit</loc>
+        <lastmod>2015-04-28</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
@@ -854,8 +854,8 @@
   </url>
   
   <url>
-        <loc>http://learn.koding.com/faq/sidebar-collapse</loc>
-        <lastmod>2015-07-21</lastmod>
+        <loc>http://learn.koding.com/faq/split-panes</loc>
+        <lastmod>2015-06-20</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
@@ -890,6 +890,12 @@
   </url>
   
   <url>
+        <loc>http://learn.koding.com/faq/open-ports</loc>
+        <lastmod>2015-04-06</lastmod>
+        <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
         <loc>http://learn.koding.com/faq/transfer-files</loc>
         <lastmod>2015-04-06</lastmod>
         <changefreq>monthly</changefreq>
@@ -898,12 +904,6 @@
   <url>
         <loc>http://learn.koding.com/faq/vm-hostname</loc>
         <lastmod>2015-04-28</lastmod>
-        <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-        <loc>http://learn.koding.com/faq/open-ports</loc>
-        <lastmod>2015-04-06</lastmod>
         <changefreq>monthly</changefreq>
   </url>
   
