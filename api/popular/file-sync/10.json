@@ -3,24 +3,24 @@
     "title": "Using Dropbox with Koding",
     "url": "http://learn.koding.com/guides/dropbox-for-file-sync/index.html",
     "author": "Team Koding",
-    "date": "2015-05-19T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
     "title": "How to mount a remote FTP server as a local directory on your Koding VM?",
     "url": "http://learn.koding.com/guides/mount-ftp-fs/index.html",
     "author": "Team Koding",
-    "date": "2015-11-02T00:00:00.000Z"
+    "date": "2015-10-15T00:00:00.000Z"
   },
   {
     "title": "Sync files using Google Drive",
     "url": "http://learn.koding.com/guides/sync-files-google-drive/index.html",
     "author": "Team Koding",
-    "date": "2015-05-27T00:00:00.000Z"
+    "date": "2015-05-21T00:00:00.000Z"
   },
   {
     "title": "Using FileZilla to connect to your Koding VM",
     "url": "http://learn.koding.com/guides/ftp-with-filezilla/index.html",
     "author": "Team Koding",
-    "date": "2015-05-01T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   }
 ]

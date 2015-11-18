@@ -1,51 +1,51 @@
 [
   {
-    "title": "Getting Started with Clojure",
-    "url": "https://learn.koding.com/guides/getting-started-clojure/index.html",
-    "author": "Jajati K. Sahoo",
-    "date": "2015-11-11T00:00:00.000Z"
-  },
-  {
-    "title": "How to install Composer",
-    "url": "https://learn.koding.com/guides/installing-composer/index.html",
+    "title": "Getting Started with AngularJS",
+    "url": "https://learn.koding.com/guides/getting-started-angularjs/index.html",
     "author": "Team Koding",
-    "date": "2015-11-02T00:00:00.000Z"
+    "date": "2015-11-16T00:00:00.000Z"
   },
   {
     "title": "How to install Oracle JDK",
     "url": "https://learn.koding.com/guides/installing-oracle-jdk/index.html",
     "author": "Team Koding",
-    "date": "2015-11-02T00:00:00.000Z"
+    "date": "2015-11-16T00:00:00.000Z"
   },
   {
     "title": "How to install Wildfly",
     "url": "https://learn.koding.com/guides/installing-wildfly/index.html",
     "author": "Team Koding",
-    "date": "2015-11-02T00:00:00.000Z"
+    "date": "2015-11-16T00:00:00.000Z"
   },
   {
-    "title": "Getting Started with AngularJS",
-    "url": "https://learn.koding.com/guides/getting-started-angularjs/index.html",
+    "title": "Getting Started with Clojure",
+    "url": "https://learn.koding.com/guides/getting-started-clojure/index.html",
+    "author": "Jajati K. Sahoo",
+    "date": "2015-11-16T00:00:00.000Z"
+  },
+  {
+    "title": "How to install Composer",
+    "url": "https://learn.koding.com/guides/installing-composer/index.html",
     "author": "Team Koding",
-    "date": "2015-11-02T00:00:00.000Z"
+    "date": "2015-10-31T00:00:00.000Z"
   },
   {
     "title": "Getting Started with NodeJS",
     "url": "https://learn.koding.com/guides/getting-started-nodejs/index.html",
     "author": "Team Koding",
-    "date": "2015-08-14T00:00:00.000Z"
-  },
-  {
-    "title": "Setting up a Rails webserver",
-    "url": "https://learn.koding.com/guides/setting-rails-webserver/index.html",
-    "author": "Team Koding",
-    "date": "2015-06-20T00:00:00.000Z"
+    "date": "2015-08-15T00:00:00.000Z"
   },
   {
     "title": "Installing Ionic Framework",
     "url": "https://learn.koding.com/guides/installing-ionic-framework/index.html",
     "author": "Sergiu Butnarasu",
-    "date": "2015-06-20T00:00:00.000Z"
+    "date": "2015-06-22T00:00:00.000Z"
+  },
+  {
+    "title": "Setting up a Rails webserver",
+    "url": "https://learn.koding.com/guides/setting-rails-webserver/index.html",
+    "author": "Team Koding",
+    "date": "2015-06-11T00:00:00.000Z"
   },
   {
     "title": "Installing Jekyll on Koding",
@@ -54,9 +54,9 @@
     "date": "2015-05-21T00:00:00.000Z"
   },
   {
-    "title": "Setting up a Django webserver",
-    "url": "https://learn.koding.com/guides/setting-django-webserver/index.html",
+    "title": "A guide to Docker",
+    "url": "https://learn.koding.com/guides/what-is-docker/index.html",
     "author": "Team Koding",
-    "date": "2015-05-19T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   }
 ]
