@@ -3,60 +3,60 @@
     "title": "What happened to 127.0.0.1?",
     "url": "http://learn.koding.com/guides/what-happened-to-127-0-0-1/index.html",
     "author": "Team Koding",
-    "date": "2015-09-26T00:00:00.000Z"
+    "date": "2015-10-13T00:00:00.000Z"
   },
   {
     "title": "Where is my Web Server Root?",
     "url": "http://learn.koding.com/guides/where-is-my-webserver-root/index.html",
     "author": "Team Koding",
-    "date": "2015-07-27T00:00:00.000Z"
+    "date": "2015-07-25T00:00:00.000Z"
   },
   {
     "title": "Installing Ionic Framework",
     "url": "http://learn.koding.com/guides/installing-ionic-framework/index.html",
     "author": "Sergiu Butnarasu",
-    "date": "2015-06-22T00:00:00.000Z"
+    "date": "2015-06-20T00:00:00.000Z"
   },
   {
     "title": "Setting up WebDav on Koding",
     "url": "http://learn.koding.com/guides/setting-up-webdav-on-koding/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
-  },
-  {
-    "title": "Installing Linux Dash",
-    "url": "http://learn.koding.com/guides/linux-dash/index.html",
-    "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-05-19T00:00:00.000Z"
   },
   {
     "title": "How to install Memcache",
     "url": "http://learn.koding.com/guides/install-memcache/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
-  },
-  {
-    "title": "Koding Subdomains and VHosts",
-    "url": "http://learn.koding.com/guides/vhosts-and-subdomains/index.html",
-    "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
-  },
-  {
-    "title": "Installing Apache Cordova",
-    "url": "http://learn.koding.com/guides/installing-apache-cordova/index.html",
-    "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
-  },
-  {
-    "title": "General .htaccess",
-    "url": "http://learn.koding.com/guides/general-htaccess/index.html",
-    "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-05-19T00:00:00.000Z"
   },
   {
     "title": "Cassandra installation for beginners",
     "url": "http://learn.koding.com/guides/cassandra-installation-beginners/index.html",
     "author": "Team Koding",
-    "date": "2015-05-06T00:00:00.000Z"
+    "date": "2015-05-19T00:00:00.000Z"
+  },
+  {
+    "title": "Installing Linux Dash",
+    "url": "http://learn.koding.com/guides/linux-dash/index.html",
+    "author": "Team Koding",
+    "date": "2015-04-29T00:00:00.000Z"
+  },
+  {
+    "title": "Koding Subdomains and VHosts",
+    "url": "http://learn.koding.com/guides/vhosts-and-subdomains/index.html",
+    "author": "Team Koding",
+    "date": "2015-04-29T00:00:00.000Z"
+  },
+  {
+    "title": "Installing Apache Cordova",
+    "url": "http://learn.koding.com/guides/installing-apache-cordova/index.html",
+    "author": "Team Koding",
+    "date": "2015-04-29T00:00:00.000Z"
+  },
+  {
+    "title": "General .htaccess",
+    "url": "http://learn.koding.com/guides/general-htaccess/index.html",
+    "author": "Team Koding",
+    "date": "2015-04-29T00:00:00.000Z"
   }
 ]

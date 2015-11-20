@@ -13,7 +13,7 @@
     
 		<meta name="description" content="PostgreSQL is an open source relational database management system that 
 provides an implementation of the SQL query language. In this guide, 
-we'll go over using PostgreSQL on your Koding VM. Lets get started!">
+we&amp;#39;ll go over using PostgreSQL on your Koding VM. Lets get started!">
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
 
@@ -25,7 +25,7 @@ we'll go over using PostgreSQL on your Koding VM. Lets get started!">
 		<meta property="og:image:secure_url" content="https://koding.com/a/images/logos/share_logo.png"/>
 		<meta property="og:description" content="PostgreSQL is an open source relational database management system that 
 provides an implementation of the SQL query language. In this guide, 
-we'll go over using PostgreSQL on your Koding VM. Lets get started!"/>
+we&amp;#39;ll go over using PostgreSQL on your Koding VM. Lets get started!"/>
 		<meta property="og:image:type" content="image/png">
 		<meta property="og:image:width" content="130"/>
 		<meta property="og:image:height" content="100"/>
@@ -39,7 +39,7 @@ we'll go over using PostgreSQL on your Koding VM. Lets get started!"/>
 		<meta name="twitter:image" content="https://learn.koding.com/img/logo_150.png"/>
 		<meta name="twitter:description" content="PostgreSQL is an open source relational database management system that 
 provides an implementation of the SQL query language. In this guide, 
-we'll go over using PostgreSQL on your Koding VM. Lets get started!"\>
+we&amp;#39;ll go over using PostgreSQL on your Koding VM. Lets get started!"\>
 		<meta name="twitter:domain" content="learn.koding.com">
 
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
@@ -51,11 +51,11 @@ we'll go over using PostgreSQL on your Koding VM. Lets get started!"\>
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?782" />
+    <link rel="stylesheet" href="/css/vendor.css?403" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?488" />
+    <link rel="stylesheet" href="/css/main.css?538" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?583" />
+    <link rel="stylesheet" href="/css/rwd.css?542" />
     <!-- Google WebMaster Tools Auth for PD team -->
     <meta name="google-site-verification" content="xit6W5qyYuPGq49UXRRZNm_HW5bUxyPS0hqJRDP-2tg" />
 	</head>
@@ -69,7 +69,7 @@ we'll go over using PostgreSQL on your Koding VM. Lets get started!"\>
       <span class="img"></span>
     </a>
   </h1>
-  <div class="hiring"><a href="http://jobs.lever.co/koding">We're Hiring!</a></div>
+  <div class="hiring"><a href="http://bit.ly/1MTsnJt">Join the Global Virtual Hackathon with $100k grand prize!</a></div>
   <div class="topSearchButton">
     <span class="searchIcon fa fa-search"></span>
   </div>
@@ -267,6 +267,18 @@ we'll go over using PostgreSQL on your Koding VM. Lets get started!"\>
     <ul>
     
       <li class="">
+        <a href="/guides/getting-started-clojure">Getting Started with Clojure</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/mount-ftp-fs">How to mount a remote FTP server as a local directory on your Koding VM?</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/installing-composer">How to install Composer</a>
+      </li>
+    
+      <li class="">
         <a href="/guides/upgrading-your-vm">Updating the OS (and other packages) your VM</a>
       </li>
     
@@ -279,23 +291,11 @@ we'll go over using PostgreSQL on your Koding VM. Lets get started!"\>
       </li>
     
       <li class="">
-        <a href="/guides/getting-started-clojure">Getting Started with Clojure</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/hello-world/c-sharp">Hello World on Koding: C-Sharp (C#)</a>
-      </li>
-    
-      <li class="">
         <a href="/guides/getting-started-angularjs">Getting Started with AngularJS</a>
       </li>
     
       <li class="">
-        <a href="/guides/installing-composer">How to install Composer</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/connect-laravel-mysql">Connecting Laravel to a MySQL Database</a>
+        <a href="/guides/hello-world/c-sharp">Hello World on Koding: C-Sharp (C#)</a>
       </li>
     
     </ul>
@@ -364,7 +364,7 @@ To exit from the appearing screen, just press the <code>q</code> button.</p>
 <p>To <strong>load and execute SQL statements from file</strong>, you can use this syntax:</p>
 <pre><code>\i <span class="hljs-keyword">my</span>/<span class="hljs-type">file</span>/path.sql
 </code></pre><p>Writing long lines of SQL code in the command line can be really hard to debug. Use the \i to run from file or use:</p>
-<pre><code>\<span class="hljs-literal">e</span>
+<pre><code><span class="hljs-string">\e</span>
 </code></pre><p>To edit the input buffer with an editor. If you usually don&apos;t use editor from command line use nano - it&apos;s the simplest.
 To check what relations your database contains, use</p>
 <pre><code><span class="hljs-string">\d</span>

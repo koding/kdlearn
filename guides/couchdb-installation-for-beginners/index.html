@@ -45,11 +45,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="/css/vendor.css?747" />
+    <link rel="stylesheet" href="/css/vendor.css?429" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/main.css?126" />
+    <link rel="stylesheet" href="/css/main.css?739" />
     <!-- RWD CSS -->
-    <link rel="stylesheet" href="/css/rwd.css?33" />
+    <link rel="stylesheet" href="/css/rwd.css?844" />
     <!-- Google WebMaster Tools Auth for PD team -->
     <meta name="google-site-verification" content="xit6W5qyYuPGq49UXRRZNm_HW5bUxyPS0hqJRDP-2tg" />
 	</head>
@@ -63,7 +63,7 @@
       <span class="img"></span>
     </a>
   </h1>
-  <div class="hiring"><a href="http://jobs.lever.co/koding">We're Hiring!</a></div>
+  <div class="hiring"><a href="http://bit.ly/1MTsnJt">Join the Global Virtual Hackathon with $100k grand prize!</a></div>
   <div class="topSearchButton">
     <span class="searchIcon fa fa-search"></span>
   </div>
@@ -261,6 +261,18 @@
     <ul>
     
       <li class="">
+        <a href="/guides/getting-started-clojure">Getting Started with Clojure</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/mount-ftp-fs">How to mount a remote FTP server as a local directory on your Koding VM?</a>
+      </li>
+    
+      <li class="">
+        <a href="/guides/installing-composer">How to install Composer</a>
+      </li>
+    
+      <li class="">
         <a href="/guides/upgrading-your-vm">Updating the OS (and other packages) your VM</a>
       </li>
     
@@ -273,23 +285,11 @@
       </li>
     
       <li class="">
-        <a href="/guides/getting-started-clojure">Getting Started with Clojure</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/hello-world/c-sharp">Hello World on Koding: C-Sharp (C#)</a>
-      </li>
-    
-      <li class="">
         <a href="/guides/getting-started-angularjs">Getting Started with AngularJS</a>
       </li>
     
       <li class="">
-        <a href="/guides/installing-composer">How to install Composer</a>
-      </li>
-    
-      <li class="">
-        <a href="/guides/connect-laravel-mysql">Connecting Laravel to a MySQL Database</a>
+        <a href="/guides/hello-world/c-sharp">Hello World on Koding: C-Sharp (C#)</a>
       </li>
     
     </ul>
@@ -328,11 +328,11 @@
 </code></pre><h2 class="heading"> <a name="installing" class="anchor" href="#installing"></a> Installing </h2><p>CouchDB can be installed by running the following command:</p>
 <pre><code>sudo apt-<span class="hljs-keyword">get</span> install couchdb
 </code></pre><p>By default CouchDB runs on port :5984. If you want to check CouchDB and see if it&apos;s running correctly you can issue this command:</p>
-<pre><code><span class="hljs-tag">curl</span> <span class="hljs-rule"><span class="hljs-attribute">localhost</span>:<span class="hljs-value"><span class="hljs-number">5984</span></span></span>
+<pre><code><span class="hljs-tag">curl</span> <span class="hljs-tag">localhost</span><span class="hljs-pseudo">:5984</span>
 </code></pre><p>and it should output something like this:</p>
 <pre><code>{&quot;<span class="hljs-attribute">couchdb</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;Welcome&quot;</span></span>,&quot;<span class="hljs-attribute">uuid</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;dfd16361e5321d4a90d01feedee6c0b1&quot;</span></span>,&quot;<span class="hljs-attribute">version</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;1.5.0&quot;</span></span>,&quot;<span class="hljs-attribute">vendor</span>&quot;:<span class="hljs-value">{&quot;<span class="hljs-attribute">name</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;Ubuntu&quot;</span></span>,&quot;<span class="hljs-attribute">version</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;14.04&quot;</span></span>}</span>}
 </code></pre><h2 class="heading"> <a name="usage" class="anchor" href="#usage"></a> Usage </h2><p>If you want to create a new database you can use the PUT command:</p>
-<pre><code><span class="hljs-tag">curl</span> <span class="hljs-tag">-X</span> <span class="hljs-tag">PUT</span> <span class="hljs-rule"><span class="hljs-attribute">localhost</span>:<span class="hljs-value"><span class="hljs-number">5984</span>/new_database</span></span>
+<pre><code>curl -X PUT <span class="hljs-string">localhost:</span><span class="hljs-number">5984</span>/new_database
 </code></pre><p>The output should look like this:</p>
 <pre><code>{&quot;<span class="hljs-attribute">ok</span>&quot;:<span class="hljs-value"><span class="hljs-literal">true</span></span>}
 </code></pre><p>And that&apos;s it!</p>
