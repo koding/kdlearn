@@ -1,62 +1,62 @@
 [
   {
-    "title": "How to mount a remote FTP server as a local directory on your Koding VM?",
-    "url": "https://learn.koding.com/guides/mount-ftp-fs/index.html",
-    "author": "Team Koding",
-    "date": "2015-11-02T00:00:00.000Z"
-  },
-  {
     "title": "Install phpMyAdmin",
     "url": "https://learn.koding.com/guides/install-phpmyadmin/index.html",
     "author": "Team Koding",
-    "date": "2015-10-13T00:00:00.000Z"
+    "date": "2015-10-15T00:00:00.000Z"
+  },
+  {
+    "title": "How to mount a remote FTP server as a local directory on your Koding VM?",
+    "url": "https://learn.koding.com/guides/mount-ftp-fs/index.html",
+    "author": "Team Koding",
+    "date": "2015-10-15T00:00:00.000Z"
   },
   {
     "title": "Webmin for Koding",
     "url": "https://learn.koding.com/guides/webmin-for-koding/index.html",
     "author": "Mike Spick",
-    "date": "2015-05-19T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
-    "title": "Using Github with Koding",
-    "url": "https://learn.koding.com/guides/using-github/index.html",
+    "title": "Setting up FTP with vsftpd",
+    "url": "https://learn.koding.com/guides/setting-up-ftp-with-vsftpd/index.html",
     "author": "Team Koding",
-    "date": "2015-05-19T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
     "title": "Setup Cockpit on Koding",
     "url": "https://learn.koding.com/guides/setting-up-cockpit/index.html",
     "author": "Team Koding",
-    "date": "2015-05-19T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
-    "title": "Elasticsearch install for beginners",
-    "url": "https://learn.koding.com/guides/elasticsearch-install-for-beginners/index.html",
+    "title": "What is Bitbucket?",
+    "url": "https://learn.koding.com/guides/using-bitbucket-on-koding/index.html",
     "author": "Team Koding",
-    "date": "2015-05-19T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
-    "title": "Using Dropbox with Koding",
-    "url": "https://learn.koding.com/guides/dropbox-for-file-sync/index.html",
+    "title": "Installing Linux Dash",
+    "url": "https://learn.koding.com/guides/linux-dash/index.html",
     "author": "Team Koding",
-    "date": "2015-05-19T00:00:00.000Z"
-  },
-  {
-    "title": "VNC Startup Guide",
-    "url": "https://learn.koding.com/guides/vnc-startup-guide/index.html",
-    "author": "Kaitlyn Schmidt",
-    "date": "2015-05-19T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
     "title": "Install phpPgAdmin",
     "url": "https://learn.koding.com/guides/install-phppgadmin/index.html",
     "author": "Team Koding",
-    "date": "2015-05-19T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
+  },
+  {
+    "title": "Using Github with Koding",
+    "url": "https://learn.koding.com/guides/using-github/index.html",
+    "author": "Team Koding",
+    "date": "2015-05-06T00:00:00.000Z"
   },
   {
     "title": "Using FileZilla to connect to your Koding VM",
     "url": "https://learn.koding.com/guides/ftp-with-filezilla/index.html",
     "author": "Team Koding",
-    "date": "2015-05-01T00:00:00.000Z"
+    "date": "2015-05-06T00:00:00.000Z"
   }
 ]
