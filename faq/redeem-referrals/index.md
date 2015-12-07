@@ -27,7 +27,7 @@ limit is the same for both types.
 > note that redemption can only happen in multiples of whole number GBs. Read more below.
 
 ### Redeeeming your earned referral storage
-If you have earned extra stroage space on your Koding account as a result of referrals
+If you have earned extra storage space on your Koding account as a result of referrals
 or other offers we've made available to our users, then reclaiming that earned space
 is now easier than ever.
 
