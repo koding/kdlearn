@@ -58,7 +58,7 @@ Swift v.2.2 fortunately supports Linux Ubuntu since the first time it went open 
   then follow by this:
   
   ```bash
-  $ sudo apt-get install clang
+  $ sudo apt-get install clang libicu-dev
   ```
   
   Just press *y* (yes) everytime it asks for confirmation.
