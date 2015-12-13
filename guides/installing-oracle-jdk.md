@@ -44,7 +44,7 @@ The PPA for Oracle JDK 7 and 8 must be installed with the following commands:
 
 ```
 sudo add-apt-repository ppa:webupd8team/java 
-sudo apt-get udpate
+sudo apt-get update
 ```
 
 Once the PPA is installed, you can install Java using the traditional `apt-get` command. 
